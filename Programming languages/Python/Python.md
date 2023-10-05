@@ -1,4 +1,4 @@
-
+***
 # Index
 
 **Basics:**
@@ -20,4 +20,3 @@
 **Operators**
 - [[Concatenazione tra tipi]]
 - [[Comparatori]]
-
