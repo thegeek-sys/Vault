@@ -6,9 +6,7 @@ Completed: false
 ---
 ---
 ## Index
-1. [[#Introduction|Introduction]]
-2. [[#Line Comment|Line Comment]]
-3. [[#Multiple Lines Comments|Multiple Lines Comments]]
+
 
 ---
 ## Introduction 
