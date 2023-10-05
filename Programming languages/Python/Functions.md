@@ -5,7 +5,10 @@ Related:
 Completed:
 ---
 ---
-
+## Index
+1. [[#Introduction|Introduction]]
+2. [[#Funzione ricorsiva|Funzione ricorsiva]]
+---
 ## Introduction
 Le **funzioni** in Python sono dei particolari costrutti sintattici che ci permettono di raggruppare, all'interno di un programma, una sequenza di istruzioni in un unico blocco, espletando così una specifica operazione. La loro sintassi generale:
 
