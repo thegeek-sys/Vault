@@ -16,4 +16,8 @@ altro_nome = 'flavio'
 print(nome is altro_nome) # -> True
 ```
 ## `==`
-L'
+L'operatore `==` mi permette di confrontare il contenuto di due variabili
+```python
+print(id(nome), id(altro_nome), id(nome) == id(altro_nome)) # ci permette di vedere l'indirizzo di memoria assegnato alle due variabili
+print(nome == altro_nome) # -> True
+```
