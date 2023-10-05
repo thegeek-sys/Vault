@@ -6,9 +6,8 @@ Completed: false
 ---
 ---
 ## Index
-
-1. [[#Introduzione|Introduzione]]
-2. [[#Naming Conventions|Naming Conventions]]
+- [[#Introduzione|Introduzione]]
+- [[#Naming Conventions|Naming Conventions]]
 ---
 ## Introduzione
 In Python, a variable is an entity that is used to store a value or an instance of an object in memory. It is a name that refers to a reserved area of memory where a value is stored.

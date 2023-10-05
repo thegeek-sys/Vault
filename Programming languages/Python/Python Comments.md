@@ -6,8 +6,9 @@ Completed: false
 ---
 ---
 ## Index
-
-
+- [Introduction](#Introduction)
+- [Line Comment](#Line%20Comment)
+- [Multiple Lines Comments](#Multiple%20Lines%20Comments)
 ---
 ## Introduction 
 Comments are parts of code that are not executed by the compiler
