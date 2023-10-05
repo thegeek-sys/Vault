@@ -8,11 +8,13 @@ Completed:
 ---
 ---
 Moltiplicando una `str` per un qualsiasi `int`, la `str` mi si duplicherà `int` volte
+
 ```python
 stringa = "Ciao" print(stringa*3) # -> 'CiaoCiaoCiao'
 ```
 
 Sommando due stringhe questo lo si aggiungeranno solamente alla fine:
+
 ```python
 prefix = 'Fondamenti'
 postfix = 'Programmazione'

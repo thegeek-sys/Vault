@@ -2,7 +2,7 @@
   "minimumDepth": 1,
   "maximumDepth": 6,
   "listStyle": "number",
-  "useMarkdown": true,
+  "useMarkdown": false,
   "title": "## Index",
   "githubCompat": false
 }

@@ -8,6 +8,7 @@ Completed:
 ---
 ## Introduction
 Per differenziare tutte le variabili che possono venir scritte in un codice complesso, l'interprete Python mantiene un **namespace** separato per ciascuna sede
+
 ```python
 x = 'python'
 def funct():
@@ -18,6 +19,7 @@ print(x) # -> 'python'
 ```
 
 Come possiamo notare ha più "importanza" la variabile definita all'inizio. La variabile `x` definita esternamente infatti fa parte del namespace `global` mentre le variabili definite internamente ad ogni funzioni hanno **ciascuna un proprio namespace** `local`. Per vederle possiamo utilizzare i comandi `globals()` e `locals()`
+
 ```python
 x = 'main'
 

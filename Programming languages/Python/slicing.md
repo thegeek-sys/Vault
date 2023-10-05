@@ -51,10 +51,6 @@ print(nome[:3]) # -> 'iac'
 Python può inoltre, a differenza di molti linguaggi di basso livello, invertire la sequenza di lettura
 
 ```python
-# ultimo elemento
-print(nome[-1]) # -> 'i'
-```
-```python
 ''' 
  +---+---+---+---+---+---+ 
  | P | y | t | h | o | n | 
@@ -63,6 +59,7 @@ print(nome[-1]) # -> 'i'
 -6  -5  -4  -3  -2  -1 
 '''
 nome = 'Python'
+print(nome[-1]) # -> 'n'
 print(nome[4:3]) # srt >= end -> stringa vuota
 print(nome[-4:-1]) # -> 'tho'
 nome[0:6:2] # -> "Pto"
