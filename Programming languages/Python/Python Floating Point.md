@@ -16,4 +16,5 @@ Per rappresentare numeri estremamente complessi Python utilizza una particolare 
 Proprio per questo motivo spesso Python commette spesso errori di approssimazione in caso di numeri troppo piccoli o troppo grandi
 
 ```python
-format(1e-20, '.100f') # -> '0.0000000000000000000099999999999999994515...' (1 + 1e-20) > 1 # -> False```
+format(1e-20, '.100f') # -> '0.0000000000000000000099999999999999994515...' (1 + 1e-20) > 1 # -> False
+```

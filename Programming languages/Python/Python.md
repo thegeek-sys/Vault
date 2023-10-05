@@ -7,4 +7,5 @@
 **Data types:**
 - [[Python Integer]]
 - [[Python Floating Point]]
-
+- [[Python String]]
+- 

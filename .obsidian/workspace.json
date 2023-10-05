@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python Floating Point.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python Floating Point.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python Floating Point.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python Floating Point.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -163,11 +163,12 @@
   },
   "active": "03a9c376469cfaa1",
   "lastOpenFiles": [
+    "Programming languages/Python/Python String.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Programming languages.md",
     "Programming languages/Python/Python Floating Point.md",
     "Programming languages/Python/Python Integer.md",
     "`int`.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/Python Comments.md",
     "Programming languages/Python/Python Variables.md",
     "Programming languages/Python.md",
