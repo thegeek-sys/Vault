@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comparatori.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comparatori.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comparatori.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comparatori.md"
+                "file": "Programming languages/Python/Comparatori.md"
               }
             }
           }
@@ -161,17 +162,17 @@
       "random-note:Open random note": false
     }
   },
-  "active": "03a9c376469cfaa1",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "Comparatori.md",
-    "Programming languages/Python/Concatenazione tra tipi.md",
-    "Programming languages/Python/Slicing.md",
-    "Programming languages/Python/String.md",
-    "Programming languages/Python/Comments.md",
     "Programming languages/Python/Variables.md",
+    "Programming languages/Python/String.md",
+    "Programming languages/Python/Slicing.md",
     "Programming languages/Python/Integer.md",
     "Programming languages/Python/Floating Point.md",
+    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Programming languages/Python/Comments.md",
+    "Programming languages/Python/Comparatori.md",
     "Programming languages/Programming languages.md",
     "`int`.md",
     "Programming languages/Python.md",

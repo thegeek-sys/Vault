@@ -4,7 +4,7 @@ Programming language: "[[Python]]"
 Related: "[[String]]"
 Completed: true
 ---
-
+## Introduction
 Le stringhe, essendo più complesse, possono essere interpretate come un vettore, dunque:
 
 |char.|f|l|a|v|i|o|
@@ -20,6 +20,7 @@ print(len(nome)) # -> 6
 '''
 ```
 
+## Usecase
 Posso usare `[srt:end:step]` per fare lo slice all'interno di una stringa. Se non metto lo `step` questo sarà uguale a 1 ma se lo configuro negativo questo conterà in direzione contraria
 
 ```python
