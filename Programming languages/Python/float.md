@@ -6,7 +6,7 @@ Completed:
 ---
 ---
 ## Introduction
-Il tipo float (floating point) in Python che ci permette di rappresentare numeri con la virgola
+Il tipo `float` (floating point) in Python che ci permette di rappresentare numeri con la virgola
 
 ```python
 type(5.5) # -> <class 'float'> print(float(5)) # -> 5.0

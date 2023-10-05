@@ -11,7 +11,7 @@ Completed:
 3. [Immutabilità](#Immutabilit%C3%A0)
 4. [Slicing](#slicing)
 ---
-## Introduzione
+## Introduction
 Il tipo `str` (string) in Python che ci permette di rappresentare sequenze di caratteri
 
 ```python

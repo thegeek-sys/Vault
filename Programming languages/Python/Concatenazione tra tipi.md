@@ -2,9 +2,9 @@
 Created: 2023-10-05
 Programming language: "[[Python]]"
 Related:
-  - "[[String]]"
-  - "[[Integer]]"
-Completed:
+  - "[[str]]"
+  - "[[int]]"
+Completed: 
 ---
 ---
 Moltiplicando una `str` per un qualsiasi `int`, la `str` mi si duplicherà `int` volte

@@ -7,9 +7,10 @@
 - 
 
 **Data types:**
-- [[Integer]]
-- [[Floating Point]]
-- [[String]]
+- [[int]]
+- [[float]]
+- [[str]]
+- [[NoneType]]
 - 
 
 **Methods**

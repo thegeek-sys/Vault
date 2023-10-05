@@ -24,5 +24,11 @@
   "Plugin@@Surfing-bookmark-bar-hide": false,
   "Appearance-dark@@background-underlying-select-dark": "background-underlying-defalut-dark",
   "Appearance-dark@@theme-dark-style-select": "theme-dark-background-darker",
-  "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-macchiato"
+  "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-macchiato",
+  "shimmering-focus@@hide-settings-button": false,
+  "shimmering-focus@@show-sidebar-header-buttons": false,
+  "shimmering-focus@@show-ribbon": true,
+  "shimmering-focus@@show-new-tab-button": true,
+  "shimmering-focus@@show-tab-list-button": false,
+  "shimmering-focus@@show-sidebar-toggle-buttons": true
 }

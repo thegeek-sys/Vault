@@ -1,7 +1,7 @@
 ---
 Created: 2023-10-05
 Programming language: "[[Python]]"
-Related: "[[String]]"
+Related: "[[str]]"
 Completed: true
 ---
 ## Introduction
@@ -16,9 +16,10 @@ Attraverso le `[]` posso iterare all'interno della stringa
 nome = 'flavio' print(nome[0]) # -> 'f'
 print(len(nome)) # -> 6 
 '''
-!!ATTENZIONE!! l'iterazione della stringa inizia da 0 ma la lunghezza è data dal numero di char
+!!ATTENZIONE!! 
 '''
 ```
+!warning[[]]
 
 ## Usecase
 Posso usare `[srt:end:step]` per fare lo slice all'interno di una stringa. Se non metto lo `step` questo sarà uguale a 1 ma se lo configuro negativo questo conterà in direzione contraria
