@@ -1,15 +1,15 @@
 ---
 Created: 2023-10-05
 Programming language: "[[Python]]"
-Related: "[[slicing]]"
-Completed:
+Related: "[[Slicing]]"
+Completed: 
 ---
 ---
 ## Index
 1. [Whitespaces](#Whitespaces)
 2. [Escaping](#Escaping)
 3. [Immutabilità](#Immutabilit%C3%A0)
-4. [slicing](#slicing)
+4. [Slicing](#slicing)
 ---
 ## Introduzione
 Il tipo `str` (string) in Python che ci permette di rappresentare sequenze di caratteri
@@ -52,5 +52,5 @@ nome = str.lower(nome)
 print(nome) # -> 'python'
 print('p'+nome[1:]) # -> 'python'
 ```
-## slicing
-![[slicing]]
+## Slicing
+![[Slicing]]

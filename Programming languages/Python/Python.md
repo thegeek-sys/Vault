@@ -11,4 +11,4 @@
 - 
 
 **Methods**
-- [[slicing]]
+- [[Slicing]]
