@@ -3,6 +3,7 @@ Created: 2023-10-05
 Programming language: "[[Python]]"
 Related:
   - "[[Functions]]"
+  - "[[Special Variables]]"
 Completed:
 ---
 ---
