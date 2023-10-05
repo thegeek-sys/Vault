@@ -11,8 +11,12 @@
             "id": "6da40a3f0e050f7f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Programming languages/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Programming languages/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Programming languages/Python.md"
               }
             }
           }
@@ -140,11 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "6da40a3f0e050f7f",
   "lastOpenFiles": [
+    "Programming languages/Programming languages.md",
+    "Programming languages/Python.md",
+    "test",
+    "README.md",
     "Test.md",
     "Programming languages",
-    "Flet notes",
-    "README.md"
+    "Flet notes"
   ]
 }
