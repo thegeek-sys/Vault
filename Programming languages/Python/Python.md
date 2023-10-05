@@ -12,6 +12,7 @@
 - [[float]]
 - [[str]]
 - [[NoneType]]
+- [[Modules]]
 - 
 
 **Methods**

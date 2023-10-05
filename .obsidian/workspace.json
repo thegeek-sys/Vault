@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Namespace.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Namespace.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Namespace.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Namespace.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -151,11 +151,12 @@
   },
   "active": "03a9c376469cfaa1",
   "lastOpenFiles": [
+    "Modules.md",
     "Programming languages/Python/Python.md",
+    "Namespace.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/str.md",
-    "Namespace.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/NoneType.md",
     "Programming languages/Python/Slicing.md",

@@ -17,8 +17,21 @@ def funct():
 print(x) # -> 'python'
 ```
 
-Come possiamo notare ha più "importanza" la variabile definita all'inizio. La variabile `x` definita esternamente infatti fa parte del namespace `global` mentre le variabili definite internamente ad ogni funzioni hanno **ciascuna un proprio namespace** `local`
+Come possiamo notare ha più "importanza" la variabile definita all'inizio. La variabile `x` definita esternamente infatti fa parte del namespace `global` mentre le variabili definite internamente ad ogni funzioni hanno **ciascuna un proprio namespace** `local`. Per vederle possiamo utilizzare i comandi `globals()` e `locals()`
+```python
+x = 'main'
 
+def foobar(p):
+    x = 'pippo'
+    return locals()
+
+def func(a, b, c):
+    return locals()
+
+print(globals()) # elenco di tutte le globals
+print(foobar(2)) # -> {'p': 2, 'x': 'pippo'}
+print(func(1, 2, 3)) # -> {'a': 1, 'b': 2, 'c': 3}
+```
 ## Gerarchia Namespace
 Considerando la var **x**, l'ordine è:
 1. **Locale** → Se siamo dentro una funzione, l'interprete prima cerca nello scope piu interno quindi dentro la funzione.
