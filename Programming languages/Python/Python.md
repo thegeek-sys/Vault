@@ -1,11 +1,14 @@
 # Index
 
 **Basics:**
-- [[Python Variables]]
-- [[Python Comments]]
+- [[Variables]]
+- [[Comments]]
 
 **Data types:**
-- [[Python Integer]]
-- [[Python Floating Point]]
-- [[Python String]]
+- [[Integer]]
+- [[Floating Point]]
+- [[String]]
 - 
+
+**Methods**
+- [[slicing]]
