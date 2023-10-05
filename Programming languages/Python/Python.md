@@ -16,6 +16,18 @@
 - [[Modules]]
 - 
 
+**Statements**
+- [[if-else]]
+- [[with]]
+- [[try-except]]
+- [[Expression statements]]
+- 
+
+**Loops**
+- [[for]]
+- [[while]]
+- 
+
 **Methods**
 - [[Slicing]]
 
