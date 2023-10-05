@@ -5,5 +5,6 @@
 - [[Python Comments]]
 
 **Data types:**
-[[Python Integer]]
+- [[Python Integer]]
+- [[Python Floating Point]]
 
