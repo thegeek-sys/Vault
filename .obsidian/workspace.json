@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python.md",
+                "file": "Programming languages/Python/Python Variables.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python.md",
+                "file": "Programming languages/Python/Python Variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python.md",
+                "file": "Programming languages/Python/Python Variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python.md"
+                "file": "Programming languages/Python/Python Variables.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "6da40a3f0e050f7f",
   "lastOpenFiles": [
+    "Programming languages/Python/Python Comments.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Python Variables.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python.md",
+    "Programming languages/Python",
     "test",
     "README.md",
     "Test.md",
