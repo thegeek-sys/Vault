@@ -12,3 +12,7 @@
 
 **Methods**
 - [[Slicing]]
+
+**Operators**
+[[Concatenazione tra tipi]]
+[[Comparatori]]

@@ -23,5 +23,6 @@
   "Plugin@@Projects-bg-color": "Projects-bg-color-default",
   "Plugin@@Surfing-bookmark-bar-hide": false,
   "Appearance-dark@@background-underlying-select-dark": "background-underlying-defalut-dark",
-  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-darker"
+  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-darker",
+  "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-macchiato"
 }

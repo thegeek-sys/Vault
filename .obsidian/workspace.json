@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/String.md",
+                "file": "Comparatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/String.md",
+                "file": "Comparatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/String.md",
+                "file": "Comparatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/String.md"
+                "file": "Comparatori.md"
               }
             }
           }
@@ -164,6 +164,8 @@
   "active": "03a9c376469cfaa1",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
+    "Comparatori.md",
+    "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Slicing.md",
     "Programming languages/Python/String.md",
     "Programming languages/Python/Comments.md",

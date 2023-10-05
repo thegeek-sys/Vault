@@ -1,3 +1,10 @@
+---
+Created: 2023-10-05
+Programming language: "[[Python]]"
+Related: "[[String]]"
+Completed: true
+---
+
 Le stringhe, essendo più complesse, possono essere interpretate come un vettore, dunque:
 
 |char.|f|l|a|v|i|o|
