@@ -5,4 +5,4 @@
 - [[Python Comments]]
 
 **Data types:**
-[[]]
+`[[int]]`
