@@ -3,6 +3,8 @@
 **Basics:**
 - [[Variables]]
 - [[Comments]]
+- [[Functions]]
+- 
 
 **Data types:**
 - [[Integer]]
@@ -14,5 +16,5 @@
 - [[Slicing]]
 
 **Operators**
-[[Concatenazione tra tipi]]
-[[Comparatori]]
+- [[Concatenazione tra tipi]]
+- [[Comparatori]]

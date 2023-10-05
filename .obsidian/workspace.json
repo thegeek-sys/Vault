@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6da40a3f0e050f7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Python/Floating Point.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "03a9c376469cfaa1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Comparatori.md",
+                "file": "Programming languages/Python/Slicing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Comparatori.md",
+                "file": "Programming languages/Python/Slicing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Comparatori.md",
+                "file": "Programming languages/Python/Slicing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Comparatori.md"
+                "file": "Programming languages/Python/Slicing.md"
               }
             }
           }
@@ -162,17 +149,18 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "03a9c376469cfaa1",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
+    "Functions.md",
+    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Programming languages/Python/Comparatori.md",
+    "Programming languages/Python/Floating Point.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/String.md",
     "Programming languages/Python/Slicing.md",
     "Programming languages/Python/Integer.md",
-    "Programming languages/Python/Floating Point.md",
-    "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Comments.md",
-    "Programming languages/Python/Comparatori.md",
     "Programming languages/Programming languages.md",
     "`int`.md",
     "Programming languages/Python.md",
