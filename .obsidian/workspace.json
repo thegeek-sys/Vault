@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "slicing.md",
+                "file": "Programming languages/Python/String.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "slicing.md",
+                "file": "Programming languages/Python/String.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "slicing.md",
+                "file": "Programming languages/Python/String.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "slicing.md"
+                "file": "Programming languages/Python/String.md"
               }
             }
           }
@@ -164,7 +164,7 @@
   "active": "03a9c376469cfaa1",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "slicing.md",
+    "Programming languages/Python/slicing.md",
     "Programming languages/Python/Comments.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Integer.md",

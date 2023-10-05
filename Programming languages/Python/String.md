@@ -1,7 +1,7 @@
 ---
 Created: 2023-10-05
 Programming language: "[[Python]]"
-Related: 
+Related: "[[slicing]]"
 Completed:
 ---
 ---
@@ -53,3 +53,4 @@ print(nome) # -> 'python'
 print('p'+nome[1:]) # -> 'python'
 ```
 ## slicing
+![[slicing]]
