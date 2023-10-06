@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Expression statements.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Expression statements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Expression statements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Expression statements.md"
               }
             }
           }
@@ -150,8 +151,10 @@
   },
   "active": "ca8454e67935c940",
   "lastOpenFiles": [
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Comparatori.md",
+    "Expression statements.md",
+    "Programming languages/Programming languages.md",
     "Programming languages/Python/for.md",
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/Functions.md",
@@ -161,7 +164,6 @@
     "Programming languages/Python/Namespace.md",
     "Programming languages/Python/str.md",
     "`__name__`.md",
-    "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Slicing.md",
     "Programming languages/Python/NoneType.md",
