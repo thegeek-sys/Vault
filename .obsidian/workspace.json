@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Programming languages/Python/str.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Programming languages/Python/str.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Programming languages/Python/str.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Programming languages.md"
+                "file": "Programming languages/Python/str.md"
               }
             }
           }
@@ -151,10 +150,12 @@
   },
   "active": "ca8454e67935c940",
   "lastOpenFiles": [
+    "Programming languages/Python/slicing.md",
+    "Programming languages/Python/str.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Programming languages.md",
     "Programming languages/Python/float.md",
     "Programming languages/Python/Test.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/for.md",
@@ -164,7 +165,6 @@
     "Programming languages/Python/Modules.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Namespace.md",
-    "Programming languages/Python/str.md",
     "`__name__`.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Slicing.md",
