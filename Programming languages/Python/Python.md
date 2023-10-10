@@ -1,14 +1,14 @@
 ***
 # Index
-
-**Basics:**
+### Basics
 - [[Variables]]
 - [[Comments]]
 - [[Functions]]
 - [[Special Variables]]
 - 
 
-**Data types:**
+### Data types
+#### Unchangeable
 - [[int]]
 - [[float]]
 - [[str]]
@@ -16,27 +16,28 @@
 - [[NoneType]]
 - [[Modules]]
 - [[complex]]
-- 
+#### Changeable
+- [[list]]
 
-**Statements**
+### Statements
 - [[if-else]]
 - [[with]]
 - [[try-except]]
 - [[Expression statements]]
 - 
 
-**Loops**
+### Loops
 - [[for]]
 - [[while]]
 - 
 
-**Methods**
+### Methods
 - [[Slicing]]
 
-**Operators**
+### Operators
 - [[Concatenazione tra tipi]]
 - [[Comparatori]]
 
-**Other**
+### Other
 - [[Namespace]]
 - 
