@@ -13,6 +13,7 @@
 - [[float]]
 - [[str]]
 - [[bool]]
+- [[tuple]]
 - [[NoneType]]
 - [[Modules]]
 - [[complex]]
@@ -31,7 +32,7 @@
 ##### Loops
 - [[for]]
 - [[while]]
-- 
+- [[Iterazione]]
 
 ##### Methods
 - [[Slicing]]
