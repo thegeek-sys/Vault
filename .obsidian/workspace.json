@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f658707a58fa6711",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Programming languages/Programming languages.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Programming languages/Programming languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Programming languages/Programming languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Programming languages/Programming languages.md"
               }
             }
           }
@@ -161,10 +148,10 @@
       "random-note:Open random note": false
     }
   },
-  "active": "f658707a58fa6711",
+  "active": "ca8454e67935c940",
   "lastOpenFiles": [
-    "Programming languages/Python/Python.md",
     "conflict-files-obsidian-git.md",
+    "Programming languages/Python/Python.md",
     "Flet-notes/10.10.md",
     "Flet-notes",
     "Programming languages/Python/Expression statements.md",
