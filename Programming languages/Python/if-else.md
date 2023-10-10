@@ -35,5 +35,3 @@ def confronto(x):
 for i in range(0,10):
 	confronto(i)
 ```
-
-Per verificare se molteplici condizioni in uno stesso `if` (in modo tale di evitare annidamenti che rendono il codice difficilmente leggibile) posso utilizzare anche gli 
