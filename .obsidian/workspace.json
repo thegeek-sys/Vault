@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "9f225eb12c37a55a",
+        "id": "98576b40b0607257",
         "type": "tabs",
         "children": [
           {
-            "id": "ca8454e67935c940",
+            "id": "0d07746f2b2ff596",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "b7a2b9e8c61982c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "10.10.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "10.10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "10.10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "10.10.md"
               }
             }
           }
@@ -148,11 +157,14 @@
       "random-note:Open random note": false
     }
   },
-  "active": "ca8454e67935c940",
+  "active": "b7a2b9e8c61982c0",
   "lastOpenFiles": [
-    "Programming languages/Python/Test.md",
-    "Programming languages/Python/Python.md",
+    "10.10.md",
+    "Flet-notes/Flet-notes.md",
     "Programming languages/Programming languages.md",
+    "Flet-notes",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Test.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/slicing.md",
     "Programming languages/Python/float.md",
@@ -176,7 +188,6 @@
     "Programming languages/Python",
     "test",
     "README.md",
-    "Test.md",
     "Programming languages",
     "Flet notes"
   ]
