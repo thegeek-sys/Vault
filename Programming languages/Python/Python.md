@@ -17,7 +17,6 @@
 - [[NoneType]]
 - [[Modules]]
 - [[complex]]
-- 
 ###### Changeable
 - [[list]]
 - 

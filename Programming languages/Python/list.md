@@ -2,7 +2,7 @@
 Created: 2023-10-10
 Programming language: "[[Python]]"
 Related:
-  - "[[Expression statements]]"
+  - "[[Comparatori e operatori di appartenenza]]"
 Completed:
 ---
 ---
@@ -37,4 +37,31 @@ lista_b = [6,7,8,9,0]
 lista_a+lista_b
 ```
 
-Per testare l’esistenza di un elemento in una lista utilizziamo [[Comparatori e operatori di appartenenza|in]]
+Per testare l’esistenza di un elemento in una lista utilizziamo [[Comparatori e operatori di appartenenza#`in`|in]]
+
+```python
+'python' in ['c', 'js', 'assembly', 'Python'].lower() # -> True
+```
+
+---
+## `append()`
+Per aggiungere elementi in coda alle liste viene utilizzata il metodo `append()` che modifica la lista **“in-place”** (non la devo riassegnare)
+
+```python
+lista = [1,2,3,5]
+lista.append(4)
+print(lista) # -> [1,2,3,5,4]
+
+lista = lista.append(4)
+print(lista) # -> None
+```
+
+---
+## `extend()`
+Il metodo `estend()` serve per aggiungere più valori in coda ad una lista (`append` mi permette di aggiungerne solo uno)
+```python
+t = ['a', 'b', 'c']
+s = ['d', 'e']
+t.extend(s)
+print(t) # -> ['a', 'b', 'c', 'd', 'e']
+```

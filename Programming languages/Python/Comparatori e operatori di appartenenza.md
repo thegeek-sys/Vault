@@ -5,7 +5,8 @@ Related:
   - "[[int]]"
   - "[[str]]"
   - "[[float]]"
-Completed: 
+  - "[[list]]"
+Completed:
 ---
 ---
 ## `is`
