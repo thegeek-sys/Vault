@@ -7,7 +7,7 @@ Completed:
 ---
 ---
 ## Introduction
-Utilizzando gli  `if` statement posso utilizzare gli operatori di confronto che ci permette di eseguire del codice se il confronto risulta `True` e di saltarlo se invece il confronto è `False`
+Tramite gli  `if` statement posso utilizzare gli operatori di confronto per far compiere decisioni dal calcolatore. Se la condizione booleana è vera (`True`) eseguirà del codice e se è falsa (`False`) di saltarlo per eseguire le istruzioni all’interno dell’`else` (se presente).
 
 ```python
 def confronto(x):
