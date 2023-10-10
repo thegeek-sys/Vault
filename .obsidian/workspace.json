@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Programming languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Programming languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Programming languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/10.10.md"
+                "file": "Programming languages/Programming languages.md"
               }
             }
           }
@@ -150,10 +150,12 @@
   },
   "active": "ca8454e67935c940",
   "lastOpenFiles": [
+    "Programming languages/Python/str.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Variables.md",
+    "Flet-notes/10.10.md",
     "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
-    "Programming languages/Python/Python.md",
-    "Flet-notes/10.10.md",
     "Flet-notes",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Comparatori.md",
@@ -162,9 +164,7 @@
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Modules.md",
-    "Programming languages/Python/Variables.md",
     "Programming languages/Python/Namespace.md",
-    "Programming languages/Python/str.md",
     "`__name__`.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Slicing.md",
