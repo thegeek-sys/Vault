@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/10.10.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -150,34 +150,35 @@
   },
   "active": "ca8454e67935c940",
   "lastOpenFiles": [
+    "Programming languages/Python/int.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/str.md",
-    "Programming languages/Programming languages.md",
-    "Flet-notes/10.10.md",
-    "Programming languages/Python/Variables.md",
-    "conflict-files-obsidian-git.md",
-    "Flet-notes",
-    "Programming languages/Python/Expression statements.md",
+    "Programming languages/Python/float.md",
     "Programming languages/Python/Comparatori.md",
-    "Programming languages/Python/for.md",
+    "Programming languages/Python/Comments.md",
+    "Flet-notes/10.10.md",
+    "bool.md",
     "Programming languages/Python/if-else.md",
-    "Programming languages/Python/Functions.md",
-    "Programming languages/Python/Special Variables.md",
+    "Programming languages/Python/Variables.md",
+    "Logical operators.md",
     "Programming languages/Python/Modules.md",
-    "Programming languages/Python/Namespace.md",
-    "`__name__`.md",
-    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Programming languages/Python/Special Variables.md",
+    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Slicing.md",
     "Programming languages/Python/NoneType.md",
-    "Programming languages/Python/float.md",
-    "Programming languages/Python/int.md",
-    "Programming languages/Python/Comments.md",
+    "Programming languages/Python/Namespace.md",
+    "Programming languages/Python/str.md",
+    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Programming languages/Programming languages.md",
+    "conflict-files-obsidian-git.md",
+    "Flet-notes",
+    "Programming languages/Python/for.md",
+    "Programming languages/Python/Functions.md",
+    "`__name__`.md",
     "`int`.md",
     "Programming languages/Python.md",
     "Programming languages/Python",
     "test",
     "README.md",
-    "Test.md",
     "Programming languages",
     "Flet notes"
   ]

@@ -16,8 +16,10 @@
 - [[NoneType]]
 - [[Modules]]
 - [[complex]]
+- 
 #### Changeable
 - [[list]]
+- 
 
 ### Statements
 - [[if-else]]
@@ -37,6 +39,8 @@
 ### Operators
 - [[Concatenazione tra tipi]]
 - [[Comparatori]]
+- [[Logical operators]]
+- 
 
 ### Other
 - [[Namespace]]

@@ -3,6 +3,7 @@ Created: 2023-10-06
 Programming language: "[[Python]]"
 Related:
   - "[[for]]"
+  - "[[Logical operators]]"
 Completed:
 ---
 ---
@@ -19,6 +20,8 @@ def print_on_even(x):
 	print_on_even(10) # -> 10 è pari
 	print_on_even(7) # -> 7 è dispari
 ```
+
+Posso anche utilizzare gli operatori logici per concatenare più condizioni insieme, in modo tale di evitare annidamenti che rendono il codice difficilmente leggibile
 
 ## `elif`
 Posso differenziare maggiormente i dati in input attraverso lo statement `elif` (simile allo `switch case` degli altri linguaggi di programmazione)
