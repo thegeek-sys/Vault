@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -163,6 +163,8 @@
   "active": "ca8454e67935c940",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Comparatori e operatori di appartenenza.md",
+    "Programming languages/Python/if-else.md",
     "Flet-notes/10.10.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Python/Slicing.md",
@@ -170,9 +172,7 @@
     "Programming languages/Python/int.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/float.md",
-    "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/Comments.md",
-    "Programming languages/Python/if-else.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Logical operators.md",
     "Programming languages/Python/Modules.md",

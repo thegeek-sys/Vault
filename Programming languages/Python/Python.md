@@ -38,7 +38,7 @@
 
 ##### Operators
 - [[Concatenazione tra tipi]]
-- [[Comparatori]]
+- [[Comparatori e operatori di appartenenza]]
 - [[Logical operators]]
 - 
 
