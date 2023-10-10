@@ -9,7 +9,8 @@ Completed:
 Il tipo `float` (floating point) in Python che ci permette di rappresentare numeri con la virgola.
 
 ```python
-type(5.5) # -> <class 'float'> print(float(5)) # -> 5.0
+type(5.5) # -> <class 'float'>
+print(float(5)) # -> 5.0
 ```
 
 Per rappresentare numeri estremamente complessi Python utilizza una particolare compressione che tramite una serie di matrici concatenate mi permette di rappresentare numeri superiori a quello che mi permetterebbe l'architettura del mio pc.

@@ -1,8 +1,0 @@
----
-Created: 2023-10-10
-Programming language: "[[Python]]"
-Related: 
-Completed:
----
----
-## Introduction
