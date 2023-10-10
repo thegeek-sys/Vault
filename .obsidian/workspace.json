@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/10.10.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/10.10.md"
+                "file": "Programming languages/Python/Comparatori.md"
               }
             }
           }
@@ -150,16 +150,16 @@
   },
   "active": "b7a2b9e8c61982c0",
   "lastOpenFiles": [
-    "Programming languages/Python/if-else.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Comparatori.md",
+    "Flet-notes/10.10.md",
+    "Programming languages/Python/if-else.md",
     "Programming languages/Python/int.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Namespace.md",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Programming languages.md",
-    "Flet-notes/10.10.md",
     "Programming languages/Python/Comments.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/Functions.md",
