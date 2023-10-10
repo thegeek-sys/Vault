@@ -97,4 +97,5 @@ fact(5, 1)
 ======> rit. da fact(3), fact_n 6
 ====> rit. da fact(4), fact_n 24
 ==> rit. da fact(5), fact_n 120
+120
 ```

@@ -7,7 +7,21 @@ Completed:
 ---
 ---
 ## Introduction
-Utilizzando gli  `if` statement posso utilizzare gli operatori di confronto che ci permette di eseguire del codice se il confronto risulta `True` e di saltarlo se invece il confronto è `False`
+Tramite gli  `if` statement posso utilizzare gli operatori di confronto per far compiere decisioni dal calcolatore. Se la condizione booleana è vera (`True`) eseguirà del codice e se è falsa (`False`) di saltarlo per eseguire le istruzioni all’interno dell’`else` (se presente).
+
+```python
+def print_on_even(x):
+	if x % 2 == 0:
+		print(x, 'è pari')
+	else:
+		print(x, 'è dispari')
+
+	print_on_even(10) # -> 10 è pari
+	print_on_even(7) # -> 7 è dispari
+```
+
+## `elif`
+Posso differenziare maggiormente i dati in input attraverso lo statement `elif` (simile allo `switch case` degli altri linguaggi di programmazione)
 
 ```python
 def confronto(x):

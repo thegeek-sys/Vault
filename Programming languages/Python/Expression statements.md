@@ -6,6 +6,7 @@ Completed:
 ---
 ---
 ## `pass`
+Istruzione che non dà alcun output (Python fa finta che non ci sia nulla)
 
 ---
 ## `del`

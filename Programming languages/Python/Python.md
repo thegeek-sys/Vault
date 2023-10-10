@@ -12,8 +12,10 @@
 - [[int]]
 - [[float]]
 - [[str]]
+- [[bool]]
 - [[NoneType]]
 - [[Modules]]
+- [[complex]]
 - 
 
 **Statements**
