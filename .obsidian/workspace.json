@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -148,11 +148,11 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "ca8454e67935c940",
   "lastOpenFiles": [
+    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Comparatori.md",
-    "Programming languages/Python/Expression statements.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/for.md",
     "Programming languages/Python/if-else.md",
