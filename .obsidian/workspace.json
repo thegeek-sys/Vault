@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/if-else.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/if-else.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/if-else.md",
+                "file": "Programming languages/Python/Comparatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/if-else.md"
+                "file": "Programming languages/Python/Comparatori.md"
               }
             }
           }
@@ -151,8 +151,10 @@
   "active": "b7a2b9e8c61982c0",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/Special Variables.md",
+    "Programming languages/Python/int.md",
     "Programming languages/Python/Variables.md",
+    "Programming languages/Python/if-else.md",
+    "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Namespace.md",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Programming languages.md",
@@ -167,13 +169,11 @@
     "Programming languages/Python/float.md",
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/for.md",
-    "Programming languages/Python/if-else.md",
     "Programming languages/Python/Modules.md",
     "`__name__`.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/Slicing.md",
     "Programming languages/Python/NoneType.md",
-    "Programming languages/Python/int.md",
     "`int`.md",
     "Programming languages/Python.md",
     "Programming languages/Python",

@@ -21,7 +21,7 @@ def print_on_even(x):
 ```
 
 ## `elif`
-Posso concatenare più condizioni di un `if` attraverso lo statement `elif` (simile allo `switch case` degli altri linguaggi di programmazione)
+Posso differenziare maggiormente i dati in input attraverso lo statement `elif` (simile allo `switch case` degli altri linguaggi di programmazione)
 
 ```python
 def confronto(x):
@@ -35,3 +35,5 @@ def confronto(x):
 for i in range(0,10):
 	confronto(i)
 ```
+
+Per verificare se molteplici condizioni in uno stesso `if` (in modo tale di evitare annidamenti che rendono il codice difficilmente leggibile) posso utilizzare anche gli 
