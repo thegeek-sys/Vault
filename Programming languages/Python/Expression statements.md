@@ -22,3 +22,4 @@ Istruzione che non dà alcun output (Python fa finta che non ci sia nulla)
 
 ---
 ## `break`
+Questa keyword permettere di interrompere un ciclo o l’iterazione corrente quando si verifica una determinata condizione
