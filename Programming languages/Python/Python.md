@@ -34,6 +34,7 @@
 - [[Iterazione]]
 
 ##### Methods
+- [[str methods]]
 - [[Slicing]]
 
 ##### Operators

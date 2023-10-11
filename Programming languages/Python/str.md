@@ -6,10 +6,13 @@ Completed:
 ---
 ---
 ## Index
-1. [Whitespaces](#Whitespaces)
-2. [Escaping](#Escaping)
-3. [Immutabilità](#Immutabilit%C3%A0)
-4. [Slicing](#slicing)
+
+1. [[#Introduction|Introduction]]
+2. [[#Whitespaces|Whitespaces]]
+3. [[#Escaping|Escaping]]
+4. [[#Immutabilità|Immutabilità]]
+5. [[#Slicing|Slicing]]
+
 ---
 ## Introduction
 Il tipo `str` (string) in Python che ci permette di rappresentare sequenze di caratteri
@@ -20,16 +23,9 @@ type("Ciao") # -> <class 'str'>
 print(str(7)) # -> '7'
 ```
 ---
-## Methods
-#### `str.strip()`
-Il metodo `strip()` rimuove eventuali spazi all’inizio e alla fine di una stringa
+![[str methods#Methods]]
 
-#### `str.split()`
-Il metodo `split()` divide una stringa in corrispondenza del separatore specificato e restituisce una `list` di sottostringhe.
-
-#### `str.replace()`
-Il metodo `replace()` sostituisce una frase specificata (ogni volta che si presenta nella stringa) con un'altra frase specificata
-
+---
 ## Whitespaces
 Gli **whitespaces** sono delle particolari sequenze di caratteri che ci permettono di formattare l'output in modo particolare (es. andare a capo), per vedere tutti gli whitespace mi basta fare
 
