@@ -28,13 +28,14 @@ print(numbers) # -> [0, 1, 2, 3, 4]
 [None]*5 # -> [None, None, None, None, None]
 ```
 
-Nelle `list`, a differenza della stringhe, `is` e `==` hanno una diversa funzione, infatti facendo una copia di una lista, questa sarà assegnata a una diversa locazione di memoria, nonostante abbia elementi identici (due stringhe uguali sono assegnate alla stessa locazione di memoria). Le liste sono inoltre valutate `False` solo quando 
+Nelle `list`, a differenza della stringhe, `is` e `==` hanno una diversa funzione, infatti facendo una copia di una lista, questa sarà assegnata a una diversa locazione di memoria, nonostante abbia elementi identici (due stringhe uguali sono assegnate alla stessa locazione di memoria). Le liste sono inoltre valutate `False` solo quando la lista è vuota
 
  ```python
 lista_a = [1,2,3,4,5]
 lista_b = [6,7,8,9,0]
 
 lista_a+lista_b
+bool([0]) # -> True
 ```
 
 Per testare l’esistenza di un elemento in una lista utilizziamo [[Comparatori e operatori di appartenenza#`in`|in]]
