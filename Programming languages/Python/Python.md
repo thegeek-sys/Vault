@@ -5,6 +5,7 @@
 - [[Comments]]
 - [[Functions]]
 - [[Special Variables]]
+- [[Native Functions]]
 - 
 
 ##### Data types

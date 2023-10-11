@@ -15,11 +15,3 @@ Il metodo `split()` divide una stringa in corrispondenza del separatore specific
 
 #### `str.replace()`
 Il metodo `replace()` sostituisce una frase specificata (ogni volta che si presenta nella stringa) con un'altra frase specificata
-
----
-## Functions
-#### `ord()`
-La funzione `ord()` ritorna il codice Unicode di un carattere dato come argomento
-
-#### `chr()`
-La funzione `chr()` ritorna il carattere corrispondente all’Unicode dato come argomento
