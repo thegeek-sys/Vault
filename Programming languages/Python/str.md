@@ -8,10 +8,11 @@ Completed:
 ## Index
 
 1. [[#Introduction|Introduction]]
-2. [[#Whitespaces|Whitespaces]]
-3. [[#Escaping|Escaping]]
-4. [[#Immutabilità|Immutabilità]]
-5. [[#Slicing|Slicing]]
+1. [[#methods|Methods]]
+1. [[#Whitespaces|Whitespaces]]
+1. [[#Escaping|Escaping]]
+1. [[#Immutabilità|Immutabilità]]
+1. [[#Slicing|Slicing]]
 
 ---
 ## Introduction
@@ -23,6 +24,7 @@ type("Ciao") # -> <class 'str'>
 print(str(7)) # -> '7'
 ```
 ---
+## Methods
 ![[str methods#Methods]]
 
 ---
