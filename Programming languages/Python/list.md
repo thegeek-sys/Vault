@@ -28,7 +28,7 @@ print(numbers) # -> [0, 1, 2, 3, 4]
 [None]*5 # -> [None, None, None, None, None]
 ```
 
-Nelle `list`, a differenza della stringhe, `is` e `==` hanno una diversa funzione, infatti facendo una copia di una lista, questa sarà assegnata a una diversa locazione di memoria, nonostante abbia elementi identici (due stringhe uguali sono assegnate alla stessa locazione di memoria)
+Nelle `list`, a differenza della stringhe, `is` e `==` hanno una diversa funzione, infatti facendo una copia di una lista, questa sarà assegnata a una diversa locazione di memoria, nonostante abbia elementi identici (due stringhe uguali sono assegnate alla stessa locazione di memoria). Le liste sono inoltre valutate `False` solo quando 
 
  ```python
 lista_a = [1,2,3,4,5]
