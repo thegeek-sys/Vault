@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/str.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/str.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/str.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md"
+                "file": "Programming languages/Python/str.md"
               }
             }
           }
@@ -151,8 +152,10 @@
   "active": "b7a2b9e8c61982c0",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/list.md",
+    "Programming languages/Python/Special Variables.md",
     "Programming languages/Programming languages.md",
+    "Programming languages/Python/Expression statements.md",
+    "Programming languages/Python/list.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Python/Logical operators.md",
@@ -163,9 +166,7 @@
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/int.md",
     "Programming languages/Python/Variables.md",
-    "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Namespace.md",
-    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Comments.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/Functions.md",

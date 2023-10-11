@@ -20,6 +20,10 @@ type("Ciao") # -> <class 'str'>
 print(str(7)) # -> '7'
 ```
 ---
+## Methods
+#### `str.split()`
+
+
 ## Whitespaces
 Gli **whitespaces** sono delle particolari sequenze di caratteri che ci permettono di formattare l'output in modo particolare (es. andare a capo), per vedere tutti gli whitespace mi basta fare
 
