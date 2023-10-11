@@ -21,8 +21,11 @@ print(str(7)) # -> '7'
 ```
 ---
 ## Methods
-#### `str.split()`
+#### `str.strip()`
+Il metodo `strip()` rimuove eventuali spazi all’inizio e alla fine di una stringa
 
+#### `str.split()`
+Il metodo `split()` divide una stringa in corrispondenza del separatore specificato e restituisce una `list` di sottostringhe.
 
 ## Whitespaces
 Gli **whitespaces** sono delle particolari sequenze di caratteri che ci permettono di formattare l'output in modo particolare (es. andare a capo), per vedere tutti gli whitespace mi basta fare
