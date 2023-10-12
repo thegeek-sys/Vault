@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/for.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/for.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/12.10.md"
+                "file": "Programming languages/Python/for.md"
               }
             }
           }
@@ -162,11 +161,11 @@
       "random-note:Open random note": false
     }
   },
-  "active": "626b4bae4dcf5663",
+  "active": "69e907849b017338",
   "lastOpenFiles": [
+    "Flet-notes/12.10.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Variables.md",
-    "Flet-notes/12.10.md",
     "Programming languages/Python/for.md",
     "Programming languages/Python/Iterazione.md",
     "Programming languages/Python/list methods.md",
