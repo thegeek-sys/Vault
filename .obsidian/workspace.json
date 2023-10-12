@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Flet-notes/12.10.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Flet-notes/12.10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Flet-notes/12.10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md"
+                "file": "Flet-notes/12.10.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "69e907849b017338",
   "lastOpenFiles": [
+    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Special Variables.md",
     "Flet-notes/12.10.md",
@@ -176,7 +177,6 @@
     "Programming languages/Python/str methods.md",
     "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
-    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Python/Logical operators.md",
