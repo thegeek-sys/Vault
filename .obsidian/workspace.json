@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Native Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Native Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Native Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/12.10.md"
+                "file": "Programming languages/Python/Native Functions.md"
               }
             }
           }
@@ -162,12 +163,12 @@
   },
   "active": "69e907849b017338",
   "lastOpenFiles": [
-    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/Special Variables.md",
-    "Flet-notes/12.10.md",
-    "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/for.md",
+    "Flet-notes/12.10.md",
+    "Programming languages/Python/Expression statements.md",
+    "Programming languages/Python/Special Variables.md",
+    "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Iterazione.md",
     "Programming languages/Python/list methods.md",
