@@ -5,6 +5,7 @@
 - [[Comments]]
 - [[Functions]]
 - [[Special Variables]]
+- [[Native Functions]]
 - 
 
 ##### Data types
@@ -34,6 +35,7 @@
 - [[Iterazione]]
 
 ##### Methods
+- [[str methods]]
 - [[Slicing]]
 
 ##### Operators
