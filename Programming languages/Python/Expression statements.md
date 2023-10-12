@@ -19,6 +19,7 @@ Istruzione che non dà alcun output (Python fa finta che non ci sia nulla)
 
 ---
 ## `continue`
+Salta l’iterazione corrente
 
 ---
 ## `break`
