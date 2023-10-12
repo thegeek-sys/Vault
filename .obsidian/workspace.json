@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Iterazione.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 220.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Iterazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Iterazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/12.10.md"
+                "file": "Programming languages/Python/Iterazione.md"
               }
             }
           }
@@ -152,8 +151,9 @@
   "active": "3f5bd31b849d22d0",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "Flet-notes/12.10.md",
     "Programming languages/Programming languages.md",
+    "Programming languages/Python/Iterazione.md",
+    "Flet-notes/12.10.md",
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/Native Functions.md",
@@ -162,7 +162,6 @@
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Python/Logical operators.md",
-    "Programming languages/Python/Iterazione.md",
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
     "Flet-notes/10.10.md",
     "Programming languages/Python/Comparatori.md",
