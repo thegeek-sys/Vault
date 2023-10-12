@@ -15,7 +15,7 @@ tabella in markdown syntax. In questo caso per iterare abbiamo usato l'operatore
 che ripete la stringa n volte.
 - E' possibile iterare anche con la ricorsione come abbiamo appena visto (soprattutto nei casi in
 cui il problema si risolve bene ricorsivamente)
-- E' poi possibile iterare con dei costrutti specifici che si chiamano CICLI o LOOP
+- E' poi possibile iterare con dei costrutti specifici che si chiamano CICLI ([[for]], [[while]]) o LOOP
 - E' possibile anche iterare con programmazione funzionale (`map`, `lambda`, `filter`)
 
 ---
