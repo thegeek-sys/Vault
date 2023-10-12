@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md",
+                "file": "Flet-notes/12.10.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md",
+                "file": "Flet-notes/12.10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md",
+                "file": "Flet-notes/12.10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md"
+                "file": "Flet-notes/12.10.md"
               }
             }
           }
@@ -163,12 +163,14 @@
   },
   "active": "69e907849b017338",
   "lastOpenFiles": [
+    "Programming languages/Python/while.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/with.md",
+    "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/for.md",
     "Flet-notes/12.10.md",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Special Variables.md",
-    "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Iterazione.md",
     "Programming languages/Python/list methods.md",
@@ -187,8 +189,6 @@
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/int.md",
     "Programming languages/Python/Namespace.md",
-    "Programming languages/Python/Comments.md",
-    "Programming languages/Python/Functions.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
