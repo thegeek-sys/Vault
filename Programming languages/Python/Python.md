@@ -37,6 +37,8 @@
 ##### Methods
 - [[str methods]]
 - [[Slicing]]
+- [[list methods]]
+- 
 
 ##### Operators
 - [[Concatenazione tra tipi]]
