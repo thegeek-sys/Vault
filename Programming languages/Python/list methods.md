@@ -23,7 +23,8 @@ Il metodo `estend()` serve per aggiungere più valori in coda ad una lista (`app
 ```python
 t = ['a', 'b', 'c']
 s = ['d', 'e']
-t.extend(s)
+u = ['f', 'g']
+t.extend(s, u)
 print(t) # -> ['a', 'b', 'c', 'd', 'e']
 ```
 

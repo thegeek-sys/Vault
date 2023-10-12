@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "69e907849b017338",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/list methods.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "626b4bae4dcf5663",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/12.10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/list.md",
+                "file": "Programming languages/Python/list methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/list.md",
+                "file": "Programming languages/Python/list methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/list.md"
+                "file": "Programming languages/Python/list methods.md"
               }
             }
           }
@@ -148,16 +174,17 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "69e907849b017338",
   "lastOpenFiles": [
-    "Programming languages/Python/str.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Flet-notes/12.10.md",
     "Programming languages/Python/list methods.md",
+    "Programming languages/Python/str.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/list.md",
     "Programming languages/Python/Iterazione.md",
     "Programming languages/Programming languages.md",
-    "Flet-notes/12.10.md",
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/Expression statements.md",
@@ -176,7 +203,6 @@
     "Programming languages/Python/Functions.md",
     "Flet-notes/Flet-notes.md",
     "Flet-notes",
-    "Programming languages/Python/Test.md",
     "Programming languages/Python",
     "test",
     "Programming languages",
