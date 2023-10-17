@@ -4,11 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "98576b40b0607257",
+        "id": "a1f70ac7ab1a04e1",
         "type": "tabs",
         "children": [
           {
             "id": "b7a2b9e8c61982c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "98576b40b0607257",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6db038554bdf29fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -65,12 +83,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/12.10.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -151,15 +169,17 @@
   },
   "active": "b7a2b9e8c61982c0",
   "lastOpenFiles": [
-    "Programming languages/Python/Expression statements.md",
+    "Flet-notes/12.10.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/float.md",
-    "Untitled.canvas",
+    "Programming languages/Python/Untitled.md",
+    "Programming languages/Programming languages.md",
     "2023-10-17.md",
+    "Untitled.canvas",
+    "Programming languages/Python/Expression statements.md",
+    "Programming languages/Python/float.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/while.md",
     "Programming languages/Python/list methods.md",
-    "Flet-notes/12.10.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/list.md",
@@ -169,7 +189,6 @@
     "Programming languages/Python/Logical operators.md",
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Python/Iterazione.md",
@@ -177,7 +196,6 @@
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/int.md",
-    "Programming languages/Python/Variables.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
