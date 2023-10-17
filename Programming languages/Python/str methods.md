@@ -36,3 +36,6 @@ s = '5'
 o = s.zfill(3)
 print(o) # -> '005'
 ```
+
+#### `str.find(str)`
+Il metodo `find()` resitituisce 
