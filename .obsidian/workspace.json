@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/list methods.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,11 +169,11 @@
   },
   "active": "69e907849b017338",
   "lastOpenFiles": [
-    "Programming languages/Python/Expression statements.md",
-    "Programming languages/Python/Python.md",
-    "Programming languages/Python/str methods.md",
-    "Flet-notes/2023-10-17.md",
     "Programming languages/Python/list methods.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Expression statements.md",
+    "Flet-notes/2023-10-17.md",
+    "Programming languages/Python/str methods.md",
     "Programming languages/Python/while.md",
     "Flet-notes/12.10.md",
     "Programming languages/Python/Untitled.md",

@@ -51,3 +51,5 @@ t = ['a', 'b', 'c', 'd', 'e']
 del t[0]
 print(t) # -> ['b', 'c', 'd', 'e]
 ```
+
+#### `list.clear()`
