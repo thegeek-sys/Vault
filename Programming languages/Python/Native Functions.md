@@ -40,8 +40,8 @@ for i, elem in enumerate(numb):
 # 4 ) 700
 
 numb = [(1,2),]*10
-for i, (dx, sx) elem in enumerate(numb):
+for i, (dx, sx) in enumerate(numb):
 # sto mettendo le parentesi per far capire a python che sto analizzando una tupla
-	print(i,')',dx,sx)
+	print(i,')',dx,sx) # -> 0 ) 1 2
 ```
 
