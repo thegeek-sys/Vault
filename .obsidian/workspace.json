@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Flet-notes/2023-10-17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Flet-notes/2023-10-17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md"
+                "file": "Flet-notes/2023-10-17.md"
               }
             }
           }
@@ -167,8 +167,9 @@
       "random-note:Open random note": false
     }
   },
-  "active": "c02ab9cf19225a5f",
+  "active": "69e907849b017338",
   "lastOpenFiles": [
+    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/str methods.md",
     "Flet-notes/2023-10-17.md",
@@ -179,7 +180,6 @@
     "Programming languages/Python/with.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/for.md",
-    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Iterazione.md",
