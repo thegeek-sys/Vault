@@ -38,4 +38,9 @@ print(o) # -> '005'
 ```
 
 #### `str.find(str)`
-Il metodo `find()` resitituisce 
+Il metodo `find()` restituisce l’index della stringa o carattere ricercato in `str`
+```python
+s = 'ciao'
+print(s.find('a')) # -> 2
+```
+
