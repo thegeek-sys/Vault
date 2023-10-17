@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b1940f8bbe250d16",
+        "id": "98576b40b0607257",
         "type": "tabs",
         "children": [
           {
-            "id": "69e907849b017338",
+            "id": "b7a2b9e8c61982c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/12.10.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "626b4bae4dcf5663",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/12.10.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -77,11 +61,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
+    "width": 276.5,
     "collapsed": true
   },
   "right": {
@@ -98,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12.10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12.10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,17 +120,14 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Flet-notes/12.10.md"
-              }
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,34 +141,34 @@
       "random-note:Open random note": false
     }
   },
-  "active": "69e907849b017338",
+  "active": "b7a2b9e8c61982c0",
   "lastOpenFiles": [
-    "Programming languages/Python/while.md",
-    "Programming languages/Python/Python.md",
-    "Programming languages/Python/with.md",
-    "Programming languages/Python/Native Functions.md",
-    "Programming languages/Python/for.md",
-    "Flet-notes/12.10.md",
-    "Programming languages/Python/Expression statements.md",
-    "Programming languages/Python/Special Variables.md",
-    "Programming languages/Python/Variables.md",
-    "Programming languages/Python/Iterazione.md",
-    "Programming languages/Python/list methods.md",
-    "Programming languages/Python/list.md",
-    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Untitled.canvas",
+    "2023-10-17.md",
     "Programming languages/Python/str.md",
+    "Programming languages/Python/while.md",
+    "Programming languages/Python/list methods.md",
+    "Flet-notes/12.10.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/str methods.md",
-    "Programming languages/Programming languages.md",
-    "conflict-files-obsidian-git.md",
-    "Programming languages/Python/tuple.md",
-    "Programming languages/Python/bool.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Python/Special Variables.md",
+    "Programming languages/Python/Functions.md",
+    "Programming languages/Python/Namespace.md",
     "Programming languages/Python/Logical operators.md",
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
+    "Programming languages/Python/Concatenazione tra tipi.md",
+    "Programming languages/Programming languages.md",
+    "Programming languages/Python/Expression statements.md",
+    "Programming languages/Python/tuple.md",
+    "Programming languages/Python/bool.md",
+    "Programming languages/Python/Iterazione.md",
     "Flet-notes/10.10.md",
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/int.md",
-    "Programming languages/Python/Namespace.md",
+    "Programming languages/Python/Variables.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
