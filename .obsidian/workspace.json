@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b1940f8bbe250d16",
+        "id": "3df939537c93c254",
         "type": "tabs",
         "children": [
           {
@@ -13,19 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Flet-notes/2023-10-17.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "b1940f8bbe250d16",
+        "type": "tabs",
+        "children": [
           {
-            "id": "626b4bae4dcf5663",
+            "id": "c02ab9cf19225a5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/str methods.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/str methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12.10.md",
+                "file": "Programming languages/Python/str methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/12.10.md"
+                "file": "Programming languages/Python/str methods.md"
               }
             }
           }
@@ -161,20 +167,21 @@
       "random-note:Open random note": false
     }
   },
-  "active": "69e907849b017338",
+  "active": "c02ab9cf19225a5f",
   "lastOpenFiles": [
-    "Programming languages/Python/Untitled.md",
-    "Programming languages/Python/while.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/list methods.md",
+    "Flet-notes/2023-10-17.md",
+    "Programming languages/Python/while.md",
+    "Flet-notes/12.10.md",
+    "Programming languages/Python/Untitled.md",
     "Programming languages/Python/with.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/for.md",
-    "Flet-notes/12.10.md",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Iterazione.md",
-    "Programming languages/Python/list methods.md",
     "Programming languages/Python/list.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/str.md",
@@ -188,7 +195,6 @@
     "Flet-notes/10.10.md",
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/if-else.md",
-    "Programming languages/Python/int.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
