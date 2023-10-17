@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+## Introduction
+La precedenza di esecuzione degli operatori booleani è:
+1. `not`
+2. `and`
+3. `or`
+
+---
 ## `and`
 Ritorna `True` se entrambe le espressioni sono vere
 
