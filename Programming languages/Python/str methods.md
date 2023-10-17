@@ -23,6 +23,16 @@ print(s.split(', ')) # -> ['ciao', 'come', 'stai']
 
 #### `str.replace(str, str)`
 Il metodo `replace()` sostituisce una frase specificata (ogni volta che si presenta nella stringa) con un'altra frase specificata
+```python
+s = 'ciao pippo, ciao pluto'
+o = s.replace('ciao', 'hello')
+print(o) # -> 'hello pippo, hello pluto'
+```
 
 #### `str.zfill(int)`
 Il metodo `zfill()` aggiunge alla stringa tanti zeri sulla sinistra fino a raggiungere il numero indicato in `int`
+```python
+s = '5'
+o = s.zfill(3)
+print(o) # -> '005'
+```
