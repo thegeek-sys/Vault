@@ -29,7 +29,7 @@ print(t) # -> ['a', 'b', 'c', 'd', 'e']
 ```
 
 #### `list.remove()`
-La funzioine `remove()`serve il primo elemento che corrisponde all’oggetto dato
+Il metodo `remove()`serve il primo elemento che corrisponde all’oggetto dato
 ```python
 t = ['a', 'b', 'c', 'd', 'e', 'b']
 t.remove('b')
@@ -37,7 +37,7 @@ print(t) # -> ['a', 'c', 'd', 'e', 'b']
 ```
 
 #### `list.pop()`
-La funzione `pop()` mi permette di eliminare l’elemento corrispondente all’indice specificato e eventualmente di poterlo assegnare ad una variabile
+Il metodo `pop()` mi permette di eliminare l’elemento corrispondente all’indice specificato e eventualmente di poterlo assegnare ad una variabile
 ```python
 t = ['a', 'b', 'c', 'd', 'e']
 removed = t.pop(1)

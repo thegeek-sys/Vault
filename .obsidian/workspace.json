@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-10-17.md",
+                "file": "Programming languages/Python/list methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-10-17.md",
+                "file": "Programming languages/Python/list methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-10-17.md"
+                "file": "Programming languages/Python/list methods.md"
               }
             }
           }
@@ -167,12 +167,12 @@
       "random-note:Open random note": false
     }
   },
-  "active": "69e907849b017338",
+  "active": "c02ab9cf19225a5f",
   "lastOpenFiles": [
+    "Flet-notes/2023-10-17.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Expression statements.md",
-    "Flet-notes/2023-10-17.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/while.md",
     "Flet-notes/12.10.md",
