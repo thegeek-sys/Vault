@@ -20,7 +20,7 @@ print(lista) # -> None
 ```
 
 #### `list.extend()`
-Il metodo `estend()` serve per aggiungere una lista in coda ad una lista (se provassi a fare la stessa cosa con `append()` mi ritroverà con delle liste concatenate)
+Il metodo `estend()` serve per aggiungere una lista in coda ad una lista (se provassi a fare la stessa cosa con `append()` mi ritroverò con delle liste concatenate)
 ```python
 t = ['a', 'b', 'c']
 s = ['d', 'e']
