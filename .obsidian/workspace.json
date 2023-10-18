@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/list methods.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/list methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md",
+                "file": "Programming languages/Python/list methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Expression statements.md"
+                "file": "Programming languages/Python/list methods.md"
               }
             }
           }
@@ -169,21 +169,21 @@
   },
   "active": "4e8baf45586dfb28",
   "lastOpenFiles": [
-    "Programming languages/Python/Python.md",
-    "Programming languages/Programming languages.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Python/list methods.md",
     "Flet-notes/2023-10-17.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/if-else.md",
+    "Programming languages/Python/Expression statements.md",
+    "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
     "Flet-notes/12.10.md",
     "Programming languages/Python/while.md",
     "Programming languages/Python/for.md",
-    "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/str methods.md",
-    "Programming languages/Python/list methods.md",
-    "Programming languages/Python/list.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/Logical operators.md",
-    "Programming languages/Python/if-else.md",
     "Programming languages/Python/Untitled.md",
     "2023-10-17.md",
     "Untitled.canvas",

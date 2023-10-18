@@ -23,6 +23,7 @@ def print_on_even(x):
 
 Posso anche utilizzare gli operatori logici per concatenare più condizioni insieme, in modo tale di evitare annidamenti che rendono il codice difficilmente leggibile
 
+---
 ## `elif`
 Posso differenziare maggiormente i dati in input attraverso lo statement `elif` (simile allo `switch case` degli altri linguaggi di programmazione)
 
@@ -37,4 +38,13 @@ def confronto(x):
 
 for i in range(0,10):
 	confronto(i)
+```
+
+---
+## Operatore ternario
+L’operatore ternario ci permettere di scrivere un `if-else` su una sola riga di codice. La sua sintassi è: `<valore_se_vero> if <condizione> else <valore_se_falso>`
+
+```python
+is_nice = True
+state = "nice" if is_nice else "not nice"
 ```

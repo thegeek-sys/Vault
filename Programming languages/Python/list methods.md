@@ -1,7 +1,9 @@
 ---
 Created: 2023-10-12
 Programming language: "[[Python]]"
-Related: []
+Related:
+  - "[[list methods]]"
+  - "[[list]]"
 Completed:
 ---
 ---
@@ -53,3 +55,19 @@ print(t) # -> ['b', 'c', 'd', 'e]
 ```
 
 #### `list.clear()`
+Il metodo `clear()` ci permette di rimuovere tutti gli elementi di una lista in-place
+
+#### `list.sort()`
+Il metodo `sort()` ci permette di ordinare in modo **stabile** (l’ordine parziale di due elementi uguali è mantenuto) tutti gli elementi di una lista in-place in modo crescente.
+> [!WARNING]
+> Possono essere ordinati solo stessi tipi
+
+
+#### `sorted(list)`
+La funzione `sorted()` ci permette di creare una copia ordinata di tutti gli elementi di una lista
+
+#### `lista.reverse()`
+Il metodo `reverse()` ci permette di invertire l’ordine di tutti gli elementi di una lista in-place
+
+#### `reversed(list)`
+La funzione `reversed()` ci permette di creare una copia ordinata al contrario di tutti gli elementi di una lista

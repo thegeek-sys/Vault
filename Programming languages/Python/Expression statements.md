@@ -32,6 +32,9 @@ vogliamo essere sicuri che una certa condizione sia vera possiamo inserire `asse
 - se `<condizione_che_vogliamo_sia_vera>` e' vera il flusso del programma prosegue
 - altrimenti assert rende un `AssertionError`
 ```python
+''' asser_main.py '''
 i = 0
 assert i > 0, 'Attenzione i è negativo o zero, i = ' + str(i)
+
+python ‐O assert_main.py # per non eseguire gli assert
 ```
