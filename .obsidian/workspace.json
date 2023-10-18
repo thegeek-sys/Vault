@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/list methods.md",
+                "file": "Flet-notes/2023-10-17.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-10-17.md",
+                "file": "Programming languages/Programming languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -104,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/list methods.md",
+                "file": "Programming languages/Programming languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/list methods.md",
+                "file": "Programming languages/Programming languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/list methods.md"
+                "file": "Programming languages/Programming languages.md"
               }
             }
           }
@@ -167,15 +166,16 @@
       "random-note:Open random note": false
     }
   },
-  "active": "4e8baf45586dfb28",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
-    "Programming languages/Python/list.md",
-    "Programming languages/Python/list methods.md",
+    "Programming languages/Uni",
     "Flet-notes/2023-10-17.md",
+    "Programming languages/Python/list methods.md",
+    "Programming languages/Programming languages.md",
+    "Programming languages/Python/list.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/Expression statements.md",
-    "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
     "Flet-notes/12.10.md",
     "Programming languages/Python/while.md",
@@ -195,7 +195,6 @@
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/bool.md",
-    "Programming languages/Python/Iterazione.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
