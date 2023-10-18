@@ -6,7 +6,7 @@ Completed:
 ---
 ---
 ## `pass`
-Istruzione che non dà alcun output (Python fa finta che non ci sia nulla)
+Istruzione che non dà alcun output (Python fa finta che non ci sia nulla ma ci può evitare errori dati dalla sola definizione di una funzione)
 
 ---
 ## `del`
@@ -24,3 +24,6 @@ Salta l’iterazione corrente
 ---
 ## `break`
 Questa keyword permettere di interrompere un ciclo o l’iterazione corrente quando si verifica una determinata condizione
+
+---
+## `assert`

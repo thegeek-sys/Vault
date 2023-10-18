@@ -8,7 +8,6 @@ Completed:
 ## Methods
 #### `list.append()`
 Per aggiungere elementi in coda alle liste viene utilizzata il metodo `append()` che modifica la lista **“in-place”** (non la devo riassegnare)
-
 ```python
 lista = [1,2,3,5]
 lista.append(4)
@@ -30,7 +29,7 @@ print(t) # -> ['a', 'b', 'c', 'd', 'e']
 ```
 
 #### `list.remove()`
-La funzioine `remove()`serve il primo elemento che corrisponde all’oggetto dato
+Il metodo `remove()`serve il primo elemento che corrisponde all’oggetto dato
 ```python
 t = ['a', 'b', 'c', 'd', 'e', 'b']
 t.remove('b')
@@ -38,9 +37,19 @@ print(t) # -> ['a', 'c', 'd', 'e', 'b']
 ```
 
 #### `list.pop()`
-La funzione `pop()` mi permette di eliminare l’elemento corrispondente all’indice specificato e eventualmente di poterlo assegnare ad una variabile
+Il metodo `pop()` mi permette di eliminare l’elemento corrispondente all’indice specificato e eventualmente di poterlo assegnare ad una variabile
 ```python
 t = ['a', 'b', 'c', 'd', 'e']
 removed = t.pop(1)
 print(t,removed) # -> ['a', 'c', 'd', 'e] b
 ```
+
+#### `del list[int]`
+La funzione `del` eliminerà l’indice `int` della lista data
+```python
+t = ['a', 'b', 'c', 'd', 'e']
+del t[0]
+print(t) # -> ['b', 'c', 'd', 'e]
+```
+
+#### `list.clear()`
