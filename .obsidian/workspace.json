@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Uni/Struttura esame FDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Uni/Struttura esame FDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Uni/Struttura esame FDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Programming languages.md"
+                "file": "Uni/Struttura esame FDP.md"
               }
             }
           }
@@ -166,12 +166,16 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "0560cc7b85081e0b",
   "lastOpenFiles": [
+    "Uni/Uni.md",
+    "Uni/Struttura esame FDP.md",
+    "Programming languages/Programming languages.md",
+    "Uni",
+    "Nuova cartella",
     "Programming languages/Uni",
     "Flet-notes/2023-10-17.md",
     "Programming languages/Python/list methods.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/list.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/if-else.md",
@@ -194,7 +198,6 @@
     "Programming languages/Python/Namespace.md",
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
-    "Programming languages/Python/bool.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
