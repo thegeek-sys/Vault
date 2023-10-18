@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Programming languages/Python/Expression statements.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Programming languages/Python/Expression statements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Programming languages/Python/Expression statements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Programming languages.md"
+                "file": "Programming languages/Python/Expression statements.md"
               }
             }
           }
@@ -169,9 +169,9 @@
   },
   "active": "4e8baf45586dfb28",
   "lastOpenFiles": [
-    "Flet-notes/2023-10-17.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Programming languages.md",
+    "Flet-notes/2023-10-17.md",
     "conflict-files-obsidian-git.md",
     "Flet-notes/12.10.md",
     "Programming languages/Python/while.md",
