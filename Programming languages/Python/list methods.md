@@ -89,7 +89,7 @@ def len_and_value(elem):
 
 LS = sorted(L, key=len_and_value)
 print(LS) # -> ['e','gli','son','eroi','belli','tutti','giovani']
-		  # ha scambiato 'tutti' con 'belli'
+		  #     ha scambiato 'tutti' con 'belli'
 ```
 #### `lista.reverse()` e `reversed(list)`
 Il metodo `reverse()` ci permette di invertire l’ordine di tutti gli elementi di una lista in-place.
