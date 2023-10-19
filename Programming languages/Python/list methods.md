@@ -1,7 +1,9 @@
 ---
 Created: 2023-10-12
 Programming language: "[[Python]]"
-Related: []
+Related:
+  - "[[list methods]]"
+  - "[[list]]"
 Completed:
 ---
 ---
@@ -53,3 +55,41 @@ print(t) # -> ['b', 'c', 'd', 'e]
 ```
 
 #### `list.clear()`
+Il metodo `clear()` ci permette di rimuovere tutti gli elementi di una lista in-place
+
+#### `list.count(elem)`
+Il metodo `count()` ci restituirà il numero di `elem` presenti nella lista data
+
+#### `list.sort()` e `sorted(list)`
+> [!WARNING]
+> Possono essere ordinati solo liste composte da stessi tipi
+
+Il metodo `sort()` ci permette di ordinare in modo **stabile** (l’ordine parziale di due elementi uguali è mantenuto) tutti gli elementi di una lista in-place in modo crescente.
+La funzione `sorted()` ci permette di creare una copia ordinata di tutti gli elementi di una lista
+Entrambe queste metodologie supportando la key-word `reversed=True` (di default=`False`) che ci permette di ordinare una lista in modo decrescente e anche l’**ordinamento tramite chiave parziale**.
+L’ordinamento tramite chiave parziale ci permette di ordinare una lista a nostro piacimento basandosi sulle funzioni integrate in Python. Per esempio voglio ordinare una lista per lunghezza degli elementi
+
+```python
+L = ['gli', 'eroi', 'son', 'tutti', 'giovani', 'e', 'belli']
+LS = sorted(s, key=len) # a parità di lunghezza restituirà gli
+						#elementi nello stesso ordine di origine
+
+print(LS) # -> ['e','gli','son','eroi','tutti','belli','giovani']
+```
+
+Oltre a fare ciò è anche possibile concatenare diversi criteri di ordinamento. Se per esempio volessimo:
+- **1° criterio**꞉ Ordinami le stringhe in ordine crescente per LUNGHEZZA
+- **2° criterio**꞉ A parità di LUNGHEZZA, ordinale in modo alfabetico
+
+```python
+L = ['gli', 'eroi', 'son', 'tutti', 'giovani', 'e', 'belli']
+
+def len_and_value(elem):
+	return len(elem), elem
+
+LS = sorted(L, key=len_and_value)
+print(LS) # -> ['e','gli','son','eroi','belli','tutti','giovani']
+```
+#### `lista.reverse()` e `reversed(list)`
+Il metodo `reverse()` ci permette di invertire l’ordine di tutti gli elementi di una lista in-place.
+La funzione `reversed()` ci permette di creare una copia ordinata al contrario di tutti gli elementi di una lista.

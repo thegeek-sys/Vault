@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ea0dd20602bc163a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "b1940f8bbe250d16",
@@ -103,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Programming languages.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -166,8 +179,13 @@
       "random-note:Open random note": false
     }
   },
-  "active": "fe05b84484fa20b6",
+  "active": "ea0dd20602bc163a",
   "lastOpenFiles": [
+    "Programming languages/Programming languages.md",
+    "conflict-files-obsidian-git.md",
+    "Uni/Uni.md",
+    "Uni/Struttura esame FDP.md",
+    "Uni",
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/Python.md",
@@ -186,14 +204,10 @@
     "Programming languages/Python/list.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/str.md",
-    "Programming languages/Programming languages.md",
-    "conflict-files-obsidian-git.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Python/Logical operators.md",
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
-    "Flet-notes/10.10.md",
-    "Programming languages/Python/Comparatori.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",

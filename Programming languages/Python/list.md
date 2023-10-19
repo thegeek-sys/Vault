@@ -2,7 +2,7 @@
 Created: 2023-10-10
 Programming language: "[[Python]]"
 Related:
-  - "[[Comparatori e operatori di appartenenza]]"
+  - "[[list methods]]"
 Completed:
 ---
 ---
@@ -15,12 +15,17 @@ numebrs[4] = 40
 print(numbers) # -> [0,10,20,30,40]
 ```
 
-Come le tuple e le stringhe supportano lo slicing però attenzione a come lo si usa. L’operatore `*` viene spesso utilizzato per creare delle liste vuote che verranno successivamente popolate
+Come le tuple e le stringhe supportano lo slicing però attenzione a come lo si usa, può essere infatti anche usato come metodo per copiare una lista o sostituirla del tutto (l’operatore `=` creerà solamente un alias). L’operatore `*` viene spesso utilizzato per creare delle liste vuote che verranno successivamente popolate.
 
 ```python
 numbers = [0,10,20,30,4]
 numbers[1:2] = [1,2,3]
 print(numbers) # -> [0, 1, 2, 3, 10, 20, 30, 4]
+new_numbers = [8,9,10,11,12]
+numbers[:] = new_number # sostiuisco numbers nella sua interezza 
+						# con il contenuto di new_number in modo
+						# tale da mantenere invariato l'id di
+						# di memoria di numbers
 
 numbers[1:4] = [1,2,3]
 print(numbers) # -> [0, 1, 2, 3, 4]
