@@ -46,3 +46,13 @@ for i, (dx, sx) in enumerate(numb):
 	print(i,')',dx,sx) # -> 0 ) 1 2
 ```
 
+#### `zip(src, dst)`
+La funzione `zip` è un generatore che mi rende, date due sequenze, le **coppie allineate**
+
+```python
+languages = ['Java', 'Python', 'JavaScript']
+versions = [14, 3, 6]
+
+result = zip(languages, versions)
+print(list(result)) # -> [('Java', 14), ('Python', 3), ('JavaScript', 6)]
+```

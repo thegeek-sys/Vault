@@ -190,7 +190,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Python/list comprehension.md",
+                    "file": "Programming languages/Python/Python.md",
                     "mode": "source",
                     "source": false
                   }
@@ -208,8 +208,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 970,
-        "y": 147,
+        "x": 1042,
+        "y": 252,
         "width": 819,
         "height": 749,
         "maximize": false,
@@ -219,11 +219,11 @@
   },
   "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
-    "Programming languages/Python/list comprehension.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/list methods.md",
-    "Flet-notes/2023-10-19.md",
     "Programming languages/Python/Native Functions.md",
+    "Programming languages/Python/List Comprehension.md",
+    "Flet-notes/2023-10-19.md",
+    "Programming languages/Python/list methods.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/list.md",
     "Programming languages/Python/Variables.md",

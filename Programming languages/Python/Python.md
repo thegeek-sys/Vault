@@ -38,7 +38,7 @@
 - [[str methods]]
 - [[Slicing]]
 - [[list methods]]
-- [[list comprehension]]
+- [[List Comprehension]]
 - 
 
 ##### Operators
