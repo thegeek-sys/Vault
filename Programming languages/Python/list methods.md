@@ -7,7 +7,6 @@ Related:
 Completed:
 ---
 ---
-## Methods
 #### `list.append()`
 Per aggiungere elementi in coda alle liste viene utilizzata il metodo `append()` che modifica la lista **“in-place”** (non la devo riassegnare)
 ```python

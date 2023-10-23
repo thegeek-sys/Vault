@@ -51,7 +51,8 @@ Per testare l’esistenza di un elemento in una lista utilizziamo [[Comparatori 
 
 ---
 ## Methods
-![[list methods#Methods]]
+![[list methods]]
+
 
 ---
 ## Complessità delle operazioni su lista

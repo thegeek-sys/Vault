@@ -5,12 +5,19 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+1. [[#Introduction|Introduction]]
+2. [[#Caratteristiche dei set|Caratteristiche dei set]]
+3. [[#Operazioni sui set|Operazioni sui set]]
+
+---
 ## Introduction
 I tipi `set` in Python sono quelli che in matematica sono definiti **insiemi** infatti:
 - non hanno ordine
 - non hanno duplicati
 - sono mutabili, ma possono contenere solo elementi immutabili (non posso fare `set` di `list`)
-Per definirle si possono usare parentesi graffe `{}` oppure `set()`
+Per definirle si possono usare parentesi graffe `{}` oppure `set()`. Come tali i `set` sono dei tipi iterabili
 
 > [!Warning]
 > NOTA: Per creare set vuoti NON si può usare `{}` in quanto questa struttura dati crea un dizionario
@@ -61,3 +68,7 @@ Elementi di $\mathcal{A}$ non in $\mathcal{B}$ uniti agli elementi di $\mathcal{
 s ^ t # -> {2, 3, 6, 9}
 s.symmetric_difference(t)
 ```
+
+---
+## Metodi
+![[set methods]]
