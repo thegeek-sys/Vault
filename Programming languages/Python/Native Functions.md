@@ -26,6 +26,7 @@ La funzione `min()` mi restituisce l’oggetto con valore minore in una lista
 
 #### `enumerate(list)`
 Se vogliamo accedere all’elemento della lista e al suo corrispettivo indice ed enumerate mi permette di spacchettare una tupla in cui sono presenti indice ed oggetto di una lista
+
 ```python
 numb = [-1,-5,2,592,700]
 
