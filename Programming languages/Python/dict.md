@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+1. [[#Introduction|Introduction]]
+2. [[#Casi d’uso|Casi d’uso]]
+3. [[#Accedere e manipolare un dizionario|Accedere e manipolare un dizionario]]
+4. [[#Iterazione su un dizionario|Iterazione su un dizionario]]
+5. [[#Metodi|Metodi]]
+
+---
 ## Introduction
 I dizionari sono delle **mappature** o array associativi, posso infatti usare altri tipi diversi da interi come indici **univoci** (detti `keys`) per un dizionario (basta che siano non mutabili).
 Dunque i dizionari contengono:
@@ -102,3 +111,7 @@ for val in my_dict.values():
 
 # -> p y t h o n 3
 ```
+
+---
+## Metodi
+![[dict methods]]
