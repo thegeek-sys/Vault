@@ -19,5 +19,14 @@ Per definirle si possono usare parentesi graffe `{}` oppure `set()`
 my_set = {2, 1, 3 ,4}
 print(type(my_set), my_set) # -> <class 'set'> {1, 2, 3, 4}
 ```
+
+Posso inoltre creare un `set` che prenda in input una sequenza
+
+```python
+my_set = set([1, 2, 3, 4])
+print(type(my_set), my_set) # -> <class 'set'> {1, 2, 3, 4}
+```
 ## Caratteristiche dei set
-Sono veloci a **testare appartenenza** di un elemento nell'insieme $\approx \mathcal{O}(1)$ e ad **eliminare elementi duplicati**
+- Sono veloci a **testare appartenenza** di un elemento all'insieme $\approx \mathcal{O}(1)$ (per testarlo posso utilizzare la funzione `%timeit <istruzione_python>`) attraverso l’operatore `in`
+- **Eliminare elementi duplicati**
+- Sono utili a fare **operazioni di insiemistica** (unioni, intersezioni etc.)
