@@ -4,25 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2decddb2a741aaf6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "37f44a846783a3ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2023-10-19.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a676bf24f78aab45",
+        "id": "2ca747d6d7d1e906",
         "type": "tabs",
         "children": [
           {
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/list.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -104,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-10-19.md",
+                "file": "Programming languages/Python/list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-10-19.md",
+                "file": "Programming languages/Python/list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,16 +125,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-10-19.md"
+                "file": "Programming languages/Python/list.md"
               }
             }
+          },
+          {
+            "id": "781c5962ef8a8e55",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,14 +153,16 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
-      "random-note:Open random note": false
+      "random-note:Open random note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "37f44a846783a3ee",
+  "active": "0560cc7b85081e0b",
   "lastOpenFiles": [
+    "Flet-notes/2023-10-19.md",
+    "Programming languages/Python/list.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Variables.md",
-    "Flet-notes/2023-10-19.md",
     "Programming languages/Programming languages.md",
     "Uni/Struttura esame FDP.md",
     "Uni/Uni.md",
@@ -181,7 +172,6 @@
     "Programming languages/Uni",
     "Flet-notes/2023-10-17.md",
     "Programming languages/Python/list methods.md",
-    "Programming languages/Python/list.md",
     "Programming languages/Python/if-else.md",
     "Programming languages/Python/Expression statements.md",
     "Flet-notes/12.10.md",
