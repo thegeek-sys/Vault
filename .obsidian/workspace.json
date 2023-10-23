@@ -18,6 +18,14 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "009f0eaaccd36d04",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ]
       }
@@ -99,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-10-19.md",
+                "file": "Programming languages/Python/set.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-10-19.md",
+                "file": "Programming languages/Python/set.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-10-19.md"
+                "file": "Programming languages/Python/set.md"
               }
             }
           },
@@ -190,7 +198,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/set.md",
                     "mode": "source",
                     "source": false
                   }
@@ -210,22 +218,24 @@
         "direction": "vertical",
         "x": 1042,
         "y": 252,
-        "width": 819,
+        "width": 811,
         "height": 749,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "d6d4a6144f8b472d",
+  "active": "1de94a44949a8f21",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/Native Functions.md",
-    "Programming languages/Python/List Comprehension.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Python/set.md",
     "Flet-notes/2023-10-19.md",
+    "Programming languages/Python/str.md",
+    "Programming languages/Python/List Comprehension.md",
+    "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Functions.md",
-    "Programming languages/Python/list.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Programming languages.md",
     "Uni/Struttura esame FDP.md",
@@ -247,8 +257,6 @@
     "2023-10-17.md",
     "Untitled.canvas",
     "Programming languages/Python/float.md",
-    "Programming languages/Python/str.md",
-    "Programming languages/Python/Special Variables.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",

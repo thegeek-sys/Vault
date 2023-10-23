@@ -47,7 +47,8 @@ for i, (dx, sx) in enumerate(numb):
 ```
 
 #### `zip(src, dst)`
-La funzione `zip` è un generatore che mi rende, date due sequenze, le **coppie allineate**
+La funzione `zip` è un generatore che mi rende, date due sequenze, le **coppie allineate**. Di fatti prende due sequenze (della stessa lunghezza) e mi rendere una tupla con un carattere proveniente dal primo tipo iterabile e un carattere proveniente dal secondo tipo iterabile.
+Se sono di lunghezza diversa zip si interrompe sulla lista più corta
 
 ```python
 languages = ['Java', 'Python', 'JavaScript']

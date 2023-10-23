@@ -7,8 +7,7 @@ Related:
 Completed:
 ---
 ---
----
-# Introduction
+## Introduction
 La **List Comprehension** ci offre una sintassi più corta e veloce per quando di vuole creare una nuova lista basata sui valori di una lista già esistente (rispetto al consueto `for`)
 
 ```python
