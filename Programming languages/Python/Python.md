@@ -42,6 +42,7 @@
 - [[list methods]]
 - [[List Comprehension]]
 - [[set methods]]
+- [[dict methods]]
 - 
 
 ##### Operators
