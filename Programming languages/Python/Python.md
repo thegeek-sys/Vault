@@ -40,6 +40,7 @@
 - [[Slicing]]
 - [[list methods]]
 - [[List Comprehension]]
+- [[set methods]]
 - 
 
 ##### Operators
