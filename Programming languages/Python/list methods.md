@@ -61,11 +61,12 @@ Il metodo `clear()` ci permette di rimuovere tutti gli elementi di una lista in-
 Il metodo `count()` ci restituirà il numero di `elem` presenti nella lista data
 
 #### `list.sort()` e `sorted(list)`
+Il metodo `sort()` ci permette di ordinare in modo **stabile** (l’ordine parziale di due elementi uguali è mantenuto) tutti gli elementi di una lista in-place in modo crescente.
+La funzione `sorted()` ci permette di creare una copia ordinata di tutti gli elementi di una lista
+
 > [!WARNING]
 > Possono essere ordinati solo liste composte da stessi tipi
 
-Il metodo `sort()` ci permette di ordinare in modo **stabile** (l’ordine parziale di due elementi uguali è mantenuto) tutti gli elementi di una lista in-place in modo crescente.
-La funzione `sorted()` ci permette di creare una copia ordinata di tutti gli elementi di una lista
 Entrambe queste metodologie supportando la key-word `reversed=True` (di default=`False`) che ci permette di ordinare una lista in modo decrescente e anche l’**ordinamento tramite chiave parziale**.
 L’ordinamento tramite chiave parziale ci permette di ordinare una lista a nostro piacimento basandosi sulle funzioni integrate in Python. Per esempio voglio ordinare una lista per lunghezza degli elementi
 
@@ -90,6 +91,32 @@ def len_and_value(elem):
 LS = sorted(L, key=len_and_value)
 print(LS) # -> ['e','gli','son','eroi','belli','tutti','giovani']
 		  #     ha scambiato 'tutti' con 'belli'
+```
+##### Esempi
+**Problema: ordinare una lista per lunghezza delle stringhe, in caso si parità di lunghezza, in ordine INVERSO lessicografico**
+```python
+def len_inv_less(elem):
+	return -len(elem), elem
+
+L = ['gli', 'eroi', 'son', 'tutti', 'giovani', 'e', 'belli']
+LS = sorted(L, reverse=True, key=len_inv_less)
+lenght = []
+for i in LS:
+	lenght.append(len_inv_less(i))
+
+print(LS, lenght, sep='\n')
+# -> ['e', 'son', 'gli', 'eroi', 'tutti', 'belli', 'giovani']
+# -> [(-1, 'e'), (-3, 'son'), (-3, 'gli'), (-4, 'eroi'), (-5, 'tutti'), (-5, 'belli'), (-7, 'giovani')]
+```
+
+**Problema: ordinare prima pari poi dispari, a parità di pari per valore**
+```python
+def pari(elem):
+	p = elem%2
+	return p, elem
+
+lista = [5,7,4,2,100,11,200]
+sorted(lista, key=pari) # -> [2, 4, 100, 200, 5, 7, 11]
 ```
 #### `lista.reverse()` e `reversed(list)`
 Il metodo `reverse()` ci permette di invertire l’ordine di tutti gli elementi di una lista in-place.
