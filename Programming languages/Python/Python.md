@@ -4,6 +4,7 @@
 - [[Variables]]
 - [[Comments]]
 - [[Functions]]
+- [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
 - 
