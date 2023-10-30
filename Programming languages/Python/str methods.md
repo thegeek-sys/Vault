@@ -59,3 +59,8 @@ print(s.count('p')) # -> 3
 | abcWWWXX        | `True`      | `False`       | `False`       | `True`      |
 | 01010002        | `False`     | `True`        | `True`        | `True`      |
 
+#### `str.join(list)`
+Il metodo `join()` restituisce una stringa formata dalla concatenazione di `list` i cui item sono separati da `str`
+```python
+
+```
