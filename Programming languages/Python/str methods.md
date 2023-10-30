@@ -62,5 +62,6 @@ print(s.count('p')) # -> 3
 #### `str.join(list)`
 Il metodo `join()` restituisce una stringa formata dalla concatenazione di `list` i cui item sono separati da `str`
 ```python
-
+L = ['1', '2', '3', '4', '5', '6', '7', '8']ù
+''.join(L) # -> '12345678'
 ```
