@@ -44,3 +44,18 @@ s = 'ciao'
 print(s.find('a')) # -> 2
 ```
 
+#### `str.count(str)`
+Il metodo `count()` restituisce quante volte `str` è contenuto nella stringa scelta
+```python
+s = 'pippo'
+print(s.count('p')) # -> 3
+```
+
+#### `isdecimal() isalnnum() isnumeric() isalpha()`
+|                 | `isalpha()` | `isnumeric()` | `isdecimal()` | `isalnum()` |
+| --------------- | ----------- | ------------- | ------------- | ----------- |
+| abcdef123       | `False`     | `False`       | `False`       | `True`      |
+| ??<ABCD!@#$%^&* | `False`     | `False`       | `False`       | `False`     |
+| abcWWWXX        | `True`      | `False`       | `False`       | `True`      |
+| 01010002        | `False`     | `True`        | `True`        | `True`      |
+
