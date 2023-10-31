@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-10-26.md",
+                "file": "Flet-notes/2023-10-31.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-10-26.md",
+                "file": "Flet-notes/2023-10-31.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-10-26.md",
+                "file": "Flet-notes/2023-10-31.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-10-26.md"
+                "file": "Flet-notes/2023-10-31.md"
               }
             }
           }
@@ -151,8 +151,9 @@
   },
   "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
-    "Flet-notes/2023-10-19.md",
     "Flet-notes/2023-10-26.md",
+    "Flet-notes/2023-10-31.md",
+    "Flet-notes/2023-10-19.md",
     "Programming languages/Python/set.md",
     "Programming languages/Python/set methods.md",
     "Programming languages/Python/list comprehension.md",
@@ -177,7 +178,6 @@
     "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Variables.md",
     "Programming languages/Python/Iterazione.md",
-    "Programming languages/Python/list.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
