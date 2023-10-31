@@ -4,6 +4,7 @@
 - [[Variables]]
 - [[Comments]]
 - [[Functions]]
+- [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
 - 
@@ -53,4 +54,5 @@
 
 ##### Other
 - [[Namespace]]
+- [[Sliding Window]]
 - 
