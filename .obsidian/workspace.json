@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "Programming languages/Verilog/Modules.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "Programming languages/Verilog/Modules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "Programming languages/Verilog/Modules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md"
+                "file": "Programming languages/Verilog/Modules.md"
               }
             }
           },
@@ -172,12 +172,17 @@
   },
   "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
-    "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Programming languages/Verilog/Verilog.md",
+    "Programming languages/Verilog/Modules.md",
+    "Programming languages/Verilog/Syntax.md",
+    "Programming languages/Verilog/Introduction.md",
+    "Programming languages/Python/Modules.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Special Variables.md",
+    "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files",
     "Nuova cartella",
     "Programming languages/Programming languages.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Verilog",
     "Programming languages/Python/Untitled",
     "Uni/Uni.md",
@@ -199,10 +204,6 @@
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/set.md",
     "Programming languages/Python/set methods.md",
-    "Programming languages/Python/str.md",
-    "Programming languages/Python/List Comprehension.md",
-    "Programming languages/Python/Native Functions.md",
-    "Programming languages/Python/Functions.md",
     "Uni",
     "Programming languages/Uni",
     "Untitled.canvas",
