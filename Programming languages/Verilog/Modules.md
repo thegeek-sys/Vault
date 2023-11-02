@@ -61,6 +61,7 @@ endmodule
 ## Bitwise Operators
 Gli operatori Bitwise agiscono sui su segnali single-bit oppure su mutli-bit busses
 
+![[Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png]]
 ```verilog
 module gates(input logic [3:0] a, b,
 			 output logic [3:0] y1, y2, y3, y4, y5);
