@@ -1,3 +1,4 @@
+## Introduction
 Verilog è un **Hardware description language** (HDL) ovvero un linguaggio il cui compito è solo quello di definire delle funzioni logiche. Tra i maggiori HDLs troviamo:
 - SystemVerilog
 - VHDL 2008
@@ -10,3 +11,7 @@ Gli HDL possono avere due possibili applicazioni:
 - Simulazione
 	- Vengono applicati degli inputo ai circuiti e viene verificata la correttezza degli output
 
+> [!WARNING]
+> Quando si usa un HDL bisogna pensare all’hardware che deve produrre
+
+Un blocco con input e output è chiamato un modulo (porte, multiplexer etc. sono esempi di moduli hardware)
