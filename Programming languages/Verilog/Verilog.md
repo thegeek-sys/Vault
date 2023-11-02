@@ -1,0 +1,1 @@
+Verilog è un **Hardware description language** (HDL)

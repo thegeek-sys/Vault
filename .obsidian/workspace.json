@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Verilog/Verilog.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Verilog/Verilog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Verilog/Verilog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-02.md"
+                "file": "Programming languages/Verilog/Verilog.md"
               }
             }
           },
@@ -172,15 +172,19 @@
   },
   "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
+    "Programming languages/Programming languages.md",
+    "Programming languages/Verilog/Verilog.md",
+    "Programming languages/Verilog",
+    "Programming languages/Python/Untitled",
+    "Uni/Uni.md",
+    "Uni/Untitled",
+    "Uni/Struttura esame FDP.md",
+    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/Sliding Window.md",
     "conflict-files-obsidian-git.md",
-    "Flet-notes/2023-11-02.md",
     "Flet-notes/2023-10-31.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/list.md",
-    "Programming languages/Programming languages.md",
-    "Uni/Uni.md",
-    "Uni/Struttura esame FDP.md",
     "Programming languages/Python/Lambda.md",
     "Flet-notes/2023-10-26.md",
     "Programming languages/Python/float.md",
@@ -200,12 +204,10 @@
     "Uni",
     "Nuova cartella",
     "Programming languages/Uni",
-    "Flet-notes/2023-10-17.md",
     "Untitled.canvas",
     "Flet-notes",
     "Programming languages/Python",
     "test",
-    "Programming languages",
-    "Flet notes"
+    "Programming languages"
   ]
 }
