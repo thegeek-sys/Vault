@@ -14,4 +14,13 @@ Gli HDL possono avere due possibili applicazioni:
 > [!WARNING]
 > Quando si usa un HDL bisogna pensare all’hardware che deve produrre
 
+---
+## Moduli
+![[Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png]]
 Un blocco con input e output è chiamato un modulo (porte, multiplexer etc. sono esempi di moduli hardware)
+I moduli possono essere di due tipi:
+- Comportamentale: descrive cosa fa un modulo
+- Strutturale: descrive come è fatto a partire da moduli più semplici
+```verilog
+
+```
