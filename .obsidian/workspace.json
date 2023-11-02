@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1ddb8d8d6f19a9d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -170,8 +183,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6d4a6144f8b472d",
+  "active": "1ddb8d8d6f19a9d1",
   "lastOpenFiles": [
+    "Programming languages/Python/Sliding Window.md",
+    "conflict-files-obsidian-git.md",
+    "Flet-notes/2023-11-02.md",
+    "Flet-notes/2023-10-31.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/list.md",
     "Programming languages/Programming languages.md",
@@ -179,10 +196,8 @@
     "Uni/Struttura esame FDP.md",
     "Programming languages/Python/Lambda.md",
     "Flet-notes/2023-10-26.md",
-    "Programming languages/Python/Sliding Window.md",
     "Programming languages/Python/float.md",
     "Programming languages/Python/str methods.md",
-    "conflict-files-obsidian-git.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/dict.md",
@@ -199,8 +214,6 @@
     "Nuova cartella",
     "Programming languages/Uni",
     "Flet-notes/2023-10-17.md",
-    "Programming languages/Python/if-else.md",
-    "Programming languages/Python/Expression statements.md",
     "Untitled.canvas",
     "Flet-notes",
     "Programming languages/Python",
