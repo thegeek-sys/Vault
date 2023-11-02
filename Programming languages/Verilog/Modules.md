@@ -59,3 +59,20 @@ endmodule
 
 ---
 ## Bitwise Operators
+Gli operatori Bitwise agiscono sui su segnali single-bit oppure su mutli-bit busses
+
+```verilog
+module gates(input logic [3:0] a, b,
+			 output logic [3:0] y1, y2, y3, y4, y5);
+/* Five different two-input logic
+gates acting on 4 bit busses */
+	assign y1 = a & b; // AND
+	assign y2 = a | b; // OR
+	assign y3 = a ^ b; // XOR
+	assign y4 = ~(a & b); // NAND
+	assign y5 = ~(a | b); // NOR
+endmodule
+```
+
+> [!NOTE]
+> `a[3:0]` rappresenta un bus a 4 bit denominati dal più significativo al meno significativo `a[3] a[2] a[1] a[0]`. Si può denominare il bus `a[4:1]` oppure `a[0:3]` e usare gli indici di conseguenza
