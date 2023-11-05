@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/str.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/str.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/str.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/str.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -150,10 +150,10 @@
   },
   "active": "ca8454e67935c940",
   "lastOpenFiles": [
-    "Programming languages/Python/slicing.md",
-    "Programming languages/Python/str.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
+    "Programming languages/Python/str.md",
+    "Programming languages/Python/slicing.md",
+    "Programming languages/Python/Python.md",
     "Programming languages/Python/float.md",
     "Programming languages/Python/Test.md",
     "Programming languages/Python/Expression statements.md",
