@@ -77,3 +77,6 @@ endmodule
 
 > [!NOTE]
 > `a[3:0]` rappresenta un bus a 4 bit denominati dal più significativo al meno significativo `a[3] a[2] a[1] a[0]`. Si può denominare il bus `a[4:1]` oppure `a[0:3]` e usare gli indici di conseguenza
+
+---
+## Reduction Operators
