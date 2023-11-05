@@ -6,7 +6,7 @@ Completed:
 ---
 ---
 ## Introduction
-![[Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png]]
+![[verilog module.png]]
 Un blocco con input e output è chiamato un modulo (porte, multiplexer etc. sono esempi di moduli hardware)
 I moduli possono essere di due tipi:
 - Comportamentale: descrive cosa fa un modulo
@@ -61,7 +61,7 @@ endmodule
 ## Bitwise Operators
 Gli operatori Bitwise agiscono sui su segnali single-bit oppure su mutli-bit busses
 
-![[Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png]]
+![[bitwise operator.png]]
 ```verilog
 module gates(input logic [3:0] a, b,
 			 output logic [3:0] y1, y2, y3, y4, y5);
@@ -81,3 +81,5 @@ endmodule
 ---
 ## Reduction Operators
 Gli operatori di riduzione permettono a input multipli di agire su una singola porta
+
+![[reduction operator.png]]
