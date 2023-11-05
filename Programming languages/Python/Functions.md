@@ -6,8 +6,11 @@ Completed:
 ---
 ---
 ## Index
+
 1. [[#Introduction|Introduction]]
-2. [[#Funzione ricorsiva|Funzione ricorsiva]]
+1. [[#Funzione ricorsiva|Funzione ricorsiva]]
+1. [[#Funzioni come parametri|Funzioni come parametri]]
+
 ---
 ## Introduction
 Le **funzioni** in Python sono dei particolari costrutti sintattici che ci permettono di raggruppare, all'interno di un programma, una sequenza di istruzioni in un unico blocco, espletando così una specifica operazione. La loro sintassi generale:
@@ -97,4 +100,19 @@ fact(5, 1)
 ======> rit. da fact(3), fact_n 6
 ====> rit. da fact(4), fact_n 24
 ==> rit. da fact(5), fact_n 120
+120
+```
+
+## Funzioni come parametri
+Eventualmente posso anche passare direttamente una funzione stessa come parametro di una funzione
+
+```python
+def statistics(func, L):
+	return func(L)
+
+lista = [5,7,43,-87,12]
+M = statistics(max, lista)
+print(M) # -> 43
+m = statistics(min, lista)
+print(m) # -> -87
 ```

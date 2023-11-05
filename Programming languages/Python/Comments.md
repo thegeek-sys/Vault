@@ -17,6 +17,7 @@ Comments are parts of code that are not executed by the compiler
 ## Line Comment
 
 Comments starts with a `#`, and Python will ignore them:
+
 ```Python
 #This is a comment  
 print("Hello, World!")
@@ -24,6 +25,7 @@ print("Hello, World!")
 
 ---
 Comments can be placed at the end of a line, and Python will ignore the rest of the line:
+
 ``` Python
 print("Hello, World!") #This is a comment
 ```

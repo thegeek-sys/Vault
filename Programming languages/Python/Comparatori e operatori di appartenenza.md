@@ -5,7 +5,8 @@ Related:
   - "[[int]]"
   - "[[str]]"
   - "[[float]]"
-Completed: 
+  - "[[list]]"
+Completed:
 ---
 ---
 ## `is`
@@ -22,4 +23,10 @@ L'operatore `==` mi permette di confrontare il contenuto di due variabili
 ```python
 print(id(nome), id(altro_nome), id(nome) == id(altro_nome)) # ci permette di vedere l'indirizzo di memoria assegnato alle due variabili
 print(nome == altro_nome) # -> True
+```
+---
+## `in`
+L’operatore `in` è un operatore di appartenenza che controlla se 
+```python
+print('gramma' in 'Fondamenti di programmazione') # -> True
 ```

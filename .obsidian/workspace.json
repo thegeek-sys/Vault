@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6b7a589d5241a247",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -148,35 +161,42 @@
       "random-note:Open random note": false
     }
   },
-  "active": "ca8454e67935c940",
+  "active": "6b7a589d5241a247",
   "lastOpenFiles": [
+    "Programming languages/Python/Python.md",
+    "conflict-files-obsidian-git.md",
+    "Uni/Uni.md",
+    "Uni/Struttura esame FDP.md",
+    "Uni",
+    "Programming languages/Verilog/Verilog.md",
+    "Programming languages/Verilog/Modules.md",
+    "Programming languages/Verilog/Syntax.md",
+    "Programming languages/Verilog/Introduction.md",
+    "Programming languages/Verilog",
+    "Programming languages/Python/Lambda.md",
+    "Programming languages/Python/Iterazione.md",
+    "Programming languages/Python/Comparatori e operatori di appartenenza.md",
+    "Flet-notes/2023-11-02.md",
+    "Flet-notes/2023-10-31.md",
+    "Flet-notes/2023-10-26.md",
+    "Flet-notes/2023-10-19.md",
+    "Flet-notes/2023-10-17.md",
+    "Flet-notes/12.10.md",
+    "Flet-notes/10.10.md",
+    "Flet-notes",
+    "Files/Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
+    "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
+    "Files",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/slicing.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/float.md",
     "Programming languages/Python/Test.md",
     "Programming languages/Python/Expression statements.md",
     "Programming languages/Python/Comparatori.md",
     "Programming languages/Python/for.md",
-    "Programming languages/Python/if-else.md",
-    "Programming languages/Python/Functions.md",
-    "Programming languages/Python/Special Variables.md",
-    "Programming languages/Python/Modules.md",
-    "Programming languages/Python/Variables.md",
-    "Programming languages/Python/Namespace.md",
-    "`__name__`.md",
-    "Programming languages/Python/Concatenazione tra tipi.md",
-    "Programming languages/Python/Slicing.md",
-    "Programming languages/Python/NoneType.md",
-    "Programming languages/Python/int.md",
-    "Programming languages/Python/Comments.md",
-    "`int`.md",
-    "Programming languages/Python.md",
     "Programming languages/Python",
     "test",
-    "README.md",
-    "Test.md",
     "Programming languages",
     "Flet notes"
   ]
