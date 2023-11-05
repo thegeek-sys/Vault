@@ -80,6 +80,17 @@ endmodule
 
 ---
 ## Reduction Operators
-Gli operatori di riduzione permettono a input multipli di agire su una singola porta
+Gli operatori di riduzione permettono a input multipli di agire su una singola porta. L’operatore di riduzione esiste per le porte: OR, XOR, NAND, NOR,
+e XNOR.
+Nota: un input multiplo di XOR esegue la parità: TRUE se un numero dispari di input è TRUE
 
 ![[reduction operator.png]]
+```verilog
+module and8(input logic [7:0] a,
+			output logic y);
+	assign y = &a;
+	// &a is much easier to write than
+	// assign y = a[7] & a[6] & a[5] & a[4] &
+	//            a[3] & a[2] & a[1] & a[0];
+endmodule
+```
