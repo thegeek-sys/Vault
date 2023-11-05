@@ -80,3 +80,4 @@ endmodule
 
 ---
 ## Reduction Operators
+Gli operatori di riduzione permettono a input multipli di agire su una singola porta
