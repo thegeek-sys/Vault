@@ -59,3 +59,4 @@ O(N\log_{2}(N)+Q\log_{2}(N))= \\
 $$
 
 ## Indice invertito
+Nel caso in cui ci servisse di cercare per campi ogni volta diversi ci potrebbe tornare utile la ricerca ad indice invertito, che ci permette di iterare ad una velocità prossima a quella lineare ma dovremmo pagare un prezzo a livello spaziale (di memoria).
