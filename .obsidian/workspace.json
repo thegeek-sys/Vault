@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/dict methods.md",
                 "mode": "source",
                 "source": false
               }
@@ -191,9 +191,10 @@
   },
   "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
+    "Programming languages/Python/dict methods.md",
+    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/bool.md",
-    "Flet-notes/2023-11-02.md",
     "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
     "Files/verilog module.png",
@@ -224,7 +225,6 @@
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/dict.md",
-    "Programming languages/Python/dict methods.md",
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/set.md",
     "Uni",

@@ -20,3 +20,6 @@ for char in stringa:
 counts_b
 assert counts_b == counts
 ```
+
+## Ricerca binaria
+Sapendo che bisogna fare tante ricerche con uno stesso campo, mi conviene spendere un po’ di tempo inizialmente per ordinare il dizionario per poi poter fare una ricerca binaria (decisamente più veloce di una ricerca lineare, quella a cui siamo abituati a fare). Infatti mentre la ricerca lineare ha complessità $O(N)$ 
