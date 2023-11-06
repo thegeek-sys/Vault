@@ -8,6 +8,24 @@
         "type": "tabs",
         "children": [
           {
+            "id": "74ecffe556a9007b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "58cb95da7d5dbea8",
+        "type": "tabs",
+        "children": [
+          {
             "id": "d6d4a6144f8b472d",
             "type": "leaf",
             "state": {
@@ -18,21 +36,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "4423bf020c5cff8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -110,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Flet-notes/2023-11-02.md"
               }
             }
           },
@@ -183,9 +189,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4423bf020c5cff8e",
+  "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/bool.md",
     "Flet-notes/2023-11-02.md",
+    "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
@@ -194,8 +203,6 @@
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Syntax.md",
     "Programming languages/Verilog/Introduction.md",
-    "Programming languages/Programming languages.md",
-    "Programming languages/Python/Python.md",
     "Files/Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Programming languages/Python/Modules.md",
     "Programming languages/Python/Special Variables.md",
