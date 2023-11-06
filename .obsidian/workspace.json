@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Verilog/Modules.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Verilog/Modules.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Verilog/Modules.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Verilog/Modules.md"
+                "file": "Flet-notes/2023-11-02.md"
               }
             }
           },
@@ -172,9 +172,9 @@
   },
   "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
+    "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Syntax.md",
-    "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog/Introduction.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/Python.md",
