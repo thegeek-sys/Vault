@@ -18,4 +18,5 @@ Quando si apre un file questo avrà `type` `TextIOWrapper` e bisogna intenderlo 
 file = open('profilazione.py', mode='rt', encoding='utf-8')
 print(type(file)) # -> <class '_io.TextIOWrapper'>
 file.read()
+file.close()
 ```
