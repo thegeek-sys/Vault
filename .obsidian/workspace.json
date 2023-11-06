@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md",
+                "file": "Programming languages/Python/Files.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,10 +66,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "la funzione",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -100,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -116,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md",
+                "file": "Programming languages/Python/Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md",
+                "file": "Programming languages/Python/Files.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Native Functions.md"
+                "file": "Programming languages/Python/Files.md"
               }
             }
           },
@@ -189,12 +190,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "356bd72cc0237c4e",
+  "active": "74ecffe556a9007b",
   "lastOpenFiles": [
+    "Flet-notes/2023-11-02.md",
+    "Programming languages/Python/Files.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Native Functions.md",
-    "Programming languages/Python/Files.md",
-    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/Sliding Window.md",
     "Programming languages/Python/Line-Profiler.md",
