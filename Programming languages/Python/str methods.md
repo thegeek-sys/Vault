@@ -65,3 +65,18 @@ Il metodo `join()` restituisce una stringa formata dalla concatenazione di `list
 L = ['1', '2', '3', '4', '5', '6', '7', '8']ù
 ''.join(L) # -> '12345678'
 ```
+
+#### `str.encode(default='utf8')`
+La funzione `encode()` prendere in input simboli e legge bytes (può funzionare anche come `ord()`)
+```python
+out = 'a'.encode()
+# faccio encoding del simbolo 'a'
+print(out, type(out), sep='  ‐  ') # -> b'a'  ‐  <class 'bytes'>
+print('4532[foobar+èù©'.encode()) # -> b'4532[foobar+\xc3\xa8\xc3\xb9\xc2\xa9'
+```
+
+#### `str.decode(default='utf8')`
+La funzione `encode()` prendere in input byte e fa il decoding in simboli
+```python
+print('\U0001F923') # -> 🤣
+```

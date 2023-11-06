@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ord",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +95,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -116,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md"
+                "file": "Flet-notes/2023-11-02.md"
               }
             }
           },
@@ -189,11 +190,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "74ecffe556a9007b",
+  "active": "d6d4a6144f8b472d",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-02.md",
-    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/str methods.md",
+    "Programming languages/Python/Sliding Window.md",
+    "Programming languages/Python/Line-Profiler.md",
+    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/bool.md",
@@ -217,13 +220,11 @@
     "Uni/Uni.md",
     "Uni/Untitled",
     "Uni/Struttura esame FDP.md",
-    "Programming languages/Python/Sliding Window.md",
     "Flet-notes/2023-10-31.md",
     "Programming languages/Python/list.md",
     "Programming languages/Python/Lambda.md",
     "Flet-notes/2023-10-26.md",
     "Programming languages/Python/float.md",
-    "Programming languages/Python/str methods.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/dict.md",
