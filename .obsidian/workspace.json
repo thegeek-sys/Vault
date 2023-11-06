@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/Native Functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ord",
+                "query": "la funzione",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -117,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Python/Native Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Python/Native Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-02.md"
+                "file": "Programming languages/Python/Native Functions.md"
               }
             }
           },
@@ -190,13 +189,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6d4a6144f8b472d",
+  "active": "356bd72cc0237c4e",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Native Functions.md",
+    "Programming languages/Python/Files.md",
+    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/Sliding Window.md",
     "Programming languages/Python/Line-Profiler.md",
-    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/bool.md",
@@ -226,8 +227,6 @@
     "Flet-notes/2023-10-26.md",
     "Programming languages/Python/float.md",
     "Programming languages/Python/list methods.md",
-    "Programming languages/Python/Concatenazione tra tipi.md",
-    "Programming languages/Python/dict.md",
     "Uni",
     "Programming languages/Uni",
     "Untitled.canvas",

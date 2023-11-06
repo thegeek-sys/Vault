@@ -7,6 +7,7 @@
 - [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
+- [[Files]]
 - 
 
 ##### Data types
