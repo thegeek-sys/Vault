@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/dict methods.md",
+                "file": "Programming languages/Python/Line-Profiler.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/dict methods.md",
+                "file": "Programming languages/Python/Line-Profiler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/dict methods.md",
+                "file": "Programming languages/Python/Line-Profiler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/dict methods.md"
+                "file": "Programming languages/Python/Line-Profiler.md"
               }
             }
           },
@@ -192,8 +192,9 @@
   "active": "74ecffe556a9007b",
   "lastOpenFiles": [
     "Flet-notes/2023-11-02.md",
-    "Programming languages/Python/dict methods.md",
+    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Programming languages.md",
@@ -226,7 +227,6 @@
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Concatenazione tra tipi.md",
     "Programming languages/Python/dict.md",
-    "Flet-notes/2023-10-19.md",
     "Uni",
     "Programming languages/Uni",
     "Untitled.canvas",
