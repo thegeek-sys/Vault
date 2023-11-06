@@ -43,5 +43,19 @@ print(bin_search([1,2,3,4,5], 2))
 
 Ricerca lineare: 
 $$
-Q = 
+\begin{matrix}
+Q = \left\{\text{numero di query}\right\}\\
+N = \left\{\text{numero di record}\right\}\\
+O(N ⋅ Q)
+\end{matrix}
 $$
+
+Ricerca binaria:
+$$
+\begin{matrix}
+O(N\log_{2}(N)+Q\log_{2}(N))= \\
+= (N + Q) ⋅ log_{2}(N)
+\end{matrix}
+$$
+
+## Indice invertito
