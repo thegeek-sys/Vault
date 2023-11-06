@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4423bf020c5cff8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-02.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -170,8 +183,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6d4a6144f8b472d",
+  "active": "4423bf020c5cff8e",
   "lastOpenFiles": [
+    "Flet-notes/2023-11-02.md",
+    "conflict-files-obsidian-git.md",
+    "Files/verilog module.png",
+    "Files/reduction operator.png",
+    "Files/bitwise operator.png",
     "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Syntax.md",
@@ -189,9 +207,7 @@
     "Uni/Uni.md",
     "Uni/Untitled",
     "Uni/Struttura esame FDP.md",
-    "Flet-notes/2023-11-02.md",
     "Programming languages/Python/Sliding Window.md",
-    "conflict-files-obsidian-git.md",
     "Flet-notes/2023-10-31.md",
     "Programming languages/Python/list.md",
     "Programming languages/Python/Lambda.md",
