@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Python/dict methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Programming languages/Python/dict methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-02.md"
+                "file": "Programming languages/Python/dict methods.md"
               }
             }
           },
@@ -189,10 +189,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6d4a6144f8b472d",
+  "active": "74ecffe556a9007b",
   "lastOpenFiles": [
-    "Programming languages/Python/dict methods.md",
     "Flet-notes/2023-11-02.md",
+    "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/bool.md",
     "Programming languages/Programming languages.md",
