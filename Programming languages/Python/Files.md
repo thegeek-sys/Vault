@@ -34,6 +34,7 @@ abs_path = os.path.join(prefix, rel_path)
 
 abs_path = f'{prefix}/{rel_path}' # tramite la f-string posso inserire automaticamente dentro la stringa stessa delle variabili
 ```
+
 ---
 ## Aprire un file
 Quando si apre un file tramite il comando `open()` questo avrà `type` `TextIOWrapper` e bisogna intenderlo come uno stream.
@@ -54,16 +55,22 @@ Il metodo `open()` prende in input:
 	- path relativo → che funziona solo se ci si trova nella cartella corretta
 - modalità di apertura (default: r → read)
 - encoding del file (default: utf8)
+
+>[!NOTE] Ricorda
+>Ricorda di chiudere il file con il comando `close()`, se non lo faccio non mi salverà un eventuale file modificato o posso incorrere in problemi di gestione della memoria
+
 Il tipo aperto da open è un `TextIOWrapper` che è un generatore che restituisce un riferimento puntatore all’inizio del file. Ogni volta vogliamo leggere una riga dobbiamo pensare ad una testina che carica la riga in Python e che poi passa alla successiva.
 
 ```python
 fr = open('example.txt', mode='rt', encoding='utf-8')
+fw = open('example.txt', mode='wt', encoding='utf-8')
 print(type(fr)) # -> <class '_io.TextIOWrapper'>
 ```
+
 ---
 ## Leggere un file
 #### `file.read()`
-Il metodo `read()` ci permette di leggere un file in un colpo solo, e farà spostare la testina alla fine del file (non lo potremmo leggere di nuovo, se non riaprendo il file)
+Il metodo `read()` ci permette di leggere un file in un colpo solo, e farà spostare la testina alla fine del file (non lo potremmo leggere di nuovo se non riaprendo il file o spostando la testina). N.B. Un file per essere letto deve essere aperto in modalità `r`.
 ```python
 fr.read()
 fr.read.split('\n') # creo una lista separata in ogni riga
@@ -80,3 +87,31 @@ Il metodo `tell()` ci restituisce il byte (carattere) a cui la testina si trova
 
 #### `file.readline()`
 Il metodo `readline()` ci permette di leggere la prima riga di un file
+
+#### `file.readlines()`
+Il metodo `readline()` ci restituisce una lista composta da ogni riga del file (N.B. questo metodo mantiene gli `\n` alla fine di ogni riga)
+
+---
+## Scrivere in un file
+#### `file.write()`
+Il metodo `write()` ci permette di scrivere in un file (sempre e solo se è stato aperto in modalità `w`) e usando `\n` per andare a capo.
+```python
+fw.write("pippo è andato al mare\n")
+```
+
+#### `print()`
+Posso usare una sintassi particolare della funzione `print()` per scrivere all’interno di un file
+```python
+print("kjglahgkjhkj kajhhk gj", file=fw) # non mi serve mettere \n
+										 # alla fine della stringa
+```
+
+---
+## Context manager
+Il **Context manager** permette di aprire un file senza dover alla fine usare il comando `close()`, ci assicura inoltre che se il codice dentro il context manager genera un errore, questo riuscirà comunque a salvare correttamente il file (o almeno una sua porzione). Il context manager fa uso dello statement `with`.
+Il file potrà essere analizzato solo all’interno del context manager stesso.
+
+```python
+with open('example.txt', mode='rt') as fr:
+	pass
+```
