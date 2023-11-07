@@ -5,22 +5,14 @@ Related:
 Completed:
 ---
 ---
-#### Introduction
-Per aprire un file in Python dobbiamo fornire:
-- **path del file** 
-	- percorso assoluto → ovvero a partire dalla root directory
-	- path relativo → che funziona solo se ci si trova nella cartella corretta
-- modalità di apertura (`rt` → read, testuale)
-- encoding del file
-Quando si apre un file questo avrà `type` `TextIOWrapper` e bisogna intenderlo come uno stream in cui vi è una testina virtuale che arriva in fondo al file quando si da il comando `read()`. È per questo che per leggere nuovamente il file lo dovremmo chiudere e riaprire
+## Index
 
-```python
-file = open('profilazione.py', mode='rt', encoding='utf-8')
-print(type(file)) # -> <class '_io.TextIOWrapper'>
-file.read()
-file.close()
-```
-
+1. [[#Formare un percorso assoluto|Formare un percorso assoluto]]
+2. [[#Aprire un file|Aprire un file]]
+3. [[#Leggere un file|Leggere un file]]
+4. [[#Scrivere in un file|Scrivere in un file]]
+5. [[#Context manager|Context manager]]
+---
 ## Formare un percorso assoluto
 - Usare il + della concatenazione delle stringhe
 - Usare il modulo `os` con il comando `os.path.join(str,str)`
@@ -91,6 +83,15 @@ Il metodo `readline()` ci permette di leggere la prima riga di un file
 #### `file.readlines()`
 Il metodo `readline()` ci restituisce una lista composta da ogni riga del file (N.B. questo metodo mantiene gli `\n` alla fine di ogni riga)
 
+#### `for`
+Se non mi interessa avere a disposizione subito il contenuto del file possiamo analizzare un file come un vero e proprio generatore attraverso un `for`
+```python
+for i, line in enumerate(fr):
+    print(line)
+    if i == 9:
+        break
+```
+
 ---
 ## Scrivere in un file
 #### `file.write()`
@@ -104,6 +105,13 @@ Posso usare una sintassi particolare della funzione `print()` per scrivere all�
 ```python
 print("kjglahgkjhkj kajhhk gj", file=fw) # non mi serve mettere \n
 										 # alla fine della stringa
+L = ['iacopo','masi','12345']
+print(L[0],L[1],L[2], file=fw, sep='\n', end='')
+# con n argomenti possiamo passare a print un argomento variabile
+print(*L, file=F, sep='\n',end='') # spacchetta gli elementi di L e
+								   # li scrive dentro il file
+								   # (letteramente fa un print nel
+								   # file)
 ```
 
 ---
