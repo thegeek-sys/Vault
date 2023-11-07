@@ -8,7 +8,7 @@ Completed:
 ---
 ## Methods
 #### `str.strip()`
-Il metodo `strip()` rimuove eventuali spazi all’inizio e alla fine di una stringa
+Il metodo `strip()` rimuove eventuali spazi all’inizio e alla fine di una stringa. Il metodo `rstrip()` rimuove eventuali withespaces alla fine di una stringa
 ```python
 s = '    ciao  '
 print(s.strip()) # -> 'ciao'
