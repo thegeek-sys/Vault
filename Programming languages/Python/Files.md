@@ -57,14 +57,26 @@ Il metodo `open()` prende in input:
 Il tipo aperto da open è un `TextIOWrapper` che è un generatore che restituisce un riferimento puntatore all’inizio del file. Ogni volta vogliamo leggere una riga dobbiamo pensare ad una testina che carica la riga in Python e che poi passa alla successiva.
 
 ```python
-file = open('profilazione.py', mode='rt', encoding='utf-8')
-print(type(file)) # -> <class '_io.TextIOWrapper'>
+fr = open('example.txt', mode='rt', encoding='utf-8')
+print(type(fr)) # -> <class '_io.TextIOWrapper'>
 ```
 ---
 ## Leggere un file
 #### `file.read()`
 Il metodo `read()` ci permette di leggere un file in un colpo solo, e farà spostare la testina alla fine del file (non lo potremmo leggere di nuovo, se non riaprendo il file)
+```python
+fr.read()
+fr.read.split('\n') # creo una lista separata in ogni riga
+```
 
-#### `file.seek(0)`
-Lo utilizzerò per far ritornare la testina in cima al file
+#### `file.seek(int)`
+Lo utilizzerò per far spostare la testina nel file
+- **0:** sets the reference point at the beginning of the file
+- **1:** sets the reference point at the current file position
+- **2:** sets the reference point at the end of the file
 
+#### `file.tell()`
+Il metodo `tell()` ci restituisce il byte (carattere) a cui la testina si trova
+
+#### `file.readline()`
+Il metodo `readline()` ci permette di leggere la prima riga di un file
