@@ -7,6 +7,7 @@
 - [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
+- [[Files]]
 - 
 
 ##### Data types
@@ -55,4 +56,5 @@
 ##### Other
 - [[Namespace]]
 - [[Sliding Window]]
+- [[Line-Profiler]]
 - 

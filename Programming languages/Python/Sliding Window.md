@@ -8,6 +8,7 @@ Completed:
 ---
 ## Introduction
 Quello delle **sliding window** è un problema che è bene saper risolvere in quanto è molto frequente ma anche molto versatile infatti si può applicare anche ad immagini a strutture bidimensionali
+
 ```python
 '''
 corpo pipppippopipipipipippppppippo

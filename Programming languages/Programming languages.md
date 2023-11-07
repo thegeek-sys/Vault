@@ -31,3 +31,4 @@
 
 ## Languages
 [[Python]]
+[[Verilog]]
