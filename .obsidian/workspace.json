@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Flet-notes/2023-11-07.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Flet-notes/2023-11-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-02.md",
+                "file": "Flet-notes/2023-11-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-02.md"
+                "file": "Flet-notes/2023-11-07.md"
               }
             }
           }
@@ -149,22 +149,23 @@
       "random-note:Open random note": false
     }
   },
-  "active": "fe05b84484fa20b6",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
+    "Programming languages/Python/Files.md",
+    "Flet-notes/2023-11-07.md",
+    "Programming languages/Python/Python.md",
+    "Flet-notes/2023-11-02.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Syntax.md",
     "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog/Introduction.md",
     "Programming languages/Verilog",
     "Programming languages/Python/Line-Profiler.md",
-    "Programming languages/Python/Files.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
     "Files/bitwise operator.png",
     "Files",
     "Programming languages/Programming languages.md",
-    "Programming languages/Python/Python.md",
-    "Flet-notes/2023-11-02.md",
     "Flet-notes/2023-10-31.md",
     "Programming languages/Python/Lambda.md",
     "conflict-files-obsidian-git.md",
@@ -182,7 +183,6 @@
     "Uni/Struttura esame FDP.md",
     "Uni",
     "Programming languages/Python/str methods.md",
-    "Programming languages/Python/Expression statements.md",
     "Flet-notes",
     "Programming languages/Python",
     "test",
