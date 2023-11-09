@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/dict.md",
+                "file": "Programming languages/Python/Files.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/dict.md",
+                "file": "Programming languages/Python/Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/dict.md",
+                "file": "Programming languages/Python/Files.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/dict.md"
+                "file": "Programming languages/Python/Files.md"
               }
             }
           },
@@ -173,6 +173,7 @@
   "active": "c42c80cb3f4e9eb9",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/dict.md",
     "Programming languages/Python/Files.md",
     "Flet-notes/2023-11-07.md",
     "Flet-notes/2023-11-02.md",
@@ -207,7 +208,6 @@
     "Programming languages/Python/list.md",
     "Programming languages/Python/Lambda.md",
     "Flet-notes/2023-10-26.md",
-    "Programming languages/Python/float.md",
     "Uni",
     "Programming languages/Uni",
     "Untitled.canvas",
