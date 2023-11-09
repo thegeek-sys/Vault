@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "b47a52ad7d441a33",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "74ecffe556a9007b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2023-11-07.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "d630902d3c5401c4",
         "type": "tabs",
         "children": [
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Files.md",
+                "file": "Programming languages/Python/dict.md",
                 "mode": "source",
                 "source": false
               }
@@ -115,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Files.md",
+                "file": "Programming languages/Python/dict.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Files.md",
+                "file": "Programming languages/Python/dict.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Files.md"
+                "file": "Programming languages/Python/dict.md"
               }
             }
           },
@@ -190,9 +172,9 @@
   },
   "active": "c42c80cb3f4e9eb9",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-07.md",
-    "Programming languages/Python/Files.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Files.md",
+    "Flet-notes/2023-11-07.md",
     "Flet-notes/2023-11-02.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/str methods.md",
