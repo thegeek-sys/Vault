@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Programming languages.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Programming languages.md"
+                "file": "Flet-notes/2023-11-09.md"
               }
             }
           }
@@ -151,10 +151,11 @@
   },
   "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
+    "Programming languages/Programming languages.md",
+    "Flet-notes/2023-11-09.md",
     "Programming languages/Python/list.md",
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Programming languages.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
     "Files/bitwise operator.png",
@@ -181,7 +182,6 @@
     "Programming languages/Python/dict methods.md",
     "Programming languages/Python/list methods.md",
     "Flet-notes/2023-10-17.md",
-    "Uni/Uni.md",
     "Uni",
     "Flet-notes",
     "Programming languages/Python",
