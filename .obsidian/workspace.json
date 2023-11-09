@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/str.md",
+                "file": "Programming languages/Python/Files.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/str.md",
+                "file": "Programming languages/Python/Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/str.md",
+                "file": "Programming languages/Python/Files.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/str.md"
+                "file": "Programming languages/Python/Files.md"
               }
             }
           },
@@ -180,6 +180,7 @@
   "active": "c42c80cb3f4e9eb9",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/str.md",
     "Programming languages/Python/int.md",
     "Programming languages/Python/Files.md",
     "Programming languages/Python/dict.md",
@@ -214,7 +215,6 @@
     "Uni/Struttura esame FDP.md",
     "Flet-notes/2023-10-31.md",
     "Programming languages/Python/list.md",
-    "Programming languages/Python/Lambda.md",
     "Uni",
     "Programming languages/Uni",
     "Untitled.canvas",
