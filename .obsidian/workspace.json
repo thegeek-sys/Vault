@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Files.md",
+                "file": "Programming languages/Python/str.md",
                 "mode": "source",
                 "source": false
               }
@@ -29,19 +29,9 @@
     "type": "split",
     "children": [
       {
-        "id": "d1a4135a4c009f1e",
+        "id": "4e86fb8bec697bc3",
         "type": "tabs",
         "children": [
-          {
-            "id": "9da67dfcce4e8838",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
           {
             "id": "356bd72cc0237c4e",
             "type": "leaf",
@@ -53,6 +43,22 @@
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d1a4135a4c009f1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9da67dfcce4e8838",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
                 "sortOrder": "alphabetical"
               }
             }
@@ -81,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -97,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Files.md",
+                "file": "Programming languages/Python/str.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Files.md",
+                "file": "Programming languages/Python/str.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Files.md"
+                "file": "Programming languages/Python/str.md"
               }
             }
           },
@@ -173,8 +180,9 @@
   "active": "c42c80cb3f4e9eb9",
   "lastOpenFiles": [
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/dict.md",
+    "Programming languages/Python/int.md",
     "Programming languages/Python/Files.md",
+    "Programming languages/Python/dict.md",
     "Flet-notes/2023-11-07.md",
     "Flet-notes/2023-11-02.md",
     "Programming languages/Python/Native Functions.md",
@@ -207,7 +215,6 @@
     "Flet-notes/2023-10-31.md",
     "Programming languages/Python/list.md",
     "Programming languages/Python/Lambda.md",
-    "Flet-notes/2023-10-26.md",
     "Uni",
     "Programming languages/Uni",
     "Untitled.canvas",
