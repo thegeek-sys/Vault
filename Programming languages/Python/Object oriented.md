@@ -34,3 +34,11 @@ int.__add__(a,b) # -> 101
 ![[Screenshot 2023-11-15 at 22-47-21 5) Oggetti Iteratori e Generatori Analisi testi.png|300]]
 
 Le classi forniscono un mezzo per costruire nuove «strutture dati» dove i dati e le funzioni «vanno insieme» (incapsulamento). Progettare una nuova classe definisce un nuovo tipo di oggetto. Ci fornisce la possibilità di creare nuove istanze di quel tipo (oggetto è l’istanza di una classe)
+
+---
+## Oggetti mutabili e immutabili
+Ogni cosa in python in realtà è un oggetto e questi possono essere di tipo mutabile (liste, dizionari, set) o immutabile (numeri, stringhe tuple). Un qualcosa per essere un oggetto deve possedere:
+- **identità** (puntatore alla memoria)
+- **tipo**
+- **valore** (anche le funzioni stesse sono oggetti)
+
