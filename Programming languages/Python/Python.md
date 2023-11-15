@@ -41,6 +41,8 @@
 ##### Paradigmi di programmazione
 - [[Object oriented]]
 - [[Programmazione funzionale]]
+- 
+
 ##### Methods
 - [[str methods]]
 - [[Slicing]]

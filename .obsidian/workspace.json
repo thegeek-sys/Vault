@@ -6,7 +6,6 @@
       {
         "id": "d630902d3c5401c4",
         "type": "tabs",
-        "dimension": 63.166311300639656,
         "children": [
           {
             "id": "fd306c3b619e0529",
@@ -14,38 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Programmazione funzionale.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "b41c8ad87fb6cd73",
-        "type": "tabs",
-        "dimension": 36.83368869936034,
-        "children": [
-          {
-            "id": "89cfc2674338f208",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2023-11-09.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c42c80cb3f4e9eb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2023-11-09-vlad.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -137,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-09.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-09.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-09.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           },
@@ -210,13 +178,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "89cfc2674338f208",
+  "active": "fd306c3b619e0529",
   "lastOpenFiles": [
-    "Programming languages/Python/Programmazione funzionale.md",
-    "Flet-notes/2023-11-09.md",
+    "Programming languages/Verilog/Verilog.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/Object oriented.md",
+    "Uni/Struttura esame FDP.md",
+    "Uni/Uni.md",
+    "Programming languages/Python/Programmazione funzionale.md",
     "Flet-notes/2023-11-09-vlad.md",
+    "Flet-notes/2023-11-09.md",
+    "Programming languages/Python/Object oriented.md",
     "Programming languages/Programming languages.md",
     "Flet-notes/10.10.md",
     "Files/employee 2.png",
@@ -242,9 +213,6 @@
     "Files/reduction operator.png",
     "Files/bitwise operator.png",
     "Programming languages/Verilog/Modules.md",
-    "Programming languages/Verilog/Verilog.md",
-    "Programming languages/Verilog/Syntax.md",
-    "Programming languages/Verilog/Introduction.md",
     "Files/Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files",
