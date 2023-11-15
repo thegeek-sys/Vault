@@ -12,15 +12,17 @@ Essendo *purely functional* non avrà side effects infatti qui non verranno usat
 ---
 ## Iterator, Iterable, Iteration (Eager)
 In Python esistono due metodi di iteazione:
-- **eager** → iteratori (visti fin’ora)
+- **eager** → iteratori
 - **lazy** → generatori
 
+### Eager
 
 ```start-multi-column
 ID: ID_kko9
 Number of Columns: 2
 Largest Column: standard
-border: off
+border: on
+Column Spacing: 10px
 ```
 
 ##### Iterator
@@ -37,4 +39,12 @@ Ogni oggetto che può essere usato con un ciclo for (loop over it). Un oggetto �
 2. `__getitem__()`
 
 --- end-multi-column
+```python
+l = [1,2]
+iter_l = iter(lista)
+next(iter_l) # -> 1
+next(iter_l) # -> 2
+next(iter_l) # -> StopIteration
+```
 
+### Lazy
