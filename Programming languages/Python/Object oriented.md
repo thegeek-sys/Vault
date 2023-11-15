@@ -29,3 +29,15 @@ int.__add__(a,b) # -> 101
 
 ---
 ## Classi e Oggetti
+```start-multi-column  
+ID: ExampleRegion1  
+number of columns: 2
+```
+text
+
+--- end-column---
+
+Text displayed in column 2.
+
+--- end-multi-column
+ddw
