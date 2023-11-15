@@ -42,3 +42,8 @@ Ogni cosa in python in realtà è un oggetto e questi possono essere di tipo mut
 - **tipo**
 - **valore** (anche le funzioni stesse sono oggetti)
 
+### Passaggio per riferimento (immutabile)
+In Python, i parametri alle funzioni sono passati per riferimento (una sorta di puntatore). La funzione vede in ingresso un riferimento alla variabile passata (non una copia)
+
+### Passaggio per riferimento (mutabile)ù
+In Python, i parametri alle funzioni sono passati per riferimento. La funzione vede in ingresso una riferimento alla variabile passata (non una copia)
