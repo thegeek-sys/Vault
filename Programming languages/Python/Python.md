@@ -38,6 +38,9 @@
 - [[while]]
 - [[Iterazione]]
 
+##### Paradigmi di programmazione
+- [[Object oriented]]
+- 
 ##### Methods
 - [[str methods]]
 - [[Slicing]]

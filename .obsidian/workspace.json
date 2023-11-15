@@ -8,17 +8,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c42c80cb3f4e9eb9",
+            "id": "fd306c3b619e0529",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-11-09-vlad.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "b41c8ad87fb6cd73",
+        "type": "tabs",
+        "children": [
           {
             "id": "89cfc2674338f208",
             "type": "leaf",
@@ -32,12 +38,12 @@
             }
           },
           {
-            "id": "fd306c3b619e0529",
+            "id": "c42c80cb3f4e9eb9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-09-vlad.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-09.md",
+                "file": "Flet-notes/2023-11-09-vlad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-09.md",
+                "file": "Flet-notes/2023-11-09-vlad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-09.md"
+                "file": "Flet-notes/2023-11-09-vlad.md"
               }
             }
           },
@@ -203,11 +209,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "89cfc2674338f208",
+  "active": "c42c80cb3f4e9eb9",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-09-vlad.md",
-    "Programming languages/Python/Python.md",
     "Flet-notes/2023-11-09.md",
+    "Programming languages/Python/Object oriented.md",
+    "Programming languages/Python/Python.md",
+    "Flet-notes/2023-11-09-vlad.md",
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/Files.md",
     "Programming languages/Python/str.md",
@@ -239,7 +246,6 @@
     "Nuova cartella",
     "Programming languages/Verilog",
     "Programming languages/Python/Untitled",
-    "Uni/Uni.md",
     "Uni/Untitled",
     "Uni",
     "Programming languages/Uni",
