@@ -122,8 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -139,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md",
+                "file": "Flet-notes/2023-11-09-vlad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md",
+                "file": "Flet-notes/2023-11-09-vlad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md"
+                "file": "Flet-notes/2023-11-09-vlad.md"
               }
             }
           },
@@ -212,12 +211,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fd306c3b619e0529",
+  "active": "c42c80cb3f4e9eb9",
   "lastOpenFiles": [
+    "Programming languages/Python/Object oriented.md",
+    "Flet-notes/2023-11-09-vlad.md",
+    "Files/Screenshot 2023-11-15 at 22-47-21 5) Oggetti Iteratori e Generatori Analisi testi.png",
+    "Files/Screenshot 2023-11-15 at 22-46-33 5) Oggetti Iteratori e Generatori Analisi testi.png",
     "Files/oop employee.png",
     "Files/oop int.png",
-    "Flet-notes/2023-11-09-vlad.md",
-    "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/Python.md",
     "Flet-notes/2023-10-19.md",

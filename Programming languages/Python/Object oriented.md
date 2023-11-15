@@ -30,5 +30,7 @@ int.__add__(a,b) # -> 101
 ---
 ## Classi e Oggetti
 
-![[oop employee.png]]
-ddw
+![[Screenshot 2023-11-15 at 22-46-33 5) Oggetti Iteratori e Generatori Analisi testi.png|300]]
+![[Screenshot 2023-11-15 at 22-47-21 5) Oggetti Iteratori e Generatori Analisi testi.png|300]]
+
+Le classi forniscono un mezzo per costruire nuove «strutture dati» dove i dati e le funzioni «vanno insieme» (incapsulamento). Progettare una nuova classe definisce un nuovo tipo di oggetto. Ci fornisce la possibilità di creare nuove istanze di quel tipo (oggetto è l’istanza di una classe)
