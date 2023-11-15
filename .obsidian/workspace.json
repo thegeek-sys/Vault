@@ -6,6 +6,7 @@
       {
         "id": "d630902d3c5401c4",
         "type": "tabs",
+        "dimension": 63.166311300639656,
         "children": [
           {
             "id": "fd306c3b619e0529",
@@ -24,6 +25,7 @@
       {
         "id": "b41c8ad87fb6cd73",
         "type": "tabs",
+        "dimension": 36.83368869936034,
         "children": [
           {
             "id": "89cfc2674338f208",
@@ -194,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,8 +212,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "fd306c3b619e0529",
   "lastOpenFiles": [
+    "Files/oop employee.png",
     "Files/oop int.png",
     "Flet-notes/2023-11-09-vlad.md",
     "Programming languages/Python/Object oriented.md",

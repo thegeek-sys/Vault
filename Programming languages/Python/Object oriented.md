@@ -30,21 +30,5 @@ int.__add__(a,b) # -> 101
 ---
 ## Classi e Oggetti
 
-```start-multi-column
-ID: ID_lejf
-Number of Columns: 2
-Column Size: [75%, 25%]
-column spacing: 0px
-border: off
-```
-
-![[oop int.png]]
-
---- column-end ---
-
-test
-
---- end-multi-column
-
-
+![[oop employee.png]]
 ddw
