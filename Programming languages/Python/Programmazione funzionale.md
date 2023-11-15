@@ -1,7 +1,8 @@
 ---
 Created: 2023-11-15
 Programming language: "[[Python]]"
-Related: 
+Related:
+  - "[[map()]]"
 Completed:
 ---
 ---

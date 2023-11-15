@@ -9,7 +9,6 @@
 - [[Native Functions]]
 - [[Files]]
 - 
-
 ##### Data types
 ###### Unchangeable
 - [[int]]
@@ -37,6 +36,10 @@
 - [[for]]
 - [[while]]
 - [[Iterazione]]
+
+##### Iterable functions
+- [[map()]]
+- [[filter()]]
 
 ##### Paradigmi di programmazione
 - [[Object oriented]]

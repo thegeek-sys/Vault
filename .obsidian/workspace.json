@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/map().md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/map().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/map().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Programming languages/Python/map().md"
               }
             }
           },
@@ -180,11 +180,12 @@
   },
   "active": "fd306c3b619e0529",
   "lastOpenFiles": [
-    "Programming languages/Verilog/Verilog.md",
+    "Programming languages/Python/Programmazione funzionale.md",
+    "Programming languages/Python/map().md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Verilog/Verilog.md",
     "Uni/Struttura esame FDP.md",
     "Uni/Uni.md",
-    "Programming languages/Python/Programmazione funzionale.md",
     "Flet-notes/2023-11-09-vlad.md",
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/Object oriented.md",
@@ -212,7 +213,6 @@
     "Files/verilog module.png",
     "Files/reduction operator.png",
     "Files/bitwise operator.png",
-    "Programming languages/Verilog/Modules.md",
     "Files/Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files",
