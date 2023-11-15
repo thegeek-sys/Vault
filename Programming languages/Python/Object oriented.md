@@ -10,6 +10,9 @@ A differenza della programmazione strutturata, in cui i dati e le funzioni sono 
 
 ![[oop int.png]]
 ```python
+list.append(L,4)    L.append(5)
+# obj oriented      # strutturale
+
 ''' programmazione strutturale '''
 a = 1
 b = 100
@@ -24,3 +27,5 @@ int.__add__(a,b) # -> 101
 # __add__ è un metodo della classe int a cui passo i parametri a e b
 ```
 
+---
+## Classi e Oggetti
