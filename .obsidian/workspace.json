@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "9f225eb12c37a55a",
+        "id": "d630902d3c5401c4",
         "type": "tabs",
         "children": [
           {
-            "id": "ca8454e67935c940",
+            "id": "c42c80cb3f4e9eb9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "Flet-notes/2023-11-09-vlad.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "89cfc2674338f208",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2023-11-09.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fd306c3b619e0529",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -29,8 +54,31 @@
     "type": "split",
     "children": [
       {
+        "id": "4e86fb8bec697bc3",
+        "type": "tabs",
+        "dimension": 19.379844961240313,
+        "children": [
+          {
+            "id": "356bd72cc0237c4e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "d1a4135a4c009f1e",
         "type": "tabs",
+        "dimension": 80.62015503875969,
         "children": [
           {
             "id": "9da67dfcce4e8838",
@@ -43,34 +91,31 @@
             }
           },
           {
-            "id": "356bd72cc0237c4e",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "sliding",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "164bc4146780d259",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "0560cc7b85081e0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2023-10-19.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -86,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,20 +171,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md"
+                "file": "Flet-notes/2023-11-09.md"
               }
             }
+          },
+          {
+            "id": "781c5962ef8a8e55",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -147,47 +199,53 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
-      "random-note:Open random note": false
+      "random-note:Open random note": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ca8454e67935c940",
+  "active": "89cfc2674338f208",
   "lastOpenFiles": [
-    "Programming languages/Verilog/Modules.md",
-    "Programming languages/Python/Line-Profiler.md",
-    "Programming languages/Python/Files.md",
+    "Flet-notes/2023-11-09-vlad.md",
+    "Programming languages/Python/Python.md",
     "Flet-notes/2023-11-09.md",
+    "Flet-notes/2023-10-19.md",
+    "Programming languages/Python/Files.md",
+    "Programming languages/Python/str.md",
+    "Programming languages/Python/int.md",
+    "Programming languages/Python/dict.md",
     "Flet-notes/2023-11-07.md",
-    "Files/reduction operator.png",
-    "Programming languages/Verilog/Verilog.md",
-    "Files/bitwise operator.png",
-    "Files/verilog module.png",
+    "Flet-notes/2023-11-02.md",
+    "Programming languages/Python/Native Functions.md",
+    "Programming languages/Python/str methods.md",
+    "Programming languages/Python/Sliding Window.md",
+    "Programming languages/Python/Line-Profiler.md",
+    "Programming languages/Python/dict methods.md",
+    "Programming languages/Python/Functions.md",
+    "Programming languages/Python/bool.md",
     "Programming languages/Programming languages.md",
+    "conflict-files-obsidian-git.md",
+    "Files/verilog module.png",
+    "Files/reduction operator.png",
+    "Files/bitwise operator.png",
+    "Programming languages/Verilog/Modules.md",
+    "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Syntax.md",
     "Programming languages/Verilog/Introduction.md",
-    "Programming languages/Python/Python.md",
-    "conflict-files-obsidian-git.md",
-    "Uni/Uni.md",
-    "Uni/Struttura esame FDP.md",
-    "Uni",
-    "Programming languages/Verilog",
-    "Programming languages/Python/Lambda.md",
-    "Programming languages/Python/Iterazione.md",
-    "Programming languages/Python/Comparatori e operatori di appartenenza.md",
-    "Flet-notes/2023-11-02.md",
-    "Flet-notes/2023-10-31.md",
-    "Flet-notes/2023-10-26.md",
-    "Flet-notes/2023-10-19.md",
-    "Flet-notes/2023-10-17.md",
-    "Flet-notes/12.10.md",
-    "Flet-notes/10.10.md",
-    "Flet-notes",
+    "Files/Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
+    "Programming languages/Python/Modules.md",
+    "Programming languages/Python/Special Variables.md",
+    "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files",
-    "Programming languages/Python/str.md",
-    "Programming languages/Python/slicing.md",
-    "Programming languages/Python/float.md",
+    "Nuova cartella",
+    "Programming languages/Verilog",
+    "Programming languages/Python/Untitled",
+    "Uni/Uni.md",
+    "Uni/Untitled",
+    "Uni",
+    "Programming languages/Uni",
+    "Untitled.canvas",
+    "Flet-notes",
     "Programming languages/Python",
-    "test",
-    "Programming languages",
-    "Flet notes"
+    "test"
   ]
 }
