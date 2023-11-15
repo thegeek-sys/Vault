@@ -48,3 +48,44 @@ next(iter_l) # -> StopIteration
 ```
 
 ### Lazy
+La lazy evaluation è potente perché fornisce le iterazioni «on the fly» riuscendo anche ad essere meno memory intensive (la differenza si vede su insiemi di grandi dati) però i generatori possono essere valutati solo una volta
+
+All’interno dei generatori viene utilizzata la keyword `yield`. Informalmente `yield` è simile ad un `return` ma <u>mantiene uno stato</u>. Quando infatti si raggiunge uno `yield`, viene sospeso lo stato di esecuzione del generatore e le variabili locali sono salvate
+
+```python
+''' programmazione strutturale '''
+def fibon(n):
+	f_n = 0
+	f_n1 = 1
+	result = [f_n, f_n1]
+	for i in range(n-2):
+		f_n, f_n1 = f_n1, f_n + f_n1
+		result.append(f_n1)
+	return result
+rez = fibon(50)
+len(rez),rez[-1] # -> (50, 777872049)
+
+''' programmazione funzionale '''
+def fibon(n):
+	f_n = 0
+	print('iter 0: ', end='')
+	yield f_n # "cede" 0 mamantiene lo stato della funzione
+	
+	f_n1 = 1
+	print('iter 1: ', end='')
+	yield f_n1 # "cede" 1 mamantiene lo stato della funzione
+
+	for i in range(n-2):
+		f_n, f_n1 = f_n1, f_n + f_n1
+		print(f'iter {i+2}: ', end='')
+		yield f_n1 # "cede" f_n1 mamantiene lo stato della funzione
+	# implicitamente raise StopIteration
+rez_gen = fibon_gen(50)
+type(rez_gen) # -> generator
+next(rez_gen) # iter 0: 0
+next(rez_gen) # iter 1: 1
+next(rez_gen) # iter 2: 2
+next(rez_gen) # iter 3: 3
+next(rez_gen) # iter 4: 5
+```
+

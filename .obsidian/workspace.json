@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Programmazione funzionale.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Programmazione funzionale.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Programmazione funzionale.md"
+                "file": "Flet-notes/2023-11-09.md"
               }
             }
           },
@@ -210,10 +210,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fd306c3b619e0529",
+  "active": "89cfc2674338f208",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-09.md",
     "Programming languages/Python/Programmazione funzionale.md",
+    "Flet-notes/2023-11-09.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-09-vlad.md",
