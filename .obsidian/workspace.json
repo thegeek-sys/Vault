@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md",
+                "file": "Programming languages/Python/Programmazione funzionale.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,8 +51,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md",
+                "file": "Flet-notes/2023-11-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md"
+                "file": "Flet-notes/2023-11-09.md"
               }
             }
           },
@@ -211,16 +210,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fd306c3b619e0529",
+  "active": "89cfc2674338f208",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-09-vlad.md",
+    "Programming languages/Python/Programmazione funzionale.md",
+    "Programming languages/Python/Python.md",
+    "Flet-notes/2023-11-09.md",
     "Programming languages/Python/Object oriented.md",
-    "Files/Screenshot 2023-11-15 at 22-47-21 5) Oggetti Iteratori e Generatori Analisi testi.png",
-    "Files/Screenshot 2023-11-15 at 22-46-33 5) Oggetti Iteratori e Generatori Analisi testi.png",
+    "Flet-notes/2023-11-09-vlad.md",
+    "Programming languages/Programming languages.md",
+    "Flet-notes/10.10.md",
+    "Files/employee 2.png",
+    "Files/employee 1.png",
     "Files/oop employee.png",
     "Files/oop int.png",
-    "Flet-notes/2023-11-09.md",
-    "Programming languages/Python/Python.md",
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/Files.md",
     "Programming languages/Python/str.md",
@@ -235,7 +237,6 @@
     "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/bool.md",
-    "Programming languages/Programming languages.md",
     "conflict-files-obsidian-git.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
@@ -245,7 +246,6 @@
     "Programming languages/Verilog/Syntax.md",
     "Programming languages/Verilog/Introduction.md",
     "Files/Screenshot 2023-11-03 at 00-11-39 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
-    "Programming languages/Python/Modules.md",
     "Files/Screenshot 2023-11-02 at 23-27-28 PowerPoint Presentation - Verilog-1-Combinational-AM-23-Bellani.pdf.png",
     "Files",
     "Nuova cartella",

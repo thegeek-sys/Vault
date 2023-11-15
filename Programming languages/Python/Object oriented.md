@@ -6,7 +6,8 @@ Completed:
 ---
 ---
 ## Introduction
-A differenza della programmazione strutturata, in cui i dati e le funzioni sono separati. Nella programmazione **object oriented** i dati diventano un attributo dell’oggetto e le funzioni diventano i metodi associati all’oggetto (i dati e le funzioni sono incapsulati). Invocare un metodo su un oggetto provoca dei side effect (cambiamenti) di stato ai suoi attributi se mutabile, altrimenti crea un nuovo oggetto in uscita dal metodo (se immutabile).
+A differenza della programmazione strutturata, in cui i dati e le funzioni sono separati. Nella programmazione **object oriented** i dati diventano un attributo dell’oggetto e le funzioni diventano i metodi associati all’oggetto (i dati e le funzioni sono incapsulati).
+Invocare un metodo su un oggetto provoca dei side effect (cambiamenti) di stato ai suoi attributi se mutabile, altrimenti crea un nuovo oggetto in uscita dal metodo (se immutabile). Ogni volta che infatti usiamo un punto in python stiamo accedendo ai metodi o agli attributi di un oggetto.
 
 ![[oop int.png]]
 ```python
@@ -30,8 +31,8 @@ int.__add__(a,b) # -> 101
 ---
 ## Classi e Oggetti
 
-![[Screenshot 2023-11-15 at 22-46-33 5) Oggetti Iteratori e Generatori Analisi testi.png|300]]
-![[Screenshot 2023-11-15 at 22-47-21 5) Oggetti Iteratori e Generatori Analisi testi.png|300]]
+![[employee 1.png|300]]
+![[employee 2.png|300]]
 
 Le classi forniscono un mezzo per costruire nuove «strutture dati» dove i dati e le funzioni «vanno insieme» (incapsulamento). Progettare una nuova classe definisce un nuovo tipo di oggetto. Ci fornisce la possibilità di creare nuove istanze di quel tipo (oggetto è l’istanza di una classe)
 
@@ -47,3 +48,20 @@ In Python, i parametri alle funzioni sono passati per riferimento (una sorta di 
 
 ### Passaggio per riferimento (mutabile)ù
 In Python, i parametri alle funzioni sono passati per riferimento. La funzione vede in ingresso una riferimento alla variabile passata (non una copia)
+
+### Side effect
+La mutabilità degli oggetti causano
+queste «insidie». In python, gli argomenti di default (`target=[]`) sono valutati una volta sola quando la funziona è definita come se fossero una proprietà della
+funzione.
+> [!WARNING]
+> NON vengono valutati ogni volta che la funzione è eseguita
+
+```python
+def add_to(num, target=[]):
+	target.append(num)
+	return target
+
+add_to(1) # -> [1]
+add_to(2) # -> [1, 2]
+add_to(3) # -> [1, 2, 3]
+```
