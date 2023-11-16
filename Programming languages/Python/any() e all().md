@@ -16,4 +16,12 @@ def func(item_a, item_b):
 	return item_a.upper(), item_b.lower()
 
 mapped = map(func,['iAcoPo','leTi'],['maSi','tincoLINI'])
+mapped_bool = map(lambda xy: xy[0] == 'IACOPO' and xy[1] == 'masi',
+				  mapped)
+'si esiste almeno uno iacopo masi!' if any(mapped_bool) else 'No'
+# -> 'si esiste almeno un masi!'
+
+'si chiamano tutti iacopo masi' if all(mapped_bool) else 'esiste almeno un nome diverso da iacopo masi'
+# -> 'esiste almeno un nome diverso da iacopo masi'
 ```
+
