@@ -7,3 +7,4 @@ Completed:
 ---
 ---
 ## Introduction
+La funzione `filter()` ritorna un iteratore su tutta la sequenza di elementi che rispetta una determinata condizione
