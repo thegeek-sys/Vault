@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-16.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Flet-notes/2023-11-16.md"
               }
             }
           }
@@ -151,19 +151,19 @@
   },
   "active": "fe05b84484fa20b6",
   "lastOpenFiles": [
-    "Programming languages/Python/map().md",
-    "Programming languages/Python/Python.md",
+    "Programming languages/Python/any() e all().md",
     "Flet-notes/2023-11-16.md",
+    "Programming languages/Verilog/Verilog.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/map().md",
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/filter().md",
-    "Programming languages/Python/any() e all().md",
     "Programming languages/Python/Programmazione funzionale.md",
     "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-09-vlad.md",
     "Files/oop int.png",
     "Files/employee 2.png",
     "Files/employee 1.png",
-    "Programming languages/Verilog/Verilog.md",
     "Uni/Uni.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/list.md",
