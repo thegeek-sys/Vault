@@ -6,6 +6,7 @@ Related:
   - "[[Programmazione funzionale]]"
 Completed:
 ---
+
 ---
 ## Introduction
 La funzione `map()` permette di “mappare” una funzione f() element-wise ad un iterable. Ritorna infatti un iteratore sulla sequenza data
