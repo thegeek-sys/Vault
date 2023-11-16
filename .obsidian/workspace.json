@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-11-16.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-16.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-16.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-16.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -149,11 +149,12 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "fe05b84484fa20b6",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-09.md",
-    "Flet-notes/2023-11-16.md",
     "Programming languages/Python/map().md",
+    "Programming languages/Python/Python.md",
+    "Flet-notes/2023-11-16.md",
+    "Flet-notes/2023-11-09.md",
     "Programming languages/Python/filter().md",
     "Programming languages/Python/any() e all().md",
     "Programming languages/Python/Programmazione funzionale.md",
@@ -164,7 +165,6 @@
     "Files/employee 1.png",
     "Programming languages/Verilog/Verilog.md",
     "Uni/Uni.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/list.md",
     "conflict-files-obsidian-git.md",
