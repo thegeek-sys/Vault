@@ -40,6 +40,8 @@
 ##### Iterable functions
 - [[map()]]
 - [[filter()]]
+- [[any() e all()]]
+- 
 
 ##### Paradigmi di programmazione
 - [[Object oriented]]

@@ -13,4 +13,16 @@ La funzione `filter()` ritorna un iteratore su tutta la sequenza di elementi che
 def is_even(x):
 	return (x % 2) == 0
 list(filter(is_even, range(10))) # -> [0, 2, 4, 6, 8]
+
+
+
+def func(item_a, item_b):
+	return item_a.upper(), item_b.lower()
+
+mapped = map(func,['iAcoPo','leTi'],['maSi','tincoLINI'])
+filtered = filter(lambda xy: xy[0] == 'IACOPO', mapped)
+
+for f in filtered:
+	print(f)
+# -> ('IACOPO', 'masi')
 ```
