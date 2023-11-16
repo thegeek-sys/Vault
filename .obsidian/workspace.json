@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/map().md",
+                "file": "Programming languages/Python/filter().md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/map().md",
+                "file": "Programming languages/Python/filter().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/map().md",
+                "file": "Programming languages/Python/filter().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/map().md"
+                "file": "Programming languages/Python/filter().md"
               }
             }
           },
@@ -180,9 +180,10 @@
   },
   "active": "fd306c3b619e0529",
   "lastOpenFiles": [
-    "Programming languages/Python/Programmazione funzionale.md",
-    "Programming languages/Python/map().md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/filter().md",
+    "Programming languages/Python/map().md",
+    "Programming languages/Python/Programmazione funzionale.md",
     "Programming languages/Verilog/Verilog.md",
     "Uni/Struttura esame FDP.md",
     "Uni/Uni.md",
@@ -209,7 +210,6 @@
     "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Functions.md",
     "Programming languages/Python/bool.md",
-    "conflict-files-obsidian-git.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
     "Files/bitwise operator.png",
