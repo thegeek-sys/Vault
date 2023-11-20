@@ -7,7 +7,6 @@
 - [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
-- [[Files]]
 - 
 ##### Data types
 ###### Unchangeable
@@ -36,6 +35,11 @@
 - [[for]]
 - [[while]]
 - [[Iterazione]]
+
+##### Files
+- [[Files]]
+- [[Matrix]]
+- 
 
 ##### Iterable functions
 - [[map()]]
