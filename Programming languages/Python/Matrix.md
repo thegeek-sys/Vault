@@ -25,7 +25,9 @@ print_matrix(matrix_3x2)
 # [2, 3] row
 ```
 
+---
 ## Funzione per creare una matrice
+
 ```python
 def create_matrix(r,c,value=0):
 	# define matrix

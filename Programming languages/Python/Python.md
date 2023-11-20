@@ -39,6 +39,7 @@
 ##### Files
 - [[Files]]
 - [[Matrix]]
+- [[Shallow and Deep Copy]]
 - 
 
 ##### Iterable functions
