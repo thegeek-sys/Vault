@@ -103,3 +103,42 @@ images.save(im, 'giotto_edited.png')
 images.visd('giotto_edited.png') # mi permette di fare un render direttamente in sypder su iphyton
 
 ```
+
+---
+## Flippare immagini
+### Asse verticale
+
+```python
+def flip_v(img):
+	H = len(img)
+	W = len(img[0])
+	flipped_img = []
+	for each_y in range(H):
+		# sto invertendo ogni colonna
+		flipped_img.append(img[each_y][::-1])
+	return flipped_img
+
+def flip_v_map(img):
+	H = len(img)
+	W = len(img[0])
+	flipped = map(lambda each_r: each_r[::-1], img)
+	return  list(flipped)
+```
+
+### Asse orizzontale
+
+```python
+def flip_h(img):
+	H = len(img)
+	W = len(img[0])
+	flipped_img = []
+	for each_y_flip in reversed(range(H)): # range(H-1,-1,-1)
+		# sto invertendo ogni riga
+		flipped_img = [row[::-1] for row in im]
+	return flipped_img
+
+def flip_h_map(img):
+	H = len(img)
+	W = len(img[0])
+	return list(map(lambda each_rr: each_rr, reversed(img)))
+```
