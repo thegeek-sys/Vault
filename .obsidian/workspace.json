@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Shallow and Deep Copy.md",
+                "file": "Programming languages/Python/Images.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Shallow and Deep Copy.md",
+                "file": "Programming languages/Python/Images.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Shallow and Deep Copy.md",
+                "file": "Programming languages/Python/Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Shallow and Deep Copy.md"
+                "file": "Programming languages/Python/Images.md"
               }
             }
           },
@@ -202,8 +202,9 @@
   "active": "72da9fb2104172d2",
   "lastOpenFiles": [
     "Flet-notes/2023-11-16.md",
-    "Programming languages/Python/Shallow and Deep Copy.md",
+    "Programming languages/Python/Images.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Shallow and Deep Copy.md",
     "Programming languages/Python/Matrix.md",
     "Programming languages/Python/list.md",
     "Files/matrix.jpg",
@@ -233,7 +234,6 @@
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/str.md",
     "Programming languages/Python/int.md",
-    "Programming languages/Python/dict.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
     "Files/bitwise operator.png",

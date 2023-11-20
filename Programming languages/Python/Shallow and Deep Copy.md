@@ -28,7 +28,6 @@ Negli oggetti immutabili però la deep copy non esiste, il problema si pone nei 
 ---
 ## Shallow vs Deep Copy – Oggetti Mutabili
 
-
 ```start-multi-column
 ID: ID_f7em
 Number of Columns: 2

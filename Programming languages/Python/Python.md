@@ -40,6 +40,7 @@
 - [[Files]]
 - [[Matrix]]
 - [[Shallow and Deep Copy]]
+- [[Images]]
 - 
 
 ##### Iterable functions
