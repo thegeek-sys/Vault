@@ -6,6 +6,7 @@
       {
         "id": "d630902d3c5401c4",
         "type": "tabs",
+        "dimension": 43.230277185501066,
         "children": [
           {
             "id": "8b0478f2d6af14ad",
@@ -24,6 +25,7 @@
       {
         "id": "8c5c47884966523c",
         "type": "tabs",
+        "dimension": 56.769722814498934,
         "children": [
           {
             "id": "72da9fb2104172d2",
@@ -124,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-16.md",
+                "file": "Programming languages/Python/Shallow and Deep Copy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-16.md",
+                "file": "Programming languages/Python/Shallow and Deep Copy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-16.md"
+                "file": "Programming languages/Python/Shallow and Deep Copy.md"
               }
             }
           },
@@ -197,10 +199,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8b0478f2d6af14ad",
+  "active": "72da9fb2104172d2",
   "lastOpenFiles": [
-    "Programming languages/Python/Shallow and Deep Copy.md",
     "Flet-notes/2023-11-16.md",
+    "Programming languages/Python/Shallow and Deep Copy.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Matrix.md",
     "Programming languages/Python/list.md",
