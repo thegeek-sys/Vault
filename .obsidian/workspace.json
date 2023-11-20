@@ -57,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "open",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
