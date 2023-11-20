@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "81cd5a7570df485c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Sliding Window.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -203,10 +215,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "72da9fb2104172d2",
+  "active": "81cd5a7570df485c",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Programming languages/Python/Sliding Window.md",
+    "conflict-files-obsidian-git.md",
     "Programming languages/Python/Special Variables.md",
     "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Python.md",
