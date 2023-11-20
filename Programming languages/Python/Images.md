@@ -26,6 +26,8 @@ Il loro sistema di riferimento è ordinato da sinistra a destra e dall’alto al
 ---
 ##  Disegnare su immagini
 
+### Linee
+
 ```python
 colormap = {'red': (255,0,0), 'blu':(0,0,255), 'green':(0,255,0),
 			'black':(0,0,0), 'white':(255,255,255)}
@@ -43,7 +45,61 @@ def plot_line_h(mat, x, y, lenght, value):
 
 # per scrivere su più righe lungo tutto x
 def plot_line_w(mat, x, y, lenght, value):
-	# ci muoviamo da  y fino a y+lenght , x rimane fissa
+	# ci muoviamo da y fino a y+lenght, x rimane fissa
 	for each_y in range(y,y+lenght):
 		mat[each_y][x] = value
+```
+
+### Rettangoli
+
+```python
+def  plot_rect(mat, x, y, w, h, value, clip=False):
+	'''
+	plottiamo il rettangolo:
+	1. upper segment
+	2. lower segment
+	3. left segment
+	4. right segment
+	'''
+	del clip(v, min_v, max_v):
+		return min(max(min_v, v), max_v)
+	
+	H = len(mat)
+	W = len(mat[0])
+	
+	# per ridimensionare il rettangolo se va in overflow rispetto
+	# ai margini dell'immagine
+	if clip:
+		x, y = clip(x, 0,  W-1), clip(y, 0, H-1)
+		w, h = clip(w, 0,  W-1-x), clip(h, 0, H-1-y)
+
+	# plotting
+	plot_line_h(mat, x,     y,     w, value) # 1.
+	plot_line_h(mat, x,     y+h-1, w, value) # 2.
+	plot_line_v(mat, x,     y,     h, value) # 3.
+	plot_line_v(mat, x+w-1, y,     h, value) # 4.
+
+# un secondo modo per evitare di sbordare
+def draw_pixel2(img, x, y, colore):
+	altezza = len(img)
+	larghezza = len(img[0])
+	if 0 <= x < larghezza and 0 <= y < altezza:
+		img[y][x] = colore
+```
+
+---
+## Aprire immagini
+
+```python
+import images
+im = images.load('gopttp_small.png')
+
+# scrivere riga nera al centro dell'immagine
+R = len(im)
+W = len(im[0])
+im[H//2] = [(0,)*3]*W
+images.save(im, 'giotto_edited.png')
+
+images.visd('giotto_edited.png') # mi permette di fare un render direttamente in sypder su iphyton
+
 ```
