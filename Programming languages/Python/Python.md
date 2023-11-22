@@ -51,6 +51,7 @@
 ##### Advanced
 - [[Pack and Unpack operator]]
 - [[Lambda]]
+- 
 
 ##### Paradigmi di programmazione
 - [[Object oriented]]

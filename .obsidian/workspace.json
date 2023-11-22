@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Pack and Unpack operator.md",
+                "file": "Programming languages/Python/Line-Profiler.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "line profiler",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,12 +95,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Pack and Unpack operator.md",
+                "file": "Programming languages/Python/Line-Profiler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Pack and Unpack operator.md",
+                "file": "Programming languages/Python/Line-Profiler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Pack and Unpack operator.md"
+                "file": "Programming languages/Python/Line-Profiler.md"
               }
             }
           },
@@ -189,11 +189,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "72da9fb2104172d2",
+  "active": "d7fc0ef080d6fe69",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-21.md",
-    "Programming languages/Python/Pack and Unpack operator.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Lambda.md",
+    "Programming languages/Python/Pack and Unpack operator.md",
+    "Flet-notes/2023-11-21.md",
     "Programming languages/Python/Native Functions.md",
     "Programming languages/Python/Special Variables.md",
     "Flet-notes/2023-10-19.md",
@@ -221,7 +222,6 @@
     "Programming languages/Python/map().md",
     "Programming languages/Python/Programmazione funzionale.md",
     "Programming languages/Verilog/Verilog.md",
-    "Uni/Struttura esame FDP.md",
     "Files/employee 2.png",
     "Files/employee 1.png",
     "Files/oop employee.png",
