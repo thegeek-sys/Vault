@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Flet-notes/2023-11-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Images.md"
+                "file": "Flet-notes/2023-11-02.md"
               }
             }
           },
@@ -181,8 +180,14 @@
   },
   "active": "72da9fb2104172d2",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-16.md",
+    "Flet-notes/2023-11-07.md",
+    "Flet-notes/2023-11-09.md",
+    "Flet-notes/2023-11-02.md",
+    "Flet-notes/2023-10-31.md",
+    "Flet-notes/2023-10-26.md",
+    "Flet-notes/2023-10-19.md",
     "Programming languages/Python/Images.md",
+    "Flet-notes/2023-11-16.md",
     "Files/sistema riferimento rgb.png",
     "Files/matrix rgb.png",
     "Programming languages/Python/Python.md",
@@ -205,16 +210,11 @@
     "Uni/Struttura esame FDP.md",
     "Uni/Uni.md",
     "Flet-notes/2023-11-09-vlad.md",
-    "Flet-notes/2023-11-09.md",
     "Programming languages/Python/Object oriented.md",
-    "Programming languages/Programming languages.md",
-    "Flet-notes/10.10.md",
     "Files/employee 2.png",
     "Files/employee 1.png",
     "Files/oop employee.png",
     "Files/oop int.png",
-    "Flet-notes/2023-10-19.md",
-    "Programming languages/Python/str.md",
     "Files/verilog module.png",
     "Files",
     "Nuova cartella",
