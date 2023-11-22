@@ -4,7 +4,6 @@
 - [[Variables]]
 - [[Comments]]
 - [[Functions]]
-- [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
 - 
@@ -48,6 +47,10 @@
 - [[filter()]]
 - [[any() e all()]]
 - 
+
+##### Advanced
+- [[Pack and Unpack operator]]
+- [[Lambda]]
 
 ##### Paradigmi di programmazione
 - [[Object oriented]]
