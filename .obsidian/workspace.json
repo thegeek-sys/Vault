@@ -31,7 +31,7 @@
       {
         "id": "4e86fb8bec697bc3",
         "type": "tabs",
-        "dimension": 52.31719876416066,
+        "dimension": 31.2015503875969,
         "children": [
           {
             "id": "356bd72cc0237c4e",
@@ -53,7 +53,7 @@
       {
         "id": "d1a4135a4c009f1e",
         "type": "tabs",
-        "dimension": 47.68280123583934,
+        "dimension": 68.7984496124031,
         "children": [
           {
             "id": "9da67dfcce4e8838",
@@ -178,7 +178,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "72da9fb2104172d2",
+  "active": "356bd72cc0237c4e",
   "lastOpenFiles": [
     "Flet-notes/2023-10-19.md",
     "Flet-notes/2023-11-02.md",
