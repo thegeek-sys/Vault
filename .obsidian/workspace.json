@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Verilog/Modules.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Verilog/Modules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Verilog/Modules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Images.md"
+                "file": "Programming languages/Verilog/Modules.md"
               }
             }
           },
@@ -173,8 +172,13 @@
   },
   "active": "72da9fb2104172d2",
   "lastOpenFiles": [
-    "Programming languages/Python/Matrix.md",
+    "Programming languages/Verilog/Verilog.md",
+    "Programming languages/Verilog/Introduction.md",
+    "Programming languages/Verilog/Modules.md",
+    "Programming languages/Verilog/Syntax.md",
+    "Programming languages/Programming languages.md",
     "Programming languages/Python/Images.md",
+    "Programming languages/Python/Matrix.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Lambda.md",
@@ -199,11 +203,6 @@
     "Files/matrix.png",
     "Programming languages/Python/Files.md",
     "Programming languages/Python/Sliding Window.md",
-    "Programming languages/Python/any() e all().md",
-    "Programming languages/Python/filter().md",
-    "Programming languages/Python/map().md",
-    "Programming languages/Python/Programmazione funzionale.md",
-    "Programming languages/Verilog/Verilog.md",
     "Files/employee 2.png",
     "Files/employee 1.png",
     "Files/oop employee.png",
