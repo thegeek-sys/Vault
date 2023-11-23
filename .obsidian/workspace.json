@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Flet-notes/2023-11-23.md"
               }
             }
           }
@@ -151,13 +152,13 @@
   },
   "active": "fe05b84484fa20b6",
   "lastOpenFiles": [
+    "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
     "Flet-notes/2023-11-23.md",
     "Flet-notes/2023-11-21.md",
     "Programming languages/Python/Pack and Unpack operator.md",
     "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Shallow and Deep Copy.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/Matrix.md",
     "Programming languages/Python/Images.md",
     "Flet-notes/2023-11-16.md",
