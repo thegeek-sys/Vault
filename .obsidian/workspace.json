@@ -13,25 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "59088f89b4ee5e1c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "07bf4faead670fce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2023-11-21.md",
+                "file": "Programming languages/Python/Images.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/Images.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Programming languages/Python/Images.md"
               }
             }
           },
@@ -191,8 +173,8 @@
   },
   "active": "72da9fb2104172d2",
   "lastOpenFiles": [
-    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Lambda.md",
     "Programming languages/Python/Pack and Unpack operator.md",
     "Flet-notes/2023-11-21.md",

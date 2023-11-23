@@ -7,6 +7,7 @@
 - [[Special Variables]]
 - [[Native Functions]]
 - 
+
 ##### Data types
 ###### Unchangeable
 - [[int]]
