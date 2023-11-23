@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -149,7 +150,7 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "fe05b84484fa20b6",
   "lastOpenFiles": [
     "Flet-notes/2023-11-21.md",
     "Flet-notes/2023-11-23.md",
