@@ -122,6 +122,48 @@ def draw_pixel2(img, x, y, colore):
 		img[y][x] = colore
 ```
 
+## Altri
+
+```python
+# rettangoli concentrici
+H = 100
+W = 50
+black = create_matrix(H, W)
+step = 2
+den = 2
+size = min(H,W)
+for p in range(0,size//den,step):
+    plot_rect(black, p, p, W-p-p, H-p-p, colormap['white'])
+images.visd(black)
+
+
+# rettangolo pieno
+black = create_matrix(H, W)
+def fill_rect(im, x, y, Wr, Hr, col):
+    H, W = shape(im)
+    # x,y -------------- x+Wr-1,y
+    # |-------------------- |
+    # |                     |                                          
+    # |                     |                     
+    # |                     |                     
+    # x,y+Hr-1,---------x+Wr-1,y+Hr-1
+    for delta_h in range(Hr):
+        draw_h_line(im, x, y+delta_h, Wr, col, W, H)
+fill_rect(black, 0, 0, W, H, colormap['yellow'])
+images.visd(black)
+
+
+# rettangoli concentrici pieni
+black = create_matrix(H, W)
+step = 2
+keys = list(colormap.keys())
+N = len(keys)
+size = min(H,W)
+for i, p in enumerate(range(0,size//2,step)):
+    fill_rect(black, p, p, W-2*p, H-2*p, colormap[keys[i%N]])
+images.visd(black)
+```
+
 ---
 ## Aprire immagini
 
