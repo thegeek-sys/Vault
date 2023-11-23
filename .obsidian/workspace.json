@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Programming languages/Python/Object oriented.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb47375ab44499ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Flet-notes/2023-11-23.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
-    "collapsed": true
+    "width": 220.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -150,11 +162,12 @@
       "random-note:Open random note": false
     }
   },
-  "active": "fe05b84484fa20b6",
+  "active": "cb47375ab44499ed",
   "lastOpenFiles": [
+    "Programming languages/Python/Object oriented.md",
+    "Flet-notes/2023-11-23.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
-    "Flet-notes/2023-11-23.md",
     "Flet-notes/2023-11-21.md",
     "Programming languages/Python/Pack and Unpack operator.md",
     "Programming languages/Python/Line-Profiler.md",
@@ -171,7 +184,6 @@
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/filter().md",
     "Programming languages/Python/Programmazione funzionale.md",
-    "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-09-vlad.md",
     "Files/oop int.png",
     "Files/employee 2.png",
