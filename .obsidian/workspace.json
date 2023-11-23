@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-11-21.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
-    "collapsed": true
+    "width": 220.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-21.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-21.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-21.md"
+                "file": "Flet-notes/2023-11-23.md"
               }
             }
           }
@@ -150,11 +149,12 @@
       "random-note:Open random note": false
     }
   },
-  "active": "fe05b84484fa20b6",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
+    "Flet-notes/2023-11-21.md",
+    "Flet-notes/2023-11-23.md",
     "Programming languages/Python/Pack and Unpack operator.md",
     "Programming languages/Python/Line-Profiler.md",
-    "Flet-notes/2023-11-21.md",
     "Programming languages/Python/Shallow and Deep Copy.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Matrix.md",
@@ -186,7 +186,6 @@
     "Programming languages/Python/Files.md",
     "Flet-notes/2023-11-02.md",
     "Programming languages/Verilog/Syntax.md",
-    "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog",
     "Files",
     "Uni",
