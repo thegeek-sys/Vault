@@ -22,6 +22,34 @@ In realtà le immagini RGB più formalmente possono essere viste come:
 
 ![[sistema riferimento rgb.png|300]]
 Il loro sistema di riferimento è ordinato da sinistra a destra e dall’alto al basso (lo 0,0 si trova in alto a sinistra)
+Installazione librerie
+```python
+get_ipython().system(' wget https://twiki.di.uniroma1.it/pub/Programmazione1/AA20_21/DiarioDelleLezioni-CanaleAL/png.py.txt &>/dev/null')
+get_ipython().system(' mv png.py.txt png.py')
+import png
+import io 
+
+# from Prof. Andrea Sterbini
+class Image:                                                                                                                    
+    '''Oggetto che contiene una immagine come lista di liste di colori (R,G,B) e che viene                                         
+    direttamente visualizzate in IPython console/qtconsole/notebook col metodo _repr_png_'''  
+    
+    def __init__(self, img, mode='RGB'):                                                                                                       
+        self.pixels = img  
+        self.mode = mode
+
+    def _repr_png_(self):                                                                                                          
+        '''Produce la rappresentazione binaria della immagine in formato PNG'''                                                    
+        if self.pixels:
+            img = png.from_array(self.pixels, self.mode)                                                                                   
+            b = io.BytesIO()                                                                                                           
+            img.save(b)                                                                                                                
+            return b.getvalue()
+
+get_ipython().system('wget https://twiki.di.uniroma1.it/pub/Programmazione1/AA20_21/DiarioDelleLezioni-CanaleAL/images.py.txt &>/dev/null')
+get_ipython().system(' mv images.py.txt images.py')
+import images
+```
 
 ---
 ##  Disegnare su immagini
@@ -53,13 +81,20 @@ def plot_line_w(mat, x, y, lenght, value):
 ### Rettangoli
 
 ```python
-def  plot_rect(mat, x, y, w, h, value, clip=False):
+def  plot_rect(mat, x, y, Wr, Hr, value, clip=False):
 	'''
 	plottiamo il rettangolo:
 	1. upper segment
 	2. lower segment
 	3. left segment
 	4. right segment
+	
+	# x,y -------------- x+Wr-1,y
+    # |                     |
+    # |                     |                                          
+    # |                     |                     
+    # |                     |                     
+    # x,y+Hr-1,---------x+Wr-1,y+Hr-1
 	'''
 	del clip(v, min_v, max_v):
 		return min(max(min_v, v), max_v)
@@ -74,10 +109,10 @@ def  plot_rect(mat, x, y, w, h, value, clip=False):
 		w, h = clip(w, 0,  W-1-x), clip(h, 0, H-1-y)
 
 	# plotting
-	plot_line_h(mat, x,     y,     w, value) # 1.
-	plot_line_h(mat, x,     y+h-1, w, value) # 2.
-	plot_line_v(mat, x,     y,     h, value) # 3.
-	plot_line_v(mat, x+w-1, y,     h, value) # 4.
+	plot_line_h(mat, x,      y,      Wr, value) # 1.
+	plot_line_h(mat, x,      y+Hr-1, Wr, value) # 2.
+	plot_line_v(mat, x,      y,      Hr, value) # 3.
+	plot_line_v(mat, x+Wr-1, y,      Hr, value) # 4.
 
 # un secondo modo per evitare di sbordare
 def draw_pixel2(img, x, y, colore):
@@ -141,4 +176,19 @@ def flip_h_map(img):
 	H = len(img)
 	W = len(img[0])
 	return list(map(lambda each_rr: each_rr, reversed(img)))
+```
+
+---
+## Shape di una matrice
+```python
+def shape(mat):
+    # immediatly check empty matrix
+    if len(mat) == 0:
+        return 0, 0
+    if len(mat[0]) == 0:
+        return 1, 0
+    # rows corresponds to height
+    r = len(mat)
+    c = len(mat[0])
+    return r, c
 ```
