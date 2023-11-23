@@ -122,8 +122,7 @@ def draw_pixel2(img, x, y, colore):
 		img[y][x] = colore
 ```
 
-## Altri
-
+#### Altri
 ```python
 # rettangoli concentrici
 H = 100
@@ -187,6 +186,14 @@ images.visd('giotto_edited.png') # mi permette di fare un render direttamente in
 
 ```python
 def flip_v(img):
+    '''
+    Flipping the image wrt to the vertical axis
+    in a functional way.
+    More complex: img refers to <list of <list>> as [ row_0, ...., row_n-1]
+    I can pass the iterator img to map that will see each item as a row
+    then I define a lambda function that takes the row and flips it
+    either with [::-1] or I could have used reversed()
+    '''
 	H = len(img)
 	W = len(img[0])
 	flipped_img = []
@@ -206,6 +213,29 @@ def flip_v_map(img):
 
 ```python
 def flip_h(img):
+	'''
+    Img refers to <list of <list>> as [ row_0, ...., row_n-1].
+    What we have to do is simply "reshuffle" the order of the 
+    rows to follow the reverse order.
+    So what I can do is to treat the img as an iterator that I can
+    just reverse immediatly. The function that process each item
+    will return in the correct orect just the row.
+    Note: we optimized the function more to avoid calling the unused map
+    
+    [ r0
+      r1
+      ...
+      rn-1
+    ]
+    
+    becomes
+    
+    [ rn-1
+      r0
+      ...
+      r1
+    ]
+    '''
 	H = len(img)
 	W = len(img[0])
 	flipped_img = []
@@ -233,4 +263,44 @@ def shape(mat):
     r = len(mat)
     c = len(mat[0])
     return r, c
+```
+
+---
+## Ruotare immagini
+### Sinistra
+```python
+#          Sorgente
+#    [c_0-- r_0 ------c_n-1]
+#    [------ r_1 ----------]
+#             .....
+#    [------ r_n-1 --------]
+
+# Destinazione (ragioniamo sulla riga i-esima)
+
+# [c_0-- r_0 ------c_n-1] diventa la colonna
+
+# [c_n-1
+# ...
+# ....
+# c_0]
+
+def rotate_left(im):
+    return [ [im[r][c] for r in range(H)] for c in reversed(range(W))]
+```
+
+### Destra
+```python
+def rotate_right(im):
+      return [ [im[r][c] for r in range(H)] for c in range(W)]
+```
+
+---
+## Crop immagini
+
+```python
+def crop(im, x, y, w, h):
+    H, W = shape(im)
+    return[ [c for c in row[x:x+w]] for row in im[y:y+h]]
+images.visd(crop(im,0,0,W//2,H//2))
+H,W = shape(im)
 ```
