@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Line-Profiler.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           },
@@ -191,6 +191,7 @@
   },
   "active": "72da9fb2104172d2",
   "lastOpenFiles": [
+    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Lambda.md",
     "Programming languages/Python/Pack and Unpack operator.md",
@@ -215,7 +216,6 @@
     "Files/MatrixLabelled.svg.jpg",
     "Files/matrix.png",
     "Programming languages/Python/Files.md",
-    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Sliding Window.md",
     "Programming languages/Python/any() e all().md",
     "Programming languages/Python/filter().md",
