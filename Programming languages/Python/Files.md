@@ -122,4 +122,8 @@ Il file potrà essere analizzato solo all’interno del context manager stesso.
 ```python
 with open('example.txt', mode='rt') as fr:
 	pass
+
+# posso anche aprire più file insieme
+with open('01.txt') as f1, open('02.txt') as f2:
+	pass
 ```

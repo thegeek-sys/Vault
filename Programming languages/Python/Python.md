@@ -4,11 +4,10 @@
 - [[Variables]]
 - [[Comments]]
 - [[Functions]]
-- [[Lambda]]
 - [[Special Variables]]
 - [[Native Functions]]
-- [[Files]]
 - 
+
 ##### Data types
 ###### Unchangeable
 - [[int]]
@@ -37,10 +36,22 @@
 - [[while]]
 - [[Iterazione]]
 
+##### Files
+- [[Files]]
+- [[Matrix]]
+- [[Shallow and Deep Copy]]
+- [[Images]]
+- 
+
 ##### Iterable functions
 - [[map()]]
 - [[filter()]]
 - [[any() e all()]]
+- 
+
+##### Advanced
+- [[Pack and Unpack operator]]
+- [[Lambda]]
 - 
 
 ##### Paradigmi di programmazione

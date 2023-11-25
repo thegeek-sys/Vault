@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "03f0e52b10d61c29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -149,8 +162,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ca8454e67935c940",
+  "active": "03f0e52b10d61c29",
   "lastOpenFiles": [
+    "Programming languages/Verilog/Verilog.md",
+    "conflict-files-obsidian-git.md",
+    "Programming languages/Python/Shallow and Deep Copy.md",
+    "Programming languages/Python/Pack and Unpack operator.md",
+    "Programming languages/Python/Matrix.md",
+    "Programming languages/Python/Images.md",
+    "Flet-notes/2023-11-23.md",
+    "Flet-notes/2023-11-21.md",
+    "Files/sistema riferimento rgb.png",
+    "Files/matrix.jpg",
+    "Files/matrix rgb.png",
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
     "Uni/Uni.md",
@@ -172,19 +196,11 @@
     "Flet-notes/2023-11-09.md",
     "Flet-notes/2023-11-07.md",
     "Files/reduction operator.png",
-    "Programming languages/Verilog/Verilog.md",
     "Files/bitwise operator.png",
     "Files/verilog module.png",
     "Programming languages/Verilog/Syntax.md",
-    "Programming languages/Verilog/Introduction.md",
-    "conflict-files-obsidian-git.md",
-    "Uni/Struttura esame FDP.md",
     "Uni",
     "Programming languages/Verilog",
-    "Programming languages/Python/Lambda.md",
-    "Programming languages/Python/Iterazione.md",
-    "Programming languages/Python/Comparatori e operatori di appartenenza.md",
-    "Flet-notes/2023-10-31.md",
     "Flet-notes",
     "Files",
     "Programming languages/Python",
