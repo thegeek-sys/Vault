@@ -7,7 +7,8 @@ Completed:
 ---
 ## Introduction
 A differenza della programmazione strutturata, in cui i dati e le funzioni sono separati. Nella programmazione **object oriented** i dati diventano un attributo dell’oggetto e le funzioni diventano i metodi associati all’oggetto (i dati e le funzioni sono incapsulati).
-Invocare un metodo su un oggetto provoca dei side effect (cambiamenti) di stato ai suoi attributi se mutabile, altrimenti crea un nuovo oggetto in uscita dal metodo (se immutabile). Ogni volta che infatti usiamo un punto in python stiamo accedendo ai metodi o agli attributi di un oggetto.
+Invocare un metodo su un oggetto provoca dei side effect (cambiamenti) di stato ai suoi attributi se mutabile, altrimenti crea un nuovo oggetto in uscita dal metodo (se immutabile). Ogni volta che infatti usiamo un punto in python stiamo accedendo ai metodi o agli attributi di un oggetto
+Questo tipo di programmazione mi permette di tutelare la riusabilità del codice.
 
 ![[oop int.png]]
 ```python
@@ -46,7 +47,7 @@ Ogni cosa in python in realtà è un oggetto e questi possono essere di tipo mut
 ### Passaggio per riferimento (immutabile)
 In Python, i parametri alle funzioni sono passati per riferimento (una sorta di puntatore). La funzione vede in ingresso un riferimento alla variabile passata (non una copia)
 
-### Passaggio per riferimento (mutabile)ù
+### Passaggio per riferimento (mutabile)
 In Python, i parametri alle funzioni sono passati per riferimento. La funzione vede in ingresso una riferimento alla variabile passata (non una copia)
 
 ### Side effect
@@ -65,3 +66,4 @@ add_to(1) # -> [1]
 add_to(2) # -> [1, 2]
 add_to(3) # -> [1, 2, 3]
 ```
+

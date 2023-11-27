@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Images.md"
+                "file": "Programming languages/Python/Object oriented.md"
               }
             }
           }
@@ -170,9 +170,9 @@
   },
   "active": "d8f1f67613ff5a1c",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-23.md",
-    "Programming languages/Python/Images.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Images.md",
+    "Flet-notes/2023-11-23.md",
     "Conditional assignment.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Modules.md",
