@@ -91,6 +91,10 @@ print(ca1) # -> Color (255, 255, 0, 0)
 ```
 
 ---
+## Attributi di Classe e di Istanza Oggetto
+
+
+---
 ## Oggetti mutabili e immutabili
 Ogni cosa in python in realtà è un oggetto e questi possono essere di tipo mutabile (liste, dizionari, set) o immutabile (numeri, stringhe tuple). Un qualcosa per essere un oggetto deve possedere:
 - **identità** (puntatore alla memoria)
