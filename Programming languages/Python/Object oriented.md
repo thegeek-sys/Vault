@@ -47,24 +47,25 @@ class Color:
 	'''
 
 	def __init__(self, r, g, b):
-	'''
-	__init__ -> specifica cosa fare nel’ inizializzazione di un oggetto. In
-				questo caso lo crea e memorizza r, g, b. Questo è anche chiamato
-				costruttore della classe
-	self     -> va aggiunto nei metodi di una classe. Si riferisce all’oggetto
-				istanza che verrà creato successivamente quando facciamo
-				c1 = Color(0,0,0).
-	'''
-	self._r = r
-	self._g = g
-	self._b = b
+		'''
+		__init__ -> specifica cosa fare nel’ inizializzazione di un oggetto. In
+					questo caso lo crea e memorizza r, g, b. Questo è anche
+					chiamato costruttore della classe
+		self     -> va aggiunto nei metodi di una classe. Si riferisce
+					all’oggetto istanza che verrà creato successivamente quando
+					facciamo
+					c1 = Color(0,0,0).
+		'''
+		self._r = r
+		self._g = g
+		self._b = b
 
 	def __repr__(self):
-	'''
-	questo è il metodo che riscriviamo per mostrare la rappresentazione a video
-	dell'oggetto quando lo sampiamo, es. print()
-	'''
-	return f'Color ({self._r}, {self._g}, {self._b})'
+		'''
+		questo è il metodo che riscriviamo per mostrare la rappresentazione a
+		video dell'oggetto quando lo sampiamo, es. print()
+		'''
+		return f'Color ({self._r}, {self._g}, {self._b})'
 
 c1 = Color(55, 200, 128)
 print(c1._r) # -> 55
@@ -78,9 +79,9 @@ print(c1) # -> 'Color (55, 200, 128)'
 # estendo da Color, lo sto riusando
 class ColorAlpha(Color):
 	def __init__(self, r, g, b, a):
-	# chiamo il costruttore di Color, della classe superiore
-	super().__init__(r, g, b) 
-	self._a = a
+		# chiamo il costruttore di Color, della classe superiore
+		super().__init__(r, g, b) 
+		self._a = a
 
 	def __repr__(self):
 		# estendo il metodo di Color aggiungendo 'a'
@@ -96,10 +97,10 @@ print(ca1) # -> Color (255, 255, 0, 0)
 class Color:
 	n_instances = 0
 	def __init__(self, r, g, b):
-	self._r = r
-	self._g = g
-	self._b = b
-	Color.n_instances += 1
+		self._r = r
+		self._g = g
+		self._b = b
+		Color.n_instances += 1
 
 c1 = Color(255, 0, 0)
 # posso accedere ad n_instances tramite classe
@@ -116,6 +117,25 @@ c2.n_instances # -> 2
 ```python
 c2.n_instances = 0
 c2.n_instances, Color.n_instances # -> (0, 2)
+```
+
+---
+## Metodi di classe
+Trasforma un metodo in una metodo di classe. Un metodo di classe riceve una classe come primo argomento implicito, cosi come un istanza oggetto riceve riferimento alla sua istanza.
+
+```python
+class Color:
+	n_instances = 0
+	def __init__(self, r, g, b):
+		self._r = r
+		self._g = g
+		self._b = b
+		Color.n_instances += 1
+	
+	# definizione di metodi di classe
+	@classmethod
+	def get_n_instances(cls):
+		return cls.n_instances
 ```
 
 ---
