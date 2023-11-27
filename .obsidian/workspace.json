@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -170,6 +169,7 @@
   },
   "active": "d8f1f67613ff5a1c",
   "lastOpenFiles": [
+    "Files/color class.png",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Images.md",
     "Flet-notes/2023-11-23.md",
@@ -201,7 +201,6 @@
     "Files/oop int.png",
     "Files/employee 2.png",
     "Files/employee 1.png",
-    "Programming languages/Python/Files.md",
     "Files/reduction operator.png",
     "Files/bitwise operator.png",
     "Files/verilog module.png",

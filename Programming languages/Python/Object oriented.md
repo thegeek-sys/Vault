@@ -37,6 +37,8 @@ int.__add__(a,b) # -> 101
 
 Le classi forniscono un mezzo per costruire nuove «strutture dati» dove i dati e le funzioni «vanno insieme» (incapsulamento). Progettare una nuova classe definisce un nuovo tipo di oggetto. Ci fornisce la possibilità di creare nuove istanze di quel tipo (oggetto è l’istanza di una classe)
 
+![[color class.png]]
+
 ```python
 class Color:
 	'''
@@ -68,6 +70,7 @@ print(c1._r) # -> 55
 ```
 
 ### Ereditarietà
+
 
 ---
 ## Oggetti mutabili e immutabili
