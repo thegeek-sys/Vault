@@ -13,7 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conditional assignment.md",
+                "file": "Flet-notes/2023-11-23.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a5da3ec542fdc9c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8f1f67613ff5a1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Images.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conditional assignment.md",
+                "file": "Programming languages/Python/Images.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conditional assignment.md",
+                "file": "Programming languages/Python/Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conditional assignment.md"
+                "file": "Programming languages/Python/Images.md"
               }
             }
           }
@@ -149,20 +168,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ca8454e67935c940",
+  "active": "d8f1f67613ff5a1c",
   "lastOpenFiles": [
-    "Programming languages/Verilog/Verilog.md",
+    "Flet-notes/2023-11-23.md",
+    "Programming languages/Python/Images.md",
+    "Programming languages/Python/Python.md",
     "Conditional assignment.md",
+    "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog/Syntax.md",
     "Programming languages/Verilog/Introduction.md",
-    "Programming languages/Python/Python.md",
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/Shallow and Deep Copy.md",
     "Programming languages/Python/Pack and Unpack operator.md",
     "Programming languages/Python/Matrix.md",
-    "Programming languages/Python/Images.md",
-    "Flet-notes/2023-11-23.md",
     "Flet-notes/2023-11-21.md",
     "Files/sistema riferimento rgb.png",
     "Files/matrix.jpg",
