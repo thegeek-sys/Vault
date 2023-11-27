@@ -92,7 +92,31 @@ print(ca1) # -> Color (255, 255, 0, 0)
 
 ---
 ## Attributi di Classe e di Istanza Oggetto
+```python
+class Color:
+	n_instances = 0
+	def __init__(self, r, g, b):
+	self._r = r
+	self._g = g
+	self._b = b
+	Color.n_instances += 1
 
+c1 = Color(255, 0, 0)
+# posso accedere ad n_instances tramite classe
+Color.n_instances # -> 1
+c2 = Color(0, 0, 0)
+Color.n_instances # -> 2
+# posso accedere ad n_instances anche tramite l'istanza
+c2.n_instances # -> 2
+```
+
+> [!WARNING]
+>Se però scrivo dentro un attributo di classe tramite un istanza oggetto, **allora l’attributo in scrittura passa ad attributo di oggetto**
+
+```python
+c2.n_instances = 0
+c2.n_instances, Color.n_instances # -> (0, 2)
+```
 
 ---
 ## Oggetti mutabili e immutabili
