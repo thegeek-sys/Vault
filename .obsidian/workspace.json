@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Images.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Images.md"
+                "file": "Programming languages/Python/Object oriented.md"
               }
             }
           },
@@ -184,13 +185,13 @@
   },
   "active": "72da9fb2104172d2",
   "lastOpenFiles": [
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Images.md",
     "Flet-notes/2023-11-23.md",
     "conflict-files-obsidian-git.md",
-    "Programming languages/Python/Images.md",
     "Files/color class.png",
     "Files/color alpha class.png",
     "Conditional assignment.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Verilog/Modules.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Verilog/Introduction.md",
