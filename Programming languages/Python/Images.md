@@ -304,3 +304,84 @@ def crop(im, x, y, w, h):
 images.visd(crop(im,0,0,W//2,H//2))
 H,W = shape(im)
 ```
+
+---
+## Scala di grigi
+
+```python
+'''
+Faccio la media di tre colori del singolo pixel e assegno il valore medio a tutti e tre i colori es. (156, 99, 38) → (98, 98, 98)
+'''
+def gray(im):
+    return [[ (sum(c)//3,)*3 for c in row] for row in im ]
+```
+
+---
+## Applicare filtri
+
+```python
+# Applico un filtro generico (passo una funzione)
+def filtro_null(pix):
+    return pix
+
+def filter_im(im, filter_func):
+    return [[ filter_func(c) for c in row] for row in im ]
+
+images.visd(filter_im(im,filtro_null))
+```
+
+### Filtro luminosità
+```python
+# Applico un filtro che aumenta intensità
+def luminosita(pix,k):
+    def clip(p):
+        return max(min(int(round(p*k)),255),0)
+    return tuple(clip(p) for p in pix)
+```
+
+### Shuffling
+```python
+# Aggiungo rumore all'immagine
+import random
+def shuffle(im,x,y, H, W, size=20):
+    rx = random.randint(-size, size)
+    ry = random.randint(-size, size)
+    xx = x + rx
+    yy = y + ry
+    pix = im[y][x]
+    if 0 <= xx < W and 0 <= yy < H:
+        pix = im[yy][xx]
+    return pix
+```
+
+### Blur
+```python
+from tqdm import tqdm
+def blur(im,x, y, H, W, k=5):
+    # k=1;x=0 si fa -1, 0, +1 compreso
+    somma = 0, 0, 0
+    count = 0
+    for xx in range(x-k,x+k+1):
+        for yy in range(y-k,y+k+1):
+            if 0 <= xx < W and 0 <= yy < H:
+                pix = im[yy][xx]
+                somma = tuple(map(lambda s,p: s+p, somma,pix))
+                count += 1 
+    return tuple(map(lambda s: min(max(s//count,0),255), somma))
+    
+    
+def filter_im(im, filter_func):
+    H, W = shape(im)
+    return [[ filter_func(im,x,y, H, W) for x, c in enumerate(row)] 
+            for y, row in tqdm(enumerate(im),desc='blurring',total=H) ]
+images.visd(filter_im(im,blur))
+```
+
+---
+## Compressione immagini
+- **lossless** → è possibile ricondursi al file di partenza
+- **lossy** → .jpg viene compressa un’immagine perdendo il file originale
+
+## Tipico esercizio esame
+- immagine da parsare e restituire un rettangolo, segmento etc e restituire parametrizzazione di questo
+- immagine da disegnare
