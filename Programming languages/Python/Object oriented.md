@@ -37,6 +37,36 @@ int.__add__(a,b) # -> 101
 
 Le classi forniscono un mezzo per costruire nuove «strutture dati» dove i dati e le funzioni «vanno insieme» (incapsulamento). Progettare una nuova classe definisce un nuovo tipo di oggetto. Ci fornisce la possibilità di creare nuove istanze di quel tipo (oggetto è l’istanza di una classe)
 
+```python
+class Color:
+	'''
+	Definisco una classe che descrive attributo e metodo per definire e
+	modificare un pixel
+	'''
+
+	def __init__(self, r, g, b):
+	'''
+	__init__ -> specifica cosa fare nel’ inizializzazione di un oggetto. In
+				questo caso lo crea e memorizza r, g, b.
+	self     -> va aggiunto nei metodi di una classe. Si riferisce all’oggetto
+				istanza che verrà creato successivamente quando facciamo
+				c1 = Color(0,0,0).
+	'''
+	self._r = r
+	self._g = g
+	self._b = b
+
+	def __repr__(self):
+	'''
+	questo è il metodo che riscriviamo per mostrare la rappresentazione a video
+	dell'oggetto quando lo sampiamo, es. print()
+	'''
+	return f'Color ({self._r}, {self._g}, {self._b})'
+
+c1 = Color(55, 200, 128)
+print(c1._r) # -> 55
+```
+
 ---
 ## Oggetti mutabili e immutabili
 Ogni cosa in python in realtà è un oggetto e questi possono essere di tipo mutabile (liste, dizionari, set) o immutabile (numeri, stringhe tuple). Un qualcosa per essere un oggetto deve possedere:
