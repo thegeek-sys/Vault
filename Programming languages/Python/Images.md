@@ -376,3 +376,12 @@ def filter_im(im, filter_func):
             for y, row in tqdm(enumerate(im),desc='blurring',total=H) ]
 images.visd(filter_im(im,blur))
 ```
+
+---
+## Compressione immagini
+- **lossless** → è possibile ricondursi al file di partenza
+- **lossy** → .jpg viene compressa un’immagine perdendo il file originale
+
+## Tipico esercizio esame
+- immagine da parsare e restituire un rettangolo, segmento etc e restituire parametrizzazione di questo
+- immagine da disegnare
