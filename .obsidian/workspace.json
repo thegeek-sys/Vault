@@ -20,19 +20,18 @@
             }
           },
           {
-            "id": "7c07069dd6a5b014",
+            "id": "4fa3cd79e981fb9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Programming languages/Python/Images.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Programming languages/Python/Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Programming languages/Python/Images.md"
               }
             }
           },
@@ -183,11 +182,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "72da9fb2104172d2",
   "lastOpenFiles": [
-    "Programming languages/Python/Images.md",
-    "conflict-files-obsidian-git.md",
     "Flet-notes/2023-11-23.md",
+    "conflict-files-obsidian-git.md",
+    "Programming languages/Python/Images.md",
     "Files/color class.png",
     "Files/color alpha class.png",
     "Conditional assignment.md",
