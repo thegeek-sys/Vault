@@ -49,7 +49,8 @@ class Color:
 	def __init__(self, r, g, b):
 	'''
 	__init__ -> specifica cosa fare nel’ inizializzazione di un oggetto. In
-				questo caso lo crea e memorizza r, g, b.
+				questo caso lo crea e memorizza r, g, b. Questo è anche chiamato
+				costruttore della classe
 	self     -> va aggiunto nei metodi di una classe. Si riferisce all’oggetto
 				istanza che verrà creato successivamente quando facciamo
 				c1 = Color(0,0,0).
@@ -67,10 +68,27 @@ class Color:
 
 c1 = Color(55, 200, 128)
 print(c1._r) # -> 55
+print(c1) # -> 'Color (55, 200, 128)'
 ```
 
 ### Ereditarietà
+![[color alpha class.png]]
 
+```python
+# estendo da Color, lo sto riusando
+class ColorAlpha(Color):
+	def __init__(self, r, g, b, a):
+	# chiamo il costruttore di Color, della classe superiore
+	super().__init__(r, g, b) 
+	self._a = a
+
+	def __repr__(self):
+		# estendo il metodo di Color aggiungendo 'a'
+		return super().__repr__()[:-1] + f', {self._a})'
+
+ca1 = ColorAlpha(255, 255, 0, 0)
+print(ca1) # -> Color (255, 255, 0, 0)
+```
 
 ---
 ## Oggetti mutabili e immutabili
