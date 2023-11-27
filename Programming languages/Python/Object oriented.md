@@ -67,6 +67,8 @@ c1 = Color(55, 200, 128)
 print(c1._r) # -> 55
 ```
 
+### Ereditarietà
+
 ---
 ## Oggetti mutabili e immutabili
 Ogni cosa in python in realtà è un oggetto e questi possono essere di tipo mutabile (liste, dizionari, set) o immutabile (numeri, stringhe tuple). Un qualcosa per essere un oggetto deve possedere:
