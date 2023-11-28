@@ -136,6 +136,8 @@ class Color:
 	@classmethod
 	def get_n_instances(cls):
 		return cls.n_instances
+
+Color.get_n_instances()
 ```
 
 ---
