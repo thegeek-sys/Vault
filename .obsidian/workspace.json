@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-11-23.md",
+                "file": "Flet-notes/2023-11-28.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-23.md",
+                "file": "Flet-notes/2023-11-28.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-23.md",
+                "file": "Flet-notes/2023-11-28.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-23.md"
+                "file": "Flet-notes/2023-11-28.md"
               }
             }
           }
@@ -164,11 +164,12 @@
   },
   "active": "cb47375ab44499ed",
   "lastOpenFiles": [
+    "Flet-notes/2023-11-23.md",
+    "Flet-notes/2023-11-28.md",
     "Files/color class.png",
     "Files/color alpha class.png",
     "Conditional assignment.md",
     "Programming languages/Python/Object oriented.md",
-    "Flet-notes/2023-11-23.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
     "Flet-notes/2023-11-21.md",
@@ -196,7 +197,6 @@
     "conflict-files-obsidian-git.md",
     "Files/verilog module.png",
     "Files/reduction operator.png",
-    "Files/bitwise operator.png",
     "Flet-notes/2023-11-07.md",
     "Programming languages/Python/str methods.md",
     "Programming languages/Python/Files.md",
