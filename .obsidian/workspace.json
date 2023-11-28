@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b24daa7246d14f6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Object oriented.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-28.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-28.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-28.md"
+                "file": "Programming languages/Python/Object oriented.md"
               }
             }
           }
@@ -150,10 +163,10 @@
       "random-note:Open random note": false
     }
   },
-  "active": "cb47375ab44499ed",
+  "active": "b24daa7246d14f6a",
   "lastOpenFiles": [
-    "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-28.md",
+    "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-23.md",
     "Files/color class.png",
     "Files/color alpha class.png",
