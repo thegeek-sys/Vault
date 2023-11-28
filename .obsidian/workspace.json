@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-28.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-28.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-28.md"
+                "file": "Programming languages/Python/Object oriented.md"
               }
             }
           }
@@ -162,10 +162,10 @@
       "random-note:Open random note": false
     }
   },
-  "active": "cb47375ab44499ed",
+  "active": "fe05b84484fa20b6",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-23.md",
     "Flet-notes/2023-11-28.md",
+    "Flet-notes/2023-11-23.md",
     "Files/color class.png",
     "Files/color alpha class.png",
     "Conditional assignment.md",
