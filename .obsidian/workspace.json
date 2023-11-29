@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line profiler",
+                "query": "class",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/Object oriented.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Programming languages/Python/Object oriented.md"
               }
             }
           },
@@ -191,14 +191,14 @@
   },
   "active": "d7c64ccf13977dac",
   "lastOpenFiles": [
-    "Files/color class.png",
-    "Programming languages/Python/Python.md",
+    "Flet-notes/2023-11-28.md",
+    "Programming languages/Python/Object oriented.md",
     "Programming languages/Python/Images.md",
+    "Programming languages/Python/Python.md",
+    "Files/color class.png",
     "Programming languages/Python/Overloading operatori.md",
     "Programming languages/Python/Functions.md",
-    "Flet-notes/2023-11-28.md",
     "Flet-notes/2023-11-23.md",
-    "Programming languages/Python/Object oriented.md",
     "conflict-files-obsidian-git.md",
     "Files/color alpha class.png",
     "Conditional assignment.md",
