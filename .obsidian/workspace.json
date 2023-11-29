@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "8be420c57a7c0cf6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7c64ccf13977dac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Functions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -81,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 276.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -97,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-28.md",
+                "file": "Programming languages/Python/Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-28.md",
+                "file": "Programming languages/Python/Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-28.md"
+                "file": "Programming languages/Python/Functions.md"
               }
             }
           },
@@ -170,12 +189,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "d7c64ccf13977dac",
   "lastOpenFiles": [
+    "Flet-notes/2023-11-28.md",
+    "Programming languages/Python/Functions.md",
+    "Programming languages/Python/Python.md",
     "Flet-notes/2023-11-23.md",
     "Programming languages/Python/Object oriented.md",
-    "Flet-notes/2023-11-28.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/Images.md",
     "conflict-files-obsidian-git.md",
     "Files/color class.png",
@@ -199,7 +219,6 @@
     "Flet-notes/2023-11-09.md",
     "Flet-notes/2023-10-31.md",
     "Flet-notes/2023-10-26.md",
-    "Flet-notes/2023-11-16.md",
     "Files/sistema riferimento rgb.png",
     "Files/matrix rgb.png",
     "Files/matrix.jpg",

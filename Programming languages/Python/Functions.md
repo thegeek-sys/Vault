@@ -103,6 +103,7 @@ fact(5, 1)
 120
 ```
 
+---
 ## Funzioni come parametri
 Eventualmente posso anche passare direttamente una funzione stessa come parametro di una funzione
 
@@ -115,4 +116,34 @@ M = statistics(max, lista)
 print(M) # -> 43
 m = statistics(min, lista)
 print(m) # -> -87
+```
+
+---
+## Decoratori
+Un decoratore è una funzione che modifica le “funzionalità” di una funzione (la potenzia senza modificarne il codice).
+Assumiamo infatti di avere una funzione che non possiamo né toccare né modificare, ma vogliamo aggiungere delle funzionalità ad essa. Come facciamo? Il trucco è ricordarsi che possono passare funzioni a funzioni
+```python
+# decoratore
+def before_and_after_decorator(func):
+	def my_wrapping_func():
+		print('Decorator: before')
+		func()
+		print('Decorator: after')
+	return my_wrapping_func
+
+# funzione da estendere
+def my_locked_function():
+	print('Main code of the locked function 1')
+
+# il mio decoratore è fatto in modo tale che func() non è deciso a priori e
+# dipende da ciò che passiamo alla funzione
+dec = before_and_after_decorator(my_locked_function)
+dec()
+# -> Decorator: before
+# -> Main code of the locked function 1
+# -> Decorator: after
+
+@before_and_after_decorator
+def my_locked_function_two():
+	print('Main code of the locked function 2')
 ```
