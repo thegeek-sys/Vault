@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Functions.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Functions.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Functions.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Functions.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           },
@@ -191,14 +191,15 @@
   },
   "active": "d7c64ccf13977dac",
   "lastOpenFiles": [
-    "Flet-notes/2023-11-28.md",
-    "Programming languages/Python/Functions.md",
+    "Files/color class.png",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Images.md",
+    "Programming languages/Python/Overloading operatori.md",
+    "Programming languages/Python/Functions.md",
+    "Flet-notes/2023-11-28.md",
     "Flet-notes/2023-11-23.md",
     "Programming languages/Python/Object oriented.md",
-    "Programming languages/Python/Images.md",
     "conflict-files-obsidian-git.md",
-    "Files/color class.png",
     "Files/color alpha class.png",
     "Conditional assignment.md",
     "Programming languages/Verilog/Modules.md",
@@ -217,8 +218,6 @@
     "Flet-notes/2023-11-02.md",
     "Flet-notes/2023-11-07.md",
     "Flet-notes/2023-11-09.md",
-    "Flet-notes/2023-10-31.md",
-    "Flet-notes/2023-10-26.md",
     "Files/sistema riferimento rgb.png",
     "Files/matrix rgb.png",
     "Files/matrix.jpg",

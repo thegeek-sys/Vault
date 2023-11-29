@@ -125,6 +125,7 @@ Assumiamo infatti di avere una funzione che non possiamo né toccare né modific
 ```python
 # decoratore
 def before_and_after_decorator(func):
+	# senza questa seconda funzione dentro verrà immediatamente esguita
 	def my_wrapping_func():
 		print('Decorator: before')
 		func()
