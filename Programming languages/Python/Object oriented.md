@@ -72,7 +72,7 @@ class Color:
 	Definisco una classe che descrive attributo e metodo per definire e
 	modificare un pixel
 	'''
-
+	
 	def __init__(self, r, g, b):
 		'''
 		__init__ -> specifica cosa fare nel’ inizializzazione di un oggetto. In
@@ -86,7 +86,7 @@ class Color:
 		self._r = r
 		self._g = g
 		self._b = b
-
+	
 	def __repr__(self):
 		'''
 		questo è il metodo che riscriviamo per mostrare la rappresentazione a
@@ -109,7 +109,7 @@ class ColorAlpha(Color):
 		# chiamo il costruttore di Color, della classe superiore
 		super().__init__(r, g, b) 
 		self._a = a
-
+	
 	def __repr__(self):
 		# estendo il metodo di Color aggiungendo 'a'
 		return super().__repr__()[:-1] + f', {self._a})'
@@ -177,11 +177,38 @@ class Color:
 		self._r = r
 		self._g = g
 		self._b = b
-
+	
 	def __repr__(self):
-		'''
-		questo è il metodo che riscriviamo per mostrare la rappresentazione a
-		video dell'oggetto quando lo sampiamo, es. print()
-		'''
+		# overloading of repr method
 		return f'Color ({self._r}, {self._g}, {self._b})'
+	
+	def __add__(self, other_col):
+		# overloading of add operator
+		return Color(self._r + other_col._r,
+					 self._g + other_col._g,
+					 self._b + other_col._b,)
+	
+	# definisco una moltiplicazione scalare (int) e tra colore e colore (Color)
+	def __mul__(self, k):
+		# overloading the mul operator
+		if isinstance(k, int):
+			print('using scalar multiply', end=' ')
+			return Color(self._r*k, self._g*k, self._b*k)
+		elif isinstance(k, Color):
+			print('using elementwise operator', end=' ')
+			return Color(self._r*k._r, self._g*k._g, self._b*k._b)
+		else:
+			raise TypeError(f'Only multiplying between a) two colors b) colors'
+							f'and a scalar are allowed, but I got {type(k)}')
+
+c1 = Color(0, 255, 0)
+c2 = Color(255, 0, 0)
+
+print(c1 + c2) # -> Color (255, 255, 0)
+print(c2 * 3) # -> using scalar multiply Color (765, 0, 0)
+print(c1 * c2) # -> using elementwise operator Color (0, 0, 0)
+
+print(c1 * 'foobar')
+# TypeError: Only multiplying between a) two colors b) colors and a
+# scalar are allowed, but I got <class 'str'>
 ```
