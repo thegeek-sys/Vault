@@ -200,6 +200,9 @@ class Color:
 		else:
 			raise TypeError(f'Only multiplying between a) two colors b) colors'
 							f'and a scalar are allowed, but I got {type(k)}')
+	
+	def __eq__(self, other):
+		return self._r==other._r and self._g==other._g and self._b==other._b 
 
 c1 = Color(0, 255, 0)
 c2 = Color(255, 0, 0)
@@ -211,4 +214,8 @@ print(c1 * c2) # -> using elementwise operator Color (0, 0, 0)
 print(c1 * 'foobar')
 # TypeError: Only multiplying between a) two colors b) colors and a
 # scalar are allowed, but I got <class 'str'>
+
+# anche le classi ereditarie ereditano gli overloading
+ca1 = ColorAlpha(255, 0, 0, 128)
+ca1 == c2 # -> True
 ```
