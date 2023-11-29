@@ -28,4 +28,17 @@ Nella queue vige la regola **first in, last out**
 Nello stack vige la regola **first in, first out**
 
 --- end-multi-column
+#### Stack di un programma
+![[stack program.png]]
+
+## Sequenza Fibonacci - ricorsivo
+```python
+def fibonacci(n):
+	if n < 2:
+		return 1
+	else:
+		return fibonacci(n-1) + fibonacci(n-2)
+```
+
+![[fibonacci.png]]
 
