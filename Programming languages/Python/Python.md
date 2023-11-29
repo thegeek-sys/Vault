@@ -51,7 +51,7 @@
 ##### Advanced
 - [[Pack and Unpack operator]]
 - [[Lambda]]
-- [[Overloading operatori]]
+- [[Ricorsione]]
 - 
 
 ##### Paradigmi di programmazione
