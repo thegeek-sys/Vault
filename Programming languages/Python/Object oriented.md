@@ -219,3 +219,14 @@ print(c1 * 'foobar')
 ca1 = ColorAlpha(255, 0, 0, 128)
 ca1 == c2 # -> True
 ```
+
+---
+## Callable objects
+Un oggetto è definito callable se gli posso applicare `()`. Per controllare al volo se un oggetto è callable posso utilizzare la funzione `callable(<obj>)`
+
+```python
+[ callable(x) for x in [int, str, list] ] # -> [True, True, True]
+[ x() for x in [int, str, list] ] # -> [0, '', []]
+```
+
+Questo ci è utile per capire il decoratore `@TraceRecursion` dell’HW8 del prof. Sterbini
