@@ -82,3 +82,23 @@ def fibonacci_memo(n):
 ## Iterativo vs ricorsivo
 **Su carta**, versione iterativa (bottom up) e ricorsiva (top down, con memorization) hanno la stessa complessità
 **Sul calcolatore**, la versione iterativa può performare meglio perché evita di aprire e chiudere funzioni su stack del programma, ma in generale possiamo dire che la ricorsione potrebbe risultare più intuitiva da scrivere se localizziamo i sotto problemi
+
+---
+## Ricorsione all’andata
+Possiamo anche fare in modo che il calcolo della ricorsione venga fatto all’andata fino a che non si arriva al caso base invece di calcolarlo al ritorno (ma il codice ci verrà molto probabilmente più complesso).
+
+```python
+# sommo da 1...N
+
+# 1. incremento i -> i+1
+# 2. finisco quando i==n+1 (convergenza e risultato)
+# 3. in partenza la somma e' 0, ad ogni passo incremento
+
+def sumrp(i, n, partial_sum=0):
+    # 2. convergenza e risultato
+    if i == n+1:
+        return partial_sum # torniamo il caso generato
+    # incremento della soluzione per ogni passo
+    # sono ad iterazione i+1 e accumula la somma parziale
+    return sumrp(i+1, n, partial_sum=partial_sum+i)
+```

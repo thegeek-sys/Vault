@@ -31,9 +31,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Object oriented.md",
+                "file": "Programming languages/Python/Ricorsione.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-11-30.md",
+                "file": "Programming languages/Python/Ricorsione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-11-30.md",
+                "file": "Programming languages/Python/Ricorsione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-11-30.md"
+                "file": "Programming languages/Python/Ricorsione.md"
               }
             }
           },
@@ -200,12 +200,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d7c64ccf13977dac",
+  "active": "c462a7af129dca5a",
   "lastOpenFiles": [
-    "Programming languages/Python/Object oriented.md",
     "Flet-notes/2023-11-30.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/Ricorsione.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Object oriented.md",
     "Programming languages/Python/dict methods.md",
     "Files/fibonacci.png",
     "Files/stack program.png",
