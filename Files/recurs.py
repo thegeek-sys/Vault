@@ -114,12 +114,10 @@ rez = whatdoido.trace(5)
 # %% PER CASA Somma ricorsivamente i numeri da N a M compresi
 
 def sumr(n, m):
-    if n == m:
+    if m == n:
         return n
     else:
         return m + sumr(n, m-1)
-
-print(sumr(1, 5))
 
 # %% Somma primi 1..N numeri ricorsivamente all'ANDATA
 
