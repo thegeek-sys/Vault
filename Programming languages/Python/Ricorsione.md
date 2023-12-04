@@ -7,7 +7,7 @@ Completed:
 ---
 ## Introduction
 Una funzione si dice **ricorsiva** quando nella sua definizione la funzione chiama sé stessa. All’interno di essa però deve anche essere presente un **caso base**
-
+[[recurs.py|File ricorsivo]]
 
 ---
 ## Requisiti per risolvere un problema con ricorsione
