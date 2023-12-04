@@ -6,7 +6,8 @@ Completed:
 ---
 ---
 ## Introduction
-Una funzione si dice **ricorsiva** quando nella sua definizione la funzione chiama sé stessa. All’interno di essa però deve anche essere presente un **caso base** 
+Una funzione si dice **ricorsiva** quando nella sua definizione la funzione chiama sé stessa. All’interno di essa però deve anche essere presente un **caso base**
+
 
 ---
 ## Requisiti per risolvere un problema con ricorsione
@@ -89,16 +90,22 @@ Possiamo anche fare in modo che il calcolo della ricorsione venga fatto all’an
 
 ```python
 # sommo da 1...N
-
+''' RITORNO '''
 # 1. incremento i -> i+1
 # 2. finisco quando i==n+1 (convergenza e risultato)
 # 3. in partenza la somma e' 0, ad ogni passo incremento
-
 def sumrp(i, n, partial_sum=0):
     # 2. convergenza e risultato
     if i == n+1:
         return partial_sum # torniamo il caso generato
     # incremento della soluzione per ogni passo
     # sono ad iterazione i+1 e accumula la somma parziale
+    return sumrp(i+1, n, partial_sum=partial_sum+i)
+
+''' ANDATA '''
+def sumrp(i, n, partial_sum=0):
+    # 2. convergenza e risultato
+    if i == n:
+        return partial_sum + n # mi risparmio un passo ricorsivo
     return sumrp(i+1, n, partial_sum=partial_sum+i)
 ```
