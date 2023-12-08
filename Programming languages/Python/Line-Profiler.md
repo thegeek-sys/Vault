@@ -10,7 +10,7 @@ Line-profiler ci serve per controllare il tempo di esecuzione di una determinata
 
 ---
 ## Installation
-`conda install spyder-line-profiler -c spyder-ide`
+`conda install spyder-line-profiler -c conda-forge`
 [Guida d’uso](https://docs.spyder-ide.org/current/plugins/lineprofiler.html)
 
 ---
