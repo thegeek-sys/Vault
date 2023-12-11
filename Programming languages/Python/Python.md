@@ -52,6 +52,7 @@
 - [[Pack and Unpack operator]]
 - [[Lambda]]
 - [[Ricorsione]]
+- [[Filesystem come albero]]
 - 
 
 ##### Paradigmi di programmazione
