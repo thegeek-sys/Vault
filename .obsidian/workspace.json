@@ -6,7 +6,7 @@
       {
         "id": "3df939537c93c254",
         "type": "tabs",
-        "dimension": 60.507246376811594,
+        "dimension": 50.06038647342995,
         "children": [
           {
             "id": "839d3723cfab2dc5",
@@ -25,7 +25,7 @@
       {
         "id": "96a89df0257e950a",
         "type": "tabs",
-        "dimension": 39.492753623188406,
+        "dimension": 49.93961352657005,
         "children": [
           {
             "id": "b24daa7246d14f6a",
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -169,11 +170,11 @@
       "random-note:Open random note": false
     }
   },
-  "active": "839d3723cfab2dc5",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
     "Files/Binary_tree.jpg",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/Albero binario.md",
+    "Programming languages/Python/Python.md",
     "Programming languages/Python/Filesystem come albero.md",
     "Flet-notes/2023-12-05.md",
     "Programming languages/Python/Line-Profiler.md",
@@ -207,7 +208,6 @@
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/filter().md",
     "Programming languages/Python/Programmazione funzionale.md",
-    "Files/oop int.png",
     "Programming languages/Verilog",
     "Files",
     "Uni",
