@@ -57,3 +57,20 @@ def diameter(self):
 ## Ricerca
 La ricerca all’interno di un albero può essere eseguita in modo ricorsivo. Il caso base lo ho se mi trovo nella root dell’albero e ho il valore ricercato, altrimenti dovrò entrare ricorsivamente in ogni ramo dell’albero
 
+```python
+def find(self, value):
+	if self.value == value:
+		return True
+	# non esistono nè albero sinistro nè destro
+	elif not self.sx and not self.dx:
+		return False
+	# esiste sottoalbero sinistro
+	elif self.sx:
+		if self.sx.find(value):
+			return True
+		# esiste sottoalbero destro
+		elif self.dx:
+			return self.dx.find(value)
+		else:
+			return False
+```
