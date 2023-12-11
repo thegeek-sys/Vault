@@ -20,6 +20,9 @@ class BinaryNode:
 		self.value = value
 		self.sx = sx
 		self.dx = dx
+
+root = BinaryNode(1, BinaryNode(6, BinaryNode(2), BinaryNode(3)),
+					 BinaryNode(7, BinaryNode(4), BinaryNode(5)))
 ```
 
 ---
@@ -35,6 +38,7 @@ def height(self):
 
 ---
 ## Diametro (percorso massimo)
+
 ```python
 def diameter(self):
 	# calcolo il percorso massimo sulla radice
@@ -49,3 +53,7 @@ def diameter(self):
 	# per la radice
 	return max(D_root, D_dx, D_sx)
 ```
+
+## Ricerca
+La ricerca all’interno di un albero può essere eseguita in modo ricorsivo. Il caso base lo ho se mi trovo nella root dell’albero e ho il valore ricercato, altrimenti dovrò entrare ricorsivamente in ogni ramo dell’albero
+
