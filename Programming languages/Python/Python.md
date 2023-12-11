@@ -52,6 +52,7 @@
 - [[Pack and Unpack operator]]
 - [[Lambda]]
 - [[Ricorsione]]
+- [[Albero binario]]
 - [[Filesystem come albero]]
 - 
 

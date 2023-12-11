@@ -6,6 +6,7 @@
       {
         "id": "3df939537c93c254",
         "type": "tabs",
+        "dimension": 60.507246376811594,
         "children": [
           {
             "id": "839d3723cfab2dc5",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Filesystem come albero.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "mode": "source",
                 "source": false
               }
@@ -24,6 +25,7 @@
       {
         "id": "96a89df0257e950a",
         "type": "tabs",
+        "dimension": 39.492753623188406,
         "children": [
           {
             "id": "b24daa7246d14f6a",
@@ -103,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Filesystem come albero.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Filesystem come albero.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Filesystem come albero.md"
+                "file": "Programming languages/Python/Albero binario.md"
               }
             }
           }
@@ -169,9 +171,11 @@
   },
   "active": "839d3723cfab2dc5",
   "lastOpenFiles": [
-    "Flet-notes/2023-12-05.md",
-    "Programming languages/Python/Filesystem come albero.md",
+    "Files/Binary_tree.jpg",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Albero binario.md",
+    "Programming languages/Python/Filesystem come albero.md",
+    "Flet-notes/2023-12-05.md",
     "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Object oriented.md",
     "Programming languages/Python/Pack and Unpack operator.md",
@@ -203,9 +207,7 @@
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/filter().md",
     "Programming languages/Python/Programmazione funzionale.md",
-    "Flet-notes/2023-11-09-vlad.md",
     "Files/oop int.png",
-    "Uni/Uni.md",
     "Programming languages/Verilog",
     "Files",
     "Uni",
