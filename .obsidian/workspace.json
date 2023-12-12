@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0a74118394ad7cf0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Line-Profiler.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d07c9a95db11b01d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "profi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-12-05.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-12-05.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-12-05.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -149,11 +175,16 @@
       "random-note:Open random note": false
     }
   },
-  "active": "b24daa7246d14f6a",
+  "active": "d07c9a95db11b01d",
   "lastOpenFiles": [
+    "Programming languages/Python/Line-Profiler.md",
+    "conflict-files-obsidian-git.md",
+    "Flet-notes/2023-12-05.md",
+    "Programming languages/Python/Filesystem come albero.md",
+    "Programming languages/Python/Albero binario.md",
+    "Files/Binary_tree.jpg",
     "Programming languages/Python/Ricorsione.md",
     "Programming languages/Python/Python.md",
-    "Flet-notes/2023-12-05.md",
     "Programming languages/Programming languages.md",
     "Flet-notes/2023-11-30.md",
     "Files/recurs.py",
@@ -169,7 +200,6 @@
     "Files/color alpha class.png",
     "Flet-notes/2023-11-21.md",
     "Programming languages/Python/Pack and Unpack operator.md",
-    "Programming languages/Python/Line-Profiler.md",
     "Programming languages/Python/Shallow and Deep Copy.md",
     "Programming languages/Python/Matrix.md",
     "Programming languages/Python/Images.md",
@@ -184,10 +214,6 @@
     "Programming languages/Python/filter().md",
     "Programming languages/Python/Programmazione funzionale.md",
     "Flet-notes/2023-11-09-vlad.md",
-    "Files/oop int.png",
-    "Uni/Uni.md",
-    "Programming languages/Python/list.md",
-    "conflict-files-obsidian-git.md",
     "Programming languages/Verilog",
     "Files",
     "Uni",
