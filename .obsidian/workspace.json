@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3df939537c93c254",
+        "id": "780b83631e4fa070",
         "type": "tabs",
         "children": [
           {
-            "id": "b24daa7246d14f6a",
+            "id": "cf25cd0e6634bc69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-12-05.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a74118394ad7cf0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Python/Line-Profiler.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d07c9a95db11b01d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Flet-notes/2023-12-12.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Flet-notes/2023-12-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Flet-notes/2023-12-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Flet-notes/2023-12-12.md"
               }
             }
           }
@@ -175,9 +149,10 @@
       "random-note:Open random note": false
     }
   },
-  "active": "d07c9a95db11b01d",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
     "Programming languages/Python/Line-Profiler.md",
+    "Flet-notes/2023-12-12.md",
     "conflict-files-obsidian-git.md",
     "Flet-notes/2023-12-05.md",
     "Programming languages/Python/Filesystem come albero.md",
@@ -213,7 +188,6 @@
     "Flet-notes/2023-11-09.md",
     "Programming languages/Python/filter().md",
     "Programming languages/Python/Programmazione funzionale.md",
-    "Flet-notes/2023-11-09-vlad.md",
     "Programming languages/Verilog",
     "Files",
     "Uni",
