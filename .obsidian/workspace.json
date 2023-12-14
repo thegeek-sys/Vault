@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2023-12-12.md",
+                "file": "Flet-notes/2023-12-12_2023-12-14.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-12-12.md",
+                "file": "Flet-notes/2023-12-12_2023-12-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-12-12.md",
+                "file": "Flet-notes/2023-12-12_2023-12-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-12-12.md"
+                "file": "Flet-notes/2023-12-12_2023-12-14.md"
               }
             }
           }
@@ -149,10 +149,10 @@
       "random-note:Open random note": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "cf25cd0e6634bc69",
   "lastOpenFiles": [
     "Programming languages/Python/Line-Profiler.md",
-    "Flet-notes/2023-12-12.md",
+    "Flet-notes/2023-12-12_2023-12-14.md",
     "conflict-files-obsidian-git.md",
     "Flet-notes/2023-12-05.md",
     "Programming languages/Python/Filesystem come albero.md",
