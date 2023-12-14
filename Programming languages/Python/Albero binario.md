@@ -68,9 +68,9 @@ def find(self, value):
 	elif self.sx:
 		if self.sx.find(value):
 			return True
-		# esiste sottoalbero destro
-		elif self.dx:
-			return self.dx.find(value)
-		else:
-			return False
+	# esiste sottoalbero destro
+	elif self.dx:
+		return self.dx.find(value)
+	else:
+		return False
 ```
