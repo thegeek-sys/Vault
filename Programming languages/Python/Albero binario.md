@@ -98,5 +98,5 @@ def find(self, value):
 	elif self.sx:
 		if self.sx.find(value):
 			return True
-	
+
 ```
