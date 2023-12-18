@@ -8,6 +8,24 @@
         "type": "tabs",
         "children": [
           {
+            "id": "05e236a6c102ce2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Ricorsione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "bc661935023ade85",
+        "type": "tabs",
+        "children": [
+          {
             "id": "cf25cd0e6634bc69",
             "type": "leaf",
             "state": {
@@ -48,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "profi",
+                "query": "linepro",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 220.5,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2023-12-12_2023-12-14.md",
+                "file": "Programming languages/Python/Ricorsione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2023-12-12_2023-12-14.md",
+                "file": "Programming languages/Python/Ricorsione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2023-12-12_2023-12-14.md"
+                "file": "Programming languages/Python/Ricorsione.md"
               }
             }
           }
@@ -138,6 +157,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -148,11 +168,11 @@
       "random-note:Open random note": false
     }
   },
-  "active": "cf25cd0e6634bc69",
+  "active": "05e236a6c102ce2e",
   "lastOpenFiles": [
-    "Programming languages/Python/Albero binario.md",
     "Programming languages/Python/Python.md",
     "Flet-notes/2023-12-12_2023-12-14.md",
+    "Programming languages/Python/Albero binario.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/Line-Profiler.md",
     "conflict-files-obsidian-git.md",
