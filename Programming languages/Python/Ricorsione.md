@@ -110,3 +110,50 @@ def sumrp(i, n, partial_sum=0):
     return sumrp(i+1, n, partial_sum=partial_sum+i)
 ```
 
+---
+## Esercizio ricorsivo esame
+Consideriamo questo gioco: dato lo stato della lista L calcolare tutti gli altri stati considerando come mossa la seguente proprietà:
+- due elementi consecutivi devono avere il solito resto se divisi per due (**mossa**)
+prossimo stato:
+- quando la mossa **si verifica**
+- allora si crea un nuovo stato L'
+- che sostituisce agli elementi consecuitivi 
+- la somma dei due consecutivi (riduzione)
+Enumerare tutti i possibili stati e tornare tutte le foglie dell'albero di gioco
+
+```python
+state = [99, 1, 3, 5, 20]
+
+def game(state, L=None):
+	# mi salvo se sono nella prima chiamata
+	start = False
+	if L is None:
+		# lo sono
+		start = True
+		# init una lista vouta
+		L = []
+	# definisco booleano per foglia
+	leaf = True
+	# provo le mosse
+	for i in range(len(state)-1):
+		pre, post = state[i, i+2]
+		# se la mossa è verificata almeno una volta
+		if pre % 2 == post % 2:
+			# ricorsione, NON sono in una foglia
+			leaf = False
+			somma = pre + post
+			# nuovo stato tutti tranne i e i+1 ma metto la somma
+			state_next = state[:i]+[somma]+state[i+2:]
+			# ricorsione su next state
+			game(state_next, L)
+		
+	# se dato uno stato, non entriamo mai in ricorsione allora foglia
+	if leaf:
+		L.append((state, [ 'd' if s%2 == 1 else 'p' for s in state ]))
+	# se era la prima chiamata torno L
+	if start: return L
+
+out = game(state)
+print(out)
+
+```
