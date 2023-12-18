@@ -210,7 +210,6 @@ class GameNode:
 	    for node in self.nexts:
         rez += '\n'+ node.__repr__(livello+1)
         return rez
-		
 	
 	def leaves(self):
 		# se foglia non ho stati futuri
@@ -221,7 +220,7 @@ class GameNode:
 		# assemblo le foglie di tutti i figli
 		leaves = []
 		for node in self.nexts:
-			# mi faccio sare le foglie da chi è che mi sta sotto
+			# mi faccio fare le foglie da chi è che mi sta sotto
 			foglie_sotto = self.leaves() # lista
 			leaves.extend(foglie_sotto)
 		return leaves
