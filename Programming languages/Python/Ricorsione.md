@@ -155,5 +155,103 @@ def game(state, L=None):
 
 out = game(state)
 print(out)
+```
 
+#### Senza return
+```python
+def game(state, L):
+	leaf = True
+	for i in range(len(state)-1):
+		pre, post = state[i, i+2]
+		if pre % 2 == post % 2:
+			leaf = False
+			somma = pre + post
+			state_next = state[:i]+[somma]+state[i+2:]
+			game(state_next, L)
+		
+	if leaf:
+		L.append((state, [ 'd' if s%2 == 1 else 'p' for s in state ]))
+
+out = []
+game(state, out)
+print(out)
+```
+
+#### Con le classi
+```python
+class GameNode:
+	def __init__(self, state):
+		self.state = state
+		# debug
+		self.state_viz = [ 'd' if s%2 == 1 else 'p' for s in state ]
+		self.nexts = []
+		self.next_state() # completa nexts
+	
+	def condition(self, pre, post):
+		# se solito resto dai la somma
+		if pre % 2 == post % 2:
+			return pre + post
+	
+	def next_state(self):
+		# andiamo di 2 in due quindi ci fermiamo di uno prima della fine
+		for i in range(len(self.state)-1):
+			pre, post = self.state[i:i+2]
+			somma = self.condition(pre, post)
+			# se sono nella condizione allora facciamo una mossa
+			if somma:
+				# copio gli stati
+				state = self.state[:]
+				# quei due valori li sostituisci con la somma
+				state[i:i+2] = [somma]
+				self.nexts.append(GameNode(state))
+	
+	def __repr__(self, livello=1):
+	    rez =  '\t'*livello + f"{self.state} {self.state_viz}"
+	    for node in self.nexts:
+        rez += '\n'+ node.__repr__(livello+1)
+        return rez
+		
+	
+	def leaves(self):
+		# se foglia non ho stati futuri
+		if not self.nexts:
+			# list di tuple di liste
+			return [ (self.state, self.state_viz) ]
+		
+		# assemblo le foglie di tutti i figli
+		leaves = []
+		for node in self.nexts:
+			# mi faccio sare le foglie da chi è che mi sta sotto
+			foglie_sotto = self.leaves() # lista
+			leaves.extend(foglie_sotto)
+		return leaves
+
+	def leaves_external_list(self, L):
+		if not self.nexts:
+			# al contrario di prima combinoall'andata semplicemente facendo
+			# append solo quando sono nella foglia
+            L.append((self.state, self.state_viz))
+            
+        # riapplico su tutti i figli
+        for node in self.nexts:
+            node.leaves_external_list(L)
+            
+            
+    def leaves_list_default(self, L=None):
+        start = False
+        if L is None:
+            L = []
+            start = True
+        
+        if not self.nexts:
+            # al contrario di prima combino  all'andata
+            # semplicemente facendo append solo quando
+            # sono nella foglia
+            L.append((self.state, self.state_viz))
+        
+        # riapplico su tutti i figli
+        for node in self.nexts:
+            node.leaves_list_default(L)
+        
+        if start: return L
 ```
