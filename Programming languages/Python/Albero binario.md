@@ -88,3 +88,15 @@ Nella ricerca in pre-order segue questo ordine per la ricerca del valore:
 In particolare risponde in ordine alle seguenti domande:
 - È nel valore del nodo corrente? Se sì ho fatto e trovato
 - Altrimenti, ho dei figli da controllare? Se non ho figli, ho finito e non ho trovato
+
+```python
+def find(self, value):
+	if self.value == value:
+		return True
+	elif not self.sx and not self.dx:
+		return False
+	elif self.sx:
+		if self.sx.find(value):
+			return True
+	
+```
