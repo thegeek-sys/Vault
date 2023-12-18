@@ -13,25 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Ricorsione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "bc661935023ade85",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f8708b86d73356f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2023-12-12_2023-12-14.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Ricorsione.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Ricorsione.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Ricorsione.md"
+                "file": "Programming languages/Python/Albero binario.md"
               }
             }
           }
@@ -170,9 +152,9 @@
   },
   "active": "05e236a6c102ce2e",
   "lastOpenFiles": [
-    "Flet-notes/2023-12-12_2023-12-14.md",
-    "Programming languages/Python/Ricorsione.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/Ricorsione.md",
+    "Flet-notes/2023-12-12_2023-12-14.md",
     "Programming languages/Python/Albero binario.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/Line-Profiler.md",

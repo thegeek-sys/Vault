@@ -74,3 +74,17 @@ def find(self, value):
 	else:
 		return False
 ```
+
+---
+## Ricerca DFS
+La ricerca DFS (Depth First Search) può essere di due tipi:
+- in Pre-Order
+- in Post-Order
+### Pre-Order
+Nella ricerca in pre-order segue questo ordine per la ricerca del valore:
+1. Nodo
+2. Sotto-albero sx
+3. Sotto-albero dx
+In particolare risponde in ordine alle seguenti domande:
+- È nel valore del nodo corrente? Se sì ho fatto e trovato
+- Altrimenti, ho dei figli da controllare? Se non ho figli, ho finito e non ho trovato
