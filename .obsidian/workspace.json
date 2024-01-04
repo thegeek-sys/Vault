@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Programming languages/Python/list methods.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5455a1bc942cf88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Programming languages/Python/Albero binario.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "linepro",
+                "query": "binary",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,12 +78,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
-    "collapsed": true
+    "width": 220.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -150,12 +163,16 @@
       "random-note:Open random note": false
     }
   },
-  "active": "05e236a6c102ce2e",
+  "active": "b5455a1bc942cf88",
   "lastOpenFiles": [
+    "Programming languages/Python/Lambda.md",
     "Programming languages/Python/Python.md",
+    "Flet-notes/2023-10-26.md",
+    "Programming languages/Python/list methods.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Python/Albero binario.md",
     "Programming languages/Python/Ricorsione.md",
     "Flet-notes/2023-12-12_2023-12-14.md",
-    "Programming languages/Python/Albero binario.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/Line-Profiler.md",
     "conflict-files-obsidian-git.md",
@@ -185,10 +202,6 @@
     "Files/matrix rgb.png",
     "Programming languages/Python/any() e all().md",
     "Programming languages/Verilog/Verilog.md",
-    "Programming languages/Python/map().md",
-    "Flet-notes/2023-11-09.md",
-    "Programming languages/Python/filter().md",
-    "Programming languages/Python/Programmazione funzionale.md",
     "Programming languages/Verilog",
     "Files",
     "Uni",
