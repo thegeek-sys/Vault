@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2f4d60f9ff67d19d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Images.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "binary",
+                "query": "immag",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Albero binario.md",
+                "file": "Programming languages/Python/Images.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Albero binario.md",
+                "file": "Programming languages/Python/Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Albero binario.md"
+                "file": "Programming languages/Python/Images.md"
               }
             }
           }
@@ -163,7 +175,7 @@
       "random-note:Open random note": false
     }
   },
-  "active": "b5455a1bc942cf88",
+  "active": "2f4d60f9ff67d19d",
   "lastOpenFiles": [
     "Programming languages/Python/Lambda.md",
     "Programming languages/Python/Python.md",
