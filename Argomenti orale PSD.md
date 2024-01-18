@@ -1,18 +1,19 @@
-- BCD
-- calcolo bit necessari mantissa e calcolo bias
-- ALU
-- comapratore logico e aritmetico
-- transcodificatore
-- mux, demux
-- full-adder
-- half-adder
-- rca
-- adder ca2
-- LATCH
-- flip-flop
-- registri
-	- up-down counter
-	- shift register (left, right)
-	- con rotazione
-	- universale
-- Verilog (FSM)
+- [ ] BCD
+- [ ] calcolo bit necessari mantissa e calcolo bias
+- [ ] ALU
+- [ ] comapratore logico e aritmetico
+- [ ] transcodificatore
+- [ ] mux, demux
+- [ ] full-adder
+- [ ] half-adder
+- [ ] rca
+- [ ] adder ca2
+- [ ] adder sequenziale
+- [ ] LATCH
+- [ ] flip-flop
+- [ ] registri
+	- [ ] up-down counter
+	- [ ] shift register (left, right)
+	- [ ] con rotazione
+	- [ ] universale
+- [ ] Verilog (FSM)
