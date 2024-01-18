@@ -1,4 +1,5 @@
-- [ ] BCD
+- [x] BCD
+- [x] ASCII (bit di parità)
 - [ ] calcolo bit necessari mantissa e calcolo bias
 - [ ] ALU
 - [ ] comapratore logico e aritmetico
