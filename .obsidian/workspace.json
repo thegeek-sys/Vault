@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argomenti orale PSD.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argomenti orale PSD.md",
+                "file": "Programming languages/Python/Albero binario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argomenti orale PSD.md"
+                "file": "Programming languages/Python/Albero binario.md"
               }
             }
           }
@@ -175,10 +175,10 @@
       "random-note:Open random note": false
     }
   },
-  "active": "2f4d60f9ff67d19d",
+  "active": "b5455a1bc942cf88",
   "lastOpenFiles": [
-    "Uni/Uni.md",
     "Argomenti orale PSD.md",
+    "Uni/Uni.md",
     "Uni/Struttura esame FDP.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/dict methods.md",
