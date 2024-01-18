@@ -6,7 +6,7 @@
 - [ ] transcodificatore
 - [ ] mux, demux
 - [ ] full-adder
-- [ ] half-adder
+- [x] half-adder
 - [ ] rca
 - [ ] adder ca2
 - [ ] adder sequenziale
