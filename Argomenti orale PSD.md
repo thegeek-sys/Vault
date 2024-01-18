@@ -1,6 +1,6 @@
 - [x] BCD
 - [x] ASCII (bit di parità)
-- [ ] calcolo bit necessari mantissa e calcolo bias
+- [x] calcolo bit necessari mantissa e calcolo bias
 - [ ] ALU
 - [ ] comapratore logico e aritmetico
 - [ ] transcodificatore
