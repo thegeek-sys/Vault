@@ -5,8 +5,8 @@
 - [ ] comapratore logico e aritmetico
 - [ ] transcodificatore
 - [ ] mux, demux
-- [ ] ROM
-- [ ] PLA
+- [x] ROM
+- [x] PLA
 - [x] full-adder
 - [x] half-adder
 - [x] rca
