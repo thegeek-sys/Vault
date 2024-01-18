@@ -3,8 +3,8 @@
 - [x] calcolo bit necessari mantissa e calcolo bias
 - [ ] ALU
 - [ ] comapratore logico e aritmetico
-- [ ] transcodificatore
-- [ ] mux, demux
+- [x] transcodificatore
+- [x] mux, demux
 - [x] ROM
 - [x] PLA
 - [x] full-adder
