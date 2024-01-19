@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "2f4d60f9ff67d19d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Argomenti orale PSD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4f9b4e3e4ca74419",
             "type": "leaf",
             "state": {
@@ -54,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "84ba05376122f643",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5,
-    "collapsed": true
+    "width": 220.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Argomenti orale PSD.md",
+                "file": "Programming languages/Python/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Argomenti orale PSD.md",
+                "file": "Programming languages/Python/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Argomenti orale PSD.md"
+                "file": "Programming languages/Python/Python.md"
               }
             }
           }
@@ -187,27 +186,28 @@
       "random-note:Open random note": false
     }
   },
-  "active": "2f4d60f9ff67d19d",
+  "active": "84ba05376122f643",
   "lastOpenFiles": [
-    "Programming languages/Python/dict methods.md",
+    "Files/verilog module.png",
+    "Flet-notes/2023-12-12_2023-12-14.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/list methods.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Programming languages.md",
     "Programming languages/Python/Albero binario.md",
     "Argomenti orale PSD.md",
+    "Programming languages/Python/dict methods.md",
     "Uni/Uni.md",
     "Uni/Struttura esame FDP.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/Filesystem come albero.md",
     "Programming languages/Python/set.md",
     "Programming languages/Python/set methods.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
     "Programming languages/Python/Files.md",
     "Programming languages/Python/Images.md",
     "Programming languages/Python/Lambda.md",
     "Flet-notes/2023-10-26.md",
-    "Programming languages/Python/list methods.md",
-    "Programming languages/Python/list.md",
     "Programming languages/Python/Ricorsione.md",
-    "Flet-notes/2023-12-12_2023-12-14.md",
     "Programming languages/Python/Line-Profiler.md",
     "conflict-files-obsidian-git.md",
     "Flet-notes/2023-12-05.md",
@@ -216,7 +216,6 @@
     "Files/recurs.py",
     "Conditional assignment.md",
     "Programming languages/Python/Object oriented.md",
-    "Flet-notes/2023-11-28.md",
     "Files/stack.png",
     "Files/stack program.png",
     "Files/queue.png",
