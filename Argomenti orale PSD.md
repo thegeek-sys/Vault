@@ -11,7 +11,7 @@
 - [x] half-adder
 - [x] rca
 - [x] adder ca2
-- [ ] adder sequenziale
+- [x] adder sequenziale
 - [x] LATCH
 - [x] flip-flop
 - [ ] registri
