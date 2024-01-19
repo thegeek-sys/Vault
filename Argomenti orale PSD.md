@@ -16,7 +16,7 @@
 - [x] flip-flop
 - [ ] registri
 	- [ ] up-down counter
-	- [ ] shift register (left, right)
-	- [ ] con rotazione
-	- [ ] universale
+	- [x] shift register (left, right)
+	- [x] con rotazione
+	- [x] universale
 - [ ] Verilog (FSM)
