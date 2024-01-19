@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/dict methods.md",
+                "file": "Argomenti orale PSD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/dict methods.md",
+                "file": "Argomenti orale PSD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/dict methods.md"
+                "file": "Argomenti orale PSD.md"
               }
             }
           }
@@ -187,14 +187,14 @@
       "random-note:Open random note": false
     }
   },
-  "active": "4f9b4e3e4ca74419",
+  "active": "2f4d60f9ff67d19d",
   "lastOpenFiles": [
+    "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Albero binario.md",
     "Argomenti orale PSD.md",
     "Uni/Uni.md",
     "Uni/Struttura esame FDP.md",
     "Programming languages/Programming languages.md",
-    "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Filesystem come albero.md",
     "Programming languages/Python/set.md",
     "Programming languages/Python/set methods.md",
