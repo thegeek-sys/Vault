@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4f9b4e3e4ca74419",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/dict methods.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -111,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Albero binario.md",
+                "file": "Programming languages/Python/dict methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Albero binario.md",
+                "file": "Programming languages/Python/dict methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Albero binario.md"
+                "file": "Programming languages/Python/dict methods.md"
               }
             }
           }
@@ -175,8 +187,9 @@
       "random-note:Open random note": false
     }
   },
-  "active": "b5455a1bc942cf88",
+  "active": "4f9b4e3e4ca74419",
   "lastOpenFiles": [
+    "Programming languages/Python/Albero binario.md",
     "Argomenti orale PSD.md",
     "Uni/Uni.md",
     "Uni/Struttura esame FDP.md",
@@ -184,7 +197,6 @@
     "Programming languages/Python/dict methods.md",
     "Programming languages/Python/Filesystem come albero.md",
     "Programming languages/Python/set.md",
-    "Programming languages/Python/Albero binario.md",
     "Programming languages/Python/set methods.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
