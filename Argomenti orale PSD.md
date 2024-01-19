@@ -12,8 +12,8 @@
 - [x] rca
 - [x] adder ca2
 - [ ] adder sequenziale
-- [ ] LATCH
-- [ ] flip-flop
+- [x] LATCH
+- [x] flip-flop
 - [ ] registri
 	- [ ] up-down counter
 	- [ ] shift register (left, right)
