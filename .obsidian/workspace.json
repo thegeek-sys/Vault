@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/list.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Python/list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/Python.md"
+                "file": "Programming languages/Python/list.md"
               }
             }
           }
@@ -188,9 +188,12 @@
   },
   "active": "84ba05376122f643",
   "lastOpenFiles": [
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/set.md",
+    "Programming languages/Python/set methods.md",
+    "Programming languages/Python/Images.md",
     "Files/verilog module.png",
     "Flet-notes/2023-12-12_2023-12-14.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/list.md",
     "Programming languages/Programming languages.md",
@@ -200,11 +203,8 @@
     "Uni/Uni.md",
     "Uni/Struttura esame FDP.md",
     "Programming languages/Python/Filesystem come albero.md",
-    "Programming languages/Python/set.md",
-    "Programming languages/Python/set methods.md",
     "Programming languages/Python/dict.md",
     "Programming languages/Python/Files.md",
-    "Programming languages/Python/Images.md",
     "Programming languages/Python/Lambda.md",
     "Flet-notes/2023-10-26.md",
     "Programming languages/Python/Ricorsione.md",
@@ -224,7 +224,6 @@
     "Files/color alpha class.png",
     "Files/sistema riferimento rgb.png",
     "Files/matrix.jpg",
-    "Files/matrix rgb.png",
     "Programming languages/Verilog",
     "Files",
     "Uni",
