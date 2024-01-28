@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/filter().md",
+                "file": "Programming languages/Python/any() e all().md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "filter",
+                "query": "all",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/filter().md",
+                "file": "Programming languages/Python/any() e all().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/filter().md",
+                "file": "Programming languages/Python/any() e all().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/filter().md"
+                "file": "Programming languages/Python/any() e all().md"
               }
             }
           }
@@ -189,6 +189,8 @@
   },
   "active": "84ba05376122f643",
   "lastOpenFiles": [
+    "Flet-notes/2023-12-12_2023-12-14.md",
+    "Programming languages/Python/filter().md",
     "Flet-notes/2023-10-19.md",
     "Programming languages/Python/Filesystem come albero.md",
     "Programming languages/Python/Files.md",
@@ -198,7 +200,6 @@
     "Programming languages/Python/set methods.md",
     "Programming languages/Python/Images.md",
     "Files/verilog module.png",
-    "Flet-notes/2023-12-12_2023-12-14.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Python/Albero binario.md",
@@ -217,7 +218,6 @@
     "Flet-notes/2023-11-30.md",
     "Files/recurs.py",
     "Conditional assignment.md",
-    "Programming languages/Python/Object oriented.md",
     "Files/stack.png",
     "Files/stack program.png",
     "Files/queue.png",
