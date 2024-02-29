@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/list methods.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,8 +101,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -122,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/list methods.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/list methods.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/list methods.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           }
@@ -188,8 +187,15 @@
   },
   "active": "05e236a6c102ce2e",
   "lastOpenFiles": [
-    "Programming languages/Python/Sliding Window.md",
+    "Uni/Uni.md",
+    "Programming languages/Java/Java.md",
+    "Argomenti orale PSD.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Java",
+    "Programming languages/Java.md",
+    "Programming languages/Programming languages.md",
+    "Programming languages/Python/list methods.md",
+    "Programming languages/Python/Sliding Window.md",
     "Flet-notes/2023-10-26.md",
     "Programming languages/Python/any() e all().md",
     "Flet-notes/2023-12-12_2023-12-14.md",
@@ -202,19 +208,13 @@
     "Programming languages/Python/set methods.md",
     "Programming languages/Python/Images.md",
     "Files/verilog module.png",
-    "Programming languages/Python/list methods.md",
-    "Programming languages/Programming languages.md",
     "Programming languages/Python/Albero binario.md",
-    "Argomenti orale PSD.md",
     "Programming languages/Python/dict methods.md",
-    "Uni/Uni.md",
     "Uni/Struttura esame FDP.md",
     "Programming languages/Python/dict.md",
     "Programming languages/Python/Lambda.md",
     "Programming languages/Python/Ricorsione.md",
     "Programming languages/Python/Line-Profiler.md",
-    "conflict-files-obsidian-git.md",
-    "Flet-notes/2023-12-05.md",
     "Files/Binary_tree.jpg",
     "Files/recurs.py",
     "Files/stack.png",
