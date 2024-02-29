@@ -1,4 +1,4 @@
-un oggetto ha:
+Un oggetto ha:
 - **stato**
 - operazioni
 per effettuare una richiesta a un oggetto, si chiama un metodo di quell'oggetto (funzione).
