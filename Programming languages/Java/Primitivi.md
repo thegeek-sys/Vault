@@ -23,13 +23,13 @@ contatore = 0;
 int numero = 1;
 ```
 
-> [!info] Static typing
+> [!warning] Static typing
 > Il tipo di una variabile (se primitivo) è **statico** - non può cambiare.
 > La keyword all’inizio di una dichiarazione`final` rende una variabile non più riassegnabile all’interno del programma
 
 Il nome assegnato a una variabile è il suo **identificatore** (come in python, la prima lettera non può essere un numero) - gli identificatori sono case-sensitive.
 
->[!notazione]
+>[!info]- Notazione
 Si utilizza la **notazione Camel case**:
 > - quando si dichiara una variabile composta da più parole, la prima inizia con una minuscola e le successive con maiuscole (es. "contatoreTreniEsplosi")
 > - le **classi** devono per forza iniziare con una maiuscola (poi si continua con la camel case)
