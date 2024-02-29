@@ -1,3 +1,10 @@
+---
+Created: 2024-02-29
+Programming language: "[[Java]]"
+Related: 
+Completed:
+---
+---
 ## Introduzione
 Tipi di dati di base built-in.
 
@@ -58,14 +65,6 @@ Per letterali si intendono le rappresentazioni a livello di codice sorgente del 
 | +, - | Valutati per secondi da sinistra verso destra |
 
 ---
-#### caratteri e stringhe
-I char seguono la **codifica unicode** (basata su interi a 16 bit), e sono racchiusi da apici (singoli) - 'a'.
->[!caratteri di escape]
->- '\t' - tab
->- '\n' - a capo
->- '\\' - backslash
->- ' \ ' ' - apice
->- '\"' - virgolette
 #### operatori
 **incrementi**:
 - var++ (var = var +1)
