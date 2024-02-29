@@ -1,4 +1,5 @@
-tipi di dati di base built-in.
+## Introduzione
+Tipi di dati di base built-in.
 
 | Tipo | Dominio | Operatori | Esempio |
 | ---- | ---- | :--: | :--: |
@@ -10,21 +11,16 @@ tipi di dati di base built-in.
 - Le stringhe non sono in realtà tipi primitivi.
 - I char sono interpretati come veri e propri numeri unicode, quindi si utilizzano gli operatori di somma e sottrazione.
 
-#### variabili
+## Variabili
 Una variabile è creata tramite una **dichiarazione**, nella quale deve essere specificato il tipo:
 ```java
-int contatore;
-```
-il punto e virgola è necessario alla fine di ogni istruzione.
-
-il valore viene assegnato attraverso un'**assegnazione**:
-```java
-int contatore = 0;
+int contatore; // ho inizializzato la variabile contatore di tipo int
 ```
 
-le due cose possono essere fatte insieme:
+Il valore viene assegnato attraverso un'**assegnazione**:
 ```java
-int contatore = 0;
+contatore = 0;
+int numero = 1;
 ```
 
 > [!static typing]
