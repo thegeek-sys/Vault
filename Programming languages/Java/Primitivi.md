@@ -15,6 +15,7 @@ Tipi di dati di base built-in.
 - Le stringhe non sono in realtà tipi primitivi (è in realtà un’array di `char`)
 - I char sono interpretati come veri e propri numeri unicode, quindi si utilizzano gli operatori di somma e sottrazione.
 
+---
 ## Variabili
 Una variabile è creata tramite una **dichiarazione**, nella quale deve essere specificato il tipo:
 ```java
@@ -38,22 +39,28 @@ Si utilizza la **notazione Camel case**:
 > - quando si dichiara una variabile composta da più parole, la prima inizia con una minuscola e le successive con maiuscole (es. "contatoreTreniEsplosi")
 > - le **classi** devono per forza iniziare con una maiuscola (poi si continua con la camel case)
 
+---
 ## Letterali (o costanti)
 Per letterali si intendono le rappresentazioni a livello di codice sorgente del valore di un tipo di dato. (es. 27 è un letterale per gli interi)
-##### costanti intere e in virgola mobile
+
 - Le costanti int sono semplici numeri.
 - Le costanti long vengono specificate con il suffisso L.
 - Le costanti double sono numeri con la virgola (che è un *punto*).
 - Le costanti float hanno il suffisso f o F.
 - Il prefisso *0b* indica una rappresentazione binaria (es. 0b101 è 5)
 - Si può usare un trattino basso per separare le cifre (10_000 == 10000)
-#### precedenza operatori aritmetici
-![[Screen Shot 2024-02-28 at 09.39.14.png]]
-come in matematica.
 
+---
+## Precedenza operatori aritmetici
+| Operatori | Precedenza |
+| ---- | ---- |
+| *, /, % | Valutati per primi da sinistra verso destra |
+| +, - | Valutati per secondi da sinistra verso destra |
+
+---
 #### caratteri e stringhe
 I char seguono la **codifica unicode** (basata su interi a 16 bit), e sono racchiusi da apici (singoli) - 'a'.
->[!caratteri di escape]-
+>[!caratteri di escape]
 >- '\t' - tab
 >- '\n' - a capo
 >- '\\' - backslash
