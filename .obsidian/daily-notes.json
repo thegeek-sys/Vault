@@ -1,3 +1,4 @@
 {
-  "format": "DD-MM-YYYY"
+  "format": "YYYY-MM-DD",
+  "folder": "Flet-notes"
 }

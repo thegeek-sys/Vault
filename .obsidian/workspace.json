@@ -13,43 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/12-12-2023.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5455a1bc942cf88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Python/Albero binario.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4f9b4e3e4ca74419",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Python/dict methods.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84ba05376122f643",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Python/Sliding Window.md",
+                "file": "Flet-notes/2024-02-29.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/12-12-2023.md",
+                "file": "Flet-notes/2024-02-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/12-12-2023.md",
+                "file": "Flet-notes/2024-02-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/12-12-2023.md"
+                "file": "Flet-notes/2024-02-29.md"
               }
             }
           }
@@ -187,23 +151,24 @@
   },
   "active": "05e236a6c102ce2e",
   "lastOpenFiles": [
-    "Flet-notes/05-12-2023.md",
-    "Flet-notes/30-11-2023.md",
-    "Flet-notes/28-11-2023.md",
-    "Flet-notes/23-11-2023.md",
-    "Flet-notes/21-11-2023.md",
-    "Flet-notes/16-11-2023.md",
-    "Flet-notes/02-11-2023.md",
-    "Flet-notes/09-11-2023.md",
+    "Flet-notes/2023-11-02.md",
+    "Flet-notes/2023-12-05.md",
+    "Flet-notes/2023-11-07.md",
+    "Flet-notes/2023-11-09.md",
+    "Flet-notes/2023-10-10.md",
+    "Flet-notes/2023-10-12.md",
+    "Flet-notes/2023-12-12.md",
+    "Flet-notes/2023-11-16.md",
+    "Flet-notes/2023-10-17.md",
+    "Flet-notes/2023-10-19.md",
+    "Flet-notes/2023-11-21.md",
+    "Flet-notes/2023-11-23.md",
+    "Flet-notes/2023-10-26.md",
+    "Flet-notes/2023-11-28.md",
+    "Flet-notes/2023-11-30.md",
+    "Flet-notes/2023-10-31.md",
+    "Flet-notes/2024-02-29.md",
     "Flet-notes/2023-11-09-vlad.md",
-    "Flet-notes/07-11-2023.md",
-    "Flet-notes/31-10-2023.md",
-    "Flet-notes/26-10-2023.md",
-    "Flet-notes/19-10-2023.md",
-    "Flet-notes/17-10-2023.md",
-    "Flet-notes/29-02-2024.md",
-    "Flet-notes/10-10-2023.md",
-    "Flet-notes/12-10-2023.md",
     "Programming languages/Java/Java.md",
     "Uni/Uni.md",
     "Argomenti orale PSD.md",
@@ -213,7 +178,6 @@
     "Programming languages/Programming languages.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Sliding Window.md",
-    "Programming languages/Python/any() e all().md",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
     "Files/recurs.py",
