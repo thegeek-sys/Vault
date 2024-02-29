@@ -34,9 +34,8 @@ Si utilizza la **notazione Camel case**:
 > - quando si dichiara una variabile composta da più parole, la prima inizia con una minuscola e le successive con maiuscole (es. "contatoreTreniEsplosi")
 > - le **classi** devono per forza iniziare con una maiuscola (poi si continua con la camel case)
 
-#### letterali (o costanti)
-rappresentazioni a livello di codice sorgente del valore di un tipo di dato.
-(es: 27 è un letterale per gli interi)
+## Letterali (o costanti)
+Per letterali si intendono le rappresentazioni a livello di codice sorgente del valore di un tipo di dato. (es. 27 è un letterale per gli interi)
 ##### costanti intere e in virgola mobile
 - Le costanti int sono semplici numeri.
 - Le costanti long vengono specificate con il suffisso L.
