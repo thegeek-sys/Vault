@@ -65,43 +65,35 @@ Per letterali si intendono le rappresentazioni a livello di codice sorgente del 
 | +, - | Valutati per secondi da sinistra verso destra |
 
 ---
-#### operatori
-**incrementi**:
-- var++ (var = var +1)
-- var--
- 
-diversi da:
-- ++var, --var
+## Operatori
+### Incrementi
+- Post-incremento:
+	- `var++` (var = var +1)
+	- `var--`
+- Pre-incremento
+	- `++var`
+	- `--var`
  
 *pre vs post-incremento*:
-a++ ha come risultato a, e poi lo incrementa di 1.
+In un’espressione il post-incremento a++, prima esegue l’operazione con a, e poi lo incrementa di 1. Dunque:
 
 ```java
 int a = 3;
-int c = a++
-```
-qui, c vale 3 (il compilatore dà prima a c il valore di a, e poi aumenta a di 1)
+int c = a++ // c == 3, a == 4
 
-```java
 int a = 3;
-int c = ++a
-```
-qui, c vale 4 (e anche a).
+int c = ++a // c == 4, a == 4
 
-quindi:
-```java
 int a = 4;
 int c = 3;
-int z = (a++) - (c--);
+int z = (a++) - (c--); // z == 1, a == 5, c == 2
 ```
- prima z = 1 
-poi a diventa 5 e c diventa 2
 
-**operatori booleani**:
-- && - and logico 
-- || - or
-- ! - not
-- ^ - xor
+### Operatori booleani
+- && → and logico 
+- || → or
+- ! → not
+- ^ → xor
 
 &  e | - and  e or bit a bit (per i binari)
  
