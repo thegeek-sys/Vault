@@ -1,0 +1,3 @@
+- [ ] Fare flet-notes java
+- [ ] Fare appunti calcolo
+- [ ] Fare appunti algoritmi
