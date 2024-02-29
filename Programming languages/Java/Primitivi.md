@@ -94,19 +94,18 @@ int z = (a++) - (c--); // z == 1, a == 5, c == 2
 - || → or
 - ! → not
 - ^ → xor
-
 &  e | - and  e or bit a bit (per i binari)
  
-**relazionali**:
+### Relazionali
 - ==
 - !=
 - < , <= , > , >=
 - istanceof
 
-**operatore ternario**:
+### Operatore ternario
 - ? :
  
-**shift**:
+### Shift
 - <<,  >>, >>>
 utili per i numeri binari: ogni shift a sinistra moltiplica per 2 (aggiungo uno 0 a destra in un numero binario)
 
