@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/float.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/float.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/float.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/float.md"
+                "file": "Programming languages/Java/Primitivi.md"
               }
             }
           }
@@ -152,8 +152,10 @@
   "active": "05e236a6c102ce2e",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/Object oriented programming.md",
+    "Programming languages/Java/Primitivi.md",
     "Programming languages/Python/Python.md",
+    "Programming languages/Python/float.md",
+    "Programming languages/Java/Object oriented programming.md",
     "Flet-notes/2024-02-29.md",
     "Untitled.md",
     "Flet-notes/2023-11-02.md",
@@ -176,8 +178,6 @@
     "Uni/Uni.md",
     "Argomenti orale PSD.md",
     "Programming languages/Java",
-    "Programming languages/Java.md",
-    "Programming languages/Programming languages.md",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
     "Files/recurs.py",
