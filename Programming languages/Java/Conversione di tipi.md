@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+- [[#Introduzione|Introduzione]]
+- [[#Conversione esplicita|Conversione esplicita]]
+- [[#Cast esplicito|Cast esplicito]]
+- [[#Cast implicito|Cast implicito]]
+- [[#Tabella dei tipi|Tabella dei tipi]]
+---
+
 ## Introduzione
 In Java posso utilizzare posso utilizzare dei metodi (impliciti o espliciti) che mi permettono di fare casting o conversione tra tipi diversi.
 
@@ -46,12 +55,8 @@ int conv = (int)v; // 2
 Se il tipo di partenza è meno preciso (es. int → double) Java può automaticamente convertire il valore al tipo più preciso.
 Inoltre quando un `int` viene sommato ad una stringa il tipo in output è `String`
 ```java
-int i = 5;
-double d = 4.5;
-String s = " somma";
-String f = i+d+s;
-System.out.println(f); // 9.5 somma
-String v = (5+3) + 'ciao' // "8ciao"
+String v = 'ciao' + (5+3) // "ciao8"
+String s = 'ciao' + 5 + 3 // "ciao53"
 ```
 
 In particolar modo in **assegnazione**:
@@ -64,6 +69,10 @@ Nella fase di **calcolo di un’espressione**:
 
 ```java
 double d = 2; // 2.0
+
+int i = 5;
+double d1 = 4.5;
+System.out.println(i+d1) // 9.5
 ```
 
 ---

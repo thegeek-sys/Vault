@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Classe Math.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Classe Math.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Classe Math.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md"
+                "file": "Programming languages/Java/Classe Math.md"
               }
             }
           },
@@ -174,16 +174,17 @@
   "active": "8e4356aeae49e923",
   "lastOpenFiles": [
     "Flet-notes/2024-02-29.md",
+    "Programming languages/Java/Classe Math.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/Conversione di tipi.md",
+    "Programming languages/Java/Hello, World!.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/dict.md",
     "Programming languages/Python/dict methods.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Primitivi.md",
     "To-Do.md",
-    "Programming languages/Java/Hello, World!.md",
     "Programming languages/Java/Untitled.md",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
     "Programming languages/Python/Files.md",
@@ -199,7 +200,6 @@
     "Flet-notes/2023-12-12.md",
     "Flet-notes/2023-11-16.md",
     "Flet-notes/2023-10-17.md",
-    "Flet-notes/2023-10-19.md",
     "Programming languages/Java",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
