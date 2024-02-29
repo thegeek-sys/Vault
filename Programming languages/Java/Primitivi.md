@@ -1,13 +1,13 @@
 ## Introduzione
 Tipi di dati di base built-in.
 
-| Tipo | Dominio | Operatori | Esempio |
-| ---- | ---- | :--: | :--: |
-| `int` | interi | + - * / % | 27 + 1 |
-| `double` | numeri in virgola mobile | + - * / % | 3.14 * 5.01e23 |
-| `boolean` | valori booleani | && \|\| ! | true \|\| false |
-| `char` | caratteri | + - | ‘a’ |
-| `String` | sequenze di caratteri | + - | “Hello” + “World” |
+| Tipo | Operatori | Esempio | Intervallo |
+| ---- | :--: | :--: | ---- |
+| `int` | + - * / % | 27 + 1 | -2147483648-2147483647 |
+| `double` | + - * / % | 3.14 * 5.01e23 | 15 cifre decimali significative |
+| `boolean` | && \|\| ! | true \|\| false | true, false |
+| `char` | + - | ‘a’ | Tutti i caratteri codificati con unicode |
+| `String` | + - | “Hello” + “World” |  |
 - Le stringhe non sono in realtà tipi primitivi.
 - I char sono interpretati come veri e propri numeri unicode, quindi si utilizzano gli operatori di somma e sottrazione.
 
