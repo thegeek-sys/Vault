@@ -23,8 +23,9 @@ contatore = 0;
 int numero = 1;
 ```
 
-> [!static typing]
+> [!info] Static typing
 > Il tipo di una variabile (se primitivo) è **statico** - non può cambiare.
+> La keyword all’inizio di una dichiarazione`final` rende una variabile non più riassegnabile all’interno del programma
 
 Il nome assegnato a una variabile è il suo **identificatore** (come in python, la prima lettera non può essere un numero) - gli identificatori sono case-sensitive.
 
