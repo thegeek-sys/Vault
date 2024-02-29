@@ -128,12 +128,21 @@
                 "file": "Programming languages/Java/Primitivi.md"
               }
             }
+          },
+          {
+            "id": "ec2deb080f929989",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
