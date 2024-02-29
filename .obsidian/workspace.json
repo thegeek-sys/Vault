@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-02-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-02-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Flet-notes/2024-02-29.md"
               }
             }
           },
@@ -170,21 +171,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "05e236a6c102ce2e",
+  "active": "8e4356aeae49e923",
   "lastOpenFiles": [
+    "Programming languages/Java/Primitivi.md",
+    "Flet-notes/2024-02-29.md",
+    "Programming languages/Java/Java.md",
+    "To-Do.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Java/Hello, World!.md",
     "Programming languages/Java/Untitled.md",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Python/Files.md",
-    "Flet-notes/2024-02-29.md",
     "Programming languages/Java/Object oriented programming.md",
     "Programming languages/Python/Comparatori e operatori di appartenenza.md",
     "Programming languages/Python/float.md",
-    "To-Do.md",
     "Flet-notes/2023-11-02.md",
     "Flet-notes/2023-12-05.md",
     "Flet-notes/2023-11-07.md",

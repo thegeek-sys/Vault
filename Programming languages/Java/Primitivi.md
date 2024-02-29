@@ -5,6 +5,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+1. [[#Introduzione|Introduzione]]
+2. [[#Variabili|Variabili]]
+3. [[#Letterali (o costanti)|Letterali (o costanti)]]
+4. [[#Precedenza operatori aritmetici|Precedenza operatori aritmetici]]
+---
+
 ## Introduzione
 Tipi di dati di base built-in.
 
@@ -24,7 +32,11 @@ Tipi di dati di base built-in.
 
 ---
 ## Variabili
-Una variabile è creata tramite una **dichiarazione**, nella quale deve essere specificato il tipo:
+Una variabile è creata tramite una **dichiarazione**, nella quale deve essere specificato il tipo.
+
+>[!warning]
+>Le variabili in Java non hanno un metodo di inizializzazione automatico, il che vuol dire che se definisco una variabile locale ma non gli assegno alcun valore se la provo a chiamare questo mi darà un errore di compilazione
+
 ```java
 int contatore; // ho inizializzato la variabile contatore di tipo int
 ```
@@ -35,8 +47,9 @@ contatore = 0;
 int numero = 1;
 ```
 
-> [!warning] Static typing
+> [!info] Static typing
 > Il tipo di una variabile (se primitivo) è **statico** - non può cambiare.
+> 
 > La keyword all’inizio di una dichiarazione`final` rende una variabile non più riassegnabile all’interno del programma
 
 Il nome assegnato a una variabile è il suo **identificatore** (come in python, la prima lettera non può essere un numero) - gli identificatori sono case-sensitive.
