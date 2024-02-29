@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/12-12-2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/12-12-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/12-12-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Flet-notes/12-12-2023.md"
               }
             }
           }
@@ -187,8 +187,25 @@
   },
   "active": "05e236a6c102ce2e",
   "lastOpenFiles": [
-    "Uni/Uni.md",
+    "Flet-notes/05-12-2023.md",
+    "Flet-notes/30-11-2023.md",
+    "Flet-notes/28-11-2023.md",
+    "Flet-notes/23-11-2023.md",
+    "Flet-notes/21-11-2023.md",
+    "Flet-notes/16-11-2023.md",
+    "Flet-notes/02-11-2023.md",
+    "Flet-notes/09-11-2023.md",
+    "Flet-notes/2023-11-09-vlad.md",
+    "Flet-notes/07-11-2023.md",
+    "Flet-notes/31-10-2023.md",
+    "Flet-notes/26-10-2023.md",
+    "Flet-notes/19-10-2023.md",
+    "Flet-notes/17-10-2023.md",
+    "Flet-notes/29-02-2024.md",
+    "Flet-notes/10-10-2023.md",
+    "Flet-notes/12-10-2023.md",
     "Programming languages/Java/Java.md",
+    "Uni/Uni.md",
     "Argomenti orale PSD.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Java",
@@ -196,25 +213,8 @@
     "Programming languages/Programming languages.md",
     "Programming languages/Python/list methods.md",
     "Programming languages/Python/Sliding Window.md",
-    "Flet-notes/2023-10-26.md",
     "Programming languages/Python/any() e all().md",
-    "Flet-notes/2023-12-12_2023-12-14.md",
-    "Programming languages/Python/filter().md",
-    "Flet-notes/2023-10-19.md",
-    "Programming languages/Python/Filesystem come albero.md",
-    "Programming languages/Python/Files.md",
-    "Programming languages/Python/list.md",
-    "Programming languages/Python/set.md",
-    "Programming languages/Python/set methods.md",
-    "Programming languages/Python/Images.md",
     "Files/verilog module.png",
-    "Programming languages/Python/Albero binario.md",
-    "Programming languages/Python/dict methods.md",
-    "Uni/Struttura esame FDP.md",
-    "Programming languages/Python/dict.md",
-    "Programming languages/Python/Lambda.md",
-    "Programming languages/Python/Ricorsione.md",
-    "Programming languages/Python/Line-Profiler.md",
     "Files/Binary_tree.jpg",
     "Files/recurs.py",
     "Files/stack.png",
