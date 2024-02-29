@@ -48,9 +48,10 @@ Inoltre quando un `int` viene sommato ad una stringa il tipo in output è `Strin
 ```java
 int i = 5;
 double d = 4.5;
-String s = "La somma fa: ";
-String f = s+d+i;
-System.out.println(f)
+String s = " somma";
+String f = i+d+s;
+System.out.println(f); // 9.5 somma
+String v = (5+3) + 'ciao' // "8ciao"
 ```
 
 In particolar modo in **assegnazione**:
@@ -65,3 +66,18 @@ Nella fase di **calcolo di un’espressione**:
 double d = 2; // 2.0
 ```
 
+---
+## Tabella dei tipi
+
+| Espressione                | Tipo   | Valore |
+| -------------------------- | ------ | ------ |
+| `(int)2.71828`             | int    | 2      |
+| `Math.round(2.71828)`      | long   | 2      |
+| `(int)Math.round(2.71828)` | int    | 2      |
+| `(int)Math.round(3.14159)` | int    | 3      |
+| `Integer.parseInt("42")`   | int    | 42     |
+| `"42" + 99`                | String | “4299” |
+| `42 * 0.4`                 | double | 16.8   |
+| `(int)42 * 0.4`            | double | 16.8   |
+| `42 * (int)0.4`            | int    | 0      |
+| `(int)(42 * 0.4)`          | int    | 16     |
