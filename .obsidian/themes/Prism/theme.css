@@ -1,5 +1,5 @@
 /*
-    Prism Theme for Obsidian.md (Version: 3.4.1)
+    Prism Theme for Obsidian.md (Version: 3.4.4)
     > A Comprehensive, Highly-Customisable and Elegant Light/Dark Theme for Obsidian.md
 
     Source: https://github.com/damiankorcz/Obsidian-Prism
@@ -17,7 +17,7 @@
     Theme Code is distributed under the MIT License.
     See https://github.com/damiankorcz/Obsidian-Prism/blob/main/LICENSE for more information.
 
-    Copyright (c) 2021-2023 Damian Korcz <https://github.com/damiankorcz>
+    Copyright (c) 2021-2024 Damian Korcz <https://github.com/damiankorcz>
 */
 .theme-light.pt-color-scheme-swan-lt,
 .theme-light:not(.css-settings-manager) {
@@ -583,6 +583,8 @@ body {
   --pill-radius: var(--radius-s);
   --collapse-icon-color-collapsed: var(--text-normal);
   --embed-max-height: 800px;
+  --metadata-label-background-active: var(--background-secondary);
+  --metadata-input-background-active: var(--background-secondary);
   --status-bar-background-color-lt: #EBECEF;
   --status-bar-background-color-dt: #2B2B2B;
 }
@@ -621,15 +623,17 @@ body:is(.theme-light, .theme-dark) {
   --text-muted: hsl(var(--text-muted-hsl));
   --text-faint: hsl(var(--text-faint-hsl));
   --background-primary: hsl(var(--background-primary-hsl));
+  --background-primary-blur: hsl(var(--background-primary-hsl), 80%);
   --background-primary-alt: hsl(var(--background-primary-alt-hsl));
   --background-secondary: hsl(var(--background-secondary-hsl));
   --background-secondary-blur: hsla(var(--background-secondary-blur-hsl), 80%);
   --background-secondary-alt: hsl(var(--background-secondary-alt-hsl));
+  --background-secondary-alt-blur: hsla(var(--background-secondary-alt-hsl), 80%);
   --input-shadow: unset;
   --input-shadow-hover: unset;
   --tab-stacked-shadow: 0;
   --background-modifier-hover: hsla(var(--interactive-accent-base-hsl), 90%);
-  --text-selection: var(--background-modifier-hover);
+  --text-selection: hsla(var(--interactive-accent-tint-hsl), 55%);
   --text-highlight-bg: var(--interactive-accent-base);
   --interactive-accent: var(--interactive-accent-tint);
   --interactive-hover: var(--background-primary);
@@ -704,12 +708,18 @@ body.theme-light {
 }
 body.theme-light.pt-color-scheme-style-border-lt {
   --background-secondary: var(--background-primary);
+  --background-secondary-blur: var(--background-primary-blur);
+}
+body.theme-light.pt-color-scheme-style-border-lt.pt-disable-blur {
   --background-secondary-blur: var(--background-primary);
 }
 body.theme-light.pt-color-scheme-style-minimal-lt {
   --background-secondary: var(--background-primary);
-  --background-secondary-blur: var(--background-primary);
+  --background-secondary-blur: var(--background-primary-blur);
   --window-border: 1px solid transparent;
+}
+body.theme-light.pt-color-scheme-style-minimal-lt.pt-disable-blur {
+  --background-secondary-blur: var(--background-primary);
 }
 body.theme-light.pt-highlight-text-light-lt {
   --highlight-text-normal: var(--background-primary);
@@ -725,6 +735,7 @@ body.theme-light.pt-highlight-text-custom-lt {
 }
 body.theme-light.pt-accent-color-custom-lt {
   --interactive-accent-base-hsl: var(--color-accent-base-lt);
+  --interactive-accent-tint-hsl: var(--color-accent-tint-lt);
   --interactive-accent-text-hsl: var(--color-accent-text-lt);
   --interactive-accent-base: hsl(var(--color-accent-base-lt));
   --interactive-accent-tint: hsl(var(--color-accent-tint-lt));
@@ -733,6 +744,7 @@ body.theme-light.pt-accent-color-custom-lt {
 }
 body.theme-light.pt-accent-color-red-lt {
   --interactive-accent-base-hsl: var(--color-red-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-red-tint-hsl);
   --interactive-accent-text-hsl: var(--color-red-text-hsl);
   --interactive-accent-base: var(--color-red-base);
   --interactive-accent-tint: var(--color-red-tint);
@@ -741,6 +753,7 @@ body.theme-light.pt-accent-color-red-lt {
 }
 body.theme-light.pt-accent-color-orange-lt {
   --interactive-accent-base-hsl: var(--color-orange-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
   --interactive-accent-text-hsl: var(--color-orange-text-hsl);
   --interactive-accent-base: var(--color-orange-base);
   --interactive-accent-tint: var(--color-orange-tint);
@@ -749,6 +762,7 @@ body.theme-light.pt-accent-color-orange-lt {
 }
 body.theme-light.pt-accent-color-yellow-lt {
   --interactive-accent-base-hsl: var(--color-yellow-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
   --interactive-accent-text-hsl: var(--color-yellow-text-hsl);
   --interactive-accent-base: var(--color-yellow-base);
   --interactive-accent-tint: var(--color-yellow-tint);
@@ -757,6 +771,7 @@ body.theme-light.pt-accent-color-yellow-lt {
 }
 body.theme-light.pt-accent-color-green-lt {
   --interactive-accent-base-hsl: var(--color-green-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-green-tint-hsl);
   --interactive-accent-text-hsl: var(--color-green-text-hsl);
   --interactive-accent-base: var(--color-green-base);
   --interactive-accent-tint: var(--color-green-tint);
@@ -765,6 +780,7 @@ body.theme-light.pt-accent-color-green-lt {
 }
 body.theme-light.pt-accent-color-mint-lt {
   --interactive-accent-base-hsl: var(--color-mint-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-mint-tint-hsl);
   --interactive-accent-text-hsl: var(--color-mint-text-hsl);
   --interactive-accent-base: var(--color-mint-base);
   --interactive-accent-tint: var(--color-mint-tint);
@@ -773,6 +789,7 @@ body.theme-light.pt-accent-color-mint-lt {
 }
 body.theme-light.pt-accent-color-cyan-lt {
   --interactive-accent-base-hsl: var(--color-cyan-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-cyan-tint-hsl);
   --interactive-accent-text-hsl: var(--color-cyan-text-hsl);
   --interactive-accent-base: var(--color-cyan-base);
   --interactive-accent-tint: var(--color-cyan-tint);
@@ -781,6 +798,7 @@ body.theme-light.pt-accent-color-cyan-lt {
 }
 body.theme-light.pt-accent-color-blue-lt {
   --interactive-accent-base-hsl: var(--color-blue-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
   --interactive-accent-text-hsl: var(--color-blue-text-hsl);
   --interactive-accent-base: var(--color-blue-base);
   --interactive-accent-tint: var(--color-blue-tint);
@@ -789,6 +807,7 @@ body.theme-light.pt-accent-color-blue-lt {
 }
 body.theme-light.pt-accent-color-purple-lt {
   --interactive-accent-base-hsl: var(--color-purple-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
   --interactive-accent-text-hsl: var(--color-purple-text-hsl);
   --interactive-accent-base: var(--color-purple-base);
   --interactive-accent-tint: var(--color-purple-tint);
@@ -797,6 +816,7 @@ body.theme-light.pt-accent-color-purple-lt {
 }
 body.theme-light.pt-accent-color-pink-lt {
   --interactive-accent-base-hsl: var(--color-pink-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
   --interactive-accent-text-hsl: var(--color-pink-text-hsl);
   --interactive-accent-base: var(--color-pink-base);
   --interactive-accent-tint: var(--color-pink-tint);
@@ -805,6 +825,7 @@ body.theme-light.pt-accent-color-pink-lt {
 }
 body.theme-light.pt-accent-color-grey-lt {
   --interactive-accent-base-hsl: var(--color-grey-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-grey-tint-hsl);
   --interactive-accent-text-hsl: var(--color-grey-text-hsl);
   --interactive-accent-base: var(--color-grey-base);
   --interactive-accent-tint: var(--color-grey-tint);
@@ -861,12 +882,18 @@ body.theme-dark {
 }
 body.theme-dark.pt-color-scheme-style-border-dt {
   --background-secondary: var(--background-secondary-alt);
+  --background-secondary-blur: var(--background-secondary-alt-blur);
+}
+body.theme-dark.pt-color-scheme-style-border-dt.pt-disable-blur {
   --background-secondary-blur: var(--background-secondary-alt);
 }
 body.theme-dark.pt-color-scheme-style-minimal-dt {
   --background-secondary: var(--background-secondary-alt);
-  --background-secondary-blur: var(--background-secondary-alt);
+  --background-secondary-blur: var(--background-secondary-alt-blur);
   --window-border: 1px solid transparent;
+}
+body.theme-dark.pt-color-scheme-style-minimal-dt.pt-disable-blur {
+  --background-secondary-blur: var(--background-secondary-alt);
 }
 body.theme-dark.pt-highlight-text-light-dt {
   --highlight-text-normal: var(--text-normal);
@@ -882,6 +909,7 @@ body.theme-dark.pt-highlight-text-custom-dt {
 }
 body.theme-dark.pt-accent-color-custom-dt {
   --interactive-accent-base-hsl: var(--color-accent-base-dt);
+  --interactive-accent-tint-hsl: var(--color-accent-tint-dt);
   --interactive-accent-text-hsl: var(--color-accent-text-dt);
   --interactive-accent-base: hsl(var(--color-accent-base-dt));
   --interactive-accent-tint: hsl(var(--color-accent-tint-dt));
@@ -890,6 +918,7 @@ body.theme-dark.pt-accent-color-custom-dt {
 }
 body.theme-dark.pt-accent-color-red-dt {
   --interactive-accent-base-hsl: var(--color-red-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-red-tint-hsl);
   --interactive-accent-text-hsl: var(--color-red-text-hsl);
   --interactive-accent-base: var(--color-red-base);
   --interactive-accent-tint: var(--color-red-tint);
@@ -898,6 +927,7 @@ body.theme-dark.pt-accent-color-red-dt {
 }
 body.theme-dark.pt-accent-color-orange-dt {
   --interactive-accent-base-hsl: var(--color-orange-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-orange-tint-hsl);
   --interactive-accent-text-hsl: var(--color-orange-text-hsl);
   --interactive-accent-base: var(--color-orange-base);
   --interactive-accent-tint: var(--color-orange-tint);
@@ -906,6 +936,7 @@ body.theme-dark.pt-accent-color-orange-dt {
 }
 body.theme-dark.pt-accent-color-yellow-dt {
   --interactive-accent-base-hsl: var(--color-yellow-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-yellow-tint-hsl);
   --interactive-accent-text-hsl: var(--color-yellow-text-hsl);
   --interactive-accent-base: var(--color-yellow-base);
   --interactive-accent-tint: var(--color-yellow-tint);
@@ -914,6 +945,7 @@ body.theme-dark.pt-accent-color-yellow-dt {
 }
 body.theme-dark.pt-accent-color-green-dt {
   --interactive-accent-base-hsl: var(--color-green-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-green-tint-hsl);
   --interactive-accent-text-hsl: var(--color-green-text-hsl);
   --interactive-accent-base: var(--color-green-base);
   --interactive-accent-tint: var(--color-green-tint);
@@ -922,6 +954,7 @@ body.theme-dark.pt-accent-color-green-dt {
 }
 body.theme-dark.pt-accent-color-mint-dt {
   --interactive-accent-base-hsl: var(--color-mint-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-mint-tint-hsl);
   --interactive-accent-text-hsl: var(--color-mint-text-hsl);
   --interactive-accent-base: var(--color-mint-base);
   --interactive-accent-tint: var(--color-mint-tint);
@@ -930,6 +963,7 @@ body.theme-dark.pt-accent-color-mint-dt {
 }
 body.theme-dark.pt-accent-color-cyan-dt {
   --interactive-accent-base-hsl: var(--color-cyan-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-cyan-tint-hsl);
   --interactive-accent-text-hsl: var(--color-cyan-text-hsl);
   --interactive-accent-base: var(--color-cyan-base);
   --interactive-accent-tint: var(--color-cyan-tint);
@@ -938,6 +972,7 @@ body.theme-dark.pt-accent-color-cyan-dt {
 }
 body.theme-dark.pt-accent-color-blue-dt {
   --interactive-accent-base-hsl: var(--color-blue-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-blue-tint-hsl);
   --interactive-accent-text-hsl: var(--color-blue-text-hsl);
   --interactive-accent-base: var(--color-blue-base);
   --interactive-accent-tint: var(--color-blue-tint);
@@ -946,6 +981,7 @@ body.theme-dark.pt-accent-color-blue-dt {
 }
 body.theme-dark.pt-accent-color-purple-dt {
   --interactive-accent-base-hsl: var(--color-purple-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-purple-tint-hsl);
   --interactive-accent-text-hsl: var(--color-purple-text-hsl);
   --interactive-accent-base: var(--color-purple-base);
   --interactive-accent-tint: var(--color-purple-tint);
@@ -954,6 +990,7 @@ body.theme-dark.pt-accent-color-purple-dt {
 }
 body.theme-dark.pt-accent-color-pink-dt {
   --interactive-accent-base-hsl: var(--color-pink-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-pink-tint-hsl);
   --interactive-accent-text-hsl: var(--color-pink-text-hsl);
   --interactive-accent-base: var(--color-pink-base);
   --interactive-accent-tint: var(--color-pink-tint);
@@ -962,6 +999,7 @@ body.theme-dark.pt-accent-color-pink-dt {
 }
 body.theme-dark.pt-accent-color-grey-dt {
   --interactive-accent-base-hsl: var(--color-grey-base-hsl);
+  --interactive-accent-tint-hsl: var(--color-grey-tint-hsl);
   --interactive-accent-text-hsl: var(--color-grey-text-hsl);
   --interactive-accent-base: var(--color-grey-base);
   --interactive-accent-tint: var(--color-grey-tint);
@@ -982,7 +1020,7 @@ body.pt-titlebar-hide-text .titlebar .titlebar-text {
   background-color: unset;
 }
 
-.pt-status-bar-position-hidden .status-bar {
+.status-bar:empty, .pt-status-bar-position-hidden .status-bar {
   display: none;
 }
 .pt-status-bar-position-floating .status-bar {
@@ -992,11 +1030,11 @@ body.pt-titlebar-hide-text .titlebar .titlebar-text {
   width: fit-content;
   margin: 0 auto calc(var(--size-2-3) + var(--scroll-bar-size));
   background: var(--background-secondary-blur);
+  -webkit-backdrop-filter: blur(var(--blur-intensity));
+  backdrop-filter: blur(var(--blur-intensity));
   border: 1px solid var(--window-border-color);
   border-radius: var(--radius-s);
   box-shadow: var(--shadow-l);
-  -webkit-backdrop-filter: blur(var(--blur-intensity));
-  backdrop-filter: blur(var(--blur-intensity));
 }
 .pt-status-bar-position-fixed .status-bar {
   --status-bar-position: relative;
@@ -1052,6 +1090,12 @@ body.pt-titlebar-hide-text .titlebar .titlebar-text {
 }
 .workspace-tab-header::before, .workspace-tab-header::after {
   display: none;
+}
+
+.mod-root .workspace-tab-header-status-icon,
+.mod-root .workspace-tab-header-inner-icon {
+  --icon-size: var(--icon-s);
+  --icon-stroke: var(--icon-s-stroke-width);
 }
 
 .workspace-tab-header-container {
@@ -1218,52 +1262,66 @@ body.pt-titlebar-hide-text .titlebar .titlebar-text {
   order: unset;
 }
 
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right) .nav-header {
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .nav-header,
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .nav-header,
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .nav-header,
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .nav-header {
   position: absolute;
-  bottom: calc(var(--size-2-3) + var(--scroll-bar-size));
+  bottom: calc(var(--size-2-2) + var(--scroll-bar-size));
   z-index: var(--layer-popover);
   order: 10;
   width: -webkit-fill-available;
   width: fill-available;
   height: unset;
-  padding: 0 calc(var(--size-2-3) + var(--scroll-bar-size)) 0 var(--size-2-3);
+  padding: 0 calc(var(--size-2-2) + var(--scroll-bar-size)) 0 var(--size-2-2);
   pointer-events: none;
   background-color: unset;
   border-bottom: unset;
 }
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right) .nav-buttons-container,
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right) .workspace-leaf-content[data-type=dangling-links] .nav-header {
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .nav-buttons-container,
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .nav-buttons-container,
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .nav-buttons-container,
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .nav-buttons-container,
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .workspace-leaf-content[data-type=dangling-links] .nav-header {
   padding: var(--size-4-1);
   pointer-events: auto;
   background: var(--background-secondary-blur);
+  -webkit-backdrop-filter: blur(var(--blur-intensity));
+  backdrop-filter: blur(var(--blur-intensity));
   border: 1px solid var(--window-border-color);
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-l);
-  -webkit-backdrop-filter: blur(var(--blur-intensity));
-  backdrop-filter: blur(var(--blur-intensity));
 }
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right).is-mobile .nav-buttons-container, :is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right).is-mobile .workspace-leaf-content[data-type=dangling-links] .nav-header {
-  padding: var(--size-4-2);
-}
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right) .workspace-leaf-content[data-type=dangling-links] .nav-header {
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .workspace-leaf-content[data-type=dangling-links] .nav-header {
   width: fit-content;
 }
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right) .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container {
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container,
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container,
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container,
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split .workspace-leaf-content[data-type=dictionary-view] .nav-buttons-container {
   position: fixed;
   bottom: calc(var(--size-2-3) + var(--scroll-bar-size));
   z-index: var(--layer-popover);
   min-height: unset;
 }
-:is(.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split,
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split, .pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left, .pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right) :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content) {
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content),
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content),
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content),
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content) {
   padding-bottom: calc(38px + 2 * var(--scroll-bar-size));
+}
+
+.pt-nav-header-left-sidebar-position-bottom.is-mobile .workspace-drawer.mod-left .nav-buttons-container,
+.pt-nav-header-right-sidebar-position-bottom.is-mobile .workspace-drawer.mod-right .nav-buttons-container,
+.pt-nav-header-left-sidebar-position-bottom.is-mobile .workspace-drawer.mod-left .workspace-leaf-content[data-type=dangling-links] .nav-header,
+.pt-nav-header-right-sidebar-position-bottom.is-mobile .workspace-drawer.mod-right .workspace-leaf-content[data-type=dangling-links] .nav-header {
+  padding: var(--size-4-2);
 }
 
 body.is-mobile {
@@ -1342,9 +1400,6 @@ body.is-mobile.is-phone .prompt {
   margin-left: var(--size-4-2);
   border-radius: var(--radius-m);
 }
-body.is-mobile.is-phone .suggestion {
-  max-height: unset;
-}
 body.is-mobile.is-phone .community-modal-controls {
   background-color: var(--background-secondary);
 }
@@ -1385,7 +1440,7 @@ body.is-mobile.is-phone .modal.mod-sidebar-layout .search-input-container {
   height: unset;
 }
 body.is-mobile.is-phone .search-input-container:before {
-  top: calc((var(--input-height) - var(--search-icon-size) + var(--size-4-1)) / 2);
+  top: calc((var(--input-height) - var(--search-icon-size) + var(--size-4-2)) / 2);
 }
 body.is-mobile.is-tablet .modal.mod-sidebar-layout .modal-setting-back-button {
   display: none;
@@ -1459,10 +1514,10 @@ body.is-mobile .workspace-drawer-header-info {
 body.is-mobile .suggestion-container,
 body.is-mobile .menu {
   background-color: var(--background-secondary-blur);
-  border: var(--window-border);
-  border-radius: var(--radius-m);
   -webkit-backdrop-filter: blur(var(--blur-intensity));
   backdrop-filter: blur(var(--blur-intensity));
+  border: var(--window-border);
+  border-radius: var(--radius-m);
 }
 body.is-mobile .modal {
   border: var(--window-border);
@@ -1523,9 +1578,9 @@ body.is-mobile .view-header-title-container {
 
 .mobile-navbar {
   background: var(--background-secondary-blur);
-  border-top: var(--window-border);
   -webkit-backdrop-filter: blur(var(--blur-intensity));
   backdrop-filter: blur(var(--blur-intensity));
+  border-top: var(--window-border);
 }
 
 .mobile-navbar-actions {
@@ -1575,7 +1630,7 @@ body.is-mobile .view-header-title-container {
   font-size: 14px;
   font-weight: 600;
   color: var(--interactive-accent-text);
-  content: "Prism 3.4.1";
+  content: "Prism 3.4.4";
   border: 1px solid var(--window-border-color);
   border-radius: var(--radius-s);
 }
@@ -1766,7 +1821,6 @@ img.community-theme-lightbox {
 }
 body:not(.is-phone) .community-modal-controls .setting-item:first-child {
   padding-left: unset;
-  margin-bottom: unset;
   margin-left: var(--size-4-2);
 }
 .community-modal-controls input {
@@ -1785,6 +1839,10 @@ body:not(.is-phone) .community-modal-controls .setting-item:first-child {
 .setting-item.setting-item-heading {
   margin-bottom: var(--size-4-1);
   border-bottom: 1px solid var(--window-border-color);
+}
+.setting-item + div > .setting-item-heading,
+.setting-item + .setting-item-heading {
+  margin-top: var(--size-4-1);
 }
 
 .setting-item-name {
@@ -2131,13 +2189,17 @@ body:not(.is-frameless, .is-hidden-frameless) .workspace-split.mod-right-split >
   padding: var(--size-4-1) 0;
   margin: unset;
   background: var(--background-secondary-blur);
-  border-bottom: var(--window-border);
   -webkit-backdrop-filter: blur(var(--blur-intensity));
   backdrop-filter: blur(var(--blur-intensity));
+  border-bottom: var(--window-border);
 }
 :is(.mod-active .document-search-container, .document-search-container) .document-search-input.mod-no-match {
   background-color: var(--color-red-base);
   border: 2px solid var(--color-red-tint);
+}
+
+.document-search {
+  align-items: center;
 }
 
 .popover {
@@ -2192,7 +2254,7 @@ div.notice-container div.notice {
 }
 
 .prompt-instructions {
-  padding-bottom: unset;
+  padding: var(--size-2-1) var(--size-4-2);
 }
 
 .tooltip {
@@ -2996,6 +3058,10 @@ a.tag:hover {
 .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
   padding-right: 0.25rem;
 }
+.markdown-source-view.mod-cm6 .cm-table-widget .table-row-drag-handle:hover,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-col-drag-handle:hover {
+  color: var(--interactive-accent-text);
+}
 
 .list-bullet {
   padding-right: 0.6em;
@@ -3654,6 +3720,9 @@ div.cm-focused .cm-vimCursorLayer .cm-fat-cursor {
   display: none;
 }
 
+.metadata-container {
+  transform: unset;
+}
 .metadata-container .metadata-add-button {
   margin-top: var(--size-4-2);
   margin-left: var(--size-4-1);
@@ -3676,6 +3745,10 @@ div.cm-focused .cm-vimCursorLayer .cm-fat-cursor {
 .workspace-leaf-content[data-type=file-properties] .view-content,
 .workspace-leaf-content[data-type=properties] .view-content {
   padding: var(--size-4-1);
+}
+
+.metadata-property:focus-within {
+  box-shadow: 0 0 0 1px var(--window-border-color);
 }
 
 audio::-webkit-media-controls-panel {
@@ -3728,11 +3801,12 @@ audio::-webkit-media-controls-time-remaining-display {
   background-color: var(--background-secondary-alt);
 }
 .modal-container .prompt .prompt-instructions {
-  padding: var(--size-2-1) var(--size-4-2);
   background-color: var(--background-secondary);
   border-top: var(--window-border);
 }
-.modal-container .prompt .suggestion-item.mod-complex .suggestion-hotkey {
+
+.suggestion-item.mod-complex .suggestion-hotkey {
+  margin-left: var(--size-4-2);
   font-weight: 600;
   border-radius: var(--radius-s);
 }
@@ -3980,59 +4054,76 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 
 .theme-light .graph-view.color-line {
   color: var(--graph-line-color-lt);
+  opacity: var(--graph-line-opacity-lt);
 }
 .theme-light .graph-view.color-fill {
   color: var(--graph-fill-color-lt);
+  opacity: var(--graph-fill-opacity-lt);
 }
 .theme-light .graph-view.color-fill-focused {
   color: var(--graph-fill-focused-color-lt);
+  opacity: var(--graph-fill-focused-opacity-lt);
 }
 .theme-light .graph-view.color-fill-tag {
   color: var(--graph-tag-color-lt);
+  opacity: var(--graph-tag-opacity-lt);
 }
 .theme-light .graph-view.color-fill-attachment {
   color: var(--graph-attachment-color-lt);
+  opacity: var(--graph-attachment-opacity-lt);
 }
 .theme-light .graph-view.color-fill-unresolved {
   color: var(--graph-unresolved-color-lt);
+  opacity: var(--graph-unresolved-opacity-lt);
 }
 .theme-light .graph-view.color-fill-highlight {
   color: var(--graph-highlight-color-lt);
+  opacity: var(--graph-highlight-opacity-lt);
 }
 .theme-light .graph-view.color-line-highlight {
   color: var(--graph-highlight-line-color-lt);
+  opacity: var(--graph-highlight-line-opacity-lt);
 }
 
 .theme-dark .graph-view.color-line {
   color: var(--graph-line-color-dt);
+  opacity: var(--graph-line-opacity-dt);
 }
 .theme-dark .graph-view.color-fill {
   color: var(--graph-fill-color-dt);
+  opacity: var(--graph-fill-opacity-dt);
 }
 .theme-dark .graph-view.color-fill-focused {
   color: var(--graph-fill-focused-color-dt);
+  opacity: var(--graph-fill-focused-opacity-dt);
 }
 .theme-dark .graph-view.color-fill-tag {
   color: var(--graph-tag-color-dt);
+  opacity: var(--graph-tag-opacity-dt);
 }
 .theme-dark .graph-view.color-fill-attachment {
   color: var(--graph-attachment-color-dt);
+  opacity: var(--graph-attachment-opacity-dt);
 }
 .theme-dark .graph-view.color-fill-unresolved {
   color: var(--graph-unresolved-color-dt);
+  opacity: var(--graph-unresolved-opacity-dt);
 }
 .theme-dark .graph-view.color-fill-highlight {
   color: var(--graph-highlight-color-dt);
+  opacity: var(--graph-highlight-opacity-dt);
 }
 .theme-dark .graph-view.color-line-highlight {
   color: var(--graph-highlight-line-color-dt);
+  opacity: var(--graph-highlight-line-opacity-dt);
 }
 
-.outline {
-  padding: var(--size-4-1);
-}
 .outline .tree-item-children > div:first-child {
   display: none;
+}
+
+.workspace-leaf-content[data-type=outline] .view-content {
+  padding: var(--size-4-1);
 }
 
 .search-result-container {
@@ -4145,6 +4236,8 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   margin: var(--size-4-1) var(--size-4-1) var(--size-4-2) var(--size-4-5);
 }
 :is(.backlink-pane, .outgoing-link-pane) > .tree-item-self {
+  padding-top: var(--size-4-1);
+  padding-bottom: var(--size-4-1);
   padding-left: var(--size-4-6);
   margin-bottom: -1px;
   background-color: var(--background-secondary);
@@ -4200,11 +4293,11 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   padding: var(--size-4-1);
   pointer-events: auto;
   background: var(--background-secondary-blur);
+  -webkit-backdrop-filter: blur(var(--blur-intensity));
+  backdrop-filter: blur(var(--blur-intensity));
   border: var(--window-border);
   border-radius: var(--radius-m);
   box-shadow: var(--shadow-l);
-  -webkit-backdrop-filter: blur(var(--blur-intensity));
-  backdrop-filter: blur(var(--blur-intensity));
 }
 
 .outgoing-link-pane .tree-item-self .tree-item-icon {
@@ -4397,7 +4490,7 @@ body.theme-dark {
 }
 
 .workspace-leaf-content[data-type=bookmarks] .tree-item-icon {
-  width: unset;
+  width: 20px;
   padding-right: var(--size-4-1);
 }
 .workspace-leaf-content[data-type=bookmarks] .view-content {
@@ -6230,7 +6323,7 @@ body:not(.is-frameless):not(.qe-hide-breadcrumbs) .status-bar {
 }
 .is-mobile.is-phone .settings-search-container .settings-search-input {
   padding: unset;
-  margin: var(--size-4-1);
+  margin: var(--size-4-1) 0;
 }
 .settings-search-container .search-input-container::before {
   top: calc((var(--input-height) - var(--search-icon-size)) / 2);
@@ -6238,6 +6331,11 @@ body:not(.is-frameless):not(.qe-hide-breadcrumbs) .status-bar {
 }
 .settings-search-container .vertical-tab-nav-item {
   border: unset;
+}
+
+body.is-mobile.is-phone .search-input-container::before {
+  top: calc((var(--input-height) - var(--search-icon-size)) / 2);
+  left: var(--size-4-3);
 }
 
 /* @settings
@@ -6625,7 +6723,7 @@ settings:
         collapsed: true
     -
         id: graph-line-color-lt
-        title: Graph Line Presets
+        title: Graph Lines Color Presets
         type: variable-select
         allowEmpty: false
         default: var(--background-secondary-alt)
@@ -6678,7 +6776,7 @@ settings:
         id: graph-line-opacity-lt
         title: Graph Lines Opacity
         type: variable-number-slider
-        default: 1
+        default: 0.6
         min: 0
         max: 1
         step: 0.05
@@ -6738,6 +6836,14 @@ settings:
         opacity: false
         default: '#C4C7CA'
     -
+        id: graph-fill-opacity-lt
+        title: Graph Note Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: pt-graph-fill-focused-color-lt
         title: Graph Note Focused Color
         description: The color of a Graph Node representing currently focused note file.
@@ -6796,6 +6902,14 @@ settings:
         opacity: false
         default: '#8670FF'
     -
+        id: graph-fill-focused-opacity-lt
+        title: Graph Note Focused Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: pt-graph-tag-color-lt
         title: Graph Tag Color
         description: The color of a Graph Node representing a tag.
@@ -6850,6 +6964,14 @@ settings:
         format: hsl
         opacity: false
         default: '#619EFF'
+    -
+        id: graph-tag-opacity-lt
+        title: Graph Tag Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: pt-graph-attachment-color-lt
         title: Graph Attachment Color
@@ -6906,6 +7028,14 @@ settings:
         opacity: false
         default: '#FDDB6D'
     -
+        id: graph-attachment-opacity-lt
+        title: Graph Attachment Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: pt-graph-unresolved-color-lt
         title: Graph Unresolved Color
         description: The color of a Graph Node representing an unresolved note.
@@ -6960,6 +7090,14 @@ settings:
         format: hsl
         opacity: false
         default: '#FF7070'
+    -
+        id: graph-unresolved-opacity-lt
+        title: Graph Unresolved Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: pt-graph-highlight-color-lt
         title: Graph Highlight Color
@@ -7019,6 +7157,14 @@ settings:
         opacity: false
         default: '#8670FF'
     -
+        id: graph-highlight-opacity-lt
+        title: Graph Highlight Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: pt-graph-highlight-line-color-lt
         title: Graph Highlight Line Color
         description: The color of the lines connected to a highlighted Graph Node.
@@ -7077,6 +7223,14 @@ settings:
         opacity: false
         default: '#8670FF'
     -
+        id: graph-highlight-line-opacity-lt
+        title: Graph Highlight Line Opacity
+        type: variable-number-slider
+        default: 0.6
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: graph-view-dark-theme
         title: Dark Theme
         type: heading
@@ -7091,7 +7245,7 @@ settings:
         collapsed: true
     -
         id: graph-line-color-dt
-        title: Graph Lines Presets
+        title: Graph Lines Color Presets
         type: variable-select
         allowEmpty: false
         default: var(--background-primary-alt)
@@ -7140,6 +7294,14 @@ settings:
         format: hsl
         opacity: false
         default: '#C4C7CA'
+    -
+        id: graph-line-opacity-dt
+        title: Graph Lines Opacity
+        type: variable-number-slider
+        default: 0.6
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: pt-graph-fill-color-dt
         title: Graph Note Color
@@ -7195,6 +7357,14 @@ settings:
         format: hsl
         opacity: false
         default: '#878787'
+    -
+        id: graph-fill-opacity-dt
+        title: Graph Note Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: pt-graph-fill-focused-color-dt
         title: Graph Note Focused Color
@@ -7254,6 +7424,14 @@ settings:
         opacity: false
         default: '#4C3AB6'
     -
+        id: graph-fill-focused-opacity-dt
+        title: Graph Note Focused Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: pt-graph-tag-color-dt
         title: Graph Tag Color
         description: The color of a Graph Node representing a tag.
@@ -7308,6 +7486,14 @@ settings:
         format: hsl
         opacity: false
         default: '#3663AB'
+    -
+        id: graph-tag-opacity-dt
+        title: Graph Tag Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: pt-graph-attachment-color-dt
         title: Graph Attachment Color
@@ -7364,6 +7550,14 @@ settings:
         opacity: false
         default: '#AF943C'
     -
+        id: graph-attachment-opacity-dt
+        title: Graph Attachment Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
         id: pt-graph-unresolved-color-dt
         title: Graph Unresolved Color
         description: The color of a Graph Node representing an unresolved note.
@@ -7418,6 +7612,14 @@ settings:
         format: hsl
         opacity: false
         default: '#B63A3A'
+    -
+        id: graph-unresolved-opacity-dt
+        title: Graph Unresolved Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: pt-graph-highlight-color-dt
         title: Graph Highlight Color
@@ -7477,7 +7679,15 @@ settings:
         opacity: false
         default: '#4C3AB6'
     -
-        id: pt-graph-highlight-line-color-lt
+        id: graph-highlight-opacity-dt
+        title: Graph Highlight Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
+        id: pt-graph-highlight-line-color-dt
         title: Graph Highlight Line Color
         description: The color of the lines connected to a highlighted Graph Node.
         type: heading
@@ -7534,6 +7744,14 @@ settings:
         format: hsl
         opacity: false
         default: '#4C3AB6'
+    -
+        id: graph-highlight-line-opacity-dt
+        title: Graph Highlight Line Opacity
+        type: variable-number-slider
+        default: 0.6
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: custom-vault-banner
         title: Custom Vault Banner
@@ -8553,60 +8771,6 @@ settings:
         level: 3
         collapsed: true
     -
-        id: text-bold-color-lt
-        title: Bold Text Color Preset
-        type: variable-select
-        allowEmpty: false
-        default: var(--text-normal)
-        options:
-            -
-                label: Default
-                value: var(--text-normal)
-            -
-                label: Accent Color
-                value: var(--interactive-accent-text)
-            -
-                label: Custom
-                value: var(--text-bold-custom-color-lt)
-            -
-                label: Red
-                value: var(--color-red-text)
-            -
-                label: Orange
-                value: var(--color-orange-text)
-            -
-                label: Yellow
-                value: var(--color-yellow-text)
-            -
-                label: Green
-                value: var(--color-green-text)
-            -
-                label: Mint
-                value: var(--color-mint-text)
-            -
-                label: Cyan
-                value: var(--color-cyan-text)
-            -
-                label: Blue
-                value: var(--color-blue-text)
-            -
-                label: Purple
-                value: var(--color-purple-text)
-            -
-                label: Pink
-                value: var(--color-pink-text)
-            -
-                label: Grey
-                value: var(--color-grey-text)
-    -
-        id: text-bold-custom-color-lt
-        title: Bold Text Custom Color
-        description: Make sure you selected 'Custom' in Light Theme Bold Text Color Preset for this to work.
-        type: variable-color
-        format: hsl
-        opacity: false
-        default: '#2B2B2B'
-    -
         id: text-italic-color-lt
         title: Italic Text Color Preset
         type: variable-select
@@ -8656,6 +8820,60 @@ settings:
         id: text-italic-custom-color-lt
         title: Italic Text Custom Color
         description: Make sure you selected 'Custom' in Light Theme Italic Text Color Preset for this to work.
+        type: variable-color
+        format: hsl
+        opacity: false
+        default: '#2B2B2B'
+    -
+        id: text-bold-color-lt
+        title: Bold Text Color Preset
+        type: variable-select
+        allowEmpty: false
+        default: var(--text-normal)
+        options:
+            -
+                label: Default
+                value: var(--text-normal)
+            -
+                label: Accent Color
+                value: var(--interactive-accent-text)
+            -
+                label: Custom
+                value: var(--text-bold-custom-color-lt)
+            -
+                label: Red
+                value: var(--color-red-text)
+            -
+                label: Orange
+                value: var(--color-orange-text)
+            -
+                label: Yellow
+                value: var(--color-yellow-text)
+            -
+                label: Green
+                value: var(--color-green-text)
+            -
+                label: Mint
+                value: var(--color-mint-text)
+            -
+                label: Cyan
+                value: var(--color-cyan-text)
+            -
+                label: Blue
+                value: var(--color-blue-text)
+            -
+                label: Purple
+                value: var(--color-purple-text)
+            -
+                label: Pink
+                value: var(--color-pink-text)
+            -
+                label: Grey
+                value: var(--color-grey-text)
+    -
+        id: text-bold-custom-color-lt
+        title: Bold Text Custom Color
+        description: Make sure you selected 'Custom' in Light Theme Bold Text Color Preset for this to work.
         type: variable-color
         format: hsl
         opacity: false
@@ -8823,60 +9041,6 @@ settings:
         level: 3
         collapsed: true
     -
-        id: text-bold-color-dt
-        title: Bold Text Color Preset
-        type: variable-select
-        allowEmpty: false
-        default: var(--text-normal)
-        options:
-            -
-                label: Default
-                value: var(--text-normal)
-            -
-                label: Accent Color
-                value: var(--interactive-accent-text)
-            -
-                label: Custom
-                value: var(--text-bold-custom-color-dt)
-            -
-                label: Red
-                value: var(--color-red-text)
-            -
-                label: Orange
-                value: var(--color-orange-text)
-            -
-                label: Yellow
-                value: var(--color-yellow-text)
-            -
-                label: Green
-                value: var(--color-green-text)
-            -
-                label: Mint
-                value: var(--color-mint-text)
-            -
-                label: Cyan
-                value: var(--color-cyan-text)
-            -
-                label: Blue
-                value: var(--color-blue-text)
-            -
-                label: Purple
-                value: var(--color-purple-text)
-            -
-                label: Pink
-                value: var(--color-pink-text)
-            -
-                label: Grey
-                value: var(--color-grey-text)
-    -
-        id: text-bold-custom-color-dt
-        title: Bold Text Custom Color
-        description: Make sure you selected 'Custom' in Dark Theme Bold Text Color Preset for this to work.
-        type: variable-color
-        format: hsl
-        opacity: false
-        default: '#2B2B2B'
-    -
         id: text-italic-color-dt
         title: Italic Text Color Preset
         type: variable-select
@@ -8926,6 +9090,60 @@ settings:
         id: text-italic-custom-color-dt
         title: Italic Text Custom Color
         description: Make sure you selected 'Custom' in Dark Theme Italic Text Color Preset for this to work.
+        type: variable-color
+        format: hsl
+        opacity: false
+        default: '#2B2B2B'
+    -
+        id: text-bold-color-dt
+        title: Bold Text Color Preset
+        type: variable-select
+        allowEmpty: false
+        default: var(--text-normal)
+        options:
+            -
+                label: Default
+                value: var(--text-normal)
+            -
+                label: Accent Color
+                value: var(--interactive-accent-text)
+            -
+                label: Custom
+                value: var(--text-bold-custom-color-dt)
+            -
+                label: Red
+                value: var(--color-red-text)
+            -
+                label: Orange
+                value: var(--color-orange-text)
+            -
+                label: Yellow
+                value: var(--color-yellow-text)
+            -
+                label: Green
+                value: var(--color-green-text)
+            -
+                label: Mint
+                value: var(--color-mint-text)
+            -
+                label: Cyan
+                value: var(--color-cyan-text)
+            -
+                label: Blue
+                value: var(--color-blue-text)
+            -
+                label: Purple
+                value: var(--color-purple-text)
+            -
+                label: Pink
+                value: var(--color-pink-text)
+            -
+                label: Grey
+                value: var(--color-grey-text)
+    -
+        id: text-bold-custom-color-dt
+        title: Bold Text Custom Color
+        description: Make sure you selected 'Custom' in Dark Theme Bold Text Color Preset for this to work.
         type: variable-color
         format: hsl
         opacity: false
@@ -9353,16 +9571,6 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    -
-        id: file-explorer-left-margin
-        title: File Explorer File/Folder Left Margin (px)
-        description: Increases the Left Margin for Files/Folders in order indent them within another folder.
-        type: variable-number-slider
-        format: 'px'
-        default: 0
-        min: 0
-        max: 25
-        step: 1
     -
         id: pt-file-explorer-folder-icon
         title: Enable Folder Dropdown Icon
