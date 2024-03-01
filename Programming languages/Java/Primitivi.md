@@ -16,17 +16,17 @@ Completed:
 ## Introduzione
 Tipi di dati di base built-in.
 
-| Tipo | Operatori | Esempio | Intervallo | Space |
-| ---- | :--: | :--: | ---- | ---- |
-| `byte` | + - * / % | 27 + 1 | -128…127 | 1 byte |
-| `short` | + - * / % | 27 + 1 | -32768...32767 | 2 byte |
-| <u>`int`</u> | + - * / % | 27 + 1 | -2147483648…2147483647 | 4 byte |
-| `long` | + - * / % | 27 + 1 | -1e9…1e9 | 8 byte |
-| `float` | + - * / % | 3.14 * 5.01e23 | 7 cifre decimali significative | 4 byte |
-| <u>`double`</u> | + - * / % | 3.14 * 5.01e23 | 15 cifre decimali significative | 8 byte |
-| <u>`boolean`</u> | && \|\| ! | true \|\| false | true, false | 1 byte |
-| <u>`char`</u> | + - | ‘a’ | Tutti i caratteri codificati con unicode | 2 byte |
-| <u>`String`</u> | + - | “Hello” + “World” |  |  |
+| Tipo             | Operatori |      Esempio      | Intervallo                               | Space  |
+| ---------------- | :-------: | :---------------: | ---------------------------------------- | ------ |
+| `byte`           | + - * / % |      27 + 1       | -128…127                                 | 1 byte |
+| `short`          | + - * / % |      27 + 1       | -32768...32767                           | 2 byte |
+| <u>`int`</u>     | + - * / % |      27 + 1       | -2147483648…2147483647                   | 4 byte |
+| `long`           | + - * / % |      27 + 1       | -1e9…1e9                                 | 8 byte |
+| `float`          | + - * / % |  3.14 * 5.01e23   | 7 cifre decimali significative           | 4 byte |
+| <u>`double`</u>  | + - * / % |  3.14 * 5.01e23   | 15 cifre decimali significative          | 8 byte |
+| <u>`boolean`</u> | && \|\| ! |  true \|\| false  | true, false                              | 1 byte |
+| <u>`char`</u>    |    + -    |        ‘a’        | Tutti i caratteri codificati con unicode | 2 byte |
+| <u>`String`</u>  |    + -    | “Hello” + “World” |                                          |        |
 - Le stringhe non sono in realtà tipi primitivi (è in realtà un’array di `char`)
 - I char sono interpretati come veri e propri numeri unicode, quindi si utilizzano gli operatori di somma e sottrazione.
 
