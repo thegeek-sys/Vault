@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Programming languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Programming languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Programming languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md"
+                "file": "Programming languages/Programming languages.md"
               }
             }
           },
@@ -160,15 +160,15 @@
   },
   "active": "8e4356aeae49e923",
   "lastOpenFiles": [
+    "Programming languages/Java/Primitivi.md",
+    "Programming languages/Java/Hello, World!.md",
+    "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Operatori.md",
-    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Object oriented programming.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Java/Classe Math.md",
     "Flet-notes/2024-02-29.md",
-    "Programming languages/Java/Conversione di tipi.md",
-    "Programming languages/Java/Hello, World!.md",
     "Programming languages/Python/dict.md",
     "Programming languages/dict.md",
     "Programming languages/Python/dict methods.md",
