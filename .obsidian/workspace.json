@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Hello, World!.md",
+                "file": "Flet-notes/2024-03-05.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Hello, World!.md",
+                "file": "Flet-notes/2024-03-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Hello, World!.md",
+                "file": "Flet-notes/2024-03-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Hello, World!.md"
+                "file": "Flet-notes/2024-03-05.md"
               }
             }
           },
@@ -160,10 +161,11 @@
   },
   "active": "8e4356aeae49e923",
   "lastOpenFiles": [
+    "Programming languages/Java/Hello, World!.md",
+    "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Primitivi.md",
-    "Programming languages/Java/Hello, World!.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/Object oriented programming.md",
@@ -186,7 +188,6 @@
     "Flet-notes/2023-10-10.md",
     "Flet-notes/2023-10-12.md",
     "Flet-notes/2023-12-12.md",
-    "Flet-notes/2023-11-16.md",
     "Programming languages/Java",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
