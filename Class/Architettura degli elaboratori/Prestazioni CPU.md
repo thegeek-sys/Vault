@@ -14,16 +14,22 @@ Completed:
 ## Parametri
 Per misurare le prestazioni di una CPU utilizziamo i seguenti parametri:
 
-
-| Componente delle prestazioni                        | Unità di misura |
-| --------------------------------------------------- | --------------- |
-| Tempo di esecuzione della CPU per un dato programma |                 |
-
+| Componente delle prestazioni                        | Unità di misura                               |
+| --------------------------------------------------- | --------------------------------------------- |
+| Tempo di esecuzione della CPU per un dato programma | Secondi per programma                         |
+| Numero di istruzioni                                | Istruzioni eseguite per singolo programma     |
+| Cicli di clock per istruzione (CPI)                 | Numero medio di cicli di clock per istruzione |
+| Durata del ciclo di clock                           | Secondi per ciclo di clock                    |
 
 ---
 ## Formule
 
-![[Pasted image 20240305145953.png|400]]
+$$
+\text{Prestazioni}_{x} = \frac{1}{\text{Tempo di esecuzione}_{x}}
+$$
+$$
+\text{Tempo di CPU relativo a un programma} = \text{Cicli di clock della CPU relativi al programma} x \text{Periodo del clock}
+$$
 
 ![[Pasted image 20240305150036.png|800]]
 
