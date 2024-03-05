@@ -1,3 +1,18 @@
+---
+Created: 2024-03-05
+Class: "[[Architettura degli elaboratori]]"
+Related: 
+Completed:
+---
+---
+
+>[!info] Index
+>- [[#Struttura|Struttura]]
+>- [[#CPU|CPU]]
+>- [[#Memoria|Memoria]]
+>- [[#Dispositivi I/O|Dispositivi I/O]]
+
+---
 ## Struttura
 
 Il modello di architettura di von Neumann è costituito da tre sottosistemi interconnessi: 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -160,11 +161,12 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "443aab910f8e5173",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
+    "Files/Pasted image 20240305121228.png",
     "Files/Pasted image 20240305151702.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Java/Java.md",
@@ -200,8 +202,6 @@
     "Files/recurs.py",
     "Files/stack.png",
     "Files/stack program.png",
-    "Files/queue.png",
-    "Files/fibonacci.png",
     "Programming languages/Verilog",
     "Files",
     "Uni",
