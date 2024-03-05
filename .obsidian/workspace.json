@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Methods.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Programming languages/Java/Methods.md"
               }
             }
           },
@@ -181,13 +181,14 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Hello, World!.md",
+    "Programming languages/Java/Classes.md",
     "Programming languages/Java/Campi.md",
+    "Programming languages/Java/Methods.md",
+    "Flet-notes/2024-03-05.md",
     "Flet-notes/2024-02-29.md",
     "Programming languages/Java/Primitivi.md",
-    "Flet-notes/2024-03-05.md",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Classes.md",
-    "Programming languages/Java/Hello, World!.md",
     "Programming languages/Java/Libs.md",
     "Programming languages/Java/Classe Math.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
@@ -209,7 +210,6 @@
     "Flet-notes/2023-11-02.md",
     "Flet-notes/2023-12-05.md",
     "Flet-notes/2023-11-07.md",
-    "Flet-notes/2023-11-09.md",
     "Programming languages/Java",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
