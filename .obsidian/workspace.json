@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classes.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classes.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classes.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classes.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -181,11 +180,11 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-05.md",
+    "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Classes.md",
+    "Flet-notes/2024-03-05.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
-    "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Hello, World!.md",
     "Programming languages/Java/Object oriented programming.md",
     "Programming languages/Java/Java.md",

@@ -75,16 +75,13 @@ public class Counter {
 	
 	/* Costruttore della classe (es. main)
 	** (stesso nome della classe e non ha tipo di ritorno)
-	**
-	** Utilizzo l'overloading in modo tale da poter
-	** assegnare un valore a mia scelta come iniziale
 	*/
     public Counter() {  
         value = 0;  
     }
-    public Counter(int initValue) {
-        value = initValue;  
-    }  
+    public Counter(int initValue) { // overloading in modo da poter
+        value = initValue;          // usare un valore iniziale a
+    }                               // mia scelta
 	
 	
 	/* Metodi della classe
@@ -93,12 +90,15 @@ public class Counter {
     public void count() {  
         value++;  
     }  
-    // overloading del metodo per resettare ad un determinato valore
     public void reset() {  
         value = 0;  
     }  
-    public void reset(int newValue) {  
-        value = newValue;  
-    }
+    public void reset(int newValue) {  // overloading del metodo per
+		value = newValue;   		   // resettare ad un
+    }                                  // determinato valore
+	
+	
+	/* Metodo "getter" che restituisce un intero */
+	public int getValue() { return value; }
 }
 ```
