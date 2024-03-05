@@ -58,3 +58,8 @@ public class Automobile {
 
 ---
 ## Struttura
+
+![[Screenshot 2024-03-05 alle 15.31.31.png]]
+
+---
+## Esercizio: contatore

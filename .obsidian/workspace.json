@@ -6,6 +6,7 @@
       {
         "id": "780b83631e4fa070",
         "type": "tabs",
+        "dimension": 53.23679727427598,
         "children": [
           {
             "id": "02e1d9895c699dad",
@@ -24,6 +25,7 @@
       {
         "id": "cf1d76141f13e569",
         "type": "tabs",
+        "dimension": 46.76320272572402,
         "children": [
           {
             "id": "8e4356aeae49e923",
@@ -179,6 +181,7 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Classes.md",
     "Files/sonic.png",
