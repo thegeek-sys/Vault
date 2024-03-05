@@ -1,6 +1,5 @@
 [
   "obsidian-git",
-  "folder-note-plugin",
   "obsidian-latex-suite",
   "obsidian-style-settings",
   "cm-editor-syntax-highlight-obsidian",
@@ -8,5 +7,7 @@
   "table-editor-obsidian",
   "multi-column-markdown",
   "editing-toolbar",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "darlal-switcher-plus",
+  "folder-note-plugin"
 ]

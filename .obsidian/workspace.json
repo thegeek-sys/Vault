@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "780b83631e4fa070",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "02e1d9895c699dad",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "final",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md",
+                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Verilog/Verilog.md"
+                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md"
               }
             }
           },
@@ -155,19 +155,24 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "02e1d9895c699dad",
+  "active": "443aab910f8e5173",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Java/Java.md",
+    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+    "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Untitled.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
     "Class/Architettura degli elaboratori",
     "Classes/Untitled.md",
     "Class",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Campi.md",
     "Files/Screenshot 2024-03-05 alle 17.35.59.png",
@@ -187,9 +192,7 @@
     "Files/sonic.png",
     "Programming languages/Java/Object oriented programming.md",
     "Programming languages/Java/Operatori.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
-    "Programming languages/dict.md",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
     "Programming languages/Java",
     "Files/verilog module.png",
