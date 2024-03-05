@@ -25,3 +25,4 @@ In conclusione la classe **specifica la struttura di un oggetto** (dei campi dei
 
 ---
 ## Esempio pratico
+![[sonic.png]]
