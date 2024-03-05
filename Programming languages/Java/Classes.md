@@ -26,7 +26,7 @@ In conclusione la classe **specifica la struttura di un oggetto** (dei campi dei
 ---
 ## Esempio pratico
 
-![[sonic.png|200]]
+![[sonic.png|center|200]]
 In questo caso esiste una classe anello da cui posso creare tutte le istanze (oggetti) anello che mi servono
 ```
 classe Anello
