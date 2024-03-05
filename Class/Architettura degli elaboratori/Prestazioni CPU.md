@@ -1,7 +1,8 @@
 ---
 Created: 2024-03-05
+Class: "[[Architettura degli elaboratori]]"
 Related: 
-Completed:
+Completed: true
 ---
 ---
 
@@ -71,9 +72,13 @@ $$
 Legge utilizzata per stimare il miglioramento delle prestazioni
 
 $$
+\text{Tempo di esecuzione dopo il miglioramento}=
+$$
+$$
+=\frac{\text{Tempo di esecuzione influenzato dal miglioramento}}{\text{Miglioramento}}\,+\,
 \begin{split}
-\text{Tempo di esecuzione dopo il miglioramento}\;=\\
-& 
+&\text{Tempo di esecuzione non}\\
+&\text{influenzato dal miglioramento}
 \end{split}
 $$
 
