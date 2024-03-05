@@ -20,3 +20,7 @@
 - [[Classes#Esercizio contatore|Overloading (metodi e costruttori)]]
 - [[Incapsulamento]]
 - 
+
+##### Extras
+- [[UML]]
+- 
