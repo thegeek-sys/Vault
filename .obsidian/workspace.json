@@ -6,7 +6,7 @@
       {
         "id": "780b83631e4fa070",
         "type": "tabs",
-        "dimension": 53.23679727427598,
+        "dimension": 60.13628620102215,
         "children": [
           {
             "id": "02e1d9895c699dad",
@@ -25,7 +25,7 @@
       {
         "id": "cf1d76141f13e569",
         "type": "tabs",
-        "dimension": 46.76320272572402,
+        "dimension": 39.86371379897785,
         "children": [
           {
             "id": "8e4356aeae49e923",
@@ -181,9 +181,9 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Classes.md",
+    "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Hello, World!.md",
@@ -218,7 +218,6 @@
     "Files/queue.png",
     "Files/fibonacci.png",
     "Files/color class.png",
-    "Files/color alpha class.png",
     "Programming languages/Verilog",
     "Files",
     "Uni",

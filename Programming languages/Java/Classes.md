@@ -63,3 +63,42 @@ public class Automobile {
 
 ---
 ## Esercizio: contatore
+Implemento una classe contatore che mi permette di:
+- **incrementare** il conteggio attuale
+- **ottenere** il conteggio attuale
+- **resettare** il conteggio a `0` o ad un numero a mia scelta
+
+```java
+public class Counter {  
+    private int value;  
+	
+	
+	/* Costruttore della classe (es. main)
+	** (stesso nome della classe e non ha tipo di ritorno)
+	**
+	** Utilizzo l'overloading in modo tale da poter
+	** assegnare un valore a mia scelta come iniziale
+	*/
+    public Counter() {  
+        value = 0;  
+    }
+    public Counter(int initValue) {
+        value = initValue;  
+    }  
+	
+	
+	/* Metodi della classe
+	** (è void perché non restituisce nulla)
+	*/
+    public void count() {  
+        value++;  
+    }  
+    // overloading del metodo per resettare ad un determinato valore
+    public void reset() {  
+        value = 0;  
+    }  
+    public void reset(int newValue) {  
+        value = newValue;  
+    }
+}
+```
