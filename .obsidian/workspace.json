@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Methods.md",
+                "file": "Programming languages/Programming languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Methods.md",
+                "file": "Programming languages/Programming languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Methods.md",
+                "file": "Programming languages/Programming languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Methods.md"
+                "file": "Programming languages/Programming languages.md"
               }
             }
           },
@@ -181,12 +180,14 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "To-Do.md",
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/Hello, World!.md",
-    "Programming languages/Java/Classes.md",
-    "Programming languages/Java/Campi.md",
-    "Programming languages/Java/Methods.md",
+    "Programming languages/Programming languages.md",
     "Flet-notes/2024-03-05.md",
+    "Programming languages/Java/Classes.md",
+    "Programming languages/Java/Methods.md",
+    "Programming languages/Java/Hello, World!.md",
+    "Programming languages/Java/Campi.md",
     "Flet-notes/2024-02-29.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Libs.md",
@@ -195,8 +196,6 @@
     "Files/sonic.png",
     "Programming languages/Java/Object oriented programming.md",
     "Programming languages/Java/Conversione di tipi.md",
-    "Programming languages/Programming languages.md",
-    "To-Do.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
