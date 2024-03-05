@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+- [[#Introduzione|Introduzione]]
+- [[#Esempio|Esempio]]
+	- [[#Esempio#Costruttore di classe|Costruttore di classe]]
+	- [[#Esempio#Creazione oggetto|Creazione oggetto]]
+---
 ## Introduzione
 I costruttori sono dei metodi speciali che mi permettono di creare degli oggetti di una classe e hanno lo stesso nome della classe.
 Questi inizializzano i campi dell’oggetto e possono prendere zero, uno o più parametri.

@@ -9,6 +9,7 @@ Completed:
 
 - [[#Introduzione|Introduzione]]
 - [[#Struttura|Struttura]]
+- [[#Campi vs. variabili locali|Campi vs. variabili locali]]
 - [[#Esempi|Esempi]]
 ---
 ## Introduzione
@@ -28,6 +29,14 @@ private [static] [final] tipo_di_dati nome;
 
 > [!warning]
 > Da evitare l’uso di una variabile “di comodo” come campo di una classe
+
+---
+## Campi vs. variabili locali
+
+| Campi                                                                                                                  | Variabili locali                                                                                                                                                                |
+| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| I campi sono variabili dell’oggetto                                                                                    | Le variabili locali sono variabili definite all’interno di un metodo                                                                                                            |
+| sono variabili almeno all’interno di tutti gli oggetti della stessa classe ed esistono per tutta la vita di un oggetto | come parametri del metodo o all’interno del corpo del metodo ed esistono dal momento in cui sono definite fino al termine dell’esecuzione della chiamata al metodo in questione |
 
 ---
 ## Esempi
