@@ -25,4 +25,36 @@ In conclusione la classe **specifica la struttura di un oggetto** (dei campi dei
 
 ---
 ## Esempio pratico
-![[sonic.png]]
+
+![[sonic.png|200]]
+In questo caso esiste una classe anello da cui posso creare tutte le istanze (oggetti) anello che mi servono
+```
+classe Anello
+- Campi:
+	- int x
+	- int y
+	- int r
+- Metodi
+	- ruota
+```
+
+---
+## File sorgenti
+Ogni classe è memorizzata in un file separato e il nome del file DEVE essere lo stesso della classe. con estensione `.java`.
+I nomi di classe inoltre iniziano sempre con una maiuscola (es. Automobile)
+
+> [!warning]
+> I nomi in Java sono case-sensitive
+
+```java
+'''
+Automobile.java
+'''
+
+public class Automobile {
+	...
+}
+```
+
+---
+## Struttura

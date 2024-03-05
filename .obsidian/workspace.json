@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -178,12 +179,12 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-05.md",
+    "Programming languages/Java/Classes.md",
+    "Files/sonic.png",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Hello, World!.md",
     "Programming languages/Java/Object oriented programming.md",
-    "Programming languages/Java/Classes.md",
-    "Files/sonic.png",
-    "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Programming languages.md",
