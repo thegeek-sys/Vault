@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Campi.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "window",
+                "query": "final",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Campi.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Campi.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Campi.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -181,8 +181,10 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Campi.md",
+    "Flet-notes/2024-02-29.md",
+    "Programming languages/Java/Primitivi.md",
+    "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Hello, World!.md",
@@ -194,10 +196,8 @@
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Programming languages.md",
     "To-Do.md",
-    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Python/Python.md",
-    "Flet-notes/2024-02-29.md",
     "Programming languages/Python/dict.md",
     "Programming languages/dict.md",
     "Programming languages/Python/dict methods.md",
