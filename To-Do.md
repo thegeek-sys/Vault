@@ -1,3 +1,4 @@
 - [x] Fare flet-notes java
 - [x] Fare appunti calcolo
 - [x] Fare appunti algoritmi
+- [ ] Iniziare esercizio slide 56 MDP
