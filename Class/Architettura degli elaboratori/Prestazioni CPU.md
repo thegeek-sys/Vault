@@ -28,8 +28,16 @@ $$
 \text{Prestazioni}_{x} = \frac{1}{\text{Tempo di esecuzione}_{x}}
 $$
 $$
-\text{Tempo di CPU relativo a un programma} = \text{Cicli di clock della CPU relativi al programma} x \text{Periodo del clock}
+\begin{equation}
+\begin{split}
+\text{Tempo di CPU relativo a un programma} \\
+& \text{a un programma}
+\end{split}
+\end{equation}
 $$
+
+
+
 
 ![[Pasted image 20240305150036.png|800]]
 
