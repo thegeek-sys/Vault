@@ -26,6 +26,7 @@ Nella conversione esplicita utilizziamo un metodo che prende in ingresso un argo
 Tra questi metodi troviamo:
 - `Integer.parseInt()`
 - `Double.parseDouble()`
+- `Integer.toString()`
 - `Math.round()`
 - `Math.floor()`
 - `Math.ceil()`
@@ -35,7 +36,10 @@ Caso d’uso
 public class SommaInteri {
 	public static void main(String[] args) {
 		int a = Integer.parseInt(args[0])
-		int b = Integer.parseInt(args[0])
+		double b = Double.parseDouble(args[0])
+		
+		String sA = Integer.toString(a)
+		String sB = Double.toString(b)
 		System.out.println(a+b)
 	}
 }

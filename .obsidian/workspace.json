@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -193,8 +193,9 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Incapsulamento.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Conversione di tipi.md",
     "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Methods.md",
@@ -210,7 +211,6 @@
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Programming languages/Java/Object oriented programming.md",
-    "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
