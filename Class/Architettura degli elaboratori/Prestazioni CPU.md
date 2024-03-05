@@ -4,20 +4,21 @@ Related:
 Completed:
 ---
 ---
----
 
 >[!info] Index
-
-- [[#Parametri|Parametri]]
-- [[#Formule|Formule]]
-- [[#Legge di Amdahl|Legge di Amdahl]]
-
+> - [[#Parametri|Parametri]]
+>- [[#Formule|Formule]]
+>- [[#Legge di Amdahl|Legge di Amdahl]]
 
 ---
 ## Parametri
 Per misurare le prestazioni di una CPU utilizziamo i seguenti parametri:
 
-![[Pasted image 20240305145234.png|700]]
+
+| Componente delle prestazioni                        | Unità di misura |
+| --------------------------------------------------- | --------------- |
+| Tempo di esecuzione della CPU per un dato programma |                 |
+
 
 ---
 ## Formule
