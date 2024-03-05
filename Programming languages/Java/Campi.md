@@ -9,7 +9,7 @@ Completed:
 
 - [[#Introduzione|Introduzione]]
 - [[#Struttura|Struttura]]
-- [[#Esempi di dichiarazione|Esempi di dichiarazione]]
+- [[#Esempi|Esempi]]
 ---
 ## Introduzione
 Un campo (detto anche variabile di istanza) costituisce la **memoria privata** di un oggetto (normalmente i campi di una classe sono privati).
@@ -30,7 +30,7 @@ private [static] [final] tipo_di_dati nome;
 > Da evitare l’uso di una variabile “di comodo” come campo di una classe
 
 ---
-## Esempi di dichiarazione
+## Esempi
 
 ```java
 public class Hotel {
