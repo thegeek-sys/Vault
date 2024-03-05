@@ -11,7 +11,7 @@
 - [[Operatori]]
 - 
 
-##### Object oriented programming
+##### [[Object oriented programming]]
 - [[Classes]]
 - [[Methods]]
 - 
