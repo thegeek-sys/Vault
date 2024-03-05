@@ -3,6 +3,7 @@
 - [[Object oriented programming]]
 - [[Hello, World!]]
 - [[Classe Math]]
+- [[Libs]]
 - 
 
 ##### Data types
@@ -11,7 +12,7 @@
 - [[Operatori]]
 - 
 
-##### [[Object oriented programming]]
+##### Object oriented programming
 - [[Classes]]
 - [[Methods]]
 - 

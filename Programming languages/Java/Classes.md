@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+1. [[#Introduzione|Introduzione]]
+1. [[#Classe e oggetto a confronto|Classe e oggetto a confronto]]
+1. [[#Esempio pratico|Esempio pratico]]
+1. [[#File sorgenti|File sorgenti]]
+1. [[#Struttura|Struttura]]
+1. [[#Esercizio: contatore|Esercizio: contatore]]
+
 ## Introduzione
 Una classe è una parte del codice che fornisce un prototipo astratto per gli oggetti di un particolare tipo.
 Un programma può creare e usare uno o più oggetti (istanze) della stessa classe.
