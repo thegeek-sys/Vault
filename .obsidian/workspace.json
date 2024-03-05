@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Class.md",
+                "file": "Programming languages/Verilog/Verilog.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Class.md",
+                "file": "Programming languages/Verilog/Verilog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Class.md",
+                "file": "Programming languages/Verilog/Verilog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Class.md"
+                "file": "Programming languages/Verilog/Verilog.md"
               }
             }
           },
@@ -160,12 +160,12 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Programming languages/Programming languages.md",
+    "Programming languages/Untitled.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
     "Class/Architettura degli elaboratori",
     "Classes/Untitled.md",
-    "Programming languages/Programming languages.md",
-    "Programming languages/Untitled.md",
     "Class",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/UML.md",
