@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Prestazioni CPU.md"
+                "file": "Class/Architettura degli elaboratori/Architettura di Von Neumann.md"
               }
             }
           },
@@ -161,9 +160,11 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "443aab910f8e5173",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
+    "Files/Pasted image 20240305151702.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Java/Java.md",
@@ -192,8 +193,6 @@
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Programming languages/Java/Object oriented programming.md",
-    "Programming languages/Java/Operatori.md",
-    "Programming languages/Python/dict.md",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
     "Programming languages/Java",
     "Files/verilog module.png",
