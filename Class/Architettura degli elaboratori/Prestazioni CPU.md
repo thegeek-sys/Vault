@@ -28,25 +28,54 @@ $$
 \text{Prestazioni}_{x} = \frac{1}{\text{Tempo di esecuzione}_{x}}
 $$
 $$
-\begin{equation}
 \begin{split}
-\text{Tempo di CPU relativo a un programma} \\
+& \text{Tempo di CPU relativo}\\
 & \text{a un programma}
+\end{split}\;=\;
+\begin{split}
+& \text{Cicli di clock}\\
+& \text{della CPU relativi}\\
+& \text{al programma}
+\end{split}\;\times\;
+\begin{split}
+& \text{Periodo del clock}
 \end{split}
-\end{equation}
 $$
-
-
-
-
-![[Pasted image 20240305150036.png|800]]
+$$
+\begin{split}
+& \text{Tempo di CPU relativo}\\
+& \text{a un programma}
+\end{split}\;=\;
+\frac{\text{Cicli di clock della CPU relativi al programma}}{\text{Frequenza del clock}}
+$$
+$$
+\begin{split}
+& \text{Cicli di clock della CPU}
+\end{split}\;=\;
+\begin{split}
+& \text{Numero di istruzioni}\\
+& \text{del programma}
+\end{split}\;\times\;
+\begin{split}
+& \text{Periodo del clock}\\
+& \text{clock per istruzione}
+\end{split}
+$$
+$$
+\text{Tempo di CPU} \;=\; \frac{\text{Numero di istruzioni}\;\times\;\text{CPI}}{\text{Frequenza del clock}}
+$$
 
 ---
 ## Legge di Amdahl
 
 Legge utilizzata per stimare il miglioramento delle prestazioni
 
-![[Pasted image 20240305125326.png|700]]
+$$
+\begin{split}
+\text{Tempo di esecuzione dopo il miglioramento}\;=\\
+& 
+\end{split}
+$$
 
 >[!tip] 
 >Una delle linee guida nella progettazione dell' hardware è descritta da un corollario della legge di Amdahl:
