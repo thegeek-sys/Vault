@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/UML.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "56f51412949fbf10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Campi.md",
+                "file": "Class/Class.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/UML.md",
+                "file": "Class/Class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/UML.md",
+                "file": "Class/Class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/UML.md"
+                "file": "Class/Class.md"
               }
             }
           },
@@ -172,18 +160,24 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Class.md",
+    "Class/Architettura degli elaboratori",
+    "Classes/Untitled.md",
+    "Programming languages/Programming languages.md",
+    "Programming languages/Untitled.md",
+    "Class",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/UML.md",
+    "Programming languages/Java/Campi.md",
     "Files/Screenshot 2024-03-05 alle 17.35.59.png",
     "Flet-notes/2024-03-05.md",
-    "Programming languages/Java/UML.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Incapsulamento.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Methods.md",
-    "Programming languages/Java/Campi.md",
     "Programming languages/Java/Constructors.md",
     "Programming languages/Java/Primitivi.md",
-    "Programming languages/Programming languages.md",
     "To-Do.md",
     "Programming languages/Java/Hello, World!.md",
     "Flet-notes/2024-02-29.md",
@@ -196,11 +190,7 @@
     "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
     "Programming languages/dict.md",
-    "Programming languages/Python/dict methods.md",
-    "Programming languages/Java/Untitled.md",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
-    "Programming languages/Python/Files.md",
-    "Programming languages/Python/Comparatori e operatori di appartenenza.md",
     "Programming languages/Java",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
@@ -209,14 +199,11 @@
     "Files/stack program.png",
     "Files/queue.png",
     "Files/fibonacci.png",
-    "Files/color class.png",
     "Programming languages/Verilog",
     "Files",
     "Uni",
     "Flet-notes",
     "Programming languages/Python",
-    "test",
-    "Programming languages",
-    "Flet notes"
+    "test"
   ]
 }
