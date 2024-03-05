@@ -3,10 +3,10 @@
   "folder-note-plugin",
   "obsidian-latex-suite",
   "obsidian-style-settings",
-  "obsidian-plugin-toc",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-smart-typography",
   "table-editor-obsidian",
   "multi-column-markdown",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-plugin-toc"
 ]
