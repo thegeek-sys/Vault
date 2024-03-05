@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -179,6 +178,7 @@
   },
   "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Files/sonic.png",
     "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Java.md",
@@ -205,7 +205,6 @@
     "Flet-notes/2023-11-07.md",
     "Flet-notes/2023-11-09.md",
     "Flet-notes/2023-10-10.md",
-    "Flet-notes/2023-10-12.md",
     "Programming languages/Java",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
