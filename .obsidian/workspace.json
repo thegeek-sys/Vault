@@ -8,12 +8,30 @@
         "type": "tabs",
         "children": [
           {
+            "id": "02e1d9895c699dad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cf1d76141f13e569",
+        "type": "tabs",
+        "children": [
+          {
             "id": "8e4356aeae49e923",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Flet-notes/2024-03-05.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md",
+                "file": "Programming languages/Java/Classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Conversione di tipi.md"
+                "file": "Programming languages/Java/Classes.md"
               }
             }
           },
@@ -158,14 +177,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ec2deb080f929989",
+  "active": "02e1d9895c699dad",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-05.md",
+    "Programming languages/Java/Classes.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Programming languages.md",
     "To-Do.md",
-    "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Hello, World!.md",
-    "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/Object oriented programming.md",
@@ -186,7 +206,6 @@
     "Flet-notes/2023-11-09.md",
     "Flet-notes/2023-10-10.md",
     "Flet-notes/2023-10-12.md",
-    "Flet-notes/2023-12-12.md",
     "Programming languages/Java",
     "Files/verilog module.png",
     "Files/Binary_tree.jpg",
