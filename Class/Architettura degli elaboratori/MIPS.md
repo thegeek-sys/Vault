@@ -6,7 +6,8 @@ Completed:
 ---
 ---
 ## Introduzione
-L’architettura MIPS (**M**icroprocessor without **I**nterlocked **P**ipelined **S**tages)
+L’architettura MIPS (**M**icroprocessor without **I**nterlocked **P**ipelined **S**tages) è un'architettura per microprocessori RISC. Il disegno dell'architettura e del set di istruzioni è semplice e lineare, spesso utilizzato come caso di studio nei corsi universitari indirizzati allo studio delle architetture dei processori.
+La memoria MIPS è indicizzata al byte
 
 ## Operandi MIPS
 
