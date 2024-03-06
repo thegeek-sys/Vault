@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -163,6 +162,7 @@
   },
   "active": "443aab910f8e5173",
   "lastOpenFiles": [
+    "Files/Persona.jpg",
     "Programming languages/Java/UML.md",
     "Flet-notes/2024-03-06.md",
     "Programming languages/Java/Java.md",
@@ -195,7 +195,6 @@
     "Programming languages/Java/Classe Math.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
-    "Programming languages/Java/Object oriented programming.md",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
     "Programming languages/Java",
     "Files/verilog module.png",
