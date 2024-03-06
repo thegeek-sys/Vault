@@ -5,6 +5,8 @@ Related:
 Completed:
 ---
 ---
+## 
+
 ## Operandi MIPS
 
 | Nome                       | Esempio                                                                               | Commenti                                                                                                                                                                                                                                                                                             |
