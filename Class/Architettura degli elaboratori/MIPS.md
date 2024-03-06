@@ -27,4 +27,18 @@ La memoria MIPS è indicizzata al byte. Dunque se mi trovo all’indirizzo t e d
 | Sottrazione     | `sub $s1,$s2,$s3` | `$s1 = $s2 - $s3` | Operandi in tre registri              |
 | Somma immediata | `addi $s1,$s2,20` | `$s1 = $s2 + 20`  | Utilizzata per sommare delle costanti |
 
-### 
+### Trasferimento di dati
+
+| Istruzioni                                        | Esempio           | Significato             | Commenti                                          |
+| ------------------------------------------------- | ----------------- | ----------------------- | ------------------------------------------------- |
+| Lettura parola                                    | `lw $s1,20($s2)`  | `$s1 = Memoria[$s2+20]` | Trasferimento di una parola da memoria a registro |
+| Memorizzazione parola                             | `sw $s1,20($s2)`  |                         |                                                   |
+| Lettura mezza parola                              | `lh $s1,20($s2)`  | `$s1 = Memoria[$s2+20]` |                                                   |
+| Lettura mezza parola senza segno                  | `lhu $s1,20($s2)` | `$s1 = Memoria[$s2+20]` |                                                   |
+| Memorizzazione mezza paola                        | `sh $s1,20($s2)`  |                         |                                                   |
+| Lettura byte                                      | `lb $s1,20($s2)`  |                         |                                                   |
+| Lettura byte senza segno                          | `lbu $s1,20($s2)` |                         |                                                   |
+| Memorizzazione byte                               | `sb $s1,20($s2)`  |                         |                                                   |
+| Lettura di una parola e blocco                    | `ll $s1,20($s2)`  |                         |                                                   |
+| Memorizzazione condizionata di una parola         | `sc $s1,20($s2)`  |                         |                                                   |
+| Caricamento costante nella mezza parola superiore | `lui $s1,20`      |                         |                                                   |
