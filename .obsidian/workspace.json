@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-06.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                "file": "Flet-notes/2024-03-06.md"
               }
             }
           },
@@ -163,13 +163,15 @@
   },
   "active": "443aab910f8e5173",
   "lastOpenFiles": [
+    "Programming languages/Java/UML.md",
+    "Flet-notes/2024-03-06.md",
+    "Programming languages/Java/Java.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
-    "Files/Pasted image 20240305121228.png",
-    "Files/Pasted image 20240305151702.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+    "Files/Pasted image 20240305121228.png",
+    "Files/Pasted image 20240305151702.png",
     "Programming languages/Python/Python.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Untitled.md",
@@ -177,7 +179,6 @@
     "Class/Architettura degli elaboratori",
     "Classes/Untitled.md",
     "Class",
-    "Programming languages/Java/UML.md",
     "Programming languages/Java/Campi.md",
     "Files/Screenshot 2024-03-05 alle 17.35.59.png",
     "Flet-notes/2024-03-05.md",
