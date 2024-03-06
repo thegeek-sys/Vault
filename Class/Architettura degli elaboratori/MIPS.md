@@ -18,8 +18,10 @@ La memoria MIPS è indicizzata al byte. Dunque se mi trovo all’indirizzo t e d
 | $2^{30}$ parole in memoria | `Memoria[0]`, `Memoria[4]`, ….                                                        | Alla memoria si accede solamente attraverso le istruzioni di trasferimento dati. Il MIPS utilizza l’**indirizzamento al byte**, perciò due parole consecutive hanno indirizzi in memoria a una distanza di 4. La memoria consente di memorizzare strutture dati, vettori o il contenuto dei registri |
 
 ---
-## Linguaggio assembler MIPS
+## Istruzioni linguaggio assembler MIPS
+### Aritmetiche
 
-| Tipo di istruzioni | Istruzioni |     |
-| ------------------ | ---------- | --- |
-|                    |            |     |
+| Istruzioni  | Esempio           | Significato       | Commenti                 |
+| ----------- | ----------------- | ----------------- | ------------------------ |
+| Somma       | `add $s1,$s2,$s3` | `$s1 = $s2 + $s3` | Operandi in tre registri |
+| Sottrazione | ``                |                   |                          |

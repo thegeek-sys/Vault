@@ -1,20 +1,3 @@
 {
-  "items": [
-    {
-      "type": "file",
-      "ctime": 1709664751758,
-      "path": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-      "title": "Architettura degli elaboratori"
-    },
-    {
-      "type": "file",
-      "ctime": 1709664764625,
-      "path": "Programming languages/Java/Java.md"
-    },
-    {
-      "type": "file",
-      "ctime": 1709664784371,
-      "path": "Programming languages/Python/Python.md"
-    }
-  ]
+  "items": []
 }
