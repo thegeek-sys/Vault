@@ -7,6 +7,7 @@ Completed:
 ---
 ## Introduzione
 
+
 ## Operandi MIPS
 
 | Nome                       | Esempio                                                                               | Commenti                                                                                                                                                                                                                                                                                             |
