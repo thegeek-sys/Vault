@@ -6,7 +6,7 @@ Completed:
 ---
 ---
 ## Introduzione
-
+L’architettura MIPS (**M**icroprocessor without **I**nterlocked **P**ipelined **S**tages)
 
 ## Operandi MIPS
 
