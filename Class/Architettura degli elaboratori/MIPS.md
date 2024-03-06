@@ -27,4 +27,4 @@ La memoria MIPS è indicizzata al byte. Dunque se mi trovo all’indirizzo t e d
 | Sottrazione     | `sub $s1,$s2,$s3` | `$s1 = $s2 - $s3` | Operandi in tre registri              |
 | Somma immediata | `addi $s1,$s2,20` | `$s1 = $s2 + 20`  | Utilizzata per sommare delle costanti |
 
-## 
+### 
