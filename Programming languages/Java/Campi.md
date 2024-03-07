@@ -8,7 +8,7 @@ Completed:
 ## Index
 - [[#Introduzione|Introduzione]]
 - [[#Struttura|Struttura]]
-- 
+- [[#Inizializzazione implicita|Inizializzazione implicita]]
 - [[#Campi vs. variabili locali|Campi vs. variabili locali]]
 - [[#Esempi|Esempi]]
 ---
@@ -41,7 +41,10 @@ Al momento della creazione dell’oggetto i campi di una classe sono inizializza
 | `char`            | `'\0'`                         |
 | `boolean`         | `false`                        |
 | `classe X`        | `null`                         |
+> [!warning]
+> le inizializzazioni sono automatiche per i campi di classe, ma NON per le variabili locali dei metodi
 
+---
 ## Campi vs. variabili locali
 
 | Campi                                                                                                                  | Variabili locali                                                                                                                                                                |
