@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "bbbe3ffdea7cdb44",
+            "id": "2bd639b69e28f298",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Operatori.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "String",
+                "query": "vs.",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -119,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Operatori.md",
+                "file": "Flet-notes/2024-03-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Operatori.md",
+                "file": "Flet-notes/2024-03-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Operatori.md"
+                "file": "Flet-notes/2024-03-07.md"
               }
             }
           },
@@ -193,12 +194,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bbbe3ffdea7cdb44",
+  "active": "356bd72cc0237c4e",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-07.md",
-    "Programming languages/Java/Operatori.md",
+    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/String.md",
+    "Flet-notes/2024-03-07.md",
+    "Programming languages/Java/java.lang.String.md",
+    "Programming languages/Java/Operatori.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Incapsulamento.md",
     "Programming languages/Python/any() e all().md",
@@ -211,7 +213,6 @@
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Campi.md",
     "Flet-notes/2023-10-12.md",
-    "Programming languages/Java/Primitivi.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",

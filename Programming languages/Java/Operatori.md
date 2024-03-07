@@ -9,11 +9,11 @@ Completed:
 ## Index
 - [[#Incrementi|Incrementi]]
 - [[#Operatori booleani|Operatori booleani]]
+- [[#Uguaglianza|Uguaglianza]]
 - [[#Relazionali]]
 - [[#Operatore ternario]]
 - [[#Shift]]
 ---
-
 ## Incrementi
 - Post-incremento:
 	- `var++` (var = var +1)
@@ -46,13 +46,25 @@ int z = (a++) - (c--); // z == 1, a == 5, c == 2
 &  e | - and  e or bit a bit (per i binari)
 
 ---
+## Uguaglianza
+Le stringhe, come peraltro tutti gli altri oggetti, vanno SEMPRE confrontate con il metodo `equals`
+Che differenza c’è tra `equals` e `==` ?
+- `==` → confronta il riferimento (l’indirizzo di memoria), quindi è true se e solo se si confrontano gli stessi oggetti fisici
+- `equals` → confronta la stringa carattere per carattere e restituisce true se le stringhe contengono la stessa sequenza di caratteri
+
+```java
+String s1 = "ciao", s2 = "ci"+"ao", s3 = "hello";
+System.out.println(s1==s2) // potrebbe restituire false
+System.out.println(s1.equals(s2)); // true
+System.out.println(s1.equals(s3)); // false
+```
+
+---
 ## Relazionali
 - ==
 - !=
 - < , <= , > , >=
 - istanceof
-### Uguaglianza
-Le stringhe, come peraltro tutti gli altri oggetti, vanno SEMPRE confrontate con il metodo `equals`
 
 ---
 ## Operatore ternario
