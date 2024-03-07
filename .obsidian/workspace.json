@@ -80,12 +80,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -175,7 +175,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e1c6394752d465d1",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Campi.md",
