@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "String",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,12 +80,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -177,15 +177,18 @@
   },
   "active": "e1c6394752d465d1",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Flet-notes/2024-03-07.md",
+    "Programming languages/Java/Conversione di tipi.md",
+    "Programming languages/Java/Campi.md",
+    "Flet-notes/2023-10-12.md",
     "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-07.md",
+    "Programming languages/Java/Primitivi.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Programming languages/Python/Python.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
-    "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Classe Math.md",
     "Flet-notes/2024-03-06.md",
     "Files/Persona.drawio.png",
@@ -200,16 +203,13 @@
     "Class/Architettura degli elaboratori",
     "Classes/Untitled.md",
     "Class",
-    "Programming languages/Java/Campi.md",
     "Files/Screenshot 2024-03-05 alle 17.35.59.png",
     "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Incapsulamento.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Methods.md",
     "Programming languages/Java/Constructors.md",
-    "Programming languages/Java/Primitivi.md",
     "To-Do.md",
-    "Programming languages/Java/Hello, World!.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
