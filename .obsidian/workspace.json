@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Flet-notes/2024-03-07.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Flet-notes/2024-03-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Flet-notes/2024-03-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md"
+                "file": "Flet-notes/2024-03-07.md"
               }
             }
           },
@@ -177,11 +177,12 @@
   },
   "active": "a0574eac9257fe85",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Flet-notes/2024-03-07.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Python/Python.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Programming languages/Java/Conversione di tipi.md",
@@ -209,7 +210,6 @@
     "Programming languages/Java/Primitivi.md",
     "To-Do.md",
     "Programming languages/Java/Hello, World!.md",
-    "Flet-notes/2024-02-29.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
