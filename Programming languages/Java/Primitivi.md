@@ -11,6 +11,7 @@ Completed:
 - [[#Variabili|Variabili]]
 - [[#Valori primitivi vs. oggetti|Valori primitivi vs. oggetti]]
 - [[#Letterali (o costanti)|Letterali (o costanti)]]
+- 
 - [[#Precedenza operatori aritmetici|Precedenza operatori aritmetici]]
 ---
 ## Introduzione
@@ -78,6 +79,18 @@ Per letterali si intendono le rappresentazioni a livello di codice sorgente del 
 - Le costanti float hanno il suffisso f o F.
 - Il prefisso *0b* indica una rappresentazione binaria (es. 0b101 è 5)
 - Si può usare un trattino basso per separare le cifre (10_000 == 10000)
+
+---
+## Notazione dei letterali
+
+```java
+int val = 42;
+int val = 0x2A;
+int val = 0b101010;
+double val = 42.5;
+double val = 0.425e2;
+float val = 42.5f;
+```
 
 ---
 ## Precedenza operatori aritmetici
