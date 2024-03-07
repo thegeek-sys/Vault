@@ -10,6 +10,7 @@
 - [[Primitivi]]
 - [[Conversione di tipi]]
 - [[Operatori]]
+- [[String]]
 - 
 
 ##### Object oriented programming
