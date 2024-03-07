@@ -6,9 +6,9 @@ Completed:
 ---
 ---
 ## Index
-
 - [[#Introduzione|Introduzione]]
 - [[#Struttura|Struttura]]
+- 
 - [[#Campi vs. variabili locali|Campi vs. variabili locali]]
 - [[#Esempi|Esempi]]
 ---
@@ -31,6 +31,17 @@ private [static] [final] tipo_di_dati nome;
 > Da evitare l’uso di una variabile “di comodo” come campo di una classe
 
 ---
+## Inizializzazione implicita
+Al momento della creazione dell’oggetto i campi di una classe sono inizializzati automaticamente
+
+| Tipo del campo    | Inizializzato implicitamente a |
+| ----------------- | ------------------------------ |
+| `int`, `long`     | `0`, `0L`                      |
+| `float`, `double` | `0.0f`, `0.0`                  |
+| `char`            | `'\0'`                         |
+| `boolean`         | `false`                        |
+| `classe X`        | `null`                         |
+
 ## Campi vs. variabili locali
 
 | Campi                                                                                                                  | Variabili locali                                                                                                                                                                |
