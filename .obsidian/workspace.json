@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f9b178b9539c379",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "3e5953d186c09045",
+            "id": "bbbe3ffdea7cdb44",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/dict.md",
+                "file": "Programming languages/Java/Operatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,6 +35,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "6e733c36ace65376",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1c6394752d465d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-07.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "String",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Python/dict.md",
+                "file": "Programming languages/Java/Operatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Python/dict.md",
+                "file": "Programming languages/Java/Operatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Python/dict.md"
+                "file": "Programming languages/Java/Operatori.md"
               }
             }
           },
@@ -175,20 +193,25 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3e5953d186c09045",
+  "active": "bbbe3ffdea7cdb44",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-07.md",
+    "Programming languages/Java/Operatori.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/String.md",
+    "Programming languages/Java/UML.md",
+    "Programming languages/Java/Incapsulamento.md",
+    "Programming languages/Python/any() e all().md",
+    "Programming languages/Python/str methods.md",
     "Programming languages/Python/Python.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Programming languages/Python/dict.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/str.md",
-    "Programming languages/Python/str methods.md",
-    "Programming languages/Java/String.md",
-    "Flet-notes/2024-03-07.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Campi.md",
     "Flet-notes/2023-10-12.md",
     "Programming languages/Java/Primitivi.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
@@ -197,19 +220,14 @@
     "Flet-notes/2024-03-06.md",
     "Files/Persona.drawio.png",
     "Files/Persona.jpg",
-    "Programming languages/Java/UML.md",
     "Files/Pasted image 20240305121228.png",
     "Files/Pasted image 20240305151702.png",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Untitled.md",
-    "Class/Class.md",
     "Class/Architettura degli elaboratori",
-    "Classes/Untitled.md",
     "Class",
     "Files/Screenshot 2024-03-05 alle 17.35.59.png",
-    "Flet-notes/2024-03-05.md",
-    "Programming languages/Java/Incapsulamento.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",

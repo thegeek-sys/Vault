@@ -51,6 +51,8 @@ int z = (a++) - (c--); // z == 1, a == 5, c == 2
 - !=
 - < , <= , > , >=
 - istanceof
+### Uguaglianza
+Le stringhe, come peraltro tutti gli altri oggetti, vanno SEMPRE confrontate con il metodo `equals`
 
 ---
 ## Operatore ternario

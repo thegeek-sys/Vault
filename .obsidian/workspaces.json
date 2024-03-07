@@ -385,8 +385,21 @@
                   },
                   "pinned": true
                 }
+              },
+              {
+                "id": "3e5953d186c09045",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Python/any() e all().md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -453,7 +466,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/any() e all().md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -470,7 +483,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/any() e all().md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -493,7 +506,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Python/Python.md"
+                    "file": "Programming languages/Python/any() e all().md"
                   }
                 }
               },
@@ -527,8 +540,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "1f9b178b9539c379"
+      "active": "3e5953d186c09045"
     }
   },
-  "active": "Python"
+  "active": "Java"
 }
