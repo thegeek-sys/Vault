@@ -22,5 +22,7 @@
 - [[Incapsulamento]]
 - 
 
+##### Memoria
+
 ##### Extras
 - [[UML]]

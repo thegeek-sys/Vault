@@ -45,8 +45,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "4f8f9d0ed1c9b205",
@@ -131,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Primitivi.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Primitivi.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Primitivi.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -205,11 +204,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4e8ef9c1afbe98ec",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
+    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
-    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Campi.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/java.lang.String.md",
