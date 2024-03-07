@@ -5,9 +5,7 @@ Related:
 Completed:
 ---
 ---
-## Memoria
 
-[](https://github.com/alem1105/Quartz/blob/v4/content/Secondo%20Semestre/Metodologie%20di%20Programmazione/Metodologie%20di%20Programmazione%20-%20Lezione%203.md#memoria)
 
 Esistono due tipi di memoria:
 
