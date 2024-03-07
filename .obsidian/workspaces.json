@@ -190,6 +190,25 @@
                 }
               },
               {
+                "id": "dc04964f1a81f945",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/String.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "6e733c36ace65376",
+            "type": "tabs",
+            "children": [
+              {
                 "id": "e1c6394752d465d1",
                 "type": "leaf",
                 "state": {
@@ -201,8 +220,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -231,7 +249,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "",
+                    "query": "String",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -252,7 +270,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273
+        "width": 216.50390243530273,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -268,7 +287,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-03-07.md",
+                    "file": "Programming languages/Java/String.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -285,7 +304,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-03-07.md",
+                    "file": "Programming languages/Java/String.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -308,7 +327,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-03-07.md"
+                    "file": "Programming languages/Java/String.md"
                   }
                 }
               },
@@ -342,7 +361,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "e1c6394752d465d1"
+      "active": "dc04964f1a81f945"
     },
     "Python": {
       "main": {
@@ -511,5 +530,5 @@
       "active": "1f9b178b9539c379"
     }
   },
-  "active": "Java"
+  "active": "Python"
 }

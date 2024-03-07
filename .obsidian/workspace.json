@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "1f9b178b9539c379",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Python/Python.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "dc04964f1a81f945",
+            "id": "3e5953d186c09045",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/String.md",
+                "file": "Programming languages/Python/dict.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,24 +35,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "6e733c36ace65376",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e1c6394752d465d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-07.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -81,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "String",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/String.md",
+                "file": "Programming languages/Python/dict.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/String.md",
+                "file": "Programming languages/Python/dict.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/String.md"
+                "file": "Programming languages/Python/dict.md"
               }
             }
           },
@@ -193,10 +175,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dc04964f1a81f945",
+  "active": "3e5953d186c09045",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-07.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/tuple.md",
+    "Programming languages/Python/str.md",
+    "Programming languages/Python/str methods.md",
     "Programming languages/Java/String.md",
+    "Flet-notes/2024-03-07.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Campi.md",
@@ -204,7 +190,6 @@
     "Programming languages/Java/Primitivi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/MIPS.md",
-    "Programming languages/Python/Python.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
@@ -225,9 +210,6 @@
     "Files/Screenshot 2024-03-05 alle 17.35.59.png",
     "Flet-notes/2024-03-05.md",
     "Programming languages/Java/Incapsulamento.md",
-    "Programming languages/Java/Classes.md",
-    "Programming languages/Java/Methods.md",
-    "Programming languages/Java/Constructors.md",
     "Files/Screenshot 2024-03-05 alle 15.31.31.png",
     "Files/sonic.png",
     "Files/Screen Shot 2024-02-28 at 11.13.41 1.png",
