@@ -5,10 +5,8 @@ Related:
 Completed:
 ---
 ---
-
-
+## Introduzione
 Esistono due tipi di memoria:
-
 - **heap**: Vengono allocate le aree di memoria per la _creazione dinamica_ (oggetti)
 - **stack**: Vengono allocate le variabili locali
 
