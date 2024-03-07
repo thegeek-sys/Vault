@@ -7,12 +7,12 @@ Completed:
 ---
 ## Index
 
-1. [[#Introduzione|Introduzione]]
-2. [[#Variabili|Variabili]]
-3. [[#Letterali (o costanti)|Letterali (o costanti)]]
-4. [[#Precedenza operatori aritmetici|Precedenza operatori aritmetici]]
+- [[#Introduzione|Introduzione]]
+- [[#Variabili|Variabili]]
+- [[#Valori primitivi vs. oggetti|Valori primitivi vs. oggetti]]
+- [[#Letterali (o costanti)|Letterali (o costanti)]]
+- [[#Precedenza operatori aritmetici|Precedenza operatori aritmetici]]
 ---
-
 ## Introduzione
 Tipi di dati di base built-in.
 
@@ -58,6 +58,15 @@ Il nome assegnato a una variabile è il suo **identificatore** (come in python, 
 Si utilizza la **notazione Camel case**:
 > - quando si dichiara una variabile composta da più parole, la prima inizia con una minuscola e le successive con maiuscole (es. "contatoreTreniEsplosi")
 > - le **classi** devono per forza iniziare con una maiuscola (poi si continua con la camel case)
+
+---
+## Valori primitivi vs. oggetti
+E’ importante tenere a mente la differenza tra
+- valori di tipo primitivo (int, char, boolean, float, double, ecc.)
+- oggetti (istanze delle classi)
+La loro rappresentazione in memoria è differente:
+- Valori primitivi: memoria allocata automaticamente a tempo di compilazione
+- Oggetti: memoria allocata durante l’esecuzione del programma (operatore new)
 
 ---
 ## Letterali (o costanti)
