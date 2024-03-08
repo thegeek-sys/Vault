@@ -57,4 +57,20 @@ La memoria MIPS è indicizzata al byte. Dunque se mi trovo all’indirizzo t e d
 
 ### Salti condizionali
 
-### Salti incodizionati
+| Istruzioni                                         | Esempio            | Significato                                   | Commenti                                                           |
+| -------------------------------------------------- | ------------------ | --------------------------------------------- | ------------------------------------------------------------------ |
+| Salta se uguale                                    | `beq $s1,$s2,25`   | Se `($s1==$s2)` vai a PC+4+100                | Test di uguaglianza; salto relativo al PC                          |
+| Salta se non è uguale                              | `bne $s1,$s2,25`   | Se `($s1!=$s2)` vai a PC+4+100                | Test di disuguaglianza; salto relativo al PC                       |
+| Poni uguale a 1 se minore                          | `slt $s1,$s2,$s3`  | Se `($s2 < $s3) $s1 = 1` altrimenti `$s1 = 0` | Comparazione di minoranza; utilizzata con bne e beq                |
+| Poni uguale a 1 se minore, numeri senza segno      | `sltu $s1,$s2,$s3` | Se `($s2 < $s3) $s1 = 1` altrimenti `$s1 = 0` | Comparazione di minoranza su numeri senza segno                    |
+| Poni uguale a 1 se minore, immediato               | `slti $s1,$s2,20`  | Se `($s2 < 20) $s1 = 1` altrimenti `$s1 = 0`  | Comparazione di minoranza su una costante                          |
+| Poni uguale a 1 se minore, immediato e senza segno | `slti $s1,$s2,20`  | Se `($s2 < 20) $s1 = 1` altrimenti `$s1 = 0`  | Comparazione di minoranza con una costante, con numeri senza segno |
+
+### Salti incondizionati
+
+| Istruzioni           | Esempio    | Significato                          | Commenti                                                                                                      |
+| -------------------- | ---------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| Salto incondizionato | `j 2500`   | Vai a 10000                          | Salto all’indirizzo della costante                                                                            |
+| Salto indiretto      | `jr $ra`   | Vai all’indirizzo contenuto in `$ra` | Salto all’indirizzo contenuto nel registro, utilizzato per il ritorno da procedura e per i costrutti *switch* |
+| Salta e collega      | `jal 2500` | `$ra` = PC+4; vai a 10000            | Chiamata a procedura                                                                                          |
+
