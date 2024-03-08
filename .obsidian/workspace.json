@@ -34,6 +34,16 @@
             }
           },
           {
+            "id": "3ff1d3ce78c8dcbf",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-03-08 alle 12.22.02.png"
+              }
+            }
+          },
+          {
             "id": "d8ea9f71c8d0e953",
             "type": "leaf",
             "state": {
@@ -190,11 +200,12 @@
   "active": "32d5da2ffd242b2f",
   "lastOpenFiles": [
     "Files/Screenshot 2024-03-08 alle 12.22.02.png",
-    "Class/Architettura degli elaboratori/MIPS.md",
+    "Files/Screenshot 2024-03-08 alle 13.06.27.png",
+    "Screenshot 2024-03-08 alle 11.33.08.png",
     "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
-    "Screenshot 2024-03-08 alle 11.33.08.png",
     "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-08 alle 11.27.03.png",
     "Files/Screenshot 2024-03-08 alle 11.24.02.png",
@@ -224,7 +235,6 @@
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Programming languages/Java/Classe Math.md",
-    "Files/Persona.drawio.png",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
