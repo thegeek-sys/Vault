@@ -27,6 +27,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Flet-notes/2024-03-08_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d8ea9f71c8d0e953",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Class/Architettura degli elaboratori/MIPS.md",
                 "mode": "source",
                 "source": false
@@ -34,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -175,9 +187,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "32d5da2ffd242b2f",
+  "active": "d8ea9f71c8d0e953",
   "lastOpenFiles": [
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Memoria.md",
@@ -199,9 +214,7 @@
     "Programming languages/Python/str.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Flet-notes/2023-10-12.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
-    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Programming languages/Java/Classe Math.md",
     "Flet-notes/2024-03-06.md",
