@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Flet-notes/2024-03-08_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Flet-notes/2024-03-08_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md"
+                "file": "Flet-notes/2024-03-08_AE.md"
               }
             }
           },
@@ -187,13 +187,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d8ea9f71c8d0e953",
+  "active": "32d5da2ffd242b2f",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Flet-notes/2024-03-08_AE.md",
-    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Files/Screenshot 2024-03-08 alle 11.27.03.png",
+    "Files/Screenshot 2024-03-08 alle 11.24.02.png",
+    "Screenshot 2024-03-08 alle 11.24.02.png",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Memoria.md",
     "Flet-notes/2024-03-07.md",
@@ -217,16 +220,12 @@
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Programming languages/Java/Classe Math.md",
-    "Flet-notes/2024-03-06.md",
     "Files/Persona.drawio.png",
     "Files/Persona.jpg",
     "Files/Pasted image 20240305121228.png",
     "Files/Pasted image 20240305151702.png",
     "Class/Architettura degli elaboratori",
     "Class",
-    "Files/Screenshot 2024-03-05 alle 17.35.59.png",
-    "Files/Screenshot 2024-03-05 alle 15.31.31.png",
-    "Files/sonic.png",
     "Programming languages/Java",
     "Files/recurs.py",
     "Programming languages/Verilog",
