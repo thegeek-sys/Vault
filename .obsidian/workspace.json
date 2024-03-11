@@ -69,7 +69,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "26b770cdd4e1e054",
@@ -138,7 +138,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -154,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                "file": "Class/Architettura degli elaboratori/MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                "file": "Class/Architettura degli elaboratori/MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md"
+                "file": "Class/Architettura degli elaboratori/MIPS.md"
               }
             }
           },
@@ -228,14 +229,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0112bf54398c857c",
+  "active": "d8ea9f71c8d0e953",
   "lastOpenFiles": [
     "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Files/Screenshot 2024-03-11 alle 20.02.54.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
@@ -249,7 +251,6 @@
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Screenshot 2024-03-08 alle 11.33.08.png",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
-    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Campi.md",

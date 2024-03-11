@@ -10,6 +10,24 @@ L’architettura MIPS (**M**icroprocessor without **I**nterlocked **P**ipelined 
 La memoria MIPS è indicizzata al byte. Dunque se mi trovo all’indirizzo t e devo leggere la parola successiva incremento indirizzo come t+4, questo perché una parola sono 4 byte ossia 32 bit (1 byte = 8 bit)
 
 ---
+## Set di istruzioni
+Le fasi di esecuzione di un’istruzione sono:
+- **fetch**/caricamento dell’istruzione
+	dalla posizione indicata dal Program Counter (dalla RAM alla CPU) (particolarmente lento)
+- **decodifica**/riconoscimento dell’istruzione
+	la control unit legge i 6 bit dell’opcode e inizia a settare la CPU
+- **load**/caricamento di eventuali argomenti
+	leggo i registri (molto veloce)
+- **esecuzione** della istruzione
+	eseguita in genere dall’ALU
+- **store**/salvataggio del risultato
+	scrivere il risultato sulla CPU o RAM
+- aggiornamento del **Program Counter**
+	vado avanti nel programma o faccio un salto
+
+Tipologie di istruzioni
+
+---
 ## Operandi MIPS
 
 | Nome                                 | Esempio                                                                               | Commenti                                                                                                                                                                                                                                                                                             |

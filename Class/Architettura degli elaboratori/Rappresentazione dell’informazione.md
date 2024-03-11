@@ -5,6 +5,16 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Introduction|Introduction]]
+>- [[#R-type|R-type]]
+>	- [[#R-type#Esempio|Esempio]]
+>- [[#I-type|I-type]]
+>	- [[#I-type#Esempio|Esempio]]
+>- [[#J-type|J-type]]
+
+---
 ## Introduction
 Siamo quindi pronti ad esaminare come viene interpretata un comando dato in linguaggio assembly in linguaggio macchina
 
