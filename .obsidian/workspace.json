@@ -57,7 +57,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "26b770cdd4e1e054",
@@ -143,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Class/Architettura degli elaboratori/MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Class/Architettura degli elaboratori/MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                "file": "Class/Architettura degli elaboratori/MIPS.md"
               }
             }
           },
@@ -217,10 +217,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b534858c55170305",
+  "active": "d8ea9f71c8d0e953",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Flet-notes/2024-03-08_AE.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
