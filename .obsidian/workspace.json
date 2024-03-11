@@ -73,19 +73,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c7dfec76616fa096",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png"
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
               }
             }
           },
@@ -226,10 +215,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c7dfec76616fa096",
+  "active": "b534858c55170305",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-08_AE.md",
+    "Screenshot 2024-03-11 alle 19.19.07.png",
+    "Files/Screenshot 2024-03-11 alle 19.19.07.png",
+    "Files/Screenshot 2024-03-11 alle 19.10.12.png",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Flet-notes/2024-03-08_AE.md",
+    "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
+    "Screenshot 2024-03-11 alle 19.10.12.png",
+    "Files/Screenshot 2024-03-08 alle 11.24.02.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
@@ -241,12 +236,8 @@
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
     "Files/Screenshot 2024-03-08 alle 11.27.03.png",
-    "Files/Screenshot 2024-03-08 alle 11.24.02.png",
-    "Screenshot 2024-03-08 alle 11.24.02.png",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Java/Memoria.md",
-    "Files/Screenshot 2024-03-07 alle 13.35.41.png",
-    "Files/Screenshot 2024-03-07 alle 13.35.33.png",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Campi.md",
     "Programming languages/Java/Classes.md",
@@ -262,8 +253,6 @@
     "Programming languages/Java/Conversione di tipi.md",
     "Flet-notes/2023-10-12.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
-    "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
-    "Programming languages/Java/Classe Math.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",

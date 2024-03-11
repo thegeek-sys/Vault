@@ -18,3 +18,19 @@ Ogni istruzione è composta da 32 bit ed è divisa in cinque **campi**:
 - *shamt* → numero di posizioni di scorrimento (utilizzato solo per operazioni di shifting, default zero)
 - *funct* → specifica la variante dell’operazione base definita dal codice operativo
 
+![[Screenshot 2024-03-11 alle 19.10.12.png]]
+
+
+Quindi se faccio `add $t0,$s1,$s2`
+![[Screenshot 2024-03-08 alle 11.27.03.png]]
+`rd` corrisponderà a t0
+`rs` corrisponderà a s1
+`rt` corrisponderà a s2
+
+
+---
+## I-type
+Potrebbe però nascere un problema quando un’istruzione richiede campi di dimensioni maggiori rispetto a quelle delle istruzioni R-type. Ciò può avvenire ad esempio nell’istruzione di *load word* che richiede due registri e una costante la quale, per come abbiamo gestito lo spazio fino ad ora, non può superare il valore di $2^5$.
+Per risolvere questo conflitto dunque è stato introdotto un altro tipo di istruzione: la **I-type** (immediato) che ha una differente predisposizione dei bit. In particolare vengono lasciati 16 bit per un indirizzo di memoria (o meglio una sua parte) o una costante.
+
+![[Screenshot 2024-03-11 alle 19.19.07.png]]
