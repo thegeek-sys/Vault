@@ -11,7 +11,6 @@ Completed:
 - [[#Variabili|Variabili]]
 - [[#Valori primitivi vs. oggetti|Valori primitivi vs. oggetti]]
 - [[#Letterali (o costanti)|Letterali (o costanti)]]
-- 
 - [[#Precedenza operatori aritmetici|Precedenza operatori aritmetici]]
 ---
 ## Introduzione
