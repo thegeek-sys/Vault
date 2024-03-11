@@ -5,6 +5,19 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Introduzione|Introduzione]]
+>- [[#Set di istruzioni|Set di istruzioni]]
+>- [[#Operandi MIPS|Operandi MIPS]]
+>- [[#Istruzioni linguaggio assembler MIPS|Istruzioni linguaggio assembler MIPS]]
+>	- [[#Istruzioni linguaggio assembler MIPS#Aritmetiche|Aritmetiche]]
+>	- [[#Istruzioni linguaggio assembler MIPS#Trasferimento di dati|Trasferimento di dati]]
+>	- [[#Istruzioni linguaggio assembler MIPS#Logiche|Logiche]]
+>	- [[#Istruzioni linguaggio assembler MIPS#Salti condizionali|Salti condizionali]]
+>	- [[#Istruzioni linguaggio assembler MIPS#Salti incondizionati|Salti incondizionati]]
+
+---
 ## Introduzione
 L’architettura MIPS (**M**icroprocessor without **I**nterlocked **P**ipelined **S**tages) è un'architettura per microprocessori RISC. Il disegno dell'architettura e del set di istruzioni è semplice e lineare, spesso utilizzato come caso di studio nei corsi universitari indirizzati allo studio delle architetture dei processori.
 La memoria MIPS è indicizzata al byte. Dunque se mi trovo all’indirizzo t e devo leggere la parola successiva incremento indirizzo come t+4, questo perché una parola sono 4 byte ossia 32 bit (1 byte = 8 bit)

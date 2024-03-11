@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "27366c0568c37299",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0112bf54398c857c",
             "type": "leaf",
             "state": {
@@ -33,43 +45,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3ff1d3ce78c8dcbf",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-03-08 alle 12.22.02.png"
-              }
-            }
-          },
-          {
-            "id": "d8ea9f71c8d0e953",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b534858c55170305",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       },
       {
         "id": "26b770cdd4e1e054",
@@ -139,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -155,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Flet-notes/2024-03-08_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Flet-notes/2024-03-08_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                "file": "Flet-notes/2024-03-08_AE.md"
               }
             }
           },
@@ -229,14 +208,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "356bd72cc0237c4e",
+  "active": "32d5da2ffd242b2f",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/MIPS.md",
+    "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-03-11 alle 20.02.54.png",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
@@ -247,7 +229,6 @@
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
     "Programming languages/Java/java.lang.String.md",
-    "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Screenshot 2024-03-08 alle 11.33.08.png",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
@@ -264,8 +245,6 @@
     "Programming languages/Python/dict.md",
     "Programming languages/Python/tuple.md",
     "Programming languages/Python/str.md",
-    "Programming languages/Java/Conversione di tipi.md",
-    "Flet-notes/2023-10-12.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",

@@ -5,4 +5,5 @@
 - [[MIPS]]
 - [[Rappresentazione dell’informazione]]
 - [[Organizzazione memoria (RAM)]]
+- [[Codifica delle istruzioni]]
 - 
