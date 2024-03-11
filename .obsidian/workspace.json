@@ -69,7 +69,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "26b770cdd4e1e054",
@@ -155,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md"
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md"
               }
             }
           },
@@ -229,12 +229,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d8ea9f71c8d0e953",
+  "active": "0112bf54398c857c",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-08_AE.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
-    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Files/Screenshot 2024-03-11 alle 20.02.54.png",
