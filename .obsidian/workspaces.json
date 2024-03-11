@@ -24,34 +24,12 @@
                 }
               },
               {
-                "id": "32d5da2ffd242b2f",
+                "id": "8ac70c1657463995",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-03-08_AE.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3ff1d3ce78c8dcbf",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "Files/Screenshot 2024-03-08 alle 12.22.02.png"
-                  }
-                }
-              },
-              {
-                "id": "d8ea9f71c8d0e953",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
                     "mode": "source",
                     "source": false
                   }
@@ -125,7 +103,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-03-08_AE.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -142,7 +120,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-03-08_AE.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -165,7 +143,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-03-08_AE.md"
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md"
                   }
                 }
               },
@@ -178,7 +156,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "horizontal",
@@ -199,7 +177,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "32d5da2ffd242b2f"
+      "active": "8ac70c1657463995"
     },
     "Java": {
       "main": {
@@ -548,5 +526,5 @@
       "active": "3e5953d186c09045"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
