@@ -25,7 +25,12 @@ Le fasi di esecuzione di un’istruzione sono:
 - aggiornamento del **Program Counter**
 	vado avanti nel programma o faccio un salto
 
-Tipologie di istruzioni
+Tipologie di istruzioni:
+- **load/store** → trasferisco dati da/verso la memoria
+- **logico/aritmetiche** → svolgono i calcoli aritmetici e logici
+- **salti** condizionati e incondizionati → controllano il flusso logico di esecuzione (usati per cicli e per uscire da una sottoroutine, quando si entra in una funzione sto facendo un jump nella ram e quando esco faccio un altro jump indietro)
+- gestione delle **eccezioni/interrupt** → salvataggio dello stato e suo ripristino
+- istruzioni di **trasferimento dati** → non necessarie col memory-mapping
 
 ---
 ## Operandi MIPS
