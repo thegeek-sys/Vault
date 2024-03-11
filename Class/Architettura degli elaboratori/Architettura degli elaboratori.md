@@ -7,3 +7,5 @@
 - [[Organizzazione memoria (RAM)]]
 - [[Codifica delle istruzioni]]
 - 
+
+- [[Esercizi]]

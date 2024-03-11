@@ -23,24 +23,12 @@
             }
           },
           {
-            "id": "27366c0568c37299",
+            "id": "abb7a7970dc3cbf7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0112bf54398c857c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,13 +100,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -134,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-08_AE.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-08_AE.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-08_AE.md"
+                "file": "Class/Architettura degli elaboratori/Esercizi.md"
               }
             }
           },
@@ -208,18 +194,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "32d5da2ffd242b2f",
+  "active": "abb7a7970dc3cbf7",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Flet-notes/2024-03-08_AE.md",
-    "Files/Screenshot 2024-03-08 alle 12.22.02.png",
-    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
-    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
+    "Files/Screenshot 2024-03-08 alle 13.06.27.png",
+    "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
+    "Files/Screenshot 2024-03-11 alle 22.03.10.png",
+    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+    "Files/Screenshot 2024-03-11 alle 20.02.54.png",
+    "Files/Screenshot 2024-03-08 alle 12.22.02.png",
+    "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
-    "Files/Screenshot 2024-03-11 alle 20.02.54.png",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
@@ -229,9 +219,7 @@
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
     "Programming languages/Java/java.lang.String.md",
-    "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Screenshot 2024-03-08 alle 11.33.08.png",
-    "Files/Screenshot 2024-03-08 alle 11.36.00.png",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Campi.md",
@@ -253,7 +241,6 @@
     "Files",
     "Uni",
     "Flet-notes",
-    "Programming languages/Python",
-    "test"
+    "Programming languages/Python"
   ]
 }
