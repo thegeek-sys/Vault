@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "0112bf54398c857c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3ff1d3ce78c8dcbf",
             "type": "leaf",
             "state": {
@@ -57,7 +69,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "26b770cdd4e1e054",
@@ -143,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md"
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md"
               }
             }
           },
@@ -217,24 +229,25 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d8ea9f71c8d0e953",
+  "active": "0112bf54398c857c",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Organizzazione memoria.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
     "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
     "Screenshot 2024-03-11 alle 19.10.12.png",
     "Files/Screenshot 2024-03-08 alle 11.24.02.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
     "Programming languages/Java/java.lang.String.md",
     "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Screenshot 2024-03-08 alle 11.33.08.png",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
