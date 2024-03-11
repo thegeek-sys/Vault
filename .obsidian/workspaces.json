@@ -36,6 +36,16 @@
                 }
               },
               {
+                "id": "3ff1d3ce78c8dcbf",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "Files/Screenshot 2024-03-08 alle 12.22.02.png"
+                  }
+                }
+              },
+              {
                 "id": "d8ea9f71c8d0e953",
                 "type": "leaf",
                 "state": {
@@ -98,7 +108,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273
+        "width": 216.50390243530273,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -242,7 +253,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "String",
+                    "query": "charAt",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -259,7 +270,8 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",

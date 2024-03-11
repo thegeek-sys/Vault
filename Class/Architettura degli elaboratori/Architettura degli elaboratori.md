@@ -3,4 +3,5 @@
 - [[Architettura di Von Neumann]]
 - [[Architettura CISC e RISC]]
 - [[MIPS]]
+- [[Rappresentazione dell’informazione]]
 - 

@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "32d5da2ffd242b2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-08_AE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3ff1d3ce78c8dcbf",
             "type": "leaf",
             "state": {
@@ -54,9 +42,39 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b534858c55170305",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
+      },
+      {
+        "id": "26b770cdd4e1e054",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32d5da2ffd242b2f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-08_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-08_AE.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-08_AE.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-08_AE.md"
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
               }
             }
           },
@@ -197,27 +215,27 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "32d5da2ffd242b2f",
+  "active": "b534858c55170305",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Flet-notes/2024-03-08_AE.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-07.md",
+    "Programming languages/Java/java.lang.String.md",
     "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Screenshot 2024-03-08 alle 11.33.08.png",
-    "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
-    "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-08 alle 11.27.03.png",
     "Files/Screenshot 2024-03-08 alle 11.24.02.png",
     "Screenshot 2024-03-08 alle 11.24.02.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
-    "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Memoria.md",
-    "Flet-notes/2024-03-07.md",
     "Files/Screenshot 2024-03-07 alle 13.35.41.png",
     "Files/Screenshot 2024-03-07 alle 13.35.33.png",
-    "Files/Screenshot 2024-03-07 alle 13.35.24.png",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Campi.md",
     "Programming languages/Java/Classes.md",
