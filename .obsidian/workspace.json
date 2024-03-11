@@ -73,8 +73,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c7dfec76616fa096",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                "file": "Files/Screenshot 2024-03-08 alle 11.24.02.png"
               }
             }
           },
@@ -194,7 +205,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -215,11 +226,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b534858c55170305",
+  "active": "c7dfec76616fa096",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
     "Programming languages/Java/java.lang.String.md",
