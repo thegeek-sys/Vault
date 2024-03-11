@@ -8,6 +8,11 @@ Completed:
 ## Introduction
 Siamo quindi pronti ad esaminare come viene interpretata un comando dato in linguaggio assembly in linguaggio macchina
 
+
+
+> [!warning]
+> Il linguaggio macchina potrebbe causare a confusione poiché in questo caso `rs` e `rd` sono invertiti
+
 ---
 ## R-type
 Ogni istruzione è composta da 32 bit ed è divisa in cinque **campi**:
@@ -34,3 +39,7 @@ Potrebbe però nascere un problema quando un’istruzione richiede campi di dime
 Per risolvere questo conflitto dunque è stato introdotto un altro tipo di istruzione: la **I-type** (immediato) che ha una differente predisposizione dei bit. In particolare vengono lasciati 16 bit per un indirizzo di memoria (o meglio una sua parte) o una costante.
 
 ![[Screenshot 2024-03-11 alle 19.19.07.png]]
+
+
+Quindi se faccio `addi $t2,$s2,4`
+![[Screenshot 2024-03-08 alle 11.33.08.png]]

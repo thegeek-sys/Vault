@@ -6,6 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 58.09608540925267,
         "children": [
           {
             "id": "443aab910f8e5173",
@@ -61,6 +62,7 @@
       {
         "id": "26b770cdd4e1e054",
         "type": "tabs",
+        "dimension": 41.903914590747334,
         "children": [
           {
             "id": "32d5da2ffd242b2f",
@@ -217,11 +219,11 @@
   },
   "active": "b534858c55170305",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Flet-notes/2024-03-08_AE.md",
     "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
     "Screenshot 2024-03-11 alle 19.10.12.png",
     "Files/Screenshot 2024-03-08 alle 11.24.02.png",
@@ -235,7 +237,6 @@
     "Class/Architettura degli elaboratori/MIPS.md",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
-    "Files/Screenshot 2024-03-08 alle 11.27.03.png",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Primitivi.md",
