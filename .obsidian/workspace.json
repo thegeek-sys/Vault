@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                 "mode": "source",
                 "source": false
               }
@@ -138,8 +138,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -155,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Organizzazione memoria.md"
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md"
               }
             }
           },
@@ -231,10 +230,11 @@
   },
   "active": "0112bf54398c857c",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Organizzazione memoria.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-03-08_AE.md",
+    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+    "Files/Screenshot 2024-03-11 alle 20.02.54.png",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
@@ -249,7 +249,6 @@
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Screenshot 2024-03-08 alle 11.33.08.png",
     "Files/Screenshot 2024-03-08 alle 11.36.00.png",
-    "Files/Screenshot 2024-03-08 alle 11.33.08.png",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Primitivi.md",
@@ -266,7 +265,6 @@
     "Programming languages/Python/str.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Flet-notes/2023-10-12.md",
-    "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",

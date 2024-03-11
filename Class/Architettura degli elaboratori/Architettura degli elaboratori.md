@@ -4,5 +4,5 @@
 - [[Architettura CISC e RISC]]
 - [[MIPS]]
 - [[Rappresentazione dell’informazione]]
-- [[Organizzazione memoria]]
+- [[Organizzazione memoria (RAM)]]
 - 
