@@ -22,19 +22,7 @@
             }
           },
           {
-            "id": "4e668247ed3e8dc5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abb7a7970dc3cbf7",
+            "id": "8ac70c1657463995",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -46,7 +34,25 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "f7a2f830449c56c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abb7a7970dc3cbf7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-08_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -186,16 +193,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "abb7a7970dc3cbf7",
+  "active": "8ac70c1657463995",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Class/Class.md",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
@@ -209,7 +217,6 @@
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
-    "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
     "Screenshot 2024-03-11 alle 19.10.12.png",
     "Files/Screenshot 2024-03-08 alle 11.24.02.png",
     "Programming languages/Java/Java.md",
