@@ -10,4 +10,4 @@ Completed:
 Siano a,b,c,d ed e variabili contenute rispettivamente `$s0,$s1,$s2,$s3,$s4`
 Scrivere le istruzioni in codice MIPs che eseguando questo comando $a=(b-c)+(d-e)$
 
-[link text](file:////Users/fla/Documents/uni/AE/mips1.asm)
+[link](file:////Users/fla/Documents/uni/AE/mips1.asm)

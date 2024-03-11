@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Class.md",
                 "mode": "source",
                 "source": false
               }
@@ -83,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "indirizzamento",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md"
+                "file": "Class/Class.md"
               }
             }
           },
@@ -196,9 +196,12 @@
   },
   "active": "abb7a7970dc3cbf7",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-08_AE.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Files/Screenshot 2024-03-08 alle 11.33.08.png",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/Esercizi.md",
+    "mips1.asm",
+    "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
@@ -208,7 +211,6 @@
     "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Files/Screenshot 2024-03-11 alle 19.19.07.png",
@@ -219,7 +221,6 @@
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-07.md",
     "Programming languages/Java/java.lang.String.md",
-    "Screenshot 2024-03-08 alle 11.33.08.png",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Campi.md",
@@ -232,7 +233,6 @@
     "Programming languages/Python/Python.md",
     "Programming languages/Python/dict.md",
     "Programming languages/Python/tuple.md",
-    "Programming languages/Python/str.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
@@ -240,7 +240,6 @@
     "Programming languages/Verilog",
     "Files",
     "Uni",
-    "Flet-notes",
-    "Programming languages/Python"
+    "Flet-notes"
   ]
 }
