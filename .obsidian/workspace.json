@@ -6,15 +6,16 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 58.81834215167549,
         "children": [
           {
-            "id": "443aab910f8e5173",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,31 +23,37 @@
             }
           },
           {
-            "id": "c25be3ce4ecf4bf3",
+            "id": "1254b6c3352d2c38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-12_AE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40a9e6398a462c4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Programming languages/Java/Package.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "96ee16bd9c8026fd",
+        "type": "tabs",
+        "dimension": 41.18165784832451,
+        "children": [
+          {
+            "id": "0fc116a8be20c494",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-12_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "inizializzazione",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -113,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-12_AE.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-12_AE.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-12_AE.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -166,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -187,9 +193,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c25be3ce4ecf4bf3",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
     "Programming languages/Java/Package.md",
+    "Flet-notes/2024-03-12_AE.md",
     "Flet-notes/2024-03-12_MDP.md",
     "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
@@ -198,7 +205,6 @@
     "Programming languages/Java/Methods.md",
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Primitivi.md",
-    "Flet-notes/2024-03-12_AE.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
