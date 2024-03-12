@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "1b0636272a4d2e99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Primitivi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3040eae45341ab1f",
             "type": "leaf",
             "state": {
@@ -118,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Memoria.md"
+                "file": "Programming languages/Java/Primitivi.md"
               }
             }
           },
@@ -192,11 +204,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3040eae45341ab1f",
+  "active": "1b0636272a4d2e99",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-12_MDP.md",
-    "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-12_MDP.md",
+    "Programming languages/Java/Primitivi.md",
+    "Programming languages/Java/Memoria.md",
     "Flet-notes/2024-03-12_AE.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -216,7 +229,6 @@
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-07.md",
-    "Programming languages/Java/Primitivi.md",
     "Flet-notes/2024-03-08_AE.md",
     "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
     "Class/Architettura degli elaboratori/mips1.asm",
