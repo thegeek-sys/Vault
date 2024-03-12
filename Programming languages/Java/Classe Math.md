@@ -22,7 +22,7 @@ double Math.pow(double a, double b)
 double Math.sqrt(double a)
 
 double Math.random() // valore casuale tra 0 e 1
-(int)Math.random()*max; // valore casuale tra 0 e max-1
+(int)Math.random()*max; // valore casuale tra 0 e max-1, in alternativa posso usare "new java.util.Random().nextInt(6)"
 ```
 
 ## Principali costanti

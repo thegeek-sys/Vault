@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "7799e7b5ed84afd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classe Math.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1254b6c3352d2c38",
             "type": "leaf",
             "state": {
@@ -195,10 +207,11 @@
   },
   "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
+    "Programming languages/Java/Classe Math.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-12_MDP.md",
     "Programming languages/Java/Package.md",
     "Flet-notes/2024-03-12_AE.md",
-    "Flet-notes/2024-03-12_MDP.md",
-    "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/java.util.md",

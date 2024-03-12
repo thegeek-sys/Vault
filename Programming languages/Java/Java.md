@@ -4,6 +4,7 @@
 - [[Hello, World!]]
 - [[Classe Math]]
 - [[Libs]]
+- [[Prendere decisioni]]
 - 
 
 ##### Data types
