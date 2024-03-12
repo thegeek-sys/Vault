@@ -58,6 +58,10 @@ public class Tornello {
 
 ![[Screenshot 2024-03-12 alle 09.43.54.png]]
 
+>[!info]
+>`null` è una parola chiave utilizzata per una variabile o un campo viene utilizzato per gli oggetti (es. String o vettori) intende dire che non ci sta alcun riferimento ad un oggetto nell’heap (per questo su s non viene fatta alcuna freccia).
+
+
 Tutti i passaggi
 ![[document-92-109.pdf]]
 

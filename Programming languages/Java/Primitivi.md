@@ -35,7 +35,10 @@ Tipi di dati di base built-in.
 Una variabile è creata tramite una **dichiarazione**, nella quale deve essere specificato il tipo.
 
 >[!warning]
->Le variabili in Java non hanno un metodo di inizializzazione automatico, il che vuol dire che se definisco una variabile locale ma non gli assegno alcun valore se la provo a chiamare questo mi darà un errore di compilazione
+>Le variabili in Java non hanno un metodo di inizializzazione automatico, il che vuol dire che se definisco una variabile locale ma non gli assegno alcun valore se la provo a chiamare questo mi darà un errore di compilazione.
+>
+>`undefined` lo si ha quando non assegno nulla e non lo posso stampare mentre `null` è un valore legittimo assegnabile ad una variabile e dunque il compilatore non mi restituisce alcun tipo di errore quando la provo a chiamare
+
 
 ```java
 int contatore; // ho inizializzato la variabile contatore di tipo int
@@ -83,12 +86,12 @@ Per letterali si intendono le rappresentazioni a livello di codice sorgente del 
 ## Notazione dei letterali
 
 ```java
-int val = 42;
-int val = 0x2A;
-int val = 0b101010;
-double val = 42.5;
-double val = 0.425e2;
-float val = 42.5f;
+int val = 42;         // intero
+int val = 0x2A;       // exa
+int val = 0b101010;   // bin
+double val = 42.5;    // decimale
+double val = 0.425e2; // scientifica
+float val = 42.5f;    // float
 ```
 
 ---
