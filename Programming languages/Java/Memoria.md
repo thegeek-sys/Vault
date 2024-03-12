@@ -26,3 +26,6 @@ Quando viene avviato un programma il compilatore di Java esegue queste azioni:
 - Va avanti nella compilazione del programma allocando locazioni di memoria di variabili, oggetti e metodi mano a mano che li troviamo.
 
 I valori dei parametri di un metodo vengono sempre copiato e non passati per riferimento, se troviamo un nuovo metodo questo viene allocato ad un livello superiore nello stack.
+
+---
+## 

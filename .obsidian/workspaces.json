@@ -24,7 +24,19 @@
                 }
               },
               {
-                "id": "91ea2ed664d9a241",
+                "id": "c25be3ce4ecf4bf3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-03-12_AE.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "40a9e6398a462c4a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -103,7 +115,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/MIPS.md",
+                    "file": "Flet-notes/2024-03-12_AE.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -120,7 +132,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/MIPS.md",
+                    "file": "Flet-notes/2024-03-12_AE.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -143,7 +155,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/MIPS.md"
+                    "file": "Flet-notes/2024-03-12_AE.md"
                   }
                 }
               },
@@ -177,7 +189,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "91ea2ed664d9a241"
+      "active": "c25be3ce4ecf4bf3"
     },
     "Java": {
       "main": {
@@ -537,5 +549,5 @@
       "active": "d602a27d12c9712b"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
