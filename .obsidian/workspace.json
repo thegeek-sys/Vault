@@ -32,6 +32,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "40a9e6398a462c4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -177,10 +189,10 @@
   },
   "active": "c25be3ce4ecf4bf3",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-12_AE.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-03-12_MDP.md",
     "Class/Class.md",
     "Programming languages/Java/Java.md",
