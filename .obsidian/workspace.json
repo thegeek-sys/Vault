@@ -6,6 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 58.81834215167549,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -22,12 +23,12 @@
             }
           },
           {
-            "id": "3040eae45341ab1f",
+            "id": "bdc102e925485b49",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Programming languages/Java/Package.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,11 +38,12 @@
         "currentTab": 1
       },
       {
-        "id": "56a4f4c770547be5",
+        "id": "96ee16bd9c8026fd",
         "type": "tabs",
+        "dimension": 41.18165784832451,
         "children": [
           {
-            "id": "d2471ddf70faa4d1",
+            "id": "0fc116a8be20c494",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -119,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Flet-notes/2024-03-12_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Flet-notes/2024-03-12_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Memoria.md"
+                "file": "Flet-notes/2024-03-12_MDP.md"
               }
             }
           },
@@ -193,13 +195,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3040eae45341ab1f",
+  "active": "0fc116a8be20c494",
   "lastOpenFiles": [
-    "Programming languages/Java/java.lang.String.md",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Primitivi.md",
-    "Programming languages/Java/Memoria.md",
+    "Programming languages/Java/Package.md",
     "Flet-notes/2024-03-12_MDP.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/java.util.md",
+    "Programming languages/Java/Methods.md",
+    "Programming languages/Java/Memoria.md",
+    "Programming languages/Java/java.lang.String.md",
+    "Programming languages/Java/Primitivi.md",
     "Flet-notes/2024-03-12_AE.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -232,9 +237,6 @@
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
     "Programming languages/Java/Classes.md",
-    "Programming languages/Java/Operatori.md",
-    "Programming languages/Java/UML.md",
-    "Programming languages/Java/Incapsulamento.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
