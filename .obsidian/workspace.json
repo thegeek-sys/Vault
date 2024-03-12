@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 58.81834215167549,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -20,38 +19,6 @@
                 "source": false
               },
               "pinned": true
-            }
-          },
-          {
-            "id": "bb635ebe9a45c74f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "96ee16bd9c8026fd",
-        "type": "tabs",
-        "dimension": 41.18165784832451,
-        "children": [
-          {
-            "id": "0fc116a8be20c494",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-12_MDP.md",
-                "mode": "source",
-                "source": false
-              }
             }
           }
         ]
@@ -120,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -194,10 +161,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bb635ebe9a45c74f",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-12_MDP.md",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Package.md",

@@ -13,10 +13,8 @@ In Java possiamo prendere decisioni attraverso istruzioni di controllo **condizi
 Per realizzare una decisione si usa l’istruzione `if`. La sintassi è:
 ```java
 if (<espressione booleana>) <singola istruzione>;
-```
 
-Oppure:
-```java
+
 if (<espressione booleana uno>) {
 	<istruzioni caso uno true>;
 } else if (<espressione booleana due>) {
@@ -102,10 +100,49 @@ switch(c) {
 
 ---
 ## while
-La sintassi dell’istruzione `while` è simile a quella dell’`if`
+La sintassi dell’istruzione `while` è simile a quella dell’`if`, la differenza è che istruzioni del corpo sono eseguite finché l’espressione booleana è vera (viene controllata all’inizio di ogni esecuzione del corpo). Appena l’espressione booleana è falsa (eventualmente anche subito), il ciclo termina
 
 ```java
 while (<espressione booleana>) {
 	<istruzioni>;
 }
 ```
+
+---
+## do while
+Questo costrutto si comporta esattamente come il `while` ma la condizione di uscita viene verificata alla fine dell’esecuzione del corpo del ciclo (invece che all’inizio). Questo permette almeno una prima esecuzione del codice nonostante l’espressione booleana sia in partenza falsa
+
+```java
+do {
+	<istruzioni>;
+} while (<espressione booleana>);
+```
+
+---
+## for
+E’ un costrutto alternativo al `while` che fornisce più flessibilità nella realizzazione di cicli.
+
+```java
+for (<inizializzazione>; <espressione booleana>; <incremento>) {
+	<istruzioni>;
+}
+
+
+for (<inizializzazione>; <espressione booleana>; <incremento>)
+	<istruzione>;
+
+
+
+// esempio
+int somma = 0;
+for (int k = 0; k <= N; k++) {
+	somma += k;
+	System.out.println(somma);
+}
+```
+
+ Lo schema è il seguente:
+ - **inizializza** la variabile “di controllo”
+ - **esegui il test d’uscita** sull’espressione booleana
+ - **esegui il corpo del for**
+ - alla fine di ogni ciclo **incrementa/decrementa il valore della variabile di controllo** come specificato
