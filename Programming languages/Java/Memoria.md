@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+
+- [[#Introduzione|Introduzione]]
+- [[#Static|Static]]
+- [[#Istruzioni all’avvio del compilatore|Istruzioni all’avvio del compilatore]]
+- [[#Rappresentazione memoria|Rappresentazione memoria]]
+	- [[#Rappresentazione memoria#Esempio|Esempio]]
+
+---
 ## Introduzione
 Esistono due tipi di memoria:
 - **heap**: Vengono allocate le aree di memoria per la _creazione dinamica_ (oggetti)
@@ -59,7 +68,7 @@ public class Tornello {
 ![[Screenshot 2024-03-12 alle 09.43.54.png]]
 
 >[!info]
->`null` è una parola chiave utilizzata per una variabile o un campo viene utilizzato per gli oggetti (es. String o vettori) intende dire che non ci sta alcun riferimento ad un oggetto nell’heap (per questo su s non viene fatta alcuna freccia).
+>`null` è una parola chiave utilizzata per una variabile o un campo di tipo oggetto (es. String, vettori) e intende dire che non ci sta alcun riferimento ad un oggetto nell’heap (per questo da s non viene fatta alcuna freccia).
 
 
 Tutti i passaggi
