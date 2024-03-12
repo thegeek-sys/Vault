@@ -23,30 +23,19 @@
             }
           },
           {
-            "id": "7799e7b5ed84afd0",
+            "id": "bb635ebe9a45c74f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classe Math.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1254b6c3352d2c38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Package.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "96ee16bd9c8026fd",
@@ -131,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Programming languages/Java/Prendere decisioni.md"
               }
             }
           },
@@ -205,11 +194,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "bb635ebe9a45c74f",
   "lastOpenFiles": [
-    "Programming languages/Java/Classe Math.md",
-    "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-12_MDP.md",
+    "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Package.md",
     "Flet-notes/2024-03-12_AE.md",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
@@ -246,7 +236,6 @@
     "Files/Screenshot 2024-03-11 alle 20.02.54.png",
     "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
-    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
