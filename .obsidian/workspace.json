@@ -80,13 +80,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -178,6 +176,7 @@
   },
   "active": "62bca63a479e9550",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-03-12 alle 09.16.37.png",
     "Programming languages/Python/Comments.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/any() e all().md",
@@ -216,7 +215,6 @@
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Incapsulamento.md",
-    "Programming languages/Python/str methods.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
