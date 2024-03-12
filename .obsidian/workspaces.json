@@ -201,8 +201,21 @@
                   },
                   "pinned": true
                 }
+              },
+              {
+                "id": "30e64e9aba1f7c88",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Memoria.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -231,7 +244,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "charAt",
+                    "query": "inizializzazione",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -270,7 +283,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Programming languages/Java/Memoria.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -287,7 +300,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Programming languages/Java/Memoria.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -310,7 +323,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Java.md"
+                    "file": "Programming languages/Java/Memoria.md"
                   }
                 }
               },
@@ -344,7 +357,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "39d805ea6ffbd4c1"
+      "active": "30e64e9aba1f7c88"
     },
     "Python": {
       "main": {
@@ -526,5 +539,5 @@
       "active": "3e5953d186c09045"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }

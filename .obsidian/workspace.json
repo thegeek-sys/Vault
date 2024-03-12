@@ -8,57 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true
             }
-          },
-          {
-            "id": "de329071245674b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Memoria.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fd8eeaeef2d82d4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Campi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce0af947e0865a0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Primitivi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inizializzazione",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,12 +67,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -125,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Campi.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Campi.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Campi.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -178,7 +141,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -199,29 +162,31 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fd8eeaeef2d82d4a",
+  "active": "443aab910f8e5173",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
+    "Class/Architettura degli elaboratori/Esercizi.md",
+    "Programming languages/Java/Memoria.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/java.lang.String.md",
+    "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-07.md",
     "Programming languages/Java/Primitivi.md",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Memoria.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
     "Flet-notes/2024-03-08_AE.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/Screenshot 2024-03-08 alle 11.24.02.png.md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Class/Class.md",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
     "Files/Screenshot 2024-03-11 alle 22.03.10.png",
-    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Files/Screenshot 2024-03-11 alle 20.02.54.png",
     "Files/Screenshot 2024-03-08 alle 12.22.02.png",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura CISC e RISC.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Screenshot 2024-03-11 alle 19.19.07.png",
@@ -229,8 +194,6 @@
     "Files/Screenshot 2024-03-11 alle 19.10.12.png",
     "Screenshot 2024-03-11 alle 19.10.12.png",
     "Files/Screenshot 2024-03-08 alle 11.24.02.png",
-    "Programming languages/Java/java.lang.String.md",
-    "Programming languages/Java/Campi.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/UML.md",
