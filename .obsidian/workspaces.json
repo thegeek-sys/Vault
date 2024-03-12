@@ -199,6 +199,7 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
+            "dimension": 58.81834215167549,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -215,7 +216,27 @@
                 }
               },
               {
-                "id": "d2471ddf70faa4d1",
+                "id": "1254b6c3352d2c38",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Package.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "96ee16bd9c8026fd",
+            "type": "tabs",
+            "dimension": 41.18165784832451,
+            "children": [
+              {
+                "id": "0fc116a8be20c494",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -226,8 +247,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -293,7 +313,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_MDP.md",
+                    "file": "Programming languages/Java/Package.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -310,7 +330,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_MDP.md",
+                    "file": "Programming languages/Java/Package.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -333,7 +353,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_MDP.md"
+                    "file": "Programming languages/Java/Package.md"
                   }
                 }
               },
@@ -367,7 +387,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "d2471ddf70faa4d1"
+      "active": "1254b6c3352d2c38"
     },
     "Python": {
       "main": {
@@ -549,5 +569,5 @@
       "active": "d602a27d12c9712b"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
