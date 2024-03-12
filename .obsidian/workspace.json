@@ -8,20 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "443aab910f8e5173",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true
             }
+          },
+          {
+            "id": "62bca63a479e9550",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-12_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -50,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "inizializzazione",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,7 +80,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -88,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-12_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-12_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                "file": "Flet-notes/2024-03-12_MDP.md"
               }
             }
           },
@@ -141,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -162,16 +176,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "443aab910f8e5173",
+  "active": "62bca63a479e9550",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Programming languages/Python/Comments.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/any() e all().md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Flet-notes/2024-03-12_MDP.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Memoria.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
-    "Programming languages/Java/Memoria.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-07.md",
@@ -198,10 +216,7 @@
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Incapsulamento.md",
-    "Programming languages/Python/any() e all().md",
     "Programming languages/Python/str methods.md",
-    "Programming languages/Python/Python.md",
-    "Programming languages/Python/dict.md",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
