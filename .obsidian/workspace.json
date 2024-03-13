@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-13_MDP.md",
+                "file": "Programming languages/Java/UML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-13_MDP.md",
+                "file": "Programming languages/Java/UML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-13_MDP.md"
+                "file": "Programming languages/Java/UML.md"
               }
             }
           },
@@ -186,11 +186,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "dd60a048136d6cf2",
+  "active": "24030cdc63fea854",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
+    "Files/Screenshot 2024-03-13 alle 09.08.35.png",
     "Flet-notes/2024-03-13_MDP.md",
     "Programming languages/Java/UML.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Flet-notes/2024-03-12_MDP.md",
     "Programming languages/Java/Classe Math.md",
@@ -219,7 +220,6 @@
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-07.md",
-    "Flet-notes/2024-03-08_AE.md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",

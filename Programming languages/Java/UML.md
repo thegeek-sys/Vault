@@ -16,3 +16,10 @@ UML (*Unified Modeling Language*) serve per implementare in maniera standard dei
 - **`-`** → visibilità privata
 - **`#`** → visibilità protetta
 - **`~`** → visibilità package
+
+---
+## Dipendenza tra classi
+Posso utilizzare la freccia piena in modo tale da indicare la dipendenza generica tra due classi.
+
+![[Screenshot 2024-03-13 alle 09.08.35.png|center|400]]
+
