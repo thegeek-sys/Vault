@@ -44,9 +44,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "104c576d2830e82b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Memoria.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -112,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/UML.md",
+                "file": "Programming languages/Java/Memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/UML.md",
+                "file": "Programming languages/Java/Memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/UML.md"
+                "file": "Programming languages/Java/Memoria.md"
               }
             }
           },
@@ -186,12 +198,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "24030cdc63fea854",
+  "active": "104c576d2830e82b",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/UML.md",
     "Files/Screenshot 2024-03-13 alle 09.08.35.png",
     "Flet-notes/2024-03-13_MDP.md",
-    "Programming languages/Java/UML.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Flet-notes/2024-03-12_MDP.md",
     "Programming languages/Java/Classe Math.md",
@@ -227,7 +239,6 @@
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
     "Files/Screenshot 2024-03-11 alle 22.03.10.png",
     "Files/Screenshot 2024-03-11 alle 20.02.54.png",
-    "Files/Screenshot 2024-03-08 alle 12.22.02.png",
     "Class/Architettura degli elaboratori",
     "Class",
     "Programming languages/Java",
