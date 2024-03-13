@@ -63,7 +63,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/java.util.md",
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,8 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -137,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -211,7 +210,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "9da67dfcce4e8838",
+  "active": "0a001bd82f117a54",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
     "Programming languages/Java/java.util.md",
