@@ -114,3 +114,23 @@ while:
 endWhile:
 	# codice seguente
 ```
+
+### for loopù
+Esempio in C
+```c
+for (i=0; i<N; i++) {
+	// codice da ripetere
+}
+
+// codice seguente
+```
+
+Esempio in Assembly
+```asm-arm
+.text
+# uso il registro $t0 per indice i
+# uso il registro $t0 per il limite N
+
+for:
+	blt
+```
