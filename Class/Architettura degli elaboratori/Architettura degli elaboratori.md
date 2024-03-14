@@ -6,6 +6,7 @@
 - [[Rappresentazione dell’informazione]]
 - [[Organizzazione memoria (RAM)]]
 - [[Codifica delle istruzioni]]
+- [[Istruzioni per prendere decisioni (istruzioni condizionali)]]
 - 
 
 - [[Esercizi]]

@@ -199,7 +199,6 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
-            "dimension": 58.81834215167549,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -216,38 +215,43 @@
                 }
               },
               {
-                "id": "1254b6c3352d2c38",
+                "id": "f59e463414b7d409",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Package.md",
+                    "file": "To-Do.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "bcafa137ee928a3a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Prendere decisioni.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "5c22fbb070c4bd51",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-03-14_MDP.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 1
-          },
-          {
-            "id": "96ee16bd9c8026fd",
-            "type": "tabs",
-            "dimension": 41.18165784832451,
-            "children": [
-              {
-                "id": "0fc116a8be20c494",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-12_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -276,7 +280,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "inizializzazione",
+                    "query": "pre-",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -297,7 +301,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273
+        "width": 216.50390243530273,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -313,7 +318,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Package.md",
+                    "file": "Flet-notes/2024-03-14_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -330,7 +335,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Package.md",
+                    "file": "Flet-notes/2024-03-14_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -353,7 +358,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Package.md"
+                    "file": "Flet-notes/2024-03-14_MDP.md"
                   }
                 }
               },
@@ -387,7 +392,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "1254b6c3352d2c38"
+      "active": "5c22fbb070c4bd51"
     },
     "Python": {
       "main": {
@@ -569,5 +574,5 @@
       "active": "d602a27d12c9712b"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
