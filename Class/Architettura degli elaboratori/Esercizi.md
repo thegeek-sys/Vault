@@ -25,3 +25,4 @@ Siano `vettore` un vettore lungo N. Scrivere le istruzioni in codice MIPS che tr
 Scrivere un programma in linguaggio assembly MIPS che dato un vettore ingresso vector e la sua dimensione N calcoli due somme dei numeri del vettore:
 1. La prima somma deve sommare i valori del vettore di indice dispari. (Indice parte da 1)
 2. La seconda somma deve sommare i valori di un vettore con indice pari. (Indice parte da 0)
+[link](file:////Users/fla/Documents/uni/AE/mips4.asm)
