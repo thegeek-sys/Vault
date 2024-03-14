@@ -122,8 +122,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -217,7 +216,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "356bd72cc0237c4e",
+  "active": "74478ad04cae1b2e",
   "lastOpenFiles": [
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-12_AE.md",
