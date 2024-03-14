@@ -18,4 +18,4 @@ Sia $n$ una variabile il cui valore è nella locazione di memoria indicata da `$
 ---
 ## 12/03
 ### ES.1
-Siano a,b,c,d 
+Siano a,b,c,d variabili contenute rispettivamente in
