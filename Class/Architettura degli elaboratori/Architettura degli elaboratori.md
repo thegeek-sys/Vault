@@ -8,6 +8,7 @@
 - [[Codifica delle istruzioni]]
 - [[Istruzioni per prendere decisioni (istruzioni condizionali)]]
 - [[Assembly MIPS]]
+- [[Compilatore/Assemblatore]]
 - 
 
 - [[Esercizi]]
