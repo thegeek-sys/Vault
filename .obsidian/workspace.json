@@ -22,6 +22,16 @@
             }
           },
           {
+            "id": "4501711e11e5dd4b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/MIPS_Instruction_Set.pdf"
+              }
+            }
+          },
+          {
             "id": "cb555d718d11ec20",
             "type": "leaf",
             "state": {
@@ -142,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Files/MIPS_Instruction_Set.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Files/MIPS_Instruction_Set.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md"
+                "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
           },
@@ -216,9 +226,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cb555d718d11ec20",
+  "active": "4501711e11e5dd4b",
   "lastOpenFiles": [
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Files/Screenshot 2024-03-14 alle 21.48.33.png",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
@@ -249,7 +260,6 @@
     "Programming languages/Java/Package.md",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
     "Programming languages/Java/Methods.md",
-    "Programming languages/Java/java.lang.String.md",
     "Files/employee 1.png",
     "Files/Screenshot 2024-03-12 alle 09.43.54.png",
     "Files/Screenshot 2024-03-12 alle 09.16.37 1.png",

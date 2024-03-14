@@ -16,3 +16,5 @@ Sia $n$ una variabile il cui valore è nella locazione di memoria indicata da `$
 [link](file:////Users/fla/Documents/uni/AE/mips2.asm)
 
 ---
+## 12/03
+### ES.1
