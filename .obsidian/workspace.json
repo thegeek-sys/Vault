@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "Flet-notes/2024-03-14_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "Flet-notes/2024-03-14_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md"
+                "file": "Flet-notes/2024-03-14_MDP.md"
               }
             }
           },
@@ -187,12 +187,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bcafa137ee928a3a",
+  "active": "f59e463414b7d409",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Operatori.md",
-    "Flet-notes/2024-03-14_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-14_MDP.md",
+    "Programming languages/Java/Operatori.md",
     "Programming languages/Java/Primitivi.md",
     "To-Do.md",
     "Programming languages/Java/java.util.md",
