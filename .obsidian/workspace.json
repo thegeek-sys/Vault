@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "b153ee057fe00074",
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf",
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf",
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
+                "file": "Class/Architettura degli elaboratori/Esercizi.md"
               }
             }
           },
@@ -226,8 +226,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4501711e11e5dd4b",
+  "active": "cb555d718d11ec20",
   "lastOpenFiles": [
+    "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
@@ -242,7 +243,6 @@
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/Istruzioni.md",
     "Flet-notes/2024-03-14_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
@@ -259,7 +259,6 @@
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Package.md",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
-    "Programming languages/Java/Methods.md",
     "Files/employee 1.png",
     "Files/Screenshot 2024-03-12 alle 09.43.54.png",
     "Files/Screenshot 2024-03-12 alle 09.16.37 1.png",
