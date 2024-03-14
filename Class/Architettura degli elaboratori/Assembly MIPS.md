@@ -132,5 +132,5 @@ Esempio in Assembly
 # uso il registro $t0 per il limite N
 
 for:
-	blt
+	bge $t0,
 ```
