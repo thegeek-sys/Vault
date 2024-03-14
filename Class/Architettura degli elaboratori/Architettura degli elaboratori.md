@@ -1,7 +1,7 @@
 # Args
 - [[Prestazioni CPU]]
 - [[Architettura di Von Neumann]]
-- [[Architettura CISC e RISC]]
+- [[Architettura MIPS 2000]]
 - [[MIPS]]
 - [[Rappresentazione dell’informazione]]
 - [[Organizzazione memoria (RAM)]]
