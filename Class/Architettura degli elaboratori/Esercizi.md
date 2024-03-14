@@ -18,4 +18,10 @@ Sia $n$ una variabile il cui valore è nella locazione di memoria indicata da `$
 ---
 ## 12/03
 ### ES.1
-Siano a,b,c,d variabili contenute rispettivamente in `$s0,$s1,$s2,$s3,$s4`. Scrivere le istruzioni in codice MIPS che trovino il massimo tra queste
+Siano `vettore` un vettore lungo N. Scrivere le istruzioni in codice MIPS che trovino il massimo del vettore
+[link](file:////Users/fla/Documents/uni/AE/mips3.asm)
+
+### ES.2
+Scrivere un programma in linguaggio assembly MIPS che dato un vettore ingresso vector e la sua dimensione N calcoli due somme dei numeri del vettore:
+1. La prima somma deve sommare i valori del vettore di indice dispari. (Indice parte da 1)
+2. La seconda somma deve sommare i valori di un vettore con indice pari. (Indice parte da 0)
