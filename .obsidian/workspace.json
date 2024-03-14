@@ -22,48 +22,12 @@
             }
           },
           {
-            "id": "66244388c4e08d37",
+            "id": "248be590241a1775",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compilatore/Assemblatore.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "74478ad04cae1b2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40a9e6398a462c4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c70958b5c04eae92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
+                "file": "Compilatore/Compilatore e Assemblatore.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compilatore/Assemblatore.md",
+                "file": "Compilatore/Compilatore e Assemblatore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compilatore/Assemblatore.md",
+                "file": "Compilatore/Compilatore e Assemblatore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compilatore/Assemblatore.md"
+                "file": "Compilatore/Compilatore e Assemblatore.md"
               }
             }
           },
@@ -228,10 +192,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "66244388c4e08d37",
+  "active": "248be590241a1775",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-03-14 alle 21.26.04.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Compilatore/Assemblatore.md",
+    "Compilatore/Compilatore e Assemblatore.md",
     "Compilatore",
     "Flet-notes/2024-03-12_AE.md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
@@ -264,7 +229,6 @@
     "Files/Screenshot 2024-03-12 alle 09.16.37 1.png",
     "Files/document-92-109.pdf",
     "Files/Screenshot 2024-03-12 alle 09.16.37.png",
-    "Programming languages/Python/Comments.md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
