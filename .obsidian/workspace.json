@@ -45,8 +45,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "b153ee057fe00074",
@@ -114,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -131,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/MIPS.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -205,12 +203,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "40a9e6398a462c4a",
+  "active": "443aab910f8e5173",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "Class/Architettura degli elaboratori/MIPS.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-12_AE.md",
+    "Files/MIPS_Instruction_Set.pdf",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Istruzioni.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Flet-notes/2024-03-14_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
     "To-Do.md",
@@ -238,8 +238,6 @@
     "Programming languages/Python/Comments.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/any() e all().md",
-    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
-    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
@@ -251,7 +249,6 @@
     "Class",
     "Programming languages/Java",
     "Files/recurs.py",
-    "Programming languages/Verilog",
-    "Files"
+    "Programming languages/Verilog"
   ]
 }

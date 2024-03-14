@@ -10,3 +10,5 @@
 - 
 
 - [[Esercizi]]
+- [[MIPS_Instruction_Set.pdf|Istruzioni]]
+- 

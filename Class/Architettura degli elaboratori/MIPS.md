@@ -104,7 +104,6 @@ Tipologie di istruzioni:
 | Poni uguale a 1 se minore                          | `slt $s1,$s2,$s3`  | Se `($s2 < $s3) $s1 = 1` altrimenti `$s1 = 0` | Comparazione di minoranza; utilizzata con bne e beq                |
 | Poni uguale a 1 se minore, numeri senza segno      | `sltu $s1,$s2,$s3` | Se `($s2 < $s3) $s1 = 1` altrimenti `$s1 = 0` | Comparazione di minoranza su numeri senza segno                    |
 | Poni uguale a 1 se minore, immediato               | `slti $s1,$s2,20`  | Se `($s2 < 20) $s1 = 1` altrimenti `$s1 = 0`  | Comparazione di minoranza su una costante                          |
-| Poni uguale a 1 se minore, immediato e senza segno | `slti $s1,$s2,20`  | Se `($s2 < 20) $s1 = 1` altrimenti `$s1 = 0`  | Comparazione di minoranza con una costante, con numeri senza segno |
 
 ### Salti incondizionati
 
