@@ -57,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "b153ee057fe00074",
@@ -142,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md",
+                "file": "Flet-notes/2024-03-12_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md",
+                "file": "Flet-notes/2024-03-12_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md"
+                "file": "Flet-notes/2024-03-12_AE.md"
               }
             }
           },
@@ -216,15 +215,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "74478ad04cae1b2e",
+  "active": "c25be3ce4ecf4bf3",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Flet-notes/2024-03-12_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/Istruzioni.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Flet-notes/2024-03-14_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
     "To-Do.md",
@@ -251,7 +251,6 @@
     "Files/Screenshot 2024-03-12 alle 09.16.37.png",
     "Programming languages/Python/Comments.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/any() e all().md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",

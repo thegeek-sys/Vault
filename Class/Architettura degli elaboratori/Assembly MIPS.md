@@ -115,7 +115,7 @@ endWhile:
 	# codice seguente
 ```
 
-### for loopù
+### for loop
 Esempio in C
 ```c
 for (i=0; i<N; i++) {
@@ -131,6 +131,49 @@ Esempio in Assembly
 # uso il registro $t0 per indice i
 # uso il registro $t0 per il limite N
 
+xor $t0,$t0,$t0          # azzero i
+li $t1,N                 # limite del ciclo
 for:
-	bge $t0,
+	bge $t0,$t1,endFor
+	# codice da ripetere
+	addi $t0,$t0,1
+	j for
+endFor:
+	# codice seguente
+```
+
+### switch-case
+Esempio in C
+```c
+switch (A) {
+	case 0:     // codice del caso 0
+		break;
+	case 1:     // codice del caso 1
+		break;
+	case N:     // codice del caso N
+		break;
+}
+
+//  codice seguente
+```
+
+Esempio in Assembly
+```arm-asm
+.text
+sll $t0,$t0,2       # A*4
+lw $t1,dest($t0)    # carico indirizzo +$t0
+jr $t1              # salto al registro
+
+caso0:              # codice caso 0
+	j endSwitch
+caso1:              # codice caso 1
+	j endSwitch
+# altri casi
+casoN:              # codice caso N
+	j endSwitch
+endSwitch:
+	# codice seguente
+
+.data
+dest: .word caso0,caso1,……,casoN
 ```
