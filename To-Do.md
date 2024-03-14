@@ -2,4 +2,6 @@
 - [x] Fare appunti calcolo
 - [x] Fare appunti algoritmi
 - [x] Iniziare esercizio slide 56 MDP
-- [ ] finire esercizio memoria di lab (file Poesia)
+- [x] finire esercizio memoria di lab (file Poesia)
+- [ ] fare esercizio RettangoloDiCaratteri
+- [ ] fare ampliamento RettangoloDiCaratteri
