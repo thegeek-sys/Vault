@@ -97,6 +97,10 @@ Tipologie di istruzioni:
 | -------------------------------------------------- | ------------------ | --------------------------------------------- | ------------------------------------------------------------------ |
 | Salta se uguale                                    | `beq $s1,$s2,25`   | Se `($s1==$s2)` vai a PC+4+100                | Test di uguaglianza; salto relativo al PC                          |
 | Salta se non è uguale                              | `bne $s1,$s2,25`   | Se `($s1!=$s2)` vai a PC+4+100                | Test di disuguaglianza; salto relativo al PC                       |
+| Salta se ≤ 0                                       | `blez $s1,c`       | Se `($s1<=0)` vai all’etichetta `C`           | Comparazione di minoranza; salto relativo al PC                    |
+| Salta se < 0                                       | `bltz $s1,c`       | Se `($s1<0)` vai all’etichetta `C`            | Comparazione di minoranza; salto relativo al PC                    |
+| Salta se ≥ 0                                       | `bgez $s1,c`       | Se `($s1>=0)` vai all’etichetta `C`           | Comparazione di maggioranza; salto relativo al PC                  |
+| Salta se ≥ 0                                       | `bgtz $s1,c`<br>   | Se `($s1>0)` vai all’etichetta `C`            | Comparazione di maggioranza; salto relativo al PC                  |
 | Poni uguale a 1 se minore                          | `slt $s1,$s2,$s3`  | Se `($s2 < $s3) $s1 = 1` altrimenti `$s1 = 0` | Comparazione di minoranza; utilizzata con bne e beq                |
 | Poni uguale a 1 se minore, numeri senza segno      | `sltu $s1,$s2,$s3` | Se `($s2 < $s3) $s1 = 1` altrimenti `$s1 = 0` | Comparazione di minoranza su numeri senza segno                    |
 | Poni uguale a 1 se minore, immediato               | `slti $s1,$s2,20`  | Se `($s2 < 20) $s1 = 1` altrimenti `$s1 = 0`  | Comparazione di minoranza su una costante                          |
