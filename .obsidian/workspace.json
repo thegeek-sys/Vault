@@ -22,55 +22,31 @@
             }
           },
           {
-            "id": "24030cdc63fea854",
+            "id": "f59e463414b7d409",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/UML.md",
+                "file": "Flet-notes/2024-03-14_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dd60a048136d6cf2",
+            "id": "bcafa137ee928a3a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-13_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "104c576d2830e82b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Memoria.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a001bd82f117a54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pre-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -136,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Programming languages/Java/Prendere decisioni.md"
               }
             }
           },
@@ -210,15 +187,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0a001bd82f117a54",
+  "active": "bcafa137ee928a3a",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Operatori.md",
+    "Flet-notes/2024-03-14_MDP.md",
+    "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Primitivi.md",
+    "To-Do.md",
     "Programming languages/Java/java.util.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/UML.md",
     "Files/Screenshot 2024-03-13 alle 09.08.35.png",
     "Flet-notes/2024-03-13_MDP.md",
-    "Programming languages/Java/Prendere decisioni.md",
     "Flet-notes/2024-03-12_MDP.md",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Package.md",
@@ -226,7 +207,6 @@
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
     "Programming languages/Java/Methods.md",
     "Programming languages/Java/java.lang.String.md",
-    "Programming languages/Java/Primitivi.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
@@ -242,8 +222,6 @@
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
-    "Programming languages/Java/Campi.md",
-    "Flet-notes/2024-03-07.md",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 11.33.08.png",
