@@ -24,6 +24,59 @@
                 }
               },
               {
+                "id": "4501711e11e5dd4b",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Files/MIPS_Instruction_Set.pdf"
+                  }
+                }
+              },
+              {
+                "id": "cb555d718d11ec20",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "8dc9e7dab59ab91a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "248be590241a1775",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Compilatore/Compilatore e Assemblatore.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "b153ee057fe00074",
+            "type": "tabs",
+            "children": [
+              {
                 "id": "c25be3ce4ecf4bf3",
                 "type": "leaf",
                 "state": {
@@ -34,21 +87,8 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "40a9e6398a462c4a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/MIPS.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -77,7 +117,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "",
+                    "query": ".data",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -98,8 +138,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273,
-        "collapsed": true
+        "width": 216.50390243530273
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -115,7 +154,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_AE.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -132,7 +171,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_AE.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -155,7 +194,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_AE.md"
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md"
                   }
                 }
               },
@@ -189,7 +228,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "c25be3ce4ecf4bf3"
+      "active": "cb555d718d11ec20"
     },
     "Java": {
       "main": {

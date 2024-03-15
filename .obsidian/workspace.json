@@ -22,65 +22,12 @@
             }
           },
           {
-            "id": "4501711e11e5dd4b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
-              }
-            }
-          },
-          {
-            "id": "cb555d718d11ec20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8dc9e7dab59ab91a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "248be590241a1775",
+            "id": "14f5fe87762c9def",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Compilatore/Compilatore e Assemblatore.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "b153ee057fe00074",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c25be3ce4ecf4bf3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-12_AE.md",
                 "mode": "source",
                 "source": false
               }
@@ -152,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -226,17 +173,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cb555d718d11ec20",
+  "active": "443aab910f8e5173",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-12_AE.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
-    "Files/MIPS_Instruction_Set.pdf",
-    "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
+    "Compilatore/Compilatore e Assemblatore.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Files/MIPS_Instruction_Set.pdf",
+    "Class/Architettura degli elaboratori/Esercizi.md",
+    "Flet-notes/2024-03-12_AE.md",
+    "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Files/Screenshot 2024-03-14 alle 21.48.33.png",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
-    "Compilatore/Compilatore e Assemblatore.md",
     "Files/Screenshot 2024-03-14 alle 21.26.04.png",
     "Compilatore",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",

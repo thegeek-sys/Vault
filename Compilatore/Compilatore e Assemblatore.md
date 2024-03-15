@@ -14,7 +14,7 @@ In particolare:
 - variabili globali e locali → etichette e direttive
 - strutture di controllo → salti ed etichette
 - funzioni e chiamate → etichette e salti a funzione
-- chiamate a funzioni esterne → tabella x linker
+- chiamate a funzioni esterne → tabella per linker
 
 ## Assemblatore
 L’assemblatore ci permette di trasformare il codice assembly in **codice oggetto**
