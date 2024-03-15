@@ -5,6 +5,12 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Introduzione|Introduzione]]
+>- [[#MIPS 2000|MIPS 2000]]
+
+---
 ## Introduzione
 In era moderna, possiamo individuare due tipologie principali di architetture di
 calcolatori:
