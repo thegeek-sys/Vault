@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-15_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-15_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                "file": "Flet-notes/2024-03-15_AE.md"
               }
             }
           },
@@ -173,11 +174,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "443aab910f8e5173",
+  "active": "a87cf24cb51c50d5",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Assembly MIPS.md",
+    "Compilatore/Compilatore e Assemblatore.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-15_AE.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
@@ -186,8 +189,6 @@
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Files/MIPS_Instruction_Set.pdf",
-    "Compilatore/Compilatore e Assemblatore.md",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Flet-notes/2024-03-12_AE.md",
     "Files/Screenshot 2024-03-14 alle 21.48.33.png",

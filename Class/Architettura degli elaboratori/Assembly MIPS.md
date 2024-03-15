@@ -5,6 +5,19 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Set istruzioni|Set istruzioni]]
+>- [[#Direttive principali per l’assemblatore|Direttive principali per l’assemblatore]]
+>- [[#Istruzioni condizionali (if-else)|Istruzioni condizionali (if-else)]]
+>	- [[#Istruzioni condizionali (if-else)#Esempio|Esempio]]
+>- [[#Realizzare iterazioni|Realizzare iterazioni]]
+>	- [[#Realizzare iterazioni#do-while|do-while]]
+>	- [[#Realizzare iterazioni#while-do|while-do]]
+>	- [[#Realizzare iterazioni#for loop|for loop]]
+>	- [[#Realizzare iterazioni#switch-case|switch-case]]
+
+---
 ## Set istruzioni
 [[MIPS_Instruction_Set.pdf]]
 
