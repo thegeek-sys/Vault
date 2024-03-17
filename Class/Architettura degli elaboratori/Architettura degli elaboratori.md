@@ -9,6 +9,7 @@
 - [[Istruzioni per prendere decisioni (istruzioni condizionali)]]
 - [[Assembly MIPS]]
 - [[Compilatore e Assemblatore]]
+- [[Vettori in memoria]]
 - 
 
 - [[Esercizi]]
