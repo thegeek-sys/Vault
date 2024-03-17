@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "753d2c3c103faa26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f59e463414b7d409",
             "type": "leaf",
             "state": {
@@ -32,21 +44,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "bcafa137ee928a3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "3229a5b978386125",
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "Programming languages/Java/Array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
+                "file": "Programming languages/Java/Array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md"
+                "file": "Programming languages/Java/Array.md"
               }
             }
           },
@@ -205,12 +205,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bcafa137ee928a3a",
+  "active": "753d2c3c103faa26",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-14_MDP.md",
-    "Programming languages/Java/Prendere decisioni.md",
     "To-Do.md",
+    "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/java.lang.String.md",
+    "Programming languages/Java/Array.md",
+    "Flet-notes/2024-03-14_MDP.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Compilatore/Compilatore e Assemblatore.md",
     "Flet-notes/2024-03-15_AE.md",
@@ -237,7 +239,6 @@
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/UML.md",
     "Files/Screenshot 2024-03-13 alle 09.08.35.png",
-    "Flet-notes/2024-03-13_MDP.md",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
     "Files/employee 1.png",
     "Files/Screenshot 2024-03-12 alle 09.43.54.png",

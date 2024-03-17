@@ -12,6 +12,7 @@
 - [[Conversione di tipi]]
 - [[Operatori]]
 - [[java.lang.String]]
+- [[Array]]
 - 
 
 ##### Object oriented programming

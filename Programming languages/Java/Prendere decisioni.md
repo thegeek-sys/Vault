@@ -5,6 +5,19 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#if|if]]
+- [[#Operatore condizionale|Operatore condizionale]]
+- [[#switch|switch]]
+- [[#while|while]]
+- [[#do while|do while]]
+- [[#for|for]]
+- [[#Uscire dal ciclo|Uscire dal ciclo]]
+	- [[#Uscire dal ciclo#break vs. return|break vs. return]]
+- [[#Saltare all’iterazione successiva|Saltare all’iterazione successiva]]
+
+---
 ## Introduction
 In Java possiamo prendere decisioni attraverso istruzioni di controllo **condizionali** (istruzioni che possono essere o non eseguite sulla base di certe condizioni) e **iterative** (istruzioni che devono essere eseguite ripetutamente sulla base di certe condizioni)
 
