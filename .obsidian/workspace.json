@@ -6,6 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 54.04135338345865,
         "children": [
           {
             "id": "443aab910f8e5173",
@@ -27,18 +28,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Vettori in memoria.md",
+                "file": "Class/Architettura degli elaboratori/Vettori in memoria (e stringhe).md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "5cca8034fcc45a37",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "11e9f28f63f769a4",
         "type": "tabs",
+        "dimension": 45.95864661654135,
         "children": [
           {
             "id": "a87cf24cb51c50d5",
@@ -102,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -119,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Vettori in memoria.md",
+                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Vettori in memoria.md",
+                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Vettori in memoria.md"
+                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png"
               }
             }
           },
@@ -193,10 +204,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "14f9fed6c0370b14",
+  "active": "5cca8034fcc45a37",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Vettori in memoria (e stringhe).md",
+    "Files/Screenshot 2024-03-17 alle 17.19.02.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Vettori in memoria.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
@@ -225,7 +237,6 @@
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/java.util.md",
-    "Programming languages/Java/Memoria.md",
     "Files/Screenshot 2024-03-13 alle 09.08.35.png",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
     "Files/employee 1.png",
@@ -235,7 +246,6 @@
     "Files/Screenshot 2024-03-12 alle 09.16.37.png",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
-    "Files/Screenshot 2024-03-08 alle 11.33.08.png",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
     "Class/Architettura degli elaboratori",
     "Class",
