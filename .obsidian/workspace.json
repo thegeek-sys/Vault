@@ -47,24 +47,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "3229a5b978386125",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5c22fbb070c4bd51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-14_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -207,12 +189,12 @@
   },
   "active": "753d2c3c103faa26",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-14_MDP.md",
+    "Programming languages/Java/Array.md",
     "To-Do.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/java.lang.String.md",
-    "Programming languages/Java/Array.md",
-    "Flet-notes/2024-03-14_MDP.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Compilatore/Compilatore e Assemblatore.md",
     "Flet-notes/2024-03-15_AE.md",
