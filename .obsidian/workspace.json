@@ -28,24 +28,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Vettori in memoria (e stringhe).md",
+                "file": "Class/Architettura degli elaboratori/Stringhe in memoria.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "5cca8034fcc45a37",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "11e9f28f63f769a4",
@@ -130,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png",
+                "file": "Class/Architettura degli elaboratori/Stringhe in memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png",
+                "file": "Class/Architettura degli elaboratori/Stringhe in memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Screenshot 2024-03-17 alle 17.19.02.png"
+                "file": "Class/Architettura degli elaboratori/Stringhe in memoria.md"
               }
             }
           },
@@ -204,9 +194,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "5cca8034fcc45a37",
+  "active": "14f9fed6c0370b14",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Vettori in memoria (e stringhe).md",
+    "Files/Screenshot 2024-03-17 alle 17.22.54.png",
+    "Class/Architettura degli elaboratori/Stringhe in memoria.md",
     "Files/Screenshot 2024-03-17 alle 17.19.02.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
@@ -243,7 +234,6 @@
     "Files/Screenshot 2024-03-12 alle 09.43.54.png",
     "Files/Screenshot 2024-03-12 alle 09.16.37 1.png",
     "Files/document-92-109.pdf",
-    "Files/Screenshot 2024-03-12 alle 09.16.37.png",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",

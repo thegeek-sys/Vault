@@ -11,5 +11,11 @@ C’è però da notare che alla fine della stringa verrà salvato un carattere d
 
 Per esempio:
 `label: .asciiz "sopra la panca"`
-![[Screenshot 2024-03-17 alle 17.19.02.png|650]]
+![[Screenshot 2024-03-17 alle 17.19.02.png]]
+
+## American Standard Code for Information Interchange (ASCII)
+![[Screenshot 2024-03-17 alle 17.22.54.png]]
+https://theasciicode.com.ar
+
+
 
