@@ -37,6 +37,9 @@ Completed:
 - `.word` → sequenza di words
 - `.globl sym` → dichiara il simbolo come globale e può essere referenziato da altri file
 
+> [!info]
+> La differenza tra un vettore di word e uno di halfword sta nel fatto che mentre nelle word per spostarmi tra un indice al successivo del vettore mi devo spostare di 4 byte, in un vettore di halfword mi basta spostarmi di due 2 byte alla volta (in in un vettore di byte di uno in uno).
+
 ---
 ## Istruzioni condizionali (if-else)
 Esempio in C
