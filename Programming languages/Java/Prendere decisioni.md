@@ -146,3 +146,40 @@ for (int k = 0; k <= N; k++) {
  - **esegui il test d’uscita** sull’espressione booleana
  - **esegui il corpo del for**
  - alla fine di ogni ciclo **incrementa/decrementa il valore della variabile di controllo** come specificato
+
+All’interno dei cicli for posso anche inizializzare e incrementare più variabili allo stesso tempo
+```java
+for (int k = 0, i = 0; i <= 10; i++, k+=5) {
+	// codice iterazione
+}
+```
+
+---
+## Uscire dal ciclo
+
+Indipendentemente dal tipo di ciclo, può essere necessario uscire dal ciclo durante l’esecuzione del suo corpo. Questo è possibile attraverso l’istruzione `break` (utilizzabile solo all’interno di un ciclo)
+
+> [!info]
+> L’istruzione `break` mi permette di uscire solo dal ciclo che lo contiene.
+> Se invece voglio uscire da cicli annidati devo utilizzare l’istruzione `break <etichetta>`
+
+Esempio:
+```java
+outer:
+for (int i=0; i<h; i++) {
+	for (int j = 0; j<w) {
+		// codice qui
+		// ...
+		if (j == i) break outer;
+	}
+}
+
+// una volta eseguito il break mi ritrovo qui
+```
+
+### break vs. return
+Mentre l’istruzione `return` interrompe l’esecuzione del metodo, l’istruzione `break` interrompe l’esecuzione di un ciclo (for, while, do…while)
+
+## Saltare all’iterazione successiva
+Può anche essere utile saltare all’iterazione successiva. Questo viene fatto attraverso l’istruzione `continue` usata all’interno del ciclio.
+Questo significa che non verranno eseguite le istruzioni successive al continue ma si passerà direttamente alla prossima iterazione.

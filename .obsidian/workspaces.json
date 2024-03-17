@@ -24,41 +24,19 @@
                 }
               },
               {
-                "id": "4501711e11e5dd4b",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Files/MIPS_Instruction_Set.pdf"
-                  }
-                }
-              },
-              {
-                "id": "cb555d718d11ec20",
+                "id": "a87cf24cb51c50d5",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                    "file": "Flet-notes/2024-03-15_AE.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "8dc9e7dab59ab91a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "248be590241a1775",
+                "id": "1b36096d3311972b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -68,27 +46,21 @@
                     "source": false
                   }
                 }
-              }
-            ],
-            "currentTab": 2
-          },
-          {
-            "id": "b153ee057fe00074",
-            "type": "tabs",
-            "children": [
+              },
               {
-                "id": "c25be3ce4ecf4bf3",
+                "id": "cc76bac0649458cc",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-03-12_AE.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -138,7 +110,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273
+        "width": 216.50390243530273,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -228,7 +201,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "cb555d718d11ec20"
+      "active": "cc76bac0649458cc"
     },
     "Java": {
       "main": {
@@ -613,5 +586,5 @@
       "active": "d602a27d12c9712b"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
