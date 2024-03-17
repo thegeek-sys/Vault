@@ -35,5 +35,7 @@ Il processore MIPS permette l’ordinamento dei byte di una word in due modi:
 
 ### Esempio
 `label: .asciiz "sopra la panca."`
-![[Screenshot 2024-03-17 alle 17.33.49.png]]
+![[Screenshot 2024-03-17 alle 17.33.49.png|500]]
 
+`label: .word 0x6369616F  # "ciao" in hex`
+![[Screenshot 2024-03-17 alle 17.52.22.png|150]]

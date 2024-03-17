@@ -6,7 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 54.04135338345865,
+        "dimension": 57.14285714285714,
         "children": [
           {
             "id": "443aab910f8e5173",
@@ -40,7 +40,7 @@
       {
         "id": "11e9f28f63f769a4",
         "type": "tabs",
-        "dimension": 45.95864661654135,
+        "dimension": 42.857142857142854,
         "children": [
           {
             "id": "a87cf24cb51c50d5",
@@ -196,16 +196,18 @@
   },
   "active": "14f9fed6c0370b14",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-03-17 alle 17.52.22.png",
+    "Class/Architettura degli elaboratori/Assembly MIPS.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
+    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Files/Screenshot 2024-03-17 alle 17.33.49.png",
     "Files/Screenshot 2024-03-17 alle 17.31.27.png",
     "Files/Screenshot 2024-03-17 alle 17.30.01.png",
     "Files/Screenshot 2024-03-17 alle 17.22.54.png",
-    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Files/Screenshot 2024-03-17 alle 17.19.02.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Flet-notes/2024-03-15_AE.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Compilatore/Compilatore e Assemblatore.md",
@@ -217,7 +219,6 @@
     "Programming languages/Java/java.lang.String.md",
     "Files/Screenshot 2024-03-15 alle 13.30.20.png",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
@@ -233,7 +234,6 @@
     "Programming languages/Java/java.util.md",
     "Files/Screenshot 2024-03-13 alle 09.08.35.png",
     "Files/Screenshot 2024-03-12 alle 15.12.44.png",
-    "Files/employee 1.png",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
