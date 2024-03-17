@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,24 +22,36 @@
             }
           },
           {
-            "id": "753d2c3c103faa26",
+            "id": "79e5a4c8e5744eb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Array.md",
+                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f59e463414b7d409",
+            "id": "1b36096d3311972b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
+                "file": "Compilatore/Compilatore e Assemblatore.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc76bac0649458cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,6 +59,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "11e9f28f63f769a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a87cf24cb51c50d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-15_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pre-",
+                "query": ".data",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Array.md",
+                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Array.md",
+                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Array.md"
+                "file": "Class/Architettura degli elaboratori/Assembly MIPS.md"
               }
             }
           },
@@ -166,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -187,20 +217,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "753d2c3c103faa26",
+  "active": "79e5a4c8e5744eb8",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-14_MDP.md",
+    "Flet-notes/2024-03-15_AE.md",
+    "Class/Architettura degli elaboratori/Assembly MIPS.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Compilatore/Compilatore e Assemblatore.md",
+    "Class/Architettura degli elaboratori/Esercizi.md",
     "Programming languages/Java/Array.md",
+    "Flet-notes/2024-03-14_MDP.md",
     "To-Do.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/java.lang.String.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
-    "Compilatore/Compilatore e Assemblatore.md",
-    "Flet-notes/2024-03-15_AE.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-03-15 alle 13.30.20.png",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",

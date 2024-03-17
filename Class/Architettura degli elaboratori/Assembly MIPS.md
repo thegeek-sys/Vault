@@ -21,6 +21,10 @@ Completed:
 ## Set istruzioni
 [[MIPS_Instruction_Set.pdf]]
 
+>[!info]
+>la maggior parte delle istruzioni in Assembly sono solamente delle pseudoistruzioni, infatti, come si vede nell’interfaccia di MARS, le istruzioni digitate vengono spesso trasformate in più istruzioni 
+
+---
 ## Direttive principali per l’assemblatore
 - `.data` → definizione dei dati statici (in memoria)
 - `.text` → definizione del programma

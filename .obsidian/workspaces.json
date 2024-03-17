@@ -227,6 +227,18 @@
                 }
               },
               {
+                "id": "753d2c3c103faa26",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Array.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "f59e463414b7d409",
                 "type": "leaf",
                 "state": {
@@ -237,33 +249,9 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "bcafa137ee928a3a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Prendere decisioni.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "5c22fbb070c4bd51",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-14_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -330,7 +318,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-03-14_MDP.md",
+                    "file": "Programming languages/Java/Array.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -347,7 +335,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-03-14_MDP.md",
+                    "file": "Programming languages/Java/Array.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -370,7 +358,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-03-14_MDP.md"
+                    "file": "Programming languages/Java/Array.md"
                   }
                 }
               },
@@ -404,7 +392,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "5c22fbb070c4bd51"
+      "active": "753d2c3c103faa26"
     },
     "Python": {
       "main": {
@@ -586,5 +574,5 @@
       "active": "d602a27d12c9712b"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
