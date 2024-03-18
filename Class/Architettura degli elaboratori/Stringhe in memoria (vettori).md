@@ -39,3 +39,27 @@ Il processore MIPS permette l’ordinamento dei byte di una word in due modi:
 
 `label: .word 0x6369616F  # "ciao" in hex`
 ![[Screenshot 2024-03-17 alle 17.52.22.png|150]]
+
+---
+## Accesso agli elementi
+Per accedere ad un elemento di un vettore tramite indirizzo di memoria:
+```arm-asm
+# $t0 contiene l'indice dell'elemento (e.g. 2)
+# $t1 contiene l'indirizzo del vettore (e.g. 0x10010040)
+# in $t2 salvo l'indirizzo dell'elemento ($t1+offset)
+
+sll $t2,$t0,2 # word -> 4 byte; shift di due bit -> 
+			  # moltiplicazione per 4
+
+add $t2,$t2,$t1 # essendo $t2 già indirizzo dell'indice
+				# della word mi basta fare lw $s0,$t2 per
+				# accedere t0-esimo elemento dell'array
+```
+
+Abbiamo quindi due metodi per accedere ad un elemento di un vettore:
+
+
+| Scansione per indice                                                                                                                                                                                                              | Scansione per puntatore |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| **PRO**<br>- Comoda se si deve usare l’indice dell’elemento per controlli o altro<br>- Incremento dell’indice non dipende dalla dimensione degli elementi<br>- Comoda se il vettore è allocato staticamente (nella sezione .data) |                         |
+| **CONTRO**<br>- Bisogna convertire ogni volta l’indice nel corrispondente offset in byte                                                                                                                                          |                         |
