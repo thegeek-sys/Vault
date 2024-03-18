@@ -71,14 +71,14 @@ Somma degli elementi di un vettore di word a posizione divisibile per tre
 	N: .word 9
 	Somma: .word 0
 .text
-  main:	li	$t0,0		      # i = 0
-  	lw	$t1,N 		          # len(vettore)
-  	li	$s0,0		          # somma=0
-  loop:	bge $t0,$t1,endLoop
-  	sll $t2,$t0,2		      # offset i*4
-  	lw $t2,vettore($t2)	      # vettore[i]
-  	add $s0,$s0,$t2		      # somma+=vettore[i]
-  	addi $t0,$t0,3		      # i+=3
+  main:	li	$t0,0		       # i = 0
+  	lw	$t1,N 		           # len(vettore)
+  	li	$s0,0		           # somma=0
+  loop:	 bge $t0,$t1,endLoop
+  	sll  $t2,$t0,2		       # offset i*4
+  	lw   $t2,vettore($t2)	   # vettore[i]
+  	add  $s0,$s0,$t2		   # somma+=vettore[i]
+  	addi $t0,$t0,3		       # i+=3
   	j loop
   endLoop:
   	sw $s0,Somma
