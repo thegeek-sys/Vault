@@ -58,8 +58,12 @@ add $t2,$t2,$t1 # essendo $t2 già indirizzo dell'indice
 
 Abbiamo quindi due metodi per accedere ad un elemento di un vettore:
 
+| Scansione per indice                                                                                                                                                                                                                | Scansione per puntatore                                                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **PRO**<br>Comoda se si deve usare l’indice dell’elemento per controlli o altro<br><br>Incremento dell’indice non dipende dalla dimensione degli elementi<br><br>Comoda se il vettore è allocato staticamente (nella sezione .data) | **PRO**<br>Si lavora direttamente su indirizzi di memoria<br><br>Ci sono meno calcoli nel ciclo                                                                                                  |
+| **CONTRO**<br>Bisogna convertire ogni volta l’indice nel corrispondente offset in byte                                                                                                                                              | **CONTRO**<br>Non si ha disposizione l’indice dell’elemento<br><br>L’incremento del puntatore dipende dalla dimensione degli elementi<br><br>Bisogna calcolare l’indirizzo successivo all’ultimo |
 
-| Scansione per indice                                                                                                                                                                                                              | Scansione per puntatore |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| **PRO**<br>- Comoda se si deve usare l’indice dell’elemento per controlli o altro<br>- Incremento dell’indice non dipende dalla dimensione degli elementi<br>- Comoda se il vettore è allocato staticamente (nella sezione .data) |                         |
-| **CONTRO**<br>- Bisogna convertire ogni volta l’indice nel corrispondente offset in byte                                                                                                                                          |                         |
+### Esempio (con indice)
+Somma degli elementi di un vettore di word a posizione divisibile per tre
+```
+```
