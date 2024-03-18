@@ -10,6 +10,7 @@
 - [[Assembly MIPS]]
 - [[Compilatore e Assemblatore]]
 - [[Stringhe in memoria (vettori)]]
+- [[Matrici]]
 - 
 
 - [[Esercizi]]

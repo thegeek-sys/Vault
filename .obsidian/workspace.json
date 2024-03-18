@@ -23,6 +23,28 @@
             }
           },
           {
+            "id": "8f28dbe7c95b0fb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Matrici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b4b5d2fd7fb7ae4",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-03-18 alle 17.40.20.png"
+              }
+            }
+          },
+          {
             "id": "14f9fed6c0370b14",
             "type": "leaf",
             "state": {
@@ -120,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
+                "file": "Class/Architettura degli elaboratori/Matrici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
+                "file": "Class/Architettura degli elaboratori/Matrici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md"
+                "file": "Class/Architettura degli elaboratori/Matrici.md"
               }
             }
           },
@@ -194,9 +216,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "14f9fed6c0370b14",
+  "active": "8f28dbe7c95b0fb2",
   "lastOpenFiles": [
     "Flet-notes/2024-03-15_AE.md",
+    "Class/Architettura degli elaboratori/Matrici.md",
+    "Files/Screenshot 2024-03-18 alle 17.40.20.png",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-03-17 alle 17.52.22.png",
@@ -231,8 +255,6 @@
     "Class/Architettura degli elaboratori/Istruzioni.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/Primitivi.md",
-    "Programming languages/Java/java.util.md",
-    "Files/Screenshot 2024-03-13 alle 09.08.35.png",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
