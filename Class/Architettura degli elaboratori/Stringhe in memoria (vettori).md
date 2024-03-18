@@ -65,5 +65,21 @@ Abbiamo quindi due metodi per accedere ad un elemento di un vettore:
 
 ### Esempio (con indice)
 Somma degli elementi di un vettore di word a posizione divisibile per tre
-```
+```arm-asm
+.data
+	vettore: .word 1,2,3,4,5,6,7,8,9
+	N: .word 9
+	Somma: .word 0
+.text
+  main:	li	$t0,0		      # i = 0
+  	lw	$t1,N 		          # len(vettore)
+  	li	$s0,0		          # somma=0
+  loop:	bge $t0,$t1,endLoop
+  	sll $t2,$t0,2		      # offset i*4
+  	lw $t2,vettore($t2)	      # vettore[i]
+  	add $s0,$s0,$t2		      # somma+=vettore[i]
+  	addi $t0,$t0,3		      # i+=3
+  	j loop
+  endLoop:
+  	sw $s0,Somma
 ```
