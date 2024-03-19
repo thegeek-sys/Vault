@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,24 +22,12 @@
             }
           },
           {
-            "id": "f59e463414b7d409",
+            "id": "ad5e860d7a3de58f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e3bc53ab250af34f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-03-19_AE.md",
                 "mode": "source",
                 "source": false
               }
@@ -75,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "equals",
+                "query": "pseudo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,12 +80,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -113,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md",
+                "file": "Flet-notes/2024-03-19_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md",
+                "file": "Flet-notes/2024-03-19_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md"
+                "file": "Flet-notes/2024-03-19_AE.md"
               }
             }
           },
@@ -166,7 +154,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -187,13 +175,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f59e463414b7d409",
+  "active": "ad5e860d7a3de58f",
   "lastOpenFiles": [
-    "To-Do.md",
-    "Flet-notes/2024-03-19_MDP.md",
-    "Files/Screenshot 2024-03-19 alle 10.32.45.png",
-    "Programming languages/Java/Java.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
+    "Flet-notes/2024-03-19_AE.md",
+    "Flet-notes/2024-03-19_MDP.md",
+    "To-Do.md",
+    "Programming languages/Java/Memoria.md",
+    "Programming languages/Java/Java.md",
+    "Files/Screenshot 2024-03-19 alle 10.32.45.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Compilatore/Compilatore e Assemblatore.md",
     "Class/Architettura degli elaboratori/Matrici.md",
@@ -222,7 +212,6 @@
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
-    "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-14 alle 21.48.33.png",
     "Compilatore",
