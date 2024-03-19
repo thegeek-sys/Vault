@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-19_AE.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-19_AE.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-19_AE.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -197,13 +197,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ae0301d9f830bc09",
+  "active": "ad5e860d7a3de58f",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-19_AE.md",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Files/MIPS_Instruction_Set.pdf",
-    "Flet-notes/2024-03-19_AE.md",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
@@ -232,7 +232,6 @@
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-03-14_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
-    "Files/Screenshot 2024-03-15 alle 13.30.20.png",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
