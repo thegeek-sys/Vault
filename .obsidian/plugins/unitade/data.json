@@ -1,5 +1,5 @@
 {
-  "extensions": "txt, asm, asm, 13, 35, 31, 27, drawio, 36, 33, 10, 06, 19, py, 03, 02, lang, 16, 43, util, 12, 08, 26, 48, 30, 22, 52, 40, 32",
+  "extensions": "txt, asm, asm, 13, 35, 31, 27, drawio, 36, 33, 10, 06, 19, py, 03, 02, lang, 16, 43, util, 12, 08, 26, 48, 30, 22, 52, 40, 32, 20",
   "is_forced_on": false,
   "is_dynamic_on": true,
   "force_extensions": ""
