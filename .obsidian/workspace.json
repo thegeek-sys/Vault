@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-19_MDP.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -187,12 +187,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f59e463414b7d409",
+  "active": "e3bc53ab250af34f",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-19_MDP.md",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
     "To-Do.md",
     "Programming languages/Java/Java.md",
-    "Flet-notes/2024-03-19_MDP.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Compilatore/Compilatore e Assemblatore.md",
@@ -225,7 +225,6 @@
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-14 alle 21.48.33.png",
-    "Files/Screenshot 2024-03-14 alle 21.26.04.png",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
