@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-03-19_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-03-19_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Flet-notes/2024-03-19_MDP.md"
               }
             }
           },
@@ -187,11 +187,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e3bc53ab250af34f",
+  "active": "f59e463414b7d409",
   "lastOpenFiles": [
+    "To-Do.md",
     "Flet-notes/2024-03-19_MDP.md",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
-    "To-Do.md",
     "Programming languages/Java/Java.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
