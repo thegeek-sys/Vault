@@ -44,6 +44,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3e596c6986fc9e17",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/MIPS_Instruction_Set.pdf"
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -189,9 +199,10 @@
   },
   "active": "ae0301d9f830bc09",
   "lastOpenFiles": [
+    "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "To-Do.md",
     "Flet-notes/2024-03-19_AE.md",
+    "To-Do.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Flet-notes/2024-03-19_MDP.md",
     "Programming languages/Java/Memoria.md",
@@ -223,8 +234,6 @@
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
-    "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
-    "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-14 alle 21.48.33.png",
     "Compilatore",
     "Files/document-92-109.pdf",
