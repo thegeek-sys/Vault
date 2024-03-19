@@ -22,12 +22,24 @@
             }
           },
           {
-            "id": "ad5e860d7a3de58f",
+            "id": "ae0301d9f830bc09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Flet-notes/2024-03-19_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad5e860d7a3de58f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,12 +92,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 216.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -175,16 +187,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ad5e860d7a3de58f",
+  "active": "ae0301d9f830bc09",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
-    "Flet-notes/2024-03-19_AE.md",
-    "Flet-notes/2024-03-19_MDP.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "To-Do.md",
+    "Flet-notes/2024-03-19_AE.md",
+    "Class/Architettura degli elaboratori/Assembly MIPS.md",
+    "Flet-notes/2024-03-19_MDP.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Compilatore/Compilatore e Assemblatore.md",
     "Class/Architettura degli elaboratori/Matrici.md",
     "Programming languages/Java/Conversione di tipi.md",

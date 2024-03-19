@@ -1,12 +1,8 @@
-- [x] Fare flet-notes java
-- [x] Fare appunti calcolo
-- [x] Fare appunti algoritmi
-- [x] Iniziare esercizio slide 56 MDP
-- [x] finire esercizio memoria di lab (file Poesia)
-- [x] fare esercizio RettangoloDiCaratteri
-- [x] fare ampliamento RettangoloDiCaratteri
 - [ ] fare tris
 - [ ] fare esercizio liste
 - [ ] esercizio campo minato
 - [ ] disegnare UML impossibile mission
 - [ ] noche de fuego
+
+## Architettura
+- [ ] fare somma della diangolale in asm (06-slide 10)
