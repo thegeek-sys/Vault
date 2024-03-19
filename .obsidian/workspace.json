@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -199,6 +198,7 @@
   },
   "active": "ae0301d9f830bc09",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-19_AE.md",
