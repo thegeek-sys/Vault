@@ -7,3 +7,4 @@
 - [x] fare ampliamento RettangoloDiCaratteri
 - [ ] fare tris
 - [ ] fare esercizio liste
+- [ ] esercizio campo minato
