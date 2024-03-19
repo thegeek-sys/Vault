@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-19_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Flet-notes/2024-03-19_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                "file": "Flet-notes/2024-03-19_AE.md"
               }
             }
           },
@@ -196,10 +197,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "443aab910f8e5173",
+  "active": "ae0301d9f830bc09",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Esercizi.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Flet-notes/2024-03-19_AE.md",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
