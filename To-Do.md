@@ -5,3 +5,5 @@
 - [x] finire esercizio memoria di lab (file Poesia)
 - [x] fare esercizio RettangoloDiCaratteri
 - [x] fare ampliamento RettangoloDiCaratteri
+- [ ] fare tris
+- [ ] fare esercizio liste
