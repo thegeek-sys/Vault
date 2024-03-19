@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-19_AE.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-19_AE.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-19_AE.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -197,12 +196,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ae0301d9f830bc09",
+  "active": "443aab910f8e5173",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-03-19 alle 12.40.53.png",
-    "Files/MIPS_Instruction_Set.pdf",
+    "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Files/MIPS_Instruction_Set.pdf",
     "Flet-notes/2024-03-19_AE.md",
+    "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Flet-notes/2024-03-19_MDP.md",
@@ -228,14 +228,12 @@
     "Files/Screenshot 2024-03-17 alle 17.19.02.png",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
     "Flet-notes/2024-03-14_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Files/Screenshot 2024-03-15 alle 13.30.20.png",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
-    "Files/Screenshot 2024-03-14 alle 21.48.33.png",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
