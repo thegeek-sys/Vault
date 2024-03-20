@@ -19,7 +19,12 @@ UML (*Unified Modeling Language*) serve per implementare in maniera standard dei
 
 ---
 ## Dipendenza tra classi
-Posso utilizzare la freccia piena in modo tale da indicare la dipendenza generica tra due classi.
+Posso utilizzare la freccia piena in modo tale da indicare la **dipendenza generica** tra due classi.
 
 ![[Screenshot 2024-03-13 alle 09.08.35.png|center|400]]
 
+---
+## Ereditarietà tra due classi
+Per indicare che una classe è sottoclasse di una superclasse in UML devo utilizzare questo tipo particolare di freccia.
+
+![[Screenshot 2024-03-19 alle 10.32.45.png|center|250]]

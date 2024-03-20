@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "c7c87a3cb6d101fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/UML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c2306e10a6bf6d23",
             "type": "leaf",
             "state": {
@@ -157,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Programming languages/Java/UML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Programming languages/Java/UML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Memoria.md"
+                "file": "Programming languages/Java/UML.md"
               }
             }
           },
@@ -231,11 +243,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c2306e10a6bf6d23",
+  "active": "c7c87a3cb6d101fb",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Classi Wrapper.md",
     "Flet-notes/2024-03-19_MDP.md",
+    "Programming languages/Java/UML.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Memoria.md",
+    "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Python/Python.md",
@@ -257,12 +271,10 @@
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
-    "Programming languages/Java/Memoria.md",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
     "Compilatore/Compilatore e Assemblatore.md",
     "Class/Architettura degli elaboratori/Matrici.md",
     "Programming languages/Java/Conversione di tipi.md",
-    "Programming languages/Java/Operatori.md",
     "Files/Screenshot 2024-03-18 alle 17.40.20.png",
     "Files/Screenshot 2024-03-17 alle 17.52.22.png",
     "Files/Screenshot 2024-03-17 alle 17.33.49.png",

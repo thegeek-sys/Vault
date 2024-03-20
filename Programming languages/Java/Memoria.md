@@ -75,3 +75,23 @@ Tutti i passaggi
 ![[document-92-109.pdf]]
 
 
+---
+## Costo oggetti in memoria
+Un oggetto qualsiasi costa minimo 8 byte (informazione di base come la classe dell’oggetto, flag id status, ID ecc.)
+$\text{Integer } 8 \text{ byte dell’oggetto } + 4 \text{ byte per l’int } + \text{ padding (spazio che separa di vari oggetti) } = 16 \text{ byte}$
+$\text{Long }8+8=16\text{ byte}$
+
+Un riferimento “costerebbe” 8 byte ma si usano i *compressed oop* (ordinary object pointer) che sono object offset da 32 bit (ogni 8 byte)quindi indicizzano fino a 32Gb di RAM (attivi fino a – Xmx32G), quindi richiedono normalmente 4 byte
+
+Un array richiede minimo 12 byte (gli 8 di qualsiasi oggetto più 4 per la length)
+$$
+\begin{split}
+\text{Una stringa (in Java 8)} &= 2\cdot \text{numero di caratteri (codifica Unicode)} + 8 \text{ (suo overhead) } +\\&+ 4 \text{ (reference all'array char[])} + 12 \text{ (char[] array overhead)} + 4 \text{(hash)} \\&= 2\cdot \text{(hash)} + 28
+\end{split}
+$$
+(Da Java 9 le stringhe sono state reimplementate introducendo le stringhe
+“compatte” che utilizzano un solo byte se tutti i suoi caratteri usano l’encoding
+LATIN-1 (extended ASCII))
+
+**Tutti + arrotondamento a un multiplo di 8**
+Per il padding, tutti gli oggetti vengono "allineati" a multipli di 8 (64 bit)
