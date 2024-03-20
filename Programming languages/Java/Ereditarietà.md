@@ -58,5 +58,28 @@ Inoltre la sottoclasse può:
 
 ---
 ## Classi astratte
+Una classe **astratta** (definita mediante la parola chiave `abstract`) non può essere istanziata; il che vuol dire che NON possono esistere oggetti per quella classe.
+Anche i metodi possono essere definiti astratti ma esclusivamente all’interno di una classe dichiarata astratta. Impongono alle sottoclassi non astratte di implementare il metodo.
 
+```java
+public abstract class PersonaggioDisney {
+	// metodo astratto senza implementazione
+	abstract void faPasticci();
+}
 
+// non posso fare PersonaggioDisney a = new PersonaggioDisney();
+// non è possibile istanziarla
+```
+
+Tipicamente verrà estesa da altre classi, che invece potranno essere istanziate
+```java
+public class Paperoga extends PersonaggioDisney {
+	public void faPasticci() {
+		System.out.println("bla bla bla bla bla");
+	}
+}
+```
+
+Ereditando da una classe astratta dei metodi astratti, a meno che non sono astratto anche io, devo necessariamente definire quel metodo.
+
+La visibilità protetta (`protected`) rende visibile il campo (o il metodo) a tutte le sottoclassi (ma anche a tutte le classi del package)
