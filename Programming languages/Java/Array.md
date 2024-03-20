@@ -5,6 +5,17 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Dichiarazione|Dichiarazione]]
+	- [[#Introduction#Creazione senza valori|Creazione senza valori]]
+	- [[#Introduction#Creazione con valori|Creazione con valori]]
+- [[#Esempi di dichiarazione|Esempi di dichiarazione]]
+- [[#Accedere agli elementi di un array|Accedere agli elementi di un array]]
+- [[#Modificare array|Modificare array]]
+- [[#Metodi con numero di parametri variabile|Metodi con numero di parametri variabile]]
+- [[#Array a due dimensioni|Array a due dimensioni]]
+---
 ## Introduction
 
 Un array rappresenta un gruppo di variabili (chiamate elementi) tutte dello stesso tipo. Gli array sono oggetti, quindi **le variabili di array contengono il riferimento all’array**
