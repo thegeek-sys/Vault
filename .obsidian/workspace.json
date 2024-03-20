@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "6dff5034139a0d47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Incapsulamento.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "bac57df75e2ef232",
             "type": "leaf",
             "state": {
@@ -59,7 +71,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "bf02eb8e88ac1fb5",
@@ -221,9 +233,10 @@
   },
   "active": "bac57df75e2ef232",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-19_MDP.md",
-    "Programming languages/Java/Methods.md",
+    "Programming languages/Java/Incapsulamento.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Methods.md",
+    "Flet-notes/2024-03-19_MDP.md",
     "Programming languages/Java/Array.md",
     "To-Do.md",
     "Programming languages/Java/java.lang.String.md",
@@ -257,7 +270,6 @@
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-03-14_MDP.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
