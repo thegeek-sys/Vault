@@ -12,6 +12,8 @@ Completed:
 - [[#Esempi|Esempi]]
 ---
 ## Introduzione
+Il miglior modo per sviluppare e mantenere un programma grande è di costruirlo da pezzi piccoli e semplici (principio del *divide et impera*).
+I metodi permettono di modularizzare un programma separandone i compiti in unità autocontenute. Le istruzioni di un metodo non sono visibili da un altro metodo (ma possono essere riutilizzate in molti punti del programma). Tuttavia certi metodi non utilizzano lo stato dell’oggetto, ma si applicano all’intera classe (statici)
 Un metodo è tipicamente **pubblico**, ovvero visibile a tutti. Il nome di un metodo per convenzione inizia con una lettera minuscola, mentre le parole seguenti iniziano con lettera minuscola (es. dimmiTuttoQuelloCheSai() ).
 
 ---
