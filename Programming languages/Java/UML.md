@@ -25,6 +25,6 @@ Posso utilizzare la freccia piena in modo tale da indicare la **dipendenza gener
 
 ---
 ## Ereditarietà tra due classi
-Per indicare che una classe è sottoclasse di una superclasse in UML devo utilizzare questo tipo particolare di freccia.
+Per indicare che una classe è sottoclasse di una superclasse in UML devo utilizzare questo tipo particolare di freccia. Quando in una sottoclasse definisco nuovamente un metodo della superclasse vuol dire che la sto ridefinendo conferendogli delle caratteristiche più specifiche
 
 ![[Screenshot 2024-03-19 alle 10.32.45.png|center|250]]

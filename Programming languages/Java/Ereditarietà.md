@@ -41,5 +41,22 @@ public class Cerchio extends Forma {
 	private double raggio;
 	
 	public Cerchio(int raggio) { this.raggio = raggio; }
+	
+	public double getRaggio() { return raggio; }
+	public double getCirconferenza() { return 2*Math.PI*raggio; }
 }
 ```
+
+---
+## Cosa si eredita?
+Una **sottoclasse** estende la **superclasse** (una sottoclasse può avere al più una superclasse) ereditando così i membri della superclasse (campi e metodi d’istanza secondo il livello di accesso specificato).
+Inoltre la sottoclasse può:
+- **aggiungere** nuovi metodi e campi
+- **ridefinire** i metodi che eredita dalla superclasse (tipicamente NON i campi)
+
+![[Screenshot 2024-03-20 alle 19.19.27.png|center|350]]
+
+---
+## Classi astratte
+
+

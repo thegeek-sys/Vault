@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "648cc3a5831147f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/UML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cf9da6f94c94008e",
             "type": "leaf",
             "state": {
@@ -132,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
+                "file": "Programming languages/Java/UML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
+                "file": "Programming languages/Java/UML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md"
+                "file": "Programming languages/Java/UML.md"
               }
             }
           },
@@ -206,16 +218,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cf9da6f94c94008e",
+  "active": "648cc3a5831147f0",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-03-19_MDP.md",
     "Programming languages/Java/Ereditarietà.md",
+    "Files/Screenshot 2024-03-20 alle 19.19.27.png",
     "Files/Screenshot 2024-03-20 alle 19.07.46.png",
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/UML.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Python/Python.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -243,7 +256,6 @@
     "Files/Screenshot 2024-03-17 alle 17.33.49.png",
     "Files/Screenshot 2024-03-17 alle 17.31.27.png",
     "Files/Screenshot 2024-03-17 alle 17.30.01.png",
-    "Files/Screenshot 2024-03-17 alle 17.22.54.png",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
