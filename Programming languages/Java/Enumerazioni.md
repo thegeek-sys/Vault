@@ -68,5 +68,37 @@ Per ogni enumerazione, il compilatore genera i metodi statici:
 - `values()` → che restituisce un array delle costanti enumerative
 - `valueOf()` → che restituisce la costante enumerativa associata alla stringa fornita in input (se il valore non esiste viene emessa un’eccezione)
 
+### Esempio
+```java
+public enum SemeCarta {  
+    CUORI, QUADRI, FIORI, PICCHE;  
+  
+    public static void main(String[] args) {  
+        SemeCarta[] valori = SemeCarta.values();  
+        for (int k = 0; k < valori.length; k++) {  
+            System.out.print(valori[k]+" "); // CUORI QUADRI FIORI PICCHE
+        } System.out.println();
+        
+        String v = "PICCHE";  
+        SemeCarta picche = SemeCarta.valueOf(v);  
+        System.out.println(picche); // PICCHE
+    }  
+}
+```
+
 ---
 ## Enumerazioni e switch
+Le enumerazioni possono essere utilizzate all’interno di un costrutto `switch`
+
+```java
+SemeCarta seme = null;
+
+/* ... */
+
+switch(seme) {
+	case CUORI: System.out.println("Come"); break;
+	case QUADRI: System.out.println("Quando"); break;
+	case FIORI: System.out.println("Fuori"); break;
+	case PICCHE: System.out.println("Piove"); break;
+}
+```
