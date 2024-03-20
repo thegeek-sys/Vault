@@ -6,7 +6,6 @@ Completed:
 ---
 ---
 ## Index
-
 - [[#Introduzione|Introduzione]]
 - [[#Struttura|Struttura]]
 - [[#Metodi statici]]

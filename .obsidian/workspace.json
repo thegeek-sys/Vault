@@ -23,55 +23,18 @@
             }
           },
           {
-            "id": "6dff5034139a0d47",
+            "id": "8ccf3b00e7d4186d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Incapsulamento.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bac57df75e2ef232",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Methods.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e9760bd34667d64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Array.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e3bc53ab250af34f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Enumerazioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "bf02eb8e88ac1fb5",
@@ -157,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Methods.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Methods.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Methods.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -231,12 +194,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bac57df75e2ef232",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
-    "Programming languages/Java/Incapsulamento.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Methods.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Classes.md",
+    "Programming languages/Java/Constructors.md",
+    "Programming languages/Java/Enumerazioni.md",
+    "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-19_MDP.md",
+    "Programming languages/Java/Incapsulamento.md",
     "Programming languages/Java/Array.md",
     "To-Do.md",
     "Programming languages/Java/java.lang.String.md",
@@ -255,7 +222,6 @@
     "Class/Architettura degli elaboratori/Matrici.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Operatori.md",
-    "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-15_AE.md",
     "Files/Screenshot 2024-03-18 alle 17.40.20.png",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
@@ -267,9 +233,6 @@
     "Files/Screenshot 2024-03-17 alle 17.22.54.png",
     "Files/Screenshot 2024-03-17 alle 17.19.02.png",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Flet-notes/2024-03-14_MDP.md",
-    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",

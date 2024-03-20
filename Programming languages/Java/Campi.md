@@ -10,6 +10,7 @@ Completed:
 - [[#Struttura|Struttura]]
 - [[#Inizializzazione implicita|Inizializzazione implicita]]
 - [[#Campi vs. variabili locali|Campi vs. variabili locali]]
+- [[#Campi statici]]
 - [[#Esempi|Esempi]]
 ---
 ## Introduzione
@@ -51,6 +52,29 @@ Al momento della creazione dell’oggetto i campi di una classe sono inizializza
 | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | I campi sono variabili dell’oggetto                                                                                    | Le variabili locali sono variabili definite all’interno di un metodo                                                                                                            |
 | sono variabili almeno all’interno di tutti gli oggetti della stessa classe ed esistono per tutta la vita di un oggetto | come parametri del metodo o all’interno del corpo del metodo ed esistono dal momento in cui sono definite fino al termine dell’esecuzione della chiamata al metodo in questione |
+
+---
+## Campi statici
+Dichiarare un campo statico mi permette di trasformare una variabile di istanza in un **campo di classe**, gli posso dunque accedere da un’altra classe tramite `NomeClasse.nomeCampo`.
+
+Un esempio ne sono le costanti `PI` ed `E` della classe `Math`; queste sono dichiarate:
+- `public` → perché accessibili da tutti
+- `final` → perché costanti
+- `static` → perché non variano secondo lo stato dell’oggetto
+
+`import static` permette di importare campi statici come se fossero definiti nella classe in cui si importano. E’ possibile anche importare tutti i campi statici di una classe `import static java.lang.Math.*`
+
+```java
+//import static java.lang.Math.E;
+import static java.lang.Math.*;
+
+public class StaticImport {
+	public static void main(String[] args) {
+		System.out.println(E);
+		System.out.println(PI);
+	}
+}
+```
 
 ---
 ## Esempi

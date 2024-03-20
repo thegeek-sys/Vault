@@ -22,6 +22,7 @@
 - [[Constructors]]
 - [[Classes#Esercizio contatore|Overloading (metodi e costruttori)]]
 - [[Incapsulamento]]
+- [[Enumerazioni]]
 - 
 
 ##### Libraries
