@@ -83,3 +83,64 @@ public class Paperoga extends PersonaggioDisney {
 Ereditando da una classe astratta dei metodi astratti, a meno che non sono astratto anche io, devo necessariamente definire quel metodo.
 
 La visibilità protetta (`protected`) rende visibile il campo (o il metodo) a tutte le sottoclassi (ma anche a tutte le classi del package)
+
+![[Screenshot 2024-03-20 alle 19.29.48.png|center|650]]
+
+---
+## Esempio: Impossible Mission
+Abbiamo tanti “oggetti”:
+- Piattaforme
+- Computer
+- Oggetti in cui cercare indizi
+
+Alcuni sono “personaggi”:
+- Il giocatore
+- I robot
+- Il “bombone”
+
+Abbiamo bisogno di una classe molto generale (quindi astratta) che rappresenti oggetti mobili e immobili nel gioco:
+```java
+public abstract class Entita {
+	protected int x;
+	protected int y;
+	
+	public Entita(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	public int getX() { return x; }
+	public int getY() { return y; }
+}
+```
+
+Modelliamo gli oggetti immobili in astratto:
+```java
+public abstract class Oggetto extends Entita {
+	private TesseraPuzzle tessera;
+	
+	public Oggetto(int x, int y) {
+		// se mi viene passato solo x e y chiamo l'altro costruttore
+		// con null come terzo parametro
+		this(x, y, null);
+	}
+	
+	public Oggetto(int x, int y, TesseraPuzzle tessera) {
+		// chiamo il costruttore della classe Entita
+		// OBBLIGATORIO perché ha almeno un parametro
+		super(x, y);
+		this.tessera = tessera;
+		
+	}
+	
+	// metodo aggiuntivo
+	public TesseraPuzzle search() { return tessera; }
+}
+```
+
+Gli oggetti che possono contenere una tessera del puzzle del gioco:
+```java
+public class TesseraPuzzle {
+	// da implementare
+}
+```

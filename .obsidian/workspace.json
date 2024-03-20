@@ -124,8 +124,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -221,9 +220,10 @@
   },
   "active": "cf9da6f94c94008e",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-03-20 alle 19.29.48.png",
+    "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Campi.md",
     "Programming languages/Java/UML.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Flet-notes/2024-03-19_MDP.md",
     "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-20 alle 19.19.27.png",
@@ -256,7 +256,6 @@
     "Files/Screenshot 2024-03-17 alle 17.52.22.png",
     "Files/Screenshot 2024-03-17 alle 17.33.49.png",
     "Files/Screenshot 2024-03-17 alle 17.31.27.png",
-    "Files/Screenshot 2024-03-17 alle 17.30.01.png",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
