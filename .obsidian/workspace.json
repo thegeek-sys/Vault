@@ -34,7 +34,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "bf02eb8e88ac1fb5",
@@ -120,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Enumerazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Enumerazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Programming languages/Java/Enumerazioni.md"
               }
             }
           },
@@ -194,15 +195,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "8ccf3b00e7d4186d",
   "lastOpenFiles": [
-    "Programming languages/Java/Methods.md",
+    "Flet-notes/2024-03-19_MDP.md",
+    "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Methods.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Constructors.md",
-    "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Campi.md",
-    "Flet-notes/2024-03-19_MDP.md",
     "Programming languages/Java/Incapsulamento.md",
     "Programming languages/Java/Array.md",
     "To-Do.md",
