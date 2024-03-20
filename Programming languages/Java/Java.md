@@ -24,6 +24,7 @@
 - [[Incapsulamento]]
 - [[Enumerazioni]]
 - [[Classi Wrapper]]
+- [[Ereditarietà]]
 - 
 
 ##### Libraries
