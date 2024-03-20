@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Struttura|Struttura]]
+	- [[#Struttura#Esempio|Esempio]]
+- [[#values() e valueOf()|values() e valueOf()]]
+	- [[#values() e valueOf()#Esempio|Esempio]]
+- [[#Enumerazioni e switch|Enumerazioni e switch]]
+
+---
 ## Introduction
 Spesso è utile definire dei tipi (detti enumerazioni) i cui valori possono essere scelti tra un insieme predefinito di identificatori univoci (ogni identificatore corrisponde a una costante implicitamente static).
 Non è possibile creare un oggetto del tipo enumerato

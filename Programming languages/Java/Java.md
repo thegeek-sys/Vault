@@ -23,6 +23,7 @@
 - [[Classes#Esercizio contatore|Overloading (metodi e costruttori)]]
 - [[Incapsulamento]]
 - [[Enumerazioni]]
+- [[Classi Wrapper]]
 - 
 
 ##### Libraries
