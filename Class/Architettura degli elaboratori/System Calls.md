@@ -6,4 +6,4 @@ Completed:
 ---
 ---
 ## Introduction
-Una system call è un’istruzione speciale che trasferisce il controllo dalla modalità utente a un indirizzo predeterminato nello spazio dei processi di supervisione sollevando un’eccezione
+Una system call è un’istruzione speciale che trasferisce il controllo dalla modalità utente alla modalità kernel, viene per questo utilizzato in linguaggio Assembly per richiedere un servizio a livello kernel del sistema operativo del computer in uso
