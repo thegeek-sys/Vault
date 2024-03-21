@@ -26,3 +26,8 @@ Scrivere un programma in linguaggio assembly MIPS che dato un vettore ingresso v
 1. La prima somma deve sommare i valori del vettore di indice dispari. (Indice parte da 1)
 2. La seconda somma deve sommare i valori di un vettore con indice pari. (Indice parte da 0)
 [link](file:////Users/fla/Documents/uni/AE/mips4.asm)
+
+---
+## 19/03
+### ES.1
+Sia `matrice2D` un vettore 2D di 20x20 word. Scrivere le istruzioni in codice MIPS per restituire la somma della diagonale
