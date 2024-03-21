@@ -27,19 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/UML.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cf9da6f94c94008e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-21_MDP.md",
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,9 +44,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f3a57482a0909128",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-21_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -199,15 +199,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cf9da6f94c94008e",
+  "active": "f3a57482a0909128",
   "lastOpenFiles": [
-    "Programming languages/Java/Ereditarietà.md",
+    "Programming languages/Java/Java.md",
+    "To-Do.md",
+    "Programming languages/Java/UML.md",
+    "Compilatore/Compilatore e Assemblatore.md",
+    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-21_MDP.md",
+    "Programming languages/Java/Ereditarietà.md",
     "Files/Screenshot 2024-03-20 alle 19.29.48.png",
     "Programming languages/Java/Campi.md",
-    "Programming languages/Java/UML.md",
     "Flet-notes/2024-03-19_MDP.md",
-    "Programming languages/Java/Java.md",
     "Files/Screenshot 2024-03-20 alle 19.19.27.png",
     "Files/Screenshot 2024-03-20 alle 19.07.46.png",
     "Programming languages/Java/Enumerazioni.md",
@@ -215,9 +219,7 @@
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Python/Python.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-19_AE.md",
-    "To-Do.md",
     "Programming languages/Python/Comments.md",
     "Programming languages/Java/Untitled.md",
     "Programming languages/Java/Methods.md",
@@ -231,9 +233,7 @@
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
-    "Compilatore/Compilatore e Assemblatore.md",
     "Files/Screenshot 2024-03-18 alle 17.40.20.png",
     "Files/Screenshot 2024-03-17 alle 17.52.22.png",
     "Files/Screenshot 2024-03-17 alle 17.33.49.png",

@@ -10,3 +10,4 @@
 ## Architettura
 - [ ] fare somma della diangolale in asm (06-slide 10)
 - [ ] accedere a forbidden
+- [ ] sistemare folder COMPILATORE

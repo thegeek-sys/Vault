@@ -56,8 +56,21 @@
                     "file": "Files/MIPS_Instruction_Set.pdf"
                   }
                 }
+              },
+              {
+                "id": "bd7188d3f60b82ca",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -125,7 +138,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -142,7 +155,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -165,7 +178,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md"
                   }
                 }
               },
@@ -199,7 +212,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "356bd72cc0237c4e"
+      "active": "bd7188d3f60b82ca"
     },
     "Java": {
       "main": {
@@ -209,7 +222,6 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
-            "dimension": 54.47630193095378,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -226,24 +238,24 @@
                 }
               },
               {
-                "id": "4a9def40cc3ec08f",
+                "id": "648cc3a5831147f0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Array.md",
+                    "file": "Programming languages/Java/UML.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "0748b2ae1cc98881",
+                "id": "cf9da6f94c94008e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Classi Wrapper.md",
+                    "file": "Flet-notes/2024-03-21_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -263,25 +275,6 @@
               }
             ],
             "currentTab": 2
-          },
-          {
-            "id": "bf02eb8e88ac1fb5",
-            "type": "tabs",
-            "dimension": 45.52369806904622,
-            "children": [
-              {
-                "id": "f127e840638de53c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-19_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
           }
         ],
         "direction": "vertical"
@@ -310,7 +303,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "split path:\"Programming languages/Java/\"",
+                    "query": "public path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -331,8 +324,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -348,7 +340,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Classi Wrapper.md",
+                    "file": "Flet-notes/2024-03-21_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -365,7 +357,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Classi Wrapper.md",
+                    "file": "Flet-notes/2024-03-21_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -388,7 +380,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Classi Wrapper.md"
+                    "file": "Flet-notes/2024-03-21_MDP.md"
                   }
                 }
               },
@@ -422,7 +414,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "0748b2ae1cc98881"
+      "active": "9da67dfcce4e8838"
     },
     "Python": {
       "main": {
