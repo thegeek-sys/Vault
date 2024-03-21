@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "82de6f55c720a55d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Matrici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "eafba707de6d7d16",
             "type": "leaf",
             "state": {
@@ -78,9 +90,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "729e325da3287a48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -203,7 +227,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,22 +246,23 @@
   },
   "active": "3fc5bc8759e20323",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-12_AE.md",
+    "To-Do.md",
+    "Files/MIPS_Instruction_Set.pdf",
+    "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
-    "Flet-notes/2024-03-19_AE.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Class/Architettura degli elaboratori/Matrici.md",
+    "Flet-notes/2024-03-12_AE.md",
+    "Flet-notes/2024-03-19_AE.md",
     "Funzioni/procedure.md",
     "Class/Class.md",
     "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Funzioni",
-    "Class/Architettura degli elaboratori/System Calls.md",
-    "Class/Architettura degli elaboratori/Matrici.md",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Flet-notes/2024-03-21_MDP.md",
-    "To-Do.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Java.md",
@@ -250,9 +276,7 @@
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Classi Wrapper.md",
-    "Programming languages/Java/Memoria.md",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
-    "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
     "Files/Screenshot 2024-03-18 alle 17.40.20.png",

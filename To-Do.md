@@ -1,4 +1,4 @@
-- [ ] fare tris
+- [x] fare tris
 - [ ] fare esercizio liste
 - [ ] esercizio campo minato
 - [ ] disegnare UML impossibile mission
@@ -9,6 +9,6 @@
 - [ ] aumentare visibilità di un metodo
 
 ## Architettura
-- [ ] fare somma della diangolale in asm (06-slide 10)
+- [x] fare somma della diangolale in asm (06-slide 10)
 - [ ] accedere a forbidden
-- [ ] sistemare folder COMPILATORE
+- [x] sistemare folder COMPILATORE
