@@ -6,6 +6,7 @@
 - [ ] fare heap-stack di TestAnimali su diagrams.net
 - [ ] fare uml dei cani (slide 41 ereditarietà)
 - [ ] finire package animali
+- [ ] aumentare visibilità di un campo
 
 ## Architettura
 - [ ] fare somma della diangolale in asm (06-slide 10)
