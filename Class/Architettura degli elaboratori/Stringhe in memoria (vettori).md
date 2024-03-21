@@ -5,6 +5,16 @@ Related:
 Completed:
 ---
 ---
+>[!info] Index
+>- [[#Introduction|Introduction]]
+>- [[#American Standard Code for Information Interchange (ASCII)|American Standard Code for Information Interchange (ASCII)]]
+>- [[#Endianess|Endianess]]
+>	- [[#Endianess#Esempio|Esempio]]
+>- [[#Accesso agli elementi|Accesso agli elementi]]
+>	- [[#Accesso agli elementi#Esempio (con indice)|Esempio (con indice)]]
+>	- [[#Accesso agli elementi#Esempio (con puntatore)|Esempio (con puntatore)]]
+
+---
 ## Introduction
 Per allocare una stringa in memoria, quello che facciamo altro non è che creare un vettore di byte, in cui, in ogni byte è memorizzata un carattere codificato secondo lo standard ASCII.
 C’è però da notare che alla fine della stringa verrà salvato un carattere di fine stringa `\0` che nonostante rappresenti un carattere vuoto, è diverso dal carattere di spaziatura (`blank`)

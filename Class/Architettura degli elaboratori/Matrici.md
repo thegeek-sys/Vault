@@ -5,6 +5,12 @@ Related:
 Completed:
 ---
 ---
+>[!info] Index
+>- [[#Introduction|Introduction]]
+>	- [[#Introduction#Esempio|Esempio]]
+>- [[#Matrice 3D|Matrice 3D]]
+
+---
 ## Introduction
 Una matrice $\text{M x N}$ altro non è che una successione di $\text{M}$ vettori, ciascuno di $\text{N}$ elementi:
 - il numero di elementi totali è: $\text{M x N}$

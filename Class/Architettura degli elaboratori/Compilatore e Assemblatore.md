@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+>[!info] Index
+>- [[#Compilatore|Compilatore]]
+>- [[#Assemblatore|Assemblatore]]
+>- [[#Linker|Linker]]
+
+---
+
 ![[Screenshot 2024-03-14 alle 21.26.04.png]]
 ## Compilatore
 Il compilatore ci permette di trasformare codice alto livello in **codice Assembly**
