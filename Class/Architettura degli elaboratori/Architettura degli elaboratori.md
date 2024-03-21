@@ -12,7 +12,7 @@
 - [[Stringhe in memoria (vettori)]]
 - [[Matrici]]
 - [[System Calls]]
-- [[Funzioni/procedure]]
+- [[Procedure e Funzioni]]
 - 
 
 - [[Esercizi]]

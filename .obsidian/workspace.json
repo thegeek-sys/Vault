@@ -22,24 +22,24 @@
             }
           },
           {
-            "id": "3fc5bc8759e20323",
+            "id": "eafba707de6d7d16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "81a4f757c79a7051",
+            "id": "3fc5bc8759e20323",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Funzioni/procedure.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "e0e7ebfe05522d8d",
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Funzioni/procedure.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Funzioni/procedure.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Funzioni/procedure.md"
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
               }
             }
           },
@@ -237,14 +237,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "81a4f757c79a7051",
+  "active": "eafba707de6d7d16",
   "lastOpenFiles": [
-    "Class/Class.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Flet-notes/2024-03-19_AE.md",
-    "Funzioni/procedure.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
+    "Funzioni/procedure.md",
+    "Class/Class.md",
+    "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Funzioni",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Matrici.md",
@@ -268,7 +269,6 @@
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/Comments.md",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
