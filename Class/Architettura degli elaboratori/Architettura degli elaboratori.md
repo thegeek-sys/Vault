@@ -11,6 +11,7 @@
 - [[Compilatore e Assemblatore]]
 - [[Stringhe in memoria (vettori)]]
 - [[Matrici]]
+- [[System Calls]]
 - 
 
 - [[Esercizi]]

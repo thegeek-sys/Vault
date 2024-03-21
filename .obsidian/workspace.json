@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,7 +22,19 @@
             }
           },
           {
-            "id": "648cc3a5831147f0",
+            "id": "84d3b4677861679f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad5e860d7a3de58f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,19 +46,47 @@
             }
           },
           {
-            "id": "f3a57482a0909128",
+            "id": "3e596c6986fc9e17",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/MIPS_Instruction_Set.pdf"
+              }
+            }
+          },
+          {
+            "id": "bd7188d3f60b82ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-21_MDP.md",
+                "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "e0e7ebfe05522d8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae0301d9f830bc09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-19_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,7 +115,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "public path:\"Programming languages/Java/\"",
+                "query": "path:\"Class/Architettura degli elaboratori/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,11 +132,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
+    "width": 216.50390243530273,
     "collapsed": true
   },
   "right": {
@@ -113,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-21_MDP.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-21_MDP.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-21_MDP.md"
+                "file": "Class/Architettura degli elaboratori/System Calls.md"
               }
             }
           },
@@ -166,7 +207,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -187,14 +228,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f3a57482a0909128",
+  "active": "84d3b4677861679f",
   "lastOpenFiles": [
-    "To-Do.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/System Calls.md",
+    "Flet-notes/2024-03-19_AE.md",
     "Flet-notes/2024-03-21_MDP.md",
+    "To-Do.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
     "Class/Class.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/UML.md",
@@ -210,14 +253,12 @@
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Memoria.md",
     "Programming languages/Python/Python.md",
-    "Flet-notes/2024-03-19_AE.md",
     "Programming languages/Python/Comments.md",
     "Programming languages/Java/Untitled.md",
     "Programming languages/Java/Methods.md",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Constructors.md",
     "Programming languages/Java/Incapsulamento.md",
-    "Programming languages/Java/java.lang.String.md",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
