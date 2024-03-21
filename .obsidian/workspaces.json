@@ -69,8 +69,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 4
+            ]
           }
         ],
         "direction": "vertical"
@@ -138,7 +137,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -178,7 +177,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -212,7 +211,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "bd7188d3f60b82ca"
+      "active": "443aab910f8e5173"
     },
     "Java": {
       "main": {
@@ -243,19 +242,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/UML.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "cf9da6f94c94008e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-21_MDP.md",
+                    "file": "To-Do.md",
                     "mode": "source",
                     "source": false
                   }
@@ -272,9 +259,21 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "f3a57482a0909128",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-03-21_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -324,7 +323,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -414,7 +414,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "9da67dfcce4e8838"
+      "active": "f3a57482a0909128"
     },
     "Python": {
       "main": {
