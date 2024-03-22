@@ -12,3 +12,4 @@
 - [x] fare somma della diangolale in asm (06-slide 10)
 - [x] accedere a forbidden
 - [x] sistemare folder COMPILATORE
+- [ ] Somma della diagonale (v. più efficiente) / reprise
