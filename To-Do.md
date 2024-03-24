@@ -4,7 +4,7 @@
 - [ ] disegnare UML impossibile mission
 - [ ] noche de fuego
 - [ ] fare heap-stack di TestAnimali su diagrams.net
-- [ ] fare uml dei cani (slide 41 ereditarietà)
+- [x] fare uml dei cani (sl ide 41 ereditarietà)
 - [ ] finire package animali
 - [ ] aumentare visibilità di un metodo
 
