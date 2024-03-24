@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "443aab910f8e5173",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,19 +22,7 @@
             }
           },
           {
-            "id": "ad5e860d7a3de58f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-22.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e79f8dd36d46ba1d",
+            "id": "648cc3a5831147f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -46,22 +34,12 @@
             }
           },
           {
-            "id": "3e596c6986fc9e17",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
-              }
-            }
-          },
-          {
-            "id": "729e325da3287a48",
+            "id": "f3a57482a0909128",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Flet-notes/2024-03-21_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Class/Architettura degli elaboratori/\" ",
+                "query": "public path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273,
+    "width": 245.51103591918945,
     "collapsed": true
   },
   "right": {
@@ -135,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-22.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-22.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-22.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -188,7 +166,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -209,15 +187,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ad5e860d7a3de58f",
+  "active": "648cc3a5831147f0",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-21_MDP.md",
     "To-Do.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-03-22.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Files/MIPS_Instruction_Set.pdf",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Matrici.md",
     "Flet-notes/2024-03-12_AE.md",
     "Flet-notes/2024-03-19_AE.md",
@@ -228,7 +207,6 @@
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
-    "Flet-notes/2024-03-21_MDP.md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Java.md",
