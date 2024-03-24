@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-22_AE.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-22_AE.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-22_AE.md"
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
               }
             }
           },
@@ -214,10 +214,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ad5e860d7a3de58f",
+  "active": "b5db72a48ee4c520",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Flet-notes/2024-03-22_AE.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",

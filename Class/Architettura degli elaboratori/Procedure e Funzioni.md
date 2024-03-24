@@ -48,6 +48,6 @@ Le informazioni da preservare hanno un ciclo di vita caratteristico, dovuto al n
 		- …
 	- ripristino stato prima di chiamata 2
 - ripristino stato prima di chiamata 1
-Lo stack si riempie nelle chiamate annidate
+Lo stack si riempie nelle chiamate annidate e il primo indirizzo è 1000 e aumenta **scendendo fino a 0**
 
 Questo è il comportamento di una pila (**stack** o LIFO), in cui aggiungere un elemento (**push**) e togliere l’ultimo inserito (**pop**) viene realizzato con un vettore di cui si tiene l’indirizzo dell’ultimo elemento occupato nel registro `$sp` (Stack Pointer)
