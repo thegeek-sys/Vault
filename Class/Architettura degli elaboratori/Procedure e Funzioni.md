@@ -21,6 +21,7 @@ Una funzione (o procedura) in assembly:
 - ritorna il risultato
 - continua la sua esecuzione dall’istruzione seguente a quella che l’ha chiamata
 
+---
 ## Ingredienti
 Gli ingredienti principali per la creazione di funzioni in Assembly sono i **salti incondizionati**. In particolare delle istruzioni:
 - `jal etichetta` → quest’istruzione, oltre che fare un jump all’etichetta (della funzione) indicata, salverà nel registro `$ra` l’indirizzo del Program Counter da cui è stato chiamato il jump
@@ -32,3 +33,5 @@ Per convenzione vengono utilizzati i registri `$a0,$a1,$a2,$a3` per passare valo
 >- `$t0,$t1...` → possono cambiare tra una chiamata e l’altra (temporary)
 >- `$s0,$s1...` → non cambiano tra una chiamata e l’altra (saved) 
 
+---
+## Chiamate nidificate
