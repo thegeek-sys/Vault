@@ -35,3 +35,19 @@ Per convenzione vengono utilizzati i registri `$a0,$a1,$a2,$a3` per passare valo
 
 ---
 ## Chiamate nidificate
+Per come è strutturato MIPS è dunque chiaro notare come la quantità di informazioni che posso passare in input e ricevere in output da una funzione è estremamente limitato (4 registri in input, 4 valori da 32 bit o 2 da 64, 2 in output, 2 valori da 32 bit o 1 da 64).
+
+Mi potrebbe dunque essere utile effettuare delle chiamate nidificate all’interno della funzione. Ma quindi, come ricostruisco la memoria in ritorno?
+In generale **conviene preservare il precedente contenuto dei registri usati dalla funzione e ripristinarlo**
+- meno vincoli alla funzione chiamante
+- nelle funzioni che chiamano altre funzioni, che perderebbero il contenuto almeno di `$ra`. Infatti se per accedere ad una funzione ho dovuto eseguire l’istruzione `jal`, per farne una nidificata lo dovrò eseguire di nuovo, facendomi perdere quindi il primo indirizzo del PC
+
+Le informazioni da preservare hanno un ciclo di vita caratteristico, dovuto al nidificarsi delle chiamate delle funzioni:
+- salvo lo stato prima di chiamata 1
+	- salvo stat prima di chiamata 2
+		- …
+	- ripristino stato prima di chiamata 2
+- ripristino stato prima di chiamata 1
+Lo stack si riempie nelle chiamate annidate
+
+Questo è il comportamento di una pila (**stack** o LIFO), in cui aggiungere un elemento (**push**) e togliere l’ultimo inserito (**pop**) viene realizzato con un vettore di cui si tiene l’indirizzo dell’ultimo elemento occupato nel registro `$sp` (Stack Pointer)
