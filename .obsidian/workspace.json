@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,7 +22,19 @@
             }
           },
           {
-            "id": "648cc3a5831147f0",
+            "id": "47f196ff0e68c25d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Indirizzamento con spiazzamento.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e79f8dd36d46ba1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,12 +46,34 @@
             }
           },
           {
-            "id": "f3a57482a0909128",
+            "id": "3e596c6986fc9e17",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/MIPS_Instruction_Set.pdf"
+              }
+            }
+          },
+          {
+            "id": "729e325da3287a48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-21_MDP.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9883c4286705d48d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,6 +81,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "878a02f5ff17d41f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad5e860d7a3de58f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-22_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,7 +127,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "public path:\"Programming languages/Java/\"",
+                "query": "indirizzamento path:\"Class/Architettura degli elaboratori/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,11 +144,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
+    "width": 216.50390243530273,
     "collapsed": true
   },
   "right": {
@@ -113,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Class/Architettura degli elaboratori/Indirizzamento con spiazzamento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Class/Architettura degli elaboratori/Indirizzamento con spiazzamento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Class/Architettura degli elaboratori/Indirizzamento con spiazzamento.md"
               }
             }
           },
@@ -166,7 +219,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -187,12 +240,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "648cc3a5831147f0",
+  "active": "47f196ff0e68c25d",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-21_MDP.md",
-    "To-Do.md",
+    "Flet-notes/2024-03-22_AE.md",
+    "Class/Architettura degli elaboratori/Indirizzamento con spiazzamento.md",
+    "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Flet-notes/2024-03-22.md",
+    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
+    "To-Do.md",
+    "Programming languages/Java/Ereditarietà.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-03-21_MDP.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
@@ -204,22 +264,15 @@
     "Class/Class.md",
     "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Funzioni",
-    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Programming languages.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/UML.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Files/Screenshot 2024-03-20 alle 19.29.48.png",
     "Programming languages/Java/Campi.md",
-    "Flet-notes/2024-03-19_MDP.md",
     "Files/Screenshot 2024-03-20 alle 19.19.27.png",
     "Files/Screenshot 2024-03-20 alle 19.07.46.png",
-    "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Array.md",
-    "Programming languages/Java/Classi Wrapper.md",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",

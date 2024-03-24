@@ -13,6 +13,7 @@
 - [[Matrici]]
 - [[System Calls]]
 - [[Procedure e Funzioni]]
+- [[Indirizzamento con spiazzamento]]
 - 
 
 - [[Esercizi]]
