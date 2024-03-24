@@ -3,9 +3,9 @@
 - [ ] esercizio campo minato
 - [ ] disegnare UML impossibile mission
 - [ ] noche de fuego
-- [ ] fare heap-stack di TestAnimali su diagrams.net
+- [x] fare heap-stack di TestAnimali su diagrams.net
 - [x] fare uml dei cani (sl ide 41 ereditarietà)
-- [ ] finire package animali
+- [x] finire package animali
 - [ ] aumentare visibilità di un metodo
 
 ## Architettura
