@@ -49,8 +49,51 @@ Le informazioni da preservare hanno un ciclo di vita caratteristico, dovuto al n
 	- ripristino stato prima di chiamata 2
 - ripristino stato prima di chiamata 1
 
+---
+## Uso dello stack
 Questo è il comportamento di una pila (**stack** o LIFO), in cui aggiungere un elemento (**push**) e togliere l’ultimo inserito (**pop**) viene realizzato con un vettore di cui si tiene l’indirizzo dell’ultimo elemento occupato nel registro `$sp` (Stack Pointer)
 Lo stack si trova nella parte «alta» della memoria e cresce verso il basso. Supponiamo di voler salvare e ripristinare il registro `$ra`
+
 Come salvare un elemento (push):
 - si decrementa lo `$sp` della dimensione dell’elemento (in genere una word)
+	`subi $sp,$sp,4`
 - si memorizza l’elemento nella posizione 0(`$sp`)
+	`sw $ra,0($sp)`
+
+Come recuperare un elemento (pop):
+- si legge l’elemento dalla posizione 0(`$sp`)
+	`lw $ra,0($sp)`
+- si incrementa lo `$sp` della quantità allocata in precedenza
+	`addi $sp,$sp,4`
+
+### In una funzione
+All’inizio della funzione:
+- allocare su stack abbastanza word da contenere i registri da preservare
+- salvare su stack i registri, ad offset multipli di 4 rispetto a $sp
+All’uscita della funzione:
+- ripristinare da stack i registri salvati, agli stessi offset usati precedentemente
+- disallocare da stack lo stesso spazio allocato in precedenza
+- tornare alla funzione chiamante
+
+```arm-asm
+funzione:
+	addi $sp,$sp,-12
+	sw $ra,8($sp)
+	sw $a0,4($sp)
+	sw $a1,0($sp)
+	
+	# corpo della funzione
+	# posso chiamare jal
+	# tranquillamente perché
+	# salvo $ra
+	
+	lw $a1, 0($sp)
+	lw $a0, 4($sp)
+	lw $ra, 8($sp)
+	addi $sp, $sp, 12
+	jr $ra
+```
+
+> [!info]
+> conviene allocare tutto lo spazio assieme per avere offset che restano costanti durante tutta l’esecuzione della funzione
+
