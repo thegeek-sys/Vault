@@ -96,7 +96,6 @@ La parola `super` usata come nome di metodo **obbligatoriamente** nella prima ri
 > Ogni sottoclasse deve esplicitamente definire un costruttore se la superclasse NON fornisce un costruttore senza argomenti (cioè la superclasse ha un costruttore con argomenti, vanno “mandati“ dalla sottoclasse con un costruttore)
 
 ### Esempio
-
 ```java
 'X.java'
 public class X {
@@ -153,6 +152,21 @@ L’**overloading** consiste nel creare un metodo con lo stesso nome, ma una int
 - si può **variare la visibilità** in qualsiasi direzione
 
 [[#^overloading-overriding|Qui]] si può trovare un esempio di utilizzo di overloading e overriding
+
+---
+## Visibilità
+![[Screenshot 2024-03-25 alle 22.39.43.png]]
+Abbiamo quattro possibilità per campi e metodi:
+- `private` → visibile solo all’interno della classe
+- `public` → visibile a tutti (all’interno di un modulo)
+- `default` → visibile all’interno di tutte le classi del package
+- `protected`→ visibile all’interno di tutte le classi del package e delle sottoclassi (indipendentemente dal package)
+
+---
+## is-a vs. has-a
+E’ molto importante distinguere tra relazioni di tipo **is-a** (è-un) e relazioni di tipo **has-a** (ha-un)
+**is-a** rappresenta l’*ereditarietà*. Un oggetto di una sottoclasse può essere trattato come un oggetto della superclasse. Domanda: la sottoclasse è-un superclasse? (es. Paperino è un PersonaggioDisney? Sì! QuiQuoQua è un Paperino? No!)
+**has-a** rappresenta la *composizione*. Un oggetto contiene come membri riferimenti ad altri oggetti. Domanda: un oggetto contiene altri oggetti? (es. Bagno contiene Vasca? Sì! PersonaggioDisney contiene Paperino? No!)
 
 ---
 ## Esempio: Impossible Mission

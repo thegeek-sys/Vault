@@ -34,3 +34,17 @@ In UML una classe astratta la si indica scrivendo il nome in corsivi e/o si usa 
 Per indicare che una classe è sottoclasse di una superclasse in UML devo utilizzare questo tipo particolare di freccia. Quando in una sottoclasse definisco nuovamente un metodo della superclasse vuol dire che la sto ridefinendo conferendogli delle caratteristiche più specifiche
 
 ![[Screenshot 2024-03-19 alle 10.32.45.png|center|250]]
+
+## Extra
+**Is-A** → implica una relazione gerarchica di ereditarietà ([[Ereditarietà#is-a vs. has-a|riferimento]])
+![[Screenshot 2024-03-25 alle 22.46.43.png|400]]
+
+**Associazione** → implica una relazione gerarchica che associa x oggetti di una classe a y oggetti di un’altra classe
+![[Screenshot 2024-03-25 alle 22.47.55.png|400]]
+
+**Composizione** → implica una relazione dove un figlio non può esistere indipendentemente dal padre (ad es. Casa (padre) e Stanza (figlio) )
+![[Screenshot 2024-03-25 alle 22.51.10.png|400]]
+
+**Aggregazione** → indica una relazione dove un figlio può esistere indipendentemente dal padre
+![[Screenshot 2024-03-25 alle 22.52.43.png|400]]
+

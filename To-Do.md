@@ -2,7 +2,8 @@
 - [ ] fare esercizio liste
 - [ ] esercizio campo minato
 - [ ] disegnare UML impossibile mission
-- [ ] noche de fuego
+- [x] noche de fuego
+- [ ] Junit slide 49 ereditarietà
 - [x] fare heap-stack di TestAnimali su diagrams.net
 - [x] fare uml dei cani (sl ide 41 ereditarietà)
 - [x] finire package animali
