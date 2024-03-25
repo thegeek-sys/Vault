@@ -49,8 +49,36 @@ Le informazioni da preservare hanno un ciclo di vita caratteristico, dovuto al n
 	- ripristino stato prima di chiamata 2
 - ripristino stato prima di chiamata 1
 
+### Esempio chiamate funzioni nidificate
+- `main` chiama `foo` che chiama `bar`
+- `foo` ha bisogno di 3 registri $s0, $s1, $s2
+- `bar` ha bisogno di 2 registri $s0, $s1
+- return address? (se ho jal nidificato lo perdo)
+
+```arm-asm
+main:
+	...
+	jal foo # $ra=PC+1
+
+# sapendo che foo sporcherà tre registri vuol dire che
+# dovrò salvare nello stack questi tre valori
+# spostando il relativo stack pointer
+foo:
+	...
+	jal bar # poiché questa istruzione cambierà $ra dovrò
+			# salvarmi il precedente stato di $ra dentro
+			# lo stack
+
+bar:
+	...
+	jr $ra  # tornando indietro mi dovrò ricordare di 
+			# svuotare lo stack e rimettere i valori 
+			# precedentri (come $ra, $s0, $s1, $s2)
+```
+
 ---
 ## Uso dello stack
+![[Screenshot 2024-03-25 alle 21.16.02.png|500]]
 Questo è il comportamento di una pila (**stack** o LIFO), in cui aggiungere un elemento (**push**) e togliere l’ultimo inserito (**pop**) viene realizzato con un vettore di cui si tiene l’indirizzo dell’ultimo elemento occupato nel registro `$sp` (Stack Pointer)
 Lo stack si trova nella parte «alta» della memoria e cresce verso il basso. Supponiamo di voler salvare e ripristinare il registro `$ra`
 
@@ -99,3 +127,6 @@ funzione:
 
 ## $fp e $sp
 La differenza tra **stack pointer** e **frame pointer** sta nel fatto che mentre `$sp` si utilizza per puntare alla fine del record di attivazione (varia allocando dati dinamicamente) `$fp` si usa per puntare all’inizio del record di attivazione (resta fisso durante l’esecuzione della funzione, non molto usato)
+
+![[Screenshot 2024-03-25 alle 21.14.58.png|530]]
+
