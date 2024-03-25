@@ -87,6 +87,74 @@ La visibilità protetta (`protected`) rende visibile il campo (o il metodo) a tu
 ![[Screenshot 2024-03-20 alle 19.29.48.png|center|650]]
 
 ---
+## this e super
+La parola chiave `this` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un altro costruttore della stessa classe ([[#^this|esempio]])
+
+La parola `super` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un costruttore della superclasse ([[#^this|esempio]])
+
+> [!warning]
+> Ogni sottoclasse deve esplicitamente definire un costruttore se la superclasse NON fornisce un costruttore senza argomenti (cioè la superclasse ha un costruttore con argomenti, vanno “mandati“ dalla sottoclasse con un costruttore)
+
+### Esempio
+
+```java
+'X.java'
+public class X {
+	public X(int k) {
+		System.out.println("X(int k)");
+	}
+	
+	public X() {
+		System.out.println("X()");
+	}
+}
+
+'Y.java'
+public class Y extends X {
+	public Y(int k) {
+		System.out.println("Y(int k)");
+	}
+}
+
+'Z.java'
+public class Z extends Y {
+	public Z(int k) {
+		super(k);
+		System.out.println("Z(int k)");
+	}
+	
+	public Z() {
+		this(0);
+		System.out.println("Z()");
+	}
+	
+	public static void main(String[] args) {
+		Z z = new Z();
+	}
+}
+
+
+-> X()
+-> Y(int k)
+-> Z(int k)
+-> Z()
+'''
+```
+
+---
+## Overriding e Overloading
+L’**overriding** consiste nel ridefinire (reimplementare) un metodo con la stessa intestazione (“segnatura”) presente in una superclasse
+- nell’overriding gli **argomenti devono essere gli stessi**
+- i **tipi di ritorno devono essere compatibili** (lo stesso tipo o una sottoclasse). Posso dunque specializzare il tipo di ritorno del metodo affinché sia una sottoclasse della classe superiore (non posso ritornare un tipo di una classe superiore rispetto a quella da cui sto facendo l’overriding, ad es. se la superclasse ritorna un long posso ritornare un int ma non viceversa)
+- **non si può ridurre la visibilità** (es. da public a private)
+
+L’**overloading** consiste nel creare un metodo con lo stesso nome, ma una intestazione diversa (diverso numero e/o tipo di parametri)
+- i **tipi di ritorno possono essere diversi**, ma non si può cambiare solo il tipo
+- si può **variare la visibilità** in qualsiasi direzione
+
+[[#^overloading-overriding|Qui]] si può trovare un esempio di utilizzo di overloading e overriding
+
+---
 ## Esempio: Impossible Mission
 Abbiamo tanti “oggetti”:
 - Piattaforme
@@ -240,7 +308,7 @@ public class Robot extends Nemico {
 }
 ```
 
-Modelliamo un **bombone**:
+Modelliamo un **bombone**: ^overloading-overriding
 ```java
 public class Bombone extends Nemico {
 	public Bombone(int x, int y, String nome, int velocita) {
@@ -266,59 +334,4 @@ public class Bombone extends Nemico {
 		muoviti(p.y > this.y ? Direzione.ALTO : Direzione.BASSO)
 	}
 }
-```
-
----
-## this e super
-La parola chiave `this` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un altro costruttore della stessa classe ([[#^this|esempio]])
-
-La parola `super` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un costruttore della superclasse ([[#^this|esempio]])
-
-> [!warning]
-> Ogni sottoclasse deve esplicitamente definire un costruttore se la superclasse NON fornisce un costruttore senza argomenti (cioè la superclasse ha un costruttore con argomenti, vanno “mandati“ dalla sottoclasse con un costruttore)
-
-### Esempio
-
-```java
-'X.java'
-public class X {
-	public X(int k) {
-		System.out.println("X(int k)");
-	}
-	
-	public X() {
-		System.out.println("X()");
-	}
-}
-
-'Y.java'
-public class Y extends X {
-	public Y(int k) {
-		System.out.println("Y(int k)");
-	}
-}
-
-'Z.java'
-public class Z extends Y {
-	public Z(int k) {
-		super(k);
-		System.out.println("Z(int k)");
-	}
-	
-	public Z() {
-		this(0);
-		System.out.println("Z()");
-	}
-	
-	public static void main(String[] args) {
-		Z z = new Z();
-	}
-}
-
-
--> X()
--> Y(int k)
--> Z(int k)
--> Z()
-'''
 ```

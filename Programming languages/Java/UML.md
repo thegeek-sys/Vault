@@ -24,6 +24,12 @@ Posso utilizzare la freccia piena in modo tale da indicare la **dipendenza gener
 ![[Screenshot 2024-03-13 alle 09.08.35.png|center|400]]
 
 ---
+## Classe astratta
+In UML una classe astratta la si indica scrivendo il nome in corsivi e/o si usa il tag \<abstract\>
+
+![[Screenshot 2024-03-25 alle 22.06.56.png|center|250]]
+
+---
 ## Ereditarietà tra due classi
 Per indicare che una classe è sottoclasse di una superclasse in UML devo utilizzare questo tipo particolare di freccia. Quando in una sottoclasse definisco nuovamente un metodo della superclasse vuol dire che la sto ridefinendo conferendogli delle caratteristiche più specifiche
 
