@@ -144,3 +144,7 @@ public class TesseraPuzzle {
 	// da implementare
 }
 ```
+
+---
+## this e super
+La parola chiave `this` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un altro costruttore della stessa classe
