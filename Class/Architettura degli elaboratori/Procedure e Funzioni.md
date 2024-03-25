@@ -95,5 +95,5 @@ funzione:
 ```
 
 > [!info]
-> conviene allocare tutto lo spazio assieme per avere offset che restano costanti durante tutta l’esecuzione della funzione
+> Conviene allocare tutto lo spazio assieme per avere offset che restano costanti durante tutta l’esecuzione della funzione
 
