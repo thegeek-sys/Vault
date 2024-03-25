@@ -97,3 +97,5 @@ funzione:
 > [!info]
 > Conviene allocare tutto lo spazio assieme per avere offset che restano costanti durante tutta l’esecuzione della funzione
 
+## $fp e $sp
+La differenza tra **stack pointer** e **frame pointer** sta nel fatto che mentre `$sp` si utilizza per puntare alla fine del record di attivazione (varia allocando dati dinamicamente) `$fp` si usa per puntare all’inizio del record di attivazione (resta fisso durante l’esecuzione della funzione, non molto usato)
