@@ -7,6 +7,7 @@
 - [x] fare uml dei cani (sl ide 41 ereditarietà)
 - [x] finire package animali
 - [ ] aumentare visibilità di un metodo
+- [ ] disegnare UML slide 20 ereditarietà
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)

@@ -98,7 +98,7 @@ Alcuni sono “personaggi”:
 - I robot
 - Il “bombone”
 
-Abbiamo bisogno di una classe molto generale (quindi astratta) che rappresenti oggetti mobili e immobili nel gioco:
+Abbiamo bisogno di una classe molto generale (quindi astratta) che rappresenti **oggetti mobili e immobili** nel gioco:
 ```java
 public abstract class Entita {
 	protected int x;
@@ -114,7 +114,7 @@ public abstract class Entita {
 }
 ```
 
-Modelliamo gli oggetti immobili in astratto:
+Modelliamo gli **oggetti immobili** in astratto: ^this-super
 ```java
 public abstract class Oggetto extends Entita {
 	private TesseraPuzzle tessera;
@@ -138,13 +138,187 @@ public abstract class Oggetto extends Entita {
 }
 ```
 
-Gli oggetti che possono contenere una tessera del puzzle del gioco:
+Gli oggetti che possono contenere una **tessera** del puzzle del gioco:
 ```java
 public class TesseraPuzzle {
 	// da implementare
 }
 ```
 
+Modelliamo un possibile **oggetto immobile**:
+```java
+public class Libreria extends Oggetto {
+	public Libreria(int x, int y, TesseraPuzzle tessera) {
+		super(x, y, tessera);
+	}
+	
+	public Libreria(int x, int y) {
+		super(x, y);
+	}
+}
+```
+
+E il **computer**:
+```java
+public class Computer extends Entita {
+	public Computer(int x, int y) {
+		super(x, y);
+	}
+	
+	public void login() { /* da implementare */ }
+	public void logout() { /* da implementare */ }
+}
+```
+
+Modelliamo un generico **personaggio**:
+```java
+public abstract class Personaggio extends Entita {
+	public enum Direzione {
+		DESTRA,
+		SINISTRA,
+		ALTO,
+		BASSO;
+	}
+	
+	private String nome;
+	private int velocita;
+	
+	public Personaggio(int x, int y, String nome, int velocita) {
+		super(x, y);
+		this.nome = nome;
+		this.velocita = velocita;
+	}
+	
+	public String getNome() { return nome; }
+	public int getVelocita() { return velocita; }
+	
+	public void muoviti(Direzione d) {
+		switch(d) {
+			case DESTRA: x+=velocita; break;
+			case SINISTRA: x-=velocita; break;
+			// in futuro: emetti eccezione!
+			default: System.out.println("Direzione non ammessa"); break;
+		}
+	}
+}
+```
+
+Modelliamo il **giocatore** (ovvero la spia):
+```java
+public class Spia extends Personaggio {
+	public Spia(int x, int y, String nome, int velocita) {
+		super(x, y, nome, velocita);
+	}
+	
+	public void salta() {
+		// ...
+	}
+}
+```
+
+Modelliamo un generico **nemico**:
+```java
+public abstract class Nemico extends Personaggio {
+	public Nemico(int x, int y, String nome, int velocita) {
+		super(x, y, nome, velocita);
+	}
+	
+	public abstract void attacca();
+}
+```
+
+E i **robot**:
+```java
+public class Robot extends Nemico {
+	public Robot(int x, int y, String nome, int velocita) {
+		super(x, y, nome, velocita);
+	}
+	
+	public void incenerisci() { /* fulmine elettrico */ }
+	// siamo obbligati a definire il metodo astratto
+	public void attacca() { /* da implementare */ }
+}
+```
+
+Modelliamo un **bombone**:
+```java
+public class Bombone extends Nemico {
+	public Bombone(int x, int y, String nome, int velocita) {
+		super(x, y, nome, velocita);
+	}
+	
+	public void attacca() {
+		// da implementare
+	}
+	
+	// OVERRIDING del metodo
+	public void muoviti(Direzione d) {
+		switch(d) {
+			case DESTRA: case SINISTRA: super.muoviti(d); break;
+			case ALTO: y-=getVelocita(); break;
+			case BASSO: y+=getVelocita(); break;
+		}
+	}
+	
+	// OVERLOADING del metodo
+	public void muoviti(Spia p) {
+		muoviti(p.x > this.x ? Direzione.DESTRA : Direzione.SINISTRA);
+		muoviti(p.y > this.y ? Direzione.ALTO : Direzione.BASSO)
+	}
+}
+```
+
 ---
 ## this e super
-La parola chiave `this` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un altro costruttore della stessa classe
+La parola chiave `this` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un altro costruttore della stessa classe ([[#^this|esempio]])
+
+La parola `super` usata come nome di metodo **obbligatoriamente** nella prima riga del costruttore permette di richiamare un costruttore della superclasse ([[#^this|esempio]])
+
+> [!warning]
+> Ogni sottoclasse deve esplicitamente definire un costruttore se la superclasse NON fornisce un costruttore senza argomenti (cioè la superclasse ha un costruttore con argomenti, vanno “mandati“ dalla sottoclasse con un costruttore)
+
+### Esempio
+
+```java
+'X.java'
+public class X {
+	public X(int k) {
+		System.out.println("X(int k)");
+	}
+	
+	public X() {
+		System.out.println("X()");
+	}
+}
+
+'Y.java'
+public class Y extends X {
+	public Y(int k) {
+		System.out.println("Y(int k)");
+	}
+}
+
+'Z.java'
+public class Z extends Y {
+	public Z(int k) {
+		super(k);
+		System.out.println("Z(int k)");
+	}
+	
+	public Z() {
+		this(0);
+		System.out.println("Z()");
+	}
+	
+	public static void main(String[] args) {
+		Z z = new Z();
+	}
+}
+
+
+-> X()
+-> Y(int k)
+-> Z(int k)
+-> Z()
+'''
+```
