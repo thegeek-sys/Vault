@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "443aab910f8e5173",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,29 +22,7 @@
             }
           },
           {
-            "id": "b5db72a48ee4c520",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "807a62fedbb80a98",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-03-19 alle 13.20.59.png"
-              }
-            }
-          },
-          {
-            "id": "e79f8dd36d46ba1d",
+            "id": "648cc3a5831147f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,12 +34,14 @@
             }
           },
           {
-            "id": "3e596c6986fc9e17",
+            "id": "0aebe35f1fbb129a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
+                "file": "Programming languages/Java/Ereditarietà.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -69,16 +49,16 @@
         "currentTab": 2
       },
       {
-        "id": "878a02f5ff17d41f",
+        "id": "0490196d1b247948",
         "type": "tabs",
         "children": [
           {
-            "id": "ad5e860d7a3de58f",
+            "id": "f3a57482a0909128",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-22_AE.md",
+                "file": "Flet-notes/2024-03-21_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "indirizzamento path:\"Class/Architettura degli elaboratori/\" ",
+                "query": "public path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +114,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -150,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Screenshot 2024-03-19 alle 13.20.59.png",
+                "file": "Programming languages/Java/Ereditarietà.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Screenshot 2024-03-19 alle 13.20.59.png",
+                "file": "Programming languages/Java/Ereditarietà.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Screenshot 2024-03-19 alle 13.20.59.png"
+                "file": "Programming languages/Java/Ereditarietà.md"
               }
             }
           },
@@ -203,7 +184,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -224,9 +205,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "807a62fedbb80a98",
+  "active": "0aebe35f1fbb129a",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-21_MDP.md",
+    "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Flet-notes/2024-03-22_AE.md",
     "Files/Screenshot 2024-03-25 alle 21.16.02.png",
     "Files/Screenshot 2024-03-25 alle 21.14.58.png",
@@ -240,9 +224,7 @@
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "To-Do.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Java.md",
-    "Flet-notes/2024-03-21_MDP.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
     "Class/Architettura degli elaboratori/Matrici.md",
     "Flet-notes/2024-03-12_AE.md",
@@ -259,7 +241,6 @@
     "Files/Screenshot 2024-03-20 alle 19.29.48.png",
     "Files/Screenshot 2024-03-20 alle 19.19.27.png",
     "Files/Screenshot 2024-03-20 alle 19.07.46.png",
-    "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Files/Screenshot 2024-03-19 alle 12.40.53.png",
     "Files/Screenshot 2024-03-19 alle 10.32.45.png",
     "Files/Screenshot 2024-03-18 alle 17.40.20.png",

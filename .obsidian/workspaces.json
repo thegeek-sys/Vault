@@ -24,12 +24,12 @@
                 }
               },
               {
-                "id": "ad5e860d7a3de58f",
+                "id": "b5db72a48ee4c520",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-03-22.md",
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                     "mode": "source",
                     "source": false
                   }
@@ -56,21 +56,9 @@
                     "file": "Files/MIPS_Instruction_Set.pdf"
                   }
                 }
-              },
-              {
-                "id": "729e325da3287a48",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/System Calls.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -99,7 +87,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "path:\"Class/Architettura degli elaboratori/\" ",
+                    "query": "indirizzamento path:\"Class/Architettura degli elaboratori/\" ",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -120,8 +108,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273,
-        "collapsed": true
+        "width": 216.50390243530273
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -137,7 +124,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -154,7 +141,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -177,7 +164,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
                   }
                 }
               },
@@ -211,7 +198,7 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "e79f8dd36d46ba1d"
+      "active": "b5db72a48ee4c520"
     },
     "Java": {
       "main": {
@@ -596,5 +583,5 @@
       "active": "9da67dfcce4e8838"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }

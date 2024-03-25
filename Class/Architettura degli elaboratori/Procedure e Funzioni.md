@@ -8,12 +8,16 @@ Completed:
 >[!info] Index
 >- [[#Introduction|Introduction]]
 >- [[#Ingredienti|Ingredienti]]
+>- [[#Chiamate nidificate]]
+>	- [[#Esempio chiamate funzioni nidificate]]
+>- [[#Uso dello stack]]
+>	- [[#In una funzione]]
+>- [[#$fp e $sp]]
 
 ---
 ## Introduction
 Una **funzione** è un frammento di codice che riceve degli argomenti e calcola un risultato (utile per rendere il codice riusabile e modulare)
 
-![[Screenshot 2024-03-19 alle 13.20.59.png|500]]
 Una funzione (o procedura) in assembly:
 - ha un indirizzo di partenza
 - riceve uno o più argomenti
