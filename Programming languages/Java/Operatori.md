@@ -74,3 +74,22 @@ System.out.println(s1.equals(s3)); // false
 ## Shift
 - <<,  >>, >>>
 utili per i numeri binari: ogni shift a sinistra moltiplica per 2 (aggiungo uno 0 a destra in un numero binario)
+
+---
+## instanceof
+L’operatore `instanceof`, applicato a un oggetto e a un nome di classe, restituisce true se l’oggetto è un tipo o un sottotipo di quella classe
+
+Ad esempio:
+```java
+public class TestImpiegati {
+	public static void main(String[] args) {
+		Impiegato i1 = new ImpiegatoStipendiato("Mario", "imp1", 1500);
+		Impiegato i2 = new ImpegatoACottimo("Luigi", "imp2", 10, 50);
+
+		System.out.println(i1 instanceof Impiegato); // true
+		System.out.println(i1 instanceof ImpiegatoStipendiato); // true
+		System.out.println(i1 instanceof ImpiegatoACottimo); // false
+		System.out.println(i2 instanceof ImpiegatoACottimo); // true
+	}
+}
+```

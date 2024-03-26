@@ -2,6 +2,6 @@
   "minimumDepth": 2,
   "maximumDepth": 6,
   "listStyle": "bullet",
-  "useMarkdown": false,
+  "useMarkdown": true,
   "title": ">[!info] Index"
 }

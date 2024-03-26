@@ -3,7 +3,7 @@
   "showDeletePrompt": true,
   "saveOnSwitch": false,
   "saveOnChange": false,
-  "workspaceSettings": false,
+  "workspaceSettings": true,
   "systemDarkMode": false,
   "globalSettings": {
     "accentColor": "",
@@ -22,6 +22,6 @@
   "activeWorkspaceMobile": "",
   "reloadLivePreview": false,
   "workspaceSwitcherRibbon": false,
-  "modeSwitcherRibbon": false,
+  "modeSwitcherRibbon": true,
   "replaceNativeRibbon": false
 }

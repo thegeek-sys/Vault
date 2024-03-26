@@ -36,6 +36,24 @@ Il polimorfisrmo, come implementato in java, vede la JVM elaborare il **binding 
 Questo viene solitamente utilizzato dai linguaggi interpretati (come Python) e in Java viene utilizzato quando, attraverso il polimorfismo, utilizzo il costruttore di una sottoclasse del tipo di definizione oppure quando chiamo dei metodi
 
 ---
+## Conversione di tipo fra sottoclasse e superclasse
+Esiste un modo per fare casting su una gerarchia di figli.
+
+### Upcasting (implicito)
+Posso sempre convertire senza cast esplicito un sottotipo a un supertipo (upcasting), “restringendo” temporaneamente l’interfaccia dell’oggetto della superclasse
+```java
+ImpiegatoStipendiato is1 = new ImpiegatoStipendianto("Mario", "imp1", 1500);
+Impiegato i = is1;
+```
+
+### Downcasting (esplicito)
+A volte può essere necessario convertire un supertipo a un sottotipo (downcasting) ma richiede un cast esplicito
+```java
+ImpiegatoStipendiato is2 = (ImpiegatoStipendiato)i;
+```
+in questo caso `is2` manterrà comunque lo stipendio dato che quando ho definito i ho solo cambiato il riferimento in memoria (non lo ho ridefinito). Nel caso in cui invece definisco in origine un impiegato e faccio un casting esplicito a ImpiegatoStipendiato in questo caso lo stipendio sarà `null`
+
+---
 ## Esempio
 
 > [!hint]
