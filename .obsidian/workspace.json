@@ -27,26 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-03-26_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c6e00e2db64d6827",
+            "id": "140d99de19a12c0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
+                "file": "Flet-notes/2024-03-26_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
+                "file": "Flet-notes/2024-03-26_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md"
+                "file": "Flet-notes/2024-03-26_MDP.md"
               }
             }
           },
@@ -187,12 +187,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c6e00e2db64d6827",
+  "active": "219e285632cbd672",
   "lastOpenFiles": [
     "To-Do.md",
+    "Flet-notes/2024-03-26_MDP.md",
+    "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/UML.md",
@@ -226,7 +227,6 @@
     "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Funzioni",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
-    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
