@@ -5,6 +5,18 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Cosa si eredita?|Cosa si eredita?]]
+- [[#Classi astratte|Classi astratte]]
+- [[#this e super|this e super]]
+	- [[#this e super#Esempio|Esempio]]
+- [[#Overriding e Overloading|Overriding e Overloading]]
+- [[#Visibilità|Visibilità]]
+- [[#is-a vs. has-a|is-a vs. has-a]]
+- [[#Esempio: Impossible Mission|Esempio: Impossible Mission]]
+
+---
 ## Introduction
 L’**ereditarietà** è un concetto cardine della programmazione orientata agli oggetti. E’ una forma di riuso del software in cui una classe è creata:
 - “assorbendo” i membri di una classe esistente
