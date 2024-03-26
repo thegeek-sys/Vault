@@ -54,21 +54,9 @@
                 "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
-          },
-          {
-            "id": "833b494262c4ebfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Flet-notes/2024-03-26_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Flet-notes/2024-03-26_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md"
+                "file": "Flet-notes/2024-03-26_AE.md"
               }
             }
           },
@@ -208,15 +196,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "833b494262c4ebfb",
+  "active": "e79f8dd36d46ba1d",
   "lastOpenFiles": [
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Class/Architettura degli elaboratori/System Calls.md",
     "Programming languages/Java/Ereditarietà.md",
     "Flet-notes/2024-03-26_MDP.md",
     "index.md",
     "Class/Class.md",
     "Programming languages/Python/Files.md",
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Flet-notes/2024-03-26_AE.md",
     "To-Do.md",
     "Programming languages/Java/Java.md",
@@ -237,7 +226,6 @@
     "Files/Screenshot 2024-03-25 alle 21.16.02.png",
     "Files/Screenshot 2024-03-25 alle 21.14.58.png",
     "Files/MIPS_Instruction_Set.pdf",
-    "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
     "Files/Screenshot 2024-03-24 alle 23.31.45.png",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
