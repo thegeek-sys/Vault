@@ -1,0 +1,7 @@
+{
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "Flet-notes/"
+  ]
+}

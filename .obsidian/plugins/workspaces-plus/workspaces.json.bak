@@ -200,10 +200,7 @@
         }
       },
       "active": "e79f8dd36d46ba1d",
-      "mtime": "2024-03-26T16:50:05+01:00",
-      "workspaces-plus:settings-v1": {
-        "description": "AE"
-      }
+      "mtime": "2024-03-26T16:50:05+01:00"
     },
     "Java": {
       "main": {
@@ -411,17 +408,12 @@
           "audio-recorder:Start/stop recording": false,
           "random-note:Open random note": false,
           "table-editor-obsidian:Advanced Tables Toolbar": false,
-          "workspaces:Manage workspace layouts": false
+          "workspaces:Manage workspace layouts": false,
+          "omnisearch:Omnisearch": false
         }
       },
       "active": "8f475733472ddf28",
-      "mtime": "2024-03-26T16:54:15+01:00",
-      "workspaces-plus:settings-v1": {
-        "explorerFoldState": [
-          "Class/Architettura degli elaboratori",
-          "Programming languages"
-        ]
-      }
+      "mtime": "2024-03-26T16:49:53+01:00"
     },
     "Python": {
       "main": {
@@ -600,9 +592,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "9da67dfcce4e8838",
-      "workspaces-plus:settings-v1": {}
+      "active": "9da67dfcce4e8838"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }

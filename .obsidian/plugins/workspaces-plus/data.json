@@ -1,0 +1,27 @@
+{
+  "showInstructions": true,
+  "showDeletePrompt": true,
+  "saveOnSwitch": false,
+  "saveOnChange": false,
+  "workspaceSettings": false,
+  "systemDarkMode": false,
+  "globalSettings": {
+    "accentColor": "",
+    "cssTheme": "Obsidian Nord",
+    "baseFontSize": 17,
+    "enabledCssSnippets": [
+      "images_center"
+    ],
+    "newFileLocation": "current",
+    "alwaysUpdateLinks": true,
+    "userIgnoreFilters": [
+      "Flet-notes/"
+    ]
+  },
+  "activeWorkspaceDesktop": "Architettura degli elaboratori",
+  "activeWorkspaceMobile": "",
+  "reloadLivePreview": false,
+  "workspaceSwitcherRibbon": false,
+  "modeSwitcherRibbon": false,
+  "replaceNativeRibbon": false
+}
