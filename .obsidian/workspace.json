@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "443aab910f8e5173",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,43 +22,53 @@
             }
           },
           {
-            "id": "219e285632cbd672",
+            "id": "b5db72a48ee4c520",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "140d99de19a12c0a",
+            "id": "5c0755b0ed4eb130",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "92cec1b1bf23ad32",
+            "id": "e79f8dd36d46ba1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
+                "file": "Flet-notes/2024-03-26_AE.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "3e596c6986fc9e17",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -87,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "visibili path:\"Programming languages/Java/\"",
+                "query": "indirizzamento path:\"Class/Architettura degli elaboratori/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 216.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -125,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md"
+                "file": "index.md"
               }
             }
           },
@@ -178,7 +187,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -199,15 +208,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "219e285632cbd672",
+  "active": "5c0755b0ed4eb130",
   "lastOpenFiles": [
+    "Class/Class.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "index.md",
+    "Programming languages/Python/Files.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Flet-notes/2024-03-26_AE.md",
+    "To-Do.md",
+    "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Java.md",
-    "Flet-notes/2024-03-26_MDP.md",
-    "To-Do.md",
     "Untitled.canvas",
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/UML.md",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
@@ -235,9 +248,6 @@
     "Class/Architettura degli elaboratori/Matrici.md",
     "Flet-notes/2024-03-12_AE.md",
     "Flet-notes/2024-03-19_AE.md",
-    "Funzioni/procedure.md",
-    "Class/Class.md",
-    "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",
