@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 58.62865947611711,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -60,25 +59,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "871b59e5f1933225",
-        "type": "tabs",
-        "dimension": 41.3713405238829,
-        "children": [
-          {
-            "id": "219e285632cbd672",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -197,11 +177,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,13 +202,13 @@
   "lastOpenFiles": [
     "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Classe Object.md",
+    "To-Do.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Operatori.md",
     "Index.md",
     "Programming languages/Programming languages.md",
-    "To-Do.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Flet-notes/2024-03-26_AE.md",
     "Programming languages/Java/Primitivi.md",
