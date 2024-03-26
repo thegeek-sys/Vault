@@ -57,9 +57,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1a792ffa1fbe50e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "871b59e5f1933225",
@@ -128,8 +140,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -145,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md"
+                "file": "Index.md"
               }
             }
           },
@@ -219,11 +230,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "219e285632cbd672",
+  "active": "1a792ffa1fbe50e1",
   "lastOpenFiles": [
-    "Programming languages/Java/Polimorfismo.md",
+    "Programming languages/Programming languages.md",
+    "To-Do.md",
+    "Index.md",
     "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Operatori.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Flet-notes/2024-03-26_AE.md",
@@ -231,10 +245,8 @@
     "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/System Calls.md",
-    "index.md",
     "Class/Class.md",
     "Programming languages/Python/Files.md",
-    "To-Do.md",
     "Untitled.canvas",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/UML.md",
@@ -258,7 +270,6 @@
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",

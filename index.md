@@ -1,4 +1,4 @@
-[[Class]]
-[[Programming languages]]
+- [[Architettura degli elaboratori]]
+- [[Java]]
 
 [[To-Do]]
