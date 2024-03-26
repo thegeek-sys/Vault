@@ -34,3 +34,80 @@ Questo viene fatto, in Java così negli altri linguaggi compilati senza eseguire
 ### Dinamico
 Il polimorfisrmo, come implementato in java, vede la JVM elaborare il **binding dinamico**, poiché l’associazione tra una variabile di riferimento e un metodo da chiamare viene stabilita a tempo di esecuzione.
 Questo viene solitamente utilizzato dai linguaggi interpretati (come Python) e in Java viene utilizzato quando, attraverso il polimorfismo, utilizzo il costruttore di una sottoclasse del tipo di definizione oppure quando chiamo dei metodi
+
+---
+## Esempio
+
+> [!hint]
+> `@Override` serve a noi programmatori per chiedere al compilatore se esiste una classe superiore con uno stesso metodo. Se ciò non accade mi viene restituito un errore, e vuol dire quindi che non sto facendo alcun tipo di overriding
+> 
+> Posso anche chiamare un metodo di un supercostruttore attraverso `super.metodo()` all’interno di un overriding in una sottoclasse. In questo caso il binding viene fatto in modo dinamico (non lo riesco a capire leggendo direttamente il codice ma devo chiamare il costruttore superiore)
+
+```java
+'StringaHackerata.java'
+import java.util.Random;
+
+public class StringaHackerata {
+	private String s;
+	
+	public StringaHackerata(String s) {
+		this.s = s;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		Random random = new Random();
+		
+		for (int k=0; k<s.lenght(); k++) {
+			char c = s.charAt(k);
+			if (random.nextBoolean()) c = Character.toUpperCase(c);
+			else c = Character.toLowerCase(c);
+			
+			sb.append(c)
+		}
+		
+		return sb.toString();
+	}
+}
+
+
+'StringaHackerataConStriscia.java'
+import java.util.Random;
+
+public class StringaHackerataConStriscia extends StringaHackerata {
+	final public static int MAX_LUNGHEZZA = 10;
+	
+	public StringaHackerataConStriscia(String s) {
+		super(s);
+	}
+	
+	public String getStriscia() {
+		Random random = new Random();
+		int len = random.nextInt(MAX_LUNGHEZZA);
+		StringBuffer sb = new StringBuffer();
+		
+		// -=-=-=-
+		for (int k=0; k<len; k++) sb.append(k%2 == 0 ? '-' : '=');
+		
+		return sb.toString();
+	}
+	
+	@Override
+	public String toString() {
+		String striscia = getStriscia();
+		// chiamo il metodo toString del supercostruttore
+		return strisciaè+" "+super.toString()+" "+striscia;
+	}
+}
+
+'TestStringa.java'
+public static void main(String[] args) {
+	StringaHackerata s1 = new StringaHackerata("drago di java")
+	StringaHackerataConStriscia s2 = new StringaHackerataConStriscia("")
+}
+```
+
+> [!info]
+> Quando chiamo il print su un oggetto in automatico viene chiamato il relativo `.toString()`
+

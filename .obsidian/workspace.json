@@ -6,6 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 58.62865947611711,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -27,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Polimorfismo.md",
+                "file": "Programming languages/Java/Operatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,6 +52,7 @@
       {
         "id": "871b59e5f1933225",
         "type": "tabs",
+        "dimension": 41.3713405238829,
         "children": [
           {
             "id": "219e285632cbd672",
@@ -93,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "visibili path:\"Programming languages/Java/\"",
+                "query": "operatore path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,12 +112,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -131,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Polimorfismo.md",
+                "file": "Programming languages/Java/Operatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Polimorfismo.md",
+                "file": "Programming languages/Java/Operatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Polimorfismo.md"
+                "file": "Programming languages/Java/Operatori.md"
               }
             }
           },
@@ -207,8 +209,8 @@
   },
   "active": "8f475733472ddf28",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Polimorfismo.md",
+    "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Primitivi.md",
     "Flet-notes/2024-03-26_AE.md",
