@@ -5,6 +5,17 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [Introduction](#Introduction)
+- [Binding](#Binding)
+	- [Statico](#Statico)
+	- [Dinamico](#Dinamico)
+- [Conversione di tipo fra sottoclasse e superclasse](#Conversione%20di%20tipo%20fra%20sottoclasse%20e%20superclasse)
+	- [Upcasting (implicito)](#Upcasting%20(implicito))
+	- [Downcasting (esplicito)](#Downcasting%20(esplicito))
+- [Esempio](#Esempio)
+
+---
 ## Introduction
 Il polimorfismo è uno dei punti cardine della programmazione orientata agli oggetti oltre all’ereditarietà. Questo dunque ci permette di utilizzare un metodo senza dover conosce il tipo esatto (la classe) su cui si invoca il metodo
 

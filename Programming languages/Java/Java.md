@@ -26,6 +26,7 @@
 - [[Classi Wrapper]]
 - [[Ereditarietà]]
 - [[Polimorfismo]]
+- [[Classe Object]]
 - 
 
 ##### Libraries
