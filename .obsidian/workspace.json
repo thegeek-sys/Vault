@@ -34,18 +34,6 @@
             }
           },
           {
-            "id": "5c0755b0ed4eb130",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e79f8dd36d46ba1d",
             "type": "leaf",
             "state": {
@@ -66,9 +54,21 @@
                 "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
+          },
+          {
+            "id": "833b494262c4ebfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Class/Architettura degli elaboratori/System Calls.md"
               }
             }
           },
@@ -208,17 +208,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "5c0755b0ed4eb130",
+  "active": "833b494262c4ebfb",
   "lastOpenFiles": [
-    "Class/Class.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Programming languages/Java/Ereditarietà.md",
+    "Flet-notes/2024-03-26_MDP.md",
     "index.md",
+    "Class/Class.md",
     "Programming languages/Python/Files.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Flet-notes/2024-03-26_AE.md",
     "To-Do.md",
-    "Flet-notes/2024-03-26_MDP.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Java.md",
     "Untitled.canvas",
     "Programming languages/Java/Classi Wrapper.md",

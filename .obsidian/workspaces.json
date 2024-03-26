@@ -41,7 +41,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Flet-notes/2024-03-26_AE.md",
                     "mode": "source",
                     "source": false
                   }
@@ -57,8 +57,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "vertical"
@@ -124,7 +123,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -141,7 +140,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -164,7 +163,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -198,8 +197,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "e79f8dd36d46ba1d",
-      "mtime": "2024-03-26T08:52:27+01:00"
+      "active": "443aab910f8e5173",
+      "mtime": "2024-03-26T12:44:34+01:00"
     },
     "Java": {
       "main": {
@@ -261,7 +260,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -328,7 +327,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-03-26_MDP.md",
+                    "file": "Programming languages/Java/Ereditarietà.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -345,7 +344,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-03-26_MDP.md",
+                    "file": "Programming languages/Java/Ereditarietà.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -368,7 +367,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-03-26_MDP.md"
+                    "file": "Programming languages/Java/Ereditarietà.md"
                   }
                 }
               },
@@ -402,8 +401,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "219e285632cbd672",
-      "mtime": "2024-03-26T12:16:51+01:00"
+      "active": "92cec1b1bf23ad32",
+      "mtime": "2024-03-26T12:45:33+01:00"
     },
     "Python": {
       "main": {
