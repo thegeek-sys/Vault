@@ -57,7 +57,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -123,7 +124,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Flet-notes/2024-03-26_AE.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -140,7 +141,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Flet-notes/2024-03-26_AE.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -163,7 +164,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Flet-notes/2024-03-26_AE.md"
                   }
                 }
               },
@@ -197,8 +198,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "443aab910f8e5173",
-      "mtime": "2024-03-26T12:44:34+01:00"
+      "active": "e79f8dd36d46ba1d",
+      "mtime": "2024-03-26T13:26:37+01:00"
     },
     "Java": {
       "main": {
@@ -584,5 +585,5 @@
       "active": "9da67dfcce4e8838"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }

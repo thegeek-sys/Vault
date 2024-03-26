@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "443aab910f8e5173",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,41 +22,55 @@
             }
           },
           {
-            "id": "b5db72a48ee4c520",
+            "id": "219e285632cbd672",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                "file": "Flet-notes/2024-03-26_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e79f8dd36d46ba1d",
+            "id": "140d99de19a12c0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-03-26_AE.md",
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3e596c6986fc9e17",
+            "id": "92cec1b1bf23ad32",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
+                "file": "Programming languages/Java/Ereditarietà.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "56b31e147d8437aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Primitivi.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "indirizzamento path:\"Class/Architettura degli elaboratori/\" ",
+                "query": "visibili path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.50390243530273
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -122,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-26_AE.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-26_AE.md",
+                "file": "Programming languages/Java/Primitivi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-26_AE.md"
+                "file": "Programming languages/Java/Primitivi.md"
               }
             }
           },
@@ -175,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -196,19 +211,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e79f8dd36d46ba1d",
+  "active": "56b31e147d8437aa",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Ereditarietà.md",
+    "Flet-notes/2024-03-26_AE.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/System Calls.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Flet-notes/2024-03-26_MDP.md",
     "index.md",
     "Class/Class.md",
     "Programming languages/Python/Files.md",
-    "Flet-notes/2024-03-26_AE.md",
     "To-Do.md",
-    "Programming languages/Java/Java.md",
     "Untitled.canvas",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/UML.md",
