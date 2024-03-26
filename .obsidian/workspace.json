@@ -25,15 +25,8 @@
             "id": "219e285632cbd672",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -116,7 +109,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +125,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,9 +146,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Untitled.canvas"
-              }
+              "state": {}
             }
           },
           {
@@ -192,8 +181,8 @@
   },
   "active": "219e285632cbd672",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-26_MDP.md",
     "Untitled.canvas",
+    "Flet-notes/2024-03-26_MDP.md",
     "To-Do.md",
     "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
