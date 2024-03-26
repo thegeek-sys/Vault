@@ -25,11 +25,14 @@
             "id": "219e285632cbd672",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               }
             }
           },
@@ -113,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Untitled.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md"
+                "file": "Untitled.canvas"
               }
             }
           },
@@ -189,8 +192,9 @@
   },
   "active": "219e285632cbd672",
   "lastOpenFiles": [
-    "To-Do.md",
     "Flet-notes/2024-03-26_MDP.md",
+    "Untitled.canvas",
+    "To-Do.md",
     "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -226,7 +230,6 @@
     "Class/Class.md",
     "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Funzioni",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
