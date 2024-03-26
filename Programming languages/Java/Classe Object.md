@@ -21,13 +21,13 @@ public class LaMiaClasse extends Object {}
 ---
 ## Metodi principali
 
-|Metodo|Descrizione|
-|---|---|
-|`Object clone()`|Restituisce una copia dell’oggetto|
-|`boolean eqauls(Object o)`|Confronta l’oggetto con quello in input|
-|`Class<? extends Object> getClass()`|Restituisce un oggetto di tipo Class che contiene informazioni sul tipo dell’oggetto|
-|`int hashCode()`|Restituisce un intero associato all’oggetto (per es. ai fini della memorizzazione in strutture dati, hashtable, ecc.)|
-|`String toString()`|Restituisce una rappresentazion|
+| Metodo                               | Descrizione                                                                                                           |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| `Object clone()`                     | Restituisce una copia dell’oggetto                                                                                    |
+| `boolean eqauls(Object o)`           | Confronta l’oggetto con quello in input                                                                               |
+| `Class<? extends Object> getClass()` | Restituisce un oggetto di tipo Class che contiene informazioni sul tipo dell’oggetto                                  |
+| `int hashCode()`                     | Restituisce un intero associato all’oggetto (per es. ai fini della memorizzazione in strutture dati, hashtable, ecc.) |
+| `String toString()`                  | Restituisce una rappresentazion                                                                                       |
 https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 
 ---

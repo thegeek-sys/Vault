@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Programming languages/Java/Classe Object.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md",
+                "file": "Programming languages/Java/Classe Object.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-03-26_MDP.md"
+                "file": "Programming languages/Java/Classe Object.md"
               }
             }
           },
@@ -201,8 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,11 +217,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "219e285632cbd672",
+  "active": "b8ca46db9a8d5c08",
   "lastOpenFiles": [
+    "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Polimorfismo.md",
-    "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Operatori.md",
