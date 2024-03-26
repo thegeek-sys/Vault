@@ -77,7 +77,7 @@ bar:
 	...
 	jr $ra  # tornando indietro mi dovrò ricordare di 
 			# svuotare lo stack e rimettere i valori 
-			# precedentri (come $ra, $s0, $s1, $s2)
+			# precedenti (come $ra, $s0, $s1, $s2)
 ```
 
 ---

@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Ereditarietà.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Programming languages/Java/Ereditarietà.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Programming languages/Java/Ereditarietà.md"
               }
             }
           },
@@ -187,11 +187,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "219e285632cbd672",
+  "active": "c6e00e2db64d6827",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
     "To-Do.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Ereditarietà.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/UML.md",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
@@ -203,7 +205,6 @@
     "Flet-notes/2024-03-21_MDP.md",
     "Programming languages/Java/Campi.md",
     "Files/Screenshot 2024-03-25 alle 22.06.56.png",
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
     "Flet-notes/2024-03-22_AE.md",
     "Files/Screenshot 2024-03-25 alle 21.16.02.png",
@@ -211,7 +212,6 @@
     "Files/MIPS_Instruction_Set.pdf",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-03-24 alle 23.31.45.png",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",

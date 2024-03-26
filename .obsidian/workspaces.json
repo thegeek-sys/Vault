@@ -58,7 +58,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -124,7 +124,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                    "file": "To-Do.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                    "file": "To-Do.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -164,7 +164,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
+                    "file": "To-Do.md"
                   }
                 }
               },
@@ -198,7 +198,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "b5db72a48ee4c520"
+      "active": "e79f8dd36d46ba1d",
+      "mtime": "2024-03-26T08:52:27+01:00"
     },
     "Java": {
       "main": {
@@ -224,7 +225,7 @@
                 }
               },
               {
-                "id": "648cc3a5831147f0",
+                "id": "219e285632cbd672",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -236,19 +237,7 @@
                 }
               },
               {
-                "id": "f3a57482a0909128",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-21_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "0aebe35f1fbb129a",
+                "id": "c6e00e2db64d6827",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -260,7 +249,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -289,7 +278,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "public path:\"Programming languages/Java/\"",
+                    "query": "visibili path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -401,7 +390,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "0aebe35f1fbb129a"
+      "active": "c6e00e2db64d6827",
+      "mtime": "2024-03-26T08:50:44+01:00"
     },
     "Python": {
       "main": {
