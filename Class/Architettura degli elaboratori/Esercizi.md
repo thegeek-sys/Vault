@@ -36,3 +36,9 @@ Sia `matrice2D` un vettore 2D di 20x20 word. Scrivere le istruzioni in codice MI
 ### ES.2
 Hello World!
 [link](file:////Users/fla/Documents/uni/AE/mips7.asm)
+
+---
+## 31/03
+### ES.1
+Scrivere un programma in assembly che, data una matrice bidimensionale quadrata `MATRIX` di word in memoria, di lato `N`, restituisca in `$s0` il risultato della somma dei valori sulle diagonali principale e secondaria. Aggiungere inoltre le istruzioni di stampa e di uscita al programma.
+[link](file:////Users/fla/Documents/uni/AE/mips8.asm)
