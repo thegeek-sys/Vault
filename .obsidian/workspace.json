@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "54a8c661492c8c99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Ricorsione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "fe24ca657a07ef71",
             "type": "leaf",
             "state": {
@@ -58,7 +70,25 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "459484feda818d63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "921f0220a64ccb8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-03-26_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "metodo astratto",
+                "query": "Python/",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +134,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -125,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
+                "file": "Class/Architettura degli elaboratori/Ricorsione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
+                "file": "Class/Architettura degli elaboratori/Ricorsione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md"
+                "file": "Class/Architettura degli elaboratori/Ricorsione.md"
               }
             }
           },
@@ -199,46 +230,46 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c8363eb7b8a438da",
+  "active": "54a8c661492c8c99",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Flet-notes/2024-03-26_AE.md",
+    "Class/Architettura degli elaboratori/Ricorsione.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Python/Albero binario.md",
+    "Programming languages/Python/Filesystem come albero.md",
+    "Programming languages/Python/Ricorsione.md",
+    "Class/Class.md",
+    "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Classe Object.md",
-    "Class/Class.md",
     "Programming languages/Java/Methods.md",
     "Programming languages/Java/Campi.md",
     "Flet-notes/2024-03-26_MDP.md",
     "Programming languages/Java/Operatori.md",
     "Programming languages/Java/Enumerazioni.md",
     "To-Do.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
     "Index.md",
     "Programming languages/Programming languages.md",
-    "Flet-notes/2024-03-26_AE.md",
     "Programming languages/Java/Primitivi.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Programming languages/Python/Files.md",
     "Untitled.canvas",
     "Programming languages/Java/Classi Wrapper.md",
-    "Programming languages/Java/UML.md",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",
     "Files/Screenshot 2024-03-25 alle 22.47.55.png",
     "Files/Screenshot 2024-03-25 alle 22.46.43.png",
     "Files/Screenshot 2024-03-25 alle 22.39.43.png",
-    "Programming languages/Java/Incapsulamento.md",
-    "Flet-notes/2024-03-21_MDP.md",
     "Files/Screenshot 2024-03-25 alle 22.06.56.png",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
-    "Flet-notes/2024-03-22_AE.md",
     "Files/Screenshot 2024-03-25 alle 21.16.02.png",
     "Files/Screenshot 2024-03-25 alle 21.14.58.png",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-03-24 alle 23.31.45.png",
-    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",

@@ -14,6 +14,7 @@
 - [[System Calls]]
 - [[Procedure e Funzioni]]
 - [[Limitazioni spazio istruzioni]]
+- [[Class/Architettura degli elaboratori/Ricorsione|Ricorsione]]
 - 
 
 - [[Esercizi]]

@@ -2,7 +2,7 @@
 Created: 2023-12-11
 Programming language: "[[Python]]"
 Related:
-  - "[[Ricorsione]]"
+  - "[[Programming languages/Python/Ricorsione]]"
 ---
 ---
 ## Introdution

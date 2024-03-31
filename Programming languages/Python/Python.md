@@ -51,7 +51,7 @@
 ##### Advanced
 - [[Pack and Unpack operator]]
 - [[Lambda]]
-- [[Ricorsione]]
+- [[Programming languages/Python/Ricorsione|Ricorsione]]
 - [[Albero binario]]
 - [[Filesystem come albero]]
 - 
