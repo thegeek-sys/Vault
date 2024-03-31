@@ -87,3 +87,26 @@ public class Punto {
 	}
 }
 ```
+
+### Esempio con instanceof e downcasting
+Implementiamo un metodo `equals` di confronto tra un oggetto di tipo `SitoWeb` e un altro oggetto qualsiasi
+```java
+public class SitoWeb {
+	public String url;
+	
+	public SitoWeb(String url) {
+		this.url = url;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		// uso instanceof per garantire che equals funzioni
+		// anche sulle sottoclassi (in altre situazioni, è
+		// più sensato l'utilizzo di getClass())
+		if (!(o instanceof SitoWeb)) return false;
+
+		// downcasting
+		return url.equals(((SitoWeb)o).url);
+	}
+}
+```

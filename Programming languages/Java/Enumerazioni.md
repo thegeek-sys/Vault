@@ -113,3 +113,22 @@ switch(seme) {
 	case PICCHE: System.out.println("Piove"); break;
 }
 ```
+
+---
+## Enumerazioni e Object
+Una enumerazione ha tante istanze quante sono le costanti enumerative a suo interno. Non è possibile infatti costruire altre istanze, ma possono essere costruite le istanze “costanti”:
+- si definisce un costruttore (non pubblico, ma con visibilità di default)
+- si costruisce ciascuna costante (un oggetto separato per ognuna)
+- si possono definire altri metodi di accesso o modifica dei campi
+
+Le classi enumerative estendono la classe `Enum`, da cui ereditano i metodi `toString` e `clone`:
+- `toString()` → restituisce il nome della costante
+- `clone()` → restituisce l’oggetto enumerativo stesso senza farne una copia (che non è possibile fare visto che sono costanti)
+
+`Enum` a sua volta estende `Object`, per cui il metodo `equals` restituisce true solo se le costanti enumerative sono identiche
+
+```java
+public enum TipoDiMoneta {
+	
+}
+```

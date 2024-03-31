@@ -24,6 +24,30 @@
                 }
               },
               {
+                "id": "fe24ca657a07ef71",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c8363eb7b8a438da",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "140d99de19a12c0a",
                 "type": "leaf",
                 "state": {
@@ -35,7 +59,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -85,7 +110,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -101,7 +127,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -118,7 +144,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -141,7 +167,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
                   }
                 }
               },
@@ -175,8 +201,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a957c411ca86058e",
-      "mtime": "2024-03-27T22:10:13+01:00",
+      "active": "fe24ca657a07ef71",
+      "mtime": "2024-03-31T21:57:18+02:00",
       "workspaces-plus:settings-v1": {
         "description": "AE",
         "mode": null,
@@ -588,5 +614,5 @@
       "workspaces-plus:settings-v1": {}
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
