@@ -9,6 +9,9 @@ Completed:
 - [[#Introduzione|Introduzione]]
 - [[#Struttura|Struttura]]
 - [[#Metodi statici]]
+	- [[#Perché il metodo main() è dichiarato static?]]
+- [[#Metodi final]]
+	- [[#Metodi final#Esempio|Esempio]]
 - [[#Esempi|Esempi]]
 ---
 ## Introduzione
@@ -66,6 +69,43 @@ public class ContaIstanze {
 ### Perché il metodo main() è dichiarato static?
 La Java Virtual Machine invoca il metodo `main` della classe specificata ancora prima di aver creato qualsiasi oggetto.
 La classe potrebbe non avere un costruttore senza parametri con cui creare l’oggetto
+
+---
+## Metodi final
+La parola chiave `final` ci permette di impedire ad altri programmatori di:
+- creare sottoclassi (se specificato di fronte a class)
+- reimplementare (= sovrascrivere) certi metodi (di fronte all’intestazione del metodo)
+
+### Esempio
+Supponete di creare un conto corrente “sicuro” (accessibile solo tramite la giusta password)
+```java
+public class ContoCorrenteSicuro extends ContoCorrente {
+	public boolean controllaPassword(String password) {
+		// verifica della password
+		// ...
+	}
+}
+```
+
+Tuttavia, estendendo la classe, possiamo “gabbare” l’utente che la userà e  accedere noi al conto
+```java
+public class ContoCorrenteSicuroFidatiDiMe extends ContoCorrenteSicuro {
+	public boolean controllaPassword(String password) {
+		return true;
+	}
+}
+```
+
+Possiamo evitare questo problema specificando il metodo final
+```java
+public class ContoCorrenteSicuro extends ContoCorrente {
+	// nessuno può sovrascrivere questo metodo
+	public final boolean controllaPassword(String password) {
+		// verifica della password
+		// ...
+	}
+}
+```
 
 ---
 ## Esempi

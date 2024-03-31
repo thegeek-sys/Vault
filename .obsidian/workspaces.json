@@ -221,7 +221,6 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
-            "dimension": 58.62865947611711,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -238,24 +237,36 @@
                 }
               },
               {
-                "id": "8f475733472ddf28",
+                "id": "4827519d29a57cd0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Operatori.md",
+                    "file": "Programming languages/Java/Ereditarietà.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "140d99de19a12c0a",
+                "id": "0fd57bd080e395dd",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Programming languages/Java/Polimorfismo.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "4abe1203b91e5ef3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Classe Object.md",
                     "mode": "source",
                     "source": false
                   }
@@ -263,25 +274,6 @@
               }
             ],
             "currentTab": 1
-          },
-          {
-            "id": "871b59e5f1933225",
-            "type": "tabs",
-            "dimension": 41.3713405238829,
-            "children": [
-              {
-                "id": "219e285632cbd672",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-26_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
           }
         ],
         "direction": "vertical"
@@ -310,7 +302,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "operatore path:\"Programming languages/Java/\"",
+                    "query": "abstract path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -327,8 +319,7 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
@@ -348,7 +339,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Operatori.md",
+                    "file": "Programming languages/Java/Ereditarietà.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -365,7 +356,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Operatori.md",
+                    "file": "Programming languages/Java/Ereditarietà.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -388,7 +379,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Operatori.md"
+                    "file": "Programming languages/Java/Ereditarietà.md"
                   }
                 }
               },
@@ -422,11 +413,10 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "8f475733472ddf28",
-      "mtime": "2024-03-27T22:10:21+01:00",
+      "active": "4827519d29a57cd0",
+      "mtime": "2024-03-31T22:39:35+02:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
-          "Class",
           "Class/Architettura degli elaboratori",
           "Programming languages"
         ],
@@ -614,5 +604,5 @@
       "workspaces-plus:settings-v1": {}
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
