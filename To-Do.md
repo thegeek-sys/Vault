@@ -9,6 +9,8 @@
 - [x] finire package animali
 - [ ] aumentare visibilità di un metodo
 - [ ] disegnare UML slide 20 ereditarietà
+- [ ] chiedere come mai valore di TipoDiMoneta è solamente private mentre massa e raggio final (slide 28-29)
+- [ ] chiedere come mai getMassa e getRaggio sono private
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)

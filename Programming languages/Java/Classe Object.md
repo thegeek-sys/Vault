@@ -5,6 +5,16 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [Introduction](#Introduction)
+- [Metodi principali](#Metodi%20principali)
+- [Sovrascrivere il metodo toString](#Sovrascrivere%20il%20metodo%20toString)
+	- [Esempio](#Esempio)
+- [Sovrascrivere il metodo equals](#Sovrascrivere%20il%20metodo%20equals)
+	- [Esempio](#Esempio)
+	- [Esempio con instanceof e downcasting](#Esempio%20con%20instanceof%20e%20downcasting)
+
+---
 ## Introduction
 Tutte le classi in Java ereditano direttamente o indirettamente dalla classe **Object**, con tutti i relativi 11 metodi
 

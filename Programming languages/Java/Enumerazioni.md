@@ -12,6 +12,8 @@ Completed:
 - [[#values() e valueOf()|values() e valueOf()]]
 	- [[#values() e valueOf()#Esempio|Esempio]]
 - [[#Enumerazioni e switch|Enumerazioni e switch]]
+- [[#Enumerazioni e Object]]
+	- [[#Enumerazioni e Object#Esempio|Esempio]]
 ---
 ## Introduction
 Spesso è utile definire dei tipi (detti enumerazioni) i cui valori possono essere scelti tra un insieme predefinito di identificatori univoci (ogni identificatore corrisponde a una costante implicitamente static).
@@ -66,6 +68,7 @@ public enum Mese {
 	LUG(7), AGO(8), SET(9), OTT(10), NOV(11), DIC(12);
 	private int mese;
 	
+	// costruttore con visibilità di default
 	Mese(int mese) { this.mese = mese; }
 	public int toInt() { return mese; }
 }
@@ -129,6 +132,48 @@ Le classi enumerative estendono la classe `Enum`, da cui ereditano i metodi `toS
 
 ```java
 public enum TipoDiMoneta {
+	// le costanti enumerative, costruite in modo appropriato
+	CENT(0.01), CINQUE_CENT(0.05), DIECI_CENT(0.10), VENTI_CENT(0.20),
+	CINQUANTA_CENT(0.50), EURO(1.00), DUE_EURO(2.00);
 	
+	// valore numerico della costante
+	private double valore;
+	
+	// costruttore con visibilità di default
+	TipoDiMoneta(double valore) { this.valore = valore; }
+	
+	// meotodo di accesso al valore
+	public double getValore() { return valore; }
+}
+```
+
+### Esempio
+```java
+public enum Pianeta {
+	MERCURIO (3.303e+23, 2.4397e6),   VENERE   (4.869e+24, 6.0518e6),
+	TERRA    (5.976e+24, 6.37814e6),  MARTE    (6.421e+23, 3.3972e6),
+	GIOVE    (1.9e+27,   7.1492e7),   SATURNO  (5.688e+26, 6.0268e7),
+	URANO    (8.686e+25, 2.5559e7),   NETTUNO  (1.024e+26, 2.4746e7);
+	
+	// costante di gravitazione universale
+	public static final double G = 6.67300E-11;
+	// massa in kg
+	private final double massa;
+	// raggio in metri
+	private final double raggio;
+	
+	Pianeta(double massa, double raggio) {
+		this.massa = massa;
+		this.raggio = raggio;
+	}
+	
+	private double getMassa() { return massa; }
+	private double getRaggio() { return raggio; }
+	public double getGravitaDiSuperficie() {
+		return G * massa / (raggio * raggio);
+	}
+	public double getPesoDiSuperficie(double altraMassa) {
+		return altraMassa * getGravitaDiSuperficie();	
+	}
 }
 ```
