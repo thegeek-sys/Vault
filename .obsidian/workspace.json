@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "a957c411ca86058e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,24 +22,24 @@
             }
           },
           {
-            "id": "a957c411ca86058e",
+            "id": "fe24ca657a07ef71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Polimorfismo.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b8ca46db9a8d5c08",
+            "id": "c8363eb7b8a438da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "operatore path:\"Programming languages/Java/\"",
+                "query": "metodo astratto",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -124,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md"
+                "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
               }
             }
           },
@@ -198,23 +199,25 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b8ca46db9a8d5c08",
+  "active": "fe24ca657a07ef71",
   "lastOpenFiles": [
-    "Flet-notes/2024-03-26_MDP.md",
-    "Programming languages/Java/Classe Object.md",
-    "To-Do.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
+    "Programming languages/Java/Operatori.md",
+    "Class/Class.md",
     "Programming languages/Java/Polimorfismo.md",
+    "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Operatori.md",
+    "Programming languages/Java/Classe Object.md",
+    "Flet-notes/2024-03-26_MDP.md",
+    "To-Do.md",
     "Index.md",
     "Programming languages/Programming languages.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Flet-notes/2024-03-26_AE.md",
     "Programming languages/Java/Primitivi.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/System Calls.md",
-    "Class/Class.md",
     "Programming languages/Python/Files.md",
     "Untitled.canvas",
     "Programming languages/Java/Classi Wrapper.md",
@@ -233,11 +236,9 @@
     "Files/Screenshot 2024-03-25 alle 21.16.02.png",
     "Files/Screenshot 2024-03-25 alle 21.14.58.png",
     "Files/MIPS_Instruction_Set.pdf",
-    "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
     "Files/Screenshot 2024-03-24 alle 23.31.45.png",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",

@@ -10,7 +10,7 @@
             "type": "tabs",
             "children": [
               {
-                "id": "443aab910f8e5173",
+                "id": "a957c411ca86058e",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
@@ -24,41 +24,18 @@
                 }
               },
               {
-                "id": "b5db72a48ee4c520",
+                "id": "140d99de19a12c0a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                    "file": "To-Do.md",
                     "mode": "source",
                     "source": false
-                  }
-                }
-              },
-              {
-                "id": "e79f8dd36d46ba1d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-03-26_AE.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3e596c6986fc9e17",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Files/MIPS_Instruction_Set.pdf"
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -87,7 +64,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "indirizzamento path:\"Class/Architettura degli elaboratori/\" ",
+                    "query": "metodo astratto",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -108,7 +85,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -124,7 +101,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -141,7 +118,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -164,7 +141,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Procedure e Funzioni.md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -198,12 +175,13 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "b5db72a48ee4c520",
-      "mtime": "2024-03-26T17:04:41+01:00",
+      "active": "a957c411ca86058e",
+      "mtime": "2024-03-27T22:10:13+01:00",
       "workspaces-plus:settings-v1": {
         "description": "AE",
         "mode": null,
         "explorerFoldState": [
+          "Class",
           "Class/Architettura degli elaboratori",
           "Programming languages"
         ]
@@ -419,9 +397,10 @@
         }
       },
       "active": "8f475733472ddf28",
-      "mtime": "2024-03-26T16:54:15+01:00",
+      "mtime": "2024-03-27T22:10:21+01:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
+          "Class",
           "Class/Architettura degli elaboratori",
           "Programming languages"
         ],
