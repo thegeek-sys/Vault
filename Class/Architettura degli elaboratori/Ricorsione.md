@@ -5,6 +5,11 @@ Related:
 Completed:
 ---
 ---
+>[!info] Index
+>- [Introduction](#Introduction)
+>- [Fattoriale ricorsivo](#Fattoriale%20ricorsivo)
+
+---
 ## Introduction
 La ricorsione si può utilizzare se esiste una soluzione conosciuta per lo stesso problema di “piccole” dimensioni (da questa ricaviamo il caso base della funzione) e se esiste un modo di ottenere la soluzione di un problema di dimensione maggiore a partire dalla soluzione dello stesso problema di dimensione minore; da questa seconda sefinizione ricaviamo il caso ricorsivo, che è formato da 3 parti:
 - riduzione del problema in problemi “più piccoli”
@@ -45,3 +50,7 @@ factorial:
 		addi $v0,$zero,1  # 0! = 1! = 1
 		jr $ra
 ```
+
+> [!hint]
+> se la ricorsione è multipla, un contatore non è sufficiente per ricostruire la struttura delle chiamate. Può essere necessario usare uno stack per simulare la gestione corretta delle chiamate
+
