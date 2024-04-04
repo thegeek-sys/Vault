@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-04-04_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-04-04_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Flet-notes/2024-04-04_MDP.md"
               }
             }
           },
@@ -187,10 +187,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d2cac6488958348a",
+  "active": "638bcd4718a9ac7c",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
+    "To-Do.md",
     "Flet-notes/2024-04-04_MDP.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Programming languages.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Ereditarietà.md",
@@ -202,7 +203,6 @@
     "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
-    "To-Do.md",
     "Flet-notes/2024-03-26_AE.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Albero binario.md",
