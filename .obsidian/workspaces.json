@@ -237,19 +237,7 @@
                 }
               },
               {
-                "id": "4827519d29a57cd0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Ereditarietà.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "0fd57bd080e395dd",
+                "id": "16415cd15f4406b0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -261,19 +249,31 @@
                 }
               },
               {
-                "id": "4abe1203b91e5ef3",
+                "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Classe Object.md",
+                    "file": "To-Do.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "638bcd4718a9ac7c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-04-04_MDP.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -323,7 +323,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -339,7 +340,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Ereditarietà.md",
+                    "file": "Flet-notes/2024-04-04_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -356,7 +357,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Ereditarietà.md",
+                    "file": "Flet-notes/2024-04-04_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -379,7 +380,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Ereditarietà.md"
+                    "file": "Flet-notes/2024-04-04_MDP.md"
                   }
                 }
               },
@@ -413,12 +414,11 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "4827519d29a57cd0",
-      "mtime": "2024-03-31T22:39:35+02:00",
+      "active": "638bcd4718a9ac7c",
+      "mtime": "2024-04-04T17:34:19+02:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
-          "Class/Architettura degli elaboratori",
-          "Programming languages"
+          "Programming languages/Python"
         ],
         "mode": null
       }
@@ -604,5 +604,5 @@
       "workspaces-plus:settings-v1": {}
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
