@@ -24,6 +24,28 @@
                 }
               },
               {
+                "id": "62c7962a7b56f26c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/System Calls.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "030a887ab54dc07c",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.5.12"
+                  }
+                }
+              },
+              {
                 "id": "140d99de19a12c0a",
                 "type": "leaf",
                 "state": {
@@ -33,14 +55,6 @@
                     "mode": "source",
                     "source": false
                   }
-                }
-              },
-              {
-                "id": "a4fdb8271e5da489",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {}
                 }
               }
             ],
@@ -111,6 +125,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
+                    "file": "Class/Architettura degli elaboratori/System Calls.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -127,6 +142,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
+                    "file": "Class/Architettura degli elaboratori/System Calls.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -148,7 +164,9 @@
                 "type": "leaf",
                 "state": {
                   "type": "outline",
-                  "state": {}
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/System Calls.md"
+                  }
                 }
               },
               {
@@ -181,8 +199,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a4fdb8271e5da489",
-      "mtime": "2024-04-05T11:46:42+02:00",
+      "active": "030a887ab54dc07c",
+      "mtime": "2024-04-06T11:41:23+02:00",
       "workspaces-plus:settings-v1": {
         "description": "AE",
         "mode": null,

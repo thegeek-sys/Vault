@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a957c411ca86058e",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,19 +22,19 @@
             }
           },
           {
-            "id": "62c7962a7b56f26c",
+            "id": "16415cd15f4406b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Programming languages/Java/Polimorfismo.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "140d99de19a12c0a",
+            "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,9 +44,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "638bcd4718a9ac7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-04_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a7860b34bdd4e40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -75,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "metodo astratto",
+                "query": "abstract path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Programming languages/Java/Array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Programming languages/Java/Array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md"
+                "file": "Programming languages/Java/Array.md"
               }
             }
           },
@@ -166,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -187,11 +211,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "62c7962a7b56f26c",
+  "active": "4a7860b34bdd4e40",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-04-04_MDP.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "To-Do.md",
-    "Flet-notes/2024-04-04_MDP.md",
     "Index.md",
     "Flet-notes/2024-04-05_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
@@ -199,7 +224,6 @@
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
     "Programming languages/Java/Polimorfismo.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Programming languages.md",
