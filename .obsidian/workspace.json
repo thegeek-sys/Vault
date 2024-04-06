@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "ef36faa037c6c8a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classe Math.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "16415cd15f4406b0",
             "type": "leaf",
             "state": {
@@ -58,19 +70,19 @@
             }
           },
           {
-            "id": "4a7860b34bdd4e40",
+            "id": "8dd90fe3b8ed88de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Array.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "abstract path:\"Programming languages/Java/\"",
+                "query": "random path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -116,12 +128,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -137,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Array.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Array.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Array.md"
+                "file": "Programming languages/Java/Prendere decisioni.md"
               }
             }
           },
@@ -211,10 +223,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4a7860b34bdd4e40",
+  "active": "8dd90fe3b8ed88de",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Polimorfismo.md",
+    "Programming languages/Java/Classe Math.md",
     "Flet-notes/2024-04-04_MDP.md",
+    "Programming languages/Python/Images.md",
+    "Programming languages/Python/Matrix.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Java/Array.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "To-Do.md",
     "Index.md",
@@ -223,9 +242,6 @@
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
-    "Programming languages/Java/Polimorfismo.md",
-    "Programming languages/Java/Array.md",
-    "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
@@ -236,12 +252,8 @@
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
     "Flet-notes/2024-03-26_AE.md",
-    "Programming languages/Python/Python.md",
     "Programming languages/Python/Albero binario.md",
     "Programming languages/Python/Filesystem come albero.md",
-    "Programming languages/Python/Ricorsione.md",
-    "Class/Class.md",
-    "Programming languages/Java/Classe Object.md",
     "Untitled.canvas",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",

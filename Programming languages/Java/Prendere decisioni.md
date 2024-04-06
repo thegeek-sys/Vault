@@ -95,7 +95,7 @@ String s = switch(c) {
 	case 'c' -> "ci";
 	case 'a', 'e', 'i', 'o', 'u' -> "vocale "+c;
 	default -> non so leggerlo
-}
+};
 
 // java < 13
 String s;

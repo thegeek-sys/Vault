@@ -10,13 +10,13 @@
             "type": "tabs",
             "children": [
               {
-                "id": "a957c411ca86058e",
+                "id": "39d805ea6ffbd4c1",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Programming languages/Java/Java.md",
                     "mode": "source",
                     "source": false
                   },
@@ -24,29 +24,19 @@
                 }
               },
               {
-                "id": "62c7962a7b56f26c",
+                "id": "16415cd15f4406b0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/System Calls.md",
+                    "file": "Programming languages/Java/Polimorfismo.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "030a887ab54dc07c",
-                "type": "leaf",
-                "state": {
-                  "type": "release-notes",
-                  "state": {
-                    "currentVersion": "1.5.12"
-                  }
-                }
-              },
-              {
-                "id": "140d99de19a12c0a",
+                "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -56,9 +46,33 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "638bcd4718a9ac7c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-04-04_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "4a7860b34bdd4e40",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Array.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -87,7 +101,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "metodo astratto",
+                    "query": "abstract path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -125,7 +139,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/System Calls.md",
+                    "file": "Programming languages/Java/Array.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -142,7 +156,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/System Calls.md",
+                    "file": "Programming languages/Java/Array.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -165,7 +179,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/System Calls.md"
+                    "file": "Programming languages/Java/Array.md"
                   }
                 }
               },
@@ -178,7 +192,7 @@
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 3
           }
         ],
         "direction": "horizontal",
@@ -199,8 +213,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "030a887ab54dc07c",
-      "mtime": "2024-04-06T11:41:23+02:00",
+      "active": "4a7860b34bdd4e40",
+      "mtime": "2024-04-06T12:01:01+02:00",
       "workspaces-plus:settings-v1": {
         "description": "AE",
         "mode": null,
@@ -443,6 +457,18 @@
                 }
               },
               {
+                "id": "80303584a3883f30",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Python/Matrix.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "d602a27d12c9712b",
                 "type": "leaf",
                 "state": {
@@ -453,9 +479,21 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "f530c8020a703781",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Python/Images.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -505,8 +543,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 216.50390243530273,
-        "collapsed": true
+        "width": 216.50390243530273
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -522,7 +559,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/Images.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -539,7 +576,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/Images.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -562,7 +599,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Python/Python.md"
+                    "file": "Programming languages/Python/Images.md"
                   }
                 }
               },
@@ -596,9 +633,15 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "9da67dfcce4e8838",
-      "workspaces-plus:settings-v1": {}
+      "active": "f530c8020a703781",
+      "mtime": "2024-04-06T14:07:32+02:00",
+      "workspaces-plus:settings-v1": {
+        "mode": null,
+        "explorerFoldState": [
+          "Programming languages/Python"
+        ]
+      }
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
