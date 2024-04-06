@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "62c7962a7b56f26c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "140d99de19a12c0a",
             "type": "leaf",
             "state": {
@@ -32,21 +44,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a4fdb8271e5da489",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-05_AE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-05_AE.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-05_AE.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-05_AE.md"
+                "file": "Class/Architettura degli elaboratori/System Calls.md"
               }
             }
           },
@@ -187,14 +187,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a4fdb8271e5da489",
+  "active": "62c7962a7b56f26c",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "To-Do.md",
+    "Flet-notes/2024-04-04_MDP.md",
+    "Index.md",
     "Flet-notes/2024-04-05_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
-    "Flet-notes/2024-04-04_MDP.md",
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
     "Programming languages/Java/Polimorfismo.md",
