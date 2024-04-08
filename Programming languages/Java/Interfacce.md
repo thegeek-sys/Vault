@@ -103,7 +103,9 @@ public class MemoriaUsb implements SupportoRiscrivibile {
 ```
 
 > [!hint]
-> Le interfacce permettono di modellare comportamenti comuni a classi che non sono necessariamente in relazione gerarchica (is-a, è-un)
+> Le interfacce permettono di modellare comportamenti comuni a classi che non sono necessariamente in relazione gerarchica (is-a, è-un).
+> Nel momento in cui una classe C decide di implementare un’interfaccia I, tra queste due classi si instaura una relazione di tipo is-a, ovvero C è di tipo I (comportamento simile all’ereditarietà) quindi anche per le intefacce valgono le regole del polimorfismo
+> `SupportoRiscribile supporto = new Nastr();`
 
 ---
 ## Contratto
@@ -121,7 +123,9 @@ N.B. Negli ultimi due casi, però, la classe va dichiarata abstract
 > > [!info]- UML
 > > ![[UML#Interfacce]]
 
-
+> [!faq] Cosa succede se due metodi di default vengono ereditati da due interfacce implementate?
+> E' necessario implementare quel metodo nella classe che implementa le due interfacce e "disambiguare" il metodo chiamando quello/i appropriato/i con la sintassi
+> `Interfaccia.super.metodo(...);`
 
 ---
 ## Esempio: iterabile
