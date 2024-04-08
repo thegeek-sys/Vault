@@ -5,6 +5,18 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [Introduction](#Introduction)
+- [Metodi di default e statici](#Metodi%20di%20default%20e%20statici)
+	- [Metodi privati](#Metodi%20privati)
+- [Dichiarazione di un’interfaccia](#Dichiarazione%20di%20un%E2%80%99interfaccia)
+	- [Implementare u’interfaccia](#Implementare%20u%E2%80%99interfaccia)
+- [Contratto](#Contratto)
+- [Esempio: iterabile](#Esempio:%20iterabile)
+- [Iterable e Iterator](#Iterable%20e%20Iterator)
+	- [Esempio](#Esempio)
+
+---
 ## Introduction
 Le interfacce sono uno strumento che Java mette a disposizione per consentire a più classi di fornire e implementare un insieme di metodi comuni
 Le interfacce definiscono e standardizzano l’interazione fra oggetti tramite un insieme limitato di operazioni.
