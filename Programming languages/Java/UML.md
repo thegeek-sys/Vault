@@ -48,3 +48,7 @@ Per indicare che una classe è sottoclasse di una superclasse in UML devo utiliz
 **Aggregazione** → indica una relazione dove un figlio può esistere indipendentemente dal padre
 ![[Screenshot 2024-03-25 alle 22.52.43.png|400]]
 
+---
+## Interfacce
+Per rappresentare una classe che implementa una o più interfacce, vengono generalmente utilizzate queste frecce tratteggiate
+![[Screenshot 2024-04-04 alle 13.27.35.png|400]]

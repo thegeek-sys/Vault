@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "769491ca0e81780b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/UML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4a5df2cf5e515fd3",
             "type": "leaf",
             "state": {
@@ -46,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "a515e1113d941e22",
@@ -208,9 +220,10 @@
   },
   "active": "4a5df2cf5e515fd3",
   "lastOpenFiles": [
+    "Programming languages/Java/UML.md",
     "Flet-notes/2024-04-04_MDP.md",
-    "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Interfacce.md",
     "To-Do.md",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Prendere decisioni.md",
@@ -236,7 +249,6 @@
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
     "Flet-notes/2024-03-26_AE.md",
-    "Programming languages/Python/Albero binario.md",
     "Untitled.canvas",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",

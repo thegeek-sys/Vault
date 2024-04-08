@@ -106,6 +106,24 @@ public class MemoriaUsb implements SupportoRiscrivibile {
 > Le interfacce permettono di modellare comportamenti comuni a classi che non sono necessariamente in relazione gerarchica (is-a, è-un)
 
 ---
+## Contratto
+
+Implementare un’interfaccia equivale a **firmare un contratto con il compilatore** che stabilisce l’impegno ad implementare tutti i metodi specificati dall’interfaccia o a dichiarare la classe abstract
+
+Ci sono 3 possibilità per una classe che implementa un’interfaccia:
+1. fornire un’implementazione concreta di tutti i metodi, definendone il corpo
+2. fornire un’implementazione concreata per un sottoinsieme proprio dei metodi dell’interfaccia
+3. decidere di non fornire alcuna implementazione concreta
+N.B. Negli ultimi due casi, però, la classe va dichiarata abstract
+
+>[!faq] Se implementando un’interfaccia devo dichiarare tutti i metodi in essa definiti, perché non ricorrere ad una classe astratta?
+> Poiché potrebbe essere necessario estendere più di una classe, ma in Java ciò non è possibile in quanto `extends` può essere seguito solo da un unico nome di classe. Al contrario una calsse può implementare tutte le interfacce desiderate
+> > [!info]- UML
+> > ![[UML#Interfacce]]
+
+
+
+---
 ## Esempio: iterabile
 Ci sono molte classi di natura diversa che rappresentano sequenze di elementi, tuttavia le sequenze hanno qualcosa in comune: è possibile iterare sui loro elementi
 
@@ -163,13 +181,16 @@ Il problema di queste due implementazioni sta nel fatto che **non ci permette di
 ## Iterable e Iterator
 Queste due interfacce standard di Java ci permettono di disaccoppiare l'oggetto su cui iterare dall'oggetto che tiene la posizione d'iterazione. Infatti senza di essi, utilizzando due for nestati, entrambi i for avranno lo stesso puntatore sull’iterbile (aumentando il primo aumenta anche il secondo)
 
+
 **`java.lang.Iterable`**
 
 | Modifier and Type | Method and Description                                                                |
 | ----------------- | ------------------------------------------------------------------------------------- |
 | `Iterator<T>`     | `iterator()`<br>Restituisce ogni volta che lo chiamo una nuova istanza dell’iteratore |
 
+
 **`java.lang.Iterator`**
+Questa è fondamentale in quanto permette di **iterare su collezioni**. E’ in relazione con l’interfaccia Iterable nel senso che chi implementa Iterable restituisce un Iterator sull’oggetto-collezione
 
 | Modifier and Type | Method and Description                                        |
 | ----------------- | ------------------------------------------------------------- |
@@ -177,3 +198,24 @@ Queste due interfacce standard di Java ci permettono di disaccoppiare l'oggetto 
 | `E`               | `next()`<br>Ritorna il prossimo elemento dell’iterazione      |
 | `void`            | `remove()`<br>                                                |
 
+### Esempio
+```java
+import java.util.ArrayList;
+import java.util.Iterator
+
+// rappresenta un Jukebox di canzoni su cui si può iterare
+public class Jukebox implements  Iterable<Canzone> {
+	// elenco di canzoni
+	private ArrayList<Canzone> canzoni = new ArrayList<Canzone>();
+	
+	// permette di aggiungere una canzone
+	public void addCanzone(Canzone c) {
+		canzoni.add(c);
+	}
+	
+	@Override
+	public Iterator<Canzone> iterator() {
+		return canzoni.iterator();
+	}
+}
+```
