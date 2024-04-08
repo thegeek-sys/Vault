@@ -105,6 +105,7 @@ public class MemoriaUsb implements SupportoRiscrivibile {
 > [!hint]
 > Le interfacce permettono di modellare comportamenti comuni a classi che non sono necessariamente in relazione gerarchica (is-a, è-un)
 
+---
 ## Esempio: iterabile
 Ci sono molte classi di natura diversa che rappresentano sequenze di elementi, tuttavia le sequenze hanno qualcosa in comune: è possibile iterare sui loro elementi
 
@@ -115,4 +116,64 @@ public interface Iterabile {
 	void reset();
 }
 ```
+
+Ciascuna classe implementerà i metodi a suo modo:
+```java
+public class MyIntegerArray implements Iterabile {
+	private Integer[] array;
+	private int k = 0;
+	
+	public MyIntegerArray(Integer[] array) {
+		this.array = array;
+	}
+	
+	@Override
+	public boolean hasNext() { return k < array.length; }
+	
+	@Override
+	public Object next() { return array[k++]; }
+	
+	@Override
+	public void reset() { k=0; }
+}
+
+
+public class MyString implements Iterabile {
+	private String s;
+	private int k = 0;
+	
+	public MyString(String s) {
+		this.s = s;
+	}
+	
+	@Override
+	public boolean hasNext() { return k < array.length; }
+	
+	@Override
+	public Object next() { return s.charAt(k++); }
+	
+	@Override
+	public void reset() { k=0; }
+}
+```
+
+Il problema di queste due implementazioni sta nel fatto che **non ci permette di avere iteratori multipli** (per esempio non posso fare due for nestati che ciclino sullo stesso iterabile con due iteratori diversi). A soluzione di questo problema Java ci mette a disposizione le interfacce `Iterable` e `Iterator`
+
+---
+## Iterable e Iterator
+Queste due interfacce standard di Java ci permettono di disaccoppiare l'oggetto su cui iterare dall'oggetto che tiene la posizione d'iterazione. Infatti senza di essi, utilizzando due for nestati, entrambi i for avranno lo stesso puntatore sull’iterbile (aumentando il primo aumenta anche il secondo)
+
+**`java.lang.Iterable`**
+
+| Modifier and Type | Method and Description                                                                |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| `Iterator<T>`     | `iterator()`<br>Restituisce ogni volta che lo chiamo una nuova istanza dell’iteratore |
+
+**`java.lang.Iterator`**
+
+| Modifier and Type | Method and Description                                        |
+| ----------------- | ------------------------------------------------------------- |
+| `boolean`         | `hasNext()`<br>Ritorna true se l’iterazione ha altri elementi |
+| `E`               | `next()`<br>Ritorna il prossimo elemento dell’iterazione      |
+| `void`            | `remove()`<br>                                                |
 
