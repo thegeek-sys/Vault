@@ -4,5 +4,5 @@
   "listStyle": "bullet",
   "useMarkdown": true,
   "title": ">[!info] Index",
-  "githubCompat": false
+  "githubCompat": true
 }

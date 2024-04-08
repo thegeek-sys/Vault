@@ -6,15 +6,15 @@ Completed:
 ---
 ---
 ## Index
-- [Introduction](#Introduction)
-- [Metodi di default e statici](#Metodi%20di%20default%20e%20statici)
-	- [Metodi privati](#Metodi%20privati)
-- [Dichiarazione di un’interfaccia](#Dichiarazione%20di%20un%E2%80%99interfaccia)
-	- [Implementare u’interfaccia](#Implementare%20u%E2%80%99interfaccia)
-- [Contratto](#Contratto)
-- [Esempio: iterabile](#Esempio:%20iterabile)
-- [Iterable e Iterator](#Iterable%20e%20Iterator)
-	- [Esempio](#Esempio)
+- [Introduction](#introduction)
+- [Metodi di default e statici](#metodi-di-default-e-statici)
+	- [Metodi privati](#metodi-privati)
+- [Dichiarazione di un’interfaccia](#dichiarazione-di-uninterfaccia)
+	- [Implementare u’interfaccia](#implementare-uinterfaccia)
+- [Contratto](#contratto)
+- [Esempio: iterabile](#esempio-iterabile)
+- [Iterable e Iterator](#iterable-e-iterator)
+	- [Esempio](#esempio)
 
 ---
 ## Introduction

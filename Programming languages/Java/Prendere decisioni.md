@@ -13,6 +13,7 @@ Completed:
 - [[#while|while]]
 - [[#do while|do while]]
 - [[#for|for]]
+- [[#for-each|for-each]]
 - [[#Uscire dal ciclo|Uscire dal ciclo]]
 	- [[#Uscire dal ciclo#break vs. return|break vs. return]]
 - [[#Saltare all’iterazione successiva|Saltare all’iterazione successiva]]
@@ -164,6 +165,22 @@ All’interno dei cicli for posso anche inizializzare e incrementare più variab
 ```java
 for (int k = 0, i = 0; i <= 10; i++, k+=5) {
 	// codice iterazione
+}
+```
+
+---
+## for-each
+Il loop `for-each` viene utilizzato esclusivamente per iterare sugli elementi di un array.
+
+Lo schema è il seguente:
+- inizia con la keyword `for` come un normale for-loop
+- invece di dichiarare e inizializzare una variabile per contare le iterazioni, bisogna dichiarare una variabile che è  dello stesso tipo del tipo base dell’array in considerazione, seguito da due punti, che è poi seguito dal nome dell’array
+- nel corpo del loop, è possibile usare la variabile creata al posto di usare un index per puntare ad un’elemento dell’array
+
+```java
+int arr[] = { 10, 50, 60, 80, 90 }
+for (int el : arr) {
+	System.out.println(el + " ")
 }
 ```
 
