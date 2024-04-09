@@ -12,6 +12,7 @@
 - [ ] chiedere come mai valore di TipoDiMoneta è solamente private mentre massa e raggio final (slide 28-29)
 - [ ] chiedere come mai getMassa e getRaggio sono private
 - [x] aggiungere for each in prendere decisioni
+- [ ] Esercizio: Liste linkate di interi con classi interne (48 Interfacce)
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)
