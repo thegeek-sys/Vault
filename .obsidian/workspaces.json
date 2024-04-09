@@ -10,13 +10,13 @@
             "type": "tabs",
             "children": [
               {
-                "id": "39d805ea6ffbd4c1",
+                "id": "d2cac6488958348a",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "mode": "source",
                     "source": false
                   },
@@ -24,19 +24,7 @@
                 }
               },
               {
-                "id": "16415cd15f4406b0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Polimorfismo.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "d2cac6488958348a",
+                "id": "061be83d6c3476f9",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -46,33 +34,9 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "638bcd4718a9ac7c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-04-04_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "4a7860b34bdd4e40",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Array.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
             ],
-            "currentTab": 4
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -101,7 +65,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "abstract path:\"Programming languages/Java/\"",
+                    "query": "mips path:\"Class/Architettura degli elaboratori/\" ",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -122,8 +86,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -139,7 +102,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Array.md",
+                    "file": "To-Do.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -156,7 +119,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Array.md",
+                    "file": "To-Do.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -179,7 +142,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Array.md"
+                    "file": "To-Do.md"
                   }
                 }
               },
@@ -213,12 +176,14 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "4a7860b34bdd4e40",
-      "mtime": "2024-04-06T12:01:01+02:00",
+      "active": "061be83d6c3476f9",
+      "mtime": "2024-04-09T09:23:35+02:00",
       "workspaces-plus:settings-v1": {
         "description": "AE",
         "mode": null,
         "explorerFoldState": [
+          "Class",
+          "Class/Architettura degli elaboratori",
           "Programming languages/Python"
         ]
       }
@@ -276,7 +241,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-04-04_MDP.md",
+                    "file": "Flet-notes/2024-04-09_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -350,7 +315,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-04-04_MDP.md",
+                    "file": "Flet-notes/2024-04-09_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -367,7 +332,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-04-04_MDP.md",
+                    "file": "Flet-notes/2024-04-09_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -390,7 +355,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-04-04_MDP.md"
+                    "file": "Flet-notes/2024-04-09_MDP.md"
                   }
                 }
               },
@@ -424,10 +389,11 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "638bcd4718a9ac7c",
-      "mtime": "2024-04-05T13:45:03+02:00",
+      "active": "9da67dfcce4e8838",
+      "mtime": "2024-04-09T09:22:41+02:00",
       "workspaces-plus:settings-v1": {
         "explorerFoldState": [
+          "Flet-notes",
           "Programming languages/Python"
         ],
         "mode": null
@@ -643,5 +609,5 @@
       }
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
