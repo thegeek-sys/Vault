@@ -34,6 +34,18 @@
             }
           },
           {
+            "id": "6ab1b2bbd90646d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-09_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
@@ -44,21 +56,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "638bcd4718a9ac7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-09_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,12 +199,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "638bcd4718a9ac7c",
+  "active": "6ab1b2bbd90646d9",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
-    "Flet-notes/2024-04-09_MDP.md",
     "To-Do.md",
+    "Flet-notes/2024-04-09_MDP.md",
+    "Flet-notes/IMG_6204..md",
     "Programming languages/Java/Interfacce.md",
+    "IMG_6204.jpeg",
+    "Programming languages/Java/Java.md",
+    "IMG_6204.heic",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
     "Flet-notes/2024-04-04_MDP.md",
@@ -229,7 +232,6 @@
     "Class/Architettura degli elaboratori/Matrici.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Ricorsione.md",
-    "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
     "Untitled.canvas",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",
@@ -238,7 +240,6 @@
     "Files/Screenshot 2024-03-25 alle 22.39.43.png",
     "Files/Screenshot 2024-03-25 alle 22.06.56.png",
     "Files/Screenshot 2024-03-19 alle 13.20.59.png",
-    "Files/Screenshot 2024-03-25 alle 21.16.02.png",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",
@@ -246,7 +247,6 @@
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
     "Class/Architettura degli elaboratori",
-    "Class",
-    "Programming languages/Java"
+    "Class"
   ]
 }
