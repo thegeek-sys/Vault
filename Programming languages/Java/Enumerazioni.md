@@ -14,6 +14,7 @@ Completed:
 - [[#Enumerazioni e switch|Enumerazioni e switch]]
 - [[#Enumerazioni e Object]]
 	- [[#Enumerazioni e Object#Esempio|Esempio]]
+- [[#Enumerazioni e interfacce|Enumerazioni e interfacce]]
 ---
 ## Introduction
 Spesso è utile definire dei tipi (detti enumerazioni) i cui valori possono essere scelti tra un insieme predefinito di identificatori univoci (ogni identificatore corrisponde a una costante implicitamente static).
@@ -174,6 +175,33 @@ public enum Pianeta {
 	}
 	public double getPesoDiSuperficie(double altraMassa) {
 		return altraMassa * getGravitaDiSuperficie();	
+	}
+}
+```
+
+---
+## Enumerazioni e interfacce
+Posso anche implementare all’interno di un’enumerazione un’interfaccia
+
+```java
+public interface OperatoreBinario {
+	double applica(double a, double b);
+}
+
+
+
+public enum OperatoriDiBase implements OperatoreBinario {
+	SOMMA {
+		public double applica(double a, double b) {return a+b;}
+	}
+	SOTTRAZIONE {
+		public double applica(double a, double b) {return a-b;}
+	}
+	PRODOTTO {
+		public double applica(double a, double b) {return a*b;}
+	}
+	DIVISIONE {
+		public double applica(double a, double b) {return a/b;}
 	}
 }
 ```

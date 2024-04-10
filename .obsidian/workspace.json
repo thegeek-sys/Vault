@@ -6,6 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 59.09090909090909,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -22,24 +23,24 @@
             }
           },
           {
-            "id": "8fddbc31c7d1ee0e",
+            "id": "55fd168da38dee4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md",
+                "file": "Programming languages/Java/Enumerazioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6ab1b2bbd90646d9",
+            "id": "8fddbc31c7d1ee0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-09_MDP.md",
+                "file": "Programming languages/Java/Interfacce.md",
                 "mode": "source",
                 "source": false
               }
@@ -59,6 +60,25 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "f67b3349284076f6",
+        "type": "tabs",
+        "dimension": 40.909090909090914,
+        "children": [
+          {
+            "id": "6ab1b2bbd90646d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-09_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +129,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -125,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md",
+                "file": "Programming languages/Java/Enumerazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md",
+                "file": "Programming languages/Java/Enumerazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md"
+                "file": "Programming languages/Java/Enumerazioni.md"
               }
             }
           },
@@ -199,12 +220,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8fddbc31c7d1ee0e",
+  "active": "55fd168da38dee4d",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Enumerazioni.md",
     "Flet-notes/2024-04-09_MDP.md",
     "Programming languages/Java/Interfacce.md",
     "To-Do.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Prendere decisioni.md",
     "IMG_6204.jpeg",
