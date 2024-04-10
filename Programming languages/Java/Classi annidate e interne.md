@@ -32,6 +32,7 @@ public class Tastiera {
 	private String tipo;
 	private Tasto[] tasti;
 	
+	// Testo è una inner class quindi non statica
 	public class Testo {
 		private char c;
 		
@@ -60,3 +61,21 @@ public class Tastiera {
 	}
 }
 ```
+
+
+### Classi annidate statiche (static nested class)
+Se invece la classe interna è statica allora essa **non richiede l’esistenza di un oggetto appartenente alla classe esterna** e non ha nemmeno un riferimento implicito ad essa e come con i metodi statici, non può accedere allo stato dei singoli oggetti della classe esterna
+
+> [!hint]
+> Da un punto di vista di comportamento, una classe annidata statica è equivalente ad una classe top-level inserita all’interno di un’altra classe top-level
+
+Sono accessibili tramite il nome della classe esterna che le contiene, secondo la forma `new ClasseEsterna.ClasseAnnidataStatica()`
+
+---
+## In che modo sono utili?
+- **Raggruppamento logico** delle classi
+	Se una classe è utile solo ad un’altra classe, è logico inserirla al suo interno e tenere le due classi logicamente vicine
+- **Incrementa l’incapsulamento**
+	Una classe B annidata in A può accedere ai membri di A (anche se privati), ma B può essere nascosta al mondo esterno
+- **Codice più leggibile** e più facile da mantenere
+	La vicinanza spaziale è un fattore decisivo
