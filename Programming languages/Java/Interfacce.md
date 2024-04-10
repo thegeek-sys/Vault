@@ -22,11 +22,14 @@ Le interfacce sono uno strumento che Java mette a disposizione per consentire a 
 Le interfacce definiscono e standardizzano l’interazione fra oggetti tramite un insieme limitato di operazioni.
 Esse specificano soltanto il comportamento (le classi astratte possono definire anche un costruttore) che un certo oggetto deve presentare all’esterno, cioè cosa quell’oggetto può fare. L’implementazione di tali operazioni, cioè come queste vengono tradotte e realizzate, rimane invece non definito
 
+> [!info]
+> A differenza delle classi astratte le interfacce possono estendere più interfacce insieme
+
 ---
 ## Metodi di default e statici
 E' possibile specificare delle implementazioni di default di metodi non statici. Questo viene fatto attraverso la parola chiave `default`. Ciò è dovuto nelle interfacce dall’estensione di interfacce rilasciate in precedenza con metodi senza rompere il contratto con il codice che utilizza le versioni precedenti
 
-E’ inoltre importante ricordare che i metodi statici **non godono del polimorfismo** in quanto sono metodi di utilità non associati alle singole istanze
+E’ inoltre importante ricordare che i metodi statici **non godono del polimorfismo** in quanto sono metodi di utilità non associati alle singole istanze.
 
 ### Metodi privati
 Per facilitare il riuso del codice, da Java 9 è possibile definire metodi privati all’interno di un’interfaccia (questi possono essere chiamati solamente dall’interfaccia stessa)
@@ -117,7 +120,7 @@ public class MemoriaUsb implements SupportoRiscrivibile {
 > [!hint]
 > Le interfacce permettono di modellare comportamenti comuni a classi che non sono necessariamente in relazione gerarchica (is-a, è-un).
 > Nel momento in cui una classe C decide di implementare un’interfaccia I, tra queste due classi si instaura una relazione di tipo is-a, ovvero C è di tipo I (comportamento simile all’ereditarietà) quindi anche per le intefacce valgono le regole del polimorfismo
-> `SupportoRiscribile supporto = new Nastr();`
+> `SupportoRiscribile supporto = new Nastro();`
 
 ---
 ## Contratto
