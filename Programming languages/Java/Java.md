@@ -30,6 +30,7 @@
 - [[Classe Object]]
 - [[Interfacce]]
 - [[Classi annidate e interne]]
+- [[Classi anonime]]
 - 
 
 ##### Libraries

@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction]]
+- [[#Classi annidate (nested class)]]
+	- [[#Classi interne (inner class)]]
+		- [[#Esempio]]
+	- [[#Classi annidate statiche (static nested class)]]
+- [[#In che modo sono utili?]]
+
+---
 ## Introduction
 Le classi usate finora vengono dette **top-level**, cioè esse si trovano più in alto di tutte le altre e non sono contenute in altre classi
 Questo tipo di classi richiede un file `.java` dedicato con lo stesso nome della classe che esso contiene
