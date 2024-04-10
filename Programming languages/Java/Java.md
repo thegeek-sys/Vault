@@ -13,7 +13,7 @@
 - [[Operatori]]
 - [[java.lang.String]]
 - [[Array]]
-- [[Shallow and Deep Copy]]
+- [[Programming languages/Java/Shallow and Deep Copy|Shallow and Deep Copy]]
 - 
 
 ##### Object oriented programming

@@ -6,11 +6,11 @@
         "type": "split",
         "children": [
           {
-            "id": "6fa49714e6656508",
+            "id": "36e4e4609b40d962",
             "type": "tabs",
             "children": [
               {
-                "id": "d2cac6488958348a",
+                "id": "ecb6cd090c8cbd79",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
@@ -22,21 +22,8 @@
                   },
                   "pinned": true
                 }
-              },
-              {
-                "id": "061be83d6c3476f9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "To-Do.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -65,7 +52,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "mips path:\"Class/Architettura degli elaboratori/\" ",
+                    "query": "scanner path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -102,7 +89,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -119,7 +106,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -142,7 +129,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -155,7 +142,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "horizontal",
@@ -176,17 +163,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "061be83d6c3476f9",
-      "mtime": "2024-04-09T09:23:35+02:00",
-      "workspaces-plus:settings-v1": {
-        "description": "AE",
-        "mode": null,
-        "explorerFoldState": [
-          "Class",
-          "Class/Architettura degli elaboratori",
-          "Programming languages/Python"
-        ]
-      }
+      "active": "9da67dfcce4e8838",
+      "mtime": "2024-04-10T13:44:21+02:00"
     },
     "Java": {
       "main": {
@@ -315,7 +293,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-04-09_MDP.md",
+                    "file": "Programming languages/Java/Java.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -332,7 +310,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-04-09_MDP.md",
+                    "file": "Programming languages/Java/Java.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -355,7 +333,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-04-09_MDP.md"
+                    "file": "Programming languages/Java/Java.md"
                   }
                 }
               },
@@ -390,14 +368,7 @@
         }
       },
       "active": "9da67dfcce4e8838",
-      "mtime": "2024-04-09T09:22:41+02:00",
-      "workspaces-plus:settings-v1": {
-        "explorerFoldState": [
-          "Flet-notes",
-          "Programming languages/Python"
-        ],
-        "mode": null
-      }
+      "mtime": "2024-04-10T13:44:19+02:00"
     },
     "Python": {
       "main": {
@@ -600,14 +571,16 @@
         }
       },
       "active": "f530c8020a703781",
-      "mtime": "2024-04-06T14:07:32+02:00",
+      "mtime": "2024-04-10T13:42:45+02:00",
       "workspaces-plus:settings-v1": {
         "mode": null,
         "explorerFoldState": [
+          "Class",
+          "Flet-notes",
           "Programming languages/Python"
         ]
       }
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }

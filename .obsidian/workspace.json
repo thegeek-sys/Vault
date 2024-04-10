@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 59.09090909090909,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -23,36 +22,12 @@
             }
           },
           {
-            "id": "54a8a9e49384403f",
+            "id": "e661eb2a3c9a097a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55fd168da38dee4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Enumerazioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8fddbc31c7d1ee0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce.md",
+                "file": "Programming languages/Java/Shallow and Deep Copy.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,15 +45,15 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "f67b3349284076f6",
+        "id": "7e7291f4254eb148",
         "type": "tabs",
-        "dimension": 40.909090909090914,
         "children": [
           {
-            "id": "6ab1b2bbd90646d9",
+            "id": "638bcd4718a9ac7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -118,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scanner path:\"Programming languages/Java/\"",
+                "query": "abstract path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -135,8 +110,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -157,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Shallow and Deep Copy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Shallow and Deep Copy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Programming languages/Java/Shallow and Deep Copy.md"
               }
             }
           },
@@ -210,7 +184,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -231,29 +205,30 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "e661eb2a3c9a097a",
   "lastOpenFiles": [
-    "Programming languages/Java/Classes.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Shallow and Deep Copy.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Class.md",
+    "Flet-notes/2024-04-09_MDP.md",
+    "Programming languages/Python/Images.md",
+    "Programming languages/Python/Python.md",
+    "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Classes.md",
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Interfacce.md",
-    "Flet-notes/2024-04-09_MDP.md",
     "To-Do.md",
     "Programming languages/Java/Array.md",
-    "Programming languages/Java/Prendere decisioni.md",
     "IMG_6204.jpeg",
     "Flet-notes/IMG_6204..md",
     "IMG_6204.heic",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Class.md",
     "Flet-notes/2024-04-04_MDP.md",
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Polimorfismo.md",
-    "Programming languages/Python/Images.md",
     "Programming languages/Python/Matrix.md",
-    "Programming languages/Python/Python.md",
     "Index.md",
     "Flet-notes/2024-04-05_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
@@ -263,7 +238,6 @@
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Ereditarietà.md",
     "Class/Architettura degli elaboratori/Esercizi.md",
-    "Class/Architettura degli elaboratori/Matrici.md",
     "Untitled.canvas",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",
