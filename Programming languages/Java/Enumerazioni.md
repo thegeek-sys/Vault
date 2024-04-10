@@ -188,7 +188,7 @@ public interface OperatoreBinario {
 	double applica(double a, double b);
 }
 
-
+-----------------------------------------------------------------
 
 public enum OperatoriDiBase implements OperatoreBinario {
 	SOMMA {
