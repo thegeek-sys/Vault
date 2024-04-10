@@ -6,6 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
+        "dimension": 50.05854800936768,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -19,6 +20,18 @@
                 "source": false
               },
               "pinned": true
+            }
+          },
+          {
+            "id": "a1de6978bd41477f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -51,6 +64,7 @@
       {
         "id": "7e7291f4254eb148",
         "type": "tabs",
+        "dimension": 49.941451990632316,
         "children": [
           {
             "id": "638bcd4718a9ac7c",
@@ -131,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md",
+                "file": "Programming languages/Java/Classi annidate e interne.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md",
+                "file": "Programming languages/Java/Classi annidate e interne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md"
+                "file": "Programming languages/Java/Classi annidate e interne.md"
               }
             }
           },
@@ -205,13 +219,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e661eb2a3c9a097a",
+  "active": "a1de6978bd41477f",
   "lastOpenFiles": [
+    "Flet-notes/2024-04-09_MDP.md",
+    "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
-    "Flet-notes/2024-04-09_MDP.md",
     "Programming languages/Python/Images.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Java/Prendere decisioni.md",
@@ -237,7 +252,6 @@
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Ereditarietà.md",
-    "Class/Architettura degli elaboratori/Esercizi.md",
     "Untitled.canvas",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",
