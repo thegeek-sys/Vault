@@ -109,4 +109,4 @@ MyString myString = stringConverter.convert(“123”);
 ---
 ## Single Abstract Method (SAM) type
 Le interfacce funzionali sono di tipo SAM, a ogni metodo che accetta un’interfaccia SAM, si può passare un’espressione lambda compatibile con l’unico metodo dell’interfaccia SAM.
-Analogamente per un riferimento 
+Analogamente per un riferimento a un’interfaccia SAM

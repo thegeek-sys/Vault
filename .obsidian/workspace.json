@@ -23,6 +23,18 @@
             }
           },
           {
+            "id": "996551ac2b425161",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8086d32ac70b6899",
             "type": "leaf",
             "state": {
@@ -157,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classi anonime.md",
+                "file": "Programming languages/Java/Interfacce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classi anonime.md",
+                "file": "Programming languages/Java/Interfacce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classi anonime.md"
+                "file": "Programming languages/Java/Interfacce.md"
               }
             }
           },
@@ -231,12 +243,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8086d32ac70b6899",
+  "active": "996551ac2b425161",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-04-09_MDP.md",
     "Programming languages/Java/Classi anonime.md",
     "Programming languages/Java/Classi annidate e interne.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
