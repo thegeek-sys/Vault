@@ -123,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "abstract path:\"Programming languages/Java/\"",
+                "query": "compare path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,12 +140,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -237,9 +237,10 @@
   },
   "active": "31f0c0c9e180cac1",
   "lastOpenFiles": [
-    "Programming languages/Java/Classi anonime.md",
-    "Flet-notes/2024-04-11_MDP.md",
+    "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Interfacce.md",
+    "Flet-notes/2024-04-11_MDP.md",
+    "Programming languages/Java/Classi anonime.md",
     "Flet-notes/2024-04-09_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi annidate e interne.md",
@@ -265,7 +266,6 @@
     "Index.md",
     "Flet-notes/2024-04-05_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
     "Untitled.canvas",
