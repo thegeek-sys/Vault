@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classi anonime.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classi anonime.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classi anonime.md"
+                "file": "Flet-notes/2024-04-11_MDP.md"
               }
             }
           },
@@ -235,10 +235,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8086d32ac70b6899",
+  "active": "31f0c0c9e180cac1",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-11_MDP.md",
     "Programming languages/Java/Classi anonime.md",
+    "Flet-notes/2024-04-11_MDP.md",
     "Programming languages/Java/Interfacce.md",
     "Flet-notes/2024-04-09_MDP.md",
     "Programming languages/Java/Java.md",
