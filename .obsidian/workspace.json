@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 50.05854800936768,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -81,28 +80,21 @@
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "7e7291f4254eb148",
-        "type": "tabs",
-        "dimension": 49.941451990632316,
-        "children": [
+          },
           {
-            "id": "638bcd4718a9ac7c",
+            "id": "31f0c0c9e180cac1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-09_MDP.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -169,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Interfacce.md"
+                "file": "Flet-notes/2024-04-11_MDP.md"
               }
             }
           },
@@ -243,12 +235,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "996551ac2b425161",
+  "active": "31f0c0c9e180cac1",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-09_MDP.md",
-    "Programming languages/Java/Interfacce.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime.md",
+    "Flet-notes/2024-04-11_MDP.md",
+    "Programming languages/Java/Interfacce.md",
+    "Flet-notes/2024-04-09_MDP.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -275,7 +268,6 @@
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
-    "Programming languages/Programming languages.md",
     "Untitled.canvas",
     "Files/Screenshot 2024-03-25 alle 22.52.43.png",
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",
