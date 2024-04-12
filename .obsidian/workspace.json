@@ -32,6 +32,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6c20a28fa00ef7c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -177,6 +189,7 @@
   },
   "active": "12e2f4700b5c6b83",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-04-12_AE.md",
     "Flet-notes/2024-04-11_MDP.md",
@@ -205,7 +218,6 @@
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Python/Matrix.md",
-    "Index.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
