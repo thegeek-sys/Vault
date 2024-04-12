@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -189,6 +188,7 @@
   },
   "active": "12e2f4700b5c6b83",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-04-12 alle 12.51.05.png",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-04-12_AE.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -217,7 +217,6 @@
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Classe Math.md",
     "Programming languages/Java/Polimorfismo.md",
-    "Programming languages/Python/Matrix.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Screenshot 2024-04-04 alle 13.27.35.png",
     "Files/Screenshot 2024-04-04 alle 13.27.35.png",
