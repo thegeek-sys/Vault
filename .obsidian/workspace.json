@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md"
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
               }
             }
           },
@@ -187,11 +187,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "12e2f4700b5c6b83",
+  "active": "6c20a28fa00ef7c9",
   "lastOpenFiles": [
+    "Flet-notes/2024-04-12_AE.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Flet-notes/2024-04-12_AE.md",
     "Flet-notes/2024-04-11_MDP.md",
     "Files/Screenshot 2024-04-11 alle 13.04.04.png",
     "Programming languages/Java/Interfacce.md",
