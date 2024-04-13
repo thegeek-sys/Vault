@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,31 +22,91 @@
             }
           },
           {
-            "id": "12e2f4700b5c6b83",
+            "id": "996551ac2b425161",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md",
+                "file": "Programming languages/Java/Interfacce.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6c20a28fa00ef7c9",
+            "id": "8086d32ac70b6899",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Programming languages/Java/Classi anonime.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1de6978bd41477f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e661eb2a3c9a097a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Shallow and Deep Copy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d2cac6488958348a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "To-Do.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31f0c0c9e180cac1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-11_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4c2eba3347b1ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -75,7 +135,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scanner path:\"Programming languages/Java/\"",
+                "query": "compare path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -113,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md"
+                "file": "Flet-notes/2024-04-11_MDP.md"
               }
             }
           },
@@ -187,21 +246,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "12e2f4700b5c6b83",
+  "active": "31f0c0c9e180cac1",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Programming languages/Java/Classi annidate e interne.md",
+    "Programming languages/Programming languages.md",
+    "Programming languages/Java/Shallow and Deep Copy.md",
+    "Programming languages/Java/Interfacce.md",
+    "Programming languages/Java/Classi anonime.md",
+    "Flet-notes/2024-04-11_MDP.md",
     "Flet-notes/2024-04-12_AE.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-12 alle 12.51.05.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Flet-notes/2024-04-11_MDP.md",
     "Files/Screenshot 2024-04-11 alle 13.04.04.png",
-    "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Classi Wrapper.md",
-    "Programming languages/Java/Classi anonime.md",
     "Flet-notes/2024-04-09_MDP.md",
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/Classi annidate e interne.md",
-    "Programming languages/Java/Shallow and Deep Copy.md",
     "Class/Class.md",
     "Programming languages/Python/Images.md",
     "Programming languages/Python/Python.md",
