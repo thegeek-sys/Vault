@@ -31,3 +31,5 @@ Contengono e “strutturano” **riferimenti** ad altri oggetti (tipicamente tut
 
 ![[Screenshot 2024-04-11 alle 13.04.04.png]]
 
+
+

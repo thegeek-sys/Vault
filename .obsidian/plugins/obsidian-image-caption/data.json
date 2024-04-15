@@ -1,8 +1,6 @@
 {
   "css": "",
   "label": "",
-  "delimeter": [
-    "|"
-  ],
-  "htmlCaption": false
+  "delimeter": [],
+  "htmlCaption": true
 }
