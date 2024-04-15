@@ -62,7 +62,6 @@ Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Con
 ---
 ## Ingredienti
 ### Memoria delle istruzioni, PC, adder
-
 **Memoria istruzioni**:
 - Input → indirizzo a 32 bit
 - Output → istruzione (da 32 bit) situata nell’indirizzo di input
@@ -78,7 +77,6 @@ Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Con
 
 
 ### Registri e ALU
-
 **Blocco dei registri** (register file):
 - contiene **32 registri** a 32 bit, indirizzabili con 5 bit ($2^5 = 32$)
 - può memorizzare un dato in un registro e contemporaneamente fornirlo in uscita
@@ -97,4 +95,27 @@ Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Con
 
 ### Memoria dati ed unità di estensione del segno
 **Unità di memoria**:
-- riceve un **indirizzo** (da 32 bit) che indica quale 
+- riceve un **indirizzo** (da 32 bit) che indica quale word della memoria va letta/scritta
+- riceve il segnale **MemRead** che abilita la lettura dall’indirizzo (`lw`)
+- riceve un dato da 32 bit da scrivere in memoria a quell’indirizzo (`sw`)
+- riceve il segnale di controllo **MemWrite** che abilita (1) la scrittura del dato all’indirizzo
+- fornisce su una porta di uscita da 32 bit il lato letto (se MemRead = 1)
+
+**L’unità di estensione del segno**:
+- serve a trasformare un intero relativo (in CA2) da 16 a 32 bit, ovvero copia il bit del segno nei 16 bit più significativi della parola
+
+![[Screenshot 2024-04-15 alle 17.02.07.png]]
+
+---
+## Fetch dell’istruzione/aggiornamento PC
+1. PC = indirizzo dell’istruzione
+2. Lettura dell’istruzione
+3. PC incrementato di 4 (1 word)
+4. Valore aggiornato e reimmesso nel PC
+
+![[Screenshot 2024-04-15 alle 17.04.20.png|center|400]]
+
+> [!info]
+> - Connessioni da 32 bit
+> - Mentre viene letta l’istruzione viene già calcolato il nuovo PC
+
