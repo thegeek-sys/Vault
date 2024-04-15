@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "ecb6cd090c8cbd79",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,55 +22,30 @@
             }
           },
           {
-            "id": "6162243b3572abba",
+            "id": "6c20a28fa00ef7c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fb6b1f42d99673b9",
+            "id": "12e2f4700b5c6b83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-11_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c1b32c6778c1a86a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2cac6488958348a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-04-12_AE.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "compare path:\"Programming languages/Java/\"",
+                "query": "scanner path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -211,22 +186,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6162243b3572abba",
+  "active": "ecb6cd090c8cbd79",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-11_MDP.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Strutture dati.md",
+    "Flet-notes/2024-04-11_MDP.md",
+    "Flet-notes/2024-04-12_AE.md",
     "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime.md",
-    "Flet-notes/2024-04-12_AE.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "To-Do.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-12 alle 12.51.05.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-04-11 alle 13.04.04.png",
     "Programming languages/Java/Classi Wrapper.md",
     "Flet-notes/2024-04-09_MDP.md",

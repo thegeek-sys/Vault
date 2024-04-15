@@ -1,4 +1,5 @@
 # Args
+## Assembly MIPS
 - [[Prestazioni CPU]]
 - [[Architettura di Von Neumann]]
 - [[Architettura MIPS 2000]]
@@ -15,8 +16,11 @@
 - [[Procedure e Funzioni]]
 - [[Limitazioni spazio istruzioni]]
 - [[Class/Architettura degli elaboratori/Ricorsione|Ricorsione]]
-- 
 
+## Teoria
+
+
+# Extra
 - [[Esercizi]]
 - [[MIPS_Instruction_Set.pdf|Istruzioni]]
 - 

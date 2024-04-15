@@ -68,6 +68,8 @@ List<Integer> I = List.of(4, 8, 15, 16, 23, 42)
 I.forEach(x -> System.out.println(x));
 ```
 
+> [!hint] [.forEach vs. for-each loop](https://stackoverflow.com/questions/16635398/java-8-iterable-foreach-vs-foreach-loop)
+
 ---
 ## Modificare una lista durante l'iterazione
 Non è possibile utilizzare metodi di modifica durante un'iterazione:
