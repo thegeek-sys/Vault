@@ -70,7 +70,7 @@ public interface SupportoRiscrivibile {
 }
 ```
 
-### Implementare u’interfaccia
+### Implementare un’interfaccia
 Per realizzare un’interfaccia è necessario che una classe la implementi tramite la parola chiave `implements`
 Una classe che implementa una interfaccia decide di voler **esporre** pubblicamente all’esterno il comportamento descritto dall’interfaccia
 E’ obbligatorio che ciascun abbia esattamente la **stessa intestazione** che esso presenta nell’interfaccia

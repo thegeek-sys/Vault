@@ -6,8 +6,19 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [Introduction](#introduction)
+	- [Esempio](#esempio)
+- [Interfacce funzionali](#interfacce-funzionali)
+- [Espressioni lambda](#espressioni-lambda)
+	- [Esempio: conversione da un tipo F a un tipo T](#esempio-conversione-da-un-tipo-f-a-un-tipo-t)
+- [Single Abstract Method (SAM) type](#single-abstract-method-sam-type)
+- [Differenza tra class anonime ed espressioni lambda](#differenza-tra-class-anonime-ed-espressioni-lambda)
+- [Quando utilizzare le lambda?](#quando-utilizzare-le-lambda)
+
+---
 ## Introduction
-E' possibile definire **classi anonime** (ovvero senza nome) che implementano un'interfaccia o estendono una classe
+E' possibile definire **classi anonime** (ovvero senza nome) che implementano un'interfaccia o esxtendono una classe
 Queste sono utilizzate per **creare un’unica istanza** (utili ad esempio per creare un iteratore al volo)
 
 Sintassi:
@@ -125,3 +136,4 @@ La compilazione è differente:
 ## Quando utilizzare le lambda?
 E' da consigliare l'impiego delle espressioni lambda principalmente quando il codice si scrive su una sola riga
 In alternativa, si preferisce un'implementazione mediante classe o classe anonima (o, vedremo più avanti, riferimenti a metodi)
+Proprio su queste si basa la **programmazione funzionale** ed è detto *lambda calculus* il linguaggio formale per definire una funzione.
