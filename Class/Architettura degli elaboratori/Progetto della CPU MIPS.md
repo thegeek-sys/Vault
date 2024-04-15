@@ -129,4 +129,8 @@ Secondo argomento dell’istruzione (a seconda del segnale di controllo **ALUSrc
 
 Per calcolare l’indirizzo di accesso alla memoria si usa la stessa ALU (reg. base + campo i.). Il risultato dell’ALU o della `lw` viene selezionato da **MemtoReg** che comanda il MUX a destra
 
+---
+## Esercizi
 ![[Screenshot 2024-04-15 alle 17.17.55.jpg]]
+
+
