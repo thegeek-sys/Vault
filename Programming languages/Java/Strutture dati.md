@@ -28,3 +28,4 @@ Contengono e “strutturano” **riferimenti** ad altri oggetti (tipicamente tut
 | **List**       | Una collezione ordinata che può contenere duplicati        |
 | **Map**        | Associa coppie di (chiave, valore), senza chiavi duplicate |
 | **Queue**      | Una collezione first-in, first-out che modella una coda    |
+
