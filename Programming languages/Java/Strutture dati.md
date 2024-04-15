@@ -29,7 +29,7 @@ Contengono e “strutturano” **riferimenti** ad altri oggetti (tipicamente tut
 | **Map**        | Associa coppie di (chiave, valore), senza chiavi duplicate |
 | **Queue**      | Una collezione first-in, first-out che modella una coda    |
 
-![[Screenshot 2024-04-11 alle 13.04.04.png]]
+![[Screenshot 2024-04-11 alle 13.04.04.png|In giallo i metodi astratti che le interfacce mettono a disposizione per le classi che le implementano]]
 
 
 

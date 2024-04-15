@@ -70,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Flet-notes/2024-04-11_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md"
+                "file": "Flet-notes/2024-04-11_MDP.md"
               }
             }
           },
@@ -211,13 +211,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6162243b3572abba",
+  "active": "fb6b1f42d99673b9",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-11_MDP.md",
     "Programming languages/Java/Strutture dati.md",
+    "Flet-notes/2024-04-11_MDP.md",
+    "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime.md",
-    "Programming languages/Java/Interfacce.md",
     "Flet-notes/2024-04-12_AE.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Programming languages/Java/Classi annidate e interne.md",
