@@ -110,3 +110,18 @@ MyString myString = stringConverter.convert(“123”);
 ## Single Abstract Method (SAM) type
 Le interfacce funzionali sono di tipo SAM, a ogni metodo che accetta un’interfaccia SAM, si può passare un’espressione lambda compatibile con l’unico metodo dell’interfaccia SAM.
 Analogamente per un riferimento a un’interfaccia SAM
+
+---
+## Differenza tra class anonime ed espressioni lambda
+La parola chive *this*:
+ - **classi anonime** → si riferisce all’oggetto anonimo
+ - **espressioni lambda** → si riferisce all’oggetto della classe che lo racchiude
+
+La compilazione è differente:
+- **classi anonime** → compilate come classi interne
+- **espressioni lambda** → compilate come metodi privati invocati dinamicamente
+
+---
+## Quando utilizzare le lambda?
+E' da consigliare l'impiego delle espressioni lambda principalmente quando il codice si scrive su una sola riga
+In alternativa, si preferisce un'implementazione mediante classe o classe anonima (o, vedremo più avanti, riferimenti a metodi)
