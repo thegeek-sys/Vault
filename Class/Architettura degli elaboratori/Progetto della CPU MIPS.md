@@ -59,3 +59,24 @@ Se un’unità funzionale può ricevere dati da **più sorgenti** è necessario 
 
 Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Control Unit**
 
+---
+## Ingredienti
+### Memoria delle istruzioni, PC, adder
+
+**Memoria istruzioni**:
+- Input → indirizzo a 32 bit
+- Output → istruzione (da 32 bit) situata nell’indirizzo di input
+
+**Program counter**:
+- Registro che contiene l’**indirizzo** dell’istruzione corrente
+
+**Sommatore**:
+- Necessario per calcolare il nuovo PC e le destinazioni dei salti relativi
+- riceve due valori a 32 bit e ne fornisce in uscita la somma
+
+![[Screenshot 2024-04-15 alle 16.44.10.png]]
+
+### Registri e ALU
+
+**Blocco dei registri** (register file):
+- contiene **32 registri** a 32 bit, indirizzabili con 5 bit (2^5 = 32)
