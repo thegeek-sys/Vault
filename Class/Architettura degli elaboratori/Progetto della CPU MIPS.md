@@ -1,7 +1,8 @@
 ---
 Created: 2024-04-15
 Class: "[[Architettura degli elaboratori]]"
-Related: 
+Related:
+  - "[[Rappresentazione dell’informazione]]"
 Completed:
 ---
 ---

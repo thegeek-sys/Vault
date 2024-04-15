@@ -67,4 +67,5 @@ Quindi se faccio `addi $t2,$s2,4`
 Queste operazioni sono divise in:
 - opcode → 6 bit
 - indirizzo → 26
-Eseguono operazioni di **salti non condizionati** (salto assoluto)
+Eseguono operazioni di **salti non condizionati** (salto assoluto
+![[Screenshot 2024-04-15 alle 17.08.18.png]]
