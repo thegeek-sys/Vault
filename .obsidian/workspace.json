@@ -70,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-11_MDP.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-11_MDP.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-11_MDP.md"
+                "file": "Programming languages/Java/Strutture dati.md"
               }
             }
           },
@@ -211,10 +211,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "fb6b1f42d99673b9",
+  "active": "6162243b3572abba",
   "lastOpenFiles": [
-    "Programming languages/Java/Strutture dati.md",
     "Flet-notes/2024-04-11_MDP.md",
+    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime.md",
