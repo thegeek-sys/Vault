@@ -58,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -124,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Flet-notes/2024-04-12_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Flet-notes/2024-04-12_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                "file": "Flet-notes/2024-04-12_AE.md"
               }
             }
           },
@@ -198,10 +199,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6c20a28fa00ef7c9",
+  "active": "12e2f4700b5c6b83",
   "lastOpenFiles": [
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Flet-notes/2024-04-12_AE.md",
+    "Files/Screenshot 2024-04-15 alle 16.09.41.png",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
@@ -212,7 +215,6 @@
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/MIPS.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Programming languages/Java/Strutture dati.md",
     "Flet-notes/2024-04-11_MDP.md",
     "Programming languages/Java/Interfacce.md",
@@ -227,7 +229,6 @@
     "Files/Screenshot 2024-04-11 alle 13.04.04.png",
     "Programming languages/Java/Classi Wrapper.md",
     "Flet-notes/2024-04-09_MDP.md",
-    "Class/Class.md",
     "IMG_6204.jpeg",
     "IMG_6204.heic",
     "Files/MIPS_Instruction_Set.pdf",
@@ -238,7 +239,6 @@
     "Files/Screenshot 2024-03-25 alle 22.51.10.png",
     "Files/Screenshot 2024-03-25 alle 22.47.55.png",
     "Files/Screenshot 2024-03-25 alle 22.46.43.png",
-    "Files/Screenshot 2024-03-25 alle 22.39.43.png",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",
