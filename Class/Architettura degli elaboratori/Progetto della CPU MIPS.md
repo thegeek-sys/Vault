@@ -133,4 +133,5 @@ Per calcolare l’indirizzo di accesso alla memoria si usa la stessa ALU (reg. b
 ## Esercizi
 ![[Screenshot 2024-04-15 alle 17.17.55.jpg]]
 
+![[Screenshot 2024-04-15 alle 17.38.13.jpg]]
 

@@ -108,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -201,6 +200,7 @@
   },
   "active": "3f487db8ad775b33",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-04-15 alle 17.38.13.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.png",
@@ -246,7 +246,6 @@
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
     "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
-    "Class/Architettura degli elaboratori",
-    "Class"
+    "Class/Architettura degli elaboratori"
   ]
 }
