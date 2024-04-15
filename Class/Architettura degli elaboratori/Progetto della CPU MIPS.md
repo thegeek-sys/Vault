@@ -58,3 +58,4 @@ Le varie unità funzionali sono collegate tra loro attraverso diversi **datapath
 Se un’unità funzionale può ricevere dati da **più sorgenti** è necessario inserire un multiplexer (**MUX**) per selezionare la sorgente necessaria
 
 Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Control Unit**
+
