@@ -123,4 +123,8 @@ Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Con
 ---
 ## Operazioni ALU e accesso a MEM
 Decodifica facilitata: i formati I ed R sono quasi uguali
-Secondo argomento dell’istruzione:
+Secondo argomento dell’istruzione (a seconda del segnale di controllo **ALUSrc** che seleziona la porta corrispondente del MUX):
+- registro
+- campo immediato (in questo caso: valore esteso nel segno)
+
+Per calcolare l’indirizzo di accesso alla memoria si usa la stessa ALU (reg. base + campo i.). Il risultato dell’ALU o della `lw` viene selezionato da **MemtoReg** che comanda il MUX a destra
