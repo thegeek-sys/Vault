@@ -34,16 +34,6 @@
             }
           },
           {
-            "id": "98b77366d8c15311",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-04-15 alle 17.17.55.png"
-              }
-            }
-          },
-          {
             "id": "12e2f4700b5c6b83",
             "type": "leaf",
             "state": {
@@ -68,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -134,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Screenshot 2024-04-15 alle 17.17.55.png",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Screenshot 2024-04-15 alle 17.17.55.png",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Screenshot 2024-04-15 alle 17.17.55.png"
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
               }
             }
           },
@@ -208,10 +199,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "98b77366d8c15311",
+  "active": "3f487db8ad775b33",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Files/Screenshot 2024-04-15 alle 17.17.55.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.png",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Flet-notes/2024-04-12_AE.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-15 alle 17.08.18.png",
