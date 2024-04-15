@@ -76,7 +76,25 @@ Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Con
 
 ![[Screenshot 2024-04-15 alle 16.44.10.png]]
 
+
 ### Registri e ALU
 
 **Blocco dei registri** (register file):
-- contiene **32 registri** a 32 bit, indirizzabili con 5 bit (2^5 = 32)
+- contiene **32 registri** a 32 bit, indirizzabili con 5 bit ($2^5 = 32$)
+- può memorizzare un dato in un registro e contemporaneamente fornirlo in uscita
+- 3 porte a 5 bit per indicare quali 2 registro scrivere
+- 3 porte dati (a 32 bit)
+	- una in ingresso per il valore da memorizzare
+	- 2 di uscita per i valori letti
+- il segnale *RegWrite* abilita (se 1) la scrittura nel registro di scrittura
+
+**ALU**:
+- riceve due valori interi a 32  bit e svolge una operazione indicata dai segnali *Op. ALU*
+- oltre al risultato da 32 bit e produce un segnale `Zero` asserito se il risultato è zero
+
+![[Screenshot 2024-04-15 alle 16.52.18.png]]
+
+
+### Memoria dati ed unità di estensione del segno
+**Unità di memoria**:
+- riceve un **indirizzo** (da 32 bit) che indica quale 
