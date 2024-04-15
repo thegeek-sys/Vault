@@ -10,7 +10,7 @@ Completed:
 - [Metodi di default e statici](#metodi-di-default-e-statici)
 	- [Metodi privati](#metodi-privati)
 - [Dichiarazione di un’interfaccia](#dichiarazione-di-uninterfaccia)
-	- [Implementare u’interfaccia](#implementare-uinterfaccia)
+	- [[#Implementare un’interfaccia|Implementare un’interfaccia]]
 - [Contratto](#contratto)
 - [Esempio: iterabile](#esempio-iterabile)
 - [Iterable e Iterator](#iterable-e-iterator)
