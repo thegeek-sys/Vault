@@ -56,6 +56,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c9d7b9f695b6ad05",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Files/MIPS_Instruction_Set.pdf"
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -108,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -200,18 +211,20 @@
   },
   "active": "3f487db8ad775b33",
   "lastOpenFiles": [
+    "Files/MIPS_Instruction_Set.pdf",
+    "Files/Screenshot 2024-04-15 alle 17.53.42.jpg",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Screenshot 2024-04-15 alle 17.38.13.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.png",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Flet-notes/2024-04-12_AE.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-15 alle 17.08.18.png",
     "Files/Screenshot 2024-04-15 alle 17.04.20.png",
     "Files/Screenshot 2024-04-15 alle 17.02.07.png",
     "Files/Screenshot 2024-04-15 alle 16.52.18.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-04-15 alle 16.44.10.png",
     "Files/Screenshot 2024-04-15 alle 16.09.41.png",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
@@ -233,12 +246,9 @@
     "To-Do.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
-    "Files/Screenshot 2024-04-12 alle 12.51.05.png",
-    "Files/Screenshot 2024-04-11 alle 13.04.04.png",
     "Programming languages/Java/Classi Wrapper.md",
     "Flet-notes/2024-04-09_MDP.md",
     "IMG_6204.heic",
-    "Files/MIPS_Instruction_Set.pdf",
     "Untitled.canvas",
     "Funzioni",
     "Compilatore",

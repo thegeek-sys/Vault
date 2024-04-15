@@ -135,3 +135,7 @@ Per calcolare l’indirizzo di accesso alla memoria si usa la stessa ALU (reg. b
 
 ![[Screenshot 2024-04-15 alle 17.38.13.jpg]]
 
+![[Screenshot 2024-04-15 alle 17.53.42.jpg]]
+
+---
+## Salti condizionati
