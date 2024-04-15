@@ -120,3 +120,7 @@ Le unità funzionali sono attivate e coordinate dai segnali prodotti dalla **Con
 > - Connessioni da 32 bit
 > - Mentre viene letta l’istruzione viene già calcolato il nuovo PC
 
+---
+## Operazioni ALU e accesso a MEM
+Decodifica facilitata: i formati I ed R sono quasi uguali
+Secondo argomento dell’istruzione:
