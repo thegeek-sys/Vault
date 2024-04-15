@@ -18,7 +18,8 @@
 - [[Class/Architettura degli elaboratori/Ricorsione|Ricorsione]]
 
 ## Teoria
-
+- [[Progetto della CPU MIPS]]
+- 
 
 # Extra
 - [[Esercizi]]
