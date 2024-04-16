@@ -191,3 +191,7 @@ Per questo motivo si hanno due livelli di decodifica
 |           Tipo R            |  10   |                 AND                 |     100100     |         AND         |              0000              |
 |           Tipo R            |  10   |                 OR                  |     100101     |         OR          |              0001              |
 |           Tipo R            |  10   |            set less than            |     101010     |    set less than    |              0111              |
+### Input di controllo e tabella di verità
+![[Screenshot 2024-04-16 alle 20.04.21.png]]
+N.B. X rappresentano don’t care
+
