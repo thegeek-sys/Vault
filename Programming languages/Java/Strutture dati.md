@@ -148,3 +148,5 @@ while(i.hasNext())
 | `E removeLast()`                   | Rimuove e restituisce l’ultimo elemento                                                       |
 | `E pop()`                          | Elimina e restituisce l’elemento in cima alla lista vista come pila                           |
 | `void push(E e)`                   | Inserisce un elemento in cima alla lista vista come pila                                      |
+
+### Iterare sulle list in entrambe le direzioni
