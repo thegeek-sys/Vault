@@ -151,4 +151,14 @@ Il nuovo valore del PC può dunque provenire da:
 ![[Screenshot 2024-04-16 alle 18.59.46.png]]
 
 ---
-## Tutto inseieme
+## Tutto insieme
+![[Screenshot 2024-04-16 alle 19.33.04.png]]
+
+>[!info]- Esercizio
+>Evidenziare le linee attraversate dai segnali di `lw $s0,0x00000004($29)`
+>![[Screenshot 2024-04-16 alle 19.33.04.jpg]]
+
+## …con Control Unit e logica di salto
+![[Screenshot 2024-04-16 alle 19.47.13.png]]
+
+---
