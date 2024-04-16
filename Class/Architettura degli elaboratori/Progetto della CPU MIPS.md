@@ -163,3 +163,15 @@ Il nuovo valore del PC può dunque provenire da:
 
 ---
 ## Formato delle istruzioni e bit di controllo ALU
+Fino ad ora abbiamo considerato i **4 bit** di controllo dell’operazione da eseguire dall’ALU come delle incognite. L’ALU in realtà fa un totale di 6 operazioni in base alla seguente codifica
+
+| ALU control lines |     Function     |
+| :---------------: | :--------------: |
+|       0000        |       AND        |
+|       0001        |        OR        |
+|       0010        |       add        |
+|       0110        |     subract      |
+|       0111        | set on less than |
+|       1100        |       NOR        |
+Questi 4 bit più altri due dati dall’**ALUOp** formano l’**OpCode** dell’istruzione
+Questo permette di notare immediatamente che tipo di operazione 
