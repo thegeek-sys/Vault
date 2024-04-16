@@ -336,3 +336,17 @@ E’ possibile ottenere l’insieme delle chiavi di una mappa mediante il metodo
 L’insieme delle coppie (chiave, valore) mediante il metodo `entrySet` che:
 - restituisce un insieme di oggetti di tipo `Map.Entry(K, V)`
 - per ogni elemento (ovvero la coppia) è possibile conoscere la chiave (`getKey()`) e il valore (`getValue()`)
+
+#### Esempio
+Il seguente codice crea una **TreeMap** e ne stampa l’insieme delle chiavi, la collezione dei valori e la collezione delle coppie (di tipo `Map.Entry<K,V>`)
+```java
+Map<String, Integer> m = new TreeMap<String, Integer>();
+
+m.put("a", 1);
+m.put("b", 1);
+m.put("c", 2);
+m.put("d", 3);
+m.put("e", 1);
+
+System.out.println
+```
