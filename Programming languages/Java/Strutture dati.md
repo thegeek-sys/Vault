@@ -366,4 +366,75 @@ Se la chiave non contiene già un valore, imposta il valore specificato, altrime
 `of(chiave, valore, chiave, valore, ..., chiave, valore)`
 Statico, crea una mappa immutabile dei tipi e con i valori corrispondenti
 
+---
 ## Algoritmi sulle collezioni: la classe java.util.Collection
+La classe `java.util.Collection` fornisce metodi **statici** per la manipolazione delle collezioni
+
+| Metodo         | Descrizione                                                         |
+| -------------- | ------------------------------------------------------------------- |
+| `sort`         | Ordina gli elementi di una List                                     |
+| `binarySearch` | Cerca un elemento di una List mediante ricerca binaria              |
+| `fill`         | Rimpiazza tutti gli elementi di una List con l’elemento specificato |
+| `copy`         | Copia gli elementi da una lista all’altra                           |
+| `reverse`      | Inverte l’ordine degli elementi di una List                         |
+| `shuffle`      | Mette in ordine casuale gli elementi di una List                    |
+| `min/max`      | Restituisce l’elemento più piccolo/grande della Collection          |
+
+---
+## Algoritmi sugli array: la classe java.util.Arrays
+La classe `java.util.Arrays` fornisce metodi **statici** per la manipolazione degli array
+
+| Metodo         | Descrizione                                                        |
+| -------------- | ------------------------------------------------------------------ |
+| `sort`         | Ordina gli elementi dell’array                                     |
+| `binarySearch` | Cerca un elemento mediante ricerca binaria                         |
+| `fill`         | Riempi l’array con l’elemento specificato                          |
+| `copyOf`       | Restituisce una copia di un array                                  |
+| `equals`       | Confronta due array elemento per elemento                          |
+| `asList`       | Restituisce una lista contenente gli elementi dell’array           |
+| `toString`     | Restituisce una rappresentazione dell’array sotto forma di stringa |
+
+---
+## Ordinamento naturale
+Come **garantire un ordinamento sui tipi** utilizzati nelle strutture dati che si fondano su un ordinamento (es. `TreeSet` o `TreeMap`)?
+E’ necessario che quei tipi implementino un’interfaccia speciale, chiamata **`Comparable<T>`** dotata di un solo metodo
+
+| Metodo               | Descrizione                                                                             |
+| :------------------- | :-------------------------------------------------------------------------------------- |
+| `int compareTo(T o)` | Confronta se stesso con l’oggetto o (restituendo 0 se uguali, -1 se ≤ o, +1 altrimenti) |
+
+### Esempio
+```java
+public class NomeCognome implements Comparable<NomeCognome> {
+	private String nome;
+	private String cognome;
+	
+	public NomeCognome(String nome, String cognome) {
+		this.nome = nome;
+		this.cognome = cognome;
+	}
+	
+	@Override
+	public int compareTo(NomeCognome o) {
+		int v = cognome.compareTo(o.cognome);
+		if (v == 0) return nome.compareTo(o.nome);
+		else return v
+	}
+	
+	@Override
+	public String toString() { return cognoome+" "+nome; }
+
+}
+```
+
+---
+## Ordinamento con l’interfaccia Comparator
+E se la classe **non fornisce “di suo“ l’ordinamento** mediante l’interfaccia Comparable? E se vogliamo **ordinare diversamente** gli elementi di un certo oggetto?
+E’ sufficiente implementare un’interfaccia **`Comparator<T>`** e passarne un’istanza in input al costruttore delle strutture dati (es. TreeSet e TreeMap)
+
+Metodi dell’interfaccia `Comparator<T>`
+
+| Tipo      | Metodo                                                                                        |
+| --------- | --------------------------------------------------------------------------------------------- |
+| `int`     | **`compare(T o1, T o2)`**<br>Compares its two arguments for order                             |
+| `boolean` | **`equals(Object obj)`**<br>Indicates whether some other object is “equal to” this comparator |

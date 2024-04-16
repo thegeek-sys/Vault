@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Flet-notes/2024-04-16_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Flet-notes/2024-04-16_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md"
+                "file": "Flet-notes/2024-04-16_MDP.md"
               }
             }
           },
@@ -207,10 +207,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "280c5241c2401866",
+  "active": "6162243b3572abba",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Strutture dati.md",
+    "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-04-16_AE.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
