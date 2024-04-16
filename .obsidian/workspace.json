@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,48 +22,38 @@
             }
           },
           {
-            "id": "3f487db8ad775b33",
+            "id": "6162243b3572abba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Flet-notes/2024-04-16_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "12e2f4700b5c6b83",
+            "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-12_AE.md",
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6c20a28fa00ef7c9",
+            "id": "280c5241c2401866",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "c9d7b9f695b6ad05",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
           }
@@ -97,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scanner path:\"Programming languages/Java/\"",
+                "query": "compare path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -135,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Flet-notes/2024-04-16_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Flet-notes/2024-04-16_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
+                "file": "Flet-notes/2024-04-16_MDP.md"
               }
             }
           },
@@ -209,12 +199,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3f487db8ad775b33",
+  "active": "6162243b3572abba",
   "lastOpenFiles": [
+    "Programming languages/Java/Strutture dati.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-04-16_MDP.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-04-15 alle 17.53.42.jpg",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Screenshot 2024-04-15 alle 17.38.13.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg",
@@ -236,10 +229,8 @@
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Class/Architettura degli elaboratori/MIPS.md",
-    "Programming languages/Java/Strutture dati.md",
     "Flet-notes/2024-04-11_MDP.md",
     "Programming languages/Java/Interfacce.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Programming languages/Java/Classi annidate e interne.md",

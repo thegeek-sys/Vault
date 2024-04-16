@@ -24,23 +24,17 @@
                 }
               },
               {
-                "id": "6c20a28fa00ef7c9",
+                "id": "3f487db8ad775b33",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                     "mode": "source",
                     "source": false
                   }
                 }
-              }
-            ]
-          },
-          {
-            "id": "627b2c252adaa740",
-            "type": "tabs",
-            "children": [
+              },
               {
                 "id": "12e2f4700b5c6b83",
                 "type": "leaf",
@@ -52,8 +46,31 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "6c20a28fa00ef7c9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c9d7b9f695b6ad05",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Files/MIPS_Instruction_Set.pdf"
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -120,7 +137,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -137,7 +154,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -160,7 +177,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
                   }
                 }
               },
@@ -194,8 +211,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "ecb6cd090c8cbd79",
-      "mtime": "2024-04-15T15:54:40+02:00"
+      "active": "3f487db8ad775b33",
+      "mtime": "2024-04-16T09:16:47+02:00"
     },
     "Java": {
       "main": {
@@ -601,5 +618,5 @@
       }
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
