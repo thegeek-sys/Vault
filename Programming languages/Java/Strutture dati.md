@@ -5,6 +5,40 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Caratteristiche|Caratteristiche]]
+- [[#Collection|Collection]]
+	- [[#Collection#Iterazione esterna su una collezione|Iterazione esterna su una collezione]]
+	- [[#Collection#Iterazione interna su una collezione|Iterazione interna su una collezione]]
+- [[#Modificare una lista durante l'iterazione|Modificare una lista durante l'iterazione]]
+- [[#Collezioni fondamentali|Collezioni fondamentali]]
+- [[#ArrayList e LinkedList|ArrayList e LinkedList]]
+	- [[#ArrayList e LinkedList#Metodi ArrayList|Metodi ArrayList]]
+	- [[#ArrayList e LinkedList#Alcuni metodi aggiuntivi di LinkedList|Alcuni metodi aggiuntivi di LinkedList]]
+	- [[#ArrayList e LinkedList#Iterare sulle list in entrambe le direzioni|Iterare sulle list in entrambe le direzioni]]
+- [[#Insiemi: HashSet, TreeSet e LinkedHashSet|Insiemi: HashSet, TreeSet e LinkedHashSet]]
+	- [[#Insiemi: HashSet, TreeSet e LinkedHashSet#Esempio: HashSet|Esempio: HashSet]]
+	- [[#Insiemi: HashSet, TreeSet e LinkedHashSet#Esempio: TreeSet|Esempio: TreeSet]]
+- [[#Mappe|Mappe]]
+	- [[#Mappe#Metodi|Metodi]]
+	- [[#Mappe#HashMap|HashMap]]
+		- [[#HashMap#Esempio|Esempio]]
+	- [[#Mappe#TreeMap|TreeMap]]
+		- [[#TreeMap#Esempio|Esempio]]
+	- [[#Mappe#LinkedHashMap|LinkedHashMap]]
+		- [[#LinkedHashMap#Esempio|Esempio]]
+	- [[#Mappe#Confronto tra HashMap, TreeMap e LinkedHashMap|Confronto tra HashMap, TreeMap e LinkedHashMap]]
+	- [[#Mappe#Chiavi e valori di una mappa|Chiavi e valori di una mappa]]
+		- [[#Chiavi e valori di una mappa#Esempio|Esempio]]
+	- [[#Mappe#Metodi Java 8 e Java 9 nell’interfaccia java.util.Map|Metodi Java 8 e Java 9 nell’interfaccia java.util.Map]]
+- [[#Algoritmi sulle collezioni: la classe java.util.Collection|Algoritmi sulle collezioni: la classe java.util.Collection]]
+- [[#Algoritmi sugli array: la classe java.util.Arrays|Algoritmi sugli array: la classe java.util.Arrays]]
+- [[#Ordinamento naturale|Ordinamento naturale]]
+	- [[#Ordinamento naturale#Esempio|Esempio]]
+- [[#Ordinamento con l’interfaccia Comparator|Ordinamento con l’interfaccia Comparator]]
+
+---
 ## Introduction
 Una struttura dati serve a memorizzare e organizzare i dati in memoria in modo tale da poterli usare efficientemente
 

@@ -46,8 +46,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "e37238a7a0edf68c",
@@ -133,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -207,11 +206,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6162243b3572abba",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
     "Programming languages/Java/Strutture dati.md",
-    "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Java.md",
+    "To-Do.md",
+    "Flet-notes/2024-04-16_MDP.md",
     "Flet-notes/2024-04-16_AE.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -243,7 +243,6 @@
     "Programming languages/Java/Classi anonime.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Programming languages/Java/Classi annidate e interne.md",
-    "To-Do.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
     "IMG_6204.heic",
