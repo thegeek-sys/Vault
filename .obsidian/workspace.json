@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Flet-notes/2024-04-16_AE.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Flet-notes/2024-04-16_AE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Flet-notes/2024-04-16_AE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
+                "file": "Flet-notes/2024-04-16_AE.md"
               }
             }
           },
@@ -200,6 +200,7 @@
   "active": "3f487db8ad775b33",
   "lastOpenFiles": [
     "Flet-notes/2024-04-12_AE.md",
+    "Flet-notes/2024-04-16_AE.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Strutture dati.md",
@@ -236,7 +237,6 @@
     "Programming languages/Python/Python.md",
     "Programming languages/Programming languages.md",
     "Programming languages/Java/Classi Wrapper.md",
-    "Flet-notes/2024-04-09_MDP.md",
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",
