@@ -102,3 +102,44 @@ while(i.hasNext())
 	- **TreeMap**
 - HashMap
 	- **LinkedHashMap**
+
+---
+## ArrayList e LinkedList
+**ArrayList** e **LinkedList** sono due strutture dati sono basate su `List` (la implementano), una sottointerfaccia di `Collection` e di `Iterable`, estendendo `AbstractList`
+
+**ArrayList** implementa una lista mediante un **array** (eventualmente ridimensionato, la sua capacità iniziale è 10 elementi)
+**LinkedList** implementa la lista mediante **elementi linkati**
+
+### Metodi ArrayList
+
+|             Tipo | Metodo                                                                                                                                                                                                      |
+| ----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|        `boolean` | **`add(E e)`**<br>Appends the specific element to the end of the list                                                                                                                                       |
+|           `void` | **`add(int index, E element)`**<br>Inserts the specific element at the specific position in the list                                                                                                        |
+|        `boolean` | **`addAll(Collection<? extends E> c)`**<br>Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection’s Iterator      |
+|         `boolan` | **`addAll (int index, Collection<? extends E> c)`**<br>Inserts all of the elements in the specified collection into this list, starting at the specified position                                           |
+|           `void` | **`clear()`**<br>Removes all of the elements from this list                                                                                                                                                 |
+|         `Object` | **`clone()`**<br>Returns a shallow copy of this `ArrayList` instance                                                                                                                                        |
+|        `boolean` | **`contains(Object o)`**<br>Returns `true` if this list contains the specified element                                                                                                                      |
+|           `void` | **`ensureCapacity(int minCapacity)`**<br>Increases the capacity of this `ArrayList` instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum             |
+|              `E` | **`get(int index)`**<br>Return the element at  the specified position in this list                                                                                                                          |
+|            `int` | **`indexOf(Object o)`**<br>Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element                                                 |
+|        `boolean` | **`isEmpty()`**<br>Returns `true` if this list contains no elements                                                                                                                                         |
+|            `int` | **`lastIndexOf(Object o)`**<br>Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element                                              |
+|              `E` | **`remove(int index)`**<br>Removes the element at the specified position in this list                                                                                                                       |
+|        `boolean` | **`remove(Object o)`**<br>Removes the first occurrence of the specified element from this list, if it’s present                                                                                             |
+| `protected void` | **`removeRange(int fromIndex, int toIndex)`**<br>Removes from this list all of the elements whose index is between `fromIndex` inclusive, and `toIndex` exclusive                                           |
+|              `E` | **`set(int index, E element)`**<br>Replaces the element at the specified position in this list with the specified element                                                                                   |
+|            `int` | **`size()`**<br>Returns the number of elements in this list                                                                                                                                                 |
+|       `Object[]` | **`toArray()`**<br>Returns an array containing all of the elements in this list in proper sequence (from first to last element)                                                                             |
+|        `<T> T[]` | **`toArray(T[] a)`**<br>Returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array |
+|           `void` | **`trimToSize()`**<br>Trims the capacity of this `ArrayList` instance to be the list’s current size                                                                                                         |
+
+### Alcuni metodi aggiuntivi di LinkedList
+
+| Metodo                             | Descrizione                                                                                   |
+| :--------------------------------- | :-------------------------------------------------------------------------------------------- |
+| `void addFirst(E e)`               | Aggiungere l’elemento in testa alla lista                                                     |
+| `void addLast(E e)`                | Aggiungere l’elemento in coda alla lista                                                      |
+| `Iterator<E> descendingIterator()` | Restituire un iteratore che parte dall’ultimo elemento della lista e si sposta verso sinistra |
+| `E getFirst()`                     | Restituisce il primo elemento della lista                                                     |
