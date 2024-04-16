@@ -144,7 +144,3 @@ while(i.hasNext())
 | `Iterator<E> descendingIterator()` | Restituire un iteratore che parte dall’ultimo elemento della lista e si sposta verso sinistra |
 | `E getFirst()`                     | Restituisce il primo elemento della lista                                                     |
 |                                    |                                                                                               |
-
-| ciao | ca  |
-| ---- | --- |
-| d    |     |
