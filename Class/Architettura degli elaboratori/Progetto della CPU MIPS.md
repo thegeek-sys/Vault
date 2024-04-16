@@ -138,4 +138,17 @@ Per calcolare l’indirizzo di accesso alla memoria si usa la stessa ALU (reg. b
 ![[Screenshot 2024-04-15 alle 17.53.42.jpg]]
 
 ---
-## Salti condizionati
+## Salti condizionati (beq)
+**ALU** come **comparatore** (sottrazione) di cui il segnale `Zero` ci indica se operare il salto
+La destinazione dei salti è un **numero relativo di istruzioni** rispetto alla istruzione seguente estesa del segno, moltiplicata per 4, sommata a PC + 4
+
+Il nuovo valore del PC può dunque provenire da:
+- PC+4 → istruzione seguente
+- uscita dell’adder → salto
+
+>[!info] In questo caso non ho bisogno di alcun MUX
+
+![[Screenshot 2024-04-16 alle 18.59.46.png]]
+
+---
+## Tutto inseieme
