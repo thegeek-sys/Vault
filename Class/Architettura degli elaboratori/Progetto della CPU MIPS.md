@@ -162,3 +162,4 @@ Il nuovo valore del PC può dunque provenire da:
 ![[Screenshot 2024-04-16 alle 19.47.13.png]]
 
 ---
+## Formato delle istruzioni e bit di controllo ALU
