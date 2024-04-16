@@ -71,9 +71,11 @@
   "anuppuccin-theme-settings@@anp-codeblock-wrap-hl-preview": "none",
   "anuppuccin-theme-settings@@anp-codeblock-wrap-edit": "none",
   "anuppuccin-theme-settings@@anp-list-toggle": true,
-  "anuppuccin-theme-settings@@anp-table-toggle": true,
+  "anuppuccin-theme-settings@@anp-table-toggle": false,
   "anuppuccin-theme-settings@@anp-decoration-toggle": true,
   "anuppuccin-theme-settings@@anp-header-color-toggle": true,
   "anuppuccin-theme-settings@@anp-header-margin-toggle": false,
-  "anuppuccin-theme-settings@@anp-header-divider-color-toggle": false
+  "anuppuccin-theme-settings@@anp-header-divider-color-toggle": false,
+  "anuppuccin-theme-settings@@anp-table-auto": false,
+  "anuppuccin-theme-settings@@anp-table-width": false
 }
