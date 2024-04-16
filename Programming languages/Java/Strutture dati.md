@@ -143,4 +143,8 @@ while(i.hasNext())
 | `void addLast(E e)`                | Aggiungere l’elemento in coda alla lista                                                      |
 | `Iterator<E> descendingIterator()` | Restituire un iteratore che parte dall’ultimo elemento della lista e si sposta verso sinistra |
 | `E getFirst()`                     | Restituisce il primo elemento della lista                                                     |
-|                                    |                                                                                               |
+| `E getLast()`                      | Restituisce l’ultimo elemento della lista                                                     |
+| `E removeFirst()`                  | Rimuove e restituisce il primo elemento                                                       |
+| `E removeLast()`                   | Rimuove e restituisce l’ultimo elemento                                                       |
+| `E pop()`                          | Elimina e restituisce l’elemento in cima alla lista vista come pila                           |
+| `void push(E e)`                   | Inserisce un elemento in cima alla lista vista come pila                                      |

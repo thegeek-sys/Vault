@@ -6,7 +6,7 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 58.083441981747065,
+        "dimension": 54.5348156816852,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -52,7 +52,7 @@
       {
         "id": "e37238a7a0edf68c",
         "type": "tabs",
-        "dimension": 41.916558018252935,
+        "dimension": 45.465184318314805,
         "children": [
           {
             "id": "6162243b3572abba",
@@ -207,7 +207,7 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ec2deb080f929989",
+  "active": "280c5241c2401866",
   "lastOpenFiles": [
     "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Strutture dati.md",
