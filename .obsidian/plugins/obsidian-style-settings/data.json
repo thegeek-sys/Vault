@@ -80,5 +80,5 @@
   "anuppuccin-theme-settings@@anp-table-width": true,
   "anuppuccin-theme-settings@@anp-table-align-th": "left",
   "anuppuccin-theme-settings@@anp-table-align-td": "left",
-  "anuppuccin-theme-settings@@anp-table-th-highlight": true
+  "anuppuccin-theme-settings@@anp-table-th-highlight": false
 }
