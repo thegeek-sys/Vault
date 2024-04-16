@@ -329,4 +329,10 @@ Dato il seguente testo:
 Se iteriamo su ciascuna delle tre strutture otteniamo:
 - **HashMap** (senza ordinamento evidente) → `{d=1, e=3, b=2, c=1, a=2}`
 - **TreeMap** (ordinamento naturale) → `{a=2, b=2, c=1, d=1, e=3}`
-- **LinedHashMap** (ordinamento di inserimento) → `{a=2, e=3, b=2, c=1, d=1}`
+- **LinkedHashMap** (ordinamento di inserimento) → `{a=2, e=3, b=2, c=1, d=1}`
+
+### Chiavi e valori di una mappa
+E’ possibile ottenere l’insieme delle chiavi di una mappa mediante il metodo `keySet` e l’elenco dei valori mediante il metodo `values` (con ripetizione!)
+L’insieme delle coppie (chiave, valore) mediante il metodo `entrySet` che:
+- restituisce un insieme di oggetti di tipo `Map.Entry(K, V)`
+- per ogni elemento (ovvero la coppia) è possibile conoscere la chiave (`getKey()`) e il valore (`getValue()`)
