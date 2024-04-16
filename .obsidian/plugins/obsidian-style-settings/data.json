@@ -77,5 +77,5 @@
   "anuppuccin-theme-settings@@anp-header-margin-toggle": false,
   "anuppuccin-theme-settings@@anp-header-divider-color-toggle": false,
   "anuppuccin-theme-settings@@anp-table-auto": false,
-  "anuppuccin-theme-settings@@anp-table-width": false
+  "anuppuccin-theme-settings@@anp-table-width": true
 }
