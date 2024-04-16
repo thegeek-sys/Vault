@@ -150,3 +150,81 @@ while(i.hasNext())
 | `void push(E e)`                   | Inserisce un elemento in cima alla lista vista come pila                                      |
 
 ### Iterare sulle list in entrambe le direzioni
+Il metodo `listIterator()` restituisce un **iteratore bidirezionale** per la lista
+
+Da sinistra verso destra
+```java
+ListIterator<Integer> i = l.listIterator();
+while(i.hasNext())
+	System.out.println(i.next());
+```
+
+Da destra verso sinistra (se si specifica un intero, si parte da quella posizione)
+```java
+ListIterator<Integer> i = l.listIterator(l.size());
+while(i.hasPrevious())
+	System.out.println(i.previous());
+```
+
+---
+## Insiemi: HashSet, TreeSet e LinkedHashSet
+Gli **insiemi** sono basati su `Set`, una sottointerfaccia di `Collection` e di `Iterable`. Proprio come gli insieme matematici anche questi contengono elementi **tutti distinti**.
+
+**HashSet** memorizza gli elementi di una tabella di hash. Questo si fonda sul concetto di **tabella hash** 
+$$
+\text{se a.eqauls(b)} \longrightarrow (\text{a.hashCode}== \text{b.hashCode})
+$$
+$$
+(\text{a.hashCode}== \text{b.hashCode}) \centernot\longrightarrow \text{se a.eqauls(b)}
+$$
+
+
+**TreeSet** memorizza gli elementi in un albero mantenendo un ordine sugli elementi (ordinamento naturale dei tipi)
+
+**LinkedHashSet** memorizza gli elementi in ordine di inserimento
+
+### Esempio: HashSet
+```java
+HashSet<String> nomi = new HashSet<String>();
+HashSet<String> cognomi = new HashSet<String>();
+
+nomi.add("mario");
+cognomi.add("rossi");
+
+nomi.add("mario");
+cognomi.add("verdi");
+
+nomi.add("luigi");
+cognomi.add("rossi");
+
+nomi.add("luigi");
+cognomi.add("bianchi");
+
+System.out.println(nomi);  // [mario, luigi]
+System.out.println(cognomi);  // [verdi, bianchi, rossi]
+```
+
+### Esempio: TreeSet
+Gli elementi vengono mantenuti ordinati sulla base dell’ordinamento naturale definito sul tipo degli elementi
+```java
+TreeSet<String> nomi = new TreeSet<String>();
+TreeSet<String> cognomi = new TreeSet<String>();
+
+nomi.add("mario");
+cognomi.add("rossi");
+
+nomi.add("mario");
+cognomi.add("verdi");
+
+nomi.add("luigi");
+cognomi.add("rossi");
+
+nomi.add("luigi");
+cognomi.add("bianchi");
+
+System.out.println(nomi);  // [luigi, mario]
+System.out.println(cognomi);  // [bianchi, rossi, verdi]
+```
+
+---
+## Mappe
