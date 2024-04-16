@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "ecb6cd090c8cbd79",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,38 +22,36 @@
             }
           },
           {
-            "id": "6162243b3572abba",
+            "id": "3f487db8ad775b33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d2cac6488958348a",
+            "id": "6c20a28fa00ef7c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "280c5241c2401866",
+            "id": "c9d7b9f695b6ad05",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
-                "mode": "source",
-                "source": false
+                "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
           }
@@ -87,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "compare path:\"Programming languages/Java/\"",
+                "query": "scanner path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md"
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
               }
             }
           },
@@ -199,12 +197,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6162243b3572abba",
+  "active": "3f487db8ad775b33",
   "lastOpenFiles": [
+    "Flet-notes/2024-04-12_AE.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Java.md",
-    "Flet-notes/2024-04-16_MDP.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-04-15 alle 17.53.42.jpg",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -212,7 +211,6 @@
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg",
     "Files/Screenshot 2024-04-15 alle 17.17.55.png",
-    "Flet-notes/2024-04-12_AE.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-15 alle 17.08.18.png",
     "Files/Screenshot 2024-04-15 alle 17.04.20.png",

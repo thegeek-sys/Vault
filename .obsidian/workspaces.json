@@ -243,7 +243,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Strutture dati.md",
+                    "file": "Flet-notes/2024-04-16_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -256,6 +256,18 @@
                   "type": "markdown",
                   "state": {
                     "file": "To-Do.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "280c5241c2401866",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Strutture dati.md",
                     "mode": "source",
                     "source": false
                   }
@@ -329,7 +341,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Strutture dati.md",
+                    "file": "Flet-notes/2024-04-16_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -346,7 +358,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Strutture dati.md",
+                    "file": "Flet-notes/2024-04-16_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -369,7 +381,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Strutture dati.md"
+                    "file": "Flet-notes/2024-04-16_MDP.md"
                   }
                 }
               },
@@ -404,7 +416,7 @@
         }
       },
       "active": "6162243b3572abba",
-      "mtime": "2024-04-15T15:55:55+02:00"
+      "mtime": "2024-04-16T12:04:00+02:00"
     },
     "Python": {
       "main": {
@@ -618,5 +630,5 @@
       }
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
