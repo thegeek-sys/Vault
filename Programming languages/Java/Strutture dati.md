@@ -348,5 +348,22 @@ m.put("c", 2);
 m.put("d", 3);
 m.put("e", 1);
 
-System.out.println
+System.out.println(m.keySet());   // [a, b, c, d, e]
+System.out.println(m.values());   // [1, 1, 2, 3, 1]
+System.out.println(m.entrySet()); // [a=1, b=1, c=2, d=3, e=1]
 ```
+
+### Metodi Java 8 e Java 9 nell’interfaccia java.util.Map
+`forEach(BiConsumer)`
+Itera su ciascuna coppia (chiave, valore)
+
+`getOrDefault(chiave, valoreDefault)`
+Restituisce il valore associato alla chiave o valoreDefault se la chiave non è presente
+
+`merge(chiave, valore, BiFunction)`
+Se la chiave non contiene già un valore, imposta il valore specificato, altrimenti chiama una bifunzione che decide come mettere insieme il valore precedente con il valore passato in input
+
+`of(chiave, valore, chiave, valore, ..., chiave, valore)`
+Statico, crea una mappa immutabile dei tipi e con i valori corrispondenti
+
+## Algoritmi sulle collezioni: la classe java.util.Collection

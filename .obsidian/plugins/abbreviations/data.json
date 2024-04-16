@@ -1,0 +1,10 @@
+{
+  "abbreviations": {
+    "sout": {
+      "value": "System.out.println()",
+      "isEnabled": true,
+      "position": 0,
+      "isCaseSensitive": false
+    }
+  }
+}
