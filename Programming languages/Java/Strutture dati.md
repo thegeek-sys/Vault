@@ -228,3 +228,105 @@ System.out.println(cognomi);  // [bianchi, rossi, verdi]
 
 ---
 ## Mappe
+Una mappa mette in corrispondenza **chiavi** e **valori** e non può contenere chiavi duplicate.
+`java.util.Map` è un’interfaccia implementata da `HashMap`, `LinkedHashMap`, `TreeMap`
+
+### Metodi
+
+| Tipo                  | Method                                                                                                                                  |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `void`                | **`clear()`**<br>Removes all of the mappings from this map                                                                              |
+| `boolean`             | **`containsKey(Object key)`**<br>Returns true if this map contains a mapping for the specified key.                                     |
+| `boolean`             | **`containsValue(Object value)`**<br>Returns true if this map maps one or more keys to the specified value.                             |
+| `Set<Map.Entry<K,V>>` | **`entrySet()`**<br>Returns a `Set` view of the mappings contained in this map.                                                         |
+| `boolean`             | **`equals(Object o)`**<br>Compares the specified object with this map for equality.                                                     |
+| `V`                   | **`get(Object key)`**<br>Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
+| `int`                 | **`hashCode()`**<br>Returns the hash code value for this map.                                                                           |
+| `boolean`             | **`isEmpty()`**<br>Returns true if this map contains no key-value mappings.                                                             |
+| `Set<K>`              | **`keySet()`**<br>Returns a `Set` view of the keys contained in this map                                                                |
+| `V`                   | **`put(K key, V value)`**<br>Associates the specified value with the specified key in this map                                          |
+| `void`                | **`putAll(Map<? extends K,? extends V>m)`**<br>Copies all of the mappings from the specified map to this map                            |
+| `V`                   | **`remove(Object key)`**<br>Removes the mapping for a key from this map if it is present                                                |
+| `int`                 | **`size()`**<br>Returns the number of key-value mappings in this map.                                                                   |
+| `Collection<V>`       | **`values()`**<br>Returns a `Collection` view of the values contained in this map                                                       |
+
+
+### HashMap
+Memorizza le coppie in una tabella hash
+#### Esempio
+Registriamo le frequenze di occorrenza delle parole in un testo
+```java
+public class MappaDelleFrequenze {
+	private Map<String, Integer> frequenze = new HashMap<String, Integer>;
+	public MappaDelleFrequenze(File file) throws IOException {
+		Scanner in = new Scanner(file);
+		
+		while(in.hasNext()) {
+			Singola parola = in.next();
+			Integer freq = frequenze.get(parola);
+			
+			// parola mai incontrata (non presente nella mappa)
+			if (freq == null)  frequenze.put(parola, 1);
+			// incrementa il conteggio di frequenza della parola
+			else               frequenze.put(parola, freq+1);
+		}
+	}
+}
+```
+
+### TreeMap
+Memorizza le coppie in un albero mantenendo un ordine sulle chiavi
+#### Esempio
+Se vogliamo mantenere un ordinamento sulle chiavi (ovvero sulle parole) di cui calcoliamo la frequenza
+```java
+public class MappaDelleFrequenze {
+	private Map<String, Integer> frequenze = new TreeMap<String, Integer>();
+	
+	public MappaDelleFrequenze(File file) throws IOException {
+		Scanner in = new Scanner(file);
+		
+		while(in.hasNext()) {
+			Singola parola = in.next();
+			Integer freq = frequenze.get(parola);
+			
+			// parola mai incontrata (non presente nella mappa)
+			if (freq == null)  frequenze.put(parola, 1);
+			// incrementa il conteggio di frequenza della parola
+			else               frequenze.put(parola, freq+1);
+		}
+	}
+}
+```
+
+### LinkedHashMap
+Estende HashMap e mantiene l’ordinamento di iterazione secondo gli inserimenti effettuati
+#### Esempio
+Se vogliamo mantenere un ordinamento di iterazione (ovvero sulle parole) di cui calcoliamo la frequenza
+```java
+public class MappaDelleFrequenze {
+	private Map<String, Integer> frequenze = new LinkedHashMap<String, Integer>();
+	
+	public MappaDelleFrequenze(File file) throws IOException {
+		Scanner in = new Scanner(file);
+		
+		while(in.hasNext()) {
+			Singola parola = in.next();
+			Integer freq = frequenze.get(parola);
+			
+			// parola mai incontrata (non presente nella mappa)
+			if (freq == null)  frequenze.put(parola, 1);
+			// incrementa il conteggio di frequenza della parola
+			else               frequenze.put(parola, freq+1);
+		}
+	}
+}
+```
+
+### Confronto tra HashMap, TreeMap e LinkedHashMap
+Dato il seguente testo:
+`a a e b c d e e e b`
+
+Se iteriamo su ciascuna delle tre strutture otteniamo:
+- **HashMap** (senza ordinamento evidente) → `{d=1, e=3, b=2, c=1, a=2}`
+- **TreeMap** (ordinamento naturale) → `{a=2, b=2, c=1, d=1, e=3}`
+- **LinedHashMap** (ordinamento di inserimento) → `{a=2, e=3, b=2, c=1, d=1}`
