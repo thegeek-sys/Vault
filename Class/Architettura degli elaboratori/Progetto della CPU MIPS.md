@@ -173,5 +173,21 @@ Fino ad ora abbiamo considerato i **4 bit** di controllo dell’operazione da es
 |       0110        |     subract      |
 |       0111        | set on less than |
 |       1100        |       NOR        |
-Questi 4 bit più altri due dati dall’**ALUOp** formano l’**OpCode** dell’istruzione
-Questo permette di notare immediatamente che tipo di operazione 
+
+Questi 4 bit più altri due, dati dall’**ALUOp**, formano l’**OpCode** dell’istruzione.
+Ciò permette di notare immediatamente che tipo di operazione, infatti se l’ALUOp inizia per 0 si tratta di operazioni `lw`, `sw` o `beq` (in cui non necessito dei 6 bit di funct) altrimenti di operazioni di tipo R.
+
+Per questo motivo si hanno due livelli di decodifica
+- un primo eseguito dalla **Control Unit**
+- un secondo eseguito dall’**ALU** (che riceve in input i 4 bit di controllo dell’operazione di cui abbiamo parlato sopra)
+
+| Codice operativo istruzione | ALUOp | Operazione eseguita dall’istruzione | Campo funzione | Operazione dell’ALU | Ingresso di controllo alla ALU |
+|:---------------------------:|:-----:|:-----------------------------------:|:--------------:|:-------------------:|:------------------------------:|
+|            `lw`             |  00   |          load di 1 parola           |     XXXXXX     |        somma        |              0010              |
+|            `sw`             |  00   |          store di 1 parola          |     XXXXXX     |        somma        |              0010              |
+|        Branch equal         |  01   | salto condizionato all’uguaglianza  |     XXXXXX     |     sottrazione     |              0110              |
+|           Tipo R            |  10   |                somma                |     100000     |        somma        |              0010              |
+|           Tipo R            |  10   |             sottrazione             |     100010     |     sottrazione     |              0110              |
+|           Tipo R            |  10   |                 AND                 |     100100     |         AND         |              0000              |
+|           Tipo R            |  10   |                 OR                  |     100101     |         OR          |              0001              |
+|           Tipo R            |  10   |            set less than            |     101010     |    set less than    |              0111              |
