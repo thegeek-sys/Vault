@@ -36,6 +36,7 @@ comparator = Comparator.comparing(Person::getFirstName)
 					   .thenComparing(Person::getLastName);
 ```
 
+---
 ## Predicate\<T>
 Funzione a valori booleani a un solo argomento generico T
 
@@ -61,3 +62,27 @@ Predicate<String> isEmpty = String::isEmpty;
 Predicate<String> isNotEmpty = String::isEmpty.negate();
 ```
 
+---
+## Function<T,R>
+Funzione a un argomento di tipo T e un tipo di ritorno E entrambi generici
+
+| Modifier and Type           | Method                                                                                                                                                                                   |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `default <V> Function<T,V>` | **`andThen(Function<? supper R,? extends V> after)`**<br>Returns a composed function that first applies this function to its input, and then applies the `after` function to the result. |
+| `R`                         | **`apply(T t)`**<br>Applies this function to the given argument                                                                                                                          |
+| `default <V> Function<V,R>` | **`compose(Function<? super V,? extends T> before`**<br>Returns a composed function that first applies the `before` function to its input, and then applies this function to the result. |
+| `static <T> Function<T,T>`  | **`identify()`**<br>Returns a function that always returns its input arguments                                                                                                           |
+
+```java
+Function<String, Integer> toInteger = Integer::valueOf;
+Integer k = toInteger.apply("123"); // 123
+
+Function<Integer, String> toString = String::valueOf;
+String k = toString.apply(123); // "123"
+
+Function<String, String> backToString = toInteger.andThen(toString);
+backToString.apply("123"); // "123"
+
+Function<Integer, Integer> square = k -> k*k;
+Integer sqr = square.apply(5); // 25
+```
