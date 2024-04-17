@@ -62,6 +62,9 @@ public interface Runnable {
 }
 ```
 
+>[!hint]
+> Nel caso in cui avessi un’interfaccia composta da due metodi, uno di overloading di un metodo esistente (anche non necessariamente specificato) e uno astratto, anche in questo caso si tratta di una *functional interface*. Quando infatti utilizzerò una lambda function, questa si riferirà in automatico al metodo astratto
+
 ---
 ## Espressioni lambda
 In Java 8 è possibile specificare funzioni utilizzando una notazione molto compatta, le espressioni lambda:
@@ -137,3 +140,24 @@ La compilazione è differente:
 E' da consigliare l'impiego delle espressioni lambda principalmente quando il codice si scrive su una sola riga
 In alternativa, si preferisce un'implementazione mediante classe o classe anonima (o, vedremo più avanti, riferimenti a metodi)
 Proprio su queste si basa la **programmazione funzionale** ed è detto *lambda calculus* il linguaggio formale per definire una funzione.
+
+---
+## Visibilità dalle espressioni lambda
+L’accesso alle variabili esterne da un’espressione lambda è simile a quello di una classe anonima. Si può infatti accedere a:
+- campi di istanza e variabili statiche
+- variabili **final** del metodo che definisce la lambda
+- variabili del metodo esterno **implicitamente final**
+
+### Esempio
+```java
+final int num = 1;
+Converter<Integer, String> stringConverter = 
+							from -> String.valueOf(from + num);
+stringConverter.convert(2); // "3"
+
+
+int num = 1; // non viene modificata all'interno del metodo
+Converter<Integer, String> stringConverter = 
+							from -> String.valueOf(from + num);
+stringConverter.convert(2); // "3"
+```

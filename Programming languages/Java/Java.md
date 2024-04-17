@@ -31,7 +31,7 @@
 - [[Classe Object]]
 - [[Interfacce]]
 - [[Classi annidate e interne]]
-- [[Classi anonime]]
+- [[Classi anonime e lambda function]]
 - [[Riferimenti a metodi esistenti]]
 - 
 
