@@ -22,6 +22,42 @@
             }
           },
           {
+            "id": "61f53ea96577f018",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Strutture dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15388e4d4a2e7fa2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Riferimenti a metodi esistenti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae38f30e9f0f19ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classe Object.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ab0e3e6bc3fa4f2c",
             "type": "leaf",
             "state": {
@@ -56,9 +92,51 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "babf5f68ed0eda5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/UML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80c83876b9e752f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Enumerazioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
+      },
+      {
+        "id": "62988be3f4ef588c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d67cf90d928f6dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-16_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,7 +203,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/Riferimenti a metodi esistenti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +220,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/Riferimenti a metodi esistenti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +243,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md"
+                "file": "Programming languages/Java/Riferimenti a metodi esistenti.md"
               }
             }
           },
@@ -199,9 +277,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ab0e3e6bc3fa4f2c",
+  "active": "15388e4d4a2e7fa2",
   "lastOpenFiles": [
+    "Flet-notes/2024-04-16_MDP.md",
+    "Programming languages/Java/Riferimenti a metodi esistenti.md",
+    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Classe Object.md",
+    "Programming languages/Java/Enumerazioni.md",
+    "Programming languages/Java/UML.md",
+    "Programming languages/Java/Classi annidate e interne.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Screenshot 2024-04-16 alle 20.04.21.png",
     "Flet-notes/2024-04-16_AE.md",
@@ -211,9 +296,7 @@
     "Files/Screenshot 2024-04-16 alle 19.33.04.jpg",
     "Files/Screenshot 2024-04-16 alle 19.33.04.png",
     "Files/Screenshot 2024-04-16 alle 18.59.46.png",
-    "Programming languages/Java/Strutture dati.md",
     "To-Do.md",
-    "Flet-notes/2024-04-16_MDP.md",
     "Files/Screenshot 2024-04-15 alle 17.38.13.jpg",
     "Flet-notes/2024-04-12_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
@@ -234,10 +317,6 @@
     "Flet-notes/2024-04-11_MDP.md",
     "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Classi anonime.md",
-    "Programming languages/Java/Shallow and Deep Copy.md",
-    "Programming languages/Java/Classi annidate e interne.md",
-    "Programming languages/Python/Python.md",
-    "Programming languages/Programming languages.md",
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",
