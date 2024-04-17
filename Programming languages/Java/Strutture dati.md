@@ -414,9 +414,21 @@ La classe `java.util.Collection` fornisce metodi **statici** per la manipolazion
 | `binarySearch` | Cerca un elemento di una List mediante ricerca binaria              |
 | `fill`         | Rimpiazza tutti gli elementi di una List con l’elemento specificato |
 | `copy`         | Copia gli elementi da una lista all’altra                           |
-| `reverse`      | Inverte l’ordine degli elementi di una List                         |
+| `reversed`     | Inverte l’ordine degli elementi di una List                         |
 | `shuffle`      | Mette in ordine casuale gli elementi di una List                    |
 | `min/max`      | Restituisce l’elemento più piccolo/grande della Collection          |
+
+### Collections.sort
+#### Ordinamento inverso
+```java
+Collections.sort(names, (a, b) -> b.compareTo(a));
+```
+
+#### Ordinamento per lunghezza
+```java
+Collections.sort(names, (a, b) -> a.length()-b.length());
+// oppure          (a,b) -> Integer.compare(a.length(), b.length()));
+```
 
 ---
 ## Algoritmi sugli array: la classe java.util.Arrays
