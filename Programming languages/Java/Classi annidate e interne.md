@@ -42,7 +42,7 @@ public class Tastiera {
 	private Tasto[] tasti;
 	
 	// Testo è una inner class quindi non statica
-	public class Testo {
+	public class Tasto {
 		private char c;
 		
 		public Tasto(char c) {
