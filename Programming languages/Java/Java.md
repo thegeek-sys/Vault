@@ -32,7 +32,6 @@
 - [[Interfacce]]
 - [[Classi annidate e interne]]
 - [[Classi anonime e lambda function]]
-- [[Riferimenti a metodi esistenti]]
 - 
 
 ##### Libraries
