@@ -195,3 +195,61 @@ Per questo motivo si hanno due livelli di decodifica
 ![[Screenshot 2024-04-16 alle 20.04.21.png]]
 N.B. X rappresentano don’t care
 
+## Datapath completo
+![[Screenshot 2024-04-18 alle 22.36.47.png|700]]
+
+>[!info]- Esecuzioni
+>**Tipo R**
+>![[Screenshot 2024-04-18 alle 22.39.10.png]]
+>
+>**lw**
+>![[Screenshot 2024-04-18 alle 22.40.03.png]]
+>
+>**beq**
+>![[Screenshot 2024-04-18 alle 22.41.23.png]]
+
+---
+## Segnali di controllo
+
+| Nome del segnale | Effetto quando non asserito                                                                  | Effetto quando asserito                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `RegDst`         | il numero dei registri in scrittura proviene dal campo rt (bit 20-16)                        | il numero del registro di scrittura proviene dal campo rd (bit 15-11)                                                              |
+| `RegWrite`       | nulla                                                                                        | il dato viene scritto nel register file nel registro individuato dal numero del registro di scrittura                              |
+| `ALUSrc`         | il secondo operando della ALU proviene dalla seconda uscita del register file (Dato letto 2) | il secondo operando della ALU proviene dall’estensione del segno dei 16 bit meno significativi dell’istruzione                     |
+| `MemRead`        | nulla                                                                                        | il dato della memoria nella posizione puntata dall’indirizzo viene inviato in uscita sulla linea “dato letto”                      |
+| `MemWrite`       | nulla                                                                                        | il contenuto della memoria nella posizione puntata dall’indirizzo viene sostituito con il dato presente sulla linea “dato scritto” |
+| `MemtoReg`       | il dato viene inviato al register file per la scrittura, proviene dalla ALU                  | il dato inviato al register file per la scrittura proviene dalla Memoria Dati                                                      |
+
+---
+## Segnali da generare
+L’ALU deve seguire 4 tipi di comportamento:
+- Se l’istruzione è di **tipo R** eseguire l’operazione indicata dal campo **funct** dell’istruzione
+- Se l’istruzione accede alla memoria (**lw**, **sw**) svolgere la **somma** che calcola l’indirizzo
+- Se l’istruzione è un **beq** deve svolgere una **differenza**
+Per codificare 3 comportamenti bastano 2 segnali dalla Control Unit: `ALUOp1` ed `ALUOp0`
+
+// aggiungere table slide 29
+
+---
+## Tempi di esecuzione
+Se conosciamo il tempo necessario a produrre i risultati delle diverse unità funzionali allora possiamo calcolare il tempo totale di ciascuna istruzione.
+Bisogna però fare attenzione a se le istruzioni sono eseguite in **serie** o in **parallelo**, se sono in parallelo infatti devo prendere il **massimo tra i tempi dei vari branch** che eseguono le operazioni in serie
+### Esempio
+Supponiamo che i tempi siano:
+- accesso alla memoria (dati o istruzione) → 100 ns
+- ALU e sommatori → 150 ns
+- accesso ai registri (in lettura o scrittura) → 50 ns
+- tutte le altre componenti → 0 ns
+
+Allora i tempi di esecuzione delle istruzioni saranno:
+
+| Istruzione | Istruction Fetch | Instruction Decode | Execution | MEM | Write Back | Totale |
+| ---------- | ---------------- | ------------------ | --------- | --- | ---------- | ------ |
+| di tipo R  | 100              | 50                 | 150       |     | 50         | 350    |
+| lw         | 100              | 50                 | 150       | 100 | 50         | 450    |
+| sw         | 100              | 50                 | 150       | 100 |            | 400    |
+| beq        | 100              | 50                 | 150       |     |            | 500    |
+|            |                  |                    |           |     |            |        |
+> [!info]
+> le due operazioni di somma per calcolare PC +4 (150ns) e salti condizionati (altri 150ns) sono svolte in parallelo al Fetch, Decode ed Execution e non allungano i tempi
+
