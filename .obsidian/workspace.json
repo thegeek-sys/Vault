@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 50.74719800747198,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -28,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-04-18_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,25 +71,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "62988be3f4ef588c",
-        "type": "tabs",
-        "dimension": 49.25280199252802,
-        "children": [
-          {
-            "id": "2d67cf90d928f6dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-16_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -157,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-04-18_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-04-18_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md"
+                "file": "Flet-notes/2024-04-18_MDP.md"
               }
             }
           },
@@ -233,8 +213,11 @@
   },
   "active": "6b6d59f63721e041",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-16_MDP.md",
     "Programming languages/Java/Interfacce note.md",
+    "Flet-notes/2024-04-18_MDP.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Flet-notes/2024-04-16_MDP_sort.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
@@ -245,10 +228,8 @@
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Classi annidate e interne.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Screenshot 2024-04-16 alle 20.04.21.png",
     "Flet-notes/2024-04-16_AE.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-16 alle 19.47.13.png",
     "Files/Screenshot 2024-04-16 alle 19.33.04.jpg",
@@ -270,7 +251,6 @@
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",

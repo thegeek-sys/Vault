@@ -57,8 +57,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "fe80f4f757762a50",
@@ -143,7 +142,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -183,7 +182,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -217,8 +216,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "f661451f68231c21",
-      "mtime": "2024-04-17T09:18:05+02:00"
+      "active": "ecb6cd090c8cbd79",
+      "mtime": "2024-04-18T12:07:17+02:00"
     },
     "Java": {
       "main": {
@@ -228,7 +227,6 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
-            "dimension": 54.5348156816852,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -245,6 +243,42 @@
                 }
               },
               {
+                "id": "6b6d59f63721e041",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Interfacce note.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "5b7fd2be6625b753",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Strutture dati.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "83a94b6ad0a2fae0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
@@ -255,39 +289,9 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "280c5241c2401866",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Strutture dati.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
-            ]
-          },
-          {
-            "id": "e37238a7a0edf68c",
-            "type": "tabs",
-            "dimension": 45.465184318314805,
-            "children": [
-              {
-                "id": "6162243b3572abba",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-04-16_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -337,8 +341,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -354,7 +357,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Programming languages/Java/Interfacce note.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -371,7 +374,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Programming languages/Java/Interfacce note.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -394,7 +397,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Java.md"
+                    "file": "Programming languages/Java/Interfacce note.md"
                   }
                 }
               },
@@ -428,8 +431,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "39d805ea6ffbd4c1",
-      "mtime": "2024-04-16T18:50:16+02:00"
+      "active": "6b6d59f63721e041",
+      "mtime": "2024-04-17T19:20:44+02:00"
     },
     "Python": {
       "main": {
