@@ -165,26 +165,17 @@ p.next = Nodo(2)
 p.next.next = Nodo(12)
 ```
 
-
-
-Effettuare il print di una lista a puntatori
-```Python
-def Stampa(p):
-	while p != None:
-		print(p.key)
-		p = p.next
-```
-
-Ora c'è un problema, alla fine dell'esecuzione del while p sarà uguale a None
-soluzione: invece della vera p, passare una sua copia p'
-#### Creazione della lista a puntatori
-funzione che data una lista A, crea la lista a puntatori
+### Creazione
+Funzione che data una lista `A`, crea una linked list
 ```Python
 def crea(A):
 	if A == []: return None # se la lista è vuota ritorno None
 	
 	p = Nodo(A[0])
-	p = q # creo un nuovo puntatore, che utilizzerò per scorrere la lista
+	# creo un nuovo puntatore che utilizzerò per scorrere la lista
+	# se restituisco direttamente q, questo non sarà
+	# posizionato all'inizio, ma alla fine della lista
+	p = q
 	
 	for i in range(1, len(A)):
 		q.next = Nodo[A[i]]
@@ -193,24 +184,18 @@ def crea(A):
 	return p
 ```
 
-#### Inserire nella lista a puntatori un intero x
-Il seguente programma differisce a seconda di dove devo collocare l'intero
-
-Esercizio: aggiungere un nuovo nodo in testa (all'inizio)
+### Aggiungere elementi
+Aggiungere un nuovo nodo in testa (all'inizio)
 ```Python
 def es(p, x):
-	q = Nodo(x)
-	q.next = p
-	p = q
-```
-
-sennò si può fare in un'unica istruzione in questo modo
-```Python
-return Nodo(x, p)
+	return Nodo(x, p)
 ```
 
 Esercizio: inserire un elemento dopo l'eventuale presenza del nodo y, se non esiste non inserisco nulla
 se ci sono più y? lo inserisco alla prima occorrenza di y
+
+#### Esercizio
+Creare una funzione che inserisca un nuovo elemento `x` dopo l’eventuale presenza del nodo `y`, se questo non è presente non inserire nulla, se sono presenti più occorrenze di `y` inserire alla prima occorrenza
 
 `def es(p, x y)`
 `es(p, 5, 6)`
@@ -222,6 +207,17 @@ def es(p, x, y):
 			p.next = Nodo(x, p.next)
 			break
 		p = p.next
+```
+
+
+
+```python
+def es(p, x, y):
+while p.next != None:
+	if p.key == y:
+		p.next == Nodo(x, p.next)
+		break
+	p = p.next
 ```
 
 fare gli esercizi semplice alla fine del lucido
