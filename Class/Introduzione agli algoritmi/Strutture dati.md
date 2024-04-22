@@ -25,6 +25,17 @@ Le **proprietà** fondamentali della struttura dati heap sono:
 >Si noti che scorrere il vettore da sinistra a destra corrisponde a muoversi sull’albero per livelli, dall’alto verso il basso e da sinistra a destra in ciascun livello
 >Un ordinamento verticale garantisce anche l'ordinamento orizzontale, mentre il contrario non vale
 
+Provando a vedere l’albero dell’heap come un ordinamento orizzontale ci è facile notare che:
+- ogni nodo dell’albero binario corrisponde esattamente ad un elemento del vettore `A`
+- la radice dell’albero corrisponde ad `A[0]`
+- il figlio sinistro del nodo che corrisponde all’elemento `A[i]`, se esiste, corrisponde all’elemento `A[2i+1]`
+- il figlio destro del nodo che corrisponde all’elemento `A[i]`, se esiste, corrisponde all’elemento `A[2i+2]`
+
+### Proprietà
+- Poiché lo heap ha tutti i livelli completamente pieni tranne al più l’ultimo, la sua altezza è $\theta(\log(n))$
+- Con questa implementazione, la proprietà di ordinamento verticale implica che per tutti gli elementi tranne `A[0]` (poiché esso corrisponde alla radice dell’albero e quindi non ha genitore) vale: `A[parent(i)] ≤ A[i]`
+- L’elemento minimo risiede nella radice, quindi può essere trovato in tempo $\theta(1)$
+
 Ora vediamo le funzioni `heapify` e `heappop` nel dettaglio
 
 ### heapify(A)
