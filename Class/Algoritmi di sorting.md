@@ -174,16 +174,7 @@ Questo algoritmo sfrutta un'importante **struttura dati** che è l'**heap**, che
 ### Heap: struttura dati
 Parliamo ora della complessità di operazioni fondamentali per l'ordinamento di una lista, in particolare l'**estrazione del minimo** e l'**aggiunta di un elemento**
 
-Mantenendo la lista senza strutturarla ho queste complessità:
-
-|                           | Lista       | Lista ordinata                      | Heap         |
-| ------------------------- | ----------- | ----------------------------------- | ------------ |
-| **Creazione**             | $O(1)$      | $\Theta(n\log(n))$                  | $\Theta(n)$  |
-| **Aggiunta**              | $O(1)$      | $O(n)$                              | $O(\log(n))$ |
-| **Estrazione del minimo** | $\Theta(n)$ | $O(1)$<br>(ordinamento decrescente) | $O(\log(n))$ |
-
-
-la struttura dati heap in Python è implementata nella libreria `heapq`, questa libreria offre tre funzioni per gestire liste che fungono da heap:
+La **struttura dati heap** in Python è implementata nella libreria `heapq`, questa libreria offre tre funzioni per gestire liste che fungono da heap:
 - **Crea struttura**
 	`heapify(A)` → trasforma una lista A in un heap 
 - **Estrai minimo**
@@ -191,7 +182,6 @@ la struttura dati heap in Python è implementata nella libreria `heapq`, questa 
 - **Enserisci elemento**
 	`heappush(A, x)` → inserisce l'elemento x in modo che l'heap mantenga le sue proprietà
 
-#### Struttura dati heap e le sue proprietà
 ![[Heap.png]]
 
 Prima di parlare dell'algoritmo Heap Sort è meglio approfondire la struttura dati heap e le sue **proprietà** per poter capire appieno l'algoritmo che si basa su di esso:

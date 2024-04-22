@@ -32,9 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c198fe08579d5b25",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Heap.png"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Algoritmi di sorting.md",
+                "file": "Files/Heap.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Algoritmi di sorting.md",
+                "file": "Files/Heap.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Algoritmi di sorting.md"
+                "file": "Files/Heap.png"
               }
             }
           },
@@ -174,12 +184,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "24e69bf2c1cb7f8e",
+  "active": "c198fe08579d5b25",
   "lastOpenFiles": [
+    "Class/Algoritmi di sorting.md",
+    "Files/Heap.png",
     "Files/Screenshot 2024-04-22 alle 19.26.52.png",
     "Files/Screenshot 2024-04-22 alle 19.05.03.png",
     "Class/Introduzione agli algoritmi.md",
-    "Class/Algoritmi di sorting.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
     "Files/Screenshot 2024-04-22 alle 17.11.08.png",
@@ -193,8 +204,6 @@
     "Files/Screenshot 2024-04-18 alle 22.41.23.png",
     "Files/Screenshot 2024-04-18 alle 22.40.03.png",
     "Files/Screenshot 2024-04-18 alle 22.39.10.png",
-    "Screenshot 2024-04-18 alle 22.36.47.png",
-    "Files/Screenshot 2024-04-18 alle 22.36.47.png",
     "Flet-notes/2024-04-18_MDP.md",
     "Programming languages/Java/Interfacce note.md",
     "Flet-notes/2024-04-16_MDP_sort.md",
