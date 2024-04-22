@@ -83,9 +83,10 @@ Codifica istruzione
 	- `ALU → Registri[rt]`
 - **Segnali di controllo**
 	- Si comporta come una `lw` (nonostante questa memorizzi l’indirizzo invece che il dato) ovvero come l’istruzione `la` (load address)
-	- `Reg Dst → 1`
+	- `Reg Dst → 0`
 	- `ALU Src → 1`
-	- `Mem toReg → 1`
+	- `Mem toReg → 0`
+	- `Reg Write → 1`
 	- `Mem Read → X`
 	- `Mem Write → 0`
 	- `Branch → 0`
