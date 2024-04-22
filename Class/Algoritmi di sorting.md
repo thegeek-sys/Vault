@@ -111,6 +111,7 @@ Come anche detto in precedenza quick sort è un algoritmo che si basa sul **divi
 ![[Screenshot 2024-04-22 alle 19.26.52.png|center|400]]
 
 ```Python
+# non in-place
 def QuickSort(A):
 	if len(A) <= 1: return A
 	pivot = A[0]
@@ -123,8 +124,16 @@ def QuickSort(A):
 ```
 
 In questo codice il pivot è il primo numero dell'array. Gli elementi dell'array vengono divisi in tre array più piccoli L, M, R, a seconda se siano rispettivamente più piccoli del pivot, uguali al pivot o più grandi del pivot. Alla fine le tre liste vengono concatenate per ottenere l'array ordinato.
+Per quanto riguarda l’equazione di ricorrenza chiamiamo $k$ la dimensione del vettore `L` e si ha che $T(n)=T(k)+T(n+1-k)+\theta(n)$
 
- La versione del QuickSort che troviamo qui sopra non opera in place, vediamo ora lo pseudocodice di una implementazione che lavora in place
+Intuitivamente il **caso pessimo** si verifica quando il vettore è già ordinato (si avrà infatti che `len(S)==n-1`) e la ricorsione diventa $T(n)=T(n-1)+\theta(n)=\theta(n^2)$
+Intuitivamente il **caso migliore** lo si ha quando, ad ogni passo, l’array viene diviso in due metà identiche tra `L` ed `R`. L’equazione di ricorrenza diventa quindi $T(n)=2(T\frac{n}{2}+\theta(n)=T(n\log(n)))$
+
+### Caso medio
+Utilizzando un quick sort randomizzato (il pivot viene ogni volta scelto casualmente) e ipotizzando la soluzione $n\log (n)$ si può dimostrare per sostituzione che il caso medio è $\mathbf{T(n)=\theta(n\log(n))}$
+
+### Quick Sort in-place
+ La versione del QuickSort che troviamo qui sopra non opera in place, vediamo ora lo pseudocodice di una implementazione che lavora in-place
  
 ```Python
 def QuickSort(A, i, j)
@@ -133,16 +142,13 @@ def QuickSort(A, i, j)
 		QuickSort(A, i, p-1)
 		QuickSort(A, p+1, j)
 ```
-
-In questo codice la funzione Partition posiziona tutti gli elementi in modo che a sinistra del pivot ci siano solo numeri minori o uguali e a destra elementi maggiori o uguali.
-Ciò viene fatto senza usare ulteriore spazio.
-
-#### Funzionamento della funzione `Partition()`
+In questo codice la funzione `Partition` posiziona tutti gli elementi in modo che a sinistra del pivot ci siano solo numeri minori o uguali e a destra elementi maggiori o uguali. Ciò viene fatto senza usare ulteriore spazio.
 
 ```Python
-def partition(A, a, b):
+def Partition(A, a, b):
 	# il primo elemento viene selezionato come pivot
 	pivot = A[a]
+	# inizializzato il punto di divisione
 	i = a+1
 	for j in range(i, b+1):
 		if A[j] < pivot:
@@ -152,64 +158,38 @@ def partition(A, a, b):
 	# resitutisce l'indice del pivot
 	return i-1 
 ```
-
 La funzione partiziona la porzione dell'array che va da a a b
 1. Sceglie il primo elemento come pivot.
-2. gli indici j e k vengono spostati verso destra a partire dalla destra del pivot.
-3. ogni volta che l'indice j è su un elemento inferiore al pivot avviene uno scambio tra gli elementi puntati da i e j, successivamente i viene incrementato
-4. Quando j ha terminato di scorrere la porzione dell'array il pivot viene spostato nella sua posizione corretta (i-1)
+2. gli indici `j` e `k` vengono spostati verso destra a partire dalla destra del pivot.
+3. ogni volta che l'indice `j` è su un elemento inferiore al pivot avviene uno scambio tra gli elementi puntati da `i` e `j`, successivamente `i` viene incrementato
+4. quando `j` ha terminato di scorrere la porzione dell'array il pivot viene spostato nella sua posizione corretta ovvero `i-1`
 5. l'indice del pivot viene restituito
-
-Al contrario di ciò che si potrebbe pensare, dopo aver visto la sua implementazione ci si accorge che l'algoritmo QuickSort si comporta peggio e ha una complessità più elevata proprio quando il vettore che si va ad ordinare è già ordinato, infatti la ricorrenza diventa:
-$$
-\begin{flalign}
-T(n = T(n-1) + \Theta(n)&&
-\end{flalign}
-$$
-che se risolta fa ottenere una complessità di 
-$$
-\begin{flalign}
-\Theta(n^2)&&
-\end{flalign}
-$$
-Nel caso migliore e anche nel caso medio, tuttavia, si ottiene
-$$
-\begin{flalign}
-T(n) = 2T(\frac{n}{2}) + \Theta(n)&&
-\end{flalign}
-$$
-Infatti la complessità del Quick Sort è
-$$
-\begin{flalign}
-T(n) = \Theta(nlogn)&&
-\end{flalign}
-$$
-
->[!info]
-> dato che il Quick Sort si comporta male quando il vettore è organizzato o quasi organizzato, si usa il **quicksort randomizzato**, nel quale il pivot non viene più posto come il primo elemento nella lista ma viene scelto in modo random tra gli elementi di A
-> (in questo modo si calcola anche il caso medio)
 
 ---
 ## Heap Sort
-L'Heap Sort è un algoritmo che ha un costo computazionale di O(nlogn) anche nel caso peggiore e come il Selection sort ordina in place.
+L'Heap Sort è un algoritmo che ha un costo computazionale di $O(n\log(n))$ anche nel caso peggiore e come il Selection sort ordina in place.
 
 Questo algoritmo sfrutta un'importante **struttura dati** che è l'**heap**, che, avendo delle specifiche proprietà, rappresenta la chiave per il corretto funzionamento dell'algoritmo.
 
+### Heap: struttura dati
 Parliamo ora della complessità di operazioni fondamentali per l'ordinamento di una lista, in particolare l'**estrazione del minimo** e l'**aggiunta di un elemento**
+
 Mantenendo la lista senza strutturarla ho queste complessità:
 
-|            | lista          | lista ordinata     | heap           |
-| ---------- | -------------- | ------------------ | -------------- |
-| creazione  | $$O(1)$$       | $$ \Theta(nlogn)$$ | $$ \Theta(n)$$ |
-| aggiunta   | $$O(1)$$       | $$O(n)$$           | $$O(logn)$$    |
-| estrazione | $$ \Theta(n)$$ | $$O(1)*$$          | $$O(logn)$$    |
-`*` se la lista è decrescente 
+|                           | Lista       | Lista ordinata                      | Heap         |
+| ------------------------- | ----------- | ----------------------------------- | ------------ |
+| **Creazione**             | $O(1)$      | $\Theta(n\log(n))$                  | $\Theta(n)$  |
+| **Aggiunta**              | $O(1)$      | $O(n)$                              | $O(\log(n))$ |
+| **Estrazione del minimo** | $\Theta(n)$ | $O(1)$<br>(ordinamento decrescente) | $O(\log(n))$ |
+
 
 la struttura dati heap in Python è implementata nella libreria `heapq`, questa libreria offre tre funzioni per gestire liste che fungono da heap:
-
-- _crea struttura_: **heapify(A)** trasforma una lista A in un heap 
-- _estrai minimo_: **heappop(A)** rimuove e restituisce l'elemento minimo della lista e ristabilisce le proprietà dell'heap
-- _inserisci elemento_: **heappush(A, x)** inserisce l'elemento x in modo che l'heap mantenga le sue proprietà
+- **Crea struttura**
+	`heapify(A)` → trasforma una lista A in un heap 
+- **Estrai minimo**
+	`heappop(A)` → rimuove e restituisce l'elemento minimo della lista e ristabilisce le proprietà dell'heap
+- **Enserisci elemento**
+	`heappush(A, x)` → inserisce l'elemento x in modo che l'heap mantenga le sue proprietà
 
 #### Struttura dati heap e le sue proprietà
 ![[Heap.png]]
