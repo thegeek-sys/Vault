@@ -46,27 +46,19 @@
             }
           },
           {
-            "id": "9412a2dc79fd604d",
+            "id": "612e105e3eff1b32",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Files/Record.png"
-              }
-            }
-          },
-          {
-            "id": "1df730c9f4ae46f4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Heapify.png"
+                "file": "To-Do.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -132,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -206,31 +198,31 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "db38e4179948a549",
+  "active": "612e105e3eff1b32",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "To-Do.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Class.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Files/Esempio2.png",
     "Files/Esempio1.drawio.png",
-    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Files/Record.png",
     "Files/Record.png.sb-edbfe875-QirdlN",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/Screenshot 2024-04-22 alle 22.15.54.png",
     "Files/Heapify.png",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Files/Heap.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi",
     "Files/Heap.png.sb-edbfe875-m4sD66",
     "Files/Screenshot 2024-04-22 alle 19.26.52.png",
     "Files/Screenshot 2024-04-22 alle 19.05.03.png",
-    "Class/Class.md",
     "Files/Screenshot 2024-04-22 alle 17.11.08.png",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Files/Screenshot 2024-04-22 alle 17.24.40.png",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Flet-notes/2024-04-16_AE.md",
     "Flet-notes/2024-04-18_MDP.md",
     "Programming languages/Java/Interfacce note.md",
@@ -238,7 +230,6 @@
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
-    "To-Do.md",
     "Programming languages/Java/Riferimenti a metodi esistenti.md",
     "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Classe Object.md",

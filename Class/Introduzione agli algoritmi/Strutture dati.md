@@ -5,6 +5,24 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Introduction|Introduction]]
+>	- [[#Introduction#Insiemi statici|Insiemi statici]]
+>	- [[#Introduction#Insiemi dinamici|Insiemi dinamici]]
+>- [[#Heap|Heap]]
+>	- [[#Heap#Proprietà|Proprietà]]
+>	- [[#Heap#heapify(A)|heapify(A)]]
+>	- [[#Heap#heappop(A)|heappop(A)]]
+>	- [[#Heap#heappush(A, x)|heappush(A, x)]]
+>- [[#Linked List|Linked List]]
+>	- [[#Linked List#Implementazione|Implementazione]]
+>		- [[#Implementazione#Esempio|Esempio]]
+>	- [[#Linked List#Creazione|Creazione]]
+>	- [[#Linked List#Aggiungere elementi|Aggiungere elementi]]
+>		- [[#Aggiungere elementi#Esercizio|Esercizio]]
+
+---
 ## Introduction
 Una struttura dati è composta da:
 - un **modo sistematico** di organizzare i dati
@@ -134,6 +152,7 @@ Ogni elemento di lista è un record a due campi:
 se io voglio scorrere la lista devo scorrere ogni puntatore
 
 La lista di Python è un ibrido tra la lista a puntatori e l'array. E’ simile alla lista a puntatori perché contiene puntatori, è simile ad un array perché consente l'indirizzamento diretto (es. `A[8]`)
+
 ### Implementazione
 Una lista a puntatori è formata da **nodi**. Ogni nodo ha due aree, una destinata al dato, l'altra all'indirizzo che specifica dove si trova il nodo successivo
 
@@ -144,7 +163,6 @@ class Nodo:
 		self.key = key
 		self.next = next
 ```
-
 #### Esempio
 ![[Esempio1.drawio.png]]
 ```Python
@@ -190,26 +208,8 @@ Aggiungere un nuovo nodo in testa (all'inizio)
 def es(p, x):
 	return Nodo(x, p)
 ```
-
-Esercizio: inserire un elemento dopo l'eventuale presenza del nodo y, se non esiste non inserisco nulla
-se ci sono più y? lo inserisco alla prima occorrenza di y
-
 #### Esercizio
 Creare una funzione che inserisca un nuovo elemento `x` dopo l’eventuale presenza del nodo `y`, se questo non è presente non inserire nulla, se sono presenti più occorrenze di `y` inserire alla prima occorrenza
-
-`def es(p, x y)`
-`es(p, 5, 6)`
-
-```Python
-def es(p, x, y):
-	while p.next != None:
-		if p.key == y:
-			p.next = Nodo(x, p.next)
-			break
-		p = p.next
-```
-
-
 
 ```python
 def es(p, x, y):
@@ -219,5 +219,3 @@ while p.next != None:
 		break
 	p = p.next
 ```
-
-fare gli esercizi semplice alla fine del lucido

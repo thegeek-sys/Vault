@@ -6,6 +6,30 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Introduction|Introduction]]
+>- [[#Progettare la CPU MIPS|Progettare la CPU MIPS]]
+>- [[#Unità funzionali necessarie|Unità funzionali necessarie]]
+>- [[#Ingredienti|Ingredienti]]
+>	- [[#Ingredienti#Memoria delle istruzioni, PC, adder|Memoria delle istruzioni, PC, adder]]
+>	- [[#Ingredienti#Registri e ALU|Registri e ALU]]
+>	- [[#Ingredienti#Memoria dati ed unità di estensione del segno|Memoria dati ed unità di estensione del segno]]
+>- [[#Fetch dell’istruzione/aggiornamento PC|Fetch dell’istruzione/aggiornamento PC]]
+>- [[#Operazioni ALU e accesso a MEM|Operazioni ALU e accesso a MEM]]
+>- [[#Esercizi|Esercizi]]
+>- [[#Salti condizionati (beq)|Salti condizionati (beq)]]
+>- [[#Tutto insieme|Tutto insieme]]
+>- [[#…con Control Unit e logica di salto|…con Control Unit e logica di salto]]
+>- [[#Formato delle istruzioni e bit di controllo ALU|Formato delle istruzioni e bit di controllo ALU]]
+>	- [[#Formato delle istruzioni e bit di controllo ALU#Input di controllo e tabella di verità|Input di controllo e tabella di verità]]
+>- [[#Datapath completo|Datapath completo]]
+>- [[#Segnali di controllo|Segnali di controllo]]
+>- [[#Segnali da generare|Segnali da generare]]
+>- [[#Tempi di esecuzione|Tempi di esecuzione]]
+>	- [[#Tempi di esecuzione#Esempio|Esempio]]
+
+---
 ## Introduction
 $$
 \text{CPU} = \text{macchina sequeniale} \to \text{Stato}+\text{Circuito combinatorio}

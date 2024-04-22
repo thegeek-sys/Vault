@@ -5,6 +5,20 @@ Related:
 Completed:
 ---
 ---
+
+>[!info] Index
+>- [[#Teorema|Teorema]]
+>- [[#Merge Sort|Merge Sort]]
+>	- [[#Merge Sort#Funzionamento della funzione `Fondi()`|Funzionamento della funzione Fondi()]]
+>	- [[#Merge Sort#Merge Sort iterativo|Merge Sort iterativo]]
+>- [[#Quick Sort|Quick Sort]]
+>	- [[#Quick Sort#Caso medio|Caso medio]]
+>	- [[#Quick Sort#Quick Sort in-place|Quick Sort in-place]]
+>- [[#Heap Sort|Heap Sort]]
+>- [[#Counting Sort|Counting Sort]]
+>- [[#Bucket Sort|Bucket Sort]]
+
+---
 ## Teorema
 Il costo computazionale di qualunque algoritmo di ordinamento basato su confronti è $\Omega(nlogn)$
 Adesso ci verranno presentati tre algoritmi di ordinamento il cui caso pessimo richiede, infatti, un costo computazionale uguale a $\Theta(nlogn)$
