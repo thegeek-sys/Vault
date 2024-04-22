@@ -44,6 +44,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1df730c9f4ae46f4",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Heapify.png"
+              }
+            }
           }
         ],
         "currentTab": 2
@@ -189,6 +199,8 @@
   "active": "db38e4179948a549",
   "lastOpenFiles": [
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Files/Heapify.png",
+    "Files/Heapify.png.sb-edbfe875-ZXn0wN",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Files/Heap.png",
@@ -208,7 +220,6 @@
     "Flet-notes/2024-04-16_AE.md",
     "Files/Screenshot 2024-04-18 alle 22.41.23.png",
     "Files/Screenshot 2024-04-18 alle 22.40.03.png",
-    "Files/Screenshot 2024-04-18 alle 22.39.10.png",
     "Flet-notes/2024-04-18_MDP.md",
     "Programming languages/Java/Interfacce note.md",
     "Flet-notes/2024-04-16_MDP_sort.md",
@@ -232,7 +243,6 @@
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",
-    "Class/Architettura degli elaboratori/mips1.asm",
-    "mips1.txt"
+    "Class/Architettura degli elaboratori/mips1.asm"
   ]
 }
