@@ -82,7 +82,17 @@ Codifica istruzione
 	- `Costante → Estensione del segno → ALU`
 	- `ALU → Registri[rt]`
 - **Segnali di controllo**
-	- Jump asserito
-	- la CU deve produrre un segnale Link per attivare i due nuovi MUX
+	- Si comporta come una `lw` (nonostante questa memorizzi l’indirizzo invece che il dato) ovvero come l’istruzione `la` (load address)
+	- `Reg Dst → 1`
+	- `ALU Src → 1`
+	- `Mem toReg → 1`
+	- `Mem Read → X`
+	- `Mem Write → 0`
+	- `Branch → 0`
+	- `Jump → 0`
+	- `ALU Op1 → 0`
+	- `ALU Op2→ 0`
 - **Tempo necessario**
-	- il WriteBack deve avvenire dopo che fono finiti sia il Fetch (per leggere l’istruzione) sia il calcolo di PC+4 (che va memorizzato in $ra) per cui possono presentarsi due casi. Bisogna quindi verificare quale tra le due istruzioni (PC+4 o fetch) impiega più tempo prima di poter fare il WriteBack
+	- come istruzione di tipo R
+
+![[Screenshot 2024-04-22 alle 17.24.40.png]]
