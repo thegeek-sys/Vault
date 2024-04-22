@@ -95,4 +95,4 @@ Codifica istruzione
 - **Tempo necessario**
 	- come istruzione di tipo R
 
-![[Screenshot 2024-04-22 alle 17.24.40.png]]
+![[Screenshot 2024-04-22 alle 17.24.40.jpg]]

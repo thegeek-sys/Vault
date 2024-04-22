@@ -88,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Screenshot 2024-04-22 alle 17.24.40.png",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Screenshot 2024-04-22 alle 17.24.40.png",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Screenshot 2024-04-22 alle 17.24.40.png"
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md"
               }
             }
           },
@@ -228,15 +228,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c40466858eb2f458",
+  "active": "8431a51b89408059",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Files/Screenshot 2024-04-22 alle 17.24.40.png",
-    "Files/Screenshot 2024-04-22 alle 17.11.08.png",
+    "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Files/Screenshot 2024-04-22 alle 16.44.12.png",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Files/Screenshot 2024-04-22 alle 17.24.40.png",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Files/Screenshot 2024-04-22 alle 17.11.08.png",
+    "Files/Screenshot 2024-04-22 alle 16.44.12.png",
     "Flet-notes/2024-04-16_AE.md",
     "Files/Screenshot 2024-04-18 alle 22.41.23.png",
     "Files/Screenshot 2024-04-18 alle 22.40.03.png",
