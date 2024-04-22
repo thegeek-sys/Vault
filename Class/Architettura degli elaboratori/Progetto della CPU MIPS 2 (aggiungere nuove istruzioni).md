@@ -27,12 +27,12 @@ Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenza
 - **Cosa fa**
 	- PC ← (shift left di 2 bit di Istruzione\[25-0]) OR (PC + 4)\[31-28]
 - **Unità funzionali**
-	- PC + 4 → già presente
+	- PC + 4 → presente
 	- shift left di 2 bit con input a 26 bit → da aggiungere
 	- OR dei 28 bit ottenuti con i 4 del PC+4 → si ottiene dalle connessioni
 	- MUX per selezionare  il nuovo PC → da aggiungere
 - **Flussi dei dati**
-	- Istruzione\[25-0] → SL2 → (OR con i 4 MSBs di PC+4) → MUX → PC
+	- `Istruzione[25-0] → SL2 → (OR con i 4 MSBs di PC+4) → MUX → PC`
 - **Segnali di controllo**
 	- Jump asserito per selezionare la nuova destinazione sul MUX
 	- `RegWrite=0` e `MemWrite=0` per evitare modifiche a registri e memoria
@@ -46,6 +46,7 @@ Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenza
 
 ---
 ## Aggiungere il Jump and Link
+Stessa codifica dell’istruzione Jump
 - **Cosa fa**
 	- PC ← (shift left di 2 bit di Istruzione\[25-0]) OR (PC + 4)\[31-28]
 	- $ra ← PC+4
@@ -55,8 +56,31 @@ Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenza
 	- MUX per selezionare il numero del registro $ra come destinazione
 - **Flussi dei dati**
 	- lo stesso del Jump
-	- PC+4 → MUX → Registri (dato da memorizzare)
-	- 31 → MUX → Registri (registro destinazione)
+	- `PC+4 → MUX → Registri (dato da memorizzare)`
+	- `31 → MUX → Registri (registro destinazione)`
+- **Segnali di controllo**
+	- Jump asserito
+	- la CU deve produrre un segnale Link per attivare i due nuovi MUX
+- **Tempo necessario**
+	- il WriteBack deve avvenire dopo che fono finiti sia il Fetch (per leggere l’istruzione) sia il calcolo di PC+4 (che va memorizzato in $ra) per cui possono presentarsi due casi. Bisogna quindi verificare quale tra le due istruzioni (PC+4 o fetch) impiega più tempo prima di poter fare il WriteBack
+
+![[Screenshot 2024-04-22 alle 17.24.40.png]]
+
+---
+## Aggiungere addi/la
+Codifica istruzione
+![[Screenshot 2024-03-11 alle 19.19.07.png]]
+
+- **Cosa fa**
+	- Somma la parte immediata al registro `rs` e ne pone il risultato in `rt`
+- **Unità funzionali**
+	- ALU per la somma → presente
+	- MUX che selezione la parte immediata come secondo argomento → presente
+	- Estensione del segno della parte immediata → presente
+- **Flussi dei dati**
+	- `Registri[rs] → ALU`
+	- `Costante → Estensione del segno → ALU`
+	- `ALU → Registri[rt]`
 - **Segnali di controllo**
 	- Jump asserito
 	- la CU deve produrre un segnale Link per attivare i due nuovi MUX
