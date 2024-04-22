@@ -19,6 +19,7 @@
 
 ## Teoria
 - [[Progetto della CPU MIPS]]
+- [[Progetto della CPU MIPS 2 (aggiungere nuove istruzioni)]]
 - 
 
 # Extra
