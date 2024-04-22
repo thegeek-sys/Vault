@@ -46,6 +46,16 @@
             }
           },
           {
+            "id": "9412a2dc79fd604d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Record.png"
+              }
+            }
+          },
+          {
             "id": "1df730c9f4ae46f4",
             "type": "leaf",
             "state": {
@@ -56,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
               }
             }
           },
@@ -196,11 +206,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0842992bcc87f120",
+  "active": "db38e4179948a549",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-04-22 alle 22.15.54.png",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "Files/Esempio2.png",
+    "Files/Esempio1.drawio.png",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Files/Record.png",
+    "Files/Record.png.sb-edbfe875-QirdlN",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "Files/Screenshot 2024-04-22 alle 22.15.54.png",
     "Files/Heapify.png",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
@@ -217,10 +231,7 @@
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.png",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Files/Screenshot 2024-04-22 alle 16.44.12.png",
     "Flet-notes/2024-04-16_AE.md",
-    "Files/Screenshot 2024-04-18 alle 22.41.23.png",
-    "Files/Screenshot 2024-04-18 alle 22.40.03.png",
     "Flet-notes/2024-04-18_MDP.md",
     "Programming languages/Java/Interfacce note.md",
     "Flet-notes/2024-04-16_MDP_sort.md",
@@ -243,7 +254,6 @@
     "Untitled.canvas",
     "Funzioni",
     "Compilatore",
-    "Files/document-92-109.pdf",
-    "Class/Architettura degli elaboratori/mips1.asm"
+    "Files/document-92-109.pdf"
   ]
 }

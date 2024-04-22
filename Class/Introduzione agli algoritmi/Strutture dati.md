@@ -5,6 +5,34 @@ Related:
 Completed:
 ---
 ---
+## Introduction
+Una struttura dati è composta da:
+- un **modo sistematico** di organizzare i dati
+- un **insieme di operatori** che permettono di manipolare la struttura
+
+Le strutture dati possono essere:
+- **omogenee** → contiene tutti dati dello stesso tipo (ad esempio un array di interi)
+- **disomogenee** → contiene dati di diversi tipi (ad esempio un dizionario che mette in corrispondenza interi e stringhe)
+
+### Insiemi statici
+Un insieme statico è una struttura dati omogenea in cui **la dimensione è fissa** e deve essere specificata al momento della creazione.
+La dimensione non può cambiare durante l'esecuzione del programma e questi sono generalmente più efficienti in termini di spazio e accesso rispetto agli insiemi dinamici.
+
+Un esempio di insieme statico è l'**array**.
+```C
+int A[50]
+```
+
+Python per accedere ad un elemento in una lista ci mette il doppio del tempo rispetto al tempo di accesso ad un elemento in un array, poiché quando si accede ad un elemento di una lista, eseguendo ad esempio il comando `A[50]` non si ha accesso direttamente all'elemento in posizione 50 ma all'indirizzo di memoria dell'elemento.
+
+### Insiemi dinamici
+Un insieme dinamico è una struttura dati in cui **la dimensione può cambiare** dinamicamente durante l'esecuzione del programma. Sono utili quando la dimensione dell'insieme è incerta o può cambiare nel tempo, quindi non si può specificare una dimensione massima in anticipo.
+Gli insiemi dinamici offrono maggiore flessibilità ma possono richiedere **più memoria** e avere **prestazioni inferiori** rispetto agli insiemi statici, che sono più efficienti ma meno flessibili nella dimensione.
+Un esempio di insiemi dinamici è la **lista a puntatori**.
+
+Quindi si può concludere che non esiste una struttura migliore di un'altra, ma dipende dal problema che abbiamo bisogno di risolvere.
+
+---
 ## Heap
 La **struttura dati heap** in Python è implementata nella libreria `heapq`, questa libreria offre tre funzioni per gestire liste che fungono da heap:
 - **Crea struttura**
@@ -94,3 +122,106 @@ def Heappush(A, x):
 		A[i],A[(i-1)//2]=A[(i-1)//2],A[i]
 		i=(i-1)//2
 ```
+
+---
+## Linked List
+Ogni elemento di lista è un record a due campi:
+- **key** → è il campo che contiene l'informazione vera e propria
+- **next** → contiene il puntatore che consente l'accesso all'elemento successivo (`None` in caso questo sia l’ultimo)
+
+![[Record.png|center|400]]
+
+se io voglio scorrere la lista devo scorrere ogni puntatore
+
+La lista di Python è un ibrido tra la lista a puntatori e l'array. E’ simile alla lista a puntatori perché contiene puntatori, è simile ad un array perché consente l'indirizzamento diretto (es. `A[8]`)
+### Implementazione
+Una lista a puntatori è formata da **nodi**. Ogni nodo ha due aree, una destinata al dato, l'altra all'indirizzo che specifica dove si trova il nodo successivo
+
+Implementazione della lista a puntatori in Python:
+```Python
+class Nodo:
+	def __init__(self, key=None, next=None):
+		self.key = key
+		self.next = next
+```
+
+#### Esempio
+![[Esempio1.drawio.png]]
+```Python
+p = Nodo(5)
+print(P.key) # 5
+print(P.next) # None
+
+q = Nodo(6)
+# ora devo collegare i due nodi
+p.next = q
+```
+
+
+![[Esempio2.png]]
+```Python
+p = Nodo(7)
+p.next = Nodo(2)
+p.next.next = Nodo(12)
+```
+
+
+
+Effettuare il print di una lista a puntatori
+```Python
+def Stampa(p):
+	while p != None:
+		print(p.key)
+		p = p.next
+```
+
+Ora c'è un problema, alla fine dell'esecuzione del while p sarà uguale a None
+soluzione: invece della vera p, passare una sua copia p'
+#### Creazione della lista a puntatori
+funzione che data una lista A, crea la lista a puntatori
+```Python
+def crea(A):
+	if A == []: return None # se la lista è vuota ritorno None
+	
+	p = Nodo(A[0])
+	p = q # creo un nuovo puntatore, che utilizzerò per scorrere la lista
+	
+	for i in range(1, len(A)):
+		q.next = Nodo[A[i]]
+		q = q.next
+		
+	return p
+```
+
+#### Inserire nella lista a puntatori un intero x
+Il seguente programma differisce a seconda di dove devo collocare l'intero
+
+Esercizio: aggiungere un nuovo nodo in testa (all'inizio)
+```Python
+def es(p, x):
+	q = Nodo(x)
+	q.next = p
+	p = q
+```
+
+sennò si può fare in un'unica istruzione in questo modo
+```Python
+return Nodo(x, p)
+```
+
+Esercizio: inserire un elemento dopo l'eventuale presenza del nodo y, se non esiste non inserisco nulla
+se ci sono più y? lo inserisco alla prima occorrenza di y
+
+`def es(p, x y)`
+`es(p, 5, 6)`
+
+```Python
+def es(p, x, y):
+	while p.next != None:
+		if p.key == y:
+			p.next = Nodo(x, p.next)
+			break
+		p = p.next
+```
+
+fare gli esercizi semplice alla fine del lucido
