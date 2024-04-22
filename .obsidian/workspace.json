@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi.md",
+                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,29 +22,31 @@
             }
           },
           {
-            "id": "24e69bf2c1cb7f8e",
+            "id": "0842992bcc87f120",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c198fe08579d5b25",
+            "id": "db38e4179948a549",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Files/Heap.png"
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Algoritmi di sorting.md"
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
               }
             }
           },
@@ -184,15 +186,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "24e69bf2c1cb7f8e",
+  "active": "db38e4179948a549",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Files/Heap.png",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Introduzione agli algoritmi",
     "Files/Heap.png.sb-edbfe875-m4sD66",
-    "Class/Algoritmi di sorting.md",
     "Files/Screenshot 2024-04-22 alle 19.26.52.png",
     "Files/Screenshot 2024-04-22 alle 19.05.03.png",
-    "Class/Introduzione agli algoritmi.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
     "Files/Screenshot 2024-04-22 alle 17.11.08.png",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
@@ -223,14 +227,12 @@
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
-    "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",
     "Compilatore",
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
-    "mips1.txt",
-    "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK"
+    "mips1.txt"
   ]
 }

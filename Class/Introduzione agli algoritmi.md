@@ -1,2 +1,0 @@
-# Args
-- [[Algoritmi di sorting]]

@@ -14,7 +14,7 @@
 - [[java.lang.String]]
 - [[Array]]
 - [[Programming languages/Java/Shallow and Deep Copy|Shallow and Deep Copy]]
-- [[Strutture dati]]
+- [[Programming languages/Java/Strutture dati]]
 - 
 
 ##### Object oriented programming
