@@ -228,7 +228,12 @@ L’ALU deve seguire 4 tipi di comportamento:
 - Se l’istruzione è un **beq** deve svolgere una **differenza**
 Per codificare 3 comportamenti bastano 2 segnali dalla Control Unit: `ALUOp1` ed `ALUOp0`
 
-// aggiungere table slide 29
+| istruzione | regDst | ALUSrc | MemtoReg | RegWrite | MemRead | MemWrite | Branch | ALUOp1 | ALUOp0 |
+| ---------- | :----: | :----: | :------: | :------: | :-----: | :------: | :----: | :----: | :----: |
+| Tipo R     |   1    |   0    |    0     |    1     |    0    |    0     |   0    |   1    |   0    |
+| `lw`       |   0    |   1    |    1     |    1     |    1    |    0     |   0    |   0    |   0    |
+| `sw`       |   X    |   1    |    X     |    0     |    0    |    1     |   0    |   0    |   0    |
+| `beq`      |   X    |   0    |    X     |    0     |    0    |    0     |   1    |   0    |   1    |
 
 ---
 ## Tempi di esecuzione
