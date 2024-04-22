@@ -200,8 +200,30 @@ Questo algoritmo funziona come segue:
 - scorri `A` e per ogni indice `i` incrementa il contatore `C[A[i]]` delle occorrenze di `A[i]`
 - scorri `C` e per ogni indice `i` inserisci `C[i]` occorrenze dell’elemento `i` in `A`
 
+![[Screenshot 2024-04-22 alle 22.15.54.png|500]]
 
+```python
+def CountingSort(A):
+	k = max(A)                              # Θ(n)
+	n = len(A)
+	# crea una lista C di contatori
+	# per registrare il numero di
+	# occorrenze degli elementi in A
+	C=[0]*(k+1)                             # Θ(k)
+	# calcola le occorrene degli
+	# elementi in modo ordinato
+	for i in range(n):                      # Θ(n)
+		C[A[i]] += 1
+	# reinserisce in A i suoi elementi
+	# in modo ordinato
+	j = 0
+	for i in range(len(C)):                 # Θ(k+1)
+		for _ in range(C[i]):               #    Θ(C[i])
+			A[j] = i
+			j += 1
+```
 
+---
 ## Bucket Sort
 
 ordinamento che fa uso di secchielli
