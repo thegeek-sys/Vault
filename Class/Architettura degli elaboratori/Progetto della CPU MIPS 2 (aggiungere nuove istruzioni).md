@@ -29,5 +29,16 @@ Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenzz
 - **Unità funzionali**
 	PC + 4 → già presente
 	shift left di 2 bit con input a 26 bit → da aggiungere
-	OR dei 28 bit ottenuti con i 4 del 
-	
+	OR dei 28 bit ottenuti con i 4 del PC+4 → si ottiene dalle connessioni
+	MUX per selezionare  il nuovo PC → da aggiungere
+- **Flussi dei dati**
+	Istruzione\[25-0] → SL2 → (OR con i 4 MSBs dj PC+4) → MUX → PC
+- **Segnali di controllo**
+	Jump asserito per selezionare la nuova destinazione sul MUX
+	`RegWrite=0` e `MemWrite=0` per evitare modifiche a registri e memoria
+- **Tempo necessario**
+	Fetch e in parallelo il tempo dell’adder che calcola PC+4 (quindi il massimo tra i due tempi)
+
+>[!info]
+>l’hardware necessario al calcolo della destinazione del salto è sempre presente e calcola la destinazione anche se l’istruzione non è un Jump. Solo se la CU riconosce che è un Jump il valore calcolato viene immesso nel PC per passare (al colpo di clock successivo) alla destinazione del salto.
+
