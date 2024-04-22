@@ -8,87 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "8431a51b89408059",
+            "id": "8f7d155bcca92b78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "file": "Class/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "c40466858eb2f458",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-04-22 alle 17.24.40.png"
-              }
-            }
-          },
-          {
-            "id": "cf329e14179ae96c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-04-22 alle 17.11.08.png"
-              }
-            }
-          },
-          {
-            "id": "f661451f68231c21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6c20a28fa00ef7c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c9d7b9f695b6ad05",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Files/MIPS_Instruction_Set.pdf"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "file": "Class/Introduzione agli algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "file": "Class/Introduzione agli algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md"
+                "file": "Class/Introduzione agli algoritmi.md"
               }
             }
           },
@@ -228,13 +159,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8431a51b89408059",
+  "active": "8f7d155bcca92b78",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Class.md",
+    "Class/Introduzione agli algoritmi.md",
     "Files/Screenshot 2024-04-22 alle 17.11.08.png",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.png",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-22 alle 16.44.12.png",
@@ -265,8 +198,6 @@
     "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Class/Architettura degli elaboratori/Limitazioni spazio istruzioni.md",
-    "Class/Architettura degli elaboratori/Compilatore e Assemblatore.md",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",
