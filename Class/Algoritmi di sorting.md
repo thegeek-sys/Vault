@@ -12,6 +12,8 @@ questi sono:
 - Merge Sort
 - Quick Sort
 - Heap Sort
+
+---
 ## Merge Sort
 Sia il Merge Sort che il QuickSort si basano sul paradigma **divide et impera**:
 1. il problema viene suddiviso in sottoproblemi di dimensione inferiore (_divide_)
@@ -20,9 +22,9 @@ Sia il Merge Sort che il QuickSort si basano sul paradigma **divide et impera**:
 
 Nel Merge Sort infatti una sequenza di elementi viene divisa in due sottosequenze, queste vengono ordinate attraverso la ricorsione, che termina quando la sottosequenza è costituita da un solo elemento, allora le due sottosequenze vengono fuse in un'unica sequenza ordinata.
 
-![[MergeSort.png]]
+![[Screenshot 2024-04-22 alle 19.05.03.png|center|400]]
 
-il codice del Merge Sort può essere quindi riassunto in questo modo:
+Il codice del Merge Sort può essere quindi riassunto in questo modo:
 ```Python
 	def MergeSort(A, a, b):
 		if a<b:
@@ -38,77 +40,67 @@ $$
 T(n) = 2T(\frac{n}{2})+ \Theta(S(n))&&
 \end{flalign}
 $$
-$$
-\begin{flalign}
-T(1)=\Theta(1)&&
-\end{flalign}
-$$
-dove S(n) rappresenta il costo di `Fondi()`, vediamo nel dettaglio il suo funzionamento
+dove $S(n)$ rappresenta il costo di `Fondi()`, vediamo nel dettaglio il suo funzionamento
 
-#### Funzionamento della funzione `Fondi()`
- sfruttando il fatto che le due sottosequenze sono ordinate, mette insieme gli elementi delle due sottosequenze scegliendo ogni volta il più piccolo tra i primi due numeri delle due sottosequenze.
+### Funzionamento della funzione `Fondi()`
+- la funzione sfrutta il fatto che le sequenze sono ordinate
+- il minimo della sequenza complessiva non può essere che il più piccolo tra i minimi delle due sottosequenze
+- dopo aver eliminato da una delle due sottosequenze tale minimo, la proprietà rimane: il prossimo minimo non può essere che il più piccolo tra i minimi delle due parti rimanenti delle due sottosequenze
 
 ```Python
-def Fondi(A, i, m, j):
-	a, b = i, m+1
+def Fondi(A, a, m, b):
+	i, j = a, m+1
 	B = []
-	while a <= m and b <= j:
-		if A[a] <= A[b]:
-			B.append(A[a])
-			a += 1
+	while i <= m and j <= b:      # O(n)
+		if A[i] <= A[j]:
+			B.append(A[i])
+			i += 1
 		else:
-			B.append(A[b])
-			b += 1
-	while a <= m:
-		B.append(A[a])
-		a += 1
-	while b <= j:
-		B.append(A[b])
-		b += 1
-	for k in range (len(B)):
-		A[i+k] = B[k]
+			B.append(A[j])        #    S(n)=Θ(n)
+			j += 1
+	while i <= m:
+		B.append(A[i])            # O(n)
+		i += 1
+	while j <= b:                 # O(n)
+		B.append(A[j])
+		j += 1
+	for k in range (len(B)):      # Θ(n)
+		A[a+k] = B[k]
 ```
 
-Il costo S(n) della funzione `Fondi()` è:
+Il costo $S(n)$ della funzione `Fondi()` è $\Theta(n)$ quindi il costo computazione del Merge Sort sarà:
 $$
-\begin{flalign}
-\Theta(n)&&
-\end{flalign}
+T(n) = 2T\left(\frac{n}{2}\right)+ \Theta(n)
 $$
-quindi il costo computazione del Merge Sort sarà:
+portando così la complessità ad essere $T(n) = \Theta(nlogn)$
+
+La fusione non si può effettuare direttamente in place all'interno di A poiché per fare spazio al minimo successivo sarebbe necessario spostare di una posizione tutta la sottosequenza rimanente per ogni nuovo minimo, ciò porterebbe la complessità ad essere $T(n) = \Theta(n^2)$
+
+### Merge Sort iterativo
+Esiste anche una versione iterativa di questo algoritmo
+```python
+def MergeSortI(A):
+	n = len(A)
+	l = 1
+	while l < n:                         # Θ(log n)
+		i = 0
+		while i-l<n:                     # O(n/2l)
+			Fondi(A, i, i+l-1, i+2*l-1)  #    O(l)
+			i += 2*l
+		l *= 2
+```
+
+Dunque si ha che:
 $$
-\begin{flalign}
-T(n) = 2T\left(\frac{n}{2}\right)+ \Theta(n)&&
-\end{flalign}
-$$
-portando così la complessità ad essere 
-$$
-\begin{flalign}
-T(n) = \Theta(nlogn)&&
-\end{flalign}
+T(n) = \theta(\log(n))O(n) = \theta(n\log(n))
 $$
 
-La fusione non si può effettuare direttamente in place all'interno di A poichè per fare spazio al minimo successivo sarebbe necessario spostare di una posizione tutta la sottosequenza rimanente per ogni nuovo minimo, ciò porterebbe la complessità ad essere
-$$
-\begin{flalign}
-T(n) = \Theta(n^2)&&
-\end{flalign}
-$$
 ---
 ## Quick Sort
-L'algoritmo Quick Sort unisce in sè l'ordinamento in place del Selection Sort e il ridotto tempo di esecuzione del Merge Sort, mentre ha come svantaggio il fatto che nel caso peggiore la sua complessità sia 
-$$
-\begin{flalign}
-O(n^2)&&
-\end{flalign}
-$$
-Tuttavia il suo tempo di esecuzione atteso come negli altri algoritmi di ordinamento basato sul confronto rimane
-$$
-\begin{flalign}
-\Theta(nlogn)&&
-\end{flalign}
-$$
-Come anche detto in precedenza quicksort è un algoritmo che si basa sul **divide et impera**:
+L'algoritmo **Quick Sort** unisce in sé l'ordinamento in place del Selection Sort e il ridotto tempo di esecuzione del Merge Sort, mentre ha come svantaggio il fatto che nel caso peggiore la sua complessità sia $O(n^2)$
+Tuttavia il suo tempo di esecuzione atteso come negli altri algoritmi di ordinamento basato sul confronto rimane $\Theta(n\log(n))$
+
+Come anche detto in precedenza quick sort è un algoritmo che si basa sul **divide et impera**:
 1. nella sequenza di elementi seleziona un **pivot**. Il pivot viene selezionato in modo da ottenere due sottosequenze: quella degli elementi minori o uguali al pivot e quella degli elementi maggiori al pivot (_divide_)
 2. le due sottosequenze vengono ordinate ricorsivamente(_impera)
 3. la ricorsione finisce quando le sottosequenze sono costituite da un solo elemento
