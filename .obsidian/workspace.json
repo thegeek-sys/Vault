@@ -10,16 +10,31 @@
           {
             "id": "8f7d155bcca92b78",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Class/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "24e69bf2c1cb7f8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi di sorting.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi.md",
+                "file": "Class/Algoritmi di sorting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi.md",
+                "file": "Class/Algoritmi di sorting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi.md"
+                "file": "Class/Algoritmi di sorting.md"
               }
             }
           },
@@ -159,11 +174,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8f7d155bcca92b78",
+  "active": "24e69bf2c1cb7f8e",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi.md",
+    "Class/Algoritmi di sorting.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Class.md",
-    "Class/Introduzione agli algoritmi.md",
     "Files/Screenshot 2024-04-22 alle 17.11.08.png",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
