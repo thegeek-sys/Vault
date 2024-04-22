@@ -48,9 +48,7 @@ print(A)  # [1, 3, 8, 4, 10, 12, 14, 11, 15, 17, 18, 16]
 ```
 
 Attraverso la funzione `heapify` gli elementi della lista A vengono risistemati in modo da rispettare le proprietà dell'heap, discusse già precedentemente.
-Quindi ora i nodi presenti in ogni cammino radice foglia risultano ordinati in modo crescente e l’elemento minimo si troverà necessariamente al primo posto.
-
-L’algoritmo di heapify si avvale di una funzione ausiliaria `heapify1`, necessaria per il suo corretto funzionamento, ed ha lo scopo di mantenere le proprietà dell'heap.
+L’algoritmo `heapify` si avvale di una funzione ausiliaria `heapify1`, necessaria per il suo corretto funzionamento, ed ha lo scopo di mantenere le proprietà dell'heap.
 
 Opera sulla radice confrontandola con i suoi figli e se necessario, scambia la radice con il minore dei suoi figli, dopo che lo scambio è avvenuto, se non sono ancora rispettate le proprietà dell'heap la funzione si ripete ricorsivamente su quel nodo
 ![[Heapify.png]]
