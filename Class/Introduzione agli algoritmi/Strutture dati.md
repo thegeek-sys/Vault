@@ -70,3 +70,27 @@ def Heapify1(A, i):
 		Heapify1(A, indice_min)
 	
 ```
+
+### heappop(A)
+L’idea è quella di salvare in una variabile `x` il minimo presente in `A[0]`. A questo punto copiamo in `A[0]` l’ultimo elemento dell’heap e chiamando la funzione `Heapify1` sulla radice dell’albero ricostruiamo così l’intero albero
+
+```python
+def Heapop(A):
+	x = A[0]
+	A[0]=A[len(A)-1]
+	A.pop()
+	Heapify1(A,0)        # O(log n)
+	return x
+```
+
+### heappush(A, x)
+Aggiungiamo l’elemento `x` all’ultimo posto dell’heap e facciamo risalire poi `x` nell’heap finché non risulta maggiore del padre o raggiunge la radice
+
+```python
+def Heappush(A, x):
+	A.append(x)
+	i=len(A)-1
+	while i>0 and A[i]<A[(i-1)//2]:
+		A[i],A[(i-1)//2]=A[(i-1)//2],A[i]
+		i=(i-1)//2
+```

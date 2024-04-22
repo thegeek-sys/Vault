@@ -189,6 +189,18 @@ def Heapsort(A):
 	return B
 ```
 
+---
+## Counting Sort
+L’idea è quella di fare in modo che il valore di ogni elemento della sequenza determini direttamente la sua posizione nella sequenza ordinata
+Il costo computazionale è di $\theta(n+k)$ (se $k=O(n)$ allora l’algoritmo ordina gli elementi in $\theta (n)$)
+
+Questo algoritmo funziona come segue:
+- trova `k`, l’elemento massimo dell’array `A` da ordinare
+- inizializza l’array `C` con i `k` contatori delle occorrenze in A
+- scorri `A` e per ogni indice `i` incrementa il contatore `C[A[i]]` delle occorrenze di `A[i]`
+- scorri `C` e per ogni indice `i` inserisci `C[i]` occorrenze dell’elemento `i` in `A`
+
+
 
 ## Bucket Sort
 
