@@ -101,10 +101,14 @@ L'algoritmo **Quick Sort** unisce in sé l'ordinamento in place del Selection So
 Tuttavia il suo tempo di esecuzione atteso come negli altri algoritmi di ordinamento basato sul confronto rimane $\Theta(n\log(n))$
 
 Come anche detto in precedenza quick sort è un algoritmo che si basa sul **divide et impera**:
-1. nella sequenza di elementi seleziona un **pivot**. Il pivot viene selezionato in modo da ottenere due sottosequenze: quella degli elementi minori o uguali al pivot e quella degli elementi maggiori al pivot (_divide_)
-2. le due sottosequenze vengono ordinate ricorsivamente(_impera)
-3. la ricorsione finisce quando le sottosequenze sono costituite da un solo elemento
-![[QuickSort.png]]
+- **divide**
+	nella sequenza di elementi seleziona un **pivot**. Il pivot viene selezionato in modo da ottenere due sottosequenze: quella degli elementi minori o uguali al pivot e quella degli elementi maggiori al pivot
+- **impera**
+	le due sottosequenze vengono ordinate ricorsivamente
+- **passo base**
+	la ricorsione finisce quando le sottosequenze sono costituite da un solo elemento
+
+![[Screenshot 2024-04-22 alle 19.26.52.png|center|400]]
 
 ```Python
 def QuickSort(A):
