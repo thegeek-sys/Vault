@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Heap.png",
+                "file": "Class/Algoritmi di sorting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Heap.png",
+                "file": "Class/Algoritmi di sorting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Heap.png"
+                "file": "Class/Algoritmi di sorting.md"
               }
             }
           },
@@ -184,10 +184,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c198fe08579d5b25",
+  "active": "24e69bf2c1cb7f8e",
   "lastOpenFiles": [
-    "Class/Algoritmi di sorting.md",
     "Files/Heap.png",
+    "Files/Heap.png.sb-edbfe875-m4sD66",
+    "Class/Algoritmi di sorting.md",
     "Files/Screenshot 2024-04-22 alle 19.26.52.png",
     "Files/Screenshot 2024-04-22 alle 19.05.03.png",
     "Class/Introduzione agli algoritmi.md",
@@ -230,7 +231,6 @@
     "Files/document-92-109.pdf",
     "Class/Architettura degli elaboratori/mips1.asm",
     "mips1.txt",
-    "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK",
-    "Class/Architettura degli elaboratori"
+    "Files/Screenshot 2024-03-08 alle 13.06.27.png.sb-cea17542-HNgmKK"
   ]
 }

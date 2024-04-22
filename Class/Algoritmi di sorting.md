@@ -172,30 +172,27 @@ L'Heap Sort è un algoritmo che ha un costo computazionale di $O(n\log(n))$ anch
 Questo algoritmo sfrutta un'importante **struttura dati** che è l'**heap**, che, avendo delle specifiche proprietà, rappresenta la chiave per il corretto funzionamento dell'algoritmo.
 
 ### Heap: struttura dati
-Parliamo ora della complessità di operazioni fondamentali per l'ordinamento di una lista, in particolare l'**estrazione del minimo** e l'**aggiunta di un elemento**
-
 La **struttura dati heap** in Python è implementata nella libreria `heapq`, questa libreria offre tre funzioni per gestire liste che fungono da heap:
 - **Crea struttura**
 	`heapify(A)` → trasforma una lista A in un heap 
 - **Estrai minimo**
 	`heappop(A)` → rimuove e restituisce l'elemento minimo della lista e ristabilisce le proprietà dell'heap
-- **Enserisci elemento**
+- **Inserisci elemento**
 	`heappush(A, x)` → inserisce l'elemento x in modo che l'heap mantenga le sue proprietà
 
-![[Heap.png]]
+![[Heap.png|center|550]]
 
-Prima di parlare dell'algoritmo Heap Sort è meglio approfondire la struttura dati heap e le sue **proprietà** per poter capire appieno l'algoritmo che si basa su di esso:
+Le **proprietà** fondamentali della struttura dati heap sono:
 - l'heap è un ordinamento verticale
-- nell'heap **l'elemento minimo risiede nella radice** , quindi è il primo elemento della lista e può essere trovato in tempo costante
-- ogni foglia è più piccola del suo ramo(genitore)
+- nell'heap l'**elemento minimo risiede nella radice** , quindi è il primo elemento della lista e può essere trovato in tempo costante
+- ogni foglia è più piccola del suo ramo (genitore)
 
-Si noti che scorrere il vettore da sinistra a destra corrisponde a muoversi sull’albero per livelli, dall’alto verso il basso e da sinistra a destra in ciascun livello
+>[!hint]
+>Si noti che scorrere il vettore da sinistra a destra corrisponde a muoversi sull’albero per livelli, dall’alto verso il basso e da sinistra a destra in ciascun livello
+>Un ordinamento verticale garantisce anche l'ordinamento orizzontale, mentre il contrario non vale
 
->[!info]
->un ordinamento verticale garantisce anche l'ordinamento orizzontale, mentre il contrario non vale
-
-Ritorniamo ora all'implementazione dell'Algoritmo di HeapSort
-
+### Sorting
+Ritorniamo ora all'implementazione dell'algoritmo di HeapSort
 L'idea che sta dietro all'algoritmo è quella di:
 1. organizzare gli elementi della lista da ordinare come heap minimo
 2. estrarre gli elementi dall'heap uno alla volta e accodarli ad un nuovo vettore B inizialmente vuoto
