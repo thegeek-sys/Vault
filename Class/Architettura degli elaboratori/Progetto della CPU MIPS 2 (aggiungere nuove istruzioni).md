@@ -23,22 +23,42 @@ Da questa codifica dobbiamo fare ulteriori supposizioni:
 - si tratta di un  **indirizzo assoluto** (invece che relativo come per i branch)
 - i 4 bit “mancanti” verranno presi dal PC+4 (ovvero si rimane nello stesso blocco di 256M, per i salti tra blocchi diversi sarà necessario introdurre l’istruzione jr)
 
-Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenzz
+Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenza
 - **Cosa fa**
-	PC ← (shift left di 2 bit di Istruzione\[25-0]) OR (PC + 4)\[31-28]
+	- PC ← (shift left di 2 bit di Istruzione\[25-0]) OR (PC + 4)\[31-28]
 - **Unità funzionali**
-	PC + 4 → già presente
-	shift left di 2 bit con input a 26 bit → da aggiungere
-	OR dei 28 bit ottenuti con i 4 del PC+4 → si ottiene dalle connessioni
-	MUX per selezionare  il nuovo PC → da aggiungere
+	- PC + 4 → già presente
+	- shift left di 2 bit con input a 26 bit → da aggiungere
+	- OR dei 28 bit ottenuti con i 4 del PC+4 → si ottiene dalle connessioni
+	- MUX per selezionare  il nuovo PC → da aggiungere
 - **Flussi dei dati**
-	Istruzione\[25-0] → SL2 → (OR con i 4 MSBs dj PC+4) → MUX → PC
+	- Istruzione\[25-0] → SL2 → (OR con i 4 MSBs di PC+4) → MUX → PC
 - **Segnali di controllo**
-	Jump asserito per selezionare la nuova destinazione sul MUX
-	`RegWrite=0` e `MemWrite=0` per evitare modifiche a registri e memoria
+	- Jump asserito per selezionare la nuova destinazione sul MUX
+	- `RegWrite=0` e `MemWrite=0` per evitare modifiche a registri e memoria
 - **Tempo necessario**
-	Fetch e in parallelo il tempo dell’adder che calcola PC+4 (quindi il massimo tra i due tempi)
+	- Fetch e in parallelo il tempo dell’adder che calcola PC+4 (quindi il massimo tra i due tempi)
 
 >[!info]
 >l’hardware necessario al calcolo della destinazione del salto è sempre presente e calcola la destinazione anche se l’istruzione non è un Jump. Solo se la CU riconosce che è un Jump il valore calcolato viene immesso nel PC per passare (al colpo di clock successivo) alla destinazione del salto.
 
+![[Screenshot 2024-04-22 alle 17.11.08.png]]
+
+---
+## Aggiungere il Jump and Link
+- **Cosa fa**
+	- PC ← (shift left di 2 bit di Istruzione\[25-0]) OR (PC + 4)\[31-28]
+	- $ra ← PC+4
+- **Unità funzionali**
+	- le stesse del Jump
+	- MUX per selezionare il valore di PC+4 come valore di destinazione
+	- MUX per selezionare il numero del registro $ra come destinazione
+- **Flussi dei dati**
+	- lo stesso del Jump
+	- PC+4 → MUX → Registri (dato da memorizzare)
+	- 31 → MUX → Registri (registro destinazione)
+- **Segnali di controllo**
+	- Jump asserito
+	- la CU deve produrre un segnale Link per attivare i due nuovi MUX
+- **Tempo necessario**
+	- il WriteBack deve avvenire dopo che fono finiti sia il Fetch (per leggere l’istruzione) sia il calcolo di PC+4 (che va memorizzato in $ra) per cui possono presentarsi due casi. Bisogna quindi verificare quale tra le due istruzioni (PC+4 o fetch) impiega più tempo prima di poter fare il WriteBack

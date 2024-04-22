@@ -34,6 +34,16 @@
             }
           },
           {
+            "id": "cf329e14179ae96c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-04-22 alle 17.11.08.png"
+              }
+            }
+          },
+          {
             "id": "f661451f68231c21",
             "type": "leaf",
             "state": {
@@ -210,9 +220,10 @@
   },
   "active": "8431a51b89408059",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-04-22 alle 17.11.08.png",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Files/Screenshot 2024-04-22 alle 16.44.12.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Flet-notes/2024-04-16_AE.md",
@@ -237,7 +248,6 @@
     "Files/Screenshot 2024-04-16 alle 20.04.21.png",
     "Files/Screenshot 2024-04-16 alle 19.47.13.png",
     "Files/Screenshot 2024-04-16 alle 19.33.04.jpg",
-    "Files/Screenshot 2024-04-16 alle 19.33.04.png",
     "Flet-notes/2024-04-12_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
