@@ -24,9 +24,27 @@ In questo caso l’esecuzione viene interrotta e ci accorgiamo del superamento i
 - In linguaggi come il C, la logica del programma e la logica di gestione degli errori sono **interlacciate**: questo rende più difficile leggere, modificare e mantenere il codice
 - Gli errori vengono **propagati verso l’alto** lungo lo stack di chiamate
 - Codice **più robusto**: non dobbiamo controllare esaustivamente tutti i possibili tipi di errore: il polimorfismo lo fa per noi, scegliendo l’intervento più opportuno
-
 ### Svantaggi
 - L’**onere** di gestire i vari tipi di errore si sposta sulla JVM che si incarica di capire il modo più opportuno per gestire la situazione di errore
+
+### Cosa si può gestire con le eccezioni
+E’ possibile gestire
+- Eventi **sincroni**, che si verificano a seguito dell’esecuzione di un’istruzione
+	- Errori *non critici* → errori che derivano da condizioni anomali
+		- divisione per zero
+		- errore di I/O
+		- errore durante il parsing
+	- Errori *critici* o irrecuperabili → errori interni alla JVM
+		- conversione di un tipo non consentito
+		- accesso ad una variabile di riferimento con valore `null`
+		- mancanza di memoria libera
+		- riferimento ad una classe inesistente
+
+**NON** è possibile gestire
+- Eventi **asincroni**, che accadono parallelamente all’esecuzione e quindi indipendenti dal flusso di controllo
+	- completamenti nel trasferimento I/O
+	- recezioni messaggi su rete
+	- click del mouse
 
 ---
 ## Eccezioni notevoli
@@ -43,3 +61,31 @@ In questo caso l’esecuzione viene interrotta e ci accorgiamo del superamento i
 | `NumberFormatException`      | Errore nel formato di un numero (estende la precedente)                                                            |
 
 ---
+## Blocco try-catch
+Il blocco try-catch consente di **catturare le eccezioni**
+
+Nel blocco `try` si inseriscono tutte le **istruzioni dalle quali vengono sollevate le eccezioni** che vogliamo catturare
+All’interno del blocco `catch` è necessario indicare il **tipo di eccezione da catturare** e specificare nel blocco le azioni da attuare a seguito dell’eccezione sollevata (è possibile specificare molteplici blocchi catch, in risposta a differenti eccezioni sollevate)
+
+```java
+public class Spogliatoio {
+	public static void main(String[] args) {
+		Sportivo pellegrini = new Sportivo("Federica Pellegrini");
+		Sportivo bolt = new Sportivo("Usain Bolt")
+		Armadietto armadietto = new Armadietto(pellegrini);
+		
+		try {
+			armadietto.apriArmadietto(bolt);
+		}
+		catch(NonToccareLaMiaRobaException e) {
+			// provvedimenti contro i ladri
+		}
+		catch(ArmadiettoGiaApertoException e) {
+			// notifica che l'armadietto è già aperto
+		}
+	}
+}
+```
+
+E’ molto importante considerare l’ordine con cui si scrivono i diversi blocchi catch e catturare le eccezioni **dalla più specifica a quella più generale**. Nell’attuare il processo di cattura, la JVM sceglie il **primo catch compatibile**, tale cioè che il tipo dell’eccezione dichiarata sia lo stesso o un supertipo dell’eccezione lanciata durante l’esecuzione.
+Spesso vogliamo rispondere ad un’eccezione con il rimedio specifico e non con uno più generale.
