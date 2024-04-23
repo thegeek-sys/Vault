@@ -204,5 +204,20 @@ public class NonToccareLaMiaRobaException extends Exception {
 
 }
 ```
+Tramite la parola chiave `extends` è possibile **creare** una nuova eccezione a partire da un tipo già esistente
 
-Tramite la parola chiave extends è possibile creare una nuova eccezione a partire da un tipo già esistente
+```java
+public class Armadietto {
+	private Sportivo proprietario;
+	private boolean aperto;
+	
+	public Armadietto(Sportivo proprietario) {
+		this.proprietario = proprietario;
+	}
+	public void apriArmadietto(Sportivo g) throws NonToccareLaMiaRobaException, ArmadiettoGiaApertoException {
+		if (!proprietario.equals(g)) throw new NonToccareLaMiaRobaException();
+		if (aperto) throw new ArmadiettoGiaApertoException();
+	}
+}
+```
+Tramite la parola chiave `throw` è possibile **sollevare** (o lanciare) una nuova eccezione
