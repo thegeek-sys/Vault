@@ -126,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -219,12 +218,14 @@
   },
   "active": "7cbdc601279365e3",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
+    "Files/Screenshot 2024-04-23 alle 19.43.16.png",
+    "Files/Screenshot 2024-04-23 alle 19.38.04.png",
+    "Flet-notes/2024-04-23_MDP.md",
     "Programming languages/Java/Exceptions.md",
+    "Programming languages/Java/Java.md",
     "To-Do.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Files/Screenshot 2024-04-23 alle 19.05.00.png",
-    "Flet-notes/2024-04-23_MDP.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Strutture dati.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
@@ -250,7 +251,6 @@
     "Class/Introduzione agli algoritmi",
     "Files/Heap.png.sb-edbfe875-m4sD66",
     "Files/Screenshot 2024-04-22 alle 19.26.52.png",
-    "Files/Screenshot 2024-04-22 alle 19.05.03.png",
     "Flet-notes/2024-04-16_AE.md",
     "Flet-notes/2024-04-16_MDP_sort.md",
     "Programming languages/Java/Classi anonime e lambda function.md",

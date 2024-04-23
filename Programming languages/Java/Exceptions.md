@@ -221,3 +221,55 @@ public class Armadietto {
 }
 ```
 Tramite la parola chiave `throw` è possibile **sollevare** (o lanciare) una nuova eccezione
+
+---
+## Blocco finally
+E’ uno speciale blocco posto dopo tutti i blocchi try-catch ed è eseguito a prescindere dal sollevamento di eccezioni
+Le istruzioni all’interno del blocco finally vengono **sempre eseguite** (perfino se nel blocco try-catch vi è un `return`, un `break` o un `continue`)
+
+Tipicamente all’interno del blocco finally vengono eseguite operazioni di *clean-up* (es. chiusura di eventuali file aperti o rilascio di risorse) in modo da garantire un certo stato dell’esecuzione
+
+```java
+public class FileAperto {
+	FileReader fileReader = null;
+	
+	try {
+		fileReader = new FileReader(new File("my/favourite/path"));
+		fileReader.read();
+	}
+	catch (FileNotFoundException e) { e.printStackTrace(); }
+	catch (IOException e1) { e1.printStackTrace(); }
+	finally {
+		try {
+			// clean-up
+			fileReader.close();
+		}
+		catch (IOException e) { e.printStackTrace(); }
+	}
+}
+```
+
+---
+## Classe Throwable
+La classe che implementa il concetto di eccezioni è **Throwable** che estende direttamente la classe Object. Gli oggetti di tipo Throwable sono gli unici oggetti che è possibile utilizzare con il meccanismo delle eccezioni
+
+![[Screenshot 2024-04-23 alle 19.38.04.png|600]]
+
+### Classi Exception ed Error
+**Exception**
+- eccezioni interne alla JVM (classe `RuntimeException`) → legate ad errori nella logica del programma
+- eccezioni regolari (es. `IOException`, `ParseException`, `TimeoutException`) → errori che le applicazioni dovrebbero anticipare e dalle quali poter riprendersi
+**Error**: cattura l’idea di condizione eccezionale irrecuperabile
+- Assai rari e non dovrebbero essere considerati dalle applicazioni (es. ThreadDeath, OutOfMemoryError...)
+
+---
+## Eccezioni checked e unchecked
+### Checked
+- È sempre necessario attenersi al paradigma catch-or-declare
+- Sono eccezioni comuni, ovvero quelle che estendono `Exception` (ma non `RuntimeException`)
+- Esempi: `ParseException`, `ClassNotFoundException`, `FileNotFoundException`
+
+### Unchecked
+- Non si è obbligati a dichiarare le eccezioni sollevate o a catturarle in un blocco try-catch (ma è possibile farlo)
+- Sono eccezioni che estendono `Error` o `RuntimeException`
+- Esempi: `IndexOutOfBoundsException`, `ClassCastException`, `NullPointerException`, `ArithmeticException`, `OutOfMemoryError`
