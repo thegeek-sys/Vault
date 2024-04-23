@@ -16,6 +16,7 @@
 - [x] Esercizio: Disney vs. Marvel (52 Interfacce)
 - [x] appunti da slide 37
 - [ ] su interfacce note sistemare comparator (slide 46)
+- [ ] Esercizio: catena di volontari (slide 47 eccezioni)
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)
