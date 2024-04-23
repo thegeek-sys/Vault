@@ -5,6 +5,29 @@ Related:
 Completed:
 ---
 ---
+
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Vantaggi|Vantaggi]]
+	- [[#Introduction#Svantaggi|Svantaggi]]
+	- [[#Introduction#Cosa si può gestire con le eccezioni|Cosa si può gestire con le eccezioni]]
+- [[#Eccezioni notevoli|Eccezioni notevoli]]
+- [[#Blocco try-catch|Blocco try-catch]]
+	- [[#Blocco try-catch#Catch integrato di eccezioni alternative|Catch integrato di eccezioni alternative]]
+	- [[#Blocco try-catch#Flusso in presenza o assenza di eccezioni|Flusso in presenza o assenza di eccezioni]]
+- [[#La politica catch-or-declare|La politica catch-or-declare]]
+	- [[#La politica catch-or-declare#Ignorare le eccezioni|Ignorare le eccezioni]]
+- [[#I metodi printStackTrace() e getMessage()|I metodi printStackTrace() e getMessage()]]
+- [[#Eccezioni personalizzate|Eccezioni personalizzate]]
+- [[#Blocco finally|Blocco finally]]
+- [[#Classe Throwable|Classe Throwable]]
+	- [[#Classe Throwable#Classi Exception ed Error|Classi Exception ed Error]]
+- [[#Eccezioni checked e unchecked|Eccezioni checked e unchecked]]
+	- [[#Eccezioni checked e unchecked#Checked|Checked]]
+	- [[#Eccezioni checked e unchecked#Unchecked|Unchecked]]
+- [[#Rilanciare le eccezioni (rethrowing)|Rilanciare le eccezioni (rethrowing)]]
+
+---
 ## Introduction
 Le eccezioni rappresentano un meccanismo utile a notificare e gestire gli errori e vengono generati quando durante l’esecuzione si è verificato un **errore**
 Il termine “eccezione” indica un **comportamento anomalo**, che si discosta dalla normale esecuzione e impararle a gestire rende il codice più robusto e sicuro
@@ -180,7 +203,7 @@ Quando un’eccezione non viene mai catturata, l’effetto è il seguente:
 ```java
 Exception in thread "main" NonToccareLaMiaRobaException 
 at Armadietto.apriArmadietto(Armadietto.java:11)
-at Spogliatoio.main(Spoiatoio.java:10)
+at Spogliatoio.main(Spogliatoio.java:10)
 ```
 
 Su schermo viene stampato un ‘riassunto’ associato all’eccezione non catturata, chiamato *stack trace*
@@ -264,8 +287,11 @@ La classe che implementa il concetto di eccezioni è **Throwable** che estende d
 
 ---
 ## Eccezioni checked e unchecked
+
+![[Screenshot 2024-04-23 alle 19.43.16.png|center|570]]
+
 ### Checked
-- È sempre necessario attenersi al paradigma catch-or-declare
+- E’ sempre necessario attenersi al paradigma catch-or-declare
 - Sono eccezioni comuni, ovvero quelle che estendono `Exception` (ma non `RuntimeException`)
 - Esempi: `ParseException`, `ClassNotFoundException`, `FileNotFoundException`
 
@@ -273,3 +299,33 @@ La classe che implementa il concetto di eccezioni è **Throwable** che estende d
 - Non si è obbligati a dichiarare le eccezioni sollevate o a catturarle in un blocco try-catch (ma è possibile farlo)
 - Sono eccezioni che estendono `Error` o `RuntimeException`
 - Esempi: `IndexOutOfBoundsException`, `ClassCastException`, `NullPointerException`, `ArithmeticException`, `OutOfMemoryError`
+
+---
+## Rilanciare le eccezioni (rethrowing)
+E’ possibile inoltre rilanciare eccezioni dall’interno di un blocco catch:
+
+```java
+public class Ladro {
+	public void apriArmadietto(Armadietto a) throws FurtoException {
+		throw new FurtoException();
+	}
+}
+
+
+public class Spogliatoio {
+	public static void main(String[] args) throws RotturaDiScatoleException {
+		Ladro ladro = new Ladro();
+		
+		try {
+			ladro.apriArmadietto(armadietto)
+		}
+		catch (FurtoException e) {
+			// nuova eccezione sollevata: in questo caso
+			// la precedente eccezione viene gestita (e ogni
+			// informazione ad essa associata viene persa) e
+			// quella corrente diventa la nuova eccezione
+			throw new RotturaDiScatoleException();
+		}
+	}
+}
+```

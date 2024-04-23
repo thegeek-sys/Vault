@@ -22,24 +22,12 @@
             }
           },
           {
-            "id": "7cbdc601279365e3",
+            "id": "f84e85b35a6d1635",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Exceptions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "770e022f2b416a5d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/MVC.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,25 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "8c2862e77cb5a317",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6b6d59f63721e041",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-23_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Exceptions.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Exceptions.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Exceptions.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -216,14 +186,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7cbdc601279365e3",
+  "active": "d2cac6488958348a",
   "lastOpenFiles": [
+    "Programming languages/Java/MVC.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-04-23_MDP.md",
+    "To-Do.md",
+    "Programming languages/Java/Exceptions.md",
     "Files/Screenshot 2024-04-23 alle 19.43.16.png",
     "Files/Screenshot 2024-04-23 alle 19.38.04.png",
-    "Flet-notes/2024-04-23_MDP.md",
-    "Programming languages/Java/Exceptions.md",
-    "Programming languages/Java/Java.md",
-    "To-Do.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Files/Screenshot 2024-04-23 alle 19.05.00.png",
     "Programming languages/Java/Interfacce note.md",
@@ -250,7 +221,6 @@
     "Files/Heap.png",
     "Class/Introduzione agli algoritmi",
     "Files/Heap.png.sb-edbfe875-m4sD66",
-    "Files/Screenshot 2024-04-22 alle 19.26.52.png",
     "Flet-notes/2024-04-16_AE.md",
     "Flet-notes/2024-04-16_MDP_sort.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
