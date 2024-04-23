@@ -168,3 +168,41 @@ public class Spogliatoio {
 Il costrutto `throws` dichiara che il metodo (o i metodi delle classi da questo invocati) può sollevare eccezioni dello stesso tipo (o di un tipo più specifico) di quelle elencate dopo il `throws` (tale specifica non è sempre obbligatoria, ma dipende dal tipo di eccezione sollevata)
 
 Se **tutti i metodi** all’interno dell’albero delle chiamate dell’esecuzione corrente decidono di ignorare l’eccezione, l’esecuzione viene **interrotta**. Questo però risulta vero solo del caso di applicazione a singolo thread (nel caso di molteplici thread, è il singolo thread ad essere interrotto; l’applicazione termina se sono interrotti tutti i thread)
+
+![[Screenshot 2024-04-23 alle 19.05.00.png|370]]
+Il metodo più in basso nello stack di attivazione lancia un’eccezione (*throw point*)
+Tutti i metodi decidono di ignorare l’eccezione con throws
+Come effetto si ha la **terminazione** dell’esecuzione
+
+---
+## I metodi printStackTrace() e getMessage()
+Quando un’eccezione non viene mai catturata, l’effetto è il seguente:
+```java
+Exception in thread "main" NonToccareLaMiaRobaException 
+at Armadietto.apriArmadietto(Armadietto.java:11)
+at Spogliatoio.main(Spoiatoio.java:10)
+```
+
+Su schermo viene stampato un ‘riassunto’ associato all’eccezione non catturata, chiamato *stack trace*
+Questo riporta:
+- il **thread** in cui l’eccezione è stata sollevata
+- il **nome** dell’eccezione sollevata
+- la successione, in ordine inverso di invocazione, dei **metodi coinvolti**
+- il **file sorgente** e il **numero di riga** di ciascuna invocazione
+
+L’output generato a schermo da un’eccezione non catturata è prodotto dal metodo `printStackTrace()`, offerto dalla classe **Throwable**
+Un altro metodo messo a disposizione dalla stessa classe è `getMessage()`, in grado di restituire, se prevista o disponibile, una della **descrizione sintetica** ragione per la quale si è verificata l’eccezione
+
+---
+## Eccezioni personalizzate
+E’ possibile definire delle **eccezioni personalizzate** in modo tale da mantenere negli errori una semantica legata all’applicazione.
+Al momento della creazione di un nuovo tipo di eccezione sarà opportuno **studiarne la natura** e lo scopo (errore sincrono/asincrono, possibilità di recovery o errore irreversibile...) e scegliere la super-classe più adeguata
+
+Vediamo la definizione dell’eccezione personalizzata `NonToccareLaMiaRobaException`:
+```java
+public class NonToccareLaMiaRobaException extends Exception {
+
+}
+```
+
+Tramite la parola chiave extends è possibile creare una nuova eccezione a partire da un tipo già esistente
