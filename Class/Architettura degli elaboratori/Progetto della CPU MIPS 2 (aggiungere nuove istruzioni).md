@@ -21,7 +21,7 @@ Supponiamo che abbia la codifica seguente:
 Da questa codifica dobbiamo fare ulteriori supposizioni:
 - il campo `indirizzo` rappresenta l’**istruzione di destinazione** del salto (va moltiplicato per 4 perché le istruzioni sono “allineate”)
 - si tratta di un  **indirizzo assoluto** (invece che relativo come per i branch)
-- i 4 bit “mancanti” verranno presi dal PC+4 (ovvero si rimane nello stesso blocco di 256M, per i salti tra blocchi diversi sarà necessario introdurre l’istruzione jr)
+- i 4 bit “mancanti” verranno presi dal PC+4 (ovvero si rimane nello stesso blocco di 256M, per i salti tra blocchi diversi sarà necessario introdurre l’istruzione jr). Infatti i 4 MSBs del PC indicano in quale dei 16 blocchi (da 256M, 4G totali) della ram ci si trova.
 
 Dobbiamo quindi rispondere alle domande che ci siamo posti in precedenza
 - **Cosa fa**

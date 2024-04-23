@@ -249,6 +249,18 @@
                 }
               },
               {
+                "id": "770e022f2b416a5d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Classi annidate e interne.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "6b6d59f63721e041",
                 "type": "leaf",
                 "state": {
@@ -261,7 +273,19 @@
                 }
               },
               {
-                "id": "5b7fd2be6625b753",
+                "id": "e26bf12529dc84f8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Interfacce note.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "0381eb4b44f887c9",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -297,7 +321,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 6
           }
         ],
         "direction": "vertical"
@@ -364,7 +388,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-04-23_MDP.md",
+                    "file": "To-Do.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -381,7 +405,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-04-23_MDP.md",
+                    "file": "To-Do.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -404,7 +428,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-04-23_MDP.md"
+                    "file": "To-Do.md"
                   }
                 }
               },
@@ -438,8 +462,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "6b6d59f63721e041",
-      "mtime": "2024-04-23T09:06:34+02:00"
+      "active": "d2cac6488958348a",
+      "mtime": "2024-04-23T12:17:58+02:00"
     },
     "Python": {
       "main": {
@@ -856,5 +880,5 @@
       "mtime": "2024-04-23T09:08:17+02:00"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
