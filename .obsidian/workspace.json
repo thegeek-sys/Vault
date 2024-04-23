@@ -82,7 +82,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-04-23_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-04-23_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md"
+                "file": "Flet-notes/2024-04-23_MDP.md"
               }
             }
           },
@@ -223,10 +223,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e26bf12529dc84f8",
+  "active": "6b6d59f63721e041",
   "lastOpenFiles": [
-    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Interfacce note.md",
+    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Java.md",
     "To-Do.md",
     "Flet-notes/2024-04-23_MDP.md",
