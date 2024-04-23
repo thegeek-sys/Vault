@@ -5,6 +5,7 @@
 - [[Classe Math]]
 - [[Libs]]
 - [[Prendere decisioni]]
+- [[Exceptions]]
 - 
 
 ##### Data types
