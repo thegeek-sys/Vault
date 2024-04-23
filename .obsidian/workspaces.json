@@ -82,7 +82,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -148,7 +148,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -188,7 +188,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md"
                   }
                 }
               },
@@ -222,8 +222,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "10965bf3f7d1a01b",
-      "mtime": "2024-04-22T23:37:11+02:00"
+      "active": "09e004038fe86daf",
+      "mtime": "2024-04-23T09:15:34+02:00"
     },
     "Java": {
       "main": {
@@ -254,7 +254,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-04-18_MDP.md",
+                    "file": "Flet-notes/2024-04-23_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -364,7 +364,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-04-18_MDP.md",
+                    "file": "Flet-notes/2024-04-23_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -381,7 +381,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-04-18_MDP.md",
+                    "file": "Flet-notes/2024-04-23_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -404,7 +404,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-04-18_MDP.md"
+                    "file": "Flet-notes/2024-04-23_MDP.md"
                   }
                 }
               },
@@ -439,7 +439,7 @@
         }
       },
       "active": "6b6d59f63721e041",
-      "mtime": "2024-04-18T22:12:44+02:00"
+      "mtime": "2024-04-23T09:06:34+02:00"
     },
     "Python": {
       "main": {
@@ -698,9 +698,21 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "612e105e3eff1b32",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "To-Do.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -766,7 +778,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -783,7 +795,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -806,7 +818,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
                   }
                 }
               },
@@ -840,9 +852,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "db38e4179948a549",
-      "mtime": "2024-04-22T23:34:07+02:00"
+      "active": "0842992bcc87f120",
+      "mtime": "2024-04-23T09:08:17+02:00"
     }
   },
-  "active": "Introduzione agli algoritmi"
+  "active": "Java"
 }

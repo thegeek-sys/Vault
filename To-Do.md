@@ -14,7 +14,8 @@
 - [x] aggiungere for each in prendere decisioni
 - [ ] Esercizio: Liste linkate di interi con classi interne (48 Interfacce)
 - [x] Esercizio: Disney vs. Marvel (52 Interfacce)
-- [ ] appunti da slide 37
+- [x] appunti da slide 37
+- [ ] su interfacce note sistemare comparator (slide 46)
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)

@@ -39,7 +39,7 @@ Completed:
 - [[#Ordinamento con l’interfaccia Comparator|Ordinamento con l’interfaccia Comparator]]
 - [[#Riferimenti a metodi esistenti|Riferimenti a metodi esistenti]]
 	- [[#Riferimenti a metodi esistenti#Esempio|Esempio]]
-- [[#Riferimento usando il nome della classe vs. riferimento a un oggetto|Riferimento usando il nome della classe vs. riferimento a un oggetto]]
+	- [[#Riferimento usando il nome della classe vs. riferimento a un oggetto|Riferimento usando il nome della classe vs. riferimento a un oggetto]]
 	- [[#Riferimento usando il nome della classe vs. riferimento a un oggetto#Esempio: riferimento a metodi d’istanza mediante classe|Esempio: riferimento a metodi d’istanza mediante classe]]
 
 ---
@@ -502,8 +502,7 @@ Converter<String, Integer> converter = Integer::valueOf;
 Integer converted = converter.convert("123")
 ```
 
----
-## Riferimento usando il nome della classe vs. riferimento a un oggetto
+### Riferimento usando il nome della classe vs. riferimento a un oggetto
 Riferimento usando il nome della classe vs. riferimento a un oggetto
 Che differenza ci sta tra `riferimentoOggetto::metodo` e `nomeClasse::metodo`?
 - Nel primo caso, il metodo sarà chiamato **sull’oggetto riferito**.
