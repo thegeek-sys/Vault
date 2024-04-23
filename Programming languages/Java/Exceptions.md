@@ -141,3 +141,30 @@ Se viene sollevata un’eccezione:
 1. L’esecuzione del blocco try viene interrotta
 2. Il controllo passa al primo blocco catch compatibile, tale cioè che il tipo dichiarato nella clausola catch sia dello stesso tipo dell’eccezione sollevata, o un suo super-tipo
 3. L’esecuzione riprende dalla prima linea dopo il blocco try-catch
+
+---
+## La politica catch-or-declare
+Una volta sollevata un’eccezione, possiamo:
+- **Ignorare** l’eccezione e propagarla al metodo chiamante, a patto di aggiungere all’intestazione del metodo la clausola `throws`, seguìto dall’elenco delle eccezioni potenzialmente sollevate (*declare*)
+- **Catturare** l’eccezione, ovvero gestire la situazione anomala in modo opportuno, prendendo provvedimenti e contromisure atte ad arginare il più possibile la situazione di emergenza (*catch*)
+
+Se il requisito catch-or-declare non viene soddisfatto il compilatore emette un errore che indica che l’eccezione dev’essere **catturata** o **dichiarata**. Questo serve a **forzare il programmatore** a considerare i problemi legati all’uso di metodi che emettono eccezioni
+
+### Ignorare le eccezioni
+Se intendiamo ignorare l’eccezione siamo costretti a dichiarare esplicitamente il suo sollevamento con throws
+
+```java
+public class Spogliatoio {
+	public static void main(String[] args) throws NonToccareLaMiaRobaException, ArmadiettoGiaApertoException {
+		Sportivo pellegrini = new Sportivo("Federica Pellegrini");
+		Sportivo bolt = new Sportivo("Usain Bolt")
+		
+		Armadietto armadietto = new Armadietto(pellegrini);
+		armadietto.apriArmadietto(bolt)
+	}
+}
+```
+
+Il costrutto `throws` dichiara che il metodo (o i metodi delle classi da questo invocati) può sollevare eccezioni dello stesso tipo (o di un tipo più specifico) di quelle elencate dopo il `throws` (tale specifica non è sempre obbligatoria, ma dipende dal tipo di eccezione sollevata)
+
+Se **tutti i metodi** all’interno dell’albero delle chiamate dell’esecuzione corrente decidono di ignorare l’eccezione, l’esecuzione viene **interrotta**. Questo però risulta vero solo del caso di applicazione a singolo thread (nel caso di molteplici thread, è il singolo thread ad essere interrotto; l’applicazione termina se sono interrotti tutti i thread)
