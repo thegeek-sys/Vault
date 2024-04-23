@@ -89,3 +89,45 @@ public class Spogliatoio {
 
 E’ molto importante considerare l’ordine con cui si scrivono i diversi blocchi catch e catturare le eccezioni **dalla più specifica a quella più generale**. Nell’attuare il processo di cattura, la JVM sceglie il **primo catch compatibile**, tale cioè che il tipo dell’eccezione dichiarata sia lo stesso o un supertipo dell’eccezione lanciata durante l’esecuzione.
 Spesso vogliamo rispondere ad un’eccezione con il rimedio specifico e non con uno più generale.
+
+Ricorda bene che **l’ordine conta**
+```java
+public class TavoloDiGioco {
+	public enum Seme {
+		SPADE, DENARI, BASTONI, COPPE;
+	}
+	
+	public static void main(String[] args) {
+		try {
+			// solleva eccezione più specifica 
+			// (ovvero NumberFormatExceptionche che estende
+			// IllegalArgumentException)
+			Integer due = Integer.parseInt("Due");
+			// solleva eccezione più generale
+			Seme denari = Seme.valueOf("DENARA");
+			
+			Carta dueDiDenari = new Carta(due, denari);
+		}
+		catch(IllegalArgumentException e) {
+			System.out.println("Seme non esistente");
+		}
+		// questo secondo caso non viene mai raggiunto
+		catch(NumberFormatExceptionche e1) {
+			System.out.println("Valore non esistente");
+		}
+	}
+}
+```
+
+### Catch integrato di eccezioni alternative
+E' possibile specificare un'unica clausola catch con diversi tipi di eccezioni utilizzando l'operatore `|`. Risulta tile laddove, a fronte di eccezioni diverse, si debba avere un comportamento analogo
+
+```java
+try {
+	if (condizione) throw new Eccezione1();
+	else throw new Eccezione2();
+}
+catch(Eccezione1|Eccezione2 e) {
+	// gestione dei due casi in un unico blocco
+}
+```
