@@ -131,3 +131,13 @@ catch(Eccezione1|Eccezione2 e) {
 	// gestione dei due casi in un unico blocco
 }
 ```
+
+### Flusso in presenza o assenza di eccezioni
+Se durante l’esecuzione non vengono sollevate eccezioni:
+1. ciascuna istruzione all’interno del blocco try viene eseguita normalmente
+2. terminato il blocco try, l’esecuzione riprende dalla prima linea dopo il blocco try-catch
+
+Se viene sollevata un’eccezione:
+1. L’esecuzione del blocco try viene interrotta
+2. Il controllo passa al primo blocco catch compatibile, tale cioè che il tipo dichiarato nella clausola catch sia dello stesso tipo dell’eccezione sollevata, o un suo super-tipo
+3. L’esecuzione riprende dalla prima linea dopo il blocco try-catch
