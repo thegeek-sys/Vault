@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "770e022f2b416a5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6b6d59f63721e041",
             "type": "leaf",
             "state": {
@@ -82,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Flet-notes/2024-04-23_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Flet-notes/2024-04-23_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md"
+                "file": "Flet-notes/2024-04-23_MDP.md"
               }
             }
           },
@@ -223,12 +235,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0381eb4b44f887c9",
+  "active": "6b6d59f63721e041",
   "lastOpenFiles": [
+    "Programming languages/Java/Classi annidate e interne.md",
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-04-23_MDP.md",
+    "Files/Screenshot 2024-04-23 alle 09.45.18.png",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Strutture dati.md",
-    "Programming languages/Java/Java.md",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
@@ -252,7 +266,6 @@
     "Files/Screenshot 2024-04-22 alle 19.26.52.png",
     "Files/Screenshot 2024-04-22 alle 19.05.03.png",
     "Files/Screenshot 2024-04-22 alle 17.11.08.png",
-    "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
     "Flet-notes/2024-04-16_AE.md",
     "Flet-notes/2024-04-16_MDP_sort.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
@@ -261,12 +274,10 @@
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/UML.md",
-    "Programming languages/Java/Classi annidate e interne.md",
     "Flet-notes/2024-04-12_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "Class/Architettura degli elaboratori/Prestazioni CPU.md",
-    "Class/Architettura degli elaboratori/Architettura di Von Neumann.md",
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",
