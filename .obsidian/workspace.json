@@ -93,7 +93,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -160,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/2024-04-23_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/2024-04-23_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Flet-notes/2024-04-23_MDP.md"
               }
             }
           },
@@ -234,14 +235,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "6b6d59f63721e041",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-23_MDP.md",
+    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Java.md",
+    "Flet-notes/2024-04-23_MDP.md",
     "Files/Screenshot 2024-04-23 alle 09.45.18.png",
     "Programming languages/Java/Interfacce note.md",
-    "Programming languages/Java/Strutture dati.md",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
