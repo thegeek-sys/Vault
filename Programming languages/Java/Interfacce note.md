@@ -86,3 +86,25 @@ backToString.apply("123"); // "123"
 Function<Integer, Integer> square = k -> k*k;
 Integer sqr = square.apply(5); // 25
 ```
+
+---
+## Supplier\<T>
+Funzione senza argomenti in input
+
+```java
+Supplier<String> stringSupplier = () -> "ciao";
+
+Supplier<Person> personSupplier = Person::new;
+personSupplier.get(); // new Person();
+```
+
+---
+## Consumer\<T>
+Funzione con un argomento di tipo generico T e nessun tipo di ritorno
+
+```java
+Consumer<Person> greeter1 = p -> System.out.println("Hello "+p.firstName);
+greeter1.accept(new Person("Luke", "Skywalker"));
+
+Consumer<Person> greeter2 = System.out::println;
+```

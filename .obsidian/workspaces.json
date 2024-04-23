@@ -36,24 +36,24 @@
                 }
               },
               {
-                "id": "09e004038fe86daf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "f661451f68231c21",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
                     "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f5f769e3ae9faf09",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                     "mode": "source",
                     "source": false
                   }
@@ -80,9 +80,21 @@
                     "file": "Files/MIPS_Instruction_Set.pdf"
                   }
                 }
+              },
+              {
+                "id": "a10036204f95c345",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-04-23_AE.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -132,7 +144,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -148,7 +161,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                    "file": "To-Do.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -165,7 +178,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                    "file": "To-Do.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -188,7 +201,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md"
+                    "file": "To-Do.md"
                   }
                 }
               },
@@ -222,8 +235,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "09e004038fe86daf",
-      "mtime": "2024-04-23T09:15:34+02:00"
+      "active": "10965bf3f7d1a01b",
+      "mtime": "2024-04-23T16:33:50+02:00"
     },
     "Java": {
       "main": {
@@ -880,5 +893,5 @@
       "mtime": "2024-04-23T09:08:17+02:00"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }

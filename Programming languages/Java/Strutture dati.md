@@ -32,15 +32,24 @@ Completed:
 	- [[#Mappe#Chiavi e valori di una mappa|Chiavi e valori di una mappa]]
 		- [[#Chiavi e valori di una mappa#Esempio|Esempio]]
 	- [[#Mappe#Metodi Java 8 e Java 9 nell’interfaccia java.util.Map|Metodi Java 8 e Java 9 nell’interfaccia java.util.Map]]
+- [[#Pila e coda|Pila e coda]]
+	- [[#Pila e coda#Coda|Coda]]
+	- [[#Pila e coda#Pila|Pila]]
+- [[#Alberi|Alberi]]
+- [[#Come scegliere la collezione da usare?|Come scegliere la collezione da usare?]]
 - [[#Algoritmi sulle collezioni: la classe java.util.Collection|Algoritmi sulle collezioni: la classe java.util.Collection]]
+	- [[#Algoritmi sulle collezioni: la classe java.util.Collection#Collections.sort|Collections.sort]]
+		- [[#Collections.sort#Ordinamento inverso|Ordinamento inverso]]
+		- [[#Collections.sort#Ordinamento per lunghezza|Ordinamento per lunghezza]]
 - [[#Algoritmi sugli array: la classe java.util.Arrays|Algoritmi sugli array: la classe java.util.Arrays]]
 - [[#Ordinamento naturale|Ordinamento naturale]]
 	- [[#Ordinamento naturale#Esempio|Esempio]]
 - [[#Ordinamento con l’interfaccia Comparator|Ordinamento con l’interfaccia Comparator]]
 - [[#Riferimenti a metodi esistenti|Riferimenti a metodi esistenti]]
 	- [[#Riferimenti a metodi esistenti#Esempio|Esempio]]
-	- [[#Riferimento usando il nome della classe vs. riferimento a un oggetto|Riferimento usando il nome della classe vs. riferimento a un oggetto]]
-	- [[#Riferimento usando il nome della classe vs. riferimento a un oggetto#Esempio: riferimento a metodi d’istanza mediante classe|Esempio: riferimento a metodi d’istanza mediante classe]]
+	- [[#Riferimenti a metodi esistenti#Riferimento usando il nome della classe vs. riferimento a un oggetto|Riferimento usando il nome della classe vs. riferimento a un oggetto]]
+	- [[#Riferimenti a metodi esistenti#Esempio: riferimento a metodi d’istanza mediante classe|Esempio: riferimento a metodi d’istanza mediante classe]]
+	- [[#Riferimenti a metodi esistenti#Riferimenti vs. espressioni lambda|Riferimenti vs. espressioni lambda]]
 
 ---
 ## Introduction
@@ -97,13 +106,17 @@ for (int j=0; j<collezione.size(); j++) {
 
 ### Iterazione interna su una collezione
 Mediante il metodo `Iterable.forEach` permette l’iterazione su qualsiasi collezione senza specificare come effettuare l’iterazione (utilizza il polimorfismo, chiamerà il forEach della classe specifica)
-**forEach** prende in input un *Consumer*, che è un’interfaccia funzionale con un solo metodo
+**forEach** prende in input un’interfaccia `Consumer<? super T>` (dove T è un tipo generico della collection), che è un’interfaccia funzionale con un solo metodo
 `void accept(T t);`
 
 Esempio:
 ```java
 List<Integer> I = List.of(4, 8, 15, 16, 23, 42)
 I.forEach(x -> System.out.println(x));
+
+Collection<String> c = Arrays.asList("aa", "bb", "cc");
+c.forEach(s -> System.out.println(s));
+c.forEach(System.out::println);
 ```
 
 > [!hint] [.forEach vs. for-each loop](https://stackoverflow.com/questions/16635398/java-8-iterable-foreach-vs-foreach-loop)
@@ -405,6 +418,90 @@ Se la chiave non contiene già un valore, imposta il valore specificato, altrime
 Statico, crea una mappa immutabile dei tipi e con i valori corrispondenti
 
 ---
+## Pila e coda
+La **pila** (*stack*) e la **coda** (*queue*) sono due strutture dati fondamentali utili in un gran numero di attività
+- **Coda** → FIFO, first-in first-out
+- **Pila** → LIFO, last-in first-out
+
+### Coda
+Esistono implementazioni standard della coda mediante l’interfaccia **`Queue`** (`LinkedList` implementa l’interfaccia `Queue`)
+**Esempi di coda**:
+- coda degli eventi relativi a mouse e tastiera
+- coda di stampa
+**Operazioni principali**:
+- add → inserisce un elemento in coda
+- remove → rimuove un elemento dall’inizio della coda
+- peek → restituisce l’elemento all’inizio della coda senza rimuoverlo
+
+### Pila
+Esiste un’implementazione standard mediante la classe **`Stack`** (implementa l’interfaccia `List`)
+**Esempi di pila**:
+- la pila di esecuzione (run-time stack) contenente i record di attivazione delle chiamate a metodi
+- Nell’implementazione della ricorsione
+**Operazioni principali**:
+- push → inserisce un elemento in cima alla pila
+- pop → rimuove l’elemento in cima alla pila
+- peek → restituisce l’elemento in cima alla pila senza rimuoverlo
+
+---
+## Alberi
+Gli alberi sono una **struttura dati ricorsiva** in cui ogni nodo possiede un padre tranne la radice. Gli alberi più comuni sono **binari** (ovvero con al più due figli per nodo)
+![[Screenshot 2024-04-23 alle 09.45.18.png|center|250]]
+
+Utilizziamo una classe annidata (interna se serve il riferimento all'albero) per rappresentare il nodo di un albero binario:
+```java
+public class BinaryTree {
+	private Nodo root;
+	
+	public static class Nodo {
+		private Nodo left;
+		private Nodo right;
+		private int valore;
+		
+		public Nodo(Nodo left, Nodo right, int valore) {
+			this.left = left;
+			this.right = right;
+			this.valore = valore;
+		}
+	}
+	
+	// ricerca in un albero
+	public boolean contains(int val) {
+		return contains(root, val);
+	}
+	private boolean contains(Nodo n, int val) {
+		if (n == null) return false;
+		if (n.valore == val) return true;
+		return contains(n.left, val) || contains(n.right, val)
+	}
+}
+```
+
+---
+## Come scegliere la collezione da usare?
+*Come voglio accedere agli elementi?*
+- tramite una **posizione** → `ArrayList`
+- tramite una **chiave** → mappa
+- **non importa** → set
+
+*Quali sono i tipi degli elementi o tipi di chiavi e valori?*
+- Ad esempio, in una mappa, vado da stringhe a interi o da interi a stringhe? Qual è la chiave univoca che deve determinare il valore?
+
+*L’ordine degli elementi o delle chiavi è importante?*
+- Si, in un **ordine naturale** degli elementi → `TreeMap` o `TreeSet`
+- Si, nell’**ordine di inserimento** → `ArrayList`, `LinkedList`, `LinkedHashSet`, `LinkedHashMap`
+- **Non importa** → `HashSet` o `HashMap`
+
+*Per una collezione non mappa, quali operazioni devono essere veloci?*
+- **ricerca** veloce → `HashSet`
+- **aggiunta e rimozione** di elementi → `LinkedList`
+- **non importa/ho pochi elementi nella collezione** → `ArrayList`
+
+*Se usate rappresentazioni ad albero (TreeSet o TreeMap), serve che si implementi Comparable?*
+- No, se l’ordine naturale è già prestabilito (es. tipi primitivi)
+- Si, è un tipo nuovo per il quale vogliamo stabilire l’ordinamento
+
+---
 ## Algoritmi sulle collezioni: la classe java.util.Collection
 La classe `java.util.Collection` fornisce metodi **statici** per la manipolazione delle collezioni
 
@@ -544,3 +641,11 @@ StringProcessor h = String::valueOf;
 System.out.println(h.process("bella")); // "bella"
 ```
 
+### Riferimenti vs. espressioni lambda
+
+| Riferimento a metodo | Tipo di metodo riferito                                 | Espressione lambda equivalente |
+| -------------------- | ------------------------------------------------------- | ------------------------------ |
+| `String::valueOf`    | Statico                                                 | `x -> String.valueOf(x)`       |
+| `Object::toString`   | D’istanza, senza fissare l’istanza (intestazione fissa) | `x -> x.toString()`            |
+| `x::toString`        | D’istanza, fissata l’istanza                            | `() -> x.toString()`           |
+| `ArrayList::new`     | Costruttore                                             | `() -> new ArrayList<>()`      |
