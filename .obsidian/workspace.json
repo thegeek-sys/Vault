@@ -34,6 +34,18 @@
             }
           },
           {
+            "id": "436ebe14c2ab362b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-24_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "898e0cb567338671",
             "type": "leaf",
             "state": {
@@ -147,14 +159,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-24_MDP.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,7 +195,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "equals path:\"Programming languages/Java/\"",
+                "query": "hashCo path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -200,8 +212,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -295,20 +306,21 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4bb47036f5bb617f",
+  "active": "436ebe14c2ab362b",
   "lastOpenFiles": [
-    "Programming languages/Java/Classe Object.md",
-    "Flet-notes/2024-04-24_MDP.md",
-    "Programming languages/Java/Array.md",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Methods.md",
     "Programming languages/Java/Strutture dati.md",
-    "Programming languages/Java/java.lang.String.md",
-    "Programming languages/Java/Prendere decisioni.md",
-    "Programming languages/Java/Classi anonime e lambda function.md",
-    "Programming languages/Java/Interfacce.md",
+    "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Conversione di tipi.md",
+    "Programming languages/Java/Interfacce.md",
+    "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Classi Wrapper.md",
+    "Flet-notes/2024-04-24_MDP.md",
+    "Programming languages/Java/Array.md",
+    "Programming languages/Java/Methods.md",
+    "Programming languages/Java/java.lang.String.md",
+    "Programming languages/Java/Classi anonime e lambda function.md",
     "To-Do.md",
     "Programming languages/Java/MVC.md",
     "Flet-notes/2024-04-23_MDP.md",
@@ -327,7 +339,6 @@
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Flet-notes/2024-04-18_MDP.md",
-    "Class/Class.md",
     "Files/Esempio2.png",
     "Files/Esempio1.drawio.png",
     "Files/Record.png",
