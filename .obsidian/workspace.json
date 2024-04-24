@@ -147,7 +147,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Flet-notes/2024-04-24_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -221,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Flet-notes/2024-04-24_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,7 +238,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Flet-notes/2024-04-24_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -261,7 +261,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md"
+                "file": "Flet-notes/2024-04-24_MDP.md"
               }
             }
           },
@@ -297,6 +297,8 @@
   },
   "active": "4bb47036f5bb617f",
   "lastOpenFiles": [
+    "Programming languages/Java/Classe Object.md",
+    "Flet-notes/2024-04-24_MDP.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Methods.md",
@@ -333,11 +335,9 @@
     "Files/Screenshot 2024-04-22 alle 22.15.54.png",
     "Files/Heapify.png",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Files/Heap.png",
     "Class/Introduzione agli algoritmi",
     "Files/Heap.png.sb-edbfe875-m4sD66",
-    "Flet-notes/2024-04-16_AE.md",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "IMG_6204.heic",
     "Untitled.canvas",
