@@ -92,7 +92,7 @@ public class Punto {
 	public boolean equals(Object o) {
 		if (o == null) return false;
 		if (getClass() != o.getClass()) return false;
-		Punto p = Punto(o);
+		Punto p = (Punto)o;
 		return x==p.x && y==p.y && z==p.z;
 	}
 }
