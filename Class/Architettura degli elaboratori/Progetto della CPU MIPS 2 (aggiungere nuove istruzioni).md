@@ -123,8 +123,10 @@ Codifica istruzione
 	- `PC+4+Registri[rs]`
 - **Segnali di controllo**
 	- `JumpRelReg = 1`
-	- ``
 - **Tempo necessario**
-	- Fetch e in parallelo il tempo dell’adder che calcola PC+4 (quindi il massimo tra i due tempi)
+	- Fetch → 66ns
+	- Accesso al registro → 33ns
+	- Adder (PC+4+Reg\[rs]) → 100ns
+	- TOT: 200ns
 
 ![[jrr.png]]
