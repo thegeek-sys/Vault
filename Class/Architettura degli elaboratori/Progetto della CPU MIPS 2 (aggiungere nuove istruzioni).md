@@ -144,9 +144,8 @@ Codifica istruzione
 - **Segnali di controllo**
 	- `JumpRegLink = 1`
 - **Tempo necessario**
-	- Fetch → 66ns
-	- Accesso al registro → 33ns
-	- Adder (PC+4+Reg\[rs]) → 100ns (OK BRO!?!?!?)
-	- TOT: 200ns
+	- Fetch (100ns) + Reg\[rs] (50ns) + PC←Reg\[rs] (0ns)
+	- PC+4 (150ns) + Reg\[rt]←PC+4 (50ns)
+	- Queste flussi vengono eseguiti in parallelo quindi il totale è di 200ns
 
 ![[jral.png]]
