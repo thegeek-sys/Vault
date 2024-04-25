@@ -219,3 +219,44 @@ while p.next != None:
 		break
 	p = p.next
 ```
+
+---
+## Pila e Coda
+### Pila (stack)
+La **pila** è una struttura dati che esibisce un comportamento *LIFO* (Last In First Out). La pila può essere visualizzata come una pila di piatti: ne aggiungiamo uno appoggiandolo sopra quello in cima alla pila, e quando dobbiamo prenderne uno preleviamo quello più in alto.
+
+Su una pila sono definite solo due operazioni
+- **inserimento** → `push`
+- **estrazione** → `pop`
+Per fare in modo che queste uniche due operazioni siano efficienti è importante che esse abbiano complessità $\theta(1)$
+
+```python
+def push(Pila, x):
+	Pila.append(x)
+
+def pop(Pila):
+	if Pila == []:
+		return None
+	return Pila.pop()
+```
+
+### Coda (queue)
+La **coda** è una struttura dati che esibisce un comportamento *FIFO* (First In First Out). In altre parole, la coda ha la proprietà che gli elementi vengono da essa prelevati esattamente nello stesso ordine col quale vi sono stati inseriti.
+La coda può essere visualizzata come una coda di persone in attesa ad uno sportello ed uno dei suoi più classici utilizzi è la gestione della coda di stampa, in cui documenti mandati in stampa prima vengono stampati prima.
+
+Su una coda sono definite solo due operazioni:
+- **inserimento** → `enqueue`
+- **estrazione** → `dequeue`
+Anche qui, per fare in modo che queste uniche due operazioni siano efficienti, è importante che esse abbiano complessità $\theta(1)$
+
+```python
+''' Implementazione tramite liste '''
+def ins(Coda, x):
+	Cosa.append(x)
+
+def canc(Coda):
+	if Coda == []:
+		return None
+	return Coda.pop(0)        # 
+```
+Il problema di questa implementazione sta nel fatto che l’operazione di `canc` impiega $\theta(n)$

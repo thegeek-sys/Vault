@@ -58,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
               }
             }
           },
@@ -198,15 +198,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0842992bcc87f120",
+  "active": "db38e4179948a549",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/bucket sort.png",
     "Files/Screenshot 2024-04-25 alle 22.31.15.png",
-    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Untitled.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "To-Do.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
@@ -236,7 +236,6 @@
     "Files/Screenshot 2024-04-23 alle 19.38.04.png",
     "Files/Screenshot 2024-04-23 alle 19.05.00.png",
     "Files/MIPS_Instruction_Set.pdf",
-    "Files/Screenshot 2024-04-23 alle 09.45.18.png",
     "Files/Record.png.sb-edbfe875-QirdlN",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
     "Class/Introduzione agli algoritmi",
