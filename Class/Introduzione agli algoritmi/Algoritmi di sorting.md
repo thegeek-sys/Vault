@@ -250,7 +250,7 @@ Il costo computazionale di questo algoritmo dipenderà dal sorting utilizzato pe
 Questo algoritmo funziona come segue:
 - crea una lista di `k` buckets inizialmente vuoti
 - trova `M`, l’elemento massimo dell’array `A` da ordinare
-- scorri `A` e per ogni valore `x` inserisci `x` nel bucket $B\left[ \left\lfloor  k \frac{x}{M+1}  \right\rfloor \right]$
+- scorri `A` e per ogni valore `x` inserisci `x` nel bucket $B\left[ \left\lfloor k \frac{x}{M+1}  \right\rfloor \right]$
 - ordina gli elementi di ciascun bucket
 - concatena gli elementi ordinati dei vari bucket
 
