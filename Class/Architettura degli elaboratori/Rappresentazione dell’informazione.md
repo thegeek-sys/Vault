@@ -68,4 +68,4 @@ Queste operazioni sono divise in:
 - opcode → 6 bit
 - indirizzo → 26
 Eseguono operazioni di **salti non condizionati** (salto assoluto
-![[Screenshot 2024-04-15 alle 17.08.18.png]]
+![[Screenshot 2024-04-22 alle 16.44.12.png]]
