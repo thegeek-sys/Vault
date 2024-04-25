@@ -3,6 +3,6 @@
   "maximumDepth": 6,
   "listStyle": "bullet",
   "useMarkdown": false,
-  "title": ">[!info] Index",
+  "title": "## Index",
   "githubCompat": false
 }

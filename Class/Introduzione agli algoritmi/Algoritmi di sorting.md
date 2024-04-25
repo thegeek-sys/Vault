@@ -239,6 +239,8 @@ def CountingSort(A):
 
 ---
 ## Bucket Sort
+L’idea alla base di questo algoritmo di sorting è il dividere il vettore in $k$ sottointervalli detti **bucket**, e distribuire i valori nei loro bucket (il generico elemento $x$ finisce nel bucket $\left\lfloor  k\cdot\frac{x}{M+1}  \right\rfloor$) per poi ordinarli separatamente.
+Il costo computazionale di questo algoritmo dipenderà dal sorting utilizzato per ordinare i vari buckets ma
 
 ordinamento che fa uso di secchielli
 
