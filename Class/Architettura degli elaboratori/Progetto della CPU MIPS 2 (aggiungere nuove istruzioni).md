@@ -126,7 +126,7 @@ Codifica istruzione
 - **Tempo necessario**
 	- Fetch → 66ns
 	- Accesso al registro → 33ns
-	- Adder (PC+4+Reg\[rs]) → 100ns
+	- Adder (PC+4+Reg\[rs]) → 100ns (OK BRO!?!?!?)
 	- TOT: 200ns
 
 ![[jrr.png]]
