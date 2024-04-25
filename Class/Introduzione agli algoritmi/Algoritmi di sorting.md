@@ -239,15 +239,18 @@ def CountingSort(A):
 
 ---
 ## Bucket Sort
-L’idea alla base di questo algoritmo di sorting è il dividere il vettore in $k$ sottointervalli detti **bucket**, e distribuire i valori nei loro bucket (il generico elemento $x$ finisce nel bucket $\left\lfloor  k\cdot\frac{x}{M+1}  \right\rfloor$) per poi ordinarli separatamente.
-Il costo computazionale di questo algoritmo dipenderà dal sorting utilizzato per ordinare i vari buckets ma
+L’idea alla base di questo algoritmo di sorting è il dividere il vettore in *`k` sottointervalli* detti **bucket**, e distribuire i valori nei loro bucket per poi ordinarli separatamente. La posizione di ogni singolo elemento all’interno del bucket corrispondente è data dalla formula:
+$$\left\lfloor  k\cdot\frac{x}{M+1}  \right\rfloor$$
+Questa formula mi assicura che i numeri più piccoli andranno nei primi secchi mentre quelli più grandi negli ultimi, in modo tale da semplificare poi il lavoro alla macchina quando dovrà fare il vero e proprio sorting. In una situazione ideale dovrei avere lo stesso numero di elementi in ogni bucketzX
 
-ordinamento che fa uso di secchielli
+Il costo computazionale di questo algoritmo dipenderà dal sorting utilizzato per ordinare i vari buckets ma se gli elementi in input sono uniformemente distribuiti non ci si aspetta che molti elementi cadano nello stesso bucket (i.e. in ogni bucket ci saranno circa $\frac{n}{k}$ elementi ).
 
-k numero di secchi che voglio usare
-se i numeri sono n k è un numero <= n
-
-ogni secchio corrisponde ad un intervallo, il numero di intervalli è  M/k
+Questo algoritmo funziona come segue:
+- crea una lista di `k` buckets inizialmente vuoti
+- trova `M`, l’elemento massimo dell’array `A` da ordinare
+- scorri `A` e per ogni valore `x` inserisci `x` nel bucket $B\left[ \left\lfloor  k \frac{x}{M+1}  \right\rfloor \right]$
+- ordina gli elementi di ciascun bucket
+- concatena gli elementi ordinati dei vari bucket
 
 ```Python
 def (A, k):
