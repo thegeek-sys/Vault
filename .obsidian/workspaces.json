@@ -262,43 +262,7 @@
                 }
               },
               {
-                "id": "770e022f2b416a5d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Classi annidate e interne.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "6b6d59f63721e041",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-04-23_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "e26bf12529dc84f8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Interfacce note.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "0381eb4b44f887c9",
+                "id": "4a8bccc9ecefa137",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -310,12 +274,36 @@
                 }
               },
               {
-                "id": "83a94b6ad0a2fae0",
+                "id": "436ebe14c2ab362b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                    "file": "Flet-notes/2024-04-24_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "336cbf6f9cbee81e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Interfacce note.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f84e85b35a6d1635",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/MVC.md",
                     "mode": "source",
                     "source": false
                   }
@@ -332,9 +320,57 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "739dc6df37e1bccd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "64589e706e38995d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/java.lang.String.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "685dede93b83349f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Methods.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "4bb47036f5bb617f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Strutture dati.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 6
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -363,7 +399,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "compare path:\"Programming languages/Java/\"",
+                    "query": "hashCo path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -384,8 +420,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -401,7 +436,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Programming languages/Java/Strutture dati.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -418,7 +453,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Programming languages/Java/Strutture dati.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -441,7 +476,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Programming languages/Java/Strutture dati.md"
                   }
                 }
               },
@@ -475,8 +510,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "d2cac6488958348a",
-      "mtime": "2024-04-23T12:17:58+02:00"
+      "active": "4a8bccc9ecefa137",
+      "mtime": "2024-04-25T18:20:05+02:00"
     },
     "Python": {
       "main": {
@@ -893,5 +928,5 @@
       "mtime": "2024-04-23T09:08:17+02:00"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
