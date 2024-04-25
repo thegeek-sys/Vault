@@ -262,3 +262,34 @@ def canc(Coda):
 
 Il problema di questa implementazione sta nel fatto che l’operazione di `canc` impiega $\theta(n)$. Per questo motivo ci conviene utilizzare una linked list con puntatore sulla testa e sulla coda
 
+![[Screenshot 2024-04-25 alle 23.14.20.png]]
+
+```python
+def ins(testa, coda, x):
+	p = Nodo(x)
+	# se non è ancora stata creata la queue
+	if coda == None:
+		return p, p
+	coda.next = p
+	return testa, p
+
+def canc(testa, coda):
+	if testa == None:
+		return None, None, None
+	if testa == coda:
+		return testa.key, None, None
+	return testa.key, testa.next, coda
+```
+
+### Libreria Python
+Dal modulo collections posso importare la struttura dati `deque` (*double ended queue*) che permette di effettuare inserzioni e cancellazioni da entrambi i lati di una lista in tempo $\theta(1)$, permettendoci quindi di implementare allo stesso tempo sia la **coda** che la **pila**
+
+```python
+from collections import deque
+
+A = deque([])  # crea una lista vuota
+A.pop()        # estrae l'ultimo elemento
+A.append(x)    # inserisce x alla fine della queue
+A.popleft()    # estrae il primo elemento dalla lista
+A.appendleft() # inserisce x all’inizio in O(1)
+```
