@@ -130,3 +130,20 @@ Codifica istruzione
 	- TOT: 200ns
 
 ![[jrr.png]]
+
+---
+## Aggiungere jral
+- **Cosa fa**
+	- salta all’indirizzo memorizzato in `rs` e salva PC+4 in `rt`
+- **Unità funzionali**
+	- PC + 4 + contenuto registro
+	- OR per selezionare tra `Branch` e `JumpRelReg` → da aggiungere
+- **Flussi dei dati**
+	- `PC+4+Registri[rs]`
+- **Segnali di controllo**
+	- `JumpRelReg = 1`
+- **Tempo necessario**
+	- Fetch → 66ns
+	- Accesso al registro → 33ns
+	- Adder (PC+4+Reg\[rs]) → 100ns (OK BRO!?!?!?)
+	- TOT: 200ns
