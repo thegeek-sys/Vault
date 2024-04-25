@@ -232,12 +232,12 @@ Per fare in modo che queste uniche due operazioni siano efficienti è importante
 
 ```python
 def push(Pila, x):
-	Pila.append(x)
+	Pila.append(x)         # Θ(1)
 
 def pop(Pila):
 	if Pila == []:
 		return None
-	return Pila.pop()
+	return Pila.pop()      # Θ(1)
 ```
 
 ### Coda (queue)
@@ -252,11 +252,13 @@ Anche qui, per fare in modo che queste uniche due operazioni siano efficienti, �
 ```python
 ''' Implementazione tramite liste '''
 def ins(Coda, x):
-	Cosa.append(x)
+	Cosa.append(x)            # Θ(1)
 
 def canc(Coda):
 	if Coda == []:
 		return None
-	return Coda.pop(0)        # 
+	return Coda.pop(0)        # Θ(n)
 ```
-Il problema di questa implementazione sta nel fatto che l’operazione di `canc` impiega $\theta(n)$
+
+Il problema di questa implementazione sta nel fatto che l’operazione di `canc` impiega $\theta(n)$. Per questo motivo ci conviene utilizzare una linked list con puntatore sulla testa e sulla coda
+
