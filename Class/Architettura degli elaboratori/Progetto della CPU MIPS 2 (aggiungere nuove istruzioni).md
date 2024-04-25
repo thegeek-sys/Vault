@@ -83,16 +83,16 @@ Codifica istruzione
 	- `ALU → Registri[rt]`
 - **Segnali di controllo**
 	- Si comporta come una `lw` (nonostante questa memorizzi l’indirizzo invece che il dato) ovvero come l’istruzione `la` (load address)
-	- `Reg Dst → 0`
-	- `ALU Src → 1`
-	- `Mem toReg → 0`
-	- `Reg Write → 1`
-	- `Mem Read → X`
-	- `Mem Write → 0`
-	- `Branch → 0`
-	- `Jump → 0`
-	- `ALU Op1 → 0`
-	- `ALU Op2 → 0`
+	- `Reg Dst = 0`
+	- `ALU Src = 1`
+	- `Mem toReg = 0`
+	- `Reg Write = 1`
+	- `Mem Read = X`
+	- `Mem Write = 0`
+	- `Branch = 0`
+	- `Jump = 0`
+	- `ALU Op1 = 0`
+	- `ALU Op2 = 0`
 - **Tempo necessario**
 	- come istruzione di tipo R
 
@@ -117,13 +117,14 @@ Codifica istruzione
 	- salta all’indirizzo (relativo al PC) contenuto nel registro `rs`
 - **Unità funzionali**
 	- PC + 4 → presente
-	- shift left di 2 bit con input a 26 bit → da aggiungere
-	- OR dei 28 bit ottenuti con i 4 del PC+4 → si ottiene dalle connessioni
-	- MUX per selezionare  il nuovo PC → da aggiungere
+	- PC + 4 + contenuto registro → presente
+	- OR per selezionare tra `Branch` e `JumpRelReg` → da aggiungere
 - **Flussi dei dati**
 	- `PC+4+Registri[rs]`
 - **Segnali di controllo**
-	- Jump asserito per selezionare la nuova destinazione sul MUX
-	- `RegWrite=0` e `MemWrite=0` per evitare modifiche a registri e memoria
+	- `JumpRelReg = 1`
+	- ``
 - **Tempo necessario**
 	- Fetch e in parallelo il tempo dell’adder che calcola PC+4 (quindi il massimo tra i due tempi)
+
+![[jrr.png]]
