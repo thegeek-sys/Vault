@@ -245,6 +245,8 @@ Questa formula mi assicura che i numeri più piccoli andranno nei primi secchi m
 
 Il costo computazionale di questo algoritmo dipenderà dal sorting utilizzato per ordinare i vari buckets ma se gli elementi in input sono uniformemente distribuiti non ci si aspetta che molti elementi cadano nello stesso bucket (i.e. in ogni bucket ci saranno circa $\frac{n}{k}$ elementi ).
 
+![[Screenshot 2024-04-25 alle 22.31.15.png|center|400]]
+
 Questo algoritmo funziona come segue:
 - crea una lista di `k` buckets inizialmente vuoti
 - trova `M`, l’elemento massimo dell’array `A` da ordinare
@@ -266,6 +268,7 @@ def (A, k):
 		C.extend(B[i])
 	return C
 ```
+
 
 il numero più grande finirà nell'ultimo secchio
 `i` è un qualcuno numero compreso tra 0 e k-1
