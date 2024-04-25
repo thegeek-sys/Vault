@@ -109,6 +109,21 @@ Codifica istruzione
 - **Segnali di controllo**
 	- `JumpToReg` che abilita il MUX per inserire in PC il valore del registro
 
-![[Screenshot 2024-04-25 alle 18.25.35.png]]
+![[Screenshot 2024-04-25 alle 18.28.32.png]]
 
 ---
+## Aggiungere jrr
+- **Cosa fa**
+	- salta all’indirizzo (relativo al PC) contenuto nel registro `rs`
+- **Unità funzionali**
+	- PC + 4 → presente
+	- shift left di 2 bit con input a 26 bit → da aggiungere
+	- OR dei 28 bit ottenuti con i 4 del PC+4 → si ottiene dalle connessioni
+	- MUX per selezionare  il nuovo PC → da aggiungere
+- **Flussi dei dati**
+	- `PC+4+Registri[rs]`
+- **Segnali di controllo**
+	- Jump asserito per selezionare la nuova destinazione sul MUX
+	- `RegWrite=0` e `MemWrite=0` per evitare modifiche a registri e memoria
+- **Tempo necessario**
+	- Fetch e in parallelo il tempo dell’adder che calcola PC+4 (quindi il massimo tra i due tempi)
