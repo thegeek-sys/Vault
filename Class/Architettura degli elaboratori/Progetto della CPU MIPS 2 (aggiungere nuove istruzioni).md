@@ -143,6 +143,8 @@ Codifica istruzione
 	- `Registri[rt] ← PC+4`
 - **Segnali di controllo**
 	- `JumpRegLink = 1`
+	- `RegWrite = 1`
+	- `RegDst = 0`
 - **Tempo necessario**
 	- Fetch (100ns) + Reg\[rs] (50ns) + PC←Reg\[rs] (0ns)
 	- PC+4 (150ns) + Reg\[rt]←PC+4 (50ns)
