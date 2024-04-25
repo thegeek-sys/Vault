@@ -241,11 +241,12 @@ def CountingSort(A):
 ## Bucket Sort
 L’idea alla base di questo algoritmo di sorting è il dividere il vettore in *`k` sottointervalli* detti **bucket**, e distribuire i valori nei loro bucket per poi ordinarli separatamente. La posizione di ogni singolo elemento all’interno del bucket corrispondente è data dalla formula:
 $$\left\lfloor  k\cdot\frac{x}{M+1}  \right\rfloor$$
-Questa formula mi assicura che i numeri più piccoli andranno nei primi secchi mentre quelli più grandi negli ultimi, in modo tale da semplificare poi il lavoro alla macchina quando dovrà fare il vero e proprio sorting. In una situazione ideale dovrei avere lo stesso numero di elementi in ogni bucketzX
+Questa formula mi assicura che i numeri più piccoli andranno nei primi secchi mentre quelli più grandi negli ultimi, in modo tale da semplificare poi il lavoro alla macchina quando dovrà fare il vero e proprio sorting.
+In una situazione ideale dovrei avere circa lo stesso numero di elementi in ogni bucket (se ci sono esattamente lo stesso numero di elementi la complessità sarà $\theta(1)$).  Nel caso pessimo gli elementi non sono equidistribuiti, si concretizza ad esempio quando in un vettore ci sono tutti elementi uguali, in tal modo tutti gli elementi finiscono nello stesso secchio, annullando di fatto l'utilità dell'algoritmo
 
 Il costo computazionale di questo algoritmo dipenderà dal sorting utilizzato per ordinare i vari buckets ma se gli elementi in input sono uniformemente distribuiti non ci si aspetta che molti elementi cadano nello stesso bucket (i.e. in ogni bucket ci saranno circa $\frac{n}{k}$ elementi ).
 
-![[Screenshot 2024-04-25 alle 22.31.15.png|center|400]]
+![[bucket sort.png|center|400]]
 
 Questo algoritmo funziona come segue:
 - crea una lista di `k` buckets inizialmente vuoti
@@ -269,22 +270,8 @@ def (A, k):
 	return C
 ```
 
-
-il numero più grande finirà nell'ultimo secchio
-`i` è un qualcuno numero compreso tra 0 e k-1
-
-quando faccio il calcolo con la formula prendo la parte intera infatti nel codice ho //(m+1)
-
-
-// foto 12:27 dell'esempio che ha fatto il prof farlo su drawio
-il calcolo è (NUMx4)/10
-4 è il numero di secchi nell'esempio
-10 perchè 9+1 (m+1)
-
-complessità
+Dunque la complessità dell’algoritmo risulta essere:
 $$
 T(n) = \Theta(n) +\sum\limits_{i=o}^{k-1} \text {costo di ordinare(B[i])}
 $$
-
-nel caso pessimo gli elementi non sono equidistribuiti, si concretizza quando in un vettore ci sono tutti elementi uguali, in tal modo tutti gli elementi finiscono nello stesso secchio, annullando di fatto l'utilità dell'algoritmo
 

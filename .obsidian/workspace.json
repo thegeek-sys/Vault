@@ -34,16 +34,6 @@
             }
           },
           {
-            "id": "9bd5d4fb500fd95c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-04-25 alle 22.31.15.png"
-              }
-            }
-          },
-          {
             "id": "db38e4179948a549",
             "type": "leaf",
             "state": {
@@ -210,6 +200,7 @@
   },
   "active": "0842992bcc87f120",
   "lastOpenFiles": [
+    "Files/bucket sort.png",
     "Files/Screenshot 2024-04-25 alle 22.31.15.png",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Untitled.md",
