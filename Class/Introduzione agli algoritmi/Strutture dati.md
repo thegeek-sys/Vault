@@ -6,21 +6,26 @@ Completed:
 ---
 ---
 
->[!info] Index
->- [[#Introduction|Introduction]]
->	- [[#Introduction#Insiemi statici|Insiemi statici]]
->	- [[#Introduction#Insiemi dinamici|Insiemi dinamici]]
->- [[#Heap|Heap]]
->	- [[#Heap#Proprietà|Proprietà]]
->	- [[#Heap#heapify(A)|heapify(A)]]
->	- [[#Heap#heappop(A)|heappop(A)]]
->	- [[#Heap#heappush(A, x)|heappush(A, x)]]
->- [[#Linked List|Linked List]]
->	- [[#Linked List#Implementazione|Implementazione]]
->		- [[#Implementazione#Esempio|Esempio]]
->	- [[#Linked List#Creazione|Creazione]]
->	- [[#Linked List#Aggiungere elementi|Aggiungere elementi]]
->		- [[#Aggiungere elementi#Esercizio|Esercizio]]
+> [!info] Index
+> - [[#Introduction|Introduction]]
+> 	- [[#Introduction#Insiemi statici|Insiemi statici]]
+> 	- [[#Introduction#Insiemi dinamici|Insiemi dinamici]]
+> - [[#Heap|Heap]]
+> 	- [[#Heap#Proprietà|Proprietà]]
+> 	- [[#Heap#heapify(A)|heapify(A)]]
+> 	- [[#Heap#heappop(A)|heappop(A)]]
+> 	- [[#Heap#heappush(A, x)|heappush(A, x)]]
+> - [[#Linked List|Linked List]]
+> 	- [[#Linked List#Implementazione|Implementazione]]
+> 		- [[#Implementazione#Esempio|Esempio]]
+> 	- [[#Linked List#Creazione|Creazione]]
+> 	- [[#Linked List#Aggiungere elementi|Aggiungere elementi]]
+> 		- [[#Aggiungere elementi#Esercizio|Esercizio]]
+> - [[#Pila e Coda|Pila e Coda]]
+> 	- [[#Pila e Coda#Pila (stack)|Pila (stack)]]
+> 	- [[#Pila e Coda#Coda (queue)|Coda (queue)]]
+> 	- [[#Pila e Coda#Libreria Python|Libreria Python]]
+> 
 
 ---
 ## Introduction
