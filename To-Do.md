@@ -22,6 +22,7 @@
 - [x] Somma della diagonale (v. più efficiente) / reprise
 - [x] fare appunti Jump to Register
 - [x] trovare un modo per fare esercizio fine slide e caricarlo
+- [ ] determinare operazione eseguita tramite i 32 bit del jump alla slide 24
 
 ## Calcolo integrale
 - [x] farsi spiegare $\lim\limits_{x\to\infty} \frac{f(x)-T_{n}(x-x_{0})}{|x-x_0|^n}$

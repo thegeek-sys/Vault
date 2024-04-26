@@ -70,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -136,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-26_AE.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-26_AE.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-26_AE.md"
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
               }
             }
           },
@@ -210,10 +210,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6c20a28fa00ef7c9",
+  "active": "f661451f68231c21",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "To-Do.md",
     "Flet-notes/2024-04-26_AE.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-25 alle 18.28.32.png",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Files/jrr.png",
@@ -225,7 +226,6 @@
     "Files/bucket sort.png",
     "Files/Screenshot 2024-04-25 alle 22.31.15.png",
     "Class/Introduzione agli algoritmi/Untitled.md",
-    "To-Do.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.png",
