@@ -805,7 +805,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -871,7 +871,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -888,7 +888,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -911,7 +911,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
                   }
                 }
               },
@@ -945,9 +945,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "0842992bcc87f120",
-      "mtime": "2024-04-25T21:38:46+02:00"
+      "active": "db38e4179948a549",
+      "mtime": "2024-04-26T08:56:22+02:00"
     }
   },
-  "active": "Introduzione agli algoritmi"
+  "active": "Architettura degli elaboratori"
 }
