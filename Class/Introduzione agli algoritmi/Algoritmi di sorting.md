@@ -28,6 +28,11 @@ questi sono:
 - Heap Sort
 
 ---
+## Sorting riassunti
+
+![[Pasted image 20240425112421.png]]
+
+---
 ## Merge Sort
 Sia il Merge Sort che il QuickSort si basano sul paradigma **divide et impera**:
 1. il problema viene suddiviso in sottoproblemi di dimensione inferiore (_divide_)

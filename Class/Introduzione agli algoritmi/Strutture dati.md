@@ -29,6 +29,8 @@ Completed:
 
 ---
 ## Introduction
+![[Pasted image 20240425112436.png]]
+
 Una struttura dati è composta da:
 - un **modo sistematico** di organizzare i dati
 - un **insieme di operatori** che permettono di manipolare la struttura
