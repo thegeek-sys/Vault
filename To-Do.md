@@ -14,7 +14,7 @@
 - [ ] su interfacce note sistemare comparator (slide 46)
 - [ ] Esercizio: catena di volontari (slide 47 eccezioni)
 - [ ] studiarsi MVC
-- [ ] finire esercizio laboratorio
+- [x] finire esercizio laboratorio
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)

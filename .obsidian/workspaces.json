@@ -65,58 +65,26 @@
                 "state": {
                   "type": "markdown",
                   "state": {
+                    "file": "Flet-notes/2024-04-26_AE.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "b205ce60160ca8e6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
                     "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "bbef22b3d6c47441",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "Files/Screenshot 2024-04-25 alle 18.28.32.png"
-                  }
-                }
-              },
-              {
-                "id": "c9d7b9f695b6ad05",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Files/MIPS_Instruction_Set.pdf"
-                  }
-                }
-              },
-              {
-                "id": "a10036204f95c345",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-04-23_AE.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3cc062fb3b8ac89e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -182,7 +150,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                    "file": "To-Do.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -199,7 +167,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                    "file": "To-Do.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -222,7 +190,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md"
+                    "file": "To-Do.md"
                   }
                 }
               },
@@ -256,8 +224,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "f661451f68231c21",
-      "mtime": "2024-04-25T21:38:52+02:00"
+      "active": "10965bf3f7d1a01b",
+      "mtime": "2024-04-27T11:57:39+02:00"
     },
     "Java": {
       "main": {
@@ -949,5 +917,5 @@
       "mtime": "2024-04-26T08:56:22+02:00"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }

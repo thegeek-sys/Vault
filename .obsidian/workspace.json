@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,7 +22,55 @@
             }
           },
           {
-            "id": "10965bf3f7d1a01b",
+            "id": "4a8bccc9ecefa137",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Strutture dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "436ebe14c2ab362b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-24_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "336cbf6f9cbee81e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f84e85b35a6d1635",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/MVC.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,55 +82,67 @@
             }
           },
           {
-            "id": "f661451f68231c21",
+            "id": "739dc6df37e1bccd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f5f769e3ae9faf09",
+            "id": "64589e706e38995d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "file": "Programming languages/Java/java.lang.String.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6c20a28fa00ef7c9",
+            "id": "685dede93b83349f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-26_AE.md",
+                "file": "Programming languages/Java/Methods.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b205ce60160ca8e6",
+            "id": "4bb47036f5bb617f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Programming languages/Java/Strutture dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e35471f37c430bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce note.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -111,7 +171,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scanner path:\"Programming languages/Java/\"",
+                "query": "hashCo path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -222,14 +282,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "10965bf3f7d1a01b",
+  "active": "d2cac6488958348a",
   "lastOpenFiles": [
+    "Programming languages/Java/Strutture dati.md",
+    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Interfacce note.md",
+    "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Flet-notes/2024-04-26_AE.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "To-Do.md",
     "Files/Screenshot 2024-04-25 alle 18.28.32.png",
     "Files/jrr.png",
     "Files/jral.png",
@@ -243,14 +306,11 @@
     "Files/Screenshot 2024-04-22 alle 17.24.40.png",
     "Files/Screenshot 2024-04-25 alle 18.25.35.png",
     "Flet-notes/2024-04-23_AE.md",
-    "Programming languages/Java/Strutture dati.md",
     "Flet-notes/2024-04-24_MDP.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Classe Object.md",
-    "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Conversione di tipi.md",
     "Programming languages/Java/Interfacce.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Methods.md",
