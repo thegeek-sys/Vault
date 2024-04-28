@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f7d155bcca92b78",
+            "id": "ecb6cd090c8cbd79",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,36 +22,60 @@
             }
           },
           {
-            "id": "0842992bcc87f120",
+            "id": "304eb60c9e08e08e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "db38e4179948a549",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "612e105e3eff1b32",
+            "id": "10965bf3f7d1a01b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "To-Do.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f661451f68231c21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "edb02f5abf679a2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c20a28fa00ef7c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-26_AE.md",
                 "mode": "source",
                 "source": false
               }
@@ -124,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
+                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md"
               }
             }
           },
@@ -198,24 +222,25 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0842992bcc87f120",
+  "active": "304eb60c9e08e08e",
   "lastOpenFiles": [
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "To-Do.md",
-    "Files/jral.png",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Files/jral.png",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
     "Flet-notes/2024-04-26_AE.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/Pasted image 20240425112436.png",
-    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Files/Pasted image 20240425112421.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
