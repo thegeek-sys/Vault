@@ -24,14 +24,15 @@
 - [x] fare appunti Jump to Register
 - [x] trovare un modo per fare esercizio fine slide e caricarlo
 - [ ] determinare operazione eseguita tramite i 32 bit del jump alla slide 24
+- [ ] rifare esame 3 (che funzioni !!)
 
 ## Calcolo integrale
 - [x] farsi spiegare $\lim\limits_{x\to\infty} \frac{f(x)-T_{n}(x-x_{0})}{|x-x_0|^n}$
 - [x] fare esercizi [qui](https://mega.nz/folder/4osyiZAI#2I2lpukRbJ-n7-HsmHLxhA/file/p4tVyA7J) (file Serie.pdf ultima pagina)
 - [x] fare esercizi assegnati in aula
-- [ ] recuperare appunti 19/04
-- [ ] fare appunti 22/04
+- [x] recuperare appunti 19/04
+- [x] fare appunti 22/04
 
 ## Introduzione agli algoritmi
-- [ ] fare esercizi slide struttureDati1
-- [ ] fare appunti (BucketSort, Stack e Queue)
+- [x] fare esercizi slide struttureDati1
+- [x] fare appunti (BucketSort, Stack e Queue)

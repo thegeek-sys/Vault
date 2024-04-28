@@ -58,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
               }
             }
           },
@@ -198,19 +198,24 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "db38e4179948a549",
+  "active": "0842992bcc87f120",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "To-Do.md",
+    "Files/jral.png",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
+    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
+    "Class/Architettura degli elaboratori/System Calls.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+    "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
+    "Flet-notes/2024-04-26_AE.md",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/Pasted image 20240425112436.png",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Files/Pasted image 20240425112421.png",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
-    "Flet-notes/2024-04-26_AE.md",
-    "Class/Architettura degli elaboratori/System Calls.md",
-    "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "To-Do.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
@@ -221,21 +226,15 @@
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Array.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Files/Screenshot 2024-04-25 alle 18.28.32.png",
     "Files/jrr.png",
-    "Files/jral.png",
     "Files/Screenshot 2024-04-25 alle 23.14.20.png",
     "Files/bucket sort.png",
     "Files/Screenshot 2024-04-25 alle 22.31.15.png",
     "Class/Introduzione agli algoritmi/Untitled.md",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Files/Screenshot 2024-04-22 alle 17.24.40.png",
-    "Files/Screenshot 2024-04-25 alle 18.25.35.png",
     "Flet-notes/2024-04-23_AE.md",
     "Flet-notes/2024-04-24_MDP.md",
-    "Files/Screenshot 2024-04-23 alle 19.43.16.png",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
