@@ -34,7 +34,7 @@ Le istruzioni affette da questo guasto sono:
 	- il valore scritto sarà il risultato della differenza usata per confrontare i due operandi perché assumiamo `MemToReg=0`
 Le istruzioni sw e jump, invece, funzioneranno correttamente (perché hanno RegWrite a 0 comunque)
 
-![[Screenshot 2024-04-29 alle 16.22.20.jpg]]
+![[Immagine 29-04-24 - 16.58 2.jpg]]
 
 ### 2)
 Per individuare se la CPU sia malfunzionante creiamo un programma che lasci il valore 0 nel registro $s0 se lo è, e scriva 1 se funziona correttamente, tenendo conto che non possiamo scrivere in un registro dato che `RegWrite=0`
