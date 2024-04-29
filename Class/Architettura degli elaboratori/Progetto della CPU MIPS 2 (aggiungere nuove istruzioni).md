@@ -158,17 +158,21 @@ Codifica istruzione
 - **Cosa fa**
 	- salta all'indirizzo contenuto nell'elemento `$indice-esimo` del vettore di word
 - **Unità funzionali**
-	- PC + 4
+	- Memoria
 	- Registri
+	- PC
+	- Shift left
 - **Flussi dei dati**
-	- `PC ← Registri[rs]`
-	- `Registri[rt] ← PC+4`
+	- `PC ← Mem`
 - **Segnali di controllo**
-	- `JumpRegLink = 1`
-	- `RegWrite = 1`
-	- `RegDst = 0`
+	- `MemRead = 1`
+	- `MemWrite = 1`
+	- `Vj = 1`
+	- `ALUSrc = 1`
+	- `RegWrite = 0`
 - **Tempo necessario**
 	- Fetch (100ns) + Reg\[rs] (50ns) + PC←Reg\[rs] (0ns)
 	- PC+4 (150ns) + Reg\[rt]←PC+4 (50ns)
 	- Queste flussi vengono eseguiti in parallelo quindi il totale è di 200ns
 
+![[Immagine 29-04-24 - 18.43.jpg]]
