@@ -66,3 +66,20 @@ Quindi sono danneggiate le istruzioni che hanno i due segnali entrambi a 0 o ent
 - tipo R → funzionano correttamente (1, 0)
 
 ![[Immagine 29-04-24 - 17.11.jpg]]
+
+### 2)
+Per distinguere se la CPU è rotta dobbiamo quindi usare una delle due istruzioni di salto:
+- `beq $rs, $rt, etichetta` che memorizza:
+	- il valore del registro `rt` all’indirizzo calcolato dalla ALU come la differenza dei due operandi `rs` e `rt` (per realizzare il confronto)
+- `j etichetta` che memorizza:
+	- il valore del registro indicato dal campo `rt` della istruzione (i 5 bit \[20–16]) e che si trovano in mezzo all’indirizzo di destinazione
+	- all’indirizzo che si ottiene in uscita dalla ALU, di cui però non sappiamo quale funzione venga svolta
+
+```asm
+move $s0,$zero  # $s0 = 0
+sw $s0,0        # memorizzo 0 all'indirizzo 0
+li $s1,1        # $s1 = 1
+beq $s1,$s1,On  # salto di zero istruzioni -> continua
+On:             # se rotta, la cu memorizza 1 all'indirizzo 0
+lw $s0,0        # carico il contenuto dell'indirizzo 0
+```
