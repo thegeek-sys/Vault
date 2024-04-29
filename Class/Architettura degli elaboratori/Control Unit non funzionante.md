@@ -64,3 +64,5 @@ Quindi sono danneggiate le istruzioni che hanno i due segnali entrambi a 0 o ent
 - `beq` → salta correttamente **ma inoltre scrive in memoria** (0, 1) – invece che (0, 0)
 - `j` → salta correttamente **ma inoltre scrive in memoria** (0, 1) – invece che (0, 0)
 - tipo R → funzionano correttamente (1, 0)
+
+![[Immagine 29-04-24 - 17.11.jpg]]
