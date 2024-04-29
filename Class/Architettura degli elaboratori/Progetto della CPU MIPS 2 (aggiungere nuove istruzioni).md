@@ -171,3 +171,4 @@ Codifica istruzione
 	- Fetch (100ns) + Reg\[rs] (50ns) + PC←Reg\[rs] (0ns)
 	- PC+4 (150ns) + Reg\[rt]←PC+4 (50ns)
 	- Queste flussi vengono eseguiti in parallelo quindi il totale è di 200ns
+
