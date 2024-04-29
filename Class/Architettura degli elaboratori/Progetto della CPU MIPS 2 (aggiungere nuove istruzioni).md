@@ -171,8 +171,7 @@ Codifica istruzione
 	- `ALUSrc = 1`
 	- `RegWrite = 0`
 - **Tempo necessario**
-	- Fetch (100ns) + Reg\[rs] (50ns) + PC←Reg\[rs] (0ns)
-	- PC+4 (150ns) + Reg\[rt]←PC+4 (50ns)
-	- Queste flussi vengono eseguiti in parallelo quindi il totale è di 200ns
+	- Fetch (75ns) + Reg\[rs] (25ns) + SLL (0ns) + add (100ns) + Mem (75ns) + PC←Mem (0ns)
+	- Totale: 275ns
 
 ![[Immagine 29-04-24 - 18.43.jpg]]

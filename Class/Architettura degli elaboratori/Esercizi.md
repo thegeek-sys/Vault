@@ -42,3 +42,12 @@ Hello World!
 ### ES.1
 Scrivere un programma in assembly che, data una matrice bidimensionale quadrata `MATRIX` di word in memoria, di lato `N`, restituisca in `$s0` il risultato della somma dei valori sulle diagonali principale e secondaria. Aggiungere inoltre le istruzioni di stampa e di uscita al programma.
 [link](file:////Users/fla/Documents/uni/AE/mips8.asm)
+
+---
+## 29/04
+### ES.1
+// scrivere esercizio asm
+
+### ES.2
+![[Screenshot 2024-04-29 alle 18.50.49.png]]
+
