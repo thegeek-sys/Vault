@@ -13,8 +13,9 @@
 - [x] appunti da slide 37
 - [ ] su interfacce note sistemare comparator (slide 46)
 - [ ] Esercizio: catena di volontari (slide 47 eccezioni)
-- [ ] studiarsi MVC
+- [ ] studiarsi [MVC](https://www.youtube.com/watch?v=DUg2SWWK18I&pp=ygUMbXZjIGluIGphdmEg) (!!!!)
 - [x] finire esercizio laboratorio
+- [ ] [link](https://www.youtube.com/watch?v=FcMhtAQmT9Q&list=PLU8dZfh0ZIUn7-TDZfSmX9QRnBgmdJJWD&index=8) tutorial JavaSwing (ep 8)
 
 ## Architettura
 - [x] fare somma della diangolale in asm (06-slide 10)
