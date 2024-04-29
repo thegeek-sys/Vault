@@ -50,4 +50,4 @@ Scrivere un programma in assembly che, data una matrice bidimensionale quadrata 
 
 ### ES.2
 ![[Screenshot 2024-04-29 alle 18.50.49.png]]
-
+[[es1]]

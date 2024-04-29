@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
                 "mode": "source",
                 "source": false
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi.md"
+                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md"
               }
             }
           },
@@ -248,23 +248,26 @@
   },
   "active": "3a795eb0fc57724a",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-04-29 alle 18.50.49.png",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
+    "Flet-notes/2024-04-26_AE.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+    "Class/Architettura degli elaboratori/Esercizi/es1.md",
+    "Class/Architettura degli elaboratori/Esercizi",
+    "Files/Screenshot 2024-04-29 alle 18.50.49.png",
     "Files/Immagine 29-04-24 - 18.43.jpg",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Files/Immagine 29-04-24 - 18.01.jpg",
     "Files/Screenshot 2024-04-29 alle 17.49.10.png",
     "Files/Immagine 29-04-24 - 17.11.jpg",
     "Files/Immagine 29-04-24 - 16.58 2.jpg",
     "Files/Screenshot 2024-04-29 alle 16.22.20.jpg",
     "Files/Screenshot 2024-04-29 alle 16.54.24.png",
-    "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
-    "Flet-notes/2024-04-26_AE.md",
     "Files/Screenshot 2024-04-29 alle 16.18.09.png",
     "Files/Screenshot 2024-04-29 alle 16.17.11.png",
-    "Files/Screenshot 2024-04-29 alle 16.12.43.png",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "To-Do.md",
@@ -282,8 +285,6 @@
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/java.lang.String.md",
     "Programming languages/Java/Array.md",
-    "Class/Introduzione agli algoritmi/Untitled.md",
-    "Flet-notes/2024-04-23_AE.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
@@ -293,7 +294,6 @@
     "IMG_6204.heic",
     "Untitled.canvas",
     "Funzioni",
-    "Compilatore",
-    "Files/document-92-109.pdf"
+    "Compilatore"
   ]
 }
