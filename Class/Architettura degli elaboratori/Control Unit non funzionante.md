@@ -52,7 +52,7 @@ Si assume che:
 - `MemToReg=1` → solo per la `lw` ed altrimenti valga 0 (mai X)
 - `RegDest=1` → solo per le istruzioni di tipo R ed altrimenti valga 0 (mai X)
 
- 1. Indicare quali delle istruzioni funzioneranno male e perché.
+1. Indicare quali delle istruzioni funzioneranno male e perché.
 2. Scrivere un breve programma assembly MIPS che termini scrivendo nel registro `$s0` il valore 1 se il processore è guasto, altrimenti vi scriva 0.
 
 ### 1)
@@ -83,3 +83,26 @@ beq $s1,$s1,On  # salto di zero istruzioni -> continua
 On:             # se rotta, la cu memorizza 1 all'indirizzo 0
 lw $s0,0        # carico il contenuto dell'indirizzo 0
 ```
+
+---
+## Esempio: Jump ← MemRead
+Si ha il dubbio che in alcune CPU MIPS la Control Unit sia rotta, producendo il segnale di controllo `Jump` attivo se e solo se è attivo il segnale `MemRead`.
+
+Si assume che:
+- `MemToReg=1` → solo per la `lw` ed altrimenti valga 0 (mai X)
+- `RegDest=1` solo per le istruzioni di tipo R ed altrimenti valga 0 (mai X)
+- `MemRead=1` solo per l’istruzione `lw` ed altrimenti valga 0 (mai X)
+
+1. Si indichino quali delle istruzioni funzioneranno male e perché
+2. Si scriva un breve programma assembly MIPS che termina valorizzando il registro `$s0` con il valore 1 se il processore è guasto, altrimenti con 0.
+
+### 1)
+![[Screenshot 2024-04-29 alle 17.49.10.png]]
+
+Quindi sono danneggiate le istruzioni che hanno i due segnali diversi
+- `lw` → carica correttamente dalla memoria **ma fa anche un salto** (1, 0)
+- `sw` → funziona correttamente (0, 0)
+- `beq` → funziona correttamente (0, 0)
+- `j` → **non salta** (0, 0) – invece che (0, 1)
+- tipo R: funzionano correttamente (0, 0)
+
