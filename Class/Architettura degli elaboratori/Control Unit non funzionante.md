@@ -106,3 +106,12 @@ Quindi sono danneggiate le istruzioni che hanno i due segnali diversi
 - `j` → **non salta** (0, 0) – invece che (0, 1)
 - tipo R: funzionano correttamente (0, 0)
 
+![[Immagine 29-04-24 - 18.01.jpg]]
+
+### 2)
+```asm
+move $s0,$zero  # $s0 = 0
+j End           # salto senza eseguire la seguente istruzione
+li $s0,1        # $s0 = 1 se non viene eseguito il salto
+End:
+```

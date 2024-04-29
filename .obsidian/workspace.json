@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md"
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md"
               }
             }
           },
@@ -234,13 +234,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "304eb60c9e08e08e",
+  "active": "edb02f5abf679a2b",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+    "Files/Immagine 29-04-24 - 18.01.jpg",
     "Files/Screenshot 2024-04-29 alle 17.49.10.png",
     "Files/Immagine 29-04-24 - 17.11.jpg",
     "Files/Immagine 29-04-24 - 16.58 2.jpg",
     "Files/Screenshot 2024-04-29 alle 16.22.20.jpg",
-    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Files/Screenshot 2024-04-29 alle 16.54.24.png",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Flet-notes/2024-04-26_AE.md",
@@ -250,7 +252,6 @@
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
@@ -258,8 +259,6 @@
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Files/Screenshot 2024-04-22 alle 17.24.40.jpg",
-    "Files/Pasted image 20240425112436.png",
     "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
