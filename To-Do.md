@@ -25,7 +25,7 @@
 - [x] trovare un modo per fare esercizio fine slide e caricarlo
 - [ ] determinare operazione eseguita tramite i 32 bit del jump alla slide 24
 - [ ] rifare esame 3 (che funzioni !!)
-- [ ] fare esercizio slide 11 ppt13 (vj)
+- [x] fare esercizio slide 11 ppt13 (vj)
 
 ## Calcolo integrale
 - [x] farsi spiegare $\lim\limits_{x\to\infty} \frac{f(x)-T_{n}(x-x_{0})}{|x-x_0|^n}$
