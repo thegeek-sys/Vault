@@ -24,6 +24,18 @@
                 }
               },
               {
+                "id": "304eb60c9e08e08e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "10965bf3f7d1a01b",
                 "type": "leaf",
                 "state": {
@@ -138,7 +150,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -155,7 +167,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -178,7 +190,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md"
                   }
                 }
               },
@@ -212,8 +224,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "10965bf3f7d1a01b",
-      "mtime": "2024-04-28T18:35:55+02:00"
+      "active": "304eb60c9e08e08e",
+      "mtime": "2024-04-29T08:13:58+02:00"
     },
     "Java": {
       "main": {
@@ -738,7 +750,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -804,7 +816,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -821,7 +833,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -844,7 +856,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
                   }
                 }
               },
@@ -878,8 +890,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "0842992bcc87f120",
-      "mtime": "2024-04-28T18:36:27+02:00"
+      "active": "db38e4179948a549",
+      "mtime": "2024-04-29T16:09:40+02:00"
     }
   },
   "active": "Architettura degli elaboratori"
