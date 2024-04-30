@@ -9,6 +9,9 @@ Completed:
 Un tipo generico permette di generalizzare e rendere ancora più riutilizzabile il codice.
 I tipi generici, in Java, sono un modello di programmazione che permette di **definire**, con una sola dichiarazione, **un intero insieme di metodi o di classi**. Risultano quindi essere uno strumento molto potente ma da usare con cautela.
 
+>[!hint] I generici funzionano solo con i tipi derivati
+>Non è possibile utilizzare i tipi primitivi, ad es. `int`, `double`, `char`, ecc.
+
 ### Esempio
 ```java
 public class Valore<T> {
