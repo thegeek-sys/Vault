@@ -154,3 +154,18 @@ public static <T> void (ArrayList<T> lista) {
 	}
 }
 ```
+
+In questo caso però, a differenza delle classi generiche, con i metodi generici posso accettare solo il tipo stesso dichiarato dentro le parentesi angolate (NON una sua sottoclasse)
+```java
+public static void esamina(ArrayList<Frutto> frutti) {
+	// accetta solamente ArrayList<Frutto>
+	// e non ArrayList<Arancia>
+}
+
+
+public static <T extends Frutto> void esamina(ArrayList<T> frutti) {
+	// in questo caso posso prendere in input
+	// qualsiasi ArrayList i cui elementi siano di tipo
+	// Frutto o qualsiasi suo sottotipo
+}
+```
