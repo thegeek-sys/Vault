@@ -324,3 +324,6 @@ Una particolare sottoclasse di alberi radicati e ordinati è quella degli **albe
 ### Alberi binari
 Un albero è detto **binario** se ogni nodo al più possiede due figli.
 Un albero inoltre è detto **completo** se possiede tutte le foglie sul medesimo livello (quasi completo se invece tutti i livelli tranne l’ultimo contengono il massimo numero possibile di nodi mentre l’ultimo livello è riempito completamente da sinistra verso destra solo fino ad un certo punto)
+
+![[Screenshot 2024-04-30 alle 17.49.13.png|600]]
+
