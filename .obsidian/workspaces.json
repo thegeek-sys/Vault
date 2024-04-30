@@ -253,6 +253,18 @@
                 }
               },
               {
+                "id": "7dbf379722f5923e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Tipi generici.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "4a8bccc9ecefa137",
                 "type": "leaf",
                 "state": {
@@ -325,7 +337,7 @@
                 }
               }
             ],
-            "currentTab": 6
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -393,7 +405,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-04-30_MDP.md",
+                    "file": "Programming languages/Java/Tipi generici.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -410,7 +422,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-04-30_MDP.md",
+                    "file": "Programming languages/Java/Tipi generici.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -433,7 +445,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-04-30_MDP.md"
+                    "file": "Programming languages/Java/Tipi generici.md"
                   }
                 }
               },
@@ -467,8 +479,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a90545e6b324ce58",
-      "mtime": "2024-04-30T11:47:17+02:00"
+      "active": "7dbf379722f5923e",
+      "mtime": "2024-04-30T18:21:52+02:00"
     },
     "Python": {
       "main": {
@@ -883,7 +895,7 @@
         }
       },
       "active": "db38e4179948a549",
-      "mtime": "2024-04-30T18:19:46+02:00"
+      "mtime": "2024-04-30T18:22:51+02:00"
     }
   },
   "active": "Java"

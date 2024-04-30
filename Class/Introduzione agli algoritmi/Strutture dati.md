@@ -25,7 +25,12 @@ Completed:
 > 	- [[#Pila e Coda#Pila (stack)|Pila (stack)]]
 > 	- [[#Pila e Coda#Coda (queue)|Coda (queue)]]
 > 	- [[#Pila e Coda#Libreria Python|Libreria Python]]
-> 
+> - [[#Alberi|Alberi]]
+> 	- [[#Alberi#Alberi radicati|Alberi radicati]]
+> 	- [[#Alberi#Alberi binari|Alberi binari]]
+> 	- [[#Alberi#Rappresentazione di alberi|Rappresentazione di alberi]]
+> 		- [[#Rappresentazione di alberi#Tramite puntatori|Tramite puntatori]]
+> 			- [[#Tramite puntatori#Esempio|Esempio]]
 
 ---
 ## Introduction
