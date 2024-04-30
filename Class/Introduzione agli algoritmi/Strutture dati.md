@@ -327,3 +327,18 @@ Un albero inoltre è detto **completo** se possiede tutte le foglie sul medesimo
 
 ![[Screenshot 2024-04-30 alle 17.49.13.png|600]]
 
+il numero di foglie è $2^h$
+il numero dei nodi interni è $\sum^{h-1}_{i=0}2^i=2^h-1$
+il numero totale dei nodi è $2^h+2^h-1=2^{h+1}-1$
+
+Un albero completo si dice **bilanciato** in quando il rapporto tra il numero di nodi e l’altezza è esattamente $\log(n)$
+
+### Rappresentazione di alberi
+#### Tramite puntatori
+Il modo più naturale di rappresentare e gestire gli alberi binari è per mezzo dei puntatori. Ogni singolo nodo è costituito da un record contenente:
+
+![[Screenshot 2024-04-30 alle 18.04.24.png|center|150]]
+- **key** → le opportune informazioni pertinenti al nodo stesso
+- **left** → il puntatore al figlio sinistro (oppure `None` se il nodo non ha figlio sinistro)
+- **right** → il puntatore al figlio destro (oppure `None` se il nodo non ha figlio destro)
+All’albero si accede grazie al puntatore alla radice
