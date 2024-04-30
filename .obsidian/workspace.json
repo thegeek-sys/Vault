@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,43 +22,43 @@
             }
           },
           {
-            "id": "304eb60c9e08e08e",
+            "id": "4a8bccc9ecefa137",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "87aabc752616f156",
+            "id": "336cbf6f9cbee81e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-04-26_AE.md",
+                "file": "Programming languages/Java/Interfacce note.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a9c6fddda170fc8c",
+            "id": "f84e85b35a6d1635",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                "file": "Programming languages/Java/MVC.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "10965bf3f7d1a01b",
+            "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -70,43 +70,31 @@
             }
           },
           {
-            "id": "f661451f68231c21",
+            "id": "739dc6df37e1bccd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "edb02f5abf679a2b",
+            "id": "a90545e6b324ce58",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a795eb0fc57724a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
+                "file": "Flet-notes/2024-04-30_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -135,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scanner path:\"Programming languages/Java/\"",
+                "query": "equals path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -152,11 +140,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -172,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-04-30_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-04-30_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Flet-notes/2024-04-30_MDP.md"
               }
             }
           },
@@ -246,8 +236,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "10965bf3f7d1a01b",
+  "active": "a90545e6b324ce58",
   "lastOpenFiles": [
+    "Programming languages/Java/Exceptions.md",
+    "Flet-notes/2024-04-30_MDP.md",
+    "To-Do.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Files/Screenshot 2024-04-29 alle 19.31.02.png",
     "Files/Screenshot 2024-04-29 alle 19.26.44.png",
@@ -270,12 +263,10 @@
     "Files/Immagine 29-04-24 - 16.58 2.jpg",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
-    "To-Do.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Interfacce note.md",

@@ -36,6 +36,30 @@
                 }
               },
               {
+                "id": "87aabc752616f156",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-04-26_AE.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "a9c6fddda170fc8c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "10965bf3f7d1a01b",
                 "type": "leaf",
                 "state": {
@@ -72,19 +96,19 @@
                 }
               },
               {
-                "id": "6c20a28fa00ef7c9",
+                "id": "3a795eb0fc57724a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-04-26_AE.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -150,7 +174,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                    "file": "To-Do.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -167,7 +191,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                    "file": "To-Do.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -190,7 +214,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md"
+                    "file": "To-Do.md"
                   }
                 }
               },
@@ -224,8 +248,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "304eb60c9e08e08e",
-      "mtime": "2024-04-29T08:13:58+02:00"
+      "active": "10965bf3f7d1a01b",
+      "mtime": "2024-04-30T09:15:59+02:00"
     },
     "Java": {
       "main": {
@@ -894,5 +918,5 @@
       "mtime": "2024-04-29T16:09:40+02:00"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
