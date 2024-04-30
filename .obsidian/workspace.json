@@ -133,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -223,10 +224,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "356bd72cc0237c4e",
+  "active": "304eb60c9e08e08e",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Flet-notes/2024-04-30_AE.md",
+    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Flet-notes/2024-04-26_AE.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Files/Immagine 29-04-24 - 19.18.jpg",
@@ -243,7 +245,6 @@
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/Screenshot 2024-04-29 alle 18.50.49.png",
     "Files/Immagine 29-04-24 - 18.43.jpg",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Files/Immagine 29-04-24 - 18.01.jpg",
     "Files/Screenshot 2024-04-29 alle 17.49.10.png",
     "Files/Immagine 29-04-24 - 17.11.jpg",
