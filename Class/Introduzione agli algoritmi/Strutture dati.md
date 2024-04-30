@@ -350,3 +350,9 @@ Class NodoAB:
 		self.left = left;
 		self.right = right;
 ```
+
+##### Esempio
+
+```python
+
+```
