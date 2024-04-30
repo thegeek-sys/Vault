@@ -34,6 +34,18 @@
             }
           },
           {
+            "id": "ddfd9045efd423c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-30_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "4a8bccc9ecefa137",
             "type": "leaf",
             "state": {
@@ -88,18 +100,6 @@
               "type": "markdown",
               "state": {
                 "file": "Programming languages/Java/Classi anonime e lambda function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a90545e6b324ce58",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-30_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -250,9 +250,9 @@
   },
   "active": "7dbf379722f5923e",
   "lastOpenFiles": [
-    "Programming languages/Java/Strutture dati.md",
     "Flet-notes/2024-04-30_MDP.md",
     "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Java.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Flet-notes/2024-04-26_AE.md",
