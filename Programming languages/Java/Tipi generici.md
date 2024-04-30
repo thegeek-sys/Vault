@@ -181,3 +181,73 @@ public static <T extends Frutto> void esamina(ArrayList<T> frutti) {
 	// Frutto o qualsiasi suo sottotipo
 }
 ```
+
+---
+## Jolly come tipi generici
+Nel caso in cui non sia necessario utilizzare il tipo generico T nel corpo della classe o del metodo, è possibile utilizzare il **jolly `?`**
+```java
+public static void mangia(ArrayList<? extends Mangiabile> frutta) {
+	// qui NON posso usare ?
+}
+```
+
+Equivale a:
+```java
+public static <T extends Mangiabile> void mangia2(ArrayList<T> frutta) {
+	// qui posso usare T
+}
+```
+
+>[!warning]
+>Nel caso in cui utilizzo il simbolo jolly `?` non posso utilizzare il riferimento a quel tipo
+
+Il jolly viene utilizzato nel caso in cui **non sia necessario conoscere il tipo parametrico**, si può utilizzare `<?>`
+
+Ad esempio:
+```java
+public class Punto<T extends Number> {
+	private T x;
+	private T y;
+	
+	public Punto(T x, T y) { this.x = x; this.y = y; }
+	
+	@Override
+	public String toString() { return "("+x+";"+y+")"; }
+	
+	public static void main(String[] args) {
+		Punto<?> p = new Punto<Integer>(10, 42);
+		System.out.println(p);
+		
+		p = new Punto<Double>(11.0, 43.5);
+		System.out.println(p);
+	}
+}
+```
+
+### Esempio: metodo generico di somma
+Implementare un metodo generico `somma` che calcoli la somma di tutti i numeri contenuti in una collezione
+```java
+public class SommaNumeriGenerico {
+	public static void main(String[] args) {
+		// interi
+		Integer[] numeri = { 1, 2, 3, 4 };
+		ArrayList<Integer> listaDiNumeri = new ArrayList<Integer>(Arrays.asList(numeri));
+		
+		System.out.printf("La lista contiene: %s\n", listaDiNumeri);
+		System.out.printf("La somma dei numeri è: %.lf\n", somma(listaDiNumeri));
+	}
+	
+	public static double somma(ArrayList<? extends Number> lista) {
+		double tot = 0.0;
+		
+		for (Number n : lista) {
+			tot += n.doubleValue();
+		}
+		
+		return tot;
+	}
+}
+```
+
+---
+## Come funziona dietro le quinte?
