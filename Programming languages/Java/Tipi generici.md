@@ -105,3 +105,39 @@ public class Data extends Coppia<Integer, Coppia<Integer, Integer>> {
 	}
 }
 ```
+
+---
+## Vincoli sul tipo generico
+Nonostante si tratti di tipi generici è comunque possibile impostare un vincolo sul tipo che il generico può ricevere attraverso la sintassi
+
+```java
+<T extends InterfacciaOClasse>
+```
+
+In questo modo posso che `T` deve necessariamente essere un sotto tipo di `Classe` o implementare `Interfaccia`
+
+Nell’esempio seguente definisco l’interfaccia `MinMax` e dico che i tipi che riceve in input devono necessariamente implementare l’interfaccia `Comparable`
+```java
+// utilizzo extends per convenzione nonostante
+// Comparable sia un'interfaccia (dovrei usare implements)
+// il costrutto significa che T deve essere una classe che
+// implementa Comparable<T> (T deve essere comparabile)
+public interface MinMax<T extends Comparable<T>> {
+	T min();
+	T max();
+}
+
+
+public class MyClass<T extends Comparable<T>>
+					   implements MinMax<T> {
+	// ...
+}
+
+/* ERRORI */
+class MyClass<T extends Comparable<T>>
+				implements MinMax<T extends Comparable<T>> {}
+class MyClass implements MinMax<T> {}
+
+/* CORRETTO */
+class MyClass implements MinMax<Integer> {}
+```
