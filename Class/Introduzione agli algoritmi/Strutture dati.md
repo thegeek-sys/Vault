@@ -300,3 +300,6 @@ A.append(x)    # inserisce x alla fine della queue
 A.popleft()    # estrae il primo elemento dalla lista
 A.appendleft() # inserisce x all’inizio in O(1)
 ```
+
+---
+## Alberi
