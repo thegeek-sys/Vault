@@ -106,6 +106,18 @@ public class Data extends Coppia<Integer, Coppia<Integer, Integer>> {
 }
 ```
 
+### Per le classi generiche non vale l’ereditarietà dei tipi generici
+Ad esempio, `ArrayList<Integer>` non è il tipo di `ArrayList<Number>` o `ArrayList<Object>`:
+```java
+/* NON LO POSSO FARE */
+ArrayList<Number> listaDiNumeri = new ArrayList<Integer>();
+```
+
+Ma rimane conunque l’ereditarietà tra classi:
+```java
+List<Integer> listaDiNumeri = new ArrayList<Integer>();
+```
+
 ---
 ## Vincoli sul tipo generico
 Nonostante si tratti di tipi generici è comunque possibile impostare un vincolo sul tipo che il generico può ricevere attraverso la sintassi

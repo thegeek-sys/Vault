@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Flet-notes/2024-04-30_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Flet-notes/2024-04-30_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md"
+                "file": "Flet-notes/2024-04-30_MDP.md"
               }
             }
           },
@@ -248,10 +248,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f708480c26bb078d",
+  "active": "ddfd9045efd423c1",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-30_MDP.md",
     "Programming languages/Java/Tipi generici.md",
+    "Flet-notes/2024-04-30_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
