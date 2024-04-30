@@ -141,3 +141,6 @@ class MyClass implements MinMax<T> {}
 /* CORRETTO */
 class MyClass implements MinMax<Integer> {}
 ```
+
+---
+## Generici e collezioni
