@@ -29,19 +29,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "87aabc752616f156",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-04-26_AE.md",
+                    "file": "Flet-notes/2024-04-30_AE.md",
                     "mode": "source",
                     "source": false
                   }
@@ -54,18 +42,6 @@
                   "type": "markdown",
                   "state": {
                     "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "10965bf3f7d1a01b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "To-Do.md",
                     "mode": "source",
                     "source": false
                   }
@@ -108,7 +84,7 @@
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -137,7 +113,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "scanner path:\"Programming languages/Java/\"",
+                    "query": "fas path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -154,7 +130,8 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
@@ -174,7 +151,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Flet-notes/2024-04-30_AE.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -191,7 +168,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Flet-notes/2024-04-30_AE.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -214,7 +191,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "To-Do.md"
+                    "file": "Flet-notes/2024-04-30_AE.md"
                   }
                 }
               },
@@ -248,8 +225,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "10965bf3f7d1a01b",
-      "mtime": "2024-04-30T09:15:59+02:00"
+      "active": "304eb60c9e08e08e",
+      "mtime": "2024-04-30T12:31:27+02:00"
     },
     "Java": {
       "main": {
@@ -281,18 +258,6 @@
                   "type": "markdown",
                   "state": {
                     "file": "Programming languages/Java/Strutture dati.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "436ebe14c2ab362b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-04-24_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -352,14 +317,14 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Exceptions.md",
+                    "file": "Flet-notes/2024-04-30_MDP.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 7
+            "currentTab": 6
           }
         ],
         "direction": "vertical"
@@ -410,7 +375,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -426,7 +392,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Exceptions.md",
+                    "file": "Flet-notes/2024-04-30_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -443,7 +409,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Exceptions.md",
+                    "file": "Flet-notes/2024-04-30_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -466,7 +432,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Exceptions.md"
+                    "file": "Flet-notes/2024-04-30_MDP.md"
                   }
                 }
               },
@@ -501,7 +467,7 @@
         }
       },
       "active": "a90545e6b324ce58",
-      "mtime": "2024-04-27T15:40:59+02:00"
+      "mtime": "2024-04-30T11:47:17+02:00"
     },
     "Python": {
       "main": {
@@ -918,5 +884,5 @@
       "mtime": "2024-04-29T16:09:40+02:00"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
