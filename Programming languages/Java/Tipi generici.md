@@ -143,4 +143,14 @@ class MyClass implements MinMax<Integer> {}
 ```
 
 ---
-## Generici e collezioni
+## Definire un metodo generico
+Per definire un metodo generico con proprio tipo generico è necessario **anteporre il tipo generico tra parentesi angolari al tipo di ritorno**:
+```java
+// scrivo un metodo che fa riferimento ad un ArrayList ma non
+// specifica il tipo degli elementi di ArrayList
+public static <T> void (ArrayList<T> lista) {
+	for (T o : lista) {
+		System.out.println(o.toString());
+	}
+}
+```
