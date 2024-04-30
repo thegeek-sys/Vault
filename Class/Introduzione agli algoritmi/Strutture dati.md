@@ -317,3 +317,9 @@ Gli alberi radicati rappresentano il tipo più generico di albero in cui si ha c
 
 ![[Screenshot 2024-04-30 alle 17.00.54.png|600]]
 
+Un albero radicato si dice **ordinato** se attribuiamo un qualche ordine ai figli di ciascun nodo, nel senso che se un nodo ha figli, allora vi è un figlio che viene considerato primo, uno che viene considerato secondo, etc.
+
+Una particolare sottoclasse di alberi radicati e ordinati è quella degli **alberi binari**, che hanno la particolarità che ogni nodo ha al più due figli. Poiché sono alberi ordinati, i due figli di ciascun nodo si distinguono in **figlio sinistro** e **figlio destro**
+
+### Alberi binari
+Un albero è detto **binario** se ogni nodo al più possiede due figli.
