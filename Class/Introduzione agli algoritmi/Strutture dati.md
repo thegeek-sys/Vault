@@ -342,3 +342,11 @@ Il modo più naturale di rappresentare e gestire gli alberi binari è per mezzo 
 - **left** → il puntatore al figlio sinistro (oppure `None` se il nodo non ha figlio sinistro)
 - **right** → il puntatore al figlio destro (oppure `None` se il nodo non ha figlio destro)
 All’albero si accede grazie al puntatore alla radice
+
+```python
+Class NodoAB:
+	def __init__(self, key, left, right):
+		self.key = key;
+		self.left = left;
+		self.right = right;
+```
