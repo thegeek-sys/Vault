@@ -308,7 +308,7 @@ L’**albero** è una struttura dati estremamente versatile, utile per modellare
 ### Alberi radicati
 Gli alberi radicati rappresentano il tipo più generico di albero in cui si ha che:
 - i nodi sono organizzati in **livelli** numerati in ordine crescente allontanandosi dalla radice (di norma posta al livello zero)
-- l’**altezza** di un albero radicato è la lunghezza del cammino più lungo dalla radice ad una foglia
+- l’**altezza** di un albero radicato è la lunghezza del cammino più lungo dalla radice ad una foglia che è pari a $\theta(\log(n))$
 - dato qualunque nodo $v$ che non sia la radice, il primo nodo che si incontra sul cammino da $v$ alla radice viene detto **padre di v**
 - nodi che hanno lo stesso padre sono detti **fratelli** e la radice è l’unico nodo che non ha padre
 - ogni nodo sul cammino da $v$ alla radice viene detto antenato di $v$
@@ -352,7 +352,10 @@ Class NodoAB:
 ```
 
 ##### Esempio
-
+![[Immagine 30-04-24 - 18.16.jpg|150]]
 ```python
-
+>>> r = NodoAB(4)
+>>> r.left = NodoAB(5)
+>>> r.left.right = NodoAB(0)
+>>> r.right = NodoAb(8)
 ```
