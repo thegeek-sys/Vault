@@ -303,3 +303,17 @@ A.appendleft() # inserisce x all’inizio in O(1)
 
 ---
 ## Alberi
+L’**albero** è una struttura dati estremamente versatile, utile per modellare una grande quantità di situazioni reali e progettare le relative soluzioni algoritmiche.
+
+### Alberi radicati
+Gli alberi radicati rappresentano il tipo più generico di albero in cui si ha che:
+- i nodi sono organizzati in **livelli** numerati in ordine crescente allontanandosi dalla radice (di norma posta al livello zero)
+- l’**altezza** di un albero radicato è la lunghezza del cammino più lungo dalla radice ad una foglia
+- dato qualunque nodo $v$ che non sia la radice, il primo nodo che si incontra sul cammino da $v$ alla radice viene detto **padre di v**
+- nodi che hanno lo stesso padre sono detti **fratelli** e la radice è l’unico nodo che non ha padre
+- ogni nodo sul cammino da $v$ alla radice viene detto antenato di $v$
+- tutti i nodi che ammettono $v$ come padre sono detti **figli di v**, ed i nodi che non hanno figli sono detti **foglie**
+- tutti i nodi che ammettono come antenato vengono detti discendenti di v
+
+![[Screenshot 2024-04-30 alle 17.00.54.png|600]]
+
