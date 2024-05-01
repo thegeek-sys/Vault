@@ -154,5 +154,6 @@ def es(A, x):
 		if P.key == x:
 			P = P.prev
 			P.next = P.next.next
+		P = P.next
 	return A
 ```
