@@ -111,5 +111,6 @@ def es(A, x):
 	P = A
 	while P != None:
 		if P.key < x:
+			P = P.next
 			Nodo(x, P.next)
 ```
