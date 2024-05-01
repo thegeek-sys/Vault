@@ -251,3 +251,72 @@ public class SommaNumeriGenerico {
 
 ---
 ## Come funziona dietro le quinte?
+I tipi generici in Java sono introdotti attraverso la **cancellazione del tipo** (type erasure).
+
+Infatti quando il compilatore traduce il metodo/la classe generica in bytecode Java:
+1. **elimina la sezione del tipo parametrico** e sostituisce il tipo parametrico con quello reale
+2. per default **il tipi generico viene sostituito** con il tipo `Object` (a meno di vincoli sul tipo)
+
+>[!hint]
+>Solo una copia del metodo o della classe viene creata!
+
+### Esempio
+```java
+public class Coppia<T, S> {
+	private T a;
+	private S b;
+	
+	public Coppia(T a, S b) {
+		this.a = a;
+		this.b = b;
+	}
+	public T getPrimo() { return a; }
+	public S getSecondo() { return b; }
+}
+```
+Viene trasformato in:
+```java
+public class Coppia {
+	private Object a;
+	private Object b;
+	
+	public Coppia(Object a, Object b) {
+		this.a = a;
+		this.b = b;
+	}
+	public Object getPrimo() { return a; }
+	public Object getSecondo() { return b; }
+}
+```
+
+```java
+public class Massimo {
+	public static <T extends Comparable<T>> T getMassimo(T a, T b, T c) {
+		if (a.compareTo(b)>0) return a.compareTo(c) >= 0 ? a : c;
+		else return b.compareTo(c) >= 0 ? b : c;
+	}
+	
+	public static void main(String[] args) {
+		int max = getMassimo(10, 20, 30);
+		String s = getMassimo("abc", "def", "ghi");
+	}
+}
+```
+Viene trasformato in:
+```java
+public class Massimo {
+	public static Comparable getMassimo(Comparable a, Comparable b, Comparable c) {
+		if (a.compareTo(b)>0) return a.compareTo(c) >= 0 ? a : c;
+		else return b.compareTo(c) >= 0 ? b : c;
+	}
+	
+	public static void main(String[] args) {
+		int max = (Integer)getMassimo(10, 20, 30);
+		String s = (String)getMassimo("abc", "def", "ghi");
+	}
+}
+```
+
+---
+## Come ottenere informazioni sull’istanza di un generico?
+Per via della cancellazione del tipo, non possiamo conoscere il tipo generico a tempo di esecuzione
