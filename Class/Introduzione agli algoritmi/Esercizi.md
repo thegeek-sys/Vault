@@ -11,7 +11,7 @@ Ogni chiave deve comparire una sola volta nella lista restituita e non importa l
 
 ```python
 def trovato(P, x):
-	while (P != None):
+	while P != None:
 		if P.key == x: return True
 		P = P.next
 	return False
@@ -26,3 +26,53 @@ def es(A, B):
 ```
 
 ---
+# ES.2
+## 1.
+Data una lista tramite il puntatore al suo primo elemento, restituire il puntatore all’ultimo elemento se la lista ha almeno un elemento, `None` altrimenti. Calcolarne il tempo di esecuzione
+
+```python
+def es(A):
+	while A != None:
+		if A.next == None:
+			return A
+		A = A.next
+	return None
+# Θ(n)
+```
+## 2.
+Data una lista tramite il puntatore al suo primo elemento, restituire il puntatore al penultimo elemento se la lista ha almeno due elementi, `None` altrimenti. Calcolarne il tempo di esecuzione
+```python
+def es(A):
+	while A != None:
+		if A.next.next == None:
+			return A
+		A = A.next
+	return None
+# Θ(n)
+```
+## 3.
+Data una lista tramite il puntatore al suo primo elemento, restituire il puntatore alla stessa lista da cui sia stato eliminato l’ultimo elemento. Calcolarne il tempo di esecuzione
+```python
+def es(A):
+	P = A
+	while P != None:
+		if P.next == None:
+			P = None
+		P = P.next
+	return A
+# Θ(n)
+```
+## 4.
+Data una lista tramite il puntatore al suo primo elemento, restituire il puntatore di una lista che contenga gli stessi record della lista di partenza ma in ordine inverso (N.B. non deve essere creato alcun record, ma bisogna “smontare” e “rimontare” opportunamente i record iniziali)
+```python
+def es(A):
+	P = None
+	while A != None:
+		P = Nodo(A.key, P)
+		A = A.next
+	return P
+# Θ(n)
+```
+
+---
+# ES.3
