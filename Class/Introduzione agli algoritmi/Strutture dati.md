@@ -217,8 +217,16 @@ def crea(A):
 ### Aggiungere elementi
 Aggiungere un nuovo nodo in testa (all'inizio)
 ```Python
-def es(p, x):
-	return Nodo(x, p)
+def es(P, x):
+	P = Nodo(x, P)
+	return P
+```
+
+Aggiungere un nuovo nodo in coda (alla fine)
+```Python
+def es(P, x):
+	P.next = Nodo(x)
+	return P
 ```
 #### Esercizio
 Creare una funzione che inserisca un nuovo elemento `x` dopo l’eventuale presenza del nodo `y`, se questo non è presente non inserire nulla, se sono presenti più occorrenze di `y` inserire alla prima occorrenza

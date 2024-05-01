@@ -105,7 +105,7 @@ def es(A):
 			print(k)
 ```
 ## 3.
-Data una lista ordinata di interi tramite il puntatore al suo primo elemento ed un intero $x$, aggiungere $x$ alla lista in modo da rispettare l’ordinamento
+Data una lista ordinata di interi tramite il puntatore al suo primo elemento ed un intero `x`, aggiungere `x` alla lista in modo da rispettare l’ordinamento
 ```python
 def es(A, x):
 	P = A
@@ -138,5 +138,19 @@ def es(A):
 ## 2.
 Dato il puntatore ad una lista doppiamente puntata stampare gli elementi della lista in ordine inverso (i.e. dall’ultimo al primo)
 ```python
-
+def es(A):
+	while A.next != None:
+		A = A.next
+	while A != None
+		print(A.key)
+		P = P.prev
+```
+## 3.
+Dato il puntatore ad una lista di interi doppiamente puntata ed un intero `x` cancellare tutte le occorrenze di `x` dalla lista
+```python
+def es(A, x):
+	P = A
+	while P != None:
+		if P.key == x:
+			
 ```
