@@ -76,3 +76,14 @@ def es(A):
 
 ---
 # ES.3
+## 1.
+Data una lista tramite il puntatore al suo primo elemento, restituire i puntatori a due liste, una con gli elementi di posto pari nella lista di partenza, ed una con gli elementi di posto dispari (anche qui, non bisogna creare nuovi nodi)
+```python
+def es(A):
+	P = None
+	D = None
+	i = 0
+	while A != None:
+		if i%2 == 0:
+			P = 
+```
