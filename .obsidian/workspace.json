@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 54.859484777517565,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -96,25 +95,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "6d0174a2e1a46110",
-        "type": "tabs",
-        "dimension": 45.140515222482435,
-        "children": [
-          {
-            "id": "ddfd9045efd423c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-30_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"

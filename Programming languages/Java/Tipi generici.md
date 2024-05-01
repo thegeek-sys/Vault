@@ -5,6 +5,25 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Esempio|Esempio]]
+		- [[#Esempio#Istanziare una classe generica|Istanziare una classe generica]]
+	- [[#Introduction#Esempio|Esempio]]
+- [[#Specificare più tipi generici di classe|Specificare più tipi generici di classe]]
+- [[#Estendere le classi generiche|Estendere le classi generiche]]
+	- [[#Estendere le classi generiche#Per le classi generiche non vale l’ereditarietà dei tipi generici|Per le classi generiche non vale l’ereditarietà dei tipi generici]]
+- [[#Vincoli sul tipo generico|Vincoli sul tipo generico]]
+	- [[#Vincoli sul tipo generico#Tramite extends|Tramite extends]]
+	- [[#Vincoli sul tipo generico#Tramite super|Tramite super]]
+- [[#Definire un metodo generico|Definire un metodo generico]]
+- [[#Jolly come tipi generici|Jolly come tipi generici]]
+	- [[#Jolly come tipi generici#Esempio: metodo generico di somma|Esempio: metodo generico di somma]]
+- [[#Come funziona dietro le quinte?|Come funziona dietro le quinte?]]
+	- [[#Come funziona dietro le quinte?#Esempio|Esempio]]
+- [[#Come ottenere informazioni sull’istanza di un generico?|Come ottenere informazioni sull’istanza di un generico?]]
+
+---
 ## Introduction
 Un tipo generico permette di generalizzare e rendere ancora più riutilizzabile il codice.
 I tipi generici, in Java, sono un modello di programmazione che permette di **definire**, con una sola dichiarazione, **un intero insieme di metodi o di classi**. Risultano quindi essere uno strumento molto potente ma da usare con cautela.
@@ -123,16 +142,17 @@ List<Integer> listaDiNumeri = new ArrayList<Integer>();
 ### Tramite extends
 Nonostante si tratti di tipi generici è comunque possibile impostare un vincolo sul tipo che il generico può ricevere attraverso la sintassi
 
-Si può imporre un vincolo sul tipo generico T mediante la parola chiave:
-- `extends` → T deve essere un sottotipo della classe specificata o la
-classe stessa (covarianza)
-- `super` → T deve essere una superclasse della classe specificata o la classe stessa (controvarianza)
-
 ```java
 <T extends InterfacciaOClasse>
 ```
 
-In questo modo posso che `T` deve necessariamente essere un sotto tipo di `Classe` o implementare `Interfaccia`
+In questo modo posso che `T` deve necessariamente essere un sottotipo di `Classe` (o la classe stessa) o implementare `Interfaccia` (covarianza)
+
+```java
+List<? extends Number> l1 = new ArrayList<Number>();
+List<? extends Number> l2 = new ArrayList<Integer>();
+List<? extends Number> l3 = new ArrayList<Double>();
+```
 
 Nell’esempio seguente definisco l’interfaccia `MinMax` e dico che i tipi che riceve in input devono necessariamente implementare l’interfaccia `Comparable`
 ```java
@@ -159,6 +179,19 @@ class MyClass implements MinMax<T> {}
 /* CORRETTO */
 class MyClass implements MinMax<Integer> {}
 ```
+
+
+### Tramite super
+Utilizzo **`super`** invece quando T deve essere una superclasse della classe specificata o la classe stessa (controvarianza)
+
+Permette quindi di imporre il **vincolo sul sottotipo**
+```java
+List<? super Integer> l1 = new ArrayList<Number>();
+List<? super Integer> l2 = new ArrayList<Integer>();
+List<? super Integer> l3 = new ArrayList<Object>();
+```
+
+Non posso sapere a priori quali saranno i tipi nella lista, per cui posso solo assumere che saranno certamente `Object`
 
 ---
 ## Definire un metodo generico
