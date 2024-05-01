@@ -46,6 +46,18 @@
             }
           },
           {
+            "id": "0ab3fcdd31df535f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0842992bcc87f120",
             "type": "leaf",
             "state": {
@@ -82,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -132,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -223,11 +234,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "e45982daa7529ee9",
+  "active": "0ab3fcdd31df535f",
   "lastOpenFiles": [
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
     "To-Do.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Introduzione agli algoritmi/Esercizi.md",
     "Introduzione agli algoritmi",

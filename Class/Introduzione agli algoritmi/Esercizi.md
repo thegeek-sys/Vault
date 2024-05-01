@@ -146,7 +146,7 @@ def es(A):
 		P = P.prev
 ```
 ## 3.
-Dato il puntatore ad una lista di interi doppiamente puntata ed un intero `x` cancellare tutte le occorrenze di `x` dalla lista
+Dato il puntatore ad una lista di interi doppiamente puntata ed un intero `x` cancellare tutte le occorrenze di `x` dalla lista !!!CONTROLLARE
 ```python
 def es(A, x):
 	P = A
@@ -157,3 +157,5 @@ def es(A, x):
 		P = P.next
 	return A
 ```
+## 4.
+Dato un intero `x` ed il puntatore al primo elemento di una lista di interi ordinata e doppiamente puntata inserire l’intero `x` nella lista in modo da mantenere l’ordine;
