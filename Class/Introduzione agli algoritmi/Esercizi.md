@@ -85,5 +85,14 @@ def es(A):
 	i = 0
 	while A != None:
 		if i%2 == 0:
-			P = 
+			P = Nodo(A.key, P)
+		else:
+			D = Nodo(A.key, D)
+		i += 1
+	return P, D
+```
+## 2.
+Data una lista di interi tramite il puntatore al suo primo elemento, stampare tutti i valori che compaiono almeno due volte nella lista
+```python
+
 ```

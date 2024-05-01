@@ -82,7 +82,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md"
               }
             }
           },
@@ -223,13 +223,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "db38e4179948a549",
+  "active": "e45982daa7529ee9",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Introduzione agli algoritmi/Esercizi.md",
     "Introduzione agli algoritmi",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Programming languages/Java/Tipi generici.md",
     "Flet-notes/2024-04-30_MDP.md",
     "Programming languages/Java/Java.md",
