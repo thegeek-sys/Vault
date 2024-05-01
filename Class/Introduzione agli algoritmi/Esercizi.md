@@ -94,5 +94,22 @@ def es(A):
 ## 2.
 Data una lista di interi tramite il puntatore al suo primo elemento, stampare tutti i valori che compaiono almeno due volte nella lista
 ```python
-
+def es(A):
+	occ = dict()
+	while A != None:
+		occ[A.key] = occ.get(A.key, 0) + 1
+		A = A.next
+	
+	for k, v in occ.items():
+		if v > 1:
+			print(k)
+```
+## 3.
+Data una lista ordinata di interi tramite il puntatore al suo primo elemento ed un intero $x$, aggiungere $x$ alla lista in modo da rispettare l’ordinamento
+```python
+def es(A, x):
+	P = A
+	while P != None:
+		if P.key < x:
+			Nodo(x, P.next)
 ```
