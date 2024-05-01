@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "8f7d155bcca92b78",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,55 +22,55 @@
             }
           },
           {
-            "id": "907cc4f7d2930fda",
+            "id": "0cc6c18ccbf0ce28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4a8bccc9ecefa137",
+            "id": "e45982daa7529ee9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "336cbf6f9cbee81e",
+            "id": "0842992bcc87f120",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f84e85b35a6d1635",
+            "id": "db38e4179948a549",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/MVC.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d2cac6488958348a",
+            "id": "612e105e3eff1b32",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,21 +80,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "739dc6df37e1bccd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi anonime e lambda function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "equals path:\"Programming languages/Java/\"",
+                "query": "scanner path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,8 +128,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -162,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md"
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md"
               }
             }
           },
@@ -236,18 +223,21 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "907cc4f7d2930fda",
+  "active": "e45982daa7529ee9",
   "lastOpenFiles": [
-    "Flet-notes/2024-04-30_MDP.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Introduzione agli algoritmi/Esercizi.md",
+    "Introduzione agli algoritmi",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Programming languages/Java/Tipi generici.md",
+    "Flet-notes/2024-04-30_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Strutture dati.md",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Flet-notes/2024-04-26_AE.md",
     "Files/Immagine 30-04-24 - 18.16.jpg",
     "Files/Screenshot 2024-04-30 alle 18.04.24.png",
     "Files/Screenshot 2024-04-30 alle 17.49.13.png",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Files/Screenshot 2024-04-30 alle 17.00.54.png",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Flet-notes/2024-04-30_AE.md",
@@ -273,8 +263,6 @@
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Methods.md",
-    "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Classe Object.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
@@ -283,7 +271,6 @@
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
     "IMG_6204.heic",
     "Untitled.canvas",
-    "Funzioni",
-    "Compilatore"
+    "Funzioni"
   ]
 }
