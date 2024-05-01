@@ -158,4 +158,23 @@ def es(A, x):
 	return A
 ```
 ## 4.
-Dato un intero `x` ed il puntatore al primo elemento di una lista di interi ordinata e doppiamente puntata inserire l’intero `x` nella lista in modo da mantenere l’ordine;
+Dato un intero `x` ed il puntatore al primo elemento di una lista di interi ordinata e doppiamente puntata inserire l’intero `x` nella lista in modo da mantenere l’ordine
+```python
+def es(A, x):
+	P = A
+	x = Nodo(x)
+	while P != None:
+		if P.key < x.key:
+			x.next = P.next
+			P.next = x
+			return A
+		P = P.next
+```
+## 5.
+Dato il puntatore ad una lista di interi doppiamente puntata ed ordinata cancellare dalla lista tutti i duplicati
+```python
+def es(A):
+	D = []
+	while A != None:
+		if A.key
+```
