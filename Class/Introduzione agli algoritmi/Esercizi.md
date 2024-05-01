@@ -113,6 +113,7 @@ def es(A, x):
 	while P != None:
 		if P.key < x.key:
 			x.next = P.next
+			P.next = x
 			return A
 		P = P.next
 ```
