@@ -174,7 +174,14 @@ def es(A, x):
 Dato il puntatore ad una lista di interi doppiamente puntata ed ordinata cancellare dalla lista tutti i duplicati
 ```python
 def es(A):
-	D = []
-	while A != None:
-		if A.key
+	P = A
+	D = set()
+	while P != None:
+		if P.key not in D:
+			D.add(P.key)
+		else:
+			P.prev = P.next.next
+			P = P.prev
+		P = P.next
+	return A
 ```
