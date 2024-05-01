@@ -38,3 +38,5 @@
 ## Introduzione agli algoritmi
 - [x] fare esercizi slide struttureDati1
 - [x] fare appunti (BucketSort, Stack e Queue)
+- [ ] fare [[Class/Introduzione agli algoritmi/Esercizi#ES.3#4.|es]]
+- [ ] 

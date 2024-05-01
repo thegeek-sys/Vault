@@ -117,3 +117,26 @@ def es(A, x):
 			return A
 		P = P.next
 ```
+## 4.
+Data in input una lista di interi tramite il puntatore al primo elemento, restituire la lista ordinata (senza creare nuovi nodi)
+```python
+
+```
+
+---
+# ES.4
+## 1.
+Dato il puntatore ad una lista doppiamente puntata restituire la lunghezza della lista
+```python
+def es(A):
+	i = 0
+	while A != None:
+		i += 1
+		A = A.next
+	return i
+```
+## 2.
+Dato il puntatore ad una lista doppiamente puntata stampare gli elementi della lista in ordine inverso (i.e. dall’ultimo al primo)
+```python
+
+```
