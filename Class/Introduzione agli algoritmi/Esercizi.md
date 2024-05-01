@@ -109,8 +109,10 @@ Data una lista ordinata di interi tramite il puntatore al suo primo elemento ed 
 ```python
 def es(A, x):
 	P = A
+	x = Nodo(x)
 	while P != None:
-		if P.key < x:
-			P = P.next
-			Nodo(x, P.next)
+		if P.key < x.key:
+			x.next = P.next
+			return A
+		P = P.next
 ```
