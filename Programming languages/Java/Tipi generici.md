@@ -120,7 +120,13 @@ List<Integer> listaDiNumeri = new ArrayList<Integer>();
 
 ---
 ## Vincoli sul tipo generico
+### Tramite extends
 Nonostante si tratti di tipi generici è comunque possibile impostare un vincolo sul tipo che il generico può ricevere attraverso la sintassi
+
+Si può imporre un vincolo sul tipo generico T mediante la parola chiave:
+- `extends` → T deve essere un sottotipo della classe specificata o la
+classe stessa (covarianza)
+- `super` → T deve essere una superclasse della classe specificata o la classe stessa (controvarianza)
 
 ```java
 <T extends InterfacciaOClasse>
@@ -184,7 +190,7 @@ public static <T extends Frutto> void esamina(ArrayList<T> frutti) {
 
 ---
 ## Jolly come tipi generici
-Nel caso in cui non sia necessario utilizzare il tipo generico T nel corpo della classe o del metodo, è possibile utilizzare il **jolly `?`**
+Nel caso in cui non sia necessario utilizzare il tipo generico T nel corpo della classe o del metodo, è possibile utilizzare il **jolly `?`** (anche detto **wildcard**)
 ```java
 public static void mangia(ArrayList<? extends Mangiabile> frutta) {
 	// qui NON posso usare ?
@@ -319,4 +325,18 @@ public class Massimo {
 
 ---
 ## Come ottenere informazioni sull’istanza di un generico?
-Per via della cancellazione del tipo, non possiamo conoscere il tipo generico a tempo di esecuzione
+Per via della cancellazione del tipo, non possiamo conoscere il tipo generico a tempo di esecuzione.
+```java
+public static void main(String[] args) {
+	List<Integer> x = Arrays.asList(4, 2);
+	boolean b = x instanceof List<Integer> // ERRORE
+}
+```
+
+Ma possiamo comunque verificarne il tipo usando il wildcard?
+```java
+public static void main(String[] args) {
+	List<Integer> x = Arrays.asList(4, 2);
+	boolean b = x instanceof List<?> // true
+}
+```
