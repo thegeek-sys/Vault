@@ -152,5 +152,7 @@ def es(A, x):
 	P = A
 	while P != None:
 		if P.key == x:
-			
+			P = P.prev
+			P.next = P.next.next
+	return A
 ```
