@@ -25,18 +25,19 @@ Input:
 Output:
 - `$v0, $f0` → eventuale risultato
 
-| Descrizione    | Syscall<br>($v0) | Argomenti                                  | Risultato        |
-| :------------- | :--------------: | :----------------------------------------- | :--------------- |
-| Stampa intero  |        1         | $a0 intero                                 |                  |
-| Stampa float   |        2         | $f12 float                                 |                  |
-| Stampa double  |        3         | $f12 float                                 |                  |
-| Stampa stringa |        4         | $a0 string address                         |                  |
-| Leggi intero   |        5         |                                            | intero (in $v0)  |
-| Leggi float    |        6         |                                            | float (in $v0)   |
-| Leggi double   |        7         |                                            | double (in $v0)  |
-| Leggi stringa  |        8         | \$a0 = buffer address<br>\$a1 = num chars. |                  |
-| sbrk           |        9         | $a0 amount                                 | address (in $v0) |
-| Fine programma |        10        |                                            |                  |
+| Descrizione      | Syscall<br>($v0) | Argomenti                                  | Risultato        |
+| :--------------- | :--------------: | :----------------------------------------- | :--------------- |
+| Stampa intero    |        1         | $a0 intero                                 |                  |
+| Stampa float     |        2         | $f12 float                                 |                  |
+| Stampa double    |        3         | $f12 float                                 |                  |
+| Stampa stringa   |        4         | $a0 string address                         |                  |
+| Leggi intero     |        5         |                                            | intero (in $v0)  |
+| Leggi float      |        6         |                                            | float (in $v0)   |
+| Leggi double     |        7         |                                            | double (in $v0)  |
+| Leggi stringa    |        8         | \$a0 = buffer address<br>\$a1 = num chars. |                  |
+| sbrk             |        9         | $a0 amount                                 | address (in $v0) |
+| Fine programma   |        10        |                                            |                  |
+| Stampa carattere |        11        | $a0 char                                   |                  |
 
 ---
 ## Hello World!

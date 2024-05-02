@@ -6,7 +6,6 @@
       {
         "id": "36e4e4609b40d962",
         "type": "tabs",
-        "dimension": 51.79045092838196,
         "children": [
           {
             "id": "ecb6cd090c8cbd79",
@@ -20,6 +19,18 @@
                 "source": false
               },
               "pinned": true
+            }
+          },
+          {
+            "id": "c8df95c76ea78673",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -84,25 +95,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "c50596ff3452c352",
-        "type": "tabs",
-        "dimension": 48.209549071618035,
-        "children": [
-          {
-            "id": "304eb60c9e08e08e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-30_AE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -169,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md"
+                "file": "Class/Architettura degli elaboratori/System Calls.md"
               }
             }
           },
@@ -226,7 +218,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,18 +235,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4dae627bfdcf524b",
+  "active": "c8df95c76ea78673",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Pipeline.md",
     "Files/Screenshot 2024-05-02 alle 19.27.01.png",
     "Files/Screenshot 2024-05-02 alle 19.24.56.png",
     "Files/Screenshot 2024-05-02 alle 19.17.01.png",
     "Files/Screenshot 2024-05-02 alle 18.55.02.png",
-    "Class/Architettura degli elaboratori/Pipeline.md",
     "Files/Screenshot 2024-05-02 alle 18.44.10.png",
     "Files/Screenshot 2024-05-02 alle 18.42.47.png",
     "Flet-notes/2024-04-30_AE.md",
     "Files/Screenshot 2024-05-02 alle 16.41.46.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Tipi generici.md",
@@ -272,7 +265,6 @@
     "Files/Immagine 30-04-24 - 18.16.jpg",
     "Files/Screenshot 2024-04-30 alle 18.04.24.png",
     "Files/Screenshot 2024-04-30 alle 17.49.13.png",
-    "Files/Screenshot 2024-04-30 alle 17.00.54.png",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
