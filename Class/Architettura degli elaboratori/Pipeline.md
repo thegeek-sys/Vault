@@ -33,4 +33,19 @@ Normalmente, per poter eseguire l’istruzione più lenta possibile, ossia rich
 Tramite l’implementazione della pipeline, invece, tale periodo può essere ridotto a quello della **fase più lenta**, ossia $200\text{ps}$, aumentando quindi la velocità dell’architettura.
 
 ### Lettura e Scrittura dal blocco Registri
-E’ però da notare che la fase di **lettura** (ID) che quella di **scrittura** (WB) lavorano sui registri, impiegando un tempo notevolmente minore (la metà in questo esempio) rispetto a tutte le altre fasi dell’istruzione
+E’ però da notare che la fase di **lettura** (ID) che quella di **scrittura** (WB) lavorano sui registri, impiegando un tempo notevolmente minore (la metà in questo esempio, 100ps) rispetto a tutte le altre fasi dell’istruzione. Possiamo per questo eseguire ID e W nello stesso clock (periodo 200ps), suddividendolo in lettura e scrittura.
+![[Screenshot 2024-05-02 alle 18.42.47.png]]
+
+In particolar modo possiamo eseguire la **scrittura durante il rising edge** e la **lettura durante il falling edge** in modo tale da non perdere un intero ciclo di clock quando le due istruzioni si sovrappongono
+![[Screenshot 2024-05-02 alle 18.44.10.png|450]]
+
+---
+## Criticità nell’esecuzione
+L’implementazione della pipeline all’interno dell’architettura comporta anche la nascita di alcune criticità (**hazard**) dovute alla suddivisione in fasi delle istruzioni
+
+Immaginiamo il caso in cui l’istruzione 1 **modifichi** il valore di un registro e l’istruzione 2 legga il valore di tale registro. Per via della suddivisione in fasi, durante la **fase di ID dell’istruzione 2** non è ancora stata eseguita la **fase di WB dell’istruzione 1**, generando quindi una **situazione critica** in cui il dato del registro non sia ancora stato modificato. Di conseguenza, l’istruzione 2 **leggerà il dato non ancora aggiornato**.
+
+Gli hazard possono essere di tre tipi:
+- **Structural hazard** → le risorse hardware non sono sufficienti (memoria dati e memoria istruzioni condivise in una singola memoria, risolto in fase di design)
+- **Data hazard** → il dato necessario non è ancora pronto
+- **Control hazard** → la presenza di un salto cambia il flusso di esecuzione delle istruzioni
