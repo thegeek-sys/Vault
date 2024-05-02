@@ -34,18 +34,6 @@
             }
           },
           {
-            "id": "304eb60c9e08e08e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-04-30_AE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a9c6fddda170fc8c",
             "type": "leaf",
             "state": {
@@ -94,7 +82,25 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "c50596ff3452c352",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "304eb60c9e08e08e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-04-30_AE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -145,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -162,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-04-30_AE.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-04-30_AE.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-04-30_AE.md"
+                "file": "Class/Architettura degli elaboratori/Pipeline.md"
               }
             }
           },
@@ -236,11 +241,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "304eb60c9e08e08e",
+  "active": "4dae627bfdcf524b",
   "lastOpenFiles": [
+    "Flet-notes/2024-04-30_AE.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Flet-notes/2024-04-30_AE.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Tipi generici.md",
