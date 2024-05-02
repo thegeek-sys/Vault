@@ -21,6 +21,7 @@
 - [[Progetto della CPU MIPS]]
 - [[Progetto della CPU MIPS 2 (aggiungere nuove istruzioni)]]
 - [[Control Unit non funzionante]]
+- [[Pipeline]]
 - 
 
 # Extra
