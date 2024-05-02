@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -162,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-05-02_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To-Do.md",
+                "file": "Flet-notes/2024-05-02_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To-Do.md"
+                "file": "Flet-notes/2024-05-02_MDP.md"
               }
             }
           },
@@ -236,8 +236,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d2cac6488958348a",
+  "active": "907cc4f7d2930fda",
   "lastOpenFiles": [
+    "To-Do.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Java.md",
@@ -247,7 +248,6 @@
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
-    "To-Do.md",
     "Introduzione agli algoritmi/Esercizi.md",
     "Introduzione agli algoritmi",
     "Flet-notes/2024-04-30_MDP.md",
