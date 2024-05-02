@@ -671,15 +671,7 @@
         }
       },
       "active": "f530c8020a703781",
-      "mtime": "2024-04-10T13:42:45+02:00",
-      "workspaces-plus:settings-v1": {
-        "mode": null,
-        "explorerFoldState": [
-          "Class",
-          "Flet-notes",
-          "Programming languages/Python"
-        ]
-      }
+      "mtime": "2024-05-02T12:11:52+02:00"
     },
     "Introduzione agli algoritmi": {
       "main": {
@@ -702,6 +694,42 @@
                     "source": false
                   },
                   "pinned": true
+                }
+              },
+              {
+                "id": "0cc6c18ccbf0ce28",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e45982daa7529ee9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "0ab3fcdd31df535f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
                 }
               },
               {
@@ -734,14 +762,14 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -791,8 +819,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -883,8 +910,8 @@
         }
       },
       "active": "db38e4179948a549",
-      "mtime": "2024-04-30T18:22:51+02:00"
+      "mtime": "2024-05-02T12:11:50+02:00"
     }
   },
-  "active": "Introduzione agli algoritmi"
+  "active": "Java"
 }
