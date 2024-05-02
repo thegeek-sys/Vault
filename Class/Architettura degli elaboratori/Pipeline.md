@@ -49,3 +49,24 @@ Gli hazard possono essere di tre tipi:
 - **Structural hazard** → le risorse hardware non sono sufficienti (memoria dati e memoria istruzioni condivise in una singola memoria, risolto in fase di design)
 - **Data hazard** → il dato necessario non è ancora pronto
 - **Control hazard** → la presenza di un salto cambia il flusso di esecuzione delle istruzioni
+
+Immaginiamo di avere:
+```asm
+addi $s0,$s1,5
+sub $s2,$s0,$t0
+```
+
+Per via della scomposizione in fasi dell’esecuzione dell’istruzione, si verifica un *Data Hazard* sul registro `$s0`, il cui valore aggiornato non risulta ancora scritto, poiché la fase di WB dell’istruzione modificante non è ancora stato portato a termine. Di conseguenza, la fase di ID dell’istruzione direttamente successiva **leggerà il valore errato**
+
+|                   | 1° CC | 2° CC | 3° CC  | 4° CC | 5° CC  | 6° CC |
+|:----------------- |:-----:|:-----:|:------:|:-----:|:------:|:-----:|
+| `addi $s0,$s1,5`  |  IF   |  ID   |  EXE   |  MEM  | **WB** |       |
+| `sub $s2,$s0,$t0` |       |  IF   | **ID** |  EXE  |  MEM   |  WB   |
+La fase di WB della 1° istruzione e la fase di ID della seconda risultano sfalzate di 2cc, generando una lettura sbagliata del dato
+
+Per risolvere la criticità, dunque, possiamo **allineare le fasi di WB e ID** delle due istruzioni introducendo due stalli nella pipeline, ossia un’istruzione fantoccio, detta **NOP** (*No-Operation*), che funga da "rallentamento" nel caricamento della pipeline, risolvendo il data hazard.
+
+|                   | 1° CC | 3° CC | 2° CC | 4° CC | 5° CC  | 6° CC | 7° CC | 8° CC |
+| :---------------- | :---: | :---: | :---: | :---: | :----: | :---: | ----- | ----- |
+| `addi $s0,$s1,5`  |  IF   |  EXE  |  ID   |  MEM  | **WB** |       |       |       |
+| `sub $s2,$s0,$t0` |       |   →   |   →   |  IF   | **ID** |  EXE  | MEM   | WB    |
