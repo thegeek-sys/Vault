@@ -50,6 +50,7 @@ Gli hazard possono essere di tre tipi:
 - **Data hazard** → il dato necessario non è ancora pronto
 - **Control hazard** → la presenza di un salto cambia il flusso di esecuzione delle istruzioni
 
+
 Immaginiamo di avere:
 ```asm
 addi $s0,$s1,5
@@ -70,3 +71,13 @@ Per risolvere la criticità, dunque, possiamo **allineare le fasi di WB e ID** 
 | :---------------- | :---: | :---: | :---: | :---: | :----: | :---: | ----- | ----- |
 | `addi $s0,$s1,5`  |  IF   |  EXE  |  ID   |  MEM  | **WB** |       |       |       |
 | `sub $s2,$s0,$t0` |       |   →   |   →   |  IF   | **ID** |  EXE  | MEM   | WB    |
+
+### Propagazione (Bypassing/Forwarding)
+Tuttavia, in alcuni casi l’informazione aggiornata necessaria è **già presente** all’interno di uno dei **banchi di registri precedenti al WB**. Immaginiamo quindi che nell’architettura sia presente una **"scorciatoia"** in grado di sovrascrivere il dato errato con il dato aggiornato, senza dover attendere la fase di WB.
+![[Screenshot 2024-05-02 alle 19.17.01.png]]
+
+L’uso di questa scorciatoia rimuove la necessità di dover inserire due stalli all’interno della pipeline, velocizzando l’esecuzione del programma. Tale tecnica di propagazione del dato viene detta ***Forwarding*** (o Bypassing)
+
+>[!warning]
+>Nel caso in cui la fase che necessità il dato aggiornato si trova prima della fase in cui viene aggiornato il dato, sarà comunque necessario introdurre qualche stallo, in modo da rallentare l’esecuzione in attesa che il dato venga generato, per poi leggerlo subito dopo attraverso il forwarding.
+
