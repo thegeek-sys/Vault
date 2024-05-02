@@ -146,12 +146,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -245,6 +245,7 @@
   "lastOpenFiles": [
     "Flet-notes/2024-04-30_AE.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
+    "Files/Screenshot 2024-05-02 alle 16.41.46.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Flet-notes/2024-05-02_MDP.md",
@@ -279,9 +280,7 @@
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/Screenshot 2024-04-29 alle 18.50.49.png",
-    "Files/Immagine 29-04-24 - 18.43.jpg",
     "Class/Architettura degli elaboratori/Procedure e Funzioni.md",
-    "Class/Architettura degli elaboratori/System Calls.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
     "Files/Heapify.png.sb-edbfe875-ZXn0wN",
