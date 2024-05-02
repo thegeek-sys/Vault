@@ -152,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -243,6 +244,8 @@
   },
   "active": "4dae627bfdcf524b",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-05-02 alle 19.27.01.png",
+    "Files/Screenshot 2024-05-02 alle 19.24.56.png",
     "Files/Screenshot 2024-05-02 alle 19.17.01.png",
     "Files/Screenshot 2024-05-02 alle 18.55.02.png",
     "Class/Architettura degli elaboratori/Pipeline.md",
@@ -274,10 +277,8 @@
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
-    "Files/Immagine 29-04-24 - 19.18.jpg",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Programming languages/Java/Exceptions.md",
-    "Files/Screenshot 2024-04-29 alle 19.31.02.png",
     "Class/Architettura degli elaboratori/Istruzioni per prendere decisioni (istruzioni condizionali).md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Esercizi",
