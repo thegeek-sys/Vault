@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md"
+                "file": "Class/Architettura degli elaboratori/Pipeline.md"
               }
             }
           },
@@ -235,8 +235,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c8df95c76ea78673",
+  "active": "4dae627bfdcf524b",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Files/Screenshot 2024-05-02 alle 19.27.01.png",
