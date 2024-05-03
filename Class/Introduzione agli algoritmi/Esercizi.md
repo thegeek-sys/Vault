@@ -185,3 +185,17 @@ def es(A):
 		P = P.next
 	return A
 ```
+
+---
+# ES.5
+Scrivere una funzione `creaAlbero(n, m)` che genera un albero a caso con $n$ nodi aventi chiavi casuali nell’intervallo $[1,\dots ,m]$
+
+```python
+def creaAlbero(n, m):
+	if n==0 return None
+	p = NodoAB(random.randint(1, m))
+	fs = random.randint(0, n-1)
+	p.left = creaAlbero(fs, m)
+	p.right = creaAlbero(n-fs-1, m)
+	return p
+```
