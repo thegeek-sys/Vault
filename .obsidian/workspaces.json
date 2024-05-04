@@ -720,24 +720,12 @@
                 }
               },
               {
-                "id": "e45982daa7529ee9",
+                "id": "f0269db8c55e7480",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "0ab3fcdd31df535f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "mode": "source",
                     "source": false
                   }
@@ -780,7 +768,7 @@
                 }
               }
             ],
-            "currentTab": 5
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -830,7 +818,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -846,7 +835,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -863,7 +852,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -886,7 +875,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md"
                   }
                 }
               },
@@ -920,9 +909,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "db38e4179948a549",
-      "mtime": "2024-05-02T16:34:52+02:00"
+      "active": "f0269db8c55e7480",
+      "mtime": "2024-05-04T12:02:39+02:00"
     }
   },
-  "active": "Introduzione agli algoritmi"
+  "active": "Java"
 }
