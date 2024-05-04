@@ -289,3 +289,18 @@ Ad esempio per `A=[3,3,4,6,6,3,5,5,5,6,6,9,9,1]` i soli elementi che in A si rip
 - la distanza massima tra duplicati del 9 è 1.
 quindi la risposta per l’array `A` è 7.
 Progettare un algoritmo che, dato `A`, in tempo $\theta(n)$ restituisca la distanza massima tra le posizioni con elementi duplicati
+
+```python
+def es(A):
+	C = [-1]*51
+	m = 0
+	for i in range(len(A)):
+		if C[A[i]] == -1:
+			C[A[i]] == i
+		else:
+			m = max(m, i-C[A[i]])
+	return m
+```
+
+---
+# ES.13
