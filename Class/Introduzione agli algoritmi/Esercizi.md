@@ -262,3 +262,19 @@ def es(p, h):
 	ld = es(p.right, h-1)
 	return ls + ld
 ```
+
+---
+# ES.11
+In un array ordinato `A` di $n$ interi compaiono tutti gli interi da $0$ ad $n−2$. Esiste dunque nell’array un unico elemento duplicato. Si progetti un algoritmo iterativo che, dato `A`, in tempo $\theta(\log n)$ restituisca l’elemento duplicato.
+Ad esempio, per `A=[0,1,2,3,4,4,5,6,7]` l’algoritmo deve restituire 4.
+
+```python
+def es(A):
+	i, j = 0, len(A)-1
+	while i<j:
+		if A[m] == m:
+			i = m+1
+		else:
+			j=m
+	return A[i]
+```
