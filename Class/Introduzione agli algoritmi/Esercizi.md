@@ -216,7 +216,7 @@ def stampaAlbero(p, h=0):
 
 ---
 # ES.7
-Scrivere una funzione ricorsiva che dato in input un puntatore alla radice il dell’albero `p` restituisca il numero di nodi totale in $\theta(n)$
+Scrivere una funzione ricorsiva che dato in input un puntatore alla radice di un albero binario `p` e restituisca il numero di nodi totale in $\theta(n)$
 
 ```python
 def es(p):
@@ -228,4 +228,37 @@ def es(p):
 
 ---
 # ES.8
-Scrivere 
+Scrivere una funzione ricorsiva che prenda in input un puntatore alla radice di un albero binario `p` ed un elemento `x` e verifichi la presenza o meno dell’elemento nell’albero
+
+```python
+def es(p, x):
+	if p==None: return False
+	if p.key == x: return True
+	if es(p.left, x): return True
+	es(p.right, x)
+```
+
+# ES.9
+Scrivere una funzione ricorsiva che prenda in input un puntatore alla radice di un albero binario `p` e ritorni l’altezza dell’albero
+
+```python
+def es(p):
+	if p==None: return -1
+	hs = es(p.left)
+	hd = es(p.right)
+	return max(hs, hd) + 1
+	
+```
+
+---
+# ES.10
+Scrivere una funzione ricorsiva che prenda in input un puntatore alla radice di un albero binario `p` e un livello `h` ritorni il numero di nodi presenti al livello `h`
+
+```python
+def es(p, h):
+	if p==None: return 0
+	if k==0: return 1
+	ls = es(p.left, h-1)
+	ld = es(p.right, h-1)
+	return ls + ld
+```
