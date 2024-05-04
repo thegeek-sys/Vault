@@ -272,9 +272,20 @@ Ad esempio, per `A=[0,1,2,3,4,4,5,6,7]` l’algoritmo deve restituire 4.
 def es(A):
 	i, j = 0, len(A)-1
 	while i<j:
+		m = (i+j)//2
 		if A[m] == m:
 			i = m+1
 		else:
 			j=m
 	return A[i]
 ```
+
+---
+# ES.12
+Dato un array `A` di $n$ interi compresi tra $0$ a $50$, sapendo che nell’array sono certamente presenti dei duplicati, si vuole determinare la distanza massima tra le posizioni di due elementi duplicati in `A`
+Ad esempio per `A=[3,3,4,6,6,3,5,5,5,6,6,9,9,1]` i soli elementi che in A si ripetono sono 3, 6 e 9.
+- La distanza massima tra duplicati del 3 è 5,
+- la distanza massima tra duplicati del 6 è 7,
+- la distanza massima tra duplicati del 9 è 1.
+quindi la risposta per l’array `A` è 7.
+Progettare un algoritmo che, dato `A`, in tempo $\theta(n)$ restituisca la distanza massima tra le posizioni con elementi duplicati
