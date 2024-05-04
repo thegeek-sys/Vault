@@ -213,3 +213,7 @@ def stampaAlbero(p, h=0):
 		stampaAlbero(p.left, h+1)
 		stampaAlbero(p.right, h+1)
 ```
+
+---
+# ES.7
+Scrivere una funzione ricorsiva che dato  

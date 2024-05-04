@@ -97,7 +97,13 @@ $$
 \begin{align}
 T(n)\leq ck+c(n-1-k)+b &= \\
 &=c(n-1)+b \\
-&=c\cdot n-c+b\\
-&\leq c\cdot n
+&=cn-c+b\leq cn \\
+\cancel{cn}-c+b\leq \cancel{cn} \\
+b\leq c \rightarrow c\geq b \\
+c=max\{a,b\}
 \end{align}
 $$
+Abbiamo dimostrato che $T(n)=O(n)$
+Analogamente si dimostra che $T(n)\geq c\cdot n$, quindi che $T(n)=\Omega(n)$
+Ne segue che $T(n)=\theta(n)$
+
