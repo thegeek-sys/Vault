@@ -264,6 +264,18 @@
                 }
               },
               {
+                "id": "f2c11d23151245b1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Memoria.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "317b8353809d7d28",
                 "type": "leaf",
                 "state": {
@@ -336,7 +348,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -404,7 +416,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-05-02_MDP.md",
+                    "file": "Programming languages/Java/Memoria.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -421,7 +433,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-05-02_MDP.md",
+                    "file": "Programming languages/Java/Memoria.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -444,7 +456,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-05-02_MDP.md"
+                    "file": "Programming languages/Java/Memoria.md"
                   }
                 }
               },
@@ -478,8 +490,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "907cc4f7d2930fda",
-      "mtime": "2024-05-02T16:34:51+02:00"
+      "active": "f2c11d23151245b1",
+      "mtime": "2024-05-04T14:45:51+02:00"
     },
     "Python": {
       "main": {
@@ -913,5 +925,5 @@
       "mtime": "2024-05-04T12:02:39+02:00"
     }
   },
-  "active": "Java"
+  "active": "Introduzione agli algoritmi"
 }

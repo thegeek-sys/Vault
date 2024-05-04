@@ -199,3 +199,17 @@ def creaAlbero(n, m):
 	p.right = creaAlbero(n-fs-1, m)
 	return p
 ```
+
+---
+# ES.6
+Scrivere una funzione `stampa(r)` che stampa le chiavi dei nodi dell’albero `r`. Stampa ricorsivamente in base a queste regole: prima la chiave del nodo e poi, indentate, le chiavi del sottoalbero di sinistra e quelle del sottoalbero di destra
+
+```python
+def stampaAlbero(p, h=0):
+	if p==None:
+		print('| '*h,'-')
+	else:
+		print('| '*h, p.key)
+		stampaAlbero(p.left, h+1)
+		stampaAlbero(p.right, h+1)
+```
