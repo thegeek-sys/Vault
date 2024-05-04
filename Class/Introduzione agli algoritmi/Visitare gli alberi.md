@@ -46,5 +46,5 @@ def stampaAlbero(p):
 	stampaAlbero(p.right)
 	print(p.key)
 
-# -> 1, 5, 7, 2, 3
+# -> 1, 5, 7, 2, 3-
 ```
