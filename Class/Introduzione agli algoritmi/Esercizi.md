@@ -216,4 +216,16 @@ def stampaAlbero(p, h=0):
 
 ---
 # ES.7
-Scrivere una funzione ricorsiva che dato  
+Scrivere una funzione ricorsiva che dato in input un puntatore alla radice il dell’albero `p` restituisca il numero di nodi totale in $\theta(n)$
+
+```python
+def es(p):
+	if p==None: return 0
+	s = es(p.left)
+	d = es(p.left)
+	return s + d + 1
+```
+
+---
+# ES.8
+Scrivere 

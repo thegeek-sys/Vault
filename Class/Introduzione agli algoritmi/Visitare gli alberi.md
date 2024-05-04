@@ -95,8 +95,7 @@ Passo base: $T(1)=a\leq c$ che è vero se prendiamo $c\geq a$
 Passo induttivo:
 $$
 \begin{align}
-T(n)\leq ck+c(n-1-k)+b &= \\
-&=c(n-1)+b \\
+T(n)\leq ck+c(n-1-k)+b &=c(n-1)+b \\
 &=cn-c+b\leq cn \\
 \cancel{cn}-c+b\leq \cancel{cn} \\
 b\leq c \rightarrow c\geq b \\
