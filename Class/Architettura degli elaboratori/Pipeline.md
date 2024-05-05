@@ -137,3 +137,4 @@ Abbiamo tre modi per poter evitare i Control Hazard
 - **Branch Taken**
 	basata sull’assunzione che il salto venga sempre **considerato come vero**, dunque preso, caricando quindi l’istruzione su cui viene effettuato il salto, per poi essere eventualmente scartata e rimpiazzata nel caso in cui tale assunzione si verifichi sbagliata, annullando quindi il salto.
 - **Branch Prediction**
+	la CPU osserva i salti eseguiti e cerca di pre-caricare l’istruzione (seguente o di destinazione) eseguita più spesso
