@@ -373,3 +373,17 @@ public static void main(String[] args) {
 	boolean b = x instanceof List<?> // true
 }
 ```
+
+---
+## PECS
+Il termine **PECS** è l’acronimo di *Producer Extends, Consumer Supers*.
+`extends` e `super` esistono per due necessità primarie: ovvero leggere da/scrivere in una collezione generica.
+Abbiamo a nostra disposizione 3 modi:
+- `List<?> lista = new ArrayList<Number>();`
+	genera del codice dove voglio il riferimento ad una lista in cui ho una `ArrayList` di `Number` (ma da questo momento in poi il compilatore non può più fare verifiche sulla coerenza dei tipi, non so nulla sul tipo). In questo caso posso solo leggere, non scrivere
+	
+- `List<? extends Number> lista = new ArrayList<Number>();`
+	Questa `lista` è di fatto un riferimento ad un’`ArrayList` composta da **sottotipi** di `Number`. In questo modo posso leggere dati sulla lista e non scriverli (posso solamente eseguire operazioni sugli elementi già esistenti). Deve “produrre” valori di tipo T
+	
+- `List<? super Number> = new ArrayList<Number>();`
+- Questa `lista` è un riferimento ad un’`ArrayList` composta da **supertipi** di `Number`. In questo caso oltre a leggere gli elementi esistenti posso scrivere elementi nella lista (non posso però assumere il tipo degli stessi). Deve “consumare” elementi di tipo T
