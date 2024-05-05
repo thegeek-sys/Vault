@@ -87,4 +87,5 @@ Nel seguente esempio il dato aggiornato viene generato in **fase di accesso alla
 
 ![[Screenshot 2024-05-02 alle 19.27.01.png|470]]
 
-
+### Riordinamento delle istruzioni
+Spesso è possibile risolvere Data Hazard semplicemente riordinando le istruzioni che devono essere eseguite in modo tale da non dover aggiungere alcun tipo di stallo
