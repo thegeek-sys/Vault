@@ -14,4 +14,4 @@ Per farlo e permettere quindi il **forwarding** (operazione cardine all’intern
 Prendiamo in analisi il seguente codice.
 ![[DB58386A-20B1-451C-81EC-CA9DEA05AED4_1_201_a.jpeg]]
 
-In questo caso avremmo un problema durante il Write Back dell’istruzione `lw`. Questo avviene in quando se guardiamo le fasi dell’esecuzione risulta facile notare come, nel momento in cui l’istruzione $\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {8}}}$
+In questo caso avremmo un problema durante il Write Back dell’istruzione `lw`. Questo avviene in quando se guardiamo le fasi dell’esecuzione risulta facile notare come, nel momento in cui l’istruzione $\enclose{circle}{1}$ esegue il WB l’istruzione $\enclose{circle}{4}$ ha già eseguito IF e dunque all’interno del blocco dei registri sono già pronti i registri del `sw` per essere letti e scritti. Dunque risulterebbe che il registro di destinazione di `lw` al posto di essere `$t4` risulta essere `$t6`
