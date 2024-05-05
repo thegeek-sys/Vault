@@ -97,3 +97,35 @@ Spesso è possibile risolvere Data Hazard semplicemente riordinando le istruzion
 
 ---
 ## Control Hazard
+Come sappiamo, l’esecuzione di un programma prevede la **lettura sequenziale** delle operazioni da svolgere, le quali vengono caricate man mano all’interno della pipeline.
+
+Tuttavia, ciò può risultare problematico nel caso in cui debba essere effettuato un **salto**, poiché possono verificarsi due casistiche:
+- Il salto **non viene eseguito**, non modificando il flusso di esecuzione delle istruzioni, procedendo normalmente con l’istruzione sottostante al branch appena validato.
+	In tal caso, non sarà necessario andare a lavorare sulla pipeline, poiché tale istruzione risulterà già caricata in essa per via della lettura sequenziale.
+	
+- Il salto **viene eseguito**, modificando il flusso di istruzioni, procedendo normalmente con l’istruzione associata all’etichetta data al branch appena validato.
+	In tal caso, sarà necessario andare a lavorare sulla pipeline, poiché sarà **necessario rimpiazzare l’istruzione attualmente caricata** nella pipeline (ossia quella sottostante al branch) con l’istruzione su cui viene effettuato il salto.
+
+Prendiamo il seguente codice
+```asm
+.text
+main:
+	li $s0,4
+	li $s1,7
+	
+	...
+	altre istruzioni
+	...
+	
+	beq $s0,$s1,lab
+	subi $s0,$s0,4
+
+lab:
+	addi $s0,$s04
+```
+
+![[Screenshot 2024-05-05 alle 17.53.32.png|300]]
+
+Però nel caso in cui il controllo del branch sia **vero** è necessario scartare l’istruzione precedentemente caricata, in modo tale da poter caricare invece l’istruzione corretta su cui viene effettuato il salto
+![[Screenshot 2024-05-05 alle 17.54.35.png|550]]
+
