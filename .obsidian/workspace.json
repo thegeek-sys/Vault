@@ -158,13 +158,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -256,10 +254,11 @@
   },
   "active": "317b8353809d7d28",
   "lastOpenFiles": [
-    "Programming languages/Java/Untitled.md",
-    "Programming languages/Java/Tipi generici.md",
-    "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/Main.java",
+    "Programming languages/Java/Untitled.md",
+    "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Memoria.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
@@ -293,7 +292,6 @@
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
-    "Programming languages/Java/Exceptions.md",
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
@@ -301,7 +299,6 @@
     "Class/Introduzione agli algoritmi",
     "Files/Heap.png.sb-edbfe875-m4sD66",
     "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
-    "IMG_6204.heic",
-    "Funzioni"
+    "IMG_6204.heic"
   ]
 }
