@@ -25,7 +25,7 @@
 - [x] fare appunti Jump to Register
 - [x] trovare un modo per fare esercizio fine slide e caricarlo
 - [ ] determinare operazione eseguita tramite i 32 bit del jump alla slide 24
-- [ ] rifare esame 3 (che funzioni !!)
+- [x] rifare esame 3 (che funzioni !!)
 - [x] fare esercizio slide 11 ppt13 (vj)
 
 ## Calcolo integrale

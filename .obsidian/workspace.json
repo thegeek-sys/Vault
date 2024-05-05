@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "ecb6cd090c8cbd79",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,67 +22,31 @@
             }
           },
           {
-            "id": "f2c11d23151245b1",
+            "id": "c8df95c76ea78673",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "317b8353809d7d28",
+            "id": "4dae627bfdcf524b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4a8bccc9ecefa137",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "336cbf6f9cbee81e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f84e85b35a6d1635",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/MVC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2cac6488958348a",
+            "id": "098b92fd659bff2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,9 +56,69 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "58616da2e7fd4bea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a9c6fddda170fc8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f661451f68231c21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "edb02f5abf679a2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a795eb0fc57724a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -123,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "equals path:\"Programming languages/Java/\"",
+                "query": "write back",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/MVC.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/MVC.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/MVC.md"
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md"
               }
             }
           },
@@ -222,6 +246,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -231,12 +256,17 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false,
-      "vscode-editor:Create Code File": false
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f84e85b35a6d1635",
+  "active": "58616da2e7fd4bea",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Esercizi/es1.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "To-Do.md",
+    "Class/Architettura degli elaboratori/Pipeline.md",
+    "Programming languages/Java/MVC.md",
     "Programming languages/Java/Tipi generici.md",
     "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Main.java",
@@ -250,11 +280,9 @@
     "Programming languages/Java/Untitled.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/2D6B7EFC-C27C-4E21-9296-3DB8C45A8F92.jpeg",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
-    "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-05-02 alle 19.27.01.png",
@@ -265,7 +293,6 @@
     "Files/Screenshot 2024-05-02 alle 18.42.47.png",
     "Flet-notes/2024-04-30_AE.md",
     "Files/Screenshot 2024-05-02 alle 16.41.46.png",
-    "To-Do.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Untitled.canvas",
     "Programming languages/Python/Images.md",
@@ -277,8 +304,6 @@
     "Files/Immagine 30-04-24 - 18.16.jpg",
     "Files/Screenshot 2024-04-30 alle 18.04.24.png",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
-    "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",

@@ -288,18 +288,6 @@
                 }
               },
               {
-                "id": "907cc4f7d2930fda",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-05-02_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "4a8bccc9ecefa137",
                 "type": "leaf",
                 "state": {
@@ -348,7 +336,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -394,13 +382,11 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -416,7 +402,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Memoria.md",
+                    "file": "Programming languages/Java/MVC.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -433,7 +419,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Memoria.md",
+                    "file": "Programming languages/Java/MVC.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -456,7 +442,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Memoria.md"
+                    "file": "Programming languages/Java/MVC.md"
                   }
                 }
               },
@@ -487,11 +473,12 @@
           "audio-recorder:Start/stop recording": false,
           "random-note:Open random note": false,
           "table-editor-obsidian:Advanced Tables Toolbar": false,
-          "workspaces:Manage workspace layouts": false
+          "workspaces:Manage workspace layouts": false,
+          "vscode-editor:Create Code File": false
         }
       },
-      "active": "f2c11d23151245b1",
-      "mtime": "2024-05-04T14:45:51+02:00"
+      "active": "f84e85b35a6d1635",
+      "mtime": "2024-05-05T17:20:39+02:00"
     },
     "Python": {
       "main": {
@@ -925,5 +912,5 @@
       "mtime": "2024-05-05T16:49:00+02:00"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }
