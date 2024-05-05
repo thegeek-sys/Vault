@@ -145,3 +145,5 @@ Nonostante i metodi elencati sopra comunque ci rimangono ancora dei problemi non
 - L’**istruzione Jump** viene eseguita in **fase di ID**, caricando nella pipeline IF l’istruzione sottostante, piuttosto che l’istruzione su cui viene effettuato il salto
 - Indipendentemente dalla politica di salto usata, l’**istruzione Branch** genera ancora **due stalli** all’interno della pipeline
 #### Anticipare il Jump in fase IF
+La soluzione a questa problematica sembrerebbe risultare essere la politica del Branch Taken (il salto viene sempre eseguito) ma tale politica come regola generale influenzerebbe anche l’istruzione Branch.
+Però l’istruzione di `jump` ha la particolarità che si può determinare cosa avverrà nel codice direttamente nella **fase IF**, sembrerebbe infatti essere l’unica delle cinque fasi realmente necessaria. Possiamo quindi modificare l’architettura in modo tale da **anticipare ogni istruzione Jump**
