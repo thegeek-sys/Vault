@@ -129,8 +129,9 @@ lab:
 Però nel caso in cui il controllo del branch sia **vero** è necessario scartare l’istruzione precedentemente caricata, in modo tale da poter caricare invece l’istruzione corretta su cui viene effettuato il salto
 ![[Screenshot 2024-05-05 alle 17.54.35.png|550]]
 
-Tale politica viene definita **Branch not Taken**
-## Mitigare Control Hazard
+Tale politica viene definita **Branch not Taken**ù
+
+### Mitigare Control Hazard
 Abbiamo tre modi per poter evitare i Control Hazard
 - **Branch not Taken** 
 	si basa sull’assunzione che il salto venga sempre **considerato come falso**, dunque non preso, caricando quindi l’istruzione direttamente successiva, per poi essere eventualmente scartata e rimpiazzata nel caso in cui tale assunzione si verifichi sbagliata, effettuando quindi il salto.
@@ -138,3 +139,9 @@ Abbiamo tre modi per poter evitare i Control Hazard
 	basata sull’assunzione che il salto venga sempre **considerato come vero**, dunque preso, caricando quindi l’istruzione su cui viene effettuato il salto, per poi essere eventualmente scartata e rimpiazzata nel caso in cui tale assunzione si verifichi sbagliata, annullando quindi il salto.
 - **Branch Prediction**
 	la CPU osserva i salti eseguiti e cerca di pre-caricare l’istruzione (seguente o di destinazione) eseguita più spesso
+
+### Anticipare i salti
+Nonostante i metodi elencati sopra comunque ci rimangono ancora dei problemi non risolti:
+- L’**istruzione Jump** viene eseguita in **fase di ID**, caricando nella pipeline IF l’istruzione sottostante, piuttosto che l’istruzione su cui viene effettuato il salto
+- Indipendentemente dalla politica di salto usata, l’**istruzione Branch** genera ancora **due stalli** all’interno della pipeline
+#### Anticipare il Jump in fase IF
