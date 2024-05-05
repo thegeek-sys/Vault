@@ -129,3 +129,6 @@ lab:
 Però nel caso in cui il controllo del branch sia **vero** è necessario scartare l’istruzione precedentemente caricata, in modo tale da poter caricare invece l’istruzione corretta su cui viene effettuato il salto
 ![[Screenshot 2024-05-05 alle 17.54.35.png|550]]
 
+Tale politica di salto, ossia la modalità di gestione dei salti, viene detta politica **Branch not Taken** e si basa sull’assunzione che il salto venga sempre **considerato come falso**, dunque non preso, caricando quindi l’istruzione direttamente successiva, per poi essere eventualmente scartata e rimpiazzata nel caso in cui tale assunzione si verifichi sbagliata, effettuando quindi il salto.
+
+Un’ulteriore politica di salto utilizzabile è la politica **Branch Taken** basata sull’assunzione che il salto venga sempre **considerato come vero**, dunque preso, caricando quindi l’istruzione su cui viene effettuato il salto, per poi essere eventualmente scartata e rimpiazzata nel caso in cui tale assunzione si verifichi sbagliata, annullando quindi il salto.
