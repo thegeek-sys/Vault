@@ -1,9 +1,26 @@
 ---
 Created: 2024-05-02
 Class: "[[Architettura degli elaboratori]]"
-Related: 
-Completed:
+Related:
+  - "[[Implementare Pipeline in CPU MIPS]]"
+Completed: true
 ---
+---
+
+> [!info] Index
+> - [[#Introduction|Introduction]]
+> - [[#Incremento della velocità|Incremento della velocità]]
+> 	- [[#Incremento della velocità#Lettura e Scrittura dal blocco Registri|Lettura e Scrittura dal blocco Registri]]
+> - [[#Criticità nell’esecuzione|Criticità nell’esecuzione]]
+> - [[#Data Hazard|Data Hazard]]
+> 	- [[#Data Hazard#Propagazione (Bypassing/Forwarding)|Propagazione (Bypassing/Forwarding)]]
+> 	- [[#Data Hazard#Bubble (bolla)|Bubble (bolla)]]
+> 	- [[#Data Hazard#Riordinamento delle istruzioni|Riordinamento delle istruzioni]]
+> - [[#Control Hazard|Control Hazard]]
+> 	- [[#Control Hazard#Mitigare Control Hazard|Mitigare Control Hazard]]
+> 	- [[#Control Hazard#Anticipare i salti|Anticipare i salti]]
+> 		- [[#Anticipare i salti#Anticipare il Jump in fase IF|Anticipare il Jump in fase IF]]
+
 ---
 ## Introduction
 Fino ad ora abbiamo immaginato ogni istruzione come divisa in cinque fasi:
