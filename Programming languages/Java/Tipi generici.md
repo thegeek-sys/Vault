@@ -388,4 +388,4 @@ Abbiamo a nostra disposizione 3 modi:
 - `List<? super Number> = new ArrayList<Number>();`
 - Questa `lista` è un riferimento ad un’`ArrayList` composta da **supertipi** di `Number`. In questo caso oltre a leggere gli elementi esistenti posso scrivere elementi nella lista (non posso però assumere il tipo degli stessi). Deve “consumare” elementi di tipo T
 
-![[Main.java]]
+Esempi spiegati → [[Main.java]]

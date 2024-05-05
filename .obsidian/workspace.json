@@ -249,17 +249,23 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "vscode-editor:Create Code File": false
     }
   },
   "active": "317b8353809d7d28",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Main.java",
+    "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/Memoria.md",
+    "Users/fla/Documents/Vault/Programming.md",
+    "Users/fla/Documents/Vault",
+    "Users/fla/Documents",
+    "Users/fla",
+    "Users",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/Untitled.md",
     "Flet-notes/2024-05-02_MDP.md",
-    "Programming languages/Java/Memoria.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
@@ -291,14 +297,9 @@
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
-    "Files/Heapify.png.sb-edbfe875-ZXn0wN",
-    "Class/Introduzione agli algoritmi",
-    "Files/Heap.png.sb-edbfe875-m4sD66",
-    "Files/Screenshot 2024-04-15 alle 17.17.55.jpg.sb-edbfe875-8ntHGJ",
-    "IMG_6204.heic"
+    "Files/Heapify.png.sb-edbfe875-ZXn0wN"
   ]
 }
