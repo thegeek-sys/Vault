@@ -389,3 +389,11 @@ Abbiamo a nostra disposizione 3 modi:
 - Questa `lista` è un riferimento ad un’`ArrayList` composta da **supertipi** di `Number`. In questo caso oltre a leggere gli elementi esistenti posso scrivere elementi nella lista (non posso però assumere il tipo degli stessi). Deve “consumare” elementi di tipo T
 
 Esempi spiegati → [[Main.java]]
+
+### A volte “super” nei generici è necessario...
+Ma perché non posso scrivere semplicemente `<T extends Comparable<T>>`?
+Immaginiamo questa situazione:
+- `public class Frutto implements Comparable<Frutto>`
+- `public class Pera extends Frutto implments Comparable<Pera>` non si può fare poiché non si può implementare due volte la stessa interfaccia
+- `public class Pera extends Frutto` si. In questo caso però, se volessi ordinare una collezione di `Pera`, non potrei in quanto non implementa `Comparable<Pera>`, ma `Comparable<Frutto>`
+
