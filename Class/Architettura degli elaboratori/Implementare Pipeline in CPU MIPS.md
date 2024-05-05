@@ -15,3 +15,9 @@ Prendiamo in analisi il seguente codice:
 ![[FFA40860-4F15-464E-9035-C9ED6C4D2CA9_1_201_a.jpeg]]
 
 In questo caso avremmo un problema durante il Write Back dell’istruzione `lw`. Questo avviene in quando se guardiamo le fasi dell’esecuzione risulta facile notare come, nel momento in cui l’istruzione $\enclose{circle}{1}$ esegue il WB l’istruzione $\enclose{circle}{4}$ ha già eseguito IF e dunque all’interno del blocco dei registri sono già pronti i registri del `sw` per essere letti e scritti. Dunque risulterebbe che il registro di destinazione di `lw` al posto di essere `$t4` risulta essere `$t6`
+![[FFA40860-4F15-464E-9035-C9ED6C4D2CA9_1_201_a 1.jpeg|550]]
+
+Per questo motivo tutte le informazioni ed i segnali di controllo devono essere nel registro precedente della pipeline
+![[Screenshot 2024-05-05 alle 19.06.38.png]]
+
+
