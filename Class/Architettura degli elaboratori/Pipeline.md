@@ -50,7 +50,8 @@ Gli hazard possono essere di tre tipi:
 - **Data hazard** → il dato necessario non è ancora pronto
 - **Control hazard** → la presenza di un salto cambia il flusso di esecuzione delle istruzioni
 
-
+---
+## Data Hazard
 Immaginiamo di avere:
 ```asm
 addi $s0,$s1,5

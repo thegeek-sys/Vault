@@ -70,18 +70,6 @@
             }
           },
           {
-            "id": "a9c6fddda170fc8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f661451f68231c21",
             "type": "leaf",
             "state": {
@@ -118,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -168,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -184,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md"
+                "file": "Class/Architettura degli elaboratori/Pipeline.md"
               }
             }
           },
@@ -259,12 +248,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "58616da2e7fd4bea",
+  "active": "4dae627bfdcf524b",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
-    "Class/Architettura degli elaboratori/Esercizi/es1.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
     "To-Do.md",
+    "Class/Architettura degli elaboratori/Esercizi/es1.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Programming languages/Java/MVC.md",
     "Programming languages/Java/Tipi generici.md",
@@ -300,10 +291,8 @@
     "Introduzione agli algoritmi",
     "Flet-notes/2024-04-30_MDP.md",
     "Programming languages/Java/Strutture dati.md",
-    "Flet-notes/2024-04-26_AE.md",
     "Files/Immagine 30-04-24 - 18.16.jpg",
     "Files/Screenshot 2024-04-30 alle 18.04.24.png",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/Record.png.sb-edbfe875-QirdlN",
