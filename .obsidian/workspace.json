@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -230,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md"
+                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md"
               }
             }
           },
@@ -305,15 +305,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "1c1d2d30c9c312d5",
+  "active": "3767594e3a776da1",
   "lastOpenFiles": [
+    "Files/1AD189C0-C6E9-4C34-97CC-3FF4A41B64AB.jpeg",
+    "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Files/Screenshot 2024-05-06 alle 17.01.09.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-05-06 alle 16.58.29.png",
-    "Class/Architettura degli elaboratori/Pipeline.md",
     "Files/Screenshot 2024-05-06 alle 16.56.42.png",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Files/Screenshot 2024-05-06 alle 16.50.34.png",
@@ -349,7 +350,6 @@
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Untitled.canvas",
     "Programming languages/Python/Images.md",
-    "Introduzione agli algoritmi/Esercizi.md",
     "Introduzione agli algoritmi",
     "Class/Architettura degli elaboratori/Esercizi",
     "Files/MIPS_Instruction_Set.pdf",
