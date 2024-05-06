@@ -97,7 +97,7 @@ Tuttavia, in alcuni casi l’informazione aggiornata necessaria è **già pres
 L’uso di questa scorciatoia rimuove la necessità di dover inserire due stalli all’interno della pipeline, velocizzando l’esecuzione del programma. Tale tecnica di propagazione del dato viene detta ***Forwarding*** (o Bypassing)
 
 ### Bubble (bolla)
-Nel caso in cui la fase che necessità il dato aggiornato si trova prima della fase in cui viene aggiornato il dato, sarà comunque necessario **introdurre qualche stallo**, in modo da rallentare l’esecuzione in attesa che il dato venga generato, per poi leggerlo subito dopo attraverso il forwarding.
+Nel caso in cui la fase che necessità il dato aggiornato si trova prima della fase in cui viene aggiornato il dato, sarà comunque necessario **introdurre qualche stallo** (in architettura MIPS viene fatto attraverso l’istruzione `add $0,$0,$0`), in modo da rallentare l’esecuzione in attesa che il dato venga generato, per poi leggerlo subito dopo attraverso il forwarding.
 
 Nel seguente esempio il dato aggiornato viene generato in **fase di accesso alla memoria**, tuttavia, durante tale fase MEM, viene svolta in contemporanea la fase di EXE dell’istruzione successiva, la quale necessiterebbe del dato aggiornato. **Poiché il dato non può essere contemporaneamente generato e propagato** tramite il forwarding, è necessario introdurre **almeno uno stallo**.
 ![[Screenshot 2024-05-02 alle 19.24.56.png]]

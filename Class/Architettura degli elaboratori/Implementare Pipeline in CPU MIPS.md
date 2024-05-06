@@ -34,4 +34,8 @@ Possiamo quindi dividere i segnali di controllo nelle fasi esecutive in 3 gruppi
 - fase WB
 ![[Screenshot 2024-05-06 alle 16.50.34.png]]
 
+Così si propagano i segnali di controllo all’interno della CPU
+![[Screenshot 2024-05-06 alle 16.56.42.png]]
 
+CPU nella sua totalità completa di segnali di controllo uscenti dalla porzione dei registri di pieline dedicata a memorizzare le informazioni di controllo
+![[Screenshot 2024-05-06 alle 16.58.29.png]]
