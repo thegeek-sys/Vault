@@ -25,3 +25,12 @@ Per questo motivo tutte le informazioni ed i segnali di controllo devono essere 
 Aggiungendo la logica dei salti (beq) e integrandola con i registri già esistenti, ne approfitto per spostare tutti i controlli dopo ID in modo tale da aver la necessità di effettuare controlli solo durante le ultime tre fasi dell’istruzione (rimane solamente `RegWrite` che però non mi crea problemi in quanto viene attivato solamente durante il WB).
 Si noti che ora serve il campo `funz` (codice funzione) su 6 bit dell’istruzione, nello stadio EX dove viene utilizzato come ingresso del controllore della ALU; occorre quindi salvare anche questi bit nel registro di pipeline ID/EX
 ![[Screenshot 2024-05-06 alle 16.40.11.png]]
+
+---
+## Segnali di controllo della CU
+Possiamo quindi dividere i segnali di controllo nelle fasi esecutive in 3 gruppi:
+- fase EXE
+- fase MEM
+- fase WB
+![[Screenshot 2024-05-06 alle 16.50.34.png]]
+
