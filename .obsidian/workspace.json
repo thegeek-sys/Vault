@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -230,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md"
+                "file": "Class/Architettura degli elaboratori/Pipeline.md"
               }
             }
           },
@@ -305,13 +305,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3767594e3a776da1",
+  "active": "1c1d2d30c9c312d5",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Files/Screenshot 2024-05-06 alle 17.01.09.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Files/Screenshot 2024-05-06 alle 16.58.29.png",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Files/Screenshot 2024-05-06 alle 16.56.42.png",
