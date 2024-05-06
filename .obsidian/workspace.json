@@ -46,6 +46,16 @@
             }
           },
           {
+            "id": "428f80b69863afeb",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-05-05 alle 19.06.38.png"
+              }
+            }
+          },
+          {
             "id": "c8df95c76ea78673",
             "type": "leaf",
             "state": {
@@ -180,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -273,11 +284,13 @@
   },
   "active": "f8ad5af2bd381568",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Files/Screenshot 2024-05-05 alle 19.06.38.png",
     "Files/FFA40860-4F15-464E-9035-C9ED6C4D2CA9_1_201_a 1.jpeg",
     "Files/FFA40860-4F15-464E-9035-C9ED6C4D2CA9_1_201_a.jpeg",
     "Files/DB58386A-20B1-451C-81EC-CA9DEA05AED4_1_201_a.jpeg",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Files/registri pipeline_1.jpeg",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Class/Architettura degli elaboratori/Pipeline.md",
@@ -289,7 +302,6 @@
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Programming languages/Java/MVC.md",
     "Programming languages/Java/Tipi generici.md",
@@ -303,14 +315,12 @@
     "Users",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Untitled.md",
-    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/2D6B7EFC-C27C-4E21-9296-3DB8C45A8F92.jpeg",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Files/Screenshot 2024-05-02 alle 19.27.01.png",
-    "Files/Screenshot 2024-05-02 alle 19.24.56.png",
     "Flet-notes/2024-04-30_AE.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Untitled.canvas",

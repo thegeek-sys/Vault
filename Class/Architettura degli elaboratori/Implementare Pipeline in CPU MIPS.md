@@ -20,4 +20,6 @@ In questo caso avremmo un problema durante il Write Back dell’istruzione `lw`.
 Per questo motivo tutte le informazioni ed i segnali di controllo devono essere nel registro precedente della pipeline
 ![[Screenshot 2024-05-05 alle 19.06.38.png]]
 
-
+---
+## Con logica dei salti (beq)
+Aggiungendo la logica dei salti (beq) e integrandola con i registri già esistenti, ne approfitto per spostare tutti i controlli dopo ID in modo tale da aver la necessità di effettuare controlli solo durante le ultime tre fasi dell’istruzione
