@@ -34,3 +34,4 @@ Possiamo quindi dividere i segnali di controllo nelle fasi esecutive in 3 gruppi
 - fase WB
 ![[Screenshot 2024-05-06 alle 16.50.34.png]]
 
+
