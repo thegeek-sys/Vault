@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -236,10 +236,10 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "f84e85b35a6d1635",
+  "active": "d2cac6488958348a",
   "lastOpenFiles": [
-    "Flet-notes/Untitled.md",
     "Flet-notes/2024-05-07_MDP.md",
+    "Flet-notes/Untitled.md",
     "To-Do.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
