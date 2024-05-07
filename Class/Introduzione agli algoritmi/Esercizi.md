@@ -336,7 +336,7 @@ def es(p, x):
 	while p!=None:
 		if x<p.key: p = p.left
 		elif x>p.key: p = p.right
-		else: p=p.right break
+		else: p=p.right; break
 	
 	while p!=None:
 		if p.left:
@@ -352,5 +352,9 @@ def es(p, x):
 	while p!=None:
 		if x<p.key: p = p.left
 		elif x>p.key: p = p.right
-		else: 
+		else: p=p.left; break
+	
+	while p!=None:
+		if p.right: p = p.right
+		else: return p.key
 ```
