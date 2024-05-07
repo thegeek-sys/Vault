@@ -144,8 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -238,6 +237,7 @@
   },
   "active": "6586a64e0c0b5f8b",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-05-07 alle 16.29.47.png",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
@@ -279,7 +279,6 @@
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Architettura degli elaboratori/System Calls.md",
-    "Flet-notes/2024-04-30_AE.md",
     "Untitled.canvas",
     "Introduzione agli algoritmi",
     "Class/Architettura degli elaboratori/Esercizi",
