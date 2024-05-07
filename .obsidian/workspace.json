@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,89 +22,67 @@
             }
           },
           {
-            "id": "250b639eab25e6cc",
+            "id": "f2c11d23151245b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                "file": "Programming languages/Java/Memoria.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3767594e3a776da1",
+            "id": "317b8353809d7d28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
+                "file": "Programming languages/Java/Tipi generici.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f8ad5af2bd381568",
+            "id": "4a8bccc9ecefa137",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1c1d2d30c9c312d5",
+            "id": "336cbf6f9cbee81e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                "file": "Programming languages/Java/Interfacce note.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "428f80b69863afeb",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-05-05 alle 19.06.38.png"
-              }
-            }
-          },
-          {
-            "id": "c8df95c76ea78673",
+            "id": "f84e85b35a6d1635",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
+                "file": "Flet-notes/2024-05-07_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4dae627bfdcf524b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "098b92fd659bff2b",
+            "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -114,57 +92,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "58616da2e7fd4bea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f661451f68231c21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "edb02f5abf679a2b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a795eb0fc57724a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -193,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "write back",
+                "query": "equals path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -214,7 +144,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -230,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
+                "file": "Flet-notes/2024-05-07_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
+                "file": "Flet-notes/2024-05-07_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es2.md"
+                "file": "Flet-notes/2024-05-07_MDP.md"
               }
             }
           },
@@ -292,7 +223,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -302,17 +232,20 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "vscode-editor:Create Code File": false
     }
   },
-  "active": "3767594e3a776da1",
+  "active": "f84e85b35a6d1635",
   "lastOpenFiles": [
+    "Programming languages/Java/MVC.md",
+    "Flet-notes/2024-05-07_MDP.md",
+    "Class/Architettura degli elaboratori/Esercizi/es2.md",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Files/52F9FB6A-CCDC-4002-8221-A8EA1ABC1FEF.jpeg",
     "Files/1AD189C0-C6E9-4C34-97CC-3FF4A41B64AB.jpeg",
-    "Class/Architettura degli elaboratori/Esercizi/es2.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Files/Screenshot 2024-05-06 alle 17.01.09.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-05-06 alle 16.58.29.png",
@@ -325,12 +258,10 @@
     "Files/Screenshot 2024-05-05 alle 19.06.38.png",
     "Files/FFA40860-4F15-464E-9035-C9ED6C4D2CA9_1_201_a 1.jpeg",
     "Files/FFA40860-4F15-464E-9035-C9ED6C4D2CA9_1_201_a.jpeg",
-    "Files/DB58386A-20B1-451C-81EC-CA9DEA05AED4_1_201_a.jpeg",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Programming languages/Java/MVC.md",
     "Programming languages/Java/Tipi generici.md",
     "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Main.java",

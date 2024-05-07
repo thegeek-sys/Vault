@@ -24,12 +24,24 @@
                 }
               },
               {
-                "id": "93c499362d4da157",
+                "id": "250b639eab25e6cc",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "3767594e3a776da1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
                     "mode": "source",
                     "source": false
                   }
@@ -42,6 +54,18 @@
                   "type": "markdown",
                   "state": {
                     "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "1c1d2d30c9c312d5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Pipeline.md",
                     "mode": "source",
                     "source": false
                   }
@@ -209,7 +233,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -226,7 +250,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Esercizi/es2.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -249,7 +273,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md"
+                    "file": "Class/Architettura degli elaboratori/Esercizi/es2.md"
                   }
                 }
               },
@@ -284,8 +308,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "f8ad5af2bd381568",
-      "mtime": "2024-05-06T10:23:12+02:00"
+      "active": "3767594e3a776da1",
+      "mtime": "2024-05-07T09:15:42+02:00"
     },
     "Java": {
       "main": {
@@ -960,5 +984,5 @@
       "mtime": "2024-05-06T16:18:17+02:00"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
