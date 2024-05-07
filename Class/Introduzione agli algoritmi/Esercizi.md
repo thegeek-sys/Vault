@@ -308,3 +308,6 @@ Si scriva lo pseudocodice, opportunamente commentato, di una funzione iterativa 
 Ad esempio per `A=[3,−5,−7,1,−8]` due possibili risposte corrette (ma ve ne sono altre) sono `A=[−8,−7,−5,1,3]` o `A=[−5,−8,−7,3,1]`.
 La funzione deve avere costo computazionale $O(n)$, dove $n$ è il numero di elementi presenti nell’array. Il costo in termini di spazio oltre l’array A deve essere $\theta(1)$ (in pratica non può far uso di array di appoggio).
 
+---
+# ES.14
+Dato un puntatore ad un albero binario restituirlo sotto forma di vettore
