@@ -7,7 +7,7 @@ Completed:
 ---
 ## Introduction
 ![[Screenshot 2024-05-07 alle 16.29.47.png|center|250]]
-Un **albero binario di ricerca** è un albero nel quale vengono mantenute le seguenti proprietà:
+Un **albero binario di ricerca bilanciato** (*red-black tree*) è un albero nel quale vengono mantenute le seguenti proprietà:
 - ogni nodo contiene una chiave
 - il valore della chiave contenuta in ogni nodo è maggiore della chiave contenuta in ciascun nodo del suo sottoalbero sinistro (se esiste)
 - il valore della chiave contenuta in ogni nodo è minore della chiave contenuta in ciascun nodo del suo sottoalbero destro (se esiste)
@@ -16,15 +16,29 @@ Come gli alberi già visti in precedenza anche questi supportano le operazioni d
 - `ricerca` → $O(\log(n))$
 - `inserimento` → $O(\log(n))$
 - `cancellazione` → $O(\log(n))$
-Queste operazioni, nel caso in cui vengano effettuate su alberi bilanciati impiegano esattamente $O(h)$
+Queste operazioni, poiché sono effettuate su alberi bilanciati, impiegano esattamente $O(h)$
 
 >[!hint]
 > Poiché sto operando su alberi binari di ricerca **bilanciati** per le operazioni che comportano il modificare la struttura, devo ricordarmi di **ribilnaciare** l’albero
+
+
+![[Screenshot 2024-05-07 alle 16.48.47.png|center|130]]
+A differenza dagli alberi binari classici, questi oltre ad avere i riferimenti ai due rami figli, introducono un ulteriore campo rappresentato da `parent`, ovvero un riferimento al puntatore padre (ci tornerà molto utile nell’operazione di cancellazione)
+
+### Equazione di ricorrenza
+$$
+\begin{cases}
+T(h)\leq T(h-1)+\theta(1) \\
+T(0)=\theta(1)
+\end{cases}
+$$
+Questo sistema rappresenta l’equazione di ricorrenza per le operazioni effettuate su un albero di ricerca. Nel **worst case** avremo che $T(h)=T(h-1)+\theta(1)$
 
 ---
 ## Stampare albero
 Stampando un albero di ricerca **in-order** avremo tutte le chiavi in ordine crescente
 
+![[Screenshot 2024-05-07 alle 16.41.22.png|200]]
 ```python
 def stampaABR(p):
 	if p != None:
@@ -32,5 +46,21 @@ def stampaABR(p):
 		print(p.key)
 		stampaABR(p.right)
 
-# 
+# 6 9 12 33 38 39 40 42 45 48 50 52 54 57 60 68
 ```
+
+---
+## Ricerca
+Quest’operazione è sostanzialmente identica a quella eseguita sugli alberi binari
+
+```python
+def ricerca(p, x):
+	if p==None: return False
+	if p.key==x: return True
+	if x <= p.key: return ricerca(p.left, x)
+	else: return ricerca(p.right, x)
+```
+
+---
+## Inserimento
+L’inserimento 
