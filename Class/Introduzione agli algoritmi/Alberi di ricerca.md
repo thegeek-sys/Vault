@@ -63,4 +63,28 @@ def ricerca(p, x):
 
 ---
 ## Inserimento
-L’inserimento 
+L’inserimento procede come segue:
+- si esegue une discesa che viene guidata dai valori memorizzati nei nodi che si incontrano lungo il cammino
+- quando si arriva al punto di voler proseguire la discesa verso un puntatore vuoto allora, in quella posizione, si aggiunge un nuovo nodo contenente il valore da inserire.
+
+Nella foto seguente viene mostrato il come viene esplorato l’albero nel caso in cui si volesse aggiungere $72$ ad un albero già esistente
+![[3C99BF95-6C66-4706-9DF9-C39099D45531.jpeg]]
+
+
+```python
+def inserimento(p, x):
+	z = NodoABR(x)
+	if p==None: return z
+	q = p
+	while True:
+		if x>p.key and p.right:
+			p = p.right
+		elif x<p.key and p.left:
+			p = p.left
+		else break
+	if x<p.key:
+		p.left = z
+	elif x>p.key:
+		p.right = z
+	return q
+```
