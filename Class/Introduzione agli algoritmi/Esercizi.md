@@ -333,8 +333,18 @@ def inserisci(p, A, x=0):
 Dato un puntatore alla radice di un albero binario di ricerca `p` e un elemento `x` in esso contenuto trovare il successivo, ovvero l’elemento più piccolo tra quelli maggiori di `x`
 ```python
 def es(p, x):
-	if p==None: return None
-	if x<p.key: es(p.left, x)
-	elif x>p.key: es(p.right, x)
-	else: return p.right.key
+	while p!=None:
+		if x<p.key: p = p.left
+		elif x>p.key: p = p.right
+		else: return p.right.key
+```
+
+## 2.
+Dato un puntatore alla radice di un albero binario di ricerca `p` e un elemento `x` in esso contenuto trovare il predecessore, ovvero l’elemento più grande tra quelli minori di `x`
+```python
+def es(p, x):
+	while p!=None:
+		if x<p.key: p = p.left
+		elif x>p.key: p = p.right
+		else: return p.right.key
 ```
