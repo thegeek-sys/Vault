@@ -21,3 +21,16 @@ Queste operazioni, nel caso in cui vengano effettuate su alberi bilanciati impie
 >[!hint]
 > Poiché sto operando su alberi binari di ricerca **bilanciati** per le operazioni che comportano il modificare la struttura, devo ricordarmi di **ribilnaciare** l’albero
 
+---
+## Stampare albero
+Stampando un albero di ricerca **in-order** avremo tutte le chiavi in ordine crescente
+
+```python
+def stampaABR(p):
+	if p != None:
+		stampaABR(p.left)
+		print(p.key)
+		stampaABR(p.right)
+
+# 
+```
