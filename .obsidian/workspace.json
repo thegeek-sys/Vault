@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "8f7d155bcca92b78",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,79 +22,79 @@
             }
           },
           {
-            "id": "f2c11d23151245b1",
+            "id": "6586a64e0c0b5f8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Memoria.md",
+                "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "317b8353809d7d28",
+            "id": "0cc6c18ccbf0ce28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4a8bccc9ecefa137",
+            "id": "f0269db8c55e7480",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
+                "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "336cbf6f9cbee81e",
+            "id": "0842992bcc87f120",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f84e85b35a6d1635",
+            "id": "db38e4179948a549",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d2cac6488958348a",
+            "id": "612e105e3eff1b32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "equals path:\"Programming languages/Java/\"",
+                "query": "scanner path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md"
+                "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md"
               }
             }
           },
@@ -223,6 +223,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -232,17 +233,18 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false,
-      "vscode-editor:Create Code File": false
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f84e85b35a6d1635",
+  "active": "6586a64e0c0b5f8b",
   "lastOpenFiles": [
-    "To-Do.md",
-    "Flet-notes/2024-05-07_MDP.md",
-    "Flet-notes/Untitled.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
+    "Flet-notes/2024-05-07_MDP.md",
+    "To-Do.md",
+    "Flet-notes/Untitled.md",
     "Files/Screenshot 2024-05-07 alle 09.37.26.png",
     "Programming languages/Java/MVC.md",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
@@ -276,10 +278,8 @@
     "Programming languages/Java/Untitled.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Flet-notes/2024-04-30_AE.md",
-    "Programming languages/Java/Classi anonime e lambda function.md",
     "Untitled.canvas",
     "Introduzione agli algoritmi",
     "Class/Architettura degli elaboratori/Esercizi",
