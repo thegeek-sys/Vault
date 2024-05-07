@@ -50,6 +50,27 @@ def stampaABR(p):
 ```
 
 ---
+## Massimo e minimo
+Dalla struttura stessa dell’albero di ricerca è facile capire che il massimo si trova nel nodo più a destra dell’albero
+
+```python
+def massimo(p):
+	q = p
+	while q.right:
+		q = q.right
+	return q.key
+```
+
+E che, al contrario, il minimo si trova nel nodo più a sinistra
+```python
+def minimo(p):
+	q = p
+	while q.left:
+		q = q.left
+	return q.key
+```
+
+---
 ## Ricerca
 Quest’operazione è sostanzialmente identica a quella eseguita sugli alberi binari
 
@@ -70,7 +91,6 @@ L’inserimento procede come segue:
 Nella foto seguente viene mostrato il come viene esplorato l’albero nel caso in cui si volesse aggiungere $72$ ad un albero già esistente
 ![[3C99BF95-6C66-4706-9DF9-C39099D45531.jpeg]]
 
-
 ```python
 def inserimento(p, x):
 	z = NodoABR(x)
@@ -88,3 +108,4 @@ def inserimento(p, x):
 		p.right = z
 	return q
 ```
+

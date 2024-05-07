@@ -304,7 +304,7 @@ def es(A):
 
 ---
 # ES.14
-Dato un puntatore ad un albero binario restituirlo sotto forma di vettore
+Dato un puntatore ad un albero binario di ricerca restituirlo sotto forma di vettore
 ![[59F7008D-4E70-4362-A492-746DFD3CF585.jpeg]]
 
 ```python
@@ -325,4 +325,16 @@ def inserisci(p, A, x=0):
 	A[x] = p.key
 	if p.left: inserisci(p.left, 2*x+1)
 	if p.right: inserisci(p.right, 2*x+2)
+```
+
+---
+# ES.15
+## 1.
+Dato un puntatore alla radice di un albero binario di ricerca `p` e un elemento `x` in esso contenuto trovare il successivo, ovvero l’elemento più piccolo tra quelli maggiori di `x`
+```python
+def es(p, x):
+	if p==None: return None
+	if x<p.key: es(p.left, x)
+	elif x>p.key: es(p.right, x)
+	else: return p.right.key
 ```

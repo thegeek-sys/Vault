@@ -46,48 +46,12 @@
             }
           },
           {
-            "id": "0cc6c18ccbf0ce28",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f0269db8c55e7480",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0842992bcc87f120",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db38e4179948a549",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
@@ -237,14 +201,16 @@
   },
   "active": "1ff74ae4a174753f",
   "lastOpenFiles": [
-    "Files/59F7008D-4E70-4362-A492-746DFD3CF585.jpeg",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Files/59F7008D-4E70-4362-A492-746DFD3CF585.jpeg",
     "Files/3C99BF95-6C66-4706-9DF9-C39099D45531.jpeg",
     "Files/Screenshot 2024-05-07 alle 16.48.47.png",
     "Files/Screenshot 2024-05-07 alle 16.41.22.png",
     "Files/Screenshot 2024-05-07 alle 16.29.47.png",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
     "Flet-notes/2024-05-07_MDP.md",
     "To-Do.md",
@@ -259,9 +225,7 @@
     "Files/Screenshot 2024-05-06 alle 17.01.09.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Files/Screenshot 2024-05-06 alle 16.58.29.png",
-    "Files/Screenshot 2024-05-06 alle 16.56.42.png",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
-    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
@@ -276,7 +240,6 @@
     "Users",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Untitled.md",
-    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Untitled.canvas",
