@@ -303,11 +303,26 @@ def es(A):
 ```
 
 ---
-# ES.13
-Si scriva lo pseudocodice, opportunamente commentato, di una funzione iterativa che, preso in input un array `A` di interi non nulli (positivi e negativi), ne sposti gli elementi in modo che gli interi negativi precedano gli interi positivi e restituisca poi l’array così modificato.
-Ad esempio per `A=[3,−5,−7,1,−8]` due possibili risposte corrette (ma ve ne sono altre) sono `A=[−8,−7,−5,1,3]` o `A=[−5,−8,−7,3,1]`.
-La funzione deve avere costo computazionale $O(n)$, dove $n$ è il numero di elementi presenti nell’array. Il costo in termini di spazio oltre l’array A deve essere $\theta(1)$ (in pratica non può far uso di array di appoggio).
-
----
 # ES.14
 Dato un puntatore ad un albero binario restituirlo sotto forma di vettore
+![[59F7008D-4E70-4362-A492-746DFD3CF585.jpeg]]
+
+```python
+def es(p):
+	if p==None: return []
+	h = altezza(p)
+	A=[None]*(2**(h+1))
+	inserisci(p, A)
+	return A
+
+def altezza(p):
+	if p==None: return -1
+	hs = altezza(p.left)
+	hd = altezza(p.right)
+	return max(hs, hd) + 1
+
+def inserisci(p, A, x=0):
+	A[x] = p.key
+	if p.left: inserisci(p.left, 2*x+1)
+	if p.right: inserisci(p.right, 2*x+2)
+```
