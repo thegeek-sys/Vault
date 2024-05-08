@@ -117,3 +117,5 @@ Si ha quindi:
 ![[Screenshot 2024-05-08 alle 18.59.06.png|470]]
 
 ---
+## Stallo dell’istruzione
+Talvolta però risulta necessario che l’istruzione debba attendere che sia pronto il dato prima di pote
