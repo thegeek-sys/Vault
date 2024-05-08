@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f7d155bcca92b78",
+            "id": "ecb6cd090c8cbd79",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,36 +22,48 @@
             }
           },
           {
-            "id": "6586a64e0c0b5f8b",
+            "id": "250b639eab25e6cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+                "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1ff74ae4a174753f",
+            "id": "f8ad5af2bd381568",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f0269db8c55e7480",
+            "id": "1c1d2d30c9c312d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+                "file": "Class/Architettura degli elaboratori/Pipeline.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "098b92fd659bff2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "To-Do.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scanner path:\"Programming languages/Java/\"",
+                "query": "write back",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Introduzione agli algoritmi/Esercizi.md"
+                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md"
               }
             }
           },
@@ -200,10 +212,20 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "1ff74ae4a174753f",
+  "active": "f8ad5af2bd381568",
   "lastOpenFiles": [
-    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+    "To-Do.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Pipeline.md",
+    "Class/Architettura degli elaboratori/System Calls.md",
+    "Files/Screenshot 2024-05-05 alle 19.06.38.png",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Esercizi/es2.md",
+    "Programming languages/Java/Enumerazioni.md",
+    "Programming languages/Java/Java.md",
+    "Flet-notes/2024-05-07_MDP.md",
+    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
@@ -212,24 +234,17 @@
     "Files/Screenshot 2024-05-07 alle 16.48.47.png",
     "Files/Screenshot 2024-05-07 alle 16.41.22.png",
     "Files/Screenshot 2024-05-07 alle 16.29.47.png",
-    "Class/Architettura degli elaboratori/Esercizi/es2.md",
-    "Flet-notes/2024-05-07_MDP.md",
-    "To-Do.md",
     "Flet-notes/Untitled.md",
     "Files/Screenshot 2024-05-07 alle 09.37.26.png",
     "Programming languages/Java/MVC.md",
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Files/52F9FB6A-CCDC-4002-8221-A8EA1ABC1FEF.jpeg",
     "Files/1AD189C0-C6E9-4C34-97CC-3FF4A41B64AB.jpeg",
-    "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Files/Screenshot 2024-05-06 alle 17.01.09.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Files/Screenshot 2024-05-06 alle 16.58.29.png",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Programming languages/Java/Tipi generici.md",
     "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Main.java",
@@ -239,10 +254,8 @@
     "Users/fla/Documents",
     "Users/fla",
     "Users",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Untitled.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
-    "Class/Architettura degli elaboratori/System Calls.md",
     "Untitled.canvas",
     "Introduzione agli algoritmi",
     "Class/Architettura degli elaboratori/Esercizi",
