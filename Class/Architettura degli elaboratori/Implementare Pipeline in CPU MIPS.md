@@ -42,3 +42,5 @@ CPU nella sua totalità completa di segnali di controllo uscenti dalla porzione 
 
 ---
 ## Scoprire un data hazard in EXE
+Immaginiamo di avere questa sequenza di istruzioni:
+![[Screenshot 2024-05-05 alle 17.41.24 1.png]]

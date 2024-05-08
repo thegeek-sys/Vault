@@ -120,8 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -214,6 +213,8 @@
   },
   "active": "f8ad5af2bd381568",
   "lastOpenFiles": [
+    "Files/Screenshot 2024-05-05 alle 17.41.24 1.png",
+    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
@@ -239,8 +240,6 @@
     "Programming languages/Java/MVC.md",
     "Files/52F9FB6A-CCDC-4002-8221-A8EA1ABC1FEF.jpeg",
     "Files/1AD189C0-C6E9-4C34-97CC-3FF4A41B64AB.jpeg",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
-    "Files/Screenshot 2024-05-06 alle 17.01.09.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
@@ -255,7 +254,6 @@
     "Users/fla",
     "Users",
     "Programming languages/Java/Untitled.md",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Untitled.canvas",
     "Introduzione agli algoritmi",
     "Class/Architettura degli elaboratori/Esercizi",
