@@ -118,4 +118,5 @@ Si ha quindi:
 
 ---
 ## Stallo dell’istruzione
-Talvolta però risulta necessario che l’istruzione debba attendere che sia pronto il dato prima di pote
+Talvolta però risulta necessario che l’istruzione debba attendere che sia pronto il dato prima di poter effettuare un forwarding. 
+Per 
