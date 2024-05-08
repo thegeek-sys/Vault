@@ -59,7 +59,7 @@ Questo veloce esempio ci fa subito capire quali siano le casistiche che ci porta
 Il primo hazard generato dall’esempio è quello tra `sub $2,$1,$3` e `and $12,$2,$5`. Tale hazard può essere rilevato quando l’istruzione `and` si trova allo stadio EX e l’istruzione precedente si trova nello stadio MEM; si tratta quindi di un hazard di tipo 1 $\text{EX/MEM.RegistroRd}=\text{ID/EX.RegistroRs}=\$2$
 
 Ma dato che **non tutte le istruzioni scrivono il risultato nel register file**, questa strategia non è precise e potrebbero esserci casi in cui viene propagato un dato anche se non è necessario.
-Una possibile soluzione consiste nel verificare se il segnale **`RegWrite` è attivo** nella porzione dei registri della pipelien $\text{EX/MEM}$ e $\text{MEM/WB}$. E’ da ricordare inoltre che l’architettura MIPS richiede che il registro `$0` contenga sempre 0. Se dunque nella pipeline si abbia `$0` come registro di destinazione, si cerca di evitare che il risultato dell’operazione sia propagato in avanti.
+Una possibile soluzione consiste nel verificare se il segnale **`RegWrite` è attivo** nella porzione dei registri della pipeline $\text{EX/MEM}$ e $\text{MEM/WB}$. E’ da ricordare inoltre che l’architettura MIPS richiede che il registro `$0` contenga sempre 0. Se dunque nella pipeline si abbia `$0` come registro di destinazione, si cerca di evitare che il risultato dell’operazione sia propagato in avanti.
 
 Se possiamo quindi prendere gli input della ALU non solo dal registro $\text{ID/EX}$ ma anche dagli altri registri della pipeline allora possiamo propagare i dati corretti, ciò lo faccio attraverso dei MUX sugli ingressi della ALU.
 
@@ -70,4 +70,33 @@ Dunque si ha un **data-hazard in EXE** quando:
 > Aggiungo anche `MemRead==0` poiché nel caso di operazioni immediate:
 > ![[Screenshot 2024-05-08 alle 18.09.08.png]]
 > In questo caso infatti quella che dovrebbe essere la parte dell’istruzione immediata di `lw`, vista come `rd`, risulta essere uguale a `rs` dell’`add` facendoci ricadere nel caso 1a (non considerando MemRead)
+
+
+Viene dunque implementata in questo modo la propagazione su EXE
+![[Screenshot 2024-05-08 alle 18.16.26.png|580]]
+con i seguenti segnali di controllo
+
+| Segnale multiplexer | Sorgente | Spiegazione                                                                                             |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| PropagaA = 00       | ID/EX    | Il primo operando della ALU proviene dal register file                                                  |
+| PropagaA = 10       | EX/MEM   | Il primo operando della ALU viene propagato dal risultato della ALU nel ciclo di clock precedente       |
+| PropagaA = 01       | MEM/WB   | Il primo operando della ALU viene propagato dalla memoria dati o da un precedente risultato della ALU   |
+| PropagaB = 00       | ID/EX    | Il secondo operando della ALU proviene dal register file                                                |
+| PropagaB = 10       | EX/MEM   | Il secondo operando della ALU viene propagato dal risultato della ALU nel ciclo di clock precedente     |
+| PropagaB = 01       | MEM/WB   | Il secondo operando della ALU viene propagato dalla memoria dati o da un precedente risultato della ALU |
+
+### Realizzare il forwarding in EXE
+**Modifiche al data path** → inserire MUX prima della ALU per selezionare i 3 casi:
+- *non c’è forwarding*
+	il valore per la ALU viene dal registro **ID/EX** della pipeline
+- *forwarding dall’istruzione precedente*
+	il valore per la ALU viene dal registro **EX/MEM** della precedente
+- *forwarding da 2 istruzioni precedenti*
+	il valore per la ALU viene dal registro **MEM/WB** della precedente
+
+Questo vale sia per il primo che per il secondo argomento della ALU
+
+>[!warning] E' possibile realizzare il forwarding anche:
+>- nella fase ID → necessario solo se la `beq` viene anticipata in ID
+>- nella fase MEM → necessario SOLO se `lw $rt...`, è subito seguita da `sw $rt...`, se `sw` è preceduta da tipo R il forwarding avviene in fase EXE
 
