@@ -98,5 +98,9 @@ Questo vale sia per il primo che per il secondo argomento della ALU
 
 >[!warning] E' possibile realizzare il forwarding anche:
 >- nella fase ID → necessario solo se la `beq` viene anticipata in ID
->- nella fase MEM → necessario SOLO se `lw $rt...`, è subito seguita da `sw $rt...`, se `sw` è preceduta da tipo R il forwarding avviene in fase EXE
+>- nella fase MEM → necessario SOLO se `lw $rd...`, è subito seguita da `sw $rd...`, se `sw` è preceduta da tipo R il forwarding avviene in fase EXE
 
+---
+## Realizzare il forwarding in MEM (lw/sw)
+Un data hazard in MEM, come visto nel callout precedente, lo si ha solamente quando viene fatto in sequenza un `lw` e uno `sw` su uno stesso registro `$rd`.
+Questo viene fatto quando vogliamo spostare un valore dalla memoria e posizionarlo in un altro valore della memoria. Una sorta di swap di valori in memoria.
