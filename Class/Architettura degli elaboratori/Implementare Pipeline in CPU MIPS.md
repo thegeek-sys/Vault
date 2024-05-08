@@ -129,3 +129,12 @@ Questa “pausa“ viene eseguita attraverso l’ausilio di istruzioni che non p
 Dunque se identifichiamo l’hazard nello stadio ID, possiamo inserire nella pipeline una “bolla” mettendo tutti i campi a zero.
 
 Nell’esempio riportato, l’hazard costringe le istruzioni `and` e `or` a ripetere nel quarto ciclo di clock ciò che avevano fatto nel terzo ciclo
+![[Screenshot 2024-05-08 alle 19.20.51.png]]
+
+### Eseguire uno stallo
+In sintesi per aggiungere uno stallo (nella fase ID), dobbiamo:
+- **annullare l'istruzione che deve attendere** (bolla); il che implica azzerare segnali di controllo `MemWrite` e `RegWrite` nonché $\text{IF/ID.Istruzione}$
+- **rileggere la stessa istruzione** nuovamente affinché possa essere rieseguita un ciclo di clock dopo, devo quindi **impedire che il PC si aggiorni**
+
+### La CPU fino a questo momento
+![[Screenshot 2024-05-08 alle 19.26.03.png]]
