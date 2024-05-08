@@ -119,4 +119,11 @@ Si ha quindi:
 ---
 ## Stallo dell’istruzione
 Talvolta però risulta necessario che l’istruzione debba attendere che sia pronto il dato prima di poter effettuare un forwarding. 
-Per 
+
+Guardiamo il seguente esempio:
+![[Screenshot 2024-05-08 alle 19.05.47.png]]
+
+Come possiamo notare in questo caso il risultato della prima istruzione `lw` non è pronto prima della fase MEM il che vuol dire che bisognerà mettere aggiungere uno stallo. Se l’istruzione nello stadio ID viene messa in stallo, anche l’istruzione nello stadio IF deve essere messa in stallo, altrimenti l’istruzione prelevata nella fase di fetch precedente andrebbe persa. Per impedire a queste due istruzioni di procedere basta impedire la **modifica del PC e del registro di pipeline IF/ID**.
+Questa “pausa“ viene eseguita attraverso l’ausilio di istruzioni che non producono effetti dette **nop** (not operation). Tra le nop troviamo l’impostare tutti i campi a 0
+
+Dunque se identifichiamo l’hazard nello stadio ID, possiamo inserire nella pipeline una “bolla” mettendo tutti i campi a zero
