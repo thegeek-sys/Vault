@@ -104,3 +104,5 @@ Questo vale sia per il primo che per il secondo argomento della ALU
 ## Realizzare il forwarding in MEM (lw/sw)
 Un data hazard in MEM, come visto nel callout precedente, lo si ha solamente quando viene fatto in sequenza un `lw` e uno `sw` su uno stesso registro `$rd`.
 Questo viene fatto quando vogliamo spostare un valore dalla memoria e posizionarlo in un altro valore della memoria. Una sorta di swap di valori in memoria.
+
+![[Screenshot 2024-05-08 alle 18.51.27.png]]
