@@ -43,4 +43,16 @@ CPU nella sua totalità completa di segnali di controllo uscenti dalla porzione 
 ---
 ## Scoprire un data hazard in EXE
 Immaginiamo di avere questa sequenza di istruzioni:
-![[Screenshot 2024-05-05 alle 17.41.24 1.png]]
+![[Screenshot 2024-05-08 alle 16.38.51.png]]
+
+In questo caso, nonostante tutte le istruzioni utilizzino il registro `$2` le uniche istruzioni che avranno il risultato corretto di `sub` saranno `add` e `sw` in quanto le altre due leggerebbero solamente il valore precedentemente immagazinato in `$2`.
+
+Ma risulta facile capire come il risultato dell’istruzione `sub` sia disponibile già al termine della fase EX. Ma quando hanno realmente bisogno l’istruzione `and` e `or` del dato? Hanno bisogno del dato di `$2` solamente all’inizio della fase EX (cc 4 e 5), di conseguenza è possibile eseguire questo frammento di codice senza stalli semplicemente **propagando** il dato a qualsiasi unità lo richieda non appena è disponibile.
+
+Questo veloce esempio ci fa subito capire quali siano le casistiche che ci portano ad un data hazard in EXE:
+1. $\text{EX/MEM.RegistroRd}=\text{ID/EX.RegistroRs}$
+2. $\text{EX/MEM.RegistroRd}=\text{ID/EX.RegistroRt}$
+3. $\text{MEM/WB.RegistroRd}=\text{ID/EX.RegistroRs}$
+4. $\text{MEM/WB.RegistroRd}=\text{ID/EX.RegistroRt}$
+
+Il primo hazard generato dall’esempio è quello tra `sub $2,$1,$3` e `and $12,$2,$5`. Tale hazard può essere rilevato quando l’istruzione `and` si trova allo stadio EX e l’istruzione precedente si trova nello stadio MEM; si tratta quindi di un hazard di tipo 1 $\text{EX/MEM.RegistroRd}=\text{ID/EX.RegistroRs}=\$2$
