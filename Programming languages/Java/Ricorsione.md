@@ -5,6 +5,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Esempio|Esempio]]
+- [[#Come funziona la ricorsione?|Come funziona la ricorsione?]]
+- [[#Mutua ricorsione|Mutua ricorsione]]
+	- [[#Mutua ricorsione#Esempio|Esempio]]
+
+---
 ## Introduction
 La ricorsione serve per risolvere problemi dei quali si può ridurre la dimensione fino ad arrivare a dei casi noti.
 In particolar mod, dato un problema bisogna identificare:
@@ -59,3 +67,25 @@ public class NumeroNonAmmessoException extends Exception {
 }
 ```
 
+---
+## Mutua ricorsione
+A volte può verificarsi il caso in cui il metodo `a` richiami `b` e `b`, a sua volta, richiami `a`. Questo meccanismo di reciproca chiamata dei metodi è detto di **mutua ricorsione**.
+Ovviamente è sempre necessario stabilire **uno o più** casi base, onde evitare un ciclo infinito di chiamate tra `a` e `b`.
+
+### Esempio
+Scrivere una classe che, data una lista di interi, controlli ricorsivamente se ciascun numero in posizione pari sia dispari e ciascun numero in posizione dispari sia pari
+```java
+public class PariDispari {
+	public boolean pariDispari(ArrayList<Integer> l) {
+		return pariDispari(l, 0);
+	}
+	private boolean pariDispari(ArrayList<Integer> l, int k) {
+		if (k == l.size()) return true;
+		return (l.get(k) % 2 == 0) %% dispariPari(l, k+1);
+	}
+	private boolean dispariPari(ArrayList<Integer> l, int k) {
+		if (k == l.size()) return true;
+		return (l.get(k) % 2 == 1) && pariDispari(l, k+1);
+	}
+}
+```

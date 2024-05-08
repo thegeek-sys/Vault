@@ -106,8 +106,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "398327c4c411f7de",
@@ -193,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -268,7 +267,7 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "f84e85b35a6d1635",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
     "Programming languages/Java/Ricorsione.md",
     "Flet-notes/2024-05-07_MDP.md",
