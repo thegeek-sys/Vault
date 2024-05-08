@@ -85,7 +85,7 @@ con i seguenti segnali di controllo
 | PropagaB = 10       | EX/MEM   | Il secondo operando della ALU viene propagato dal risultato della ALU nel ciclo di clock precedente     |
 | PropagaB = 01       | MEM/WB   | Il secondo operando della ALU viene propagato dalla memoria dati o da un precedente risultato della ALU |
 
-### Realizzare il forwarding in EXE
+### Realizzare il forwarding in per data hazard in EXE
 **Modifiche al data path** → inserire MUX prima della ALU per selezionare i 3 casi:
 - *non c’è forwarding*
 	il valore per la ALU viene dal registro **ID/EX** della pipeline
