@@ -101,8 +101,10 @@ Questo vale sia per il primo che per il secondo argomento della ALU
 >- nella fase MEM → necessario SOLO se `lw $rd...`, è subito seguita da `sw $rd...`, se `sw` è preceduta da tipo R il forwarding avviene in fase EXE
 
 ---
-## Realizzare il forwarding in MEM (lw/sw)
+## Scoprire data hazard in MEM (lw/sw)
 Un data hazard in MEM, come visto nel callout precedente, lo si ha solamente quando viene fatto in sequenza un `lw` e uno `sw` su uno stesso registro `$rd`.
 Questo viene fatto quando vogliamo spostare un valore dalla memoria e posizionarlo in un altro valore della memoria. Una sorta di swap di valori in memoria.
 
 ![[Screenshot 2024-05-08 alle 18.51.27.png]]
+
+Di un data hazard di questo tipo ce ne accorgiamo quando una operazione precedente tenta 
