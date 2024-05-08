@@ -65,3 +65,7 @@ Se possiamo quindi prendere gli input della ALU non solo dal registro $\text{ID/
 
 Dunque si ha un **data-hazard in EXE** quando:
 ![[Screenshot 2024-05-08 alle 18.04.18.png]]
+
+> [!hint]
+> Aggiungo anche `MemRead==0` poiché nel caso di operazioni immediate:
+> ![[Screenshot 2024-05-08 alle 18.09.08.png]]
