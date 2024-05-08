@@ -60,3 +60,4 @@ Il primo hazard generato dall’esempio è quello tra `sub $2,$1,$3` e `and $12,
 
 Ma dato che **non tutte le istruzioni scrivono il risultato nel register file**, questa strategia non è precise e potrebbero esserci casi in cui viene propagato un dato anche se non è necessario.
 Una possibile soluzione consiste nel verificare se il segnale **`RegWrite` è attivo** nella porzione dei registri della pipelien $\text{EX/MEM}$ e $\text{MEM/WB}$. E’ da ricordare inoltre che l’architettura MIPS richiede che il registro `$0` contenga sempre 0. Se dunque nella pipeline si abbia `$0` come registro di destinazione, si cerca di evitare che il risultato dell’operazione sia propagato in avanti.
+
