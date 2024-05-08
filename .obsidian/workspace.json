@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Ricorsione.md",
+                "file": "Flet-notes/2024-05-07_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Ricorsione.md",
+                "file": "Flet-notes/2024-05-07_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,7 +233,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Ricorsione.md"
+                "file": "Flet-notes/2024-05-07_MDP.md"
               }
             }
           },
@@ -268,10 +268,10 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "680e8d2ca9d68c72",
+  "active": "f84e85b35a6d1635",
   "lastOpenFiles": [
-    "Flet-notes/2024-05-07_MDP.md",
     "Programming languages/Java/Ricorsione.md",
+    "Flet-notes/2024-05-07_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Enumerazioni.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
