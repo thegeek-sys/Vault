@@ -120,8 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -214,6 +213,7 @@
   },
   "active": "3ea7c75cf3ff145f",
   "lastOpenFiles": [
+    "Files/Pasted image 20240509122743.png",
     "Programming languages/Java/Enumerazioni.md",
     "Flet-notes/2024-05-09_MDP.md",
     "Programming languages/Java/Ricorsione.md",
@@ -249,7 +249,6 @@
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Flet-notes/Untitled.md",
-    "Programming languages/Java/MVC.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
     "Users/fla/Documents/Vault",
