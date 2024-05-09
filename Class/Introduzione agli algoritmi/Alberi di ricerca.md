@@ -150,5 +150,15 @@ def canc(p,x):
 	# sinistri, rami destri o entrambi
 	s = None
 	# ho ramo sinistro 
-	if p.left!=None
+	if p.left!=None:
+		s=q.left
+		s.parent=q.parent
+	if q.right!=None:
+		s=q.right
+		s.parent=q.parent
+	if q.parent.left==q:
+		q.parent.left=s
+	else:
+		q.parent.right=s
+	return p
 ```
