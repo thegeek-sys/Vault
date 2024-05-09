@@ -120,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -213,9 +214,10 @@
   },
   "active": "3ea7c75cf3ff145f",
   "lastOpenFiles": [
+    "Pasted image 20240509123047.png",
     "Files/Pasted image 20240509122743.png",
-    "Programming languages/Java/Enumerazioni.md",
     "Flet-notes/2024-05-09_MDP.md",
+    "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Ricorsione.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Tipi generici.md",
@@ -239,7 +241,6 @@
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Files/Screenshot 2024-05-08 alle 18.16.26.png",
     "Files/Screenshot 2024-05-08 alle 18.09.08.png",
-    "Files/Screenshot 2024-05-08 alle 18.04.18.png",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
