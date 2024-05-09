@@ -111,3 +111,15 @@ def inserimento(p, x):
 
 ---
 ## Cancellazione
+Per eliminare un nodo in un albero binario di ricerca distinguiamo essenzialmente 3 caso in funzione del numero di figli che ha il nodo da cancellare
+1. l’elemento da cancellare è una foglia → lo si elimina ponendo a `None` l’opportuno campo nel nodo padre
+2. se il nodo ha un unico figlio → si collegano direttamente fra loro suo padre e il suo unico figlio (indipendentemente che sia sinistro o destro)
+3. se il nodo ha entrambi i figli → si cancella il suo valore sostituendolo con quello del figlio sinistro e si scende a cancellare il figlio di sinistra
+
+```python
+def canc(p,x):
+	if p==None or (p.key==x and p.left==p.right==None):
+		return None
+	if p.key==x and p.left==None:
+		p.right.parent=None
+```
