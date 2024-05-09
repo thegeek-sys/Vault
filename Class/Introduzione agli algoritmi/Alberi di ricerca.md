@@ -109,3 +109,5 @@ def inserimento(p, x):
 	return q
 ```
 
+---
+## Cancellazione

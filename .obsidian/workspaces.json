@@ -235,7 +235,6 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
-            "dimension": 99.99999999999999,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -264,54 +263,6 @@
                 }
               },
               {
-                "id": "f2c11d23151245b1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Memoria.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "317b8353809d7d28",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Tipi generici.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "4a8bccc9ecefa137",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Strutture dati.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "336cbf6f9cbee81e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Java/Interfacce note.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
@@ -329,7 +280,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Enumerazioni.md",
+                    "file": "Flet-notes/2024-05-09_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -348,7 +299,7 @@
                 }
               }
             ],
-            "currentTab": 8
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -415,7 +366,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Flet-notes/2024-05-09_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -432,7 +383,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Java.md",
+                    "file": "Flet-notes/2024-05-09_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -455,7 +406,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Java.md"
+                    "file": "Flet-notes/2024-05-09_MDP.md"
                   }
                 }
               },
@@ -490,8 +441,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "39d805ea6ffbd4c1",
-      "mtime": "2024-05-09T08:58:20+02:00"
+      "active": "3ea7c75cf3ff145f",
+      "mtime": "2024-05-09T15:38:11+02:00"
     },
     "Python": {
       "main": {
@@ -902,5 +853,5 @@
       "mtime": "2024-05-09T12:18:09+02:00"
     }
   },
-  "active": "Java"
+  "active": "Introduzione agli algoritmi"
 }
