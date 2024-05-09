@@ -132,7 +132,7 @@ def canc(p,x):
 	# non è uno dei primi due casi
 	# quindi cerco x dentro l'albero
 	q=p
-	while q!=None and p.key!=x:
+	while q!=None and q.key!=x:
 		if x<q.key: q=q.left
 		else: q=q.right
 	
@@ -149,8 +149,8 @@ def canc(p,x):
 	# uscito dal while non so se perché non ho più rami
 	# sinistri, rami destri o entrambi
 	s = None
-	# ho ramo sinistro 
-	if p.left!=None:
+	# ho ramo sinistro e linko il ramo sinistro di q
+	if q.left!=None:
 		s=q.left
 		s.parent=q.parent
 	if q.right!=None:
