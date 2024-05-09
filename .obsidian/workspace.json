@@ -6,7 +6,6 @@
       {
         "id": "6fa49714e6656508",
         "type": "tabs",
-        "dimension": 52.75175644028103,
         "children": [
           {
             "id": "39d805ea6ffbd4c1",
@@ -35,54 +34,6 @@
             }
           },
           {
-            "id": "f2c11d23151245b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Memoria.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "317b8353809d7d28",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a8bccc9ecefa137",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "336cbf6f9cbee81e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
@@ -100,19 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Enumerazioni.md",
+                "file": "Flet-notes/2024-05-09_MDP.md",
                 "mode": "source",
                 "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "398327c4c411f7de",
-        "type": "tabs",
-        "dimension": 47.24824355971897,
-        "children": [
+          },
           {
             "id": "f84e85b35a6d1635",
             "type": "leaf",
@@ -125,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -192,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/2024-05-09_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Flet-notes/2024-05-09_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Flet-notes/2024-05-09_MDP.md"
               }
             }
           },
@@ -267,13 +212,20 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "3ea7c75cf3ff145f",
   "lastOpenFiles": [
-    "Programming languages/Java/Ricorsione.md",
-    "Flet-notes/2024-05-07_MDP.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/Enumerazioni.md",
+    "Flet-notes/2024-05-09_MDP.md",
+    "Programming languages/Java/Ricorsione.md",
+    "Programming languages/Java/Interfacce note.md",
+    "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/Memoria.md",
+    "Programming languages/Java/Java.md",
+    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+    "Flet-notes/2024-05-07_MDP.md",
     "Files/Screenshot 2024-05-08 alle 19.26.03.png",
     "Class/Architettura degli elaboratori/Untitled.md",
     "Files/Screenshot 2024-05-08 alle 19.20.51.png",
@@ -290,22 +242,15 @@
     "Files/Screenshot 2024-05-08 alle 18.04.18.png",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
-    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
-    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Flet-notes/Untitled.md",
     "Programming languages/Java/MVC.md",
-    "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Programming languages/Java/Tipi generici.md",
-    "Flet-notes/2024-05-02_MDP.md",
     "Programming languages/Java/Main.java",
     "Users/fla/Documents/Vault",
     "Users/fla/Documents",

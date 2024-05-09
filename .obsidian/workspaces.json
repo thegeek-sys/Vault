@@ -225,7 +225,7 @@
         }
       },
       "active": "f8ad5af2bd381568",
-      "mtime": "2024-05-08T21:32:04+02:00"
+      "mtime": "2024-05-09T11:23:59+02:00"
     },
     "Java": {
       "main": {
@@ -235,6 +235,7 @@
           {
             "id": "6fa49714e6656508",
             "type": "tabs",
+            "dimension": 99.99999999999999,
             "children": [
               {
                 "id": "39d805ea6ffbd4c1",
@@ -248,6 +249,18 @@
                     "source": false
                   },
                   "pinned": true
+                }
+              },
+              {
+                "id": "680e8d2ca9d68c72",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Ricorsione.md",
+                    "mode": "source",
+                    "source": false
+                  }
                 }
               },
               {
@@ -299,18 +312,6 @@
                 }
               },
               {
-                "id": "f84e85b35a6d1635",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-05-07_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
@@ -333,9 +334,21 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "f84e85b35a6d1635",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-05-07_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 7
+            "currentTab": 8
           }
         ],
         "direction": "vertical"
@@ -402,7 +415,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Enumerazioni.md",
+                    "file": "Programming languages/Java/Java.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -419,7 +432,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Enumerazioni.md",
+                    "file": "Programming languages/Java/Java.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -442,7 +455,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Enumerazioni.md"
+                    "file": "Programming languages/Java/Java.md"
                   }
                 }
               },
@@ -477,8 +490,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "3ea7c75cf3ff145f",
-      "mtime": "2024-05-08T16:41:04+02:00"
+      "active": "39d805ea6ffbd4c1",
+      "mtime": "2024-05-09T08:58:20+02:00"
     },
     "Python": {
       "main": {
@@ -743,7 +756,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -810,7 +823,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -827,7 +840,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -850,7 +863,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md"
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md"
                   }
                 }
               },
@@ -885,8 +898,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "1ff74ae4a174753f",
-      "mtime": "2024-05-08T10:29:44+02:00"
+      "active": "f0269db8c55e7480",
+      "mtime": "2024-05-09T12:18:09+02:00"
     }
   },
   "active": "Java"
