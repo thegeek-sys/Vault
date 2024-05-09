@@ -120,6 +120,35 @@ Per eliminare un nodo in un albero binario di ricerca distinguiamo essenzialment
 def canc(p,x):
 	if p==None or (p.key==x and p.left==p.right==None):
 		return None
+	
 	if p.key==x and p.left==None:
 		p.right.parent=None
+		return p.right
+	
+	if p.key==x and p.right==None:
+		p.left.parent=None
+		return p.left
+	
+	# non è uno dei primi due casi
+	# quindi cerco x dentro l'albero
+	q=p
+	while q!=None and p.key!=x:
+		if x<q.key: q=q.left
+		else: q=q.right
+	
+	# caso x non presente nell'albero
+	if q==None: return p
+	
+	# finché ha due figli faccio risalire il contenuto
+	# del figlio di sinistra e scendi fino ad arrivare
+	# ad un nodo con al più un figlio che andrà cancellato
+	while q.left!=None and q.right!=None:
+		q.key=q.left.key
+		q=q.left
+	
+	# uscito dal while non so se perché non ho più rami
+	# sinistri, rami destri o entrambi
+	s = None
+	# ho ramo sinistro 
+	if p.left!=None
 ```
