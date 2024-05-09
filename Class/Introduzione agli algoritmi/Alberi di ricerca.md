@@ -147,18 +147,25 @@ def canc(p,x):
 		q=q.left
 	
 	# uscito dal while non so se perché non ho più rami
-	# sinistri, rami destri o entrambi
+	# sinistri, rami destri o entrambi quindi in s
+	# sgnalo se q va cancellato, bypassato a sinistra o
+	# bypassato a destra
 	s = None
-	# ho ramo sinistro e linko il ramo sinistro di q
+	
+	# bypasso q a sinistra
 	if q.left!=None:
 		s=q.left
 		s.parent=q.parent
+	
+	# bypasso q a destra
 	if q.right!=None:
 		s=q.right
 		s.parent=q.parent
+	
 	if q.parent.left==q:
 		q.parent.left=s
 	else:
 		q.parent.right=s
+	
 	return p
 ```
