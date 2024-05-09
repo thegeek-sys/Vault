@@ -162,6 +162,8 @@ def canc(p,x):
 		s=q.right
 		s.parent=q.parent
 	
+	# sostituisco il riferimento tra il padre di q e q stesso con s
+	# in modo tale da concludere il bypass oppure cancellare q
 	if q.parent.left==q:
 		q.parent.left=s
 	else:
