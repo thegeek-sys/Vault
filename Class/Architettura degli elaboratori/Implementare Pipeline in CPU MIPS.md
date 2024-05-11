@@ -140,6 +140,12 @@ In sintesi per aggiungere uno stallo (nella fase ID), dobbiamo:
 ![[Screenshot 2024-05-08 alle 19.26.03.png]]
 
 ---
+## Anticipare il Jump
+E’ possibile anche anticipare il jump alla fase IF, per farlo occorre:
+- anticipare il riconoscimento dell’istruzione (attraverso un comparatore con il valore dell’Opcode di `j` ovvero `000010`)
+- spostare la logica di aggiornamento del PC alla fase IF
+
+---
 ## Control Hazard
 Oltre ad hazard che coinvolgono le operazioni aritmetiche ci sono anche hazard che coinvolgono i **salti condizionati**.
 
@@ -159,3 +165,4 @@ Per quanto riguarda la decisione sul salto, nel caso di branch equal, si deve co
 >Dobbiamo comunque tenere a mente che anticipare questa decisione ad ID implica l’aggiunta di altra di propagazione e di rilevazione degli hazard, dato che la decisione sul salto dai dati contenuti dentro la pipeline, dovremo assicurare che la branch funzioni correttamente anche con questa ottimizzazione.
 
 Questa miglioria ci permette di scartare una sola istruzione invece di due (cioè quella che si trova nella fase di fetch). L’eliminazione viene effettuata da un segnale di *flush* che azzera la parte del registro di pipeline $\text{IF/ID}$ che contiene l’istruzione, rendendo l’operazione una cosiddetta `nop` (istruzione che non fa nulla)
+![[Screenshot 2024-05-11 alle 17.46.40.png]]
