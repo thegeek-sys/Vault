@@ -27,6 +27,7 @@
 - [ ] determinare operazione eseguita tramite i 32 bit del jump alla slide 24
 - [x] rifare esame 3 (che funzioni !!)
 - [x] fare esercizio slide 11 ppt13 (vj)
+- [ ] ricordarsi che con `li` si ha risultato in exe
 
 ## Calcolo integrale
 - [x] farsi spiegare $\lim\limits_{x\to\infty} \frac{f(x)-T_{n}(x-x_{0})}{|x-x_0|^n}$

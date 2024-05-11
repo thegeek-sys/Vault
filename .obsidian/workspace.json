@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                "file": "To-Do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                "file": "To-Do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md"
+                "file": "To-Do.md"
               }
             }
           },
@@ -222,8 +222,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f8ad5af2bd381568",
+  "active": "098b92fd659bff2b",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
@@ -238,7 +239,6 @@
     "Programming languages/Java/Memoria.md",
     "Programming languages/Java/Java.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Flet-notes/2024-05-07_MDP.md",
     "Files/Screenshot 2024-05-08 alle 19.26.03.png",
     "Class/Architettura degli elaboratori/Untitled.md",
