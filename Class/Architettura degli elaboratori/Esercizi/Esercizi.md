@@ -60,3 +60,4 @@ Scrivere un programma in assembly che, data una matrice bidimensionale quadrata 
 
 ---
 ## 11/05
+[Pipeline](https://github.com/sapienzastudentsnetwork/architettura-degli-elaboratori/discussions/79)
