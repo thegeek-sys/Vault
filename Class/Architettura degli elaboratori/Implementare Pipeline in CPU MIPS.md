@@ -154,3 +154,8 @@ Per farlo devo anticipare due azioni:
 2. la **valutazione se saltare o meno**
 Per il calcolo dell’indirizzo di destinazione, dato che il contenuto del PC è già disponibile, mi è sufficiente spostare il sommatore che calcola l’indirizzo di salto dalla fase EXE alla fase ID
 Per quanto riguarda la decisione sul salto, nel caso di branch equal, si deve confrontare l’uguaglianza del contenuto dei due registri letti durante la fase di ID (lo si può fare mettendo in uno XOR i bit corrispondenti del contenuto dei registri, e mandare tutti i risultati in un OR, se il risultato sarà un 1 i registri sono diversi, altrimenti sono uguali).
+
+>[!warning]
+>Dobbiamo comunque tenere a mente che anticipare questa decisione ad ID implica l’aggiunta di altra di propagazione e di rilevazione degli hazard, dato che la decisione sul salto dai dati contenuti dentro la pipeline, dovremo assicurare che la branch funzioni correttamente anche con questa ottimizzazione.
+
+Questa miglioria ci permette di scartare una sola istruzione invece di due (cioè quella che si trova nella fase di fetch). L’eliminazione viene effettuata da un segnale di *flush* che azzera la parte del registro di pipeline $\text{IF/ID}$ che contiene l’istruzione, rendendo l’operazione una cosiddetta `nop` (istruzione che non fa nulla)
