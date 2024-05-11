@@ -170,5 +170,13 @@ Per quanto riguarda la decisione sul salto, nel caso di branch equal, si deve co
 >[!warning]
 >Dobbiamo comunque tenere a mente che anticipare questa decisione ad ID implica l’aggiunta di altra di propagazione e di rilevazione degli hazard, dato che la decisione sul salto dai dati contenuti dentro la pipeline, dovremo assicurare che la branch funzioni correttamente anche con questa ottimizzazione.
 
-Questa miglioria ci permette di scartare una sola istruzione invece di due (cioè quella che si trova nella fase di fetch). L’eliminazione viene effettuata da un segnale di *flush* che azzera la parte del registro di pipeline $\text{IF/ID}$ che contiene l’istruzione, rendendo l’operazione una cosiddetta `nop` (istruzione che non fa nulla)
+Questa miglioria ci permette di scartare una sola istruzione invece di due (cioè quella che si trova nella fase di fetch). L’eliminazione viene effettuata da un segnale di *flush* che azzera la parte del registro di pipeline $\text{IF/ID}$ che contiene l’istruzione, rendendo l’operazione una cosiddetta `nop` (istruzione che non fa nulla) e inoltre bisogna azzerare $\text{ID/EXE.MemWrite}$, $\text{IF/EXE.RegWrite}$ e $\text{MemRead}$ in modo tale da non modificare memoria o registri
+
 ![[Screenshot 2024-05-11 alle 17.46.40.png]]
+
+### Svantaggi
+L’abbassamento del numero di stalli nel caso di predizione sbagliata (da 2 a 1) però non è gratuito. Questo infatti significa che anche la fase in cui `bne` e `beq` necessitano dei dati viene anticipata da EXE a ID
+
+![[Screenshot 2024-05-11 alle 18.01.49.png]]
+![[Screenshot 2024-05-11 alle 18.02.21.png]]
+
