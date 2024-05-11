@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -224,6 +223,10 @@
   },
   "active": "250b639eab25e6cc",
   "lastOpenFiles": [
+    "Pasted image 20240509123047.png",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Files/Screenshot 2024-05-11 alle 14.03.30.png",
+    "Files/Screenshot 2024-05-11 alle 14.03.04.png",
     "To-Do.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
@@ -231,7 +234,6 @@
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Flet-notes/2024-05-09_MDP.md",
-    "Pasted image 20240509123047.png",
     "Files/Pasted image 20240509122743.png",
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Ricorsione.md",
@@ -248,18 +250,14 @@
     "Files/Screenshot 2024-05-08 alle 18.59.06.png",
     "Files/Screenshot 2024-05-08 alle 18.58.03.png",
     "Files/Screenshot 2024-05-08 alle 18.57.20.png",
-    "Files/Screenshot 2024-05-08 alle 18.51.27.png",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
-    "Files/Screenshot 2024-05-08 alle 18.16.26.png",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/System Calls.md",
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi/es2.md",
     "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
-    "Flet-notes/Untitled.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
     "Users/fla/Documents/Vault",
