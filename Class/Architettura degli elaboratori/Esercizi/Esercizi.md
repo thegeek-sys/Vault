@@ -57,3 +57,6 @@ Scrivere un programma in assembly che, data una matrice bidimensionale quadrata 
 ### ES.1
 ![[Screenshot 2024-05-06 alle 17.01.09.png]]
 [[es2]]
+
+---
+## 11/05
