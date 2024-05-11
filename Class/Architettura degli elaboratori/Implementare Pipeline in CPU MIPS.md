@@ -191,6 +191,8 @@ Se la `beq` è spostata nella fase ID:
 - **1 stallo dopo** se il salto viene eseguito (eliminabile con salto ritardato)
 - **2 stalli prima** se preceduta da `lw` o **1 stallo** se da istruzioni di tipo R (data hazard, non sempre ovviabile attraverso il riordinamento del codice)
 
+![[Screenshot 2024-05-11 alle 18.24.44.png]]
+
 ### Predire i  salti
 Per architetture più complesse la “predizione” del branch not taken potrebbe comportare una perdita eccessiva di prestazioni.
 Una possibile soluzione consiste nel verificare se l’ultima volta che un’istruzione di salto è stata eseguita il salto sia stato effettivamente eseguito: in caso positivo vengono caricare le istruzione a partire da quella presente all’indirizzo di destinazione del salto (ci permette sostanzialmente di switchare tra branch not taken e branch taken). Questa tecnica viene chiamata **predizione dinamica dei salti**.
