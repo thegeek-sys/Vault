@@ -138,3 +138,10 @@ In sintesi per aggiungere uno stallo (nella fase ID), dobbiamo:
 
 ### La CPU fino a questo momento
 ![[Screenshot 2024-05-08 alle 19.26.03.png]]
+
+---
+## Control Hazard
+Oltre ad hazard che coinvolgono le operazioni aritmetiche ci sono anche hazard che coinvolgono i **salti condizionati**.
+Uno dei primi problemi da affrontare con i salti è il fatto che richiederebbe troppo tempo attendere che la logica del processore calcoli se il salto è da effettuare o meno, viene per questo introdotta la politica del **branch not taken** (o branch taken).
+Questo consiste nel considerare sempre di non dover effettuare il salto (quindi di procedere con l’esecuzione sequenziale delle istruzioni). Se invece risultasse che il salto doveva essere eseguito, le istruzioni che si trovano nella fase IF, ID ed EXE devono essere scartate e l’esecuzione deve riprendere a partire dall’istruzione contenuta all’indirizzo di destinazione del salto (ricorda che non si tratta di un vero e proprio salto all’indirizzo, è  infatti un salto relativo).
+Per **scartare le istruzioni** bisogna semplicemente cambiare il valore dei segnali di controllo forzandoli a 0, analogamente a come si è fatto per ottenere lo stallo nei data hazard). La differenza sta nel fatto che in questo caso non bisogna solamente “mettere in pausa” il processore, bensì bisogna proprio **cancellare** le istruzioni, sono per questo costretto ad effettuare un *flush*, che consiste nello svuotamento delle fasi IF, ID e EXE
