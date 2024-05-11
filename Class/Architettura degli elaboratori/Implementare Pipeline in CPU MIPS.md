@@ -180,6 +180,10 @@ L’abbassamento del numero di stalli nel caso di predizione sbagliata (da 2 a 1
 ![[Screenshot 2024-05-11 alle 18.01.49.png]]
 ![[Screenshot 2024-05-11 alle 18.02.21.png]]
 
+### Salto ritardato
+Questa tecnica consiste nell’inserire un’istruzione (o due) che verrà eseguita in entrambi i casi (salto o no) per evitare di dover inserire stalli dopo una branch. Dunque se l’istruzione che segue la `beq` viene sempre eseguita anche se il salto viene fatto, si elimina di fatto lo stallo eseguendo quell’istruzione al posto dello stanno (non sempre possibile).
+
+
 ### Predire i  salti
 Per architetture più complesse la “predizione” del branch not taken potrebbe comportare una perdita eccessiva di prestazioni.
 Una possibile soluzione consiste nel verificare se l’ultima volta che un’istruzione di salto è stata eseguita il salto sia stato effettivamente eseguito: in caso positivo vengono caricare le istruzione a partire da quella presente all’indirizzo di destinazione del salto (ci permette sostanzialmente di switchare tra branch not taken e branch taken). Questa tecnica viene chiamata **predizione dinamica dei salti**.
