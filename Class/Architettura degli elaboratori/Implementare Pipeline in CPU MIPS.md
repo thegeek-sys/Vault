@@ -194,3 +194,5 @@ Se la `beq` è spostata nella fase ID:
 ### Predire i  salti
 Per architetture più complesse la “predizione” del branch not taken potrebbe comportare una perdita eccessiva di prestazioni.
 Una possibile soluzione consiste nel verificare se l’ultima volta che un’istruzione di salto è stata eseguita il salto sia stato effettivamente eseguito: in caso positivo vengono caricare le istruzione a partire da quella presente all’indirizzo di destinazione del salto (ci permette sostanzialmente di switchare tra branch not taken e branch taken). Questa tecnica viene chiamata **predizione dinamica dei salti**.
+Questo è realizzabile attraverso una macchina a stati finiti
+![[Screenshot 2024-05-11 alle 18.22.02.png]]
