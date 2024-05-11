@@ -144,6 +144,12 @@ In sintesi per aggiungere uno stallo (nella fase ID), dobbiamo:
 E’ possibile anche anticipare il jump alla fase IF, per farlo occorre:
 - anticipare il riconoscimento dell’istruzione (attraverso un comparatore con il valore dell’Opcode di `j` ovvero `000010`)
 - spostare la logica di aggiornamento del PC alla fase IF
+	- shift logico a 2 dei 26 bit meno significativi dell’istruzione
+	- aggiunta dei 4 bit più significativi di PC+4
+
+>[!info] Il jump anticipato non introduce più stalli
+
+![[Screenshot 2024-05-11 alle 17.54.38.png|370]]
 
 ---
 ## Control Hazard
