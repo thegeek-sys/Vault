@@ -183,6 +183,13 @@ L’abbassamento del numero di stalli nel caso di predizione sbagliata (da 2 a 1
 ### Salto ritardato
 Questa tecnica consiste nell’inserire un’istruzione (o due) che verrà eseguita in entrambi i casi (salto o no) per evitare di dover inserire stalli dopo una branch. Dunque se l’istruzione che segue la `beq` viene sempre eseguita anche se il salto viene fatto, si elimina di fatto lo stallo eseguendo quell’istruzione al posto dello stanno (non sempre possibile).
 
+Se il salto viene eseguito dopo EXE (adoperando la ALU) si hanno:
+- **2 stalli dopo**, se il salto viene eseguito (control hazard, eliminabili con due salti ritardati)
+- **1 stallo prima** se la `beq` è preceduta da `lw` (data hazard, non sempre ovviabile attraverso il riordinamento del codice)
+
+Se la `beq` è spostata nella fase ID:
+- **1 stallo dopo** se il salto viene eseguito (eliminabile con salto ritardato)
+- **2 stalli prima** se preceduta da `lw` o **1 stallo** se da istruzioni di tipo R (data hazard, non sempre ovviabile attraverso il riordinamento del codice)
 
 ### Predire i  salti
 Per architetture più complesse la “predizione” del branch not taken potrebbe comportare una perdita eccessiva di prestazioni.
