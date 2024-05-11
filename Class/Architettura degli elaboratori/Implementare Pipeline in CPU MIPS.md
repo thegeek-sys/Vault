@@ -153,4 +153,4 @@ Per farlo devo anticipare due azioni:
 1. il **calcolo dell’indirizzo di destinazione del salto**
 2. la **valutazione se saltare o meno**
 Per il calcolo dell’indirizzo di destinazione, dato che il contenuto del PC è già disponibile, mi è sufficiente spostare il sommatore che calcola l’indirizzo di salto dalla fase EXE alla fase ID
-Per quanto riguarda la decisione sul salto, nel caso di branch equal, si deve confrontare l’uguaglianza del contenuto dei due registri letti durante la fase di ID (lo si può fare mettendo in uno XOR i bit corrispondenti del contenuto dei registri, e mandare tutti i risultati in un OR )
+Per quanto riguarda la decisione sul salto, nel caso di branch equal, si deve confrontare l’uguaglianza del contenuto dei due registri letti durante la fase di ID (lo si può fare mettendo in uno XOR i bit corrispondenti del contenuto dei registri, e mandare tutti i risultati in un OR, se il risultato sarà un 1 i registri sono diversi, altrimenti sono uguali).
