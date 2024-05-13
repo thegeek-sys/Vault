@@ -24,6 +24,30 @@
                 }
               },
               {
+                "id": "b411f9bd01538f29",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "aee99053ac43c379",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "b5bce768e5c9a88f",
                 "type": "leaf",
                 "state": {
@@ -42,6 +66,18 @@
                   "type": "markdown",
                   "state": {
                     "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "85b1d7a9a7c4d3c7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
                     "mode": "source",
                     "source": false
                   }
@@ -93,7 +129,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -160,7 +197,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -177,7 +214,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -200,7 +237,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
                   }
                 }
               },
@@ -235,8 +272,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "ecb6cd090c8cbd79",
-      "mtime": "2024-05-11T19:47:22+02:00"
+      "active": "aee99053ac43c379",
+      "mtime": "2024-05-13T19:45:02+02:00"
     },
     "Java": {
       "main": {
@@ -876,5 +913,5 @@
       "mtime": "2024-05-13T13:22:10+02:00"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
