@@ -56,6 +56,25 @@
                 "source": false
               }
             }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "805b84700b364330",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f84e85b35a6d1635",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-05-07_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           },
           {
             "id": "3ea7c75cf3ff145f",
@@ -64,18 +83,6 @@
               "type": "markdown",
               "state": {
                 "file": "Flet-notes/2024-05-09_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f84e85b35a6d1635",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-07_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -226,10 +233,11 @@
   },
   "active": "dad3d3119b4fe2e0",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
+    "Programming languages/Java/Untitled.md",
     "Programming languages/Java/Stream.md",
-    "Flet-notes/2024-05-07_MDP.md",
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-05-09_MDP.md",
+    "Flet-notes/2024-05-07_MDP.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -261,7 +269,6 @@
     "Class/Architettura degli elaboratori/Untitled.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
-    "Class/Architettura degli elaboratori/System Calls.md",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
     "Users/fla/Documents/Vault",
