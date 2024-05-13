@@ -105,4 +105,29 @@ catch(IOException e) {
 }
 ```
 
+### Con classe PrintWriter
+Si può altrimenti usare la classe `PrintWriter` e i metodi corrispondenti
+```java
+// costruisce l'oggetto File
+File f = new File("mio_file.txt")
+
+try {
+	// costruisce il Writer di file
+	PrintWriter out = new PrintWriter(f);
+	
+	// scrive due righe di testo
+	out.println("Prima riga del file");
+	out.println("Seconda riga: ")
+	out.print(2);
+	
+	// chiude il file
+	out.close();
+}
+catch(FileNotFoundException e) {
+	e.printStackTrace();
+}
+```
+
 ---
+## Testi formattati
+### Scrivere
