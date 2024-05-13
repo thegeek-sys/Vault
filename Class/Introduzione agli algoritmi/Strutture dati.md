@@ -31,6 +31,13 @@ Completed:
 > 	- [[#Alberi#Rappresentazione di alberi|Rappresentazione di alberi]]
 > 		- [[#Rappresentazione di alberi#Tramite puntatori|Tramite puntatori]]
 > 			- [[#Tramite puntatori#Esempio|Esempio]]
+> - [[#Dizionari|Dizionari]]
+> 	- [[#Dizionari#Collisioni|Collisioni]]
+> 	- [[#Dizionari#Funzione hash|Funzione hash]]
+> 	- [[#Dizionari#Indirizzamento chiuso (liste di trabocco)|Indirizzamento chiuso (liste di trabocco)]]
+> 		- [[#Indirizzamento chiuso (liste di trabocco)#Inserimento|Inserimento]]
+> 		- [[#Indirizzamento chiuso (liste di trabocco)#Ricerca|Ricerca]]
+> 		- [[#Indirizzamento chiuso (liste di trabocco)#Cancellazione|Cancellazione]]
 
 ---
 ## Introduction
@@ -429,4 +436,39 @@ La situazione ideale è quella in cui ciascuna delle $m$ posizioni della tabella
 
 
 ### Indirizzamento chiuso (liste di trabocco)
+![[Screenshot 2024-05-13 alle 23.14.05.png|center|530]]
 In questo caso ad ogni cella della tabella hash si fa corrispondere invece di un elemento, una `Lista` (solitamente una lista concatenata) detta **lista di trabocco**. In questo modo un elemento che collide viene aggiunto alla lista corrispondente all'indice ottenuto
+
+#### Inserimento
+```python
+def Insert_LT(T, x):
+	# inserisci x nella lista puntata da T[h(chiave(x))]
+```
+Costo computazionale: $\Theta(1)$, anche nel caso peggiore, con l’inserzione in testa alla lista.
+
+#### Ricerca
+```python
+def Search_LT(T, k):
+	# ricerca k nella lista di trabocco puntata da T[h(k)]
+	# if k è presente:
+	# 	return puntatore elemento contenente k
+	# else:
+	# 	return None
+```
+Costo computazionale: 
+$$O(\text{lunghezza della lista puntata da }T[h(k)])$$
+che, nel caso peggiore, diviene $O(n)$ quando tutti gli elementi memorizzati nella tabella hash mappano nella medesima posizione, ma nel caso medio (quando la funzione hash gode di uniformità semplice è:
+$$
+O\left( 1+ \frac{n}{m}\right)=O(1+\alpha)
+$$
+dove con $\alpha$ indichiamo il **fattore di carico della tabella**, ovvero il rapporto tra $n$, numero totale di elementi, e $m$, numero di slot della tabella hash (più è piccolo meglio è). Infatti:
+- per $m=1$ → tutte le n chiavi sono in una sola lista e la tabella diventa un unica lista a ricerca sequenziale che richiede tempo $T(n)=O(n)$ e spazio $O(n)$
+- per $m=|U|$ → possiamo usare una funzione hash perfetta ottenendo $T(n) = O(1)$ ma spazio $O(|U|)$
+- per $1\leq m\leq|U|$ → se la funzione gode di uniformità semplice allora abbiamo $T(n)=O(1+\alpha)$ e spazio $O(m+n)$
+
+#### Cancellazione
+```python
+def Delete_LT(T, x):
+	# cancella x dalla lista puntata da T[h(chiave(x))
+```
+Costo computazionale: dipende dall’implementazione delle liste di trabocco e valgono, pertanto, tutte le osservazioni fatte per il costo dell’operazione di cancellazione nelle liste. Con liste semplici richiede lo stesso tempo della ricerca
