@@ -426,3 +426,7 @@ la funzione `hash_code()` prende una stringa in input e calcola il suo hash somm
 Questa soluzione però può portare a collisioni, la distribuzione non sarebbe uniforme e inoltre non è efficiente (dipende dalla lunghezza delle stringhe)
 
 La situazione ideale è quella in cui ciascuna delle $m$ posizioni della tabella è scelta con la stessa probabilità, ipotesi che viene detta **uniformità semplice della funzione hash**.
+
+
+### Indirizzamento chiuso (liste di trabocco)
+In questo caso ad ogni cella della tabella hash si fa corrispondere invece di un elemento, una `Lista` (solitamente una lista concatenata) detta **lista di trabocco**. In questo modo un elemento che collide viene aggiunto alla lista corrispondente all'indice ottenuto
