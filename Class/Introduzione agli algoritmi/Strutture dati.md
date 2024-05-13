@@ -372,3 +372,15 @@ Class NodoAB:
 >>> r.left.right = NodoAB(0)
 >>> r.right = NodoAb(8)
 ```
+
+---
+## Dizionari
+Un dizionario è una struttura dati che permette di gestire un insieme dinamico di dati, che di norma è un insieme totalmente ordinato, tramite queste tre sole operazioni:
+- `insert` → si inserisce un elemento
+- `search` → si ricerca un elemento
+- `delete` → si elimina un elemento
+
+Questa particolare struttura dati è basata **tabella hash**, una struttura dati molto efficiente che, sotto  ragionevoli assunzioni, riesce ad implementare le tre operazioni in **complessità media costante** $\Theta(1)$
+Qui di seguito ne illustreremo due diverse implementazioni:
+- tabella hash **chiusa**
+- tabella hash **aperta**

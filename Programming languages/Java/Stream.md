@@ -5,6 +5,27 @@ Related:
 Completed:
 ---
 ---
+
+## Index
+- [[#Introduction|Introduction]]
+- [[#File|File]]
+	- [[#File#File di testo|File di testo]]
+	- [[#File#File binario|File binario]]
+- [[#FileReader e BufferedReader|FileReader e BufferedReader]]
+	- [[#FileReader e BufferedReader#Try with resources|Try with resources]]
+	- [[#FileReader e BufferedReader#Con classe Scanner|Con classe Scanner]]
+- [[#FileWriter e BufferedWriter|FileWriter e BufferedWriter]]
+	- [[#FileWriter e BufferedWriter#Con classe PrintWriter|Con classe PrintWriter]]
+- [[#Testi formattati|Testi formattati]]
+	- [[#Testi formattati#Scrivere|Scrivere]]
+	- [[#Testi formattati#Leggere|Leggere]]
+- [[#java.nio.file.Path|java.nio.file.Path]]
+	- [[#java.nio.file.Path#Ottenere un Path|Ottenere un Path]]
+- [[#Serializzare un oggetto|Serializzare un oggetto]]
+	- [[#Serializzare un oggetto#Serial Version UID|Serial Version UID]]
+	- [[#Serializzare un oggetto#Leggere un oggetto serializzato|Leggere un oggetto serializzato]]
+
+---
 ## Introduction
 Uno **stream** è un’astrazione derivata da dispositivi dispositivi di input o output sequenziale e i **file** possono essere interpretati come tali (in realtà vengono **bufferizzati** per questioni di efficienza)
 Si differenziano in stream di:

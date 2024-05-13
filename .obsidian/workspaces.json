@@ -273,7 +273,7 @@
         }
       },
       "active": "aee99053ac43c379",
-      "mtime": "2024-05-13T19:45:02+02:00"
+      "mtime": "2024-05-13T22:39:30+02:00"
     },
     "Java": {
       "main": {
@@ -299,24 +299,24 @@
                 }
               },
               {
-                "id": "680e8d2ca9d68c72",
+                "id": "dad3d3119b4fe2e0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Ricorsione.md",
+                    "file": "Programming languages/Java/Stream.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "d2cac6488958348a",
+                "id": "680e8d2ca9d68c72",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Programming languages/Java/Ricorsione.md",
                     "mode": "source",
                     "source": false
                   }
@@ -335,19 +335,19 @@
                 }
               },
               {
-                "id": "f84e85b35a6d1635",
+                "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-05-07_MDP.md",
+                    "file": "To-Do.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -414,7 +414,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md",
+                    "file": "Programming languages/Java/Stream.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -431,7 +431,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md",
+                    "file": "Programming languages/Java/Stream.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -454,7 +454,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md"
+                    "file": "Programming languages/Java/Stream.md"
                   }
                 }
               },
@@ -489,8 +489,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "3ea7c75cf3ff145f",
-      "mtime": "2024-05-09T15:38:11+02:00"
+      "active": "dad3d3119b4fe2e0",
+      "mtime": "2024-05-13T22:39:19+02:00"
     },
     "Python": {
       "main": {
@@ -767,7 +767,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -834,7 +834,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -851,7 +851,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -874,7 +874,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Esercizi.md"
+                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
                   }
                 }
               },
@@ -909,9 +909,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "1ff74ae4a174753f",
-      "mtime": "2024-05-13T13:22:10+02:00"
+      "active": "3f5ea951b32768c2",
+      "mtime": "2024-05-13T22:38:52+02:00"
     }
   },
-  "active": "Java"
+  "active": "Introduzione agli algoritmi"
 }
