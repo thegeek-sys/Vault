@@ -73,5 +73,36 @@ catch (IOException e) {
 
 Questo è possibile solo poiché le classi di questi oggetti implementano `java.lang.AutoCloseable` che è estesa dall’interfaccia `java.io.Closeable`
 
+### Con classe Scanner
+Possiamo eventualmente anche leggere file di testo con la classe `java.util.Scanner`
+```java
+File f = new FIle("mio_file.txt");
+
+try {
+	Scanner in = new Scanner(f);
+	
+	// fineché esiste una prossima riga
+	while(in.hasNext())
+		// stampa la riga
+		System.out.println(in.nextLine())
+	in.close();
+}
+catch(FileNotFoundException e) {
+	e.printStackTrace();
+}
+```
+
 ---
 ## FileWriter e BufferedWriter
+Usando il try with resources
+```java
+try(BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
+	bw.write("bla bla bla\n")
+	// ...
+}
+catch(IOException e) {
+	// gestisci l'eccezione
+}
+```
+
+---
