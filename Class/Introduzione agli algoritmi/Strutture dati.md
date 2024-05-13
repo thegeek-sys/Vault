@@ -423,4 +423,6 @@ def hash_code(s, size):
 >>> hash_code('Angelo Monti', 20) # 9
 ```
 la funzione `hash_code()` prende una stringa in input e calcola il suo hash sommando i valori ASCII di tutti i caratteri della stringa e poi calcolando il resto della divisione con la dimensione della tabella (quest'ultima operazione assicura che il valore restituito sia un indice all'interno della tabella).
+Questa soluzione però può portare a collisioni, la distribuzione non sarebbe uniforme e inoltre non è efficiente (dipende dalla lunghezza delle stringhe)
 
+La situazione ideale è quella in cui ciascuna delle $m$ posizioni della tabella è scelta con la stessa probabilità, ipotesi che viene detta **uniformità semplice della funzione hash**.
