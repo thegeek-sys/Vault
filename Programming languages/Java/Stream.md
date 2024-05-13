@@ -197,3 +197,97 @@ try(BufferedReader br=Files.newBufferedReader(Path.get("fr.txt"));
 
 ---
 ## Serializzare un oggetto
+Serializzare un oggetto vuol dire scrivere in memoria **un oggetto per intero** in modo tale che leggendolo posso riavere l’oggetto per intero senza ulteriori interpretazioni.
+
+>[!warning]
+>Solo le classi che implementano l’interfaccia senza metodi `Serializable` sono serializzabili
+
+```java
+import java.io.*;
+
+public class OggettoSerializzabile {
+	private String nome;
+	private int valore;
+	
+	public OggettoSerializzabile(String nome, int valore) {
+		this.nome = nome;
+		this.valore = valore;
+	}
+	
+	public void salva(String filename) {
+		try {
+			// costruisce uno stream output di file
+			FileOutputStream fos = new FileOutputStream(filename);
+			// costruisce uno stream output di oggetti
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			
+			// scrive gli oggetti in formato binario
+			os.writeObject(nome);
+			os.writeObject(valore);
+			
+			// chiude lo stream
+			os.close();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		new OggettoSerializzabile("dieci", 10).salva("Obj.ser");
+	}
+}
+```
+
+Quando si serializza un oggetto, tutti gli oggetti a cui esso si riferisce (variabili d’istanza vengono serializzati) e se un solo campo non è serializzabile, l'oggetto non è serializzabile.
+Tuttavia è possibile rendere "**transiente**" un campo con la parola chiave `transient`:
+- Tale campo non sarà serializzato
+- I campi statici sono transient di default
+
+### Serial Version UID
+E’ bene specificare sempre un campo `static`, `final` e `long` chiamato `serialVersionUID`, usato in **fase di deserializzazione** per verificare se la versione della classe in uso è la stessa usata per serializzare
+```java
+public class OggettoSerializzabile implements Serializable {
+	// indentificatore univoco di versione
+	private static final long serialVersionUID = -1327935836496038L;
+	
+	private String nome;
+	private int valore
+	private OggettoSerializzabile next;
+}
+```
+
+### Leggere un oggetto serializzato
+```java
+public static OggettoSerializzabile leggi(String filename) {
+	try {
+		// apertura file
+		FileInputStream fis = FileInputStream(filename);
+		ObjectInputStream ois = ObjectInputStream(fis);
+		
+		// lettura
+		Object o1 = ois.readObject();
+		Object o2 = ois.readObject();
+		Object o3 = ois.readObject();
+		
+		// casting
+		String nome = (String)o1;
+		int valore = (Integer)o2;
+		OggettoSerializzabile next = (OggettoSerializzabile)o3;
+		
+		// creazione dell'oggetto
+		OggettoSerializzabile o = new OggettoSerializzabile(nome,
+		valore);
+		o.setNext(next)
+		
+		ois.close()
+	}
+	catch(ClassNotFoundException e) {
+		e.printStackTrace();
+	}
+	catch(IOException e) {
+		e.printStackTrace();
+	}
+	return o
+}
+```
