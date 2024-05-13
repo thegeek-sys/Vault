@@ -175,3 +175,25 @@ public class FormattaFile {
 ---
 ## java.nio.file.Path
 La classe `java.io.File` è rimpiazzata dall'interfaccia `java.nio.file.Path` che rappresenta un percorso gerarchico
+
+### Ottenere un Path
+Per ottenere un Path è possibile utilizzare il metodo `Paths.get`
+```java
+Path p = Path.get("tmp", "foo");
+Path p = Path.get("tmp" + File.separator + "foo");
+
+// è un'abbreviazione per
+Path p = FileSystem.getDefault().getPath("tmp/foo")
+```
+
+
+Le operazioni che prima si svolgevano nella classe File ora sono metodi statici della classe `java.nio.file.Files` inclusi metodi di comodo per la creazione di `BufferedReader` e `BufferedWriter`
+```java
+try(BufferedReader br=Files.newBufferedReader(Path.get("fr.txt"));
+	BufferedWriter bw=Files.newBufferedWriter(Path.get("fw.txt"))) {
+	// legge da fr.txt e scrive in fw.txt
+}
+```
+
+---
+## Serializzare un oggetto

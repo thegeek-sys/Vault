@@ -156,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-09_MDP.md",
+                "file": "Programming languages/Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-09_MDP.md",
+                "file": "Programming languages/Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-09_MDP.md"
+                "file": "Programming languages/Java/Stream.md"
               }
             }
           },
@@ -231,12 +231,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "3ea7c75cf3ff145f",
+  "active": "dad3d3119b4fe2e0",
   "lastOpenFiles": [
+    "Flet-notes/2024-05-09_MDP.md",
     "Programming languages/Java/Stream.md",
     "Programming languages/Java/Untitled.md",
     "Programming languages/Java/Java.md",
-    "Flet-notes/2024-05-09_MDP.md",
     "Flet-notes/2024-05-07_MDP.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
