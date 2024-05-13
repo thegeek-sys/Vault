@@ -24,6 +24,18 @@
                 }
               },
               {
+                "id": "b5bce768e5c9a88f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "250b639eab25e6cc",
                 "type": "leaf",
                 "state": {
@@ -81,8 +93,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "vertical"
@@ -149,7 +160,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -166,7 +177,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -189,7 +200,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -224,8 +235,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "f8ad5af2bd381568",
-      "mtime": "2024-05-09T11:23:59+02:00"
+      "active": "ecb6cd090c8cbd79",
+      "mtime": "2024-05-11T19:47:22+02:00"
     },
     "Java": {
       "main": {
@@ -719,7 +730,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -786,7 +797,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -803,7 +814,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+                    "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -826,7 +837,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md"
+                    "file": "Class/Introduzione agli algoritmi/Esercizi.md"
                   }
                 }
               },
@@ -861,8 +872,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "6586a64e0c0b5f8b",
-      "mtime": "2024-05-09T19:47:51+02:00"
+      "active": "1ff74ae4a174753f",
+      "mtime": "2024-05-13T13:22:10+02:00"
     }
   },
   "active": "Architettura degli elaboratori"
