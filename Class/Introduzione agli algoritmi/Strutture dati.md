@@ -384,4 +384,43 @@ Questa particolare struttura dati è basata **tabella hash**, una struttura dati
 Qui di seguito ne illustreremo due diverse implementazioni:
 - tabella hash **chiusa**
 - tabella hash **aperta**
+L’utilizzo dell’indirizzamento diretto è preferibile alla tabella hash nel caso in cui l’universo delle chiavi è ragionevolmente piccolo ed il numero $n$ di elementi da memorizzare è vicino al numero $m$ delle possibili chiavi.
+
+Dimensionare la tabella in base al numero di elementi **attesi** (che indicheremo con $m$ ed utilizzare una speciale funzione (funzione hash) per indicizzare la tabella
+Una **funzione hash** è una funzione che data una chiave $x$ restituisce la posizione della tabella in cui l’elemento con chiave $x$ viene memorizzato:
+$$
+h(x)\in\{0,1,\dots,m-1\}
+$$
+la dimensione della tabella può non coincidere con la dimensione dell’universo, anzi in generale $m < < |U|$
+
+
+![[Screenshot 2024-05-13 alle 22.55.58.png|center|400]]
+L’idea è quella di definire una funzione d’accesso che permetta di ottenere la posizione di un elemento data la sua chiave, introducendo però il fenomeno delle **collisioni**
+
+### Collisioni
+Il verificarsi di collisioni è inevitabile quando l’insieme $U$ dei valori che le chiavi possono assumere è molto grande e la cardinalità $m$ degli indici disponibili è invece molto più piccolo di $U$.
+
+>[!info]
+>anche se le chiavi da memorizzare sono meno di $m$, non si può escludere che due chiavi $x\neq y$ siano tali per cui $h(x)=h(y)$ ossia che la funzione hash restituisca lo stesso valore per entrambe le chiavi, che quindi andrebbero memorizzate nella stessa posizione della tabella.
+
+Stando così le cose le **collisioni**, vanno **evitate** il più possibile e, altrimenti, risolte.
+
+### Funzione hash
+Le funzioni hash sono dunque funzioni matematiche che prendono in input un dato (come una stringa o un numero) e producono in output un valore hash, che è tipicamente un numero intero che fa **riferimento ad un indirizzo all'interno di una tabella** (tabella hash). 
+
+L'obiettivo principale di una funzione hash è quello di **distribuire uniformemente i dati** in modo casuale all'interno di un range di valori possibili onde evitare il più possibile il verificarsi di collisioni.
+
+Supponiamo di avere una tabella di dimensioni in cui vogliamo inserire record le cui chiavi siano stringhe. Una possibile funzione hash in questo caso sarebbe:
+```python
+def hash_code(s, size):
+	# size -> dimensione tabella
+	# funzione hash per stringe
+	h = 0
+	for c in s:
+		h += ord(c) # somma il valore ASCII di tutti i char
+	return h % size
+
+>>> hash_code('Angelo Monti', 20) # 9
+```
+la funzione `hash_code()` prende una stringa in input e calcola il suo hash sommando i valori ASCII di tutti i caratteri della stringa e poi calcolando il resto della divisione con la dimensione della tabella (quest'ultima operazione assicura che il valore restituito sia un indice all'interno della tabella).
 
