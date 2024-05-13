@@ -20,6 +20,12 @@ Per manipolarli in Java esistono 4 differenti classi
 >[!hint]
 >Da Java 5 l’accesso ai file è stato semplificato mediante l’aggiunta della classe `java.util.Scanner`, che però risulta essere **più lenta** perché più potente
 
+>[!warning] Non utilizzare `java.io.File`
+>- Molti metodi di File non emettono eccezione quando falliscono
+>- Nessun supporto per i collegamenti simbolici
+>- Mancanza di metadati: permessi, proprietario, ecc.
+>- Molti metodi non scalavano su cartelle piene di file
+
 ---
 ## File
 Un **file** è una **collezione di dati salvata** su un supporto di memorizzazione di massa che può essere letto o modificato da programmi differenti. Il programma che lo esegue o modifica deve conoscere il formato dei dati nel file
@@ -131,3 +137,41 @@ catch(FileNotFoundException e) {
 ---
 ## Testi formattati
 ### Scrivere
+E’ possibile scrivere un file di testo formattato utilizzando la classe `java.util.Formatter`
+```java
+public class FormattaFile {
+	private String nome;
+	private int valore;
+	
+	public void scrivi(String filename) throws IOException {
+		Formatter output = new Formatter(filename);
+		output.format("%s\t%d, nome, valore");
+		output.close();
+	}
+}
+```
+
+### Leggere
+Essendo il testo nel file formattato usando dei separatori, lo `Scanner` è in grado di restituire la prossima stringa e il prossimo intero
+```java
+public class FormattaFile {
+	private String nome;
+	private int valore;
+	
+	public void scrivi(String filename) throws IOException {
+		Formatter output = new Formatter(filename);
+		output.format("%s\t%d, nome, valore");
+		output.close();
+	}
+	
+	public void leggi(String filename) throws IOException {
+		Scanner input = new Scanner(new File(filename));
+		nome = input.next();
+		valore = input.nextInt();
+	}
+}
+```
+
+---
+## java.nio.file.Path
+La classe `java.io.File` è rimpiazzata dall'interfaccia `java.nio.file.Path` che rappresenta un percorso gerarchico
