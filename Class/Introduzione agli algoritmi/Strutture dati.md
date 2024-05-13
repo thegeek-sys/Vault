@@ -384,3 +384,4 @@ Questa particolare struttura dati è basata **tabella hash**, una struttura dati
 Qui di seguito ne illustreremo due diverse implementazioni:
 - tabella hash **chiusa**
 - tabella hash **aperta**
+
