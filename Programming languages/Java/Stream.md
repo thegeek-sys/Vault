@@ -237,3 +237,42 @@ ArrayList<String> str = l.stream().map(x -> ""+x)
 ```
 
 ### Riduzione a mappa
+`toMap` prende in input fino a 4 argomenti:
+- la funzione per mappare l'oggetto dello stream nella chiave della mappa
+- la funzione per mappare l'oggetto dello stream nel valore della mappa
+- *opzionale*: la funzione da utilizzare per unire il valore preesistente nella mappa a fronte della chiave con il valore associato all'oggetto dalla seconda funzione (non devono trovarsi due chiavi uguali o si ottiene un'eccezione `IllegalStateException`)
+- *opzionale*: il Supplier che crea la mappa (se voglio utilizzare tipi diversi di mappa)
+
+```java
+Map<Integer, String> map = persons.stream()
+								  .collect(Collectors.toMap
+									  Person::getAge,
+									  Person::getName,
+									  (name1, name2) -> name1 + ";" name2));
+```
+
+### Raggruppamento di elementi
+Per creare una **mappa tra chiavi di un tipo e lista di oggetti di un altro** tipo dovrò usare `groupingBy` che prende in input una lambda function che mappa gli elementi di tipo `T` in bucket rappresentati da oggetti di qualche altro tipo S e restituisce `Map<S, List<T>>`
+Utilizzo invece `groupingBy(lambda, downStreamCollector)`, per raggruppamento multilivello
+
+Ottenere una mappa da città a lista di persone a partire da una lista di persone:
+```java
+// people è una collection di Person
+Map<City, List<Person>> peopleByCity = people.stream()
+									  .collect(groupingBy(Person::getCity));
+```
+
+La stessa mappa, ma i cui valori siano insiemi di persone:
+```java
+Map<City, Set<Person>> peopleByCity = people.stream()
+							  .collect(goupingBy(Person::getCity), toSet());
+```
+
+#### mapping
+In raccolte multilivello, per esempio usando groupingBy, è utile mappare il valore del raggruppamento a qualche altro tipo:
+```java
+Map<City, Set<String>> peopleSurnamesByCity =
+	people.stream().collect(
+		groupingBy(Person::getCity,
+			mapping(Person::getLastName, toSet())));
+```
