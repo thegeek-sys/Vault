@@ -32,6 +32,22 @@ Poiché Stream opera su oggetti, esistono analoghe versioni ottimizzate per lavo
 >[!hint] Tutte queste interfacce estendono l'interfaccia di base `BaseStream`
 
 ---
+## Ottenere un o stream
+Possiamo ottenere uno stream direttamente dai dati con il metodo statico generico `Stream.of(array di un certo tipo)`.
+Da Java 8 l'interfaccia `Collection` è stata estesa per includere due nuovi metodi di default:
+- **`default Stream<E> stream()`** → restituisce uno stream sequenziali
+- **`default Stream<E> parallelStream()`** → restituisce un nuovo stream parallelo, se possibile (altrimenti restituisce uno stream sequenziale)
+
+### Esempio
+E' possibile ottenere uno stream anche per un array, con il metodo statico `Stream<T> Arrays.stream(T[ ] array)`
+E' possibile ottenere uno stream di righe di testo da `BufferedReader.lines()` oppure da `Files.lines(Path)`
+E’ possibile ottenere uno stream di righe anche da `String.lines`
+
+---
+## Stream vs. Collection
+Lo stream permette di utilizzare uno **stile dichiarativo** con cui la JVM può decidere per motivi di efficienza di ordinare in modo differente le operazioni da eseguire. Mentre le collection obbligano l’utilizzo di uno **stile imperativo** in cui la JVM è obbligata a eseguire le operazioni nell’ordine in cui gli sono state proposte
+
+---
 ## Metodi
 
 | Metodo                                                                      | Tipo | Descrizione                                                                                         |
@@ -46,18 +62,95 @@ Poiché Stream opera su oggetti, esistono analoghe versioni ottimizzate per lavo
 | `IntStream mapToInt/ToDouble/ToLong( ToIntFunction<? super T> mapFunction)` |  I   | Come sopra, ma la mappatura è su interi/ecc. (**operazione ottimizzata**)                           |
 | `Stream<T> sorted()`                                                        |  I   | Produce un nuovo stream di elementi ordinati                                                        |
 | `Stream<T> limit(long k)`                                                   |  I   | Limita lo stream a k elementi                                                                       |
+### min e max
+I metodi `min` e `max` restituiscono rispettivamente il minimo e il massimo di uno stream sotto forma di `Optional`. Prendono in input un `Comparator` sul tipo degli elementi dello stream
+```java
+List<Integer> p = Arrays.asList(2,3,4,5,6,7);
+Optional<Integer> max = p.stream().max(Integer::compare);
 
----
-## Ottenere un o stream
-Possiamo ottenere uno stream direttamente dai dati con il metodo statico generico `Stream.of(array di un certo tipo)`.
-Da Java 8 l'interfaccia `Collection` è stata estesa per includere due nuovi metodi di default:
-- **`default Stream<E> stream()`** → restituisce uno stream sequenziali
-- **`default Stream<E> parallelStream()`** → restituisce un nuovo stream parallelo, se possibile (altrimenti restituisce uno stream sequenziale)
+// se c'è, restituisce il massimo; altrimenti restituisce -1
+System.out.println(max.orElse(-1));
+```
 
-### Esempio
-E' possibile ottenere uno stream anche per un array, con il metodo statico `Stream<T> Arrays.stream(T[ ] array)`
-E' possibile ottenere uno stream di righe di testo da `BufferedReader.lines()` oppure da `Files.lines(Path)`
-E’ possibile ottenere uno stream di righe anche da `String.lines`
+### filter (intermedio) forEach (terminale)
+`filter` è un metodo di `Stream` che accetta un predicato (`Predicate`) per filtrare gli elementi dello stream e **restituisce lo stream filtrato**
+`forEach` prende in input un `Consumer` e lo applica a ogni elemento dello stream (operazione terminale)
 
----
-## Stream vs. Collection
+#### Esempio
+Filtra gli elementi di una lista di interi mantenendo solo quelli dispari e stampa ciascun elemento rimanente:
+```java
+List<Integer> l = Arrays.asList(4, 8, 15, 16, 23, 42);
+l.stream()
+ .filter(k -> k % 2 == 1)
+ .forEach(System.out::println);
+```
+
+Filtra gli elementi di una lista per iniziale e lunghezza della stringa e stampa ciascun elemento rimanente:
+```java
+Predicate<String> startsWithJ = s -> s.startsWith("J");
+Predicate<String> fourLetterLong = s -> s.length() == 4;
+
+List<String> l = Arrays.asList("Java", "Scala", "Lisp");
+l.stream()
+ .filter(startsWithJ.and(fourLetterLong))
+ .forEach(s -> System.out.println("Inizia con J ed e’ lungo 4 caratteri: "+s);
+```
+
+### count (terminale)
+`count` è un’operazione terminale che restituisce il numero `long` di elementi nello stream
+
+#### Esempio
+```java
+long startsWithA = l.stream().filter(s -> s.startsWith("a")) .count();
+System.out.println(startsWithA); // 2
+```
+
+Conteggio del numero di righe di un file di testo:
+```java
+long numberOfLines = Files.lines(Paths.get("yourFile.txt")).count();
+```
+
+### sorted (intermedia)
+`sorted` è un’operazione intermedia sugli stream che restituisce una vista ordinata dello stream senza modificare la collezione sottostante
+
+#### Esempio
+```java
+// in qeusto caso la JVM decide prima di filtrare lo stream per poi
+// ordinarlo, nonostante abbia programmato il contrario
+List<String> l = Arrays.asList("da", "ac", "ab", "bb");
+l.stream()
+ .sorted()
+ .filter(s -> s.startsWith("a"))
+ .forEach(System.out::println);
+
+// ab, ac
+```
+
+### map (intermedia)
+`map` è un’operazione intermedia sugli stream che restituisce un nuovo stream in cui ciascun elemento dello stream di origine è convertito in un altro oggetto attraverso la funzione (`Function`) passata in input
+
+#### Esempio
+Restituire tutte le stringhe (portate in maiuscolo) ordinate in ordine inverso
+```java
+// equivalente a .map(s -> s.toUpperCase())
+l.stream().map(String::toUpperCase)
+          .sorted(Comparator<String>.naturalOrder().reversed())
+          .forEach(System.out::println);
+// DA, BB, AC, AB
+```
+
+Si vuole scrivere un metodo che aggiunga l’IVA a ciascun prezzo:
+```java
+List<Integer> ivaEsclusa = Arrays.asList(10, 20, 30);
+
+// In Java 7:
+for (int p : ivaEsclusa) {
+	double pIvaInclusa = p*1.22;
+	System.out.println(pIvaInclusa);
+}
+
+// In Java 8:
+ivaEsclusa.stream()
+		  .map(p -> p*1.22)
+		  .forEach(System.out::println);
+```
