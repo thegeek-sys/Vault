@@ -57,4 +57,7 @@ Da Java 8 l'interfaccia `Collection` è stata estesa per includere due nuovi met
 ### Esempio
 E' possibile ottenere uno stream anche per un array, con il metodo statico `Stream<T> Arrays.stream(T[ ] array)`
 E' possibile ottenere uno stream di righe di testo da `BufferedReader.lines()` oppure da `Files.lines(Path)`
-E’ possibile ottenere uno stream di righe anche da `String.lines
+E’ possibile ottenere uno stream di righe anche da `String.lines`
+
+---
+## Stream vs. Collection

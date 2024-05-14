@@ -192,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md",
+                "file": "Programming languages/Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md",
+                "file": "Programming languages/Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md"
+                "file": "Programming languages/Java/Stream.md"
               }
             }
           },
@@ -267,10 +267,10 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "b9de946c1b8f89b9",
+  "active": "73b093bca8710153",
   "lastOpenFiles": [
-    "Programming languages/Java/Stream.md",
     "Flet-notes/2024-05-14_MDP.md",
+    "Programming languages/Java/Stream.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/File.md",
