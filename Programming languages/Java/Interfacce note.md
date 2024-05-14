@@ -44,7 +44,7 @@ Funzione a valori booleani a un solo argomento generico T
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `default Predicate<T>`    | **`and(Predicate<? super T> other)`**<br>Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another |
 | `static <T> Predicate<T>` | **`isEqual(Object targerRef)`**<br>Returns a predicate that tests if two arguments are equal according to `Object.equals(Object, Object)`          |
-| `default Predicate<T>`    | **"`negate()`**<br>Returns a predicate that represents the logical negation of this predicate                                                      |
+| `default Predicate<T>`    | **`negate()`**<br>Returns a predicate that represents the logical negation of this predicate                                                       |
 | `default Predicate<T>`    | **`or(Predicate<? super T> other)`**<br>Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another   |
 | `boolean`                 | **`test(T t)`**<br>Evaluates this predicate on the given argument                                                                                  |
 
