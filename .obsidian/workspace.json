@@ -123,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "predicate path:\"Programming languages/Java/\"",
+                "query": "collector path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
