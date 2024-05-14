@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       },
       {
         "id": "49c17faf9c0ae694",
@@ -192,7 +192,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-05-14_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-05-14_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md"
+                "file": "Flet-notes/2024-05-14_MDP.md"
               }
             }
           },
@@ -267,11 +267,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "f1818f8313716f99",
+  "active": "b9de946c1b8f89b9",
   "lastOpenFiles": [
     "Programming languages/Java/Stream.md",
-    "Programming languages/Java/Java.md",
     "Flet-notes/2024-05-14_MDP.md",
+    "Programming languages/Java/Interfacce note.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/File.md",
     "Class/Architettura degli elaboratori/Matrici.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
@@ -284,7 +285,6 @@
     "Files/MIPS_Instruction_Set.pdf",
     "Flet-notes/2024-05-09_MDP.md",
     "Programming languages/Java/Tipi generici.md",
-    "Programming languages/Java/Interfacce note.md",
     "To-Do.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/Screenshot 2024-05-13 alle 23.14.05.png",
