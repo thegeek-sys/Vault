@@ -80,9 +80,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f1818f8313716f99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -111,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "equals path:\"Programming languages/Java/\"",
+                "query": "predicate path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,12 +140,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -149,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md",
+                "file": "Programming languages/Java/Interfacce note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md",
+                "file": "Programming languages/Java/Interfacce note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md"
+                "file": "Programming languages/Java/Interfacce note.md"
               }
             }
           },
@@ -224,10 +236,11 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "b9de946c1b8f89b9",
+  "active": "f1818f8313716f99",
   "lastOpenFiles": [
-    "Programming languages/Java/Stream.md",
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-05-14_MDP.md",
+    "Programming languages/Java/Stream.md",
     "Flet-notes/2024-05-09_MDP.md",
     "To-Do.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
@@ -239,7 +252,6 @@
     "Programming languages/Java/Ricorsione.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Programming languages/Java/Untitled.md",
-    "Programming languages/Java/Java.md",
     "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
