@@ -154,3 +154,86 @@ ivaEsclusa.stream()
 		  .map(p -> p*1.22)
 		  .forEach(System.out::println);
 ```
+
+### collect (terminale)
+`collect` è un’operazione terminale che permette di raccogliere gli elementi dello stream in un qualche oggetto (ad es. una collection, una stringa, un intero)
+
+#### Esempio
+Ottenere la lista dei prezzi ivati:
+```java
+List<Integer> ivaEsclusa = Arrays.asList(10, 20, 30);
+
+// In Java 7:
+List<Double> l = new ArrayList<>();
+for (int p : ivaEsclusa) l.add(p*1.22);
+
+// In Java 8:
+List<Double> l = ivaEsclusa.stream().map(p -> p*1.22)
+						   .collect(Collectors.toList());
+```
+
+Creare una stringa che concatena stringhe in un elenco, rese maiuscole e separate da virgola:
+```java
+List<String> l = Arrays.asList("RoMa", "milano", "Torino");
+String s = "";
+
+// in Java 7:
+for (String e : l) s += e.toUpperCase()+", ";
+s = s.substring(0, s.length()-2);
+
+// in Java 8:
+s = l.stream().map(String::toUpperCase)
+			  .collect(Collectors.joining(", "));
+```
+
+Trasformare una lista di stringhe in una lista delle lunghezze delle stesse:
+```java
+List<String> words = Arrays.asList("Oracle", "Java", "Magazine");
+List<Integer> wordLengths =
+	words.stream()
+		 .map(String::length)
+		 .collect(toList());
+```
+
+---
+## Collectors
+I `Collectors` sono delle “ricette” per **ridurre gli elementi di uno stream** e raccoglierli in qualche modo
+Per rendere più leggibile il codice: `import static java.util.stream.Collectors.*` (importo tutti i metodi statici di `Collectors`)
+- In questo modo possiamo scrivere il nome del metodo senza anteporre Collectors. (es. `toList()` invece di `Collectors.toList()`)
+
+### Riduzione a singolo elemento
+**`counting()`** restituisce il numero di elementi nello stream (risultato di tipo long)
+```java
+List<Integer> l = Arrays.asList(2, 3, 5, 6);
+// k == 2
+long k = l.stream()
+		  .filter(x -> x < 5)
+		  .collect(Collectors.counting()));
+```
+
+**`maxBy/minBy(comparator)`** restituisce un `Optional` con il massimo/minimo valore
+```java
+// max contiene 6
+Optional<Integer> max = l.stream()
+						 .collect(maxBy(Integer::compareTo));
+```
+
+**`joining()`**, `joining(separatore)`, `joining(separatore, prefisso, suffisso)` concatena gli elementi stringa dello stream in un'unica stringa finale
+```java
+List<Integer> l = Arrays.asList(2, 3, 5, 6, 2, 7);
+// str.equals("2,3,5,6,2,7")
+String str = l.stream().map(x -> ""+x).collect(joining(","));
+```
+
+**`toList`**, **`toSet`** e **`toMap`** accumulano gli elementi in una lista, insieme o mappa (non c'è garanzia sul tipo di `List`, `Set` o `Map`)
+```java
+Set<String> set = l.stream().map(x -> ""+x).collect(toSet());
+```
+
+**`toCollection`** accumula gli elementi in una collezione scelta
+```java
+ArrayList<String> str = l.stream().map(x -> ""+x)
+						.collect(toCollection(ArrayList::new));
+```
+
+### Riduzione a mappa
