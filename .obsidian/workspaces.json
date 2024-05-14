@@ -817,8 +817,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -910,8 +909,8 @@
         }
       },
       "active": "3f5ea951b32768c2",
-      "mtime": "2024-05-13T23:13:33+02:00"
+      "mtime": "2024-05-14T09:17:12+02:00"
     }
   },
-  "active": "Introduzione agli algoritmi"
+  "active": "Java"
 }
