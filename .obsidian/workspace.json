@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -145,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -161,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-05-14_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
+                "file": "Flet-notes/2024-05-14_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md"
+                "file": "Flet-notes/2024-05-14_MDP.md"
               }
             }
           },
@@ -236,8 +237,9 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "f1818f8313716f99",
+  "active": "b9de946c1b8f89b9",
   "lastOpenFiles": [
+    "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Java.md",
     "Flet-notes/2024-05-14_MDP.md",
     "Programming languages/Java/Stream.md",
@@ -269,7 +271,6 @@
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Memoria.md",
     "Class/Architettura degli elaboratori/Untitled.md",
