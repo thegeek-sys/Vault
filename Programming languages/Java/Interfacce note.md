@@ -108,3 +108,37 @@ greeter1.accept(new Person("Luke", "Skywalker"));
 
 Consumer<Person> greeter2 = System.out::println;
 ```
+
+---
+## Optional<\T>
+`java.util.Optional` è un contenitore di un riferimento che potrebbe essere o non essere `null` (in modo tale che un metodo può restituire un `Optional` invece di restituire  un riferimento potenzialmente `null`, per  evitare i `NullPointerException`)
+
+### Creare e verificare un Optional
+```java
+// un optional senza riferimento (contenitore vuoto)
+Optional.empty();
+
+// un optional non nullo
+Optional.of("bumbumghino");
+
+// un optional di un riferimento che può essere nullo
+Optional<String> optional = Optional.ofNullable(s);
+
+// controllo della presenza di un valore non null
+Optional.empty().isPresent() == false
+Optional.of ("bumbumghigno").isPresent() == true
+```
+
+### Ottenere ul valore di un Optional
+```java
+// mediante orElse
+Optional<String> op = Optional.of("eccomi")
+op.orElse("fallback"); // "eccomi"
+Optional.empty().orElse("fallback"); // "fallback"
+
+// mediante ifPresent o ifPresentOrElse
+op.ifPresent(System.out::println); // "eccomi"
+
+// da NON usare
+optional.get(); // valore o solleva eccezione se non presente
+```

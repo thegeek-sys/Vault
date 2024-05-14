@@ -24,48 +24,12 @@
                 }
               },
               {
-                "id": "b411f9bd01538f29",
+                "id": "31771e8b1abd4ca7",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "aee99053ac43c379",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "b5bce768e5c9a88f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "250b639eab25e6cc",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+                    "file": "Class/Architettura degli elaboratori/Matrici.md",
                     "mode": "source",
                     "source": false
                   }
@@ -130,7 +94,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -197,7 +161,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                    "file": "Class/Architettura degli elaboratori/Matrici.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -214,7 +178,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                    "file": "Class/Architettura degli elaboratori/Matrici.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -237,7 +201,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                    "file": "Class/Architettura degli elaboratori/Matrici.md"
                   }
                 }
               },
@@ -272,8 +236,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "aee99053ac43c379",
-      "mtime": "2024-05-13T22:39:30+02:00"
+      "active": "31771e8b1abd4ca7",
+      "mtime": "2024-05-14T17:17:52+02:00"
     },
     "Java": {
       "main": {
@@ -296,6 +260,18 @@
                     "source": false
                   },
                   "pinned": true
+                }
+              },
+              {
+                "id": "4568008cdfdb7230",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Tipi generici.md",
+                    "mode": "source",
+                    "source": false
+                  }
                 }
               },
               {
@@ -345,9 +321,33 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "b9de946c1b8f89b9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-05-14_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f1818f8313716f99",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Interfacce note.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 6
           }
         ],
         "direction": "vertical"
@@ -376,7 +376,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "equals path:\"Programming languages/Java/\"",
+                    "query": "supplier path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -393,7 +393,8 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
@@ -414,7 +415,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md",
+                    "file": "Flet-notes/2024-05-14_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -431,7 +432,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md",
+                    "file": "Flet-notes/2024-05-14_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -454,7 +455,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md"
+                    "file": "Flet-notes/2024-05-14_MDP.md"
                   }
                 }
               },
@@ -489,8 +490,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "3ea7c75cf3ff145f",
-      "mtime": "2024-05-13T23:14:11+02:00"
+      "active": "b9de946c1b8f89b9",
+      "mtime": "2024-05-14T12:26:16+02:00"
     },
     "Python": {
       "main": {
