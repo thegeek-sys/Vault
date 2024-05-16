@@ -64,7 +64,7 @@ Predicate<String> isNotEmpty = String::isEmpty.negate();
 
 ---
 ## Function<T,R>
-Funzione a un argomento di tipo T e un tipo di ritorno E entrambi generici
+Funzione a un argomento di tipo T e un tipo di ritorno R entrambi generici
 
 | Modifier and Type           | Method                                                                                                                                                                                   |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
