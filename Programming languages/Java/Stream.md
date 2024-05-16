@@ -202,7 +202,7 @@ Per rendere più leggibile il codice: `import static java.util.stream.Collectors
 - In questo modo possiamo scrivere il nome del metodo senza anteporre Collectors. (es. `toList()` invece di `Collectors.toList()`)
 
 ### Riduzione a singolo elemento
-**`counting()`** restituisce il numero di elementi nello stream (risultato di tipo long)
+**`counting()`** restituisce un `Collector` che ha come unico elemento il numero elementi di uno stream (risultato di tipo long)
 ```java
 List<Integer> l = Arrays.asList(2, 3, 5, 6);
 // k == 2

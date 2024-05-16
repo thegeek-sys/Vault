@@ -118,7 +118,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-16_MDP.md",
+                "file": "Programming languages/Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,7 +202,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-16_MDP.md",
+                "file": "Programming languages/Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,7 +225,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-16_MDP.md"
+                "file": "Programming languages/Java/Stream.md"
               }
             }
           },
@@ -260,13 +260,13 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "73b093bca8710153",
+  "active": "691b76c006268744",
   "lastOpenFiles": [
+    "Flet-notes/2024-05-16_MDP.md",
     "Files/Screenshot 2024-05-16 alle 12.48.12.png",
     "Programming languages/Java/Stream.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Tipi generici.md",
-    "Flet-notes/2024-05-16_MDP.md",
     "Programming languages/Java/Ricorsione.md",
     "Flet-notes/2024-05-09_MDP.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
@@ -298,7 +298,6 @@
     "Files/Screenshot 2024-05-11 alle 17.54.38.png",
     "Files/Screenshot 2024-05-11 alle 17.46.40.png",
     "Files/Screenshot 2024-05-11 alle 14.05.43.png",
-    "Files/Screenshot 2024-05-11 alle 14.04.50.png",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
     "Users/fla/Documents/Vault",
