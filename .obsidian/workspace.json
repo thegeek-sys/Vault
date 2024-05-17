@@ -25,9 +25,11 @@
             "id": "6dfb38feb1be299a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png"
+                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -168,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
+                "file": "Class/Architettura degli elaboratori/Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
+                "file": "Class/Architettura degli elaboratori/Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png"
+                "file": "Class/Architettura degli elaboratori/Cache.md"
               }
             }
           },
@@ -245,8 +247,9 @@
   },
   "active": "6dfb38feb1be299a",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Cache.md",
     "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
+    "Files/Screenshot 2024-05-17 alle 13.08.32.png",
+    "Class/Architettura degli elaboratori/Cache.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",

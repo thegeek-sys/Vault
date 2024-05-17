@@ -29,4 +29,4 @@ La località emerge in modo naturale nelle **strutture di controllo semplici** e
 ---
 ## Gerarchia delle memorie
 Si usufruisce del principio di località sfruttando la memoria di un calcolatore in forma gerarchica.
-La **gerarchia delle memoria** consiste in un insieme di livelli di memoria, ciascuno caratterizzato da una **diversa velocità e dimensione**: a parità di capacità, le memorie più veloci hanno un costo più elevato per singolo bit di quelle più lente, perciò di solito esse sono più piccole
+La **gerarchia delle memoria** consiste in un insieme di livelli di memoria, ciascuno caratterizzato da una **diversa velocità e dimensione**: a parità di capacità
