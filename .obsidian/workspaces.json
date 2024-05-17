@@ -93,8 +93,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -161,7 +160,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Matrici.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -178,7 +177,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Matrici.md",
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -201,7 +200,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Matrici.md"
+                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
                   }
                 }
               },
@@ -236,8 +235,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "31771e8b1abd4ca7",
-      "mtime": "2024-05-14T17:17:52+02:00"
+      "active": "ecb6cd090c8cbd79",
+      "mtime": "2024-05-16T21:25:04+02:00"
     },
     "Java": {
       "main": {
@@ -264,6 +263,18 @@
               },
               {
                 "id": "73b093bca8710153",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-05-16_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "691b76c006268744",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -311,18 +322,6 @@
                 }
               },
               {
-                "id": "3ea7c75cf3ff145f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-05-09_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "d2cac6488958348a",
                 "type": "leaf",
                 "state": {
@@ -345,14 +344,7 @@
                     "source": false
                   }
                 }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "49c17faf9c0ae694",
-            "type": "tabs",
-            "children": [
+              },
               {
                 "id": "b9de946c1b8f89b9",
                 "type": "leaf",
@@ -365,7 +357,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -411,8 +404,7 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
@@ -508,8 +500,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "73b093bca8710153",
-      "mtime": "2024-05-16T10:32:18+02:00"
+      "active": "691b76c006268744",
+      "mtime": "2024-05-16T21:24:59+02:00"
     },
     "Python": {
       "main": {
@@ -931,5 +923,5 @@
       "mtime": "2024-05-16T11:57:01+02:00"
     }
   },
-  "active": "Java"
+  "active": "Introduzione agli algoritmi"
 }
