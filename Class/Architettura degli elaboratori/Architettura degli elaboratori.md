@@ -23,6 +23,7 @@
 - [[Control Unit non funzionante]]
 - [[Pipeline]]
 - [[Implementare Pipeline in CPU MIPS]]
+- [[Cache]]
 - 
 
 # Extra
