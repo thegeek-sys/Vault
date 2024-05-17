@@ -34,6 +34,8 @@ Si usufruisce del principio di località sfruttando la memoria di un calcolatore
 
 La **gerarchia delle memoria** consiste in un insieme di livelli di memoria, ciascuno caratterizzato da una **diversa velocità e dimensione**: a parità di capacità, le memorie più veloci hanno un costo più elevato per singolo bit di quelle più lente, perciò esse sono di solito più piccole
 
+![[Screenshot 2024-05-17 alle 13.41.35.png]]
+
 > [!info]
 > La memoria più veloce è posta infatti più vicino al processore di quella lenta in modo tale fa fornire all’utente una quantità di memoria pari a quella disponibile nella tecnologia più economica, consentendo allo stesso tempo una velocità di accesso pari a quella garantita dalla memoria più veloce
 
