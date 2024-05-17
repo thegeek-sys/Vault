@@ -30,11 +30,24 @@ La località emerge in modo naturale nelle **strutture di controllo semplici** e
 ## Gerarchia delle memorie
 Si usufruisce del principio di località sfruttando la memoria di un calcolatore in forma gerarchica.
 
-![[Screenshot 2024-05-17 alle 13.08.32.png]]
+![[Screenshot 2024-05-17 alle 13.08.32.png|470]]
 
 La **gerarchia delle memoria** consiste in un insieme di livelli di memoria, ciascuno caratterizzato da una **diversa velocità e dimensione**: a parità di capacità, le memorie più veloci hanno un costo più elevato per singolo bit di quelle più lente, perciò esse sono di solito più piccole
 
 > [!info]
 > La memoria più veloce è posta infatti più vicino al processore di quella lenta in modo tale fa fornire all’utente una quantità di memoria pari a quella disponibile nella tecnologia più economica, consentendo allo stesso tempo una velocità di accesso pari a quella garantita dalla memoria più veloce
 
-Anche i **dati** sono organizzati in modo gerarchico: un livello più vicino al processore contiene in generale un sottoinsieme dei dati memorizzati in ognuno dei livelli sottostanti, e tutti i dati si trovano memorizzati nel livello più basso della memoria (es. i libri sulla scrivania dello studente sono un sottoinsieme dei libri della biblioteca che è un sottoinsieme delle biblioteche universitarie)
+Anche i **dati** sono organizzati in modo gerarchico: un livello più vicino al processore contiene in generale un sottoinsieme dei dati memorizzati in ognuno dei livelli sottostanti, e tutti i dati si trovano memorizzati nel livello più basso della memoria (es. i libri sulla scrivania dello studente sono un sottoinsieme dei libri della biblioteca che è un sottoinsieme delle biblioteche universitarie, più ci si allontana dal processore più aumenta il tempo per leggere i dati proprio come per lo studente)
+
+![[Screenshot 2024-05-17 alle 13.25.42.png|250]]
+
+Una gerarchia delle memorie può essere composta da più livelli, ma i dati vengono di volta in volta trasferiti solo tra due livelli vicini.
+La più piccola quantità di informazione che può essere presente o assente in questa gerarchia su due livelli è detta **blocco** o **linea** (es. i libri per lo studente)
+
+Nel caso di successo o insuccesso nell’accedere al dato richiesto abbiamo diverse terminologie:
+- *hit* → il dato si trova in uno dei blocchi presenti nel livello superiore (es. studente trova informazioni in uno dei libri che ha sulla scrivania)
+- *miss* → il dato non si trova nel livello superiore della gerarchia, in questo caso il dato va ricercato nel livello inferiore (es. studente si alza dalla scrivania e va a cercare sugli scaffali)
+- *hit rate* → numero di hit fratto numero totale di accessi in memoria
+- *miss rate* → numero di miss fratto il numero totale di accessi in memoria
+- *tempo di hit* → tempo per tentare di trovare il dato nel livello superiore, che esso abbia successo o che non non sia presente (es. tempo che impiega lo studente a passare in rassegna i libri)
+- *penalità di miss* → tempo necessario a sostituire un blocco del livello superiore con un nuovo blocco caricato dal livello inferiore della gerarchia e a trasferire i dati contenuti in questo blocco al processore (es. tempo che serve per prendere un nuovo libro dagli scaffali e metterlo sulla scrivania). Generalmente il tempo di hit è molto minore della penalità di miss
