@@ -25,11 +25,9 @@
             "id": "6dfb38feb1be299a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
-                "mode": "source",
-                "source": false
+                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png"
               }
             }
           },
@@ -154,8 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -171,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +185,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md"
+                "file": "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png"
               }
             }
           },
@@ -248,8 +245,10 @@
   },
   "active": "6dfb38feb1be299a",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Cache.md",
+    "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
+    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
@@ -266,7 +265,6 @@
     "Programming languages/Java/File.md",
     "Class/Architettura degli elaboratori/Esercizi/es1.md",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
     "Class/Architettura degli elaboratori/Assembly MIPS.md",
@@ -277,14 +275,12 @@
     "Class/Architettura degli elaboratori/Codifica delle istruzioni.md",
     "Files/Screenshot 2024-05-13 alle 22.55.58.png",
     "Class/Introduzione agli algoritmi/Esercizi.md",
-    "Programming languages/Java/Untitled.md",
     "Files/Screenshot 2024-05-11 alle 18.24.44.png",
     "Files/Screenshot 2024-05-11 alle 18.22.02.png",
     "Files/Screenshot 2024-05-11 alle 18.02.21.png",
     "Files/Screenshot 2024-05-11 alle 18.01.49.png",
     "Files/Screenshot 2024-05-11 alle 17.54.38.png",
     "Files/Screenshot 2024-05-11 alle 17.46.40.png",
-    "Files/Screenshot 2024-05-11 alle 14.05.43.png",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
     "Users/fla/Documents/Vault",
