@@ -53,3 +53,14 @@ Nel caso di successo o insuccesso nell’accedere al dato richiesto abbiamo dive
 - *miss rate* → numero di miss fratto il numero totale di accessi in memoria
 - *tempo di hit* → tempo per tentare di trovare il dato nel livello superiore, che esso abbia successo o che non non sia presente (es. tempo che impiega lo studente a passare in rassegna i libri)
 - *penalità di miss* → tempo necessario a sostituire un blocco del livello superiore con un nuovo blocco caricato dal livello inferiore della gerarchia e a trasferire i dati contenuti in questo blocco al processore (es. tempo che serve per prendere un nuovo libro dagli scaffali e metterlo sulla scrivania). Generalmente il tempo di hit è molto minore della penalità di miss
+
+---
+## Cache Direct-Mapped
+Poiché una cache deve contenere solo i dati più richiesti utilizzando dimensioni limi- tate, è necessario che più blocchi di memoria vengano **salvati nello stesso spazio**, sovrascrivendosi a vicenda.
+
+![[Screenshot 2024-05-18 alle 21.30.11.png|center|400]]
+
+Strutturiamo quindi la nostra cache come composta da un numero N di linee, corrispondenti agli spazi occupabili dai blocchi, dove ogni linea è composta da:
+- **bit di validità** → indicante se i dati contenuti nella linea siano validi o meno. Se tale bit vale 0, allora la linea viene considerata come “vuota”
+- **campo tag** → in grado di distinguere quale blocco della memoria sia caricato nella linea. Tale campo risulta fondamentale poiché più blocchi in memoria vengono mappati sulla stessa lina, prevenendo la lettura del blocco sbagliato
+- **blocco** → stesso memorizzato all’interno della linea
