@@ -99,3 +99,16 @@ $$
 $$
 \verb|Tag|= \frac{\verb|#Blocco|}{\verb|#Linee|} = \frac{\verb|#Blocco|}{4}
 $$
+
+![[Screenshot 2024-05-19 alle 12.09.03.png|center|400]]
+- La cache viene inizializzata con tutti i valid bit posti su 0
+- Viene richiesto l’**indirizzo 128** (Index = 0, Tag = 1). La linea 0 ha il **valid bit posto a 0**, dunque il dato viene prelevato dalla memoria e salvato nella cache, restituendolo anche alla CPU (MISS)
+- Viene richiesto l’**indirizzo 130** (Index = 0, Tag = 1). La linea 0 ha il **valid bit posto a 1** e il Tag dell’indirizzo corrisponde a quello salvato nella linea, quindi il dato è presente nella cache (HIT)
+- Viene richiesto l’**indirizzo 162** (Index = 1, Tag = 1). La linea 1 ha il **valid bit posto a 0**, dunque il dato viene prelevato dalla memoria e salvato nella cache, restituendolo anche alla CPU (MISS)
+- Viene richiesto l’**indirizzo 40** (Index = 1, Tag = 0). La linea 1 ha il **valid bit posto a 1**, ma il Tag dell’indirizzo è diverso da quello salvato nella linea, quindi il dato non è presente nella cache (MISS). Preleviamo il dato dalla memoria, rimpiazzando il tag e il blocco precedentemente salvati all’interno della linea 1
+
+>[!hint]- Passaggi nel dettaglio
+>![[Screenshot 2024-05-19 alle 12.10.49.png]]
+
+Applicando la stessa logica con gli indirizzi rimanenti, la sequenza di accessi risulta:
+![[Screenshot 2024-05-19 alle 12.12.20.png|center|400]]
