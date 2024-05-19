@@ -74,3 +74,6 @@ Prima, però, è necessario puntualizzare che:
 - Scomponiamo la memoria in blocchi da $\mathbf{2^m}$ **word**, dove ogni word corrisponde a 4 byte. La dimensione di ogni blocco, quindi, risulta essere $2^m \cdot 4\cdot8$ bit.
 - Abbiamo bisogno di un valore, chiamato **offset di word**, che possa indicare quale word interna al blocco corrisponda a quella richiesta dall’indirizzo di memoria. Tale valore, quindi, avrà una dimensione di $m$ bit, che ci permettono di selezionare una delle $2^m$ word.
 - Analogamente, abbiamo bisogno di un valore, chiamato **offset di byte** che vada a selezionare quale dei 4 byte componenti tale word corrisponda al byte specifico richiesto dall’indirizzo di memoria. Poiché ogni word è sempre composta da 4 byte, saranno necessari **2 bit** per tale valore.
+
+![[Screenshot 2024-05-19 alle 10.57.06.png]]
+Facendo i conti la **dimensione totale della cache** risulta essere $17088 \text{ bit}=2136\text{ byte}\approx 2.1 \text{ KB}$
