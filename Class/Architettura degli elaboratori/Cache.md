@@ -77,3 +77,9 @@ Prima, però, è necessario puntualizzare che:
 
 ![[Screenshot 2024-05-19 alle 10.57.06.png]]
 Facendo i conti la **dimensione totale della cache** risulta essere $17088 \text{ bit}=2136\text{ byte}\approx 2.1 \text{ KB}$
+
+### Determinare un HIT o un MISS
+Una volta identificata la struttura dei campi, possiamo utilizzarli per realizzare la vera e propria cache, il cui funzionamento può essere riassunto nella seguente schematica:
+![[Screenshot 2024-05-19 alle 11.05.08.png]]
+
+Oltre all’uso della circuiteria, possiamo calcolare matematicamente se venga effettuato un HIT o un MISS utilizzando le dimensioni dei vari campi individuati
