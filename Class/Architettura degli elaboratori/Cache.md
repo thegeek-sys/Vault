@@ -62,5 +62,15 @@ Poiché una cache deve contenere solo i dati più richiesti utilizzando dimens
 
 Strutturiamo quindi la nostra cache come composta da un numero N di linee, corrispondenti agli spazi occupabili dai blocchi, dove ogni linea è composta da:
 - **bit di validità** → indicante se i dati contenuti nella linea siano validi o meno. Se tale bit vale 0, allora la linea viene considerata come “vuota”
-- **campo tag** → in grado di distinguere quale blocco della memoria sia caricato nella linea. Tale campo risulta fondamentale poiché più blocchi in memoria vengono mappati sulla stessa lina, prevenendo la lettura del blocco sbagliato
+- **campo tag** → in grado di distinguere quale blocco della memoria sia caricato nella linea. Tale campo risulta fondamentale poiché più blocchi in memoria vengono mappati sulla stessa linea, prevenendo la lettura del blocco sbagliato
 - **blocco** → stesso memorizzato all’interno della linea
+
+![[Screenshot 2024-05-19 alle 10.46.19.png|600]]
+
+A questo punto, ci serve un modo matematico per poter calcolare i singoli valori che ci permettono di lavorare sulle linee della cache a partire dall’indirizzo di memoria richiesto.
+
+Prima, però, è necessario puntualizzare che:
+- Per praticità, realizziamo la nostra cache con $\mathbf{2^n}$ **linee**, associando ad ognuna di esse un indice. Per selezionare uno di tali indici, quindi, sono necessari $n$ bit.
+- Scomponiamo la memoria in blocchi da $\mathbf{2^m}$ **word**, dove ogni word corrisponde a 4 byte. La dimensione di ogni blocco, quindi, risulta essere $2^m \cdot 4\cdot8$ bit.
+- Abbiamo bisogno di un valore, chiamato **offset di word**, che possa indicare quale word interna al blocco corrisponda a quella richiesta dall’indirizzo di memoria. Tale valore, quindi, avrà una dimensione di $m$ bit, che ci permettono di selezionare una delle $2^m$ word.
+- Analogamente, abbiamo bisogno di un valore, chiamato **offset di byte** che vada a selezionare quale dei 4 byte componenti tale word corrisponda al byte specifico richiesto dall’indirizzo di memoria. Poiché ogni word è sempre composta da 4 byte, saranno necessari **2 bit** per tale valore.
