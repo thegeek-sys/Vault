@@ -83,3 +83,9 @@ Una volta identificata la struttura dei campi, possiamo utilizzarli per realizza
 ![[Screenshot 2024-05-19 alle 11.05.08.png]]
 
 Oltre all’uso della circuiteria, possiamo calcolare matematicamente se venga effettuato un HIT o un MISS utilizzando le dimensioni dei vari campi individuati
+
+Per calcolare il **numero di blocco**, è necessario **shiftare a destra l’indirizzo di memoria** di una quantità di bit pari alla **dimensione dell’offset di blocco**, ossia $m+2$, in modo da poterli "scartare", considerando così solo i $32−m−2$ bit riservati al numero di blocco:
+
+$$
+
+$$
