@@ -82,18 +82,20 @@ Facendo i conti la **dimensione totale della cache** risulta essere $17088 \text
 Una volta identificata la struttura dei campi, possiamo utilizzarli per realizzare la vera e propria cache, il cui funzionamento può essere riassunto nella seguente schematica:
 ![[Screenshot 2024-05-19 alle 11.05.08.png]]
 
-Oltre all’uso della circuiteria, possiamo calcolare matematicamente se venga effettuato un HIT o un MISS utilizzando le dimensioni dei vari campi individuati
 
-Per calcolare il **numero di blocco**, è necessario **shiftare a destra l’indirizzo di memoria** di una quantità di bit pari alla **dimensione dell’offset di blocco**, ossia $m+2$, in modo da poterli "scartare", considerando così solo i $32−m−2$ bit riservati al numero di blocco:
+### Sequenza di accessi alla cache
+Proviamo ora a vedere il comportamento di una cache direct-mapped a 4 linee e con blocchi da 8 word con la seguente sequenza di accessi:
+![[Screenshot 2024-05-19 alle 11.57.25.png|center|400]]
 
+- **Numero di blocco**
 $$
-\verb|#Blocco| = \verb|Address|>>m+2
+\verb|#Blocco|=\frac{\verb|Address|}{\verb|#Byte per blocco|} = \frac{\verb|Address|}{8\cdot 4}
 $$
-Tuttavia, ricordiamo che uno shift a destra di $x$ posizioni equivale a dividere il valore stesso per $2^x$ (arrotondamento per difetto):
+- **Indice di linea**
 $$
-\verb|#Blocco| = \verb|Address|>>m+2 =\left\lfloor \frac{\verb|Address|}{2^{m+2}} \right\rfloor
+\verb|Index| = \verb|#Blocco | \% \verb|#Linee| = \verb|#Blocco |\% \text{ }4
 $$
-Di fatti notiamo come $2^{m+2}$ corrisponda esattamente al **numero di byte del blocco** ($2^{m+2}=2^m\cdot_{4}$, dove $2^m$ ricordiamo essere il numero di word del blocco). Dunque il numero di blocco dell’indirizzamento di memoria richiesto dall’accesso corrisponde a:
+- **Tag del blocco**
 $$
-\verb|#Blocco| = \left\lfloor \frac{\verb|Address|}{2^{m+2}} \right\rfloor = \left\lfloor \frac{\verb|Address|}{\verb|Num. byte blocco|} \right\rfloor
+\verb|Tag|= \frac{\verb|#Blocco|}{\verb|#Linee|} = \frac{\verb|#Blocco|}{4}
 $$
