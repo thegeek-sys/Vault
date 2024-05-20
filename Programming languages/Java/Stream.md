@@ -277,4 +277,32 @@ Map<City, Set<String>> peopleSurnamesByCity =
 			mapping(Person::getLastName, toSet())));
 ```
 
-### Creare il proprio collector
+### Creare il proprio Collector
+Con il metodo statico `Collector.of` che prende in input 4 argomenti:
+- un **supplier** → per creare la rappresentazione interna
+- l’**accumulator** → che aggiorna la rappresentazione con il nuovo metodo
+- un **combiner** → che “fonde” due rappresentazioni ottenute in modo parallelo
+- il **finisher** → chiamato alla fine, che trasforma tutto nel tipo finale
+
+```java
+Colector<Person, StringJoiner, String> personNameCollector =
+	Collector.of(
+		() -> new StringJoiner(" | "), // supplier
+		
+		// j è lo StringJoiner
+		(j, p) -> j.add(p.name.toUpperCase()), // accumulator
+		
+		// fa il merge di tutti gli StringJoiner pronti dato
+		// che implicitamente si hanno molti StringJoiner
+		// eseguiti in parallelo
+		(j1, j2) -> j1.merge(j2), // combiner
+		
+		StringJoiner::toString // finisher
+	);
+	
+	String names = people.stream()
+						 .collect(personNmaeCollector);
+	System.out.println(names); // MAX | PETER | PAMELA
+```
+
+### Partizionamento di elementi
