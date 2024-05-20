@@ -271,6 +271,97 @@ ivaEsclusa.stream()
 		  .orElse(0);
 ```
 
+### limit (intermedia)
+Limita lo stream a `k` elementi (`k` è un `long` passato in input)
+
+#### Esempio
+```java
+List<String> elementi = List.of("uno", "due", "tre");
+List<String> reduced = l.stream()
+						.limit(2)
+						.collect(toList()); // ["uno", "due"]
+```
+
+### skip (intermedia)
+Salta `k` elementi (`k` è un `long` passato in input)
+
+#### Esempio
+```java
+List<String> elementi = List.of("uno", "due", "tre");
+List<String> reduced = l.stream()
+						.skip(2)
+						.collect(toList()); // ["tre"]
+```
+
+### takeWhile/dropWhile (intermedie)
+`takeWhile` prende elementi finché si verifica la condizione del predicato
+`dropWhile` salta gli elementi finché si verifica la condizione
+
+#### Esempio
+```java
+List<Integer> elementi = List.of(2, 5, 10, 42, 3, 2, 10)
+List<Integer> reduced = l.stream()
+						 .takeWhile(x -> x<42)
+						 .collect(toList());   // [2, 5, 10]
+```
+
+### anyMatch/allMatch/noneMatch (terminali)
+Gli stream espongono diverse operazioni terminali di matching e restituiscono un booleano relativo all’esito del matching
+
+#### Esempio
+```java
+boolean anyStartsWithA = l.stream().anyMatch(s -> s.startsWith("a"));
+System.out.println(anyStartsWithA); // true
+boolean allStartsWithA = l.stream().allMatch(s -> s.startsWith("a"));
+System.out.println(allStartsWithA); // false
+boolean noneStartsWithZ = l.stream().noneMatch(s -> s.startsWith("z"));
+System.out.println(noneStartsWithZ); // true
+```
+
+### findFirst/findAny (terminali)
+Gli stream espongono due operazioni terminali per ottenere il primo (`findFirst`) o un qualsiasi elemento (`findAny`) dello stream
+
+#### Esempio
+```java
+List<String> l2 = Arrays.asList("c", "b", "a");
+Optional<String> v = l2.stream().sorted().findFirst(); // "a"
+```
+
+### mapToInt e IntStream.summaryStatistics
+E’ possibile convertire uno `Stream` in un **`IntStream`** attraverso il metodo `mapToInt`. A sua volta lo `IntStream` possiede il metodo `summaryStatistics` che restituisce un oggetto di tipo `IntSummaryStatistics` con informazioni su: minimo, massimo, media, conteggio
+
+#### Esempio
+```java
+List<Integer> p = List.of(2, 3, 4, 5, 6, 7);
+IntSummaryStatistics stats = p.stream()
+							  .mapToInt(x -> x)
+							  .summaryStatistics();
+
+System.out.println(stats.getMin());     // 2
+System.out.println(stats.getMax());     // 7
+System.out.println(stats.getAverage()); // 4.5
+System.out.println(stats.getCount());   // 6
+```
+
+### flatMap
+`flatMap` mi è utile nel caso in cui sto lavorando su collezione di collezioni. Questo metodo mi restituisce uno stream “appiattito” con tutti gli elementi della collezione
+
+#### Esempio
+```java
+// restituisce uno Stream<String[]>
+words.map(w -> w.split(""))
+	 // restituisce uno Stream<Stream<String>>
+	 .map(Arrays::stream);
+
+// con flatMap
+Map<String, Long> letterToCount = words.map(w -> w.split("")) // String[]
+									   .flatMap(Arrays::stream)
+									   .collect(
+										   groupingBy(identity(),
+										   counting())
+										);
+```
+
 ---
 ## Collectors
 I `Collectors` sono delle “ricette” per **ridurre gli elementi di uno stream** e raccoglierli in qualche modo
