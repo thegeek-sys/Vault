@@ -195,6 +195,36 @@ List<Integer> wordLengths =
 		 .collect(toList());
 ```
 
+### distinct (intermedia)
+Restituisce un nuovo stream senza ripetizione di elementi (gli elementi sono tutti distinti tra loro) basandosi sul metodo equals
+
+#### Esempio
+```java
+List<Integer> l = List.of(3, 4, 5, 3, 4, 1);
+List<Integer> distinti = l.stream()
+						  .map(x -> x*x)
+						  .distinct()
+						  .collect(Collectors.toList());
+```
+
+### reduce (terminale)
+`reduce` è un’operazione terminale che effettua una riduzione sugli elementi dello stream utilizzando la funzione data in input
+
+#### Esempio
+![[Screenshot 2024-05-16 alle 12.48.12.png|450]]
+```java
+// iterativamente
+int somma = 0;
+for (int k : lista)
+	somma += k;
+
+
+// tramite stream
+lista.stream().reduce(0, (a, b) -> a+b);
+// oppure
+lista.stream().reduce(0, Integer::sum);
+```
+
 ---
 ## Collectors
 I `Collectors` sono delle “ricette” per **ridurre gli elementi di uno stream** e raccoglierli in qualche modo
@@ -306,3 +336,12 @@ Colector<Person, StringJoiner, String> personNameCollector =
 ```
 
 ### Partizionamento di elementi
+Come idea `partitionBy(predicato)` risulta essere simile a `groupingBy` infatti questo metodo ci permette di creare una `Map<Boolean, List<T>>` che soddisfano il criterio del predicato in input
+```java
+Map<Boolean, List<Integer>> m = l.stream()
+								 .collect(
+								     Collectors.partitioningBy(x -> x%2==0)
+								 );
+```
+
+---
