@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "6fa49714e6656508",
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "39d805ea6ffbd4c1",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Programming languages/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,77 +22,55 @@
             }
           },
           {
-            "id": "6dfb38feb1be299a",
+            "id": "691b76c006268744",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Programming languages/Java/Stream.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "31771e8b1abd4ca7",
+            "id": "4568008cdfdb7230",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Matrici.md",
+                "file": "Programming languages/Java/Tipi generici.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "85b1d7a9a7c4d3c7",
+            "id": "dad3d3119b4fe2e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Esercizi/es1.md",
+                "file": "Programming languages/Java/File.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f8ad5af2bd381568",
+            "id": "680e8d2ca9d68c72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+                "file": "Programming languages/Java/Ricorsione.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "255092031966b66d",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-05-08 alle 16.38.51.png"
-              }
-            }
-          },
-          {
-            "id": "1c1d2d30c9c312d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Architettura degli elaboratori/Pipeline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "098b92fd659bff2b",
+            "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -102,9 +80,51 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f1818f8313716f99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9de946c1b8f89b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-05-14_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "c1b1b9a168ab0623",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73b093bca8710153",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-05-16_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "write back",
+                "query": "supplier path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -154,7 +174,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -170,7 +191,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Programming languages/Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Programming languages/Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md"
+                "file": "Programming languages/Java/Stream.md"
               }
             }
           },
@@ -232,7 +253,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -242,11 +262,15 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "vscode-editor:Create Code File": false
     }
   },
-  "active": "6dfb38feb1be299a",
+  "active": "691b76c006268744",
   "lastOpenFiles": [
+    "Flet-notes/2024-05-16_MDP.md",
+    "Programming languages/Java/Stream.md",
+    "Class/Architettura degli elaboratori/Cache.md",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
     "Files/Screenshot 2024-05-19 alle 12.09.03.png",
@@ -257,16 +281,12 @@
     "Files/Screenshot 2024-05-18 alle 21.30.11.png",
     "Files/Screenshot 2024-05-17 alle 13.41.35.png",
     "Files/Screenshot 2024-05-17 alle 13.25.42.png",
-    "Flet-notes/Screenshot 2024-05-17 alle 13.08.32.png",
-    "Class/Architettura degli elaboratori/Cache.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Architettura degli elaboratori/Matrici.md",
-    "Programming languages/Java/Stream.md",
-    "Flet-notes/2024-05-16_MDP.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Ricorsione.md",

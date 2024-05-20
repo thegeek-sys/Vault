@@ -276,3 +276,5 @@ Map<City, Set<String>> peopleSurnamesByCity =
 		groupingBy(Person::getCity,
 			mapping(Person::getLastName, toSet())));
 ```
+
+### Creare il proprio collector

@@ -24,6 +24,18 @@
                 }
               },
               {
+                "id": "6dfb38feb1be299a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Architettura degli elaboratori/Cache.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "31771e8b1abd4ca7",
                 "type": "leaf",
                 "state": {
@@ -93,7 +105,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -143,8 +156,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -160,7 +172,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Cache.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -177,7 +189,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Cache.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -200,7 +212,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Class/Architettura degli elaboratori/Cache.md"
                   }
                 }
               },
@@ -235,8 +247,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "ecb6cd090c8cbd79",
-      "mtime": "2024-05-16T21:25:04+02:00"
+      "active": "6dfb38feb1be299a",
+      "mtime": "2024-05-20T15:49:49+02:00"
     },
     "Java": {
       "main": {
@@ -923,5 +935,5 @@
       "mtime": "2024-05-17T12:34:51+02:00"
     }
   },
-  "active": "Architettura degli elaboratori"
+  "active": "Java"
 }
