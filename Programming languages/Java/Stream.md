@@ -225,6 +225,52 @@ lista.stream().reduce(0, (a, b) -> a+b);
 lista.stream().reduce(0, Integer::sum);
 ```
 
+Esiste anche una versione di reduce con un solo parametro (senza elemento identità), che restituisce un `Optional<T>`
+```java
+lista.stream().reduce(Integer::sum);
+```
+
+Riduciamo uno stream di `String` a una stringa costruendola elemento per elemento
+```java
+Optional<String> reduced = l.stream()
+							.sorted()
+							.reduce((s1, s2) -> s1+"#"+s2);
+
+reduced.ifPresent(System.out::println); // "ab#ac#bb#da"
+```
+
+Calcoliamo il prodotto tra interi in una lista:
+```java
+List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8);
+int product = numbers.stream().reduce(1, (a, b) -> a * b);
+// product == 40320
+```
+
+Calcoliamo il massimo tra gli interi di una lista:
+```java
+int max = numbers.stream()
+				 .reduce(Integer.MIN_VALUE, Integer::max);
+// max == 8
+```
+
+Calcolo della somma dei valori iva inclusa:
+```java
+List<Integer> ivaEsclusa = Arrays.asList(10, 20, 30);
+
+// java 7:
+double totIvaInclusa = 0.0;
+for (int p : ivaEsclusa) {
+	double pIvaInclusa = p*1.22;
+	totIvaInclusa += pIvaInclusa;
+}
+
+// java 8:
+ivaEsclusa.stream()
+		  .map(p -> p*1.22)
+		  .reduce((sum, p) -> sum+p)
+		  .orElse(0);
+```
+
 ---
 ## Collectors
 I `Collectors` sono delle “ricette” per **ridurre gli elementi di uno stream** e raccoglierli in qualche modo
