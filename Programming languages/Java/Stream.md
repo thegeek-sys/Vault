@@ -362,6 +362,19 @@ Map<String, Long> letterToCount = words.map(w -> w.split("")) // String[]
 										);
 ```
 
+Supponiamo di avere una lista di stringhe:
+```java
+// mappa a uno stream di IntStream (quindi uno stream di stream)
+l.stream.map(String::chars)
+// per risolvere il problema di avere uno stream di stream, posso
+// utilizzare flatMap (e, in particolare, essendo un IntStream,
+// a flatMapToInt)
+
+l.stream().flatMapToInt(String::chars) // mappa a un unico IntStream
+```
+
+Stampare i token (distinti) da file
+
 ---
 ## Collectors
 I `Collectors` sono delle “ricette” per **ridurre gli elementi di uno stream** e raccoglierli in qualche modo
