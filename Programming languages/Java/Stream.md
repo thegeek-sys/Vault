@@ -5,6 +5,62 @@ Related:
 Completed:
 ---
 ---
+
+## Index
+- [[#Introduction|Introduction]]
+- [[#Operazioni|Operazioni]]
+- [[#Ottenere un o stream|Ottenere un o stream]]
+	- [[#Ottenere un o stream#Esempio|Esempio]]
+- [[#Stream vs. Collection|Stream vs. Collection]]
+- [[#Metodi|Metodi]]
+	- [[#Metodi#min e max|min e max]]
+	- [[#Metodi#filter (intermedio) forEach (terminale)|filter (intermedio) forEach (terminale)]]
+		- [[#filter (intermedio) forEach (terminale)#Esempio|Esempio]]
+	- [[#Metodi#count (terminale)|count (terminale)]]
+		- [[#count (terminale)#Esempio|Esempio]]
+	- [[#Metodi#sorted (intermedia)|sorted (intermedia)]]
+		- [[#sorted (intermedia)#Esempio|Esempio]]
+	- [[#Metodi#map (intermedia)|map (intermedia)]]
+		- [[#map (intermedia)#Esempio|Esempio]]
+	- [[#Metodi#collect (terminale)|collect (terminale)]]
+		- [[#collect (terminale)#Esempio|Esempio]]
+	- [[#Metodi#distinct (intermedia)|distinct (intermedia)]]
+		- [[#distinct (intermedia)#Esempio|Esempio]]
+	- [[#Metodi#reduce (terminale)|reduce (terminale)]]
+		- [[#reduce (terminale)#Esempio|Esempio]]
+	- [[#Metodi#limit (intermedia)|limit (intermedia)]]
+		- [[#limit (intermedia)#Esempio|Esempio]]
+	- [[#Metodi#skip (intermedia)|skip (intermedia)]]
+		- [[#skip (intermedia)#Esempio|Esempio]]
+	- [[#Metodi#takeWhile/dropWhile (intermedie)|takeWhile/dropWhile (intermedie)]]
+		- [[#takeWhile/dropWhile (intermedie)#Esempio|Esempio]]
+	- [[#Metodi#anyMatch/allMatch/noneMatch (terminali)|anyMatch/allMatch/noneMatch (terminali)]]
+		- [[#anyMatch/allMatch/noneMatch (terminali)#Esempio|Esempio]]
+	- [[#Metodi#findFirst/findAny (terminali)|findFirst/findAny (terminali)]]
+		- [[#findFirst/findAny (terminali)#Esempio|Esempio]]
+	- [[#Metodi#mapToInt e IntStream.summaryStatistics|mapToInt e IntStream.summaryStatistics]]
+		- [[#mapToInt e IntStream.summaryStatistics#Esempio|Esempio]]
+	- [[#Metodi#flatMap|flatMap]]
+		- [[#flatMap#Esempio|Esempio]]
+- [[#Collectors|Collectors]]
+	- [[#Collectors#Riduzione a singolo elemento|Riduzione a singolo elemento]]
+	- [[#Collectors#Riduzione a mappa|Riduzione a mappa]]
+	- [[#Collectors#Raggruppamento di elementi|Raggruppamento di elementi]]
+		- [[#Raggruppamento di elementi#mapping|mapping]]
+	- [[#Collectors#Creare il proprio Collector|Creare il proprio Collector]]
+	- [[#Collectors#Partizionamento di elementi|Partizionamento di elementi]]
+- [[#IntStream, DoubleStream e LongStream|IntStream, DoubleStream e LongStream]]
+	- [[#IntStream, DoubleStream e LongStream#Esempio|Esempio]]
+	- [[#IntStream, DoubleStream e LongStream#Passaggio da Stream a IntStream, LongStream, DoubleStream e viceversa|Passaggio da Stream a IntStream, LongStream, DoubleStream e viceversa]]
+- [[#Ottenere uno stream infinito|Ottenere uno stream infinito]]
+- [[#L’ordine delle operazioni conta|L’ordine delle operazioni conta]]
+- [[#Fare copie di stream|Fare copie di stream]]
+- [[#Stream paralleli|Stream paralleli]]
+	- [[#Stream paralleli#Esempio|Esempio]]
+	- [[#Stream paralleli#Quando usare uno stream parallelo?|Quando usare uno stream parallelo?]]
+- [[#Le mappe non supportano gli stream|Le mappe non supportano gli stream]]
+
+---
 ## Introduction
 L’interfaccia `java.util.stream.Stream` che è stata pensata per **definire elaborazioni di flussi di dati**. La sua particolarità sta nel fatto che può supportare operazioni sequenziali e parallele.
 Uno `Stream` viene creato a partire da una sorgente di dati, ad esempio una `java.util.Collection` ma al contrario delle collection, uno `Stream` **non memorizza né modifica i dati della sorgente**, ma opera su di essi
@@ -373,7 +429,14 @@ l.stream.map(String::chars)
 l.stream().flatMapToInt(String::chars) // mappa a un unico IntStream
 ```
 
-Stampare i token (distinti) da file
+Stampare i token (distinti) da file:
+```java
+Files.lines(Paths.get("stuff.txt"))
+	 .map(line -> line.split("\\s+")) // Stream<String[]>
+	 .flatMap(Arrays::stream) // Stream<String>
+	 .distinct() // Stream<String>
+	 .forEach(System.out::println);
+```
 
 ---
 ## Collectors
@@ -495,3 +558,348 @@ Map<Boolean, List<Integer>> m = l.stream()
 ```
 
 ---
+## IntStream, DoubleStream e LongStream
+Si ottengono da uno `Stream` con i metodi `mapToInt`, `mapToLong`, `mapToDouble`. Analoghi metodi sono disponibili nelle 3 classi.
+
+Essi dispongono di 2 metodi statici:
+- `range(inizio, fine)` → intervallo esclusivo (aperto a destra)
+- `rangeClosed(inizio, fine)` → intervallo inclusivo (chiuso a destra)
+
+### Esempio
+Stampa i numeri dispari fino a 10:
+```java
+IntStream.range(0,10).filter(n -> n%2==1)
+					 .forEach(System.out::println);
+```
+
+IntStream ottenuto da uno stream di array di interi:
+```java
+Arrays.stream(new int[] {1, 2, 3}) // restituisce un IntStream
+	  .map(n -> 2*n+1)
+	  .average() // metodo di IntStream
+	  .ifPresent(System.out::println); // 5.0
+```
+
+### Passaggio da Stream a IntStream, LongStream, DoubleStream e viceversa
+Mediante i metodi `Stream.mapToInt|Double|Long` e, da uno stream di primitivi incapsulati, boxed o `mapToObj`
+Tra stream di primitivi, `asDouble|LongStream`. Il metodo `boxed()` in particolare mi permette di tornare da una specializzazione di stream al generico dello stream (es. da `IntStream` a `Stream<Integer>`)
+
+```java
+List<String> s = Arrays.asList("a", "b", "c");
+s.stream()                  // Stream<String>
+ .mapToInt(String::length)  // IntStream
+ .asLongStream()            // LongStream
+ .mapToDouble(x -> x/42.0)  // DoubleStream
+ .boxed()                   // Stream<Double>
+ .mapToLong(x -> 1L)        // LongStream
+ .mapToObj(x -> "")         // Stream<String>
+```
+
+---
+## Ottenere uno stream infinito
+L'interfaccia `Stream` espone un metodo **`iterate`** che, partendo dal primo argomento, restituisce uno stream infinito con valori successivi applicando la funzione passata come secondo argomento:
+```java
+Stream<Integer> numbers = Stream.iterate(0, n -> n+10);
+```
+
+E' possibile limitare uno stream infinito con il metodo `limit`:
+```java
+// 0, 10, 20, 30, 40
+numbers.limit(5).forEach(System.out::println);
+```
+
+Da Java 9, l'interfaccia `Stream` espone un secondo metodo `iterate` che, partendo dal primo argomento, restituisce uno stream di valori successivi applicando la funzione passata come terzo argomento e uscendo quando il predicato del secondo argomento è `false`:
+```java
+// 0, 10, 20, 30, 40
+Stream<Integer> numbers = Stream.iterate(0, n -> n < 50, n -> n+10);
+```
+
+---
+## L’ordine delle operazioni conta
+```java
+Stream.of("d2", "a2", "b1", "b3", "c")
+	  .map(s -> {
+	      System.out.println("map: " + s);
+		  return s.toUpperCase();
+	  })
+	  .filter(s -> {
+		  System.out.println("filter: " + s);
+		  return s.startsWith("A");
+	  })
+	  .forEach(s -> System.out.println("forEach: " + s));
+
+// map:     d2
+// filter:  D2
+// map:     a2
+// filter:  A2
+// map:     b1
+// filter:  B1
+// map:     b3
+// filter:  B3
+// map:     c
+// filter:  C
+// forEach: A2
+```
+
+Invertendo l’ordine di `filter` e `map`  la pipeline è molto più veloce, infatti eseguirà il `filter` su ogni elemento ma il `map` solamente sull’elemento che inizia per “a”
+```java
+Stream.of("d2", "a2", "b1", "b3", "c")
+	  .filter(s -> {
+		  System.out.println("filter: " + s);
+		  return s.startsWith("a");
+	  })
+	  .map(s -> {
+		  System.out.println("map: " + s);
+		  return s.toUpperCase();
+	  })
+	  .forEach(s -> System.out.println("forEach: " + s));
+
+// filter:  d2
+// filter:  a2
+// map:     a2
+// filter:  b1
+// filter:  b3
+// filter:  c
+// forEach: A2
+```
+
+Aggiungiamo un ordinamento dei valori nello stream:
+```java
+Stream.of("d2", "a2", "b1", "b3", "c")
+	  .sorted((s1, s2) -> {
+	      System.out.printf("sort: %s, %s\n", s1, s2);
+	      return s1.compareTo(s2)
+	  })
+	  .filter(s -> {
+		  System.out.println("filter: " + s);
+		  return s.startsWith("a");
+	  })
+	  .map(s -> {
+		  System.out.println("map: " + s);
+		  return s.toUpperCase();
+	  })
+	  .forEach(s -> System.out.println("forEach: " + s));
+
+// sort:    a2; d2
+// sort:    b1; a2
+// sort:    b1; d2
+// sort:    b1; a2
+// sort:    b3; b1
+// sort:    b3; d2
+// sort:    c; b3
+// sort:    c; d2
+// filter:  a2
+// map:     a2
+// filter:  b1
+// filter:  b3
+// filter:  c
+// filter:  d2
+// forEach: A2
+```
+
+Modifichiamo l'ordine delle operazioni e ottimizziamo (in questo caso il `sort` non verrà mai stampato in quanto dopo il `filter` il metodo `sort` non ha elementi da poter confrontare tra loro):
+```java
+Stream.of("d2", "a2", "b1", "b3", "c")
+	  .filter(s -> {
+		  System.out.println("filter: " + s);
+		  return s.startsWith("a");
+	  })
+	  .sorted((s1, s2) -> {
+	      System.out.printf("sort: %s, %s\n", s1, s2);
+	      return s1.compareTo(s2)
+	  })
+	  .map(s -> {
+		  System.out.println("map: " + s);
+		  return s.toUpperCase();
+	  })
+	  .forEach(s -> System.out.println("forEach: " + s));
+
+// filter:  d2
+// filter:  a2
+// filter:  b1
+// filter:  b3
+// filter:  c
+// map:     a2
+// forEach: A2
+```
+
+Finalmente l’ordine di esecuzione delle operazioni è ottimizzato:
+```java
+Stream.of("domus", "aurea", "bologna", "burro", "charro")
+	  .map(s -> {
+		  System.out.println("map: " + s);
+		  return s.toUpperCase();
+	  })
+	  .anyMatch(s -> {
+		  System.out.println("anyMatch: " + s);
+		  return s.startsWith("A");
+	  });
+
+// map:      domus
+// anyMatch: DOMUS
+// map:      aurea
+// anyMatch: AUREA
+```
+
+Nonostante si potrebbe pensare che l’esecuzione delle operazioni in uno stream sia sequenziale, di norma se si associa un metodo `filter` o `map` ad un `limit`, le due operazioni sugli elementi vengono eseguite non su tutti gli elementi dello stream, bensì fin quando non ho raggiunto il numero necessario di elementi per il limit:
+```java
+// in questo caso non esegue prima tutti i filter e tutti i map
+// su tutti gli elementi, bensì viene fatto fino a quando non ho due
+// elementi validi
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
+List<Integer> twoEvenSquares =
+			  numbers.stream()
+					 .filter(n -> {
+					     System.out.println("filtering " + n);
+						 return n % 2 == 0;
+					 })
+					 .map(n -> {
+						 System.out.println("mapping " + n);
+						 return n * n;
+					 })
+					 .limit(2)
+					 .collect(toList());
+
+// filtering 1
+// filtering 2
+// mapping   2
+// filtering 3
+// filtering 4
+// mapping   4
+```
+
+---
+## Fare copie di stream
+Nonostante gli stream non siano riutilizzabili, è possibile creare un builder di stream mediante una lambda 
+
+```java
+Supplier<Stream<String>> streamSupplier = () ->
+	Stream.of("d2", "a2", "b1", "b3", "c")
+		  .filter(s -> s.startsWith("a"));
+
+streamSupplier.get().anyMatch(s -> true); // ok
+streamSupplier.get().noneMatch(s -> true); // ok
+```
+
+Ovviamente ha più senso se, invece di un `Supplier`, abbiamo una funzione che prende in input una `Collection` e restituisce uno stream su tale collection
+
+---
+## Stream paralleli
+Le operazioni su **stream sequenziali** sono effettuate in un **singolo thread**; le operazioni su **stream paralleli**, invece, sono effettuate concorrentemente su **thread multipli**.
+
+>[!hint]
+>`heap` e `metaspace` sono condivisi dai vari thread mentre lo stack è unico per ogni thread
+
+### Esempio
+```java
+int max = 1000000;
+List<String> values = new ArrayList<>(max);
+for (int i = 0; i < max; i++) {
+	UUID uuid = UUID.randomUUID();
+	values.add(uuid.toString());
+}
+```
+
+Con l’ordinamento sequenziale:
+```java
+long t0 = System.nanoTime();
+long count = values.stream().sorted().count();
+System.out.println(count);
+long t1 = System.nanoTime();
+long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
+System.out.printf("ordinamento sequenziale: %d ms", millis);
+// ordinamento sequenziale: 899 ms
+```
+
+Con l’ordinamento parallelo:
+```java
+long t0 = System.nanoTime();
+long count = values.parallelStream().sorted().count();
+System.out.println(count);
+long t1 = System.nanoTime();
+long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
+System.out.printf("ordinamento parallelo: %d ms", millis);
+// ordinamento parallelo: 472 ms
+```
+
+Tuttavia uno stream parallelo può essere talvolta molto più lento nel caso in cui si tratti di operazioni bloccanti:
+```java
+List<String> l = IntStream.range(0, 100000)
+						  .mapToObj(Integer::toString)
+						  .collect(toList());
+
+l.parallelStream/stream()
+ .filter(s -> {
+	 System.out.format("filter: %s [%s]\n", s, Thread.currentThread().getName());
+	 return true;
+ })
+ .map(s -> {
+	 System.out.format("map: %s [%s]\n", s, Thread.currentThread().getName());
+	 return s.toUpperCase();
+ })
+ .sorted((s1, s2) -> {
+	 System.out.format("sort: %s <> %s [%s]\n", s1, s2, Thread.currentThread().getName());
+	 return s1.compareTo(s2); })
+ .forEach(s ->
+	 System.out.format("forEach: %s [%s]\n", s, Thread.currentThread().getName())
+ );
+
+// parallelStream: 87474402 ns
+// stream: 56447233 ns
+```
+
+### Quando usare uno stream parallelo?
+- Quando il problema è parallelizzabile
+- Quando posso permettermi di usare più risorse (es. tutti i core del processore)
+- La dimensione del problema è tale da giustificare il sovraccarico (overhead, sovraccarico che devo pagare per la parallelizzazione) dovuto alla parallelizzazione
+
+---
+## Le mappe non supportano gli stream
+In Java le mappe non supportano gli stream ma forniscono numerose operazioni aggiuntive a partire da Java 8
+
+```java
+Map<Integer, String> map = new HashMap<>();
+for (int i = 0; i < 10; i++) map.putIfAbsent(i, "val" + i);
+map.forEach((id, val) -> System.out.println(val));
+```
+
+In Java 9, abbiamo `Map.of` per creare una mappa costante
+
+Se l’elemento 3 è presente, modifica il valore associatogli utilizzando la `BiFunction` in input come secondo parametro:
+```java
+// se è presente la chiave 3 modificala con val+key
+map.computeIfPresent(3, (key, val) -> val + key);
+map.get(3); // val33
+
+// se è presente la chiave 9 modifica il suo valore a null
+map.computeIfPresent(9, (key, val) -> null);
+map.containsKey(9); // false
+
+// se NON è presente la chiave 23, aggiungi l'entry
+map.computeIfAbsent(23, key -> "val" + key);
+map.containsKey(23); // true
+
+// se NON è presente la chiave 3, associagli "bam",
+// altrimenti non fare nulla
+map.computeIfAbsent(3, key -> "bam");
+map.get(3); // val33
+
+// rimuovi la chiave 3 se associata a "val3"
+map.remove(3, "val3");
+map.get(3); // val33
+
+// rimuovi la chiave 3 se associata a "val33"
+map.remove(3, "val33"); // removes the pair map.get(3);
+map.getOrDefault(42, "not found"); // not found
+
+// se è presente la chiave 9, prendi il valore precedente
+// e aggiungici "val9"
+map.merge(9, "val9", (value, newValue) -> value.concat(newValue));
+map.get(9); // val9
+
+// se è presente la chiave 9, prendi il valore precedente
+// e aggiungici "concat"
+map.merge(9, "concat", (value, newValue) ->
+value.concat(newValue));
+map.get(9); // val9concat
+```
