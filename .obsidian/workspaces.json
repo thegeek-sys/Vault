@@ -274,6 +274,18 @@
                 }
               },
               {
+                "id": "a4a03c5a5681a8f9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-05-21_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "691b76c006268744",
                 "type": "leaf",
                 "state": {
@@ -359,24 +371,6 @@
               }
             ],
             "currentTab": 1
-          },
-          {
-            "id": "c1b1b9a168ab0623",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "73b093bca8710153",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-05-16_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
           }
         ],
         "direction": "vertical"
@@ -422,7 +416,8 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
@@ -443,7 +438,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/Stream.md",
+                    "file": "Flet-notes/2024-05-21_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -460,7 +455,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/Stream.md",
+                    "file": "Flet-notes/2024-05-21_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -483,7 +478,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/Stream.md"
+                    "file": "Flet-notes/2024-05-21_MDP.md"
                   }
                 }
               },
@@ -518,8 +513,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "691b76c006268744",
-      "mtime": "2024-05-20T20:50:12+02:00"
+      "active": "a4a03c5a5681a8f9",
+      "mtime": "2024-05-21T13:09:58+02:00"
     },
     "Python": {
       "main": {
@@ -941,5 +936,5 @@
       "mtime": "2024-05-20T21:30:47+02:00"
     }
   },
-  "active": "Java"
+  "active": "Architettura degli elaboratori"
 }

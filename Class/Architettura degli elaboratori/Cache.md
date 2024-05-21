@@ -6,18 +6,18 @@ Completed:
 ---
 ---
 ## Introduction
-Per capire al meglio la Cache possiamo prendere un esempio concreto. Immaginiamo uno studente che si sta preparando ad un esame e si trova in biblioteca.
-Lo studente per avere tutte le fonti da cui studiare la materia, decide di fare una prima scrematura raccogliendo sulla propria scrivania tutti i libri della biblioteca che sono concerni a ciò che sta studiando.
-Allo stesso modo il calcolatore per rendere più veloce l’accesso alla memoria decide di pre-caricarsi le informazioni che sa gli serviranno durante l’esecuzione, proprio come lo studente ha raccolto la piccola quantità di libri necessaria per lo studio in modo tale da non dover perdere tempo ogni volta che cambia argomento a riporre il libro precedente e cercare un’ulteriore libro dentro la biblioteca.
-Questo miglioramento però non è presente nel caso in cui lo studente decidesse di mettere sulla propria scrivania tutti i libri presenti in biblioteca perché si ritroverebbe costretto a consultare tutti i libri per trovare le informazioni che gli interessano; allo stesso modo anche l’elaboratore decide di non caricarsi tutto ciò che è presente in memoria, ma solamente la parte che gli interessa
+Per capire al meglio la Cache possiamo prendere un esempio concreto. Immaginiamo Diego Martire che si sta preparando ad un esame e si trova in biblioteca.
+Diego Oreste Martire per avere tutte le fonti da cui studiare la materia, decide di fare una prima scrematura raccogliendo sulla propria scrivania tutti i libri della biblioteca che sono concerni a ciò che sta studiando.
+Allo stesso modo il calcolatore per rendere più veloce l’accesso alla memoria decide di pre-caricarsi le informazioni che sa gli serviranno durante l’esecuzione, proprio come Diego ha raccolto la piccola quantità di libri necessaria per lo studio in modo tale da non dover perdere tempo ogni volta che cambia argomento a riporre il libro precedente e cercare un’ulteriore libro dentro la biblioteca.
+Questo miglioramento però non è presente nel caso in cui Martire decidesse di mettere sulla propria scrivania tutti i libri presenti in biblioteca perché si ritroverebbe costretto a consultare tutti i libri per trovare le informazioni che gli interessano; allo stesso modo anche l’elaboratore decide di non caricarsi tutto ciò che è presente in memoria, ma solamente la parte che gli interessa
 
 ---
 ## Principio della località
-Il **principio di località** sta alla base del comportamento dei programmi in un calcolatore ed è del tutto simile al modo di cercare informazioni in una biblioteca. Questo principio afferma che un programma, in un certo istante di tempo, accede soltanto ad una porzione relativamente piccola del sui spazio di indirizzamento, proprio come lo studente accede solo a una piccola porzione dei libri della biblioteca.
+Il **principio di località** sta alla base del comportamento dei programmi in un calcolatore ed è del tutto simile al modo di cercare informazioni in una biblioteca. Questo principio afferma che un programma, in un certo istante di tempo, accede soltanto ad una porzione relativamente piccola del sui spazio di indirizzamento, proprio come Oreste accede solo a una piccola porzione dei libri della biblioteca.
 
 Esistono due tipi di località:
-- **località temporale** (località nel tempo) → quando si fa riferimento ad  un elemento, c’è la tendenza a fare riferimento allo stesso elemento dopo poco tempo (quando lo studente prende il libro dalla libreria si per consultarlo si suppone che dopo poco lo dovrà fare nuovamente)
-- **località spaziale** (località nello spazio) → quando si fa riferimento a un elemento, c’è la tendenza a fare riferimento poco dopo ad altri elementi che hanno l’indirizzo vicino ad esso (generalmente la biblioteca è organizzata in modo tale da avere i libri con stessa tipologia di argomento nella stessa sezione in modo tale che lo studente, dopo aver preso il libro che cerca, è facilitato a cercare libri con argomenti simili)
+- **località temporale** (località nel tempo) → quando si fa riferimento ad  un elemento, c’è la tendenza a fare riferimento allo stesso elemento dopo poco tempo (quando Diego prende il libro dalla libreria si per consultarlo si suppone che dopo poco lo dovrà fare nuovamente)
+- **località spaziale** (località nello spazio) → quando si fa riferimento a un elemento, c’è la tendenza a fare riferimento poco dopo ad altri elementi che hanno l’indirizzo vicino ad esso (generalmente la biblioteca è organizzata in modo tale da avere i libri con stessa tipologia di argomento nella stessa sezione in modo tale che il povero Diego, dopo aver preso il libro che cerca, è facilitato a cercare libri con argomenti simili)
 
 La località emerge in modo naturale nelle **strutture di controllo semplici** e tipiche dei programmi
 
@@ -39,20 +39,20 @@ La **gerarchia delle memoria** consiste in un insieme di livelli di memoria, cia
 > [!info]
 > La memoria più veloce è posta infatti più vicino al processore di quella lenta in modo tale fa fornire all’utente una quantità di memoria pari a quella disponibile nella tecnologia più economica, consentendo allo stesso tempo una velocità di accesso pari a quella garantita dalla memoria più veloce
 
-Anche i **dati** sono organizzati in modo gerarchico: un livello più vicino al processore contiene in generale un sottoinsieme dei dati memorizzati in ognuno dei livelli sottostanti, e tutti i dati si trovano memorizzati nel livello più basso della memoria (es. i libri sulla scrivania dello studente sono un sottoinsieme dei libri della biblioteca che è un sottoinsieme delle biblioteche universitarie, più ci si allontana dal processore più aumenta il tempo per leggere i dati proprio come per lo studente)
+Anche i **dati** sono organizzati in modo gerarchico: un livello più vicino al processore contiene in generale un sottoinsieme dei dati memorizzati in ognuno dei livelli sottostanti, e tutti i dati si trovano memorizzati nel livello più basso della memoria (es. i libri sulla scrivania del nostro caro Diego sono un sottoinsieme dei libri della biblioteca che è un sottoinsieme delle biblioteche universitarie, più ci si allontana dal processore più aumenta il tempo per leggere i dati proprio come per lo studente)
 
 ![[Screenshot 2024-05-17 alle 13.25.42.png|250]]
 
 Una gerarchia delle memorie può essere composta da più livelli, ma i dati vengono di volta in volta trasferiti solo tra due livelli vicini.
-La più piccola quantità di informazione che può essere presente o assente in questa gerarchia su due livelli è detta **blocco** o **linea** (es. i libri per lo studente)
+La più piccola quantità di informazione che può essere presente o assente in questa gerarchia su due livelli è detta **blocco** o **linea** (es. i libri per Martire)
 
 Nel caso di successo o insuccesso nell’accedere al dato richiesto abbiamo diverse terminologie:
-- *hit* → il dato si trova in uno dei blocchi presenti nel livello superiore (es. studente trova informazioni in uno dei libri che ha sulla scrivania)
-- *miss* → il dato non si trova nel livello superiore della gerarchia, in questo caso il dato va ricercato nel livello inferiore (es. studente si alza dalla scrivania e va a cercare sugli scaffali)
+- *hit* → il dato si trova in uno dei blocchi presenti nel livello superiore (es. Diego trova informazioni in uno dei libri che ha sulla scrivania)
+- *miss* → il dato non si trova nel livello superiore della gerarchia, in questo caso il dato va ricercato nel livello inferiore (es. il nostro amato Diego si alza dalla scrivania e va a cercare sugli scaffali)
 - *hit rate* → numero di hit fratto numero totale di accessi in memoria
 - *miss rate* → numero di miss fratto il numero totale di accessi in memoria
-- *tempo di hit* → tempo per tentare di trovare il dato nel livello superiore, che esso abbia successo o che non non sia presente (es. tempo che impiega lo studente a passare in rassegna i libri)
-- *penalità di miss* → tempo necessario a sostituire un blocco del livello superiore con un nuovo blocco caricato dal livello inferiore della gerarchia e a trasferire i dati contenuti in questo blocco al processore (es. tempo che serve per prendere un nuovo libro dagli scaffali e metterlo sulla scrivania). Generalmente il tempo di hit è molto minore della penalità di miss
+- *tempo di hit* → tempo per tentare di trovare il dato nel livello superiore, che esso abbia successo o che non non sia presente (es. tempo che impiega l’affaticato Diego a passare in rassegna i libri)
+- *penalità di miss* → tempo necessario a sostituire un blocco del livello superiore con un nuovo blocco caricato dal livello inferiore della gerarchia e a trasferire i dati contenuti in questo blocco al processore (es. tempo che serve al disperato Diego per prendere un nuovo libro dagli scaffali e metterlo sulla scrivania). Generalmente il tempo di hit è molto minore della penalità di miss
 
 ---
 ## Cache Direct-Mapped
