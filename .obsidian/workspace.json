@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Stream.md",
+                "file": "Programming languages/Java/MVC.md",
                 "mode": "source",
                 "source": false
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "supplier path:\"Programming languages/Java/\"",
+                "query": "mvc path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -186,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Stream.md",
+                "file": "Programming languages/Java/MVC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +202,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Stream.md",
+                "file": "Programming languages/Java/MVC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,7 +225,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Stream.md"
+                "file": "Programming languages/Java/MVC.md"
               }
             }
           },
@@ -263,9 +262,9 @@
   },
   "active": "691b76c006268744",
   "lastOpenFiles": [
-    "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Stream.md",
+    "Programming languages/Java/Classi annidate e interne.md",
     "Flet-notes/2024-05-21_MDP.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Tipi generici.md",
