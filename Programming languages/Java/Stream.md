@@ -488,7 +488,7 @@ ArrayList<String> str = l.stream().map(x -> ""+x)
 
 ```java
 Map<Integer, String> map = persons.stream()
-								  .collect(Collectors.toMap
+								  .collect(Collectors.toMap(
 									  Person::getAge,
 									  Person::getName,
 									  (name1, name2) -> name1 + ";" name2));
