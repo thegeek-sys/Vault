@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "9420afddb6b2b8cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Enumerazioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cb3cb1f215a2b5af",
             "type": "leaf",
             "state": {
@@ -116,9 +128,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "138394518fd793e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e0761f530851ba3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-05-23_MDP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -147,7 +183,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mvc path:\"Programming languages/Java/\"",
+                "query": "functional path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/MVC.md",
+                "file": "Flet-notes/2024-05-23_MDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,7 +238,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/MVC.md",
+                "file": "Flet-notes/2024-05-23_MDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,7 +261,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/MVC.md"
+                "file": "Flet-notes/2024-05-23_MDP.md"
               }
             }
           },
@@ -260,17 +296,25 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "691b76c006268744",
+  "active": "3e0761f530851ba3",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/Stream.md",
+    "Flet-notes/2024-05-23_MDP.md",
+    "Programming languages/Java/Enumerazioni.md",
+    "Programming languages/Java/Classi anonime e lambda function.md",
+    "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Classi annidate e interne.md",
+    "Programming languages/Java/Classe Object.md",
+    "Programming languages/Java/Polimorfismo.md",
+    "Programming languages/Java/Classi Wrapper.md",
+    "Programming languages/Java/MVC.md",
+    "Programming languages/Java/Interfacce.md",
+    "Class/Architettura degli elaboratori/Cache.md",
+    "Programming languages/Java/Stream.md",
     "Flet-notes/2024-05-21_MDP.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Tipi generici.md",
-    "Class/Architettura degli elaboratori/Cache.md",
     "Flet-notes/2024-05-16_MDP.md",
-    "Programming languages/Java/Enumerazioni.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
@@ -290,14 +334,6 @@
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Architettura degli elaboratori/Matrici.md",
     "Programming languages/Java/Ricorsione.md",
-    "Flet-notes/2024-05-09_MDP.md",
-    "Programming languages/Java/Interfacce note.md",
-    "Flet-notes/2024-05-14_MDP.md",
-    "Class/Architettura degli elaboratori/Esercizi/es1.md",
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
-    "Class/Architettura degli elaboratori/Assembly MIPS.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
