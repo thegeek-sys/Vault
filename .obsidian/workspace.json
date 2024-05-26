@@ -4,157 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "9f225eb12c37a55a",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Java.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "9420afddb6b2b8cd",
+            "id": "ca8454e67935c940",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Enumerazioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb3cb1f215a2b5af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "691b76c006268744",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/MVC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4568008cdfdb7230",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dad3d3119b4fe2e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/File.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "680e8d2ca9d68c72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Ricorsione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2cac6488958348a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-Do.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f1818f8313716f99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9de946c1b8f89b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "138394518fd793e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi anonime e lambda function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e0761f530851ba3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-23_MDP.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 11
+        ]
+      },
+      {
+        "id": "a5da3ec542fdc9c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8f1f67613ff5a1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Python/Object oriented.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "functional path:\"Programming languages/Java/\"",
+                "query": "line ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -200,13 +83,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 276.5
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -222,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-23_MDP.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -239,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-23_MDP.md",
+                "file": "Flet-notes/2023-11-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -262,24 +143,15 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-23_MDP.md"
+                "file": "Flet-notes/2023-11-23.md"
               }
             }
-          },
-          {
-            "id": "ec2deb080f929989",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -292,59 +164,56 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false,
-      "vscode-editor:Create Code File": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3e0761f530851ba3",
+  "active": "ca8454e67935c940",
   "lastOpenFiles": [
-    "Programming languages/Java/MVC.md",
-    "Flet-notes/2024-05-23_MDP.md",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Classi anonime e lambda function.md",
-    "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Classi annidate e interne.md",
-    "Programming languages/Java/Classe Object.md",
-    "Programming languages/Java/Polimorfismo.md",
-    "Programming languages/Java/Classi Wrapper.md",
-    "Programming languages/Java/Interfacce.md",
-    "Class/Architettura degli elaboratori/Cache.md",
-    "Programming languages/Java/Stream.md",
-    "Flet-notes/2024-05-21_MDP.md",
-    "Programming languages/Java/File.md",
-    "Programming languages/Java/Tipi generici.md",
-    "Flet-notes/2024-05-16_MDP.md",
+    "index.md",
+    "To-Do.md",
+    "Programming languages/Python/Ricorsione.md",
+    "Programming languages/Python/Filesystem come albero.md",
+    "Programming languages/Python/Albero binario.md",
+    "Flet-notes/2024-03-13_MDP.md",
+    "Flet-notes/2024-03-12_MDP.md",
+    "Flet-notes/2024-03-12_AE.md",
+    "Flet-notes/2024-03-08_AE.md",
+    "Flet-notes/2024-03-07.md",
+    "Flet-notes/2024-03-06.md",
+    "Flet-notes/2024-03-05.md",
+    "Flet-notes/2024-02-29.md",
+    "Flet-notes/2023-12-12.md",
+    "Flet-notes/2023-12-05.md",
+    "Flet-notes/2023-11-30.md",
+    "Flet-notes/2023-11-28.md",
+    "Flet-notes/2023-10-12.md",
+    "Flet-notes/2023-10-10.md",
+    "Files/stack.png",
+    "Files/stack program.png",
+    "Files/sonic.png",
+    "Files/registri pipeline_1.jpeg",
+    "Files/recurs.py",
+    "Files/queue.png",
+    "Files/jrr.png",
+    "Files/jral.png",
+    "Files/fibonacci.png",
+    "Files/document-92-109.pdf",
+    "Files/bucket sort.png",
+    "Files/Screenshot 2024-05-19 alle 12.12.20.png",
+    "Files/MIPS_Instruction_Set.pdf",
+    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
-    "Files/Screenshot 2024-05-19 alle 12.12.20.png",
-    "Files/Screenshot 2024-05-19 alle 12.10.49.png",
-    "Files/Screenshot 2024-05-19 alle 12.09.03.png",
-    "Files/Screenshot 2024-05-19 alle 11.57.25.png",
-    "Files/Screenshot 2024-05-19 alle 11.05.08.png",
-    "Files/Screenshot 2024-05-19 alle 10.57.06.png",
-    "Files/Screenshot 2024-05-19 alle 10.46.19.png",
-    "Files/Screenshot 2024-05-18 alle 21.30.11.png",
-    "Files/Screenshot 2024-05-17 alle 13.41.35.png",
-    "Files/Screenshot 2024-05-17 alle 13.25.42.png",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
-    "Class/Architettura degli elaboratori/Matrici.md",
-    "Programming languages/Java/Ricorsione.md",
-    "Files/MIPS_Instruction_Set.pdf",
-    "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
-    "Programming languages/Java/Main.java",
-    "Users/fla/Documents/Vault",
-    "Users/fla/Documents",
-    "Users/fla",
-    "Users",
-    "Untitled.canvas",
-    "Introduzione agli algoritmi",
+    "Class/Introduzione agli algoritmi",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Class/Architettura degli elaboratori/Esercizi",
-    "Files/Record.png.sb-edbfe875-QirdlN"
+    "Class/Architettura degli elaboratori",
+    "Class",
+    "Uni",
+    "Programming languages/Verilog",
+    "Flet-notes"
   ]
 }

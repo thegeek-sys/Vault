@@ -8,7 +8,6 @@
   "disablePush": false,
   "pullBeforePush": true,
   "disablePopups": false,
-  "disablePopupsForNoChanges": false,
   "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
   "updateSubmodules": false,
@@ -27,8 +26,6 @@
   "submoduleRecurseCheckout": false,
   "gitDir": "",
   "showFileMenu": true,
-  "authorInHistoryView": "hide",
-  "dateInHistoryView": false,
   "lineAuthor": {
     "show": false,
     "followMovement": "inactive",
