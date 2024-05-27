@@ -200,8 +200,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -299,8 +298,9 @@
   },
   "active": "3e0761f530851ba3",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Flet-notes/2024-05-27_MDP.md",
+    "conflict-files-obsidian-git.md",
     "Flet-notes/2024-05-23_MDP.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Images.md",
@@ -333,8 +333,6 @@
     "Files/Screenshot 2024-05-19 alle 10.46.19.png",
     "Files/Screenshot 2024-05-18 alle 21.30.11.png",
     "Files/Screenshot 2024-05-17 alle 13.41.35.png",
-    "Files/Screenshot 2024-05-17 alle 13.25.42.png",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Programming languages/Java/Main.java",
