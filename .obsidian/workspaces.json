@@ -274,6 +274,18 @@
                 }
               },
               {
+                "id": "9420afddb6b2b8cd",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Enumerazioni.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "cb3cb1f215a2b5af",
                 "type": "leaf",
                 "state": {
@@ -368,9 +380,33 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "138394518fd793e3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "3e0761f530851ba3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-05-23_MDP.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 11
           }
         ],
         "direction": "vertical"
@@ -399,7 +435,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "mvc path:\"Programming languages/Java/\"",
+                    "query": "functional path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -421,7 +457,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -437,7 +474,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Java/MVC.md",
+                    "file": "Flet-notes/2024-05-23_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -454,7 +491,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Java/MVC.md",
+                    "file": "Flet-notes/2024-05-23_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -477,7 +514,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Java/MVC.md"
+                    "file": "Flet-notes/2024-05-23_MDP.md"
                   }
                 }
               },
@@ -512,8 +549,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "691b76c006268744",
-      "mtime": "2024-05-22T17:37:55+02:00"
+      "active": "3e0761f530851ba3",
+      "mtime": "2024-05-24T14:29:37+02:00"
     },
     "Python": {
       "main": {
@@ -574,8 +611,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 3
+            ]
           }
         ],
         "direction": "vertical"
@@ -641,7 +677,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Python/Images.md",
+                    "file": "Programming languages/Python/Python.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -658,7 +694,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Python/Images.md",
+                    "file": "Programming languages/Python/Python.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -681,7 +717,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Python/Images.md"
+                    "file": "Programming languages/Python/Python.md"
                   }
                 }
               },
@@ -703,6 +739,7 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "vscode-editor:Create Code File": false,
           "switcher:Open quick switcher": false,
           "graph:Open graph view": false,
           "canvas:Create new canvas": false,
@@ -715,8 +752,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "f530c8020a703781",
-      "mtime": "2024-05-02T12:11:52+02:00"
+      "active": "1f9b178b9539c379",
+      "mtime": "2024-05-24T15:38:27+02:00"
     },
     "Introduzione agli algoritmi": {
       "main": {
