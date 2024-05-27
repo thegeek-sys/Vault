@@ -256,11 +256,10 @@
         "type": "split",
         "children": [
           {
-            "id": "9f225eb12c37a55a",
+            "id": "6fa49714e6656508",
             "type": "tabs",
             "children": [
               {
-<<<<<<< HEAD
                 "id": "39d805ea6ffbd4c1",
                 "type": "leaf",
                 "pinned": true,
@@ -288,26 +287,47 @@
               },
               {
                 "id": "cb3cb1f215a2b5af",
-=======
-                "id": "ca8454e67935c940",
->>>>>>> origin/main
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2023-11-23.md",
+                    "file": "Programming languages/Java/Classi annidate e interne.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "138394518fd793e3",
+                "id": "691b76c006268744",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                    "file": "Programming languages/Java/MVC.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "d2cac6488958348a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "To-Do.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "69060d9bbcffe43f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-05-23_MDP.md",
                     "mode": "source",
                     "source": false
                   }
@@ -319,36 +339,14 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-05-23_MDP.md",
+                    "file": "Flet-notes/2024-05-27_MDP.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-<<<<<<< HEAD
             ],
-            "currentTab": 11
-=======
-            ]
-          },
-          {
-            "id": "a5da3ec542fdc9c1",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "d8f1f67613ff5a1c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Programming languages/Python/Object oriented.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
->>>>>>> origin/main
+            "currentTab": 6
           }
         ],
         "direction": "vertical"
@@ -377,11 +375,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-<<<<<<< HEAD
                     "query": "functional path:\"Programming languages/Java/\"",
-=======
-                    "query": "line ",
->>>>>>> origin/main
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -402,12 +396,8 @@
           }
         ],
         "direction": "horizontal",
-<<<<<<< HEAD
         "width": 245.51103591918945,
         "collapsed": true
-=======
-        "width": 276.5
->>>>>>> origin/main
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -423,11 +413,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-<<<<<<< HEAD
-                    "file": "Flet-notes/2024-05-23_MDP.md",
-=======
-                    "file": "Flet-notes/2023-11-23.md",
->>>>>>> origin/main
+                    "file": "Flet-notes/2024-05-27_MDP.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -444,11 +430,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-<<<<<<< HEAD
-                    "file": "Flet-notes/2024-05-23_MDP.md",
-=======
-                    "file": "Flet-notes/2023-11-23.md",
->>>>>>> origin/main
+                    "file": "Flet-notes/2024-05-27_MDP.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -471,19 +453,24 @@
                 "state": {
                   "type": "outline",
                   "state": {
-<<<<<<< HEAD
-                    "file": "Flet-notes/2024-05-23_MDP.md"
-=======
-                    "file": "Flet-notes/2023-11-23.md"
->>>>>>> origin/main
+                    "file": "Flet-notes/2024-05-27_MDP.md"
                   }
                 }
+              },
+              {
+                "id": "ec2deb080f929989",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "horizontal",
-        "width": 300,
+        "width": 200,
         "collapsed": true
       },
       "left-ribbon": {
@@ -497,15 +484,12 @@
           "audio-recorder:Start/stop recording": false,
           "random-note:Open random note": false,
           "table-editor-obsidian:Advanced Tables Toolbar": false,
-          "workspaces:Manage workspace layouts": false
+          "workspaces:Manage workspace layouts": false,
+          "vscode-editor:Create Code File": false
         }
       },
-<<<<<<< HEAD
       "active": "3e0761f530851ba3",
-      "mtime": "2024-05-27T12:03:34+02:00"
-=======
-      "active": "9da67dfcce4e8838"
->>>>>>> origin/main
+      "mtime": "2024-05-27T16:52:38+02:00"
     },
     "Python": {
       "main": {

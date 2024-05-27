@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "8f7d155bcca92b78",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,79 +22,55 @@
             }
           },
           {
-            "id": "9420afddb6b2b8cd",
+            "id": "3f5ea951b32768c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Enumerazioni.md",
+                "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cb3cb1f215a2b5af",
+            "id": "6586a64e0c0b5f8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "691b76c006268744",
+            "id": "1ff74ae4a174753f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/MVC.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d2cac6488958348a",
+            "id": "f0269db8c55e7480",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To-Do.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "69060d9bbcffe43f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-23_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e0761f530851ba3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-27_MDP.md",
+                "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -123,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "functional path:\"Programming languages/Java/\"",
+                "query": "scanner path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-05-27_MDP.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-05-27_MDP.md",
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-05-27_MDP.md"
+                "file": "Class/Introduzione agli algoritmi/Esercizi.md"
               }
             }
           },
@@ -223,6 +199,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -232,12 +209,16 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false,
-      "vscode-editor:Create Code File": false
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3e0761f530851ba3",
+  "active": "1ff74ae4a174753f",
   "lastOpenFiles": [
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Flet-notes/2024-05-27_MDP.md",
     "Flet-notes/2024-05-23_MDP.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/MVC.md",
@@ -249,7 +230,6 @@
     "Flet-notes/2024-05-21_MDP.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Flet-notes/2024-05-14_MDP.md",
-    "Flet-notes/2024-05-27_MDP.md",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/Python.md",
@@ -261,10 +241,6 @@
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Interfacce.md",
-    "Class/Architettura degli elaboratori/Cache.md",
-    "Programming languages/Java/Stream.md",
-    "Flet-notes/2024-05-16_MDP.md",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
     "Files/Screenshot 2024-05-19 alle 12.09.03.png",

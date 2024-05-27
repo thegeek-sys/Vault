@@ -222,7 +222,7 @@ Scrivere una funzione ricorsiva che dato in input un puntatore alla radice di un
 def es(p):
 	if p==None: return 0
 	s = es(p.left)
-	d = es(p.left)
+	d = es(p.right)
 	return s + d + 1
 ```
 
@@ -257,7 +257,7 @@ Scrivere una funzione ricorsiva che prenda in input un puntatore alla radice di 
 ```python
 def es(p, h):
 	if p==None: return 0
-	if k==0: return 1
+	if h==0: return 1
 	ls = es(p.left, h-1)
 	ld = es(p.right, h-1)
 	return ls + ld
