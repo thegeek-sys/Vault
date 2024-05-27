@@ -58,42 +58,6 @@
             }
           },
           {
-            "id": "4568008cdfdb7230",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dad3d3119b4fe2e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/File.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "680e8d2ca9d68c72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Ricorsione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d2cac6488958348a",
             "type": "leaf",
             "state": {
@@ -106,36 +70,12 @@
             }
           },
           {
-            "id": "f1818f8313716f99",
+            "id": "69060d9bbcffe43f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9de946c1b8f89b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-14_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "138394518fd793e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                "file": "Flet-notes/2024-05-23_MDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -154,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -298,32 +238,33 @@
   },
   "active": "3e0761f530851ba3",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-05-27 alle 12.25.35.png",
-    "Flet-notes/2024-05-27_MDP.md",
-    "conflict-files-obsidian-git.md",
     "Flet-notes/2024-05-23_MDP.md",
+    "Programming languages/Java/Classi annidate e interne.md",
+    "Programming languages/Java/MVC.md",
+    "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/File.md",
+    "Programming languages/Java/Ricorsione.md",
+    "To-Do.md",
+    "Programming languages/Java/Interfacce note.md",
+    "Flet-notes/2024-05-21_MDP.md",
+    "Programming languages/Java/Classi anonime e lambda function.md",
+    "Flet-notes/2024-05-14_MDP.md",
+    "Flet-notes/2024-05-27_MDP.md",
+    "Files/Screenshot 2024-05-27 alle 12.25.35.png",
+    "conflict-files-obsidian-git.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Images.md",
-    "Programming languages/Java/MVC.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Classi Wrapper.md",
     "Programming languages/Java/Interfacce.md",
     "Class/Architettura degli elaboratori/Cache.md",
     "Programming languages/Java/Stream.md",
-    "Flet-notes/2024-05-21_MDP.md",
-    "Programming languages/Java/File.md",
-    "Programming languages/Java/Tipi generici.md",
     "Flet-notes/2024-05-16_MDP.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
-    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
     "Files/Screenshot 2024-05-19 alle 12.09.03.png",
