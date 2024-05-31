@@ -114,6 +114,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e32ca760a021fa1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -145,7 +157,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "write back",
+                "query": "funct",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,12 +174,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -260,8 +272,12 @@
   },
   "active": "111f13ba67a094d4",
   "lastOpenFiles": [
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Programming languages/Python/Modules.md",
+    "Class/Architettura degli elaboratori/MIPS.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Cache.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
@@ -283,10 +299,6 @@
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/Python.md",
     "Programming languages/Python/Images.md",
-    "Programming languages/Java/Java.md",
-    "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Classe Object.md",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
     "Files/Screenshot 2024-05-19 alle 12.09.03.png",

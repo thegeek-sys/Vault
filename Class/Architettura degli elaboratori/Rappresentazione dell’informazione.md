@@ -42,9 +42,9 @@ Questo tipo di istruzioni:
 ### Esempio
 Quindi se faccio `add $t0,$s1,$s2`
 ![[Screenshot 2024-03-08 alle 11.27.03.png]]
-`rd` corrisponderà a t0
-`rs` corrisponderà a s1
-`rt` corrisponderà a s2
+`rd` corrisponderà a `$t0`
+`rs` corrisponderà a `$s1`
+`rt` corrisponderà a `$s2`
 
 
 ---
