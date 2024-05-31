@@ -766,7 +766,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -816,7 +816,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -832,7 +833,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -849,7 +850,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md",
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -872,7 +873,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Strutture dati.md"
+                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md"
                   }
                 }
               },
@@ -907,9 +908,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "3f5ea951b32768c2",
-      "mtime": "2024-05-20T21:30:47+02:00"
+      "active": "f0269db8c55e7480",
+      "mtime": "2024-05-31T12:20:51+02:00"
     }
   },
-  "active": "Introduzione agli algoritmi"
+  "active": "Architettura degli elaboratori"
 }
