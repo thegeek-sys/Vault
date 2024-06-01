@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "6150f6dcc3b379fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "111f13ba67a094d4",
             "type": "leaf",
             "state": {
@@ -195,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Class/Architettura degli elaboratori/Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Class/Architettura degli elaboratori/Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -235,7 +247,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                "file": "Class/Architettura degli elaboratori/Cache.md"
               }
             }
           },
@@ -270,14 +282,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "111f13ba67a094d4",
+  "active": "6150f6dcc3b379fd",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Programming languages/Python/Modules.md",
     "Class/Architettura degli elaboratori/MIPS.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Cache.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
