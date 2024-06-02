@@ -61,6 +61,8 @@ Questo tipo di istruzioni:
 ### Esempio
 Quindi se faccio `addi $t2,$s2,4`
 ![[Screenshot 2024-03-08 alle 11.33.08.png]]
+`rs` corrisponderà a `$t2`
+`rt` corrisponderà a `$s2`
 
 ---
 ## J-type

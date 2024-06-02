@@ -22,6 +22,30 @@
             }
           },
           {
+            "id": "581dd12f65610bd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f830ff66981fef98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6150f6dcc3b379fd",
             "type": "leaf",
             "state": {
@@ -140,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -207,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md",
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,7 +271,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Cache.md"
+                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
               }
             }
           },
@@ -282,15 +306,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "6150f6dcc3b379fd",
+  "active": "111f13ba67a094d4",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Class/Architettura degli elaboratori/Cache.md",
     "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
     "Programming languages/Python/Modules.md",
     "Class/Architettura degli elaboratori/MIPS.md",
-    "Class/Architettura degli elaboratori/Cache.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
@@ -310,7 +335,6 @@
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "conflict-files-obsidian-git.md",
     "Programming languages/Python/Python.md",
-    "Programming languages/Python/Images.md",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
     "Files/Screenshot 2024-05-19 alle 12.09.03.png",
