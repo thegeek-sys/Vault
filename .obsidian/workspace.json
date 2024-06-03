@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "mode": "source",
                 "source": false
               }
@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,7 +193,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "funct",
+                "query": "syscall",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,7 +271,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md"
+                "file": "Class/Architettura degli elaboratori/System Calls.md"
               }
             }
           },
@@ -306,13 +306,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "111f13ba67a094d4",
+  "active": "f830ff66981fef98",
   "lastOpenFiles": [
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Cache.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
     "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
     "Programming languages/Python/Modules.md",
     "Class/Architettura degli elaboratori/MIPS.md",
