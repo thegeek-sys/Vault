@@ -59,10 +59,10 @@ Questo tipo di istruzioni:
 - salti condizionati (salto relativo al PC)
 
 ### Esempio
-Quindi se faccio `addi $t2,$s2,4`
+Quindi se faccio `addi $k0,$t2,4`
 ![[Screenshot 2024-03-08 alle 11.33.08.png]]
 `rs` corrisponderà a `$t2`
-`rt` corrisponderà a `$s2`
+`rt` corrisponderà a `$k0`
 
 ---
 ## J-type
