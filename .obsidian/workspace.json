@@ -22,6 +22,28 @@
             }
           },
           {
+            "id": "ef29ae4c3d3935d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Exceptions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ecf191108e6dee09",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
+          },
+          {
             "id": "9420afddb6b2b8cd",
             "type": "leaf",
             "state": {
@@ -93,7 +115,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Programming languages/Java/Exceptions.md"
               }
             }
           },
@@ -235,8 +258,9 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "ef29ae4c3d3935d4",
   "lastOpenFiles": [
+    "Programming languages/Java/Java.md",
     "Flet-notes/2024-05-27_MDP.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
@@ -263,7 +287,6 @@
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Ricorsione.md",
-    "Programming languages/Java/Interfacce note.md",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
