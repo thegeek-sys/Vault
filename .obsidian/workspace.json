@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Programming languages/Java/Strutture dati.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,14 +145,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/Array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b16697552faca15c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/File.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -181,7 +193,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "functional path:\"Programming languages/Java/\"",
+                "query": "foreach path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,12 +210,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -219,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/File.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/File.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -259,7 +271,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md"
+                "file": "Programming languages/Java/File.md"
               }
             }
           },
@@ -294,10 +306,14 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "b4b89a29d696d479",
+  "active": "b16697552faca15c",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Strutture dati.md",
+    "Programming languages/Java/Stream.md",
     "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/Array.md",
+    "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Enumerazioni.md",
     "Programming languages/Java/Exceptions.md",
     "Flet-notes/2024-05-27_MDP.md",
@@ -319,10 +335,6 @@
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Introduzione agli algoritmi/Strutture dati.md",
-    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
-    "Flet-notes/2024-05-23_MDP.md",
-    "Programming languages/Java/Classi annidate e interne.md",
-    "Programming languages/Java/MVC.md",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",

@@ -204,7 +204,7 @@ Path p = Path.get("tmp", "foo");
 Path p = Path.get("tmp" + File.separator + "foo");
 
 // è un'abbreviazione per
-Path p = FileSystem.getDefault().getPath("tmp/foo")
+Path p = FileSystems.getDefault().getPath("tmp/foo")
 ```
 
 
