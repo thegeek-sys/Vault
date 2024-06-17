@@ -22,137 +22,19 @@
             }
           },
           {
-            "id": "ef29ae4c3d3935d4",
+            "id": "b5e1d1adbca58126",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Exceptions.md",
+                "file": "Programming languages/Java/Stream.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ecf191108e6dee09",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.3"
-              }
-            }
-          },
-          {
-            "id": "9420afddb6b2b8cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Enumerazioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb3cb1f215a2b5af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "691b76c006268744",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/MVC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2cac6488958348a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "To-Do.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "69060d9bbcffe43f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-23_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e0761f530851ba3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-05-27_MDP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0babfebf62456a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Enumerazioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "425d8a6a31aa2e32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4b89a29d696d479",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Array.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b16697552faca15c",
+            "id": "a3c7a98862f57498",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,9 +44,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e62265c5cdce1da9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Prendere decisioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -193,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "foreach path:\"Programming languages/Java/\"",
+                "query": "switch path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/File.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/File.md",
+                "file": "Programming languages/Java/Prendere decisioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -271,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/File.md"
+                "file": "Programming languages/Java/Prendere decisioni.md"
               }
             }
           },
@@ -306,16 +200,18 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "b16697552faca15c",
+  "active": "e62265c5cdce1da9",
   "lastOpenFiles": [
+    "Programming languages/Java/Ereditarietà.md",
+    "Programming languages/Java/File.md",
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Stream.md",
+    "Programming languages/Java/Enumerazioni.md",
+    "Programming languages/Java/Exceptions.md",
+    "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Array.md",
     "Programming languages/Java/Classi annidate e interne.md",
-    "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Exceptions.md",
     "Flet-notes/2024-05-27_MDP.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
@@ -333,8 +229,6 @@
     "Programming languages/Python/Modules.md",
     "Class/Architettura degli elaboratori/MIPS.md",
     "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
-    "Class/Introduzione agli algoritmi/Esercizi.md",
-    "Class/Introduzione agli algoritmi/Strutture dati.md",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
