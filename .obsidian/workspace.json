@@ -69,8 +69,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/File.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/File.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/File.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -212,11 +211,11 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "a3c7a98862f57498",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
+    "Programming languages/Java/File.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Tipi generici.md",
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Stream.md",
