@@ -68,8 +68,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "abc9b54907542c16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -136,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Classi annidate e interne.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Programming languages/Java/Classi annidate e interne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Programming languages/Java/Classi annidate e interne.md"
               }
             }
           },
@@ -211,10 +224,10 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "abc9b54907542c16",
   "lastOpenFiles": [
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/File.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Ereditarietà.md",
