@@ -80,9 +80,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9785e3a38aa18ec7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
+          },
+          {
+            "id": "66a0bc47409d78eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Tipi generici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -149,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/Tipi generici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
+                "file": "Programming languages/Java/Tipi generici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md"
+                "file": "Programming languages/Java/Tipi generici.md"
               }
             }
           },
@@ -224,7 +246,7 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "abc9b54907542c16",
+  "active": "66a0bc47409d78eb",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
     "Programming languages/Java/File.md",
