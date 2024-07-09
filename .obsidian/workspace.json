@@ -22,7 +22,31 @@
             }
           },
           {
-            "id": "b5e1d1adbca58126",
+            "id": "72810ab768a1a969",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classe Object.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "223e6d31f5145a1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Strutture dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c7bceb1434760e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,79 +56,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a3c7a98862f57498",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/File.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e62265c5cdce1da9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Prendere decisioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eea44a8990b5695d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abc9b54907542c16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi annidate e interne.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9785e3a38aa18ec7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
-            }
-          },
-          {
-            "id": "66a0bc47409d78eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -133,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "switch path:\"Programming languages/Java/\"",
+                "query": "downst path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Programming languages/Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
+                "file": "Programming languages/Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Tipi generici.md"
+                "file": "Programming languages/Java/Stream.md"
               }
             }
           },
@@ -246,35 +200,35 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "66a0bc47409d78eb",
+  "active": "356bd72cc0237c4e",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/File.md",
-    "Programming languages/Java/Tipi generici.md",
-    "Programming languages/Java/Prendere decisioni.md",
-    "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Stream.md",
-    "Programming languages/Java/Enumerazioni.md",
-    "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/Strutture dati.md",
-    "Programming languages/Java/Array.md",
+    "Programming languages/Java/Classe Object.md",
+    "Programming languages/Java/Stream.md",
+    "Programming languages/Java/UML.md",
     "Programming languages/Java/Classi annidate e interne.md",
-    "Flet-notes/2024-05-27_MDP.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
-    "Class/Architettura degli elaboratori/Rappresentazione dell’informazione.md",
-    "Class/Architettura degli elaboratori/Cache.md",
-    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
-    "Class/Architettura degli elaboratori/System Calls.md",
-    "Class/Architettura degli elaboratori/Stringhe in memoria (vettori).md",
-    "Programming languages/Python/Namespace.md",
-    "To-Do.md",
+    "Programming languages/Java/Ricorsione.md",
+    "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Python/list methods.md",
+    "Programming languages/Python/list.md",
+    "Programming languages/Python/Lambda.md",
+    "Programming languages/Python/Python.md",
+    "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+    "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Programming languages/Java/Memoria.md",
+    "Programming languages/Python/Functions.md",
+    "Programming languages/Java/Exceptions.md",
+    "Programming languages/Java/Ereditarietà.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+    "Programming languages/Java/File.md",
+    "Programming languages/Java/Prendere decisioni.md",
+    "Programming languages/Java/Enumerazioni.md",
     "Files/Screenshot 2024-05-08 alle 16.38.51.png",
-    "Class/Architettura degli elaboratori/Matrici.md",
-    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
-    "Programming languages/Python/Modules.md",
-    "Class/Architettura degli elaboratori/MIPS.md",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",

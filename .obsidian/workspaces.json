@@ -123,9 +123,11 @@
                 "id": "e71b3f45190ed53b",
                 "type": "leaf",
                 "state": {
-                  "type": "release-notes",
+                  "type": "markdown",
                   "state": {
-                    "currentVersion": "1.6.2"
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
+                    "mode": "source",
+                    "source": false
                   }
                 }
               }
@@ -159,7 +161,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "aluop",
+                    "query": "global pointer",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -196,7 +198,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Matrici.md",
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -213,7 +215,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Matrici.md",
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -236,7 +238,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Matrici.md"
+                    "file": "Class/Architettura degli elaboratori/Organizzazione memoria (RAM).md"
                   }
                 }
               },
@@ -272,7 +274,7 @@
         }
       },
       "active": "9da67dfcce4e8838",
-      "mtime": "2024-06-09T14:35:20+02:00"
+      "mtime": "2024-07-04T11:57:58+02:00"
     },
     "Java": {
       "main": {
@@ -298,19 +300,55 @@
                 }
               },
               {
-                "id": "9420afddb6b2b8cd",
+                "id": "b5e1d1adbca58126",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/Enumerazioni.md",
+                    "file": "Programming languages/Java/Stream.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "cb3cb1f215a2b5af",
+                "id": "a3c7a98862f57498",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/File.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e62265c5cdce1da9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Prendere decisioni.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "eea44a8990b5695d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Java/Tipi generici.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "abc9b54907542c16",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -322,55 +360,53 @@
                 }
               },
               {
-                "id": "691b76c006268744",
+                "id": "9785e3a38aa18ec7",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.6.5"
+                  }
+                }
+              },
+              {
+                "id": "66a0bc47409d78eb",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Programming languages/Java/MVC.md",
+                    "file": "Programming languages/Java/Tipi generici.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "d2cac6488958348a",
+                "id": "30f87e38183613d0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "To-Do.md",
+                    "file": "Programming languages/Java/UML.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "69060d9bbcffe43f",
+                "id": "b72de2c9d5ecd56d",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-05-23_MDP.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3e0761f530851ba3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-05-27_MDP.md",
+                    "file": "Programming languages/Java/Ereditarietà.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 6
+            "currentTab": 8
           }
         ],
         "direction": "vertical"
@@ -399,7 +435,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "functional path:\"Programming languages/Java/\"",
+                    "query": "switch path:\"Programming languages/Java/\"",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -416,12 +452,12 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -437,7 +473,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-05-27_MDP.md",
+                    "file": "Programming languages/Java/UML.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -454,7 +490,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-05-27_MDP.md",
+                    "file": "Programming languages/Java/UML.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -477,7 +513,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-05-27_MDP.md"
+                    "file": "Programming languages/Java/UML.md"
                   }
                 }
               },
@@ -512,8 +548,8 @@
           "vscode-editor:Create Code File": false
         }
       },
-      "active": "3e0761f530851ba3",
-      "mtime": "2024-05-27T16:52:38+02:00"
+      "active": "356bd72cc0237c4e",
+      "mtime": "2024-07-04T11:23:30+02:00"
     },
     "Python": {
       "main": {
@@ -573,8 +609,21 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "9cfa27fc08922bfb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Programming languages/Python/list methods.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -603,7 +652,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "path:\"Programming languages/Python/\" ",
+                    "query": "sort path:\"Programming languages/Python/\" ",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -620,7 +669,8 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
@@ -640,7 +690,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/list methods.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -657,7 +707,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Programming languages/Python/Python.md",
+                    "file": "Programming languages/Python/list methods.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -680,7 +730,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Programming languages/Python/Python.md"
+                    "file": "Programming languages/Python/list methods.md"
                   }
                 }
               },
@@ -715,8 +765,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "1f9b178b9539c379",
-      "mtime": "2024-05-24T15:38:27+02:00"
+      "active": "9cfa27fc08922bfb",
+      "mtime": "2024-07-05T11:32:17+02:00"
     },
     "Introduzione agli algoritmi": {
       "main": {
@@ -788,9 +838,21 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "d3ac7eddce0a6504",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 4
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -857,7 +919,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -874,7 +936,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -897,7 +959,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Introduzione agli algoritmi/Visitare gli alberi.md"
+                    "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
                   }
                 }
               },
@@ -932,8 +994,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "f0269db8c55e7480",
-      "mtime": "2024-05-31T12:20:51+02:00"
+      "active": "d3ac7eddce0a6504",
+      "mtime": "2024-07-02T18:35:15+02:00"
     }
   },
   "active": "Java"
