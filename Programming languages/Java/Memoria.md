@@ -41,7 +41,7 @@ I valori dei parametri di un metodo vengono sempre copiato e non passati per rif
 
 ![[Screenshot 2024-03-12 alle 09.16.37.png]]
 
-Quando viene caricata una classe la prima cosa che la JVM è controllare se ci sono campi statici che vengono quindi allocati nel metaspace (questi essendo campi di classe vengono inizializzati implicitamente).
+Quando viene caricata una classe la prima cosa che la JVM fa è controllare se ci sono campi statici che vengono quindi allocati nel metaspace (questi essendo campi di classe vengono inizializzati implicitamente).
 A questo punto viene creato un frame di attivazione nello stack il metodo main che viene chiamato all’avvio di un programma. All’interno di questo frame metterò le variabili locali che vengono allocate. Se ad esempio passo ad un oggetto una variabile questa sarà allocata all’interno dell’heap collegato tramite una freccia all’oggetto stesso
 
 ### Esempio
