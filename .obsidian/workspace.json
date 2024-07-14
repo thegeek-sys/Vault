@@ -32,9 +32,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "338361b4cb5996bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "431b3f3bb38896b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a360a47ccf091d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -63,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "JVM path:\"Programming languages/Java/\"",
+                "query": "SAM path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Primitivi.md",
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Primitivi.md",
+                "file": "Programming languages/Java/Classi anonime e lambda function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Primitivi.md"
+                "file": "Programming languages/Java/Classi anonime e lambda function.md"
               }
             }
           },
@@ -176,9 +212,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "5f98f5bc0beb67c1",
+  "active": "2a360a47ccf091d2",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Interfacce.md",
+    "Programming languages/Java/Classi anonime e lambda function.md",
+    "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Libs.md",
     "Programming languages/Java/Classe Math.md",
@@ -201,9 +240,6 @@
     "Class/Architettura degli elaboratori/Architettura MIPS 2000.md",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Programming languages/Python/Functions.md",
-    "Programming languages/Java/Exceptions.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Files/Screenshot 2024-05-08 alle 16.38.51.png",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",

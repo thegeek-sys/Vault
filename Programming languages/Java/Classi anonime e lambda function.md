@@ -18,7 +18,7 @@ Completed:
 
 ---
 ## Introduction
-E' possibile definire **classi anonime** (ovvero senza nome) che implementano un'interfaccia o esxtendono una classe
+E' possibile definire **classi anonime** (ovvero senza nome) che implementano un'interfaccia o estendono una classe
 Queste sono utilizzate per **creare un’unica istanza** (utili ad esempio per creare un iteratore al volo)
 
 Sintassi:
