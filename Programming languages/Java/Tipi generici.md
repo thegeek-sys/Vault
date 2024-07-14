@@ -386,7 +386,7 @@ Abbiamo a nostra disposizione 3 modi:
 	Questa `lista` è di fatto un riferimento ad un’`ArrayList` composta da **sottotipi** di `Number`. In questo modo posso leggere dati sulla lista e non scriverli (posso solamente eseguire operazioni sugli elementi già esistenti). Deve “produrre” valori di tipo T
 	
 - `List<? super Number> = new ArrayList<Number>();`
-- Questa `lista` è un riferimento ad un’`ArrayList` composta da **supertipi** di `Number`. In questo caso oltre a leggere gli elementi esistenti posso scrivere elementi nella lista (non posso però assumere il tipo degli stessi). Deve “consumare” elementi di tipo T
+	Questa `lista` è un riferimento ad un’`ArrayList` composta da **supertipi** di `Number`. In questo caso oltre a leggere gli elementi esistenti posso scrivere elementi nella lista (non posso però assumere il tipo degli stessi). Deve “consumare” elementi di tipo T
 
 Esempi spiegati → [[Main.java]]
 
