@@ -92,9 +92,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "980cd2375573ed14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Exceptions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -161,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md"
+                "file": "Programming languages/Java/Exceptions.md"
               }
             }
           },
@@ -236,13 +248,13 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "959d37cd7c4ea37b",
+  "active": "980cd2375573ed14",
   "lastOpenFiles": [
-    "Programming languages/Java/Tipi generici.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+    "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/Java.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Ricorsione.md",
     "Programming languages/Java/UML.md",

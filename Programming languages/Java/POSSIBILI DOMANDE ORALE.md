@@ -181,11 +181,12 @@
 
 >[!Question]- blocco finally
 >viene eseguito indipendentemente se viene throwato un errore oppure no
->in caso di un altra istruzione 
+>in caso di un altra istruzione return all’interno del blocco try o catch viene comunque eseguito il return del finally
 
 >[!Question]- perché dovresti catchare errori più specifici?
 
 >[!Question]- come fare eccezioni personalizzate?
+>creare una classe che estende exception
 
 >[!Question]- eccezioni checked e unchecked
 >java ti obbliga o no
