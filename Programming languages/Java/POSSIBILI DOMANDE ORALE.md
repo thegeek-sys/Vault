@@ -161,7 +161,7 @@
 >lista t e lista ?
 
 >[!Question]- vincoli sul tipo generico
->
+>`super` → 
 
 >[!Question]- overloading di metodi con tipo generico
 >
