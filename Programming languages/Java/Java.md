@@ -49,4 +49,5 @@
 - [[UML]]
 - [[Memoria]]
 - [[MVC]]
+- [[POSSIBILI DOMANDE ORALE]]
 - 
