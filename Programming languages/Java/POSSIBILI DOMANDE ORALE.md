@@ -211,4 +211,4 @@
 >[!Question]- Collector e Collectors
 >`Collector` è una interfaccia che mi permette di riduce degli elementi in una collezione, implementadola con il metodo of posso creare nuovi collector
 >`Collectors` è una classe che mi permette di ridurre gli elementi in una collezioni tramite i suoi metodi
->es. `.collect` prende in input un `Collector` e il metodo `Collectors.toList()` ritorna un collector che accumula gli elementi all’interno del collector
+>es. `.collect` prende in input un `Collector` e il metodo `Collectors.toList()` ritorna un collector che mi permette di accumulare gli elementi all’interno del collector
