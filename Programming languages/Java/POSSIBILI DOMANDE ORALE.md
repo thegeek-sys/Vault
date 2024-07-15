@@ -194,4 +194,5 @@
 >bufferedreader reader scanner printwriter formatter
 
 >[!Question]- optional
->
+>è un contenitore (interfaccia) di un riferimento che potrebbe essere o non essere `null` (in modo tale che un metodo può restituire un `Optional` invece di restituire  un riferimento potenzialmente `null`, per  evitare i `NullPointerException`)
+

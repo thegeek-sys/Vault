@@ -68,9 +68,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "53e5f03500819c84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Interfacce note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -136,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/File.md",
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/File.md",
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/File.md"
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md"
               }
             }
           },
@@ -211,10 +223,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "5ae70d8c355e09d2",
+  "active": "959d37cd7c4ea37b",
   "lastOpenFiles": [
-    "Programming languages/Java/Java.md",
+    "Programming languages/Java/File.md",
+    "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+    "Programming languages/Java/Java.md",
     "Programming languages/Java/Ricorsione.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/UML.md",
@@ -225,11 +239,9 @@
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Classe Object.md",
-    "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Main.java",
     "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Interfacce.md",
