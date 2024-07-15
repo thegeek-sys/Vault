@@ -165,7 +165,8 @@
 >`extends` → deve necessariamente essere un sottotipo di `Classe` (o la classe stessa) o implementare `Interfaccia` (covarianza)
 
 >[!Question]- overloading di metodi con tipo generico
->
+>un metodo generico piò essere sovraccaricato come ogni altro metodo e inoltre da un metodo non generico con stesso nome e numero di parametri
+>viene sempre prima cercato un metodo specifico e in caso questo non sia presente viene eseguito il metodo generico
 
 >[!Question]- come funziona la cancellazione del tipo?
 >>Infatti quando il compilatore traduce il metodo/la classe generica in bytecode Java:
@@ -179,6 +180,8 @@
 >[!Question]- differenza errori ed exception (gerarchie exception)
 
 >[!Question]- blocco finally
+>viene eseguito indipendentemente se viene throwato un errore oppure no
+>in caso di un altra istruzione 
 
 >[!Question]- perché dovresti catchare errori più specifici?
 
