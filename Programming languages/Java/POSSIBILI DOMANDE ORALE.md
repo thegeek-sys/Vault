@@ -208,3 +208,7 @@
 >[!Question]- optional
 >è un contenitore (interfaccia) di un riferimento che potrebbe essere o non essere `null` (in modo tale che un metodo può restituire un `Optional` invece di restituire  un riferimento potenzialmente `null`, per  evitare i `NullPointerException`)
 
+>[!Question]- Collector e Collectors
+>`Collector` è una interfaccia che mi permette di riduce degli elementi in una collezione, implementadola con il metodo of posso creare nuovi collector
+>`Collectors` è una classe che mi permette di ridurre gli elementi in una collezioni tramite i suoi metodi
+>es. `.collect` prende in input un `Collector` e il metodo `Collectors.toList()` ritorna un collector che accumula gli elementi all’interno del collector
