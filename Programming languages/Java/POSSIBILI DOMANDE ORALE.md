@@ -178,6 +178,12 @@
 >[!Question]- throware e catchare le eccezioni
 
 >[!Question]- differenza errori ed exception (gerarchie exception)
+>**Exception**
+>- eccezioni interne alla JVM (classe `RuntimeException`) → legate ad errori nella logica del programma
+>- eccezioni regolari (es. `IOException`, `ParseException`, `TimeoutException`) → errori che le applicazioni dovrebbero anticipare e dalle quali poter riprendersi
+>
+>**Error**: cattura l’idea di condizione eccezionale irrecuperabile
+>- Assai rari e non dovrebbero essere considerati dalle applicazioni (es. ThreadDeath, OutOfMemoryError...)
 
 >[!Question]- blocco finally
 >viene eseguito indipendentemente se viene throwato un errore oppure no
