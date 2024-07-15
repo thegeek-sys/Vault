@@ -80,6 +80,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d4a387085d541595",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Tipi generici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 3
@@ -111,7 +123,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " path:\"Programming languages/Java/\"",
+                "query": "cancellazione path:\"Programming languages/Java/\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,7 +140,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -225,10 +238,11 @@
   },
   "active": "959d37cd7c4ea37b",
   "lastOpenFiles": [
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Interfacce note.md",
-    "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+    "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+    "Programming languages/Java/File.md",
     "Programming languages/Java/Ricorsione.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/UML.md",
@@ -240,7 +254,6 @@
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Programming languages/Java/Prendere decisioni.md",
-    "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Main.java",
     "Programming languages/Java/Strutture dati.md",

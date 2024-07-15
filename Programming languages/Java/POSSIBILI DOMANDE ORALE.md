@@ -185,6 +185,9 @@
 >java ti obbliga o no
 
 >[!Question]- come funziona la cancellazione del tipo?
+>Infatti quando il compilatore traduce il metodo/la classe generica in bytecode Java:
+>1. **elimina la sezione del tipo parametrico** e sostituisce il tipo parametrico con quello reale
+>2. per default **il tipi generico viene sostituito** con il tipo `Object` (a meno di vincoli sul tipo)
 
 ## slide 11/12 (file, ricorsione, stream)
 >[!Question]- come funziona la mutua ricorsione?
