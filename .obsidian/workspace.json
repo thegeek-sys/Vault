@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Tipi generici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Tipi generici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md"
+                "file": "Programming languages/Java/Tipi generici.md"
               }
             }
           },
@@ -236,12 +236,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "959d37cd7c4ea37b",
+  "active": "d4a387085d541595",
   "lastOpenFiles": [
+    "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
     "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Ereditarietà.md",
-    "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Ricorsione.md",

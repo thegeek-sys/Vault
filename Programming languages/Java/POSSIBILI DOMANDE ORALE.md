@@ -161,13 +161,16 @@
 >lista t e lista ?
 
 >[!Question]- vincoli sul tipo generico
->`super` → 
+>`super` → il tipo generico deve essere una superclasse della classe specificata o la classe stessa (controvarianza)
+>`extends` → deve necessariamente essere un sottotipo di `Classe` (o la classe stessa) o implementare `Interfaccia` (covarianza)
 
 >[!Question]- overloading di metodi con tipo generico
 >
 
 >[!Question]- come funziona la cancellazione del tipo?
->
+>>Infatti quando il compilatore traduce il metodo/la classe generica in bytecode Java:
+>1. **elimina la sezione del tipo parametrico** e sostituisce il tipo parametrico con quello reale
+>2. per default **il tipi generico viene sostituito** con il tipo `Object` (a meno di vincoli sul tipo)
 
 ## slide 10 (eccezioni)
 
@@ -184,10 +187,6 @@
 >[!Question]- eccezioni checked e unchecked
 >java ti obbliga o no
 
->[!Question]- come funziona la cancellazione del tipo?
->Infatti quando il compilatore traduce il metodo/la classe generica in bytecode Java:
->1. **elimina la sezione del tipo parametrico** e sostituisce il tipo parametrico con quello reale
->2. per default **il tipi generico viene sostituito** con il tipo `Object` (a meno di vincoli sul tipo)
 
 ## slide 11/12 (file, ricorsione, stream)
 >[!Question]- come funziona la mutua ricorsione?
