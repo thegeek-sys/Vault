@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa49714e6656508",
+        "id": "f4357ce68df80321",
         "type": "tabs",
         "children": [
           {
@@ -22,163 +22,19 @@
             }
           },
           {
-            "id": "64a289e6ed75648e",
+            "id": "0e76cd4fb2b709d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classi anonime e lambda function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "314d2fad70a7d1d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Ereditarietà.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e02fee3ee770045",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Ricorsione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "959d37cd7c4ea37b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Stream.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5ae70d8c355e09d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/File.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "53e5f03500819c84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4a387085d541595",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Tipi generici.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "980cd2375573ed14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Exceptions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1556866f49523823",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classi anonime e lambda function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cecdfce85055a7c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f2f93d689e41f64b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Exceptions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7378046c479bcc0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Strutture dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9a4436b54e28d686",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md",
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md",
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -262,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md",
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -285,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Shallow and Deep Copy.md"
+                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md"
               }
             }
           },
@@ -320,27 +176,27 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "9a4436b54e28d686",
+  "active": "0e76cd4fb2b709d2",
   "lastOpenFiles": [
+    "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Java.md",
-    "Programming languages/Java/Exceptions.md",
-    "Class/Architettura degli elaboratori/Cache.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+    "Programming languages/Java/File.md",
+    "Programming languages/Java/Ereditarietà.md",
+    "Programming languages/Java/Shallow and Deep Copy.md",
+    "Programming languages/Java/Exceptions.md",
+    "Class/Architettura degli elaboratori/Cache.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Strutture dati.md",
-    "Programming languages/Java/Classi anonime e lambda function.md",
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Stream.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Main.java",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Interfacce note.md",
-    "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Ricorsione.md",
     "Programming languages/Java/UML.md",
     "Programming languages/Java/Primitivi.md",
-    "Programming languages/Java/Shallow and Deep Copy.md",
     "Programming languages/Java/Prendere decisioni.md",
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Interfacce.md",
