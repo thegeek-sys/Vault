@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Exceptions.md",
+                "file": "Programming languages/Java/Polimorfismo.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,14 +63,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Interfacce note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3090e64dae0712bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Stream.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ".compare",
+                "query": "binding static",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+                "file": "Programming languages/Java/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/POSSIBILI DOMANDE ORALE.md"
+                "file": "Programming languages/Java/Stream.md"
               }
             }
           },
@@ -212,21 +224,21 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "1be4f5d866a2d9a8",
+  "active": "3090e64dae0712bd",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Exceptions.md",
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Interfacce note.md",
+    "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
+    "Programming languages/Java/File.md",
     "Programming languages/Java/Strutture dati.md",
     "Programming languages/Java/Stream.md",
-    "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Ereditarietà.md",
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Class/Architettura degli elaboratori/Cache.md",
-    "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Main.java",
     "Programming languages/Java/Classes.md",
