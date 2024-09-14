@@ -80,9 +80,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c8bea319d6cf8342",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
+          },
+          {
+            "id": "cd7348e2ea822481",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/Stream.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -224,7 +246,7 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "3090e64dae0712bd",
+  "active": "cd7348e2ea822481",
   "lastOpenFiles": [
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Polimorfismo.md",
