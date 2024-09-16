@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Stream.md",
+                "file": "Programming languages/Java/Classe Object.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "binding static",
+                "query": "instanceof",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Stream.md",
+                "file": "Programming languages/Java/Classe Object.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Stream.md",
+                "file": "Programming languages/Java/Classe Object.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Stream.md"
+                "file": "Programming languages/Java/Classe Object.md"
               }
             }
           },
@@ -248,6 +248,7 @@
   },
   "active": "cd7348e2ea822481",
   "lastOpenFiles": [
+    "Programming languages/Java/Stream.md",
     "Programming languages/Java/Java.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Exceptions.md",
@@ -255,7 +256,6 @@
     "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Strutture dati.md",
-    "Programming languages/Java/Stream.md",
     "Programming languages/Java/Classi anonime e lambda function.md",
     "Programming languages/Java/Classi annidate e interne.md",
     "Programming languages/Java/Ereditarietà.md",
