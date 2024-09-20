@@ -97,14 +97,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Programming languages/Java/Stream.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5a5bb776f648f6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming languages/Java/UML.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +144,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "instanceof",
+                "query": "intstrea",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -171,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Programming languages/Java/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md",
+                "file": "Programming languages/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Classe Object.md"
+                "file": "Programming languages/Java/Java.md"
               }
             }
           },
@@ -246,10 +257,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "cd7348e2ea822481",
+  "active": "39d805ea6ffbd4c1",
   "lastOpenFiles": [
-    "Programming languages/Java/Stream.md",
+    "Programming languages/Java/UML.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Stream.md",
+    "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/Interfacce note.md",
@@ -265,10 +278,8 @@
     "Programming languages/Java/Main.java",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Ricorsione.md",
-    "Programming languages/Java/UML.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Prendere decisioni.md",
-    "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Interfacce.md",
     "Programming languages/Java/Libs.md",
     "Programming languages/Java/Classe Math.md",
