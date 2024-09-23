@@ -4,112 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "f4357ce68df80321",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "39d805ea6ffbd4c1",
+            "id": "ecb6cd090c8cbd79",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Java.md",
-                "mode": "preview",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "mode": "source",
                 "source": false
               },
               "pinned": true
             }
           },
           {
-            "id": "0e76cd4fb2b709d2",
+            "id": "f830ff66981fef98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eb1632e3888d6a5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/File.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0ac70d19fd3eaeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Polimorfismo.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1be4f5d866a2d9a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Interfacce note.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3090e64dae0712bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Stream.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c8bea319d6cf8342",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
-          },
-          {
-            "id": "cd7348e2ea822481",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/Stream.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e5a5bb776f648f6d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming languages/Java/UML.md",
+                "file": "Class/Architettura degli elaboratori/System Calls.md",
                 "mode": "source",
                 "source": false
               }
@@ -144,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "intstrea",
+                "query": "global pointer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -182,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming languages/Java/Java.md",
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming languages/Java/Java.md"
+                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
               }
             }
           },
@@ -244,6 +161,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -253,19 +171,24 @@
       "audio-recorder:Start/stop recording": false,
       "random-note:Open random note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "workspaces:Manage workspace layouts": false,
-      "vscode-editor:Create Code File": false
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "39d805ea6ffbd4c1",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
-    "Programming languages/Java/UML.md",
+    "Class/Architettura degli elaboratori/System Calls.md",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Java.md",
+    "Programming languages/Java/Interfacce note.md",
+    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Class/Class.md",
+    "Programming languages/Java/UML.md",
     "Programming languages/Java/Stream.md",
     "Programming languages/Java/Classe Object.md",
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Exceptions.md",
-    "Programming languages/Java/Interfacce note.md",
     "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
     "Programming languages/Java/File.md",
     "Programming languages/Java/Strutture dati.md",
@@ -280,12 +203,6 @@
     "Programming languages/Java/Ricorsione.md",
     "Programming languages/Java/Primitivi.md",
     "Programming languages/Java/Prendere decisioni.md",
-    "Programming languages/Java/Interfacce.md",
-    "Programming languages/Java/Libs.md",
-    "Programming languages/Java/Classe Math.md",
-    "Programming languages/Java/Hello, World!.md",
-    "Programming languages/Java/Object oriented programming.md",
-    "Programming languages/Java/Memoria.md",
     "Files/Screenshot 2024-05-08 alle 16.38.51.png",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
