@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -99,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Flet-notes/2024-09-24_SO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Flet-notes/2024-09-24_SO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md"
+                "file": "Flet-notes/2024-09-24_SO.md"
               }
             }
           },
@@ -174,10 +176,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "86b7c0e96592df9e",
+  "active": "50f299dbff482a08",
   "lastOpenFiles": [
-    "Flet-notes/2024-09-24_SO.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Flet-notes/2024-09-24_SO.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Java.md",
     "Class/Architettura degli elaboratori/System Calls.md",
