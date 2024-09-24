@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ecb6cd090c8cbd79",
+            "id": "86b7c0e96592df9e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,31 +22,18 @@
             }
           },
           {
-            "id": "f830ff66981fef98",
+            "id": "50f299dbff482a08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Architettura degli elaboratori/System Calls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "86b7c0e96592df9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Calcolo della probabilità/Calcolo della probabilità.md",
+                "file": "Flet-notes/2024-09-24_SO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Calcolo della probabilità/Calcolo della probabilità.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Calcolo della probabilità/Calcolo della probabilità.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Calcolo della probabilità/Calcolo della probabilità.md"
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md"
               }
             }
           },
@@ -189,13 +176,14 @@
   },
   "active": "86b7c0e96592df9e",
   "lastOpenFiles": [
+    "Flet-notes/2024-09-24_SO.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Calcolo della probabilità/Calcolo della probabilità.md",
-    "Class/Class.md",
-    "Class/Calcolo della probabilità",
-    "Class/Architettura degli elaboratori/System Calls.md",
-    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Programming languages/Java/Java.md",
+    "Class/Architettura degli elaboratori/System Calls.md",
+    "Class/Class.md",
+    "Class/Sistemi Operativi",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Programming languages/Java/Interfacce note.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
@@ -216,7 +204,6 @@
     "Programming languages/Java/Main.java",
     "Programming languages/Java/Classes.md",
     "Programming languages/Java/Ricorsione.md",
-    "Programming languages/Java/Primitivi.md",
     "Files/Screenshot 2024-05-08 alle 16.38.51.png",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
