@@ -132,7 +132,7 @@
                 }
               }
             ],
-            "currentTab": 9
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -161,7 +161,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "global pointer",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -182,7 +182,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -198,7 +199,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Pipeline.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -215,7 +216,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+                    "file": "Class/Architettura degli elaboratori/Pipeline.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -238,7 +239,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Architettura degli elaboratori/Architettura degli elaboratori.md"
+                    "file": "Class/Architettura degli elaboratori/Pipeline.md"
                   }
                 }
               },
@@ -274,7 +275,7 @@
         }
       },
       "active": "9da67dfcce4e8838",
-      "mtime": "2024-09-24T15:33:42+02:00"
+      "mtime": "2024-09-25T09:06:15+02:00"
     },
     "Java": {
       "main": {
@@ -1075,8 +1076,7 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 4
+            ]
           }
         ],
         "direction": "horizontal",
@@ -1099,7 +1099,7 @@
         }
       },
       "active": "373b30eeb107129c",
-      "mtime": "2024-09-25T08:46:45+02:00"
+      "mtime": "2024-09-25T09:05:38+02:00"
     }
   },
   "active": "Sistemi Operativi"

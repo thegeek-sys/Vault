@@ -102,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -119,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-09-24_SO.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-09-24_SO.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-09-24_SO.md"
+                "file": "Class/Sistemi Operativi/Introduzione.md"
               }
             }
           },
@@ -171,8 +170,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -194,17 +192,19 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "50f299dbff482a08",
+  "active": "373b30eeb107129c",
   "lastOpenFiles": [
+    "Class/Architettura degli elaboratori/Pipeline.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Sistemi Operativi/Introduzione.md",
+    "Files/Screenshot 2024-09-25 alle 09.01.50.png",
+    "Flet-notes/2024-09-24_SO.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Java.md",
-    "Flet-notes/2024-09-24_SO.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Files/Screenshot 2024-09-24 alle 16.34.03.png",
     "Pasted image 20240509123047.png",
     "Files/Screenshot 2024-09-24 alle 15.57.16.png",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Class.md",
     "Class/Sistemi Operativi",
@@ -226,14 +226,12 @@
     "Programming languages/Java/Shallow and Deep Copy.md",
     "Class/Architettura degli elaboratori/Cache.md",
     "Programming languages/Java/Main.java",
-    "Programming languages/Java/Classes.md",
     "Files/Screenshot 2024-05-08 alle 16.38.51.png",
     "Files/Screenshot 2024-05-27 alle 12.25.35.png",
     "Files/Screenshot 2024-05-19 alle 12.12.20.png",
     "Files/Screenshot 2024-05-19 alle 12.10.49.png",
     "Files/Screenshot 2024-05-19 alle 12.09.03.png",
     "Files/Screenshot 2024-05-19 alle 11.57.25.png",
-    "Files/Screenshot 2024-05-19 alle 11.05.08.png",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Users/fla/Documents/Vault",

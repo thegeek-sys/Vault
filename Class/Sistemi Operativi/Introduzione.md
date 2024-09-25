@@ -43,3 +43,19 @@ Questi sono:
 - *I/O address register*
 - *I/O buffer register*
 Per capire il funzionamento e come interagiscono MAR e MBR prendiamo questo esempio: nell’istruzione `lw $s1, 4($s2)` concettualmente, prima viene copiato l’indirizzo con l’offset di `4($s2)` in MAR, poi si utilizza il valore in MAR per accedere alla memoria e si scrive il valore letto in MBR, e infine viene copiato il contenuto di MBR in `$s1`
+
+---
+## Esecuzione di istruzioni
+![[Screenshot 2024-09-25 alle 09.01.50.png|center|450]]
+Un’istruzione viene eseguita in varie fasi:
+1. il processore preleva (fase di fetch) le istruzioni dalla memoria principale e viene caricata nell’IR
+	- il PC mantiene l’indirizzo della prossima istruzione da prelevare e viene incrementato dopo ogni prelievo. Se l’istruzione contiene una `jump`, il PC verrà ulteriormente modificato dall’istruzione stessa
+3. il processore esegue ogni istruzione prelevata
+
+### Categorie di istruzioni
+Le istruzioni sono divise in base alla loro funzione
+- scambio di dati tra processore e memoria
+- scambio  di dati tra processore e input/output
+- manipolazione di dati → include anche operazioni aritmetiche, solitamente solo con i registri, ma in alcuni processori direttamente in RAM come negli x86
+- controllo → modifica del PC tramite salti condizionati o non
+- operazioni riservate → (dis)abilitazione interrupt, cache, paginazione/segmentazione
