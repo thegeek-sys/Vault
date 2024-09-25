@@ -32,7 +32,7 @@ Nell’x86 sono considerati indirizzi di controllo anche quelli per la gestione 
 Questi sono:
 - *Program Counter* (PC) → contiene l’indirizzo di un’istruzione da prelevare dalla memoria
 - *Instruction Register* (IR) → contiene l’istruzione prelevata più di recente
-- *Program Status Word* (PSW) → contiene le informazioni di stato (es. interrupt disabilitato)
+- *Program Status Word* (PSW) → contiene le informazioni di stato (es. interrupt disabilitato, flag…)
 - *flag* → singoli bit settati dal processore come risultato di operazioni (es. risultato positivo, negativo, zero, overflow…)
 
 ### Registri interni
