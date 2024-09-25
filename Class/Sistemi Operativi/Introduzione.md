@@ -66,3 +66,26 @@ Le istruzioni sono divise in base alla loro funzione
 
 ---
 ## Interruzioni
+Le interruzioni sono un paradigma dell’interazione hardware/software. Queste **interrompono la normale esecuzione sequenziale del programma** ed iniziano ad eseguire del software che fa parte del sistema operativo.
+
+Le cause possono essere molteplici, e danno luogo a diverse **classi di interruzioni**:
+- da programma (sincrone)
+- da I/O (asincrone)
+- da fallimento hardware (asincrone)
+- da timer(asincrone)
+
+Il ciclo fetch-execute cambia in questa maniera in caso di interruzioni:
+![[Screenshot 2024-09-24 alle 16.34.03.png|500]]
+
+### Interruzioni sincrone
+Le uniche interruzioni sincrone sono quelle **da programma**. Come conseguenza interrompono **immediatamente** il programma. Queste nei processori Intel, sono chiamate *exception*
+
+Queste sono causate principalmente da:
+- overflow
+- divisioni per 0
+- debugging
+- riferimento ad indirizzo di memoria non disponibile al programma o momentaneamente non disponibile (memoria virtuale)
+- tentativo di esecuzione di un’istruzione macchina errata (opcode illegale o operando non allineato)
+- chiamata a *system call*
+
+### Interruzioni asincrone
