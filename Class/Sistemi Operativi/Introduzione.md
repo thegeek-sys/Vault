@@ -59,3 +59,10 @@ Le istruzioni sono divise in base alla loro funzione
 - manipolazione di dati → include anche operazioni aritmetiche, solitamente solo con i registri, ma in alcuni processori direttamente in RAM come negli x86
 - controllo → modifica del PC tramite salti condizionati o non
 - operazioni riservate → (dis)abilitazione interrupt, cache, paginazione/segmentazione
+
+### Formato istruzione ed esecuzione programma
+![[Screenshot 2024-09-25 alle 09.10.14.png|450]]
+![[Screenshot 2024-09-25 alle 09.11.18.png|380]]
+
+---
+## Interruzioni
