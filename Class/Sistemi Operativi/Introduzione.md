@@ -108,3 +108,6 @@ Le cause possono essere molteplici:
 	Generate da un timer interno al processore. Queste permettono al sistema operativo di eseguire alcune operazioni ad intervalli regolati
 
 Per questo tipo di interruzioni, una volta che l’handler è terminato, **si riprende dall’istruzione subito successiva** a quella dove si è verificata l’interruzione (ovviamente solo se la computazione non è stata completamente abortita, anche se in alcuni casi ci potrebbe essere un process switch)
+
+### Trasferimento del controllo
+![[Screenshot 2024-09-25 alle 09.49.59.png|350]]
