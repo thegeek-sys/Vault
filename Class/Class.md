@@ -1,5 +1,8 @@
 # 2023/2024
 - [[Architettura degli elaboratori]]
 - [[Introduzione agli algoritmi]]
-- [[Calcolo della probabilità]]
+
+# 2024/2025
+- [[Sistemi Operativi]]
+- [[Basi di dati]]
 - 
