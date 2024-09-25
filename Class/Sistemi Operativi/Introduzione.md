@@ -39,5 +39,7 @@ Questi sono:
 Questi sono usati dal processore tramite microprogrammazione e utilizzati per la comunicazione con memoria ed I/O
 Questi sono:
 - *Memory Address Register* (MAR) → contiene l’indirizzo della prossima operazione di lettura/scrittura
-- *Memory Buffer Register* (MBR) → contiene i dati da scrivere in memoria, o fornisce lo spazio dove scrivere i dati letti dalla memoria (es. `lw $s1, 0($s2)` concettualmente, prima copia il contenuto di `$s2` in MAR, poi legge dalla memoria in MBR, e infine copia da MBR in $s1)
-- 
+- *Memory Buffer Register* (MBR) → contiene i dati da scrivere in memoria, o fornisce lo spazio dove scrivere i dati letti dalla memoria
+- *I/O address register*
+- *I/O buffer register*
+Per capire il funzionamento e come interagiscono MAR e MBR prendiamo questo esempio: nell’istruzione `lw $s1, 4($s2)` concettualmente, prima viene copiato l’indirizzo con l’offset di `4($s2)` in MAR, poi si utilizza il valore in MAR per accedere alla memoria e si scrive il valore letto in MBR, e infine viene copiato il contenuto di MBR in `$s1`

@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "file": "Flet-notes/2024-09-24_SO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "file": "Flet-notes/2024-09-24_SO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md"
+                "file": "Flet-notes/2024-09-24_SO.md"
               }
             }
           },
@@ -194,11 +194,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "373b30eeb107129c",
+  "active": "50f299dbff482a08",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Introduzione.md",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Java.md",
-    "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-09-24_SO.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Files/Screenshot 2024-09-24 alle 16.34.03.png",
