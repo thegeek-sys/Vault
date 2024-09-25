@@ -1,0 +1,43 @@
+---
+Created: 2024-09-25
+Class: "[[Sistemi Operativi]]"
+Related: 
+Completed:
+---
+---
+## Sistema operativo
+![[Screenshot 2024-09-24 alle 15.57.16.png|center|350]]
+Il sistema operativo ha il compito di  gestire le risorse hardware di un sistema computerizzato generalmente composto da:
+- uno o più processori → si occupa di tutte le computazioni
+- memoria primaria (RAM o memoria reale) → definita volatile, se si spegne il computer infatti se ne perde il contenuto
+- dispositivi  di input/output → come ad esempio dispositivi di memoria secondaria (non volatile), dispositivi per la comunicazione (es. schede di rete) ecc.
+- “bus” di sistema → mezzo per far comunicare tra loro le parti interne del computer (infatti i sistemi di input output scambiano direttamente informazioni con la ram e indirettamente con il sistema operativo attraverso la RAM)
+Il suo scopo è quello di **fornire un insieme di servizi agli utenti**: sia per gli sviluppatori che per i semplici utilizzatori
+
+---
+## Registri del processore
+I registri del processore si dividono in:
+### Registri visibili dall’utente
+Sono utilizzati soprattutto da linguaggi di basso livello e sono gli unici che possono essere **utilizzati direttamente dall’utente**. Possono contenere dati o indirizzi.
+Risultano essere obbligatori per l’esecuzione di operazioni su alcuni processori, ma facoltativi per ridurre gli accessi alla memoria principale
+A loro volta possono essere:
+- **puntatori diretti**
+- **registri indice** → per ottenere l’indirizzo effettivo, occorre aggiungere il loro contenuto ad un indirizzo di base
+- **puntatori a segmento** → se la memoria è divisa in segmenti, contengono l’indirizzo di inizio di un segmento
+- **puntatori a stack** → puntano alla cima di uno stack
+
+### Registri di controllo e stato
+Questi vengono usualmente **letti/modificati in modo implicito dal processore** per controllare l’uso del processore stesso **oppure da opportune istruzioni assembler** (es. `jump`) per controllare l’esecuzione dei programmi.
+Nell’x86 sono considerati indirizzi di controllo anche quelli per la gestione della memoria (es. i registri che gestiscono le tabelle delle pagine)
+Questi sono:
+- *Program Counter* (PC) → contiene l’indirizzo di un’istruzione da prelevare dalla memoria
+- *Instruction Register* (IR) → contiene l’istruzione prelevata più di recente
+- *Program Status Word* (PSW) → contiene le informazioni di stato 
+- *flag* → singoli bit settati dal processore come risultato di operazioni (es. risultato positivo, negativo, zero, overflow…)
+
+### Registri interni
+Questi sono usati dal processore tramite microprogrammazione e utilizzati per la comunicazione con memoria ed I/O
+Questi sono:
+- *Memory Address Register* (MAR) → contiene l’indirizzo della prossima operazione di lettura/scrittura
+- *Memory Buffer Register* (MBR) → contiene i dati da scrivere in memoria, o fornisce lo spazio dove scrivere i dati letti dalla memoria (es. `lw $s1, 0($s2)` concettualmente, prima copia il contenuto di `$s2` in MAR, poi legge dalla memoria in MBR, e infine copia da MBR in $s1)
+- 

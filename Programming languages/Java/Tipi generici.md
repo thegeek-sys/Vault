@@ -180,7 +180,6 @@ class MyClass implements MinMax<T> {}
 class MyClass implements MinMax<Integer> {}
 ```
 
-
 ### Tramite super
 Utilizzo **`super`** invece quando T deve essere una superclasse della classe specificata o la classe stessa (controvarianza)
 
