@@ -79,7 +79,6 @@ Il ciclo fetch-execute cambia in questa maniera in caso di interruzioni:
 
 ### Interruzioni sincrone
 Le uniche interruzioni sincrone sono quelle **da programma**. Come conseguenza interrompono **immediatamente** il programma. Queste nei processori Intel, sono chiamate *exception*
-
 Queste sono causate principalmente da:
 - overflow
 - divisioni per 0
@@ -89,3 +88,7 @@ Queste sono causate principalmente da:
 - chiamata a *system call*
 
 ### Interruzioni asincrone
+Questo tipo di interruzioni vengono tipicamente sollevate (molto) **dopo** l’istruzione che le ha causate (addirittura, alcune non sono neanche causate dall’esecuzione di istruzioni).
+Le cause possono essere molteplici:
+- interruzioni da input/output
+	queste sono generate dal controllore di un dispositivo I/O e vengono generati perché generalmente questi sono più lenti del processore quindi il processore manda un comando al dispositivo di I/O e poi aspetta che il dispositivo lo “interrompa” quando è riuscito a completare la richiesta
