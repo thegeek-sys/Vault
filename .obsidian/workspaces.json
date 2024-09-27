@@ -1111,13 +1111,13 @@
             "type": "tabs",
             "children": [
               {
-                "id": "86b7c0e96592df9e",
+                "id": "373b30eeb107129c",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                    "file": "Class/Basi di dati/Basi di dati.md",
                     "mode": "source",
                     "source": false
                   },
@@ -1125,12 +1125,12 @@
                 }
               },
               {
-                "id": "373b30eeb107129c",
+                "id": "7240fe0f3da4799b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Sistemi Operativi/Introduzione.md",
+                    "file": "Flet-notes/2024-09-26_BD.md",
                     "mode": "source",
                     "source": false
                   }
@@ -1187,7 +1187,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1203,7 +1204,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Sistemi Operativi/Introduzione.md",
+                    "file": "Flet-notes/2024-09-26_BD.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1220,7 +1221,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Sistemi Operativi/Introduzione.md",
+                    "file": "Flet-notes/2024-09-26_BD.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1243,7 +1244,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Sistemi Operativi/Introduzione.md"
+                    "file": "Flet-notes/2024-09-26_BD.md"
                   }
                 }
               },
@@ -1277,9 +1278,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "373b30eeb107129c",
-      "mtime": "2024-09-25T16:11:05+02:00"
+      "active": "7240fe0f3da4799b",
+      "mtime": "2024-09-27T13:12:07+02:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
