@@ -49,4 +49,6 @@ Infatti uso:
 ![[Screenshot 2024-09-29 alle 15.58.01.png|430]]
 ![[Screenshot 2024-09-29 alle 16.04.12.png|430]]
 
-
+---
+## Valori nulli
+I valori nulli rappresentano la mancanza di informazione o il fatto che l’informazione non è applicabile. Questo valore può essere assegnato a un qualunque dominio, indipendentemente da come è definito
