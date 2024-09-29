@@ -59,6 +59,17 @@ Tutti i valori NULL sono considerati diversi tra di loro (un valore NULL nel cam
 I **vincoli di integrità** sono delle proprietà che devono essere soddisfatte da ogni istanza della base di dati (sono **legate allo schema**). Questi descrivono proprietà specifiche del campo di applicazione, e quindi delle informazioni ad esso relative modellate attraverso la base di dati.
 Una istanza di base di dati è corretta se soddisfa tutti i vincoli di integrità associati al suo schema
 
+Esistono due tipi di vincoli:
+- **Vincoli intrarelazionali** → definiti sui valori di singoli attributi (di dominio) o tra valori di attributi di una stessa tupla o tra tuple della stessa relazione
+- **Vincoli interrelazionali** → definiti tra più relazioni
+
+### Vincoli  intrarelazionali
+Questi possono essere:
+- Vincolo di chiave primaria (primary key) → unica e mai nulla
+- Vincoli di dominio (es. ASSUNZIONE > 1980)
+- Vincoli di unicità (unique)
+- Vincoli di esistenza del valore per un certo attributo (not null)
+- Espressioni sul valore di attributi della stessa tupla (es. data_arrivo < data_partenza)
 ### Esempio
 ![[Screenshot 2024-09-29 alle 16.38.48.png|500]]
 
@@ -74,3 +85,12 @@ Una istanza di base di dati è corretta se soddisfa tutti i vincoli di integrit�
 **Vincoli tra valori in tuple di relazioni diverse**
 - DIP REFERENCES DIPARTIMENTO.NUMERO
 - Studente REFERENCES Studenti.Matricola
+
+---
+## Chiavi
+Una **chiave** di una relazione (non necessariamente unica) è un attributo o insieme di attributi (chiave **composta**) che identifica univocamente una tupla
+Un attributo per essere considerato una chiave deve rispettare queste condizioni:
+1. per ogni istanza di una relazione $\text{R}$, non esistono due tuple distinte $\text{t1}$ e $\text{t2}$ che hanno gli stessi valori per gli attributi in un insieme $\text{X}$ (chiavi), tali cioè che $\text{t1[X] = t2[X]}$
+2. nessun sottoinsieme proprio di $\text{X}$ soddisfa la prima condizione
+
+Una relazione potrebbe avere inoltre più chiavi  alternative. Quella più usata o quella  composta da numero minore di attributi viene scelta come chiave **primaria**. La chiave primaria non ammette valori nulli e ne deve esistere almeno una all’interno di ogni relazione (sono infatti le chiavi a consentire di mettere in relazione dati in tabelle diverse)
