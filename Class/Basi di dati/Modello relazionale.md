@@ -40,8 +40,10 @@ Infatti uso:
 - un **attributo** è definito da un nome $A$ (che ne descrive il ruolo) e dal **dominio** dell’attributo a che indichiamo con $\text{dom(A)}$ (la coppia dominio, nome di attributo è definita attributo)
 - sia R un insieme di attributi. Un’ennupla su $R$ è una **funzione** definita su R che associa ad ogni attributo $A$ in $R$ un elemento di $\text{dom(A)}$
 - se t è un’ennupla su $R$ ed $A$ è un attributo in $R$, allora con $t(A)$ indicheremo il valore assunto dalla funzione $t$ in corrispondenza dell’attributo $A$
-- con **schema di relazione** l’rappresento l’insieme degli attributi di una relazione $R(\text{A1, A2, }\dots \text{, Ak})$. Questo rimane invariato nel tempo e descrive la struttura stessa della relazione
-- per **istanza** di una relazione con schema $R(X)$ si indica l’insieme $R$ di tuple su $X$. Questa contiene i valori attuali, che possono cambiare molto rapidamente nel tempo
+- con **schema di relazione** l’rappresento l’insieme degli attributi di una relazione $R(\text{A1, A2, }\dots \text{, Ak})$ (es. $\text{Info\_Città(Città, Regione, Popolazione)}$ ). Questo rimane invariato nel tempo e descrive la struttura stessa della relazione. Per **schema di base di dati** si intende un insieme di schemi di relazione con nomi differenti
+- per **istanza** di una relazione con schema $R(X)$ si indica l’insieme $R$ di tuple su $X$. Questa contiene i valori attuali, che possono cambiare molto rapidamente nel tempo (corpo della relazione)
+- con $\text{t[Ai]}$ si indica il **valore dell’attributo** con nome $\text{Ai}$ della tupla $\text{t}$ (nell’esempio sotto se $\text{t}$ è la seconda tupla, allora $\text{t[Cognome] = Bianchi}$)
+- se $\text{Y}$ è un sottoinsieme di attributi dello schema $\text{X}$ di una relazione allora $\text{t[Y]}$ è il sottoinsieme di valori nella tupla $\text{t}$ che corrispondono ad attributi contenuti in $\text{Y}$. Questo è chiamato **restrizione** di $\text{t}$
 
 ### Esempio
 ![[Screenshot 2024-09-29 alle 15.58.01.png|430]]
