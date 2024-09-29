@@ -51,4 +51,8 @@ Infatti uso:
 
 ---
 ## Valori nulli
-I valori nulli rappresentano la mancanza di informazione o il fatto che l’informazione non è applicabile. Questo valore può essere assegnato a un qualunque dominio, indipendentemente da come è definito
+I valori **NULL** rappresentano la mancanza di informazione o il fatto che l’informazione non è applicabile. Questo valore può essere assegnato a un qualunque dominio, indipendentemente da come è definito.
+Tutti i valori NULL sono considerati diversi tra di loro (un valore NULL nel campo di una tupla è diverso dal valore NULL di un altro campo di una stessa tupla oppure dello stesso campo di un’altra tupla)
+
+---
+## Basi di dati “scorrette”
