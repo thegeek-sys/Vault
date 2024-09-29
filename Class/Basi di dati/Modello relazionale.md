@@ -71,9 +71,7 @@ Questi possono essere:
 - Vincoli di esistenza del valore per un certo attributo (**not null**)
 - Espressioni sul valore di attributi della stessa tupla (es. data_arrivo < data_partenza)
 
-### Vincoli interrelazionali
-- Vincolo di integrità referenziale (**foreign key**) → quando porzioni di informazione in relazioni diverse sono correlate attraverso valori di chiave 
-### Esempio
+#### Esempio
 ![[Screenshot 2024-09-29 alle 16.38.48.png|500]]
 
 ![[Screenshot 2024-09-29 alle 16.39.44.png|500]]
@@ -88,6 +86,10 @@ Questi possono essere:
 **Vincoli tra valori in tuple di relazioni diverse**
 - DIP REFERENCES DIPARTIMENTO.NUMERO
 - Studente REFERENCES Studenti.Matricola
+
+### Vincoli interrelazionali
+- Vincolo di integrità referenziale (**foreign key**) → quando porzioni di informazione in relazioni diverse sono correlate attraverso valori di chiave 
+
 
 ---
 ## Chiavi
