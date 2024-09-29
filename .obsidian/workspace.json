@@ -102,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -195,8 +194,11 @@
   },
   "active": "0b5464ba7e9e7df3",
   "lastOpenFiles": [
-    "Flet-notes/2024-09-26_BD.md",
+    "Files/Screenshot 2024-09-29 alle 15.58.36.png",
     "Class/Basi di dati/Modello relazionale.md",
+    "Files/Screenshot 2024-09-29 alle 16.04.12.png",
+    "Files/Screenshot 2024-09-29 alle 15.58.01.png",
+    "Flet-notes/2024-09-26_BD.md",
     "Flet-notes/2024-09-29.md",
     "Class/Basi di dati/Basi di dati.md",
     "Flet-notes/2024-09-27_SO.md",
@@ -213,11 +215,8 @@
     "Class/Basi di dati",
     "Files/Screenshot 2024-09-25 alle 09.49.59.png",
     "Files/Screenshot 2024-09-25 alle 09.44.19.png",
-    "Files/Screenshot 2024-09-25 alle 09.11.18.png",
-    "Files/Screenshot 2024-09-25 alle 09.10.14.png",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Files/Screenshot 2024-09-25 alle 09.01.50.png",
     "Programming languages/Java/Tipi generici.md",
     "Programming languages/Java/Java.md",
     "Class/Architettura degli elaboratori/System Calls.md",
@@ -232,7 +231,6 @@
     "Programming languages/Java/Polimorfismo.md",
     "Programming languages/Java/Exceptions.md",
     "Programming languages/Java/POSSIBILI DOMANDE ORALE.md",
-    "Programming languages/Java/File.md",
     "Programming languages/Java/Main.java",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",

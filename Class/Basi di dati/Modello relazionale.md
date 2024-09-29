@@ -32,3 +32,19 @@ Gli elementi di una relazione sono detti **tuple**. Il numero di tuple in una re
 > $\{(\text{bianco, }0), (\text{nero, }0), (\text{nero, }2)\}$ sono una relazione di grado 2, cardinalità 3 e con tutple $(\text{bianco, }0), (\text{nero, }0), (\text{nero, }2)$
 > $\{(\text{nero, }0), (\text{nero, }2)\}$ è una relazione di grado 2, cardinalità 2 e con tuple $(\text{nero, }0), (\text{nero, }2)$
 
+---
+## Relazioni e tabelle
+Però a questo punto in che modo posso interpretare i dati nella tabella?
+Utilizzo una notazione anche per la tabella e le colonne
+Infatti uso:
+- un **attributo** è definito da un nome $A$ (che ne descrive il ruolo) e dal **dominio** dell’attributo a che indichiamo con $\text{dom(A)}$ (la coppia dominio, nome di attributo è definita attributo)
+- sia R un insieme di attributi. Un’ennupla su $R$ è una **funzione** definita su R che associa ad ogni attributo $A$ in $R$ un elemento di $\text{dom(A)}$
+- se t è un’ennupla su $R$ ed $A$ è un attributo in $R$, allora con $t(A)$ indicheremo il valore assunto dalla funzione $t$ in corrispondenza dell’attributo $A$
+- con **schema di relazione** l’rappresento l’insieme degli attributi di una relazione $R(\text{A1, A2, }\dots \text{, Ak})$. Questo rimane invariato nel tempo e descrive la struttura stessa della relazione
+- per **istanza** di una relazione con schema $R(X)$ si indica l’insieme $R$ di tuple su $X$. Questa contiene i valori attuali, che possono cambiare molto rapidamente nel tempo
+
+### Esempio
+![[Screenshot 2024-09-29 alle 15.58.01.png|430]]
+![[Screenshot 2024-09-29 alle 16.04.12.png|430]]
+
+
