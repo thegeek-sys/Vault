@@ -62,3 +62,15 @@ Una istanza di base di dati è corretta se soddisfa tutti i vincoli di integrit�
 ### Esempio
 ![[Screenshot 2024-09-29 alle 16.38.48.png|500]]
 
+![[Screenshot 2024-09-29 alle 16.39.44.png|500]]
+
+**Vincoli di dominio**
+- ASSUNZIONE > 1980
+- (Voto ≥ 18) AND (Voto ≤ 30)
+
+**Vincoli di tupla**
+- (Voto = 30) OR NOT (Lode = “si“)
+
+**Vincoli tra valori in tuple di relazioni diverse**
+- DIP REFERENCES DIPARTIMENTO.NUMERO
+- Studente REFERENCES Studenti.Matricola
