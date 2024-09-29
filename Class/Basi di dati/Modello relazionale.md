@@ -5,6 +5,21 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduzione|Introduzione]]
+- [[#Definizioni|Definizioni]]
+- [[#Relazioni e tabelle|Relazioni e tabelle]]
+	- [[#Relazioni e tabelle#Esempio|Esempio]]
+- [[#Valori nulli|Valori nulli]]
+- [[#Vincoli di integrità|Vincoli di integrità]]
+	- [[#Vincoli di integrità#Vincoli  intrarelazionali|Vincoli  intrarelazionali]]
+		- [[#Vincoli  intrarelazionali#Esempio|Esempio]]
+	- [[#Vincoli di integrità#Vincoli interrelazionali|Vincoli interrelazionali]]
+		- [[#Vincoli interrelazionali#Esempio|Esempio]]
+- [[#Chiavi|Chiavi]]
+- [[#Dipendenza funzionale|Dipendenza funzionale]]
+	- [[#Dipendenza funzionale#Esempio|Esempio]]
+---
 ## Introduzione
 Il modello relazione venne proposto per la prima volta da Codd nel 1970 per favorire l’indipendenza dei dati, ma fu disponibile in DBMS reali solo a partire dal 1981.
 Questo modello è basato sulla nozione matematica di **relazione** le quasi si traducono in maniera naturale in **tabelle** (infatti useremo sempre il termine relazione invece di tabella). Dati e relazioni (riferimenti) tra dati di insiemi (tabelle) diversi sono rappresentati come **valori**
@@ -103,3 +118,33 @@ Un attributo per essere considerato una chiave deve rispettare queste condizioni
 2. nessun sottoinsieme proprio di $\text{X}$ soddisfa la prima condizione
 
 Una relazione potrebbe avere inoltre più chiavi  alternative. Quella più usata o quella  composta da numero minore di attributi viene scelta come chiave **primaria**. La chiave primaria non ammette valori nulli e ne deve esistere almeno una all’interno di ogni relazione (sono infatti le chiavi a consentire di mettere in relazione dati in tabelle diverse)
+
+Si parla di chiave **minimale** quando una chiave non contiene un sottoinsieme di attributi che a sua volta è una chiave (si applica ai sottoinsiemi di super-chiave).
+Si parla di **super-chiave** quando un insieme di attributi contiene una chiave (una chiave è in senso improprio una super-chiave ma non il contrario)
+
+---
+## Dipendenza funzionale
+Una **dipendenza funzionale** stabilisce un particolare legame semantico tra due insiemi non-vuoti di attributi $\text{X}$ e $\text{Y}$ appartenenti ad uno schema $\text{R}$
+Tale vincolo si scrive $\text{X} \rightarrow \text{Y}$ e si legge $\text{X}$ determina $\text{Y}$
+
+diremo che una relazione $r$ con schema $R$ **soddisfa** la dipendenza funzionale $X \rightarrow Y$ se:
+1. la dipendenza funzionale $X \rightarrow Y$ è applicabile ad $R$, nel senso che sia $X$ sia $Y$ sono sottoinsiemi di $R$
+2. le ennuple in $r$ che concordano su $X$ concordano anche su $Y$, cioè per ogni coppia di ennuple $t1$ e $t2$ in $r$ (se hanno la stessa $X$ devono avere la stessa $Y$)
+	$$
+	t1[X] = t2[X] \rightarrow t1[Y] = t2[Y]
+	$$
+
+
+### Esempio
+Supponiamo di avere uno schema di relazione
+$$
+\text{VOLI(CodiceVolo, Giorno, Pilota, Ora)}
+$$
+Con i vincoli:
+- un volo con un certo codice parte sempre alla stessa ora
+- esiste un solo volo con un dato pilota, in un dato giorno, ad una data ora
+
+I vincoli corrispondono alle dipendenze funzionali:
+- $\text{CodiceVolo} \rightarrow \text{Ora}$
+- $\text{\{Giorno, Pilota, Ora\}} \rightarrow \text{CodiceVolo}$
+- $\text{\{CodiceVolo, Giorno\}} \rightarrow \text{Pilota}$
