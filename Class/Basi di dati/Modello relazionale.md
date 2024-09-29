@@ -65,11 +65,14 @@ Esistono due tipi di vincoli:
 
 ### Vincoli  intrarelazionali
 Questi possono essere:
-- Vincolo di chiave primaria (primary key) → unica e mai nulla
+- Vincolo di chiave primaria (**primary key**) → unica e mai nulla
 - Vincoli di dominio (es. ASSUNZIONE > 1980)
-- Vincoli di unicità (unique)
-- Vincoli di esistenza del valore per un certo attributo (not null)
+- Vincoli di unicità (**unique**)
+- Vincoli di esistenza del valore per un certo attributo (**not null**)
 - Espressioni sul valore di attributi della stessa tupla (es. data_arrivo < data_partenza)
+
+### Vincoli interrelazionali
+- Vincolo di integrità referenziale (**foreign key**) → quando porzioni di informazione in relazioni diverse sono correlate attraverso valori di chiave 
 ### Esempio
 ![[Screenshot 2024-09-29 alle 16.38.48.png|500]]
 
