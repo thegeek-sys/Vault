@@ -70,7 +70,6 @@ Questi possono essere:
 - Vincoli di unicità (**unique**)
 - Vincoli di esistenza del valore per un certo attributo (**not null**)
 - Espressioni sul valore di attributi della stessa tupla (es. data_arrivo < data_partenza)
-
 #### Esempio
 ![[Screenshot 2024-09-29 alle 16.38.48.png|500]]
 
@@ -89,6 +88,10 @@ Questi possono essere:
 
 ### Vincoli interrelazionali
 - Vincolo di integrità referenziale (**foreign key**) → quando porzioni di informazione in relazioni diverse sono correlate attraverso valori di chiave 
+#### Esempio
+l’attributo Vigile della relazione INFRAZIONI e l‘attributo Matricola (chiave) della relazione VIGILI
+![[Screenshot 2024-09-29 alle 17.02.40.png|500]]
+
 
 
 ---
