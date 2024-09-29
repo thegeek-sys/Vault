@@ -55,4 +55,10 @@ I valori **NULL** rappresentano la mancanza di informazione o il fatto che l’i
 Tutti i valori NULL sono considerati diversi tra di loro (un valore NULL nel campo di una tupla è diverso dal valore NULL di un altro campo di una stessa tupla oppure dello stesso campo di un’altra tupla)
 
 ---
-## Basi di dati “scorrette”
+## Vincoli di integrità
+I **vincoli di integrità** sono delle proprietà che devono essere soddisfatte da ogni istanza della base di dati (sono **legate allo schema**). Questi descrivono proprietà specifiche del campo di applicazione, e quindi delle informazioni ad esso relative modellate attraverso la base di dati.
+Una istanza di base di dati è corretta se soddisfa tutti i vincoli di integrità associati al suo schema
+
+### Esempio
+![[Screenshot 2024-09-29 alle 16.38.48.png|500]]
+
