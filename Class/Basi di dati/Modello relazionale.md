@@ -90,9 +90,10 @@ Questi possono essere:
 - Vincolo di integrità referenziale (**foreign key**) → quando porzioni di informazione in relazioni diverse sono correlate attraverso valori di chiave 
 #### Esempio
 l’attributo Vigile della relazione INFRAZIONI e l‘attributo Matricola (chiave) della relazione VIGILI
-![[Screenshot 2024-09-29 alle 17.02.40.png|500]]
+![[Screenshot 2024-09-29 alle 17.02.40.png|430]]
 
-
+gli attributi Prov e Numero di INFRAZIONI e gli attributi Prov e Numero (chiave) della relazione AUTO
+![[Screenshot 2024-09-29 alle 17.07.31.png|430]]
 
 ---
 ## Chiavi
