@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-09-27_SO.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-09-27_SO.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-09-27_SO.md"
+                "file": "Class/Sistemi Operativi/Introduzione.md"
               }
             }
           },
@@ -192,15 +192,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "62fb8fcc8ea9c7db",
+  "active": "d61b3dac12801940",
   "lastOpenFiles": [
+    "Flet-notes/2024-09-27_SO.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Files/Screenshot 2024-09-30 alle 23.18.39.png",
     "Files/Screenshot 2024-09-30 alle 23.09.54.png",
     "Files/Screenshot 2024-09-30 alle 22.57.12.png",
     "Files/Screenshot 2024-09-30 alle 22.54.01.png",
     "Files/Screenshot 2024-09-30 alle 22.47.27.png",
-    "Flet-notes/2024-09-27_SO.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Basi di dati/Modello relazionale.md",
     "Class/Basi di dati/Basi di dati.md",

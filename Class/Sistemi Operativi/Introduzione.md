@@ -160,4 +160,4 @@ Questa corrisponde all’offline e all’offline storage. Questo tipo di memoria
 Anche all’interno dell’inboard memory ci sono importanti differenze di velocità: infatti, la velocità del processore è maggiore della velocità di accesso alla memoria principale. Per questo motivo tutti i computer hanno una **memoria cache**: una memoria piccola e veloce che sfrutta il principio di località
 
 ### Memoria cache
-La cache contiene copie di porzioni della memoria principale. Questi in particolar modo sono
+La cache contiene copie di porzioni della memoria principale. Questi dati in particolar modo sono dati che la CPU ha utilizzato di recente o sta utilizzando e sono mantenuti vicini tra loro in modo tale da massimizzare la velocità con cui la CPU ci accede 
