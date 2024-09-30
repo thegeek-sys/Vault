@@ -35,24 +35,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "f75fba6f5ee52a8d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7240fe0f3da4799b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-09-26_BD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
