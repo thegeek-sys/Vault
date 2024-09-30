@@ -161,4 +161,26 @@ Anche all’interno dell’inboard memory ci sono importanti differenze di veloc
 
 ### Memoria cache
 ![[Screenshot 2024-09-30 alle 23.35.40.png|center|400]]
-La cache contiene copie di porzioni della memoria principale. Questi dati in particolar modo sono dati che la CPU ha utilizzato di recente o sta utilizzando e sono mantenuti vicini tra loro in modo tale da massimizzare la velocità con cui la CPU ci accede 
+La cache contiene copie di porzioni della memoria principale. Questi dati in particolar modo sono dati che la CPU ha utilizzato di recente o sta utilizzando e sono mantenuti vicini tra loro in modo tale da massimizzare la velocità con cui la CPU ci accede
+Quando però si scrive sulla cache il valore che precedentemente era scritto in RAM non viene aggiornato, per questo esistono due politiche di scrittura:
+- **write-through** → viene modificato il dato in RAM ogni volta che questo viene modificato in cache
+- **write-back** → si scrive in memoria solo quando il blocco di cache viene rimpiazzato
+![[Screenshot 2024-09-30 alle 23.45.21.png|300]]
+Funzione di mappatura → determina la locazione della cache nella quale andrà messo il blocco proveniente dalla memoria
+Algoritmo di rimpiazzamento → sceglie il blocco da rimpiazzamento, l’algoritmo Least-Recently-Used (LRU) rimpiazza il blocco usato meno di recente
+
+---
+## Sistema operativo
+Lo scopo del sistema operativo è quello di **fornire servizi agli utenti** (es. ambiente grafico per eseguire applicazioni). Gli obbiettivi di un sistema operativo sono quelli di garantire convenienza, efficienza e capacità di evolvere
+Si occupa inoltre di gestire le risorse hardware di un sistema computerizzato (es. processore/i, RAM, I/O ecc.)
+### Servizi offerti
+- Esecuzioni di programmi → app, servizi; anche molti contemporaneamente
+- Accesso ai dispositivi di input/output
+- Accesso al sistema operativo stesso → shell
+- Sviluppo di programmi → compilatori, editor, debugger, system calls
+- Rilevamento e reazione ad errori → errori hardware, software
+- Accounting → chi fa cosa
+
+---
+## Kernel
+Il **kernel** (“nucleo”) è la parte di sistema operativo che si trova sempre in memoria principale e contiene le funzioni più usate. Per **monitor** si intende un programma o un modulo che funge da supervisore o gestore delle operazioni del sistema operativo
