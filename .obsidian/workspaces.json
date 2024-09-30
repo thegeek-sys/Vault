@@ -1119,19 +1119,31 @@
                 }
               },
               {
-                "id": "7240fe0f3da4799b",
+                "id": "b19fac3578a5a423",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-09-26_BD.md",
+                    "file": "Class/Basi di dati/Algebra relazionale.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f9cb41cc02a37123",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Modello relazionale.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1181,8 +1193,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1198,7 +1209,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-09-26_BD.md",
+                    "file": "Class/Basi di dati/Modello relazionale.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1215,7 +1226,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-09-26_BD.md",
+                    "file": "Class/Basi di dati/Modello relazionale.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1238,7 +1249,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-09-26_BD.md"
+                    "file": "Class/Basi di dati/Modello relazionale.md"
                   }
                 }
               },
@@ -1272,9 +1283,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "7240fe0f3da4799b",
-      "mtime": "2024-09-27T13:12:07+02:00"
+      "active": "f9cb41cc02a37123",
+      "mtime": "2024-09-30T22:36:16+02:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }

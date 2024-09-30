@@ -111,3 +111,19 @@ Per questo tipo di interruzioni, una volta che l’handler è terminato, **si ri
 
 ### Trasferimento del controllo
 ![[Screenshot 2024-09-25 alle 09.49.59.png|350]]
+
+### Interruzioni sequenziali ed annidate
+![[Screenshot 2024-09-27 alle 13.28.09.png|350]]
+Si parla di **interruzione sequenziale** quando, mentre sto sto eseguendo un’interruzione, me ne arriva una seconda, quindi finisco di eseguire la prima interruzione per poi eseguire la seconda
+
+![[Screenshot 2024-09-27 alle 13.28.25.png|350]]
+Si parla di **interruzione annidata** quando, mentre eseguo un’interruzione me ne arriva una seconda, quindi metto momentaneamente in pausa la prima interruzione per eseguire la seconda
+
+---
+## I/O
+### I/O programmato
+![[Screenshot 2024-09-30 alle 22.47.27.png|center|180]]
+Questo è il modo più vecchio di fare I/O. In questo caso l’azione viene eseguita dal modulo di I/O, non dal processore e dunque il processore controlla lo status (check busy-way) finché l’operazione non è completa. Dunque il processore rimane bloccato finché non è terminata l’operazione di I/O.
+
+### I/O da interruzioni
+Nei sistemi più moderni per fare I/O si utilizza I/O da interruzioni. In questo caso il processore viene interrotto quando il modulo I/O è pronto a scambiare i dati; il processore salva il contesto del programma che stava eseguendo e comincia ad eseguire il gestore dell’interruzione (evitando sprechi inutili di tempo).
