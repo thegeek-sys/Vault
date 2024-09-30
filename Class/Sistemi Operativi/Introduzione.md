@@ -126,4 +126,11 @@ Si parla di **interruzione annidata** quando, mentre eseguo un’interruzione me
 Questo è il modo più vecchio di fare I/O. In questo caso l’azione viene eseguita dal modulo di I/O, non dal processore e dunque il processore controlla lo status (check busy-way) finché l’operazione non è completa. Dunque il processore rimane bloccato finché non è terminata l’operazione di I/O.
 
 ### I/O da interruzioni
-Nei sistemi più moderni per fare I/O si utilizza I/O da interruzioni. In questo caso il processore viene interrotto quando il modulo I/O è pronto a scambiare i dati; il processore salva il contesto del programma che stava eseguendo e comincia ad eseguire il gestore dell’interruzione (evitando sprechi inutili di tempo).
+![[Screenshot 2024-09-30 alle 22.54.01.png|center|180]]
+Nei sistemi più moderni per fare I/O si utilizza I/O da interruzioni. In questo caso il processore viene interrotto quando il modulo I/O è pronto a scambiare i dati; il processore salva il contesto del programma che stava eseguendo e comincia ad eseguire il gestore dell’interruzione (evitando sprechi inutili di tempo) quando l’operazione su I/O è stata terminata.
+
+### Flusso di controllo
+![[Screenshot 2024-09-30 alle 22.57.12.png|600]]
+Nel caso (a) viene mostrato come nei vecchi sistemi la CPU rimane in pausa finché l’operazione I/O non è terminata
+Nel caso (b) viene mostrato come nei sistemi più moderni, quando viene eseguita un’operazione I/O, la CPU continua a fare altre operazioni finché non arriva un’interruzione a segnalare che l’operazione I/O è terminata 
+Il caso (c) invece tratta di sistemi moderni però con operazioni I/O particolarmente lunghe tanto che nel mentre che esegue la prima ne arriva una seconda (la prima non è ancora stata completata), in questo caso la CPU attende di terminare la prima operazione per poi eseguire la seconda
