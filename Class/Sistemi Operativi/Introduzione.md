@@ -127,10 +127,29 @@ Questo è il modo più vecchio di fare I/O. In questo caso l’azione viene eseg
 
 ### I/O da interruzioni
 ![[Screenshot 2024-09-30 alle 22.54.01.png|center|180]]
-Nei sistemi più moderni per fare I/O si utilizza I/O da interruzioni. In questo caso il processore viene interrotto quando il modulo I/O è pronto a scambiare i dati; il processore salva il contesto del programma che stava eseguendo e comincia ad eseguire il gestore dell’interruzione (evitando sprechi inutili di tempo) quando l’operazione su I/O è stata terminata.
+Nei sistemi recenti per fare I/O si utilizzava I/O da interruzioni. In questo caso il processore viene interrotto quando il modulo I/O è pronto a scambiare i dati; il processore salva il contesto del programma che stava eseguendo e comincia ad eseguire il gestore dell’interruzione (evitando sprechi inutili di tempo) quando l’operazione su I/O è stata terminata.
 
 ### Flusso di controllo
 ![[Screenshot 2024-09-30 alle 22.57.12.png|600]]
 Nel caso (a) viene mostrato come nei vecchi sistemi la CPU rimane in pausa finché l’operazione I/O non è terminata
 Nel caso (b) viene mostrato come nei sistemi più moderni, quando viene eseguita un’operazione I/O, la CPU continua a fare altre operazioni finché non arriva un’interruzione a segnalare che l’operazione I/O è terminata 
 Il caso (c) invece tratta di sistemi moderni però con operazioni I/O particolarmente lunghe tanto che nel mentre che esegue la prima ne arriva una seconda (la prima non è ancora stata completata), in questo caso la CPU attende di terminare la prima operazione per poi eseguire la seconda
+
+### Accesso diretto a memoria
+![[Screenshot 2024-09-30 alle 23.09.54.png|center|250]]
+Nel computer attuali il metodo I/O utilizzato è quello dell’**accesso diretto a memoria** (DMA). Le istruzioni di I/O infatti tipicamente richiedono di trasferire informazioni tra dispositivo e memoria, dunque si preferisce trasferire direttamente un blocco di dati dalla/alla memoria in quanto più efficiente rispetto ai sistemi precedentemente elencati. In questo caso l’interruzione viene mandata quando il trasferimento è completato
+
+### Multiprogrammazione
+Quando un processore deve eseguire più programmi contemporaneamente, la sequenza in cui sono eseguiti dipende dalla loro priorità e dal fatto che siano o meno in attesa di input/output (per evitare di perdere cicli di clock aspettando, la CPU procede con l’esecuzione di un altro programma).
+
+> [!info]
+> Alla fine della gestione di un’interruzione, il controllo potrebbe non tornare al programma che era in esecuzione al momento dell’interruzione
+
+---
+## Gerarchia della memoria
+![[Screenshot 2024-09-30 alle 23.18.39.png|center|350]]
+Dall’alto al basso:
+- diminuisce la velocità di accesso
+- diminuisce il costo al bit
+- aumenta la capacità
+- diminuisce la frequenza di accesso alla memoria da parte del processore
