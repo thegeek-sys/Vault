@@ -153,3 +153,11 @@ Dall’alto al basso:
 - diminuisce il costo al bit
 - aumenta la capacità
 - diminuisce la frequenza di accesso alla memoria da parte del processore
+### Memoria secondaria
+Questa corrisponde all’offline e all’offline storage. Questo tipo di memoria è non voltatile, infatti se si spegne il computer il contenuto rimane e viene comunemente utilizzata per memorizzare i files contenenti programmi o dati
+
+### Inboard memory
+Anche all’interno dell’inboard memory ci sono importanti differenze di velocità: infatti, la velocità del processore è maggiore della velocità di accesso alla memoria principale. Per questo motivo tutti i computer hanno una **memoria cache**: una memoria piccola e veloce che sfrutta il principio di località
+
+### Memoria cache
+La cache contiene copie di porzioni della memoria principale. Questi in particolar modo sono
