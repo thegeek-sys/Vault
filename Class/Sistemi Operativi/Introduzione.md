@@ -139,12 +139,6 @@ Il caso (c) invece tratta di sistemi moderni però con operazioni I/O particolar
 ![[Screenshot 2024-09-30 alle 23.09.54.png|center|250]]
 Nel computer attuali il metodo I/O utilizzato è quello dell’**accesso diretto a memoria** (DMA). Le istruzioni di I/O infatti tipicamente richiedono di trasferire informazioni tra dispositivo e memoria, dunque si preferisce trasferire direttamente un blocco di dati dalla/alla memoria in quanto più efficiente rispetto ai sistemi precedentemente elencati. In questo caso l’interruzione viene mandata quando il trasferimento è completato
 
-### Multiprogrammazione
-Quando un processore deve eseguire più programmi contemporaneamente, la sequenza in cui sono eseguiti dipende dalla loro priorità e dal fatto che siano o meno in attesa di input/output (per evitare di perdere cicli di clock aspettando, la CPU procede con l’esecuzione di un altro programma).
-
-> [!info]
-> Alla fine della gestione di un’interruzione, il controllo potrebbe non tornare al programma che era in esecuzione al momento dell’interruzione
-
 ---
 ## Gerarchia della memoria
 ![[Screenshot 2024-09-30 alle 23.18.39.png|center|350]]
@@ -184,3 +178,25 @@ Si occupa inoltre di gestire le risorse hardware di un sistema computerizzato (e
 ---
 ## Kernel
 Il **kernel** (“nucleo”) è la parte di sistema operativo che si trova sempre in memoria principale e contiene le funzioni più usate. Per **monitor** si intende un programma o un modulo che funge da supervisore o gestore delle operazioni del sistema operativo
+
+---
+## Caratteristiche Hardware
+Con il passare del tempo si iniziò a notare la necessità di ottemperare ad alcune mancanze presenti all’interno dei computer.
+In particolare era necessario:
+- proteggere la memoria → si aveva un problema nel caso in cui un job andava a scrivere sul gestore del job stesso (rendere il sistema operativo inaccessibile dai job)
+- aggiungere dei timer → per impedire che un job monopolizzi l’intero sistema
+- istruzioni privilegiate → il gestore dei job viene eseguito con dei privilegi più elevati rispetto ai job normali
+
+### Protezione della memoria
+Attraverso la protezione della memoria si definiscono due spazi di lavoro la **modalità utente** in cui vengono eseguiti i comuni job (le istruzioni che cercavano di accedere a zone di memoria protette non potevano essere eseguite) e la **modalità sistema** (qui possono essere eseguire istruzioni privilegiate)
+
+Nonostante l’avanzamento dell’hardware rimasero presenti comunque molti problemi come ad esempio la **sottoutilizzazione** nato dal fatto che la maggior parte del tempo utilizzato dalla CPU è tempo di attesa dei dispositivi I/O
+Per risolvere questo problema si è passati alla **multiprogrammazione**
+
+### Multiprogrammazione
+Quando un processore deve eseguire più programmi contemporaneamente, la sequenza in cui sono eseguiti dipende dalla loro priorità e dal fatto che siano o meno in attesa di input/output. Dunque per evitare di perdere cicli di clock aspettando, la CPU procede con l’esecuzione di un altro programma).
+
+> [!info]
+> Alla fine della gestione di un’interruzione, il controllo potrebbe non tornare al programma che era in esecuzione al momento dell’interruzione
+
+![[Screenshot 2024-10-01 alle 23.50.55.png|400]]
