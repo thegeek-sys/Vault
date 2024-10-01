@@ -190,6 +190,7 @@ In particolare era necessario:
 ### Protezione della memoria
 Attraverso la protezione della memoria si definiscono due spazi di lavoro la **modalità utente** in cui vengono eseguiti i comuni job (le istruzioni che cercavano di accedere a zone di memoria protette non potevano essere eseguite) e la **modalità sistema** (qui possono essere eseguire istruzioni privilegiate)
 
+
 Nonostante l’avanzamento dell’hardware rimasero presenti comunque molti problemi come ad esempio la **sottoutilizzazione** nato dal fatto che la maggior parte del tempo utilizzato dalla CPU è tempo di attesa dei dispositivi I/O
 Per risolvere questo problema si è passati alla **multiprogrammazione**
 
@@ -200,3 +201,8 @@ Quando un processore deve eseguire più programmi contemporaneamente, la sequenz
 > Alla fine della gestione di un’interruzione, il controllo potrebbe non tornare al programma che era in esecuzione al momento dell’interruzione
 
 ![[Screenshot 2024-10-01 alle 23.50.55.png|400]]
+
+
+### Sistemi time sharing
+Con il passare del tempo però cominciavano ad essere necessari dei job “interattivi” data la presenza di un prompt con cui l’utente si interfaccia, questi utenti però utilizzavano tutti un proprio prompt che era connesso ad un computer centrale detto *mainframe*.
+Si iniziò quindi, a partire dagli anni ‘70, a pensare a dei **sistemi a condivisione di tempo**; vengono quindi date delle fette di tempo a ciascun utente
