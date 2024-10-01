@@ -182,6 +182,7 @@ Il **kernel** (“nucleo”) è la parte di sistema operativo che si trova sempr
 ---
 ## Caratteristiche Hardware
 Con il passare del tempo si iniziò a notare la necessità di ottemperare ad alcune mancanze presenti all’interno dei computer.
+I computer infatti ai tempi erano a sistema **semplice non interattivo** (o *batch*)
 In particolare era necessario:
 - proteggere la memoria → si aveva un problema nel caso in cui un job andava a scrivere sul gestore del job stesso (rendere il sistema operativo inaccessibile dai job)
 - aggiungere dei timer → per impedire che un job monopolizzi l’intero sistema
