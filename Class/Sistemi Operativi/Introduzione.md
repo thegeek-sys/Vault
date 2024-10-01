@@ -207,3 +207,9 @@ Quando un processore deve eseguire più programmi contemporaneamente, la sequenz
 ### Sistemi time sharing
 Con il passare del tempo però cominciavano ad essere necessari dei job “interattivi” data la presenza di un prompt con cui l’utente si interfaccia, questi utenti però utilizzavano tutti un proprio prompt che era connesso ad un computer centrale detto *mainframe*.
 Si iniziò quindi, a partire dagli anni ‘70, a pensare a dei **sistemi a condivisione di tempo**; vengono quindi date delle fette di tempo a ciascun utente
+
+
+|                                                  | **Batch**                                                      | **Time sharing**                                                                                       |
+| ------------------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Scopo principale                                 | Massimizzare l’uso del processore                              | Minimizzare tempo di risposta (tempo che deve aspettare l’utente tra l’invio del prompt e la risposta) |
+| Provenienza delle direttive al sistema operativo | Comandi del job control language, sottomessi con il job stesso | Comandi dati da terminale                                                                              |
