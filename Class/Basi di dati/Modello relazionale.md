@@ -37,7 +37,7 @@ $$
 
 Una **relazione matematica** è un qualsiasi sottoinsieme del prodotto cartesiano di uno o più domini
 Una relazione che è sottoinsieme del prodotto cartesiano di k domini si dice di **grado k**
-Gli elementi di una relazione sono detti **tuple**. Il numero di tuple in una relazione è la sua cardinalità. Ogni tupla di una relazione di grado k ha k componenti ordinate ma non c’è ordinamento tra le tuple
+Gli elementi di una relazione sono detti **tuple**. Il numero di tuple in una relazione è la sua **cardinalità**. Ogni tupla di una relazione di grado k ha k componenti ordinate ma non c’è ordinamento tra le tuple
 
 > [!info] Esempio
 > - supponiamo $k=2$
