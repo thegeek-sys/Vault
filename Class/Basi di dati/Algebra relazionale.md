@@ -146,4 +146,4 @@ $$
 \text{Dati dei clienti e degli ordini}=(\text{Cliente}\times \text{OrdineR})
 $$
 ![[Screenshot 2024-10-02 alle 16.42.00.png|440]]
-
+Questa relazione però risulta essere sbagliata; ho infatti il $\text{Cliente}$ 
