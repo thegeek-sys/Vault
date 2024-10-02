@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-10-02_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-10-02_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-10-02_BD.md"
+                "file": "Class/Basi di dati/Algebra relazionale.md"
               }
             }
           },
@@ -224,13 +224,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b19fac3578a5a423",
+  "active": "a620d9aa37fae1a1",
   "lastOpenFiles": [
+    "Flet-notes/2024-10-02_BD.md",
+    "Files/Screenshot 2024-10-02 alle 20.44.39.png",
     "Registrazione schermo 2024-10-02 alle 20.44.33.mov",
     "Class/Basi di dati/Algebra relazionale.md",
     "Files/Screenshot 2024-10-02 alle 20.40.10.png",
     "Files/Screenshot 2024-10-02 alle 20.37.48.png",
-    "Flet-notes/2024-10-02_BD.md",
     "Files/Screenshot 2024-10-02 alle 20.10.02.png",
     "Files/Screenshot 2024-10-02 alle 20.08.46.png",
     "Files/Screenshot 2024-10-02 alle 20.06.39.png",
@@ -240,7 +241,6 @@
     "Files/Screenshot 2024-10-02 alle 17.00.21.png",
     "Files/Screenshot 2024-10-02 alle 16.58.41.png",
     "Files/Screenshot 2024-10-02 alle 16.37.52.png",
-    "Files/Screenshot 2024-10-02 alle 16.13.14.png",
     "Class/Basi di dati/Modello relazionale.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-09-27_SO.md",
@@ -271,7 +271,6 @@
     "Users/fla/Documents/Vault",
     "Users/fla/Documents",
     "Users/fla",
-    "Users",
     "Untitled.canvas"
   ]
 }
