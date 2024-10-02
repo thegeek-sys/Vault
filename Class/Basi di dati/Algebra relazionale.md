@@ -65,9 +65,14 @@ $$
 ![[Screenshot 2024-10-02 alle 15.38.51.png|440]]
 
 
+
 ![[Screenshot 2024-10-02 alle 15.43.21.png|440]]
 In questo caso non posso fare l’unione (in $\text{Amministrativi}$ ci sta un attributo in più). Per risolvere dunque devo prima fare una proiezione per poter poi fare l’unione. (non era necessario fare la proiezione sui docenti)
 $$
 \text{Personale}=\text{Docenti}\cup \pi_{\text{Nome, CodDoc, Dipartimento}}(\text{Amministrativi})
 $$
+
+
+
 ![[Screenshot 2024-10-02 alle 15.49.56.png|440]]
+In questo esempio non è possibile unire le due relazioni in quanto non sono union compatibili (attributi corrispondenti sono definiti su domini diversi $\text{Dipartimento}$ e $\text{AnniServizio}$). Devo per questo fare una proiezione su entrambe le relazioni
