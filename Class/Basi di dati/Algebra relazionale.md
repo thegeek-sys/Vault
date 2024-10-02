@@ -186,3 +186,20 @@ $$
 \text{Dati dei clienti e dei loro ordini} = \text{Cliente}\bowtie \text{Ordine}
 $$
 ![[Screenshot 2024-10-02 alle 17.00.21.png|440]]
+Adesso voglio rimuovere tutti gli elementi in cui il $\text{N-pezzi}$ è ≤ a 100
+$$
+\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie \text{Ordine})
+$$
+![[Screenshot 2024-10-02 alle 20.37.48.png|440]]
+Come prima ma stavolta voglio solo i nomi dei clienti
+$$
+\pi_{\text{Nome}}(\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie \text{Ordine}))
+$$
+![[Screenshot 2024-10-02 alle 20.40.10.png|250]]
+>[!warning]
+>Dato che $\text{Nome}$ non identifica il cliente, i duplicati vengono cancellati. Sarebbe stato meglio utilizzare una **chiave** ($\text{C\#}$)
+
+Adesso oltre che il nome voglio anche vedere la città
+$$
+\pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie \text{Ordine}))
+$$
