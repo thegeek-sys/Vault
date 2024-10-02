@@ -228,7 +228,27 @@ Il passare da job a processo ha introdotto diverse difficolta come ad esempio:
 - Programmi con esecuzione non deterministica → un processo accede ad una porzione di memoria modificata da un altro processo
 - Deadlock (stallo) → un processo A attende un processo B che attende A
 
-### Gestione della memoria
-Con i processi si sono notate anche delle necessità relative alla gestione della memoria:
-- era necessario isolare i processi
-- 
+### Necessità di implementazioni
+Con i processi si sono notate anche delle necessità relative alla gestione della, memoria, sicurezza e gestione delle risorse
+
+**Memoria**
+- Isolamento dei processi
+- Protezione e controllo degli accessi
+- Gestione (compresa allocazione/deallocazione) automatica
+- Supporto per la programmazione modulare (stack)
+- Memorizzazione a lungo termine
+- Metodi attuali: paginazione + memoria virtuale
+
+**Sicurezza**
+- Disponibilità (availability)
+- Confidenzialità
+- Integrità dei dati
+- Autenticità
+
+**Gestione delle risorse**
+- dare accesso alle risorse in modo egualitario e equo (*fairness*)
+- velocità di risposta differenziata
+- massimizzare l’uso delle risorse per unità di tempo (*throughput*), minimizzare il tempo di risposta e servire il maggior numero di utenti possibile
+
+![[Screenshot 2024-10-02 alle 12.02.51.png|400]]
+Il tutto possibile attraverso questi pochi componenti
