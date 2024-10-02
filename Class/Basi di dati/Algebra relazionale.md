@@ -45,7 +45,7 @@ dove:
 
 ---
 ## Unione
-L’unione serve a costruire una relazione contenente tutte le ennuple che appartengono ad almeno uno dei due operandi
+L’**unione** serve a costruire una relazione contenente tutte le ennuple che appartengono ad almeno uno dei due operandi
 $$
 r_{1} \cup r_{2}
 $$
@@ -56,7 +56,8 @@ $$
 > 2. gli attributi ordinatamente (corrispondenti) sono definiti sullo stesso dominio
 > 3. ordinatamente hanno lo stesso significato (es. matricola ≠ numero di telefono)
 
-### Esempio
+### Esempi
+#### 1.
 ![[Screenshot 2024-10-02 alle 15.37.22.png|440]]
 sono union compatibili
 $$
@@ -64,15 +65,57 @@ $$
 $$
 ![[Screenshot 2024-10-02 alle 15.38.51.png|440]]
 
-
-
+#### 2
 ![[Screenshot 2024-10-02 alle 15.43.21.png|440]]
 In questo caso non posso fare l’unione (in $\text{Amministrativi}$ ci sta un attributo in più). Per risolvere dunque devo prima fare una proiezione per poter poi fare l’unione. (non era necessario fare la proiezione sui docenti)
 $$
 \text{Personale}=\text{Docenti}\cup \pi_{\text{Nome, CodDoc, Dipartimento}}(\text{Amministrativi})
 $$
 
-
-
+#### 3
 ![[Screenshot 2024-10-02 alle 15.49.56.png|440]]
 In questo esempio non è possibile unire le due relazioni in quanto non sono union compatibili (attributi corrispondenti sono definiti su domini diversi $\text{Dipartimento}$ e $\text{AnniServizio}$). Devo per questo fare una proiezione su entrambe le relazioni
+$$
+\text{Personale} = \pi_{\text{Nome, CodDoc}}(Docente)\cup \pi_{\text{Nome,  CodAmm}}(\text{Amministrativi})
+$$
+
+#### 4
+![[Screenshot 2024-10-02 alle 15.53.36.png|440]]
+In questo esempio le due relazioni sono union compatibili ma gli attributi anche se definiti sugli stessi domini hanno un significato diverso ($\text{Dipartimento}$ e $\text{Mansioni}$). Devo dunque fare una proiezione su entrambe le relazioni
+$$
+\text{Personale} = \pi_{\text{Nome, CodDoc}}(Docente)\cup \pi_{\text{Nome,  CodAmm}}(\text{Amministrativi})
+$$
+
+---
+## Differenza
+La **differenza** consente di costruire una relazione contentente tutte le tuple che appartengono al primo operando e non appartengono al secondo operando e si applica a operandi union compatibili
+$$
+r_{1}-r_{2}
+$$
+>[!warning] La differenza non è commutativa
+
+### Esempio
+![[Screenshot 2024-10-02 alle 16.00.34.png|440]]
+$$
+\text{Studenti}-\text{Amministrativi}=\text{studenti  che non sono anche amministrativi}
+$$
+$$
+\text{Amministrativi} - \text{Studenti} = \text{amministrativi che non sono anche studenti}
+$$
+![[Screenshot 2024-10-02 alle 16.03.03.png|440]]
+
+Nascerebbe però un problema se avessi degli studenti che sono amministrativi in dipartimenti diversi da quelli in cui studiano (e viceversa). In questo caso infatti dovremmo fare una proiezione su $\text{Nome}$ e $\text{CodFiscale}$ per poter avere gli stessi risultati
+
+---
+## Intersezione
+ L’intersezione consente di costruire una relazione contenente tutte le tuple che appartengono  ad entrambi gli operandi e si applica a operandi union compatibili.
+ $$
+r_{1}\cap r_{2}=(r_{1}-(r_{1}-r_{2}))
+$$
+
+### Esempio
+![[Screenshot 2024-10-02 alle 16.11.54.png|440]]
+$$
+\text{Studenti}\cap \text{Amministrativi} = \text{studenti che sono anche amministrativi}
+$$
+![[Screenshot 2024-10-02 alle 16.13.14.png|440]]
