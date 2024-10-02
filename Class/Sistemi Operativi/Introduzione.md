@@ -254,3 +254,52 @@ Con i processi si sono notate anche delle necessità relative alla gestione dell
 ![[Screenshot 2024-10-02 alle 12.02.51.png|400]]
 Il tutto possibile attraverso questi pochi componenti
 
+Per fare in modo che il tutto sia organico il SO viene visto come una serie di livelli in cui ogni livello effettua funzioni specifiche
+
+**Livelli di base**
+- Livello 1
+	- circuiti elettrici (registri, celle di memoria porte logiche ecc.)
+	- operazioni → reset registro, leggere locazione di memoria
+- Livello 2
+	- insieme delle istruzioni macchina
+	- operazioni → add, subtract, load, store
+- Livello 3
+	- aggiunge il concetto di procedura (o *subroutine*)
+- Livello 4
+	- interruzioni
+
+**Livelli multiprogrammazione**
+- Livello 5
+	- processo come programma in esecuzione
+	- sospensione e ripresa dell’esecuzione di un processo
+- Livello 6
+	- dispositivi di memorizzazione secondaria
+	- trasferimento di blocchi di dati
+- Livello 7
+	- crea uno spazio logico degli indirizzi per i processi
+	- organizza lo spazio degli indirizzi virtuali in blocchi
+
+**Livelli dispositivi esterni**
+- Livello 8
+	- comunicazioni tra processi
+- Livello 9
+	- salvataggio di lungo termine di file con nome
+- Livello 10
+	- accesso a dispositivi esterni usando interfacce standardizzate
+- Livello 11
+	- associazione tra identificatori interni ed esterni
+- Livello 12
+	- supporto di alto livello per i processi
+- Livello 13
+	- interfaccia utente
+
+### Architettura UNIX
+![[Screenshot 2024-10-02 alle 12.16.48.png|300]]
+
+---
+## Kernel moderno di Linux
+I kernel dei sistemi operativi moderni possono essere o **monolitici** oppure **microkernel**
+- monolitico → tutto il sistema operativo viene caricato in memoria al boot (più efficiente come velocità ma occupa più memoria e meno modulare)
+- microkernel → solo una minima parte del kernel si trova in memoria, il resto viene caricato in base alle necessità (rimane sempre in memoria lo scheduler e la sincronizzazione, tutto il resto solo a richiesta)
+
+Linux è principalmente monolitico ma presenta i **moduli** infatti alcune parti particolari possono essere aggiunte e tolte a richiesta dell’immagine in memoria del kernel (driver, file system ecc.)
