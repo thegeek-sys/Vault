@@ -123,7 +123,27 @@ $$
 ---
 ## Informazioni in più relazioni
 Vedremo che per garantire determinate ”buone” qualità di una relazione occorre rappresentare **separatamente** (in relazioni diverse) **concetti diversi**
-Capita che molto spesso che le informazioni che interessano per rispondere ad una interrogazione sono **distribuite** in più relazioni, in quanto coinvolgono **più oggetti** in qualche modo associati. Occorre quindi **individuare** le relazioni in cui si trovano le informazioni che ci interessano, e **combinare** queste informazioni in maniera **opportuna**
+Capita che molto spesso che le informazioni che interessano per rispondere ad una interrogazione sono **distribuite** in più relazioni, in quanto coinvolgono **più oggetti** in qualche modo associati. Occorre quindi individuare le relazioni in cui si trovano le informazioni che ci interessano, e combinare queste informazioni in maniera opportuna
 
 ---
 ## Prodotto cartesiano
+Il **prodotto cartesiano** permette di costruire una relazione che contiene tutte le ennuple ottenute unendo tutte le ennuple di una relazione e tutte le ennuple di una seconda relazione
+$$
+r_{1}\times r_{2}
+$$
+Si usa quando le informazioni che occorrono a rispondere a una query si trovano in **relazioni diverse**
+
+> [!warning] Non sempre il prodotto cartesiano ha un significato
+
+### Esempio
+![[Screenshot 2024-10-02 alle 16.37.52.png|440]]
+In questo caso però non posso fare direttamente $\text{Cliente}\times \text{Ordine}$ in quanto ho un attributo identico nelle due relazioni. Per questo motivo abbiamo necessità di utilizzare la **ridenominazione** ($\rho$)
+$$
+\text{OrdineR}=\rho_{\text{CC\#} \leftarrow \text{C\#}}(\text{Ordine})
+$$
+Dunque posso fare:
+$$
+\text{Dati dei clienti e degli ordini}=(\text{Cliente}\times \text{OrdineR})
+$$
+![[Screenshot 2024-10-02 alle 16.42.00.png|440]]
+
