@@ -213,5 +213,21 @@ Si iniziò quindi, a partire dagli anni ‘70, a pensare a dei **sistemi a condi
 | Scopo principale                                 | Massimizzare l’uso del processore                              | Minimizzare tempo di risposta (tempo che deve aspettare l’utente tra l’invio del prompt e la risposta) |
 | Provenienza delle direttive al sistema operativo | Comandi del job control language, sottomessi con il job stesso | Comandi dati da terminale                                                                              |
 
-### Dal job al processo
-Il **processo** riunisce in un unico concetto il job non-interattivo e quello interattivo
+---
+## Dal job al processo
+Il **processo** riunisce in un unico concetto il job non-interattivo e quello interattivo. Incorpora inoltre anche un altro tipo di job che cominciò a svilupparsi negli anni ‘70: quello *real-time* (transazionale, quando due terminali richiedono contemporaneamente un  job il sistema operativo deve essere in grado di gestirlo).
+Il processo dunque può essere considerato come un’**unità di computazione** caratterizzata da:
+- almeno un flusso di esecuzione (*thread*)
+- uno stato corrente
+- un insieme di risorse di sistema ad esso associate
+
+### Difficoltà della multiprogrammazione con i processi
+Il passare da job a processo ha introdotto diverse difficolta come ad esempio:
+- errori di sincronizzazione → gli interrupt si perdono o vengono ricevuti 2 volte
+- violazione della mutua esclusione → se 2 processi vogliono accedere alla stessa risorsa ci possono essere dei  problemi
+- Programmi con esecuzione non deterministica → un processo accede ad una porzione di memoria modificata da un altro processo
+- Deadlock (stallo) → un processo A attende un processo B che attende A
+
+### Gestione della memoria
+Con i processi si sono notate anche delle necessità relative alla gestione della memoria:
+- era necessario isolare i processi
