@@ -43,3 +43,31 @@ dove:
 ![[Screenshot 2024-09-29 alle 17.35.02.png|center|550]]
 
 
+---
+## Unione
+L’unione serve a costruire una relazione contenente tutte le ennuple che appartengono ad almeno uno dei due operandi
+$$
+r_{1} \cup r_{2}
+$$
+
+> [!warning]
+> L’unione può essere applicata a due istanze **union compatibili**, ovvero solo se:
+> 1. hanno lo stesso numero di attributi
+> 2. gli attributi ordinatamente (corrispondenti) sono definiti sullo stesso dominio
+> 3. ordinatamente hanno lo stesso significato (es. matricola ≠ numero di telefono)
+
+### Esempio
+![[Screenshot 2024-10-02 alle 15.37.22.png|440]]
+sono union compatibili
+$$
+\text{Personale}=\text{Docenti}\cup \text{Amministrativi}
+$$
+![[Screenshot 2024-10-02 alle 15.38.51.png|440]]
+
+
+![[Screenshot 2024-10-02 alle 15.43.21.png|440]]
+In questo caso non posso fare l’unione (in $\text{Amministrativi}$ ci sta un attributo in più). Per risolvere dunque devo prima fare una proiezione per poter poi fare l’unione. (non era necessario fare la proiezione sui docenti)
+$$
+\text{Personale}=\text{Docenti}\cup \pi_{\text{Nome, CodDoc, Dipartimento}}(\text{Amministrativi})
+$$
+![[Screenshot 2024-10-02 alle 15.49.56.png|440]]

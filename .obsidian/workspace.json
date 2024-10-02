@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "b19fac3578a5a423",
+            "id": "a620d9aa37fae1a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-10-02_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,21 +44,27 @@
                 "source": false
               }
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "e0526078b762d6f3",
+        "type": "tabs",
+        "children": [
           {
-            "id": "632007a0ff90ab46",
+            "id": "b19fac3578a5a423",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Flet-notes/2024-10-02_BD.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +114,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -200,10 +207,11 @@
   },
   "active": "b19fac3578a5a423",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-10-02 alle 17.00.21.png",
-    "Files/Screenshot 2024-10-02 alle 16.58.41.png",
     "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-02_BD.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Files/Screenshot 2024-10-02 alle 17.00.21.png",
+    "Files/Screenshot 2024-10-02 alle 16.58.41.png",
     "Files/Screenshot 2024-10-02 alle 16.42.00.png",
     "Files/Screenshot 2024-10-02 alle 16.37.52.png",
     "Files/Screenshot 2024-10-02 alle 16.13.14.png",
@@ -212,8 +220,6 @@
     "Files/Screenshot 2024-10-02 alle 16.00.34.png",
     "Files/Screenshot 2024-10-02 alle 15.53.36.png",
     "Files/Screenshot 2024-10-02 alle 15.49.56.png",
-    "Files/Screenshot 2024-10-02 alle 15.43.21.png",
-    "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Modello relazionale.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-09-27_SO.md",
