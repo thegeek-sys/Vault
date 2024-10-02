@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Flet-notes/2024-10-02_BD.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,9 +44,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "632007a0ff90ab46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md",
+                "file": "Flet-notes/2024-10-02_BD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md",
+                "file": "Flet-notes/2024-10-02_BD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md"
+                "file": "Flet-notes/2024-10-02_BD.md"
               }
             }
           },
@@ -186,9 +198,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f9cb41cc02a37123",
+  "active": "b19fac3578a5a423",
   "lastOpenFiles": [
+    "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Basi di dati.md",
+    "Flet-notes/2024-10-02_BD.md",
     "Class/Basi di dati/Modello relazionale.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Files/Screenshot 2024-10-02 alle 12.16.48.png",
@@ -203,7 +217,6 @@
     "Files/Screenshot 2024-09-30 alle 22.54.01.png",
     "Files/Screenshot 2024-09-30 alle 22.47.27.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-09-26_BD.md",
     "Flet-notes/2024-09-29.md",
     "Flet-notes/2024-09-24_SO.md",
