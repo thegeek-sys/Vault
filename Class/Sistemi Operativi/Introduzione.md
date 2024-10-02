@@ -5,6 +5,43 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Sistema operativo|Sistema operativo]]
+- [[#Registri del processore|Registri del processore]]
+	- [[#Registri del processore#Registri visibili dall’utente|Registri visibili dall’utente]]
+	- [[#Registri del processore#Registri di controllo e stato|Registri di controllo e stato]]
+	- [[#Registri del processore#Registri interni|Registri interni]]
+- [[#Esecuzione di istruzioni|Esecuzione di istruzioni]]
+	- [[#Esecuzione di istruzioni#Categorie di istruzioni|Categorie di istruzioni]]
+	- [[#Esecuzione di istruzioni#Formato istruzione ed esecuzione programma|Formato istruzione ed esecuzione programma]]
+- [[#Interruzioni|Interruzioni]]
+	- [[#Interruzioni#Interruzioni sincrone|Interruzioni sincrone]]
+	- [[#Interruzioni#Interruzioni asincrone|Interruzioni asincrone]]
+	- [[#Interruzioni#Trasferimento del controllo|Trasferimento del controllo]]
+	- [[#Interruzioni#Interruzioni sequenziali ed annidate|Interruzioni sequenziali ed annidate]]
+- [[#I/O|I/O]]
+	- [[#I/O#I/O programmato|I/O programmato]]
+	- [[#I/O#I/O da interruzioni|I/O da interruzioni]]
+	- [[#I/O#Flusso di controllo|Flusso di controllo]]
+	- [[#I/O#Accesso diretto a memoria|Accesso diretto a memoria]]
+- [[#Gerarchia della memoria|Gerarchia della memoria]]
+	- [[#Gerarchia della memoria#Memoria secondaria|Memoria secondaria]]
+	- [[#Gerarchia della memoria#Inboard memory|Inboard memory]]
+	- [[#Gerarchia della memoria#Memoria cache|Memoria cache]]
+- [[#Sistema operativo|Sistema operativo]]
+	- [[#Sistema operativo#Servizi offerti|Servizi offerti]]
+- [[#Kernel|Kernel]]
+- [[#Caratteristiche Hardware|Caratteristiche Hardware]]
+	- [[#Caratteristiche Hardware#Protezione della memoria|Protezione della memoria]]
+	- [[#Caratteristiche Hardware#Multiprogrammazione|Multiprogrammazione]]
+	- [[#Caratteristiche Hardware#Sistemi time sharing|Sistemi time sharing]]
+- [[#Dal job al processo|Dal job al processo]]
+	- [[#Dal job al processo#Difficoltà della multiprogrammazione con i processi|Difficoltà della multiprogrammazione con i processi]]
+	- [[#Dal job al processo#Necessità di implementazioni|Necessità di implementazioni]]
+	- [[#Dal job al processo#Struttura del sistema operativo|Struttura del sistema operativo]]
+	- [[#Dal job al processo#Architettura UNIX|Architettura UNIX]]
+- [[#Kernel moderno di Linux|Kernel moderno di Linux]]
+---
 ## Sistema operativo
 ![[Screenshot 2024-09-24 alle 15.57.16.png|center|350]]
 Il sistema operativo ha il compito di  gestire le risorse hardware di un sistema computerizzato generalmente composto da:

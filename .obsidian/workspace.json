@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "373b30eeb107129c",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,19 +22,31 @@
             }
           },
           {
-            "id": "d61b3dac12801940",
+            "id": "b19fac3578a5a423",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f9cb41cc02a37123",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Modello relazionale.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "file": "Class/Basi di dati/Modello relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "file": "Class/Basi di dati/Modello relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md"
+                "file": "Class/Basi di dati/Modello relazionale.md"
               }
             }
           },
@@ -174,14 +186,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d61b3dac12801940",
+  "active": "f9cb41cc02a37123",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Introduzione.md",
     "Files/Screenshot 2024-10-02 alle 12.16.48.png",
     "Files/Screenshot 2024-10-02 alle 12.02.51.png",
     "Files/Screenshot 2024-10-01 alle 23.50.55.png",
     "Files/Screenshot 2024-09-30 alle 23.45.21.png",
     "Flet-notes/2024-09-27_SO.md",
-    "Class/Sistemi Operativi/Introduzione.md",
     "Files/Screenshot 2024-09-30 alle 23.35.40.png",
     "Files/Screenshot 2024-09-30 alle 23.18.39.png",
     "Files/Screenshot 2024-09-30 alle 23.09.54.png",
@@ -192,7 +204,6 @@
     "Class/Basi di dati/Modello relazionale.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Algebra relazionale.md",
-    "Files/Screenshot 2024-09-29 alle 17.35.02.png",
     "Flet-notes/2024-09-26_BD.md",
     "Flet-notes/2024-09-29.md",
     "Flet-notes/2024-09-24_SO.md",
