@@ -231,3 +231,4 @@ Il passare da job a processo ha introdotto diverse difficolta come ad esempio:
 ### Gestione della memoria
 Con i processi si sono notate anche delle necessità relative alla gestione della memoria:
 - era necessario isolare i processi
+- 
