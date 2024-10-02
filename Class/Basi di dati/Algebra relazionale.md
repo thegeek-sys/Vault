@@ -119,3 +119,11 @@ $$
 \text{Studenti}\cap \text{Amministrativi} = \text{studenti che sono anche amministrativi}
 $$
 ![[Screenshot 2024-10-02 alle 16.13.14.png|440]]
+
+---
+## Informazioni in più relazioni
+Vedremo che per garantire determinate ”buone” qualità di una relazione occorre rappresentare **separatamente** (in relazioni diverse) **concetti diversi**
+Capita che molto spesso che le informazioni che interessano per rispondere ad una interrogazione sono **distribuite** in più relazioni, in quanto coinvolgono **più oggetti** in qualche modo associati. Occorre quindi **individuare** le relazioni in cui si trovano le informazioni che ci interessano, e **combinare** queste informazioni in maniera **opportuna**
+
+---
+## Prodotto cartesiano
