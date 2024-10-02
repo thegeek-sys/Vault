@@ -146,4 +146,43 @@ $$
 \text{Dati dei clienti e degli ordini}=(\text{Cliente}\times \text{OrdineR})
 $$
 ![[Screenshot 2024-10-02 alle 16.42.00.png|440]]
-Questa relazione però risulta essere sbagliata; ho infatti il $\text{Cliente}$ 
+Questa relazione però risulta essere sbagliata; ho infatti la seconda tupla ha due codici diversi per $\text{Cliente}$ e $\text{Ordine}$. Il che vuol dire che devo effettuare una selezione sul codice cliente
+$$
+\sigma_{\text{C\#}=\text{CC\#}}(\text{Cliente}\times \text{OrdineR})
+$$
+![[Screenshot 2024-10-02 alle 20.06.39.png|440]]
+A questo punto mi ritrovo sostanzialmente con un attributo duplicato. Lo rimuovo quindi con una proiezione
+$$
+\pi_{\text{Nome, C\#, Città, O\#, A\#, N-pezzi}}(\sigma_{\text{C\#}=\text{CC\#}}(\text{Cliente}\times \text{OrdineR}))
+$$
+![[Screenshot 2024-10-02 alle 20.08.46.png|440]]
+Adesso voglio rimuovere tutti gli elementi in cui il $\text{N-pezzi}$ è ≤ a 100
+$$
+\pi_{\text{Nome C\# Città O\# A\# N-pezzi}}(\sigma_{\text{C\#=CC\# }\land \text{ N-pezzi}>100}(\text{Cliente}\times \text{OrdineR}))
+$$
+![[Screenshot 2024-10-02 alle 20.10.02.png|440]]
+
+---
+## Join naturale
+Il join naturale consente di selezionare automatiche le tuple del prodotto cartesiano dei due operandi che soddisfano la condizione
+$$
+R_{1}\cdot A_{1}=R_{2}\cdot A_{1} \land R_{1}\cdot A_{2}=R_{2}\cdot A_{2}\land \dots \land R_{1}\cdot A_{k} = R_{2}\cdot A_{k}
+$$
+(dove $R_{1}$ ed $R_{2}$ sono i nomi delle relazioni operando e $A_{1}, A_{2}, \dots,A_{k}$ sono gli attributi comuni, cioè **con lo stesso nome**, delle relazioni operando) eliminando le ripetizioni degli attributi
+$$
+r_{1}\bowtie r_{2} = \pi_{\text{XY}}(\sigma_{\text{C}}(r_{1}\times r_{2}))
+$$
+dove:
+- $\text{C}$ → $R_{1}\cdot A_{1}=R_{2}\cdot A_{1}\land \dots \land R_{1}\cdot A_{k} = R_{2}\cdot A_{k}$
+- $\text{X}$ → è l’insieme di attributi di $r_{1}$
+- $\text{Y}$ → insieme di attributi di $r_{2}$ che non sono attributi di $r_{1}$
+
+> [!info]
+> Nel join naturale gli attributi della condizione che consente di unire solo le ennuple giuste che hanno lo **stesso nome**
+> Vengono unite le ennuple in cui questi attributi hanno lo **stesso valore**
+### Esempio
+![[Screenshot 2024-10-02 alle 16.58.41.png|440]]
+$$
+\text{Dati dei clienti e dei loro ordini} = \text{Cliente}\bowtie \text{Ordine}
+$$
+![[Screenshot 2024-10-02 alle 17.00.21.png|440]]

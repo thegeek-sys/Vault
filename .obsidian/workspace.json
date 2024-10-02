@@ -34,6 +34,16 @@
             }
           },
           {
+            "id": "e2401de8334833b7",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Screenshot 2024-10-02 alle 16.42.00.png"
+              }
+            }
+          },
+          {
             "id": "835983c4447a0a41",
             "type": "leaf",
             "state": {
@@ -56,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "e0526078b762d6f3",
@@ -124,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -141,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Files/Screenshot 2024-10-02 alle 16.42.00.png",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Files/Screenshot 2024-10-02 alle 16.42.00.png",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Files/Screenshot 2024-10-02 alle 16.42.00.png"
+                "file": "Class/Basi di dati/Algebra relazionale.md"
               }
             }
           },
@@ -215,21 +224,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "835983c4447a0a41",
+  "active": "a620d9aa37fae1a1",
   "lastOpenFiles": [
-    "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-02_BD.md",
+    "Class/Basi di dati/Algebra relazionale.md",
+    "Files/Screenshot 2024-10-02 alle 20.10.02.png",
+    "Files/Screenshot 2024-10-02 alle 20.08.46.png",
+    "Files/Screenshot 2024-10-02 alle 20.06.39.png",
+    "Files/Screenshot 2024-10-02 alle 16.42.00.png",
+    "Files/Screenshot 2024-10-02 alle 16.42.00.psd",
     "Class/Basi di dati/Basi di dati.md",
     "Files/Screenshot 2024-10-02 alle 17.00.21.png",
     "Files/Screenshot 2024-10-02 alle 16.58.41.png",
-    "Files/Screenshot 2024-10-02 alle 16.42.00.png",
     "Files/Screenshot 2024-10-02 alle 16.37.52.png",
     "Files/Screenshot 2024-10-02 alle 16.13.14.png",
     "Files/Screenshot 2024-10-02 alle 16.11.54.png",
     "Files/Screenshot 2024-10-02 alle 16.03.03.png",
-    "Files/Screenshot 2024-10-02 alle 16.00.34.png",
-    "Files/Screenshot 2024-10-02 alle 15.53.36.png",
-    "Files/Screenshot 2024-10-02 alle 15.49.56.png",
     "Class/Basi di dati/Modello relazionale.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-09-27_SO.md",
@@ -261,7 +271,6 @@
     "Users/fla/Documents",
     "Users/fla",
     "Users",
-    "Untitled.canvas",
-    "Introduzione agli algoritmi"
+    "Untitled.canvas"
   ]
 }
