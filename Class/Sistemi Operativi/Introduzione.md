@@ -250,5 +250,7 @@ Con i processi si sono notate anche delle necessità relative alla gestione dell
 - velocità di risposta differenziata
 - massimizzare l’uso delle risorse per unità di tempo (*throughput*), minimizzare il tempo di risposta e servire il maggior numero di utenti possibile
 
+### Struttura del sistema operativo
 ![[Screenshot 2024-10-02 alle 12.02.51.png|400]]
 Il tutto possibile attraverso questi pochi componenti
+
