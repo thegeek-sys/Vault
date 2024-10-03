@@ -203,4 +203,5 @@ Adesso oltre che il nome voglio anche vedere la città
 $$
 \pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie \text{Ordine}))
 $$
-![[Screenshot 2024-10-02 alle 20.44.39.png|300]]
+![[Screenshot 2024-10-03 alle 13.15.23.png|300]]
+
