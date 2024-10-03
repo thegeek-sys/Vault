@@ -34,26 +34,6 @@
             }
           },
           {
-            "id": "e2401de8334833b7",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-10-02 alle 16.42.00.png"
-              }
-            }
-          },
-          {
-            "id": "835983c4447a0a41",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/Screenshot 2024-10-02 alle 16.42.00.png"
-              }
-            }
-          },
-          {
             "id": "f9cb41cc02a37123",
             "type": "leaf",
             "state": {
@@ -67,24 +47,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "e0526078b762d6f3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b19fac3578a5a423",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-10-02_BD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
