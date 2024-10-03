@@ -166,14 +166,14 @@ $$
 ## Join naturale
 Il join naturale consente di selezionare automatiche le tuple del prodotto cartesiano dei due operandi che soddisfano la condizione
 $$
-R_{1}\cdot A_{1}=R_{2}\cdot A_{1} \land R_{1}\cdot A_{2}=R_{2}\cdot A_{2}\land \dots \land R_{1}\cdot A_{k} = R_{2}\cdot A_{k}
+(R_{1}. A_{1}=R_{2}. A_{1}) \land (R_{1}. A_{2}=R_{2}. A_{2})\land \dots \land (R_{1}.A_{k} = R_{2}. A_{k})
 $$
 (dove $R_{1}$ ed $R_{2}$ sono i nomi delle relazioni operando e $A_{1}, A_{2}, \dots,A_{k}$ sono gli attributi comuni, cioè **con lo stesso nome**, delle relazioni operando) eliminando le ripetizioni degli attributi
 $$
 r_{1}\bowtie r_{2} = \pi_{\text{XY}}(\sigma_{\text{C}}(r_{1}\times r_{2}))
 $$
 dove:
-- $\text{C}$ → $R_{1}\cdot A_{1}=R_{2}\cdot A_{1}\land \dots \land R_{1}\cdot A_{k} = R_{2}\cdot A_{k}$
+- $\text{C}$ → $(R_{1}. A_{1}=R_{2}. A_{1})\land \dots \land (R_{1}. A_{k} = R_{2}. A_{k})$
 - $\text{X}$ → è l’insieme di attributi di $r_{1}$
 - $\text{Y}$ → insieme di attributi di $r_{2}$ che non sono attributi di $r_{1}$
 
