@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Flet-notes/2024-10-03_BD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Flet-notes/2024-10-03_BD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md"
+                "file": "Flet-notes/2024-10-03_BD.md"
               }
             }
           },
@@ -187,11 +187,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "adbb20355ed7eb00",
+  "active": "a620d9aa37fae1a1",
   "lastOpenFiles": [
-    "Class/Basi di dati/Basi di dati.md",
+    "Files/Screenshot 2024-10-03 alle 13.36.29.png",
     "Flet-notes/2024-10-03_BD.md",
     "Class/Basi di dati/Algebra relazionale.md",
+    "Class/Basi di dati/Basi di dati.md",
     "Files/Screenshot 2024-10-02 alle 20.44.39.png",
     "Files/Screenshot 2024-10-03 alle 13.15.23.png",
     "Class/Basi di dati/Modello relazionale.md",
@@ -205,7 +206,6 @@
     "Files/Screenshot 2024-10-02 alle 16.42.00.png",
     "Files/Screenshot 2024-10-02 alle 16.42.00.psd",
     "Files/Screenshot 2024-10-02 alle 17.00.21.png",
-    "Files/Screenshot 2024-10-02 alle 16.58.41.png",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-09-27_SO.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",

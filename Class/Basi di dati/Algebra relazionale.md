@@ -197,7 +197,7 @@ $$
 $$
 ![[Screenshot 2024-10-02 alle 20.40.10.png|250]]
 >[!warning]
->Dato che $\text{Nome}$ non identifica il cliente, i duplicati vengono cancellati. Sarebbe stato meglio utilizzare una **chiave** ($\text{C\#}$)
+>Dato che $\text{Nome}$ non identifica il cliente, i duplicati vengono cancellati (in questo caso ho solo un $\text{Rossi}$). Sarebbe stato meglio utilizzare anche una **chiave** ($\text{C\#}$)
 
 Adesso oltre che il nome voglio anche vedere la città
 $$
