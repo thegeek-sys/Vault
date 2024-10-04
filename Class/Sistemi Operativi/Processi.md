@@ -89,5 +89,8 @@ Oppure dall’utente (es. X sulla finestra) o da un altro processo (es. invio se
 ---
 ## Modello dei processi a 5 stati
 In questo caso il momento in cui il processo non è in esecuzione è diviso tra quando il processo è ready e quando il processo è blocked
-![[Screenshot 2024-10-04 alle 12.14.57.png|500]]
-Una volta creato un processo diventa subito ready, può diventare running attraverso il dispatch
+![[Screenshot 2024-10-04 alle 12.14.57.png|center|500]]
+Una volta creato un processo diventa subito ready, può diventare running attraverso il dispatch. Se sono running e ad un certo punto nelle istruzioni eseguo un’operazione I/O entro in attesa (blocked) e ci rimango finché il dispositivo I/O non ha terminato e a quel punto ritorno ready
+
+![[Screenshot 2024-10-04 alle 12.19.05.png|center|500]]
+Avendo due stati necessiterà quindi di due code (al posto di una sola). Si aggiunge  infatti la coda di blocked.
