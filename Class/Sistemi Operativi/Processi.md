@@ -36,5 +36,6 @@ Finché un processo è in esecuzione ad esso sono associati un certo insieme di 
 - informazioni sullo stato dell’input/output
 - informazioni di accounting (quale utente ha eseguito il processo)
 
-### Process Conrol Block
-Per ciascuno di questi elementi è presente un **process control block**
+### Process Control Block
+Per ciascuno processo attualmente in esecuzione è presente un **process control block**. Si tratta di un insieme di informazioni (gli elementi di un processo) raccolte insieme e mantenute nella zona di memoria riservata al kernel.
+Questo viene interamente creato e gestito dal sistema operativo e il suo scopo principale è quello di permettere al SO di **gestire più processi contemporaneamente**
