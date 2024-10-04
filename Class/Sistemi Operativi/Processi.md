@@ -72,4 +72,7 @@ I processi vengono quindi mossi dal dispacher dalla CPU alla coda e viceversa, f
 ### Creazione
 In ogni istante in un sistema operativo sono $n\geq 1$ processi in esecuzione (come minimo ci sta un’interfaccia grafica o testuale in attesa di input). Quando viene dato un comando dall’utente, quasi sempre si crea un nuovo processo
 
-**process spawning** → è un fenomeno che si verifica quando un processo in esecuzione crea un nuovo processo
+**process spawning** → è un fenomeno che si verifica quando un processo in esecuzione crea un nuovo processo. Si hanno quindi un **processo padre** (quello che crea) e un **processo figlio** (processo creato) passando quindi da $n$ a $n+1$ processi
+
+### Terminazione
+Il normale completamento di un processo (come precedentemente nominato) avviene con l’istruzione macchina `HALT`
