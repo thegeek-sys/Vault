@@ -15,7 +15,7 @@ Un sistema operativo moderno deve quindi:
 
 ---
 ## Cos’è un processo?
-Un **processo** è un’istanza di un programma in esecuzione (ogni singola istanza di fatti dà vita a un processo).
+Un **processo** è un’istanza di un programma, memorizzato generalmente sul archiviazione di massa, in esecuzione (ogni singola istanza di fatti dà vita a un processo).
 Potrebbe però anche essere visto come un’entità che può essere assegnata ad un processore in esecuzione tipicamente caratterizzata dall’esecuzione da una sequenza di istruzioni di cui voglio conoscere l’esito, uno stato corrente e da un insieme associato di risorse
 
 Questo è quindi composto da:
