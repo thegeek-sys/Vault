@@ -64,4 +64,10 @@ Un processo potrebbe essere in uno di questi due stati
 
 Dal punto di vista dell’implementazione avremmo una coda in cui sono processi tutti i processi che non sono in esecuzione, il dispatch quindi prende il processo in cima alla queue (quello in nero) e lo mette in esecuzione.
 I processi vengono quindi mossi dal dispacher dalla CPU alla coda e viceversa, finché il processo non viene completato
+![[Screenshot 2024-10-04 alle 11.09.52.png|400]]
 ![[Screenshot 2024-10-04 alle 11.08.22.png|400]]
+
+---
+## Creazione e terminazione di processi
+### Creazione
+In ogni istante in un sistema operativo sono $n\geq 1$ processi in esecuzione (come minimo ci sta un’interfaccia grafica o testuale in attesa di input). Quando viene dato un comando dall’utente, quasi sempre si crea un nuovo processo
