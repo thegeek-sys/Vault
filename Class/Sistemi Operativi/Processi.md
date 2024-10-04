@@ -92,5 +92,46 @@ In questo caso il momento in cui il processo non è in esecuzione è diviso tra 
 ![[Screenshot 2024-10-04 alle 12.14.57.png|center|500]]
 Una volta creato un processo diventa subito ready, può diventare running attraverso il dispatch. Se sono running e ad un certo punto nelle istruzioni eseguo un’operazione I/O entro in attesa (blocked) e ci rimango finché il dispositivo I/O non ha terminato e a quel punto ritorno ready
 
-![[Screenshot 2024-10-04 alle 12.19.05.png|center|500]]
+![[Screenshot 2024-10-04 alle 12.19.05.png|450]]
 Avendo due stati necessiterà quindi di due code (al posto di una sola). Si aggiunge  infatti la coda di blocked.
+
+Assumiamo che tutti questi processi siano in RAM, ci sono svariati motivi per cui un processo possa esser messo in attesa, infatti i sistemi operativi non hanno una coda per tutti gli eventi, ma ne hanno una per ogni evento (per ogni motivo per cui il processo è stato messo in attesa)
+![[Screenshot 2024-10-04 alle 12.24.11.png|440]]
+
+---
+## Processi sospesi
+Potrebbe succedere che molti processi possano essere in attesa di input/output. Finché sono blocked questi stanno solamente occupando inutilmente della memoria RAM. Dunque quello che viene fatto è spostare (*swappare*) alcuni processi sul disco e, quando dovranno essere ripresi, vengono rispostati sulla RAM.
+Dunque lo stato “blocked” diventa “suspendend” quando viene swappato su disco
+
+Questo porta all’introduzione di due nuovi stati:
+- *blocked/suspended* → swappato mentre era bloccato
+- *ready/suspended* → swappato mentre non era bloccato
+
+Abbiamo quindi un totale di 7 stati:
+![[Screenshot 2024-10-04 alle 12.30.12.png|center|500]]
+Adesso quindi una volta creato il processo il SO decide se metterlo in RAM (Ready) oppure swapparlo su disco (Ready/Suspend). Il dispatch sceglie solo tra i processi in RAM. Quando il processo fa qualche richiesta bloccante, diventa blocked, da cui si sblocca solo quando la richiesta soddisfatta. Un processo blocked può essere swappato su disco. Da Running anche può essere swappato
+
+### Motivi per sospendere un processo
+
+| Motivo                       | Commento                                                                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Swapping                     | Il SO ha bisogno di eseguire un processo con alta priorità (o è molto grande) e per fargli spazio bisogna swappare dei processi ready |
+| Interno al SO                | Il SO sospetta che il processo stia causando problemi                                                                                 |
+| Richiesta utente interattiva | Ad esempio: debugging                                                                                                                 |
+| Periodicità                  | Il processo viene eseguito periodicamente e può venire sospeso in attesa della prossima esecuzione                                    |
+| Richiesta del padre          | Il padre potrebbe voler sospendere l’esecuzione di un figlio per esaminarlo o modificalo per coordinare l’attività tra più figli      |
+
+---
+## Processi e Risorse
+Il sistema operativo oltre a dover gestire i processi deve anche gestire come questi richiedono e acquisiscano delle risorse (tipicamente dispositivi di input).
+
+![[Screenshot 2024-10-04 alle 12.42.03.png|520]]
+Con le linee piene si intendono risorse che sono state acquisite dai processi, mentre con le linee tratteggiate delle risorse che sono state solamente richieste dai processi (ma non concesse, ad esempio perché è una risorsa esclusiva, ovvero fin tanto che lo ha $P_{1}$ non lo può avere $P_{2}$)
+
+---
+## Strutture di controllo del SO
+Per gestire al meglio le risorse dei processi il SO ha bisogno di strutture di controllo. Per questo motivo il SO costruisce e mantiene una o più tabelle per ogni entità (in cui salva lo stato di ogni processo e risorsa)
+
+![[Screenshot 2024-10-04 alle 12.49.04.png]]
+Esistono quindi delle tabelle per la memoria, delle tabelle per i dispositivi, e delle tabelle per l’archiviazione di massa e sono contenute all’interno del kernel
+All’interno del primary process table sono contenuti i block dei singoli processi. Al loro interno sono contenute solo le informazioni essenziali mentre solamente nel process image è contenuta tutta la memoria necessaria a un processo
