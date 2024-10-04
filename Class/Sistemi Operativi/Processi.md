@@ -88,3 +88,6 @@ Oppure dall’utente (es. X sulla finestra) o da un altro processo (es. invio se
 
 ---
 ## Modello dei processi a 5 stati
+In questo caso il momento in cui il processo non è in esecuzione è diviso tra quando il processo è ready e quando il processo è blocked
+![[Screenshot 2024-10-04 alle 12.14.57.png|500]]
+Una volta creato un processo diventa subito ready, può diventare running attraverso il dispatch
