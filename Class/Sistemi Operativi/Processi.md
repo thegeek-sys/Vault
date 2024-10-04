@@ -36,4 +36,5 @@ Finché un processo è in esecuzione ad esso sono associati un certo insieme di 
 - informazioni sullo stato dell’input/output
 - informazioni di accounting (quale utente ha eseguito il processo)
 
----
+### Process Conrol Block
+Per ciascuno di questi elementi è presente un **process control block**
