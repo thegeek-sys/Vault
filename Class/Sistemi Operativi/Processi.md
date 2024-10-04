@@ -57,7 +57,7 @@ La traccia, del punto di visto del processore, ci mostra come effettivamente ven
 
 ---
 ## Modello dei processi a 2 stati
-Un processo potrebbe essere in uno di questi due stati
+Un processo potrebbe essere in uno di questi due stati (non consideriamo infatti creazione e terminazione)
 - in esecuzione
 - non in esecuzione (anche quando viene messo in pausa dal dispatcher)
 ![[Screenshot 2024-10-04 alle 11.05.44.png|center|450]]
@@ -75,4 +75,16 @@ In ogni istante in un sistema operativo sono $n\geq 1$ processi in esecuzione (c
 **process spawning** → è un fenomeno che si verifica quando un processo in esecuzione crea un nuovo processo. Si hanno quindi un **processo padre** (quello che crea) e un **processo figlio** (processo creato) passando quindi da $n$ a $n+1$ processi
 
 ### Terminazione
-Il normale completamento di un processo (come precedentemente nominato) avviene con l’istruzione macchina `HALT`
+Con la terminazione si passa da $n\geq 2$ processi a $n-1$. Esiste in oltre sempre un processo “*master*” che non può essere terminato (salvo spegnimento del computer)
+#### Normale completamento
+Il normale completamento di un processo (come precedentemente nominato) avviene con l’istruzione macchina `HALT` che genera un’interruzione (che nei linguaggi di alto livello è invocata da una system call, inserita automaticamente dai compilatori dopo l’ultima istruzione di un programma)
+#### Uccisioni
+Oltre al normale completamento ci stanno le uccisioni, eseguite generalmente dal SO a causa di errori come ad esempio:
+- memoria non disponibile
+- errori di protezione
+- errore fatale a livello di istruzione (divisione per zero ecc.)
+- operazione di I/O fallita
+Oppure dall’utente (es. X sulla finestra) o da un altro processo (es. invio segnale da terminale)
+
+---
+## Modello dei processi a 5 stati
