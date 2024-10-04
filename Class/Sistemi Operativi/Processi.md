@@ -43,3 +43,25 @@ Questo viene interamente creato e gestito dal sistema operativo e il suo scopo p
 ---
 ## Traccia di un processo
 Un ulteriore aspetto importante in un processo è la **trace** ovvero l’insieme di istruzioni di cui è costituito un processo. Il **dispatcher** invece è un piccolo programma che sospende un processo per farne andare un altro in esecuzione
+
+### Esecuzione di un processo
+Si considerino 3 processi in esecuzioni, tutti caricati in memoria principale
+![[Screenshot 2024-10-04 alle 10.57.44.png|140]]
+
+La traccia, dal punto di vista del processo, appare come l’esecuzione sequenziale delle istruzioni del singolo processo
+![[Screenshot 2024-10-04 alle 11.00.20.png]]
+
+La traccia, del punto di visto del processore, ci mostra come effettivamente vengono eseguiti i 3 processi
+![[Screenshot 2024-10-04 alle 11.02.08.png]]
+>[!note] Le righe in blu sono gli indirizzi del dispatcher
+
+---
+## Modello dei processi a 2 stati
+Un processo potrebbe essere in uno di questi due stati
+- in esecuzione
+- non in esecuzione (anche quando viene messo in pausa dal dispatcher)
+![[Screenshot 2024-10-04 alle 11.05.44.png|center|450]]
+
+Dal punto di vista dell’implementazione avremmo una coda in cui sono processi tutti i processi che non sono in esecuzione, il dispatch quindi prende il processo in cima alla queue (quello in nero) e lo mette in esecuzione.
+I processi vengono quindi mossi dal dispacher dalla CPU alla coda e viceversa, finché il processo non viene completato
+![[Screenshot 2024-10-04 alle 11.08.22.png|400]]
