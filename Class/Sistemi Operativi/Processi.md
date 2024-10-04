@@ -22,3 +22,18 @@ Questo è quindi composto da:
 - **codice** → ovvero le istruzioni da eseguire
 - un insieme di **dati**
 - un numero di **attributi** che descrivono il suo stato
+
+Un processo ha 3 macrofasi: creazione, esecuzione, terminazione. Quest’ultima può essere prevista (quando il programma è terminato o quando l’utente chiude volontariamente in programma tramite la X) oppure non prevista (processo esegue un’operazione non consentita che potrebbe risultare con una terminazione involontaria del processo)
+
+---
+## Elementi di un processo
+Finché un processo è in esecuzione ad esso sono associati un certo insieme di informazioni, tra cui:
+- identificatore
+- stato (running etc.)
+- priorità
+- hardware context → attuale situazione dei registri
+- puntatori alla memoria principale (definisce l’immagine del processo)
+- informazioni sullo stato dell’input/output
+- informazioni di accounting (quale utente ha eseguito il processo)
+
+---
