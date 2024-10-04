@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md"
+                "file": "Class/Sistemi Operativi/Introduzione.md"
               }
             }
           },
@@ -186,10 +186,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8b6ce1b0664fc631",
+  "active": "d61b3dac12801940",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Processi.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-10-03_BD.md",
     "Class/Basi di dati/Algebra relazionale.md",
