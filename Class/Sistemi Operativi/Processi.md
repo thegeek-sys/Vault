@@ -155,3 +155,20 @@ Le tabelle dei processi sono contenuti i dettagli dei processi in modo tale che 
 
 Tutte queste informazioni sono presenti all’interno del process control block
 Mentre nel **process image** è contenuto l’insieme di programma sorgenti, dati (RAM), stack delle chiamate e PCB (kernel). Modificando un registro o una cella di memoria cambia anche l’immagine
+
+---
+## Process Control Block
+Le informazioni in ciascun blocco di controllo possono essere raggruppate in 3 categorie:
+- identificazione
+- stato
+- controllo
+
+### Come si identifica un processo?
+Ad ogni processo è assegnato un numero identificativo unico: il **PID** (**P**rocess **ID**entifier)
+Talmente è importante che molte tabelle del SO che si occupano di tenere traccia di quali processi hanno eseguito una determinata azione, usano direttamente il PID per identificarlo
+
+### Stato del processore
+Lo stato del processore è dato dai contenuti dei registri del processore stesso e dal PSW (in cui ricordiamo sono contenute le informazioni di stato)
+
+>[!warning] Non confondere con lo stato, o meglio la modalità del processo (ready, blocked, …)
+
