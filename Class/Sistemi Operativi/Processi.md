@@ -135,3 +135,17 @@ Per gestire al meglio le risorse dei processi il SO ha bisogno di strutture di c
 ![[Screenshot 2024-10-04 alle 12.49.04.png]]
 Esistono quindi delle tabelle per la memoria, delle tabelle per i dispositivi e delle tabelle per l’archiviazione di massa e sono contenute all’interno del kernel
 All’interno del primary process table sono contenuti i block dei singoli processi. Al loro interno sono contenute solo le informazioni essenziali mentre solamente nel process image è contenuta tutta la memoria necessaria a un processo
+
+### Tabelle di memoria
+Le tabelle di memoria (*memory tables*) sono quelle che al giorno d’oggi servono per gestire la memoria virtuale.
+Devono quindi permettere allocazione e deallocazione della memoria principale e secondaria e contengono informazioni per gestire la memoria virtuale
+
+### Tabelle per l’I/O
+Le tabelle per l’I/O ci dicono per ogni dispositivo  quali sono le caratteristiche di quel dispositivo
+
+### Tabelle dei file
+Le tabelle dei file forniscono informazioni sui nomi dei file e dove solo collocati all’interno della memoria di massa in cui sono memorizzati
+
+### Tabelle dei processi
+Le tabelle dei processi sono contenuti i dettagli dei processi in modo tale che il SO possa gestirli:
+- stato corrente (Ready, Running ecc.)
