@@ -264,9 +264,9 @@ Lo **switching tra processi** consiste nel concedere il processore ad un altro p
 ### Quando effettuare uno switch?
 Uno switch può avvenire per i seguenti motivi
 
-| Meccanismo     | Causa                                             | Uso                                                                                 |
-| -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Interruzione   | Esterna all’esecuzione dell’istruzione corrente   | Reazione ad un evento esterno asincrono; include i quanti di tempo per lo scheduler |
-| Eccezione      | Associata all’esecuzione dell’istruzione corrente | Gestione di un errore sincrono                                                      |
-| Chiamata al SO | Richiesta esplicita                               | Chiamata a funzione di sistema (caso particolare di eccezione)                      |
+| Meccanismo     | Causa                                             | Uso                                                                                                                                     |
+| -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Interruzione   | Esterna all’esecuzione dell’istruzione corrente   | Reazione ad un evento esterno asincrono; include i quanti di tempo per lo scheduler (per evitare che il processore venga monopolizzato) |
+| Eccezione      | Associata all’esecuzione dell’istruzione corrente | Gestione di un errore sincrono                                                                                                          |
+| Chiamata al SO | Richiesta esplicita                               | Chiamata a funzione di sistema (caso particolare di eccezione)                                                                          |
 
