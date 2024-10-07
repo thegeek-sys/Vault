@@ -225,6 +225,18 @@ La prima cosa che fa l’hardware, prima di cominciare alla procedura di sistema
 L’ultima istruzione dell’interrupt handler, prima di ritornare al processo di partenza, ripristina la modalità utente
 
 Dunque un processo utente può cambiare modalità a sé stesso, ma **solo per eseguire software di sistema**.
-Si ha quindi questo cambiamento in seguito a:
+Si ha quindi questo cambiamento in seguito a (esplicitamente voluti):
 - system call
 - in risposta ad una sua precedente richiesta di I/O (in generale di risorse)
+Codice eseguito per conto dello stesso processo interrotto, che non lo ha esplicitamente voluto:
+- errore fatale (*abort*) → il processo spesso viene terminato
+- errore non fatale (*fault*) → viene eseguito un qualcosa prima di tornare in user mode e continuare il processo
+Codice eseguito per conto di qualche processo. In particolare avviene quando un processo A ha fatto una richiesta I/O quindi il SO lo ho messo in blocked, il SO intanto mette in esecuzione un secondo processo B, nel mentre viene esaudita la richiesta di A ma ciò avviene per conto del processo B
+
+### System call sui Pentium
+Il codice per una system call sui Pentium è strutturata così:
+1. si preparano gli argomenti della chiamata mettendoli in opportuni registri
+	tra di essi ci sta il numero che identifica la system call
+2. esegue l’istruzione `int 0x80`, che appunto solleva un interrupt (in realtà un’eccezione)
+2. in alternativa, dal Pentium 2 in poi, può eseguire l’istruzione `sysenter`, che omette alcuni controlli inutili
+Da notare che anche creare un nuovo processo è una system call: in Linux *fork* (oppure *clone* più generale)
