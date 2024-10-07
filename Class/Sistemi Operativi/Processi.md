@@ -297,3 +297,16 @@ Il SO viene eseguito nel contesto di un processo utente (cambia solo la modalit�
 #### SO è basato sui processi
 In questo caso tutto è considerato un processo (comprese le funzioni di sistema) fatta eccezione per le funzioni per fare process switching. Il SO viene implementato infatti come un insieme di processi di sistema (ovviamente con privilegi più alti) e partecipano alla competizione per il processore accanto ai processi utente. Alcuni sistemi operativi preferiscono questa modalità in quando più modulare seppur meno efficiente della precedente
 ![[Screenshot 2024-10-07 alle 23.59.02.png|250]]
+
+### Caso concreto: Linux
+Qui si ha una via di mezzo tra la seconda e la terza opzioni. Le funzioni del kernel infatti sono per lo più eseguire tramite, per conto del processo corrente (può succedere quindi, per interrupt asincroni, che la gestione di un interrupt causato da un certo processo sia effettuata durante l’esecuzione di un altro processo).
+Ci sono però anche dei processi di sistema (*kernel threads*), creati in fase di inizializzazione, che partecipano alla normale competizione del processore, senza essere invocati esplicitamente:
+- operazioni periodiche → creare spazio usabile nella memoria principale liberando zone non usate
+- scrivere sui dispositivi I/O le operazioni bufferizzare in precedenza
+- eseguire operazioni di rete
+
+### Caso concreto: Unix Release 4
+Utilizza la seconda opzione in cui la maggior parte del SO viene eseguito all’interno dei processi utente in modalità kernel
+
+#### Transizioni tra stati dei processi
+![[Screenshot 2024-10-08 alle 00.09.44.png]]
