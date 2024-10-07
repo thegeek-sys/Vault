@@ -236,3 +236,13 @@ $$
 
 ### Casi limite
 Per quanto riguarda il join naturale sono presenti due casi limite:
+
+**Caso limite 1**
+Quando le relazioni contengono attributi con lo stesso nome ma non esistono ennuple con lo stesso valore per tali attributi in entrambe le relazioni, il risultato del join naturale è **vuoto**
+
+Per esempio:
+![[Screenshot 2024-10-07 alle 11.13.36.png|550]]
+il risultato è vuoto
+
+**Caso limite 2**
+Quando le relazioni non contengono contengono attributi con lo stesso nome
