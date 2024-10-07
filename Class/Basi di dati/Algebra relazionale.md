@@ -5,6 +5,34 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Proiezione|Proiezione]]
+	- [[#Proiezione#Esempio|Esempio]]
+- [[#Selezione|Selezione]]
+	- [[#Selezione#Esempio|Esempio]]
+- [[#Unione|Unione]]
+	- [[#Unione#Esempi|Esempi]]
+		- [[#Esempi#1.|1.]]
+		- [[#Esempi#2|2]]
+		- [[#Esempi#3|3]]
+		- [[#Esempi#4|4]]
+- [[#Differenza|Differenza]]
+	- [[#Differenza#Esempio|Esempio]]
+- [[#Intersezione|Intersezione]]
+	- [[#Intersezione#Esempio|Esempio]]
+- [[#Informazioni in più relazioni|Informazioni in più relazioni]]
+- [[#Prodotto cartesiano|Prodotto cartesiano]]
+	- [[#Prodotto cartesiano#Esempio|Esempio]]
+- [[#Join naturale|Join naturale]]
+	- [[#Join naturale#Esempio 1|Esempio 1]]
+	- [[#Join naturale#Esempio 2|Esempio 2]]
+		- [[#Esempio 2#Alternativa|Alternativa]]
+	- [[#Join naturale#Casi limite|Casi limite]]
+	- [[#Join naturale#Possibili errori|Possibili errori]]
+- [[#θ-join|θ-join]]
+- [[#Condizioni negative|Condizioni negative]]
+---
 ## Introduction
 L’algebra relazione è un linguaggio **formale** per interrogare un database relazionale: consiste di un insieme di operatori che possono essere applicati a una (operatori unari) o due (operatori binari) istanze di relazione e forniscono come risultato una nuova istanza di relazione (che può essere “salvata” in una ”variabile”).
 Ma è anche un linguaggio **procedurale** in quando l’interrogazione consiste in un’espressione in cui compaiono operatori dell’algebra e istanze di relazioni della base di dati, in una sequenza che prescrive in maniera puntuale l’ordine delle operazioni e i loro operandi

@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "09159861949a43ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Eserizi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "adbb20355ed7eb00",
             "type": "leaf",
             "state": {
@@ -118,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Class/Basi di dati/Eserizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Class/Basi di dati/Eserizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md"
+                "file": "Class/Basi di dati/Eserizi.md"
               }
             }
           },
@@ -192,11 +204,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "adbb20355ed7eb00",
+  "active": "09159861949a43ef",
   "lastOpenFiles": [
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Eserizi.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Basi di dati/Algebra relazionale.md",
     "Files/Screenshot 2024-10-07 alle 11.28.28.png",
     "Flet-notes/2024-10-03_BD.md",
-    "Class/Basi di dati/Algebra relazionale.md",
     "Files/Screenshot 2024-10-07 alle 11.19.53.png",
     "Files/Screenshot 2024-10-07 alle 11.17.05.png",
     "Files/Screenshot 2024-10-07 alle 11.13.36.png",
@@ -207,10 +222,8 @@
     "Files/Screenshot 2024-10-04 alle 12.49.04.png",
     "Files/Screenshot 2024-10-04 alle 12.42.03.png",
     "Files/Screenshot 2024-10-04 alle 12.30.12.png",
-    "Files/Screenshot 2024-10-04 alle 12.24.11.png",
     "Class/Sistemi Operativi/Introduzione.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Modello relazionale.md",
     "Registrazione schermo 2024-10-02 alle 20.44.33.mov",
     "Flet-notes/2024-10-02_BD.md",
@@ -233,7 +246,6 @@
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Programming languages/Java/UML.md",
-    "Programming languages/Java/Stream.md",
     "Programming languages/Java/Main.java",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
