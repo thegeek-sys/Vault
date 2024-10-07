@@ -270,7 +270,7 @@ Uno switch può avvenire per i seguenti motivi
 | Eccezione      | Associata all’esecuzione dell’istruzione corrente | Gestione di un errore sincrono                                                                                                          |
 | Chiamata al SO | Richiesta esplicita                               | Chiamata a funzione di sistema (caso particolare di eccezione)                                                                          |
 
-### Passaggi
+### Passaggi per lo switch
 Quando si deve sostituire un processo per prima cosa si switcha in kernel mode poi:
 1. Si salva il contesto del programma (registri e PC salvati nel PCB di quel processo)
 2. Aggiornare il process control block per quanto riguarda lo stato, attualmente in running
@@ -279,3 +279,21 @@ Quando si deve sostituire un processo per prima cosa si switcha in kernel mode p
 5. Aggiornare lo stato del process control block del processo selezionato
 6. Aggiornare le strutture dati per la gestione della memoria
 7. Ripristinare il contesto del processo selezionato
+
+### Il SO è un processo?
+Il SO è solo un insieme di programmi (la maggior parte di questi sono cose che avvengono in seguito ad un interrupt handler) eseguiti sul processore. Semplicemente lascia che altri programmi vadano in esecuzione, per poi riprendere il controllo tramite interrupt
+
+![[Screenshot 2024-10-07 alle 23.48.12.png|center]]
+Queste sono le tre possibili configurazioni del SO
+
+#### Il Kernel non è un processo
+Il Kernel in questo caso si trova al di fuori dei processi lasciando il concetto di processo applicato solo ai programmi utente. Dunque il SO è eseguito come un’entità separata con privilegi più elevati. Ha inoltre una zona di memoria dedicata sia per i dati che per il codice sorgente che per lo stack
+![[Screenshot 2024-10-07 alle 23.50.54.png|200]]
+
+#### Esecuzione all’interno dei processi utente
+Il SO viene eseguito nel contesto di un processo utente (cambia solo la modalità di esecuzione). Non c’è bisogno di un process switch per eseguire una funzione del SO, solo del mode switch. Comunque lo stack delle chiamate rimane separato tra utente e SO. Il process switch è presente, solo eventualmente, alla fine, se lo scheduler decide che tocca ad un altro processo.
+![[Screenshot 2024-10-07 alle 23.55.36.png|200]]
+
+#### SO è basato sui processi
+In questo caso tutto è considerato un processo (comprese le funzioni di sistema) fatta eccezione per le funzioni per fare process switching. Il SO viene implementato infatti come un insieme di processi di sistema (ovviamente con privilegi più alti) e partecipano alla competizione per il processore accanto ai processi utente. Alcuni sistemi operativi preferiscono questa modalità in quando più modulare seppur meno efficiente della precedente
+![[Screenshot 2024-10-07 alle 23.59.02.png|250]]
