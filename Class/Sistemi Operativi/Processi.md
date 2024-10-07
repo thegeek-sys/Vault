@@ -149,3 +149,5 @@ Le tabelle dei file forniscono informazioni sui nomi dei file e dove solo colloc
 ### Tabelle dei processi
 Le tabelle dei processi sono contenuti i dettagli dei processi in modo tale che il SO possa gestirli:
 - stato corrente (Ready, Running ecc.)
+- identificatore (per poter distinguere i diversi processi)
+- 
