@@ -275,3 +275,7 @@ Quando si deve sostituire un processo per prima cosa si switcha in kernel mode p
 1. Si salva il contesto del programma (registri e PC salvati nel PCB di quel processo)
 2. Aggiornare il process control block per quanto riguarda lo stato, attualmente in running
 3. Spostare il process control block nella coda appropriata: ready, blocked, ready/suspended
+4. Scegliere un altro processo da eseguire
+5. Aggiornare lo stato del process control block del processo selezionato
+6. Aggiornare le strutture dati per la gestione della memoria
+7. Ripristinare il contesto del processo selezionato
