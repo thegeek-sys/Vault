@@ -245,4 +245,8 @@ Per esempio:
 il risultato è vuoto
 
 **Caso limite 2**
-Quando le relazioni non contengono contengono attributi con lo stesso nome
+Quando le relazioni non contengono contengono attributi con lo stesso nome, il join naturale degenera nel **prodotto cartesiano**
+![[Screenshot 2024-10-07 alle 11.17.05.png|440]]
+$$
+\text{Cliente}\bowtie \text{Ordine}
+$$
