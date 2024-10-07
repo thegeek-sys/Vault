@@ -205,4 +205,16 @@ La maggior parte dei processori supporta almeno due modalità di esecuzione (il 
 - modo utente → molte operazioni sono vietate
 
 ### Kernel Mode
-La **kernel mode** serve per le operazioni eseguite dal kernel
+La **kernel mode** serve per le operazioni eseguite dal kernel. Viene utilizzata per:
+- gestione dei processi (tramite PCB)
+	- creazione e terminazione
+	- pianificazione di lungo, medio e breve termine (*scheduling* e *dispatching*)
+	- avvicendamento (*process switching*)
+	- sincronizzazione e comunicazione
+- gestione della memoria principale
+	- allocazione di spazio per i processi
+	- gestione della memoria virtuale
+- gestione dell’I/O
+	- gestione dei buffer e delle cache per l’I/O
+	- assegnazione risorse I/O ai processi
+- funzioni di supporto (gestione interrupt, accounting, monitoraggio)
