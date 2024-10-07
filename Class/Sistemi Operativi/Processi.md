@@ -349,3 +349,22 @@ Un processo in unix è diviso in:
 **U area** → informazioni per il controllo del processo
 **Per process region table** → definisce il mapping tra indirizzi virtuali ed indirizzi fisici (page table)
 **Kernel stack** → stack delle chiamate, separato da quello utente, usato per le funzioni da eseguire in modalità sistema
+
+### Process Table Entry
+![[Screenshot 2024-10-08 alle 00.39.39.png]]
+
+### U-Area
+![[Screenshot 2024-10-08 alle 00.40.22.png]]
+
+### Creazione di un processo in Unix
+La creazione di un processo unix tramite una chiamata di sistema `fork()`. In seguito a ciò, in Kernel Mode:
+1. Alloca una entry nella tabella dei processi per il nuovo processo (figlio)
+2. Assegna un PID unico al processo figlio
+3. Copia l’immagine del padre, escludendo dalla copia la memoria condivisa (se presente)
+4. Incrementa i contatori di ogni file aperto dal padre, per tenere conto del fatto che ora sono anche del figlio
+5. Assegna al processo figlio lo stato Ready to Run
+6. Fa ritornare alla fork il PID del figlio al padre, e 0 al figlio
+Quindi, il kernel può scegliere tra:
+- continuare ad eseguire il padre
+- switchare al figlio
+- switchare ad un altro processo
