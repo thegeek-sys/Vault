@@ -170,6 +170,9 @@ Questi inoltre sono contenuti all’interno della RAM, che all’accensione, il 
 ### Come si identifica un processo?
 Ad ogni processo è assegnato un numero identificativo unico: il **PID** (**P**rocess **ID**entifier)
 Talmente è importante che molte tabelle del SO che si occupano di tenere traccia di quali processi hanno eseguito una determinata azione, usano direttamente il PID per identificarlo
+
+> [!info] Se un processo viene terminato il suo PID può essere riassegnato
+
 Nel PCB sono dunque contenuti:
 - PID
 - PPID (Parent PID)
@@ -240,3 +243,14 @@ Il codice per una system call sui Pentium è strutturata così:
 2. esegue l’istruzione `int 0x80`, che appunto solleva un interrupt (in realtà un’eccezione)
 2. in alternativa, dal Pentium 2 in poi, può eseguire l’istruzione `sysenter`, che omette alcuni controlli inutili
 Da notare che anche creare un nuovo processo è una system call: in Linux *fork* (oppure *clone* più generale)
+
+---
+## Creazione di un processo
+Per creare un processo il sistema operativo deve:
+1. Assegnargli un PID unico
+2. Allocargli spazio in memoria principale
+3. Inizializzare il process control block
+4. Inserire il processo nella giusta coda (es. ready oppure ready/suspended)
+5. Creare o espandere altre strutture dati (es. quelle per l’accounting)
+
+---
