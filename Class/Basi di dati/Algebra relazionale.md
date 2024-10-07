@@ -276,3 +276,5 @@ $$
 
 ---
 ## Condizioni negative
+Alle query si possono anche applicare delle condizioni negative
+
