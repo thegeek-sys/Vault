@@ -250,3 +250,29 @@ Quando le relazioni non contengono contengono attributi con lo stesso nome, il j
 $$
 \text{Cliente}\bowtie \text{Ordine}
 $$
+![[Screenshot 2024-10-07 alle 11.19.53.png|500]]
+
+### Possibili errori
+Ovviamente perché il join naturale abbia senso gli attributi devono avere lo stesso significato
+![[Screenshot 2024-10-03 alle 13.53.04.png|440]]
+Perché il join tra queste due cose abbia senso, il join va effettuato tra $\text{Artista.C\#}$ e $\text{Quadro.Artista}$. Quindi posso utilizzare o il θ-join oppure la ridenominazione
+Procedendo con la ridenominazione:
+$$
+\rho_{\text{CA\#}\leftarrow \text{C\#}}(\text{Artista})\bowtie \rho_{\text{CA\#}\leftarrow \text{Artista}}(\text{Quadro})
+$$
+
+---
+## θ-join
+Il **θ-join** consente di selezionare le tuple del prodotto cartesiano dei due operandi che soddisfano una condizione del tipo $\text{A}\theta \text{B}$
+dove:
+- θ è un operatore di confronto ($\theta \in \{<, =, >, \leq, \geq\}$)
+- A è un attributo dello schema del primo operando
+- B è un attributo dello schema del secondo operando
+- $\text{dom(A)}=\text{dom(B)}$
+
+$$
+r_{1}\underset{\text{A}\theta \text{B}}{\bowtie}r_{2}=\sigma_{\text{A}\theta \text{B}}(r_{1}\times r_{2})
+$$
+
+---
+## Condizioni negative
