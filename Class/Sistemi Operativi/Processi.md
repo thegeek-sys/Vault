@@ -163,6 +163,8 @@ Le informazioni in ciascun blocco di controllo possono essere raggruppate in 3 c
 - stato del processore
 - controllo
 
+![[Screenshot 2024-10-07 alle 13.10.38.png]]
+
 ### Come si identifica un processo?
 Ad ogni processo è assegnato un numero identificativo unico: il **PID** (**P**rocess **ID**entifier)
 Talmente è importante che molte tabelle del SO che si occupano di tenere traccia di quali processi hanno eseguito una determinata azione, usano direttamente il PID per identificarlo
@@ -178,4 +180,19 @@ Lo stato del processore è dato dai contenuti dei registri del processore stesso
 
 ![[Screenshot 2024-10-07 alle 12.57.29.png]]
 
-### Control block del processo
+### Informazioni per il controllo del processo
+Anche queste sono contenute del PCB e sono:
+- stato del processo
+- priorità
+- informazioni sullo scheduling (es. per quanto tempo è stato in esecuzione l’ultima volta)
+- se il processo è blocked, è riportanto anche l’evento di cui è in attesa
+
+### Extra
+Sono anche contenuti nel PCB:
+- puntatori  ad altri processi
+- eventualmente liste concatenate di processi nei casi in cui siano necessarie (es. code di processi per qualche risorsa)
+- ciò che serve per far comunicare vari processi
+- permessi speciali
+- puntatori ad aree di memoria (indirizzo a cui inizia la process image)
+- file aperti e uso di risorse
+
