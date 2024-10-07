@@ -164,6 +164,8 @@ Le informazioni in ciascun blocco di controllo possono essere raggruppate in 3 c
 
 ![[Screenshot 2024-10-07 alle 13.10.38.png]]
 
+Questi inoltre sono contenuti all’interno della RAM, che all’accensione, il kernel riserva a sé stesso
+
 ### Come si identifica un processo?
 Ad ogni processo è assegnato un numero identificativo unico: il **PID** (**P**rocess **ID**entifier)
 Talmente è importante che molte tabelle del SO che si occupano di tenere traccia di quali processi hanno eseguito una determinata azione, usano direttamente il PID per identificarlo
