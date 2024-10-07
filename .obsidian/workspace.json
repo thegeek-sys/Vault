@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-10-03_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-10-03_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-10-03_BD.md"
+                "file": "Class/Basi di dati/Algebra relazionale.md"
               }
             }
           },
@@ -192,11 +192,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a620d9aa37fae1a1",
+  "active": "adbb20355ed7eb00",
   "lastOpenFiles": [
+    "Files/Pasted image 20241007105515.png",
     "Class/Basi di dati/Algebra relazionale.md",
-    "Files/Screenshot 2024-10-07 alle 10.52.54.png",
+    "Files/Screenshot 2024-10-07 alle 11.00.19.png",
     "Flet-notes/2024-10-03_BD.md",
+    "Files/Screenshot 2024-10-07 alle 10.52.54.png",
     "Class/Sistemi Operativi/Processi.md",
     "Files/Screenshot 2024-10-04 alle 12.49.04.png",
     "Files/Screenshot 2024-10-04 alle 12.42.03.png",
@@ -205,8 +207,6 @@
     "Files/Screenshot 2024-10-04 alle 12.19.05.png",
     "Files/Screenshot 2024-10-04 alle 12.14.57.png",
     "Files/Screenshot 2024-10-04 alle 11.08.22.png",
-    "Files/Screenshot 2024-10-04 alle 11.09.52.png",
-    "Files/Screenshot 2024-10-04 alle 11.05.44.png",
     "Class/Sistemi Operativi/Introduzione.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Basi di dati/Basi di dati.md",

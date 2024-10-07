@@ -211,3 +211,28 @@ Nomi e città dei clienti che hanno ordinato più di 100 pezzi per almeno un art
 $$
 \pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}>100\land \text{Prezzo}>2}((\text{Cliente}\bowtie \text{Ordine})\bowtie \text{Articolo}))
 $$
+![[Screenshot 2024-10-07 alle 11.00.19.png|200]]
+#### Alternativa
+In alternativa prima potremmo fare selezione sugli ordini con numero di pezzi maggiore di 100
+$$
+\sigma_{\text{N-pezzi}>100}(\text{Ordine})
+$$
+Quindi fare il join con $\text{Cliente}$
+$$
+\text{Cliente}\bowtie \sigma_{\text{N-pezzi}>100}(\text{Ordine})
+$$
+Per quanto riguarda il prezzo invece mi conviene fare una proiezione sul numero dell’articolo e sul prezzo per poi selezionare quelli con un prezzo maggiore di due
+$$
+\sigma_{\text{Prezzo}>2}(\pi_{\text{A\#, Prezzo}}(\text{Articolo}))
+$$
+E solo ora fare il join naturale con il resto:
+$$
+(\text{Cliente}\bowtie \sigma_{\text{N-pezzi}>100}(\text{Ordine}))\bowtie \sigma_{\text{Prezzo}>2}(\pi_{\text{A\#, Prezzo}}(\text{Articolo}))
+$$
+Infine fare la proiezione su $\text{Nome}$ e $\text{Città}$
+$$
+\pi_{\text{Nome, Città}}((\text{Cliente}\bowtie \sigma_{\text{N-pezzi}>100}(\text{Ordine}))\bowtie \sigma_{\text{Prezzo}>2}(\pi_{\text{A\#, Prezzo}}(\text{Articolo})))
+$$
+
+### Casi limite
+Per quanto riguarda il join naturale sono presenti due casi limite:
