@@ -180,7 +180,7 @@ dove:
 > [!info]
 > Nel join naturale gli attributi della condizione che consente di unire solo le ennuple giuste che hanno lo **stesso nome**
 > Vengono unite le ennuple in cui questi attributi hanno lo **stesso valore**
-### Esempio
+### Esempio 1
 ![[Screenshot 2024-10-02 alle 16.58.41.png|440]]
 $$
 \text{Dati dei clienti e dei loro ordini} = \text{Cliente}\bowtie \text{Ordine}
@@ -205,3 +205,5 @@ $$
 $$
 ![[Screenshot 2024-10-03 alle 13.15.23.png|300]]
 
+### Esempio 2
+Nomi e città dei clienti che hanno ordinato più di 100 pezzi per almeno un articolo con prezzo superiore a 2
