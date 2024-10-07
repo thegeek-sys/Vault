@@ -202,6 +202,7 @@ Sono anche contenuti nel PCB:
 ## Modalità di esecuzione
 La maggior parte dei processori supporta almeno due modalità di esecuzione (il Pentinum ne ha 4):
 - modo sistema (*kernel mode*) → in cui si ha il pieno controllo e si può accedere a qualsiasi locazione di memoria (compresa quella del kernel)
-- modo utente → molte operazioni sono vietate 
+- modo utente → molte operazioni sono vietate
 
 ### Kernel Mode
+La **kernel mode** serve per le operazioni eseguite dal kernel
