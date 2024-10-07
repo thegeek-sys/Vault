@@ -218,3 +218,13 @@ La **kernel mode** serve per le operazioni eseguite dal kernel. Viene utilizzata
 	- gestione dei buffer e delle cache per l’I/O
 	- assegnazione risorse I/O ai processi
 - funzioni di supporto (gestione interrupt, accounting, monitoraggio)
+
+### Da User Mode a Kernel Mode e ritorno
+Si basa su un’idea semplice: un processo utente inizia sempre in modalità utente, ma cambia e si porta in modalità sistema in seguito ad un interrupt (come abbiamo visto infatti una volta eseguita un’interrupt viene eseguita una parte di codice di sistema).
+La prima cosa che fa l’hardware, prima di cominciare alla procedura di sistema da eseguire, cambia modalità passando in kernel mode; questo permette di eseguire l’interrupt handler in kernel mode.
+L’ultima istruzione dell’interrupt handler, prima di ritornare al processo di partenza, ripristina la modalità utente
+
+Dunque un processo utente può cambiare modalità a sé stesso, ma **solo per eseguire software di sistema**.
+Si ha quindi questo cambiamento in seguito a:
+- system call
+- in risposta ad una sua precedente richiesta di I/O (in generale di risorse)
