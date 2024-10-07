@@ -207,3 +207,6 @@ $$
 
 ### Esempio 2
 Nomi e città dei clienti che hanno ordinato più di 100 pezzi per almeno un articolo con prezzo superiore a 2
+$$
+\pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}>100\land \text{Prezzo}>2}((\text{Cliente}\bowtie \text{Ordine})\bowtie \text{Articolo}))
+$$
