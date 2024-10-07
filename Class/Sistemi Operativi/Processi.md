@@ -157,6 +157,7 @@ Mentre nel **process image** è contenuto l’insieme di programma sorgenti, dat
 
 ---
 ## Process Control Block
+Il **Process Control Block** è la struttura dati più importante di un sistema operativo e per questo **richiede protezioni** non deve infatti esser possibile che un processo ci acceda in quanto una modifica del PCB avrebbe ripercussioni su tutto il SO
 Le informazioni in ciascun blocco di controllo possono essere raggruppate in 3 categorie:
 - identificazione
 - stato del processore
