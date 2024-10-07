@@ -133,5 +133,5 @@ Con le linee piene si intendono risorse che sono state acquisite dai processi, m
 Per gestire al meglio le risorse dei processi il SO ha bisogno di strutture di controllo. Per questo motivo il SO costruisce e mantiene una o più tabelle per ogni entità (in cui salva lo stato di ogni processo e risorsa)
 
 ![[Screenshot 2024-10-04 alle 12.49.04.png]]
-Esistono quindi delle tabelle per la memoria, delle tabelle per i dispositivi, e delle tabelle per l’archiviazione di massa e sono contenute all’interno del kernel
+Esistono quindi delle tabelle per la memoria, delle tabelle per i dispositivi e delle tabelle per l’archiviazione di massa e sono contenute all’interno del kernel
 All’interno del primary process table sono contenuti i block dei singoli processi. Al loro interno sono contenute solo le informazioni essenziali mentre solamente nel process image è contenuta tutta la memoria necessaria a un processo

@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "373b30eeb107129c",
+            "id": "86b7c0e96592df9e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,31 +22,31 @@
             }
           },
           {
-            "id": "09159861949a43ef",
+            "id": "d61b3dac12801940",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Eserizi.md",
+                "file": "Class/Sistemi Operativi/Introduzione.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "adbb20355ed7eb00",
+            "id": "8b6ce1b0664fc631",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Class/Sistemi Operativi/Processi.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Eserizi.md",
+                "file": "Class/Sistemi Operativi/Processi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Eserizi.md",
+                "file": "Class/Sistemi Operativi/Processi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Eserizi.md"
+                "file": "Class/Sistemi Operativi/Processi.md"
               }
             }
           },
@@ -186,10 +186,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "09159861949a43ef",
+  "active": "8b6ce1b0664fc631",
   "lastOpenFiles": [
-    "Flet-notes/2024-10-03_BD.md",
     "Class/Basi di dati/Eserizi.md",
+    "Flet-notes/2024-10-03_BD.md",
     "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",

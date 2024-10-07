@@ -1118,6 +1118,18 @@
                 }
               },
               {
+                "id": "09159861949a43ef",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Eserizi.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "adbb20355ed7eb00",
                 "type": "leaf",
                 "state": {
@@ -1128,21 +1140,9 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "a620d9aa37fae1a1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-10-03_BD.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1208,7 +1208,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-10-03_BD.md",
+                    "file": "Class/Basi di dati/Eserizi.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1225,7 +1225,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-10-03_BD.md",
+                    "file": "Class/Basi di dati/Eserizi.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1248,7 +1248,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-10-03_BD.md"
+                    "file": "Class/Basi di dati/Eserizi.md"
                   }
                 }
               },
@@ -1282,9 +1282,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "a620d9aa37fae1a1",
-      "mtime": "2024-10-03T21:06:11+02:00"
+      "active": "09159861949a43ef",
+      "mtime": "2024-10-07T11:59:47+02:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
