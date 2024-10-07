@@ -277,4 +277,7 @@ $$
 ---
 ## Condizioni negative
 Alle query si possono anche applicare delle condizioni negative
-
+![[Screenshot 2024-10-07 alle 11.28.28.png|440]]
+$$
+\sigma_{\neg(\text{Città}=\text{"Roma"})\land \text{Nome}=\text{"Rossi"}}(\text{Cliente})
+$$
