@@ -44,14 +44,14 @@ Questo viene interamente creato e gestito dal sistema operativo e il suo scopo p
 ## Traccia di un processo
 Un ulteriore aspetto importante in un processo è la **trace** ovvero l’insieme di istruzioni di cui è costituito un processo. Il **dispatcher** invece è un piccolo programma che sospende un processo per farne andare un altro in esecuzione
 
-### Esecuzione di un processo
+### Esempio
 Si considerino 3 processi in esecuzioni, tutti caricati in memoria principale
 ![[Screenshot 2024-10-04 alle 10.57.44.png|140]]
 
 La traccia, dal punto di vista del processo, appare come l’esecuzione sequenziale delle istruzioni del singolo processo
 ![[Screenshot 2024-10-04 alle 11.00.20.png]]
 
-La traccia, del punto di visto del processore, ci mostra come effettivamente vengono eseguiti i 3 processi
+La traccia, del punto di vista del processore, ci mostra come effettivamente vengono eseguiti i 3 processi
 ![[Screenshot 2024-10-04 alle 11.02.08.png]]
 >[!note] Le righe in blu sono gli indirizzi del dispatcher
 
@@ -198,3 +198,10 @@ Sono anche contenuti nel PCB:
 - puntatori ad aree di memoria (indirizzo a cui inizia la process image)
 - file aperti e uso di risorse
 
+---
+## Modalità di esecuzione
+La maggior parte dei processori supporta almeno due modalità di esecuzione (il Pentinum ne ha 4):
+- modo sistema (*kernel mode*) → in cui si ha il pieno controllo e si può accedere a qualsiasi locazione di memoria (compresa quella del kernel)
+- modo utente → molte operazioni sono vietate 
+
+### Kernel Mode
