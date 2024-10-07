@@ -172,3 +172,4 @@ Lo stato del processore è dato dai contenuti dei registri del processore stesso
 
 >[!warning] Non confondere con lo stato, o meglio la modalità del processo (ready, blocked, …)
 
+![[Screenshot 2024-10-07 alle 12.57.29.png]]
