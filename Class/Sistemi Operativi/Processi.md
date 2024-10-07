@@ -153,3 +153,5 @@ Le tabelle dei processi sono contenuti i dettagli dei processi in modo tale che 
 - locazione in memoria
 - ecc.
 
+Tutte queste informazioni sono presenti all’interno del process control block
+Mentre nel **process image** è contenuto l’insieme di programma sorgenti, dati, stack delle chiamate e PCB
