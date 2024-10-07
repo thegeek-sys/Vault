@@ -254,3 +254,19 @@ Per creare un processo il sistema operativo deve:
 5. Creare o espandere altre strutture dati (es. quelle per l’accounting)
 
 ---
+## Switching tra processi
+Lo **switching tra processi** consiste nel concedere il processore ad un altro processo per qualche motivo scaturito da un evento ed è l’operazione più delicata quando si tratta di scrivere un sistema operativo in quanto pone svariati problemi tra cui:
+- Quali eventi determinano uno switch?
+- Cosa deve fare il SO per tenere aggiornate le strutture dati in seguito ad uno switch tra processi?
+
+> [!warning] Attenzione a distinguere lo switch di modalità (da utente a sistema) e lo switching di processi
+
+### Quando effettuare uno switch?
+Uno switch può avvenire per i seguenti motivi
+
+| Meccanismo     | Causa                                             | Uso                                                                                 |
+| -------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Interruzione   | Esterna all’esecuzione dell’istruzione corrente   | Reazione ad un evento esterno asincrono; include i quanti di tempo per lo scheduler |
+| Eccezione      | Associata all’esecuzione dell’istruzione corrente | Gestione di un errore sincrono                                                      |
+| Chiamata al SO | Richiesta esplicita                               | Chiamata a funzione di sistema (caso particolare di eccezione)                      |
+
