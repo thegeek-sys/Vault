@@ -315,9 +315,9 @@ $$
 Fino ad ora abbiamo visto query che implicavano condizioni equivalenti al quantificatore esistenziale $\exists$ (esiste almeno un)
 Il meccanismo di valutazione consente di rispondere facilmente a questo tipo di query infatt **in qualunque posizione** appaiono nell’espressione di algebra relazionale, la valutazione delle **condizioni** avviene in **sequenza**, tupla per tupla, e quando si incontra una tupla che soddisfa le condizioni, questa viene inserita nel risultato (eventualmente parziale)
 
-La condizione potrebbe richiedere la valutazione di gruppi **interi** di tuple prima di decidere se inserirle tutte, qualcuna o nessuna nella risposta e le tuple non sono ordinate e la valutazione avviene in sequenza tupla per tupla, e una volta inserita una tupla nel risultato non possiamo più eliminarla. In questo caso la condizione equivale a valutare il quantificatore universale $\forall$ (per ogni) oppure $!\exists$ (non esiste nessun)
-### Esempio
-Nomi e città dei clienti che hanno SEMPRE ordinato più di 100 pezzi per articolo
+La condizione potrebbe richiedere la valutazione di gruppi interi di tuple prima di decidere se inserirle tutte, qualcuna o nessuna nella risposta e le tuple non sono ordinate e la valutazione avviene in sequenza tupla per tupla, e una volta inserita una tupla nel risultato non possiamo più eliminarla. In questo caso la condizione equivale a valutare il quantificatore universale $\forall$ (per ogni) oppure $!\exists$ (non esiste nessun)
+### Esempio 1
+Nomi e città dei clienti che hanno **SEMPRE** ordinato più di 100 pezzi per articolo
 ![[Screenshot 2024-10-09 alle 21.59.37.png|440]]
 Visto che risulterebbe complesso fare una selezione in cui ho solo i clienti che hanno ordinato sempre più di 100 pezzi, mi conviene piuttosto trovare quelli che hanno fatto ordini con numero di pezzi minori di 100 ed escluderli
 
@@ -334,5 +334,27 @@ $$
 $$
 
 > [!warning] Attenzione
-> Nel primo membro della sottrazione faccio il join naturale tra $\text{Cliente}$ e $\text{Ordine}$ in modo tale da poter togliere tutti i casi in cui sono presenti clienti che non hanno mai fatto ordini
+> Nel primo membro della sottrazione faccio il join naturale tra $\text{Cliente}$ e $\text{Ordine}$ in modo tale da poter togliere tutti i casi in cui sono presenti clienti che non hanno mai fatto ordini. Il join infatti assicura di effettuare la sottrazione non a partire da tutti i clienti, ma solo da quelli che hanno effettuato almeno un ordine
 
+### Esempio 2
+Nomi e città dei clienti che non hanno **MAI** ordinato più di 100 pezzi per un articolo
+![[Screenshot 2024-10-09 alle 21.59.37.png|440]]
+Applichiamo il ragionamento di prima e selezioniamo prima i nomi e città
+di clienti che NON ci interessano
+$$
+\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie\text{Ordine})
+$$
+Facciamo la proiezione sul nome e città
+$$
+\pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie\text{Ordine}))
+$$
+Posso quindi fare la differenza
+$$
+\pi_{\text{Nome, Città}}(\text{Cliente}\bowtie\text{Ordine})-\pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}>100}(\text{Cliente}\bowtie\text{Ordine}))
+$$
+
+---
+## Condizioni che richiedono il prodotto di una relazione con sé stessa
+Come negli esempi precedenti abbiamo visto casi in cui oggetti di relazioni diverse vengono associati, ci sono anche casi in cui sono in qualche modo associati oggetti della stessa relazione.
+
+### Esempio
