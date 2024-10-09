@@ -309,3 +309,7 @@ Alle query si possono anche applicare delle condizioni negative
 $$
 \sigma_{\neg(\text{Città}=\text{"Roma"})\land \text{Nome}=\text{"Rossi"}}(\text{Cliente})
 $$
+
+---
+## Condizioni che implicano il quantificatore  universale
+Fino ad ora abbiamo visto query che implicavano condizioni equivalenti al quantificatore esistenziale $\exists$ (esiste almeno un)
