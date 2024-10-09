@@ -328,3 +328,11 @@ Facciamo quindi la proiezione sul nome e città
 $$
 \pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}\leq 100}(\text{Cliente}\bowtie\text{Ordine}))
 $$
+Solo a questo punto posso fare la differenza con il totale
+$$
+\pi_{\text{Nome, Città}}(\text{Cliente}\bowtie\text{Ordine})-\pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}\leq 100}(\text{Cliente}\bowtie\text{Ordine}))
+$$
+
+> [!warning] Attenzione
+> Nel primo membro della sottrazione faccio il join naturale tra $\text{Cliente}$ e $\text{Ordine}$ in modo tale da poter togliere tutti i casi in cui sono presenti clienti che non hanno mai fatto ordini
+
