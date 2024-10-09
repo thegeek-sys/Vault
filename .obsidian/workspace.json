@@ -108,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -201,6 +202,7 @@
   "active": "542cfc50162e4ef5",
   "lastOpenFiles": [
     "Class/Basi di dati/Esercizi.md",
+    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Flet-notes/2024-10-09_BD.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Class.md",
@@ -219,7 +221,6 @@
     "Files/Screenshot 2024-10-07 alle 13.10.38.png",
     "Files/Screenshot 2024-10-07 alle 12.57.29.png",
     "Flet-notes/2024-10-03_BD.md",
-    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Modello relazionale.md",
@@ -240,7 +241,6 @@
     "Class/Sistemi Operativi",
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Programming languages/Java/Interfacce note.md",
-    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
     "Programming languages/Java/Main.java",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
