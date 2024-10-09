@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "d61b3dac12801940",
+            "id": "8b6ce1b0664fc631",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "8b6ce1b0664fc631",
+            "id": "7c10f69b7a3ebef8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -186,8 +186,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8b6ce1b0664fc631",
+  "active": "7c10f69b7a3ebef8",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Introduzione.md",
+    "Class/Sistemi Operativi/Processi.md",
     "Files/Screenshot 2024-10-08 alle 00.40.22.png",
     "Files/Screenshot 2024-10-08 alle 00.39.39.png",
     "Files/Screenshot 2024-10-08 alle 00.09.44.png",
@@ -195,8 +198,6 @@
     "Files/Screenshot 2024-10-07 alle 23.55.36.png",
     "Files/Screenshot 2024-10-07 alle 23.50.54.png",
     "Files/Screenshot 2024-10-07 alle 23.48.12.png",
-    "Class/Sistemi Operativi/Introduzione.md",
-    "Class/Sistemi Operativi/Processi.md",
     "Files/Screenshot 2024-10-07 alle 13.10.38.png",
     "Files/Screenshot 2024-10-07 alle 12.57.29.png",
     "Class/Basi di dati/Eserizi.md",
@@ -205,8 +206,6 @@
     "Class/Basi di dati/Basi di dati.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
-    "Files/Screenshot 2024-10-07 alle 11.28.28.png",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Basi di dati/Modello relazionale.md",
     "Registrazione schermo 2024-10-02 alle 20.44.33.mov",
     "Flet-notes/2024-10-02_BD.md",
