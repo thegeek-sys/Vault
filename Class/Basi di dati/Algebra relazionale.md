@@ -319,3 +319,12 @@ La condizione potrebbe richiedere la valutazione di gruppi **interi** di tuple p
 ### Esempio
 Nomi e città dei clienti che hanno SEMPRE ordinato più di 100 pezzi per articolo
 ![[Screenshot 2024-10-09 alle 21.59.37.png|440]]
+Visto che risulterebbe complesso fare una selezione in cui ho solo i clienti che hanno ordinato sempre più di 100 pezzi, mi conviene piuttosto trovare quelli che hanno fatto ordini con numero di pezzi minori di 100 ed escluderli
+
+$$
+\sigma_{\text{N-pezzi}\leq 100}(\text{Cliente}\bowtie\text{Ordine})
+$$
+Facciamo quindi la proiezione sul nome e città
+$$
+\pi_{\text{Nome, Città}}(\sigma_{\text{N-pezzi}\leq 100}(\text{Cliente}\bowtie\text{Ordine}))
+$$
