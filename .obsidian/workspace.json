@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "09159861949a43ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Esercizi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "adbb20355ed7eb00",
             "type": "leaf",
             "state": {
@@ -70,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -120,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -212,9 +201,9 @@
   },
   "active": "3b2aaabd51c53339",
   "lastOpenFiles": [
-    "Class/Basi di dati/Basi di dati.md",
-    "Flet-notes/2024-10-09_BD.md",
     "Class/Basi di dati/Esercizi.md",
+    "Flet-notes/2024-10-09_BD.md",
+    "Class/Basi di dati/Basi di dati.md",
     "Class/Class.md",
     "Basi di dati/Esercizi.md",
     "Basi di dati",
