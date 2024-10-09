@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "373b30eeb107129c",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,31 +22,55 @@
             }
           },
           {
-            "id": "8b6ce1b0664fc631",
+            "id": "09159861949a43ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "file": "Class/Basi di dati/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7c10f69b7a3ebef8",
+            "id": "adbb20355ed7eb00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c03eaf8cbf2357c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Esercizi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b2aaabd51c53339",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-10-09_BD.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -112,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Flet-notes/2024-10-09_BD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Flet-notes/2024-10-09_BD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md"
+                "file": "Flet-notes/2024-10-09_BD.md"
               }
             }
           },
@@ -186,11 +210,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7c10f69b7a3ebef8",
+  "active": "3b2aaabd51c53339",
   "lastOpenFiles": [
+    "Class/Basi di dati/Basi di dati.md",
+    "Flet-notes/2024-10-09_BD.md",
+    "Class/Basi di dati/Esercizi.md",
+    "Class/Class.md",
+    "Basi di dati/Esercizi.md",
+    "Basi di dati",
+    "Class/Sistemi Operativi/Processi.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Introduzione.md",
-    "Class/Sistemi Operativi/Processi.md",
     "Files/Screenshot 2024-10-08 alle 00.40.22.png",
     "Files/Screenshot 2024-10-08 alle 00.39.39.png",
     "Files/Screenshot 2024-10-08 alle 00.09.44.png",
@@ -200,10 +230,8 @@
     "Files/Screenshot 2024-10-07 alle 23.48.12.png",
     "Files/Screenshot 2024-10-07 alle 13.10.38.png",
     "Files/Screenshot 2024-10-07 alle 12.57.29.png",
-    "Class/Basi di dati/Eserizi.md",
     "Flet-notes/2024-10-03_BD.md",
     "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
-    "Class/Basi di dati/Basi di dati.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Modello relazionale.md",
@@ -215,7 +243,6 @@
     "Flet-notes/2024-09-29.md",
     "Flet-notes/2024-09-24_SO.md",
     "Flet-notes/2024-09-25_BD.md",
-    "Class/Class.md",
     "Class/Basi di dati",
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
@@ -226,13 +253,11 @@
     "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
     "Programming languages/Java/Interfacce note.md",
     "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
-    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
     "Programming languages/Java/Main.java",
     "Files/MIPS_Instruction_Set.pdf",
     "Files/registri pipeline_1.jpeg.sb-edbfe875-e1cllA",
     "Users/fla/Documents/Vault",
     "Users/fla/Documents",
-    "Users/fla",
     "Untitled.canvas"
   ]
 }

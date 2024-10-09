@@ -3,5 +3,5 @@
 - [[Algebra relazionale]]
 - 
 
-- [[Basi di dati/Esercizi|Esercizi]]
+- [[Class/Basi di dati/Esercizi|Esercizi]]
 - 

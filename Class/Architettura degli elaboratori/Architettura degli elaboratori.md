@@ -27,6 +27,6 @@
 - 
 
 # Extra
-- [[Esercizi]]
+- [[Class/Architettura degli elaboratori/Esercizi/Esercizi]]
 - [[MIPS_Instruction_Set.pdf|Istruzioni]]
 - 

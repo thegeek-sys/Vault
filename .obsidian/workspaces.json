@@ -927,7 +927,7 @@
                 }
               },
               {
-                "id": "d61b3dac12801940",
+                "id": "8b6ce1b0664fc631",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -939,7 +939,7 @@
                 }
               },
               {
-                "id": "8b6ce1b0664fc631",
+                "id": "7c10f69b7a3ebef8",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -1091,8 +1091,8 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "8b6ce1b0664fc631",
-      "mtime": "2024-10-07T10:45:43+02:00"
+      "active": "7c10f69b7a3ebef8",
+      "mtime": "2024-10-09T15:16:16+02:00"
     },
     "Basi di Dati": {
       "main": {
@@ -1286,5 +1286,5 @@
       "mtime": "2024-10-07T11:59:47+02:00"
     }
   },
-  "active": "Sistemi Operativi"
+  "active": "Basi di Dati"
 }
