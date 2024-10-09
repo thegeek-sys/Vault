@@ -46,6 +46,16 @@
             }
           },
           {
+            "id": "52b8284651e246ee",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg"
+              }
+            }
+          },
+          {
             "id": "542cfc50162e4ef5",
             "type": "leaf",
             "state": {
@@ -125,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-10-09_BD.md",
+                "file": "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-10-09_BD.md",
+                "file": "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-10-09_BD.md"
+                "file": "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg"
               }
             }
           },
@@ -199,12 +209,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "542cfc50162e4ef5",
+  "active": "52b8284651e246ee",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-10-09 alle 16.16.50.png",
-    "Class/Basi di dati/Esercizi.md",
-    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Flet-notes/2024-10-09_BD.md",
+    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
+    "Class/Basi di dati/Esercizi.md",
+    "Files/Screenshot 2024-10-09 alle 16.16.50.png",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Class.md",
     "Basi di dati/Esercizi.md",
@@ -220,7 +230,6 @@
     "Files/Screenshot 2024-10-07 alle 23.50.54.png",
     "Files/Screenshot 2024-10-07 alle 23.48.12.png",
     "Files/Screenshot 2024-10-07 alle 13.10.38.png",
-    "Files/Screenshot 2024-10-07 alle 12.57.29.png",
     "Flet-notes/2024-10-03_BD.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
