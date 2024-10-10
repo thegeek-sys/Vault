@@ -358,3 +358,9 @@ $$
 Come negli esempi precedenti abbiamo visto casi in cui oggetti di relazioni diverse vengono associati, ci sono anche casi in cui sono in qualche modo associati oggetti della stessa relazione.
 
 ### Esempio
+Nomi e codici degli impiegati che guadagnano quanto o più del loro capo
+![[Screenshot 2024-10-10 alle 08.50.51.png|440]]
+Una possibilità sarebbe fare il theta join tra $\text{Impiegati}$ e $\text{Impiegati}$
+$$
+\text{Impiegati}\underset{\text{C\#}=\text{Capo\#}}{\bowtie}\text{Impiegati}
+$$
