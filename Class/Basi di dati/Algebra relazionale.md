@@ -360,7 +360,9 @@ Come negli esempi precedenti abbiamo visto casi in cui oggetti di relazioni dive
 ### Esempio
 Nomi e codici degli impiegati che guadagnano quanto o più del loro capo
 ![[Screenshot 2024-10-10 alle 08.50.51.png|440]]
-Una possibilità sarebbe fare il theta join tra $\text{Impiegati}$ e $\text{Impiegati}$
+Per poter confrontare le informazioni sullo stipendio di un impiegato e su quello del suo capo che si trovano in tuple diverse questi devono trovarsi nella stessa tupla. Per farlo creiamo una copia della relazione  ed effettuiamo un prodotto in maniera da combinare le informazioni su di un impiegato con quelle del suo capo, che a questo punto possono essere confrontate. $\text{ImpiegatiC}$ sarà collegata in join ad impiegati combinando le tuple col valore di $\text{C\#}$ uguale a $\text{Capo\#}$. In questo modo accodiamo i dati del capo a quelli dell’impiegato.
+Utilizziamo la ridenominazione e facciamo in modo che i nuovi nomi aiutino a distinguere il ruolo delle due parti nel join finale
 $$
-\text{Impiegati}\underset{\text{C\#}=\text{Capo\#}}{\bowtie}\text{Impiegati}
+\text{ImpiegatiC} = \rho_{\text{Nome, C\#, Dipart, Stip, Capo\#}\leftarrow\text{CNome, CC\#, Cdipart, Cstip, Ccapo\#}}(\text{Impiegati})
 $$
+

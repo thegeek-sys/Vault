@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-10-09_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-10-09_BD.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-10-09_BD.md"
+                "file": "Class/Basi di dati/Algebra relazionale.md"
               }
             }
           },
@@ -207,11 +207,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "542cfc50162e4ef5",
+  "active": "adbb20355ed7eb00",
   "lastOpenFiles": [
-    "Files/Screenshot 2024-10-09 alle 16.16.50.png",
     "Flet-notes/2024-10-09_BD.md",
     "Class/Basi di dati/Algebra relazionale.md",
+    "Files/Screenshot 2024-10-09 alle 16.16.50.png",
     "Files/Screenshot 2024-10-10 alle 08.50.51.png",
     "Files/Screenshot 2024-10-09 alle 21.59.37.png",
     "Class/Basi di dati/Esercizi.md",
