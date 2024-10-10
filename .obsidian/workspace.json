@@ -32,6 +32,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a57c33e1f8c571da",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg"
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -177,14 +187,14 @@
   },
   "active": "c03eaf8cbf2357c1",
   "lastOpenFiles": [
+    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
+    "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-09_BD.md",
     "Files/Screenshot 2024-10-09 alle 16.16.50.png",
     "Files/Screenshot 2024-10-10 alle 08.50.51.png",
     "Files/Screenshot 2024-10-09 alle 21.59.37.png",
-    "Class/Basi di dati/Esercizi.md",
-    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Class/Class.md",
     "Basi di dati/Esercizi.md",
     "Basi di dati",

@@ -13,3 +13,14 @@ $$
 $$
 \pi_{\text{Data}}(\text{VOLO\_R}\underset{\text{VOLO\_R.Sigla}=\text{A\_2018.SiglaVolo}}{\bowtie} \text{A\_2018}\underset{\text{Aereo}=\text{A\_NOR.ID}}{\bowtie} \text{VOLO\_NOR})
 $$
+b)
+$$
+\text{VI\_G}=\sigma_{\text{Data}\geq \text{01/01/2018}\land \text{Data}\leq \text{31/01/2018}}(\text{VIAGGIO})
+$$
+$$
+\text{VI\_P}=\pi_{\text{CF, ID, Nome, Cognome, DataNascita}}(\text{VI\_G}\bowtie\text{PERSONALE})
+$$
+$$
+\text{PERSONALE}-\text{VI\_P}
+$$
+
