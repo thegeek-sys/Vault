@@ -34,16 +34,6 @@
             }
           },
           {
-            "id": "a57c33e1f8c571da",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg"
-              }
-            }
-          },
-          {
             "id": "a934f2b6817aa495",
             "type": "leaf",
             "state": {
@@ -56,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md",
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md"
+                "file": "Class/Basi di dati/Algebra relazionale.md"
               }
             }
           },
@@ -197,11 +187,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c03eaf8cbf2357c1",
+  "active": "a934f2b6817aa495",
   "lastOpenFiles": [
+    "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Esercizi.md",
     "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Flet-notes/2024-10-09_BD.md",
     "Files/Screenshot 2024-10-09 alle 16.16.50.png",

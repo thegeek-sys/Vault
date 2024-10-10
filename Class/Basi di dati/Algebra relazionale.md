@@ -32,6 +32,13 @@ Completed:
 	- [[#Join naturale#Possibili errori|Possibili errori]]
 - [[#θ-join|θ-join]]
 - [[#Condizioni negative|Condizioni negative]]
+- [[#Condizioni che implicano il quantificatore  universale|Condizioni che implicano il quantificatore  universale]]
+	- [[#Condizioni che implicano il quantificatore  universale#Esempio 1|Esempio 1]]
+	- [[#Condizioni che implicano il quantificatore  universale#Esempio 2|Esempio 2]]
+- [[#Condizioni che richiedono il prodotto di una relazione con sé stessa|Condizioni che richiedono il prodotto di una relazione con sé stessa]]
+	- [[#Condizioni che richiedono il prodotto di una relazione con sé stessa#Esempio 1|Esempio 1]]
+	- [[#Condizioni che richiedono il prodotto di una relazione con sé stessa#Esempio 2|Esempio 2]]
+		- [[#Esempio 2#Errori possibili|Errori possibili]]
 ---
 ## Introduction
 L’algebra relazione è un linguaggio **formale** per interrogare un database relazionale: consiste di un insieme di operatori che possono essere applicati a una (operatori unari) o due (operatori binari) istanze di relazione e forniscono come risultato una nuova istanza di relazione (che può essere “salvata” in una ”variabile”).
