@@ -365,4 +365,6 @@ Utilizziamo la ridenominazione e facciamo in modo che i nuovi nomi aiutino a dis
 $$
 \text{ImpiegatiC} = \rho_{\text{Nome, C\#, Dipart, Stip, Capo\#}\leftarrow\text{CNome, CC\#, Cdipart, Cstip, Ccapo\#}}(\text{Impiegati})
 $$
-
+$$
+\sigma_{\text{Capo\#}=\text{CC\#}}(\text{Impiegati}\times \text{ImpiegatiC})
+$$
