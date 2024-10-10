@@ -15,10 +15,10 @@ $$
 $$
 b)
 $$
-\text{VI\_G}=\rho_{\text{IDV}\leftarrow\text{ID}}\left(\sigma_{\text{Data}\geq \text{01/01/2018}\land \text{Data}\leq \text{31/01/2018}}(\text{VIAGGIO})\right)
+\text{G18}=\rho_{\text{IDV}\leftarrow\text{ID}}\left(\sigma_{\text{Data}\geq \text{01/01/2018}\land \text{Data}\leq \text{31/01/2018}}(\text{VIAGGIO})\right)
 $$
 $$
-\text{VI\_P}=\pi_{\text{CF, ID, Nome, Cognome, DataNascita}}\left((VI\_G\underset{\text{IDV}=\text{Viaggio}}{\bowtie}\text{EQUIPAGGIO})\underset{\text{Pers}=\text{ID}}{\bowtie}\text{PERSONALE}\right)
+\text{VI\_P}=\pi_{\text{CF, ID, Nome, Cognome, DataNascita}}\left((\text{G18}\underset{\text{IDV}=\text{Viaggio}}{\bowtie}\text{EQUIPAGGIO})\underset{\text{Pers}=\text{ID}}{\bowtie}\text{PERSONALE}\right)
 $$
 $$
 \text{PERSONALE}-\text{VI\_P}
