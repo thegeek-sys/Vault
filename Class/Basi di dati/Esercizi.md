@@ -18,9 +18,8 @@ $$
 \text{VI\_G}=\sigma_{\text{Data}\geq \text{01/01/2018}\land \text{Data}\leq \text{31/01/2018}}(\text{VIAGGIO})
 $$
 $$
-\text{VI\_P}=\pi_{\text{CF, ID, Nome, Cognome, DataNascita}}((\text{VI\_G}\underset{\text{ID}=\text{Viaggio}}{\bowtie}\text{EQUIPAGGIO})\underset{\text{Pers}=\text{ID}}{\bowtie}\text{PERSONALE})
+\text{VI\_P}=\pi_{\text{CF, ID, Nome, Cognome, DataNascita}}\left((\text{VI\_G}\underset{\text{ID}=\text{Viaggio}}{\bowtie}\text{EQUIPAGGIO})\underset{\text{Pers}=\text{ID}}{\bowtie}\text{PERSONALE}\right)
 $$
 $$
 \text{PERSONALE}-\text{VI\_P}
 $$
-
