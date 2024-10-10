@@ -357,7 +357,7 @@ $$
 ## Condizioni che richiedono il prodotto di una relazione con sé stessa
 Come negli esempi precedenti abbiamo visto casi in cui oggetti di relazioni diverse vengono associati, ci sono anche casi in cui sono in qualche modo associati oggetti della stessa relazione.
 
-### Esempio
+### Esempio 1
 Nomi e codici degli impiegati che guadagnano quanto o più del loro capo
 ![[Screenshot 2024-10-10 alle 08.50.51.png|440]]
 Per poter confrontare le informazioni sullo stipendio di un impiegato e su quello del suo capo che si trovano in tuple diverse questi devono trovarsi nella stessa tupla. Per farlo creiamo una copia della relazione  ed effettuiamo un prodotto in maniera da combinare le informazioni su di un impiegato con quelle del suo capo, che a questo punto possono essere confrontate. $\text{ImpiegatiC}$ sarà collegata in join ad impiegati combinando le tuple col valore di $\text{C\#}$ uguale a $\text{Capo\#}$. In questo modo accodiamo i dati del capo a quelli dell’impiegato.
@@ -367,4 +367,18 @@ $$
 $$
 $$
 \sigma_{\text{Capo\#}=\text{CC\#}}(\text{Impiegati}\times \text{ImpiegatiC})
+$$
+A questo punto basta confrontare lo stipendio dell’impiegato con quello del capo per selezionare gli impiegati che ci interessano e infine proiettare
+$$
+\text{r} =\sigma_{\text{Stip}\geq \text{CStip}}(\sigma_{\text{Capo\#}=\text{CC\#}}(\text{Impiegati}\times \text{ImpiegatiC}))
+$$
+$$
+\pi_{\text{Nome, C\#}}(\text{r})
+$$
+
+### Esempio 2
+**Query:** Nomi e codici dei capi che guadagnano più di tutti i loro impiegati
+Ripriendiamo la query dell’esempio precedente che trova gli impiegati che guadagnano quanto o più del loro capo. I capi che compaiono anche una sola volta in questo risultato sono quelli che non ci interessano
+$$
+\text{r} =\sigma_{\text{Stip}\geq \text{CStip}}(\sigma_{\text{Capo\#}=\text{CC\#}}(\text{Impiegati}\times \text{ImpiegatiC}))
 $$
