@@ -382,3 +382,24 @@ Ripriendiamo la query dell’esempio precedente che trova gli impiegati che guad
 $$
 \text{r} =\sigma_{\text{Stip}\geq \text{CStip}}(\sigma_{\text{Capo\#}=\text{CC\#}}(\text{Impiegati}\times \text{ImpiegatiC}))
 $$
+$$
+\pi_{\text{CNome, CC\#}}(\sigma_{\text{Capo\#}=\text{CC\#}}(\text{Impiegati}\times \text{ImpiegatiC}))-\pi_{\text{CNome,CC\#}}(r)
+$$
+
+#### Errori possibili
+Lo stesso esercizio può essere svolto in altri modi altrettanto corretti, ma attenzione invece a quelli non corretti
+$$
+\pi_{\text{Nome, C\#}}(\text{Impiegati})-\pi_{\text{CNome, CC\#}}(\text{r})
+$$
+è sbagliato perché ci sono impiegati che non sono capi e non verrebbero sottratti alla prima proiezione
+
+$$
+\pi_{\text{Nome, Capo\#}}(\text{Impiegati})-\pi_{\text{CNome, CC\#}}(\text{r})
+$$
+è sbagliato perché nella prima proiezione il nome è dell’impiegato e il codice è del capo
+
+Un’alternativa corretta è:
+$$
+\pi_{\text{Nome, C\#}}((\pi_{\text{Capo\#}}(\text{Impiegati})-\pi_{\text{CC\#}}(\text{r}))\bowtie \text{Impiegati})
+$$
+che estrae prima i codici, effettua un join per ottenere le altre informazioni (un capo è anche un impiegato) e poi effettua la proiezione. Vogliamo che i codici da cui sottraiamo siano sicuramente di capi
