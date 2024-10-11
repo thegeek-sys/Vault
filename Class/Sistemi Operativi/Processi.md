@@ -415,3 +415,6 @@ Se ci sono effettivamente più processori o più core, tutti i thread del proces
 Se il SO non ha i KLT, non possono essere usati i thread per routine del sistema operativo stesso
 
 ### Processi e Thread in Linux
+Derivando da UNIX, che non ha i thread, la loro implementazione all’interno di Linux è stata particolarmente articolata ed è per questo che sono ben diversi da come sono stati mostrati fino ad ora.
+In Linux l’unità di base sono i thread (è come se la `fork` creasse il thread), infatti i processi stessi sono chiamati Lightweight process (LWP).
+In questo SO sono possibili sia i KLT (usati principalmente dal sistema operativo) che gli ULT (che possono essere direttamente scritti da un utente e che tramite la libreria `pthread` vengono essere poi mappati in KLT)
