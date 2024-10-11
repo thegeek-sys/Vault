@@ -45,8 +45,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md"
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md"
               }
             }
           },
@@ -187,8 +186,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7c10f69b7a3ebef8",
+  "active": "86b7c0e96592df9e",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Processi.md",
     "Files/Pasted image 20241011153435.png",
     "Files/Pasted image 20241011151649.png",
     "Files/Pasted image 20241011135159.png",
@@ -203,12 +203,10 @@
     "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Basi di dati.md",
-    "Files/373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg",
     "Flet-notes/2024-10-09_BD.md",
     "Class/Class.md",
     "Basi di dati/Esercizi.md",
     "Basi di dati",
-    "Class/Sistemi Operativi/Processi.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-10-03_BD.md",
