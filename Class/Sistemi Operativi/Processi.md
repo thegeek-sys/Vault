@@ -368,3 +368,6 @@ Quindi, il kernel può scegliere tra:
 - continuare ad eseguire il padre
 - switchare al figlio
 - switchare ad un altro processo
+
+---
+## Thread

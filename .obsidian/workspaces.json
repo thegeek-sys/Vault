@@ -1118,19 +1118,19 @@
                 }
               },
               {
-                "id": "09159861949a43ef",
+                "id": "c03eaf8cbf2357c1",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Basi di dati/Eserizi.md",
+                    "file": "Flet-notes/2024-10-10_BD.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "adbb20355ed7eb00",
+                "id": "a934f2b6817aa495",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -1192,7 +1192,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1208,7 +1209,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Basi di dati/Eserizi.md",
+                    "file": "Flet-notes/2024-10-10_BD.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1225,7 +1226,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Basi di dati/Eserizi.md",
+                    "file": "Flet-notes/2024-10-10_BD.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1248,7 +1249,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Basi di dati/Eserizi.md"
+                    "file": "Flet-notes/2024-10-10_BD.md"
                   }
                 }
               },
@@ -1282,9 +1283,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "09159861949a43ef",
-      "mtime": "2024-10-07T11:59:47+02:00"
+      "active": "c03eaf8cbf2357c1",
+      "mtime": "2024-10-10T22:59:24+02:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
