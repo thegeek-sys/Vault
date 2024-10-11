@@ -406,4 +406,10 @@ Negli ULT, i thread non esistono a livello di sistema operativo (il SO genera il
 Nei KLT, i thread esistono a livello di kernel e le librerie dei thread si appoggiano direttamente sulle system call del SO
 
 **In base a cosa li scelgo?**
-Gli ULT sarebbero meglio in quanto per fare lo switch tra due thread dello stesso processo non è necessario fare il mode switch
+*Pro ULT*
+Gli ULT sarebbero meglio in quanto per fare lo switch tra due thread dello stesso processo non è necessario fare il mode switch, le librerie necessarie sono infatti tutte contenute dentro la modalità utente. Permettono anche di avere una politica di scheduling diversa per ogni applicazione e di usare i thread sui SO che non li offrono nativamente
+
+*Contro ULT*
+Se un thread si blocca, si bloccano tutti i thread di quel processo (a meno che il blocco non sia dovuto alla chiamata `block` dei thread) in quanto il sistema operativo non sa nulla dei thread e quindi quando questo si blocca il SO blocca tutto il processo.
+Se ci sono effettivamente più processori o più core, tutti i thread del processo ne possono usare solamente uno;
+
