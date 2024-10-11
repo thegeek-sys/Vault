@@ -435,4 +435,26 @@ In Linux inoltre è presente **un PCB per ogni thread**, diversi thread dunque c
 `parent` e `real_parent` → puntano la padre del processo (ci sono anche link per i fratelli e figli)
 
 ### Stati dei processi
-E’ sostanzialmente come quello a 5 stati
+E’ sostanzialmente come quello a 5 stati (sono presenti i processi suspended ma non vi è fatta un’esplicita menzione)
+Gli stati sono i seguenti:
+- `TASK_RUNNING` → include sia Ready che Running (se uno processo è davvero running sta già sul processore non è dunque necessario distinguerli)
+- `TASK_INTERRUPTIBLE`, `TASK_UNINTERRUPTIBLE`, `TASK_STOPPED`, `TASK_TRACED` → sono tutti Blocked che si differenziano per il motivo per cui sono blocked; in ordine blocked che non presenta problemi, connesso ad alcune operazioni I/O su dischi che sono particolarmente lenti per qualche motivo e non permette alcun tipo di azione, è stato esplicitamente bloccato, sto facendo debugging
+- `EXIT_ZOMBIE`, `EXIT_DEAD` → entrambi stati di Exit
+
+### Processi parenti
+![[Pasted image 20241011153435.png|330]]
+In ogni PCB sono presenti informazioni per risalire ai processi a lui connessi. Si può infatti accedere ai fratelli (processi che hanno lo stesso padre).
+In aggiunta a questo ogni processo ha i suoi thread (non rappresentati)
+
+### Segnali ed interrupt
+Non bisogna confondere i segnali con interrupt (o eccezioni).
+I **segnali** infatti possono essere inviati **da un processo utente ad un processo utente** (tramite una system call, chiamata `kill` ma potrebbe accadere che non termini il processo in rari casi).
+
+Quando viene inviato un segnale, questo viene aggiunto all’opportuno campo del PCB del processo ricevente. A questo punto, quando il processo viene nuovamente schedulato per l’esecuzione, il kernel controlla prima se ci sono segnali pendenti; se si esegue un’opportuna funzione chiamata *signal handler* (a differenza dell’interrupt handler, questo viene eseguito in **user mode**). I signal handler possono essere di sistema possono essere sovrascritti da signal handler definiti dal programmatore (alcuni segnali hanno handler non sovrascribili)
+
+I segnali possono anche essere inviati da un processo in modalità sistema, ma in questo caso molto spesso ciò è dovuto ad un interrupt a monte.
+Esempio tipico: eseguo un programma C scritto male, che accede ad una zona di memoria senza averla prima richiesta, il processore fa scattare un’eccezione, viene eseguito l’opportuno exception handler (in kernel mode) che essenzialmente manda il segnale `SIGSEGV` (violazione di segmento) al processo colpevole, quando il processo colpevole verrà selezionato nuovamente per andare in esecuzione, il kernel vedrà dal PCB che c’è un segnale pendente, e farà in modo che venga eseguita l’azione corrispondente. L’azione di default per tale segnale è di far terminare il processo (fa una system call che ritorna in kernel mode e termina il processo; può essere riscritta dall’utente quando verrà eseguita tale azione, sarà in user mode)
+
+Dunque le differenze fondamentali tra segnali ed interrupt sono:
+- i signal handler sono eseguiti in user mode mentre gli interrupt handler in kernel mode
+- i signal handler potrebbero essere riscritto dal programmatore mentre gli interrupt handler no
