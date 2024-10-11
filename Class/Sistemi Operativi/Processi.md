@@ -416,5 +416,14 @@ Se il SO non ha i KLT, non possono essere usati i thread per routine del sistema
 
 ### Processi e Thread in Linux
 Derivando da UNIX, che non ha i thread, la loro implementazione all’interno di Linux è stata particolarmente articolata ed è per questo che sono ben diversi da come sono stati mostrati fino ad ora.
-In Linux l’unità di base sono i thread (è come se la `fork` creasse il thread), infatti i processi stessi sono chiamati Lightweight process (LWP).
-In questo SO sono possibili sia i KLT (usati principalmente dal sistema operativo) che gli ULT (che possono essere direttamente scritti da un utente e che tramite la libreria `pthread` vengono essere poi mappati in KLT)
+In Linux l’unità di base sono i thread (è come se la `fork` creasse il thread), infatti i processi stessi sono chiamati Lightweight process (**LWP**).
+In questo SO sono possibili **sia i KLT** (usati principalmente dal sistema operativo) **che gli ULT** (che possono essere direttamente scritti da un utente e che tramite la libreria `pthread` vengono essere poi mappati in KLT)
+
+>[!warning]
+>Il PID è un identificativo unico che vale per tutti i thread dello stesso processo viene quindi introdotto un **`tid`** (task identifier) che identifica ogni singolo thread. Come abbiamo detto ogni processo ha almeno un thread associato, questo thread ha il **TID uguale al PID**.
+>Dunque è chiamato process identifier ma in realtà è un thread identifier, questo poiché l’unità di base è l’LWP, che coincide con il concetto di thread.
+>L’entry del PCB che dà il PID comune a tutti i thread di un processo è il **`tgid`** (thread group identifier), e coincide con il PID del primo thread del processo
+>Una chiamata a `getpid()` restituisce il `tgid`
+>Ovviamente per processi a singolo thread `tgid` e `pid` coincidono
+
+In Linux inoltre è presente **un PCB per ogni thread**, diversi thread dunque conterranno informazioni duplicate
