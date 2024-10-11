@@ -427,3 +427,4 @@ In questo SO sono possibili **sia i KLT** (usati principalmente dal sistema oper
 >Ovviamente per processi a singolo thread `tgid` e `pid` coincidono
 
 In Linux inoltre è presente **un PCB per ogni thread**, diversi thread dunque conterranno informazioni duplicate
+![[Pasted image 20241011151649.png]]
