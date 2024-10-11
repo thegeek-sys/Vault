@@ -411,5 +411,7 @@ Gli ULT sarebbero meglio in quanto per fare lo switch tra due thread dello stess
 
 *Contro ULT*
 Se un thread si blocca, si bloccano tutti i thread di quel processo (a meno che il blocco non sia dovuto alla chiamata `block` dei thread) in quanto il sistema operativo non sa nulla dei thread e quindi quando questo si blocca il SO blocca tutto il processo.
-Se ci sono effettivamente più processori o più core, tutti i thread del processo ne possono usare solamente uno;
+Se ci sono effettivamente più processori o più core, tutti i thread del processo ne possono usare solamente uno (si tratta sostanzialmente di alternarsi su un core di un processore)
+Se il SO non ha i KLT, non possono essere usati i thread per routine del sistema operativo stesso
 
+### Processi e Thread in Linux
