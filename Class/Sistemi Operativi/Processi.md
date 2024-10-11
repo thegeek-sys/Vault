@@ -364,10 +364,18 @@ La creazione di un processo unix tramite una chiamata di sistema `fork()`. In se
 4. Incrementa i contatori di ogni file aperto dal padre, per tenere conto del fatto che ora sono anche del figlio
 5. Assegna al processo figlio lo stato Ready to Run
 6. Fa ritornare alla fork il PID del figlio al padre, e 0 al figlio
+
 Quindi, il kernel può scegliere tra:
 - continuare ad eseguire il padre
 - switchare al figlio
 - switchare ad un altro processo
 
+>[!info]
+>Creare un processo a partire dal processo padre è il modo più efficiente di avviare un processo in quanto la maggior parte delle volte un programma inizia un processo a partire dal codice sorgente già esistente
+
 ---
 ## Thread
+Finora abbiamo visto che ciascun processo compete con tutti gli altri alternando la loro esecuzione, tuttavia non è sempre così.Ci sono infatti delle applicazioni particolare (ad es. la maggior parte delle applicazioni GUI) che sono a loro volta organizzate in modo parallelo.
+Infatti il programmatore dell’applicazione la ha suddivisa in diverse esecuzioni e ciascuna esecuzione è chiamata **thread**. Si tratta però di un processo, ma all’interno del processo è necessario di solito avere tre computazioni diverse (es. una monitora gli input, una che di conseguenza agli input ridisegni la finestra e una terza che faccia i calcoli richiesti) che devono poter avvenire contemporaneamente.
+
+Diversi thread di uno stesso processo condividono le risorse **tranne** lo **stack** delle chiamate e il **processore**. Vengono quindi condivise le risorse input (un file aperto da un thread è disponibile anche a tutti gli altri thread), il codice sorgente ecc.
