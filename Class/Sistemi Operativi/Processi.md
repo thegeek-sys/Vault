@@ -414,7 +414,9 @@ Se un thread si blocca, si bloccano tutti i thread di quel processo (a meno che 
 Se ci sono effettivamente più processori o più core, tutti i thread del processo ne possono usare solamente uno (si tratta sostanzialmente di alternarsi su un core di un processore)
 Se il SO non ha i KLT, non possono essere usati i thread per routine del sistema operativo stesso
 
-### Processi e Thread in Linux
+---
+## Linux
+### Processi e thread
 Derivando da UNIX, che non ha i thread, la loro implementazione all’interno di Linux è stata particolarmente articolata ed è per questo che sono ben diversi da come sono stati mostrati fino ad ora.
 In Linux l’unità di base sono i thread (è come se la `fork` creasse il thread), infatti i processi stessi sono chiamati Lightweight process (**LWP**).
 In questo SO sono possibili **sia i KLT** (usati principalmente dal sistema operativo) **che gli ULT** (che possono essere direttamente scritti da un utente e che tramite la libreria `pthread` vengono essere poi mappati in KLT)
@@ -428,3 +430,9 @@ In questo SO sono possibili **sia i KLT** (usati principalmente dal sistema oper
 
 In Linux inoltre è presente **un PCB per ogni thread**, diversi thread dunque conterranno informazioni duplicate
 ![[Pasted image 20241011151649.png]]
+`thread_info` → è organizzata per contenere anche il kernel stack, ovvero lo stack delle chiamate da usare quando il processo passa in modalità sistema (system call)
+`thread_group` → punta agli altri thread dello stesso processo
+`parent` e `real_parent` → puntano la padre del processo (ci sono anche link per i fratelli e figli)
+
+### Stati dei processi
+E’ sostanzialmente come quello a 5 stati
