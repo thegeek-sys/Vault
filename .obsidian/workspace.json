@@ -44,8 +44,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ea6037ff43f50846",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Class.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -95,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -112,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md"
+                "file": "Class/Class.md"
               }
             }
           },
@@ -186,8 +198,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "86b7c0e96592df9e",
+  "active": "ea6037ff43f50846",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Processi.md",
     "Files/Pasted image 20241011153435.png",
     "Files/Pasted image 20241011151649.png",
@@ -207,7 +220,6 @@
     "Class/Class.md",
     "Basi di dati/Esercizi.md",
     "Basi di dati",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-10-03_BD.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",

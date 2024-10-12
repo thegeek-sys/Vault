@@ -5,4 +5,4 @@
 # 2024/2025
 - [[Sistemi Operativi]]
 - [[Basi di dati]]
-- 
+- [[Algebra]]
