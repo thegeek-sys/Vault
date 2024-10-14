@@ -106,3 +106,7 @@ Particolarmente utile per sistemi costosi, condivisi tra più utenti
 ##### Bilanciamento delle risorse
 Lo scheduler deve far si che le risorse del sistema siano usate il più possibile. Infatti i processi che useranno meno le risorse attualmente più usate dovranno essere favoriti
 ##### Fairness e priorità
+Se non ci sono indicazioni dagli utenti o dal sistema (es. non c’è priorità), tutti i processi devono essere trattati allo stesso modo, dunque a tutti i processi deve essere data la stessa possibilità di andare in esecuzione (evitando la starvation).
+Se invece ci sono priorità, lo scheduler deve favorire i processi a priorità più alta (occorre avere più code, una per ogni livello di priorità)
+![[Pasted image 20241014222223.png|370]]
+Potrebbe però nascere un problema: un processo con priorità più bassa potrebbe soffrire di starvation; la soluzione sta nell’aumentare la priorità del processo a mano a mano che l’”età” del processo aumenta
