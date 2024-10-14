@@ -164,3 +164,4 @@ Come soluzione è stato proposto il round-robin **virtuale**; infatti se un proc
 
 ---
 ## SPN (Shortest Process Next)
+La politica shortest process next 
