@@ -82,3 +82,9 @@ Nella realtà che si vuole rappresentare in una base di dati sono soddisfatte ce
 Quando rappresentiamo una realtà di interesse in una base di dati deve essere possibile rappresentare anche tali condizioni.
 Un **vincolo** è la rappresentazione nello schema di una base di dati di una condizione valida nella realtà di interesse.
 Un’istanza della base di dati è **legale** se soddisfa tutti i vincoli (cioè se è una rappresentazione fedele della realtà).
+
+### Definizione e verifica dei vincoli nei DBMS
+Un DBMS ci deve impedire di inserire tuple che violano i vincoli, ma viene fatto solo se questi vincoli sono espliciti (non le dipendenze funzionali). Però se è avvenuta una corretta progettazione il DBMS neanche deve intervenire in quanto questi vengono rispettati automaticamente
+
+### Dipendenze funzionali
+Vedremo che le dipendenze funzionali definite su uno schema di relazione esprimono particolari vincoli di dipendenza tra sottoinsiemi di attributi dello schema stesso, che devono essere soddisfatti da ogni istanza dello schema

@@ -22,12 +22,24 @@
             }
           },
           {
+            "id": "265f2e42b5e88b42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "830d5a6d5b602ce2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                 "mode": "source",
                 "source": false
               }
@@ -46,25 +58,7 @@
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "bb68a875684dc459",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c03eaf8cbf2357c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-10-10_BD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -131,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale.md"
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md"
               }
             }
           },
@@ -207,9 +201,15 @@
   },
   "active": "830d5a6d5b602ce2",
   "lastOpenFiles": [
+    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+    "Files/Pasted image 20241014143259.png",
     "Flet-notes/2024-10-10_BD.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale.md",
+    "Files/Pasted image 20241014143009.png",
+    "Files/Pasted image 20241014142931.png",
+    "Files/Pasted image 20241014141231.png",
+    "Files/Pasted image 20241014140836.png",
     "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
     "Class/Sistemi Operativi/Processi.md",
     "Class/Class.md",
     "Class/Algebra/Algebra.md",
@@ -221,11 +221,6 @@
     "Files/Pasted image 20241011135159.png",
     "Files/Pasted image 20241011134132.png",
     "Files/Pasted image 20241011134045.png",
-    "Files/Pasted image 20241010155714.png",
-    "Files/Pasted image 20241010155529.png",
-    "Files/Pasted image 20241010144442.png",
-    "Files/Pasted image 20241010143819.png",
-    "Files/Screenshot 2024-10-10 alle 14.28.28.png",
     "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-09_BD.md",
@@ -247,8 +242,6 @@
     "Class/Architettura degli elaboratori/Pipeline.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Programming languages/Java/Tipi generici.md",
-    "Programming languages/Java/Java.md",
-    "Class/Architettura degli elaboratori/System Calls.md",
     "Class/Sistemi Operativi",
     "Programming languages/Java/Main.java",
     "Files/MIPS_Instruction_Set.pdf",
