@@ -114,3 +114,18 @@ Potrebbe però nascere un problema: un processo con priorità più bassa potrebb
 ---
 ## Politiche di scheduling
 ![[Pasted image 20241014223048.png]]
+Le colonne rappresentano gli algoritmi per la politica di scheduling, nei sistemi moderni vengono attuate più politiche insieme
+
+### Funzione di selezione
+La funzione di selezione è quella che sceglie effettivamente il processo da mandare in esecuzione. Se è basata sulle caratteristiche dell’esecuzione, i parametri da cui dipende sono:
+- *w* → tempo trascorso in attesa
+- *e* → tempo trascorso in esecuzione
+- *s* → tempo totale richiesto, incluso quello già servito (quindi va stimato o fornito come input insieme alla richiesta di creazione del processo)
+
+### Modalità di decisione
+La modalità di decisione specifica in quali istanti di tempo la funzione di selezione viene invocata. Ci sono due possibilità:
+- **preemptive**
+	Il sistema operativo può interrompere un processo indipendentemente da eventi terzi (lo può decidere per conto suo). In questo caso il processo diverrà ready.
+	Questa può avvenire o per l’arrivo di nuovi processi (appena forkati) o per un interrupt (può essere di I/O, un processo blocked diventa ready, o di clock, periodico per evitare che un processo monopolizzi il sistema)
+- **non-preemptive**
+	Se un processo è in esecuzione, allora arriva o fino a terminazione o fino ad una richiesta di I/O (o comunque ad una richiesta bloccante)
