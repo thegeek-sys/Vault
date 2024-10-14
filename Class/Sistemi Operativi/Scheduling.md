@@ -143,3 +143,5 @@ Il problema di questo tipo di politica è che un processo “corto” potrebbe d
 ## Round-Robin
 La politica Round-Robin è una politica preemptive, basandosi sul clock. In questa politica è infatti necessario fissare un’unità di tempo che determina il tempo di esecuzione di ogni processo
 ![[Pasted image 20241014225032.png|400]]
+Nella pratica un’interruzione di clock viene generata ad intervalli periodici, e quando questa arriva il processo attualmente in esecuzione viene rimesso nella coda dei ready (ovviamente sei processo in esecuzione arriva ad un’istruzione I/O prima dell’interruzione allora viene spostato nella coda dei blocked) e il prossimo processo ready nella coda viene selezionato
+![[Pasted image 20241014231706.png|400]]
