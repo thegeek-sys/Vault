@@ -31,7 +31,7 @@ $$
 ### Problemi
 I dati anagrafici di uno studente sono memorizzati per ogni esame sostenuto dallo studente e i dati di un corso sono memorizzati per ogni esame sostenuto per quel corso
 
-La ridondanza dunque dà luogo a:
+La **ridondanza** dunque dà luogo a:
 - spreco di spazio di memoria
 - **anomalie** di aggiornamento, inserimento e cancellazione
 
@@ -41,3 +41,31 @@ Se cambia il docente del corso il dato deve essere modificato per ogni esame sos
 Non posso inserire i dati anagrafici di uno finché non ha sostenuto almeno un esame a meno che di non usare valori nulli; idem per i corsi
 #### Anomalia di cancellazione
 Eliminando i dati anagrafici di uno studente potrebbero essere eliminati i dati di un corso (se lo studente è l’unico ad aver sostenuto l’esame di quel corso); idem quando elimino un corso
+
+---
+## Ipotesi 2
+La base di dati consiste di tre schemi di relazione:
+- $\text{Studente(Matr, CF, Cogn, Nome, Data, Com, Prov)}$
+- $\text{Corso(C\#, Tit, Doc)}$
+- $\text{Esame(Matr, C\#, Data, Voto)}$
+![[Pasted image 20241010143819.png|center|550]]
+
+### Problemi
+Si nota della **ridondanza** in quanto il fatto che un comune si trova in una certa provincia è ripetuto per ogni studente nato in quel comune
+
+#### Anomalia di aggiornamento
+Se un comune cambia provincia (in seguito alla creazione di una nuova Provincia) devono essere modificate più tuple
+#### Anomalia di inserimento
+Non è possibile memorizzare il fatto che un certo comune si trova in una certa provincia se non c’è almeno uno studente nato in quel comune
+#### Anomalia di cancellazione
+Se vengono eliminati i dati anagrafici di uno studente potrebbe perdersi l’informazione che un certo comune si trova in una certa provincia (se è l’unico studente nato in quel comune)
+
+---
+## Ipotesi 3
+La base di dati consiste di quattro schemi di relazione:
+- $\text{Studente (Matr, CF, Cogn, Nome, Data, Com)}$
+- $\text{Corso (C\#, Tit, Doc)}$
+- $\text{Esame (Matr, C\#, Data, Voto)}$
+- $\text{Comune (Com, Prov)}$
+![[Pasted image 20241010144442.png|center|550]]
+Per progettare uno schema “buono” occorre rappresentare separatamente ogni concetto in una relazione distinta
