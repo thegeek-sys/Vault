@@ -147,8 +147,15 @@ Nella pratica un’interruzione di clock viene generata ad intervalli periodici,
 ![[Pasted image 20241014231706.png|400]]
 
 ### Misura del quanto di tempo per la preemption
-Il quanto di tempo deve essere poco più grande del tempo di interazione di un processo (tempo che ci mette un processo a rispondere, il round-robin è tipico di processi interattivi)
+Il quanto di tempo deve essere poco più grande del “tipico“ tempo di interazione di un processo (tempo che ci mette un processo a rispondere, il round-robin è tipico di processi interattivi)
 ![[Pasted image 20241014232145.png|200]]
 
 Se invece si scegliesse un quanto di tempo minore del tipico tempo di interazione il tempo di risposta per un processo aumenta notevolmente (vengono infatti mandati in esecuzione tutti gli altri processi prima di calcolare la risposta)
 ![[Pasted image 20241014232323.png]]
+
+Ma se lo si fa troppo lungo, potrebbe durare più del tipico processo e il round-robin degenera in FCFS
+
+### CPU-bound vs. I/O-bound
+I processi CPU-bound con il round-robin sono favoriti, infatti vuol dire che il proprio quanto di tempo viene usato per intero o quasi. Invece gli I/O bound ne usano solo una porzione, infatti non appena arriva una richiesta bloccante, il processo va nella coda dei blocked.
+Risulta quindi essere non equo e non efficiente per l’I/O
+Come soluzione è stato proposto il round-robin **virtuale** se un processo fa una richiesta bloccante, 
