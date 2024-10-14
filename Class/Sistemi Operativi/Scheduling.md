@@ -164,6 +164,13 @@ Come soluzione è stato proposto il round-robin **virtuale**; infatti se un proc
 
 ---
 ## SPN (Shortest Process Next)
-La politica shortest process next è una politica non-preemprive. Questa manda in esecuzione il processo con tempo di esecuzione più breve (tempo di esecuzione stimato), permettendo ai processi più corti di scavalcare i più lunghi
+La politica shortest process next è una politica non-preemprive. Questa manda in esecuzione il processo con tempo di esecuzione più breve (tempo di esecuzione stimato), permettendo ai processi più corti di scavalcare i più lunghi. Il tempo di esecuzione stimato, come precedentemente detto può essere calcolato dal sistema operativo oppure fornito dal processo stesso
 ![[Pasted image 20241014234219.png|400]]
 
+Un problema di questa politica è il fatto che potrebbe andare incontro a starvation, infatti i processi più lunghi potrebbero non andare mai in esecuzione se continuano ad arrivare processi corti. Bisogna anche tener presente che se il tempo di esecuzione stimato si rivela inesatto, il sistema operativo può abortire il processo, dunque se il tempo previsto è maggiore del tempo reale, il processo può essere terminato dal sistema operativo
+
+### Come stimare il tempo di esecuzione?
+In alcuni sistemi ci sono processi (sia batch che interattivi) che sono eseguiti svariate volte, quindi si usa il passato ($T_{i}$) per predire il futuro ($S_{i}$)
+$$
+S_{n+1}=\frac{1}{n}\sum^{n}_{i=1}T_{i}
+$$
