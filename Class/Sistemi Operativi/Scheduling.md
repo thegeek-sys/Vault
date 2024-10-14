@@ -171,6 +171,20 @@ Un problema di questa politica è il fatto che potrebbe andare incontro a starva
 
 ### Come stimare il tempo di esecuzione?
 In alcuni sistemi ci sono processi (sia batch che interattivi) che sono eseguiti svariate volte, quindi si usa il passato ($T_{i}$) per predire il futuro ($S_{i}$)
+Questo può essere fatto con una media, ma vorrebbe dire per il dispatcher il doversi tenere in memoria tutti i tempi delle precedenti esecuzioni
 $$
 S_{n+1}=\frac{1}{n}\sum^{n}_{i=1}T_{i}
 $$
+Per fortuna si può fare anche in un altro modo che necessita di ricordare solamente l’ultimo tempo di esecuzione e l’ultima stima fatta
+$$
+S_{n+1}=\frac{1}{n}T_{n}+\frac{n+1}{n}S_{n}
+$$
+Questa formula può essere generalizzata
+$$
+S_{n+1}=\alpha\, T_{n}+(1-\alpha)S_{n}, \,\,0<\alpha<1
+$$
+$$
+S_{n+1}=\alpha\,T_{n}+\dots+\alpha(1-\alpha)^{i}\,T_{n-1}+\dots+(1-\alpha)^{n}\,S_{1}
+$$
+Questa è chiamata *exponential averaging*
+![[Pasted image 20241015000012.png|400]]
