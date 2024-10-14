@@ -129,3 +129,17 @@ La modalità di decisione specifica in quali istanti di tempo la funzione di sel
 	Questa può avvenire o per l’arrivo di nuovi processi (appena forkati) o per un interrupt (può essere di I/O, un processo blocked diventa ready, o di clock, periodico per evitare che un processo monopolizzi il sistema)
 - **non-preemptive**
 	Se un processo è in esecuzione, allora arriva o fino a terminazione o fino ad una richiesta di I/O (o comunque ad una richiesta bloccante)
+
+### Scenario comune di esempio
+![[Pasted image 20241014224337.png|550]]
+
+---
+## FCFS (First Come First Served)
+La politica FCFS è una politica non-preemptive. Quando un processo smette di essere eseguito, si passa al processo che ha aspettato di più nella coda ready finora
+![[Pasted image 20241014224613.png|400]]
+Il problema di questo tipo di politica è che un processo “corto” potrebbe dover attendere molto prima di essere eseguito (come è capitato per il processo E nell’esempio). Tende inoltre a favorire i processi che usano molto da CPU (CPU-bound), che infatti, una volta preso possesso della CPU, non viene rilasciata finché il processo non termina
+
+---
+## Round-Robin
+La politica Round-Robin è una politica preemptive, basandosi sul clock. In questa politica è infatti necessario fissare un’unità di tempo che determina il tempo di esecuzione di ogni processo
+![[Pasted image 20241014225032.png|400]]
