@@ -43,4 +43,5 @@ Lo short-term scheduler si occupa di decidere quali processi ready devono essere
 
 ---
 ## Long-term scheduling
+Il long-term scheduling decide quali programmi sono ammessi nel sistema per essere eseguiti. Questo tipicamente è FIFO (first in first out) dunque il primo che è arriva è il primo ad essere ammesso, seppur tenga conto di criteri come priorità, requisiti per I/O ecc.
 
