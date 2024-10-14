@@ -158,4 +158,9 @@ Ma se lo si fa troppo lungo, potrebbe durare più del tipico processo e il round
 ### CPU-bound vs. I/O-bound
 I processi CPU-bound con il round-robin sono favoriti, infatti vuol dire che il proprio quanto di tempo viene usato per intero o quasi. Invece gli I/O bound ne usano solo una porzione, infatti non appena arriva una richiesta bloccante, il processo va nella coda dei blocked.
 Risulta quindi essere non equo e non efficiente per l’I/O
-Come soluzione è stato proposto il round-robin **virtuale** se un processo fa una richiesta bloccante, 
+
+![[Pasted image 20241014233624.png|360]]
+Come soluzione è stato proposto il round-robin **virtuale**; infatti se un processo fa una richiesta bloccante, una volta che è stata esaudita, non va nella coda dei ready come accadrebbe solitamente, bensì viene direttamente messo in una coda prioritaria che viene scelta per prima dal dispatcher e vengono eseguiti per il quanto di tempo rimanente dalla precedente esecuzione prima di essere bloccato
+
+---
+## SPN (Shortest Process Next)
