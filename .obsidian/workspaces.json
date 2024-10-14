@@ -1118,12 +1118,24 @@
                 }
               },
               {
-                "id": "c03eaf8cbf2357c1",
+                "id": "265f2e42b5e88b42",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-10-10_BD.md",
+                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "830d5a6d5b602ce2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                     "mode": "source",
                     "source": false
                   }
@@ -1142,7 +1154,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1209,7 +1221,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-10-10_BD.md",
+                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1226,7 +1238,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-10-10_BD.md",
+                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1249,7 +1261,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-10-10_BD.md"
+                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md"
                   }
                 }
               },
@@ -1283,9 +1295,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "c03eaf8cbf2357c1",
-      "mtime": "2024-10-10T22:59:24+02:00"
+      "active": "830d5a6d5b602ce2",
+      "mtime": "2024-10-14T20:04:22+02:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
