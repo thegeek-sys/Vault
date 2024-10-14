@@ -164,4 +164,5 @@ Come soluzione è stato proposto il round-robin **virtuale**; infatti se un proc
 
 ---
 ## SPN (Shortest Process Next)
-La politica shortest process next 
+La politica shortest process next è una politica non-preemprive. Questa manda in esecuzione il processo con tempo di esecuzione più breve (tempo di esecuzione stimato), permettendo ai processi più corti di scavalcare i più lunghi
+![[Pasted image 20241014234219.png|400]]
