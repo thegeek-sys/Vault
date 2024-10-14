@@ -179,12 +179,19 @@ Per fortuna si può fare anche in un altro modo che necessita di ricordare solam
 $$
 S_{n+1}=\frac{1}{n}T_{n}+\frac{n+1}{n}S_{n}
 $$
-Questa formula può essere generalizzata
+Questa formula può essere generalizzata chiamata *exponential averaging*
 $$
 S_{n+1}=\alpha\, T_{n}+(1-\alpha)S_{n}, \,\,0<\alpha<1
 $$
 $$
 S_{n+1}=\alpha\,T_{n}+\dots+\alpha(1-\alpha)^{i}\,T_{n-1}+\dots+(1-\alpha)^{n}\,S_{1}
 $$
-Questa è chiamata *exponential averaging*
 ![[Pasted image 20241015000012.png|400]]
+
+![[Pasted image 20241015000153.png|500]]
+![[Pasted image 20241015000248.png|500]]
+
+---
+## SRT (Shortest Remaining Time)
+La politica shortest remaining time è simile alla SPN, ma preemptive. Questa infatti non utilizza un quanto di tempo, dunque un processo può essere bloccato solo quando ne arriva uno nuovo appena creato (o se fa un I/O bloccante). Una volta che un processo è stato interrotto viene rimesso nella coda dei ready; all’arrivo di un nuovo processo viene stimato il tempo rimanente richiesto per l’esecuzione, e viene eseguito il processo con quello più breve
+![[Pasted image 20241015000902.png|400]]
