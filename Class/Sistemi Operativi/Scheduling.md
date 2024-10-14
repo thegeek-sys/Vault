@@ -110,3 +110,7 @@ Se non ci sono indicazioni dagli utenti o dal sistema (es. non c’è priorità)
 Se invece ci sono priorità, lo scheduler deve favorire i processi a priorità più alta (occorre avere più code, una per ogni livello di priorità)
 ![[Pasted image 20241014222223.png|370]]
 Potrebbe però nascere un problema: un processo con priorità più bassa potrebbe soffrire di starvation; la soluzione sta nell’aumentare la priorità del processo a mano a mano che l’”età” del processo aumenta
+
+---
+## Politiche di scheduling
+![[Pasted image 20241014223048.png]]
