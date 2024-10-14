@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "33f06dba257b4997",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a91fad9c7db7b57b",
             "type": "leaf",
             "state": {
@@ -46,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -189,11 +201,12 @@
   },
   "active": "a91fad9c7db7b57b",
   "lastOpenFiles": [
-    "Files/Pasted image 20241014213625.png",
+    "Class/Sistemi Operativi/Introduzione.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Processi.md",
     "Class/Sistemi Operativi/Scheduling.md",
+    "Files/Pasted image 20241014213625.png",
     "Files/Pasted image 20241014213242.png",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Files/Pasted image 20241014143259.png",
@@ -210,13 +223,11 @@
     "Files/Pasted image 20241011153435.png",
     "Files/Pasted image 20241011151649.png",
     "Files/Pasted image 20241011135159.png",
-    "Files/Pasted image 20241011134132.png",
     "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-09_BD.md",
     "Basi di dati/Esercizi.md",
     "Basi di dati",
-    "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-10-03_BD.md",
     "Class/Introduzione agli algoritmi/Esercizi.md",
     "Class/Basi di dati/Modello relazionale.md",

@@ -44,4 +44,12 @@ Lo short-term scheduler si occupa di decidere quali processi ready devono essere
 ---
 ## Long-term scheduling
 Il long-term scheduling decide quali programmi sono ammessi nel sistema per essere eseguiti. Questo tipicamente è FIFO (first in first out) dunque il primo che è arriva è il primo ad essere ammesso, seppur tenga conto di criteri come priorità, requisiti per I/O ecc.
+Controlla quindi il grado di multiprogrammazione, e all’aumentare del numero di processi, diminuisce la percentuale di tempo per cui ogni processo viene eseguito
+
+Tipiche strategie
+- i lavori batch (non interattivi) vengono accodati e il LTS li prende man mano che lo ritiene “giusto”
+- i lavori interattivi vengono ammessi fino a “saturazione del sistema”
+- se si sa quali processi sono I/O-bound e quali CPU-bound (quali usano più la cpu e quali più l’i/o) mantiene un giusto mix tra i due tipi; oppure se si sa quali processi fanno richieste a quali dispositivi di I/O, fare in modo da bilanciare tali richieste
+
+In generale si può dire che il LTS viene chiamato in causa quando vengono creati dei processi ma ad esempio interviene anche quando termina un processo o quando alcuni processi sono idle da troppo tempo
 
