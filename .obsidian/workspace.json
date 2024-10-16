@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "373b30eeb107129c",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,19 +22,43 @@
             }
           },
           {
-            "id": "a91fad9c7db7b57b",
+            "id": "265f2e42b5e88b42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "830d5a6d5b602ce2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a934f2b6817aa495",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Algebra relazionale.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md"
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md"
               }
             }
           },
@@ -175,8 +199,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a91fad9c7db7b57b",
+  "active": "830d5a6d5b602ce2",
   "lastOpenFiles": [
+    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+    "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
+    "Class/Sistemi Operativi/Scheduling.md",
     "Files/Pasted image 20241015000902.png",
     "Files/Pasted image 20241015000248.png",
     "Files/Pasted image 20241015000153.png",
@@ -187,13 +214,9 @@
     "Files/Pasted image 20241014232145.png",
     "Files/Pasted image 20241014231706.png",
     "Files/Pasted image 20241014225032.png",
-    "Files/Pasted image 20241014224613.png",
     "Class/Sistemi Operativi/Processi.md",
-    "Class/Sistemi Operativi/Scheduling.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Flet-notes/2024-10-10_BD.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Class.md",
