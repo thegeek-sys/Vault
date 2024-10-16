@@ -32,9 +32,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "20a6ea9af890fe2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Processi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Sistemi Operativi/Processi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Sistemi Operativi/Processi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md"
+                "file": "Class/Sistemi Operativi/Processi.md"
               }
             }
           },
@@ -175,13 +187,15 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a91fad9c7db7b57b",
+  "active": "20a6ea9af890fe2d",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Scheduling.md",
+    "Class/Sistemi Operativi/Introduzione.md",
     "Files/Pasted image 20241016105907.png",
     "Files/Pasted image 20241016105653.png",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
-    "Class/Sistemi Operativi/Scheduling.md",
     "Files/Pasted image 20241015000902.png",
     "Files/Pasted image 20241015000248.png",
     "Files/Pasted image 20241015000153.png",
@@ -190,10 +204,7 @@
     "Files/Pasted image 20241014233624.png",
     "Files/Pasted image 20241014232323.png",
     "Files/Pasted image 20241014232145.png",
-    "Files/Pasted image 20241014231706.png",
     "Class/Sistemi Operativi/Processi.md",
-    "Class/Sistemi Operativi/Introduzione.md",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Flet-notes/2024-10-10_BD.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Class.md",

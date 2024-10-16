@@ -210,3 +210,6 @@ $$
 
 ---
 ## Scheduling tradizionale di UNIX
+Le politiche di scheduling mostrate finora al giorno d’oggi non sono più semplicemente applicate spesso infatti sono utilizzati come dei blocchetti su cui poi vengono costruiti gli scheduler moderni.
+Nello scheduling di UNIX è stato introdotto il concetto di **priorità combinato con il round-robin**. Quindi l’idea è che un processo resta in esecuzione per al massimo un quanto di tempo pari ad un secondo (a meno che non termini o non si blocchi). Sono inoltre presenti diverse code, a seconda della priorità, e su ogni coda viene applicato il round-robin.
+Per risolvere il problema della starvation di questo tipo di politica però si è fatto in modo che le priorità venissero ricalcolate ogni quanto di tempo in base a quanto tempo un processo è rimasto in esecuzione (più è rimasto in esecuzione più diminuisce la priorità).
