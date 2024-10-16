@@ -34,18 +34,6 @@
             }
           },
           {
-            "id": "830d5a6d5b602ce2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-10-16_BD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a934f2b6817aa495",
             "type": "leaf",
             "state": {
@@ -58,7 +46,25 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "e44e69e74597cb21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "830d5a6d5b602ce2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-10-16_BD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-10-16_BD.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flet-notes/2024-10-16_BD.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flet-notes/2024-10-16_BD.md"
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md"
               }
             }
           },
@@ -199,11 +205,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "830d5a6d5b602ce2",
+  "active": "265f2e42b5e88b42",
   "lastOpenFiles": [
-    "Files/Pasted image 20241016160527.png",
+    "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+    "Files/Pasted image 20241017004420.png",
     "Flet-notes/2024-10-16_BD.md",
+    "Files/Pasted image 20241016160527.png",
     "Flet-notes/2024-10-16.md",
     "Class/Sistemi Operativi/Scheduling.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
@@ -218,8 +226,6 @@
     "Files/Pasted image 20241015000153.png",
     "Files/Pasted image 20241015000012.png",
     "Files/Pasted image 20241014234219.png",
-    "Files/Pasted image 20241014233624.png",
-    "Files/Pasted image 20241014232323.png",
     "Flet-notes/2024-10-10_BD.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Class.md",
@@ -227,7 +233,6 @@
     "Files/Algebra.pdf",
     "Class/Algebra",
     "Class/Basi di dati/Esercizi.md",
-    "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-09_BD.md",
     "Basi di dati/Esercizi.md",
     "Basi di dati",

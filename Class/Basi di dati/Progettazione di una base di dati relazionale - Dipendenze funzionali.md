@@ -5,6 +5,23 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Tupla|Tupla]]
+- [[#Istanza di relazione|Istanza di relazione]]
+- [[#Dipendenze funzionali|Dipendenze funzionali]]
+	- [[#Dipendenze funzionali#Nota|Nota]]
+	- [[#Dipendenze funzionali#Esempio|Esempio]]
+- [[#Istanza legale|Istanza legale]]
+	- [[#Istanza legale#Osservazione|Osservazione]]
+- [[#Esempio|Esempio]]
+- [[#Chiusura di un insieme di dipendenze funzionali|Chiusura di un insieme di dipendenze funzionali]]
+	- [[#Chiusura di un insieme di dipendenze funzionali#$\textcolor{lightgreen}{\text{F}}$ ed $\textcolor{lightgreen}{\text{F}^+}$|$\textcolor{lightgreen}{\text{F}}$ ed $\textcolor{lightgreen}{\text{F}^+}$]]
+- [[#Chiave|Chiave]]
+	- [[#Chiave#Esempio|Esempio]]
+	- [[#Chiave#Chiave primaria|Chiave primaria]]
+- [[#Dipendenze funzionali banali|Dipendenze funzionali banali]]
+	- [[#Dipendenze funzionali banali#Dipendenze funzionali (proprietà)|Dipendenze funzionali (proprietà)]]
+---
 ## Schema di relazione
 Uno **schema di relazione** R è un insieme di attributi $\{A_{1}, A_{2}, \dots, A_{n}\}$
 Notazione:
@@ -73,3 +90,82 @@ La nuova istanza soddisfa la dipendenza funzionale $\text{A}\rightarrow\text{B}$
 Ogni istanza legale (cioè ogni istanza che soddisfa sia $\text{A}\rightarrow\text{B}$ che $\text{B}\rightarrow\text{C}$ soddisfa sempre anche la dipendenza funzionale $\text{A}\rightarrow\text{C}$). Possiamo considerarla allora “come se fosse in $\text{F}$”?
 
 Dunque dato uno schema di relazione $\text{R}$ e un insieme $\text{F}$ di dipendenze funzionali su $\text{R}$ ci sono delle dipendenze funzionali **che non sono in $\text{F}$**, ma che **sono soddisfatte da ogni istanza legale di $\text{R}$**
+
+---
+## Esempio
+
+$$
+\text{Matricola} \rightarrow \text{CodiceFiscale} \rightarrow \text{DataNascita}
+$$
+devono essere sempre soddisfatte da ogni istanza legale ma allora sarà sempre soddisfatta anche $\text{Matricola}\rightarrow\text{DataNascita}$
+
+
+$$
+\text{CodiceFiscale}\rightarrow\text{Nome, Cognome}
+$$
+deve essere soddisfatta da ogni istanza legale ma allora saranno sempre soddisfatte anche:
+- $\text{CodiceFiscale}\rightarrow\text{Nome}$
+- $\text{CodiceFiscale}\rightarrow\text{Cognome}$
+
+---
+## Chiusura di un insieme di dipendenze funzionali
+Dato uno schema di relazione $\text{R}$ e un insieme $\text{F}$ di dipendenze funzionali su $\text{R}$ la **chiusura di $\text{F}$** è l’insieme delle dipendenze funzionali che sono soddisfatte da ogni istanza legale di $\text{R}$
+Notazione:
+- $\text{F}^+$
+
+### $\textcolor{lightgreen}{\text{F}}$ ed $\textcolor{lightgreen}{\text{F}^+}$
+Se $\text{F}$ è un insieme di dipendenze funzionali su $\text{R}$ ed $r$ è un’istanza di $\text{R}$ che soddisfa **tutte** le dipendenze in $\text{F}$, diciamo che $r$ è un’**istanza legale** di $\text{R}$
+La chiusura di $\text{F}$, denotata con $\text{F}^+$, è l’insieme di dipendenze funzionali che sono soddisfatte **da ogni** istanza legale di $\text{R}$
+Banalmente si ha che $\text{F}\subseteq \text{F}^+$
+
+---
+## Chiave
+Dati uno schema di relazione $\text{R}$ e un insieme $\text{F}$ di dipendenze funzionali, un sottoinsieme $\text{K}$ di uno schema di relazione $\text{R}$ è una **chiave** se $\text{K}\rightarrow\text{R}\in \text{F}^+$ e non esiste un sottoinsieme proprio $\text{K}'$ di $\text{K}$ tale che $\text{K}'\rightarrow\text{R}\in \text{F}^+$
+
+### Esempio
+Consideriamo lo schema
+$$
+\text{Studente=Matr, Cognome, Nome, Data}
+$$
+Il numero di matricola viene assegnato allo studente per identificarlo
+$$
+\Downarrow
+$$
+Quindi non i possono essere due studenti con lo stesso numero di matricola
+$$
+\Downarrow
+$$
+Quindi un’istanza di $\text{Studente}$ per rappresentare correttamente la realtà non può contenere due tuple con lo stesso numero di matricola
+$$
+\Downarrow
+$$
+Quindi $\text{Matr}\rightarrow \text{Matr, Cognome, Nome, Data}$ deve essere soddisfatta da ogni istanza legale
+$$
+\Downarrow
+$$
+Quindi $\text{Matr}$ è una chiave per $\text{Studente}$
+
+### Chiave primaria
+Dati uno schema di relazione $\text{R}$ e un insieme $\text{F}$ di dipendenze funzionali, possono esistere più chiavi di $\text{R}$. In SQL una di esse verrà scelta come **chiave primaria** (non può assumere valore nullo)
+
+ESEMPIO: $\text{Studente}=\text{Matr, }\textbf{CF}\text{, Cognome, Nome, Data}$
+Se prendiamo $\textbf{CF}$ come chiave primaria $\text{Matr}$ deve essere UNIQUE
+
+---
+## Dipendenze funzionali banali
+Dati uno schema di relazione $\text{R}$ e due sottoinsiemi non vuoti $\text{X, Y}$ di $\text{R}$ tali che $\text{Y}\subseteq \text{X}$ si ha che ogni istanza $r$ di $\text{R}$ soddisfa la dipendenza funzionale $\text{X}\rightarrow\text{Y}$
+![[Pasted image 20241016160527.png|440]]
+
+Pertanto se $\text{Y}\subseteq \text{X}$ allora $\text{X}\rightarrow\text{Y}\in \text{F}^+$
+Una tale dipendenza funzionale è detta **banale**
+
+### Dipendenze funzionali (proprietà)
+Dati uno schema di relazione $\text{R}$ e un insieme di dipendenze funzionali $\text{F}$, si ha:
+$$
+\text{X}\rightarrow\text{Y}\in \text{F}^+ \Leftrightarrow \forall \text{A} \in \text{Y}\, (\text{X} \rightarrow \text{A} \in \text{F}^+)
+$$
+$\text{X} \rightarrow \text{Y}$ deve essere soddisfatta sa **ogni** istanza legale di $\text{R}$
+- se $t_{1}[\text{X}]=t_{2}[\text{X}]$ allora deve essere $t_{1}[\text{Y}]=t_{2}[\text{Y}]$
+- ovviamente se $\text{A}\in\text{Y}$ e $t_{1}[\text{A}]\neq t_{2}[\text{A}]$, non può essere $t_{1}[\text{Y}]=t_{2}[\text{Y}]$
+- ovviamente se $\forall\text{A}\in\text{Y}\, t_{1}[\text{A}]= t_{2}[\text{A}]$, avremo $t_{1}[\text{Y}]=t_{2}[\text{Y}]$
+![[Pasted image 20241017004420.png|440]]
