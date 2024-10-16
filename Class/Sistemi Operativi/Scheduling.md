@@ -198,8 +198,15 @@ La politica shortest remaining time è simile alla SPN, ma preemptive. Questa in
 
 ---
 ## HRRN (Highest Response Ratio Next)
-La politica highest response ratio next è una politica non preemptive. Questa richiede la conoscenza del tempo di servizio e risolve il problema della starvation. Qui viene massimizzato il seguente rapporto:
+La politica highest response ratio next è una politica non preemptive. Questa richiede la conoscenza del tempo di servizio e risolve il problema della starvation. Qui viene massimizzato il seguente rapporto (oltre al tempo che ci mette viene confrontato con il tempo in cui è stato fatto aspettare, rendendo la decisione più equa):
 $$
 \frac{w+s}{s}=\frac{\text{tempo trascorso in attesa}+\text{tempo totale richiesto}}{\text{tempo totale richiesto}}
 $$
 ![[Pasted image 20241016105653.png|400]]
+
+---
+## Confronto tra le varie politiche
+![[Pasted image 20241016105907.png]]
+
+---
+## Scheduling tradizionale di UNIX
