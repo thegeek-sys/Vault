@@ -1081,7 +1081,7 @@
         }
       },
       "active": "a91fad9c7db7b57b",
-      "mtime": "2024-10-16T15:17:25+02:00"
+      "mtime": "2024-10-16T15:24:08+02:00"
     },
     "Basi di Dati": {
       "main": {
@@ -1124,7 +1124,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
+                    "file": "Flet-notes/2024-10-16_BD.md",
                     "mode": "source",
                     "source": false
                   }
@@ -1210,7 +1210,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
+                    "file": "Flet-notes/2024-10-16_BD.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1227,7 +1227,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
+                    "file": "Flet-notes/2024-10-16_BD.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1250,7 +1250,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md"
+                    "file": "Flet-notes/2024-10-16_BD.md"
                   }
                 }
               },
@@ -1285,7 +1285,7 @@
         }
       },
       "active": "830d5a6d5b602ce2",
-      "mtime": "2024-10-16T10:53:54+02:00"
+      "mtime": "2024-10-16T15:23:51+02:00"
     }
   },
   "active": "Basi di Dati"
