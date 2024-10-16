@@ -212,4 +212,29 @@ $$
 ## Scheduling tradizionale di UNIX
 Le politiche di scheduling mostrate finora al giorno d’oggi non sono più semplicemente applicate spesso infatti sono utilizzati come dei blocchetti su cui poi vengono costruiti gli scheduler moderni.
 Nello scheduling di UNIX è stato introdotto il concetto di **priorità combinato con il round-robin**. Quindi l’idea è che un processo resta in esecuzione per al massimo un quanto di tempo pari ad un secondo (a meno che non termini o non si blocchi). Sono inoltre presenti diverse code, a seconda della priorità, e su ogni coda viene applicato il round-robin.
-Per risolvere il problema della starvation di questo tipo di politica però si è fatto in modo che le priorità venissero ricalcolate ogni quanto di tempo in base a quanto tempo un processo è rimasto in esecuzione (più è rimasto in esecuzione più diminuisce la priorità).
+Per **risolvere il problema della starvation** di questo tipo di politica però si è fatto in modo che le priorità venissero ricalcolate ogni quanto di tempo in base a quanto tempo un processo è rimasto in esecuzione (più è rimasto in esecuzione più diminuisce la priorità).
+
+Le priorità iniziali sono basate sul tipo di processo:
+- swapper (alta)
+- controllo di un dispositivo di I/O a blocchi
+- gestione di file
+- controllo di un dispositivo di I/O a caratteri
+- processi utente (basso)
+
+### Formula di Scheduling
+$$
+CPU_{j}(i)=\frac{CPU_{j}(i-1)}{2}
+$$
+$$
+P_{j}(i)=Base_{j}+\frac{CPU_{j}(i)}{2}+nice_{j}
+$$
+$CPU_{j}(i)$ → è una misura di quanto un processo $j$  ha usato il processore nell’intervallo $i$, con exponential averaging dei tempi passati; per i running $CPU_{j}(i)$ viene incrementato di $1$ ogni $\frac{1}{60}$ di secondo
+$P_{j}(i)$ → è la priorità del processo $j$ all’inizio di $i$ (più basso è il valore, più è alta la priorità)
+$Base_{j}$ → assegnato in base alle priorità iniziali del processo ($0\leq Base_{j}\leq 4$)
+$nice_{j}$ → un processo può dire che il proprio valore di cortesia è maggiore di zero per auto-declassarsi, in modo tale da far passare avanti altri processi (usata prevalentemente per i processi di sistema) 
+
+### Esempio di Scheduling su UNIX
+$$
+Base_{a}=Base_{b}=Base_{c}=60, \, nice_{a}=nice_{b}=nice_{c}=0
+$$
+![[Pasted image 20241016112748.png|center|300]]
