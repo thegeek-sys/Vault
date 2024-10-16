@@ -195,3 +195,11 @@ $$
 ## SRT (Shortest Remaining Time)
 La politica shortest remaining time è simile alla SPN, ma preemptive. Questa infatti non utilizza un quanto di tempo, dunque un processo può essere bloccato solo quando ne arriva uno nuovo appena creato (o se fa un I/O bloccante). Una volta che un processo è stato interrotto viene rimesso nella coda dei ready; all’arrivo di un nuovo processo viene stimato il tempo rimanente richiesto per l’esecuzione, e viene eseguito il processo con quello più breve
 ![[Pasted image 20241015000902.png|400]]
+
+---
+## HRRN (Highest Response Ratio Next)
+La politica highest response ratio next è una politica non preemptive. Questa richiede la conoscenza del tempo di servizio e risolve il problema della starvation. Qui viene massimizzato il seguente rapporto:
+$$
+\frac{w+s}{s}=\frac{\text{tempo trascorso in attesa}+\text{tempo totale richiesto}}{\text{tempo totale richiesto}}
+$$
+![[Pasted image 20241016105653.png|400]]
