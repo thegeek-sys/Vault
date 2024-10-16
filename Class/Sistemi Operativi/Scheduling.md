@@ -238,3 +238,6 @@ $$
 Base_{a}=Base_{b}=Base_{c}=60, \, nice_{a}=nice_{b}=nice_{c}=0
 $$
 ![[Pasted image 20241016112748.png|center|300]]
+
+---
+## Architetture multiprocessore
