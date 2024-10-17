@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+                "file": "Flet-notes/2024-10-17_BD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+                "file": "Flet-notes/2024-10-17_BD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md"
+                "file": "Flet-notes/2024-10-17_BD.md"
               }
             }
           },
@@ -187,11 +187,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "36686ddf064e9a51",
+  "active": "336be695130fbe4f",
   "lastOpenFiles": [
+    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Flet-notes/2024-10-17_BD.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
-    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Flet-notes/2024-10-16_BD.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Algebra relazionale.md",
