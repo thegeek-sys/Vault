@@ -34,24 +34,12 @@
             }
           },
           {
-            "id": "265f2e42b5e88b42",
+            "id": "336be695130fbe4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a934f2b6817aa495",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "file": "Flet-notes/2024-10-17_BD.md",
                 "mode": "source",
                 "source": false
               }
@@ -201,6 +189,7 @@
   },
   "active": "36686ddf064e9a51",
   "lastOpenFiles": [
+    "Flet-notes/2024-10-17_BD.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Flet-notes/2024-10-16_BD.md",
@@ -241,7 +230,6 @@
     "Flet-notes/2024-09-26_BD.md",
     "Flet-notes/2024-09-29.md",
     "Flet-notes/2024-09-24_SO.md",
-    "Flet-notes/2024-09-25_BD.md",
     "Class/Basi di dati",
     "Class/Sistemi Operativi",
     "Programming languages/Java/Main.java",
