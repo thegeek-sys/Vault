@@ -282,3 +282,6 @@ non appena si agisce sul mouse o tastiera, per dare l’illusione di una rispost
 vengono tipicamente penalizzati dallo scheduler, l’utente è infatti disposto ad aspettare un po’ di può (compilazioni, computazioni scientifiche etc.)
 #### Real-time
 sono gli unici riconosciuti come tali da Linux infatti nel loro codice sorgente viene usata la system call `sched_setscheduler`, gli altri invece sono distinti in base a quante richieste all’I/O vengono fatte. Questi sono ad esempio audio/video ma normalmente sono usati solo dai KLT di sistema
+
+### Classi di scheduling
+In Linux sono presenti 3 diverse classi di scheduliung
