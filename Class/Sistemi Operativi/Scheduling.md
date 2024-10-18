@@ -5,6 +5,57 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Scopo dello scheduling|Scopo dello scheduling]]
+	- [[#Introduction#Obiettivi dello scheduling|Obiettivi dello scheduling]]
+- [[#Tipi di Scheduling|Tipi di Scheduling]]
+- [[#Processi e scheduling|Processi e scheduling]]
+	- [[#Processi e scheduling#Stati dei processi|Stati dei processi]]
+	- [[#Processi e scheduling#Code dei processi|Code dei processi]]
+- [[#Long-term scheduling|Long-term scheduling]]
+- [[#Medium-term scheduler|Medium-term scheduler]]
+- [[#Short-term scheduler|Short-term scheduler]]
+	- [[#Short-term scheduler#Scopo|Scopo]]
+	- [[#Short-term scheduler#Criteri|Criteri]]
+		- [[#Criteri#Criteri utente|Criteri utente]]
+			- [[#Criteri utente#Turn-around Time|Turn-around Time]]
+			- [[#Criteri utente#Response time|Response time]]
+			- [[#Criteri utente#Deadline e Predictability|Deadline e Predictability]]
+		- [[#Criteri#Criteri sistema|Criteri sistema]]
+			- [[#Criteri sistema#Throughput|Throughput]]
+			- [[#Criteri sistema#Processor utilization|Processor utilization]]
+			- [[#Criteri sistema#Bilanciamento delle risorse|Bilanciamento delle risorse]]
+			- [[#Criteri sistema#Fairness e priorità|Fairness e priorità]]
+- [[#Politiche di scheduling|Politiche di scheduling]]
+	- [[#Politiche di scheduling#Funzione di selezione|Funzione di selezione]]
+	- [[#Politiche di scheduling#Modalità di decisione|Modalità di decisione]]
+	- [[#Politiche di scheduling#Scenario comune di esempio|Scenario comune di esempio]]
+- [[#FCFS (First Come First Served)|FCFS (First Come First Served)]]
+- [[#Round-Robin|Round-Robin]]
+	- [[#Round-Robin#Misura del quanto di tempo per la preemption|Misura del quanto di tempo per la preemption]]
+	- [[#Round-Robin#CPU-bound vs. I/O-bound|CPU-bound vs. I/O-bound]]
+- [[#SPN (Shortest Process Next)|SPN (Shortest Process Next)]]
+	- [[#SPN (Shortest Process Next)#Come stimare il tempo di esecuzione?|Come stimare il tempo di esecuzione?]]
+- [[#SRT (Shortest Remaining Time)|SRT (Shortest Remaining Time)]]
+- [[#HRRN (Highest Response Ratio Next)|HRRN (Highest Response Ratio Next)]]
+- [[#Confronto tra le varie politiche|Confronto tra le varie politiche]]
+- [[#Scheduling tradizionale di UNIX|Scheduling tradizionale di UNIX]]
+	- [[#Scheduling tradizionale di UNIX#Formula di Scheduling|Formula di Scheduling]]
+	- [[#Scheduling tradizionale di UNIX#Esempio di Scheduling su UNIX|Esempio di Scheduling su UNIX]]
+- [[#Architetture multi-processore|Architetture multi-processore]]
+	- [[#Architetture multi-processore#Scheduler|Scheduler]]
+		- [[#Scheduler#Assegnamento statico|Assegnamento statico]]
+		- [[#Scheduler#Assegnamento dinamico|Assegnamento dinamico]]
+- [[#Scheduling in Linux|Scheduling in Linux]]
+	- [[#Scheduling in Linux#Runqueues e wait queues|Runqueues e wait queues]]
+	- [[#Scheduling in Linux#Politica di scheduling|Politica di scheduling]]
+	- [[#Scheduling in Linux#Tipi di processi|Tipi di processi]]
+		- [[#Tipi di processi#Interattivi|Interattivi]]
+		- [[#Tipi di processi#Batch|Batch]]
+		- [[#Tipi di processi#Real-time|Real-time]]
+	- [[#Scheduling in Linux#Classi di scheduling|Classi di scheduling]]
+---
 ## Introduction
 Un sistema operativo deve allocare risorse tra diversi processi che ne fanno richiesta contemporaneamente. Tra le diverse possibili risorse, c’è il tempo di esecuzione, che viene fornito da un processore. Questa risorsa viene allocata tramite lo **scheduling**
 
@@ -263,6 +314,7 @@ Una seconda possibilità è quella di eseguire il SO non su un processore fisso 
 ## Scheduling in Linux
 Nel corso degli anni lo scheduling di Linux è cambiato molteplici volte, quello qui presentato è uno scheduling in disuso da qualche anno.
 Linux, per quanto riguarda lo scheduling, è alla ricerca di velocità di esecuzione, tramite semplicità di implementazione così da mantenere un overhead il più basso possibile. Per questo motivo in questo SO non sono presenti né long-term scheduler (anche se un suo embrione ovvero se viene creato un nuovo processo ma il sistema è già saturo), né medium-term scheduler (ci torneremo quando si parlerà di gestione della memoria).
+Questo è un sistema ad assegnamento statico, ma rimane presente una routine che periodicamente ridistribuisce il carico se necessario
 
 ### Runqueues e wait queues
 In Linux ci sono le *runqueues* (la coda dei processi ready) e le *wait queues*
@@ -283,7 +335,7 @@ non appena si agisce sul mouse o tastiera, per dare l’illusione di una rispost
 #### Batch
 vengono tipicamente penalizzati dallo scheduler, l’utente è infatti disposto ad aspettare un po’ di può (compilazioni, computazioni scientifiche etc.)
 #### Real-time
-sono gli unici riconosciuti come tali da Linux infatti nel loro codice sorgente viene usata la system call `sched_setscheduler`, gli altri invece sono distinti in base a quante richieste all’I/O vengono fatte. Questi sono ad esempio audio/video ma normalmente sono usati solo dai KLT di sistema
+sono gli unici riconosciuti come tali da Linux infatti nel loro codice sorgente viene usata la system call `sched_setscheduler`, gli altri invece sono distinti in base a quante richieste all’I/O vengono fatte. Questi sono ad esempio audio/video ma normalmente sono usati solo dai KLT di sistema. Questi **non cambiano mai la priorità**
 
 ### Classi di scheduling
 In Linux sono presenti 3 diverse classi di scheduling
@@ -297,4 +349,8 @@ Per quanto riguarda `SCHED_OTHER` a differenza di UNIX la preemption può essere
 - un altro processo passa da uno degli stati blocked a `RUNNING` (in modo tale da favorire i processi interattivi)
 Molto spesso capita che il processo che è appena diventato eseguibile verrà effettivamente eseguito dal processore e a seconda di quante CPU ci sono, può soppiantare il processo precedente questo perché probabilmente si tratta di un processo interattivo, cui bisogna dare precedenza
 
-Un processo `SCHED_FIFO` non viene bloccato da altri processi che diventano eseguibili, però 
+Un processo `SCHED_FIFO` essendo FIFO, non viene bloccato da interrupt ma viene preempted e rimesso in coda solo se:
+- si blocca per I/O (o rilascia volontariamente la CPU)
+- un altro processo passa da uno degli stati blocked a `RUNNING` ed ha priorità più alta
+Altrimenti, non viene mai fermato.
+`SCHED_RR` invece, come `SCHED_OTHER`, lavora su quanti di tempo
