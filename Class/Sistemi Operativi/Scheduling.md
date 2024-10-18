@@ -271,4 +271,5 @@ Le *runqueues* (coda dei processi ready, plurale perché ci sta una coda per ogn
 >[!hint] Notare
 >Le *wait queues* sono condivide dai processori, invece per le *runqueues* ogni processore ha le proprie
 
-Per quanto riguarda la politica di scheduling è sostanzialmente **derivata da quella di UNIX**: preemptive a priorità dinamica (decresce man mano che un processo viene eseguito, cresce man mano che un processo non viene eseguito) seppur con **alcune modifiche** per poter **migliorare la velocità** e per poter servire nel modo più approrpiato i processi real-time (se ci sono)
+Per quanto riguarda la politica di scheduling è sostanzialmente **derivata da quella di UNIX**: preemptive a priorità dinamica (decresce man mano che un processo viene eseguito, cresce man mano che un processo non viene eseguito) seppur con **alcune modifiche** per poter **migliorare la velocità** e per poter servire nel modo più approrpiato i processi real-time (se ci sono).
+Linux istruisce l’hardware di mandare un timer interrupt ogni $1 \text{ ms}$; è stato infatti studiato che se fosse più lungo creerebbe problemi per i processi real-time, mentre se fosse più corto arriverebbero troppi interrupt e si spenderebbe troppo tempo in Kernel Mode
