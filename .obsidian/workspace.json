@@ -24,6 +24,20 @@
             }
           },
           {
+            "id": "3d7f3dd856b9e87c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Gestione della memoria"
+            }
+          },
+          {
             "id": "e37f031c5f609d0f",
             "type": "leaf",
             "state": {
@@ -52,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +149,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Scheduling"
+              "title": "Backlinks for Gestione della memoria"
             }
           },
           {
@@ -144,12 +158,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Scheduling"
+              "title": "Outgoing links from Gestione della memoria"
             }
           },
           {
@@ -171,10 +185,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md"
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Scheduling"
+              "title": "Outline of Gestione della memoria"
             }
           },
           {
@@ -209,11 +223,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a91fad9c7db7b57b",
+  "active": "3d7f3dd856b9e87c",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Processi.md",
-    "Class/Sistemi Operativi/Scheduling.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Gestione della memoria.md",
+    "Class/Sistemi Operativi/Scheduling.md",
+    "Class/Sistemi Operativi/Processi.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Flet-notes/2024-10-17_BD.md",
     "Flet-notes/2024-10-16_BD.md",
@@ -251,7 +266,6 @@
     "Flet-notes/2024-09-27_SO.md",
     "Flet-notes/2024-09-26_BD.md",
     "Flet-notes/2024-09-29.md",
-    "Flet-notes/2024-09-24_SO.md",
     "Class/Basi di dati",
     "Class/Sistemi Operativi",
     "Programming languages/Java/Main.java",
