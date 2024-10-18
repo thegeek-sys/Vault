@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -223,15 +223,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3d7f3dd856b9e87c",
+  "active": "e37f031c5f609d0f",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Processi.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
+    "Class/Sistemi Operativi/Processi.md",
     "Files/Pasted image 20241018222723.png",
     "Files/Pasted image 20241018221459.png",
     "Files/Pasted image 20241018221354.png",
     "Files/Pasted image 20241018220727.png",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Scheduling.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Flet-notes/2024-10-17_BD.md",
