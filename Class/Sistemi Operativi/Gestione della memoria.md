@@ -17,4 +17,11 @@ In conclusione occorre gestire la memoria affinché ci siano sempre un numero ra
 ---
 ## Requisiti per la gestione della memoria
 I requisiti per la gestione della memoria sono:
-- **Rilocazione** → 
+- **Rilocazione** → richiede che ci sia aiuto hardware (il sistema operativo viene aiutato da opportune funzioni macchina di basso livello)
+- **Protezione** → richiede che ci sia aiuto hardware
+- **Condivisione**
+- **Organizzazione logica**
+
+---
+## Rilocazione
+Il programma non sa e non deve sapere in quale zona della memoria il programma verrà caricato. Questo atteggiamento è chiamato **rilocazione**, il programma deve essere in grado di **essere eseguito indipendentemente da dove si trovi in memoria**.
