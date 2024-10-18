@@ -372,7 +372,7 @@ Dal kernel running si può passare a preempted, ovvero quel momento prima che fi
 Quando un processo finisce, prima che muoia, va nello stato zombie, in cui tutta la memoria di quel processo viene deallocata (compresa l’immagine) e l’unica cosa che sopravvive è il process control block con l’unico scopo di comunicare l’exit status al padre; una volta che il padre ha ricevuto che il figlio gli ha dato questo exit status, a quel punto anche il PCB viene tolto e il processo figlio viene definitivamente terminato
 Da notare che un processo in kernel mode non è interrompibile che non lo rendeva adatto ai processi real-time
 
-In sintesi:
+In sintesi
 **User running** → in esecuzione in modalità utente; per passare in questo stato bisogna necessariamente passare per kernel running in quanto è avvenuto un process switch, l’unica cosa che può avvenire è tornare in kernel running in seguito ad una system call o interrupt
 **Kernel running** → in esecuzione in modalità kernel o sistema
 **Ready to Run, in Memory** → può andare in esecuzione non appena il kernel lo seleziona

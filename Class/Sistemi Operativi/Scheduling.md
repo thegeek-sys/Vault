@@ -23,7 +23,7 @@ Deve inoltre evitare la starvation dei processi, ma anche avere un **overhead** 
 Esistono vari tipi di scheduler in base a quanto spesso un processo viene eseguito:
 - *Long-term scheduling* → decide l’aggiunta ai processi da essere eseguiti (eseguito molto di rado)
 - *Medium-term scheduling* → decide l’aggiunta ai processi che sono in memoria principale (eseguito sempre non molto spesso)
-- *Short-term scheduling* → decide quale processo, tra quelli pronti, va eseguito da un processore(eseguito molto spesso)
+- *Short-term scheduling* → decide quale processo, tra quelli pronti, va eseguito da un processore (eseguito molto spesso)
 - *I/O scheduling* → decide a quale processo, tra quelli con una richiesta pendente per l’I/O, va assegnato il corrispondente dispositivo di I/O
 
 ---
@@ -261,3 +261,5 @@ Una seconda possibilità è quella di eseguire il SO non su un processore fisso 
 
 ---
 ## Scheduling in Linux
+Nel corso degli anni lo scheduling di Linux è cambiato molteplici volte, quello qui presentato è uno scheduling in disuso da qualche anno.
+Linux, per quanto riguarda lo scheduling, è alla ricerca di velocità di esecuzione, tramite semplicità di implementazione così da mantenere un overhead il più basso possibile. Per questo motivo in questo SO non sono presenti né long-term scheduler (anche se un suo embrione ovvero se viene creato un nuovo processo ma il sistema è già saturo), né medium-term scheduler (ci torneremo quando si parlerà di gestione della memoria).
