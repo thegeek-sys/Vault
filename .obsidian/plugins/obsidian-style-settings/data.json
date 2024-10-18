@@ -1,6 +1,4 @@
 {
-  "Editor@@line-active-bg-color": "line-active-bg-color-default",
-  "Editor@@line-active-disable": false,
   "Mobile@@card-layout-pad-open": false,
   "Appearance-dark@@card-layout-open-dark": true,
   "com-github-birneee-obsidian-adwaita@@adwaita-colors": "adwaita-colors-always",
@@ -17,8 +15,6 @@
   "Components@@vault-name-display-select": "vault-name-hide",
   "Components@@file-icon-remove": false,
   "Components@@colorful-folder": false,
-  "Components@@file-icon-color-select": "file-icon-color-accent",
-  "Components@@file-icon-style-select": "file-icon-line",
   "Components@@outline-enhanced": false,
   "Plugin@@Projects-bg-color": "Projects-bg-color-default",
   "Plugin@@Surfing-bookmark-bar-hide": false,

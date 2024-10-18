@@ -17,4 +17,4 @@ In conclusione occorre gestire la memoria affinché ci siano sempre un numero ra
 ---
 ## Requisiti per la gestione della memoria
 I requisiti per la gestione della memoria sono:
-- **Rilocazione** →
+- **Rilocazione** → 
