@@ -264,6 +264,7 @@ Una seconda possibilità è quella di eseguire il SO non su un processore fisso 
 Nel corso degli anni lo scheduling di Linux è cambiato molteplici volte, quello qui presentato è uno scheduling in disuso da qualche anno.
 Linux, per quanto riguarda lo scheduling, è alla ricerca di velocità di esecuzione, tramite semplicità di implementazione così da mantenere un overhead il più basso possibile. Per questo motivo in questo SO non sono presenti né long-term scheduler (anche se un suo embrione ovvero se viene creato un nuovo processo ma il sistema è già saturo), né medium-term scheduler (ci torneremo quando si parlerà di gestione della memoria).
 
+### Runqueues e wait queues
 In Linux ci sono le *runqueues* (la coda dei processi ready) e le *wait queues*
 Le *wait queues* (coda dei blocked, plurale perché ci sta una coda per ogni evento) sono proprio le code in cui i processi sono messi in attesa quando fanno una richiesta che implichi l’attesa
 Le *runqueues* (coda dei processi ready, plurale perché ci sta una coda per ogni priorità) sono quelle da cui pesca il dispatcher (short-term scheduler)
@@ -271,6 +272,7 @@ Le *runqueues* (coda dei processi ready, plurale perché ci sta una coda per ogn
 >[!hint] Notare
 >Le *wait queues* sono condivide dai processori, invece per le *runqueues* ogni processore ha le proprie
 
+### Politica di scheduling
 Per quanto riguarda la politica di scheduling è sostanzialmente **derivata da quella di UNIX**: preemptive a priorità dinamica (decresce man mano che un processo viene eseguito, cresce man mano che un processo non viene eseguito) seppur con **alcune modifiche** per poter **migliorare la velocità** e per poter servire nel modo più approrpiato i processi real-time (se ci sono).
 Linux istruisce l’hardware di mandare un timer interrupt ogni $1 \text{ ms}$ ovvero **ogni quanto tempo Linux si deve fermare per decidere se deve fare qualcosa**; è stato infatti studiato che se fosse più lungo creerebbe problemi per i processi real-time, mentre se fosse più corto arriverebbero troppi interrupt e si spenderebbe troppo tempo in Kernel Mode. Il quanto di tempo per il round-robin è dunque un multiplo di $1 \text{ ms}$
 
@@ -284,4 +286,8 @@ vengono tipicamente penalizzati dallo scheduler, l’utente è infatti disposto 
 sono gli unici riconosciuti come tali da Linux infatti nel loro codice sorgente viene usata la system call `sched_setscheduler`, gli altri invece sono distinti in base a quante richieste all’I/O vengono fatte. Questi sono ad esempio audio/video ma normalmente sono usati solo dai KLT di sistema
 
 ### Classi di scheduling
-In Linux sono presenti 3 diverse classi di scheduliung
+In Linux sono presenti 3 diverse classi di scheduling
+- `SCHED_FIFO` e `SCHED_RR` fanno riferimento ai processi real-time
+- `SCHED_OTHER` tutti gli altri processi
+
+Prima si eseguono i processi in `SCHED_FIFO` e `SCHED_RR`, poi quelli in `SCHED_OTHER`. Questo poiché le prima 2 classi hanno un livello di priorità da 1 a 99, la terza da 100 a 139. Questo vuol dire che ci sono 140 runqueues per ogni processore. Si passa dall’esecuzione sul livello $n$ al livello $n+1$ solo se o non ci sono processi in $n$, o se nessun processo in $n$ è `RUNNING`
