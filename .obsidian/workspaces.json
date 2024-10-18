@@ -1089,13 +1089,12 @@
         "type": "split",
         "children": [
           {
-            "id": "36e4e4609b40d962",
+            "id": "455919ad3cc4a222",
             "type": "tabs",
             "children": [
               {
-                "id": "373b30eeb107129c",
+                "id": "785e57b5e4fd92db",
                 "type": "leaf",
-                "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
@@ -1103,11 +1102,12 @@
                     "mode": "source",
                     "source": false
                   },
-                  "pinned": true
+                  "icon": "lucide-file",
+                  "title": "Basi di dati"
                 }
               },
               {
-                "id": "265f2e42b5e88b42",
+                "id": "7d262e6786c4a723",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -1115,35 +1115,53 @@
                     "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
                     "mode": "source",
                     "source": false
-                  }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Progettazione di una base di dati relazionale - Dipendenze funzionali"
                 }
               },
               {
-                "id": "830d5a6d5b602ce2",
+                "id": "1523c3b3016b43fb",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Flet-notes/2024-10-16_BD.md",
+                    "file": "Flet-notes/2024-10-17_BD.md",
                     "mode": "source",
                     "source": false
-                  }
+                  },
+                  "icon": "lucide-file",
+                  "title": "2024-10-17_BD"
                 }
               },
               {
-                "id": "a934f2b6817aa495",
+                "id": "0c9472a68ef3152c",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Basi di dati/Algebra relazionale.md",
+                    "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
                     "mode": "source",
                     "source": false
-                  }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Chiusura di un insieme di dipendenze funzionali"
+                }
+              },
+              {
+                "id": "b3235deacd366c2a",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.7.4"
+                  },
+                  "icon": "lucide-file",
+                  "title": "Release Notes 1.7.4"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -1163,7 +1181,9 @@
                   "type": "file-explorer",
                   "state": {
                     "sortOrder": "alphabetical"
-                  }
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
                 }
               },
               {
@@ -1178,7 +1198,9 @@
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical"
-                  }
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
                 }
               },
               {
@@ -1186,7 +1208,9 @@
                 "type": "leaf",
                 "state": {
                   "type": "bookmarks",
-                  "state": {}
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
                 }
               }
             ]
@@ -1210,7 +1234,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-10-16_BD.md",
+                    "file": "Class/Basi di dati/Basi di dati.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1218,7 +1242,9 @@
                     "searchQuery": "",
                     "backlinkCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Basi di dati"
                 }
               },
               {
@@ -1227,10 +1253,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Flet-notes/2024-10-16_BD.md",
+                    "file": "Class/Basi di dati/Basi di dati.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Basi di dati"
                 }
               },
               {
@@ -1241,7 +1269,9 @@
                   "state": {
                     "sortOrder": "frequency",
                     "useHierarchy": true
-                  }
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
                 }
               },
               {
@@ -1250,8 +1280,10 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Flet-notes/2024-10-16_BD.md"
-                  }
+                    "file": "Class/Basi di dati/Basi di dati.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Basi di dati"
                 }
               },
               {
@@ -1259,7 +1291,9 @@
                 "type": "leaf",
                 "state": {
                   "type": "advanced-tables-toolbar",
-                  "state": {}
+                  "state": {},
+                  "icon": "spreadsheet",
+                  "title": "Advanced Tables"
                 }
               }
             ]
@@ -1284,9 +1318,9 @@
           "workspaces:Manage workspace layouts": false
         }
       },
-      "active": "830d5a6d5b602ce2",
-      "mtime": "2024-10-16T15:23:51+02:00"
+      "active": "b3235deacd366c2a",
+      "mtime": "2024-10-18T18:46:02+02:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }

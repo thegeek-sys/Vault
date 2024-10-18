@@ -240,4 +240,24 @@ $$
 ![[Pasted image 20241016112748.png|center|300]]
 
 ---
-## Architetture multiprocessore
+## Architetture multi-processore
+Esistono varie architetture multi-processore al giorno d’oggi:
+- Cluster
+	architettura multiprocessore con memoria non condivisa (ogni processore ha la propria RAM) e la connessione con rete locale tra di essi è superveloce
+- Processori specializzati (es. ogni I/O device ha un suo processore)
+- **Multi-processore e/o multi-core**
+	Questi condividono la RAM (ci sta un’unica RAM che tutti i processori utilizzano) e sono controllati da un solo SO (a differenza degli altri due)
+
+### Scheduler
+Abbiamo sostanzialmente due possibilità: **assegnamento statico** e **assegnamento dinamico**. Per assegnamento si intende decidere quale processo va su quale processore
+#### Assegnamento statico
+Quando un processo viene creato gli viene assegnato un processore e fino alla terminazione del processo, questo viene eseguito sullo stesso processore.
+La struttura dell’assegnamento statico è molto semplice, ci basterà infatti avere uno scheduler per ogni processore e dunque l’overhead sarà molto basso; lo svantaggio sta nel fatto che un processore potrebbe rimanere idle, la distribuzione dei processi infatti potrebbe non essere equa
+
+#### Assegnamento dinamico
+Per migliorare lo svantaggio dell’assegnamento statico, un processo, nel corso della sua vita potrà essere eseguito su diversi processori. Seppur ragionevole la sua realizzazione è particolarmente complessa, specie se si vuole mantenere un overhead basso.
+Per semplificare la realizzazione si potrebbe decidere di fare in modo di eseguire il SO su un processore fisso, lasciando che solo i processi utente possano cambiare. Lo svantaggio però sta nel fatto che questo potrebbe diventare un bottleneck e che mentre per i processi utente il sistema potrebbe funzionare con una failure di un processore, se fallisce quello del SO no.
+Una seconda possibilità è quella di eseguire il SO non su un processore fisso ma seguendo le stesse regole dei processi utente, ma che richiederebbe più overhead
+
+---
+## Scheduling in Linux
