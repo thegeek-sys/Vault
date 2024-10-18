@@ -32,3 +32,12 @@ Può accadere infatti che:
 I riferimenti alla memoria devono tradotti nell’indirizzo fisico “vero”; può essere fatto tramite preprocessing o runtime (ogni volta che viene eseguita un’istruzione, se quell’istruzione contiene un indirizzo occorre fare la sostituzione), in quest’ultimo caso è necessario avere un supporto hardware (a livello software ci sarebbe un overhead troppo grande)
 
 ![[Pasted image 20241018220727.png|400]]
+
+### Indirizzi nei programmi
+Il *linker* ha il compito di unire quelli che sono i moduli (ovvero tutti i file di un programma) e le librerie statiche (librerie esterne) e crea come output un *load module* che può essere preso e caricato in memoria RAM, passaggio che avviene tramite il *loader* che unisce eventuali librerie dinamiche
+![[Pasted image 20241018221354.png|450]]
+
+Si parte dal caso (a) in cui si hanno dei link simbolici alle parti del programma
+Nel caso (b) si hanno degli indirizzi assoluti ma questo è possibile solo nel caso in cui si sa da che indirizzo si parte, deve quindi avvenire in preprocessing
+Nel caso (c) si salta ad un indirizzo relativo rispetto all’inizio
+![[Pasted image 20241018221459.png]]

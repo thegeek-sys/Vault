@@ -122,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -224,6 +225,8 @@
   },
   "active": "3d7f3dd856b9e87c",
   "lastOpenFiles": [
+    "Files/Pasted image 20241018221459.png",
+    "Files/Pasted image 20241018221354.png",
     "Files/Pasted image 20241018220727.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
@@ -246,8 +249,6 @@
     "Files/Pasted image 20241015000902.png",
     "Files/Pasted image 20241015000248.png",
     "Files/Pasted image 20241015000153.png",
-    "Files/Pasted image 20241015000012.png",
-    "Files/Pasted image 20241014234219.png",
     "Flet-notes/2024-10-10_BD.md",
     "Class/Class.md",
     "Class/Algebra/Algebra.md",
