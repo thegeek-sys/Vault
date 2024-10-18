@@ -24,6 +24,11 @@ I requisiti per la gestione della memoria sono:
 
 ---
 ## Rilocazione
-Il programma non sa e non deve sapere in quale zona della memoria il programma verrà caricato. Questo atteggiamento è chiamato **rilocazione**, il programma deve essere in grado di **essere eseguito indipendentemente da dove si trovi in memoria**.
+Il programmatore (assembler o compilatore) non sa e non deve sapere in quale zona della memoria il programma verrà caricato. Questo atteggiamento è chiamato **rilocazione**, il programma deve essere in grado di **essere eseguito indipendentemente da dove si trovi in memoria**.
 Può accadere infatti che:
 - potrebbe essere swappato su disco, e al ritorno in memoria principale potrebbe essere in un’altra posizione
+- potrebbe anche non essere contiguo, oppure con alcune pagine in RAM e altre su disco
+
+I riferimenti alla memoria devono tradotti nell’indirizzo fisico “vero”; può essere fatto tramite preprocessing o runtime (ogni volta che viene eseguita un’istruzione, se quell’istruzione contiene un indirizzo occorre fare la sostituzione), in quest’ultimo caso è necessario avere un supporto hardware (a livello software ci sarebbe un overhead troppo grande)
+
+![[Pasted image 20241018220727.png|400]]
