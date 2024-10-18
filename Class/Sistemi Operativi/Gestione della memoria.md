@@ -25,3 +25,5 @@ I requisiti per la gestione della memoria sono:
 ---
 ## Rilocazione
 Il programma non sa e non deve sapere in quale zona della memoria il programma verrà caricato. Questo atteggiamento è chiamato **rilocazione**, il programma deve essere in grado di **essere eseguito indipendentemente da dove si trovi in memoria**.
+Può accadere infatti che:
+- potrebbe essere swappato su disco, e al ritorno in memoria principale potrebbe essere in un’altra posizione
