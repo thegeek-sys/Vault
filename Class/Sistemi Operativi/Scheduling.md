@@ -272,4 +272,13 @@ Le *runqueues* (coda dei processi ready, plurale perché ci sta una coda per ogn
 >Le *wait queues* sono condivide dai processori, invece per le *runqueues* ogni processore ha le proprie
 
 Per quanto riguarda la politica di scheduling è sostanzialmente **derivata da quella di UNIX**: preemptive a priorità dinamica (decresce man mano che un processo viene eseguito, cresce man mano che un processo non viene eseguito) seppur con **alcune modifiche** per poter **migliorare la velocità** e per poter servire nel modo più approrpiato i processi real-time (se ci sono).
-Linux istruisce l’hardware di mandare un timer interrupt ogni $1 \text{ ms}$; è stato infatti studiato che se fosse più lungo creerebbe problemi per i processi real-time, mentre se fosse più corto arriverebbero troppi interrupt e si spenderebbe troppo tempo in Kernel Mode
+Linux istruisce l’hardware di mandare un timer interrupt ogni $1 \text{ ms}$ ovvero **ogni quanto tempo Linux si deve fermare per decidere se deve fare qualcosa**; è stato infatti studiato che se fosse più lungo creerebbe problemi per i processi real-time, mentre se fosse più corto arriverebbero troppi interrupt e si spenderebbe troppo tempo in Kernel Mode. Il quanto di tempo per il round-robin è dunque un multiplo di $1 \text{ ms}$
+
+### Tipi di processi
+Linux riconosce tre tipi di processi in quanto ogni tipo di processo ha necessità diverse. Ma tutti possono essere sia CPU-bound che I/O-bound
+#### Interattivi
+non appena si agisce sul mouse o tastiera, per dare l’illusione di una risposta reattiva, bisogna dare il controllo al processo corrispondente in al massimo $150 \text{ ms}$ altrimenti l’utente se ne accorge
+#### Batch
+vengono tipicamente penalizzati dallo scheduler, l’utente è infatti disposto ad aspettare un po’ di può (compilazioni, computazioni scientifiche etc.)
+#### Real-time
+sono gli unici riconosciuti come tali da Linux infatti nel loro codice sorgente viene usata la system call `sched_setscheduler`, gli altri invece sono distinti in base a quante richieste all’I/O vengono fatte. Questi sono ad esempio audio/video ma normalmente sono usati solo dai KLT di sistema
