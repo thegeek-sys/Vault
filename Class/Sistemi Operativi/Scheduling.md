@@ -291,3 +291,10 @@ In Linux sono presenti 3 diverse classi di scheduling
 - `SCHED_OTHER` tutti gli altri processi
 
 Prima si eseguono i processi in `SCHED_FIFO` e `SCHED_RR`, poi quelli in `SCHED_OTHER`. Questo poiché le prima 2 classi hanno un livello di priorità da 1 a 99, la terza da 100 a 139. Questo vuol dire che ci sono 140 runqueues per ogni processore. Si passa dall’esecuzione sul livello $n$ al livello $n+1$ solo se o non ci sono processi in $n$, o se nessun processo in $n$ è `RUNNING`
+
+Per quanto riguarda `SCHED_OTHER` a differenza di UNIX la preemption può essere dovuta a due casi:
+- si esaurisce il  quanto di tempo del processo attualmente in esecuzione
+- un altro processo passa da uno degli stati blocked a `RUNNING` (in modo tale da favorire i processi interattivi)
+Molto spesso capita che il processo che è appena diventato eseguibile verrà effettivamente eseguito dal processore e a seconda di quante CPU ci sono, può soppiantare il processo precedente questo perché probabilmente si tratta di un processo interattivo, cui bisogna dare precedenza
+
+Un processo `SCHED_FIFO` non viene bloccato da altri processi che diventano eseguibili, però 
