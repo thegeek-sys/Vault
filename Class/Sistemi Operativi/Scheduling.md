@@ -263,3 +263,5 @@ Una seconda possibilità è quella di eseguire il SO non su un processore fisso 
 ## Scheduling in Linux
 Nel corso degli anni lo scheduling di Linux è cambiato molteplici volte, quello qui presentato è uno scheduling in disuso da qualche anno.
 Linux, per quanto riguarda lo scheduling, è alla ricerca di velocità di esecuzione, tramite semplicità di implementazione così da mantenere un overhead il più basso possibile. Per questo motivo in questo SO non sono presenti né long-term scheduler (anche se un suo embrione ovvero se viene creato un nuovo processo ma il sistema è già saturo), né medium-term scheduler (ci torneremo quando si parlerà di gestione della memoria).
+
+In Linux ci sono le *runqueues* (la coda dei processi ready) e le *wait queues* (code dei blocked)
