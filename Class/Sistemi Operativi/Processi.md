@@ -328,7 +328,7 @@ Uno switch può avvenire per i seguenti motivi
 | Chiamata al SO | Richiesta esplicita                               | Chiamata a funzione di sistema (caso particolare di eccezione)                                                                          |
 
 ### Passaggi per lo switch
-Quando si deve sostituire un processo per prima cosa si switcha in kernel mode poi:
+Quando si deve sostituire un processo (*process switch*) per prima cosa si switcha in kernel mode poi:
 1. Si salva il contesto del programma (registri e PC salvati nel PCB di quel processo)
 2. Aggiornare il process control block per quanto riguarda lo stato, attualmente in running
 3. Spostare il process control block nella coda appropriata: ready, blocked, ready/suspended

@@ -78,5 +78,11 @@
   "anuppuccin-theme-settings@@anp-table-align-td": "left",
   "anuppuccin-theme-settings@@anp-table-th-highlight": false,
   "TokyoNight@@bold-color@@light": "#5A4A78",
-  "TokyoNight@@bold-color@@dark": "#BB9AF7"
+  "TokyoNight@@bold-color@@dark": "#BB9AF7",
+  "TokyoNight@@scrollbar-width": 20,
+  "TokyoNight@@scrollbar-bg@@light": "#BCBDC2",
+  "TokyoNight@@scrollbar-bg@@dark": "#121218",
+  "TokyoNight@@scrollbar-thumb-bg@@light": "#9699A3",
+  "TokyoNight@@scrollbar-thumb-bg@@dark": "#565F89",
+  "TokyoNight@@scrollbar-active-thumb-bg@@light": "#CBCCD1"
 }
