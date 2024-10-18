@@ -264,4 +264,11 @@ Una seconda possibilità è quella di eseguire il SO non su un processore fisso 
 Nel corso degli anni lo scheduling di Linux è cambiato molteplici volte, quello qui presentato è uno scheduling in disuso da qualche anno.
 Linux, per quanto riguarda lo scheduling, è alla ricerca di velocità di esecuzione, tramite semplicità di implementazione così da mantenere un overhead il più basso possibile. Per questo motivo in questo SO non sono presenti né long-term scheduler (anche se un suo embrione ovvero se viene creato un nuovo processo ma il sistema è già saturo), né medium-term scheduler (ci torneremo quando si parlerà di gestione della memoria).
 
-In Linux ci sono le *runqueues* (la coda dei processi ready) e le *wait queues* (code dei blocked)
+In Linux ci sono le *runqueues* (la coda dei processi ready) e le *wait queues*
+Le *wait queues* (coda dei blocked, plurale perché ci sta una coda per ogni evento) sono proprio le code in cui i processi sono messi in attesa quando fanno una richiesta che implichi l’attesa
+Le *runqueues* (coda dei processi ready, plurale perché ci sta una coda per ogni priorità) sono quelle da cui pesca il dispatcher (short-term scheduler)
+
+>[!hint] Notare
+>Le *wait queues* sono condivide dai processori, invece per le *runqueues* ogni processore ha le proprie
+
+Per quanto riguarda la politica di scheduling è sostanzialmente **derivata da quella di UNIX**: preemptive a priorità dinamica (decresce man mano che un processo viene eseguito, cresce man mano che un processo non viene eseguito) seppur con **alcune modifiche** per poter **migliorare la velocità** e per poter servire nel modo più approrpiato i processi real-time (se ci sono)
