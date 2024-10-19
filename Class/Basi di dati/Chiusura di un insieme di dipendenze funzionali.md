@@ -174,7 +174,9 @@ Si ha $F^+=F^A$
 >	$$
 >
 >3. $X\to Y$ ottenuta per **transitività** $\implies X\to Z\in F^A\land Z\to Y\in F^A$
+>	$$\forall r \text{ (legale) } t_{1}[X]=t_{2}[X]\implies t_{1}[Z]=t_{2}[Z]\implies t_{1}[Y]=t_{2}[Y]$$
 >
+>##### Dimostriamo che  $F^+\subseteq F^A$
 
 
 
