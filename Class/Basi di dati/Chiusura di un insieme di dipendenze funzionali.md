@@ -149,9 +149,14 @@ Si ha $F^+=F^A$
 >
 >##### Dimostriamo che  $F^A\subseteq F^+$
 >Sia $X\to Y$ una dipendenza funzionale in $F^A$. Dimostriamo che $X\to Y\in F^+$ per induzione sul numero $i$ di applicazioni di uno degli assiomi di Armstrong
->
 >- Base dell’induzione ($i=0$): $X\to Y\in F\implies X\to Y\in F^+\,\,\,\, F\subseteq F^+$
->- Ipotesi induttiva ($i>0$):
+>- Ipotesi induttiva ($i>0$): $X\to Y\in F^A\implies X\to Y\in F^+\implies X\to Y$ soddisfatto da ogni istanza legale
+>- Passo $i$: $X\to Y\in F^A$ ottenuto in $i$ passi
+><br>
+>
+>Si possono presentare tre casi
+>1. $X\to Y$ è stato ottenuto per **riflessività** $\implies Y\subseteq X$
+>	$\forall r \text{ (legale) } t_{1}[X]=t_{2}[X]\,\,\,Y\subseteq X \implies t_{1}[Y]=t_{2}[Y]\implies X\to Y\in F^+$
 
 
 

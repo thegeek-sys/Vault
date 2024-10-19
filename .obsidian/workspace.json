@@ -84,7 +84,8 @@
               "title": "Chiusura di un insieme di dipendenze funzionali"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -241,7 +242,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c9472a68ef3152c",
+  "active": "fc4d1f199ddfb3a5",
   "lastOpenFiles": [
     "Flet-notes/2024-10-17_BD.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
