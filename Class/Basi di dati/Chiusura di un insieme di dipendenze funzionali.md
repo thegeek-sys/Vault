@@ -177,7 +177,22 @@ Si ha $F^+=F^A$
 >	$$\forall r \text{ (legale) } t_{1}[X]=t_{2}[X]\implies t_{1}[Z]=t_{2}[Z]\implies t_{1}[Y]=t_{2}[Y]$$
 >
 >##### Dimostriamo che  $F^+\subseteq F^A$
+>$F^+\subseteq F^A$ ovvero $X\to Y\in F^+\implies X\to Y\in F^A$ quindi $X\to Y\in F^A\Leftrightarrow Y\subseteq X^+$
+>Supponiamo per assurdo che esista una dipendenza funzionale $X\to Y\in F^+$ tale che $X\to Y\notin F^A$. Useremo una particolare istanza legale di $R$ per dimostrare che questa supposizione porta ad una contraddizione
 >
+>Consideriamo la seguente istanza $r$ di $R$
+>![[Pasted image 20241019190252.png|500]]
+>L’istanza da solo due tuple, uguali sugli attributi in $X^+$ e diverse in tutti gli altri ($R-X^+$)
+>
+>Dobbiamo quindi dimostrare che:
+>1. $r$ è un’istanza legale di $R$
+>2. Avendo dimostrato che $r$ è un’istanza legale allora $X\to Y\in F^+\implies X\to Y\in F^A$
+>
+>###### $r$ è un’istanza legale di $R$
+>Sia $V\to W \in F$
+>- se $t_{1}[V]\neq t_{2}[V]$ allora la dipendenza è soddisfatta
+>- se $t_{1}[V]= t_{2}[V]\implies V\subseteq X^+xLongrightarrow[\text{unten Text}]{\text{oben Text}}$ perché le tuple sono uguali solo per quell’insieme di attributi
+ 
 
 
 
