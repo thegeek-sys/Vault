@@ -136,5 +136,5 @@ Si ha che: $X\rightarrow Y \in F^A \Leftrightarrow Y \subseteq X^+$
 >Poiché $Y \subseteq X^+$, per ogni $i$, $i=1,\, \dots,\, n$ si ha che $X\rightarrow A_{i} \in F^A$. Pertanto per la regola dell’unione, $X\rightarrow Y \in F^A$
 >
 >**Parte solo se**
->Poiché $X\rightarrow Y \in F^A$, per la regola della decomposizione si ha che, per ogni $i , i=1, \dots, n$, $X \rightarrow A_{i} \in F^A$, cioè $A_{i} \in X^+$ per ogni $i, i=1, \dots, n$, e, quindi, $Y \subseteq X^+$
+>Poiché $X\rightarrow Y \in F^A$, per la regola della decomposizione si ha che, per ogni $i$, $i=1, \dots, n$, $X \rightarrow A_{i} \in F^A$, cioè $A_{i} \in X^+$ per ogni $i, i=1,\, \dots,\, n$, e, quindi, $Y \subseteq X^+$
 
