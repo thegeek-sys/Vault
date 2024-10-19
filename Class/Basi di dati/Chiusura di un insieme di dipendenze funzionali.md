@@ -177,6 +177,7 @@ Si ha $F^+=F^A$
 >	$$\forall r \text{ (legale) } t_{1}[X]=t_{2}[X]\implies t_{1}[Z]=t_{2}[Z]\implies t_{1}[Y]=t_{2}[Y]$$
 >
 >##### Dimostriamo che  $F^+\subseteq F^A$
+>
 
 
 
