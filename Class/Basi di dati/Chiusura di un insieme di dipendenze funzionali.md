@@ -199,6 +199,7 @@ Si ha $F^+=F^A$
 &\xRightarrow{\text{Lemma 1}} W\subseteq X^+\implies t_{1}[W]=t_{2}[W]
 \end{flalign}
 $$
+>Quindi $V\to W$ è soddisfatta
 
  
 
