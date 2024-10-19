@@ -80,5 +80,61 @@ Osserviamo che:
 - per la regola della **decomposizione**, se $X\to A_{1},\,\dots ,\,A_{i},\,\dots,\,A_{n}\in F^A$ allora $X\to A_{i}\in F^A,\,\, i=1,\,\dots,\,n$
 quindi:
 $$
-X\to A_{1},\,\dots,\,A_{i},\,\dots,\,A_{n}\in F^A
+	X\to A_{1},\,\dots,\,A_{i},\,\dots,\,A_{n}\in F^A \Leftrightarrow X\to A_{i}\in F^A, \,\,\, i=1,\,\dots,\,n
 $$
+e possiamo limitarci in generale a considerare la dipendenze col membro destro singleton
+
+---
+## Chiusura di un insieme di attributi
+Dato $X$ un attributo di uno schema di relazione $R$ e $F$ un insieme di dipendenze funzionali su $R$ e $X$ un sottoinsieme di $R$.
+La **chiusura di $\textcolor{SkyBlue}{\mathbf{X}}$** rispetto a $F$, denotata con $X^+_{F}$ (o semplicemente $X^+$ se non sorgono ambiguità), è definito nel modo seguente:
+$$
+X^+_{F}=\{A\mid X\to A\in F^A\}
+$$
+
+>[!hint]
+>La chiusura di $X$ non può essere mai vuota, deve contenere almeno sé stesso
+>$$X \subseteq X^+_{F}$$
+
+In pratica la chiusura di un insieme di attributi $X$ contiene tutti gli attributi determinati **direttamente** o **indirettamente** da $X$, ovvero tutti quelli che sono determinati funzionalmente da $X$ eventualmente applicando gli assiomi di Armstrong
+
+
+>[!example] Esempio
+>- $\text{CF}\rightarrow\text{COMUNE}$
+>- $\text{COMUNE}\rightarrow\text{PROVINCIA}$
+>
+>Dunque $\text{CF}\rightarrow\text{COMUNE}$ è diretta mentre $\text{CF}\rightarrow\text{PROVINCIA}$ è indiretta
+>$$
+>\text{CF}^+_{F}=\{\text{COMUNE, PROVINCIA, CF}\}
+>$$
+
+
+### Determinare la chiave di una relazione
+La chiusura di un insieme di attributi può essere utile anche per determinare le chiavi di una relazione
+
+>[!example] Esempio
+>- $\text{Auto(MODELLO, MARCA, CILINDRATA, COLORE)}$
+>- $F=\{\text{MODELLO} \rightarrow \text{MARCA}, \text{MODELLO}\rightarrow\text{COLORE}\}$
+>
+>Dunque come chiusure si ha:
+>- $(\text{MODELLO})^+_{F}=\{\text{MODELLO, MARCA, COLORE}\}$
+>- $(\text{MARCA})^+_{F}=\{\text{MARCA}\}$
+>- $(\text{CILINDRATA})^+_{F}=\{\text{CILINDRATA}\}$
+>- $(\text{COLORE})^+_{F}=\{\text{COLORE}\}$
+>
+>$$\text{chiave}=\text{MODELLO, CILINDRATA}$$
+
+---
+## Lemma 1
+Siano $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R$.
+Si ha che: $X\rightarrow Y \in F^A$ se e solo se $Y \subseteq X^+$
+
+>[!info] Dimostrazione
+>Sia $Y=A_{1}, A_{2}, \dots, A_{n}$
+>
+>**Parte se**
+>Poiché $X \subseteq X^+$, per ogni $i, i=1, \dots, n$ si ha che $X\rightarrow A_{i} \in F^A$. Pertanto per la regola dell’unione, $X\rightarrow Y \in F^A$
+>
+>**Parte solo se**
+>Poiché $X\rightarrow Y \in F^A$, per la regola della decomposizione si ha che, per ogni $i , i=1, \dots, n$, $X \rightarrow A_{i} \in F^A$, cioè $A_{i} \in X^+$ per ogni $i, i=1, \dots, n$, e, quindi, $Y \subseteq X^+$
+
