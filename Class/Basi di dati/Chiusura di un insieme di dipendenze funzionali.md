@@ -191,7 +191,11 @@ Si ha $F^+=F^A$
 >###### $r$ è un’istanza legale di $R$
 >Sia $V\to W \in F$
 >- se $t_{1}[V]\neq t_{2}[V]$ allora la dipendenza è soddisfatta
->- se $t_{1}[V]= t_{2}[V]\implies V\subseteq X^+xLongrightarrow[\text{unten Text}]{\text{oben Text}}$ perché le tuple sono uguali solo per quell’insieme di attributi
+>- $$
+\usepackage{extarrows}
+
+$$
+>- se $t_{1}[V]= t_{2}[V]\implies V\subseteq X^+\underrightarrow{Text}$ perché le tuple sono uguali solo per quell’insieme di attributi
  
 
 
