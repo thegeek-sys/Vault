@@ -48,17 +48,30 @@ Allora se entrambe le dipendenze sono soddisfatte, e due tuple hanno $\text{Matr
 Prima di procedere introduciamo altre tre regole conseguenza degli assiomi che consentono di derivare da dipendenze funzionali in $F^A$ altre dipendenze funzionali in $F^A$
 
 ### Regola dell’unione
-se $X\rightarrow Y \in F^A$ e $X\rightarrow Z \in F^A$ allora $X \rightarrow YZ \in F^A$
+$$
+\text{se } X\rightarrow Y \in F^A \text{ e } X\rightarrow Z \in F^A \text{ allora } X \rightarrow YZ \in F^A
+$$
 
 >[!info] Dimostrazione
->Se $X\rightarrow Y \in F^A$, per l’assioma dell’aumento si ha $X\rightarrow XY \in F^A$.
->Analogamente se $X\rightarrow Z \in F^A$, per l’assioma dell’aumento si ha $XY \rightarrow YZ \in F^A$. Quindi poiché $X\rightarrow XY \in F^A$ e $XY \rightarrow YZ \in F^A$, per l’assioma della transitività si ha $X\rightarrow YZ \in F^A$
+>- Se $X\rightarrow Y \in F^A$, per l’assioma dell’aumento si ha $X\rightarrow XY \in F^A$
+>- Analogamente se $X\rightarrow Z \in F^A$, per l’assioma dell’aumento si ha $XY \rightarrow YZ \in F^A$
+>- Quindi poiché $X\rightarrow XY \in F^A$ e $XY \rightarrow YZ \in F^A$, per l’assioma della transitività si ha $X\rightarrow YZ \in F^A$
 
 ### Regola della decomposizione
-se $X \rightarrow Y \in F^A$ e $Z \subseteq Y$ allora $X\rightarrow Z \in F^A$
->[!info]- Dimostrazione
->a
+$$
+\text{se }X \rightarrow Y \in F^A\text{ e }Z \subseteq Y\text{ allora }X\rightarrow Z \in F^A
+$$
+
+>[!info] Dimostrazione
+>- Se $Z \subseteq Y$ allora per l’assioma della riflessività, si ha $Y\to Z\in F^A$
+>- Quindi poiché $X\to Y\in F^A$ e $Y\to Z\in F^A$ per l’assioma della transitività si ha $X\to Z\in F^A$
 
 ### Regola della pseudotransitività
-se $X \rightarrow Y \in F^A$ e $WY \rightarrow Z \in F^A$ allora $WX \rightarrow Z \in F^A$
->[!info]- Dimostrazione
+$$
+\text{se }X \rightarrow Y \in F^A\text{ e }WY \rightarrow Z \in F^A\text{ allora }WX \rightarrow Z \in F^A
+$$
+>[!info] Dimostrazione
+>- Se $X\to Y\in F^A$, per l’assioma dell’aumento si ha $WX\to WY\in F^A$
+>- Quindi poiché $WX\to WY\in F^A$ e $WY\to Z\in F^A$, per l’assioma della transitività si ha $WX\to Z\in F^A$
+
+
