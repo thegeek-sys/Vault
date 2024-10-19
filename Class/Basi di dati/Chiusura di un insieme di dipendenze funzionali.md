@@ -28,13 +28,17 @@ $\text{Nome}\subseteq(\text{Nome, Cognome})$ quindi ovviamente se due tuple hann
 
 ### Assioma dell’aumento
 $$
-\text{se } X \to
+\text{se } X \to Y \in F^A \text{ allora } XZ \to YZ\in F^A, \text{ per ogni } Z \subseteq R
 $$
-se $X\rightarrow Y \in F^A$ allora $XZ \rightarrow YZ \in F^A$, per ogni $Z \subseteq R$ (**assioma dell’aumento**)
+#### Esempio
 $\text{CodFiscale}\rightarrow\text{Cognome}$ è soddisfatta quando, se due tuple hanno $\text{CodFiscale}$ uguale, allora hanno anche $\text{Cognome}$ uguale.
 Se la dipendenza è soddisfatta, e aggiungo l’attributo $\text{Indirizzo}$, avrò che se due tuple sono uguali su $(\text{CodFiscale, Indirizzo})$ lo devono essere anche su $(\text{Cognome, Indirizzo})$ ($\text{Indirizzo}$ è incluso nella porzione di tuple che è uguale), quindi se viene soddisfatta $\text{CodFiscale}\rightarrow\text{Cognome}$ viene soddisfatta anche $\text{CodFiscale, Indirizzo}\rightarrow\text{Cognome, Indirizzo}$
 
-se $X\rightarrow Y \in F^A$ e $Y\rightarrow Z \in F^A$ allora $X\rightarrow Z \in F^A$ (**assioma della transitività**)
+### Assioma della transitività
+$$
+\text{se } X\to Y\in F^A \text{ e } Y\to Z\in F^A\text{ allora }X\to Z\in F^A
+$$
+#### Esempio
 $\text{Matricola}\rightarrow\text{CodFiscale}$ è soddisfatta quando, se due tuple hanno $\text{Matricola}$ uguale, allora hanno anche $\text{CodFiscale}$ uguale
 $\text{CodFiscale}\rightarrow\text{Cognome}$ è soddisfatta quando, se due tuple hanno $\text{CodFiscale}$ uguale, allora hanno anche $\text{Cognome}$ uguale
 Allora se entrambe le dipendenze sono soddisfatte, e due tuple hanno $\text{Matricola}$ uguale, allora hanno anche $\text{CodFiscale}$ uguale, ma allora hanno anche $\text{Cognome}$ uguale, quindi se entrambe le dipendenze sono soddisfatte, ogni volta che due tuple hanno $\text{Matricola}$ uguale avranno anche $\text{Cognome}$ uguale, e quindi viene soddisfatta anche $\text{Matricola}\rightarrow\text{Cognome}$
