@@ -13,16 +13,23 @@ Abbiamo concluso che banalmente $F\subseteq F^+$ in quanto una istanza è legale
 ## Assiomi di Armstrong
 Denotiamo con $F^A$ l’insieme di dipendenze funzionali definito nel modo seguente:
 - se $f \in F$ allora $f \in F^A$
-- se $Y \subseteq X \subseteq R$ allora $X \rightarrow Y \in F^A$ (**assioma della riflessività**, dipendenze funzionali banali)
-- se $X\rightarrow Y \in F^A$ allora $XZ \rightarrow YZ \in F^A$, per ogni $Z \subseteq R$ (**assioma dell’aumento**)
-- se $X\rightarrow Y \in F^A$ e $Y\rightarrow Z \in F^A$ allora $X\rightarrow Z \in F^A$ (**assioma della transitività**)
+- se rispetta l’**assioma della riflessività** (determina le dipendenze funzionali banali)
+- se rispetta l’**assioma dell’aumento**
+- se rispetta l’**assioma della transitività**
 
 Dimostreremo che $\mathbf{F^+=F^A}$, cioè la chiusura di un insieme di dipendenze funzionali $F$ può essere ottenuta a partire da $F$ applicando ricorsivamente gli assiomi della riflessività, dell’aumento e della transitività, conosciuti come **assiomi di Armstrong**
 
-### Qualche semplice osservazione
-se $Y \subseteq X \subseteq R$ allora $X \rightarrow Y \in F^A$ (**assioma della riflessività**)
+### Assioma della riflessività
+$$
+\text{se } Y\subseteq X\subseteq R \text{ allora } X\rightarrow Y \in F^A
+$$
+#### Esempio
 $\text{Nome}\subseteq(\text{Nome, Cognome})$ quindi ovviamente se due tuple hanno uguale la coppia $(\text{Nome, Cognome})$ allora sicuramente avranno uguale l’attributo $\text{Nome}$ (idem per $\text{Cognome}$), quindi $(\text{Nome, Cognome}) \rightarrow \text{Nome}$ viene sempre soddisfatta
 
+### Assioma dell’aumento
+$$
+\text{se } X \to
+$$
 se $X\rightarrow Y \in F^A$ allora $XZ \rightarrow YZ \in F^A$, per ogni $Z \subseteq R$ (**assioma dell’aumento**)
 $\text{CodFiscale}\rightarrow\text{Cognome}$ è soddisfatta quando, se due tuple hanno $\text{CodFiscale}$ uguale, allora hanno anche $\text{Cognome}$ uguale.
 Se la dipendenza è soddisfatta, e aggiungo l’attributo $\text{Indirizzo}$, avrò che se due tuple sono uguali su $(\text{CodFiscale, Indirizzo})$ lo devono essere anche su $(\text{Cognome, Indirizzo})$ ($\text{Indirizzo}$ è incluso nella porzione di tuple che è uguale), quindi se viene soddisfatta $\text{CodFiscale}\rightarrow\text{Cognome}$ viene soddisfatta anche $\text{CodFiscale, Indirizzo}\rightarrow\text{Cognome, Indirizzo}$
