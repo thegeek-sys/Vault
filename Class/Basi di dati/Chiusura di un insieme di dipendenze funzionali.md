@@ -157,6 +157,7 @@ Si ha $F^+=F^A$
 >Si possono presentare tre casi
 >1. $X\to Y$ è stato ottenuto per **riflessività** $\implies Y\subseteq X$
 >	$\forall r \text{ (legale) } t_{1}[X]=t_{2}[X]\,\,\,Y\subseteq X \implies t_{1}[Y]=t_{2}[Y]\implies X\to Y\in F^+$
+>2. $X\to Y$ è stato ottenuto per **aumento** $\implies$ in $i-1$ passi $V\to W\in F^A\land X=VZ \land Y=WZ$
 
 
 
