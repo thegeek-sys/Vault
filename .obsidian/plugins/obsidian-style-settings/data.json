@@ -84,5 +84,6 @@
   "TokyoNight@@scrollbar-bg@@dark": "#121218",
   "TokyoNight@@scrollbar-thumb-bg@@light": "#9699A3",
   "TokyoNight@@scrollbar-thumb-bg@@dark": "#565F89",
-  "TokyoNight@@scrollbar-active-thumb-bg@@light": "#CBCCD1"
+  "TokyoNight@@scrollbar-active-thumb-bg@@light": "#CBCCD1",
+  "TokyoNight@@scrollbar-active-thumb-bg@@dark": "#16161E"
 }
