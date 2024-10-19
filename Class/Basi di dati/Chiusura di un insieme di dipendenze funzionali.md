@@ -5,7 +5,7 @@ Related:
 Completed:
 ---
 ---
-## Introduciamo $\textcolor{Peach}{\text{F}^\text{A}}$
+## Introduciamo $\text{F}^\text{A}$
 Ricordiamo che il nostro problema è calcolare l’insieme di dipendenze $F^+$ che viene **soddisfatto da ogni istanza legale** di uno schema $R$ su cui è definito un insieme di dipendenze funzionali $F$.
 Abbiamo concluso che banalmente $F\subseteq F^+$ in quanto una istanza è legale solo se soddisfa tutte le dipendenze in $F$
 
@@ -137,4 +137,23 @@ Si ha che: $X\rightarrow Y \in F^A \Leftrightarrow Y \subseteq X^+$
 >
 >**Parte solo se**
 >Poiché $X\rightarrow Y \in F^A$, per la regola della decomposizione si ha che, per ogni $i$, $i=1, \dots, n$, $X \rightarrow A_{i} \in F^A$, cioè $A_{i} \in X^+$ per ogni $i, i=1,\, \dots,\, n$, e, quindi, $Y \subseteq X^+$
+
+---
+## Teorema: $F^+=F^A$
+Siano $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R$.
+Si ha $F^+=F^A$
+
+>[!info] Dimostrazione
+>Per dimostrare l’uguaglianza di due insiemi ci basta dimostrare la doppia inclusione
+>$$F^A \subseteq F^+\land F^+ \subseteq F^A$$
+>
+>##### Dimostriamo che  $F^A\subseteq F^+$
+>Sia $X\to Y$ una dipendenza funzionale in $F^A$. Dimostriamo che $X\to Y\in F^+$ per induzione sul numero $i$ di applicazioni di uno degli assiomi di Armstrong
+>
+>- Base dell’induzione ($i=0$): $X\to Y\in F\implies X\to Y\in F^+\,\,\,\, F\subseteq F^+$
+>- Ipotesi induttiva ($i>0$):
+
+
+
+
 
