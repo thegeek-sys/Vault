@@ -127,13 +127,13 @@ La chiusura di un insieme di attributi può essere utile anche per determinare l
 ---
 ## Lemma 1
 Siano $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R$.
-Si ha che: $X\rightarrow Y \in F^A$ se e solo se $Y \subseteq X^+$
+Si ha che: $X\rightarrow Y \in F^A \Leftrightarrow Y \subseteq X^+$
 
 >[!info] Dimostrazione
 >Sia $Y=A_{1}, A_{2}, \dots, A_{n}$
 >
 >**Parte se**
->Poiché $X \subseteq X^+$, per ogni $i, i=1, \dots, n$ si ha che $X\rightarrow A_{i} \in F^A$. Pertanto per la regola dell’unione, $X\rightarrow Y \in F^A$
+>Poiché $Y \subseteq X^+$, per ogni $i$, $i=1,\, \dots,\, n$ si ha che $X\rightarrow A_{i} \in F^A$. Pertanto per la regola dell’unione, $X\rightarrow Y \in F^A$
 >
 >**Parte solo se**
 >Poiché $X\rightarrow Y \in F^A$, per la regola della decomposizione si ha che, per ogni $i , i=1, \dots, n$, $X \rightarrow A_{i} \in F^A$, cioè $A_{i} \in X^+$ per ogni $i, i=1, \dots, n$, e, quindi, $Y \subseteq X^+$
