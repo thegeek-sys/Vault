@@ -202,7 +202,4 @@ Si ha $F^+=F^A$
 >###### $X\to Y\in F^+\implies X\to Y\in F^A$
 >Supponiamo per assurdo che $X\to Y\in F^+$ e $X\to Y\notin F^A$. Essendo $r$ un’istanza legale le dipendenze di $F^+$ sono soddisfatte anche per $r$.
 >Dunque se $t_{1}[X]=t_{2}[X] \text{ allora }t_{1}[Y]=t_{2}[Y]\implies Y\subseteq X^+ \xRightarrow{\text{Lemma 1}} X\to Y\in F^A$
-
-$$
-\mbox{}\hfill Yours sincerely
-$$
+>$\begin{flalign}&& \square\end{flalign}$
