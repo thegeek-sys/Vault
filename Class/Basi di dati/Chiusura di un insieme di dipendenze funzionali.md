@@ -28,7 +28,7 @@ $\text{Nome}\subseteq(\text{Nome, Cognome})$ quindi ovviamente se due tuple hann
 
 ### Assioma dell’aumento
 $$
-\text{se } X \to 
+\text{se } X \to
 $$
 se $X\rightarrow Y \in F^A$ allora $XZ \rightarrow YZ \in F^A$, per ogni $Z \subseteq R$ (**assioma dell’aumento**)
 $\text{CodFiscale}\rightarrow\text{Cognome}$ è soddisfatta quando, se due tuple hanno $\text{CodFiscale}$ uguale, allora hanno anche $\text{Cognome}$ uguale.
