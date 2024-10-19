@@ -178,7 +178,6 @@ Si ha $F^+=F^A$
 >
 >##### Dimostriamo che  $F^+\subseteq F^A$
 >$F^+\subseteq F^A$ ovvero $X\to Y\in F^+\implies X\to Y\in F^A$ quindi $X\to Y\in F^A\Leftrightarrow Y\subseteq X^+$
->Supponiamo per assurdo che esista una dipendenza funzionale $X\to Y\in F^+$ tale che $X\to Y\notin F^A$. Useremo una particolare istanza legale di $R$ per dimostrare che questa supposizione porta ad una contraddizione
 >
 >Consideriamo la seguente istanza $r$ di $R$
 >![[Pasted image 20241019190252.png|500]]
@@ -197,23 +196,9 @@ Si ha $F^+=F^A$
 &\xRightarrow{\text{Lemma 1}}X\to V\in F^A \land V\to W\in F  &&\\
 &\xRightarrow{\text{trans}} X\to W\in F^A &&\\
 &\xRightarrow{\text{Lemma 1}} W\subseteq X^+\implies t_{1}[W]=t_{2}[W]
-\end{flalign}
-$$
+\end{flalign}$$
+>
 >Quindi $V\to W$ è soddisfatta e avendo considerato una qualsiasi dipendenza in $F$ allora $r$ è un’**istanza legale** di $R$
->
 >###### $X\to Y\in F^+\implies X\to Y\in F^A$
->
-
- 
-
-
-
-
-$$
-\begin{align}
-t_{1}[V]= t_{2}[V]&\implies V\subseteq X^+ \\
-&\xRightarrow{\text{Lemma 1}}X\to V\in F^A \land V\to W\in F  \\
-&\xRightarrow{\text{trans}} X\to W\in F^A \\
-&\xRightarrow{\text{Lemma 1}} W\subseteq X^+\implies t_{1}[W]=t_{2}[W]
-\end{align}
-$$
+>Supponiamo per assurdo che $X\to Y\in F^+$ e $X\to Y\notin F^A$. Essendo $r$ un’istanza legale le dipendenze di $F^+$ sono soddisfatte anche per $r$.
+>Dunque se $t_{1}[X]=t_{2}[X] \text{ allora }t_{1}[Y]=t_{2}[Y]\implies Y\subseteq X^+ \xRightarrow{\text{Lemma 1}} X\to Y\in F^A$
