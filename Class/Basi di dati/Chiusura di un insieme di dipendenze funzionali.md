@@ -74,4 +74,11 @@ $$
 >- Se $X\to Y\in F^A$, per l’assioma dell’aumento si ha $WX\to WY\in F^A$
 >- Quindi poiché $WX\to WY\in F^A$ e $WY\to Z\in F^A$, per l’assioma della transitività si ha $WX\to Z\in F^A$
 
-
+### Osservazione
+Osserviamo che:
+- per la regola dell’**unione**, se $X\to A_{i}\in F^A$, $i=1,\, \dots,\,n$ allora $X\to A_{1},\,\dots,\,A_{i}\,\dots\,A_{n}\in F^A$
+- per la regola della **decomposizione**, se $X\to A_{1},\,\dots ,\,A_{i},\,\dots,\,A_{n}\in F^A$ allora $X\to A_{i}\in F^A,\,\, i=1,\,\dots,\,n$
+quindi:
+$$
+X\to A_{1},\,\dots,\,A_{i},\,\dots,\,A_{n}\in F^A
+$$
