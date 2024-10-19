@@ -158,7 +158,9 @@ Si ha $F^+=F^A$
 >1. $X\to Y$ è stato ottenuto per **riflessività** $\implies Y\subseteq X$
 >	$\forall r \text{ (legale) } t_{1}[X]=t_{2}[X]\,\,\,Y\subseteq X \implies t_{1}[Y]=t_{2}[Y]\implies X\to Y\in F^+$
 ><br>
->2. $X\to Y$ è stato ottenuto per **aumento** applicato ad una dipendenza funzionale $V\to W\in F^A$, ottenuta a sua volta applicando ricorsivamente gli assiomi di Armstrong un numero di volte minore o uguale a $i-1$ (quindi per ipotesi induttiva $V\to W \in F^+$)
+>2. $X\to Y$ è stato ottenuto per **aumento** $\implies$ in $i-1$ passi  $V\to W\in F^A\land X=VZ \land Y=WZ$
+>	$\begin{align}\forall r\text{ (legale) } t_{1}[X]=t_{2}[X]&\implies t_{1}[VZ]=t_{2}[VZ] \implies\\&\implies t_{1}[V]=t_{2}[V]\land t_{1}[Z]=t_{2}[Z]\end{align}$
+>
 
 
 
