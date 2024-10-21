@@ -163,6 +163,42 @@ Come alternativa a questo algoritmo vennero proposte due alternative:
 E’ un compromesso tra il partizionamento fisso e il partizionamento dinamico: è un partizionamento dinamico nel senso he le partizioni si creano man mano che arrivano processi, ma fisso perché non possono essere create tutte le partizioni possibili ma occorre seguire uno schema ben definito
 
 Sia $2^U$ la dimensione dello user space e $s$ la dimensione di un processo da mettere in RAM. Quello che fa il buddy system è cominciare a dimezzare lo spazio fino a trovare un $X \text{ t.c. }2^{X-1}<s\leq 2^X \text{ con } L\leq X\leq U$ e una delle due porzioni è usata per il processo ($L$ serve per dare un lower bound per evitare che si creino partizioni troppo piccole)
-Ovviamente, occorre tener presente le partizioni già occupate e quando un processo finisce, se il buddy è libero si può fare una fusione
+Ovviamente, occorre tener presente le partizioni già occupate.
+Quando un processo finisce, se il buddy è libero si può fare una fusione; la fusione può essere effettuata solo nel caso in cui è possibile costruire la partizione più grande ovvero $2^{X+1}$
 
 >[!example]
+>![[Pasted image 20241021231832.png|550]]
+>
+>Rappresentazione ad albero (quinta riga)
+>![[Pasted image 20241021232238.png|550]]
+
+---
+# Paginazione e segmentazione
+## Paginazione (semplice)
+La paginazione semplice in quanto tale non è stata sostanzialmente mai usata, ma è importante a livello concettuale per introdurre la memoria virtuale.
+Con la paginazione sia la memoria che i processi vengono “spacchettati” in pezzetti di dimensione uguale. Ogni pezzetto del processo è chiamato **pagina**, mentre i pezzetti di memoria sono chiamati **frame**.
+Ogni pagina, per essere usata, deve essere collocata in un frame ma pagine contigue di un processo possono essere messe in un qualunque frame (anche distanti)
+
+I SO che la adottano però devono mantenere una tabella delle pagine per ogni processo che associa ogni pagina del processo al corrispettivo frame in cui si trova.
+
+>[!info] Quando c’è un process switch, la tabella delle pagine del nuovo processo deve essere ricaricata
+
+A differenza di prima in cui l’hardware doveva solamente intervenire e aggiungere un offset, qui deve intervenire sulle pagine stesse, infatti un indirizzo di memoria può essere visto come un numero di pagina e uno spiazzamento al suo interno
+
+>[!example]
+>![[Pasted image 20241021233338.png|250]]
+>
+>Deve essere caricato un processo A che occupa 4 frame
+>![[Pasted image 20241021233436.png|250]]
+>
+>Ne arrivano altri due da 3 (B) e 4 (C) frame 
+>![[Pasted image 20241021233523.png|250]]
+>
+>Quindi viene swappato B
+>![[Pasted image 20241021233610.png|250]]
+>
+>E sostituito con D (con il partizionamento dinamico, non sarebbe stato possibile caricare D in memoria)
+>![[Pasted image 20241021233636.png|250]]
+>
+>Tabelle delle pagine risultanti
+>![[Pasted image 20241021233804.png|450]]
