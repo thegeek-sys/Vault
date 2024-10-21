@@ -15,6 +15,16 @@ La soluzione è quindi farla gestire al sistema operativo cercando però di dare
 In conclusione occorre gestire la memoria affinché ci siano sempre un numero ragionevole di processi pronti all’esecuzione, così da non lasciare inoperoso il processore.
 
 ---
+## Roadmap
+- Gestione della memoria: requisiti di base
+- Partizionamento della memoria
+- Paginazione e segmentazione
+- Memoria virtuale: hardware e strutture di controllo
+- Memoria virtuale e sistema operativo
+- Gestione della memoria in Linux
+
+---
+# Gestione della memoria: requisiti di base
 ## Requisiti per la gestione della memoria
 I requisiti per la gestione della memoria sono:
 - **Rilocazione** → richiede che ci sia aiuto hardware (il sistema operativo viene aiutato da opportune funzioni macchina di basso livello)
@@ -82,3 +92,18 @@ La gestione fisica serve a gestire il flusso di dati tra RAM (piccola, veloce e 
 
 Fino a circa 40 anni fa la gestione della RAM veniva lasciata al programmatore, doveva infatti gestire esplicitamente lo swapping in base a quanta memoria gli veniva messa a disposizione dal SO. Risulta però un processo molto complesso, per questo è stato deciso di affidare questo compito esclusivamente al SO
 
+---
+# Partizionamento della memoria
+## Partizionamento
+Uno dei primi metodi per la gestione della memoria è il **partizionamento**, ma è comunque utile per capire la memoria virtuale (la memoria virtuale è l’evoluzione moderna delle tecniche di partizionamento)
+### Tipi di partizionamento
+- Partizionamento fisso
+- Partizionamento dinamico
+- Paginazione semplice
+- Segmentazione semplice
+- Paginazione con memoria virtuale
+- Segmentazione con memoria virtuale
+
+---
+## Partizionamento fisso uniforme
+Con il partizionamento fisso, il SO, all’avvio, segmenta la memoria in partizioni di ugual lunghezza. Dunque in ognuna partizione posso mettere un processo che occupa al più la dimensione della partizione
