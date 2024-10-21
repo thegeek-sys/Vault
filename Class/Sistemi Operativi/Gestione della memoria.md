@@ -112,3 +112,7 @@ Con il partizionamento fisso, il SO, all’avvio, segmenta la memoria in partizi
 Quando un processo era troppo grande per la partizione, il programmatore doveva usare la tecnica dell’*overlays* (gestire esplicitamente lo swap) per fare in modo di non occupare più memoria di quella disponibile
 Un altro problema sta nel fatto che la memoria viene utilizzata in modo inefficiente, infatti anche se un programma occupava meno memoria della dimensione della partizione, comunque gli veniva affidata una partizione intera
 
+---
+## Partizionamento fisso variabile
+Nel partizionamento fisso variabile, così come nel partizionamento fisso, le partizioni vengono create all’inizializzazione del sistema operativo, ma a differenza di prima qui le partizioni non hanno tutte la stessa dimensione, mitigando quindi i problemi del partizionamento precedente (senza però risolverli)
+![[Pasted image 20241021212807.png|100]]

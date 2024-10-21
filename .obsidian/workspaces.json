@@ -971,7 +971,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1002,7 +1002,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "global pointer",
+                    "query": "segmentation",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -1010,7 +1010,7 @@
                     "sortOrder": "alphabetical"
                   },
                   "icon": "lucide-search",
-                  "title": "Search"
+                  "title": "Ricerca"
                 }
               },
               {
@@ -1023,11 +1023,13 @@
                   "title": "Bookmarks"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1127,8 +1129,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "a91fad9c7db7b57b",
-      "mtime": "2024-10-19T15:17:08+02:00"
+      "active": "3d7f3dd856b9e87c",
+      "mtime": "2024-10-21T15:29:29+02:00"
     },
     "Basi di Dati": {
       "main": {
@@ -1340,7 +1342,7 @@
         }
       },
       "active": "0c9472a68ef3152c",
-      "mtime": "2024-10-21T11:10:51+02:00"
+      "mtime": "2024-10-21T21:24:50+02:00"
     }
   },
   "active": "Sistemi Operativi"
