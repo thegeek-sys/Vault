@@ -124,3 +124,24 @@ Ciò ci pone però di fronte a due scelte: o utilizzo una coda per ogni partizio
 ![[Pasted image 20241021213224.png|500]]
 
 ### Problemi irrisolti
+Seppur abbia mitigato i problemi del partizionamento precedente, lascia dei problemi irrisolti.
+C’è un numero massimo di processi in memoria principale (corrispondente al numero di partizioni deciso inizialmente). Se ci sono molti processi piccoli, la memoria verrà usata in modo inefficiente (seppur questo problema è risolvibile utilizzando una sola coda per i processi e mettendo il processo in una partizione più grande nel caso in cui quella in cui dovrebbe andare è già occupata)
+
+---
+## Posizionamento dinamico
+In questo tipo di partizionamento, le partizioni variano sia in misura che in quantità, allocando per ciascun processo esattamente la quantità di memoria che serve
+
+>[!example]- Esempio
+>### Esempio
+![[Pasted image 20241021213901.png|100]]
+Quando il sistema operativo viene inizializzata la memoria senza alcun processo al suo interno
+>
+![[Pasted image 20241021213949.png|100]]
+In un certo momento arrivano 3 processi che lasciano 4M di memoria libera
+>
+>![[Pasted image 20241021214050.png|100]]
+Ad un certo momento arriva un processo P4 che richiede 8M, quindi il sistema operativo decide che per qualche motivo P4 è più importante di P2, che viene swappato per mettere al suo posto P4
+>
+>![[Pasted image 20241021214211.png|100]]
+Quindi è il momento di P1 di essere swappato su disco per mettere al suo posto P2
+Se per caso arriva un processo da 8M questo non potrà essere inserito in quanto la memoria a disposizione non è contigua, sarebbe quindi necessario rimuovere un altro processo per fargli spazio
