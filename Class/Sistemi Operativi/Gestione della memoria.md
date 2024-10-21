@@ -116,3 +116,11 @@ Un altro problema sta nel fatto che la memoria viene utilizzata in modo ineffici
 ## Partizionamento fisso variabile
 Nel partizionamento fisso variabile, così come nel partizionamento fisso, le partizioni vengono create all’inizializzazione del sistema operativo, ma a differenza di prima qui le partizioni non hanno tutte la stessa dimensione, mitigando quindi i problemi del partizionamento precedente (senza però risolverli)
 ![[Pasted image 20241021212807.png|100]]
+
+### Algoritmo di posizionamento
+Per capire in quale partizione posizionare un determinato processo è necessario un algoritmo di posizionamento. Un processo infatti, in questo caso, viene posizionato nella partizione più piccola che può contenerlo, minimizzando la quantità di spazio sprecato
+
+Ciò ci pone però di fronte a due scelte: o utilizzo una coda per ogni partizione oppure utilizzo una singola coda per tutti i processi e solo alla fine decido in quale partizione posizionarlo
+![[Pasted image 20241021213224.png|500]]
+
+### Problemi irrisolti
