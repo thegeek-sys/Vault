@@ -162,4 +162,7 @@ Come alternativa a questo algoritmo vennero proposte due alternative:
 ## Buddy System (sistema compagno)
 E’ un compromesso tra il partizionamento fisso e il partizionamento dinamico: è un partizionamento dinamico nel senso he le partizioni si creano man mano che arrivano processi, ma fisso perché non possono essere create tutte le partizioni possibili ma occorre seguire uno schema ben definito
 
-Sia $2^U$ la dimensione dello user space e $s$ la dimensione di un processo da mettere in RAM. Quello che fa il buddy system è cominciare a dimezzare lo spazio fino a trovare un $X \text{ t.c. }2^{X-1}<s\leq 2^X \text{ con } L\leq X\leq U$ 
+Sia $2^U$ la dimensione dello user space e $s$ la dimensione di un processo da mettere in RAM. Quello che fa il buddy system è cominciare a dimezzare lo spazio fino a trovare un $X \text{ t.c. }2^{X-1}<s\leq 2^X \text{ con } L\leq X\leq U$ e una delle due porzioni è usata per il processo ($L$ serve per dare un lower bound per evitare che si creino partizioni troppo piccole)
+Ovviamente, occorre tener presente le partizioni già occupate e quando un processo finisce, se il buddy è libero si può fare una fusione
+
+>[!example]
