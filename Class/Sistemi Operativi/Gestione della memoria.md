@@ -154,3 +154,9 @@ Come alternativa a questo algoritmo vennero proposte due alternative:
 - Algoritmo *first-fit* → scorre la memoria dall’inizio, il primo blocco con abbastanza memoria viene subito scelto e per questo motivo è molto veloce. Ha come problema il fatto che tende a riempire solo la prima parte della memoria, seppur è il **migliore** tra quelli proposti
 - Agloritmo *next-fit* → come il first-fit, ma anziché partire da capo ogni volta, parte dall’ultima posizione assegnata ad un processo. Sperimentalmente si nota che assegna più spesso il blocco alla fine della memoria che tendenzialmente è il più grande
 
+>[!example] Algoritmi di posizionamento
+>Memoria prima e dopo l’allocazione di un blocco da 16M
+>![[Pasted image 20241021223419.png|350]]
+
+---
+## Buddy System (sistema compagno)
