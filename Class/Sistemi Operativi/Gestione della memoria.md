@@ -110,7 +110,7 @@ Con il partizionamento fisso, il SO, all’avvio, segmenta la memoria in partizi
 ![[Pasted image 20241021130138.png|100]]
 ### Problemi
 Quando un processo era troppo grande per la partizione, il programmatore doveva usare la tecnica dell’*overlays* (gestire esplicitamente lo swap) per fare in modo di non occupare più memoria di quella disponibile
-Un altro problema sta nel fatto che la memoria viene utilizzata in modo inefficiente, infatti anche se un programma occupava meno memoria della dimensione della partizione, comunque gli veniva affidata una partizione intera
+Un altro problema sta nel fatto che la memoria viene utilizzata in modo inefficiente, infatti anche se un programma occupava meno memoria della dimensione della partizione, comunque gli veniva affidata una partizione intera (**frammentazione interna**)
 
 ---
 ## Partizionamento fisso variabile
@@ -145,3 +145,6 @@ Ad un certo momento arriva un processo P4 che richiede 8M, quindi il sistema ope
 >![[Pasted image 20241021214211.png|100]]
 Quindi è il momento di P1 di essere swappato su disco per mettere al suo posto P2
 Se per caso arriva un processo da 8M questo non potrà essere inserito in quanto la memoria a disposizione non è contigua, sarebbe quindi necessario rimuovere un altro processo per fargli spazio
+
+### Problemi
+Qui a differenza dei precedenti, si ha un problema di **frammentazione esterna**
