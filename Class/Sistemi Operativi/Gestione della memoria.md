@@ -57,3 +57,4 @@ E’ necessario un hardware dedicato in quanto, se non ci fosse, ogni volta che 
 Base register (registro base) → indirizzo di partenza del processo
 Bounds register (registro limite) → indirizzo di fine del processo
 I valori per questi registri vengono settati nel momento in cui il processo viene posizionato in memoria mantenuti nel PCB del processo fa parte del passo 6 per il process switch (vedere slides sui processi); non vanno semplicemente ripristinati: occorre proprio modificarli
+
