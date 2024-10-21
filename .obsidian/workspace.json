@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "global pointer",
+                "query": "segmentation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +105,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Ricerca"
             }
           },
           {
@@ -118,11 +118,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -224,6 +226,7 @@
   },
   "active": "3d7f3dd856b9e87c",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Processi.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Sistemi Operativi/Scheduling.md",
@@ -231,7 +234,6 @@
     "Files/Pasted image 20241019190252.png",
     "Flet-notes/2024-10-17_BD.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Files/Pasted image 20241018222723.png",
     "Files/Pasted image 20241018221459.png",
     "Files/Pasted image 20241018221354.png",
