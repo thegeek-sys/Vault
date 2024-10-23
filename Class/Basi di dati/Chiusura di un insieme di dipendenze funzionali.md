@@ -198,7 +198,7 @@ Si ha $F^+=F^A$
 \begin{flalign}
 \text{se }t_{1}[V]= t_{2}[V]&\implies V\subseteq X^+ &&\\
 &\xRightarrow{\text{Lemma 1}}X\to V\in F^A \land V\to W\in F  &&\\
-&\xRightarrow{\text{trans}} X\to W\in F^A &&\\
+&\xRightarrow{\text{Transitività}} X\to W\in F^A &&\\
 &\xRightarrow{\text{Lemma 1}} W\subseteq X^+\implies t_{1}[W]=t_{2}[W]
 \end{flalign}$$
 >
