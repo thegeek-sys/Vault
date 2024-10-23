@@ -113,10 +113,15 @@ Dato uno schema di relazione $\text{R}$ e un insieme $\text{F}$ di dipendenze fu
 Notazione:
 - $\text{F}^+$
 
-### $\textcolor{lightgreen}{\text{F}}$ ed $\textcolor{lightgreen}{\text{F}^+}$
+### $\text{F}$ ed $\text{F}^+$
 Se $\text{F}$ è un insieme di dipendenze funzionali su $\text{R}$ ed $r$ è un’istanza di $\text{R}$ che soddisfa **tutte** le dipendenze in $\text{F}$, diciamo che $r$ è un’**istanza legale** di $\text{R}$
 La chiusura di $\text{F}$, denotata con $\text{F}^+$, è l’insieme di dipendenze funzionali che sono soddisfatte **da ogni** istanza legale di $\text{R}$
 Banalmente si ha che $\text{F}\subseteq \text{F}^+$
+
+Due insiemi di dipendenze funzionali che hanno la stessa chiusura avranno le stesse istanze legali
+$$
+F\subseteq F^+=G^+\supseteq G
+$$
 
 ---
 ## Chiave

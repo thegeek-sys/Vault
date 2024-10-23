@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,10 +221,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "97d559ecf9c620f3",
+  "active": "7d262e6786c4a723",
   "lastOpenFiles": [
-    "Flet-notes/2024-10-23_BD.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+    "Flet-notes/2024-10-23_BD.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
     "Files/Pasted image 20241021233804.png",
     "Files/Pasted image 20241021233636.png",
@@ -240,7 +241,6 @@
     "Class/Sistemi Operativi/Processi.md",
     "Class/Sistemi Operativi/Scheduling.md",
     "Flet-notes/2024-10-17_BD.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Flet-notes/2024-10-16_BD.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Class/Basi di dati/Basi di dati.md",
