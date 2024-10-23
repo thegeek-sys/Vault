@@ -171,7 +171,7 @@ Si ha $F^+=F^A$
 >	$$
 >	$$
 >	\begin{align} 
->\text{per ipotesi induttiva } V\to W \text{ q}&\text{uindi }t_{1}[W]=t_{2}[W] \implies\\
+>\text{per ipotesi induttiva } V\to W \in F^+ \text{ q}&\text{uindi }t_{1}[W]=t_{2}[W] \implies\\
 &\implies t_{1}[WZ]=t_{2}[WZ]\implies \\
 &\implies t_{1}[Y]=t_{2}[Y]
 \end{align}
