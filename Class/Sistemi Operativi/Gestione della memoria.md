@@ -217,5 +217,9 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 >L’indirizzo vero è pertanto $11\cdot 100+43=1143$
 
 >[!info]
->
+>Per ogni processo, il numero di pagine è al più il numero di frames (non sarà più vero con la memroa virtuale)
+>![[Pasted image 20241024195255.png|440]]
 
+---
+## Segmentazione (semplice)
+Le differenze tra paginazione e segmentazione stanno nel fatto che nella paginazione le pagine sono tutte di ugual dimensione, mentre i segmenti hanno lunghezza variabile (tipo il partizionamento dinamico, ma è il programmatore a decidere come deve essere segmentato il processo)
