@@ -228,3 +228,7 @@ In questo risulta simile al partizionamento dinamico ma è il programmatore a de
 
 ### Indirizzi Logici
 ![[Pasted image 20241024200117.png]]
+
+
+---
+# Memoria virtuale: hardware e strutture di controllo
