@@ -222,4 +222,8 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 
 ---
 ## Segmentazione (semplice)
-Le differenze tra paginazione e segmentazione stanno nel fatto che nella paginazione le pagine sono tutte di ugual dimensione, mentre i segmenti hanno lunghezza variabile (tipo il partizionamento dinamico, ma è il programmatore a decidere come deve essere segmentato il processo)
+Le differenze tra paginazione e segmentazione sta nel fatto che nella paginazione le pagine sono tutte di ugual dimensione, mentre i segmenti hanno **lunghezza variabile**.
+In questo risulta simile al partizionamento dinamico ma è il programmatore a decidere come deve essere segmentato il processo (tipicamente viene fatto un segmento per il codice sorgente, uno per i dati condivisi e uno per lo stack delle chiamate)
+
+### Indirizzi Logici
+![[Pasted image 20241024200117.png]]
