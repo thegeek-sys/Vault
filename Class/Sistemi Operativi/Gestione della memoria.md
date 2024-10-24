@@ -250,3 +250,6 @@ Quindi il pezzo di processo che contiene l’indirizzo logico viene portato in m
 Quando verrà eseguito, occorrerà eseguire nuovamente la stessa istruzione che aveva causato il fault
 
 ## Conseguenze
+Abbiamo due principali conseguenze a ciò:
+- Svariati processi possono essere in memoria principale. Questo vuol dire che è molto probabile che ci sia sempre almeno un processo ready, aumentando così il grado di multiprogrammazione
+- Un processo potrebbe richiedere più dell’intera memoria princiapale
