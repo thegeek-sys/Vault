@@ -246,4 +246,7 @@ Ci si è accorti che non ci sta nessuna necessità che tutte le pagine o segment
 ## Esecuzione di un processo
 Il SO porta in memoria principale solo alcuni pezzi (pagine) del programma; la porzione del processo in RAM viene chiamato *resident set*.
 Se il processo tanta di accedere ad un indirizzo che non si trova in memoria viene generato un interrupt di tipo *page fault* che risulta essere una richiesta I/O a tutti gli effetti, infatti il SO mette il processo in blocked
-Quindi il pezzo di processo che contiene l’indirizzo logico viene portato in memoria principale
+Quindi il pezzo di processo che contiene l’indirizzo logico viene portato in memoria principale (il SO effettua una richiesta di lettura su disco) e finché quest’operazione non viene completata, un altro processo va in esecuzione. Una volta completata, un interrupt farà si che il processo torni ready (non necessariamente in esecuzione)
+Quando verrà eseguito, occorrerà eseguire nuovamente la stessa istruzione che aveva causato il fault
+
+## Conseguenze
