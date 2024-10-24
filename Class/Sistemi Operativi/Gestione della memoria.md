@@ -216,3 +216,6 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 >Il frame $11$ ha indirizzi che vanno da $1100$ a $1199$: qual è il numero giusto? Basta fare `343 mod 100 = 43` quindi il 44-esimo byte
 >L’indirizzo vero è pertanto $11\cdot 100+43=1143$
 
+>[!info]
+>
+
