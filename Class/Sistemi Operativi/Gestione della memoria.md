@@ -240,27 +240,45 @@ In questo risulta simile al partizionamento dinamico ma è il programmatore a de
 ## Concetti fondamentali
 I riferimenti alla memoria sono degli indirizzi logici che sono tradotti in indirizzi fisici a tempo di esecuzione; questo perché un processo potrebbe essere spostato più volte della memoria principale alla secondaria e viceversa durante la sua esecuzione, ogni volta occupando zone di memoria diverse.
 
+---
 ## L’idea geniale
 Ci si è accorti che non ci sta nessuna necessità che tutte le pagine o segmenti di un processo siano in memoria principale. Infatti per eseguire un processo ho la necessità che ci sia in memoria la pagina che contiene l’istruzione da eseguire e eventualmente i dati di cui l’istruzione ha bisogno e il resto può essere caricato in un momento successivo. Ciò fa passare dalla paginazione semplice alla paginazione con memoria virtuale.
 
+---
 ## Esecuzione di un processo
 Il SO porta in memoria principale solo alcuni pezzi (pagine) del programma; la porzione del processo in RAM viene chiamato *resident set*.
 Se il processo tanta di accedere ad un indirizzo che non si trova in memoria viene generato un interrupt di tipo *page fault* che risulta essere una richiesta I/O a tutti gli effetti, infatti il SO mette il processo in blocked
 Quindi il pezzo di processo che contiene l’indirizzo logico viene portato in memoria principale (il SO effettua una richiesta di lettura su disco) e finché quest’operazione non viene completata, un altro processo va in esecuzione. Una volta completata, un interrupt farà si che il processo torni ready (non necessariamente in esecuzione)
 Quando verrà eseguito, occorrerà eseguire nuovamente la stessa istruzione che aveva causato il fault
 
+---
 ## Conseguenze
 Abbiamo due principali conseguenze a ciò:
 - Svariati processi possono essere in memoria principale. Questo vuol dire che è molto probabile che ci sia sempre almeno un processo ready, aumentando così il grado di multiprogrammazione
 - Un processo potrebbe richiedere più dell’intera memoria princiapale
 
+---
 ## Memoria virtuale: terminologia
 **Memoria virtuale** → schema di allocazione di memoria, in cui la memoria secondaria può essere usata come se fosse principale
 - gli indirizzi usati nei programmi e quelli usati dal sistema sono diversi
 - c’è una fase di traduzione automatica dai primi nei secondi
 - la dimensione della memoria virtuale è limitata dallo schema di indirizzamento, oltre che ovviamente dalla dimensione della memoria secondaria
 - la dimensione della memoria principale, invece, non influisce sulla dimensione della memoria virtuale
+**Memoria reale** → quella principale (la RAM)
 **Indirizzo virtuale** → l’indirizzo associato ad una locazione della memoria virtuale (fa sì che si possa accedere a tale locazione come se fosse parte della memoria principale)
 **Spazio degli indirizzi virtuali** → la quantità di memoria virtuale assegnata ad un processo
 **Spazio degli indirizzi** → la quantità di memoria assegnata ad un processo
 **Indirizzo reale** → indirizzo di una locazione di memoria
+
+
+>[!example] Come un processo Linux vede la memoria
+>![[Pasted image 20241024234957.png|440]]
+
+---
+## Trashing
+E’ ciò che succede quando il SO passa la maggior parte del tempo a swappare i processi piuttosto che ad eseguirli. Questo avviene quando un processo, la maggior parte delle richieste che fa, danno vita ad un *page fault*.
+Per evitarlo, il SO cerca di indovinare quali pezzi di processo saranno usati con minore o maggiore probabilità sulla base della storia recente. Questo meccanismo sfrutta il **principio di località**
+
+### Principio di località
+I riferimenti che fa un processo fa tendono ad essere vicini (sia che si tratti di dati che di istruzioni) quindi solo pochi pezzi di processo saranno necessari di volta in volta.
+Si può dunque prevedere abbastanza bene quali pezzi di processo saranno necessari nel prossimo futuro
