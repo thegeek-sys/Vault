@@ -79,7 +79,8 @@
               "title": "2024-10-24_BD"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,10 +237,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "785e57b5e4fd92db",
+  "active": "cc397d6f1bac51c4",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Basi di dati/Basi di dati.md",
+    "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
     "Flet-notes/2024-10-24_BD.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
