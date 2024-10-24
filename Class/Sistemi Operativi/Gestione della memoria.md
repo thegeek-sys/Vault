@@ -202,3 +202,6 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 >
 >Tabelle delle pagine risultanti
 >![[Pasted image 20241021233804.png|450]]
+
+>[!example] Esempio di traduzione
+>
