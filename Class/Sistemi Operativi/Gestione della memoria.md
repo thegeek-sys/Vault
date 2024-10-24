@@ -183,7 +183,7 @@ I SO che la adottano però devono mantenere una tabella delle pagine per ogni pr
 
 >[!info] Quando c’è un process switch, la tabella delle pagine del nuovo processo deve essere ricaricata
 
-A differenza di prima in cui l’hardware doveva solamente intervenire e aggiungere un offset, qui deve intervenire sulle pagine stesse, infatti un indirizzo di memoria può essere visto come un numero di pagina e uno spiazzamento al suo interno
+A differenza di prima in cui l’hardware doveva solamente intervenire e aggiungere un offset, qui deve intervenire sulle pagine stesse, infatti un indirizzo di memoria può essere visto come un numero di pagina e uno spiazzamento al suo interno (indirizzo logico)
 
 >[!example]
 >![[Pasted image 20241021233338.png|250]]
