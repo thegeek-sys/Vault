@@ -4,69 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "455919ad3cc4a222",
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "785e57b5e4fd92db",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "Sistemi Operativi"
+              "title": "Basi di dati"
             }
           },
           {
-            "id": "3d7f3dd856b9e87c",
+            "id": "7d262e6786c4a723",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gestione della memoria"
+              "title": "Progettazione di una base di dati relazionale - Dipendenze funzionali"
             }
           },
           {
-            "id": "e37f031c5f609d0f",
+            "id": "0c9472a68ef3152c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Processi.md",
+                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processi"
+              "title": "Chiusura di un insieme di dipendenze funzionali"
             }
           },
           {
-            "id": "a91fad9c7db7b57b",
+            "id": "cc397d6f1bac51c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling.md",
+                "file": "Flet-notes/2024-10-24_BD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scheduling"
+              "title": "2024-10-24_BD"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "segmentation",
+                "query": "global pointer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +103,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Ricerca"
+              "title": "Search"
             }
           },
           {
@@ -118,8 +116,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -140,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Gestione della memoria"
+              "title": "Backlinks for Basi di dati"
             }
           },
           {
@@ -159,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Gestione della memoria"
+              "title": "Outgoing links from Basi di dati"
             }
           },
           {
@@ -186,10 +183,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
+                "file": "Class/Basi di dati/Basi di dati.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gestione della memoria"
+              "title": "Outline of Basi di dati"
             }
           },
           {
@@ -224,13 +221,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3d7f3dd856b9e87c",
+  "active": "cc397d6f1bac51c4",
   "lastOpenFiles": [
+    "Flet-notes/2024-10-24_BD.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+    "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
     "Class/Basi di dati/Basi di dati.md",
     "Flet-notes/2024-10-23_BD.md",
-    "Class/Sistemi Operativi/Gestione della memoria.md",
     "Files/Pasted image 20241021233804.png",
     "Files/Pasted image 20241021233636.png",
     "Files/Pasted image 20241021233610.png",
@@ -266,7 +264,6 @@
     "Flet-notes/2024-10-02_BD.md",
     "Files/Screenshot 2024-10-02 alle 16.42.00.psd",
     "Flet-notes/2024-09-27_SO.md",
-    "Flet-notes/2024-09-26_BD.md",
     "Class/Basi di dati",
     "Class/Sistemi Operativi",
     "Programming languages/Java/Main.java",
