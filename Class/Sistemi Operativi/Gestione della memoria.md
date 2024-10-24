@@ -204,4 +204,15 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 >![[Pasted image 20241021233804.png|450]]
 
 >[!example] Esempio di traduzione
+>Supponiamo che la dimensione di una pagina sia di $100 \text{ bytes}$. Quindi la RAM dell’esempio precedente è di solo $1400 \text{ bytes}$
+>Inoltre i processi A, B, C, D richiedono solo $400$, $300$, $400$ e $500 \text{ bytes}$ rispettivamente (comprensivi di codice - program, dati globali ed heap - data e stack delle chiamate).
+>Nelle istruzioni dei processi, i riferimenti alla RAM sono relativi all’inizio del processo (quindi, ad esempio, per D ci saranno riferimenti compresi nell’intervallo $[0, 499]$)
 >
+>Supponiamo ora che attualmente il processo D sia in esecuzione, e che occorra eseguire l’istruzione `j 343` (vale lo stesso anche per istruzioni di load o store, anche se devono passare per registri)
+>Ovviamente non si tratta dell’indirizzo $343$ della RAM: lì c’è il processo A.
+>Bisogna capire in quale pagina di D si trova $343$: basta fare `343 div 100 = 3`
+>
+>Poi occorre guardare la tabella delle pagine di D: la pagina $3$ corrisponde al frame di RAM numero $11$
+>Il frame $11$ ha indirizzi che vanno da $1100$ a $1199$: qual è il numero giusto? Basta fare `343 mod 100 = 43` quindi il 44-esimo byte
+>L’indirizzo vero è pertanto $11\cdot 100+43=1143$
+
