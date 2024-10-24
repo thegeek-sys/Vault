@@ -229,6 +229,13 @@ In questo risulta simile al partizionamento dinamico ma è il programmatore a de
 ### Indirizzi Logici
 ![[Pasted image 20241024200117.png]]
 
+>[!info]
+>Qui si suppone che non possano esserci segmenti più grandi di $2^{12} \text{ bytes}$
+>![[Pasted image 20241024201839.png|440]]
+>In questo caso nella tabella delle corrispondenze oltre all’indirizzo base del segmento, ci sta anche la sua lunghezza
 
 ---
 # Memoria virtuale: hardware e strutture di controllo
+
+## Concetti fondamentali
+I riferimenti alla memoria sono degli indirizzi logici che sono tradotti in indirizzi fisici a tempo di esecuzione.
