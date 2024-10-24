@@ -207,3 +207,16 @@ Si ha $F^+=F^A$
 >Supponiamo per assurdo che $X\to Y\in F^+$ e $X\to Y\notin F^A$. Essendo $r$ un’istanza legale le dipendenze di $F^+$ sono soddisfatte anche per $r$.
 >Dunque se $t_{1}[X]=t_{2}[X] \text{ allora }t_{1}[Y]=t_{2}[Y]\implies Y\subseteq X^+ \xRightarrow{\text{Lemma 1}} X\to Y\in F^A$
 >$\begin{flalign}&& \square\end{flalign}$
+
+### Nota finale
+E’ molto utile notare che la dimostrazione di questo teorema si basa su due collegamenti molto importanti
+- il collegamento che esiste tra l’insieme di dipendenze $F^+$ e le istanze legali: se una istanza è legale allora soddisfa anche tutte le dipendenze in $F^+$ e d’altra parte $F^+$ è l’insieme di dipendenze soddisfatte da ogni istanza legale (notare che per verificare se un’istanza è legale basta controllare che soddisfi le dipendenze in $F$)
+- il collegamento che esiste tra la chiusura $X^+$di un insieme di attributi $X$ (diamo per scontato che l’insieme di dipendenze di riferimento sia $F$ e otteniamo un pedice) e il sottoinsieme di dipendenze in $F^A$ (che abbiamo appena visto essere uguale a $F^+$) che hanno $X$ come determinante, cioè $Y \subseteq X^+ \Leftrightarrow X\to Y \in F^A$ che equivale a dire che $Y\subseteq X^+\Leftrightarrow X\to Y\in F^+$ e in particolare che $X\to Y$ deve essere soddisfatta da ogni istanza legale
+
+---
+## A cosa serve conoscere $F^+$?
+Quindi abbiamo un modo per identificare tutte le dipendenze in $F^+$. Sono esattamente le stesse che si possono inserire in $F^A$ partendo da $F$ e applicando gli assiomi di Armstrong e le regole derivate (a costo però di una complessità esponenziale).
+Calcolare $F^A$, e quindi $F^+$ richiede tempo esponenziale in $\mid R\mid$. Basta considerare gli assiomi della riflessività e dell’aumento oppure la regola della decomposizione; ogni possibile sottoinsieme di $R$ posta a una o più dipendenze e i possibili sottoinsiemi $R$ sono $2^{\mid R\mid}$ pertanto il calcolo di $\mid F^+\mid$ ha complessità esponenziale in $\mid R\mid$
+
+Parleremo di terza forma normale (3NF), delle sue proprietà e di come ottenerla se lo schema di relazione che abbiamo progettato è carente. Come abbiamo già accennato, il problema nasce dal fatto di aver rappresentato più concetti (oggetti) nella stessa relazione, che la soluzione consiste nel decomporre lo schema in maniera opportuna.
+Ovviamente tutte le dipendenze funzionali originarie devono essere soddisfatte anche dalle istanze dei nuovi schemi. **In particolare, devono essere preservate tutte le dipendenze in $F^+$**
