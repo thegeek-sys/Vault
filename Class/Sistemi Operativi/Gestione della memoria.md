@@ -244,4 +244,4 @@ I riferimenti alla memoria sono degli indirizzi logici che sono tradotti in indi
 Ci si è accorti che non ci sta nessuna necessità che tutte le pagine o segmenti di un processo siano in memoria principale. Infatti per eseguire un processo ho la necessità che ci sia in memoria la pagina che contiene l’istruzione da eseguire e eventualmente i dati di cui l’istruzione ha bisogno e il resto può essere caricato in un momento successivo. Ciò fa passare dalla paginazione semplice alla paginazione con memoria virtuale.
 
 ## Esecuzione di un processo
-Il SO porta in memoria principale solo alcuni pezzi (pagine) del programma, chiamato *resident set*
+Il SO porta in memoria principale solo alcuni pezzi (pagine) del programma; la porzione del processo in RAM viene chiamato *resident set*
