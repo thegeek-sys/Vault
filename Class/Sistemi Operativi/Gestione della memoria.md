@@ -219,7 +219,7 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 >[!info]
 >Per ogni processo, il numero di pagine è al più il numero di frames (non sarà più vero con la memria virtuale)
 >![[Pasted image 20241024195255.png|440]]
->Per ottenere l’indirizzo vero dunque punto alla pagina formata dai $6 \text{ bit}$ più significativi e utilizzo i restanti $10 \text{ bit}$ (ogni pagina è grande $2^{10} \text{ bit}$) come offset all’interno della pagina
+>Per ottenere l’indirizzo vero dunque punto alla pagina formata dai $6 \text{ bit}$ più significativi, controllando la corrispondenza con il frame, e utilizzo i restanti $10 \text{ bit}$ (ogni pagina è grande $2^{10} \text{ bit}$) come offset all’interno della pagina
 
 ---
 ## Segmentazione (semplice)
