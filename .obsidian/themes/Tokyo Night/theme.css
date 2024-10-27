@@ -175,7 +175,7 @@
   --text-on-accent: var(--bg);
   --text-highlight-bg: rgba(var(--orange_x), 0.4);
   --text-selection: rgba(var(--blue0_x), 0.6);
-  --bold-color: var(--cyan);
+  --bold-color: var(--magenta);
   --italic-color: var(--cyan);
 
   --interactive-normal: var(--bg_dark);

@@ -36,3 +36,7 @@ $$
 K\to X
 $$
 dove $K$ contiene una chiave ($\text{Matr}$ o $\text{CF}$)
+
+>[!hint]
+>Vedremo che questa è la prima condizione che però va ulteriormente rifinita per arrivare ad una definizione precisa di terza forma normale (3NF)
+
