@@ -91,3 +91,5 @@ $$
 
 >[!warning]
 >- è sbagliato scrivere $\forall X\to A\in F$, perché non sapremmo se e come valutare una dipendenza del tipo $X\to AB$ (due o più attributi a destra)
+>- se sostituisco $\forall X\to A\in F$ con $\forall X\to Y\in F$, non so come comportarmi se $Y$ contiene sia attributi primi che non
+
