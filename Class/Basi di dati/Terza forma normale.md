@@ -84,7 +84,7 @@ dove $K$ contiene una chiave oppure $X$ è contenuto in una chiave
 ### Definizione
 Dati uno shema di relazione $R$ e un insieme di dipendenze funzionali $F$ su $R$, $R$ è in **3NF** se
 $$
-\forall X\to A\in F^+, A\not\in X
+\forall X\to A\in F^+ \,\,\,\,\,\,\,A\not\in X
 $$
 - $A$ appartiene ad una chiave (è **primo**, applicabile solo ai cingleton)
 - $X$ contiene una chiave (è una superchiave)
@@ -124,3 +124,11 @@ $$
 >Ho infatti decomposto in $D\to B$ ($B$ è parte di una chiave) e in $D\to C$ ($C$ è una parte di una chiave)
 
 
+---
+## Dipendenza parizale
+Siano $R$ uno schema di relazione e $F$ un insieme di dipendenze funzionali su $R$.
+$X\to A\in F^+\mid A\not\in X$ è una **dipendenza parziale** su $R$ se $A$ non è primo ed $X$ è contenuto propriamente in una chiave di $R$
+
+## Dipendenza transitiva
+Siano $R$ uno schema di relazione e $F$ un insieme di dipendenze funzionali su $R$.
+$X\to A\in F^+\mid A\not\in X$ è una **dipendenza transitiva** su $R$ se $A$ non è primo e per ogni chiave $K$ di $R$ si ha che $X$ non p contenuto propriamente in $K$ e $K-X\neq\varnothing$
