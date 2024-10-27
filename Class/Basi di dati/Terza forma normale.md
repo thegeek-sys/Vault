@@ -86,10 +86,26 @@ Dati uno shema di relazione $R$ e un insieme di dipendenze funzionali $F$ su $R$
 $$
 \forall X\to A\in F^+, A\not\in X
 $$
-- $A$ appartiene ad una chiave (è primo)
+- $A$ appartiene ad una chiave (è **primo**, applicabile solo ai cingleton)
 - $X$ contiene una chiave (è una superchiave)
 
 >[!warning]
 >- è sbagliato scrivere $\forall X\to A\in F$, perché non sapremmo se e come valutare una dipendenza del tipo $X\to AB$ (due o più attributi a destra)
 >- se sostituisco $\forall X\to A\in F$ con $\forall X\to Y\in F$, non so come comportarmi se $Y$ contiene sia attributi primi che non
+
+>[!example]
+>$$
+\begin{flalign}R=A,B,C,D&& F=\{AB\to CD, AC\to BD, D\to BC\}\end{flalign}
+>$$
+>
+>Ho come chiavi:
+>- $K_{1}=AB$
+>- $K_{2}=AC$
+>- $K_{3}=AD$ (per il teorema dell’aumento sull’ultima dipendenza funzionale)
+>
+>
+>D nell’ultima dipendenza non è una chiave (ma un pezzo di una chiave) però il determinato è composto da $B$ (un attributo della chiave $AB$) e da $C$ (un attributo della chiave $AC$); dunque lo schema è in **3FN**.
+>
+>Ho infatti decomposto in $D\to B$ ($B$ è parte di una chiave) e in $D\to C$ ($C$ è una parte di una chiave)
+
 
