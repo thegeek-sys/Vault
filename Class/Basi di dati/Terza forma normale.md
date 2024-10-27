@@ -75,3 +75,8 @@ dove $K$ contiene una chiave
 
 ---
 ## Terza forma normale
+Uno schema di relazione è in **3NF** se le uniche dipendenze funzionali non banali (non riflessive) che devono essere soddisfatte da ogni istanza legale sono del tipo
+$$
+K\to X
+$$
+dove $K$ contiene una chiave oppure $X$ è contenuto in una chiave
