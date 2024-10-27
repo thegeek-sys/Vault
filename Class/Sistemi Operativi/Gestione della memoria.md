@@ -282,3 +282,11 @@ Per evitarlo, il SO cerca di indovinare quali pezzi di processo saranno usati co
 ### Principio di località
 I riferimenti che fa un processo fa tendono ad essere vicini (sia che si tratti di dati che di istruzioni) quindi solo pochi pezzi di processo saranno necessari di volta in volta.
 Si può dunque prevedere abbastanza bene quali pezzi di processo saranno necessari nel prossimo futuro
+
+---
+## Supporto richiesto
+Anche qui sarebbe necessario un eccessivo overhead per poter fare tutto, risulta dunque utile del supporto hardware. Il sistema operativo quindi si deve occupare di spostare le pagine da RAM a disco e viceversa
+
+### Paginazione
+Le pagine contengono al loro interno, oltre che il numero di frame, anche dei bit di controllo; di questi, due sono particolarmente importanti: il **bit di presenza** (ci dice se un bit si trova in RAM oppure se è swappato) e **modified** (è zero se ci si è acceduto solo in lettura e diventa uno se è stato modificato)
+![[Pasted image 20241027214737.png]]
