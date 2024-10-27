@@ -128,9 +128,46 @@ $$
 ## Dipendenza parizale
 Siano $R$ uno schema di relazione e $F$ un insieme di dipendenze funzionali su $R$.
 $X\to A\in F^+\mid A\not\in X$ è una **dipendenza parziale** su $R$ se $A$ non è primo ed $X$ è contenuto propriamente in una chiave di $R$
-![[Pasted image 20241027185741.png|250]]
+![[Pasted image 20241027185741.png|150]]
 
+### Definizione
+$A$ dipende parzialmente da una chiave $K$ se $\exists X\subset R$ tale che $K\to R\in F^+$ con $A\not\in X$ e tale che $X\subset K$ e $A$ non è parte di una chiave
+
+>[!example]
+>$$\text{Curriculum (}\mathbf{Matr}\text{, CF, Cogn, Nome, DataN, Com, Prov, }\mathbf{C\#}\text{, Tit, Doc, DataE, Voto)}$$
+>
+>Ad un numero di matricola corrisponde un solo cognome: $\text{Matr}\to \text{Cogn}$
+>Quindi ad una coppia costituita da un numero di matricola e da un codice di corso corrisponde un solo cognome: $\text{Matr, C\#}\to \text{Cogn}$
+>
+>L’attributo $\text{Cogn}$ dipende parzialmente dalla chiave $\text{Matr, C\#}$ ($\text{Matr, C\#}\to \text{Cogn}$ è una conseguenza di $\text{Matr}\to \text{Cogn}$)
+>
+>>[!info]
+>>$\text{Matr}$ è propriamente contenuto in una chiave
+
+---
 ## Dipendenza transitiva
 Siano $R$ uno schema di relazione e $F$ un insieme di dipendenze funzionali su $R$.
 $X\to A\in F^+\mid A\not\in X$ è una **dipendenza transitiva** su $R$ se $A$ non è primo e per ogni chiave $K$ di $R$ si ha che $X$ non è contenuto propriamente in $K$ e $K-X\neq\varnothing$
 ![[Pasted image 20241027185912.png|550]]
+
+### Definizione
+$A$ dipende parzialmente da una chiave $K$ se $\exists X\subset R$ tale che $K\to R\in F^+$ con $A\not\in X$ e $X\to A\in F^+$ e $A$ non è parte di una chiave
+
+>[!example]
+>$$\text{Studente (}\mathbf{Matr}\text{, CF, Cogn, Nome, Data, Com, Prov)}$$
+>Ad un numero di matricola corrisponde un solo comune di nascita: $\text{Matr}\to \text{Com}$
+>Un comune si trova in una sola provincia: $\text{Com}\to \text{Prov}$
+>Quindi ad un numero di matricola corrisponde una sola provincia: $\text{Matr}\to \text{Prov}$
+>
+>L’attributo $\text{Prov}$ dipende transitivamente dalla chiave $\text{Matr}$ ($\text{Matr}\to \text{Prov}$ è una conseguenza di $\text{Matr}\to \text{Com}$ e $\text{Com}\to \text{Prov}$)
+>
+>>[!info]
+>>Per ogni chiave $K$ di $R$ ($\text{Matr}$ e $\text{CF}$) $\text{Com}$ non è contenuto propriamente nella chiave ($\text{Com}$ non è sottoinsieme né di $\text{Matr}$ né di $\text{CF}$) e $K-\text{Com}\neq\varnothing$ ($\text{Matr}-\text{Com}=\text{Matr}$ e $\text{CF}-\text{Com}=\text{CF}$)
+
+
+---
+## Definizione alternativa di 3NF (teorema)
+Dato uno schema $R$ e un insieme funzionali $F$ su $R$, $R$ è in 3NF se e solo se in $F$ non ci sono **né dipendenze parziali né dipendenze transitive**
+
+>[!info] Dimostrazione
+>
