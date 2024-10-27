@@ -175,4 +175,7 @@ Dato uno schema $R$ e un insieme funzionali $F$ su $R$, $R$ è in 3NF se e solo 
 >$A$ appartiene ad una chiave (è primo) oppure $X$ contiene una chiave (è superchiave)
 >
 >- Se $A$ è parte di una chiave (è primo), viene a mancare la prima condizione per avere una dipendenza parziale o transitiva
->- Se $A$ non è primo (non fa parte di nessuna chiave), allora $X$ è superchiave. In quanto tale può contenere una chiave, ma non essere contenuto propriamente
+>- Se $A$ non è primo (non fa parte di nessuna chiave), allora $X$ è superchiave. Dunque si ha che $X\supset K$ facendo mancare la seconda condizione per la dipendenza parziale (non può essere che $X\subset K$); per lo stesso motivo non si può verificare che $K-X\neq\varnothing$ quindi la dipendenza non può essere transitiva
+>
+>##### Parte se
+>
