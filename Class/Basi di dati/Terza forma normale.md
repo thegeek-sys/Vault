@@ -95,6 +95,19 @@ $$
 
 >[!example]
 >$$
+\begin{flalign}R=A,B,C,D&& F=\{A\to B, B\to BC\}\end{flalign}
+>$$
+>
+>Ho come chiavi:
+>- $K_{1}=A$ → $A\to CD$ per transitività e $A\to BCD$ per unione
+>
+>$A\to B$ → rispetta le condizioni per essere in 3NF
+>$B\to BC$ → $B$ non è superchiave, controllo quindi i determinati. $C$ e $D$ violano la 3NF perché in entrambi i casi non fanno parte di una chiave
+>
+>Lo schema non è in 3NF
+
+>[!example] Esempio 2
+>$$
 \begin{flalign}R=A,B,C,D&& F=\{AB\to CD, AC\to BD, D\to BC\}\end{flalign}
 >$$
 >
