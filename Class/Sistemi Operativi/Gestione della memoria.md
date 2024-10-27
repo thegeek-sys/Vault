@@ -296,3 +296,4 @@ Le pagine contengono al loro interno, oltre che il numero di frame, anche dei bi
 ---
 ## Traduzione degli indirizzi
 ![[Pasted image 20241027215021.png]]
+La somma che si vede, non è una semplice somma infatti bisogna anche moltiplicare il numero di pagina per la dimensione della pagina oltre a sommare l’indirizzo base dell’inizio del page table
