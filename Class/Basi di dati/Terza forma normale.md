@@ -132,4 +132,5 @@ $X\to A\in F^+\mid A\not\in X$ è una **dipendenza parziale** su $R$ se $A$ non 
 
 ## Dipendenza transitiva
 Siano $R$ uno schema di relazione e $F$ un insieme di dipendenze funzionali su $R$.
-$X\to A\in F^+\mid A\not\in X$ è una **dipendenza transitiva** su $R$ se $A$ non è primo e per ogni chiave $K$ di $R$ si ha che $X$ non p contenuto propriamente in $K$ e $K-X\neq\varnothing$
+$X\to A\in F^+\mid A\not\in X$ è una **dipendenza transitiva** su $R$ se $A$ non è primo e per ogni chiave $K$ di $R$ si ha che $X$ non è contenuto propriamente in $K$ e $K-X\neq\varnothing$
+![[Pasted image 20241027185912.png|550]]
