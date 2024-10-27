@@ -92,8 +92,10 @@ $$
 >[!warning]
 >- è sbagliato scrivere $\forall X\to A\in F$, perché non sapremmo se e come valutare una dipendenza del tipo $X\to AB$ (due o più attributi a destra)
 >- se sostituisco $\forall X\to A\in F$ con $\forall X\to Y\in F$, non so come comportarmi se $Y$ contiene sia attributi primi che non
+>- la condizione $A \not\in X$ è importante. Infatti, per l’assioma della riflessività, se $A\in X$ avremo sempre $X\to A \in F^A$ e quindi in $F^+$, anche quando $A$ non è primo e $X$ non è superchiave, e quindi se considerassimo questo tipo di dipendenze nessuno schema risulterebbe in 3NF
 
->[!example]
+### Esempi
+>[!example] Esempio 1
 >$$
 \begin{flalign}R=A,B,C,D&& F=\{A\to B, B\to BC\}\end{flalign}
 >$$
