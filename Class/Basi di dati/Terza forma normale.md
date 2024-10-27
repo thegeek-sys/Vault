@@ -178,5 +178,16 @@ Dato uno schema $R$ e un insieme funzionali $F$ su $R$, $R$ è in 3NF se e solo 
 >- Se $A$ non è primo (non fa parte di nessuna chiave), allora $X$ è superchiave. Dunque si ha che $X\supset K$ facendo mancare la seconda condizione per la dipendenza parziale (non può essere che $X\subset K$); per lo stesso motivo non si può verificare che $K-X\neq\varnothing$ quindi la dipendenza non può essere transitiva
 >
 >##### Parte se
->Supponiamo per assurdo che non ci sono dipendenze parziali e transitive e lo schema non sia in 3NF. In tal caso vuol dire che ci sta almeno una dipendenza che viola la 3NF (ovvero che $A$ non è primo e $X$ non è una superchiave)
+>Supponiamo per assurdo che non ci sono dipendenze parziali e transitive e lo schema non sia in 3NF. In tal caso vuol dire che ci sta almeno una dipendenza che viola la 3NF (ovvero che $A$ non è primo e $X$ non è una superchiave).
+>Siccome $A$ non è primo devo verificare il secondo punto della 3NF
+>
+>- Se $X$ non è superchiave vuol dire che $\forall K \in R$, $X\not\subset K$ e $K-X\neq \varnothing$ e quindi vuol dire che ci sta una dipendenza transitiva. **CONTRADDIZIONE**
+>- Se $X$ è una porzione di una chiave, ovvero se $\exists K\in R \mid X\subset K$, in tal caso $X\to A$ è una dipendenza parziale su $R$. **CONTRADDIZIONE**
 
+
+---
+## Cosa vogliamo ottenere?
+Abbiamo visto che uno schema in 3NF ha delle buone proprietà che lo rendono preferibile ad uno che non è in 3NF. Un obbiettivo da tener presente quando si progetta una base di dati è quello di produrre uno schema in un ogni relazione sia in 3NF.
+Normalmente nella fase di progettazione concettuale si usa il modello Entità-Associazione e si individuano per l’appunto i concetti che devono essere rappresentati nella base di dati
+
+Se il lavoro di individuazione è fatto accuratamente lo schema relaziona può essere derivato con opportune regole, è in 3NF. Se tuttavia, dopo tale processo, ci ritrovassimo a produrre uno schema che non è in 3NF dovremmo procedere ad una fare di **decomposizione** di tale schema in maniera analoga a quella esaminata nell’esempio sui dati di un’Università ([[Progettazione di una base di dati relazionale - Problemi e vincoli#Introduzione|qui]])
