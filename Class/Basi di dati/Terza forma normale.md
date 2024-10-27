@@ -81,9 +81,6 @@ K\to X
 $$
 dove $K$ contiene una chiave oppure $X$ è contenuto in una chiave
 
->[!warning]
->Anche questa condizione richiede ancora di essere rifinita per giungere alla definizione finale di 3NF
-
 ### Definizione
 Dati uno shema di relazione $R$ e un insieme di dipendenze funzionali $F$ su $R$, $R$ è in **3NF** se
 $$
@@ -91,3 +88,6 @@ $$
 $$
 - $A$ appartiene ad una chiave (è primo)
 - $X$ contiene una chiave (è una superchiave)
+
+>[!warning]
+>- è sbagliato scrivere $\forall X\to A\in F$, perché non sapremmo se e come valutare una dipendenza del tipo $X\to AB$ (due o più attributi a destra)
