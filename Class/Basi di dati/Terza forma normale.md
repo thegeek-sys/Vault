@@ -170,4 +170,9 @@ $A$ dipende parzialmente da una chiave $K$ se $\exists X\subset R$ tale che $K\t
 Dato uno schema $R$ e un insieme funzionali $F$ su $R$, $R$ è in 3NF se e solo se in $F$ non ci sono **né dipendenze parziali né dipendenze transitive**
 
 >[!info] Dimostrazione
+>##### Parte solo se
+>Lo schema $R$ è in 3NF, quindi $\forall X\to A\in F^+, \,A\not\in X$
+>$A$ appartiene ad una chiave (è primo) oppure $X$ contiene una chiave (è superchiave)
 >
+>- Se $A$ è parte di una chiave (è primo), viene a mancare la prima condizione per avere una dipendenza parziale o transitiva
+>- Se $A$ non è primo (non fa parte di nessuna chiave), allora $X$ è superchiave. In quanto tale può contenere una chiave, ma non essere contenuto propriamente
