@@ -191,3 +191,23 @@ Abbiamo visto che uno schema in 3NF ha delle buone proprietà che lo rendono pre
 Normalmente nella fase di progettazione concettuale si usa il modello Entità-Associazione e si individuano per l’appunto i concetti che devono essere rappresentati nella base di dati
 
 Se il lavoro di individuazione è fatto accuratamente lo schema relaziona può essere derivato con opportune regole, è in 3NF. Se tuttavia, dopo tale processo, ci ritrovassimo a produrre uno schema che non è in 3NF dovremmo procedere ad una fare di **decomposizione** di tale schema in maniera analoga a quella esaminata nell’esempio sui dati di un’Università ([[Progettazione di una base di dati relazionale - Problemi e vincoli#Introduzione|qui]])
+
+### La 3NF non basta
+Uno schema che non è in 3NF può essere decomposto in più modi in un insieme di schemi in 3NF. Ad esempio lo schema $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B, B\to C\}$ non è in 3NF per la presenza in $F^+$ della dipendenza transitiva $B\to C$, dato che la chiave è evidentemente $A$.
+$R$ può essere decomposto in:
+- $R_{1}=AB$ con $\{A\to B\}$
+- $R_{2}=BC$ con $\{A\to C\}$
+oppure:
+- $R_{1}=AB$ con $\{A\to B\}$
+- $R_{2}=AC$ con $\{A\to C\}$
+
+Entrambi gli schemi sono in 3NF, tuttavia la seconda soluzione non è soddisfacente.
+Consideriamo due istanze legali degli schemi ottenuti
+![[Pasted image 20241027212903.png|250]]
+L’istanza delo schema originario $R$ che posso ricostruire da questa attraverso il join naturale è la seguente
+![[Pasted image 20241027213020.png|170]]
+Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funzionale** $B\to C$
+
+>[!warning]
+>Occorre preservare tutte le dipendenze in $F^+$
+
