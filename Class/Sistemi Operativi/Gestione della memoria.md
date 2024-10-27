@@ -285,8 +285,14 @@ Si può dunque prevedere abbastanza bene quali pezzi di processo saranno necessa
 
 ---
 ## Supporto richiesto
-Anche qui sarebbe necessario un eccessivo overhead per poter fare tutto, risulta dunque utile del supporto hardware. Il sistema operativo quindi si deve occupare di spostare le pagine da RAM a disco e viceversa
+Anche qui sarebbe necessario un eccessivo overhead per poter fare tutto, risulta dunque utile del supporto hardware.
 
-### Paginazione
+---
+## Paginazione
+Ogni processo ha una sua tabella della pagine e il process control block di un processo punta a tale tabella
 Le pagine contengono al loro interno, oltre che il numero di frame, anche dei bit di controllo; di questi, due sono particolarmente importanti: il **bit di presenza** (ci dice se un bit si trova in RAM oppure se è swappato) e **modified** (è zero se ci si è acceduto solo in lettura e diventa uno se è stato modificato)
 ![[Pasted image 20241027214737.png]]
+
+---
+## Traduzione degli indirizzi
+![[Pasted image 20241027215021.png]]
