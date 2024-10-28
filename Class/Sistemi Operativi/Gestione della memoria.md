@@ -306,5 +306,4 @@ Affinché questo schema funzioni, non appena un processo viene caricato la prima
 ## Tabelle delle pagine
 Come abbiamo detto un problema da tenere sotto controllo è quello dell’overhead, infatti le pagine potrebbero contenere molti elementi. Quando un processo è in esecuzione, viene assicurato che almeno una parte della sua tabella delle pagine sia in memoria.
 Facciamo qualche conto: supponiamo $8\text{GB}$ di spazio virtuale e $1\text{kB}$ per ogni pagina, il numero di entries che ci possono essere per ogni tabella delle pagine è $\frac{2^{33}}{2^{10}}=2^{23}$ (ovvero per ogni processo)
-Quanto occupa una entry? $1 \text{ byte}$ di controllo $\log_{2}(\text{size RAM in frames})$
-con massimo $4 \text{ GB}$ di RAM (architettura a 32-bits) fanno $4 \text{ bytes}$ più il $\text{byte}$ di controllo
+Quanto occupa una entry? $1 \text{ byte}$ di controllo $\log_{2}(\text{size RAM in frames})$ → con massimo $4 \text{ GB}$ di RAM (architettura a 32-bits) fanno $4 \text{ bytes}$ più il $\text{byte}$ di controllo
