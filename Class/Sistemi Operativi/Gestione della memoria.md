@@ -373,5 +373,9 @@ Ma quanto dovrebbe essere la giusta dimensione di una pagina
 ### Perché grande
 Più piccola è una pagina, minore è la frammentazione all’interno delle pagine ma è anche maggiore il numero di pagine per processo. Il che significa che è più grande la tabella delle pagine per ogni processo e quindi la maggior parte delle tabelle finisce in memoria secondaria.
 La memoria secondaria è ottimizzata per trasferire grossi blocchi di dati, quindi avere le pagine ragionevolmente grandi non sarebbe male
+
 ### Perché piccola
 Più piccola è una pagina, maggiore il numero di pagine che si trovano in memoria principale. Lo stesso processo può riuscire ad avere un resident set più grande facendo diminuire i page fault e aumentanto la multiprogrammazione
+
+Per risolvere questo problema sono stati fatti diversi esperimenti per capire quale fosse il giusto compromesso
+![[Pasted image 20241029002627.png]]
