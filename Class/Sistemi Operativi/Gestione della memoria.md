@@ -299,6 +299,8 @@ Le pagine contengono al loro interno, oltre che il numero di frame, anche dei bi
 La traduzione dunque è fatta dall’hardware e la somma che si vede, non è una semplice somma infatti bisogna anche moltiplicare il numero di pagina per la dimensione della pagina oltre a sommare l’indirizzo base dell’inizio del page table
 
 Affinché questo schema funzioni, non appena un processo viene caricato la prima volta oppure si ha un process switch, il sistema operativo deve:
-1. Caricare a partire da un certo indirizzo $I$ la tabella delle pagine del processo
+1. Caricare a partire da un certo indirizzo $I$ la tabella delle pagine del processo (si trova all’interno del process control block)
 2. Caricare il valore di $I$ in un opportuno registro dipendente dall’hardware (`CR3` nei Pentium)
 
+---
+## Tabelle delle pagine
