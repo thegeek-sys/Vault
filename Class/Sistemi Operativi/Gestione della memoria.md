@@ -223,7 +223,7 @@ A differenza di prima in cui l’hardware doveva solamente intervenire e aggiung
 
 ---
 ## Segmentazione (semplice)
-Le differenze tra paginazione e segmentazione sta nel fatto che nella paginazione le pagine sono tutte di ugual dimensione, mentre i segmenti hanno **lunghezza variabile**.
+La differenza tra paginazione e segmentazione sta nel fatto che nella paginazione le pagine sono tutte di ugual dimensione, mentre i segmenti hanno **lunghezza variabile**.
 In questo risulta simile al partizionamento dinamico ma è il programmatore a decidere come deve essere segmentato il processo (tipicamente viene fatto un segmento per il codice sorgente, uno per i dati condivisi e uno per lo stack delle chiamate)
 
 ### Indirizzi Logici
@@ -385,5 +385,32 @@ Per risolvere questo problema sono stati fatti diversi esperimenti per capire qu
 Nelle moderne architetture hardware si possono supportare diverse dimensioni delle pagine (anche fino ad $1\text{GB}$) e il sistema operativo ne sceglie una: Linux sugli x86 va con $4\text{kB}$
 Le dimensioni più grandi sono usate in sistemi operativi di architetture grandi: cluster, grandi server, ma anche per i sistemi operativi stessi (kernel mode)
 
+---
 ## Segmentazione
-Permette al programmatore di vedere la memoria come un insieme di spazi (segmenti) di indirizzi la cui dimensione può essere dinamica. Questo viene usato per semplificare la gestione delle strutture dati che crescono
+Permette al programmatore di vedere la memoria come un insieme di spazi (segmenti) di indirizzi la cui dimensione può essere dinamica. Questo viene usato per semplificare la gestione delle strutture dati che crescono.
+Permette inoltre di:
+- modificare e ricompilare i programmi in modo indipendente
+- condividere dati
+- proteggere dati
+
+### Organizzazione
+Anche qui ogni processo ha una sua tabella dei segmenti e il process control block di un processo punta a tale tabella
+Ogni entry di questa tabella contiene:
+- indirizzo di partenza (in memoria principale) del segmento
+- la lunghezza del segmento
+- un bit per indicare se il segmento è in memoria principale o no
+- un altro bit per indicare se il segmento è stato modificato in seguito all’ultima volta che è stato caricato in memoria principale
+![[Pasted image 20241029003949.png]]
+
+### Traduzione degli indirizzi
+![[Pasted image 20241029004030.png]]
+
+### Paginazione e segmentazione
+La paginazione è trasparente al programmatore; il programmatore infatti non ne è a conoscenza
+
+La segmentazione è invece visibile al programmatore (se il programma è in assembler, altrimenti ci pensa il compilatore ad usare i segmenti)
+Quindi ogni segmento viene diviso in più pagine
+![[Pasted image 20241029004351.png]]
+
+#### Traduzione degli indirizzi
+![[Pasted image 20241029004417.png]]
