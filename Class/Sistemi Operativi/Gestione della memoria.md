@@ -379,3 +379,11 @@ Più piccola è una pagina, maggiore il numero di pagine che si trovano in memor
 
 Per risolvere questo problema sono stati fatti diversi esperimenti per capire quale fosse il giusto compromesso
 ![[Pasted image 20241029002627.png]]
+
+### Dimensione delle pagine in alcuni sistemi
+![[Pasted image 20241029002941.png|center|350]]
+Nelle moderne architetture hardware si possono supportare diverse dimensioni delle pagine (anche fino ad $1\text{GB}$) e il sistema operativo ne sceglie una: Linux sugli x86 va con $4\text{kB}$
+Le dimensioni più grandi sono usate in sistemi operativi di architetture grandi: cluster, grandi server, ma anche per i sistemi operativi stessi (kernel mode)
+
+## Segmentazione
+Permette al programmatore di vedere la memoria come un insieme di spazi (segmenti) di indirizzi la cui dimensione può essere dinamica. Questo viene usato per semplificare la gestione delle strutture dati che crescono
