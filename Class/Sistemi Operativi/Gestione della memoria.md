@@ -342,4 +342,6 @@ Se la pagina è presente (*TLB hit*), si prende il frame number e si ricava l’
 Se la pagina non è presente (*TLB miss*), si prende la “normale” tabella delle pagine del processo
 Se la pagina risulta in memoria principale a posto, altrimenti si gestisce il page fault.
 Quindi il TLB viene aggiornato includendo la pagina appena acceduta (usando un qualche algoritmo di rimpiazzamento se il TLB è già pieno: solitamente LRU)
-![[Pasted image 20241028235551.png]]
+![[Pasted image 20241028235551.png|550]]
+![[Pasted image 20241028235730.png|350]]
+
