@@ -303,7 +303,9 @@ Affinché questo schema funzioni, non appena un processo viene caricato la prima
 2. Caricare il valore di $I$ in un opportuno registro dipendente dall’hardware (`CR3` nei Pentium)
 
 ---
-## Tabelle delle pagine
+## Overhead
 Come abbiamo detto un problema da tenere sotto controllo è quello dell’overhead, infatti le pagine potrebbero contenere molti elementi. Quando un processo è in esecuzione, viene assicurato che almeno una parte della sua tabella delle pagine sia in memoria.
 Facciamo qualche conto: supponiamo $8\text{GB}$ di spazio virtuale e $1\text{kB}$ per ogni pagina, il numero di entries che ci possono essere per ogni tabella delle pagine è $\frac{2^{33}}{2^{10}}=2^{23}$ (ovvero per ogni processo)
-Quanto occupa una entry? $1 \text{ byte}$ di controllo $\log_{2}(\text{size RAM in frames})$ → con massimo $4 \text{ GB}$ di RAM (architettura a 32-bits) fanno $4 \text{ bytes}$ più il $\text{byte}$ di controllo
+Quanto occupa una entry? $1 \text{ byte}$ di controllo $\log_{2}(\text{size RAM in frames})$ → con massimo $4 \text{ GB}$ di RAM (architettura a 32-bits) fanno $4 \text{ bytes}$.
+Max $32 \text{ bit}-10\text{ bit}=22\text{ bit}$ per i frame quindi $3 \text{ bytes}$ per il frame number, più il $\text{byte}$ di controllo
+Fanno $4\cdot 2^{23}=2^{23+2}=32\text{MB}$ di overhead per ogni processo (con RAM di $1\text{GB}$, bastano $20$ processi per occupare più di metà RAM con sole strutture di overhead)
