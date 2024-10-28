@@ -345,3 +345,28 @@ Quindi il TLB viene aggiornato includendo la pagina appena acceduta (usando un q
 ![[Pasted image 20241028235551.png|550]]
 ![[Pasted image 20241028235730.png|350]]
 
+### Memoria virtuale e process switch
+Seppur il TLB sia totalmente hardware ci sono casi in cui è necessario un intervento del sistema operativo. In particolar modo il TLB deve essere resettato è infatti relativo ad un singolo processo, ma risulta essere la soluzione peggiore dal punto di vista prestazionale.
+
+Per fare un po’ meglio, alcuni processori permettono:
+- di etichettare con il PID ciascuna entry del TLB (es. Pentium), non serve fare il reset ma basta fare un confronto tra il PID attuale e quello presente nella entry del TLB
+- di invalidare solo alcune parti del TLB (alla fine inefficiente)
+
+E’ comunque necessario, anche senza TLB, dire al processore dove è la nuova tabella delle pagine (nel caso sia a 2 livelli, basta la page directory e gli indirizzi sono caricati in opportuni registri)
+
+### Mapping associativo
+La tabella delle pagine contiene tutte le pagine di un processo, mentre per quanto riguarda il TLB, essendo una cache, non può contenere un’intera tabella delle pagine e non si può usare un indice per accedervi quindi teoricamente bisognerebbe scorrerla tutta
+
+Si può risolvere questo problema sfruttando il parallelo e controllando contemporaneamente tutte le entry del TLB. Questo supporto hardware che mi permette di fare questa ricerca veloce è chiamato **mapping associativo**
+
+Ci sta però un altro problema, bisogna fare in modo che nel TLB contenga solo pagine in RAM, altrimenti si incorrerebbe in un page fault dopo un TLB git, ma sarebbe impossibile accorgersene (il bit di presenza potrebbe infatti essere obsoleto).
+Quindi quando viene messo il bit di presenza a zero deve essere opportunamente modificato il TLB attraverso un reset parziale
+
+![[Pasted image 20241029001206.png]]
+
+### TLB e cache
+![[Pasted image 20241029001557.png]]
+
+---
+## Dimensione delle pagine
+Ma quanto dovrebbe essere la giusta dimensione di una pagina
