@@ -319,3 +319,9 @@ Il primo livello punta al secondo livello che ha sua volta punta alla memoria pr
 
 ### Traduzione
 ![[Pasted image 20241028225210.png]]
+
+### Perché conviene?
+Supponiamo nuovamente che abbiamo $8\text{GB}$ di spazio virtuale, vuol dire che abbiamo $33 \text{ bits}$ di indirizzo; facciamo ad es. $15\text{ bit}$ primo livello (*directory*), $8 \text{ bit}$ di secondo livello, e i rimanenti $10$ per l’offset.
+
+>[!info]
+>Spesso i processori (eg. Pentium) impongono che una tabella delle pagine di secondo livello entri in una pagina a sua volta
