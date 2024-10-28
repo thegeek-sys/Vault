@@ -329,3 +329,17 @@ Supponiamo nuovamente che abbiamo $8\text{GB}$ di spazio virtuale, vuol dire che
 Per ogni processo l’overhead è $2^{23+2}=32\text{MB}$, più l’occupazione del primo livello $2^{15+2}=128\text{kB}$.
 Seppur sia aumentato lo spazio, è più facile paginare la tabella delle pagine, così in RAM basta che ci sia il primo livello più una tabella del secondo così l’overhead scende a $2^{15+2}+2^{8+2}=128\text{kB}$.
 Con RAM di $1\text{GB}$, occorrono $1000$ processi per occupare più di metà della RAM con sole strutture di overhead
+
+---
+## Translation Lookaside Buffer
+Translation Lookaside Buffer (TLB) letteralmente: memoria temporanea per la traduzione futura. Abbiamo visto che ogni volta che facciamo un riferimento alla memoria virtuale possono essere generati fino a due accessi alla memoria: uno per la tabella delle pagine e uno per prendere il dato
+
+L’idea è quindi quella di usare una specie di cache per gli elementi delle tabelle delle pagine (contiene gli elementi che sono stati usati più di recente) ed è proprio il TLB
+
+### Come funziona?
+Dato un indirizzo virtuale, il processore cerca la pagina all’interno del TLB.
+Se la pagina è presente (*TLB hit*), si prende il frame number e si ricava l’indirizzo reale
+Se la pagina non è presente (*TLB miss*), si prende la “normale” tabella delle pagine del processo
+Se la pagina risulta in memoria principale a posto, altrimenti si gestisce il page fault.
+Quindi il TLB viene aggiornato includendo la pagina appena acceduta (usando un qualche algoritmo di rimpiazzamento se il TLB è già pieno: solitamente LRU)
+![[Pasted image 20241028235551.png]]
