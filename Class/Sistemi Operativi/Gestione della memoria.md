@@ -324,4 +324,8 @@ Il primo livello punta al secondo livello che ha sua volta punta alla memoria pr
 Supponiamo nuovamente che abbiamo $8\text{GB}$ di spazio virtuale, vuol dire che abbiamo $33 \text{ bits}$ di indirizzo; facciamo ad es. $15\text{ bit}$ primo livello (*directory*), $8 \text{ bit}$ di secondo livello, e i rimanenti $10$ per l’offset.
 
 >[!info]
->Spesso i processori (eg. Pentium) impongono che una tabella delle pagine di secondo livello entri in una pagina a sua volta
+>Spesso i processori (eg. Pentium) impongono che una tabella delle pagine di secondo livello entri in una pagina a sua volta, quello che occupa una pagina di secondo livello sta esattamente dentro una pagina di primo, infatti essa occupa $2^8\cdot 2^2=2^{10} \text{ bytes}$
+
+Per ogni processo l’overhead è $2^{23+2}=32\text{MB}$, più l’occupazione del primo livello $2^{15+2}=128\text{kB}$.
+Seppur sia aumentato lo spazio, è più facile paginare la tabella delle pagine, così in RAM basta che ci sia il primo livello più una tabella del secondo così l’overhead scende a $2^{15+2}+2^{8+2}=128\text{kB}$.
+Con RAM di $1\text{GB}$, occorrono $1000$ processi per occupare più di metà della RAM con sole strutture di overhead
