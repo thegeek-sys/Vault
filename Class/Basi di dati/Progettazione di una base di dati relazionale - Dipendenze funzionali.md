@@ -6,6 +6,7 @@ Completed:
 ---
 ---
 ## Index
+- [[#Schema di relazione|Schema di relazione]]
 - [[#Tupla|Tupla]]
 - [[#Istanza di relazione|Istanza di relazione]]
 - [[#Dipendenze funzionali|Dipendenze funzionali]]
@@ -15,12 +16,13 @@ Completed:
 	- [[#Istanza legale#Osservazione|Osservazione]]
 - [[#Esempio|Esempio]]
 - [[#Chiusura di un insieme di dipendenze funzionali|Chiusura di un insieme di dipendenze funzionali]]
-	- [[#Chiusura di un insieme di dipendenze funzionali#$\textcolor{lightgreen}{\text{F}}$ ed $\textcolor{lightgreen}{\text{F}^+}$|$\textcolor{lightgreen}{\text{F}}$ ed $\textcolor{lightgreen}{\text{F}^+}$]]
+	- [[#Chiusura di un insieme di dipendenze funzionali#$\text{F}$ ed $\text{F}^+$|$\text{F}$ ed $\text{F}^+$]]
 - [[#Chiave|Chiave]]
 	- [[#Chiave#Esempio|Esempio]]
 	- [[#Chiave#Chiave primaria|Chiave primaria]]
 - [[#Dipendenze funzionali banali|Dipendenze funzionali banali]]
 	- [[#Dipendenze funzionali banali#Dipendenze funzionali (proprietà)|Dipendenze funzionali (proprietà)]]
+
 ---
 ## Schema di relazione
 Uno **schema di relazione** R è un insieme di attributi $\{A_{1}, A_{2}, \dots, A_{n}\}$

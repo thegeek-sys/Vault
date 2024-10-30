@@ -5,6 +5,25 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduzione|Introduzione]]
+	- [[#Introduzione#Ipotesi 1|Ipotesi 1]]
+		- [[#Ipotesi 1#Problemi|Problemi]]
+			- [[#Problemi#Anomalia di aggiornamento|Anomalia di aggiornamento]]
+			- [[#Problemi#Anomalia di inserimento|Anomalia di inserimento]]
+			- [[#Problemi#Anomalia di cancellazione|Anomalia di cancellazione]]
+	- [[#Introduzione#Ipotesi 2|Ipotesi 2]]
+		- [[#Ipotesi 2#Problemi|Problemi]]
+			- [[#Problemi#Anomalia di aggiornamento|Anomalia di aggiornamento]]
+			- [[#Problemi#Anomalia di inserimento|Anomalia di inserimento]]
+			- [[#Problemi#Anomalia di cancellazione|Anomalia di cancellazione]]
+	- [[#Introduzione#Ipotesi 3|Ipotesi 3]]
+- [[#Vincoli|Vincoli]]
+	- [[#Vincoli#Condizioni nella realtà di interesse|Condizioni nella realtà di interesse]]
+	- [[#Vincoli#Vincoli sulla base di dati|Vincoli sulla base di dati]]
+	- [[#Vincoli#Definizione e verifica dei vincoli nei DBMS|Definizione e verifica dei vincoli nei DBMS]]
+	- [[#Vincoli#Dipendenze funzionali|Dipendenze funzionali]]
+---
 ## Introduzione
 Supponiamo di voler creare una base di dati contenente i seguenti dati di studenti universitari:
 

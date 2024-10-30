@@ -97,7 +97,7 @@ $$
 ### Esempi
 >[!example] Esempio 1
 >$$
-\begin{flalign}R=A,B,C,D&& F=\{A\to B, B\to BC\}\end{flalign}
+\begin{flalign}R=A,B,C,D&& F=\{A\to B, B\to CD\}\end{flalign}
 >$$
 >
 >Ho come chiavi:
