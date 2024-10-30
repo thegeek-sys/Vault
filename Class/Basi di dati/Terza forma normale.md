@@ -101,7 +101,7 @@ $$
 >$$
 >
 >Ho come chiavi:
->- $K_{1}=A$ → $A\to CD$ per transitività e $A\to BCD$ per unione
+>- $K_{1}=A$ → $A\to CD$ per transitività e $A\to BCD$ per [[Chiusura di un insieme di dipendenze funzionali#Regola dell’unione|unione]]
 >
 >$A\to B$ → rispetta le condizioni per essere in 3NF
 >$B\to BC$ → $B$ non è superchiave, controllo quindi i determinati. $C$ e $D$ violano la 3NF perché in entrambi i casi non fanno parte di una chiave
