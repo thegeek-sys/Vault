@@ -5,6 +5,27 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduciamo $\text{F}^\text{A}$|Introduciamo $\text{F}^\text{A}$]]
+- [[#Assiomi di Armstrong|Assiomi di Armstrong]]
+	- [[#Assiomi di Armstrong#Assioma della riflessività|Assioma della riflessività]]
+		- [[#Assioma della riflessività#Esempio|Esempio]]
+	- [[#Assiomi di Armstrong#Assioma dell’aumento|Assioma dell’aumento]]
+		- [[#Assioma dell’aumento#Esempio|Esempio]]
+	- [[#Assiomi di Armstrong#Assioma della transitività|Assioma della transitività]]
+		- [[#Assioma della transitività#Esempio|Esempio]]
+- [[#Conseguenze degli assiomi di Armstrong|Conseguenze degli assiomi di Armstrong]]
+	- [[#Conseguenze degli assiomi di Armstrong#Regola dell’unione|Regola dell’unione]]
+	- [[#Conseguenze degli assiomi di Armstrong#Regola della decomposizione|Regola della decomposizione]]
+	- [[#Conseguenze degli assiomi di Armstrong#Regola della pseudotransitività|Regola della pseudotransitività]]
+	- [[#Conseguenze degli assiomi di Armstrong#Osservazione|Osservazione]]
+- [[#Chiusura di un insieme di attributi|Chiusura di un insieme di attributi]]
+	- [[#Chiusura di un insieme di attributi#Determinare la chiave di una relazione|Determinare la chiave di una relazione]]
+- [[#Lemma 1|Lemma 1]]
+- [[#Teorema: $F^+=F^A$|Teorema: $F^+=F^A$]]
+	- [[#Teorema: $F^+=F^A$#Nota finale|Nota finale]]
+- [[#A cosa serve conoscere $F^+$?|A cosa serve conoscere $F^+$?]]
+---
 ## Introduciamo $\text{F}^\text{A}$
 Ricordiamo che il nostro problema è calcolare l’insieme di dipendenze $F^+$ che viene **soddisfatto da ogni istanza legale** di uno schema $R$ su cui è definito un insieme di dipendenze funzionali $F$.
 Abbiamo concluso che banalmente $F\subseteq F^+$ in quanto una istanza è legale solo se soddisfa tutte le dipendenze in $F$
