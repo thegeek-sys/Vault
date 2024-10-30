@@ -196,7 +196,7 @@ Se il lavoro di individuazione è fatto accuratamente lo schema relaziona può e
 Uno schema che non è in 3NF può essere decomposto in più modi in un insieme di schemi in 3NF. Ad esempio lo schema $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B, B\to C\}$ non è in 3NF per la presenza in $F^+$ della dipendenza transitiva $B\to C$, dato che la chiave è evidentemente $A$.
 $R$ può essere decomposto in:
 - $R_{1}=AB$ con $\{A\to B\}$
-- $R_{2}=BC$ con $\{A\to C\}$
+- $R_{2}=BC$ con $\{B\to C\}$
 oppure:
 - $R_{1}=AB$ con $\{A\to B\}$
 - $R_{2}=AC$ con $\{A\to C\}$
