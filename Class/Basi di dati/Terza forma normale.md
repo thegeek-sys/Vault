@@ -211,3 +211,26 @@ Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funz
 >[!warning]
 >Occorre preservare tutte le dipendenze in $F^+$
 
+>[!example]
+>Consideriamo lo schema $R=\{\text{Matricola, Comune, Provincia}\}$ con l’insieme di dipendenze funzionali $F=\{\text{Matricola}\to \text{Comune, }\text{Comune}\to \text{Provincia}\}$
+>Lo schema non è in 3NF per la presenza in $F^+$ della dipendenza transitiva $\text{Comune}\to \text{Provincia}$, dato che la chiave è evidentemente $\text{Matricola}$ ($\text{Provincia}$ dipende transitivamente da $\text{Matricola}$)
+>
+>$R$ può essere decomposto in:
+>- $R_{1}=(\text{Matricola, Comune})$ con $\{\text{Matricola}\to \text{Comune}\}$
+>- $R_{2}=(\text{Matricola, Provincia})$ con $\{\text{Comune}\to \text{Provincia}\}$
+>
+>oppure:
+>- $R_{1}(\text{Matricola, Comune})$ con $\{\text{Matricola}\to \text{Comune}\}$
+>- $R_{2}(\text{Matricola, Provincia})$ con $\{\text{Matricola}\to \text{Provincia}\}$
+>
+>Entrambi gli schemi sono in 3NF, tuttavia la seconda soluzione non è soddisfacente
+>
+>Consideriamo le istanze legali degli schemi ottenuti
+>![[Pasted image 20241031113211.png|440]]
+>L’istanza dello schema originario $R$ che posso ricostruire da questa (facendo un join naturale) è la seguente
+>![[Pasted image 20241031113401.png|350]]
+>Ma non è un’istanza legale di $R$, in quanto non soddisfa la dipendenza funzionale $\text{Comune}\to \text{Provincia}$
+>
+>>[!hint]
+>>E’ evidente che ci sia stato un errore di inserimento, ma non abbiamo potuto rivelarlo
+

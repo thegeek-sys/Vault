@@ -50,7 +50,14 @@
               "icon": "lucide-file",
               "title": "Chiusura di un insieme di dipendenze funzionali"
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "ea347dfeb48f953f",
+        "type": "tabs",
+        "children": [
           {
             "id": "7b2567c69b83e6e8",
             "type": "leaf",
@@ -65,8 +72,7 @@
               "title": "2024-10-30_BD"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-10-30_BD.md",
+                "file": "Class/Basi di dati/Terza forma normale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +155,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-10-30_BD"
+              "title": "Backlinks for Terza forma normale"
             }
           },
           {
@@ -223,11 +229,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7b2567c69b83e6e8",
+  "active": "c29208416eada620",
   "lastOpenFiles": [
-    "Files/Pasted image 20241030160239.png",
+    "Files/Pasted image 20241031113401.png",
+    "Files/Pasted image 20241031113211.png",
     "Flet-notes/2024-10-30_BD.md",
     "Class/Basi di dati/Terza forma normale.md",
+    "Files/Pasted image 20241030160239.png",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "To-Do.md",
@@ -245,7 +253,6 @@
     "Files/Pasted image 20241029003140.png",
     "Files/Pasted image 20241029003135.png",
     "Files/Pasted image 20241029002941.png",
-    "Files/Pasted image 20241029002627.png",
     "Flet-notes/2024-10-24_BD.md",
     "Flet-notes/2024-10-23_BD.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
