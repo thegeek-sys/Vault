@@ -294,4 +294,37 @@ Una relazione che rispetta la forma normale di Boyce-Codd è anche in terza form
 >
 >Schema: $\text{Interventi(Paziente, DataIntervento, OraIntervento, Chirurgo, Sala)}$
 >In base alla presedente descrizione, nella relazione $\text{Interventi}$ valgono le dipendenze funzionali:
->- 
+>- $\{\text{Paziente, DataIntervento}\}\to \text{OraIntervento, Chirurgo, Sala}$
+>- $\{\text{Chirurgo, DataIntevento, OraIntervento}\}\to \text{Paziente, Sala}$
+>- $\{\text{Sala, DataIntervento, OraIntervento}\}\to \text{Paziente, Chirurgo}$
+>- $\{\text{Chirurgo, DataIntervento}\}\to \text{Sala}$
+>
+>Ho come chiavi:
+>- $K_{1}=\{\text{Paziente, DataIntervento}\}$
+>- $K_{2}=\{\text{Chirurgo, DataIntervento, OraIntervento}\}$
+>- $K_{3}=\{\text{Sala, DataIntervento, OraIntervento}\}$
+>
+>Qualunque sia la chiave primaria che scegliamo, i determinanti nelle prime 3 dipendenze funzionali sono insiemi di attributi che possono svolgere la funzione di chiave e quindi la BCNF non è sicuramente violata in questi casi.
+>La BCNF non è invece soddisfatta per la quarta dipendenza funzionale che ha come determinante un insieme di attributi non chiave. Ne segue che la relazione $\text{Interventi}$ **non è in BCNF**
+>Ma $\text{Interventi}$ è in 3NF in quanto la quarta dipendenza funzionale non viola la definizione, perché l’attributo $\text{Sala}$ è un attributo che fa parte della chiave $\{\text{Sala, DataIntervento, OraIntervento}\}$ e quindi è primo
+>
+>Conseguenza: la relazione $\text{Interventi}$, pur essendo in terza forma normale, presenta una certa ridondanza nei dati che può creare problemi in fase di aggiornamento.
+>Se per qualche ragione si deve cambiare la sala operatoria utilizzata da in chirurgo in una certa data, bisogna aggiornate più righe: per esempio, per spostare $\text{Romano}$ dalla $\text{Sala2}$ alla $\text{Sala3}$, bisogna modificare due righe della tabella
+>![[Pasted image 20241102234004.png|450]]
+>
+>La tabella $\text{Interventi}$ può essere normalizzata, ottenendo i due schemi:
+>- $\text{OccupazioneSale(Chirurgo, DataIntervento, Sala)}$
+>- $\text{Interventi(Paziente, DataInterventi, OraIntervento, Chirurgo)}$
+>
+>L’attributo $\text{Sala}$ viene tolto da $\text{Interventi}$ e compare in una nuova tabella che ha come chiave il determinante della dipendenza funzionale che non rispettava la BCNF
+>![[Pasted image 20241102234231.png|400]]
+>
+>#### Problema
+>Supponiamo di voler tenere traccia dei pazienti che devono essere sottoposti a più interventi chirurgici, in diversi reparti, per la cura di patologie più complicate.
+>Una relazione che rappresenta questa esigenza è mostrata nella tabella sotto
+>![[Pasted image 20241102234427.png|250]]
+>Ogni n-upla della relazione $\text{ChirurgieMultiple}$ associa un paziente al chirurgo che lo ha operato e al reparto nel quale è avvenuto l’intervento. Valgono le dipendenze funzionali:
+>- $\text{Chirurgo}\to \text{Reparto}$
+>- $$
+
+

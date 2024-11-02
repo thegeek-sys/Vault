@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -258,6 +257,9 @@
   },
   "active": "c29208416eada620",
   "lastOpenFiles": [
+    "Files/Pasted image 20241102234427.png",
+    "Files/Pasted image 20241102234231.png",
+    "Files/Pasted image 20241102234004.png",
     "Flet-notes/2024-10-30_BD.md",
     "Class/Basi di dati/Terza forma normale.md",
     "Files/Screenshot 2024-11-02 alle 22.55.46.png",
@@ -270,12 +272,10 @@
     "Flet-notes/2024-10-31_BD.md",
     "Files/Pasted image 20241031113401.png",
     "Files/Pasted image 20241031113211.png",
-    "Files/Pasted image 20241030160239.png",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "To-Do.md",
     "Index.md",
-    "Pasted image 20240509123047.png",
     "Programming languages/Programming languages.md",
     "Class/Class.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
