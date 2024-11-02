@@ -268,8 +268,6 @@ Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funz
 >![[Screenshot 2024-11-02 alle 22.45.28.png|380]]
 >In base alla decomposizione data, questa istanza si decompone in:
 >![[Pasted image 20241102225443.png|480]]
->Ma quando la si ricostruisce tramite join si ottiene
->
-
-
+>Ma quando la si ricostruisce tramite join si ottiene uno schema in cui sono presenti delle tuple estranee (perdita di informazione)
+>![[Screenshot 2024-11-02 alle 22.55.46.png|300]]
 
