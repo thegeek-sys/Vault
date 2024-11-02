@@ -34,14 +34,10 @@ Per il calcolo della chiusura dell’insieme di attributi $X$, denotata con $X^+
 **Input** → uno schema di relazione $R$, e un insieme $F$ di dipendenze funzionali su $R$, un sottoinsieme $X$ di $R$
 **Output** → la chiusura di $X$ rispetto ad $F$ (restituita nella variabile `Z`)
 
-```
-begin
-Z:=X
-S:={A | Y->V}
-```
-
 $$
-\begin{verbatim}
-
-\end{verbatim}
+\begin{gather}
+\text{begin}\\
+Z\vcentcolon
+\end{gather}
 $$
+
