@@ -325,6 +325,12 @@ Una relazione che rispetta la forma normale di Boyce-Codd è anche in terza form
 >![[Pasted image 20241102234427.png|250]]
 >Ogni n-upla della relazione $\text{ChirurgieMultiple}$ associa un paziente al chirurgo che lo ha operato e al reparto nel quale è avvenuto l’intervento. Valgono le dipendenze funzionali:
 >- $\text{Chirurgo}\to \text{Reparto}$
->- $$
+>- $\{\text{Paziente, Reparto}\}\to \text{Chirurgo}$
+>
+>$\{\text{Paziente, Reparto}\}$ è chiave e la prima dipendenza viola Boyce-Codd. Proviamo quindi a procedere come prima
+>![[Pasted image 20241102235202.png|370]]
+>Questa decomposizione non conserva la seconda delle due dipendenze funzionali. Se, per esempio, si volesse registrare il fatto (errato) che il paziente Bianchi è stato operato da Lanzetta nel reparto di Cardiochirurgia, l’interimento nella tabella $\text{Paziente}$ della coppia di valori: $\text{(Bianchi, Lanzetta)}$ sarebbe consentito.
+>
+>Solo quando si cerca di ricostruire i dati della relazione $\text{ChirurgieMultiple}$ con un join tra $\text{Pazienti}$ e $\text{Chirurghi}$ la n-upla: $(\text{Bianchi, Lanzetta, Chir.Generale})$ poltrebbe evidenziare l’errore dei dati perché $<\text{Bianchi}-\text{Chir. Generale}>$ dovrebbe essere associato a $\text{Romano}$
 
 
