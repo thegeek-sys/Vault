@@ -191,7 +191,6 @@ Abbiamo visto che uno schema in 3NF ha delle buone proprietà che lo rendono pre
 Normalmente nella fase di progettazione concettuale si usa il modello Entità-Associazione e si individuano per l’appunto i concetti che devono essere rappresentati nella base di dati
 
 Se il lavoro di individuazione è fatto accuratamente lo schema relaziona può essere derivato con opportune regole, è in 3NF. Se tuttavia, dopo tale processo, ci ritrovassimo a produrre uno schema che non è in 3NF dovremmo procedere ad una fare di **decomposizione** di tale schema in maniera analoga a quella esaminata nell’esempio sui dati di un’Università ([[Progettazione di una base di dati relazionale - Problemi e vincoli#Introduzione|qui]])
-
 ### La 3NF non basta
 Uno schema che non è in 3NF può essere decomposto in più modi in un insieme di schemi in 3NF. Ad esempio lo schema $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B, B\to C\}$ non è in 3NF per la presenza in $F^+$ della dipendenza transitiva $B\to C$, dato che la chiave è evidentemente $A$.
 $R$ può essere decomposto in:
@@ -211,6 +210,13 @@ Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funz
 >[!warning]
 >Occorre preservare tutte le dipendenze in $F^+$
 >Per **perdita di dati** si intende sia la perdita delle tuple originali sia l’aggiunta di tuple non presenti originariamente
+
+In conclusione, quando si decompone uno schema per ottenerne uno in 3NF occorre tenere presenti altri due requisiti dello schema decomposto:
+- deve **preservare le dipendenze funzionali** che valvono su ogni isntanza legasle dello schema originario
+- deve permettere di **ricostruire mediante il join naturale** ogni **istanza legale dello schema originario** (senza aggiunta di informazione estranea)
+
+>[!hint]
+>Se ci sono delle dipendenze che rispettano la seconda condizione del 3NF (determinato primo) devo fare attenzione ad aggiungere dei contrains nella decomposizione dello schema in quanto si potrebbe violare una dipendenza funzionale
 
 #### Esempi
 >[!example]
@@ -271,3 +277,21 @@ Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funz
 >Ma quando la si ricostruisce tramite join si ottiene uno schema in cui sono presenti delle tuple estranee (perdita di informazione)
 >![[Screenshot 2024-11-02 alle 22.55.46.png|300]]
 
+---
+## Forma normale di Boyce-Codd
+La 3NF non è la più restrittiva che si può ottenere ma ne esistono altre tra cui la forma normale di **Boyce-Codd**
+
+>[!info] Definizione
+>Una relazione è in forma normale di Boyce-Codd (BCNF) quando in essa **ogni determinante è una superchiave** (ricordiamo che una chiave è anche superchiave)
+
+Una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale, ma non il contrario
+
+### Esempio
+>[!example]
+>Consideriamo una relazione che descrive l’allocazione delle sale operatorie di un ospedale. Le sale operatorie sono prenotate, giorno per giorno, in orari previsti, per effettuare interventi su pazienti ad opera dei chirurghi dell’ospedale.
+>Nel corso di una giornata una sala operatoria è occupata sempre dal medesimo chirurgo che effettua più interventi, in ore diverse.
+>Noti i valori di $\text{Paziente}$ e $\text{DataIntervento}$, sono noti anche: ora dell’intervento, chirurgo e sala operatoria utilizzata
+>
+>Schema: $\text{Interventi(Paziente, DataIntervento, OraIntervento, Chirurgo, Sala)}$
+>In base alla presedente descrizione, nella relazione $\text{Interventi}$ valgono le dipendenze funzionali:
+>- 
