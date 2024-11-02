@@ -204,13 +204,15 @@ oppure:
 Entrambi gli schemi sono in 3NF, tuttavia la seconda soluzione non è soddisfacente.
 Consideriamo due istanze legali degli schemi ottenuti
 ![[Pasted image 20241027212903.png|250]]
-L’istanza delo schema originario $R$ che posso ricostruire da questa attraverso il join naturale è la seguente
+L’istanza dello schema originario $R$ che posso ricostruire da questa attraverso il join naturale è la seguente
 ![[Pasted image 20241027213020.png|170]]
 Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funzionale** $B\to C$
 
 >[!warning]
 >Occorre preservare tutte le dipendenze in $F^+$
+>Per **perdita di dati** si intende sia la perdita delle tuple originali sia l’aggiunta di tuple non presenti originariamente
 
+#### Esempi
 >[!example]
 >Consideriamo lo schema $R=\{\text{Matricola, Comune, Provincia}\}$ con l’insieme di dipendenze funzionali $F=\{\text{Matricola}\to \text{Comune, }\text{Comune}\to \text{Provincia}\}$
 >Lo schema non è in 3NF per la presenza in $F^+$ della dipendenza transitiva $\text{Comune}\to \text{Provincia}$, dato che la chiave è evidentemente $\text{Matricola}$ ($\text{Provincia}$ dipende transitivamente da $\text{Matricola}$)
@@ -233,4 +235,32 @@ Ma non è un’istanza legale di $R$ in quanto **non soddisfa la dipendenza funz
 >
 >>[!hint]
 >>E’ evidente che ci sia stato un errore di inserimento, ma non abbiamo potuto rivelarlo
+
+>[!example]
+>Consideriamo ora lo schema $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B,B\to C\}$. Lo schema non è in 3NF per la presenza in $F^+$ delle dipendenze funzionali parziali $A\to B$ e $C\to B$, dato che la chiave è $AC$ tale schema può essere decomposto in:
+>- $R_{1}=AB$ con $\{A\to B\}$
+>- $R_{2}=BC$ con $\{C\to B\}$
+>
+>Tale schema pur preservando tutte le dipendenze in $F^+$ non è soddisfacente.
+>
+>Consideriamo l’istanza legale di $R$
+>![[Pasted image 20241102223833.png|150]]
+>In base alla decomposizione data, questa istanza di decompone in:
+>![[Pasted image 20241102224009.png|200]]
+>E dovrebbe essere possibile ricostruirla esattamente tramite join e invece se si effettua il join si avrà come risultato il prodotto cartesiano
+>![[Pasted image 20241102224108.png|150]]
+
+>[!example]
+>Consideraimo ora lo schema 
+>- $R=(\text{Matricola, Progetto, Capo)}$ 
+>- $F=\{\text{Matricola}\to \text{Progetto}, \text{Capo}\to \text{Progetto}\}$
+>
+>Il progetto ha più capi ma ogni capo ha un solo progetto, e un impiegato su un progetto  dà conto ad un solo capo (ogni capo segue un gruppo).
+>Lo schema non è in 3NF per la presenza in $F+$ delle dipendenze parziali $\text{Matricola}\to \text{Progetto}$ e $\text{Capo}\to \text{Progetto}$.
+>
+>Dato che la chiave è $(\text{Matricola, Capo})$ tale schema può essere decomposto in:
+>- $R_{1}=(\text{Matricola, Progetto})$ con $\{\text{Matricola} \to \text{Progetto}\}$
+>- $R_{2}=(\text{Progetto, Capo})$ con $\{\text{Capo}\to \text{Progetto}\}$
+>
+>Tale schema pur preservando tutte le dipendenze in $F^+$ non è soddisfacente
 
