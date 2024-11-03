@@ -98,5 +98,6 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >- Ipotesi induttiva ($i>0$): $Z^{(i-1)}\subseteq X^+\overset{\text{Lemma 1}}{\Longrightarrow}X\to Z^{(i-1)}\in F^A$
 >- Passo induttivo: $Z^{(i)}$
 >
->Sia $A$ un attributo in $Z^{(i)}-Z^{(i-1)}$ allora deve esistere una dipendenza $Y\to V\in F$ tale che $Y\subseteq Z^{(i-1)}$ e $A\in V$
+>Sia $A$ un attributo in $Z^{(i)}-Z^{(i-1)}$ allora deve esistere una dipendenza $Y\to V\in F$ tale che $Y\subseteq Z^{(i-1)}$ e $A\in V$.
+>Poiché $Y\subseteq Z^{(i-1)}$, per l’ipotesi induttiva si ha che $Y\subseteq X^+\Rightarrow X\to Y\in F^A$
 
