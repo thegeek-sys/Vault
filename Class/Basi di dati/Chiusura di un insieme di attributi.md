@@ -93,4 +93,10 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >Sia $j$ tale che $S(j)\subseteq Z(j)$ (cioè $Z(j)$ è il valore di $Z$ quando l’algoritmo termina); proveremo che: $\mathbf{A\in Z^{(j)}\Leftrightarrow A\in X^+}$
 >
 >##### Parte $\Rightarrow$
+>Mostreremo per induzione su $i$ che $Z^{(i)}\subseteq X^+$, per ogni $i$ (e quindi, in particolare $Z^{(j)}\subseteq X^+$)
+>- Base dell’induzione ($i=0$): poiché $Z^{(0)}=X$ e $X\subseteq X^+$, si ha $Z^{(0)}\subseteq X^+$
+>- Ipotesi induttiva ($i>0$): $Z^{(i-1)}\subseteq X^+\overset{\text{Lemma 1}}{\Longrightarrow}X\to Z^{(i-1)}\in F^A$
+>- Passo induttivo: $Z^{(i)}$
+>
+>Sia $A$ un attributo in $Z^{(i)}-Z^{(i-1)}$ allora deve esistere una dipendenza $Y\to V\in F$ tale che $Y\subseteq Z^{(i-1)}$ e $A\in V$
 
