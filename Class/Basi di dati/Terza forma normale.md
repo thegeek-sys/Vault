@@ -5,6 +5,24 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Quali sono i problemi di uno schema mal progettato?|Quali sono i problemi di uno schema mal progettato?]]
+	- [[#Quali sono i problemi di uno schema mal progettato?#Considerazioni|Considerazioni]]
+	- [[#Quali sono i problemi di uno schema mal progettato?#Conclusioni|Conclusioni]]
+- [[#Terza forma normale|Terza forma normale]]
+	- [[#Terza forma normale#Definizione|Definizione]]
+	- [[#Terza forma normale#Esempi|Esempi]]
+- [[#Dipendenza parizale|Dipendenza parizale]]
+	- [[#Dipendenza parizale#Definizione|Definizione]]
+- [[#Dipendenza transitiva|Dipendenza transitiva]]
+	- [[#Dipendenza transitiva#Definizione|Definizione]]
+- [[#Definizione alternativa di 3NF (teorema)|Definizione alternativa di 3NF (teorema)]]
+- [[#Cosa vogliamo ottenere?|Cosa vogliamo ottenere?]]
+	- [[#Cosa vogliamo ottenere?#La 3NF non basta|La 3NF non basta]]
+		- [[#La 3NF non basta#Esempi|Esempi]]
+- [[#Forma normale di Boyce-Codd|Forma normale di Boyce-Codd]]
+	- [[#Forma normale di Boyce-Codd#Esempio|Esempio]]
+---
 ## Quali sono i problemi di uno schema mal progettato?
 Ritorniamo al nostro esempio di base di dati che contiene le informazioni sugli studenti e sugli esami sostenuti, e ripartiamo dalla soluzione “buona” tornata alla fine
 

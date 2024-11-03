@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Utilità della chiusura $X^+$|Utilità della chiusura $X^+$]]
+- [[#Come si calcola $X^+$|Come si calcola $X^+$]]
+- [[#L’algoritmo è corretto (teorema)|L’algoritmo è corretto (teorema)]]
+- [[#Proprietà dell’insieme vuoto|Proprietà dell’insieme vuoto]]
+- [[#Esercizi|Esercizi]]
+---
 ## Cosa vogliamo ottenere
 Quando si decompone uno schema di relazione $R$ su cui è definito un insieme di dipendenze funzionali $F$, oltre ad ottenere schemi in 3NF occorre
 1. **preservare le dipendenze**
@@ -119,5 +126,43 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >Ma ciò non è possibile in quanto non sarebbe l’ultima iterazione ($Z^{(j)}$) in quanto manca $W$ che invece ci dovrebbe essere in quanto $V\to W\in F$. Se non li ho ancora aggiunti $Z^{(j)}$ non è la versione finale ma questo è in contraddizione con la nostra costruzione dell’istanza
 >
 >Quindi $W\subseteq Z^{(j)}\Rightarrow t_{1}[W]=t_{2}[W]$ terminando così la dimostrazione che questa istanza è legale
+>###### $A\in X^+\Rightarrow A\in Z^{(j)}$
+>Come detto precedentemente $X\to A\in F^+$ ed essendo questa un’istanza legale di $R$ anche qui deve essere soddisfatta.
+>Sapendo che $X= Z^{(0)}\subseteq Z^{(j)}$ allora le due tuple devono essere anche uguali su $A$, quindi $A\in Z^{(j)}$
+>$\begin{flalign}&& \square\end{flalign}$
 
+---
+## Proprietà dell’insieme vuoto
+
+>[!warning]
+>Prima di tutto va sottolineato che la notazione $\{\varnothing\}$ indica l’insieme che contiene l’insieme vuoto (insieme di insiemi) e non va pertanto confusa con il semplice insieme vuoto $\varnothing$
+
+- L’insieme vuoto è un **sottoinsieme** di ogni insieme $A$
+	$\forall A : \varnothing\subseteq A$
+- L’**unione** di un qualunque insieme $A$ con l’insieme vuoto è $A$
+	$\forall A:A\cup \varnothing=A$
+- L’**intersezione** di un qualunque insieme $A$ con l’insieme vuoto è l’insieme vuoto
+	$\forall A:A\cap \varnothing=\varnothing$
+- Il **prodotto cartesiano** di un qualunque insieme $A$ con l’insieme vuoto è l’insieme vuoto
+	$\forall A:A\times \varnothing=\varnothing$
+- L’unico sottoinsieme dell’insieme vuoto è l’insieme vuoto stesso
+- Il numero di elementi dell’insieme vuoto (vale a dire la sua **cardinalità**) è **zero**; l’insieme vuoto è quindi finito: $\mid \varnothing\mid=0$
+
+---
+## Esercizi
+>[!example] Esercizio 1
+>$$R=(A,B,C,D,E,H)$$
+>$$F=\{AB\to CD, EH\to D, D\to H\}$$
+>Calcolare le chiusure degli insiemi $A$, $D$ e $AB$
+>
+>$A^+=\{A\}$
+>$D^+=\{D,H\}$
+>$AB^+=\{A,B,C,D,H\}$
+
+>[!example] Esercizio 2
+>$$R=(A,B,C,D,E,H,I)$$
+>$$F=\{A\to E,AB\to CD,EH\to I,D\to H\}$$
+>Calcolare la chiusura dell’insieme $AB$
+>
+>$AB^+=\{A,B,C,D,H,E,I\}$
 
