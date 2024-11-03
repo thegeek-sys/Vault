@@ -37,6 +37,9 @@ $$
 b)
 
 $$
-\text{MD}=\sigma_{\text{Nome}}(\pi_{\text{Motore=disel}}(\text{MODELLO}))
+\text{MD}=\pi_{\text{Motore=disel}}(\text{MODELLO})
+$$
+$$
+r=\text{MD}\bowtie
 $$
 
