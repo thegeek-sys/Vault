@@ -549,3 +549,8 @@ Anche qui si hanno due possibilità per decidere quando riportare questa modific
 - non appena il frame viene sostituito
 
 Tipicamente si fa una via di mezzo, intrecciata con il *page buffering* (concetto di I/O che vedremo); solitamente, si raccolgono un po’ di richieste di frame da modificare e le si esegue
+
+---
+## Controllo del carico (medium term scheduler)
+![[Pasted image 20241104001407.png]]
+Lo scopo del medium term scheduler ha lo scopo di mantenere il livello di multiprogrammazione il più alto possibile ma ottimizzando il page fault rate
