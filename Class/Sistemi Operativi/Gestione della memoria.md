@@ -553,4 +553,10 @@ Tipicamente si fa una via di mezzo, intrecciata con il *page buffering* (concett
 ---
 ## Controllo del carico (medium term scheduler)
 ![[Pasted image 20241104001407.png]]
-Lo scopo del medium term scheduler ha lo scopo di mantenere il livello di multiprogrammazione il più alto possibile ma ottimizzando il page fault rate
+Lo scopo del *medium term scheduler* è quello di **controllo del carico**, ovvero mantenere il livello di multiprogrammazione il più alto possibile ma senza arrivare al trashing (ottimizzando il page fault rate)
+
+Per farlo il medium term scheduler ha due possibilità: o sospendere un processo, oppure metterlo in RAM. 
+### Stati dei processi e scheduling
+![[Pasted image 20241104002005.png]]
+Adesso possiamo specificare meglio cosa vuol dire che un processo è suspended, vuol dire che il suo resident set è zero (non ci sono pagine in RAM). Mentre ready vuol dire che una parte del processo è in RAM (almeno una pagina).
+Uno dei motivi per cui un processo diventa suspended è a causa del medium term scheduler.
