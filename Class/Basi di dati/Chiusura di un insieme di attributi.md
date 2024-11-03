@@ -106,6 +106,13 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >##### Parte $\Leftarrow$
 >Devo quindi dimostrare che $A\in X^+\Rightarrow A\in Z^{(j)}$
 >
->Poiché $A\in X^+$, si ha $X\to A\in F^A=F^+$; pertanto $X\to A$ deve essere soddisfatta per ogni istanza legale di $R$
+>Poiché $A\in X^+$, si ha $X\to A\in F^A=F^+$; pertanto $X\to A$ deve essere soddisfatta per ogni istanza legale di $R$. Si consideri la seguente istanza $r$ di $R$
+>![[Screenshot 2024-11-03 alle 01.46.22.png|500]]
+>
+>Dobbiamo quindi dimostrare che:
+>1. $r$ è un’istanza legale di $R$
+>2. $A\in X^+\Rightarrow A\in Z^{(j)}$
+>###### $r$ è un’istanza legale di $R$
+>Supponiamo per assurdo che la dipendenza $V\to W\in F$ non è soddisfatta. Il che vuol dire che $t_{1}[V]=t_{2}[V]\land t_{1}[W]\neq t_{2}[W]$ vuol dire che 
 
 
