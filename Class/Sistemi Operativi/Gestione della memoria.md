@@ -554,7 +554,7 @@ Tipicamente si fa una via di mezzo, intrecciata con il *page buffering* (concett
 ## Controllo del carico (medium term scheduler)
 ![[Pasted image 20241104001407.png]]
 Lo scopo del *medium term scheduler* è quello di **controllo del carico**, ovvero mantenere il livello di multiprogrammazione il più alto possibile ma senza arrivare al trashing (ottimizzando il page fault rate).
-Per farlo vengono usate delle **politiche di monitoraggio** che si occupano di prendere la decisione; una tecnica tipica è quella di misurare il tempo tra 2 fault di pagina e confrontarlo con il tempo medio di gestione di un fault (se sono troppo vicini i due valori siamo prossimi al trashing). Questa viene invocata ogni tot page fault e fa parte dell’algoritmo di rimpiazzamento
+Per farlo vengono usate delle **politiche di monitoraggio** che si occupano di prendere la decisione; una tecnica tipica è quella di misurare il tempo tra 2 fault di pagina e confrontarlo con il tempo medio di gestione di un fault (se sono troppo vicini i due valori siamo prossimi al trashing, se sono troppo distanti vuol dire che sto usando poco il processore e che posso aumentare il livello di multiprogrammazione). Questa viene invocata ogni tot page fault e fa parte dell’algoritmo di rimpiazzamento
 
 Per farlo il medium term scheduler ha due possibilità: o sospendere un processo, oppure metterlo in RAM.
 ### Stati dei processi e scheduling
