@@ -553,10 +553,20 @@ Tipicamente si fa una via di mezzo, intrecciata con il *page buffering* (concett
 ---
 ## Controllo del carico (medium term scheduler)
 ![[Pasted image 20241104001407.png]]
-Lo scopo del *medium term scheduler* è quello di **controllo del carico**, ovvero mantenere il livello di multiprogrammazione il più alto possibile ma senza arrivare al trashing (ottimizzando il page fault rate)
+Lo scopo del *medium term scheduler* è quello di **controllo del carico**, ovvero mantenere il livello di multiprogrammazione il più alto possibile ma senza arrivare al trashing (ottimizzando il page fault rate).
+Per farlo vengono usate delle **politiche di monitoraggio** che si occupano di prendere la decisione; una tecnica tipica è quella di misurare il tempo tra 2 fault di pagina e confrontarlo con il tempo medio di gestione di un fault (se sono troppo vicini i due valori siamo prossimi al trashing). Questa viene invocata ogni tot page fault e fa parte dell’algoritmo di rimpiazzamento
 
-Per farlo il medium term scheduler ha due possibilità: o sospendere un processo, oppure metterlo in RAM. 
+Per farlo il medium term scheduler ha due possibilità: o sospendere un processo, oppure metterlo in RAM.
 ### Stati dei processi e scheduling
 ![[Pasted image 20241104002005.png]]
 Adesso possiamo specificare meglio cosa vuol dire che un processo è suspended, vuol dire che il suo resident set è zero (non ci sono pagine in RAM). Mentre ready vuol dire che una parte del processo è in RAM (almeno una pagina).
 Uno dei motivi per cui un processo diventa suspended è a causa del medium term scheduler.
+
+### Come scegliere un processo da sospendere?
+Abbiamo varie possibilità per scegliere il processo da sospendere nel caso in cui si è prossimi al trashing e quindi è necessario abbassare il livello di multiprogrammazione:
+- processo con minore priorità
+- processo che ha causato l’ultimo page fault
+- ultimo processo attivato
+- processo con il working set più piccolo
+- processo con immagine più grande (più grande numero di pagine)
+- processo con il più alto tempo rimanente di esecuzione (se disponibile)
