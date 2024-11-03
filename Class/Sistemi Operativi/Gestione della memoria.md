@@ -414,3 +414,5 @@ Quindi ogni segmento viene diviso in più pagine
 
 #### Traduzione degli indirizzi
 ![[Pasted image 20241029004417.png]]
+
+### Protezione e condivisione
