@@ -515,4 +515,28 @@ La placement policy decide in quale frame mettere una pagina una volta che è st
 ---
 ## Replacement policy
 Questa viene applicata quando è stato prelevato una pagina dal disco, ma non è disponibile alcun frame in RAM in cui posizionarla
-Essenzialmente, una volta deciso quale è il frame giusto da sostituire 
+Essenzialmente, una volta deciso quale è il frame giusto da sostituire tramite un algoritmo di replacement policy (generalmente si cerca di minimizzare la possibilità che la pagina appena sostituita venga richiesta di nuovo, usando il principio di località, si cerca di predire il futuro sulla base del passato recente) e inoltre è necessario aggiornare la tabella della pagine. Nella pagina prelevata dal disco viene impostato il bit di presenza a uno mentre per la pagina da sostituire il bit di presenza viene impostato a zero
+
+### Frame bloccati
+Bisogna tenere presente, nella replacement policy, che alcuni frame potrebbero essere bloccati
+
+---
+## Gestione del resident set
+La gestione del resident set risponde a 2 necessità:
+- decidere per ogni processo che è in esecuzione quanti frame vanno allocati (*resident set management*)
+- decidere se, quando si rimpiazza un frame, è possibile sostituire solo un frame che fa parte dello stesso processo oppure se si può sostituire un frame qualsiasi (*replacement scope*)
+
+### Resident set management
+Sono presenti due possibilità per decidere quanto spazio dedicare ad ogni singolo processo in RAM:
+- **allocazione fissa** → il numero di frame è deciso a tempo di creazione del processo
+- **allocazione dinamica** → il numero di frame è deciso durante la vita del processo (magari basandosi su statistiche che man mano vengono raccolte)
+
+![[Pasted image 20241103195411.png]]
+Ovviamente, con resident set alto si ha ottimi page fault rate, ma poca multiprogrammazione
+
+### Replacement scope
+Anche qui si hanno due possibilità:
+- **politica locale** → se bisogna rimpiazzare un frame, si sceglie un altro frame dello stesso processo
+- **politica globale** → si può scegliere qualsiasi frame (ovviamente non del SO
+
+In tutto si hanno 3 possibili strategie, infatti con l’allocazione fissa, la politica globale non si può usare altrimenti si potrebbe ampliare il numero di frame do un processo, e non sarebbe più allocazione fissa
