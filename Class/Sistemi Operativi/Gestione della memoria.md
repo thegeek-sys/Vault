@@ -5,6 +5,60 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Roadmap|Roadmap]]
+- [[#Requisiti per la gestione della memoria|Requisiti per la gestione della memoria]]
+- [[#Rilocazione|Rilocazione]]
+	- [[#Rilocazione#Indirizzi nei programmi|Indirizzi nei programmi]]
+	- [[#Rilocazione#Soluzioni possibili|Soluzioni possibili]]
+- [[#Protezione|Protezione]]
+- [[#Condivisione|Condivisione]]
+- [[#Organizzazione logica|Organizzazione logica]]
+- [[#Gestione fisica|Gestione fisica]]
+- [[#Partizionamento|Partizionamento]]
+	- [[#Partizionamento#Tipi di partizionamento|Tipi di partizionamento]]
+- [[#Partizionamento fisso uniforme|Partizionamento fisso uniforme]]
+	- [[#Partizionamento fisso uniforme#Problemi|Problemi]]
+- [[#Partizionamento fisso variabile|Partizionamento fisso variabile]]
+	- [[#Partizionamento fisso variabile#Algoritmo di posizionamento|Algoritmo di posizionamento]]
+	- [[#Partizionamento fisso variabile#Problemi irrisolti|Problemi irrisolti]]
+- [[#Posizionamento dinamico|Posizionamento dinamico]]
+	- [[#Posizionamento dinamico#Problemi|Problemi]]
+- [[#Buddy System (sistema compagno)|Buddy System (sistema compagno)]]
+- [[#Paginazione (semplice)|Paginazione (semplice)]]
+- [[#Segmentazione (semplice)|Segmentazione (semplice)]]
+	- [[#Segmentazione (semplice)#Indirizzi Logici|Indirizzi Logici]]
+- [[#Concetti fondamentali|Concetti fondamentali]]
+- [[#L’idea geniale|L’idea geniale]]
+- [[#Esecuzione di un processo|Esecuzione di un processo]]
+- [[#Conseguenze|Conseguenze]]
+- [[#Memoria virtuale: terminologia|Memoria virtuale: terminologia]]
+- [[#Trashing|Trashing]]
+	- [[#Trashing#Principio di località|Principio di località]]
+- [[#Supporto richiesto|Supporto richiesto]]
+- [[#Paginazione|Paginazione]]
+- [[#Traduzione degli indirizzi|Traduzione degli indirizzi]]
+- [[#Overhead|Overhead]]
+- [[#Tabella delle pagine a 2 livelli|Tabella delle pagine a 2 livelli]]
+	- [[#Tabella delle pagine a 2 livelli#Traduzione|Traduzione]]
+	- [[#Tabella delle pagine a 2 livelli#Perché conviene?|Perché conviene?]]
+- [[#Translation Lookaside Buffer|Translation Lookaside Buffer]]
+	- [[#Translation Lookaside Buffer#Come funziona?|Come funziona?]]
+	- [[#Translation Lookaside Buffer#Memoria virtuale e process switch|Memoria virtuale e process switch]]
+	- [[#Translation Lookaside Buffer#Mapping associativo|Mapping associativo]]
+	- [[#Translation Lookaside Buffer#TLB e cache|TLB e cache]]
+- [[#Dimensione delle pagine|Dimensione delle pagine]]
+	- [[#Dimensione delle pagine#Perché grande|Perché grande]]
+	- [[#Dimensione delle pagine#Perché piccola|Perché piccola]]
+	- [[#Dimensione delle pagine#Dimensione delle pagine in alcuni sistemi|Dimensione delle pagine in alcuni sistemi]]
+- [[#Segmentazione|Segmentazione]]
+	- [[#Segmentazione#Organizzazione|Organizzazione]]
+	- [[#Segmentazione#Traduzione degli indirizzi|Traduzione degli indirizzi]]
+	- [[#Segmentazione#Paginazione e segmentazione|Paginazione e segmentazione]]
+		- [[#Paginazione e segmentazione#Traduzione degli indirizzi|Traduzione degli indirizzi]]
+	- [[#Segmentazione#Protezione e condivisione|Protezione e condivisione]]
+- [[#Gestione della memoria|Gestione della memoria]]
+---
 ## Perché gestire la memoria (nel SO)?
 La memoria è oggi a basso costo e con un trend in diminuzione, questo in quanto i programmi occupano sempre più memoria.
 Se il SO lasciasse a ciascun processo la gestione della propria memoria, ogni processo la prenderebbe per intera, che chiaramente va contro la multiprogrammazione, se ci sono $n$ processi ready, ma uno solo di essi occupa l’intera memoria risulterebbe inutile.
@@ -416,3 +470,16 @@ Quindi ogni segmento viene diviso in più pagine
 ![[Pasted image 20241029004417.png]]
 
 ### Protezione e condivisione
+Con la segmentazione, implementare protezione e condivisione. Dato che ogni segmento ha una base e una lunghezza è facile controllare che i riferimenti siano contenuti nel giusto intervallo. Per la condivisione, basta dire che uno stesso argomento serve a più processi
+
+![[Pasted image 20241103192200.png]]
+
+---
+# Memoria virtuale e sistema operativo
+## Gestione della memoria
+Quando un SO deve dare una risposta alle seguenti domande
+- Usare o no la memoria virtuale?
+- Usare solo la paginazione?
+- Usare solo la segmentazione?
+- Usare paginazione e segmentazione?
+- Che algoritmi usare per gestire i vari aspetti della gestione della memoria?
