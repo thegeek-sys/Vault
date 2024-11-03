@@ -35,9 +35,24 @@ Per il calcolo della chiusura dell’insieme di attributi $X$, denotata con $X^+
 **Output** → la chiusura di $X$ rispetto ad $F$ (restituita nella variabile `Z`)
 
 $$
-\begin{gather}
-\text{begin}\\
-Z\vcentcolon
-\end{gather}
+\begin{flalign}
+&\text{begin}\\
+&Z:=X\\
+&S:=\{A \mid Y\to V\in F,\,\, A\in V,\,\, Y\subseteq Z\}\\
+&\text{while } S\not\subset Z\\
+&\qquad\text{do}\\
+&\qquad\text{begin}\\
+&\qquad\qquad Z:=Z\cup S\\
+&\qquad\qquad S:=\{A \mid Y\to V\in F,\,\, A\in V,\,\, Y\subseteq Z\}\\
+&\qquad\text{end}\\
+&\text{end}\\
+\end{flalign}
 $$
+
+Si inseriscono in $S$ i singoli attributi che compongono le parti destre di dipendenze in $F$ la cui parte destra è contenuta in $Z$ (in pratica decomponendo le parti destre). All’inizio $Z$ è proprio $X$, quindi inseriamo gli attributi che sono determinati funzionalmente da $X$; una volta che questi sono entrati in $Z$, da questi ne aggiungiamo altri (per transitività).
+Possiamo “numerare” gli insiemi $Z$ successivi ($Z^{(i)}$ è l’insieme ottenuto dopo la i-esima iterazione del while)
+
+All’iterazione $i+1$ aggiungiamo in $S$ i songoli attribut che compongono le parti destre di dipendenze in $F$ la cui parte sinistra è contenuta in $Z^{(i)}$ cioè $S:=\{A \mid Y\to V\in F,\,\, A\in V,\,\, Y\subseteq Z\}$. Alla fine di ogni iterazione aggiungiamo qualcosa a $Z$, ma non eliminiamo mai nessun attributo
+
+L’algoritmo si ferma quando il nuovo insieme $S$ che otteniamo è (già) contenuto nell’insieme $Z$, cioè quando non possiamo aggiungere nuovi attributi alla chiusura transitiva di $X$
 
