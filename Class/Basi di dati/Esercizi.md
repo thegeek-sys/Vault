@@ -28,5 +28,15 @@ $$
 \text{AD}=\pi_{\text{Data=25-01-2026}}(\text{NOLEGGIO})
 $$
 $$
-\text{AUTOVEICOLO} tjoin\text{MODELLO}
+\text{AM}=(\pi_{\text{Tipo=persone}}(\text{AUTOVEICOLO})) \underset{\text{Modello=Nome}}{\bowtie}\text{MODELLO}
 $$
+$$
+\sigma_{\text{Targa, Posti}}(\text{AM}\bowtie\text{AD})
+$$
+
+b)
+
+$$
+\text{MD}=\sigma_{\text{Nome}}(\pi_{\text{Motore=disel}}(\text{MODELLO}))
+$$
+
