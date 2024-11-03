@@ -235,7 +235,7 @@ Ogni pagina, per essere usata, deve essere collocata in un frame ma pagine conti
 
 I SO che la adottano però devono mantenere una tabella delle pagine per ogni processo che associa ogni pagina del processo al corrispettivo frame in cui si trova.
 
->[!info] Quando c’è un process switch, la tabella delle pagine del nuovo processo deve essere ricaricata
+>[!info] Quando c’è un process switch, la tabella delle pagine del nuovo processo deve essere ricaricata ed aggiornata
 
 A differenza di prima in cui l’hardware doveva solamente intervenire e aggiungere un offset, qui deve intervenire sulle pagine stesse, infatti un indirizzo di memoria può essere visto come un numero di pagina e uno spiazzamento al suo interno (indirizzo logico)
 
@@ -476,10 +476,43 @@ Con la segmentazione, implementare protezione e condivisione. Dato che ogni segm
 
 ---
 # Memoria virtuale e sistema operativo
-## Gestione della memoria
-Quando un SO deve dare una risposta alle seguenti domande
+## Gestione della memoria: decisioni da prendere
 - Usare o no la memoria virtuale?
 - Usare solo la paginazione?
 - Usare solo la segmentazione?
 - Usare paginazione e segmentazione?
 - Che algoritmi usare per gestire i vari aspetti della gestione della memoria?
+
+---
+## Elementi centrali per il progetto del SO
+Quando si progetta un sistema operativo è necessario decidere le seguenti cose:
+- Politica di prelievo (*fetch policy*)
+- Politica di posizionamento (*placement policy*)
+- Politica di sostituzione (*replacement policy*)
+- Altro (gestione del resident set, politica di pulitura, controllo del carico)
+Il tutto, cercando di minimizzare i page fault; non c’è una politica sempre vincente
+
+## Fetch policy
+Decide quando una pagina data deve esser portata in memoria principale.
+
+Si usano principalmente due politiche:
+- paginazione su richiesta (*demand paging*)
+- prepaginazione (*prepaging*)
+
+### Demand paging
+Una pagina viene portata in memoria principale nel momento in cui qualche processo la richiede. Ciò causa molti page fault nei primi momenti di vita del processo
+
+### Prepaging
+Cerca di anticipare le necessità del processo. Questa politica infatti porta in memoria principale più pagine di quelle richieste (ovviamente si tratta di pagine vicine a quella richiesta)
+
+---
+## Placement policy
+La placement policy decide in quale frame mettere una pagina una volta che è stata prelevata dal disco. Seppur tramite la traduzione degli indirizzi la si può posizionare ovunque, tipicamente una pagina viene posizionata nel **primo** (con indice numericamente più basso) **frame libero**.
+
+>[!hint]
+>Questa politica si applica quando ci sta almeno un frame libero in RAM, se non ne è disponibile nessuno si parlerà di *replacement policy*
+
+---
+## Replacement policy
+Questa viene applicata quando è stato prelevato una pagina dal disco, ma non è disponibile alcun frame in RAM in cui posizionarla
+Essenzialmente, una volta deciso quale è il frame giusto da sostituire 
