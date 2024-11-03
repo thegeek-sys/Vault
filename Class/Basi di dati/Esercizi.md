@@ -1,6 +1,5 @@
-# 1
+# [[373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg|Esercizio 1 07/11/2018]]
 a)
-[[373364331-3b9ed6e2-a3d3-4474-8ebf-1bf0005a79ab.jpg|Esercizio 1 07/11/2018]]
 $$
 \text{V\_2018}=\sigma_{\text{Data}\geq \text{01/01/2018 } \land \text{ Data}\leq \text{31/12/2018}}(\text{VIAGGIO})
 $$
@@ -22,4 +21,12 @@ $$
 $$
 $$
 \text{PERSONALE}-\text{VI\_P}
+$$
+# [[Pasted image 20241103155926.png|Esercizio 1 11/02/2016]]
+a)
+$$
+\text{AD}=\pi_{\text{Data=25-01-2026}}(\text{NOLEGGIO})
+$$
+$$
+\text{AUTOVEICOLO} tjoin\text{MODELLO}
 $$
