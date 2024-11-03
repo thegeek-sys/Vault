@@ -115,5 +115,9 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >###### $r$ è un’istanza legale di $R$
 >Supponiamo per assurdo che la dipendenza $V\to W\in F$ non è soddisfatta.
 >Avremmo quindi $t_{1}[V]=t_{2}[V]\land t_{1}[W]\neq t_{2}[W]$; il che vuol dire che $V\subseteq Z^{(j)}$ e $W\cap(R-Z^{j})\neq \varnothing$
+>
+>Ma ciò non è possibile in quanto non sarebbe l’ultima iterazione ($Z^{(j)}$) in quanto manca $W$ che invece ci dovrebbe essere in quanto $V\to W\in F$. Se non li ho ancora aggiunti $Z^{(j)}$ non è la versione finale ma questo è in contraddizione con la nostra costruzione dell’istanza
+>
+>Quindi $W\subseteq Z^{(j)}\Rightarrow t_{1}[W]=t_{2}[W]$ terminando così la dimostrazione che questa istanza è legale
 
 
