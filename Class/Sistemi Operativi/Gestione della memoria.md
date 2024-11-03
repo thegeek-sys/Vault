@@ -518,7 +518,7 @@ Questa viene applicata quando è stato prelevato una pagina dal disco, ma non è
 Essenzialmente, una volta deciso quale è il frame giusto da sostituire tramite un algoritmo di replacement policy (generalmente si cerca di minimizzare la possibilità che la pagina appena sostituita venga richiesta di nuovo, usando il principio di località, si cerca di predire il futuro sulla base del passato recente) e inoltre è necessario aggiornare la tabella della pagine. Nella pagina prelevata dal disco viene impostato il bit di presenza a uno mentre per la pagina da sostituire il bit di presenza viene impostato a zero
 
 ### Frame bloccati
-Bisogna tenere presente, nella replacement policy, che alcuni frame potrebbero essere bloccati
+Bisogna tenere presente, nella replacement policy, che alcuni frame potrebbero essere bloccati, attraverso un bit hardware gestito dal SO. Tipicamente questo stato riguarda frame del sistema operativo stesso, oppure di processi che potrebbero riguardare trasferimenti di I/O
 
 ---
 ## Gestione del resident set
@@ -540,3 +540,12 @@ Anche qui si hanno due possibilità:
 - **politica globale** → si può scegliere qualsiasi frame (ovviamente non del SO
 
 In tutto si hanno 3 possibili strategie, infatti con l’allocazione fissa, la politica globale non si può usare altrimenti si potrebbe ampliare il numero di frame do un processo, e non sarebbe più allocazione fissa
+
+---
+## Politica di pulitura
+Se un frame è stato modificato, va riportata la modifica anche sulla pagina corrispondente.
+Anche qui si hanno due possibilità per decidere quando riportare questa modifica:
+- non appena avviene la modifica
+- non appena il frame viene sostituito
+
+Tipicamente si fa una via di mezzo, intrecciata con il *page buffering* (concetto di I/O che vedremo); solitamente, si raccolgono un po’ di richieste di frame da modificare e le si esegue
