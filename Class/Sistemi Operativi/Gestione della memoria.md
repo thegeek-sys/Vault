@@ -570,3 +570,53 @@ Abbiamo varie possibilità per scegliere il processo da sospendere nel caso in c
 - processo con il working set più piccolo
 - processo con immagine più grande (più grande numero di pagine)
 - processo con il più alto tempo rimanente di esecuzione (se disponibile)
+
+---
+## Algoritmi di sostituzione
+Per la replacement policy esistono vari algoritmi di sostituzione:
+- sostituzione ottima
+- sostituzione della pagina usata meno di recente (*LRU*)
+- sostituzione a coda (FIFO)
+- sostituzione ad orologio (clock)
+
+>[!note]
+>Gli esempi riportati nel seguito usano tutti la stessa sequenza di richiesta a pagine:
+>$$2\,\,3\,\,2\,\,1\,\,5\,\,2\,\,4\,\,5\,\,3\,\,2\,\,5\,\,2$$
+>
+>Si suppone inoltre che ci siano solo 3 frame in memoria principale
+
+### Sostituzione ottimale
+Con la sostituzione ottimale si sostituisce la pagina che verrà richiesta più in là nel futuro. Non è una soluzione implementabile ma è definibile sperimentalmente
+
+>[!example]
+>![[Pasted image 20241104141022.png]]
+>Risultato: 3 page faults
+
+### Sostituzione LRU
+L’algoritmo LRU sostituisce la pagine cui non sia stato fatto riferimento per il tempo più lungo.
+Basandosi sul principio di località, dovrebbe essere la pagina che ha meno probabilità di essere usata nel prossimo futuro
+
+La sua implementazione però risulta problematica in quanto occorre etichettare ogni frame con il tempo dell’ultimo accesso (la cache utilizza questa tecnica perché implementata a livello hardware, ma un’implementazione del genere per la RAM risulterebbe troppo costoso)
+
+>[!example]
+>![[Pasted image 20241104141416.png]]
+>Risultato: 4 page faults
+
+### Sostituzione FIFO
+L’algoritmo FIFO tratta i frame allocati ad un qualche processo come una coda circolare. Da questa coda, le pagine vengono rimosse a turno (*round robin*)
+
+La sua implementazione risulta semplice, vengono infatti rimpiazzate le pagine che sono state in memoria per più tempo (non necessariamente sono quelle con il minor numero di accessi)
+
+>[!example]
+>![[Pasted image 20241104141733.png]]
+>Risultato: 6 page faults
+
+### Sostituzione dell’orologio
+L’algoritmo ad orologio risulta essere il compromesso tra LRU e FIFO.
+C’è dunque uno *use bit* per ogni frame, che indica se la pagina caricata nel frame è stata riferita. Il bit è settato ad 1 quando la pagina viene caricata in memoria principale, e poi rimesso ad 1 per ogni accesso al suo interno.
+Quando occorre sostituire una pagina, il SO cerca come nella FIFO, ma seleziona il frame contenente la pagina che ha per prima lo *use bit* a 0. Se invece si incontra una pagina che lo ha ad 1, lo mette a zero e procede con la prossima
+
+>[!example]
+>![[Pasted image 20241104142141.png]]
+>Risultato: 5 page faults
+
