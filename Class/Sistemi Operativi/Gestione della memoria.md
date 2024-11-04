@@ -620,3 +620,13 @@ Quando occorre sostituire una pagina, il SO cerca come nella FIFO, ma seleziona 
 >![[Pasted image 20241104142141.png]]
 >Risultato: 5 page faults
 
+>[!example]
+>![[Pasted image 20241104142732.png]]
+>![[Pasted image 20241104142819.png]]
+>
+
+### Algoritmi a confronto
+![[Pasted image 20241104142852.png|500]]
+
+![[Pasted image 20241104142906.png|400]]
+
