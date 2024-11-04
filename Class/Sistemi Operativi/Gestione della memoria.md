@@ -630,3 +630,45 @@ Quando occorre sostituire una pagina, il SO cerca come nella FIFO, ma seleziona 
 
 ![[Pasted image 20241104142906.png|400]]
 
+### Buffering delle pagine
+Questa tecnica è un’ennesima cache (software) per le pagine.
+E’ nata come una modifica dell’algoritmo FIFO però talvolta è utilizzata anche con LRU e/o clock. Come scopo ha quello di avvicinare il FIFO semplice al clock semplice come prestazioni.
+Viene riservata un po’ di memoria in meno al processo per poterne conservare una parte per la “cache”. Dunque se occorre rimpiazzare una pagina, non viene subito buttata via, ma viene messa in questa cache; così se poi viene nuovamente referenziata, si può subito riportarla in memoria.
+
+Tipicamente la cache è divisa tra pagine modificate e non. Si cerca infatti di scrivere (su disco) le pagine modificate tutti insieme nel momento in cui la dista delle pagine diventa piena o quasi
+
+>[!example]
+>Assumendo che tutti gli accessi siano in lettura, e che la cache sia di una sola pagina
+>![[Pasted image 20241104143639.png]]
+>Risultato: 7 page  fault
+
+---
+# Gestione della memoria in Linux
+In Linux viene fatta una distinzione netta tra richieste di memoria da parte del kernel e di processi utente.
+L’idea è quella che il kernel si fida di sé stesso, dunque se una parte dice che ha bisogno di memoria, gli viene concessa con pochi o nessun controllo. Per quanto riguarda i processi utente vengono eseguiti controlli di protezione e di rispetto dei limiti assegnati (`SIGSEGV` segmentation fault)
+
+## Gestione della memoria kernel (cenni)
+Il kernel potrebbe aver necessità di richiedere tanta RAM tutta insieme, quindi in Linux le richieste di memoria del kernel sono ottimizzate sia per le richieste piccole che per le grandi.
+Il kernel può usare sia la memoria a lui riservata nella parte alta della memoria, che quella usata dai processi utente
+
+Se la richiesta è piccola (pochi bytes), fa in modo di avere alcune pagine già printe da cui può prendere pochi bytes richiesti (*slab allocator*)
+Se la richiesta è grande (fino a 4MB), fa in modo di allocare più pagine contigue in frame contigui. Avere pagine contigue in frame contigui è importante per il DMA (meccanismo che permette ad un dispositivo di I/O di scrivere direttamente in RAM) che ignora il fatto che ci sia la paginazione e va a scrivere direttamente in RAM. Dunque quando il kernel assegna una memoria ad un DMA questa deve essere contigua (usa essenzialmente il [[Gestione della memoria#Buddy System (sistema compagno)|buddy system]])
+
+## Gestione della memoria utente
+- Fetch policy → paging on demand
+- Placement policy → il primo frame libero
+- Replacement policy → nel seguito
+- Gestione del resident set → politica dinamica con replacement scope globale
+	- molto globale: vi rientrano anche la cache del disco (page cache, ci torneremo)
+	- anche qui, c’è un buddy system per richieste grandi
+- Politica di pulitura → ritardata il più possibile
+	- scrittura quando la page cache è troppo piena con molte richieste pending
+	- troppe pagine sporche, o pagina sporca (*dirty page*, pagina modificata da tanto tempo ma non su disco) da troppo tempo
+	- richiesta esplicita di un processo: flush, sync o simili
+- Controllo del carico → assente
+
+### Replacement Policy
+Si basa sull’algoritmo dell’orologio ma con una modifica (in particolare utilizza un LRU “corretto”, il precedente algoritmo dell’orologio era molto efficace ma poco efficiente soprattutto con memorie molto grandi).
+In Linux si hanno due flag per ogni entry delle page table: `PG_referenced` (pagine a cui sono stati fatti riferimenti) e `PG_active`
+
+![[Pasted image 20241104145459.png]]

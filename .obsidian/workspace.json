@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "memoria virtuale",
+                "query": "DMA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -226,6 +226,10 @@
   },
   "active": "3d7f3dd856b9e87c",
   "lastOpenFiles": [
+    "Files/Pasted image 20241104145459.png",
+    "Class/Sistemi Operativi/Introduzione.md",
+    "Class/Sistemi Operativi/Gestione della memoria.md",
+    "Files/Pasted image 20241104143639.png",
     "Files/Pasted image 20241104142906.png",
     "Files/Pasted image 20241104142852.png",
     "Files/Pasted image 20241104142850.png",
@@ -235,10 +239,7 @@
     "Files/Pasted image 20241104141733.png",
     "Files/Pasted image 20241104141416.png",
     "Files/Pasted image 20241104141022.png",
-    "Files/Pasted image 20241104002005.png",
-    "Files/Pasted image 20241104001407.png",
     "Class/Sistemi Operativi/Scheduling.md",
-    "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Basi di dati/Esercizi.md",
     "Files/Pasted image 20241103155926.png.sb-52feadf3-sTHjpo",
@@ -262,7 +263,6 @@
     "Flet-notes/2024-10-16_BD.md",
     "Class/Basi di dati/Algebra relazionale.md",
     "Flet-notes/2024-10-16.md",
-    "Class/Sistemi Operativi/Introduzione.md",
     "Flet-notes/2024-10-10_BD.md",
     "Files/Algebra.pdf",
     "Class/Algebra",
