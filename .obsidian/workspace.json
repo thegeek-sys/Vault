@@ -38,6 +38,18 @@
             }
           },
           {
+            "id": "cc6972f0af51ddf9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.5"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.5"
+            }
+          },
+          {
             "id": "c29208416eada620",
             "type": "leaf",
             "state": {
