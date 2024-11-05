@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming languages/Python/Python.md",
+                "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Algoritmi di sorting"
             }
           }
         ]
@@ -35,7 +37,9 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
         }
       },
       {
@@ -50,7 +54,9 @@
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-search",
+          "title": "Search"
         }
       },
       {
@@ -61,7 +67,9 @@
           "state": {
             "sortOrder": "frequency",
             "useHierarchy": true
-          }
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
         }
       },
       {
@@ -69,7 +77,9 @@
         "type": "leaf",
         "state": {
           "type": "bookmarks",
-          "state": {}
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
         }
       }
     ],
@@ -85,7 +95,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Programming languages/Python/Python.md",
+            "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -93,7 +103,9 @@
             "searchQuery": "",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
         }
       },
       {
@@ -102,10 +114,12 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Programming languages/Python/Python.md",
+            "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
         }
       },
       {
@@ -114,8 +128,10 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Programming languages/Python/Python.md"
-          }
+            "file": "Class/Introduzione agli algoritmi/Algoritmi di sorting.md"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
         }
       }
     ],
@@ -123,59 +139,66 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "vscode-editor:Create Code File": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "ebb20bde1c772a01",
   "lastOpenFiles": [
-    "Programming languages/Programming languages.md",
-    "Uni/Uni.md",
-    "Uni/Struttura esame FDP.md",
+    "Class/Sistemi Operativi/Introduzione.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Class.md",
+    "Class/Basi di dati",
+    "Class/Introduzione agli algoritmi/Alberi di ricerca.md",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "Class/Introduzione agli algoritmi/Esercizi.md",
+    "Class/Introduzione agli algoritmi/Visitare gli alberi.md",
+    "Class/Introduzione agli algoritmi/Algoritmi di sorting.md",
+    "Class/Introduzione agli algoritmi/Introduzione agli algoritmi.md",
+    "Class/Introduzione agli algoritmi",
+    "Class/Sistemi Operativi",
+    "Class/Architettura degli elaboratori/Esercizi/es1.md",
+    "Class/Architettura degli elaboratori/Esercizi/Esercizi.md",
+    "Class/Architettura degli elaboratori/Esercizi/es2.md",
+    "Class/Architettura degli elaboratori/Esercizi",
+    "Class/Architettura degli elaboratori/Pipeline.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS 2 (aggiungere nuove istruzioni).md",
+    "Class/Architettura degli elaboratori/Cache.md",
+    "Class/Architettura degli elaboratori/Ricorsione.md",
+    "Class/Architettura degli elaboratori/Implementare Pipeline in CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Progetto della CPU MIPS.md",
+    "Class/Architettura degli elaboratori/Control Unit non funzionante.md",
+    "Files/Screenshot 2024-05-02 alle 19.27.01.png",
+    "Files/Screenshot 2024-04-16 alle 19.47.13.png",
+    "Files/Screenshot 2024-05-27 alle 12.25.35.png",
+    "Files/Screenshot 2024-04-29 alle 19.26.44.png",
+    "Files/Screenshot 2024-05-07 alle 16.29.47.png",
+    "Files/Screenshot 2024-05-19 alle 12.12.20.png",
+    "Files/Screenshot 2024-04-23 alle 19.38.04.png",
+    "Files/Screenshot 2024-05-08 alle 19.26.03.png",
+    "Files/Screenshot 2024-03-25 alle 22.46.43.png",
+    "Files/Immagine 29-04-24 - 16.58 2.jpg",
+    "Flet-notes/2024-05-16_MDP.md",
+    "Flet-notes/2024-04-24_MDP.md",
+    "Flet-notes/2024-05-14_MDP.md",
+    "Flet-notes/2024-04-12_AE.md",
+    "Flet-notes/2024-04-04_MDP.md",
+    "Flet-notes/2024-05-02_MDP.md",
+    "Programming languages/Java/Main.java",
     "Uni",
-    "Files/sistema riferimento rgb.png",
-    "Files/oop int.png",
-    "Files/color class.png",
-    "Files/stack program.png",
-    "Files/bitwise operator.png",
-    "Files/color alpha class.png",
-    "Files/matrix rgb.png",
-    "Files/stack.png",
-    "Files/verilog module.png",
-    "Files/reduction operator.png",
     "Files/recurs.py",
     "Files",
-    "Flet-notes/2023-10-31.md",
-    "Flet-notes/10.10.md",
-    "Flet-notes/12.10.md",
-    "Flet-notes/2023-12-05.md",
-    "Flet-notes/2023-11-21.md",
-    "Flet-notes/2023-11-30.md",
-    "Flet-notes/2023-11-23.md",
-    "Flet-notes/2023-10-19.md",
-    "Flet-notes/2023-11-07.md",
-    "Flet-notes/2023-11-02.md",
-    "Flet-notes/2023-11-16.md",
-    "Flet-notes/2023-10-17.md",
-    "Flet-notes/2023-11-09.md",
-    "Flet-notes/2023-10-26.md",
-    "Flet-notes/2023-11-28.md",
-    "Flet-notes/2023-11-09-vlad.md",
     "Flet-notes",
-    "Programming languages/Python/Images.md",
-    "Programming languages/Python/Functions.md",
-    "Programming languages/Python/float.md",
-    "Programming languages/Python/Python.md",
-    "Programming languages/Python/list comprehension.md",
-    "Programming languages/Python/bool.md",
-    "Programming languages/Python/Shallow and Deep Copy.md",
-    "Programming languages/Python",
-    "Programming languages/Verilog",
-    "Programming languages"
+    "Programming languages/Python"
   ]
 }
