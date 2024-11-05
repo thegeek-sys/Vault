@@ -1172,6 +1172,18 @@
                 }
               },
               {
+                "id": "cc6972f0af51ddf9",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.7.5"
+                  },
+                  "icon": "lucide-file",
+                  "title": "Release Notes 1.7.5"
+                }
+              },
+              {
                 "id": "c29208416eada620",
                 "type": "leaf",
                 "state": {
@@ -1360,8 +1372,8 @@
         }
       },
       "active": "ab2cdb46bc286f8f",
-      "mtime": "2024-11-05T11:23:50+01:00"
+      "mtime": "2024-11-05T15:30:59+01:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
