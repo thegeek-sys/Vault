@@ -4,65 +4,65 @@
     "type": "split",
     "children": [
       {
-        "id": "455919ad3cc4a222",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "785e57b5e4fd92db",
+            "id": "86b7c0e96592df9e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Basi di dati"
+              "title": "Sistemi Operativi"
             }
           },
           {
-            "id": "ab2cdb46bc286f8f",
+            "id": "3d7f3dd856b9e87c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chiusura di un insieme di attributi"
+              "title": "Gestione della memoria"
             }
           },
           {
-            "id": "c29208416eada620",
+            "id": "e37f031c5f609d0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Terza forma normale.md",
+                "file": "Class/Sistemi Operativi/Processi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Terza forma normale"
+              "title": "Processi"
             }
           },
           {
-            "id": "6819e67c1c90d493",
+            "id": "a91fad9c7db7b57b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md",
+                "file": "Class/Sistemi Operativi/Scheduling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Esercizi"
+              "title": "Scheduling"
             }
           }
         ],
@@ -88,7 +88,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora risorse"
             }
           },
           {
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "induzione",
+                "query": "DMA",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Esercizi"
+              "title": "Backlinks for Gestione della memoria"
             }
           },
           {
@@ -159,12 +159,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Basi di dati"
+              "title": "Outgoing links from Gestione della memoria"
             }
           },
           {
@@ -186,10 +186,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md"
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Esercizi"
+              "title": "Outline of Gestione della memoria"
             }
           },
           {
@@ -202,8 +202,7 @@
               "title": "Advanced Tables"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -225,8 +224,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ab2cdb46bc286f8f",
+  "active": "3d7f3dd856b9e87c",
   "lastOpenFiles": [
+    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Class/Basi di dati/Esercizi.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
     "Files/Pasted image 20241104145459.png",
@@ -244,7 +244,6 @@
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Files/Pasted image 20241103155926.png.sb-52feadf3-sTHjpo",
     "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Class/Basi di dati/Terza forma normale.md",
     "Flet-notes/2024-10-31_BD.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",

@@ -669,6 +669,14 @@ Se la richiesta è grande (fino a 4MB), fa in modo di allocare più pagine conti
 
 ### Replacement Policy
 Si basa sull’algoritmo dell’orologio ma con una modifica (in particolare utilizza un LRU “corretto”, il precedente algoritmo dell’orologio era molto efficace ma poco efficiente soprattutto con memorie molto grandi).
-In Linux si hanno due flag per ogni entry delle page table: `PG_referenced` (pagine a cui sono stati fatti riferimenti) e `PG_active`
+
+In Linux si hanno due flag per ogni entry delle page table: `PG_referenced` (pagine a cui sono stati fatti riferimenti) e `PG_active` (pagine effettivamente attive). Sulla base di `PG_active` sono mantenute due liste di pagine: le attive e le inattive.
+`kswapd` è un kernel thread in esecuzione periodica che scorre le pagine inattive.
+`PG_referenced` viene settato ogni qual volta che la pagina viene richiesta; quindi si hanno due possibilità:
+- o arriva prima `kswapd`, in questo caso `PG_references` viene settato a zero
+- o arriva un atro riferimento, in questo caso la pagina diventa attiva
+
+Solo le pagine inattive possono essere rimpiazzate (tra di esse si fa una specie di LRU con contatore a 8 bit)
 
 ![[Pasted image 20241104145459.png]]
+il `timeout` è da intendere come `kswapd` che viene eseguito
