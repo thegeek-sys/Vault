@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -239,11 +239,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ab2cdb46bc286f8f",
+  "active": "6b9a7f5969279087",
   "lastOpenFiles": [
+    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Class/Basi di dati/Terza forma normale.md",
     "Flet-notes/2024-11-06_BD.md",
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Flet-notes/2024-11-05_SO.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Basi di dati/Esercizi.md",
