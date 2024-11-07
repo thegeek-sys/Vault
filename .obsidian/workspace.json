@@ -157,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -260,10 +261,10 @@
   },
   "active": "88738f8f4b21ec13",
   "lastOpenFiles": [
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
-    "Class/Basi di dati/Identificazione di una chiave.md",
-    "Class/Basi di dati/Basi di dati.md",
     "Flet-notes/2024-11-06_BD.md",
+    "Class/Basi di dati/Identificazione di una chiave.md",
+    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+    "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Terza forma normale.md",
     "Flet-notes/2024-11-05_SO.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
