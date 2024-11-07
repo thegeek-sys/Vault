@@ -80,27 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "ab228f2352dafd57",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6b9a7f5969279087",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flet-notes/2024-11-06_BD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-11-06_BD"
-            }
-          }
-        ]
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -259,10 +239,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "88738f8f4b21ec13",
+  "active": "6819e67c1c90d493",
   "lastOpenFiles": [
-    "Flet-notes/2024-11-06_BD.md",
     "Class/Basi di dati/Identificazione di una chiave.md",
+    "Flet-notes/2024-11-06_BD.md",
     "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Terza forma normale.md",

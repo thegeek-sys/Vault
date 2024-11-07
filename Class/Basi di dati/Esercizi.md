@@ -25,13 +25,13 @@ $$
 # [[Pasted image 20241103155926.png|Esercizio 1 11/02/2016]]
 a)
 $$
-\text{AD}=\pi_{\text{Data=25-01-2026}}(\text{NOLEGGIO})
+\text{AD}=\sigma_{\text{Data=25-01-2026}}(\text{NOLEGGIO})
 $$
 $$
-\text{AM}=(\pi_{\text{Tipo=persone}}(\text{AUTOVEICOLO})) \underset{\text{Modello=Nome}}{\bowtie}\text{MODELLO}
+\text{AM}=(\sigma_{\text{Tipo=persone}}(\text{AUTOVEICOLO})) \underset{\text{Modello=Nome}}{\bowtie}\text{MODELLO}
 $$
 $$
-\sigma_{\text{Targa, Posti}}(\text{AM}\bowtie\text{AD})
+\pi_{\text{Targa, Posti}}(\text{AM}\bowtie\text{AD})
 $$
 
 b)
