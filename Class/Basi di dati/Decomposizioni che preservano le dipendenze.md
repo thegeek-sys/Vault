@@ -86,9 +86,46 @@ $$
 &\text{begin}\\
 &\qquad\text{successo}:=true\\
 &\qquad \text{for every }X\to Y\in F\\
-&\qquad\text{do}\\ &\qquad \qquad\text{begin}\\
+&\qquad\text{do}\\
+&\qquad \text{begin}\\
 &\qquad\qquad\text{calcola } X^+\\
-&\qquad\qquad \text{if }Y\not\subset X^+ \text{ then successo}:=false\\
-&\qquad\qquad\text{end}
+&\qquad\qquad \text{if }Y\not\subset X^+_{G} \text{ then successo}:=false\\
+&\qquad\text{end} \\
+&\text{end}
 \end{align}
 $$
+
+Il problema di questo algoritmo è che dovremmo prima calcolare $G$, ma per definizione di $G$ ciò richiede il calcolo di $F^+$ che richiede tempo esponenziale.
+
+Presentiamo un algoritmo che permette di calcolare $X^+_{G}$ a partire da $F$
+
+$$
+\begin{align}
+\mathbf{Input}\to \text{ }& \text{uno schema } R\text{, un insieme }F\text{ di dipendenze funzionali su }R, \\
+&\text{una decomposizione }\rho=\{R_{1},R_{2},\dots,R_{k}\}\text{ di }R,\text{un sottoinsieme }X\text{ di }R \\\\
+\mathbf{Output}\to \text{ }&\text{la chiusura di }X\text{ rispetto a } G=\cup_{i=1}^k\pi_{R_{i}}(F)\text{ (nella variabile }Z\text{)}
+\end{align}
+$$
+$$
+\begin{align}
+&\text{begin}\\
+&\qquad Z:=X \\
+&\qquad S:=\varnothing \\
+&\qquad \text{for }i:=1\text{ to }k\\
+&\qquad\text{do}\qquad S:=S\cup(Z\cap R_{i})^+_{F}\cap R_{i}  \\
+&\qquad\text{while } S\not\subset Z \\
+&\qquad\qquad\text{do}\\
+&\qquad\qquad \text{begin}\\
+&\qquad\qquad\qquad Z:=Z\cup S\\
+&\qquad\qquad\qquad \text{for }i:=1\text{ to }k \\
+&\qquad\qquad\qquad\text{do}\qquad S:=S\cup(Z\cap R_{i})^+_{F}\cap R_{i} \\
+&\qquad\qquad\text{end} \\
+&\text{end}
+\end{align}
+$$
+
+
+>[!info]
+>Con $S:=S\cup(Z\cap R_{i})^+_{F}\cap R_{i}$ sostanzialmente si calcola la chiusura in $F$ degli elementi (di cui cerchiamo di calcola la chiusura in $G$) rispetto al sottoschema $R_{i}$, infine facciamo l’intersezione con $R_{i}$ in modo tale da avere al massimo tutti gli attributi contenuti di $R_{i}$.
+>In questo modo rispettiamo la definizione di $G=\cup_{i=1}^k\pi_{R_{i}}(F)$
+
