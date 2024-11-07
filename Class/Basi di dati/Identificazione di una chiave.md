@@ -77,8 +77,14 @@ L’approccio di forza bruta (provate tutti i sottoinsiemi) non è sbagliato ma 
 >$$F=\{AB\to C, AC\to B, D\to E\}$$
 >
 >Le chiavi sono:
->- $K_{1}=(GC)$
->- $K_{2}=(ABC)$
->- $K_{3}=(DC)$
->- $K_{4}=(CH)$
+>- $K_{1}=(ABD)$
+>- $K_{2}=(ACD)$
+
+---
+## Test di unicità di una chiave
+Dati uno schema di relazione $R$ e un insieme di dipendenze funzionali $F$, calcoliamo l’intersezione degli insiemi ottenuti come sopra, cioè degli insiemi $X=R-(W-V)$ con $V\to W \in F$
+Se l’intersezione di questi insiemi determina tutto $R$, allora questa intersezione è l’unica chiave di $R$
+
+>[!example] Esempio precedente
+>$$(ABDE\cap ACDE\cap ABCD)^+=(AD)^+=AD$$
 
