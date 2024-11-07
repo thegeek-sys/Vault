@@ -129,3 +129,8 @@ $$
 >Con $S:=S\cup(Z\cap R_{i})^+_{F}\cap R_{i}$ sostanzialmente si calcola la chiusura in $F$ degli elementi (di cui cerchiamo di calcola la chiusura in $G$) rispetto al sottoschema $R_{i}$, infine facciamo l’intersezione con $R_{i}$ in modo tale da avere al massimo tutti gli attributi contenuti di $R_{i}$.
 >In questo modo rispettiamo la definizione di $G=\cup_{i=1}^k\pi_{R_{i}}(F)$
 
+
+ma visto che G equiv ad F dove stanno le dipendenze “a cavallo”?
+
+
+in G sono contenute tutte e solo le dipendenze dei singoli sottoschemi (quindi non le dipendenze che hanno un attributo in un sottoschema e un attributo in un altro)

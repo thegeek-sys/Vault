@@ -160,8 +160,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -269,12 +268,12 @@
   },
   "active": "76d1c03bd0efa96d",
   "lastOpenFiles": [
+    "Flet-notes/2024-11-07_BD.md",
+    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Chiusura di un insieme di attributi.md",
-    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
     "Class/Basi di dati/Identificazione di una chiave.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
-    "Flet-notes/2024-11-07_BD.md",
     "Files/Pasted image 20241107215350.png",
     "Files/Pasted image 20241107215231.png",
     "Class/Basi di dati/Esercizi.md",
