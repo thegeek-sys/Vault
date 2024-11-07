@@ -7,6 +7,7 @@
 - [[Terza forma normale]]
 - [[Chiusura di un insieme di attributi]]
 - [[Identificazione di una chiave]]
+- [[Decomposizioni che preservano le dipendenze]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
