@@ -86,5 +86,51 @@ Dati uno schema di relazione $R$ e un insieme di dipendenze funzionali $F$, calc
 Se l’intersezione di questi insiemi determina tutto $R$, allora questa intersezione è l’unica chiave di $R$
 
 >[!example] Esempio precedente
+>- $ABCDE-(C-AB)=ABDE$
+>- $ABCDE-(B-AC)=ACDE$
+>- $ABCDE-(E-D)=ABCD$
+>
 >$$(ABDE\cap ACDE\cap ABCD)^+=(AD)^+=AD$$
+>
+>Quindi avremmo già potuto capire che esiste più di una chiave
+>- Se l’intersezione di questi insiemi non determina tutto $R$ allora esistono più chiavi che vanno tutte identificate per il test 3NF
+>
+>>[!hint]
+>>Questa è una comoda verifica, ma se nel compito viene richiesto di **verificare che un insieme di attributi sia chiave, o di trovare la chiave, va usata solo la definizione** (verifica che la chiusura contenga $R$ e che nessun sottoinsieme abbia la stessa proprietà)
 
+---
+## Chiavi  e 3NF
+Una volta individuate le chiavi di uno schema di relazione, possiamo determinare se lo schema è in 3NF
+
+>[!example]
+>$$R=(A,B,C,D,E,G,H)$$
+>$$F=\{AB\to D, G\to A, G\to B, H\to E,H\to G,D\to H\}$$
+>
+>Le chiavi sono:
+>- $K_{1}=(GC)$
+>- $K_{2}=(ABC)$
+>- $K_{3}=(DC)$
+>- $K_{4}=(CH)$
+>
+>Non è in 3NF in quanto $H$ non è superchiave e $E$ non è primo
+
+
+>[!example]
+>$$R=(A,B,C,D,E,G,H)$$
+>$$F=\{AB\to CD, EH\to D, D\to H\}$$
+>
+>Chiavi:
+>- $K=(ABEG)$
+>
+>Non è in 3NF in quanto $AB$ non è superchiave e $CD$ non è primo
+>
+>>[!warning]
+>>Anche se si trova che uno schema appare in 3NF devo verificare che anche le dipendenze in $F^+$ rispettano la 3NF
+
+
+>[!example]
+>$$R=(A,B,C,D,E,H)$$
+>$$F=\{AB\to CD, C\to E, AB\to E, ABC\to D\}$$
+>
+>$K=(ABH)$
+>Non è in 3NF dato che $AB$ non è superchiave e $CD$ non è primo
