@@ -61,5 +61,26 @@ Siano $F$ e $G$ due insiemi di dipendenze funzionali. Se $F\subseteq G^+$ allora
 
 >[!info] Definizione
 >Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ e $\rho \{R_{1},R_{2},\dots R_{k}\}$ una decomposizione di $R$.
->Diciamo che $\rho$ **preserva** $F$ se $F\equiv \cup_{i=1}^k \pi_{Ri}(F)$
+>Diciamo che $\rho$ **preserva** $F$ se $F\equiv \cup_{i=1}^k \pi_{R_{i}}(F)$ dove $\pi_{R_{i}}(F)=\{X\to Y \text{ t.c. }X\to Y \in F^+\land XY\subseteq R_{i}\}$
 
+>[!warning]
+>Ovviamente $\cup_{i=1}^k \pi_{R_{i}}(F)$ è un insieme di dipendenze funzionali 
+>Ogni $\pi_{R_{i}}(F)$ è un insieme di dipendenze funzionali dato dalla proiezione dell’insieme di dipendenze funzionali $F$ sul sottoschema $R_{i}$
+>
+>Proiettare un insieme di dipendenze $F$ su un sottoschema $R_{i}$ non significa banalmente perdere le dipendenze dell’insieme $F$ ed eliminare da queste dipendenze gli attributi che non sono in $R_{i}$, ma **prendere tutte e sole** le dipendenze **derivabili da $F$** tramite gli assiomi di Armstrong (quindi quelle in $F^+$) che hanno tutti gli attributi (dipendenti e determinanti) in $R_{i}$
+
+---
+## Verificare validità di una decomposizione
+Supponiamo di avere già una decomposizione e di voler verificare se preserva le dipendenze funzionali
+Per fare ciò deve essere verificata l’equivalenza dei due insiemi di dipendenze funzionali $F$ e $G=\cup_{i=1}^k \pi_{R_{i}}(F)$ e quindi la doppia inclusione $F^+\subseteq G^+$ e $F^+\supseteq G^+$
+
+Per come è definito $G$ in questo caso sarà sicuramente $F^+\supseteq G^+$, infatti ogni proiezione di $F$ che viene inclusa per definizione in $G$ è un sottoinsieme di $F^+$, quindi $F^+$ contiene $G$ e per il lemma 2 questo implica che $G^+\subseteq F^+$
+
+Dunque non dobbiamo verificare una delle due implicazioni, inoltre per il lemma 2 $F\subseteq G^+$ implica che $F^+\subseteq G^+$ dunque ci basta verificare che: $F\subseteq G^+$ semplificandoci di molto il lavoro
+
+Questa verifica può essere fatta con l’algoritmo che segue
+$$
+\begin{falign}
+\text{}
+\end{falign}
+$$
