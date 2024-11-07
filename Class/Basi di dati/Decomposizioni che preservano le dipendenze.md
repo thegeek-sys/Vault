@@ -56,3 +56,10 @@ Siano $F$ e $G$ due insiemi di dipendenze funzionali. Se $F\subseteq G^+$ allora
 >Dunque si può dire che $f$ è derivabile da $G$ mediante gli assiomi di Armstrong
 >$$G\overset{A}{\longrightarrow} F\overset{A}{\longrightarrow} F^+$$
 
+---
+## Preservare le dipendenze funzionali
+
+>[!info] Definizione
+>Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ e $\rho \{R_{1},R_{2},\dots R_{k}\}$ una decomposizione di $R$.
+>Diciamo che $\rho$ **preserva** $F$ se $F\equiv \cup_{i=1}^k \pi_{Ri}(F)$
+
