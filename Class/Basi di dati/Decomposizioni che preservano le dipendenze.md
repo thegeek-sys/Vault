@@ -80,7 +80,15 @@ Dunque non dobbiamo verificare una delle due implicazioni, inoltre per il lemma 
 
 Questa verifica può essere fatta con l’algoritmo che segue
 $$
-\begin{falign}
-\text{}
-\end{falign}
+\begin{align}
+&\mathbf{Input}\to \text{due insiemi }F \text{ e }G\text{ di dipendenze funzionali su R} \\
+&\mathbf{Output}\to \text{la variabile successo (true se }F\subseteq G^+\text{)}\\
+&\text{begin}\\
+&\qquad\text{successo}:=true\\
+&\qquad \text{for every }X\to Y\in F\\
+&\qquad\text{do}\\ &\qquad \qquad\text{begin}\\
+&\qquad\qquad\text{calcola } X^+\\
+&\qquad\qquad \text{if }Y\not\subset X^+ \text{ then successo}:=false\\
+&\qquad\qquad\text{end}
+\end{align}
 $$
