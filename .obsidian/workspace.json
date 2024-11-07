@@ -99,12 +99,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2024-11-07_BD.md",
+                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-11-07_BD"
+              "title": "Chiusura di un insieme di dipendenze funzionali"
             }
           }
         ],
@@ -139,7 +139,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "induzione",
+                "query": "lemma 1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -270,9 +269,9 @@
   "active": "50acff291ba9db2e",
   "lastOpenFiles": [
     "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+    "Flet-notes/2024-11-07_BD.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Class/Basi di dati/Basi di dati.md",
-    "Flet-notes/2024-11-07_BD.md",
     "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Identificazione di una chiave.md",
     "Flet-notes/2024-11-06_BD.md",
