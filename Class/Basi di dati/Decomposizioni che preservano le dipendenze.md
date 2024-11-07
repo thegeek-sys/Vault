@@ -38,3 +38,21 @@ Quindi $R$ è un insieme di attributi, una decomposizione di $R$ è una famiglia
 >>[!warning]
 >>$F$ e $G$ non contengono le stesse dipendenze, ma le loro chiusure si
 
+---
+## Che si fa?
+Verificare l’equivalenza di due insiemi $F$ e $G$ di dipendenze funzionali richiede che venga verificata l’uguaglianza di $F^+$ e $G^+$, cioè che $F^+\subseteq G^+$ e che $F^+\supseteq G^+$
+
+Come detto in precedenza, calcolare la chiusura di un insieme di dipendenze funzionali richiede tempo esponenziale. Il seguente lemma ci permette tuttavia di verificare l’equivalenza dei due insiemi di dipendenze funzionali in tempo polinomiale
+
+---
+## Lemma 2
+Siano $F$ e $G$ due insiemi di dipendenze funzionali. Se $F\subseteq G^+$ allora $F^+\subseteq G^+$
+
+>[!info] Dimostrazione
+>Sia $f\in F^+ - F$ (è una dipendenza in $F^+$ che non compare in $F$)
+>
+>Ogni dipendenza in $F$ è derivabile da $G$ mediante gli assiomi di Armstrong (per ipotesi $F$ si trova in $G^+$)
+>Inoltre $f\in F^+$ è derivabile dalle dipendenze in $F$ mediante gli assiomi di Armstrong
+>Dunque si può dire che $f$ è derivabile da $G$ mediante gli assiomi di Armstrong
+>$$G\overset{A}{\longrightarrow} F\overset{A}{\longrightarrow} F^+$$
+
