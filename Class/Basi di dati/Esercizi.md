@@ -37,12 +37,11 @@ $$
 b)
 
 $$
-\text{MD}=\pi_{\text{Motore=disel}}(\text{MODELLO})
+\text{MD}=\sigma_{\text{Motore=disel}}(\text{MODELLO})
 $$
 $$
-\text{r}=(\text{MD}\underset{\text{Nome=Modello}}{\bowtie}\text{AUTOVEICOLO})\bowtie\pi_{\text{Data}\geq \text{01/01/2016}\land \text{Data}\leq \text{31/01/2016}}(\text{NOLEGGIO})
+\text{r}=(\text{MD}\underset{\text{Nome=Modello}}{\bowtie}\text{AUTOVEICOLO})\bowtie\sigma_{\text{Data}\geq \text{01/01/2016}\land \text{Data}\leq \text{31/01/2016}}(\text{NOLEGGIO})
 $$
 $$
-\sigma_{\text{Targa}}(\text{MD}\bowtie\text{AUTOVEICOLO}-\sigma_{\text{Targa}}(\text{r}))
+\sigma_{\text{Targa}}(\text{MD}\bowtie\text{AUTOVEICOLO}-\pi_{\text{Targa}}(\text{r}))
 $$
-
