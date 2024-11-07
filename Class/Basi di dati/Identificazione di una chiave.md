@@ -58,3 +58,27 @@ Gli attributi che non compaiono mai nelle dipendenze funzionali di $F$, non sono
 Le osservazioni 1 e 2 valgono anche quando stiamo cercando la/le chiave/i di uno schema
 ### Osservazione 4
 L’approccio di forza bruta (provate tutti i sottoinsiemi) non è sbagliato ma molto poco efficiente
+
+---
+## Esempi
+
+>[!example]
+>$$R=(A,B,C,D,E,G,H)$$
+>$$F=\{AB\to D, G\to A, G\to B, H\to E,H\to G,D\to H\}$$
+>
+>Le chiavi sono:
+>- $K_{1}=(GC)$
+>- $K_{2}=(ABC)$
+>- $K_{3}=(DC)$
+>- $K_{4}=(CH)$
+
+>[!example]
+>$$R=(A,B,C,D,E)$$
+>$$F=\{AB\to C, AC\to B, D\to E\}$$
+>
+>Le chiavi sono:
+>- $K_{1}=(GC)$
+>- $K_{2}=(ABC)$
+>- $K_{3}=(DC)$
+>- $K_{4}=(CH)$
+
