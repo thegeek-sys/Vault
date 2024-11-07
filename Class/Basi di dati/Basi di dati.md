@@ -6,6 +6,7 @@
 - [[Chiusura di un insieme di dipendenze funzionali]]
 - [[Terza forma normale]]
 - [[Chiusura di un insieme di attributi]]
+- [[Identificazione di una chiave]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
