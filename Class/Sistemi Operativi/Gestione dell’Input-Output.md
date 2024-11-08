@@ -74,3 +74,25 @@ Ad esempio per quanto riguarda una stampante, questa è più articolata; richied
 Il disco è tra le cose più complicate da controllare, fortunatamente non viene fatto tutto da software, e molte cose vengono controllate da hardware dedicato
 
 ### Unità di trasferimento dati
+Per trasferire i dati dal dispositivo che li genera alla memoria e viceversa ci sono due possibilità:
+- trasferirli in **blocchi di byte** di lunghezza fissa → usato per la memoria secondaria (dischi, chiavi USB, CD/DVD, …)
+- trasferirli come **flusso** (*stream*) **di byte** (o caratteri) → qualsiasi cosa che non sia memoria secondaria (terminali, stampanti, schede audio, dispositivi di rete…)
+
+### Rappresentazione dei dati
+I dati sono rappresentati secondo codifiche diverse a seconda del dispositivo che li genera/accetta (una vecchia tastiera potrebbe usare ASCII puro, mentre una moderna l’UNICODE)
+Possono essere diversi anche i controlli di parità
+
+### Condizioni di errore
+Gli errori possono essere riparabili o non, e la loro natura varia di molto a seconda del dispositivo. Possono cambiare: nel modo in cui vengono notificati, sulle loro conseguenze (fatali, ignorabili), come possono essere gestiti
+
+---
+## Tecniche per effettuare l’I/O
+Ci sono sostanzialmente quattro modalità di fare I/O
+
+|                             | **Senza interruzioni** | **Con interruzioni**           |
+| --------------------------- | ---------------------- | ------------------------------ |
+| **Passando per la CPU**     | I/O programmato        | I/O guidato dalle interruzioni |
+| **Direttamente in memoria** |                        | DMA                            |
+
+### Direct Memory Access (DMA)
+![[Pasted image 20241108193610.png|250]]
