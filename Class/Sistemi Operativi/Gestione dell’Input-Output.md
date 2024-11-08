@@ -49,3 +49,28 @@ A trasferimento completato, arriva l’interrupt, si termina l’operazione e il
 >[!warning]
 >Questa normale esecuzione delle operazioni però potrebbe variare ad esempio in caso di fallimento dell’operazione (bad block su disco…) oppure potrebbe essere necessario fare ulteriori trasferimenti, per esempio dalla RAM dedicata al DMA a quella del processo
 
+---
+## Differenze tra dispositivi di I/O
+I dispositivi di I/O possono differire sotto molti aspetti:
+- data rate (frequenza di accettazione/emissione dati)
+- applicazione
+- difficoltà nel controllo (tastiera vs. disco…)
+- unità di trasferimento dati (caratteri vs. blocchi)
+- rappresentazione dei dati
+- condizioni di errore
+
+### Data rate
+![[Pasted image 20241108184951.png]]
+
+### Applicazioni
+Ogni dispositivo di I/O ha una diversa applicazione ed uso
+I dischi sono usati per memorizzare files, a tale scopo richiedono un software per poterli gestire. I dischi però sono anche usati per la memoria virtuale, per la quale serve un altro software apposito (nonché hardware).
+Un terminate usato da un amministratore di sistema dovrebbe avere una priorità più alta
+
+### Complessità del controllo
+Per quanto riguarda la quantità di controlli necessari per i dispositivi I/O, una tastiera o un mouse richiedono un controllo molto semplice.
+Ad esempio per quanto riguarda una stampante, questa è più articolata; richiedono infatti di ricevere un PDF o un PS (poi la traduzione da PDF ad azioni della stampante è ben più complessa)
+
+Il disco è tra le cose più complicate da controllare, fortunatamente non viene fatto tutto da software, e molte cose vengono controllate da hardware dedicato
+
+### Unità di trasferimento dati
