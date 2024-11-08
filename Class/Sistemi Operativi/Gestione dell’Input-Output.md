@@ -43,4 +43,9 @@ Un dispositivo di *output* prevede di poter **cambiare il valore di una certa gr
 L’idea è che se un processo effettua una syscall `write` su un dispositivo del genere, vuole cambiare qualcosa (spesso l’effetto è direttamente visibile all’utente, ma in altri casi è visibile solo usando altre funzionalità di lettura, come per il disco)ù
 
 Ci sono quindi almeno due syscall **`read`** e **`write`** (tra i dati che prendono in input queste syscall ci sta un identificativo del dispositivo su  cui si vuole eseguire l’operazione, in Linux sono i *file descriptor*)
-Dunque quando arriva una di queste due syscall, il kernel comanda l’inizializzazione del trasferimento di informazioni, mette il processo in blocked e passa ad altro
+Dunque quando arriva una di queste due syscall, il kernel comanda l’inizializzazione del trasferimento di informazioni, mette il processo in blocked e passa ad altro; la parte del kernel che gestisce un particolare dispositivo I/O è chiamata *driver* e spesso il trasferimento è fatto con DMA (viene fatto direttamente tra la RAM e il dispositivo)
+A trasferimento completato, arriva l’interrupt, si termina l’operazione e il processo ritorna ready.
+
+>[!warning]
+>Questa normale esecuzione delle operazioni però potrebbe variare ad esempio in caso di fallimento dell’operazione (bad block su disco…) oppure potrebbe essere necessario fare ulteriori trasferimenti, per esempio dalla RAM dedicata al DMA a quella del processo
+
