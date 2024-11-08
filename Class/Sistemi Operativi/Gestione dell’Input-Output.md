@@ -98,4 +98,13 @@ Ci sono sostanzialmente quattro modalità di fare I/O
 Quello sotto è un tipico modulo DMA
 ![[Pasted image 20241108193610.png|250]]
 
-In Data Register sono contenuti i dati da trasferire (sia in scrittura sia in lettura)
+Il processore delega le operazioni di I/O al modulo DMA il quale trasferisce direttamente i dati da o verso la memoria principale. Quando l’operazione è completata il DMA genera un interrupt per il processore
+
+---
+## Evoluzione della funzione di I/O
+Riassumiamo brevemente quale è stata l’evoluzione dell’I/O in ordine cronologico
+1. Il processore controlla il dispositivo periferico
+2. Viene aggiunto un modulo (o controllore) di I/O direttamente sul dispositivo → permettendo di fare I/O programmato senza interrupt (no multiprogrammazione), ma il processore non si deve occupare di alcuni dettagli del dispositivo stesso
+3. Modulo o controllore di I/O con interrupt → migliora l’efficienza del processore, che non deve aspettare il completamento dell’operazione di I/O
+4. DMA → i blocchi di dati viaggiano tra dispositivo e memoria senza usare il processore
+5. Il modulo di I/O diventa un processore  separato (*I/O channel*) → il processore “principale” comanda al processore di I/O di eseguire un certo programma di I/O in memoria principale
