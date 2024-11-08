@@ -108,3 +108,9 @@ Riassumiamo brevemente quale è stata l’evoluzione dell’I/O in ordine cronol
 3. Modulo o controllore di I/O con interrupt → migliora l’efficienza del processore, che non deve aspettare il completamento dell’operazione di I/O
 4. DMA → i blocchi di dati viaggiano tra dispositivo e memoria senza usare il processore
 5. Il modulo di I/O diventa un processore  separato (*I/O channel*) → il processore “principale” comanda al processore di I/O di eseguire un certo programma di I/O in memoria principale
+6. Processore per l’I/O (*I/O processor* o anche *I/O channel*) → ha una sua memoria dedicata ed è usato per le comunicazioni con terminali interattivi
+
+Nell’architettura moderna il chipset implementa le funzioni di interfaccia I/O
+![[Pasted image 20241108200410.png]]
+
+---
