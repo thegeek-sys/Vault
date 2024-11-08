@@ -95,4 +95,7 @@ Ci sono sostanzialmente quattro modalità di fare I/O
 | **Direttamente in memoria** |                        | DMA                            |
 
 ### Direct Memory Access (DMA)
+Quello sotto è un tipico modulo DMA
 ![[Pasted image 20241108193610.png|250]]
+
+In Data Register sono contenuti i dati da trasferire (sia in scrittura sia in lettura)
