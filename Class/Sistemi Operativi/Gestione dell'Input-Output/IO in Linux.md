@@ -16,4 +16,4 @@ Con questa si scrive su disco quando:
 - è rimasta poca memoria → una parte della page cache è ridestinata ad un uso diretto dei processi (si può allargare e restringere in base alle richieste)
 - quando l’età delle pagine “sporche” va sopra una certa soglia
 
-Non è inoltre presente una politica separata di replacement: è infatti la stessa usata per il rimpiazzo delle pagine (la page cache è paginata, e le sue pagine sono rimpiazzate con l’algoritmo visto per la [[Gestione della memoria#Sostituzione dell’orologio|gestione della memoria]])
+Non è inoltre presente una politica separata di replacement: è infatti la stessa usata per il rimpiazzo delle pagine (la page cache è paginata, e le sue pagine sono rimpiazzate con l’algoritmo visto per la [[Memoria virtuale e sistema operativo#Sostituzione dell’orologio|gestione della memoria]])
