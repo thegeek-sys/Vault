@@ -2,6 +2,6 @@
 - [[Introduzione]]
 - [[Processi]]
 - [[Scheduling]]
-- [[Gestione della memoria]]
+- [[Class/Sistemi Operativi/Gestione della memoria/Gestione della memoria|Gestione della memoria]]
 - [[Gestione dell'Input-Output|Gestione dell’Input/Output]]
 - 
