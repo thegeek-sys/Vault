@@ -158,4 +158,24 @@ Qui il logical I/O è tipicamente diviso in tre parti
 
 ---
 ## Buffering dell’I/O
-Una delle tecniche più usate dagli SO per poter fare I/O nella maniera più efficiente 
+Una delle tecniche più usate dagli SO per poter fare I/O nella maniera più efficiente è quella del **buffering** (indica una certa zona di memoria temporanea utilizzata per completare una certa operazione).
+
+>[!info]
+>Nella gestione della memoria (RAM) abbiamo visto che è presente il problema di dover spostare le pagine da memoria virtuale a disco (come effetto collaterale di usare la memoria virtuale ci sta quello di gestire l’I/O).
+
+L’idea è quella che un processo potrebbe richiedere un I/O su una certa sua zona di memoria (gestito dal DMA), ma viene subito swappato (quindi sospeso). In questo caso si generebbe una contraddizione in quanto, per poter usare il DMA, il processo (o una sua parte) si deve trovare in memoria ma ciò non è possibile se questo deve essere swappato.
+Questo problema potrebbe essere risolvibile attraverso il *frame blocking* (evitare che le pagine usate dal DMA siano swappate), tuttavia se si inizia a fare quest’operazione in maniera eccessiva limito le pagine swappabili e di conseguenza anche il numero di processi presenti in RAM.
+
+Per risolvere questo problema è quindi risolvibile attraverso il **buffering**, ovvero, come per il prepaging, facendo in anticipo trasferimenti di input e in ritardo trasferimenti di output rispetto a quando arriva la richiesta
+
+### Senza buffer
+Se non ci fosse il buffering il SO accede al dispositivo nel momento in cui ne ha necessità
+![[Pasted image 20241111134547.png]]
+
+### Buffer singolo
+Con il buffer viene messa una porzione di memoria ausiliaria nel mezzo gestita dal SO. Quindi quando arriva la richiesta di I/O viene letta e scritta nel sistema operativo, e in un secondo momento viene passata al processo utente. In questo modo è quindi prevedibile evitando il contatto diretto tra I/O e RAM
+![[Pasted image 20241111134738.png]]
+Lettura e scrittura nel buffer sono separate e sequenziali
+
+---
+## Buffer singolo orientato a blocchi
