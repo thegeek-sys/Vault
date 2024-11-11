@@ -179,7 +179,28 @@ Lettura e scrittura nel buffer sono separate e sequenziali
 
 ---
 ## Buffer singolo orientato a blocchi
-Ricapitolando con buffer singolo i trasferimenti di input sono fatti al buffer in system memory. Il blocco viene poi mandato nello spazio utente solo quando necessario.
+Questo tipo di buffering riguarda i dispositivi orientati a blocchi (es. dischi)
+
+Con buffer singolo i trasferimenti di input sono fatti al buffer in system memory. Il blocco viene poi mandato nello spazio utente solo quando necessario.
 A questo punto, nonostante non sia arrivata nessun’altra richiesta di **input**, il blocco successivo viene comunque letto nel buffer (input **anticipato**) in quanto i dati sono solitamente acceduti sequenzialmente e dunque ci sta una buona possibilità che servirà, e sarà già stato letto (questa cosa funziona molto bene per quanto riguarda i dischi)
 
-L’**output** invece viene **posticipato** 
+L’**output** invece viene **posticipato**. Per questo motivo è necessaria la system call `flush` quando si fa debugging in C (un errore potrebbe verificarsi ben dopo un print, ma non si ha nulla a schermo a causa dell’output posticipato, uso quindi `flush` per svuotare il buffer)
+
+---
+## Buffer singolo orientato agli stream
+Questo tipo di buffering riguarda i dispositivi orientati agli stream (es. mouse, tastiera, schede di rete)
+
+Qui invece di avere un blocco grande come capita per il disco, la bufferizzazione riguarda molto spesso un’intera linea di input o output (es. una riga intera del prompt)
+Viene invece bufferizzato un byte alla volta per i dispositivi in cui un singolo carattere premuto va gestito (in pratica è un’istanza di un ben noto problema di concorrenza, il produttore/consumatore)
+
+---
+## Buffer doppio
+Essendo particolarmente piccolo il buffer all’interno del SO se lo utilizzo per gestire tutti i dispositivi di I/O, questo si riempie. Per ovviare a questo problema mi è utile utilizzare un buffer multiplo
+
+L’idea è quindi che un processo può trasferire dati da o a uno dei buffer, mentre il SO svuota o riempie l’altro
+
+![[Pasted image 20241111141417.png]]
+Lettura e scrittura nel buffer sono parallele: un buffer letto, l’altro scritto
+
+---
+## Buffer circolare
