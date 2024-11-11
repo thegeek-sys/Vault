@@ -38,6 +38,34 @@
             }
           },
           {
+            "id": "d9c2084b11841016",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Gestione dell'Input-Output/Scheduling del disco.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Scheduling del disco"
+            }
+          },
+          {
+            "id": "afaddfd75f0a75db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Gestione dell'Input-Output/Cache del disco.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cache del disco"
+            }
+          },
+          {
             "id": "46f1e3ef104310ee",
             "type": "leaf",
             "state": {
@@ -80,7 +108,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -238,23 +266,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46f1e3ef104310ee",
+  "active": "273b1a921d70d949",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
-    "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
-    "Class/Sistemi Operativi/Gestione dell'Input-Output/Cache del disco.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Scheduling del disco.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Cache del disco.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
+    "Files/Pasted image 20241112001730.png",
+    "Files/Pasted image 20241112001554.png",
+    "Files/Pasted image 20241112001242.png",
+    "Files/Pasted image 20241112000817.png",
+    "Files/Pasted image 20241112000412.png",
+    "Files/Pasted image 20241112000045.png",
     "Files/Pasted image 20241111233021.png",
     "Files/Pasted image 20241111232948.png",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Untitled.md",
     "Files/Pasted image 20241111232215.png",
     "Files/Pasted image 20241111224854.png",
-    "Files/Pasted image 20241111224815.png",
-    "Files/Pasted image 20241111224335.png",
-    "Files/Pasted image 20241111224150.png",
-    "Files/Pasted image 20241111223533.png",
-    "Files/Pasted image 20241111223309.png",
-    "Files/Pasted image 20241111222718.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Buffering dell’I-O.md",
     "Class/Sistemi Operativi/Gestione dell’Input-Output.md",
@@ -278,7 +306,6 @@
     "Class/Basi di dati/Esercizi.md",
     "Flet-notes/2024-11-06_BD.md",
     "Class/Basi di dati/Terza forma normale.md",
-    "Class/Sistemi Operativi/Introduzione.md",
     "Files/Pasted image 20241103155926.png.sb-52feadf3-sTHjpo",
     "Files/Pasted image 20241102223833.png.sb-52feadf3-xCeVgN",
     "Files/Algebra.pdf",
