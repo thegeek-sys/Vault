@@ -21,7 +21,7 @@ Se non ci fosse il buffering il SO accede al dispositivo nel momento in cui ne h
 ![[Pasted image 20241111134547.png]]
 
 ### Buffer singolo
-Con il buffer viene messa una porzione di memoria ausiliaria nel mezzo gestita dal SO. Quindi quando arriva la richiesta di I/O viene letta e scritta nel sistema operativo, e in un secondo momento viene passata al processo utente. In questo modo è quindi prevedibile evitando il contatto diretto tra I/O e RAM
+Con il buffer viene messa una porzione di memoria ausiliaria nel mezzo gestita dal SO all’interno del kernel (spesso statica, altre volte dinamica). Quindi quando arriva la richiesta di I/O viene letta e scritta nel sistema operativo, e in un secondo momento viene passata al processo utente. In questo modo è quindi prevedibile evitando il contatto diretto tra I/O e RAM
 ![[Pasted image 20241111134738.png]]
 Lettura e scrittura nel buffer sono separate e sequenziali
 
@@ -52,3 +52,31 @@ Lettura e scrittura nel buffer sono parallele: un buffer letto, l’altro scritt
 
 ---
 ## Buffer circolare
+Quando sono presenti più di due buffer, si parla di buffer circolare
+
+In questo caso ciascun buffer è un’unità del buffer circolare e viene utilizzato quando l’operazione di I/O deve tenere il passo del processo
+
+>[!hint]
+>Anche qui riguarda il problema del produttore/consumatore
+
+![[Pasted image 20241111142606.png]]
+In questo caso i buffer vengono riempiti e svuotati in ordine
+
+---
+## Buffer: pro e contro
+Permette di mantenere il processore non idle anche quando sono presenti numerose processe di I/O, ma se la domanda è molta, i buffer si riempiranno e il vantaggio si perde
+Utile soprattutto quando ci sono molti e vari dispositivi di I/O da gestire, migliora infatti l’efficienza dei processi e del SO
+
+I pro sono maggiori dei contro
+
+---
+## Overhead
+Introduce overhead a causa della copia intermedia in kernel memory
+
+![[Pasted image 20241111143109.png]]
+
+---
+## Zero copy
+Evita inutili copie intermedie, facendo un trasferimento da un kernel buffer ad un altro
+
+![[Pasted image 20241111143252.png]]
