@@ -108,7 +108,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -264,10 +265,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "24eac657f4ac015e",
+  "active": "07f2a7cb564d0490",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output",
     "Class/Sistemi Operativi/Gestione dell’Input-Output.md",
     "Files/Pasted image 20241111141417.png",
