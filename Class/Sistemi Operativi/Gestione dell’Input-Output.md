@@ -155,3 +155,4 @@ Qui il logical I/O è tipicamente diviso in tre parti
 **Directory Management** → fornisce tutte le operazioni atte a gestire i file (creare, spostare, cancellare, …)
 **File system** → struttura logica ed operazioni (apri, chiudi, leggi, scrivi, …)
 **Organizzazione fisica** → si occupa di allocare e deallocare spazio su disco (quando ad esempio si chiede di creare un file)
+
