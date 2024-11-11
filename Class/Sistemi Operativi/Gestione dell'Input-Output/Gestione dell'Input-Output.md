@@ -5,4 +5,4 @@
 - [[Scheduling del disco]]
 - [[Cache del disco]]
 - [[RAID]]
-- I/O in Linux
+- [[IO in Linux|I/O in Linux]]

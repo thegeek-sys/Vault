@@ -5,6 +5,19 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Dischi RAID|Dischi RAID]]
+	- [[#Dischi RAID#Dischi multipli|Dischi multipli]]
+- [[#Gerarchia|Gerarchia]]
+	- [[#Gerarchia#RAID 0 (nonredundant)|RAID 0 (nonredundant)]]
+	- [[#Gerarchia#RAID 1 (mirrored)|RAID 1 (mirrored)]]
+	- [[#Gerarchia#RAID 2 (redundancy though Hamming code)|RAID 2 (redundancy though Hamming code)]]
+	- [[#Gerarchia#RAID 3 (bit-intervaled parity)|RAID 3 (bit-intervaled parity)]]
+	- [[#Gerarchia#RAID 4 (block-level parity)|RAID 4 (block-level parity)]]
+	- [[#Gerarchia#RAID 5 (block-level distributed parity)|RAID 5 (block-level distributed parity)]]
+	- [[#Gerarchia#RAID 6 (dual redundancy)|RAID 6 (dual redundancy)]]
+	- [[#Gerarchia#Riassunto|Riassunto]]
+---
 ## Dischi RAID
 RAID è l’acronimo di *Redundant Arrays of Indipendent Disks*. In alcuni casi, si hanno a disposizione più dischi fisici ed è possibile trattarli **separatamente** (es. Windows li mostrerebbe esplicitamente come dischi diversi, in Linux si potrebbe dire che alcune directory sono in un disco altre su un altro) oppure si possono considerare più dischi fisici come un **unico disco**
 
@@ -17,7 +30,8 @@ L’LVM va bene per pochi dischi, ed in generale se non si è interessati alla *
 A risolvere questo problema vi è il RAID, utile non solo per la ridondanza ma anche per velocizzare alcune operazioni
 
 >[!info]
->Esistono device composti da più dischi fisici gestiti da un RAID direttamente a livello di dispositivo (il SO fa solo read e write, ci pensa il dispositivo stesso a gestire internamente il RAID)
+>Esistono device composti da più dischi fisici gestiti da un RAID direttamente a livello di dispositivo (il SO fa solo read e write, ci pensa il dispositivo stesso a gestire internamente il RAID).
+>Il RAID che studiamo noi è frutto di una collaborazione tra hardware e software
 
 ---
 ## Gerarchia
@@ -63,3 +77,15 @@ Come il RAID 4, ma le informazioni di parità non sono tutte su un unico disco, 
 ![[Pasted image 20241112001730.png|500]]
 
 ### RAID 6 (dual redundancy)
+Come RAID 5, ma con 2 dischi di parità indipendenti. Permette di recuperare anche 2 fallimenti di disco, ma con una penalità del $30\%$ (a livello di efficienza) in più rispetto dal RAID 5 per le operazioni di scrittura. Per le operazioni di lettura, RAID 5 e RAID 6 si equivalgono
+
+![[Pasted image 20241112002100.png|550]]
+
+### Riassunto
+![[Pasted image 20241112002136.png]]
+
+*Parallel access* → se faccio un’operazione sul RAID, tutti i dischi effettuano in sincrono quell’operazione
+*Indipendent* → un’operazione sul RAID è un’operazione su un sottoinsieme dei suoi dischi (permette il completamento in parallelo di richieste I/O distinte)
+*Data availability* → capacità di recupero in caso di fallimento
+*Small I/O request rate* → velocità nel rispondere a piccole richieste di I/O
+
