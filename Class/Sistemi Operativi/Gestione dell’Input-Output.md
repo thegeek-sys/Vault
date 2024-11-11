@@ -156,3 +156,6 @@ Qui il logical I/O è tipicamente diviso in tre parti
 **File system** → struttura logica ed operazioni (apri, chiudi, leggi, scrivi, …)
 **Organizzazione fisica** → si occupa di allocare e deallocare spazio su disco (quando ad esempio si chiede di creare un file)
 
+---
+## Buffering dell’I/O
+Una delle tecniche più usate dagli SO per poter fare I/O nella maniera più efficiente 
