@@ -179,3 +179,7 @@ Lettura e scrittura nel buffer sono separate e sequenziali
 
 ---
 ## Buffer singolo orientato a blocchi
+Ricapitolando con buffer singolo i trasferimenti di input sono fatti al buffer in system memory. Il blocco viene poi mandato nello spazio utente solo quando necessario.
+A questo punto, nonostante non sia arrivata nessun’altra richiesta di **input**, il blocco successivo viene comunque letto nel buffer (input **anticipato**) in quanto i dati sono solitamente acceduti sequenzialmente e dunque ci sta una buona possibilità che servirà, e sarà già stato letto (questa cosa funziona molto bene per quanto riguarda i dischi)
+
+L’**output** invece viene **posticipato** 
