@@ -24,3 +24,15 @@ Chiaramente i settori e le tracce non sono contigui infatti si ha l’*intertrac
 
 ---
 ## Come funziona un disco
+I dati si trovano sulle tracce (corone concentriche) su un certo numero di settori. Quindi per leggere/scrivere occorre sapere su quale traccia si trovano i dati, e sulla traccia, su quale settore.
+
+Per selezionare una traccia bisogna:
+- spostare la testina, se il disco ha testine mobili
+- selezionare una testina, se il disco a testine fisse
+Per selezionare un settore su una traccia bisogna aspettare che il disco ruoti (a velocità costante)
+Se i dati sono tanti, potrebbero essere su più settori o addirittura su più tracce (tipicamente un settore misura 512 bytes)
+
+---
+## Prestazioni del disco
+La linea temporale di un disco può essere riassunta come segue
+![[Pasted image 20241111204030.png]]
