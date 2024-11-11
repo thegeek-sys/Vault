@@ -83,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DMA",
+                "query": "DBMS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +104,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -211,6 +212,7 @@
   },
   "active": "6810996ed49438c0",
   "lastOpenFiles": [
+    "Files/Pasted image 20241111221106.png",
     "Files/Pasted image 20241111204030.png",
     "Files/Pasted image 20241111144232.png",
     "Files/Pasted image 20241111144201.png",
@@ -234,7 +236,6 @@
     "Files/Pasted image 20241111134738.png",
     "Files/Pasted image 20241111134547.png",
     "Files/Pasted image 20241111112423.png",
-    "Files/Pasted image 20241111112117.png",
     "Gestione dell’Input/Output.md",
     "Gestione dell’Input",
     "Flet-notes/2024-11-05_SO.md",
