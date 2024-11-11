@@ -4,5 +4,5 @@
 - [[Buffering dell’I-O|Buffering dell’I/O]]
 - [[Scheduling del disco]]
 - [[Cache del disco]]
-- RAID
+- [[RAID]]
 - I/O in Linux

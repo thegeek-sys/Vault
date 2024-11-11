@@ -38,6 +38,20 @@
             }
           },
           {
+            "id": "46f1e3ef104310ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RAID"
+            }
+          },
+          {
             "id": "9830cf87558eea3d",
             "type": "leaf",
             "state": {
@@ -224,11 +238,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9830cf87558eea3d",
+  "active": "46f1e3ef104310ee",
   "lastOpenFiles": [
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Cache del disco.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Scheduling del disco.md",
+    "Files/Pasted image 20241111233021.png",
+    "Files/Pasted image 20241111232948.png",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Untitled.md",
+    "Files/Pasted image 20241111232215.png",
     "Files/Pasted image 20241111224854.png",
     "Files/Pasted image 20241111224815.png",
     "Files/Pasted image 20241111224335.png",
@@ -236,9 +255,6 @@
     "Files/Pasted image 20241111223533.png",
     "Files/Pasted image 20241111223309.png",
     "Files/Pasted image 20241111222718.png",
-    "Files/Pasted image 20241111221106.png",
-    "Files/Pasted image 20241111204030.png",
-    "Files/Pasted image 20241111144232.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Buffering dell’I-O.md",
     "Class/Sistemi Operativi/Gestione dell’Input-Output.md",
@@ -263,9 +279,7 @@
     "Flet-notes/2024-11-06_BD.md",
     "Class/Basi di dati/Terza forma normale.md",
     "Class/Sistemi Operativi/Introduzione.md",
-    "Class/Sistemi Operativi/Scheduling.md",
     "Files/Pasted image 20241103155926.png.sb-52feadf3-sTHjpo",
-    "Flet-notes/2024-10-31_BD.md",
     "Files/Pasted image 20241102223833.png.sb-52feadf3-xCeVgN",
     "Files/Algebra.pdf",
     "Class/Algebra",
