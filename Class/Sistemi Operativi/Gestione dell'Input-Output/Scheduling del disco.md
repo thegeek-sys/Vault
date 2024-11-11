@@ -5,6 +5,24 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#HDD vs SSD|HDD vs SSD]]
+- [[#Il disco|Il disco]]
+- [[#Come funziona un disco|Come funziona un disco]]
+- [[#Prestazioni del disco|Prestazioni del disco]]
+- [[#Politiche di scheduling per il disco|Politiche di scheduling per il disco]]
+	- [[#Politiche di scheduling per il disco#FIFO|FIFO]]
+	- [[#Politiche di scheduling per il disco#Priorità|Priorità]]
+	- [[#Politiche di scheduling per il disco#LIFO|LIFO]]
+	- [[#Politiche di scheduling per il disco#Minimo tempo di servizio|Minimo tempo di servizio]]
+	- [[#Politiche di scheduling per il disco#SCAN|SCAN]]
+	- [[#Politiche di scheduling per il disco#C-SCAN|C-SCAN]]
+	- [[#Politiche di scheduling per il disco#FSCAN|FSCAN]]
+	- [[#Politiche di scheduling per il disco#N-step-SCAN|N-step-SCAN]]
+	- [[#Politiche di scheduling per il disco#Confronto prestazionale|Confronto prestazionale]]
+	- [[#Politiche di scheduling per il disco#Prospetto|Prospetto]]
+- [[#SSD: cenni|SSD: cenni]]
+---
 ## HDD vs SSD
 Come abbiamo visto per gestire l’I/O il SO deve essere il più efficiente possibile.
 Uno degli ambiti su cui i progettisti di sistemi operativi si sono dati più da fare è quello dei dispositivi di archiviazione di massa
@@ -109,3 +127,29 @@ Se $N$ è alto, le prestazioni sono quelle di SCAN (ma con fairness), se $N=1$, 
 ### Confronto prestazionale
 ![[Pasted image 20241111224150.png|550]]
 
+### Prospetto
+![[Pasted image 20241111224335.png|550]]
+
+---
+## SSD: cenni
+Gli SSD ad alto livello, sono costituiti da stack (*flash chips*) di *die* (matrici); il controller dell’SSD gestisce gli stack di die
+Ciascun die ha un certo numero di *planes*. Le planes sono divise in *blocks* (blocchi). Ciascun blocco è composto da un numero variabile di *pages* (pagine $\sim 4KB$).
+Infine le pagine sono composte da *cells* (celle). Le celle dunque sono le unità più piccole di un SSD e possono immagazzinare un solo bit (due per muti-level cells)
+
+![[Pasted image 20241111224815.png|350]]
+![[Pasted image 20241111224854.png|350]]
+
+Le operazioni sugli SSD hanno granularità diversa in base al tipo di operazione:
+- in lettura → l’unità di accesso minima solo le pagine
+- in scrittura → l’unità di accesso minima è sempre la pagina, ma può essere scritta solo se vuota (non è possibile sovrascrittura)
+Sovrascrivere una pagine implica il dover azzerare l’intero blocco che la contiene
+1. Si fa una copia dell’intero blocco
+2. Si azzera il blocco
+3. Si scrive la nuova pagina
+4. Si copiano le pagine rimanenti della copia effettuata in precedenza
+
+Gli SSD sono preferiti rispetto agli HDD perché estremamente veloci, infatti:
+- nessun tempo richiesto per effettuare il seek (il che implica che non è meno problematico il sapere dove si trovino i dati)
+- consentono accesso parallelo ai diversi flash chip
+
+Sono state inoltre progettati algoritmi di accesso e file system progettati per massimizzare le performance di SSD (esistono addirittura dei file system dedicati, F2FS)
