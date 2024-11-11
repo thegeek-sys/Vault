@@ -2,7 +2,7 @@
 - [[Organizzazione della funzione di I-O|Organizzazione della funzione di I/O]]
 - [[Problemi nel progetto del sistema operativo]]
 - [[Buffering dell’I-O|Buffering dell’I/O]]
-- Scheduling del disco
+- [[Scheduling del disco]]
 - Cache del disco
 - RAID
 - I/O in Linux
