@@ -75,3 +75,37 @@ In questo caso dunque il dispositivo è dato all’utente più recente, se quind
 Il motivo per cui è usato è per il fatto che se un utente continua a fare richieste, probabilmente sta accedendo sequenzialmente ad un file, ed è quindi più efficiente far terminare la sua lettura che altro
 
 ### Minimo tempo di servizio
+Da questa politica in poi, lo scopo sarà quello di minimizzare il seek time.
+Per quanto riguarda il minimo tempo di servizio
+Con questa politica si sceglie sempre il tempo di posizionamento minore (rispetto alle richieste attualmente pervenute)
+
+Si potrebbe però arrivare a starvation nel caso in cui arrivino continuamente richieste più vicine
+![[Pasted image 20241111222718.png|500]]
+
+### SCAN
+Si fa in modo che le richieste siano servite in modo tale che il braccio si muova sempre in un verso, e poi torni indietro.
+In questo modo viene azzerata la starvation delle richieste ma risulta esse poco corretta poiché:
+- **favorisce le richieste ai bordi** (attraversati due volte in poco tempo, in quanto vengono servite sia in discesa che in salita) → C-SCAN
+- **favorisce le richieste appena arrivate**, nel senso che se ben piazzate rispetto alla testina, possono precedere richieste che attendono da molto → N-step-SCAN
+
+![[Pasted image 20241111223309.png|500]]
+
+### C-SCAN
+Come SCAN ma non si scelgono le richieste allo scendere del numero della traccia. Quindi i bordi non sono più visitati due volte in poco tempo
+
+![[Pasted image 20241111223533.png|500]]
+
+### FSCAN
+Con questa politica vengono usate due code anziché una.
+Quando SCAN inizia, tutte le richieste sono nella coda $F$, e l’altra coda $R$ è vuota. Mentre SCAN serve tutta $F$, ogni nuova richiesta è aggiunta ad $R$. Quando SCAN finisce di servire $F$, si scambiano $F$ e $R$.
+Ogni nuova richiesta deve aspettare che tutte le precedenti vengano servite, quindi le richieste vecchie non sono sfavorite rispetto alle nuove come in SCAN
+
+### N-step-SCAN
+Questa politica è una generalizzazione di FSCAN a $N>2$ code.
+Si accodano le richieste nella coda i-esama finché non si riempie; poi si passa alla $(i+1) \text{ mod } N$.
+Le richieste non sono mai aggiunte a quella attualmente servita.
+Se $N$ è alto, le prestazioni sono quelle di SCAN (ma con fairness), se $N=1$, allora si usa il FIFO per evitare di essere unfair
+
+### Confronto prestazionale
+![[Pasted image 20241111224150.png|550]]
+
