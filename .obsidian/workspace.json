@@ -4,26 +4,125 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "455919ad3cc4a222",
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "785e57b5e4fd92db",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Sistemi Operativi"
+              "title": "Basi di dati"
+            }
+          },
+          {
+            "id": "0fa1c91e460f163e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Decomposizioni che preservano le dipendenze"
+            }
+          },
+          {
+            "id": "76d1c03bd0efa96d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Decomposizioni che preservano le dipendenze"
+            }
+          },
+          {
+            "id": "30756f79ec2f1e9a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chiusura di un insieme di dipendenze funzionali"
+            }
+          },
+          {
+            "id": "88738f8f4b21ec13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Identificazione di una chiave.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Identificazione di una chiave"
+            }
+          },
+          {
+            "id": "ab2cdb46bc286f8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chiusura di un insieme di attributi"
+            }
+          },
+          {
+            "id": "c29208416eada620",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Terza forma normale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Terza forma normale"
+            }
+          },
+          {
+            "id": "6819e67c1c90d493",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Esercizi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Esercizi"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "lemma 1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -95,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +205,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Gestione della memoria"
+              "title": "Backlinks for Esercizi"
             }
           },
           {
@@ -114,12 +214,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Gestione della memoria"
+              "title": "Outgoing links from Basi di dati"
             }
           },
           {
@@ -141,10 +241,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
+                "file": "Class/Basi di dati/Esercizi.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gestione della memoria"
+              "title": "Outline of Esercizi"
             }
           },
           {
@@ -158,7 +258,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,10 +280,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "86b7c0e96592df9e",
+  "active": "0fa1c91e460f163e",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Gestione della memoria/Memoria virtuale e sistema operativo.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Gestione della memoria/Memoria virtuale e sistema operativo.md",
     "Class/Sistemi Operativi/Gestione della memoria.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/IO in Linux.md",
@@ -220,8 +322,6 @@
     "Gestione dell’Input/Output.md",
     "Gestione dell’Input",
     "Flet-notes/2024-11-05_SO.md",
-    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
-    "Flet-notes/2024-11-07_BD.md",
     "Files/Pasted image 20241103155926.png.sb-52feadf3-sTHjpo",
     "Files/Pasted image 20241102223833.png.sb-52feadf3-xCeVgN",
     "Files/Algebra.pdf",
