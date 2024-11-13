@@ -133,3 +133,4 @@ $$
 ma visto che G equiv ad F dove stanno le dipendenze “a cavallo”?
 in G sono contenute tutte e solo le dipendenze dei singoli sottoschemi (quindi non le dipendenze che hanno un attributo in un sottoschema e un attributo in un altro), se questo è vero vuol dire che non sono preservate le dipendenze in F (vedi definizione)
 
+il while serve per determinare quelle a cavallo tra gli schemi che sono contenute in F, infatti rifacendo la chiusura otterrò anche la transitività (se ho A→b in un sottoschema e B→C in un altro sottoschema allora nella chiusura finale avrò A→C che è una dipendenza di F)

@@ -136,7 +136,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -294,10 +294,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0fa1c91e460f163e",
+  "active": "ef9d067bdb2b4473",
   "lastOpenFiles": [
-    "Flet-notes/2024-11-13_BD.md",
     "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+    "Flet-notes/2024-11-13_BD.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Scheduling del disco.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
