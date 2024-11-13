@@ -76,7 +76,7 @@ Per fare ciò deve essere verificata l’equivalenza dei due insiemi di dipenden
 
 Per come è definito $G$ in questo caso sarà sicuramente $F^+\supseteq G^+$, infatti ogni proiezione di $F$ che viene inclusa per definizione in $G$ è un sottoinsieme di $F^+$, quindi $F^+$ contiene $G$ e per il lemma 2 questo implica che $G^+\subseteq F^+$
 
-Dunque non dobbiamo verificare una delle due implicazioni, inoltre per il lemma 2 $F\subseteq G^+$ implica che $F^+\subseteq G^+$ dunque ci basta verificare che: $F\subseteq G^+$ semplificandoci di molto il lavoro
+Dunque non dobbiamo verificare una delle due implicazioni, inoltre per il lemma 2 $F\subseteq G^+$ implica che $F^+\subseteq G^+$ dunque ci basta verificare che: $F\subseteq G^+$ semplificandoci di molto il lavoro, cioè per il lemma 1: $\forall X\to Y\in F$, cerco se $Y\subseteq X^+_{G}$ cioè se è vero $X\to Y\in G^A(=G^+)$
 
 Questa verifica può essere fatta con l’algoritmo che segue
 $$
