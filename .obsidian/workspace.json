@@ -181,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lemma 1",
+                "query": "senza perdita",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,7 +202,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -310,6 +311,7 @@
   },
   "active": "b4a7c9a0748243a7",
   "lastOpenFiles": [
+    "Class/Basi di dati/Terza forma normale.md",
     "Flet-notes/2024-11-14_BD.md",
     "Flet-notes/2024-11-13_BD.md",
     "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
@@ -346,7 +348,6 @@
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Untitled.md",
     "Class/Sistemi Operativi/Gestione dell’Input-Output.md",
     "Class/Sistemi Operativi/Processi.md",
-    "Dispositivi di I/O.md",
     "Dispositivi di I",
     "Class/Sistemi Operativi/Gestione dell'Input-Output",
     "Gestione dell’Input",
