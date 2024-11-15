@@ -160,4 +160,14 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >- $A\in R_{j}$
 >- $A\in Z^{(i-1)}$
 >
->allora $(Z^{(i-1)}\cap R_{j})\to A\in G$ 
+>allora $(Z^{(i-1)}\cap R_{j})\to A\in G$  ($G=\cup_{i=1}^k\pi_{R_{i}}(F)$)
+>
+>Per l’ipotesi induttiva ho $Z^{(i-1)}\subseteq X^+_{G}\overset{\text{Lemma 1}}{\Longrightarrow}X\to Z^{(i-1)}\in G^+ (=G^A)$
+>Per la regola di decomposizione si ha anche che $X\to(Z^{(i-1)}\cap R_{j})\in G^+$ poiché $R_{j}\subseteq Z^{(i-1)}$
+>Dunque per transitività $X\to A\in G^+$ e quindi $A\in X^+_{G}$
+>
+>##### Parte $\Rightarrow$
+>Vedi dispensa associata al corso (non necessario)
+
+
+
