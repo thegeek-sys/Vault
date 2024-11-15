@@ -169,5 +169,23 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >##### Parte $\Rightarrow$
 >Vedi dispensa associata al corso (non necessario)
 
+---
+## Esercizi
+>[!example]
+>$$R=(A,B,C,D)$$
+>$$F=\{AB\to C,D\to C,D\to B,C\to B,D\to A\}$$
+>Dire se la decomposizione $\rho=\{ABC,ABD\}$ preserva le dipendenze in $F$
+>
+>In base a quanto visto basta verificare che $F\subseteq G^+$ cioè che ogni dipendenza funzionale in $F$ si trova in $G^+$
+>
+>>[!warning]
+>>In effetti è inutile controllare che vengano preservate le dipendenze tali che l’unione delle parti destra e sinistra è contenuta interamente in un sottoschema, perché secondo la definizione $\pi_{R_{i}}(F)=\{X\to Y \mid X\to Y\in F^+\land XY\subseteq R_{j}\}$
+>>
+>>Tali dipendenze fanno parte per definizione di $G$
+>
+>>[!warning]
+>>Per come è strutturato l’algoritmo, a $Z$ possono solo venire aggiunti elementi (cioè non succede mai che un’attributo venga eliminato da $Z$), quindi quando $Z$ arriva a contenere la **parte destra della dipendenza** possiamo essere sicuri che la dipendenza stessa è preservata e sospendere il seguito del procedimento (in un compito scritto questo va giustificato)
+
+
 
 
