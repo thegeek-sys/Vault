@@ -142,5 +142,22 @@ $$
 Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$, $\rho=\{R_{1},R_{2},\dots,R_{k}\}$ una decomposizione di $R$ e $X$ un sottoinsieme di $R$. L’algoritmo dato calcola correttamente $X^+_{G}$, dove $G=\cup_{i=1}^k\pi _{R_{i}}(F)$.
 
 >[!info] Dimostrazione
->Dobbiamo dimostrare che $A\in Z^{(f)}$ se e solo se $A\in X^+_{G}$
->Base dell’induzione
+>Dobbiamo dimostrare che $A\in Z^{(f)}\Leftrightarrow A\in X^+_{G}$
+>
+>##### Parte $\Rightarrow$
+>Mostreremo per induzione su $i$ che $Z^{(i)}\subseteq X^+_{G}$, per ogni $i$ (e in particolare per $i=f$)
+>
+>- Base dell’induzione ($i=0$): poiché $Z^{(0)}=X$ e $X\subseteq X^+$, si ha $Z^{(0)}\subseteq X^+_{G}$
+>- Ipotesi induttiva ($i>0$): $Z^{(i-1)}\subseteq X^+_{G}$
+>- Passo induttivo: $Z^{(i)}$
+>
+>Sia $A$ un attributo in $Z^{(i)}-Z^{(i-1)}$ (elemento aggiunto al passo $i$) allora deve esistere $R_{j}$ tale che $A\in (Z^{(i-1)}\cap R_{j})^+_{F}\cap R_{j}$.
+>
+>Poiché $A\in (Z^{(i-1)}\cap R_{j})^+_{F}$ vuol dire che $(Z^{(i-1)}\cap R_{j})\to A\in F^+$
+>
+>Possiamo quindi dire che siccome:
+>- $(Z^{(i-1)}\cap R_{j})\to A\in F^+$
+>- $A\in R_{j}$
+>- $A\in Z^{(i-1)}$
+>
+>allora $(Z^{(i-1)}\cap R_{j})\to A\in G$ 
