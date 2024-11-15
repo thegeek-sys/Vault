@@ -129,8 +129,18 @@ $$
 >Con $S:=S\cup(Z\cap R_{i})^+_{F}\cap R_{i}$ sostanzialmente si calcola la chiusura in $F$ degli elementi (di cui cerchiamo di calcola la chiusura in $G$) rispetto al sottoschema $R_{i}$, infine facciamo l’intersezione con $R_{i}$ in modo tale da avere al massimo tutti gli attributi contenuti di $R_{i}$.
 >In questo modo rispettiamo la definizione di $G=\cup_{i=1}^k\pi_{R_{i}}(F)$
 
+>[!info] Osservazione
+>Il while serve per determinare le dipendenze a cavallo tra gli schemi che sono contenute in $F$, infatti rifacendo la chiusura otterrò anche la transitività (se ho $A\to B$ in un sottoschema e $B\to C$ in un altro sottoschema allora nella chiusura finale avrò $A\to C$ che è una dipendenza di $F$)
 
-ma visto che G equiv ad F dove stanno le dipendenze “a cavallo”?
-in G sono contenute tutte e solo le dipendenze dei singoli sottoschemi (quindi non le dipendenze che hanno un attributo in un sottoschema e un attributo in un altro), se questo è vero vuol dire che non sono preservate le dipendenze in F (vedi definizione)
+>[!warning]
+>L’algoritmo termina sempre, infatti ciò non vuol dire che una dipendenza $X\to Y$ è preservata
+>
+>Per verificare se $X\to Y$ è preservata, in base al Lemma 2 e in base al teorema sull’uguaglianza $F^+=F^A$, dobbiamo controllare se $Y$ è contenuto nella copia finale della variabile $Z$ (che conterrà la chiusura di $X$ rispetto a $G$, $X^+_{G}$)
 
-il while serve per determinare quelle a cavallo tra gli schemi che sono contenute in F, infatti rifacendo la chiusura otterrò anche la transitività (se ho A→b in un sottoschema e B→C in un altro sottoschema allora nella chiusura finale avrò A→C che è una dipendenza di F)
+---
+## Teorema
+Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$, $\rho=\{R_{1},R_{2},\dots,R_{k}\}$ una decomposizione di $R$ e $X$ un sottoinsieme di $R$. L’algoritmo dato calcola correttamente $X^+_{G}$, dove $G=\cup_{i=1}^k\pi _{R_{i}}(F)$.
+
+>[!info] Dimostrazione
+>Dobbiamo dimostrare che $A\in Z^{(f)}$ se e solo se $A\in X^+_{G}$
+>Base dell’induzione
