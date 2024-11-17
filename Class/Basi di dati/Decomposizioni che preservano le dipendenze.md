@@ -190,10 +190,60 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >
 >$Z=D$
 >$S=\varnothing$
+>
 >Ciclo esterno sui sottoschemi $ABC$ e $ABD$
 >$S=S\cup(D\cap ABC)^+_{F}\cap ABC=\varnothing \cup (\varnothing)^+_{F}\cap ABC=\varnothing\cup \varnothing\cap ABC=\varnothing$
+>$S=S\cup(D\cap ABD)^+_{F}\cap ABD=S\cup(D)^+_{F}\cap ABD=\varnothing\cup DCBA\cap ABD=ABD$
 >
+>$ABD\not\subset D$ quindi entriamo nel ciclo while
+>$Z=Z\cup S=ABD$
+>Ciclo for interno al while sui sottoschemi $ABC$ e $ABD$
+>$$\begin{align}S&=S\cup(ABD\cap ABC)^+_{F}\cap ABC=S\cup(AB)^+_{F}\cap ABC=\\&=ABD\cup ABC\cap ABC=ABCD\end{align}$$
+>$$\begin{align}S&=S\cup(ABD\cap ABD)^+_{F}\cap ABD=S\cup(ABD)^+_{F}\cap ABD=\\&=ABCD\cup ABCD\cap ABD=ABCD\cup ABD=ABCD\end{align}$$
+>
+>$ABCD\not\subset ABD$ quindi rientriamo nel ciclo while
+>$Z=Z\cup S=ABCD$
+>Ciclo for interno al while sui sottoschemi $ABC$ e $ABD$
+>$$\begin{align}S&=S\cup(ABCD\cap ABC)^+_{F}\cap ABC=S\cup(ABC)^+_{F}\cap ABC=\\&=ABCD\cup ABC\cap ABC=ABCD\end{align}$$
+>$$\begin{align}S&=S\cup(ABCD\cap ABD)^+_{F}\cap ABD=S\cup(ABD)^+_{F}\cap ABD=\\&=ABCD\cup ABCD\cap ABD=ABCD\cup ABD=ABCD\end{align}$$
+>
+>$S\subset Z$ quindi STOP
+>L’algoritmo si ferma, ma va controllato il contenuto di $Z$
+>$Z=(D)^+_{G}=ABCD$ e quindi $C\in (D)^+_{G}$, quindi la dipendenza è preservata
+>
+>In base alle osservazioni sulle dipendenze sicuramente contenute in $G$ e al fatto di aver verificato che $D\to C$ è preservata (era l’unica in dubbio), possiamo già dire che la decomposizione preserva le dipendenze
 
-
-
+>[!example]
+>$$R=(A,B,C,D,E)$$
+>$$F=\{AB\to E,B\to CE,ED\to C\}$$
+>Dire se la decomposizione $\rho=\{ABE,CDE\}$ preserva le dipendenze in $F$
+>
+>In base a quanto visto basta verificare che $F\subseteq G^+$ cioè che ogni dipendenza funzionale in $F$ si trova in $G^+$
+>
+>>[!info]
+>>Come abbiamo verificato è inutile controllare che vengano preservate le dipendenze tali che l’unione delle parti destra e sinistra è contenuta interamente in un sottoschema, perché secondo la definizione $\pi_{R_{i}}(F)=\{X\to Y \mid X\to Y\in F^+\land XY\subseteq R_{j}\}$
+>>
+>>In questo esempio vale per $AB\to E$ e per $ED\to C$
+>>Quindi verifichiamo solo che venga preservata la dipendenza $B\to CE$
+>
+>Verifichiamo che sia preservata $B\to CE$
+>
+>$Z=B$
+>$S=\varnothing$
+>Ciclo esterno sui sottoschemi $ABE$ e $CDE$
+>$$S=S\cup(B\cap ABE)^+_{F}\cap ABE=\varnothing\cup(B)^+_{F}\cap ABE=\varnothing\cup BCE\cap ABE=BE$$
+>$$S=BE\cup(B\cap CDE)^+_{F}\cap CDE=BE\cup(\varnothing)^+_{F}\cap CDE=BE$$
+>
+>$BE\not\subset B$ quindi entriamo nel ciclo while
+>$Z=Z\cup S=B\cup BE=BE$
+>Ciclo for interno al while sui sottoschemi $ABE$ e $CDE$
+>$$S=BE\cup(BE\cap ABE)^+_{F}\cap ABE=BE\cup(BE)^+_{F}\cap ABE=BE\cup BCE\cap ABE=BE$$
+>$$S=BE\cup(BE\cap CDE)^+_{F}\cap CDE=S\cup(E)^+_{F}\cap CDE=BE\cup E\cap CDE=BE\cup E=BE$$
+>
+>$BE=BE (S\subset Z)$ quindi STOP
+>L’algoritmo si ferma, ma va controllato il contenuto di $Z$
+>$Z=(B)^+_{G}=BE$
+>$E\in(B)^+_{G}$ ma $C\not\in(B)^+_{G}$
+>
+>Quindi la dipendenza $B\to CE$ non è preservata (nella chiusura manca uno degli attributi che dovrebbero essere determinati funzionalmente da $B$)
 

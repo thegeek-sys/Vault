@@ -11,4 +11,5 @@
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
+- [[Tips esame]]
 - 
