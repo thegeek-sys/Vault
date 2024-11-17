@@ -22,9 +22,7 @@ Sia $R$ uno schema di relazione e $\rho=\{R_{1},R_{2},\dots ,R_{k}\}$ una decomp
 - $r \subseteq m_{\rho}(r)$
 - $\pi_{R_{i}}(m_{\rho}(r))=\pi_{R_{i}}(r)$
 - $m_{\rho}(m_{\rho}(r))=m_{\rho}(r)$
-
----
-## Digressione
+### Digressione
 Consideriamo la solita istanza legale di $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B,C\to B\}$ (non è in 3NF - $B$ non è contenuto in una chiave)
 
 ![[Pasted image 20241117185711.png|250]]
@@ -44,3 +42,36 @@ Occorre garantire che il join delle istanze risultati dalla decomposizione non r
 
 ![[Screenshot 2024-11-17 alle 19.04.41.png]]
 
+![[Screenshot 2024-11-17 alle 19.15.14.png]]
+
+---
+## Algoritmo di verifica
+Il seguente algoritmo permette di verificare se una decomposizione data ha un join senza perdita in tempo polinomiale
+
+$$
+\begin{align}
+\mathbf{Input}\quad&\text{uno schema di relazione }R\text{, un insieme }F\text{ di dipendenze funzionali su }R\text{, una}\\&\text{ decomposizione }\rho=\{R_{1},R_{2},\dots,R_{k}\}\text{ di }R \\
+\mathbf{Output}\quad&\text{decide se }\rho \text{ ha un join senza perdita}
+\end{align}
+$$
+$$
+\begin{align}
+&\mathbf{begin} \\
+&\text{Costruisci una tabella }r\text{ nel modo seguente:} \\
+&r\text{ ha } \mid R\mid \text{colonne e }\mid \rho\mid \text{ righe} \\
+&\text{all'incrocio dell'i-esima riga e della j-esima colonna metti} \\
+&\text{il simbolo }a_{j}\text{ se l'attributo }A_{j}\in R_{i} \\
+&\text{il simbolo }b_{ij}\text{ altrimenti} \\
+&\mathbf{repeat} \\
+&\mathbf{for\,\,every\,\, X\to Y\in F} \\
+&\qquad\mathbf{do\,\,if} \text{ ci sono due tuple }t_{1}\text{ e }t_{2}\text{ in }r\text{ tali che }t_{1}[X]=t_{2}[X] \text{ e }t_{1}[Y]\neq t_{2}[Y] \\
+&\qquad\qquad\mathbf{then\,\,for\,\,every\,\,attribute\,\,A_{j}\in Y} \\
+&\qquad\qquad\qquad\mathbf{do\,\,if\,\,}t_{1}[A_{j}]='{a_{j}}' \\
+&\qquad\qquad\qquad\qquad\mathbf{then\,\,}t_{2}[A_{j}]:=t_{1}[A_{j}] \\
+&\qquad\qquad\qquad\qquad\mathbf{else\,\,}t_{1}[A_{j}]:=t_{2}[A_{j}] \\
+&\mathbf{until\,\,}r\text{ ha una riga con tutte 'a' }\mathbf{or\,\,}r\text{ non è cambiato} \\
+&\mathbf{if\,\,}r\text{ ha una riga con tutte 'a'} \\
+&\qquad\mathbf{then\,\,}\rho \text{ ha un join senza perdita} \\
+&\qquad\mathbf{else\,\,}\rho \text{ non ha un join senza perdita}
+\end{align}
+$$
