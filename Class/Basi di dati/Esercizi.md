@@ -60,16 +60,18 @@ Verifichiamo che sia preservata $CE\to A$
 $Z=CE$
 $S=\varnothing$
 Ciclo esterno sui sottoschemi $ABD$ e $BCDE$
-$$S=S\cup(CE\cap ABD)^+_{F}\cap ABD=\varnothing\cup(\varnothing)^+_{F}\cap ABD=\varnothing\cup \varnothing\cap ABD=\varnothing$$
-$$S=BE\cup(B\cap CDE)^+_{F}\cap CDE=BE\cup(\varnothing)^+_{F}\cap CDE=BE$$
+$$S=S\cup(CE\cap ABD)^+_{F}\cap ABD=\varnothing\cup(\varnothing)^+_{F}\cap ABD=\varnothing$$
+$$\begin{align}
+S&=\varnothing\cup(CE\cap BCDE)^+_{F}\cap BCDE=\varnothing\cup(CE)^+_{F}\cap BCDE=\\&=\varnothing\cup ABCDE\cap BCDE=BCDE
+\end{align}$$
 
-$BE\not\subset B$ quindi entriamo nel ciclo while
-$Z=Z\cup S=B\cup BE=BE$
-Ciclo for interno al while sui sottoschemi $ABE$ e $CDE$
-$$S=BE\cup(BE\cap ABE)^+_{F}\cap ABE=BE\cup(BE)^+_{F}\cap ABE=BE\cup BCE\cap ABE=BE$$
-$$S=BE\cup(BE\cap CDE)^+_{F}\cap CDE=S\cup(E)^+_{F}\cap CDE=BE\cup E\cap CDE=BE\cup E=BE$$
+$BCDE\not\subset CE$ quindi entriamo nel ciclo while
+$Z=Z\cup S=BE\cup BCDE=BCDE$
+Ciclo for interno al while sui sottoschemi $ABD$ e $BCDE$
+$$\begin{align}
+S&=BCDE\cup(BCDE\cap ABD)^+_{F}\cap ABD=BCDE\cup(BD)^+_{F}\cap ABD=\\&=BCDE\cup ABCDE\cap ABD=ABCDE
+\end{align}
+$$
 
-$BE=BE (S\subset Z)$ quindi STOP
-L’algoritmo si ferma, ma va controllato il contenuto di $Z$
-$Z=(B)^+_{G}=BE$
-$E\in(B)^+_{G}$ ma $C\not\in(B)^+_{G}$
+A questo punto ci possiamo fermare, perché a $S$ vengono sempre e solo aggiunti elementi, e ora $S$ contiene tutto $R$, e in particolare contiene $A$, quindi $A\subseteq(CE)^+_{G}$ e quindi $CE\to A\in G^A=G^+$
+In conclusione possiamo dire che la decomposizione data preserva $F$

@@ -8,6 +8,7 @@
 - [[Chiusura di un insieme di attributi]]
 - [[Identificazione di una chiave]]
 - [[Decomposizioni che preservano le dipendenze]]
+- [[Decomposizioni che hanno un join senza perdita]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
