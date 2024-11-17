@@ -41,3 +41,6 @@ Dovrebbe essere possibile ricostruire l’istanza di partenza esattamente tramit
 ![[Pasted image 20241117190130.png]]
 
 Occorre garantire che il join delle istanze risultati dalla decomposizione non riveli *perdita di informazioni*
+
+![[Screenshot 2024-11-17 alle 19.04.41.png]]
+
