@@ -75,3 +75,105 @@ $$
 &\qquad\mathbf{else\,\,}\rho \text{ non ha un join senza perdita}
 \end{align}
 $$
+
+### Esempi
+>[!example]
+>$$R=(A,B,C,D,E)$$
+>$$F=\{C\to D,AB\to E,D\to B\}$$
+>$$\rho=\{AC,ADE,CDE,AD,B\}$$
+>Verificare se la decomposizione $\rho$ ha un join senza perdita
+>
+>Cominciamo a costruire la relativa tabella
+>![[Pasted image 20241117212115.png|440]]
+>
+>>[!info]
+>>Per chiarezza applichiamo le dipendenze funzionali nell’ordine e vediamo i cambiamenti che vengono effettuati sulla tabella (ricordiamo che ogni cambiamento corrisponde a fare in modo che venga soddisfatta una dipendenza funzionale, per ottenere alla fine dell’algoritmo una tabella che rappresenta un’istanza legale dello schema)
+>>Indicheremo col simbolo $\to$ le modifiche ai valori della tabella e con un apice l’ordine delle sostituzioni quando opportuno
+>
+>![[Pasted image 20241117212420.png|500]]
+>- $C\to D$
+>	- la prima e la terza riga coincidono sull’attributo $C=a3$, quindi cambiamo $b14$ in $a4$ in modo che la dipendenza funzionale sia soddisfatta (solo le righe che hanno valori uguali in $C$ devono avere valori uguali in $D$)
+>- $AB\to E$
+>	- non viene utilizzata in questo passo: la dipendenza funzionale è già soddisfatta, in quanto non ci sono (ancora) tuple uguali su $AB$ e diverse su $E$, quindi non devono essere effettuati cambiamenti
+>- $D\to B$
+>	- nelle prime quattro righe $D=a4$, quindi cambiamo $b22$ in $b12$, $b32$ in $b12$, $b42$ in $b12$ (potevamo scegliere una diversa sostituzione delle $b$, purché le rendesse tutte uguali)
+>
+>Abbiamo completato la prima iterazione del for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241117213039.png|500]]
+>- $C\to D$
+>	- non viene utilizzata in questo passo: la dipendenza funzionale è già soddisfatta in quanto non ci sono tuple uguali su $C$ e diverse su $D$
+>- $AB\to E$
+>	- la prima, la seconda e la quarta riga coincidono sugli attributi $AB=<a1,b12>$, quindi cambiamo $b15$ in $a5$ e $b45$ in $a5$ in modo che la dipendenza funzionale sia soddisfatta (se le righe hanno valori uguali in $AB$, devono avere valori uguali in $E$)
+>- $D\to B$
+>	- non vine utilizzata in questo passo: la dipendenza funzionale è già soddisfatta in quanto non ci sono tuple uguali su $A$ e diverse su $B$
+>
+>Abbiamo completato la seconda iterazione del for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241117213510.png|500]]
+>- $C\to D$
+>	- non viene utilizzata in questo passo
+>- $AB\to E$
+>	- non viene utilizzata in questo passo
+>- $D\to B$
+>	- non vine utilizzata in questo passo
+>
+>La tabella non cambia più e quindi l’algoritmo termina. Ora occorre verificare la presenza della tupla con tutte $a$
+>Poiché non c’è una riga con tutte $a$, il join non è senza perdita
+
+>[!example]
+>$$R=(A,B,C,D,E,H,I)$$
+>$$F=\{A\to B,B\to AE,DI\to B,D\to HI,HI\to C,C\to A\}$$
+>$$\rho=\{ACD,BDEH,CHI\}$$
+>Verificare se la decomposizione $\rho$ ha un join senza perdita
+>
+>Cominciamo a costruire la tabella
+>![[Pasted image 20241117213918.png|440]]
+>
+>![[Pasted image 20241117213944.png|550]]
+>- $A\to B$
+>	- non si applica a questa iterazione
+>- $B\to AE$
+>	- non si applica a questa iterazione
+>- $DI\to B$
+>	- ci sono due tuple uguali su $D$ ma non su $I$, non si applica a questa iterazione
+>- $D\to HI$
+>	- la prima e la seconda riga coincidono sull’attributo $D=a4$, quindi cambiamo $H$ e $I$ ma separatamente $b16\to a6$ mentre $b27\to b17$
+>- $HI \to C$
+>	- ora abbiamo due tuple uguali su $HI$ (la prima e la seconda entrambe con valori $<a6, b17>$) quindi modifichiamo i valori della $C$ nelle stesse tuple - $b23\to a3$
+>- $C\to A$
+>	- le tuple sono tutte uguali su $C$, quindi le facciamo diventare uguali su $A$, e poiché abbiamo la prima con valore $a$, diventano tutte $a$ ($b21\to a1$, $b31\to a1$)
+>
+>Abbiamo completato la prima iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241117214538.png|550]]
+>- $A\to B$
+>	- le tuple sono tutte uguali su $A$, quindi le facciamo diventare uguali su $B$ e poiché abbiamo la seconda con valore $a$, diventano tutte $a$ ($b12\to a2$, $b32\to a2$)
+>- $B\to AE$
+>	- ora tutte le tuple sono uguali su $B$, quindi devono diventare uguali anche su $AE$; su $A$ sono già uguali, la seconda tupla ha una $a$ sull’attributo $E$, quindi diventeranno tutte $a$ ($b15\to a5$, $b35\to a5$)
+>- $DI\to B$
+>	- la prima e la seconda tupla sono uguali su $DI=<a4,b17>$, quindi devono diventare uguali su $B$ ma lo sono già
+>- $D\to HI$
+>	- già soddisfatta, nulla da modificare
+>- $HI \to C$
+>	- già soddisfatta, nulla da modificare
+>- $C\to A$
+>	- già soddisfatta, nulla da modificare
+>
+>Abbiamo completato la seconda iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241117215041.png|550]]
+>- $A\to B$
+>	- già soddisfatta, nulla da modificare
+>- $B\to AE$
+>	- già soddisfatta, nulla da modificare
+>- $DI\to B$
+>	- già soddisfatta, nulla da modificare
+>- $D\to HI$
+>	- già soddisfatta, nulla da modificare
+>- $HI \to C$
+>	- già soddisfatta, nulla da modificare
+>- $C\to A$
+>	- già soddisfatta, nulla da modificare
+>
+>Abbiamo completato l’iterazione del for e la tabella non è stata modificata, quindi l’algoritmo termina. Occorre verificare la presenza della tupla con tutte $a$
+>Poiché non c’è una rica con tutte $a$, il join non è senza perdita
+
+
+
