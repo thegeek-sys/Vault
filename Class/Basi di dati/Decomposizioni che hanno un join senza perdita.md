@@ -24,4 +24,5 @@ Sia $R$ uno schema di relazione e $\rho=\{R_{1},R_{2},\dots ,R_{k}\}$ una decomp
 - $m_{\rho}(m_{\rho}(r))=m_{\rho}(r)$
 
 ---
-
+## Digressione
+Consideriamo la solita istanza legale di $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B,C\to B\}$ (non è in 3NF)

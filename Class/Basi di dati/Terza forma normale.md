@@ -137,7 +137,7 @@ $$
 >- $K_{3}=AD$ (per il teorema dell’aumento sull’ultima dipendenza funzionale)
 >
 >
->D nell’ultima dipendenza non è una chiave (ma un pezzo di una chiave) però il determinato è composto da $B$ (un attributo della chiave $AB$) e da $C$ (un attributo della chiave $AC$); dunque lo schema è in **3FN**.
+>$D$ nell’ultima dipendenza non è una chiave (ma un pezzo di una chiave) però il determinato è composto da $B$ (un attributo della chiave $AB$) e da $C$ (un attributo della chiave $AC$); dunque lo schema è in **3FN**.
 >
 >Ho infatti decomposto in $D\to B$ ($B$ è parte di una chiave) e in $D\to C$ ($C$ è una parte di una chiave)
 
