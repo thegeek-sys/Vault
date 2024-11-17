@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Terza forma normale.md",
+                "file": "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Terza forma normale"
+              "title": "Decomposizioni che hanno un join senza perdita"
             }
           },
           {
@@ -187,7 +187,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "parziali",
+                "query": "parziale",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -316,8 +316,8 @@
   },
   "active": "39933cb22ec6211f",
   "lastOpenFiles": [
-    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
     "Class/Basi di dati/Terza forma normale.md",
+    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
     "Class/Basi di dati/Basi di dati.md",
     "Flet-notes/2024-11-14_BD.md",
     "Class/Basi di dati/Esercizi.md",

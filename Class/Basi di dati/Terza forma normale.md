@@ -143,7 +143,7 @@ $$
 
 
 ---
-## Dipendenza parizale
+## Dipendenza parziale
 Siano $R$ uno schema di relazione e $F$ un insieme di dipendenze funzionali su $R$.
 $X\to A\in F^+\mid A\not\in X$ è una **dipendenza parziale** su $R$ se $A$ non è primo ed $X$ è contenuto propriamente in una chiave di $R$
 ![[Pasted image 20241027185741.png|150]]
