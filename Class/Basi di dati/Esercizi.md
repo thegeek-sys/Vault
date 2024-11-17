@@ -45,3 +45,31 @@ $$
 $$
 \sigma_{\text{Targa}}(\text{MD}\bowtie\text{AUTOVEICOLO}-\pi_{\text{Targa}}(\text{r}))
 $$
+
+# [[Pasted image 20241117172103.png|Esercizio 2 11/02/2016]]
+a)
+In base a quanto visto basta verificare che $F\subseteq G^+$ cioè che ogni dipendenza funzionale in $F$ si trova in $G^+$
+
+>[!info]
+>Come abbiamo verificato è inutile controllare che vengano preservate le dipendenze tali che l’unione delle parti destra e sinistra è contenuta interamente in un sottoschema, perché secondo la definizione $\pi_{R_{i}}(F)=\{X\to Y \mid X\to Y\in F^+\land XY\subseteq R_{j}\}$
+>
+>In questo esempio vale per $A\to BD$, per $B\to E$ e per $D\to C$
+>Quindi verifichiamo solo che venga preservata la dipendenza $CE\to A$
+
+Verifichiamo che sia preservata $CE\to A$
+$Z=CE$
+$S=\varnothing$
+Ciclo esterno sui sottoschemi $ABD$ e $BCDE$
+$$S=S\cup(CE\cap ABD)^+_{F}\cap ABD=\varnothing\cup(\varnothing)^+_{F}\cap ABD=\varnothing\cup \varnothing\cap ABD=\varnothing$$
+$$S=BE\cup(B\cap CDE)^+_{F}\cap CDE=BE\cup(\varnothing)^+_{F}\cap CDE=BE$$
+
+$BE\not\subset B$ quindi entriamo nel ciclo while
+$Z=Z\cup S=B\cup BE=BE$
+Ciclo for interno al while sui sottoschemi $ABE$ e $CDE$
+$$S=BE\cup(BE\cap ABE)^+_{F}\cap ABE=BE\cup(BE)^+_{F}\cap ABE=BE\cup BCE\cap ABE=BE$$
+$$S=BE\cup(BE\cap CDE)^+_{F}\cap CDE=S\cup(E)^+_{F}\cap CDE=BE\cup E\cap CDE=BE\cup E=BE$$
+
+$BE=BE (S\subset Z)$ quindi STOP
+L’algoritmo si ferma, ma va controllato il contenuto di $Z$
+$Z=(B)^+_{G}=BE$
+$E\in(B)^+_{G}$ ma $C\not\in(B)^+_{G}$
