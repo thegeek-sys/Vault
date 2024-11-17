@@ -25,4 +25,19 @@ Sia $R$ uno schema di relazione e $\rho=\{R_{1},R_{2},\dots ,R_{k}\}$ una decomp
 
 ---
 ## Digressione
-Consideriamo la solita istanza legale di $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B,C\to B\}$ (non è in 3NF)
+Consideriamo la solita istanza legale di $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B,C\to B\}$ (non è in 3NF - $B$ non è contenuto in una chiave)
+
+![[Pasted image 20241117185711.png|250]]
+
+In base alle possibili decomposizioni dello schema, questa istanza si decompone in
+![[Pasted image 20241117185753.png|350]]
+La prima è ottenuta proiettando l’istanza originale su $AB$. La seconda è ottenuta proiettando l’istanza originale su $BC$.
+
+>[!note]
+>Notare l’eliminazione del duplicato. Forse questa eliminazione ci farà perdere tuple originali? No
+
+Dovrebbe essere possibile ricostruire l’istanza di partenza esattamente tramite join invece se si effettua il join delle due istanze legali risultanti dalla decomposizione si ottiene
+
+![[Pasted image 20241117190130.png]]
+
+Occorre garantire che il join delle istanze risultati dalla decomposizione non riveli *perdita di informazioni*
