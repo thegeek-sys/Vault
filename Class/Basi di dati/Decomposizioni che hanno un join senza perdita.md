@@ -16,5 +16,12 @@ Se si decompone uno schema di relazione $R$ si vuole che la decomposizione $\{R_
 >[!info] Definizione
 >Sia $R$ uno schema di relazione. Una decomposizione $\rho=\{R_{1},R_{2},\dots,R_{k}\}$ di $R$ ha un **join senza perdita** se per ogni istanza legale $r$ di $R$ si ha $r=\pi_{R_{1}}(r)\bowtie \pi_{R_{2}}(r)\bowtie\dots \bowtie \pi_{R_{k}}(r)$
 
+---
+## Teorema
+Sia $R$ uno schema di relazione e $\rho=\{R_{1},R_{2},\dots ,R_{k}\}$ una decomposizione di $R$. Per ogni istanza legale $r$ di $R$, indicato con $m_{\rho}(r)=\pi_{R1}(r)\bowtie \pi_{R2}(r)\bowtie\dots \bowtie \pi_{Rk}(r)$ si ha:
+- $r \subseteq m_{\rho}(r)$
+- $\pi_{R_{i}}(m_{\rho}(r))=\pi_{R_{i}}(r)$
+- $m_{\rho}(m_{\rho}(r))=m_{\rho}(r)$
 
+---
 

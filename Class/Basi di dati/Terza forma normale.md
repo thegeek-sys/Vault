@@ -104,7 +104,7 @@ Dati uno shema di relazione $R$ e un insieme di dipendenze funzionali $F$ su $R$
 $$
 \forall X\to A\in F^+ \,\,\,\,\,\,\,A\not\in X
 $$
-- $A$ appartiene ad una chiave (è **primo**, applicabile solo ai cingleton)
+- $A$ appartiene ad una chiave (è **primo**, applicabile solo ai singleton)
 - $X$ contiene una chiave (è una superchiave)
 
 >[!warning]
