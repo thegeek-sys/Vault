@@ -185,6 +185,14 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >
 >>[!warning]
 >>Per come è strutturato l’algoritmo, a $Z$ possono solo venire aggiunti elementi (cioè non succede mai che un’attributo venga eliminato da $Z$), quindi quando $Z$ arriva a contenere la **parte destra della dipendenza** possiamo essere sicuri che la dipendenza stessa è preservata e sospendere il seguito del procedimento (in un compito scritto questo va giustificato)
+>
+>Menzionando esplicitamente l’osservazione fatta sopra, basta verificare che sia preservata la dipendenza $D\to C$
+>
+>$Z=D$
+>$S=\varnothing$
+>Ciclo esterno sui sottoschemi $ABC$ e $ABD$
+>$S=S\cup(D\cap ABC)^+_{F}\cap ABC=\varnothing \cup (\varnothing)^+_{F}\cap ABC=\varnothing\cup \varnothing\cap ABC=\varnothing$
+>
 
 
 
