@@ -51,10 +51,10 @@ Con la preallocazione viene naturale utilizzare porzioni grandi e di dimensione 
 ---
 ## Come allocare spazio per i file
 Per allocare spazio per i file si utilizzano tre metodi:
-- contiguo
-- concatenato
-- indicizzato
+- **contiguo**
+- **concatenato**
+- **indicizzato**
 
  Per ciascuno di questi tre metodi ci sono delle caratteristiche
  ![[Pasted image 20241118210718.png]]
- 
+### Allocazione contigua
