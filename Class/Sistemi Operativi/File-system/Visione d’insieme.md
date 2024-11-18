@@ -65,3 +65,17 @@ Come sempre ci sono degli obiettivi per il SO da dover raggiungere, che sono:
 - rispondere alle necessità degli utenti riguardo la gestione dei dati (creazione etc.)
 - garantire che i dati nei file sono validi (a mano che non si rompa il supporto hardware)
 - ottimizzare le prestazioni (sia dal punto di vista del SO, *throughput*, che dall’utente, tempo di risposta)
+- fornire supporto per diversi dispositivi di memoria secondaria (dischi magnetici, chiavi USB, etc.)
+- minimizzare i dati persi o distrutti
+- fornire un insieme di interfacce standard per i processi utente
+- fornire supporto per l’I/O effettuato da più utenti in contemporanea
+
+---
+## Requisiti per i File Management System
+1. Ogni utente dev’essere in grado di creare, cancellare, leggere, scrivere e modificare un file
+2. Ogni utente deve poter accedere, in modo controllato, ai file di un altro utente
+3. Ogni utente deve poter leggere modificare i permessi di accesso ai propri file
+4. Ogni utente deve poter ristrutturare i propri file in modo attinente al problema affrontato
+5. Ogni utente deve poter muovere dati da un file ad un altro
+6. Ogni utente deve poter mantenere una copia di backup dei propri file (in caso di danno)
+7. Ogni utente deve poter accedere ai propri file tramite nomi sinbolici

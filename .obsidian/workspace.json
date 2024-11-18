@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -223,10 +223,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4b9b9e00e2af7c0d",
+  "active": "3029f3a0b493f36d",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Gestione dell'Input-Output/Problemi nel progetto del sistema operativo.md",
     "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Problemi nel progetto del sistema operativo.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Organizzazione della funzione di I-O.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",

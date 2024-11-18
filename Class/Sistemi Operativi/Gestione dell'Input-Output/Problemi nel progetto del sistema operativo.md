@@ -52,6 +52,7 @@ Riguarda i dispositivi di archiviazione (es. HDD, SSD, CD, DVD, floppy disk, USB
 
 ![[Pasted image 20241111112423.png]]
 Qui il logical I/O è tipicamente diviso in tre parti
-**Directory Management** → fornisce tutte le operazioni atte a gestire i file (creare, spostare, cancellare, …)
+**Directory Management** → fornisce tutte le operazioni atte a gestire i file (creare, spostare, cancellare, …); da nomi di file a identificatori di file
 **File system** → struttura logica ed operazioni (apri, chiudi, leggi, scrivi, …)
-**Organizzazione fisica** → si occupa di allocare e deallocare spazio su disco (quando ad esempio si chiede di creare un file)
+**Organizzazione fisica** → si occupa di allocare e deallocare spazio su disco (quando ad esempio si chiede di creare un file); da identificatori di file a indirizzi fisici su disco
+**Scheduling & Control** → ovviamente è qui che ci sono i vari `SCAN`
