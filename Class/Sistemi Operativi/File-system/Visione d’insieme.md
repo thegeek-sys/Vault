@@ -59,3 +59,9 @@ Collezioni di dati correlati formano un database. Questi mantengono anche relazi
 In questa parte ci occuperemo di analizzare questi tre blocchi.
 I programmi del **File Management System** forniscono servizi agli utenti e alle applicazioni per l’uso di file e definiscono anche il modo in questi sono utilizzati, sollevando i programmatori dal dover scrivere codice per gestire i file
 
+---
+## Obiettivi per i File Management System
+Come sempre ci sono degli obiettivi per il SO da dover raggiungere, che sono:
+- rispondere alle necessità degli utenti riguardo la gestione dei dati (creazione etc.)
+- garantire che i dati nei file sono validi (a mano che non si rompa il supporto hardware)
+- ottimizzare le prestazioni (sia dal punto di vista del SO, *throughput*, che dall’utente, tempo di risposta)
