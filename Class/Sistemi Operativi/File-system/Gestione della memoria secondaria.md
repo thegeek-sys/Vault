@@ -74,3 +74,8 @@ Con l’allocazione concatenata viene allocato un blocco alla volta che ha un **
 Risulta quindi necessaria **una sola entry** nella tabella di allocazione dei file contenente il blocco di partenza e la lunghezza del file (lunghezza anche calcolabile, ma è comodo avere già il valore calcolato)
 In questo modo **non si ha frammentazione esterna** (la frammentazione interna è trascurabile, in quanto molto piccola)
 Con questo tipo di allocazione non risulta essere un problema accedere ad un file in modo sequenziale, ma se serve un blocco che si trova $b$ blocchi dopo quello iniziale, occorre scorrere tutta la lista. Per risolvere questo problema si ricorre al **consolidamento**, analogo alla compattazione, per mettere i blocchi di un file contigui e migliorare l’accesso sequenziale
+
+![[Pasted image 20241118220632.png|500]]
+
+#### Consolidamento
+![[Pasted image 20241118220703.png|500]]
