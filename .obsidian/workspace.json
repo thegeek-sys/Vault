@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria/Partizionamento della memoria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gestione della memoria secondaria"
+              "title": "Partizionamento della memoria"
             }
           },
           {
@@ -139,7 +139,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dbms",
+                "query": "best",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,7 +160,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -267,8 +268,8 @@
   },
   "active": "520480ab4efc78f8",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
+    "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/File-system/Directory.md",
     "Files/Pasted image 20241118142226.png",
     "Files/Pasted image 20241118141900.png",
