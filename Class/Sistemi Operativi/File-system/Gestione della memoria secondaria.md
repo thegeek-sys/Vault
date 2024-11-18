@@ -58,3 +58,19 @@ Per allocare spazio per i file si utilizzano tre metodi:
  Per ciascuno di questi tre metodi ci sono delle caratteristiche
  ![[Pasted image 20241118210718.png]]
 ### Allocazione contigua
+Con l’allocazione contigua un insieme di blocchi viene allocato per il file quando quest’ultimo viene creato. Dunque la preallocazione risulta necessaria, occorre infatti sapere quando lungo, al massimo sarà il file, altrimenti, se un file può crescere oltre il limite massimo potrebbe incontrare blocchi già occupati
+
+In questo modo risulta necessaria una sola entry nella tabella di allocazione dei file (blocco di partenza e lunghezza del file).
+Tipicamente ci sta frammentazione esterna, con conseguente necessità di compattazione
+
+![[Pasted image 20241118213331.png|500]]
+
+#### Compattazione
+![[Pasted image 20241118213445.png|500]]
+
+### Allocazione concatenata
+Con l’allocazione concatenata viene allocato un blocco alla volta che ha un **puntatore al prossimo blocco** (la prima parte del blocco sono dati del file, l’ultima, piccola, parte del blocco è il puntatore)
+
+Risulta quindi necessaria **una sola entry** nella tabella di allocazione dei file contenente il blocco di partenza e la lunghezza del file (lunghezza anche calcolabile, ma è comodo avere già il valore calcolato)
+In questo modo **non si ha frammentazione esterna** (la frammentazione interna è trascurabile, in quanto molto piccola)
+Con questo tipo di allocazione non risulta essere un problema accedere ad un file in modo sequenziale, ma se serve un blocco che si trova $b$ blocchi dopo quello iniziale, occorre scorrere tutta la lista. Per risolvere questo problema si ricorre al **consolidamento**, analogo alla compattazione, per mettere i blocchi di un file contigui e migliorare l’accesso sequenziale
