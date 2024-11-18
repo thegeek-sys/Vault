@@ -73,6 +73,7 @@ Se per caso arriva un processo da 8M questo non potrà essere inserito in quanto
 Qui a differenza dei precedenti, si ha un problema di **frammentazione esterna**, infatti i processi, quando terminano o vengono swappati, lasciano all’interno della memoria dei “frammenti” di memoria libera. Questo è risolvibile con la **compattazione**, con la quale il SO sposta tutti i processi in modo tale che siano contigui (però ha un alto overhead)
 
 Il SO inoltre deve scegliere a quale blocco libero assegnare un processo. Ciò si può banalmente pensare possa avvenire, come per gli altri partizionamenti, tramite l’algoritmo *best-fit*: sceglie il blocco la cui misura è la più vicina (in eccesso) a quella del processo da posizionare. Ma questo algoritmo risulta essere quello con i risultati peggiori in quanto lascia frammenti molto piccoli che costringono a fare spesso la compattazione
+
 Come alternativa a questo algoritmo vennero proposte due alternative:
 - Algoritmo *first-fit* → scorre la memoria dall’inizio, il primo blocco con abbastanza memoria viene subito scelto e per questo motivo è molto veloce. Ha come problema il fatto che tende a riempire solo la prima parte della memoria, seppur è il **migliore** tra quelli proposti
 - Agloritmo *next-fit* → come il first-fit, ma anziché partire da capo ogni volta, parte dall’ultima posizione assegnata ad un processo. Sperimentalmente si nota che assegna più spesso il blocco alla fine della memoria che tendenzialmente è il più grande
