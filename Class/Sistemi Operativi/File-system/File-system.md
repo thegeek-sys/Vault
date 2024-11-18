@@ -1,0 +1,5 @@
+- [[Visione d’insieme]]
+- Le directory
+- Gestione della memoria secondaria
+- Gestione dei file in UNIX
+- Gestione dei file su Windows

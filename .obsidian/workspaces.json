@@ -1158,6 +1158,62 @@
                 }
               },
               {
+                "id": "6db3a48c7b9623ac",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Terza forma normale.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Terza forma normale"
+                }
+              },
+              {
+                "id": "39933cb22ec6211f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Decomposizioni che hanno un join senza perdita"
+                }
+              },
+              {
+                "id": "ef9d067bdb2b4473",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2024-11-13_BD.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "2024-11-13_BD"
+                }
+              },
+              {
+                "id": "b397de848e9ffb41",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Tips esame.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Tips esame"
+                }
+              },
+              {
                 "id": "30756f79ec2f1e9a",
                 "type": "leaf",
                 "state": {
@@ -1214,20 +1270,6 @@
                 }
               },
               {
-                "id": "b4a7c9a0748243a7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-11-14_BD.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2024-11-14_BD"
-                }
-              },
-              {
                 "id": "0fa1c91e460f163e",
                 "type": "leaf",
                 "state": {
@@ -1242,27 +1284,7 @@
                 }
               }
             ],
-            "currentTab": 6
-          },
-          {
-            "id": "88e2eefb54bca738",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ef9d067bdb2b4473",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2024-11-13_BD.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2024-11-13_BD"
-                }
-              }
-            ]
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1293,7 +1315,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "senza perdita",
+                    "query": "parziale",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -1319,8 +1341,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945,
-        "collapsed": true
+        "width": 245.51103591918945
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1421,9 +1442,9 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "0fa1c91e460f163e",
-      "mtime": "2024-11-15T16:22:58+01:00"
+      "active": "39933cb22ec6211f",
+      "mtime": "2024-11-18T11:44:52+01:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
