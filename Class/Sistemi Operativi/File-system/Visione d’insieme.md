@@ -53,4 +53,9 @@ Mettendo insieme record ottengo un file (nei SO generici moderni, ogni record è
 Collezioni di dati correlati formano un database. Questi mantengono anche relazioni tra gli elementi memorizzati e sono realizzati con uno o più file. Sono inoltre gestiti dai DBMS, che sono tipicamente processi di un sistema operativo
 
 ---
-## Sistemi per 
+## Sistemi per la gestione dei file
+![[Problemi nel progetto del sistema operativo#File system]]
+
+In questa parte ci occuperemo di analizzare questi tre blocchi.
+I programmi del **File Management System** forniscono servizi agli utenti e alle applicazioni per l’uso di file e definiscono anche il modo in questi sono utilizzati, sollevando i programmatori dal dover scrivere codice per gestire i file
+
