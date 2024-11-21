@@ -50,4 +50,4 @@ Dato un insieme di dipendenze $F$, la copertura minimale ha la sua stessa chiusu
 
 Riformulando la definizione in modo più informale:
 1. i dipendenti devono essere singleton
-2. 
+2. $\not\exists X \to A \text{ t.c. }F\equiv F-\{X\to A\}\cup \{X'\to A\} \text{ con }X'\subset X$
