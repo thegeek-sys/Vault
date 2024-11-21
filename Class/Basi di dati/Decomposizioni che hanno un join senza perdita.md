@@ -173,7 +173,136 @@ $$
 >	- già soddisfatta, nulla da modificare
 >
 >Abbiamo completato l’iterazione del for e la tabella non è stata modificata, quindi l’algoritmo termina. Occorre verificare la presenza della tupla con tutte $a$
->Poiché non c’è una rica con tutte $a$, il join non è senza perdita
+>Poiché non c’è una riga con tutte $a$, il join non è senza perdita
 
+>[!example]
+>$$R=(A,B,C,D,E,G)$$
+>$$F=\{AB\to C,DG\to B,G\to D,E\to G\}$$
+>$$\rho=\{ABD,AEG,BCE\}$$
+>Verificare se la decomposizione $\rho$ ha un join senza perdita
+>
+>Cominciamo a costruire la tabella
+>![[Pasted image 20241121211306.png|440]]
+>
+>![[Pasted image 20241121211346.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- la seconda e la terza riga coincidono sull’attributo $E=a5$, quindi cambiamo $G$ su $b36\to a6$
+>
+>Abbiamo completato la prima iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121211547.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- la seconda e la terza riga coincidono sull’attributo $G=a6$, quindi rendiamo i valori di $D$ in $b34\to b24$
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato la seconda iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121211724.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- la seconda e la terza tupla sono uguali $<b24, a6>$, quindi facciamo diventare uguali le tuple su $B$; la terza ha il valore $a$ quindi $b22\to a2$
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato la terza iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121211926.png|550]]
+>- $AB\to C$
+>	- prima e seconda tupla uguali su $AB$ $<a1,a2>$ quindi modifichiamo $C$ in $b23\to b13$
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato la quarta iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121212054.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato l’iterazione del for e la tabella non è stata modificata, quindi l’algoritmo termina. Occorre verificare la presenza della tupla con tutte $a$
+>Poiché non c’è una riga con tutte $a$, il join non è senza perdita
 
-
+>[!example]
+>$$R=(A,B,C,D,E,G)$$
+>$$F=\{AB\to C,DG\to B,G\to D,E\to G\}$$
+>$$\rho=\{ABD,AEG,BCE\}$$
+>Verificare se la decomposizione $\rho$ ha un join senza perdita
+>
+>Cominciamo a costruire la tabella
+>![[Pasted image 20241121211306.png|440]]
+>
+>![[Pasted image 20241121211346.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- la seconda e la terza riga coincidono sull’attributo $E=a5$, quindi cambiamo $G$ su $b36\to a6$
+>
+>Abbiamo completato la prima iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121211547.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- la seconda e la terza riga coincidono sull’attributo $G=a6$, quindi rendiamo i valori di $D$ in $b34\to b24$
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato la seconda iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121211724.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- la seconda e la terza tupla sono uguali $<b24, a6>$, quindi facciamo diventare uguali le tuple su $B$; la terza ha il valore $a$ quindi $b22\to a2$
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato la terza iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121211926.png|550]]
+>- $AB\to C$
+>	- prima e seconda tupla uguali su $AB$ $<a1,a2>$ quindi modifichiamo $C$ in $b23\to b13$
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato la quarta iterazione del ciclo for e la tabella è stata modificata quindi continuiamo
+>![[Pasted image 20241121212054.png|550]]
+>- $AB\to C$
+>	- non si applica a questa iterazione
+>- $DG\to B$
+>	- non si applica a questa iterazione
+>- $G\to D$
+>	- non si applica a questa iterazione
+>- $E\to G$
+>	- non si applica a questa iterazione
+>
+>Abbiamo completato l’iterazione del for e la tabella non è stata modificata, quindi l’algoritmo termina. Occorre verificare la presenza della tupla con tutte $a$
+>Poiché non c’è una riga con tutte $a$, il join non è senza perdita
