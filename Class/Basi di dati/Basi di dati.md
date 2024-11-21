@@ -9,6 +9,7 @@
 - [[Identificazione di una chiave]]
 - [[Decomposizioni che preservano le dipendenze]]
 - [[Decomposizioni che hanno un join senza perdita]]
+- [[Copertura minimale di un insieme di dipendenze]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
