@@ -26,7 +26,7 @@ Prima di tutto: è sempre possibile ottenerla? Si, è sempre possibile, dato uno
 
 Presenteremo un algoritmo che raggiunge questo scopo
 
->[!warning]
+>[!info]
 >Per la 3NF è sempre possibile applicare l’algoritmo di decomposizione (dopo aver trovato la copertura minimale), per la Boyce-Codd non esiste
 
 ---
