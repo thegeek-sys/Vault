@@ -29,4 +29,10 @@ Presenteremo un algoritmo che raggiunge questo scopo
 >[!info]
 >Per la 3NF è sempre possibile applicare l’algoritmo di decomposizione (dopo aver trovato la copertura minimale), per la Boyce-Codd non esiste
 
+>[!warning]
+>- La decomposizione che si ottiene dall’algoritmo che studieremo non è l’unica possibile che soddisfi le condizioni richieste
+>- Lo stesso algoritmo, a seconda dell’input di partenza (di cui parleremo) può fornire risultati diversi e tuttavia corretti
+>- Attenzione a non confondere l’algoritmo
+
+
 ---
