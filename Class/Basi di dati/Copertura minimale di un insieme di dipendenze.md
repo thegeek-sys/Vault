@@ -64,3 +64,9 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 3. data $X\to A$ devo verificare se $F\equiv F-\{X\to A\}$
 	![[Pasted image 20241122000528.png|350]]
 	$\text{DIP1, DIP2, DIP3}$ appartengono ad entrambi, dunque ci basta verificare che $X\to A\in G^+\overset{\text{lemma 1}}{\implies}A\in X^+_{G}$
+
+---
+## Esempi
+>[!example]
+>$$R=(A,B,C,D,E,H)$$
+>$$$$
