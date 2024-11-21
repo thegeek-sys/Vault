@@ -62,11 +62,15 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 2. data $X\to A$ devo verificare se $\forall X'\subset X$ ho che $F\equiv F-\{X\to A\}\cup \{X'\to A\}$
 	![[Pasted image 20241122000018.png]]
 3. data $X\to A$ devo verificare se $F\equiv F-\{X\to A\}$
-	![[Pasted image 20241122000528.png|350]]
+	![[Pasted image 20241122000528.png|250]]
 	$\text{DIP1, DIP2, DIP3}$ appartengono ad entrambi, dunque ci basta verificare che $X\to A\in G^+\overset{\text{lemma 1}}{\implies}A\in X^+_{G}$
+
+>[!warning]
+>E’ importante rispettare l’ordine dei passi 2 e 3 in quanto, se generalmente il risultato è comunque corretto, ci sono casi in cui questo non è vero
 
 ---
 ## Esempi
+
 >[!example]
 >$$R=(A,B,C,D,E,H)$$
 >$$F=\{AB\to CD,C\to E,AB\to E,ABC\to D\}$$
@@ -76,3 +80,24 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 >##### Passo 1
 >Prima di tutto riduciamo le parti destre a singleton
 >$$F=\{AB\to C, AB\to D,C\to E,AB\to E,ABC\to D\}$$
+>
+>##### Passo 2
+>Ora dobbiamo verificare se nelle dipendenze ci sono ridondanze nelle parti sinistre.
+>Cominciamo dalla dipendenza $AB\to C$ e controlliamo se $A\to C$ appartiene a $F^+$, cioè se $C \in(A)^+_{F}$. Ma $(A)^+_{F}=\{A\}$ e stessa cosa per $B$ infatti $(B)^+_{F}=\{B\}$, quindi la parte sinistra non può essere ridotta
+>
+>Lo stesso si verifica per le dipendenze $AB\to D$ e $AB\to E$
+>Proviamo allora a ridurre $ABC\to D$, poiché nell’insieme di dipendenze esiste $AB\to D$, possiamo non solo eliminare l’attributo $C$ ma anche tutta la dipendenza risultante che è un duplicato.
+>Alla fine di questo passo abbiamo un insieme
+>$$G=\{AB\to C,AB\to D,C\to E,AB\to E\}$$
+>
+>##### Passo 3
+>Vediamo ora se questo insieme contiene delle dipendenze ridondanti
+>Intanto possiamo considerare che $C$ viene determinato unicamente da $AB$, quindi eliminando la dipendenza $AB\to C$ non riusciremmo più ad inserirlo nella chiusura di $AB$ rispetto al nuovo insieme di dipendenze. Lo stesso vale per $D$
+>
+>Proviamo allora ad eliminare la dipendenza $C\to E$. Rispetto al nuovo insieme di dipendenze di prova $G=\{AB\to C,AB\to D,AB\to E\}$ abbiamo che $(C)^+_{G}=\{C\}$ in cui non compare $E$. La dipendenza deve dunque rimanere
+>
+>Proviamo infine ad eliminare $AB\to E$. Rispetto a $G=\{AB\to C,AB\to D,C\to E\}$ abbiamo che $(AB)^+_{G}=\{A,B,C,D,E\}$ in cui $E$ compare. Ciò significa che $E$ rientra comunque nella chiusura di $AB$ perché la dipendenza $AB\to E$, pur non comparendo in $G$, si trova in $G^+$, e quindi può essere eliminata
+>
+>La **copertura minimale** di $F$ è:
+>$$G=\{AB\to C,AB\to D,C\to E\}$$
+
