@@ -60,4 +60,6 @@ Riformulando la definizione in modo più informale:
 Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 1. applico la decomposizione → $AB\to C\Rightarrow A\to C,B\to C$
 2. data $X\to A$ devo verificare se $\forall X'\subset X$ ho che $F\equiv F-\{X\to A\}\cup \{X'\to A\}$
-	
+	![[Pasted image 20241122000018.png]]
+3. data $X\to A$ devo verificare se $F\equiv F-\{X\to A\}$
+4. 
