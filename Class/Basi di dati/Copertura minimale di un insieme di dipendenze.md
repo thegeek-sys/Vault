@@ -32,7 +32,7 @@ Presenteremo un algoritmo che raggiunge questo scopo
 >[!warning]
 >- La decomposizione che si ottiene dall’algoritmo che studieremo non è l’unica possibile che soddisfi le condizioni richieste
 >- Lo stesso algoritmo, a seconda dell’input di partenza (di cui parleremo) può fornire risultati diversi e tuttavia corretti
->- Attenzione a non confondere l’algoritmo
-
+>- Attenzione a non confondere l’algoritmo per la decomposizione con quelli per la verifica
+>- Proprio perché non esiste **la** decomposizione giusta, ma ci sono diverse possibilità, potrebbe succedere che la decomposizione da verificare non sia stata ottenuta tramite l’algoritmo, quindi usare l’algoritmo di decomposizione per controllare se produce la decomposizione da verificare, e ottenerne invece una diversa, non ci autorizza a concludere che la decomposizione da verificare non possegga le proprietà richieste 
 
 ---
