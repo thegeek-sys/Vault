@@ -69,4 +69,10 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 ## Esempi
 >[!example]
 >$$R=(A,B,C,D,E,H)$$
->$$$$
+>$$F=\{AB\to CD,C\to E,AB\to E,ABC\to D\}$$
+>
+>Trovare una copertura minimale $G$ di $F$
+>
+>##### Passo 1
+>Prima di tutto riduciamo le parti destre a singleton
+>$$F=\{AB\to C, AB\to D,C\to E,AB\to E,ABC\to D\}$$
