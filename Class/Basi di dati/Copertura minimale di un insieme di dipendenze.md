@@ -51,3 +51,13 @@ Dato un insieme di dipendenze $F$, la copertura minimale ha la sua stessa chiusu
 Riformulando la definizione in modo più informale:
 1. i dipendenti devono essere singleton
 2. $\not\exists X \to A \text{ t.c. }F\equiv F-\{X\to A\}\cup \{X'\to A\} \text{ con }X'\subset X$
+	$AB\to C$ può trovarsi nella copertura minimale se e solo se nella chiusura di $A$ e di $B$ non è presente $C$ (in caso contrario viene sostituito da $A\to C$ oppure da $B\to C$ in base a dove trovo la chiusura)
+3. $\not\exists X\to A \text{ t.c. }F\equiv F-\{X\to A\}$
+	posso eliminare una dipendenza se è possibile ricostruirla in $F^+$ per transitività
+
+---
+## Come calcolare la copertura minimale
+Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
+1. applico la decomposizione → $AB\to C\Rightarrow A\to C,B\to C$
+2. data $X\to A$ devo verificare se $\forall X'\subset X$ ho che $F\equiv F-\{X\to A\}\cup \{X'\to A\}$
+	
