@@ -5,6 +5,15 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Definizione|Definizione]]
+- [[#Teorema|Teorema]]
+	- [[#Teorema#Digressione|Digressione]]
+- [[#Algoritmo di verifica|Algoritmo di verifica]]
+	- [[#Algoritmo di verifica#Esempi|Esempi]]
+- [[#Teorema|Teorema]]
+---
 ## Introduction
 Quando si decompone uno schema occorre tenere presente (oltre al dover mantenere tutte le dipendenze originali), deve permettere di **ricostruire mediante il join naturale** ogni **istanza legale dello schema originario** (senza aggiunta di tuple estranee)
 [[Terza forma normale#La 3NF non basta#Esempi|Qui]] qualche esempio in cui ciò non accade

@@ -5,6 +5,17 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Cosa significa preservare le dipendenze?|Cosa significa preservare le dipendenze?]]
+- [[#Decomposizione di uno schema di relazione|Decomposizione di uno schema di relazione]]
+- [[#Equivalenza tra due insiemi di dipendenze funzionali|Equivalenza tra due insiemi di dipendenze funzionali]]
+- [[#Che si fa?|Che si fa?]]
+- [[#Lemma 2|Lemma 2]]
+- [[#Preservare le dipendenze funzionali|Preservare le dipendenze funzionali]]
+- [[#Verificare validità di una decomposizione|Verificare validità di una decomposizione]]
+- [[#Teorema|Teorema]]
+- [[#Esercizi|Esercizi]]
+---
 ## Cosa significa preservare le dipendenze?
 Uno schema tipicamente viene decomposto per due motivi:
 - **non è in 3NF**
