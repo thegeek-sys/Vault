@@ -46,6 +46,7 @@ $$
 &\mathbf{end}
 \end{align}
 $$
+
 >[!hint]
 $\mathbf{if}\text{ esiste una dipendenza funzionale in }F\text{ che coinvolge tutti gli attributi in }R$
 >- $R$ residuo dopo aver eventualmente eliminato gli attributi inseriti prima in $S$
@@ -63,3 +64,5 @@ Sia $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R
 >Dimostriamo separatamente le due proprietà della decomposizione
 >
 >##### $\rho$ preserva $F$
+>Sia $G=\cup_{i=1}^k \pi_{R_{i}}(F)$. Poiché per ogni dipendenza funzionale $X\to A\in F$ si ha che $XA\in \rho$ (è proprio uno dei sottoschemi), si ah che questa dipendenza di $F$ sarà sicuramente in $G$, quindi $F\subseteq G$ e, quindi $F^+\subseteq G^+$. L’inclusione $G^+\subseteq F^+$ è banalmente verificata in quanto per definizione, $G\subseteq F^+$
+
