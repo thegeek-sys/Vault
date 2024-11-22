@@ -53,5 +53,7 @@ $\mathbf{if}\text{ esiste una dipendenza funzionale in }F\text{ che coinvolge tu
 >$\mathbf{then\,\,}\rho:=\rho \cup \{R\}$
 >- in questo caso ci fermiamo anche se la copertura minimale contiene anche altre dipendenze; in altre parole la copertura minimale potrebbe contenere anche altre dipendenze
 
-
-
+---
+## Teorema
+Sia $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R$, che è una copertura minimale. L’algoritmo di decomposizione permette di calcolare in tempo polinomiale una decomposizione $\rho$ di $R$ tale che:
+- ogni schema di relazione $\rho$
