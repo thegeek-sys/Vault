@@ -71,7 +71,7 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 ---
 ## Esempi
 
->[!example]
+>[!example]- Esempio 1
 >$$R=(A,B,C,D,E,H)$$
 >$$F=\{AB\to CD,C\to E,AB\to E,ABC\to D\}$$
 >
@@ -100,4 +100,58 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 >
 >La **copertura minimale** di $F$ è:
 >$$G=\{AB\to C,AB\to D,C\to E\}$$
+
+>[!example]- Esempio 2
+>$$F=\{BC\to DE,C\to D,B\to D,E\to L,D\to A,BC\to AL\}$$
+>
+>Trovare una copertura minimale $G$ di $F$
+>
+>##### Passo 1
+>Prima di tutto riduciamo le parti destre a singleton
+>$$F=\{BC\to D, BC\to E,C\to D,B\to D,E\to L,D\to A,BC\to A, BC\to L\}$$
+>
+>##### Passo 2
+>Ora dobbiamo verificare se nelle dipendenze ci sono ridondanze nelle parti sinistre.
+>Cominciamo dalla dipendenza $BC\to D$ e controlliamo se $B\to D$ oppure $C\to D$ appartengono a $F^+$, cioè se $D \in(B)^+_{F}$ oppure $D\in(C)^+_{F}$. Notiamo però che in $F$ abbiamo sia $C\to D$ che $B\to D$, quindi $BC\to D$ è sicuramente ridondante. La eliminiamo e il nostro $F$ diventa
+>$$F=\{BC\to E,C\to D,B\to D,E\to L,D\to A,BC\to A,BC\to L\}$$
+>
+>Continuiamo con la dipendenza $BC\to E$; dobbiamo controllare se $B\to E$ oppure $C\to E$ appartengono a $F^+$, cioè se $E\in(B)^+_{F}$ oppure $E\in(C)^+_{F}$. Applicando l’algoritmo di chiusura otteniamo: $(B)^+_{F}=\{B,D,A\}$ e $(C)^+_{F}=\{C,D,A\}$, quindi non possiamo eliminare elementi a sinistra
+>
+>>[!hint]
+>>In effetti bastava osservare che $E$ compare a destra solo du questa dipendenza (è determinato funzionalmente solo da questa coppia di attributi) e quindi non avremmo potuto inserirlo nelle chiusure dei singoli attributi in nessun altro modo
+>
+>Continuiamo con $BC\to A$. Abbiamo già calcolato le chiusure di $B$ e $C$ ($F$ non è cambiamo oppure sarebbe un insieme equivalente), e in entrambe troviamo l’attributi $A$
+>
+>>[!warning]
+>>Questa volta le dipendenze $B\to A$ e $C\to A$ non sono in $F$, quindi non possiamo semplicemente eliminare $BC\to A$ ma va effettuata la sostituzione con una delle due.
+>
+>Scegliamo per esempio, come dipendenza da tenere $B\to A$
+>Abbiamo quindi:
+>$$F=\{BC\to E,C\to D,B\to D,E\to L,D\to A,B\to A,BC\to L\}$$
+>
+>Continuiamo con la dipendenza $BC\to L$; dobbiamo controllare se $B\to L$ oppure $C\to L$ appartengono a $F^+$, cioè se $L\in(B)^+_{F}$ oppure $L\in(C)^+_{F}$. Abbiamo già calcolato le chiusure di $B$ e $C$, e verifichiamo che in nessuna delle due troviamo l’attributo $L$, quindi non possiamo eliminare elementi a sinistra
+>
+>Alla fine del passo 2 abbiamo quindi:
+>$$F=\{BC\to E,C\to D,B\to D,E\to L,D\to A,B\to A,BC\to L\}$$
+>
+>##### Passo 3
+>Vediamo ora se questo insieme contiene delle dipendenze ridondanti
+>Intanto possiamo considerare che $E$ viene determinato unicamente da $BC$, quindi eliminando la dipendenza $BC\to E$ non riusciremmo più ad inserirlo nella chiusura di $BC$ rispetto al nuovo insieme di dipendenze.
+>
+>Proviamo allora ad eliminare la dipendenza $C\to D$. Rispetto al nuovo insieme di dipendenze di prova $G=\{BC\to E,B\to D,E\to L,D\to A,B\to A,BC\to L\}$ abbiamo che $(C)^+_{G}=\{C\}$ in cui non compare $D$. La dipendenza deve dunque rimanere
+>
+>Proviamo allora ad eliminare la dipendenza $B\to D$. Rispetto al nuovo insieme di dipendenze di prova $G=\{BC\to E,C\to D,E\to L,D\to A,B\to A,BC\to L\}$ abbiamo che $(B)^+_{G}=\{B,A\}$ in cui non compare $D$. La dipendenza deve dunque rimanere
+>
+>Proviamo allora ad eliminare la dipendenza $E\to L$. Rispetto al nuovo insieme di dipendenze di prova $G=\{BC\to E,C\to D,B\to D,D\to A,B\to A,BC\to L\}$ abbiamo che $(E)^+_{G}=\{E\}$ in cui non compare $L$. La dipendenza deve dunque rimanere
+>
+>Proviamo allora ad eliminare la dipendenza $D\to A$. Rispetto al nuovo insieme di dipendenze di prova $G=\{BC\to E,C\to D,B\to D,E\to L,B\to A,BC\to L\}$ abbiamo che $(D)^+_{G}=\{D\}$ in cui non compare $A$. La dipendenza deve dunque rimanere
+>
+>Proviamo allora ad eliminare la dipendenza $B\to A$. Rispetto al nuovo insieme di dipendenze di prova $G=\{BC\to E,C\to D,B\to D,E\to L,D\to A,BC\to L\}$ abbiamo che $(B)^+_{G}=\{B,D,A\}$ in cui compare $A$. La dipendenza dunque può essere eliminata.
+>Così la nostra $F$ diventa:
+>$$F=\{BC\to E,C\to D,B\to D,E\to L,D\to A,BC\to L\}$$
+>
+>Proviamo infine ad eliminare $BC\to L$. Rispetto a $G=\{BC\to E,C\to D,B\to D,E\to L,D\to A\}$ abbiamo che $(BC)^+_{G}=\{A,B,C,D,E,L\}$ in cui $L$ compare. La dipendenza dunque può essere eliminata.
+>
+>La **copertura minimale** di $F$ è:
+>$$G=\{BC\to E,C\to D,B\to D,E\to L,D\to A\}$$
 
