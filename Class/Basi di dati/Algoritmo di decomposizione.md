@@ -56,4 +56,10 @@ $\mathbf{if}\text{ esiste una dipendenza funzionale in }F\text{ che coinvolge tu
 ---
 ## Teorema
 Sia $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R$, che è una copertura minimale. L’algoritmo di decomposizione permette di calcolare in tempo polinomiale una decomposizione $\rho$ di $R$ tale che:
-- ogni schema di relazione $\rho$
+- ogni schema di relazione $\rho$ è in 3NF
+- $\rho$ preserva $F$
+
+>[!info] Dimostrazione
+>Dimostriamo separatamente le due proprietà della decomposizione
+>
+>##### $\rho$ preserva $F$
