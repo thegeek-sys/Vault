@@ -5,6 +5,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Che si fa ora?|Che si fa ora?]]
+	- [[#Introduction#Prima di continuare|Prima di continuare]]
+- [[#Copertura minimale|Copertura minimale]]
+- [[#Come calcolare la copertura minimale|Come calcolare la copertura minimale]]
+- [[#Esempi|Esempi]]
+---
 ## Introduction
 fino ad ora abbiamo parlato del perché possa essere necessario decomporre uno schema di relazione $R$, su cui è definito un insieme di dipendenze funzionali $F$, soprattutto in relazione a violazioni della 3NF che causano diversi tipi di anomalie
 
@@ -155,3 +163,27 @@ Per trovare la copertura minimale su un insieme di dipendenze $F$ devo:
 >La **copertura minimale** di $F$ è:
 >$$G=\{BC\to E,C\to D,B\to D,E\to L,D\to A\}$$
 
+>[!example]- Esempio 3
+>$$F=\{AB\to C,A\to E,E\to D,D\to C,B\to A\}$$
+>
+>Trovare una copertura minimale $G$ di $F$
+>
+>##### Passo 1
+>Non c’è bisogno di decomporre le parti destre delle dipendenze in $F$ infatti sono già singleton
+>
+>##### Passo 2
+>Ora dobbiamo verificare se nelle dipendenze ci sono ridondanze nelle parti sinistre.
+>Verifichiamo se la dipendenza $AB\to C$ ha attributi ridondanti a sinistra. Verifichiamo se $C\in(A)^+_{F}$ oppure $C\in(B)^+_{F}$; $(A)^+_{F}=\{A,E,D,C\}$ e $(B)^+_{F}=\{B,A,E,D,C\}$. Quindi $AB\to C$ può essere sostituito con $A\to C$ oppure con $B\to C$.
+>Per questo esempio sceglieremo $A\to C$
+>Abbiamo quindi:
+>$$F=\{A\to C,A\to E,E\to D,D\to C,B\to A\}$$
+>
+>##### Passo 3
+>Vediamo ora se questo insieme contiene delle dipendenze ridondanti
+>
+>Proviamo allora ad eliminare la dipendenza $A\to C$. Rispetto al nuovo insieme di dipendenze di prova $G=\{A\to E,E\to D,D\to C,B\to A\}$ abbiamo che $(A)^+_{G}=\{A,C,D,E\}$ in cui compare $C$. La dipendenza deve dunque può essere rimossa
+>
+>Notiamo che nessun attributo compare a destra di più di una dipendenza, quindi non potrebbe rientrare nelle chiusure delle parti sinistre per transitività, quindi nessuna altra dipendenza può essere eliminata
+>
+>La **copertura minimale** di $F$ è:
+>$$G=\{A\to E,E\to D,D\to C,B\to A\}$$

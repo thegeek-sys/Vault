@@ -10,6 +10,7 @@
 - [[Decomposizioni che preservano le dipendenze]]
 - [[Decomposizioni che hanno un join senza perdita]]
 - [[Copertura minimale di un insieme di dipendenze]]
+- [[Algoritmo di decomposizione]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
