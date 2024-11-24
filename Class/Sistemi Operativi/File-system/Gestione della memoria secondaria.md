@@ -103,3 +103,24 @@ A volte occorre il consolidamento:
 
 ---
 ## Gestione dello spazio libero
+Come è importante gestire lo spazio libero, è altrettanto importante gestire anche quello occupato
+
+Per allocare spazio per i file, ci sono diverse tecniche, quella più naturale e semplice da pensare sarebbe quello di fare il complemento dei blocchi presenti all’interno della allocation table, ma non è realistico. Per questo motivo serve una struttura dati dedicata, che tenga traccia dell’**allocazione di disco** (oltre a quella per i file)
+
+Dunque ogni volta che si alloca o cancella un file, la tabella di allocazione di disco va aggiornata
+
+Abbiamo dunque vari metodi:
+- tabelle di bit
+- porzioni libere concatenate
+- indicizzazione
+- lista dei blocchi liberi
+
+### Tabelle di bit
+Viene creato un vettore con **un bit per ogni blocco su disco**, con `0` se libero e `1` se occupato
+
+Viene in questo modo minimizzato lo spazio richiesto e risulta compatibile con ogni schema visto finora, ma se il disco è quasi pieno, la ricerca di uno spazio libero può richiedere molto tempo (anche se questo problema è in parte risolvibile con delle tabelle riassuntive, mantengo infatti in RAM delle tabelle riassuntive in cui ho uno zero se tot blocchi sono tutti liberi, mentre un uno nel caso in cui almeno uno di questi è occupato, riducendo di molto lo spazio occupato)
+
+### Porzioni libere concatenate
+Le **porzioni libere**, usando un ragionamento complementare all’allocazione concatenata, possono essere **concatenate le une alle altre** usando, per ogni blocco libero, un puntatore ed un intero per la dimensione (numero di blocchi liberi successivi a quello considerato). In questo modo viene sostanzialmente eliminato l’overhead di spazio
+
+Ci sono però alcuni problemi, infatti: se ci sta molta frammentazione allora le porzioni sono tutte quante da un blocco
