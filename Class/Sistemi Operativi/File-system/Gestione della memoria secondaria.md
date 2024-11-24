@@ -5,6 +5,30 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Allocazione di spazio per i file|Allocazione di spazio per i file]]
+- [[#Preallocazione vs. allocazione dinamica|Preallocazione vs. allocazione dinamica]]
+- [[#Dimensioni delle porzioni|Dimensioni delle porzioni]]
+- [[#Come allocare spazio per i file|Come allocare spazio per i file]]
+	- [[#Come allocare spazio per i file#Allocazione contigua|Allocazione contigua]]
+		- [[#Allocazione contigua#Compattazione|Compattazione]]
+	- [[#Come allocare spazio per i file#Allocazione concatenata|Allocazione concatenata]]
+		- [[#Allocazione concatenata#Consolidamento|Consolidamento]]
+	- [[#Come allocare spazio per i file#Allocazione indicizzata|Allocazione indicizzata]]
+		- [[#Allocazione indicizzata#Porzioni di lunghezza fissa|Porzioni di lunghezza fissa]]
+		- [[#Allocazione indicizzata#Porzioni di lunghezza variabile|Porzioni di lunghezza variabile]]
+- [[#Gestione dello spazio libero|Gestione dello spazio libero]]
+	- [[#Gestione dello spazio libero#Tabelle di bit|Tabelle di bit]]
+	- [[#Gestione dello spazio libero#Porzioni libere concatenate|Porzioni libere concatenate]]
+	- [[#Gestione dello spazio libero#Indicizzazione|Indicizzazione]]
+	- [[#Gestione dello spazio libero#Lista dei blocchi liberi|Lista dei blocchi liberi]]
+- [[#Volumi|Volumi]]
+- [[#Dati e metadati|Dati e metadati]]
+		- [[#Lista dei blocchi liberi#Journaling|Journaling]]
+			- [[#Journaling#Recupero dati|Recupero dati]]
+			- [[#Journaling#Alternative|Alternative]]
+---
 ## Introduction
 Il SO è responsabile dell’assegnamento di blocchi a file, ma ci sono due problemi correlati (influenzati l’un l’altro):
 - occorre allocare spazio per i file, e mantenerne traccia una volta allocato
@@ -160,5 +184,20 @@ Se il computer viene spento all’improvviso senza una procedura di chiusura (es
 Per risolvere questo tipo di problemi mi basta scrivere un bit all’inizio del disco, che dice se il sistema è stato spendo correttamente; al reboot, se il bit è $0$, occorre eseguire un programma di ripristino del disco, operazione assai complessa senza il journaling (basta il log!!)
 
 #### Journaling
-In una zona dedicata del disco in cui scrivere le operazioni, prima di
-farne il commit nel file system
+Per il journaling è necessaria zona dedicata del disco in cui scrivere le operazioni, prima di farne il commit nel file system. Generalmente questo viene implementato come log circolare in modo tale da evitare di avere file system corrotti infatti: se la scrittura nel journal è completa, in caso di crash durante la scrittura nel file system è possibilerecuperare l’errore, se c’è un crash durante la scrittura nel journal, il file system rimane integro
+
+##### Recupero dati
+Se al reboot il bit di shutdown è `0`:
+1. Confronta il journal allo stato corrente del file system
+2. Correggi inconsistenze nel file system basandosi nelle operazioni salvate nel journal
+	- se la scrittura nel journal  è completa, in caso di crash durante la scrittura nel file system è possibile recuperare l’errore
+	- se c’è un crash durante la scrittura nel journal, il file system rimane integro
+
+Tipi di journaling:
+- **fisico** → copia nel journal tutti i blocchi che dovranno poi essere scritti nel file system, inclusi metadati; se c’è un crash durante la scrittura nel file system, è sufficiente copiare il contenuto dal journal al file system al reboot successivo
+- **logico** → copia nel journal soltanto i metadati delle operazioni effettuate (es. modifica blocchi liberi dopo cancellazione file); se c’è un crash, si copiano i metadati dal journal al file system, ma questo può causare corruzione dei dati (append a file modifica la lunghezza, ma il contenuto è perso perché non salvato nel journal)
+
+##### Alternative
+- Soft Updates File Systems → Riordina scritture su file system in modo da non avere mai inconsistenze, o meglio, consentono solo alcuni tipi di inconsistenze che non portano a perdita di dati (*storage leaks*)
+- Log-Structured File Systems → L’intero file system è strutturato come un buffer circolare, detto log; dati e metadati sono scritti in modo sequenziale, sempre alla fine del log e ci possono essere diverse versioni dello stesso file, corrispondenti a diversi istanti temporali
+- Copy-on-Write File Systems → Evitano sovrascritture dei contenuti dei file; scrivono nuovi contenuti in blocchi vuoti, poi aggiornano i metadati per puntare ad i nuovi contenuti
