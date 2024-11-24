@@ -1,9 +1,19 @@
 ---
 Created: 2024-11-24
 Class: "[[Sistemi Operativi]]"
-Related: 
+Related:
+  - "[[File-system]]"
 Completed:
 ---
+---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Inode|Inode]]
+	- [[#Inode#Inode in Free BSD|Inode in Free BSD]]
+- [[#Allocazione di file|Allocazione di file]]
+- [[#Inode e directory|Inode e directory]]
+- [[#Accesso ai file|Accesso ai file]]
+- [[#Gestione file condivisi|Gestione file condivisi]]
 ---
 ## Introduction
 In Unix ci sono sei tipi di file:
@@ -63,3 +73,9 @@ Per ogni file, ci sono 3 terne di permessi: lettura, scrittura ed esecuzione. Di
 ![[Pasted image 20241124195008.png]]
 
 ---
+## Gestione file condivisi
+Come si fa a gestire i file che devono essere condivisi in più directory?
+Fare una copia del file è inutilmente costoso quindi si sono strutturate due alternative: **symbolic links** e **hard link**
+
+I symbolic links contengono solamente il path completo sul file system verso il file (esiste un solo inode del file originale), ma comporta che possano esistere symlink a file non più esistenti
+Gli hard link sono dei puntatori diretti al descrittori del file originale (all’inode, questo contiene inoltre un contatore dei file che lo referenziano) e il file condiviso non può essere cancellato finché esiste un link remoto di accesso 
