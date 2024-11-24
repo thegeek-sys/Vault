@@ -50,3 +50,20 @@ E’ una *directory table* che contiene tutti i file entry per la directory root
 In FAT32 è inclusa nella regione dati, insieme a file e directory normali, e non ha limitazioni sulla dimensione
 #### Regione dati
 E’ la regione del volume in cui sono effettivamente contenuti i dati dei file e directory.
+Le directory, chiaramente, seguono la struttura FAT vista prima, i files sono semplicemente i dati contenuti nei vari cluster
+
+### Limitazioni
+- Supporta file di dimensione massima $4\text{GB}$ ($32 \text{ bit}$ nel campo dimensione file nelle directory)
+- Non implementa journaling
+- Non consente alcun meccanismo di controllo di accesso ai file/directory
+- Ha un limite di dimensione delle partizioni a $2\text{TB}$ ($2^{32}$ settori da $512\text{GB}$)
+
+---
+## NTFS
+L’NTFS (*New Technology FIle System*) è il file-system  adottato a partire da Windows NT in poi.
+Questo file system utilizza `UNICODE` per l’encoding dei nomi dei file, che possono raggiungere lunghezza massima di $255$ caratteri
+A differenza del precedente FAT, qui i file sono definiti da un insieme di attributi rappresentati come un *byte stream*, inoltre supporta hard e soft link e implementa il journaling
+
+### Formato del volume
+![[Pasted image 20241124224819.png|center]]
+### Regione boot sector
