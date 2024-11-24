@@ -141,4 +141,18 @@ Dunque questa questa lista può essere organizzata come pila; per allocare spazi
 
 ---
 ## Volumi
-Un volume è essenzialmente quello che viene chiamato un disco *”logico”*, ovvero una **partizione di un disco** che può essere trattata in **maniera indipendente dal file system**
+Un volume è essenzialmente quello che viene chiamato un disco *”logico”*, ovvero una **partizione di un disco** che può essere trattata in **maniera indipendente dal file system** (oppure più dischi messi insieme e visti come un disco solo, [[RAID#Dischi RAID#Dischi multipli|LVM]])
+
+Dunque i volumi sono un insieme di settori in memoria secondaria che possono essere usati dal SO o dalle applicazioni
+I settori di un volume non devono necessariamente essere contigui, ma appariranno come tali al SO e alle applicazioni
+Un volume potrebbe essere il risultato dell’unione di volumi più piccoli
+
+---
+## Dati e metadati
+**Dati** → contenuto di un file
+**Metadati** → lista blocchi liberi, lista blocchi all’interno del file, data di ultima modifica, proprietario, …
+
+I metadati, come i dati, si devono trovare su disco, perché devono essere persistenti, ma per efficienza vengono anche tenuti in memoria principale.
+Però mantenere **consistenti i metadati** in memoria principale e su disco è **inefficiente**, quindi si fa solo di tanto in tanto, quando il disco è poco usato e con più aggiornamenti insieme.
+Questa tecnica è chiamata *journaling* e consiste di anziché di fare le modifiche a dati e metadati non appena si aggiornano, si tiene traccia di cosa è stato modificato in una zona di disco dedicata (*log*), per poi scrivere tutto insieme in un secondo momento (in caso di reboot dopo un crash, basta leggere il log)
+

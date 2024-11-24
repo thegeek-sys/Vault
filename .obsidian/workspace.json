@@ -179,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -284,6 +283,7 @@
   "active": "7017387221a286dd",
   "lastOpenFiles": [
     "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
+    "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
     "Files/Pasted image 20241124165749.png",
     "Files/Pasted image 20241124165701.png",
@@ -304,7 +304,6 @@
     "Files/Pasted image 20241121212859.png",
     "Files/Pasted image 20241121212835.png",
     "Files/Pasted image 20241121212054.png",
-    "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/Gestione della memoria/Partizionamento della memoria.md",
     "Class/Sistemi Operativi/File-system/Directory.md",
     "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
