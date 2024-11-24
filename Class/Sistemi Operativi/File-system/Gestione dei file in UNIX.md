@@ -17,7 +17,7 @@ In Unix ci sono sei tipi di file:
 ---
 ## Inode
 Inode sta per *”index node”* (ispirato al metodo di [[Gestione della memoria secondaria#Allocazione indicizzata#Porzioni di lunghezza fissa|allocazione indicizzato]], con dimensione fissa dei blocchi)
-Questa struttura dati contiene le informazioni essenziali per un dato file, ma un dato inode potrebbe essere associato a più nomi di file
+Questa struttura dati contiene le informazioni essenziali per un dato file (che rientra in quelli sopra elencati, anche la directory), ma un dato inode potrebbe essere associato a più nomi di file
 
 ### Inode in Free BSD
  
