@@ -79,3 +79,7 @@ Con questo tipo di allocazione non risulta essere un problema accedere ad un fil
 
 #### Consolidamento
 ![[Pasted image 20241118220703.png|500]]
+
+### Allocazione indicizzata
+L’allocazione indicizzata è quella che, in seguito ad alcune modifiche, viene utilizzata nei computer odierni. Risulta essere una via di mezzo tra l’allocazione contigua e quella concatenata, risolvendo quasi tutti i problemi che le precedenti avevano.
+
