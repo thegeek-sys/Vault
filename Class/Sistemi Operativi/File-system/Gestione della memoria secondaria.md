@@ -154,5 +154,11 @@ Un volume potrebbe essere il risultato dell’unione di volumi più piccoli
 
 I metadati, come i dati, si devono trovare su disco, perché devono essere persistenti, ma per efficienza vengono anche tenuti in memoria principale.
 Però mantenere **consistenti i metadati** in memoria principale e su disco è **inefficiente**, quindi si fa solo di tanto in tanto, quando il disco è poco usato e con più aggiornamenti insieme.
-Questa tecnica è chiamata *journaling* e consiste di anziché di fare le modifiche a dati e metadati non appena si aggiornano, si tiene traccia di cosa è stato modificato in una zona di disco dedicata (*log*), per poi scrivere tutto insieme in un secondo momento (in caso di reboot dopo un crash, basta leggere il log)
+Questa tecnica è chiamata *journaling* e consiste di anziché di fare le modifiche a dati e metadati non appena si aggiornano, **si tiene traccia di cosa è stato modificato** in una zona di disco dedicata (*log*), per poi scrivere tutto insieme in un secondo momento (in caso di reboot dopo un crash, basta leggere il log)
 
+Se il computer viene spento all’improvviso senza una procedura di chiusura (es. mancanza di corrente) o se il disco viene rimosso senza dare un appropriato comando (`unmount`) potrebbe succedere che il journaling mi possa dare problemi.
+Per risolvere questo tipo di problemi mi basta scrivere un bit all’inizio del disco, che dice se il sistema è stato spendo correttamente; al reboot, se il bit è $0$, occorre eseguire un programma di ripristino del disco, operazione assai complessa senza il journaling (basta il log!!)
+
+#### Journaling
+In una zona dedicata del disco in cui scrivere le operazioni, prima di
+farne il commit nel file system
