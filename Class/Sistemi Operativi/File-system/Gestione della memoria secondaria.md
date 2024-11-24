@@ -83,3 +83,4 @@ Con questo tipo di allocazione non risulta essere un problema accedere ad un fil
 ### Allocazione indicizzata
 L’allocazione indicizzata è quella che, in seguito ad alcune modifiche, viene utilizzata nei computer odierni. Risulta essere una via di mezzo tra l’allocazione contigua e quella concatenata, risolvendo quasi tutti i problemi che le precedenti avevano.
 
+La tabella di allocazione dei file contiene, apparentemente una sola entry, con l’indirizzo di un blocco. Questo blocco, in realtà, ha una entry per ogni porzione allocata al file (quindi fa parte della tabella a tutti gli effetti pur trovandosi in un blocco apparentemente indistinguibile da quelli usati per i dati del file)
