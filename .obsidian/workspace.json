@@ -95,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -198,6 +199,7 @@
   },
   "active": "231684eb47696c31",
   "lastOpenFiles": [
+    "Files/Pasted image 20241124221953.png",
     "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
     "Class/Sistemi Operativi/File-system/Directory.md",
@@ -235,7 +237,6 @@
     "Flet-notes/2024-11-14_BD.md",
     "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Tips esame.md",
-    "Class/Sistemi Operativi/Gestione dell'Input-Output/Scheduling del disco.md",
     "Class/Sistemi Operativi/Gestione della memoria",
     "Dispositivi di I",
     "Class/Sistemi Operativi/Gestione dell'Input-Output",
