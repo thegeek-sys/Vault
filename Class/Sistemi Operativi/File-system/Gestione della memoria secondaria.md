@@ -107,6 +107,9 @@ Come è importante gestire lo spazio libero, è altrettanto importante gestire a
 
 Per allocare spazio per i file, ci sono diverse tecniche, quella più naturale e semplice da pensare sarebbe quello di fare il complemento dei blocchi presenti all’interno della allocation table, ma non è realistico. Per questo motivo serve una struttura dati dedicata, che tenga traccia dell’**allocazione di disco** (oltre a quella per i file)
 
+>[!hint]
+>Mentre per l’allocazione del file, quello viene caricato in RAM solo una volta aperto, è necessario che si sappia in RAM (almeno in minima parte) quanto e quale sia lo spazio libero sul disco
+
 Dunque ogni volta che si alloca o cancella un file, la tabella di allocazione di disco va aggiornata
 
 Abbiamo dunque vari metodi:
@@ -123,4 +126,15 @@ Viene in questo modo minimizzato lo spazio richiesto e risulta compatibile con o
 ### Porzioni libere concatenate
 Le **porzioni libere**, usando un ragionamento complementare all’allocazione concatenata, possono essere **concatenate le une alle altre** usando, per ogni blocco libero, un puntatore ed un intero per la dimensione (numero di blocchi liberi successivi a quello considerato). In questo modo viene sostanzialmente eliminato l’overhead di spazio
 
-Ci sono però alcuni problemi, infatti: se ci sta molta frammentazione allora le porzioni sono tutte quante da un blocco
+Ci sono però alcuni problemi, infatti: se ci sta molta frammentazione allora le porzioni sono tutte quante da un blocco e la lista diventa lunga ed è molto lungo cancellare file molto frammentati (infatti non si può rimuovere una sola entry di questa tabella, ma bisogna eliminarne molteplici)
+
+### Indicizzazione
+Allo stesso modo, usando un ragionamento complementare all’indicizzazione dello spazio occupato, si può **indicizzare lo spazio libero** (i file-system principali di Linux utilizzano questo metodo)
+
+### Lista dei blocchi liberi
+In questo caso, a differenza delle porzioni libere concatenate, c’è una qualche zona di memoria che devo riservare a parte in cui si mette una **lista di indici corrispondenti ai blocchi liberi**.
+
+Nonostante possa sembrare poco efficiente in realtà l’overhead a livello di spazio non è grande; supponiamo che per ogni indirizzo siano necessari $4 \text{ bytes}$ e i blocchi siano da $512 \text{ bytes}$, vuol dire che richiederebbe l’$1\%$ di spazio su disco.
+Però con questo tipo di allocazione, si riesce abbastanza bene a fare in modo di avere parti di queste liste in memoria principale.
+
+Dunque questa questa lista può essere organizzata come pila; per allocare spazio libero bisogna fare un `pop` (quello che prima era libero ora non lo è più) quando invece devo deallocare dello spazio allocato devo fare un `push`
