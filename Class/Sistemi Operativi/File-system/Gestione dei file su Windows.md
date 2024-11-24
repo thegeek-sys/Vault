@@ -28,6 +28,15 @@ La parte della FAT relativa ai file aperti deve essere sempre mantenuta interame
 
 In questo modo però risulta avere overhead di spazio non indifferente infatti ci sta un puntatore ($32 \text{ bit}$) per riga, e tante righe quanti cluster del disco. Con un disco da $100\text{ GB}$ e cluster da $1\text{ KB}$, la FAT ha $100$ milioni di righe, dunque $4\text{B}\cdot 1.000.000 =400\text{ MB}$ per la FAT
 
+### Funzionamento
+Data la tabella FAT di puntatori, il puntatore i-esimo:
+- se è tutti zero → l’i-esimo cluster del disco è libero
+- se è tutti uno → valore speciale, vuol dire che è l’ultimo blocco del file
+- se non è zero e non è un valore speciale → indica il cluster dove trovare il prossimo pezzo del file, oltre che la prossima entry della FAT per questo file
+
+![[Pasted image 20241124223239.png|600]]
+Ci sta una corrispondenza uno ad uno con i cluster nel disco. Ad esempio il FILE3 punta alla settima entry del FAT, in cui ci stanno memorizzati tutti 1; il che vuol dire che il settimo cluster è l’unico in cui ci sono i dati relativi al FILE3
+
 ### Struttura
 ![[Pasted image 20241124221953.png|center]]
 
@@ -36,5 +45,6 @@ Questa regione contiene le informazioni necessarie per l’accesso al volume ovv
 #### FAT
 Questa regione contiene due copie della file allocation table (utile in caso la tabella principale si corrompa) che sono sincronizzate ad ogni scrittura su disco
 Permette, come già detto, di mappare il contenuto della regione dati, indicando a quali directory/file i diversi cluster appartengono
-
-### Funzionamento
+#### Regione Root Directory
+E’ una *directory table* che contiene tutti i file entry per la directory root di sistema (che ha dimensione fissa e limitata in FAT12 e FAT16, $265 \text{ entries}$)
+In FAT32 è inclusa nella regione dati, insieme a file e directory normali, e non ha limitazioni sulla dimensione
