@@ -76,5 +76,13 @@ Questa viene implementata come un file composto da una **sequenza lineare di rec
 
 ### Record
 Ogni record contiene una lista di attributi: $\text{(attributo, valore)}$
-- **attributo** → intero che indica il tipo di attributo (il contenuto di un f)
+- **attributo** → intero che indica il tipo di attributo (il contenuto di un file $\text{(\$DATA)}$)
 - **valore** → sequenza di byte
+
+Se il valore dell’attributo è incluso direttamente nel record si parla di attributo *residente* mentre se è puntato dal record si parla di attributo *non residente*. Ad esempio, se il valore dell’attributo è troppo grande e non sta record sarà non residente (es. $\$\text{DATA}$)
+
+I primi $27$ record sono riservati per i metadati del file system:
+- record 0 → descrive l’MFT stesso, in particolare, tutti i file nel volume
+- record 1 → contiene una copia dei primi record dell’MFT in modo non residente
+- record 2 → contiene le informazioni di journaling (metadata-only)
+- record 3 -
