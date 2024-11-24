@@ -26,7 +26,7 @@ I puntatori sono valori di $12$, $16$ o $32 \text{ bit}$ (FAT-12, FAT-16, FAT-32
 
 La parte della FAT relativa ai file aperti deve essere sempre mantenuta interamente in memoria principale; questa parte consente infatti di identificare i blocchi di un file e accedervi seguendo sequenzialmente i collegamenti nella FAT (un file è semplicemente una catena di indici, risulta essere un misto tra allocazione concatenata e indicizzata)
 
-In questo modo però risulta avere overhead di spazio non indifferente infatti ci sta un puntatore ($32 \text{ bit}$) per riga, e tante righe quanti cluster occupati dal file. Con un disco da $100\text{ GB}$ e cluster da $1\text{ KB}$, la FAT ha $100$ milioni di righe, dunque $4\text{B}\cdot 1.000.000 =400\text{ MB}$ per la FAT
+In questo modo però risulta avere overhead di spazio non indifferente infatti ci sta un puntatore ($32 \text{ bit}$) per riga, e tante righe quanti cluster del disco. Con un disco da $100\text{ GB}$ e cluster da $1\text{ KB}$, la FAT ha $100$ milioni di righe, dunque $4\text{B}\cdot 1.000.000 =400\text{ MB}$ per la FAT
 
 ### Struttura
 ![[Pasted image 20241124221953.png|center]]
