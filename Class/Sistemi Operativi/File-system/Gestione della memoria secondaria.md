@@ -81,6 +81,25 @@ Con questo tipo di allocazione non risulta essere un problema accedere ad un fil
 ![[Pasted image 20241118220703.png|500]]
 
 ### Allocazione indicizzata
-L’allocazione indicizzata è quella che, in seguito ad alcune modifiche, viene utilizzata nei computer odierni. Risulta essere una via di mezzo tra l’allocazione contigua e quella concatenata, risolvendo quasi tutti i problemi che le precedenti avevano.
+L’allocazione indicizzata è quella che, in seguito ad alcune modifiche, viene utilizzata nei computer odierni. Risulta essere una **via di mezzo** tra l’allocazione contigua e quella concatenata, risolvendo quasi tutti i problemi che le precedenti avevano.
 
-La tabella di allocazione dei file contiene, apparentemente una sola entry, con l’indirizzo di un blocco. Questo blocco, in realtà, ha una entry per ogni porzione allocata al file (quindi fa parte della tabella a tutti gli effetti pur trovandosi in un blocco apparentemente indistinguibile da quelli usati per i dati del file)
+La tabella di allocazione dei file contiene, apparentemente **una sola entry**, con l’indirizzo di un blocco. Questo blocco, in realtà, ha **una entry per ogni porzione allocata al file** (quindi fa parte della tabella a tutti gli effetti pur trovandosi in un blocco apparentemente indistinguibile da quelli usati per i dati del file).
+
+E se un file è troppo grande e quindi in un solo blocco non si riescono a contenere tutti gli indici agli altri blocchi contenenti i dati del file? Si fanno più livelli (es. i-node di Unix-Linux).
+Ovviamente ci dev’essere un **bit** che dica se un **blocco è composto da dati o è un indice**
+
+L’allocazione può essere con:
+- blocchi di **lunghezza fissa** → niente frammentazione esterna
+- blocchi di **lunghezza variabile** → migliora la località ()
+A volte occorre il consolidamento:
+- blocchi di lunghezza fissa → migliora la località
+- blocchi di lunghezza variabile → riduce la dimensione dell’indice
+
+#### Porzioni di lunghezza fissa
+![[Pasted image 20241124165701.png|500]]
+
+#### Porzioni di lunghezza variabile
+![[Pasted image 20241124165749.png|500]]
+
+---
+## Gestione dello spazio libero
