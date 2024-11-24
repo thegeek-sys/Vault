@@ -40,4 +40,4 @@ Tutti gli inode si trovano in una zona di disco dedicata (*i-list*), viene però
 ![[Pasted image 20241124191720.png]]
 
 Per file piccoli (di grandezza massima di $13\cdot \text{dimensione di un blocco}$), i dati sono puntati direttamente da `direct`
-Infatti i blocchi `direct` puntano ai cosiddetti **”blocchi di indirizzamento”** ovvero quei blocchi in cui sono contenuti gli indirizzi dei blocchi in cui si trovano i dati veri e propri. Quando 
+Infatti i blocchi `direct` puntano ai cosiddetti **”blocchi di indirizzamento”** ovvero quei blocchi in cui sono contenuti gli indirizzi dei blocchi in cui si trovano i dati veri e propri. Quando questi non sono sufficienti, si utilizzano i puntatori indiretti singoli, doppi e tripli
