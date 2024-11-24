@@ -36,3 +36,7 @@ Tutti gli inode si trovano in una zona di disco dedicata (*i-list*), viene però
 - Numero di blocchi, o numero di file (per le directory)
 - Dimensione dei blocchi
 - Sequenze di puntatori a blocchi
+
+![[Pasted image 20241124191720.png]]
+
+Per file piccoli (di grandezza massima di $13\cdot \text{dimensione di un blocco}$), i dati sono puntati direttamente da `direct`

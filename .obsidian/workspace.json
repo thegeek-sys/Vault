@@ -150,7 +150,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -309,10 +309,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c79c400decaeb5ad",
+  "active": "ef8660e8a92280c5",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
     "Class/Sistemi Operativi/File-system/Gestione dei file in UNIX.md",
+    "Files/Pasted image 20241124191720.png",
+    "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
     "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
     "Files/Pasted image 20241124165749.png",
@@ -333,7 +334,6 @@
     "Files/Pasted image 20241121213457.png",
     "Files/Pasted image 20241121212859.png",
     "Files/Pasted image 20241121212835.png",
-    "Files/Pasted image 20241121212054.png",
     "Class/Sistemi Operativi/Gestione della memoria/Partizionamento della memoria.md",
     "Class/Sistemi Operativi/File-system/Directory.md",
     "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
@@ -348,7 +348,6 @@
     "Class/Basi di dati/Esercizi.md",
     "Class/Basi di dati/Tips esame.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Scheduling del disco.md",
-    "Class/Sistemi Operativi/Gestione della memoria/Gestione della memoria in Linux.md",
     "Class/Sistemi Operativi/Gestione della memoria",
     "Dispositivi di I",
     "Class/Sistemi Operativi/Gestione dell'Input-Output",
