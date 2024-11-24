@@ -181,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "LVM",
+                "query": "metadat",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -312,8 +312,8 @@
   "active": "c79c400decaeb5ad",
   "lastOpenFiles": [
     "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
-    "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/File-system/Gestione dei file in UNIX.md",
+    "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
     "Files/Pasted image 20241124165749.png",
     "Files/Pasted image 20241124165701.png",
