@@ -58,3 +58,8 @@ Una directory può essere letta da ogni utente ma modificata solo dal sistema op
 
 ---
 ## Accesso ai file
+Per ogni file, ci sono 3 terne di permessi: lettura, scrittura ed esecuzione. Di queste terne ce ne sta una per il proprietario, una per il suo gruppo (insieme di utenti) e una per tutti gli altri
+
+![[Pasted image 20241124195008.png]]
+
+---
