@@ -46,5 +46,7 @@ Questa regione contiene le informazioni necessarie per l’accesso al volume ovv
 Questa regione contiene due copie della file allocation table (utile in caso la tabella principale si corrompa) che sono sincronizzate ad ogni scrittura su disco
 Permette, come già detto, di mappare il contenuto della regione dati, indicando a quali directory/file i diversi cluster appartengono
 #### Regione Root Directory
-E’ una *directory table* che contiene tutti i file entry per la directory root di sistema (che ha dimensione fissa e limitata in FAT12 e FAT16, $265 \text{ entries}$)
+E’ una *directory table* che contiene tutti i file entry per la directory root di sistema (che ha dimensione fissa e limitata in FAT12 e FAT16, $265 \text{ entries}$). Contiene dunque tutti i metadati dei file (nome, timestamp, dimensione, ecc.)
 In FAT32 è inclusa nella regione dati, insieme a file e directory normali, e non ha limitazioni sulla dimensione
+#### Regione dati
+E’ la regione del volume in cui sono effettivamente contenuti i dati dei file e directory.
