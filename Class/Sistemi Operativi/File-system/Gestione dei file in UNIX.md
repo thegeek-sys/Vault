@@ -20,3 +20,4 @@ Inode sta per *”index node”* (ispirato al metodo di [[Gestione della memoria
 Questa struttura dati contiene le informazioni essenziali per un dato file, ma un dato inode potrebbe essere associato a più nomi di file
 
 ### Inode in Free BSD
+ 
