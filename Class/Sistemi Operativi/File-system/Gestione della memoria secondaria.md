@@ -44,6 +44,9 @@ Per l’allocazione di spazio per i file ci sono vari problemi da affontare:
 - quale deve essere il metodo di allocazione: **contiguo**, **concatenato** o **indicizzato**
 - gestione della *file allocation table* (per ogni file, serve a mantenere le informazioni su dove si trovano le porzioni che lo compongono sul disco)
 
+>[!warning]
+>In Unix non esiste una File Allocation Table vera e propria, si utilizzano gli inode
+
 ---
 ## Preallocazione vs. allocazione dinamica
 Quando si parla di **preallocazione** si intende che la dimensione massima di un file viene dichiarata a tempo di creazione, che risulta facilmente stimabile in alcune applicazioni (es. risultato di compilazioni, file che forniscono sommari sui dati) ma difficile su molte altre infatti utenti ed applicazioni tendono a sovrastimare la dimensione risultando in uno spreco di spazio su disco, a fronte di un modesto risparmo di computazione.
