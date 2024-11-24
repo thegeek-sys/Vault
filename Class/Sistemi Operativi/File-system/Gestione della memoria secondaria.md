@@ -113,10 +113,10 @@ Per allocare spazio per i file, ci sono diverse tecniche, quella più naturale e
 Dunque ogni volta che si alloca o cancella un file, la tabella di allocazione di disco va aggiornata
 
 Abbiamo dunque vari metodi:
-- tabelle di bit
-- porzioni libere concatenate
-- indicizzazione
-- lista dei blocchi liberi
+- **tabelle di bit**
+- **porzioni libere concatenate**
+- **indicizzazione**
+- **lista dei blocchi liberi**
 
 ### Tabelle di bit
 Viene creato un vettore con **un bit per ogni blocco su disco**, con `0` se libero e `1` se occupato
@@ -137,4 +137,8 @@ In questo caso, a differenza delle porzioni libere concatenate, c’è una qualc
 Nonostante possa sembrare poco efficiente in realtà l’overhead a livello di spazio non è grande; supponiamo che per ogni indirizzo siano necessari $4 \text{ bytes}$ e i blocchi siano da $512 \text{ bytes}$, vuol dire che richiederebbe l’$1\%$ di spazio su disco.
 Però con questo tipo di allocazione, si riesce abbastanza bene a fare in modo di avere parti di queste liste in memoria principale.
 
-Dunque questa questa lista può essere organizzata come pila; per allocare spazio libero bisogna fare un `pop` (quello che prima era libero ora non lo è più) quando invece devo deallocare dello spazio allocato devo fare un `push`
+Dunque questa questa lista può essere organizzata come pila; per allocare spazio libero bisogna fare un `pop` (quello che prima era libero ora non lo è più), quando invece devo deallocare dello spazio allocato devo fare un `push` e guardo la cima per vedere gli spazi liberi. Se si fanno troppi `pop` (ho esaurito lo spazio libero nella porzione caricata in RAM) mi basta caricare la prossima porzione di lista in RAM
+
+---
+## Volumi
+Un volume è essenzialmente quello che viene chiamato un disco *”logico”*, ovvero una **partizione di un disco** che può essere trattata in **maniera indipendente dal file system**
