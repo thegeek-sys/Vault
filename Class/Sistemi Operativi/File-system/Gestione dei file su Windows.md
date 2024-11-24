@@ -28,4 +28,13 @@ La parte della FAT relativa ai file aperti deve essere sempre mantenuta interame
 
 In questo modo però risulta avere overhead di spazio non indifferente infatti ci sta un puntatore ($32 \text{ bit}$) per riga, e tante righe quanti cluster occupati dal file. Con un disco da $100\text{ GB}$ e cluster da $1\text{ KB}$, la FAT ha $100$ milioni di righe, dunque $4\text{B}\cdot 1.000.000 =400\text{ MB}$ per la FAT
 
-![[Pasted image 20241124221953.png]]
+### Struttura
+![[Pasted image 20241124221953.png|center]]
+
+#### Boot sector
+Questa regione contiene le informazioni necessarie per l’accesso al volume ovvero il tipo e puntatore alle altre sezioni del volume, e il bootloader del sistema operativo in BIOS/MBR
+#### FAT
+Questa regione contiene due copie della file allocation table (utile in caso la tabella principale si corrompa) che sono sincronizzate ad ogni scrittura su disco
+Permette, come già detto, di mappare il contenuto della regione dati, indicando a quali directory/file i diversi cluster appartengono
+
+### Funzionamento
