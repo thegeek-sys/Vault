@@ -67,3 +67,14 @@ A differenza del precedente FAT, qui i file sono definiti da un insieme di attri
 ### Formato del volume
 ![[Pasted image 20241124224819.png|center]]
 ### Regione boot sector
+Questa regione è basata sull’equivalente FAT, seppur alcuni campi sono in posizioni diverse, per il resto, valgono le stesse condizioni del FAT
+
+---
+## MTF
+La MTF (*Master File Table*) è la principale struttura dati dell’NTFS ed è unica per ciascun volume (differentemente dal FAT)
+Questa viene implementata come un file composto da una **sequenza lineare di record** (massimo $2^{48}$), da $1$ a $4 \text{KB}$. Ogni record descrive un file che è identificato da un puntatore di $48\text{ bit}$, mentre i rimanenti $16\text{ bit}$ dei $64$ totali sono usati come numero si sequenza
+
+### Record
+Ogni record contiene una lista di attributi: $\text{(attributo, valore)}$
+- **attributo** → intero che indica il tipo di attributo (il contenuto di un f)
+- **valore** → sequenza di byte
