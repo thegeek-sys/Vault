@@ -40,8 +40,21 @@ Tutti gli inode si trovano in una zona di disco dedicata (*i-list*), viene però
 ![[Pasted image 20241124191720.png]]
 
 Per file piccoli (di grandezza massima di $13\cdot \text{dimensione di un blocco}$), i dati sono puntati direttamente da `direct`
-Infatti i blocchi `direct` puntano ai cosiddetti **”blocchi di indirizzamento”** ovvero quei blocchi in cui sono contenuti gli indirizzi dei blocchi in cui si trovano i dati veri e propri. Quando questi non sono sufficienti, si utilizzano i puntatori indiretti singoli, doppi e tripli
+Infatti i blocchi `direct` puntano ai blocchi stessi contenenti i dati, mentre i puntatori indiretti puntano ai cosiddetti **”blocchi di indirizzamento”** ovvero quei blocchi in cui sono contenuti gli indirizzi dei blocchi in cui si trovano i dati veri e propri. Questi vengono utilizzati sono nel momento in cui i puntatori diretti non sono sufficienti
 
 ---
 ## Allocazione di file
-L’allocazione di file è dinamica e viene fatta a blocchi (quindi potenzialmente non contigui). Attraverso l’indicizzazione si tiene traccia dei blocchi dei file (parte dell’indice è )
+L’allocazione di file è dinamica e viene fatta a blocchi (quindi potenzialmente non contigui). Attraverso l’indicizzazione si tiene traccia dei blocchi dei file (parte dell’indice è puntata dall’inode) all’interno dei puntatori indiretti, mentre si punta ai dati veri e propri attraverso i `direct` (per file piccoli)
+
+![[Pasted image 20241124194202.png]]
+
+---
+## Inode e directory
+Anche le directory sono file. Infatti al loro interno è contenuta una lista di coppie (nome file, puntatore ad inode), ma alcuni di questi file possono essere a loro volta delle directory, formando così una struttura gerarchica
+
+Una directory può essere letta da ogni utente ma modificata solo dal sistema operativo
+
+![[Pasted image 20241124194521.png]]
+
+---
+## Accesso ai file
