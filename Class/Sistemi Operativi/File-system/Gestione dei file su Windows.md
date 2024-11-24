@@ -85,4 +85,16 @@ I primi $27$ record sono riservati per i metadati del file system:
 - record 0 → descrive l’MFT stesso, in particolare, tutti i file nel volume
 - record 1 → contiene una copia dei primi record dell’MFT in modo non residente
 - record 2 → contiene le informazioni di journaling (metadata-only)
-- record 3 -
+- record 3 → contiene le informazioni sul volume (id, label, versione FS, ecc.)
+- record 4 → è una tabella degli attributi usati nell’MFT
+- record 5 → rappresenta la directory principale del volume e contiene i puntatori ai record della MFT che rappresentano file e directory nella root del volume
+- record 6 → definisce la lista dei blocchi liberi usando una **bitmap**
+Dal record $28$ in poi ci sono i descrittori dei file normali
+
+![[Pasted image 20241125005508.png|480]]
+
+### Files
+L’NTFS cerca sempre di assegnare ad un file sequenze contigue di blocchi.
+Per file piccoli ($<1\text{KB}$) i dati sono salvati direttamente nel record dell’MFT, mentre per i file grandi, il valore dell’attributo indica la **sequenza ordinata dei blocchi sul disco dove risiede il file**
+
+Per 
