@@ -79,3 +79,12 @@ Fare una copia del file è inutilmente costoso quindi si sono strutturate due al
 
 I symbolic links contengono solamente il path completo sul file system verso il file (esiste un solo inode del file originale), ma comporta che possano esistere symlink a file non più esistenti
 Gli hard link sono dei puntatori diretti al descrittori del file originale (all’inode, questo contiene inoltre un contatore dei file che lo referenziano) e il file condiviso non può essere cancellato finché esiste un link remoto di accesso 
+
+---
+## Regioni del volume
+![[Pasted image 20241125012059.png]]
+
+### Regione boot block
+Risulta essere simile al blocco di boot per [[Gestione dei file su Windows#Struttura#Boot sector|FAT]], contiene infatti le informazioni e dati necessari per il bootstrap (caricamento del sistema operativo)
+### Regione superblock
+Contiene le informazioni sui metadati del filesystem (dimensione partizione, dimensione blocchi, puntatore alla lista dei blocchi liberi, ecc.) e delle copie ridondanti multiple
