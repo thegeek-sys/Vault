@@ -94,7 +94,7 @@ Dal record $28$ in poi ci sono i descrittori dei file normali
 ![[Pasted image 20241125005508.png|480]]
 
 ### Files
-L’NTFS cerca sempre di assegnare ad un file sequenze contigue di blocchi.
+L’NTFS cerca sempre di assegnare ad un file sequenze contigue di blocchi (quando possibile).
 Per file piccoli ($<1\text{KB}$) i dati sono salvati direttamente nel record dell’MFT, mentre per i file grandi, il valore dell’attributo indica la **sequenza ordinata dei blocchi sul disco dove risiede il file**
 
 Per 
