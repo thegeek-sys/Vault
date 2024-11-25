@@ -6,6 +6,26 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Caratteristiche principali di FAT|Caratteristiche principali di FAT]]
+- [[#File Allocation Table|File Allocation Table]]
+	- [[#File Allocation Table#Funzionamento|Funzionamento]]
+	- [[#File Allocation Table#Struttura|Struttura]]
+		- [[#Struttura#Boot sector|Boot sector]]
+		- [[#Struttura#FAT|FAT]]
+		- [[#Struttura#Regione Root Directory|Regione Root Directory]]
+		- [[#Struttura#Regione dati|Regione dati]]
+	- [[#File Allocation Table#Limitazioni|Limitazioni]]
+- [[#NTFS|NTFS]]
+	- [[#NTFS#Formato del volume|Formato del volume]]
+	- [[#NTFS#Regione boot sector|Regione boot sector]]
+- [[#MTF|MTF]]
+	- [[#MTF#Record|Record]]
+	- [[#MTF#Files|Files]]
+	- [[#MTF#Record base|Record base]]
+	- [[#MTF#Record con estensioni|Record con estensioni]]
+---
 ## Introduction
 In Windows esistono due tipi di file-system:
 - FAT (vecchio, da MS-DOS) → allocazione concatenata, con blocchi (*cluster*) di dimensione fissa
