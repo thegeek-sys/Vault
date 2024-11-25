@@ -86,7 +86,7 @@ $$
 $$
 
 ### Esempi
->[!example]
+>[!example]- Esempio 1
 >$$R=(A,B,C,D,E)$$
 >$$F=\{C\to D,AB\to E,D\to B\}$$
 >$$\rho=\{AC,ADE,CDE,AD,B\}$$
@@ -128,7 +128,7 @@ $$
 >La tabella non cambia più e quindi l’algoritmo termina. Ora occorre verificare la presenza della tupla con tutte $a$
 >Poiché non c’è una riga con tutte $a$, il join non è senza perdita
 
->[!example]
+>[!example]- Esempio 2
 >$$R=(A,B,C,D,E,H,I)$$
 >$$F=\{A\to B,B\to AE,DI\to B,D\to HI,HI\to C,C\to A\}$$
 >$$\rho=\{ACD,BDEH,CHI\}$$
@@ -184,7 +184,7 @@ $$
 >Abbiamo completato l’iterazione del for e la tabella non è stata modificata, quindi l’algoritmo termina. Occorre verificare la presenza della tupla con tutte $a$
 >Poiché non c’è una riga con tutte $a$, il join non è senza perdita
 
->[!example]
+>[!example]- Esempio 3
 >$$R=(A,B,C,D,E,G)$$
 >$$F=\{AB\to C,DG\to B,G\to D,E\to G\}$$
 >$$\rho=\{ABD,AEG,BCE\}$$
@@ -250,7 +250,7 @@ $$
 >Abbiamo completato l’iterazione del for e la tabella non è stata modificata, quindi l’algoritmo termina. Occorre verificare la presenza della tupla con tutte $a$
 >Poiché non c’è una riga con tutte $a$, il join non è senza perdita
 
->[!example]
+>[!example]- Esempio 4
 >$$R=(A,B,C,D,E,H,I)$$
 >$$F=\{H\to B,DI\to H,D\to I,B\to I,B\to E,E\to C\}$$
 >$$\rho=\{ABDE,CDH,AHI\}$$
