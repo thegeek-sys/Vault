@@ -87,4 +87,7 @@ Gli hard link sono dei puntatori diretti al descrittori del file originale (all�
 ### Regione boot block
 Risulta essere simile al blocco di boot per [[Gestione dei file su Windows#Struttura#Boot sector|FAT]], contiene infatti le informazioni e dati necessari per il bootstrap (caricamento del sistema operativo)
 ### Regione superblock
-Contiene le informazioni sui metadati del filesystem (dimensione partizione, dimensione blocchi, puntatore alla lista dei blocchi liberi, ecc.) e delle copie ridondanti multiple
+Contiene le informazioni sui metadati del filesystem (dimensione partizione, dimensione blocchi, puntatore alla lista dei blocchi liberi, ecc.).
+All’interno del disco sono inoltre presenti svariate copie del superblock in modo tale che, in caso di corruzione del principale, sia possibile comunque recuperare il filesystem e ripristinare le informazioni cruciali (la prima copia è in una parte prefissata della partizione, in modo tale da consentire recovery in modo semplice)
+### Regione data block (i-list)
+E’ una tabella numerata di descrittori di file (i-node) contenente un i-node per ogni file salvato nel sistema. Ciascun i-node nella lista punta ai blocchi dei file
