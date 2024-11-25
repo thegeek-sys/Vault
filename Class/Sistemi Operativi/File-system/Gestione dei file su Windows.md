@@ -97,4 +97,23 @@ Dal record $28$ in poi ci sono i descrittori dei file normali
 L’NTFS cerca sempre di assegnare ad un file sequenze contigue di blocchi (quando possibile).
 Per file piccoli ($<1\text{KB}$) i dati sono salvati direttamente nel record dell’MFT, mentre per i file grandi, il valore dell’attributo indica la **sequenza ordinata dei blocchi sul disco dove risiede il file** (come l’allocazione indicizzata)
 
-Per ogni file, esiste un record base nell’MFT
+Per ogni file, esiste un record base nell’MFT, ma quando un file non utilizza tutti lo spazio disponibile nel record per la registrare i puntatori, i restanti byte vengono impostari a 0
+
+### Record base
+![[Pasted image 20241125010642.png]]
+In questo esempio si ha che il file è memorizzato in $9$ cluster totali su 3 diverse porzioni di memoria contigue (es. 4 cluster a partire dal 20esmo) e si nota come un descrittore (record) singolo sia sufficiente per l’intera run (file)
+
+Questa modalità di rappresentazione permette in potenza di descrivere file di dimensione illimitata, dipende tutto dalla contiguità dei blocchi; infatti analizziamo questi due esempi
+- blocchi da $1\text{KB}$; 1 file da $20\text{GB}$, 20 sequenze da $1.000.000$ di blocchi. Ognuna richiede $20+1$ coppie di $64 \text{ bit}$: $21\cdot2\cdot8\text{B}=336\text{B}$
+- blocchi da $1\text{KB}$; 1 file da $64\text{KB}$, 64 sequenze da $1$ di blocco. Ognuna richiede $65\cdot2\cdot8\text{B}=1040\text{B}$
+
+### Record con estensioni
+Per file di grandi dimensioni possono essere necessari più record.
+L’NTFS, in questi casi, usa una tecnica simile agli i-node di Unix/Linux; si ha infatti il record base che diventa un puntatore, invece che alla memoria, ad altri $\text{N}$ record secondari (eventuale spazio rimanente nel record base contiene le prime sequenze del file)
+
+Se i record estesi non rientrano in MFT per mancanza di spazio, vengono trattati come attributo non residente, e quindi salvati in un file dedicato con un apposito record salvato nell’MFT
+
+File di $k$ sequenze di blocchi, con due record di estensione
+![[Pasted image 20241125011751.png|450]]
+
+
