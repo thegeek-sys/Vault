@@ -122,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 243.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -225,11 +225,14 @@
   },
   "active": "7299623a8d68a3ae",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Processi/Vita di un processo.md",
+    "Class/Sistemi Operativi/Processi/Processi in Linux.md",
     "Class/Sistemi Operativi/Processi/Processi.md",
+    "Class/Sistemi Operativi/Processi/Thread.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Processi/Processi in Unix release 4.md",
+    "Class/Sistemi Operativi/Processi/Vita di un processo.md",
     "Class/Sistemi Operativi/Processi/Strutture.md",
     "Class/Sistemi Operativi/Processi/Modelli.md",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Processi/Introduzione ai processi.md",
     "Class/Sistemi Operativi/Processi",
     "Class/Sistemi Operativi/Scheduling/Scheduling.md",
@@ -261,9 +264,6 @@
     "Files/Pasted image 20241124223239.png",
     "Files/Pasted image 20241124221953.png",
     "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
-    "Class/Sistemi Operativi/File-system/Directory.md",
-    "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
-    "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
     "Files/Pasted image 20241122000018.png.sb-52feadf3-bWZpro",
     "Class/Sistemi Operativi/File-system",
     "Class/Sistemi Operativi/Gestione della memoria",
