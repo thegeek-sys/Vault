@@ -131,4 +131,23 @@ I problemi dei processi relazionati dalla competizione (ogni processo pensa solo
 Per risolverlo basterebbe fare in modo che i processi, per accedere ad una risorse, chiamino una syscall che entra nella sezione critica, fa l’operazione, esce.
 Tuttavia ciò non è sempre possibile in quanto potrebbe essere necessario fare una richiesta esplicita di “bloccaggio” sulla risorsa, e in caso ciò avvenisse si ricade nel caso dei processi cooperanti
 
-![[Pasted image 20241128223451.png]]
+![[Pasted image 20241128223451.png|650]]
+
+---
+## Mutua esclusione per processi cooperanti
+In questo caso sono gli stessi processi che devono essere scritti pensando già alla cooperazione; infatti, usando opportune syscall, devono preoccuparsi di scrivere `entercritical` ed `exitcritical` in quando le specifiche dei processi potrebbero richiedere comportamenti particolari
+
+![[Pasted image 20241128223451.png|650]]
+
+---
+## Deadlock
+Supponiamo che ci siano due processi: A che richiede accesso prima alla stampante e poi al monitor e B il contrario. Capita quindi che lo scheduler faccia andare B in mezzo alle due richieste di A (ha richiesto la stampante ma non il monitor) giusto il tempo necessario per richiedere il monitor.
+Quindi adesso si ha nuovamente in esecuzione A che però diventa blocked perché sta aspettando il monitor (concesso a B), l’esecuzione passa allora a B che però diventa anche lui blocked poiché sta aspettando la stampante (concesso ad A)
+
+---
+## Starvation
+Supponiamo che ci siano due processi che richiedono la stampante, la stampante viene concessa al processo A mentre B sta facendo altro, quindi A rilascia la stampante ma per qualche motivo lo scheduler decide di lasciare A in esecuzione.
+Quindi A fa in tempo a effettuare una seconda richiesta della stampante che gli viene nuovamente concessa. Ciò avviene indefinitamente mandando B in starvation
+
+---
+## Requisiti per la mutua esclusione
