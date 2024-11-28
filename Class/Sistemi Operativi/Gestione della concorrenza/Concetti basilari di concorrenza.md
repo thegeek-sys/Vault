@@ -90,3 +90,8 @@ putchar(chout);                   .
 ```
 
 In questo caso infatti avremmo nuovamente lo stesso problema
+
+---
+## Restrizione all’accesso singolo
+Risolvere il problema dell’esempio precedente risulta essere particolarmente semplice. La soluzione infatti sta nel permettere l’esecuzione della funzione `echo` ad un solo processo alla volta (può essere richiesta da tutti i processi ma solo uno alla volta la può eseguire).
+Questo viene chiamato rendere **atomica** una funzione
