@@ -119,3 +119,16 @@ Il SO deve:
 | Nessuna (ogni processo pensa di essere solo)                                       | Competizione | Risultato di un processo indipendente dagli altri. Tempo di esecuzione di un processo dipende dagli altri                      | Mutua esclusione; deadlock; starvation                    |
 | Memoria condivisa (i processi sanno che c’è qualche altro processo)                | Cooperazione | Risultato di un processo dipendente dall’informazione data da altri. Tempo di esecuzione di un processo dipendente dagli altri | Mutua esclusione; deadlock; starvation; coerenza dei dati |
 | Primitive di comunicazione (i processi sanno anche i PID di alcuni altri processi) | Cooperazione | Risultato di un processo dipendente dall’informazione data da altri. Tempo di esecuzione di un processo dipendente dagli altri | Deadlock; starvation                                      |
+
+---
+## Processi in competizine
+I problemi dei processi relazionati dalla competizione (ogni processo pensa solo a sé, ma per l’accesso alle risorse deve fare una richiesta al sistema tramite syscall) sono:
+- Necessità di mutua esclusione (sezioni critiche)
+- Deadlock
+- Starvation
+
+### Mutua esclusione
+Per risolverlo basterebbe fare in modo che i processi, per accedere ad una risorse, chiamino una syscall che entra nella sezione critica, fa l’operazione, esce.
+Tuttavia ciò non è sempre possibile in quanto potrebbe essere necessario fare una richiesta esplicita di “bloccaggio” sulla risorsa, e in caso ciò avvenisse si ricade nel caso dei processi cooperanti
+
+![[Pasted image 20241128223451.png]]
