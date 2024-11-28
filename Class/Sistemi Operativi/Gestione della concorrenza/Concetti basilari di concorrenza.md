@@ -6,6 +6,29 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Processi multipli|Processi multipli]]
+	- [[#Processi multipli#Multiprogrammazione|Multiprogrammazione]]
+	- [[#Processi multipli#Multiprocessing|Multiprocessing]]
+- [[#Concorrenza|Concorrenza]]
+	- [[#Concorrenza#Difficoltà|Difficoltà]]
+- [[#Terminologia|Terminologia]]
+- [[#Esempio facile|Esempio facile]]
+	- [[#Esempio facile#Esempio su un processore|Esempio su un processore]]
+	- [[#Esempio facile#Esempio su più processori|Esempio su più processori]]
+- [[#Restrizione all’accesso singolo|Restrizione all’accesso singolo]]
+- [[#Race condition|Race condition]]
+- [[#Per ciò che riguarda il SO|Per ciò che riguarda il SO]]
+- [[#Interazione tra processi|Interazione tra processi]]
+- [[#Processi in competizine|Processi in competizine]]
+	- [[#Processi in competizine#Mutua esclusione|Mutua esclusione]]
+- [[#Mutua esclusione per processi cooperanti|Mutua esclusione per processi cooperanti]]
+- [[#Deadlock|Deadlock]]
+- [[#Starvation|Starvation]]
+- [[#Requisiti per la mutua esclusione|Requisiti per la mutua esclusione]]
+	- [[#Requisiti per la mutua esclusione#Mutua esclusione for dummies|Mutua esclusione for dummies]]
+- [[#Scheduler e livello macchina|Scheduler e livello macchina]]
+---
 ## Processi multipli
 Per i SO moderni, è essenziale supportare più processi in esecuzione in uno di questi tre modi:
 - multiprogrammazione

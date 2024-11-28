@@ -1,5 +1,5 @@
 - [[Concetti basilari di concorrenza]]
-- Mutua esclusione: supporto hardware
+- [[Mutua esclusione - supporto hardware|Mutua esclusione: supporto hardware]]
 - Semafori
 - Passaggio di messaggi
 - Problema dei lettori/scrittori
