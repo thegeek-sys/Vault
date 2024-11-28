@@ -35,4 +35,28 @@ void semSignal(semaphore a) {
 	}
 }
 ```
+In questo caso `count` corrisponde al numero di processi che si trovano nella queue
 
+### Semafori binari - pseudocodice
+```c
+struct binary_semaphore {
+	enum {zero, one} value;
+	queueType queue;
+};
+void semWait(binary_semaphore a) {
+	if (s.value == one)
+		s.value = zero;
+	else {
+		/* place this process in s.queue */;
+		/* block this process */;
+	}
+}
+void semSignalB(binary_semaphore a) {
+	if (s.queue is empty())
+		s.value = one;
+	else {
+		/* remove a process P from s.queue */;
+		/* place process P on ready list */;
+	}
+}
+```
