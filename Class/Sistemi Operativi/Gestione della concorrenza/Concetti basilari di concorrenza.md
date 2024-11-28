@@ -95,3 +95,27 @@ In questo caso infatti avremmo nuovamente lo stesso problema
 ## Restrizione all’accesso singolo
 Risolvere il problema dell’esempio precedente risulta essere particolarmente semplice. La soluzione infatti sta nel permettere l’esecuzione della funzione `echo` ad un solo processo alla volta (può essere richiesta da tutti i processi ma solo uno alla volta la può eseguire).
 Questo viene chiamato rendere **atomica** una funzione
+
+---
+## Race condition
+Si ha una *corsa critica* quando più processi o thread leggono e scrivono la stessa risorsa condivisa e lo fanno in modo tale che lo stato della risorsa dipende dall’ordine di esecuzione dei processi e thread
+In particolare, il risultato più dipendere dal processo o thread che finisce per ultimo.
+La **sezione critica** è la parte di codice di un processo che può portare ad una corsa critica
+
+---
+## Per ciò che riguarda il SO
+Quali problemi di progetti e gestione sorgono dalla presenza della concorrenza?
+Il SO deve:
+- tener traccia di vari processi
+- allocare e deallocare risorse (processore, memoria, file, dispositivi di I/O)
+- proteggere dati e risorse dall’interferenza (non autorizzata) di altri processi
+- assicurare che processi ed output siano indipendenti dalla velocità di computazione (ovvero dallo scheduling, non importa in che ordine li eseguo)
+
+---
+## Interazione tra processi
+
+| Comunicazione                                                                      | Relazione    | Influenza                                                                                                                      | Problemi di controllo                                     |
+| ---------------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| Nessuna (ogni processo pensa di essere solo)                                       | Competizione | Risultato di un processo indipendente dagli altri. Tempo di esecuzione di un processo dipende dagli altri                      | Mutua esclusione; deadlock; starvation                    |
+| Memoria condivisa (i processi sanno che c’è qualche altro processo)                | Cooperazione | Risultato di un processo dipendente dall’informazione data da altri. Tempo di esecuzione di un processo dipendente dagli altri | Mutua esclusione; deadlock; starvation; coerenza dei dati |
+| Primitive di comunicazione (i processi sanno anche i PID di alcuni altri processi) | Cooperazione | Risultato di un processo dipendente dall’informazione data da altri. Tempo di esecuzione di un processo dipendente dagli altri | Deadlock; starvation                                      |
