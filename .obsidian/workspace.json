@@ -38,17 +38,31 @@
             }
           },
           {
+            "id": "f87508c1d2559996",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Semafori"
+            }
+          },
+          {
             "id": "95d4b4736faca6bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
+                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Politiche di scheduling"
+              "title": "Mutua esclusione - supporto hardware"
             }
           },
           {
@@ -165,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273
+    "width": 243.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -266,11 +281,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "95d4b4736faca6bf",
+  "active": "f87508c1d2559996",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
-    "Files/Pasted image 20241128233831.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
+    "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
+    "Files/Pasted image 20241128233831.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
     "Files/Pasted image 20241128223451.png",
@@ -290,7 +307,6 @@
     "Class/Sistemi Operativi/Processi",
     "Class/Sistemi Operativi/Scheduling/Scheduling.md",
     "Class/Sistemi Operativi/Scheduling/Scheduling nei sistemi operativi.md",
-    "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
     "Class/Sistemi Operativi/Scheduling/Concetti basilari di scheduling.md",
     "Class/Sistemi Operativi/Scheduling",
     "Class/Sistemi Operativi/Gestione della concorrenza",

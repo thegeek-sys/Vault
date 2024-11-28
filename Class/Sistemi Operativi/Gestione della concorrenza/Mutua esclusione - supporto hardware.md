@@ -6,6 +6,17 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Disabilitazione delle interruzioni|Disabilitazione delle interruzioni]]
+- [[#Istruzioni macchina speciali|Istruzioni macchina speciali]]
+	- [[#Istruzioni macchina speciali#`compare_and_swap`|`compare_and_swap`]]
+		- [[#`compare_and_swap`#Mutua esclusione|Mutua esclusione]]
+	- [[#Istruzioni macchina speciali#`exchange`|`exchange`]]
+		- [[#`exchange`#Mutua esclusione|Mutua esclusione]]
+	- [[#Istruzioni macchina speciali#Vantaggi|Vantaggi]]
+	- [[#Istruzioni macchina speciali#Svantaggi|Svantaggi]]
+---
 ## Introduction
 In questa sezione vedremo dei modi funzionanti (a differenza della sezione precedente) per far rispettare la mutua esclusione
 
@@ -66,6 +77,7 @@ void main() {
 ```
 `compare_and_swap` prende la variabile `bolt`, vede se è $0$, se vale $0$ gli assegna $1$
 Se viene mandato in esecuzione un secondo processo questo non uscirà mai dal `while` finché il primo processo non uscirà dalla sezione critica
+Potrebbe però succedere che dopo aver impostato `bolt` a $0$ vada avanti e ritorni nella sezione critica, lasciando il secondo processo in attesa (starvation)
 
 >[!warning]
 >E’ importante che tra il controllare che `bolt` sia $0$ e metterlo a $1$ non ci possano essere interferenze
@@ -111,4 +123,7 @@ Ci sono dei vantaggi nell’applicare queste istruzioni macchina speciali:
 - possono essere usate per gestire sezioni critiche multiple
 ### Svantaggi
 Però hanno anche degli svantaggi:
-- sono basate sul *busy-waiting* (spreco di tempo di computazione), e il ciclo di busy wait non è distinguibile da codice “normale” quindi la CPU lo deve eseguire fino al timeout
+- sono basate sul *busy-waiting* (spreco di tempo di computazione), e il ciclo di busy wait non è distinguibile da codice “normale” quindi la CPU lo deve eseguire fino al timeout (oppure ci deve essere più di una CPU)
+- possibile la starvation
+- possibile il deadlock, se a questi meccanismi viene abbinata la priorità (fissa)
+	se un processo A a bassa priorità viene interrotto mentre è già nella sezione critica e un processo B a priorità alta entra nel busy waiting, B non può essere interrotto per eseguire A a causa della priorità, e A non può andare avanti perché solo B, finendo la sua sezione critica, lo può far uscire dal busy-waiting
