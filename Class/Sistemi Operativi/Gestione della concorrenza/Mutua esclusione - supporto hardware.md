@@ -87,8 +87,8 @@ void exchange(int register, int memory) {
 const int n = /* number of processes */
 int bolt;
 void P(int i) {
-	int keyi = 1;
 	while (true) {
+		int keyi = 1;
 		do exchange(keyi, bolt)
 		while (keyi != 0);
 		/* critical section */
@@ -102,4 +102,13 @@ void main() {
 	parbegin(P(1), P(2), ..., P(n));
 }
 ```
-Il primo processo ad entrare scambierà $1$ con $0$ e visto che `1 != 0` uscirà dal while entrando nella sezione critica. Mentre il secondo processo continuerà a tentare di scambiare
+Il primo processo ad entrare scambierà $1$ con $0$ e visto che `1 != 0` uscirà dal while entrando nella sezione critica. Mentre il secondo processo continuerà a tentare di scambiare `keyi` e `bolt` ma saranno entrambi $1$ finché il primo processo non uscirà dalla sezione critica impostando quindi `bolt` a $0$
+
+### Vantaggi
+Ci sono dei vantaggi nell’applicare queste istruzioni macchina speciali:
+- sono applicabili a qualsiasi numero di processi, sia su un sistema ad un solo processore che ad un sistema a più processori con memoria condivisa
+- semplici e quindi facili da verificare
+- possono essere usate per gestire sezioni critiche multiple
+### Svantaggi
+Però hanno anche degli svantaggi:
+- sono basate sul *busy-waiting* (spreco di tempo di computazione), e il ciclo di busy wait non è distinguibile da codice “normale” quindi la CPU lo deve eseguire fino al timeout

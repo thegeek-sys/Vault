@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
+                "file": "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mutua esclusione - supporto hardware"
+              "title": "Politiche di scheduling"
             }
           },
           {
@@ -139,7 +139,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "allocazione dinamica",
+                "query": "preemp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,12 +160,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273,
-    "collapsed": true
+    "width": 243.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -268,9 +268,9 @@
   },
   "active": "95d4b4736faca6bf",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
     "Files/Pasted image 20241128233831.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
-    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
     "Files/Pasted image 20241128223451.png",
@@ -306,7 +306,6 @@
     "Files/Pasted image 20241125011751.png",
     "Files/Pasted image 20241125010642.png",
     "Files/Pasted image 20241125005508.png",
-    "Files/Pasted image 20241124224819.png",
     "Files/Pasted image 20241122000018.png.sb-52feadf3-bWZpro",
     "Class/Sistemi Operativi/File-system",
     "Class/Sistemi Operativi/Gestione della memoria",
