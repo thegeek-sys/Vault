@@ -151,3 +151,29 @@ Quindi A fa in tempo a effettuare una seconda richiesta della stampante che gli 
 
 ---
 ## Requisiti per la mutua esclusione
+Qualsiasi meccanismo si usi per offrire la mutua esclusione, deve soddisfare i seguenti requisiti:
+- solo un processo alla volta può essere nella sezione critica per una risorsa
+- niente deadlock né starvation
+- nessuna assunzione su scheduling dei processi, né sul numero dei processi
+- un processo deve entrare subito nella sezione critica, se nessun altro processo usa la risorsa
+- un processo che si trova nella sua sezione non-critica non deve subire interferenze da altri processi (in particolare non può essere bloccato)
+- un processo che si trova nella sezione critica ne deve prima o poi uscire (più in generale ci vuole cooperazione, es. non bisogna scrivere un processo che entra nella sua sezione critica senza chiamare `entercritical`)
+
+### Mutua esclusione for dummies
+
+```c
+int bolt = 0;
+void P(int i) {
+	while (true) {
+		bolt = 1;
+		while (bolt == 1) /* do nothing */;
+		/* critical section */;
+		bolt = 0;
+		/* remainder */
+	}
+}
+
+// n processi iniziano in contemporanea P()
+parbegin(P(0), P(1), ..., P(n))
+```
+
