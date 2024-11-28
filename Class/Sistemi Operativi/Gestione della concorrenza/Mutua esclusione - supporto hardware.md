@@ -33,7 +33,7 @@ Un ulteriore problema è che questo metodo funziona localmente sul singolo proce
 ## Istruzioni macchina speciali
 Per risolvere i due problemi sopracitati potrei utilizzare delle istruzioni macchina speciali come `compare_and_swap` e la `exchange` entrambe **atomiche** (l’hardware garantisce che un solo processo per volta possa eseguire una chiamata a tali funzioni/interruzioni anche se ci sono più processori)
 
-#### `compare_and_swap`
+### `compare_and_swap`
 Se il valore di `word` è uguale al valore di `testval` allora cambio il valore di `word` in `newval` e ritorno in ogni caso il precedente valore di `word`
 
 ```c
@@ -45,8 +45,32 @@ int compare_and_swap(int word, int testval, int newval) {
 }
 ```
 
+#### Mutua esclusione
+```c
+/* program mutualexclusion */
+const int n = /* number of processes */
+int bolt;
+void P(int i) {
+	while (true) {
+		while (compare_and_swap(bolt, 0, 1) == 1) /* do nothing */
+		/* critical section */
+		bolt = 0;
+		/* remainder */
+	}
+}
 
-#### `exchange`
+void main() {
+	bolt = 0;
+	parbegin(P(1), P(2), ..., P(n));
+}
+```
+`compare_and_swap` prende la variabile `bolt`, vede se è $0$, se vale $0$ gli assegna $1$
+Se viene mandato in esecuzione un secondo processo questo non uscirà mai dal `while` finché il primo processo non uscirà dalla sezione critica
+
+>[!warning]
+>E’ importante che tra il controllare che `bolt` sia $0$ e metterlo a $1$ non ci possano essere interferenze
+
+### `exchange`
 La funzione `exchange` ha il compito di scambiare il contenuto di due argomenti (indirizzi di memoria)
 
 ```c
@@ -56,3 +80,26 @@ void exchange(int register, int memory) {
 	register = temp;
 }
 ```
+
+#### Mutua esclusione
+```c
+/* program mutualexclusion */
+const int n = /* number of processes */
+int bolt;
+void P(int i) {
+	int keyi = 1;
+	while (true) {
+		do exchange(keyi, bolt)
+		while (keyi != 0);
+		/* critical section */
+		bolt = 0;
+		/* remainder */
+	}
+}
+
+void main() {
+	bolt = 0;
+	parbegin(P(1), P(2), ..., P(n));
+}
+```
+Il primo processo ad entrare scambierà $1$ con $0$ e visto che `1 != 0` uscirà dal while entrando nella sezione critica. Mentre il secondo processo continuerà a tentare di scambiare
