@@ -160,7 +160,6 @@ Qualsiasi meccanismo si usi per offrire la mutua esclusione, deve soddisfare i s
 - un processo che si trova nella sezione critica ne deve prima o poi uscire (più in generale ci vuole cooperazione, es. non bisogna scrivere un processo che entra nella sua sezione critica senza chiamare `entercritical`)
 
 ### Mutua esclusione for dummies
-
 ```c
 int bolt = 0;
 void P(int i) {
@@ -176,4 +175,25 @@ void P(int i) {
 // n processi iniziano in contemporanea P()
 parbegin(P(0), P(1), ..., P(n))
 ```
+In questo caso basta che lo scheduler faccia eseguire i 2 processi in interleaving ed è deadlock (rimangono bloccati nel while) oppure basta che ci sia un processo solo (anche lui bloccato, **attesa attiva**, nel while)
 
+Provo quindi a scambiare dove assegno `bolt`
+```c
+int bolt = 0;
+void P(int i) {
+	while (true) {
+		while (bolt == 1) /* do nothing */;
+		bolt = 1;
+		/* critical section */;
+		bolt = 0;
+		/* remainder */
+	}
+}
+```
+In questo caso quando entra un solo processo questo non rimane incastrato nel while e viene rispettata la mutua esclusione nel caso in cui andasse in esecuzione un secondo processo che rimarrebbe bloccato nel while finché il primo processo non è uscito dalla sezione critica impostando `bolt` a $0$ e lasciando continuare il secondo processo (`bolt` è una variabile globale)
+Però anche in questo caso se un secondo processo viene mandato in esecuzione dopo la fine del while ma prima di `bolt=1` entrambi i processi potranno attraversare la critical section in contemporanea
+
+---
+## Scheduler e livello macchina
+Un’altra corsa critica meno evidente è il fatto che lo scheduler interrompe a livello di istruzione macchina
+Supponiamo infatti che `P(0)` venga eseguito fino a `bolt = 1` compreso, si potrebbe pensare che almeno così la mutua esclusione sia rispettata e invece no. Infatti `P(1)` potrebbe essere arrivato in precedenza fino a “metà” del `while (bolt==1)` (ovvero fino a caricare il valore della variabile `bolt`, che a quel punto era ancora $0$, dentro un registro); quando il controllo ritorna a `P(1)`, per lui `bolt` vale $0$
