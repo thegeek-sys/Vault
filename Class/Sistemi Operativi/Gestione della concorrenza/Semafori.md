@@ -92,4 +92,4 @@ Ci stanno però sistemi operativi che usano i semafori cosiddetti “deboli” p
 ![[Pasted image 20241129010025.png|350]]
 ![[Pasted image 20241129010108.png|350]]
 
-
+	
