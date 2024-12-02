@@ -123,3 +123,24 @@ Oltre al problema della mutua esclusione ci sono alcuni problemi che riguardano 
 Come situazione generale si ha un processo che è produttore, che crea dati e li deve mettere in un buffer e ci sta un consumatore, che prende i dati dal buffer uno alla volta (per farci calcoli). In ogni caso al buffer ci può accedere un solo processo (sia esso produttore o consumatore)
 
 Il problema sta principale (oltre a dover garantire la mutua esclusione) sta nel garantire che il produttore non inserisca dati se il buffer è già pieno e che il consumatore non prenda dati quando il buffer è vuoto
+
+### Pseudocodici
+Per questo primo esempio, facciamo finta che il buffer sia infinito (non consideriamo il problema di buffer pieno)
+
+`b` rappresenta il buffer in cui viene inserito il nuovo elemento `v`
+```c
+while (true) {
+	/* produce item v */
+	b[in] = v;
+	in++;
+}
+```
+
+```c
+while (true) {
+	while (in <= out) /* do nothing */;
+	w = b[out];
+	out++;
+	/* consume item w */
+}
+```
