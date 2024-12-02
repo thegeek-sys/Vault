@@ -266,3 +266,35 @@ void main() {
 	parbegin(producer, consumer);
 }
 ```
+
+---
+## Produttori e consumatori con buffer circolare
+Torniamo adesso ad un caso reale, ovvero quello in cui il buffer non sia infinito. Ciò si realizza attraverso un **buffer circolare**
+
+| Block on                           | Unblock on              |
+| ---------------------------------- | ----------------------- |
+| Producer: insert in full buffer    | Consumer: item inserted |
+| Consumer: remove from empty buffer | Producer: item removed  |
+
+![[Pasted image 20241202232228.png|300]]
+
+### Buffer circolare: pseudocodici
+La dimensione effettiva del buffer è $n-1$ (altrimenti non si potrebbe capire se `in == out` implichi un buffer pieno o vuoto)
+
+```c
+while (true) {
+	/* produce item v */
+	while ((in+1)%n == out) /* do nothing*/;
+	b[in] = v;
+	in = (in+1)%n;
+}
+```
+
+```c
+while (true) {
+	while ((in+1)%n == out) /* do nothing*/;
+	w = b[out];
+	out = (out+1)%n;
+	/* consume item w */
+}
+```
