@@ -5,7 +5,7 @@ Related:
   - "[[Gestione della concorrenza]]"
 Completed:
 ---
----
+  ---
 ## Introduction
 I semafori sono delle particolari strutture dati su cui si possono fare tre operazioni *atomiche*:
 - `initialize`

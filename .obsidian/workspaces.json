@@ -1327,7 +1327,7 @@
                 }
               }
             ],
-            "currentTab": 8
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1485,9 +1485,9 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "e44a0c48016b2fe9",
-      "mtime": "2024-11-28T21:33:21+01:00"
+      "active": "8c8fae1a44f0bac6",
+      "mtime": "2024-12-02T20:02:15+01:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
