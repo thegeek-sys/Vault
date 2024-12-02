@@ -112,4 +112,7 @@ void main() {
 	parbegin(P(1), P(2), ..., P(n));
 }
 ```
+In questo caso non si ha starvation (a meno che i semafori non siano deboli)
+
+![[Pasted image 20241202212139.png]]
 
