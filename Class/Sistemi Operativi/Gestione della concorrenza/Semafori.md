@@ -185,3 +185,6 @@ void main() {
 	parbegin(producer, consumer);
 }
 ```
+
+#### Possibile scenario
+![[Pasted image 20241202214950.png]]
