@@ -92,4 +92,23 @@ Ci stanno però sistemi operativi che usano i semafori cosiddetti “deboli” p
 ![[Pasted image 20241129010025.png|350]]
 ![[Pasted image 20241129010108.png|350]]
 
-	
+---
+## Mutua esclusione con i semafori
+```c
+/* program mutualexclusion */
+const int n = /* number of processes */;
+semaphore s = 1;
+
+void P(int i) {
+	while (true) {
+		semWait(s);
+		/* critical section */
+		semSignal(s);
+		/* remainder */
+	}
+}
+
+void main() {
+	parbegin(P(1), P(2), ..., P(n));
+}
+```
