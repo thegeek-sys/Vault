@@ -70,5 +70,5 @@ Sia $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R
 >##### Ogni schema di relazione in $\rho$ è in 3NF
 >Analizziamo i diversi casi che si possono presentare
 >1. Se $S \in \rho$, ogni attributo in $S$ (elementi non coinvolti nelle dipendenze, e siccome la chiave deve determinare tutto lo schema, dovranno necessariamente essere nella chiave che li determinerà per riflessività) fa parte della chiave e quindi, banalmente, $S$ è in 3NF
->2. Se $R\in \rho$ esiste una dipendenza funzionale in $F$ che coinvolge tutti gli attributi in $R$. Poiché $F$ è una copertura minimale tale dipendenza avrà la forma $R-A\to A$
+>2. Se $R\in \rho$ esiste una dipendenza funzionale in $F$ che coinvolge tutti gli attributi in $R$. Poiché $F$ è una copertura minimale tale dipendenza avrà la forma $R-A\to A$. Ma se fosse esistito $Y\to A$ con $Y\subset R-A$ allora nella copertura non ci sarebbe stato $R-A\to A$
 
