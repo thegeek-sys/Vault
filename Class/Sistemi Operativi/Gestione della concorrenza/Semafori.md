@@ -346,17 +346,18 @@ semaphore z = 1;
 semaphore strettoia = 4;
 semaphore sx = 1;
 semaphore dx = 1;
-int nsx = 0; // numero auto sx, variabile globale (race condition)
+// incrementando nsx o ndx in due processi diversi me lo potrei ritrovare incrementato solo di 1
+int nsx = 0; // num auto sx, variabile globale (race condition)
 int ndx = 0; // numero auto dx, variabile globale (race condition)
 
 macchina_dal_lato_sinistro () {
 	// chi deve passare per primo
 	wait(z);
-	wait(sx);
-	++nsx;
+	wait(sx);   // inizio sezione critica
+	nsx++;
 	if(nsx == 1)  // se sono il primo ad essere arrivato
 		wait(dx); // blocco le auto arrivate dall'altro lato
-	signal(sx);
+	signal(sx); // fine sezione critica
 	signal(z);
 	
 	// se ero l'ultimo ora tocca all'altro lato passare
@@ -364,7 +365,7 @@ macchina_dal_lato_sinistro () {
 	passa_strettoia();
 	signal(strettoia);
 	wait(sx);
-	--nsx;
+	nsx--;
 	if(nsx == 0)    // se ero l'ultimo
 		signal(dx); // le macchine dall'altro lato possono passare
 	signal(sx);
