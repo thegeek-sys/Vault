@@ -116,3 +116,10 @@ In questo caso non si ha starvation (a meno che i semafori non siano deboli)
 
 ![[Pasted image 20241202212139.png]]
 
+---
+## Problema del produttore/consumatore
+Oltre al problema della mutua esclusione ci sono alcuni problemi che riguardano i processi che cooperano come il problema del **produttore/consumatore**
+
+Come situazione generale si ha un processo che è produttore, che crea dati e li deve mettere in un buffer e ci sta un consumatore, che prende i dati dal buffer uno alla volta (per farci calcoli). In ogni caso al buffer ci può accedere un solo processo (sia esso produttore o consumatore)
+
+Il problema sta principale (oltre a dover garantire la mutua esclusione) sta nel garantire che il produttore non inserisca dati se il buffer è già pieno e che il consumatore non prenda dati quando il buffer è vuoto
