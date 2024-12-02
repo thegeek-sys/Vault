@@ -346,26 +346,27 @@ semaphore z = 1;
 semaphore strettoia = 4;
 semaphore sx = 1;
 semaphore dx = 1;
-int nsx = 0;
-int ndx = 0;
+int nsx = 0; // numero auto sx, variabile globale (race condition)
+int ndx = 0; // numero auto dx, variabile globale (race condition)
 
 macchina_dal_lato_sinistro () {
+	// chi deve passare per primo
 	wait(z);
 	wait(sx);
 	++nsx;
-	if(nsx == 1)
-		wait(dx);
-	
+	if(nsx == 1)  // se sono il primo ad essere arrivato
+		wait(dx); // blocco le auto arrivate dall'altro lato
 	signal(sx);
 	signal(z);
+	
+	// se ero l'ultimo ora tocca all'altro lato passare
 	wait(strettoia);
 	passa_strettoia();
 	signal(strettoia);
 	wait(sx);
 	--nsx;
-	if(nsx == 0)
-		signal(dx);
-	
+	if(nsx == 0)    // se ero l'ultimo
+		signal(dx); // le macchine dall'altro lato possono passare
 	signal(sx);
 }
 ```
