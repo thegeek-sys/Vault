@@ -371,3 +371,4 @@ macchina_dal_lato_sinistro () {
 	signal(sx);
 }
 ```
+Nella versione `macchina_dal_lato_destro` cambia solamente il fatto che tutti i `sx` diventano `dx` e viceversa
