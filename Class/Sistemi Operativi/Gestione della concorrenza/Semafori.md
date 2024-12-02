@@ -333,8 +333,9 @@ void main() {
 ```
 
 ---
-## Trastevere
+## Esempi
 Analizziamo questo esempio che ci permette di comprendere appieno la potenzialità dei semafori
+### Trastevere
 
 ![[Pasted image 20241202233930.png]]
 I blocchetti sono le macchine, mentre il tubo è una strada di Trastevere.
@@ -352,7 +353,8 @@ int ndx = 0; // numero auto dx, variabile globale (race condition)
 
 macchina_dal_lato_sinistro () {
 	// chi deve passare per primo
-	wait(z);
+	wait(z); // impedisce che la funzione da dx e da sx possano essere
+             // eseguite in contemporanea
 	wait(sx);   // inizio sezione critica
 	nsx++;
 	if(nsx == 1)  // se sono il primo ad essere arrivato
@@ -372,3 +374,6 @@ macchina_dal_lato_sinistro () {
 }
 ```
 Nella versione `macchina_dal_lato_destro` cambia solamente il fatto che tutti i `sx` diventano `dx` e viceversa
+
+## Negozio del barbiere
+![[Pasted image 20241203000030.png|400]]
