@@ -157,7 +157,7 @@ Vediamo un esempio di soluzione (sbagliata) usando i semafori binari
 
 ```c
 /* program producerconsumer */
-int n;
+int n; // numero elemnti buffer
 binary_semaphore s = 1, delay = 0;
 
 void producer() {
