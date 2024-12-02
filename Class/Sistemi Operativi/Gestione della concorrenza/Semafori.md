@@ -188,3 +188,4 @@ void main() {
 
 #### Possibile scenario
 ![[Pasted image 20241202214950.png]]
+Si hanno problemi nel caso in cui venga mandato in esecuzione il produttore prima che il consumatore faccia il `consume()`
