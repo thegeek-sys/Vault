@@ -240,7 +240,7 @@ Utilizzando i semafori generali non ho più la necessità di utilizzare la varia
 
 ```c
 /* program producerconsumer */
-binary_semaphore n = 0, s = 1;
+semaphore n = 0, s = 1;
 
 void producer() {
 	while (true) {
@@ -284,7 +284,7 @@ La dimensione effettiva del buffer è $n-1$ (altrimenti non si potrebbe capire s
 ```c
 while (true) {
 	/* produce item v */
-	while ((in+1)%n == out) /* do nothing*/;
+	while ((in+1)%n == out) /* do nothing*/; // test pieno
 	b[in] = v;
 	in = (in+1)%n;
 }
@@ -292,9 +292,80 @@ while (true) {
 
 ```c
 while (true) {
-	while ((in+1)%n == out) /* do nothing*/;
+	while (in == out) /* do nothing*/; // test vuoto
 	w = b[out];
 	out = (out+1)%n;
 	/* consume item w */
+}
+```
+
+### Soluzione generale con i semafori
+```c
+/* program boundedbuffer */
+const int sizeofbuffer = /* buffer size */;
+semaphore n = 0, s = 1, e = sizeofbuffer;
+
+void producer() {
+	while (true) {
+		produce();
+		semWait(e); // viene decrementato ogni volta finché non si arriva
+		semWait(s); // fino a 0 quando il buffer è pieno
+		append();
+		semSignal(s);
+		semSignal(n);
+	}
+}
+
+void consumer() {
+	while (true) {
+		semWait(n);
+		semWait(s);
+		take();
+		semSignalB(s);
+		semSignalB(e); // viene incrementato e "sveglia" il produttore
+		consume();
+	}
+}
+
+void main() {
+	parbegin(producer, consumer);
+}
+```
+
+---
+## Trastevere
+Analizziamo questo esempio che ci permette di comprendere appieno la potenzialità dei semafori
+
+![[Pasted image 20241202233930.png]]
+I blocchetti sono le macchine, mentre il tubo è una strada di Trastevere.
+La strada si restringe in un senso unico alternato (massimo 4 auto alla volta). Vince chi arriva prima e non si può essere pareggio
+Assumendo semafori *strong*, le macchine dovrebbero impiegare la strettoia nell’ordine con cui arrivano (o si accodano dalla propria parte)
+
+```c
+semaphore z = 1;
+semaphore strettoia = 4;
+semaphore sx = 1;
+semaphore dx = 1;
+int nsx = 0;
+int ndx = 0;
+
+macchina_dal_lato_sinistro () {
+	wait(z);
+	wait(sx);
+	++nsx;
+	if(nsx == 1)
+		wait(dx);
+	
+	signal(sx);
+	signal(z);
+	wait(strettoia);
+	passa_strettoia();
+	signal(strettoia);
+	wait(sx);
+	--nsx;
+	if(nsx == 0)
+		signal(dx);
+	
+	signal(sx);
 }
 ```
