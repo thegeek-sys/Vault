@@ -127,6 +127,9 @@ Il problema sta principale (oltre a dover garantire la mutua esclusione) sta nel
 ### Pseudocodici
 Per questo primo esempio, facciamo finta che il buffer sia infinito (non consideriamo il problema di buffer pieno)
 
+>[!info]
+>Non si creano problemi se contemporaneamente si sta producendo e consumando
+
 `b` rappresenta il buffer in cui viene inserito il nuovo elemento `v`
 ```c
 while (true) {
@@ -136,11 +139,49 @@ while (true) {
 }
 ```
 
+se `out` è più grande di `in` (variabile globale) vuol dire che ho consumato tutto il buffer e rimane quindi in active wait
 ```c
 while (true) {
 	while (in <= out) /* do nothing */;
 	w = b[out];
 	out++;
 	/* consume item w */
+}
+```
+
+#### Il buffer
+![[Pasted image 20241202213615.png|380]]
+
+### Soluzione sbagliata
+Vediamo un esempio di soluzione (sbagliata) usando i semafori binari
+
+```c
+/* program producerconsumer */
+int n;
+binary_semaphore s = 1, delay = 0;
+
+void producer() {
+	while (true) {
+		produce();
+		semWaitB(s);
+		append();
+		n++;
+		if(n == 1) semSignalB(delay);
+		semSignalB(s);
+	}
+}
+
+void consumer() {
+	semWaitB(delay);
+	take();
+	n--;
+	semSignalB(s);
+	consume();
+	if(n == 0) semWaitB(delay);
+}
+
+void main() {
+	n = 0;
+	parbegin(producer, consumer);
 }
 ```
