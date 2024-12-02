@@ -87,4 +87,8 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >L’inclusione $G'^+\subseteq F^+$ è di nuovo banalmente verificata in quanto, per definizione, $G\subseteq F^+$
 >
 >##### Ogni schema di relazione in $\sigma$ è in 3NF
->Poiché $\sigma=\rho \cup \{K\}$, è 
+>Poiché $\sigma=\rho \cup \{K\}$, è sufficiente verificare che anche lo schema di relazione $K$ è in 3NF. Mostriamo che $K$ è chiave anche per lo schema $K$.
+>Supponiamo per assurdo che $K$ non sia chiave per lo schema $K$; allora esiste un sottoinsieme proprio $K'$ di $K$ che determina tutto lo schema $K$, cioè tale che $Kì\to K\in F^+$ (più precisamente alla chiusura di $\pi_{K}(F)$, ma poiché $\pi_{K}(F)\subset F^+$ allora $(\pi_{K}(F))^+\subset F^+$).
+>Poiché $K$ è chiave per lo schema $R$, $K\to R\in F^+$, pertanto per transitività $K'\to R\in F^+$, che contraddice il fatto che $K$ è chiave per lo schema $R$ (verrebbe violato il requisito di minimalità).
+>Pertanto $K$ è chiave per lo schema $K$ e quindi per ogni dipendenza funzionale $X\to A\in F^+$ con $XA\subseteq K$, $A$ è primo
+
