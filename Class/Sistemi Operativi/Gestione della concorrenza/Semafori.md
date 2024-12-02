@@ -173,11 +173,15 @@ void producer() {
 
 void consumer() {
 	semWaitB(delay);
-	take();
-	n--;
-	semSignalB(s);
-	consume();
-	if(n == 0) semWaitB(delay);
+	while (true) {
+		semWaitB(s);
+		take();
+		n--;
+		m = n;
+		semSignalB(s);
+		consume();
+		if(n == 0) semWaitB(delay);
+	}
 }
 
 void main() {
@@ -188,4 +192,77 @@ void main() {
 
 #### Possibile scenario
 ![[Pasted image 20241202214950.png]]
-Si hanno problemi nel caso in cui venga mandato in esecuzione il produttore prima che il consumatore faccia il `consume()`
+Si hanno problemi nel caso in cui venga mandato in esecuzione il produttore prima che il consumatore faccia il `consume()`.
+In questo caso infatti, se lo scheduler mandasse in esecuzione due volte il consumer ci si ritroverebbe in una situazione in cui `delay` è $1$ (si potrebbe iniziare a consumare) ma `n` è $0$ e nonostante ciò ci è permessa un’operazione di `take()` (`n` arriva addirittura ad essere $-1$)
+Sostanzialmente il problema è stato che il non è stata eseguita la prima `semWaitB(delay)` dopo il `consume()` in quanto è stato modificato $n$
+
+### Soluzione corretta
+Nella soluzione seguente salviamo il valore `n` nella variabile `m` così non ho problemi anche in caso di modifiche su `n` 
+
+```c
+/* program producerconsumer */
+int n; // numero elemnti buffer
+binary_semaphore s = 1, delay = 0;
+
+void producer() {
+	while (true) {
+		produce();
+		semWaitB(s);
+		append();
+		n++;
+		if(n == 1) semSignalB(delay);
+		semSignalB(s);
+	}
+}
+
+void consumer() {
+	int m; /* a local variable */
+	semWaitB(delay);
+	while (true) {
+		semWaitB(s);
+		take();
+		n--;
+		m = n;
+		semSignalB(s);
+		consume();
+		if(m == 0) semWaitB(delay);
+	}
+}
+
+void main() {
+	n = 0;
+	parbegin(producer, consumer);
+}
+```
+
+### Soluzione con semafori generali
+Utilizzando i semafori generali non ho più la necessità di utilizzare la variabile `n` per tenere il conto degli elementi nel buffer in quanto posso contare sui contatori dei semafori
+
+```c
+/* program producerconsumer */
+binary_semaphore n = 0, s = 1;
+
+void producer() {
+	while (true) {
+		produce();
+		semWait(s);
+		append();
+		semSignal(s);
+		semSignal(n);
+	}
+}
+
+void consumer() {
+	while (true) {
+		semWait(n);
+		semWait(s);
+		take();
+		semSignalB(s);
+		consume();
+	}
+}
+
+void main() {
+	parbegin(producer, consumer);
+}
+```
