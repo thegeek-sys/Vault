@@ -73,3 +73,18 @@ Sia $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R
 >2. Se $R\in \rho$ esiste una dipendenza funzionale in $F$ che coinvolge tutti gli attributi in $R$. Poiché $F$ è una copertura minimale tale dipendenza avrà la forma $R-A\to A$. Ma se fosse esistito $Y\to A$ con $Y\subset R-A$ allora nella copertura non ci sarebbe stato $R-A\to A$
 >3. Se $XA\in \rho$, poiché $F$ è una copertura minimale, non ci possono essere una dipendenza funzionale $X'\to A\in F^+$ tale che $X'\subset X$ e, quindi, $X$ è chiave in $XA$. Sia $Y\to B$ una qualsiasi dipendenza in $F$ tale che $YB\subseteq XA$; se $B=A$ allora, poiché $F$ è una copertura minimale, $Y=X$ (cioè, $Y$ è superchiave); se $B\neq A$ allora $B\in X$ e quindi $B$ è primo
 
+---
+## Teorema
+Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$, che è una copertura minimale e $\rho$ la decomposizione di $R$ prodotta dall’algoritmo di decomposizione. La decomposizione $\sigma=\rho \cup \{K\}$, dove $K$ è una chiave per $R$, è tale che:
+- ogni schema di relazione in $\sigma$ è in 3NF
+- $\sigma$ preserva $F$
+- $\sigma$ ha un join senza perdita
+
+>[!info] Dimostrazione
+>##### $\sigma$ preserva $F$
+>Poiché $\rho$ preserva $F$ anche $\sigma$ preserva $F$
+>Stiamo aggiungendo un nuovo sottoschema, quindi alla nuova $G'$ dobbiamo aggiungere una proiezione di $F$, cioè $G'=G\cup \pi_{K}(F)$ quindi $G'\supseteq G\supseteq F$ e quindi $G'^+\supseteq G^+\supseteq F^+$
+>L’inclusione $G'^+\subseteq F^+$ è di nuovo banalmente verificata in quanto, per definizione, $G\subseteq F^+$
+>
+>##### Ogni schema di relazione in $\sigma$ è in 3NF
+>Poiché $\sigma=\rho \cup \{K\}$, è 
