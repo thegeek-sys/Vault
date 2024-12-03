@@ -92,3 +92,33 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >Poiché $K$ è chiave per lo schema $R$, $K\to R\in F^+$, pertanto per transitività $K'\to R\in F^+$, che contraddice il fatto che $K$ è chiave per lo schema $R$ (verrebbe violato il requisito di minimalità).
 >Pertanto $K$ è chiave per lo schema $K$ e quindi per ogni dipendenza funzionale $X\to A\in F^+$ con $XA\subseteq K$, $A$ è primo
 
+---
+## Esempi
+
+>[!example]- Esempio 1
+>$$R=(A,B,C,D,E,H)$$
+>$$F=\{AB\to CD,C\to E,AB\to E,ABC\to D\}$$
+>
+>Rispondere ai seguenti quesiti:
+>- Verificare che $ABH$ è una chiave per $R$
+>- Sapendo che $ABH$ è l’unica chiave per $R$, verificare che $R$ non è in 3NF
+>- Trovare una copertura minimale $G$ di $F$
+>- Trovare una decomposizione $\rho$ di $R$ tale che preserva $G$ e ogni schema in $\rho$ è in 3NF
+>- Trovare una decomposizione $\sigma$ di $R$ tale che preserva $G$, ha un join senza perdita e ogni schema $\sigma$ è in 3NF
+>
+>##### Verificare che $ABH$ è una chiave per $R$
+>Vuol dire verificare due condizioni:
+>- $ABH$ deve determinare funzionalmente l’intero schema
+>- Nessun sottoinsieme di $ABH$ deve determinare funzionalmente l’intero schema
+>
+>Per la prima condizione si controlla se la chiusura dell’insieme di attributi $ABH$ contiene tutti gli attributi dello schema. Notiamo infatti che $(ABH)^+=\{A,B,C,D,E,H\}$
+>Per la seconda condizione, dobbiamo che la chiusura di nessun sottoinsieme di $ABH$ contenga tutti gli attributi dello schema. A tal proposito notiamo che $H$ deve comparire in ogni caso in una chiave dello schema. Quindi ci restano da controllare le chiusure di $AH$ e $BH$, ma è banale
+>
+>Possiamo quindi concludere che $ABH$ è chiave dello schema dato
+>
+>##### Verificare che $R$ non è in 3NF
+>Per verificare che lo schema non è in terza forma normale, basta osservare la presenza delle dipendenze parziali $AB\to CD$ e $AB\to E$
+>
+>##### Trovare una copertura minimale $G$ di $F$
+>
+
