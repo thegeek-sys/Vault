@@ -65,7 +65,7 @@ Sia $R$ uno schema di relazione ed $F$ un insieme di dipendenze funzionali su $R
 >
 >##### $\rho$ preserva $F$
 >Sia $G=\cup_{i=1}^k \pi_{R_{i}}(F)$, ovvero l’insieme delle dipendenze di $F^+$ tali che il determinante e il determinato appartengono al sottoschema.
->Poiché per ogni dipendenza funzionale $X\to A\in F$ si ha che $XA\in \rho$ (è proprio uno dei sottoschemi), si ah che questa dipendenza di $F$ sarà sicuramente in $G$, quindi $F\subseteq G$ e, quindi $F^+\subseteq G^+$. L’inclusione $G^+\subseteq F^+$ è banalmente verificata in quanto per definizione, $G\subseteq F^+$
+>Poiché per ogni dipendenza funzionale $X\to A\in F$ si ha che $XA\in \rho$ (è proprio uno dei sottoschemi), si ha che questa dipendenza di $F$ sarà sicuramente in $G$, quindi $F\subseteq G$ e, quindi $F^+\subseteq G^+$. L’inclusione $G^+\subseteq F^+$ è banalmente verificata in quanto per definizione, $G\subseteq F^+$
 >
 >##### Ogni schema di relazione in $\rho$ è in 3NF
 >Analizziamo i diversi casi che si possono presentare
