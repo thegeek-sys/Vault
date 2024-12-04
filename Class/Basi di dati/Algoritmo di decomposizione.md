@@ -120,5 +120,28 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >Per verificare che lo schema non è in terza forma normale, basta osservare la presenza delle dipendenze parziali $AB\to CD$ e $AB\to E$
 >
 >##### Trovare una copertura minimale $G$ di $F$
+>1. Riduciamo le parti destre a singleton
+>$F=\{AB\to C,AB\to D,C\to E,AB\to E,ABC\to D\}$
 >
+>2. Verifichiamo se nelle dipendenze ci sono ridondanze nelle parti sinistre
+>Cominciamo dalla dipendenze $AB\to C$ controlliamo se $C$ appartiene a $(A)^+_{F}$ o $(B)^+_{F}$, ma $(A)^+_{F}=\{A\}$ e $(B)^+_{F}=\{B\}$
+>Proviamo quindi a ridurre $ABC\to D$. Abbiamo $(AB)^+_{F}=ABCDE$, dunque $D$ è contenuto nella chiusura di $AB$ che ci permette di rimuovere $C$, ma così facendo notiamo che $AB\to D$ è ridondante quindi la rimuovo
+>Ho infine $F=\{AB\to C,AB\to D,C\to E,AB\to E\}$
+>
+>3. Verifichiamo che l’insieme non contiene dipendenze ridondanti
+>Notiamo prima di tutto che $C$ e $D$ sono determinate da una sola dipendenza quindi $AB\to C$ e $AB\to D$ non possono essere rimosse. Però notiamo che provando ad eliminare $AB\to E$ avremmo che questa dipendenza risulta comunque rispettata grazie alla transitività $AB\to C\land C\to E$
+>
+>Abbiamo quindi $G=\{AB\to C,AB\to D,C\to E\}$
+>
+>##### Applicare algoritmo di decomposizione
+>Applichiamo l’algoritmo per la decomposizione dello schema di relazione che non è in 3NF dato l’insieme $G$ che è una copertura minimale
+>
+>Al primo passo dobbiamo inserire in un elemento della decomposizione gli attributi che non compaiono nelle dipendenze di $G$. Vale per l’attributo $H$, quindi avremo $\rho=\{H\}$
+>
+>Passiamo poi a verificare che non ci sono dipendenze che non ci sono dipendenze che coinvolgono tutti gli attributi dello schema, per cui eseguiamo il passo alternativo. Abbiamo alla fine $\rho=\{H,ABC,ABD,CE\}$
+>
+>Per avere una decomposizione con join senza perdita, aggiungiamo alla decomposizione precedente un sottoschema che contenga la chiave $ABH$ (**è sufficiente una chiave qualsiasi**), che non è contenuta in alcuno degli schemi ottenuti
+>
+>Si ha dunque che $\sigma=\{H,ABC,ABD,CE,ABH\}$
 
+>[!example]- Esempio 2
