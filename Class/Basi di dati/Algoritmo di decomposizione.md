@@ -145,3 +145,48 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >Si ha dunque che $\sigma=\{H,ABC,ABD,CE,ABH\}$
 
 >[!example]- Esempio 2
+>$$R=(A,B,C,D,E)$$
+>$$F=\{AB\to C,B\to D,D\to C\}$$
+>Rispondere ai seguenti quesiti:
+>- Verificare che $R$ non è in 3NF
+>- Fornire una decomposizione di $R$ tale che:
+>	- ogni schema della decomposizione è in 3NF
+>	- la decomposizione preserva $F$
+>	- la decomposizione ha un join senza perdite
+>
+>##### Verificare che $R$ non è in 3NF
+>Notiamo che l’attributo $E$ deve far parte della chiave perché non è determinato da nessuno e inoltre che $C$ non compare mai a sinistra (non determina nessun attributo) quindi non farà parte della chiave
+>
+>Calcoliamo $(AB)^+_{F}=\{A,B,C,D\}$. Manca solo la $E$ infatti $(ABE)^+_{F}=\{A,B,C,E\}=R$
+>
+>In $F$ ci sono delle dipendenze parziali $AB\to C$, $B\to D$ quindi $F$ non è in 3NF
+>
+>##### Copertura minimale di $F$
+>1. Tutte le parti destre sono già singleton
+>2. Verifichiamo se nelle dipendenze ci sono ridondanze nelle parti sinistre
+>Proviamo a ridurre $AB\to C$: $(A)^+_{F}=\{A\}$, $(B)^+_{F}=\{B,D,C\}$ che contiene $C$ quindi la dipendenza si può ridurre in $B\to C$
+>Abbiamo quindi $F=\{B\to C,B\to D,D\to C\}$
+>3. Verifichiamo se ci sono dipendenze ridondanti
+>Cominciamo rimuovendo $B\to C$ e vediamo se viene comunque rispettata; ciò avviene per transitività $B\to D\land D\to C$ quindi è possibile rimuoverla
+>
+>Abbiamo quindi $G=\{B\to D, D\to C\}$
+>
+>##### Decomposizione
+>Al primo passo inseriamo in un elemento della decomposizione gli attributi che non compaiono nelle dipendenze di $G$ quindi avremo $\rho=\{AE\}$. Passiamo poi a verificare che non ci sono dipendenze che coinvolgono tutti gli attributi dello scehma, per cui eseguiamo il passo alternativo. Abbiamo alla fine $\rho=\{AE,BD,DC\}$
+>Per avere una decomposizione con join senza perdita, aggiungiamo alla decomposizione precedente un sottoschema che contenga la chiave (che non è già contenuta in alcuno degli schemi ottenuti)
+>Abbiamo quindi $\sigma=\{AE,BD,DC,ABE\}$
+
+>[!example]- Esempio 3
+>$$R=(A,B,C,D,E,H)$$
+>$$F=\{D\to H,B\to AC,CD\to H,C\to AD\}$$
+>
+>Bisogna:
+>- Determinare l’unica chiave di $R$
+>- Dire perché $R$ con l’insieme di dipendenze funzionali $F$ non è in 3NF
+>- Trovare una decomposizione $\rho$ di $R$ tale che:
+>	- ogni schema in $\rho$ è in 3NF
+>	- $\rho$ preserva $F$
+>	- $\rho$ ha un join senza perdita
+>
+>##### Verificare che lo schema non è in 3NF
+
