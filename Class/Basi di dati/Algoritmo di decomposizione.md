@@ -208,4 +208,15 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >Per avere una decomposizione con join senza perdita, aggiungiamo alla decomposizione precedente un sottoschema che contenga la chiave (che non è già contenuta in alcuno degli schemi ottenuti)
 >Abbiamo quindi $\sigma=\{E,DH,BC,CA,CD,BE\}$
 
-
+>[!example]- Esempio 4
+>$$R=(A,B,C,D,E,H,I)$$
+>$$F=\{A\to C,C\to D, BI\to H,H\to I\}$$
+>
+>Bisogna:
+>- Trovare le due chiavi dello schema $R$ e spiegare perché sono le chiavi
+>- Dire perché $R$ con l’insieme di dipendenze funzionali $F$ non è in 3NF
+>- Trovare una decomposizione $\rho$ di $R$ tale che:
+>	- ogni schema in $\rho$ è in 3NF
+>	- $\rho$ preserva $F$
+>	- $\rho$ ha un join senza perdita
+>
