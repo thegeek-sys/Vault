@@ -221,4 +221,21 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >	- $\rho$ ha un join senza perdita
 >
 >##### Verificare che lo schema non è in 3NF
->Notiamo che l’attributo $E$ deve far parte della chiave perché non è determinato da nessuno, inoltre che $A$ e $B$ non compare mai a sinistra (non determina nessun attributo) quindi non farà parte della chiave e infine $D$ non viene determinato da nessuno quindi non farà parte della chiave
+>Notiamo che l’attributo $E$ deve far parte della chiave perché non è determinato da nessuno, inoltre che $A$ e $B$ non compaiono mai a destra (non sono determinate da nessun attributo) quindi devono far parte della chiave e infine $D$ non viene determinato da nessuno quindi non farà parte della chiave
+>Calcoliamo $(ABEI)^+_{F}=\{A,B,C,D,E,H,I\}$ quindi $ABEI$ è chiave. Calcoliamo $(ABEH)^+_{F}=\{A,B,C,D,E,H,I\}$ quindi $ABEH$ è chiave
+>Non è in 3NF infatti ad esempio $A\to C$ è parziale
+>
+>##### Copertura minimale
+>1. Parti destre diventano singleton
+>Parti destre sono già singleton
+>2. Verifichiamo se nelle dipendenze ci sono ridondanze nelle parti sinistre
+>Proviamo a ridurre $BI\to H$. Notiamo che in $(B)^+_{F}$ compare solo $B$, calcolo quindi $(I)^+_{F}=\{I\}$ dunque neanche questa è eliminabile.
+>3. Verifichiamo se ci sono dipendenze ridondanti
+>Notiamo che è inutile provare ad eliminare per tutte vale che la parte destra compare una sola volta
+>
+>Dunque $F$ è già minimale
+>
+>##### Decomposizione
+>Al primo passo inseriamo in un elemento della decomposizione gli attributi che non compaiono nelle dipendenze di $G$ quindi avremo $\rho=\{E\}$. Passiamo poi a verificare che non ci sono dipendenze che coinvolgono tutti gli attributi dello scehma, per cui eseguiamo il passo alternativo. Abbiamo alla fine $\rho=\{E,AC,CD,BIH,HI\}$
+>Per avere una decomposizione con join senza perdita, aggiungiamo alla decomposizione precedente un sottoschema che contenga una delle chiavi ($ABEI$ o $ABEH$).
+>Abbiamo quindi due possibili decomposizioni $\sigma_{1}=\{E,AC,CD,BIH,HI,ABEH\}$ e $\sigma_{1}=\{E,AC,CD,BIH,HI,ABEI\}$
