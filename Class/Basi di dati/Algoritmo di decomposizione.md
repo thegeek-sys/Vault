@@ -189,4 +189,23 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >	- $\rho$ ha un join senza perdita
 >
 >##### Verificare che lo schema non è in 3NF
+>Notiamo che l’attributo $E$ deve far parte della chiave perché non è determinato da nessuno e inoltre che $A$ non compare mai a sinistra (non determina nessun attributo) quindi non farà parte della chiave
+>Calcoliamo $(B)^+_{F}=\{B,A,C,D,H\}$ aggiungendo $E$ abbiamo lo schema $R$ quindi $BE$ è chiave
+>
+>##### Copertura minimale di $F$
+>1. Parti destre diventano singleton
+>$F=\{D\to H,B\to A,B\to C,CD\to H,C\to A,C\to D\}$
+>2. Verifichiamo se nelle dipendenze ci sono ridondanze nelle parti sinistre
+>Proviamo a ridurre $CD\to H$. Notiamo che in $(D)^+_{F}$ compare $H$ quindi posso eliminare $C$ ma così facendo ho una dipendenza duplicata, quindi la elimino del tutto
+>Abbiamo quindi $F=\{D\to H,B\to A,B\to C,C\to A,C\to D\}$
+>3. Verifichiamo se ci sono dipendenze ridondanti
+>In questo caso prendo in considerazione solamente $B\to A$ e $C\to A$ in quanto solo le uniche che hanno un determinante duplicato. Noto che togliendo $B\to A$ la dipendenza rimane rispettata per transitività $B\to C\land C\to A$
+>
+>La copertura minimale è quindi $G=\{D\to H,B\to C,C\to A,C\to D\}$
+>
+>##### Decomposizione
+>Al primo passo inseriamo in un elemento della decomposizione gli attributi che non compaiono nelle dipendenze di $G$ quindi avremo $\rho=\{E\}$. Passiamo poi a verificare che non ci sono dipendenze che coinvolgono tutti gli attributi dello scehma, per cui eseguiamo il passo alternativo. Abbiamo alla fine $\rho=\{E,DH,BC,CA,CD\}$
+>Per avere una decomposizione con join senza perdita, aggiungiamo alla decomposizione precedente un sottoschema che contenga la chiave (che non è già contenuta in alcuno degli schemi ottenuti)
+>Abbiamo quindi $\sigma=\{E,DH,BC,CA,CD,BE\}$
+
 
