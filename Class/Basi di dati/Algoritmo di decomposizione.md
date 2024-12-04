@@ -220,3 +220,5 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >	- $\rho$ preserva $F$
 >	- $\rho$ ha un join senza perdita
 >
+>##### Verificare che lo schema non è in 3NF
+>Notiamo che l’attributo $E$ deve far parte della chiave perché non è determinato da nessuno, inoltre che $A$ e $B$ non compare mai a sinistra (non determina nessun attributo) quindi non farà parte della chiave e infine $D$ non viene determinato da nessuno quindi non farà parte della chiave
