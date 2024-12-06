@@ -107,7 +107,16 @@ void producer() {
 	while(true) {
 		receive(mayproduce, pmsg);
 		pmsg = produce();
-		
+		nbsend(mayconsume, pmsg);
+	}
+}
+
+void consumer() {
+	message cmsg;
+	while(true) {
+		receive(mayconsume, cmsg);
+		consume(cmsg);
+		nbsend(mayproduce, null);
 	}
 }
 ```
