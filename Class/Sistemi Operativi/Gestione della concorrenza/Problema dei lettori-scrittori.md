@@ -27,3 +27,7 @@ Potrebbe accadere in questa soluzione che si vada in starvation sui `writer`
 
 ---
 ## Soluzione con precedenza agli scrittori
+![[Screenshot 2024-12-06 alle 23.35.16.png]]
+
+In questo caso ho fatto ciò che prima avevo fatto solo per i `reader`, per i `writer`
+Per i `reader` invece
