@@ -63,8 +63,9 @@ void controller() {
 		// se è positivo ci potrebbero essere dei reader
 		if (count > 0) {
 			if (!empty(finished)) {
-				/* da reader! */
-				receive(finished, msg);
+				receive(finished, msg); /* da reader! */
+				// se count==MAX_READERS vuol dire che tutti i reader
+				// hanno letto
 				count++;
 			}
 			else if (!empty(writerequest)) {
