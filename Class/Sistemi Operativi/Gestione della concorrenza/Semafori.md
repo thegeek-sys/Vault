@@ -409,9 +409,13 @@ void customer() {
 	get_up_from_sofa();
 	signal(sofa);
 	sit_in_chair();
+	// mutex2 è condivisa con il barbiere quindi metto un semaforo
+	// (barber fa dequeue e customer fa enqueue)
 	wait(mutex2);
 	enqueue1(cust_nr);
-	signal(mutex2)
+	signal(mutex2);
+	// avrei potuto anche utilizzare un solo semaforo mutex ma ciò avrebbe
+	// significato una diminuzione di prestazioni
 	signal(ready);
 	wait(finish[cust_nr]);
 	leave_chair;
