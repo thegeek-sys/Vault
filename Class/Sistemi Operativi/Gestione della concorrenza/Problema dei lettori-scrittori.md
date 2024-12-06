@@ -37,6 +37,7 @@ Per i `reader` invece è stato aggiunto, oltre al solito semaforo locale, il sem
 ```c
 // mailbox = readrequest, writerequest, finished, controller_pid
 // send non bloccante, receive bloccante
+// empty verifica se ci sono messaggi da ricevere
 
 void reader(int i) {
 	while(true) {
@@ -59,6 +60,7 @@ void writer(int j) {
 void controller() {
 	int count = MAX_READERS;
 	while(true) {
+		// se è positivo ci potrebbero essere dei reader
 		if (count > 0) {
 			if (!empty(finished)) {
 				/* da reader! */
@@ -71,6 +73,8 @@ void controller() {
 				count = count - MAX_READERS;
 			}
 			else if (!empty(readrequest)) {
+				// per sapere a chi far leggere utilizzo il campo sender
+				// del messaggio da cui ho ricevuto la richiesta
 				receive(readrequest, msg);
 				count--;
 				nbsend(msg.sender, "OK");
