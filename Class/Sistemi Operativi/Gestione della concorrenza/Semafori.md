@@ -389,8 +389,8 @@ L’idea della prima soluzione, si possono servire, nel corso dell’intero peri
 // max_clust=numero massimo di persone contemporaneamente nel negozio
 semaphore
 	max_clust=20, sofa=4, chair=3, coord=3, ready=0, leave_ch=0,
-	paym=0, recpt =0, finish[50]={0};
-	mutex1 =1 , mutex2 =1;
+	paym=0, recpt=0, finish[50]={0};
+	mutex1=1, mutex2=1;
 
 int count = 0;
 
@@ -398,10 +398,11 @@ void customer() {
 	int cust_nr;
 	wait(max_cust);
 	enter_shop();
+	// essendo count una variabile condivisa la proteggo con un semaforo
 	wait(mutex1);
 	cust_nr = count;
 	count++;
-	signal(mutes1);
+	signal(mutex1);
 	wait(sofa);
 	sit_on_sofa();
 	wait(chair);
