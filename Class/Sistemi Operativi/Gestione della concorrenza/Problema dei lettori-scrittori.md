@@ -71,6 +71,8 @@ void controller() {
 			else if (!empty(writerequest)) {
 				receive(writerequest, msg);
 				writer_id = msg.sender;
+				// se ci sono lettori count < 0
+				// se non ci sono lettori count = 0
 				count = count - MAX_READERS;
 			}
 			else if (!empty(readrequest)) {
@@ -81,6 +83,7 @@ void controller() {
 				nbsend(msg.sender, "OK");
 			}
 		}
+		// non ci sono lettori, lascio scrivere il writer
 		if (count == 0) {
 			nbsend(writer_id, "OK");
 			receive(finished, msg); /* da writer! */
