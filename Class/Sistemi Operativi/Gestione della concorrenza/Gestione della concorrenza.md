@@ -3,5 +3,5 @@
 - [[Semafori]]
 - [[Mutua esclusione - soluzioni software|Mutua esclusione: soluzioni software]]
 - [[Passaggio di messaggi]]
-- Problema dei lettori/scrittori
+- [[Problema dei lettori-scrittori|Problema dei lettori/scrittori]]
 - Equivalenze
