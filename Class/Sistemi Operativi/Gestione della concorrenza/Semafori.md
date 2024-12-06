@@ -5,7 +5,31 @@ Related:
   - "[[Gestione della concorrenza]]"
 Completed:
 ---
-  ---
+---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Pseudocodice|Pseudocodice]]
+	- [[#Introduction#Semafori binari - pseudocodice|Semafori binari - pseudocodice]]
+- [[#Semafori - pseudo codice “vero”|Semafori - pseudo codice “vero”]]
+- [[#Semafori deboli e forti|Semafori deboli e forti]]
+	- [[#Semafori deboli e forti#Semafori forti - esempio|Semafori forti - esempio]]
+- [[#Mutua esclusione con i semafori|Mutua esclusione con i semafori]]
+- [[#Problema del produttore/consumatore|Problema del produttore/consumatore]]
+	- [[#Problema del produttore/consumatore#Pseudocodici|Pseudocodici]]
+		- [[#Pseudocodici#Il buffer|Il buffer]]
+	- [[#Problema del produttore/consumatore#Soluzione sbagliata|Soluzione sbagliata]]
+		- [[#Soluzione sbagliata#Possibile scenario|Possibile scenario]]
+	- [[#Problema del produttore/consumatore#Soluzione corretta|Soluzione corretta]]
+	- [[#Problema del produttore/consumatore#Soluzione con semafori generali|Soluzione con semafori generali]]
+- [[#Produttori e consumatori con buffer circolare|Produttori e consumatori con buffer circolare]]
+	- [[#Produttori e consumatori con buffer circolare#Buffer circolare: pseudocodici|Buffer circolare: pseudocodici]]
+	- [[#Produttori e consumatori con buffer circolare#Soluzione generale con i semafori|Soluzione generale con i semafori]]
+- [[#Esempi|Esempi]]
+	- [[#Esempi#Trastevere|Trastevere]]
+- [[#Negozio del barbiere|Negozio del barbiere]]
+	- [[#Negozio del barbiere#Prima soluzione|Prima soluzione]]
+	- [[#Negozio del barbiere#Seconda soluzione|Seconda soluzione]]
+---
 ## Introduction
 I semafori sono delle particolari strutture dati su cui si possono fare tre operazioni *atomiche*:
 - `initialize`
