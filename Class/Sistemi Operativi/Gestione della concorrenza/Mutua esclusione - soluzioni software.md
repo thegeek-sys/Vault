@@ -6,6 +6,20 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Prove|Prove]]
+	- [[#Prove#Primo tentativo|Primo tentativo]]
+		- [[#Primo tentativo#Problemi|Problemi]]
+	- [[#Prove#Secondo tentativo|Secondo tentativo]]
+		- [[#Secondo tentativo#Problemi|Problemi]]
+	- [[#Prove#Terzo tentativo|Terzo tentativo]]
+		- [[#Terzo tentativo#Problemi|Problemi]]
+	- [[#Prove#Quarto tentativo|Quarto tentativo]]
+		- [[#Quarto tentativo#Problemi|Problemi]]
+- [[#Algoritmo di Dekker|Algoritmo di Dekker]]
+- [[#Algoritmo di Peterson|Algoritmo di Peterson]]
+---
 ## Introduction
 Le soluzione software è usabile solo per problemi di concorrenza semplici come ad esempio la mutua esclusione.
 In questo caso dunque non possiamo fare affidamento alle istruzioni macchina, ma solamente all’assegnamento a variabili e simili. Come contro però si ha il fatto che tutte le operazioni sono in attesa attiva (non possono essere bloccati i processi)
@@ -53,4 +67,6 @@ Questo algoritmo vale solo per $2$ processi estendibile a $N$ (seppur non banale
 L’algoritmo di Peterson permette di risolvere lo stesso problema in maniera più semplice
 ![[Pasted image 20241206181525.png|center|400]]
 
+In questo caso il processo dice che a dover passare è l’altro processo ed entrando nel `while` solamente se è il turno dell’altro processo e inoltre vuole entrare (non si hanno problemi se in esecuzione si ha un solo processo). Anche qui, facendo un **interleaning** perfetto, non si avrebbero problemi in quando viene mandato in esecuzione il penultimo processo che ha impostato `turn`
 
+Anche questo vale solo per $2$ processi e l’estensione a $N$ processi è più semplice rispetto al Dekker. Come per Dekker non si ha starvation, deadlock ma problemi per le CPU che riordinano gli accessi in memoria. Si ha inoltre il **bounded-waiting** tramite il quale un processo può aspettare l’altro al più una volta (vale anche per Dekker ma non per la generalizzazione a $N>2$ processi)
