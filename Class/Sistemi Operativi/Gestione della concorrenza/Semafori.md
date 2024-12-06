@@ -380,3 +380,70 @@ Nella versione `macchina_dal_lato_destro` cambia solamente il fatto che tutti i 
 Il salone del barbiere ovviamente accetta un determinato numero di clienti, quindi inizialmente accetta un determinato numero di clienti in piedi. Alcuni di questi, sulla base di chi arriva per prima, si può sedere su un divano e tra questi alcuni possono accedere alle sedie del barbiere (si compete per entrambe le risorse). Una volta tagliati i capelli uno alla volta vanno alla cassa per pagare ed escono
 
 Noto ciò si può supporre che ci sia una capienza massima del negozio per ciascun settore indicato da `max_clust`. Nell’esempio assegneremo un barbiere per ogni sedia
+
+### Prima soluzione
+L’idea della prima soluzione, si possono servire, nel corso dell’intero periodo (es. un giorno), un numero massimo di clienti e una sola cassa per la quale competono i barbieri (ovvero, un barbiere libero a caso può fare le veci del cassiere)
+
+```c
+// finish=numero massimo di persone servibili nel periodo
+// max_clust=numero massimo di persone contemporaneamente nel negozio
+semaphore
+	max_clust=20, sofa=4, chair=3, coord=3, ready=0, leave_ch=0,
+	paym=0, recpt =0, finish[50]={0};
+	mutex1 =1 , mutex2 =1;
+
+int count = 0;
+
+void customer() {
+	int cust_nr;
+	wait(max_cust);
+	enter_shop();
+	wait(mutex1);
+	cust_nr = count;
+	count++;
+	signal(mutes1);
+	wait(sofa);
+	sit_on_sofa();
+	wait(chair);
+	get_up_from_sofa();
+	signal(sofa);
+	sit_in_chair();
+	wait(mutex2);
+	enqueue1(cust_nr);
+	signal(mutex2)
+	signal(ready);
+	wait(finish[cust_nr]);
+	leave_chair;
+	signal(leave_cr);
+	pay();
+	wait(recpt);
+	exit_shop();
+	signal(max_cust);
+}
+
+void barber() {
+	int b_cust;
+	while(true) {
+		wait(ready);
+		wait(mutex2);
+		dequeue1(b_cust);
+		signal(mutex2);
+		wait(coord);
+		cut_hair();
+		signal(coord);
+		signal(finish[b_cust]);
+		wait(leave_ch);
+		signal(chair);
+	}
+}
+
+void cashier() {
+	while(true) {
+		wait(paym);
+		wait(coord);
+		accept_pay();
+		signal(coord);
+		signal(recpt);
+	}
+}
+```
