@@ -21,4 +21,9 @@ La vera grande differenza con i produttori/consumatori sta nel fatto che l’are
 ![[Pasted image 20241206232642.png|center|400]]
 
 Il `writer` ha come unico compito quello di scrivere e lo fa attraverso un semaforo di mutua esclusione (solo un `writer` per volta può scirvere)
-Il `reader` invece
+Il `reader` invece (come per la soluzione di [[Semafori#Trastevere|trastevere]]) incrementa il valore di `readcount` e se si tratta del primo reader, vengono bloccati eventuali scrittori (ma se uno scrittore si trova già nella sezione critica è il lettore a bloccarsi). Viene quindi eseguita l’operazione di lettura e infine viene decrementato il valore di `readcount` e se si tratta dell’ultimo lettore, vengono sbloccati eventuali `writer`
+
+Potrebbe accadere in questa soluzione che si vada in starvation sui `writer`
+
+---
+## Soluzione con precedenza agli scrittori
