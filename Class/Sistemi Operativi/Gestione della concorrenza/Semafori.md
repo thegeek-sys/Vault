@@ -459,4 +459,48 @@ void cashier() {
 ```
 
 ### Seconda soluzione
-In questa seconda soluzione, non si ha limite massimo al numero di clienti servibili in un giorno e inoltre non si ha un processo separato per pagare, ma resta il fatto che si paga un barbiere qualsiasi (purché libero)
+In questa seconda soluzione, non si ha limite massimo al numero di clienti servibili in un giorno e inoltre non si ha un processo separato per pagare, ma resta il fatto che si paga un barbiere qualsiasi (purché libero).
+Qui inoltre viene utilizzato un solo semaforo `mutex`, non è più necessario il semaforo `coord` e ci sono tanti semafori `finish` quanti sono i barbieri. Non è più presente il semaforo `leave_ch` (che tanto era inefficiente, solo un cliente alla volta poteva alzarsi).
+
+Il semaforo `chair` è inizializzato a $0$ e viene incrementato ogni volta che un barbiere torna libero
+
+Nonostante tutto ciò ci sta una piccola inefficienza: un solo barbiere alla volta può preparare la **propria** sedia
+
+```c
+int next_barber;
+void Barber(i) {
+	while(true) {
+		wait(mutex);
+		next_barber = i;
+		signal(chair);
+		wait(ready);
+		signal(mutex);
+		cut_hair();
+		signal(finish[i]);
+		wait(paym);
+		accept_pay();
+		signal(recpt);
+	}
+}
+
+void Customer(i) {
+	int my_barber;
+	wait(max_cust);
+	enter_shop();
+	wait(sofa);
+	sit_on_sopfa();
+	wait(chair);
+	get_up_from_sofa();
+	signal(sofa);
+	my_barber = next_barber;
+	sit_in_chair();
+	signal(ready);
+	wait(finish[my_barber]);
+	leave_chair();
+	pay();
+	signal(paym);
+	wait(recpt);
+	exit_shop();
+	signal(max_cust);
+}
+```

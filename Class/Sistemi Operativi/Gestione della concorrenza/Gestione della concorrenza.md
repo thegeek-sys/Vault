@@ -1,6 +1,7 @@
 - [[Concetti basilari di concorrenza]]
 - [[Mutua esclusione - supporto hardware|Mutua esclusione: supporto hardware]]
 - [[Semafori]]
+- [[Mutua esclusione - soluzioni software|Mutua esclusione: soluzioni software]]
 - Passaggio di messaggi
 - Problema dei lettori/scrittori
 - Equivalenze
