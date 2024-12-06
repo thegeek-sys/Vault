@@ -37,7 +37,20 @@ Anche qui, se lo scheduler interrompe subito dopo aver impostato il `flag` i pro
 ![[Pasted image 20241206175819.png]]
 
 #### Problemi
-In questa soluzione si tenta di risolvere il problema di deadlock modificando nuovamente il `flag` dentro il `while`, ma in questo caso devo sperare che lo scheduler interrompa il processo prima della fine del `delay`
+In questa soluzione si tenta di risolvere il problema di deadlock modificando nuovamente il `flag` dentro il `while`, ma in questo caso devo sperare che lo scheduler interrompa il processo prima della fine del `delay`. In questo caso più che deadlock, si parla di **livelock**, ovvero i processi continuano a fare qualcosa ma non di utile
 
 ---
-## Livelock
+## Algoritmo di Dekker
+Nell’algoritmo di Dekker si implementano le due soluzioni, una variabile condivisa e una locale
+![[Pasted image 20241206180359.png|center|580]]
+
+Qui fin dall’inizio dichiaro di voler entrare nella sezione critica. Se il `wants_to_enter` dell’altro processo è `false` entro nella sezione critica. Nel caso in cui invece il valore è `true`, si ha una variabile `turn` condivisa. Per il `P0` se `turn` è $0$ (non tocca a me), rimetto a falso il fatto che voglio entrare e faccio un’attesa attiva finché il `turn` è 1. Una volta finita l’attesa ri-imposto il fatto che voglio entrare a `true`.
+
+Questo algoritmo vale solo per $2$ processi estendibile a $N$ (seppur non banale, non so a cosa impostare `turn`). Garantisce inoltre la non-starvation (grazie a `turn`) e il non-deadlock (ma è busy-waiting, se ci sono delle priorità fisse, ci può essere deadlock). Non richiede alcun supporto dal SO, ma in alcune moderne architetture hanno ottimizzazioni hardware che riordano le istruzione da eseguire, nonché gli accessi in memoria, risulta dunque necessario disabilitare tali ottimizzazioni
+
+---
+## Algoritmo di Peterson
+L’algoritmo di Peterson permette di risolvere lo stesso problema in maniera più semplice
+![[Pasted image 20241206181525.png|center|400]]
+
+
