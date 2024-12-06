@@ -377,3 +377,6 @@ Nella versione `macchina_dal_lato_destro` cambia solamente il fatto che tutti i 
 
 ## Negozio del barbiere
 ![[Pasted image 20241203000030.png|400]]
+Il salone del barbiere ovviamente accetta un determinato numero di clienti, quindi inizialmente accetta un determinato numero di clienti in piedi. Alcuni di questi, sulla base di chi arriva per prima, si può sedere su un divano e tra questi alcuni possono accedere alle sedie del barbiere (si compete per entrambe le risorse). Una volta tagliati i capelli uno alla volta vanno alla cassa per pagare ed escono
+
+Noto ciò si può supporre che ci sia una capienza massima del negozio per ciascun settore indicato da `max_clust`. Nell’esempio assegneremo un barbiere per ogni sedia
