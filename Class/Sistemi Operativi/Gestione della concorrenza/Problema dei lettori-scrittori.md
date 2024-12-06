@@ -30,4 +30,4 @@ Potrebbe accadere in questa soluzione che si vada in starvation sui `writer`
 ![[Screenshot 2024-12-06 alle 23.35.16.png]]
 
 In questo caso ho fatto ciò che prima avevo fatto solo per i `reader`, per i `writer`
-Per i `reader` invece è stato aggiunto, oltre al solito semaforo locale, il semaforo `rsem` che permette, essendo `writer` controllato da un semaforo locale, di evitare che il lettore possa prevalere sullo scrittore; infatti se ad esempio alla fine ad un certo punto 
+Per i `reader` invece è stato aggiunto, oltre al solito semaforo locale, il semaforo `rsem` che permette, essendo `writer` controllato da un semaforo locale, di evitare che il lettore possa prevalere sullo scrittore; infatti se ad esempio alla fine ad un certo punto arriva una 
