@@ -15,7 +15,7 @@ Per l’interazione tra due processi devono essere soddisfatti due requisiti:
 - comunicazione
 
 Lo scambio di messaggi (*message passing*) è una soluzione al secondo requisito (funziona sia con memoria condivisa che distribuita)
-Mentre per i semafori avevamo `wait` e `signal`, qui si hanno due istruzioni fondamentali `send(destination, message)` e `receive(source, message)` (`message` è un input per `send` mentre un output per `receive`) e spesso ci sta anche il test di recezione. Queste operazioni sono sempre **atomiche**
+Mentre per i semafori avevamo `wait` e `signal`, qui si hanno due istruzioni fondamentali `send(destination, message)` e `receive(source, message)` (`message` è un input per `send` mentre un output per `receive`) e spesso ci sta anche il test di recezione. Queste operazioni sono sempre **atomiche** (anche se si potrebbe bloccare in quando ad esempio non ha ricevuto nulla)
 
 ### Sincronizzazione
 La comunicazione richiede anche la sincronizzazione tra processi (il mittente deve inviare prima che il ricevente riceva).
@@ -37,3 +37,4 @@ Approccio piuttosto raro in cui accade che, indipendentemente se il messaggio è
 
 ---
 ## Indirizzamento
+### Indirizzamento diretto
