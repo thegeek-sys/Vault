@@ -457,3 +457,6 @@ void cashier() {
 	}
 }
 ```
+
+### Seconda soluzione
+In questa seconda soluzione, non si ha limite massimo al numero di clienti servibili in un giorno e inoltre non si ha un processo separato per pagare, ma resta il fatto che si paga un barbiere qualsiasi (purché libero)
