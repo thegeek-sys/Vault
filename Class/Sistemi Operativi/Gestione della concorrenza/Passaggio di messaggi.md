@@ -88,6 +88,8 @@ void main() {
 
 ---
 ## Produttore/consumatore con i messaggi
+Vediamo ora una soluzione per risolvere il problema di produttore/consumatore attraverso l’utilizzo dei messaggi (con qualsiasi numero di produttori e consumatori)
+
 ```c
 const int capacity = /* buffering capacity */;
 mailbox mayproduce, mayconsume;
@@ -96,6 +98,8 @@ const message null = /* null message */;
 void main() {
 	mayproduce = crate_mailbox();
 	mayconsume = create_mailbox();
+	// facendo in questo modo mi permette di produrre tanto quanto e la 
+	// capacità del buffer
 	for(int i=1; i<=capacity; i++) {
 		nbsend(mayproduce, null);
 	}
@@ -107,6 +111,7 @@ void producer() {
 	while(true) {
 		receive(mayproduce, pmsg);
 		pmsg = produce();
+		// append....
 		nbsend(mayconsume, pmsg);
 	}
 }
@@ -120,3 +125,7 @@ void consumer() {
 	}
 }
 ```
+
+Mutua esclusione → ok
+Deadlock → ok
+Stravation → ok solo se le code di processi bloccati su una `receive` sono gestite in modo “forte” (i processi si sbloccano secondo un ordine FIFO)
