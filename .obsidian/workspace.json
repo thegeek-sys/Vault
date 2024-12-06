@@ -66,6 +66,20 @@
             }
           },
           {
+            "id": "7db166d06fb7ad5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Semafori"
+            }
+          },
+          {
             "id": "a69b6653d902f2f4",
             "type": "leaf",
             "state": {
@@ -239,10 +253,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a69b6653d902f2f4",
+  "active": "7db166d06fb7ad5b",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Passaggio di messaggi.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
+    "Files/Pasted image 20241206225919.png",
+    "Files/Pasted image 20241206225819.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - soluzioni software.md",
     "Files/Pasted image 20241206181525.png",
@@ -251,15 +268,12 @@
     "Files/Pasted image 20241206175638.png",
     "Files/Pasted image 20241206175202.png",
     "Files/Pasted image 20241206174629.png",
-    "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
     "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
     "Flet-notes/2024-11-28_BD.md",
     "Files/Pasted image 20241203000030.png",
     "Files/Pasted image 20241202233930.png",
-    "Files/Pasted image 20241202232228.png",
-    "Files/Pasted image 20241202214950.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
     "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
     "Class/Sistemi Operativi/Processi/Processi.md",
@@ -279,7 +293,6 @@
     "Class/Sistemi Operativi/Scheduling",
     "Class/Sistemi Operativi/Gestione della concorrenza",
     "Class/Sistemi Operativi/Introduzione.md",
-    "Class/Sistemi Operativi/Gestione della memoria/Gestione della memoria.md",
     "Files/Pasted image 20241122000018.png.sb-52feadf3-bWZpro",
     "Class/Sistemi Operativi/File-system",
     "Class/Sistemi Operativi/Gestione della memoria",
