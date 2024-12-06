@@ -387,6 +387,7 @@ L’idea della prima soluzione, si possono servire, nel corso dell’intero peri
 ```c
 // finish=numero massimo di persone servibili nel periodo
 // max_clust=numero massimo di persone contemporaneamente nel negozio
+// coord=numero di barbieri
 semaphore
 	max_clust=20, sofa=4, chair=3, coord=3, ready=0, leave_ch=0,
 	paym=0, recpt=0, finish[50]={0};
@@ -413,10 +414,11 @@ void customer() {
 	// (barber fa dequeue e customer fa enqueue)
 	wait(mutex2);
 	enqueue1(cust_nr);
-	signal(mutex2);
 	// avrei potuto anche utilizzare un solo semaforo mutex ma ciò avrebbe
 	// significato una diminuzione di prestazioni
+	signal(mutex2);
 	signal(ready);
+	// aspetta che il barbiere finisca
 	wait(finish[cust_nr]);
 	leave_chair;
 	signal(leave_cr);
@@ -429,7 +431,10 @@ void customer() {
 void barber() {
 	int b_cust;
 	while(true) {
+		// un barbiere inizia a fare qualcosa solo quando arriva un
+		// signal(ready)
 		wait(ready);
+		// quale cliente servire
 		wait(mutex2);
 		dequeue1(b_cust);
 		signal(mutex2);
