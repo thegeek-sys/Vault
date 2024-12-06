@@ -6,6 +6,12 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Soluzione con precedenza ai lettori|Soluzione con precedenza ai lettori]]
+- [[#Soluzione con precedenza agli scrittori|Soluzione con precedenza agli scrittori]]
+- [[#Soluzione con i messaggi|Soluzione con i messaggi]]
+---
 ## Introduction
 Nel problema dei lettori/scrittori si ha un’**area dati condivisa** tra molti processi di cui **alcuni la leggono, altri la scrivono**
 
@@ -35,7 +41,7 @@ Per i `reader` invece è stato aggiunto, oltre al solito semaforo locale, il sem
 ---
 ## Soluzione con i messaggi
 ```c
-// mailbox = readrequest, writerequest, finished, controller_pid
+// mailbox = readrequest, writerequest, finished
 // send non bloccante, receive bloccante
 // empty verifica se ci sono messaggi da ricevere
 
@@ -89,6 +95,8 @@ void controller() {
 			receive(finished, msg); /* da writer! */
 			count = MAX_READERS;
 		}
+		// ci sono lettori, aspetto la fine di ogni lettura incrementando
+		// count fino a 0 per poi poter scirvere
 		while (count < 0) {
 			receive(finished, msg); /* da reader! */
 			count++;
@@ -96,3 +104,5 @@ void controller() {
 	}
 }
 ```
+
+Ovviamente occorre un processo di inizializzazione che crea le 3 mailbox e lancia 1 controller più reader e writer a piacimento. Ma se ci sono più di `MAX_READER-1` richieste contemporaneamente da lettori, la soluzione non funziona
