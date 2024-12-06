@@ -164,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273
+    "width": 243.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -267,6 +268,7 @@
   },
   "active": "6d7592e0efc582ca",
   "lastOpenFiles": [
+    "Files/Pasted image 20241206232642.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Problema dei lettori-scrittori.md",
     "Problema dei lettori/scrittori.md",
@@ -304,7 +306,6 @@
     "Class/Sistemi Operativi/Processi",
     "Class/Sistemi Operativi/Scheduling/Scheduling.md",
     "Class/Sistemi Operativi/Scheduling/Scheduling nei sistemi operativi.md",
-    "Class/Sistemi Operativi/Scheduling/Concetti basilari di scheduling.md",
     "Class/Sistemi Operativi/Scheduling",
     "Class/Sistemi Operativi/Gestione della concorrenza",
     "Files/Pasted image 20241122000018.png.sb-52feadf3-bWZpro",
