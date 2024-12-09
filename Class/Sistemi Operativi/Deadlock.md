@@ -67,7 +67,10 @@ Nel caso delle risorse riusabili il deadlock può avvenire solo se un processo h
 
 ### Condizioni per il deadlock
 Il deadlock si verifica solamente se ci sono queste quattro condizioni:
-- 
+- **Mutua esclusione** → solo un processo alla volta può usare una data risorsa
+- **Hold-and-wait** → un processo può richiedere una risorsa mentre ne tiene già bloccate altre
+- **Niente preemption** per le risorse → non si può sottrarre una risorsa ad un processo senza che quest’ultimo la rilasci
+- **Attesa circolare** → esiste una catena chiusa di processi, in cui ciascun processo detiene una risorsa richiesta (invano) dal processo che lo segue nella catena
 
 ---
 ## Risorse non riusabili
@@ -81,6 +84,11 @@ Nel caso delle risorse non riusabili il deadlock può avvenire se si fa una rich
 >![[Pasted image 20241209234502.png|450]]
 
 ### Condizioni per il deadlock
+Il deadlock si verifica solamente se ci sono queste quattro condizioni:
+- **Mutua esclusione** → solo un processo alla volta può usare una data risorsa
+- **Hold-and-wait** → un processo può richiedere una risorsa mentre ne tiene già bloccate altre
+- **Niente preemption** per le risorse → non si può sottrarre una risorsa ad un processo senza che quest’ultimo la rilasci
+- **Attesa circolare** → esiste una catena chiusa di processi, in cui ciascun processo detiene una risorsa richiesta (invano) dal processo che lo segue nella catena
 
 ---
 ## Grafo dell’allocazione delle risorse
