@@ -99,3 +99,41 @@ Questo è un grafo diretto che rappresenta lo stato di risorse e processi (tanti
 In base alla direzione della freccia si determina se la risorsa è richiesta o tenuta da un processo. Mentre questo sistema risulta ok per le risorse riusabili, per le risorse consumabili non esiste mai l’”held” invece i pallini compaiono e scompaiono
 
 ![[Pasted image 20241209235006.png]]
+
+>[!info]
+>![[Pasted image 20241210001404.png|230]]
+>- Mutua esclusione → sia `Ra` che `Rb` possono essere prese da un solo processo alla volta
+>- Hold-and-wait → `P1` richiede `Ra` e detiene `Rb` e `P2` viceversa
+>- Niente preemption → SO non può togliere le risorse
+>- Attesa circolare → visivamente può essere vista da un ciclo
+>
+>![[Pasted image 20241210001639.png|230]]
+>- Niente mutua esclusione
+
+>[!info]
+>Anche questo esempio delle macchine può essere visualizzato attraverso un grafo
+>![[Pasted image 20241209220045.png|480]]
+>
+>![[Pasted image 20241210001822.png|480]]
+>1. C’è un ciclo
+>2. Nessun pallino è scoperto
+
+---
+## Possibilità ed esistenza di deadlock
+### Possibilità di deadlock
+Ci sta la possibilità che si presenti un deadlock quando sono verificate le prime tre condizioni:
+- mutua esclusione
+- richiesta di una risorsa quando se ne ha già una (hold-and-wait)
+- niente preemption per le risorse
+Queste infatti dipendono da come è fatto il sistema
+### Esistenza di deadlock
+Effettivamente è presente un deadlock quando tutte e quattro le condizioni sono verificate:
+- mutua esclusione
+- richiesta di una risorsa quando se ne ha già una (hold-and-wait)
+- niente preemption per le risorse
+- attesa circolare
+L’attesa circolare invece dipende da come evolve l’esecuzione di certi processi
+Si parla invece di deadlock **inevitabile** quando non è al momento presente l’attesa circolare, ma sicuramente ad un certo punto arriverà
+
+---
+## Deadlock e SO: che fare?
