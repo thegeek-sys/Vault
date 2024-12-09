@@ -167,7 +167,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "preemp",
+                "query": "preem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -188,12 +188,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273,
-    "collapsed": true
+    "width": 243.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -296,13 +296,16 @@
   },
   "active": "6455d3b6c6e3a30f",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
+    "Class/Sistemi Operativi/Deadlock.md",
+    "Files/Pasted image 20241209235006.png",
+    "Files/Pasted image 20241209234502.png",
     "Files/Pasted image 20241209233727.png",
     "Files/Pasted image 20241209233414.png",
     "Files/Pasted image 20241209221215.png",
     "Files/Pasted image 20241209220247.png",
     "Files/Pasted image 20241209220045.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Sistemi Operativi/Deadlock.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Problema dei lettori-scrittori.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
@@ -314,15 +317,11 @@
     "Class/Sistemi Operativi/Gestione della concorrenza/Passaggio di messaggi.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
     "Files/Pasted image 20241206225919.png",
-    "Files/Pasted image 20241206225819.png",
-    "Files/Pasted image 20241206181525.png",
-    "Files/Pasted image 20241206180359.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
     "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
     "Flet-notes/2024-11-28_BD.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
-    "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
     "Class/Sistemi Operativi/Processi/Processi.md",
     "Class/Basi di dati/Terza forma normale.md",
     "Class/Basi di dati/Basi di dati.md",

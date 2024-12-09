@@ -43,12 +43,14 @@ Le risorse si distinguono in:
 - **risorse riusabili**
 - **risorse non riusabili**
 
-### Risorse riusabili
+---
+## Risorse riusabili
 Le risorse riusabili sono quelle risorse usabili da un solo processo alla volta, ma il fatto di **essere usate non le “consuma”**. Una volta che un processo ottiene una risorsa riusabile, prima o poi la rilascia cosicché altri processi possano usarla a loro volta
 Esempio: processori, I/O channels, memoria primaria e secondaria, dispostivi, file…
 
 Nel caso delle risorse riusabili il deadlock può avvenire solo se un processo ha una risorsa e ne richiede un’altra
-#### Esempio
+### Esempio
+
 >[!info] Esempio 1
 >![[Pasted image 20241209233414.png|450]]
 >
@@ -63,6 +65,29 @@ Nel caso delle risorse riusabili il deadlock può avvenire solo se un processo h
 >
 >Il deadlock avverrà quando uno dei due processi farà al seconda richiesta (non rilasciano la memoria)
 
-### Risorse non riusabili
+### Condizioni per il deadlock
+Il deadlock si verifica solamente se ci sono queste quattro condizioni:
+- 
+
+---
+## Risorse non riusabili
 Le risorse non riusabili sono quelle risorse che vengono **create da un processo e distrutte da un altro processo**
 Esempi: interruzioni, segnali, messaggi, informazione nei buffer di I/O
+
+Nel caso delle risorse non riusabili il deadlock può avvenire se si fa una richiesta (bloccante) per una risorsa che non è stata ancora creata, ad esempio un deadlock può avvenire su una ricezione bloccante
+### Esempio
+
+>[!info] Esempio
+>![[Pasted image 20241209234502.png|450]]
+
+### Condizioni per il deadlock
+
+---
+## Grafo dell’allocazione delle risorse
+Dato che il joint process diagram non è sufficiente per rappresentare le interazioni tra più processi che richiedono più risorse, si utilizza il **grafo dell’allocazione delle risorse**
+
+Questo è un grafo diretto che rappresenta lo stato di risorse e processi (tanti pallini quante istanze di una stessa risorsa, tre pallini tre stampanti). Come nodi si utilizzano i cerchi per i processi mentre i quadrati per le risorse
+
+In base alla direzione della freccia si determina se la risorsa è richiesta o tenuta da un processo. Mentre questo sistema risulta ok per le risorse riusabili, per le risorse consumabili non esiste mai l’”held” invece i pallini compaiono e scompaiono
+
+![[Pasted image 20241209235006.png]]
