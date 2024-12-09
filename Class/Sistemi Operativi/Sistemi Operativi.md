@@ -6,4 +6,5 @@
 - [[Gestione dell'Input-Output|Gestione dell’Input/Output]]
 - [[File-system]]
 - [[Gestione della concorrenza]]
+- [[Deadlock]]
 - 
