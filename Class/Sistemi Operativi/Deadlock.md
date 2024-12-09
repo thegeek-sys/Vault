@@ -44,4 +44,25 @@ Le risorse si distinguono in:
 - **risorse non riusabili**
 
 ### Risorse riusabili
-Le risorse riusabili sono quelle risorse usabili da un solo processo alla volta, ma il fatto di essere usate non le “consuma”
+Le risorse riusabili sono quelle risorse usabili da un solo processo alla volta, ma il fatto di **essere usate non le “consuma”**. Una volta che un processo ottiene una risorsa riusabile, prima o poi la rilascia cosicché altri processi possano usarla a loro volta
+Esempio: processori, I/O channels, memoria primaria e secondaria, dispostivi, file…
+
+Nel caso delle risorse riusabili il deadlock può avvenire solo se un processo ha una risorsa e ne richiede un’altra
+#### Esempio
+>[!info] Esempio 1
+>![[Pasted image 20241209233414.png|450]]
+>
+>>[!note]
+>>Perform action → sezione critica
+>
+>Si bloccano in quanto `P` richiede `T` prima di rilasciare `D`, mentre `Q` richiede `D` prima di rilasciare `T`
+
+>[!info] Esempio 2
+>Supponiamo di trovarci in un sistema con $200\text{ KB}$ di memoria disponibili e che ci sia la seguente sequenza di richieste
+>![[Pasted image 20241209233727.png|450]]
+>
+>Il deadlock avverrà quando uno dei due processi farà al seconda richiesta (non rilasciano la memoria)
+
+### Risorse non riusabili
+Le risorse non riusabili sono quelle risorse che vengono **create da un processo e distrutte da un altro processo**
+Esempi: interruzioni, segnali, messaggi, informazione nei buffer di I/O
