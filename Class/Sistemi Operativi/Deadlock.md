@@ -20,3 +20,10 @@ Quando ci troviamo di fronte ad un deadlock tra due processi, questo può essere
 
 >[!info] I due processi richiedono la risorsa successiva prima di aver rilasciato quella che stanno usando
 
+>[!note]
+>Linee orizzontali → momento in cui `P` è in esecuzione
+>Linee verticali → momento in cui `Q` è in esecuzione
+>Quando intercettano un quadrante vuol dire che viene eseguita l’operazione indicata (es. Get A)
+>
+>5 non va in deadlock, infatti prova a richiedere una risorsa già occupata, quindi il processo viene mezzo in blocked
+
