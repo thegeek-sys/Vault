@@ -233,6 +233,25 @@ if(safe(newstate)) {
 }
 
 boolean safe(state S) {
-	int currentavail[m]
+	int currentavail[m];
+	process rest[<number of processes>];
+	currentavail = available;
+	rest = {all processes};
+	possibile = true;
+	while(possible) {
+		// itero sui processi e verifico se ce ne sta uno con uno stato
+		// successivo sicuro, se presente lo tolgo dalla lista dei processi
+		// e continuo
+		<find a process Pk in rest such that
+		claim[k, *]-alloc[k, *] <= currentavail;>
+		if(found) {
+			currentavail = currentavail+alloc[k,*];
+			rest = rest - {Pk}
+		} else possible = false;
+	}
+	// se non ci stanno processi in rest vuol dire che lo stato è sicuro
+	return (rest == null)
 }
 ```
+
+Come assunzione per il funzionamento di questo algoritmo, ci deve essere il fatto che i processi devono essere indipendenti, ovvero devono essere “liberi” di andare in esecuzione in qualsiasi ordine altrimenti non si può simulare l’esecuzione fino alla fine (l’unica sincronizzazione presente è proprio quella sulle richieste di risorse, non ci possono essere scambi di messaggi). Inoltre ci deve essere un numero fissato di risorse da allocare (non va bene per le risorse consumabili) e nessun processo deve terminare senza rilasciare le sue risorse
