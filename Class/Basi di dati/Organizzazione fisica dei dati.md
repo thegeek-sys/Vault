@@ -51,4 +51,13 @@ Se il record contiene campi a **lunghezza variabile** si hanno due opzioni:
 >Nel primo caso per individuare la posizione di un campo bisogna esaminare i campi precedenti per vedere quanto sono lunghi; quindi la prima strategia è meno efficiente della seconda
 
 ### Puntatori
-Un puntatore ad un record/blocco è un dato che permette di accedere rapidamente al record/blocco
+Un puntatore ad un record/blocco è un dato che permette di accedere rapidamente al record/blocco; lo si può fare in due maniere
+- si utilizza l’indirizzo dell’inizio (primo byte) del record/blocco sul disco
+- nel caso di un record, si usa una coppia $(b,k)$ dove $b$ è l’indirizzo del blocco che contiene il record mentre $k$ è il valore della chiave
+
+>[!info]
+>Nel secondo caso è possibile spostare il record all’interno del blocco, nel primo no, altrimenti potremmo avere dei *dangling pointer*
+
+---
+## Blocco
+In un blocco ci possono essere **informazioni sul blocco** stesso e/o **puntatori** ad altri blocchi
