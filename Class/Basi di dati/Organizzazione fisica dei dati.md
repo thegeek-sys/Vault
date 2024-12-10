@@ -140,5 +140,17 @@ $R$ → numero di record che possono essere memorizzati in un blocco
 $n=\frac{N}{R}$
 Per ottenere il costo medio occorre sommare i costi per accedere ai singoli record e quindi dividere tale somma per il numero dei record. Per ognuno degli $R$ record nell’$i$-esimo blocco sono necessari $i$ accessi
 $$
-\frac{1R+2R+\dots+nR}{N}=\frac{R(1+2+\dots+i+\dots+n)}{N}=\frac{R}{N}\frac{n(n+1)}{2}=\frac{1}{n}\frac{n(n+1)}{2}
+\begin{align}
+\frac{1R+2R+\dots+nR}{N}=\frac{R(1+2+\dots+i+\dots+n)}{N}&=\frac{R}{N}\frac{n(n+1)}{2}= \\
+&=\frac{1}{n}\frac{n(n+1)}{2}\approx \frac{n}{2}
+\end{align}
 $$
+
+Se vogliamo cercare tutti i record con una certa chiave (che non è chiave in senso relazionale, cioè ammettiamo duplicati) dovremo comunque accedere a $n$ blocchi, perché non possiamo dire quando abbiamo trovato l’ultima occorrenza di record con la chiave cercata
+
+---
+## Inserimento
+![[Pasted image 20241210235509.png|240]]
+![[Pasted image 20241210235659.png|240]]
+Per l’inserimento è necessario solamente un accesso in lettura (per portare l’ultimo blocco in memoria principale) e un accesso in scrittura (per riscrivere l’ultimo blocco in memoria secondaria dopo aver aggiunto il record)
+

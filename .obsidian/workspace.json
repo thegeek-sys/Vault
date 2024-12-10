@@ -38,6 +38,18 @@
             }
           },
           {
+            "id": "ba418160f2b3052f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Files/Pasted image 20241210235659.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241210235659"
+            }
+          },
+          {
             "id": "eb64640cf2df98ea",
             "type": "leaf",
             "state": {
@@ -150,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -308,12 +320,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2f156fa948e4328e",
+  "active": "ba418160f2b3052f",
   "lastOpenFiles": [
+    "Class/Basi di dati/Organizzazione fisica dei dati.md",
+    "Files/Pasted image 20241210235509.png",
+    "Files/Pasted image 20241210235659.png",
     "Files/Pasted image 20241210233919.png",
     "Files/Pasted image 20241210232816.png",
     "Class/Basi di dati/Untitled.md",
-    "Class/Basi di dati/Organizzazione fisica dei dati.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Dispositivi di I-O.md",
     "Class/Sistemi Operativi/Deadlock.md",
     "Class/Basi di dati/Basi di dati.md",
@@ -324,13 +338,10 @@
     "Files/Pasted image 20241210170855.png",
     "Files/Pasted image 20241210170840.png",
     "Files/Pasted image 20241210170731.png",
-    "Files/Pasted image 20241210170717.png",
-    "Files/Pasted image 20241210170446.png",
     "Class/Sistemi Operativi/File-system/File-system.md",
     "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - soluzioni software.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Files/Pasted image 20241210113029.png",
     "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Problema dei lettori-scrittori.md",
