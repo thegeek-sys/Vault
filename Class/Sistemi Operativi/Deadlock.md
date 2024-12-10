@@ -310,7 +310,7 @@ void philosopher(int i) {
 		wait(fork[(i+1)%5]);
 		eat();
 		signal(fork[(i+1)%5]);
-		singla(fork[i]);
+		signal(fork[i]);
 	}
 }
 
@@ -321,3 +321,55 @@ void main() {
 
 Per il filosofo $i$, `fork[i]` è la forchetta sinistra e `fork[(i+1)%n]` è la destra
 In questo modo però ci può essere deadlock infatti lo scheduler può far si che ogni processo faccia la wait sulla forchetta di sinistra (nessuno viene bloccato) e poi fare la wait su quelle destre (tutti vengono bloccati, non ci sono più forchette disponibili)
+
+### Seconda soluzione
+```c
+semaphore fork[5] = {1};
+semaphore room = {4}
+
+void philosopher(int i) {
+	while(true) {
+		think();
+		wait(room)
+		wait(fork[i]);
+		wait(fork[(i+1)%5]);
+		eat();
+		signal(fork[(i+1)%5]);
+		signal(fork[i]);
+		signal(room)
+	}
+}
+
+void main() {
+	parbegin(philosopher[0], philosopher[1], philosopher[2], philosopher[3], philosopher[4])
+}
+```
+
+In questa soluzione si suppone che i filosofi pensino fuori dalla sala da pranzo e ci sia un cameriere che fa entrare a mangiare al massimo $n-1$ filosofi alla volta
+Utilizzando l’esempio del deadlock di prima qui in ogni caso uno riesce a mangiare (niente deadlock)
+
+### Terza soluzione
+Per risolvere il problema, nella soluzione precedente, sono stati leggermente cambiati i termini del problema (si impone ai filosofi di non poter stare tutti seduti a tavola). Da questa soluzione in poi risolveremo il problema senza deadlock e senza queste assunzioni
+
+```c
+semaphore fork[N] = {1, 1, ..., 1};
+
+philosopher(int me) {
+	int left, right, first, second;
+	left = me;
+	right = (me+1)%N;
+	first = right < left ? right : left;
+	second = right < left ? left : right;
+	
+	while(true) {
+		think();
+		wait(fork[first]);
+		wait(fork[second]);
+		eat();
+		signal(fork[first]);
+		signal(fork[second]);
+	}
+}
+```
+
+Nelle soluzioni precedenti si faceva in modo che si prendesse prima la forchetta di sinistra e poi la destra, qui invece tutti prendono prima la sinistra e poi la destra eccetto uno che le prende al contrario (l’ultimo) e ciò è sufficiente a risolvere il deadlock
