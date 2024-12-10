@@ -1,9 +1,44 @@
 ---
 Created: 2024-12-09
-Class: 
+Class: "[[Sistemi Operativi]]"
 Related: 
 Completed:
 ---
+---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Joint progress diagram|Joint progress diagram]]
+- [[#Risorse|Risorse]]
+- [[#Risorse riusabili|Risorse riusabili]]
+	- [[#Risorse riusabili#Esempio|Esempio]]
+	- [[#Risorse riusabili#Condizioni per il deadlock|Condizioni per il deadlock]]
+- [[#Risorse non riusabili|Risorse non riusabili]]
+	- [[#Risorse non riusabili#Esempio|Esempio]]
+	- [[#Risorse non riusabili#Condizioni per il deadlock|Condizioni per il deadlock]]
+- [[#Grafo dell’allocazione delle risorse|Grafo dell’allocazione delle risorse]]
+- [[#Possibilità ed esistenza di deadlock|Possibilità ed esistenza di deadlock]]
+	- [[#Possibilità ed esistenza di deadlock#Possibilità di deadlock|Possibilità di deadlock]]
+	- [[#Possibilità ed esistenza di deadlock#Esistenza di deadlock|Esistenza di deadlock]]
+- [[#Deadlock e SO: che fare?|Deadlock e SO: che fare?]]
+- [[#Prevenzione del deadlock|Prevenzione del deadlock]]
+- [[#Evitare il deadlock|Evitare il deadlock]]
+	- [[#Evitare il deadlock#Diniego delle risorse|Diniego delle risorse]]
+	- [[#Evitare il deadlock#Algoritmo del banchiere|Algoritmo del banchiere]]
+		- [[#Algoritmo del banchiere#Strutture dati|Strutture dati]]
+		- [[#Algoritmo del banchiere#Determinazione dello stato sicuro|Determinazione dello stato sicuro]]
+		- [[#Algoritmo del banchiere#Determinazione dello stato non sicuro|Determinazione dello stato non sicuro]]
+	- [[#Evitare il deadlock#Pseudocodice|Pseudocodice]]
+	- [[#Evitare il deadlock#Rilevare il deadlock|Rilevare il deadlock]]
+		- [[#Rilevare il deadlock#Esempio|Esempio]]
+		- [[#Rilevare il deadlock#E poi?|E poi?]]
+	- [[#Evitare il deadlock#Vantaggi e svantaggi|Vantaggi e svantaggi]]
+- [[#Deadlock e Linux|Deadlock e Linux]]
+- [[#I filosofi a cena|I filosofi a cena]]
+	- [[#I filosofi a cena#Prima soluzione|Prima soluzione]]
+	- [[#I filosofi a cena#Seconda soluzione|Seconda soluzione]]
+	- [[#I filosofi a cena#Terza soluzione|Terza soluzione]]
+	- [[#I filosofi a cena#Quarta soluzione (sbagliata)|Quarta soluzione (sbagliata)]]
+	- [[#I filosofi a cena#Quinta soluzione|Quinta soluzione]]
 ---
 ## Introduction
 Il **deadlock** (o stallo) è un blocco permanente di un certo insieme di processi che competono per delle risorse di sistema o comunicano tra loro.

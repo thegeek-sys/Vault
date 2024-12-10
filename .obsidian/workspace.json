@@ -4,139 +4,153 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "455919ad3cc4a222",
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "785e57b5e4fd92db",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Sistemi Operativi"
+              "title": "Basi di dati"
             }
           },
           {
-            "id": "8f47d1d18d152d02",
+            "id": "2f156fa948e4328e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - soluzioni software.md",
+                "file": "Class/Basi di dati/Organizzazione fisica dei dati.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mutua esclusione - soluzioni software"
+              "title": "Organizzazione fisica dei dati"
             }
           },
           {
-            "id": "cc85495d2d2b25e8",
+            "id": "eb64640cf2df98ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+                "file": "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Semafori"
+              "title": "Copertura minimale di un insieme di dipendenze"
             }
           },
           {
-            "id": "35d6d805d70e84cb",
+            "id": "8c8fae1a44f0bac6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
+                "file": "Class/Basi di dati/Algoritmo di decomposizione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gestione della concorrenza"
+              "title": "Algoritmo di decomposizione"
             }
           },
           {
-            "id": "806ec1bb64ec1fa2",
+            "id": "68b4220745af18f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
+                "file": "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Equivalenze"
+              "title": "Copertura minimale di un insieme di dipendenze"
             }
           },
           {
-            "id": "6d7592e0efc582ca",
+            "id": "c708af791bc32146",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Problema dei lettori-scrittori.md",
+                "file": "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Problema dei lettori-scrittori"
+              "title": "Decomposizioni che hanno un join senza perdita"
             }
           },
           {
-            "id": "7db166d06fb7ad5b",
+            "id": "55a01a21d7422224",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Semafori"
+              "title": "Chiusura di un insieme di dipendenze funzionali"
             }
           },
           {
-            "id": "a69b6653d902f2f4",
+            "id": "609e9bcafa228bdf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Passaggio di messaggi.md",
+                "file": "Class/Basi di dati/Chiusura di un insieme di attributi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Passaggio di messaggi"
+              "title": "Chiusura di un insieme di attributi"
             }
           },
           {
-            "id": "6455d3b6c6e3a30f",
+            "id": "2f530af81c0bfce5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Deadlock.md",
+                "file": "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deadlock"
+              "title": "Copertura minimale di un insieme di dipendenze"
+            }
+          },
+          {
+            "id": "e44a0c48016b2fe9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2024-11-28_BD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-11-28_BD"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,7 +181,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "peterson",
+                "query": "Definizione",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -193,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273,
+    "width": 245.51103591918945,
     "collapsed": true
   },
   "right": {
@@ -210,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Flet-notes/2024-11-28_BD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +234,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Gestione della memoria"
+              "title": "Backlinks for 2024-11-28_BD"
             }
           },
           {
@@ -229,12 +243,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Gestione della memoria"
+              "title": "Outgoing links from Basi di dati"
             }
           },
           {
@@ -256,10 +270,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
+                "file": "Class/Basi di dati/Esercizi.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gestione della memoria"
+              "title": "Outline of Esercizi"
             }
           },
           {
@@ -272,8 +286,7 @@
               "title": "Advanced Tables"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -295,8 +308,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6455d3b6c6e3a30f",
+  "active": "2f156fa948e4328e",
   "lastOpenFiles": [
+    "Class/Basi di dati/Untitled.md",
+    "Class/Basi di dati/Organizzazione fisica dei dati.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Dispositivi di I-O.md",
+    "Class/Sistemi Operativi/Deadlock.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Files/Pasted image 20241210185908.png",
     "Files/Pasted image 20241210184314.png",
     "Files/Pasted image 20241210183745.png",
@@ -309,10 +328,8 @@
     "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - soluzioni software.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Sistemi Operativi/Deadlock.md",
     "Files/Pasted image 20241210113029.png",
     "Files/Pasted image 20241210112041.png",
-    "Files/Pasted image 20241210001822.png",
     "Class/Sistemi Operativi/Scheduling/Politiche di scheduling.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Problema dei lettori-scrittori.md",
@@ -322,18 +339,14 @@
     "Class/Sistemi Operativi/Gestione della concorrenza/Passaggio di messaggi.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
-    "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
     "Flet-notes/2024-11-28_BD.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
     "Class/Sistemi Operativi/Processi/Processi.md",
     "Class/Basi di dati/Terza forma normale.md",
-    "Class/Basi di dati/Basi di dati.md",
     "Class/Sistemi Operativi/Processi/Processi in Linux.md",
     "Class/Sistemi Operativi/Processi/Thread.md",
     "Class/Sistemi Operativi/Processi/Processi in Unix release 4.md",
-    "Class/Sistemi Operativi/Processi/Vita di un processo.md",
-    "Class/Sistemi Operativi/Processi/Strutture.md",
     "Class/Sistemi Operativi/Processi",
     "Class/Sistemi Operativi/Scheduling",
     "Class/Sistemi Operativi/Gestione della concorrenza",

@@ -11,6 +11,7 @@
 - [[Decomposizioni che hanno un join senza perdita]]
 - [[Copertura minimale di un insieme di dipendenze]]
 - [[Algoritmo di decomposizione]]
+- [[Organizzazione fisica dei dati]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
