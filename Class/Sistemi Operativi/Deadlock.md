@@ -163,6 +163,7 @@ Per evitare il deadlock bisogna decidere se l’attuale richiesta di una risorsa
 L’algoritmo del banchiere e valido per le risorse riusabili e fa si che il programma proceda da un certo stato ad un altro stato (per stato si intende una certa situazione per l’uso delle risorse). Uno stato è **sicuro** se da essi parte almeno un cammino che non porta ad un deadlock, uno stato non sicuro se da essi partono solo cammini che portano a deadlock
 
 ### Algoritmo del banchiere
+L’algoritmo del banchiere permette di passare solamente da uno stato sicuro ad uno stato altrettanto sicuro
 #### Strutture dati
 ![[Pasted image 20241210112041.png]]
 
@@ -177,5 +178,34 @@ L’algoritmo del banchiere e valido per le risorse riusabili e fa si che il pro
 #### Determinazione dello stato sicuro
 ![[Pasted image 20241210113029.png]]
 
-Per fare un iniziale sanity check dobbiamo verificare che per ciascun processo (ogni riga) della matrice $C$ il numero di risorse richieste sia minore o uguale al numero di istanze per singola risorsa in $R$
+Per fare un iniziale sanity check dobbiamo verificare che per ciascun processo (ogni riga) della matrice $C$ il numero di risorse richieste sia minore o uguale al numero di istanze per singola risorsa in $R$. $V$ risulta essere la sottrazione tra un elemento del vettore $R$ e la somma della colonna in $A$ corrispondente. In $C-A$ ci stanno le istanze delle risorse che mi devono ancora esser richieste
 
+Questo è uno stato sicuro (deve esistere almeno un cammino che non porta un deadlock). Supponiamo infatti di mandare in esecuzione `P2` fino alla fine; questo può terminare tutta la sua esecuzione in quanto, nonostante per terminare abbia bisogno di un’istanza di `R3`, questa gli può essere concessa in quanto ancora disponibile
+
+![[Pasted image 20241210170446.png|580]]
+
+Da questo punto è possibile completare anche tutti gli altri processi (il numero di istanze necessarie è maggiore di quelle disponibili), ma ciò non era possibile dallo stato iniziale (l’unico che poteva terminare dallo stato iniziale era `P2`)
+
+![[Pasted image 20241210170717.png|580]]
+![[Pasted image 20241210170731.png|580]]
+
+#### Determinazione dello stato non sicuro
+![[Pasted image 20241210170840.png|580]]
+
+Da questa situazione iniziale (sicura, mando in esecuzione `P2`), immaginiamo che l’algoritmo del banchiere fallisca e che quindi ci si ritrovi nella situazione descritta dall’immagine sottostante
+
+![[Pasted image 20241210170855.png|580]]
+A questo punto ci si ritrova in uno stato non sicuro (nessun processo può essere mandato in esecuzione)
+
+### Pseudocodice
+Il seguente è lo pseudocodice per poter implementare l’algoritmo del banchiere
+
+Strutture dati globali
+```c
+struct state {
+	int resource[m];  // R
+	int available[m]; // V
+	int claim[n][m];  // C
+	int alloc[n][m];  // A
+}
+```
