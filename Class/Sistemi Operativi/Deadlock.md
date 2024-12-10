@@ -302,7 +302,7 @@ Ovviamente in questo problema due filosofi vicini non possono mangiare contempor
 ### Prima soluzione
 ```c
 semaphore fork[5] = {1};
-int i;
+
 void philosopher(int i) {
 	while(true) {
 		think();
@@ -318,3 +318,5 @@ void main() {
 	parbegin(philosopher[0], philosopher[1], philosopher[2], philosopher[3], philosopher[4])
 }
 ```
+
+Per il filosofo $i$, `fork[i]` è la forchetta sinistra e `fork[(i+1)%n]` è la destra
