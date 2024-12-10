@@ -288,3 +288,6 @@ Una volta rilevato un deadlock abbiamo diverse opzioni:
 ## Deadlock e Linux
 Come abbiamo visto in altri casi Linux cerca di essere il più minimale possibile a vantaggio dell’efficienza (non ha il long term scheduler) quindi se i processi utente sono “scritti male” e **possono andare in deadlock**, peggio per loro (saranno tutti bloccati e sta all’utente killarli).
 Invece per quanto riguarda il kernel, c’è la **prevenzione dell’attesa circolare**
+
+---
+## I filosofi a cena
