@@ -137,3 +137,13 @@ Si parla invece di deadlock **inevitabile** quando non è al momento presente l�
 
 ---
 ## Deadlock e SO: che fare?
+Esistono diverse tecniche per gestire problemi che riguardano il deadlock:
+- **Prevenire** → cercando di far si che una delle 4 condizioni sia sempre falsa
+- **Evitare** → decidendo di volta in volta cosa fare con l’assegnazione di risorse
+- **Rilevare** → una volta che avviene il deadlock, viene notificato al SO che agisce di conseguenza
+- **Ignorare** → se dei processi vanno in deadlock è colpa dell’utente, non accettabile, in generale, per processi del SO
+
+### Prevenzione del deadlock
+Per la prevenzione bisogna evitare che esistano contemporaneamente le 4 condizioni per un deadlock. Vediamo cosa si può evitare
+- Mutua esclusione → inevitabile
+- Hold-and-wait → si impone ad un processo di richiedere tutte le sue risorse in una solva volta (può essere difficile per software complessi, e si tengono risorse bloccate per un tempo troppo lungo)
