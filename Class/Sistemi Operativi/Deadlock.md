@@ -209,3 +209,14 @@ struct state {
 	int alloc[n][m];  // A
 }
 ```
+
+Algoritmo di allocazione di risorse
+```c
+if(alloc[i,*]+request[*] > claim[i,*]) // almeno un elemento maggiore
+	error;
+else if(request[*] > available[*])
+	suspend process;
+else {
+	<define newstate by:
+}
+```
