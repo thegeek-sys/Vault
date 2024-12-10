@@ -372,4 +372,55 @@ philosopher(int me) {
 }
 ```
 
-Nelle soluzioni precedenti si faceva in modo che si prendesse prima la forchetta di sinistra e poi la destra, qui invece tutti prendono prima la sinistra e poi la destra eccetto uno che le prende al contrario (l’ultimo) e ciò è sufficiente a risolvere il deadlock
+Nelle soluzioni precedenti si faceva in modo che si prendesse prima la forchetta di sinistra e poi la destra, qui invece tutti prendono prima la sinistra e poi la destra eccetto uno che le prende al contrario (l’ultimo) e ciò è sufficiente a risolvere il deadlock.
+Infatti, considerando l’esempio di prima, l’ultimo prova a prendere la seconda forchetta al posto della prima ma verrà bloccato in quanto è occupata, lasciando quindi la possibilità al primo filosofo di prendere la seconda forchetta
+
+### Quarta soluzione (sbagliata)
+```c
+mailbox fork[N];
+
+// rendo tutte le forchette prendibili
+init_forks() {
+	int i;
+	for(i=0; i<N; i++) {
+		nbsend(fork[i], "fork");
+	}
+}
+
+philosopher(int me) {
+	int left, right;
+	message fork1, fork2;
+	left = me;
+	right = (me+1)%N;
+	first = right < left ? right : left;
+	second = right < left ? left : right;
+	
+	while(true) {
+		think_for_a_while();
+		receive(fork[first], fork1);
+		receive(fork[second], fork2);
+		eat();
+		nbsend(fork[first], fork1);
+		nbsend(fork[second], fork2)
+	}
+}
+```
+
+### Quinta soluzione
+```c
+philosopher(int me) {
+	int left, right;
+	message fork1, fork2;
+	left = me;
+	right = (me+1)%N;
+	
+	while(true) {
+		think_for_a_while();
+		if(nbreceive(fork[left], fork1)) 
+		receive(fork[second], fork2);
+		eat();
+		nbsend(fork[first], fork1);
+		nbsend(fork[second], fork2)
+	}
+}
+```
