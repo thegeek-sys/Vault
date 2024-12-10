@@ -170,8 +170,12 @@ L’algoritmo del banchiere e valido per le risorse riusabili e fa si che il pro
 >- $m$ → numero di diversi tipi di risorse
 >- $R_{i}$ → numero di istanze dell’i-esima risorsa (effettivamente presente, non può essere modificata)
 >- $V_{i}$ → numero di istanze disponibili per la i-esima risorsa
->- $C_{ij}$ → $j$ come nei precedenti si riferisce alla risorsa, $i$ invece si riferisce al numero di processi che voglio monitorare affinché non vadano in deadlock; con $C_{ij}$ ci si riferisce a quante istanze della risorsa $j$ verranno richieste (al massimo) dal processo $i$-esimo
+>- $C_{ij}$ → $j$ come nei precedenti si riferisce alla risorsa, $i$ invece si riferisce al numero di processi che voglio monitorare affinché non vadano in deadlock; con $C_{ij}$ ci si riferisce a quante istanze della risorsa $j$ verranno richieste (al massimo) dal processo $i$-esimo contemporaneamente
 >- $A_{ij}$ → si riferisce a quante istanze della risorsa $j$ sono state concesse al processo $i$
 >- manca un vettore che indica che tipo di richiesta viene fatta
 
 #### Determinazione dello stato sicuro
+![[Pasted image 20241210113029.png]]
+
+Per fare un iniziale sanity check dobbiamo verificare che per ciascun processo (ogni riga) della matrice $C$ il numero di risorse richieste sia minore o uguale al numero di istanze per singola risorsa in $R$
+
