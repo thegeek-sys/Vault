@@ -212,11 +212,23 @@ struct state {
 
 Algoritmo di allocazione di risorse
 ```c
+// un processo ha richiesto più istanze di quante ne aveva dichiare in claim
 if(alloc[i,*]+request[*] > claim[i,*]) // almeno un elemento maggiore
-	error;
+	<error>;                           // total request > claim
+// non ci sono abbastanza risorse da allocare
 else if(request[*] > available[*])
-	suspend process;
+	<suspend process>;
+// prima di concedere le risorse "simulo" il nuovo stato
 else {
 	<define newstate by:
+	alloc[i,*] = alloc[i,*] + request[*];
+	available[*] = available[*] - request[*]>;
+}
+
+if(safe(newstate)) {
+	<carry out allocation>;
+} else {
+	<restore original state>;
+	<suspend process>;
 }
 ```
