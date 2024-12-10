@@ -297,4 +297,24 @@ Ad un tavoli ci sono uno stesso numero di forchette, piatti e sedie per egual nu
 
 ![[Pasted image 20241210185908.png|center|300]]
 
-Ovviamente in questo problema due filosofi vicini non possono mangiare contemporaneamente
+Ovviamente in questo problema due filosofi vicini non possono mangiare contemporaneamente. Dobbiamo far mangiare il maggior numero possibile di filosofi senza che ci sia deadlock
+
+### Prima soluzione
+```c
+semaphore fork[5] = {1};
+int i;
+void philosopher(int i) {
+	while(true) {
+		think();
+		wait(fork[i]);
+		wait(fork[(i+1)%5]);
+		eat();
+		signal(fork[(i+1)%5]);
+		singla(fork[i]);
+	}
+}
+
+void main() {
+	parbegin(philosopher[0], philosopher[1], philosopher[2], philosopher[3], philosopher[4])
+}
+```
