@@ -143,8 +143,14 @@ Esistono diverse tecniche per gestire problemi che riguardano il deadlock:
 - **Rilevare** → una volta che avviene il deadlock, viene notificato al SO che agisce di conseguenza
 - **Ignorare** → se dei processi vanno in deadlock è colpa dell’utente, non accettabile, in generale, per processi del SO
 
-### Prevenzione del deadlock
+
+---
+## Prevenzione del deadlock
 Per la prevenzione bisogna evitare che esistano contemporaneamente le 4 condizioni per un deadlock. Vediamo cosa si può evitare
 - Mutua esclusione → inevitabile
 - Hold-and-wait → si impone ad un processo di richiedere tutte le sue risorse in una solva volta (può essere difficile per software complessi, e si tengono risorse bloccate per un tempo troppo lungo)
+- Niente preemption per le risorse → il SO può richiedere ad un processo di rilasciare le sue risorse (le dovrà richiedere in seguito); per esempio, se una sua richiesta di un’altra risorsa non è stata concessa
 - Attesa circolare → si definisce un ordinamento crescente delle risorse; una risorsa viene data solo se segue quelle che il processo già detiene
+
+---
+## Evitare il deadlock
