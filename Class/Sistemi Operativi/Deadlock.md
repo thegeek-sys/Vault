@@ -255,3 +255,36 @@ boolean safe(state S) {
 ```
 
 Come assunzione per il funzionamento di questo algoritmo, ci deve essere il fatto che i processi devono essere indipendenti, ovvero devono essere “liberi” di andare in esecuzione in qualsiasi ordine altrimenti non si può simulare l’esecuzione fino alla fine (l’unica sincronizzazione presente è proprio quella sulle richieste di risorse, non ci possono essere scambi di messaggi). Inoltre ci deve essere un numero fissato di risorse da allocare (non va bene per le risorse consumabili) e nessun processo deve terminare senza rilasciare le sue risorse
+
+### Rilevare il deadlock
+Per rilevare il deadlock sono usate le stesse strutture dati dell’algoritmo del banchiere, ma la claim matrix è sostituita da `Q` che racchiude tutte le richieste effettuate da tutti i processi (come `request` del banchiere ma relativo a tutti i processi)
+
+Algoritmo:
+1. marca tutti i processi che non hanno allocato nulla (riga con tutti zero, non sono un problema in quanto non richiedono nulla)
+2. $v\gets V$
+3. sia $i$ un processo non marcato t.c. $Q_{ik}\leq w_{k}\,\,\,\,\forall\,1\leq k\leq m$ (le sue risorse possono essere concesse)
+4. se $i$ non esiste, vai al passo 6
+5. marca $i$ e aggiorna $w\gets w+A$; poi torna al passo 3 (facciamo finta che le sue risorse vengano liberate)
+6. c’è un deadlock se e solo se esiste un processo non marcato
+
+#### Esempio
+![[Pasted image 20241210183745.png]]
+- `P1` non può essere esaudito
+- `P2` non può essere esaudito
+- `P3` può essere esaudito (viene marcato) e viene liberato `R4` (in avalable avremo un 1 in `R4`)
+Nonostante questo cambiamento non può essere eseguito nessun processo, ci si trova in un deadlock
+
+#### E poi?
+Una volta rilevato un deadlock abbiamo diverse opzioni:
+- **terminare** forzosamente tutti i processi coinvolti nel deadlock (usato spesso)
+- mantenere dei **punti di ripristino**, ed effettuare il ripristino al punto precedente (ma lo stallo può verificarsi nuovamente)
+- **terminare** forzosamente i processi coinvolti nel deadlock **uno ad uno** finché lo stallo non c’è più
+- **sottrarre forzosamente risorse** ai processi coinvolti nel deadlock uno ad uno finché lo stallo non c’è più
+
+### Vantaggi e svantaggi
+![[Pasted image 20241210184314.png]]
+
+---
+## Deadlock e Linux
+Come abbiamo visto in altri casi Linux cerca di essere il più minimale possibile a vantaggio dell’efficienza (non ha il long term scheduler) quindi se i processi utente sono “scritti male” e **possono andare in deadlock**, peggio per loro (saranno tutti bloccati e sta all’utente killarli).
+Invece per quanto riguarda il kernel, c’è la **prevenzione dell’attesa circolare**
