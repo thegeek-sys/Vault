@@ -231,4 +231,8 @@ if(safe(newstate)) {
 	<restore original state>;
 	<suspend process>;
 }
+
+boolean safe(state S) {
+	int currentavail[m]
+}
 ```
