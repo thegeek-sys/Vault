@@ -147,3 +147,4 @@ Esistono diverse tecniche per gestire problemi che riguardano il deadlock:
 Per la prevenzione bisogna evitare che esistano contemporaneamente le 4 condizioni per un deadlock. Vediamo cosa si può evitare
 - Mutua esclusione → inevitabile
 - Hold-and-wait → si impone ad un processo di richiedere tutte le sue risorse in una solva volta (può essere difficile per software complessi, e si tengono risorse bloccate per un tempo troppo lungo)
+- Attesa circolare → si definisce un ordinamento crescente delle risorse; una risorsa viene data solo se segue quelle che il processo già detiene
