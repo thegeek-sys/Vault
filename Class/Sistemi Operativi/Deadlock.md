@@ -291,3 +291,10 @@ Invece per quanto riguarda il kernel, c’è la **prevenzione dell’attesa circ
 
 ---
 ## I filosofi a cena
+Quello dei filosofi a cena è il problema per eccellenza collegato al deadlock
+
+Ad un tavoli ci sono uno stesso numero di forchette, piatti e sedie per egual numero di filosofi che vogliono sedersi a mangiare. Il problema è che per mangiare hanno bisogno di due forchette e il filosofo può solamente prendere le forchette che stanno accanto al suo piatto (quella di destra e di sinistra); una volta finito di mangiare ripone le forchette
+
+![[Pasted image 20241210185908.png|center|300]]
+
+Ovviamente in questo problema due filosofi vicini non possono mangiare contemporaneamente
