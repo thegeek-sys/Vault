@@ -151,6 +151,14 @@ Per la prevenzione bisogna evitare che esistano contemporaneamente le 4 condizio
 - Hold-and-wait → si impone ad un processo di richiedere tutte le sue risorse in una solva volta (può essere difficile per software complessi, e si tengono risorse bloccate per un tempo troppo lungo)
 - Niente preemption per le risorse → il SO può richiedere ad un processo di rilasciare le sue risorse (le dovrà richiedere in seguito); per esempio, se una sua richiesta di un’altra risorsa non è stata concessa
 - Attesa circolare → si definisce un ordinamento crescente delle risorse; una risorsa viene data solo se segue quelle che il processo già detiene
+Le cose più ragionevoli da risolvere sono l’hold-and-wait o l’attesa circolare
 
 ---
 ## Evitare il deadlock
+Per evitare il deadlock bisogna decidere se l’attuale richiesta di una risorsa può portare ad un deadlock se esaudita. Ma ciò richiede la conoscenza delle richieste future, in particolare si hanno due possibilità:
+- non mandare in esecuzione un processo se le sue richieste possono portare a deadlock
+- non concedere una risorsa ad un processo se allocarla può portare a deadlock (algoritmo del banchiere, mando in esecuzione il processo ma non concedo la risorsa)
+
+### Diniego delle risorse
+
+
