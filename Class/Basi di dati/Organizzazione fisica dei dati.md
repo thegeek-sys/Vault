@@ -61,3 +61,12 @@ Un puntatore ad un record/blocco è un dato che permette di accedere rapidamente
 ---
 ## Blocco
 In un blocco ci possono essere **informazioni sul blocco** stesso e/o **puntatori** ad altri blocchi
+
+### Informazioni sul blocco
+Se un blocco contiene solo record di **lunghezza fissa** allora il blocco è diviso in **aree** (sottoblocchi) di lunghezza fissa, ciascuna delle quali può contenere un record mentre i bit “usato/non usato” sono raccolti in uno o più byte all’inizio del blocco
+
+>[!info]
+>Se bisogna inserire un record nel blocco occorre cercare un’area non usata; se il bit “usato/non usato” è in ciascun record ciò può richiedere la scansione di tutto il blocco; per evitare ciò si possono raccogliere tutti i bit “usato/non usato” in uno o più byte all’inizio del blocco
+
+Se un blocco contiene record di **lunghezza variabile** si hanno due opzioni:
+- si pone in ogni record un campo che ne specifica la lunghezza in 
