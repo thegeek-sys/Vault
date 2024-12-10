@@ -12,6 +12,8 @@
 - [[Copertura minimale di un insieme di dipendenze]]
 - [[Algoritmo di decomposizione]]
 - [[Organizzazione fisica dei dati]]
+- [[File heap]]
+- [[File hash - caratteristiche ed esercizi|File hash: caratteristiche ed esercizi]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
