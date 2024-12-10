@@ -416,11 +416,18 @@ philosopher(int me) {
 	
 	while(true) {
 		think_for_a_while();
-		if(nbreceive(fork[left], fork1)) 
-		receive(fork[second], fork2);
-		eat();
-		nbsend(fork[first], fork1);
-		nbsend(fork[second], fork2)
+		// provo a prendere la forchetta di sinistra
+		if(nbreceive(fork[left], fork1)) {
+			// provo a prendere la forchetta di destra
+			if(nbreceive(fork[right], fork2)) {
+				eat();
+				nbsend(fork[right], fork1);
+			}
+		nbsend(fork[left], fork2)
+		}
 	}
 }
 ```
+
+In questa soluzione però, con il fatto che i processi non possono essere bloccati, ci si può imbattere nel livelock. Infatti se tutti i processi prendono la forchetta di sinistra e poi vengono bloccati si entra in un circolo vizioso in cui continuando a prendere e rilasciare la forchetta di sinistra però senza mai poter prendere la destra in quanto risulta occupata (prima soluzione)
+Nonostante ciò questa soluzione è accettabile in quanto si basa sul fatto che i filosofi “pensino” per un tempo casuale, scorrelato da quello degli altri
