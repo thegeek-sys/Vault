@@ -160,5 +160,18 @@ Per evitare il deadlock bisogna decidere se l’attuale richiesta di una risorsa
 - non concedere una risorsa ad un processo se allocarla può portare a deadlock (algoritmo del banchiere, mando in esecuzione il processo ma non concedo la risorsa)
 
 ### Diniego delle risorse
+L’algoritmo del banchiere e valido per le risorse riusabili e fa si che il programma proceda da un certo stato ad un altro stato (per stato si intende una certa situazione per l’uso delle risorse). Uno stato è **sicuro** se da essi parte almeno un cammino che non porta ad un deadlock, uno stato non sicuro se da essi partono solo cammini che portano a deadlock
 
+### Algoritmo del banchiere
+#### Strutture dati
+![[Pasted image 20241210112041.png]]
 
+>[!note] Legenda
+>- $m$ → numero di diversi tipi di risorse
+>- $R_{i}$ → numero di istanze dell’i-esima risorsa (effettivamente presente, non può essere modificata)
+>- $V_{i}$ → numero di istanze disponibili per la i-esima risorsa
+>- $C_{ij}$ → $j$ come nei precedenti si riferisce alla risorsa, $i$ invece si riferisce al numero di processi che voglio monitorare affinché non vadano in deadlock; con $C_{ij}$ ci si riferisce a quante istanze della risorsa $j$ verranno richieste (al massimo) dal processo $i$-esimo
+>- $A_{ij}$ → si riferisce a quante istanze della risorsa $j$ sono state concesse al processo $i$
+>- manca un vettore che indica che tipo di richiesta viene fatta
+
+#### Determinazione dello stato sicuro
