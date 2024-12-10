@@ -99,3 +99,9 @@ Generalmente ad ogni oggetto base di un modello logico (schemi di relazione nel 
 
 ---
 ## File heap
+Partiamo da una non organizzazione dei record, cioè una collocazione dei record nei file in un ordine determinato solo dall’ordine di inserimento
+
+>[!warning] Non si parla dell’heap inteso come albero di ricerca
+
+Il fatto di non adottare nessun particolare accorgimento nell’inserimento dei record che possa poi facilitare la ricerca, ci favorisce le prestazioni peggiori in termini di numero di accessi in memoria richiesti dalle operazioni di ricerca, mentre l’inserimento è molto veloci se ammettiamo duplicati
+
