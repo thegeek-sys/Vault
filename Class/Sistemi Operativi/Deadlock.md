@@ -320,3 +320,4 @@ void main() {
 ```
 
 Per il filosofo $i$, `fork[i]` è la forchetta sinistra e `fork[(i+1)%n]` è la destra
+In questo modo però ci può essere deadlock infatti lo scheduler può far si che ogni processo faccia la wait sulla forchetta di sinistra (nessuno viene bloccato) e poi fare la wait su quelle destre (tutti vengono bloccati, non ci sono più forchette disponibili)
