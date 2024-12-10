@@ -69,4 +69,33 @@ Se un blocco contiene solo record di **lunghezza fissa** allora il blocco è div
 >Se bisogna inserire un record nel blocco occorre cercare un’area non usata; se il bit “usato/non usato” è in ciascun record ciò può richiedere la scansione di tutto il blocco; per evitare ciò si possono raccogliere tutti i bit “usato/non usato” in uno o più byte all’inizio del blocco
 
 Se un blocco contiene record di **lunghezza variabile** si hanno due opzioni:
-- si pone in ogni record un campo che ne specifica la lunghezza in 
+- si pone in ogni record un campo che ne specifica la lunghezza in termini di numero di byte
+- si pone all’inizio del blocco una **directory contenente i puntatori (offset) ai record del blocco**
+#### Directory
+La directory può essere realizzata in uno dei modi seguenti:
+- è preceduta da un campo che specifica quanti sono i puntatori nella directory
+- è una lista di puntatori (la fine della lista è specificata da uno $0$)
+- ha dimensione fissa e contiene il valore $0$ negli spazi che non contengono puntatori
+
+---
+## Operazioni sulla base di dati
+Un’operazione sulla base di dati consiste di:
+- **ricerca**
+- **inserimento** (implica la ricerca se vogliamo evitare duplicati)
+- **cancellazione** (implica ricerca)
+- **modifica** (implica ricerca)
+di un record
+
+>[!info]
+>Notare che la ricerca è alla base di tutte le altre operazioni
+
+Un requisito fondamentale di un DBMS è l’**efficienza**, cioè la capacità di rispondere alle richieste dell’utente il più rapidamente possibile
+Una particolare **organizzazione fisica** dei dati (cioè una particolare organizzazione dei record nei file) può rendere efficiente l’elaborazione di particolari richieste, quindi l’amministratore della base di dati durante il progetto fisico della base di dati deve tener presente quali operazioni saranno effettuate più frequentemente
+
+Generalmente ad ogni oggetto base di un modello logico (schemi di relazione nel modello relazionale, segmenti nel modello gerarchico, tipi di record nel modello a rete) corrisponde un file di record che hanno tutti lo stesso formato, cioè gli stessi campi (che corrispondono agli attributi nel caso del modello relazionale e ai campi di segmenti e di tipi di record negli altri due modelli)
+
+>[!warning]
+>Stesso formato non significa stessa lunghezza, ma stesso numero e tipo di campi
+
+---
+## File heap
