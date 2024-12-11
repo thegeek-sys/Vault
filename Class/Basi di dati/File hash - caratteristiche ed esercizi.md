@@ -147,4 +147,39 @@ Negli esempi che seguono, così come negli esercizi di esame, a meno che non ven
 >- Taglia puntatore → $P=4$ byte
 >- Capacità blocco → $CB=1024$ byte
 >- Numero bucket → $B=2500$
+>
+>##### 1
+>Calcoliamo innanzitutto quanti puntatori entrano in ogni blocco della bucket directory
+>$$PB=\left\lfloor  \frac{CB}{P}  \right\rfloor =\left\lfloor  \frac{1024}{4}  \right\rfloor =256$$
+>Calcoliamo quindi quanti blocchi occorrono per la bucket directory, cioè per memorizzare $2500$ puntatori
+>$$BD=\left\lceil  \frac{B}{PB}  \right\rceil =\left\lceil  \frac{2500}{256}  \right\rceil =\lceil 9.7 \rceil =10$$
+>
+>Assumendo una distribuzione uniforme, dobbiamo prima di tutto calcolare quanti record devono essere memorizzati in ogni bucket
+>$$RB=\left\lceil  \frac{NR}{B}  \right\rceil =\left\lceil  \frac{780.000}{2500}  \right\rceil =\lceil 312 \rceil =312$$
+>Vediamo ora quanti record possono essere memorizzati in un blocco, tenendo conto del fatto che ogni blocco di un bucket deve contenere anche un puntatore al blocco successivo
+>$$RBL=\left\lfloor  \frac{CB-P}{R}  \right\rfloor =\left\lfloor  \frac{1020}{250}  \right\rfloor =\lfloor 4.08 \rfloor =4$$
+>Calcoliamo infine quanti blocchi occorrono per ogni bucket
+>$$BB=\left\lceil  \frac{RB}{RBL}  \right\rceil =\left\lceil  \frac{312}{4}  \right\rceil =\left\lceil  \frac{NR}{B}  \right\rceil =\lceil 78 \rceil =78$$
+>Complessivamente ci occorre un numero di blocchi pari a
+>$BD+BB\cdot B=10+78\cdot 2500=195.010$
+>
+>##### 2
+>I calcoli per la bucket directory e per il numero di record che possono essere memorizzati in un blocco rimangono validi anche in questo caso
+>
+>Cambia la distribuzione dei record nei bucket, e quindi il numero di blocchi che occorrono per ogni bucket. Il $30\%$ dei record è distribuito uniformemente su $1000$ bucket, il rimanente $70\%$ dei record è distribuito uniformemente su $1500$ bucket.
+>
+>Quindi il numero di record che va distribuito uniformemente su $1000$ bucket è
+>$$N_{1000}=\frac{780.000\cdot 30}{100}=234.000$$
+>Per ogni bucket dei $1000$ avremo quindi $RB_{1000}=\left\lceil  \frac{N_{1000}}{1000}  \right\rceil=234$ record
+>Quindi per ognuno di questi $1000$ bucket occorrono $B_{1000}=\left\lceil  \frac{RB_{1000}}{RBL}  \right\rceil=\left\lceil  \frac{234}{4}  \right\rceil= \lceil  58.5 \rceil= 59$ blocchi
+>
+>Il numero di record che va distribuito uniformemente su $1500$ bucket è
+>$$N_{1500}=N-N_{1000}=780.000-234.000=546.000$$
+>Per ogni bucket dei $1500$ avremo quindi $RB_{1500}=\left\lceil  \frac{N_{1500}}{1500}  \right\rceil=364$ record
+>Quindi per ognuno di questi $1500$ bucket occorrono quindi $B_{1500}=\left\lceil  \frac{RB_{1500}}{RBL}  \right\rceil=\left\lceil  \frac{364}{4}  \right\rceil=\lceil 91 \rceil =91$ blocchi
+>
+>In totale avremo $B_{1000}\cdot 1000+B_{1500}\cdot 1500=59\cdot 1000+ 91\cdot 1500=195.500$ blocchi per bucket
+>
+>>[!info]
+>>Notare che a parità di spazio totale occupato, nella prima parte del file ho un tempo di ricerca medio che è quasi la metà della seconda parte ($\left\lceil  \frac{59}{2}  \right\rceil$ contro $\left\lceil  \frac{91}{2}  \right\rceil$)
 
