@@ -79,4 +79,19 @@ Negli esempi che seguono, così come negli esercizi di esame, a meno che non ven
 >>- mancano i puntatori al prossimo blocco nel bucket
 >
 >##### 1
->Indichiamo con $B$
+>Indichiamo con $B$ il numero di bucket e con $BD$ il numero di blocchi per la bucket directory. La bucket directory è essenzialmente un array di puntatori indicizzato da $0$ a $B-1$
+>
+>Vediamo prima quanti puntatori entrano in un blocco (prendiamo la parte intera inferiore perché assumiamo che i record siano contenuti interamente nel blocco)
+>$$PB=\left\lfloor  \frac{CB}{P}  \right\rfloor=\left\lfloor  \frac{1024}{4}  \right\rfloor =256 $$
+>
+>Ci occorreranno (prendiamo la parte intera superiore perché, non essendo stato specificato diversamente dall’esercizio, i blocchi vengono allocati interamente, e quindi la frazione di blocco va arrotondata ad un blocco intero)
+>$$BD=\left\lceil  \frac{1200}{256}  \right\rceil = \lceil 4.69 \rceil= 5 $$
+>
+>>[!info]
+>>Se viene chiesto che nella bucket directory venga memorizzato anche il puntatore all’ultimo blocco del bucket occorrere considerare coppie intere di puntatori (non possiamo spezzare in due blocchi la coppia di puntatori per un blocco)
+>>$$PB=\left\lfloor  \frac{CB}{2P}  \right\rfloor $$
+>
+>##### 2
+>Abbiamo record a lunghezza fissa, quindi supponiamo di non avere un direttorio di record all’inizio del blocco (tutto lo spazio è occupato dai dati). Serve però un puntatore per ogni blocco per linkare i blocchi dello stesso bucket. In un blocco dobbiamo quindi memorizzare il maggior numero possibile di record e in più un puntatore per un eventuale prossimo blocco nel bucket.
+>Se indichiamo con $M$ il massimo numero di record memorizzabili in un blocco, avremo $M\cdot R+P\leq CB$, cioè $300M+4\leq 1024$, quindi $M\leq \frac{1020}{300}=3.4$
+
