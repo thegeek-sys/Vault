@@ -94,4 +94,20 @@ Negli esempi che seguono, così come negli esercizi di esame, a meno che non ven
 >##### 2
 >Abbiamo record a lunghezza fissa, quindi supponiamo di non avere un direttorio di record all’inizio del blocco (tutto lo spazio è occupato dai dati). Serve però un puntatore per ogni blocco per linkare i blocchi dello stesso bucket. In un blocco dobbiamo quindi memorizzare il maggior numero possibile di record e in più un puntatore per un eventuale prossimo blocco nel bucket.
 >Se indichiamo con $M$ il massimo numero di record memorizzabili in un blocco, avremo $M\cdot R+P\leq CB$, cioè $300M+4\leq 1024$, quindi $M\leq \frac{1020}{300}=3.4$
-
+>$M$ deve essere intero, perché non essendo stato detto altrimenti nella traccia, assumiamo che i record non possano trovarsi a cavallo di due o più blocchi, quindi assumiamo $M=3$
+>
+>In alternativa possiamo prima sottrarre la taglia del puntatore dallo spazio utile e poi prendere la parte intera inferiore della divisione dello spazio rimanente per la taglia dei record
+>$$M=\left\lfloor  \frac{CB-P}{R}  \right\rfloor=\left\lfloor  \frac{1020}{300}  \right\rfloor =\lfloor 3.4 \rfloor =3 $$
+>
+>>[!info]
+>>Si potrebbe chiedere che ogni blocco abbia anche un puntatore al blocco precedente quindi $M\cdot R+2P\leq CB$ oppure $M=\left\lfloor  \frac{CB-2P}{R}  \right\rfloor$
+>
+>Se la distribuzione dei record nei bucket è uniforme, indicando con $RB$ il numero di record in un bucket, avremo
+>$$RB=\left\lceil  \frac{NR}{B}  \right\rceil =\left\lceil  \frac{250.000}{1200} = \right\rceil =\lceil 208.3 \rceil = 209$$
+>record per ogni bucket (prediamo la parte intera superiore perché i record devono essere inseriti tutti, quindi la frazione di record va considerata per non tralasciare alla fine di una parte dei record stessi)
+>
+>Indicando con $NB$ il numero di blocchi per ogni bucket, occorrono quindi:
+>$$NB=\left\lceil  \frac{RB}{M}  \right\rceil =\left\lceil  \frac{209}{3}  \right\rceil =70$$
+>blocchi per ogni bucket; indicando con $BB$ il numero complessivo di blocchi per il file hash avremo
+>$$BB=NB\cdot B=70\cdot 1200=84.000$$
+>blocchi
