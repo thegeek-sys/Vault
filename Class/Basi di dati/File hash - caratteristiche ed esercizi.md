@@ -111,3 +111,27 @@ Negli esempi che seguono, così come negli esercizi di esame, a meno che non ven
 >blocchi per ogni bucket; indicando con $BB$ il numero complessivo di blocchi per il file hash avremo
 >$$BB=NB\cdot B=70\cdot 1200=84.000$$
 >blocchi
+>
+>##### 3
+>Se la distribuzione dei record nei bucket è uniforme, in un bucket avremo, come detto, $NB=\left\lceil  \frac{RB}{M}  \right\rceil=70$ blocchi per bucket. Poiché la ricerca avviene solo sul bucket individuato in base al risultato dell’applicazione della funzione hash alla chiave del record, avremo un numero di accessi pari a quello che si avrebbe su un heap della stessa dimensione del bucket (cioè $\frac{1}{B}$ rispetto alla dimensione originale).
+>In media accederemo alla metà di questi blocchi, quindi indichiamo con $MA$ il numero medio di accessi
+>$$MA=\left\lceil  \frac{NB}{2}  \right\rceil =\left\lceil  \frac{70}{2}  \right\rceil =35$$
+>A questi occorrerà aggiungerne $1$ se il blocco della bucket directory relativo al bucket in cui si trova il record non si trova già in memoria princiapale
+>
+>##### 4
+>Per avere un numero di accessi a blocco inferiore o al massimo uguale a $10$, riscriviamo l’espressione di $MA$ in modo che vi compaia esplicitamente il numero di bucket $B$, e tralasciando per semplicità gli arrotondamenti che abbiamo effettuato via via nei calcoli tranne l’ultimo. Avremo
+>$$MA=\left\lceil  \frac{NB}{2}  \right\rceil =\left\lceil  \frac{\frac{RB}{m}}{2}  \right\rceil=\left\lceil  \frac{\frac{\frac{NR}{B}}{M}}{2}  \right\rceil = \left\lceil  \frac{NR}{2(B\cdot M)}  \right\rceil  $$
+>
+>Vogliamo calcolare quindi $B$ in modo tale che
+>$$\left\lceil  \frac{NR}{2(B\cdot M)}  \right\rceil \implies B\geq \frac{NR}{20M}\implies B\geq \frac{250.000}{20\cdot_{3}}=4167$$
+>Verifichiamo infatti che in questo caso avremo
+>$$RB=\left\lceil  \frac{NR}{B}  \right\rceil =\left\lceil  \frac{250.000}{4167}  \right\rceil =60$$
+>record per ogni bucket, quindi
+>$$NB=\left\lfloor  \frac{RB}{M}  \right\rfloor =20$$
+>record per bucket, e infine
+>$$MA=\left\lceil  \frac{NB}{2}  \right\rceil =10$$
+>accessi a blocco
+>
+>Si poteva anche ragionare in un altro modo. Siccome $MA=\left\lceil  \frac{NB}{2}  \right\rceil$, per avere $MA\leq 10$ dobbiamo fare in modo che $NB\leq 20$ (ricordiamo che $NB$ è il numero di blocchi in un bucket).
+>Dobbiamo allora avere $RB=M\cdot NB\leq M\cdot 20$, cioè nel nostro caso $RB\leq 60$ (ricordiamo che $RB$ è il numero di record per bucket).
+>Per avere un numero di record per bucket inferiore a $60$, deve essere $\frac{NR}{B}\leq 60$, e quindi $B\geq \frac{250.000}{60}$ ottenendo lo stesso risultato
