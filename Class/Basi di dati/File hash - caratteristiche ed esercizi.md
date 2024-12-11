@@ -135,3 +135,16 @@ Negli esempi che seguono, così come negli esercizi di esame, a meno che non ven
 >Si poteva anche ragionare in un altro modo. Siccome $MA=\left\lceil  \frac{NB}{2}  \right\rceil$, per avere $MA\leq 10$ dobbiamo fare in modo che $NB\leq 20$ (ricordiamo che $NB$ è il numero di blocchi in un bucket).
 >Dobbiamo allora avere $RB=M\cdot NB\leq M\cdot 20$, cioè nel nostro caso $RB\leq 60$ (ricordiamo che $RB$ è il numero di record per bucket).
 >Per avere un numero di record per bucket inferiore a $60$, deve essere $\frac{NR}{B}\leq 60$, e quindi $B\geq \frac{250.000}{60}$ ottenendo lo stesso risultato
+
+>[!example] Esempio 2
+>Supponiamo di avere un file di $780.000$ record. Ogni record occupa $250$. Ogni blocco contiene $1024$ byte. Un puntatore a blocco occupa $4$ byte. Usiamo una organizzazione hash con $2500$ bucket
+>1. Quanti blocchi dobbiamo utilizzare complessivamente per la bucket directory e per i bucket, assumendo una distribuzione uniforme dei record nei bucket
+>2. Quanti blocchi dobbiamo utilizzare complessivamente per i bucket, assumendo che il $30\%$ dei record sia distribuito in modo uniforme su $1000$ bucket, e che il restante $70\%$ dei record sia distribuito in modo uniforme sui $1500$ bucket rimanenti
+>
+>Abbiamo i seguenti dati:
+>- Numero di record → $NR=780.000$
+>- Taglia record → $R=250$ byte
+>- Taglia puntatore → $P=4$ byte
+>- Capacità blocco → $CB=1024$ byte
+>- Numero bucket → $B=2500$
+
