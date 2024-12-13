@@ -14,6 +14,7 @@
 - [[Organizzazione fisica dei dati]]
 - [[File heap]]
 - [[File hash - caratteristiche ed esercizi|File hash: caratteristiche ed esercizi]]
+- [[File con indice - caratteristiche ed esercizi|File con indice: caratteristiche ed esercizi]]
 - 
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
