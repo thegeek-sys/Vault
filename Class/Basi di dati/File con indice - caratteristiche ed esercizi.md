@@ -203,3 +203,20 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >Per calcolare il numero massimo di record che ci possono essere mantenendo $13$ accessi (caso 1)
 >$$2^{13}\cdot 18 \cdot \left\lfloor  \frac{1024}{250}  \right\rfloor =589.824$$
 
+>[!example]- Esercizio 2
+>Supponiamo di avere un file di $200.000$ record. Ogni record occupa $150$ byte, di cui $40$ per il campo chiave. Ogni blocco contiene $512$ byte. Un puntatore a blocco occupa $4$ byte. Usiamo un indice ISAM sparso e il fattore di utilizzo sia dei blocchi del file dati sia dei blocchi dell’indice sia $0.8$ (cioè i blocchi non sono completamente pieni, ma pieni al più all’$80\%$)
+>
+>1. Quanti blocchi dobbiamo utilizzare per il file principale?
+>2. Quanti blocchi dobbiamo utilizzare per l’indice?
+>3. Calcolare il numero massimo di accessi per la ricerca di un record nel file principale, utilizzando la ricerca binaria sul file indice
+>
+>Abbiamo i seguenti dati:
+>- il file contiene $200.000$ record → $NR=200.000$
+>- ogni record occupa $150$ byte → $R=150$
+>- il campo chiave occupa $40$ byte → $K=40$
+>- ogni blocco contiene $512$ byte → $CB=512$
+>- un puntatore a blocco occupa $4$ byte → $P=4$
+>- capacità blocco effettiva ($80\%$) → $CB=409$
+>
+>##### 1
+>
