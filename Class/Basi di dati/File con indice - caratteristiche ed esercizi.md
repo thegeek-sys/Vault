@@ -53,30 +53,70 @@ Ciò però è possibile solo se nel blocco c’è spazio per inserire il nuovo r
 
 Nel caso in cui non fosse disponibile spazio né nel blocco precedente né nel blocco successivo occorre **richiedere un nuovo blocco al file system**, ripartire i record tra vecchio e nuovo blocco e riscrivere tutti i blocchi modificati. Per questo motivo viene lasciato dello spazio libero all’interno dei blocchi, per fare in modo che questo problema arrivi il più tardi possibile
 
-### Esempio (spazio disponibile nel blocco precedente)
-Devi inserire il blocco 
+### Esempi
 
-| 048 | Bellini | …   |
-| --- | ------- | --- |
-All’interno di questo file ISAM
-![[Pasted image 20241213175521.png|320]]
+> [!example]- Spazio disponibile nel blocco precedente
+> Devi inserire il blocco 
+> 
+> | 048 | Bellini | …   |
+> | --- | ------- | --- |
+> All’interno di questo file ISAM
+> ![[Pasted image 20241213175521.png|320]]
+> ![[Pasted image 20241213175553.png|320]]
 
-Quindi inizio
-![[Pasted image 20241213175553.png|320]]
-
-### Esempio (spazio non disponibile nei blocchi adiacenti)
-Devi inserire il blocco
-
-| 040 | Toni | …   |
-| --- | ---- | --- |
-All’interno di questo file ISAM
-![[Pasted image 20241213175804.png|320]]
-![[Screenshot 2024-12-13 alle 17.59.44.png|580]]
+> [!example]- Spazio non disponibile nei blocchi adiacenti
+> Devi inserire il blocco
+> 
+> | 040 | Toni | …   |
+> | --- | ---- | --- |
+> All’interno di questo file ISAM
+> ![[Pasted image 20241213175804.png|320]]
+> ![[Screenshot 2024-12-13 alle 17.59.44.png|580]]
 
 ---
 ## Cancellazione
 Per cancellare un record dobbiamo prima trovarlo all’interno del file principale e poi cancellarlo; quindi il costo è **costo per la ricerca** + **1 accesso** per scrivere il blocco.
-Se il record cancellato è il primo di un blocco sono necessari ulteriori accessi. Se il record cancellato è l’unico record del blocco il blocco viene restituito al sistema e viene modificato il file indice
+Se il record cancellato è il primo di un blocco sono necessari ulteriori accessi. Se il record cancellato è l’unico record del blocco, il blocco viene restituito al sistema e viene modificato il file indice
+
+### Esempi
+
+>[!example]- Record si trova al centro del blocco
+>Immaginiamo di dover elminare
+>
+>| 050 | Neri | …   |
+>| --- | ---- | --- |
+>
+>Dal seguente file ISAM
+>![[Pasted image 20241213183347.png|320]]
+>![[Pasted image 20241213183412.png|320]]
+
+> [!example]- Il record è il primo del blocco
+> Il record è il primo del blocco
+> Immaginiamo di dover eliminare
+> 
+> | 031 | Bianchi | …   |
+> | --- | ------- | --- |
+> Dal seguente file ISAM:
+> ![[Pasted image 20241213183551.png|320]]
+> ![[Pasted image 20241213183624.png|320]]
+
+> [!example]- Il record è l’ultimo rimanente del blocco
+> Immaginiamo di dover eliminare
+> 
+> | 099 | Gialli | …   |
+> | --- | ------ | --- |
+> Dal seguente file ISAM:
+> ![[Pasted image 20241213183758.png|320]]
+> ![[Pasted image 20241213183821.png|320]]
+
+---
+## Modifica
+Per modificare un record dobbiamo prima trovarlo tramite la chiave all’interno del file principale e poi modificarlo con ciò che vogliamo; quindi il costo è **costo per la ricerca** + **1 accesso** per scrivere il blocco.
 
 >[!warning] 
 >Nel caso in cui dobbiamo modificare la chiave di un record, ciò consiste in una cancellazione e un inserimento. Infatti non possiamo modificare la chiave (cambia l’ordine) ma solo gli altri campi del record
+
+---
+## File con record puntati
+Consideriamo ora il caso in cui il file principale contiene record puntati.
+Nella fase di inizializzazione è preferibile lasciare più spazio libero nei blocchi per successivi inserimenti. Poiché i record sono puntati, non possono essere spostati per mantenere l’ordinamento 
