@@ -144,7 +144,7 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 ---
 ## Esercizi
 
->[!example] Esercizio 1
+>[!example]- Esercizio 1
 >Supponiamo di avere un file di $150.000$ record. Ogni record occupa $250$ byte, di cui $50$ per il campo chiave. Ogni blocco contiene $1024$ byte. Un puntatore a blocco occupa $4$ byte
 >
 >1. Se usiamo un indice ISAM sparso, e assumiamo che i record non siano puntati e che il fattore di utilizzo dei blocchi del file principale sia $0.7$ (cioè i blocchi non sono completamente pieni, ma pieni al più al $70\%$), quanti blocchi dobbiamo usare per l’indice?
@@ -201,7 +201,5 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >$$\text{caso 2. } A=\lceil \log_{2}BI \rceil+1=\lceil \log_{2}2084 \rceil +1 = 13$$
 >
 >Per calcolare il numero massimo di record che ci possono essere mantenendo $13$ accessi (caso 1)
->$$2^{13}\cdot 18 \cdot \left\lfloor  \frac{1024}{250}  \right\rfloor $$
-
-
+>$$2^{13}\cdot 18 \cdot \left\lfloor  \frac{1024}{250}  \right\rfloor =589.824$$
 
