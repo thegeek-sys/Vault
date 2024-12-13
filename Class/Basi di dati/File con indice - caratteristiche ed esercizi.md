@@ -118,5 +118,24 @@ Per modificare un record dobbiamo prima trovarlo tramite la chiave all’interno
 
 ---
 ## File con record puntati
-Consideriamo ora il caso in cui il file principale contiene record puntati.
-Nella fase di inizializzazione è preferibile lasciare più spazio libero nei blocchi per successivi inserimenti. Poiché i record sono puntati, non possono essere spostati per mantenere l’ordinamento 
+Consideriamo ora il caso in cui il file principale contiene **record puntati**.
+
+Nella fase di inizializzazione è preferibile lasciare **più spazio libero** nei blocchi per successivi inserimenti. Poiché i record sono puntati, non possono essere spostati per mantenere l’ordinamento
+Se **non c’è sufficiente spazio** in un blocco B per l’inserimento di un nuovo record, occorre richiedere al sistema un **nuovo blocco che viene collegato a B tramite un puntatore**; in tal modo ogni record del file indice punta al primo blocco di un bucket e il file indice non viene mai modificato (a meno che le dimensioni dei bucket non siano diventate tali da richiedere una riorganizzazione dell’intero file)
+
+La **ricerca** di un record con chiave $v$ richiede la ricerca sul file indice di un valore della chiave che ricopre $v$ e quindi la scansione del bucket corrispondente
+La **cancellazione** di un record richiede la ricerca del record e quindi la modifica dei bit di cancellazione nell’intestazione del blocco
+La **modifica** di un record richiedere una ricerca del record; quindi, se la modifica non coinvolge campi della chiave, il record viene modificato e il blocco riscritto. Altrimenti la modifica equivale ad una cancellazione seguita da un inserimento; in questo caso non è sufficiente modificare il bit di cancellazione del record cancellato, ma è necessario inserire in esso un puntatore al nuovo record inserito in modo che questo sia raggiungibile da qualsiasi record che contenga un puntatore al record cancellato
+
+Poiché non è possibile mantenere il file principale ordinato, se si vuole avere la possibilità di esaminare il file seguendo l’ordinamento della chiave occorre **inserire in ogni record un puntatore al record successivo nell’ordinamento**
+
+![[Pasted image 20241213185301.png]]
+
+Quando i record del file principale sono puntati, una volta inseriti non possono essere spostati per mantenere l’ordinamento (quindi in pratica l’ordinamento stretto dei record vale solo all’inizializzazione). Viceversa, a differenza da quanto accade per l’ISAM classico, i record dei blocchi indice non vengono mai modificati, quindi ciò che rimane valido è la **ripartizione degli intervalli delle chaivi**.
+Se un record indice punta ad un’area di dati con valori di chiave comprese tra $k_{1}$ e $k_{2}$, questa condizione deve rimanere valida. Se il blocco originario si riempie, e arrivano nuovi record con valori di chiave compresi tra $k_{1}$ e $k_{2}$, dobbiamo allocare un nuovo blocco che però, anziché essere puntato dall’indice, sarà linkato al blocco originario, e così per ogni nuovo blocco che si riempie (abbiamo cioè una lista di **blocchi di overflow** che partono da quello originario, dove ognuno punta al successivo)
+
+---
+## Indici sparsi e densi
+Le precedenti strutture dati presentano tutte un indice sparso, ovvero nell’indice si ha una entrata per ogni blocco del file principale.
+Nell’indice denso (indice secondario) si ha come chiave all’interno di un record del file indice un attributo unique che non è chiave primaria. In questo caso dunque, al posto di avere una entrata per ogni blocco, si ha un’entrata per ogni record (dato che non si possono avere contemporaneamente due ordinamenti)
+
