@@ -194,6 +194,9 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >$$BI=\left\lceil  \frac{BF}{MI}  \right\rceil =\left\lceil  \frac{37.500}{18}  \right\rceil =2084$$
 >
 >##### 3
+>In entrambi i casi la ricerca si effettua prima di tutto sui blocchi indice; assumiamo una ricerca binaria; i due casi si differenziano, perché nel caso di record non puntati dobbiamo ancora leggere in memoria un solo blocco di record di dati, mentre nel caso di record puntati l’indice punta ad un bucket che potrebbe contenere più blocchi di overflow, che vanno tutti esaminati
+>
+>Nel nostro caso però l’esercizio dice esplicitamente che non ci sono liste di overflow, quindi in entrambe le configurazioni dobbiamo aggiungere un solo accesso a blocco, quindi nella configurazione
 >
 
 
