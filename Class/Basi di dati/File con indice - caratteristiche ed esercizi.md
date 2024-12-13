@@ -71,3 +71,7 @@ Devi inserire il blocco
 | --- | ---- | --- |
 All’interno di questo file ISAM
 ![[Pasted image 20241213175804.png|320]]
+![[Screenshot 2024-12-13 alle 17.59.44.png|580]]
+
+---
+## Cancellazione
