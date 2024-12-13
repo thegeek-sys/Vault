@@ -157,3 +157,29 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >- il campo chiave occupa $50$ byte → $K=50$
 >- ogni blocco contiene $1024$ byte → $CB=1024$
 >- un puntatore a blocco occupa $4$ byte → $P=4$
+>
+>##### 1
+>I record sono di taglia fissa, quindi non occorrono puntatori all’inizio del blocco; inoltre, non essendo stato altrimenti specificato nella traccia, assumiamo che un record non possa superare i limiti di un blocco (quindi ogni blocco contiene un numero intero di record). Poiché i record non sono puntati, possono essere spostati, e quando un blocco si riempie, ne allochiamo uno nuovo che comporterà un aggiornamento dell’indice. Di conseguenza, nei blocchi del file principale non occorre un puntatore al prossimo blocco.
+>L’esercizio fornisce il fattore di occupazione attuale dei blocchi del file principale, ma non indica un fattore di occupazione per i blocchi indice, quindi possiamo assumere che siano pieni
+>
+>Dobbiamo stabilire quanti record indice occorrono quindi sapendo che l’indice contiene un record per ogni blocco del file principale, dobbiamo calcolare quanti sono questi blocchi.
+>Sappiamo che i blocchi dati sono occupati al più al $70\%$ (indichiamo questa quantità con $PO$), quindi prima di tutto vediamo quanti record interi possono essere contenuti al massimo nella porzione indicata dal blocco, indicando con $M$ questo numero
+>$$M=\frac{CB\cdot PO}{R}=\left\lfloor  \frac{1024\cdot 70}{100}  \right\rfloor =\left\lfloor  \frac{716}{250}  \right\rfloor =\lfloor 2.86 \rfloor =2$$
+>
+>Il numero di blocchi da indicizzare (numero di record indice), indicato con $BF$, sarà
+>$$BF=\left\lceil  \frac{NR}{M}  \right\rceil =\left\lceil  \frac{150.000}{2}  \right\rceil =75.000$$
+>
+>Calcoliamo quindi il numero di record contenuti in ogni blocco del file indice, indicato con $MI$
+>$$MK=\left\lfloor  \frac{1024}{50+4}  \right\rfloor =18$$
+>
+>Infine indichiamo con $BI$ il numero di blocchi indice
+>$$BI=\left\lceil  \frac{BF}{MI}  \right\rceil =\left\lceil  \frac{75.000}{18}  \right\rceil =4167$$
+>
+>>[!info]
+>>Il calcolo basato sul numero complessivo di byte necessari per l’indice $RI\cdot NR$ diviso per la capacità $CB$ di ogni blocco darebbe un numero pari a $\left\lceil  \frac{54\cdot 75.000}{1024} \right\rceil=3956$, ma presenterebbe un errore di fondo, in quando non assicurerebbe che ogni record sia contenuto interamente in un blocco
+>
+>##### 2
+>
+
+
+
