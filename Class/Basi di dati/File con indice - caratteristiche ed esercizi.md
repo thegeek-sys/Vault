@@ -219,4 +219,20 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >- capacità blocco effettiva ($80\%$) → $CB=409$
 >
 >##### 1
+>Calcoliamo il numero di record ($RB$) entrano in un blocco
+>$$RB=\left\lfloor  \frac{CB}{R}  \right\rfloor =\left\lfloor  \frac{409}{150}  \right\rfloor =2$$
 >
+>Calcoliamo il numero di blocchi per il file principale che corrisponde al numero di record del file indice($BF$)
+>$$BF=\left\lceil  \frac{NR}{RB}  \right\rceil =\left\lceil  \frac{200.000}{2}  \right\rceil =100.000$$
+>
+>##### 2
+>Calcoliamo la dimensione in termini di record dei blocchi per il file indice ($IB$)
+>$$IB=\left\lfloor  \frac{CB}{K+P}  \right\rfloor =\left\lfloor  \frac{409}{44}  \right\rfloor =9$$
+>
+>Calcoliamo i blocchi necessari per l’indice ($BI$)
+>$$BI=\left\lceil  \frac{BF}{IB}  \right\rceil =\left\lceil  \frac{100.000}{9}  \right\rceil =11.112$$
+>
+>##### 3
+>Il numero massimo di accessi ($MA$) utilizzando la ricerca binaria è
+>$$MA=\lceil \log_{2}BI \rceil +1=\lceil \log_{2}11.112 \rceil +1=14+1=15$$
+
