@@ -139,4 +139,21 @@ Se un record indice punta ad un’area di dati con valori di chiave comprese tra
 Le precedenti strutture dati presentano tutte un indice sparso, ovvero nell’indice si ha una entrata per ogni blocco del file principale.
 Nell’indice denso (indice secondario) si ha come chiave all’interno di un record del file indice un attributo unique che non è chiave primaria. In questo caso dunque, al posto di avere una entrata per ogni blocco, si ha un’entrata per ogni record (dato che non si possono avere contemporaneamente due ordinamenti)
 
-![[Pasted image 20241213193056.png|600]]
+![[Pasted image 20241213193217.png|600]]
+
+---
+## Esercizi
+
+>[!example] Esercizio 1
+>Supponiamo di avere un file di $150.000$ record. Ogni record occupa $250$ byte, di cui $50$ per il campo chiave. Ogni blocco contiene $1024$ byte. Un puntatore a blocco occupa $4$ byte
+>
+>1. Se usiamo un indice ISAM sparso, e assumiamo che i record non siano puntati e che il fattore di utilizzo dei blocchi del file principale sia $0.7$ (cioè i blocchi non sono completamente pieni, ma pieni al più al $70\%$), quanti blocchi dobbiamo usare per l’indice?
+>2. Se usiamo un indice ISAM sparso, e assumiamo che i record siano puntati e chie i blocchi del file principale siano pieni, quanti blocchi dobbiamo utilizzare per l’indice (senza liste di overflow)?
+>3. Se utilizziamo la ricerca binaria, quale è il numero massimo di accessi a blocco per ricercare un record presente nel file dei casi 1. e 2., supponendo nel caso 2. di non avere liste di overflow?
+>
+>Abbiamo i seguenti dati:
+>- il file contiene $150.000$ record → $NR=150.000$
+>- ogni record occupa $250$ byte → $R=250$
+>- il campo chiave occupa $50$ byte → $K=50$
+>- ogni blocco contiene $1024$ byte → $CB=1024$
+>- un puntatore a blocco occupa $4$ byte → $P=4$
