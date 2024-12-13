@@ -197,7 +197,11 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >In entrambi i casi la ricerca si effettua prima di tutto sui blocchi indice; assumiamo una ricerca binaria; i due casi si differenziano, perché nel caso di record non puntati dobbiamo ancora leggere in memoria un solo blocco di record di dati, mentre nel caso di record puntati l’indice punta ad un bucket che potrebbe contenere più blocchi di overflow, che vanno tutti esaminati
 >
 >Nel nostro caso però l’esercizio dice esplicitamente che non ci sono liste di overflow, quindi in entrambe le configurazioni dobbiamo aggiungere un solo accesso a blocco, quindi nella configurazione
+>$$\text{caso 1. } A=\lceil \log_{2}BI \rceil+1=\lceil \log_{2}4167 \rceil +1 = 14$$
+>$$\text{caso 2. } A=\lceil \log_{2}BI \rceil+1=\lceil \log_{2}2084 \rceil +1 = 13$$
 >
+>Per calcolare il numero massimo di record che ci possono essere mantenendo $13$ accessi (caso 1)
+>$$2^{13}\cdot 18 \cdot \left\lfloor  \frac{1024}{250}  \right\rfloor $$
 
 
 
