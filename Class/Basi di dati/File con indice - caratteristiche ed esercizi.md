@@ -48,7 +48,7 @@ La ricerca per interpolazione richiede circa $\boldsymbol{1+\log_{2}\log_{2}m}$ 
 
 ---
 ## Inserimento
-Per inserire un inserimento dobbiamo prima trovare il blocco corretto in cui metterlo e poi scriverlo; quindi il costo è **costo per la ricerca** + **1 accesso** per scrivere il blocco.
+Per inserire un record dobbiamo prima trovare il blocco corretto in cui metterlo e poi scriverlo; quindi il costo è **costo per la ricerca** + **1 accesso** per scrivere il blocco.
 Ciò però è possibile solo se nel blocco c’è spazio per inserire il nuovo record. Se così non è si controlla se è disponibile nel blocco successivo o nel precedente (ciò comporta riscalare tutte gli altri record in modo tale da mantenere l’ordine)
 
 Nel caso in cui non fosse disponibile spazio né nel blocco precedente né nel blocco successivo occorre **richiedere un nuovo blocco al file system**, ripartire i record tra vecchio e nuovo blocco e riscrivere tutti i blocchi modificati. Per questo motivo viene lasciato dello spazio libero all’interno dei blocchi, per fare in modo che questo problema arrivi il più tardi possibile
@@ -75,3 +75,8 @@ All’interno di questo file ISAM
 
 ---
 ## Cancellazione
+Per cancellare un record dobbiamo prima trovarlo all’interno del file principale e poi cancellarlo; quindi il costo è **costo per la ricerca** + **1 accesso** per scrivere il blocco.
+Se il record cancellato è il primo di un blocco sono necessari ulteriori accessi. Se il record cancellato è l’unico record del blocco il blocco viene restituito al sistema e viene modificato il file indice
+
+>[!warning] 
+>Nel caso in cui dobbiamo modificare la chiave di un record, ciò consiste in una cancellazione e un inserimento. Infatti non possiamo modificare la chiave (cambia l’ordine) ma solo gli altri campi del record
