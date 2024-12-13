@@ -139,3 +139,4 @@ Se un record indice punta ad un’area di dati con valori di chiave comprese tra
 Le precedenti strutture dati presentano tutte un indice sparso, ovvero nell’indice si ha una entrata per ogni blocco del file principale.
 Nell’indice denso (indice secondario) si ha come chiave all’interno di un record del file indice un attributo unique che non è chiave primaria. In questo caso dunque, al posto di avere una entrata per ogni blocco, si ha un’entrata per ogni record (dato che non si possono avere contemporaneamente due ordinamenti)
 
+![[Pasted image 20241213193056.png|600]]
