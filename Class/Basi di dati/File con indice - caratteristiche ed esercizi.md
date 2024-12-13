@@ -42,7 +42,32 @@ Ci si ferma quando lo spazio di ricerca è ridotto ad un solo blocco, quindi dop
 ### Ricerca per interpolazione
 La **ricerca per interpolazione** è basata sulla conoscenza della **distribuzione** dei valori della chiave, ovvero deve essere disponibile una funzione $f$ che dati tre valori $k_{1}$, $k_{2}$, $k_{3}$ della chiave fornisce un valore che è la **frazione dell’intervallo di valori** dalla chiave compresa tra $k_{2}$ e $k_{3}$ in cui deve trovarsi $k_{1}$ cioè la chiave che stiamo cercando (nella ricerca binaria questa frazione è sempre $\frac{1}{2}$). Ad esempio quando cerchiamo in un dizionario non partiamo sempre da metà
 
-$k_{1}$ deve essere confrontato con il valore $k$ della chiave del primo record del blocco $i$ (del file indice), dove $i=f(k_{1},k_{2},k_{3})\cdot m$; analogamente a quanto accade nella ricerca binaria. Se $k_{1}$ è minore di tale valore 
+$k_{1}$ deve essere confrontato con il valore $k$ della chiave del primo record del blocco $i$ (del file indice), dove $i=f(k_{1},k_{2},k_{3})\cdot m$; analogamente a quanto accade nella ricerca binaria. Se $k_{1}$ è minore di tale valore allora il procedimento deve essere ripetuto sui blocchi $1,2,\dots,i-1$, mentre se è maggiore il procedimento deve essere ripetuto sui blocchi $i, i+1, \dots,m$, finché la ricerca si restringe ad un unico blocco
 
+La ricerca per interpolazione richiede circa $\boldsymbol{1+\log_{2}\log_{2}m}$ accessi che è molto più veloce ma è altrettanto difficile conoscere $f$ e inoltre la distribuzione dei dati potrebbe cambiare nel tempo
 
 ---
+## Inserimento
+Per inserire un inserimento dobbiamo prima trovare il blocco corretto in cui metterlo e poi scriverlo; quindi il costo è **costo per la ricerca** + **1 accesso** per scrivere il blocco.
+Ciò però è possibile solo se nel blocco c’è spazio per inserire il nuovo record. Se così non è si controlla se è disponibile nel blocco successivo o nel precedente (ciò comporta riscalare tutte gli altri record in modo tale da mantenere l’ordine)
+
+Nel caso in cui non fosse disponibile spazio né nel blocco precedente né nel blocco successivo occorre **richiedere un nuovo blocco al file system**, ripartire i record tra vecchio e nuovo blocco e riscrivere tutti i blocchi modificati. Per questo motivo viene lasciato dello spazio libero all’interno dei blocchi, per fare in modo che questo problema arrivi il più tardi possibile
+
+### Esempio (spazio disponibile nel blocco precedente)
+Devi inserire il blocco 
+
+| 048 | Bellini | …   |
+| --- | ------- | --- |
+All’interno di questo file ISAM
+![[Pasted image 20241213175521.png|320]]
+
+Quindi inizio
+![[Pasted image 20241213175553.png|320]]
+
+### Esempio (spazio non disponibile nei blocchi adiacenti)
+Devi inserire il blocco
+
+| 040 | Toni | …   |
+| --- | ---- | --- |
+All’interno di questo file ISAM
+![[Pasted image 20241213175804.png|320]]
