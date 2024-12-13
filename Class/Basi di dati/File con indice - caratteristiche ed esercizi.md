@@ -179,6 +179,21 @@ Nell’indice denso (indice secondario) si ha come chiave all’interno di un re
 >>Il calcolo basato sul numero complessivo di byte necessari per l’indice $RI\cdot NR$ diviso per la capacità $CB$ di ogni blocco darebbe un numero pari a $\left\lceil  \frac{54\cdot 75.000}{1024} \right\rceil=3956$, ma presenterebbe un errore di fondo, in quando non assicurerebbe che ogni record sia contenuto interamente in un blocco
 >
 >##### 2
+>Ogni blocco del file principale deve essere visto come parte di un bucket, e quindi dobbiamo anche prevedere spazio per un puntatore. L’esercizio ci dice in questo caso che i blocchi dati sono pieni (come i blocchi indice)
+>Altra assunzione che possiamo fare, visto che non è stato specificato altrimenti, è che non ci siano liste di overflow, cioè che tutti i record di dati siano contenuti in blocchi puntati direttamente dall’indice
+>Vediamo prima di tutto in queste nuove condizioni quanti record interi di dati entrano al massimo in un blocco
+>Ogni blocco del file principale deve essere visto come parte di un bucket, e quindi dobbiamo anche prevedere spazio per un puntatore. L’esercizio ci dice in questo caso che i blocchi dati sono pieni, e lo stesso possiamo assumere per i blocchi indice, visto che non è specificato altrimenti. Altra assunzione che possiamo fare, visto che non è stato specificato altrimenti, è che non ci siano liste di overflow, cioè che tutti i record di dati siano contenuti in blocchi puntati direttamente dall’indice
+>
+>Vediamo prima di tutto in queste nuove condizioni quanti record interi di dati entrano al massimo in un blocco
+>$$M=\left\lfloor  \frac{CB-P}{R}  \right\rfloor =\left\lfloor  \frac{1020}{250}  \right\rfloor =\lfloor 4.08 \rfloor =4$$
+>
+>Vediamo ora quanti blocchi vanno indicizzati (numero di record per l’indice)
+>$$BF=\left\lceil  \frac{NR}{MR}  \right\rceil =\left\lceil  \frac{150.000}{4}  \right\rceil = 37.500$$
+>
+>Adesso utilizzo il numero di record per blocco indice dal punto 1., quindi ho
+>$$BI=\left\lceil  \frac{BF}{MI}  \right\rceil =\left\lceil  \frac{37.500}{18}  \right\rceil =2084$$
+>
+>##### 3
 >
 
 
