@@ -9,5 +9,6 @@
   "obsidian-plugin-toc",
   "folder-note-plugin",
   "abbreviations",
-  "vscode-editor"
+  "vscode-editor",
+  "find-unlinked-files"
 ]

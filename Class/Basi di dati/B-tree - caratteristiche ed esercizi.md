@@ -85,4 +85,35 @@ Il costo di un inserimento **se nel blocco non c’è spazio sufficiente** per i
 >Inserendolo si ha quindi
 >![[Pasted image 20241214174919.png]]
 
+---
+## Cancellazione
+Se dopo la cancellazione il blocco rimane pieno almeno per metà si ha il costo di ricerca $h+1$ e un accesso per riscrivere il blocco $+1$, altrimenti sono necessari ulteriori accessi
 
+### Esempi
+>[!example]- Il blocco non rimane pieno almeno per metà
+>Immaginiamo di voler cancellare il record con chiave $28$
+>
+>![[Pasted image 20241214180251.png]]
+>
+>Dopo la cancellazione
+>![[Pasted image 20241214180318.png]]
+
+---
+## Modifica
+Se non coinvolge campi della chiave $h+1$ (costo della ricerca del blocco da modificare) $+1$ (accesso per riscrivere il blocco), altrimenti è il costo della cancellazione più il costo dell’inserimento
+
+---
+## Esercizi
+
+>[!example]- Esercizio 1
+>Supponiamo di avere un file di $170.000$ record. Ogni record occupa $200$ byte, di cui $20$ per il campo chiave. Ogni blocco contiene $1024$ byte. Un puntatore a blocco occupa $4$ byte
+>
+>1. Se usiamo un B-tree e assumiamo che sia i blocchi indice che i blocchi del file sono pieni al minimo, quanti blocchi vengono usati per il livello foglia (file principale) e quanti per l’indice, considerando tutti i livelli foglia?
+>2. Quale è il costo di una ricerca in questo caso?
+>
+>Abbiamo i seguenti dati:
+>- il file contiene $170.000$ record → $NR=170.000$
+>- ogni record occupa $200$ byte → $R=200$
+>- il campo chiave occupa $20$ byte → $K=20$
+>- ogni blocco contiene $1024$ byte → $CB=1024$
+>- un puntatore a blocco occupa $4$ byte → $P=4$
