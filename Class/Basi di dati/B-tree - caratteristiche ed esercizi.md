@@ -22,3 +22,9 @@ Un blocco del file indice è memorizzato come quello di un ISAM; ma ogni blocco 
 ---
 ## Ricerca
 Durante la ricerca di un record con un dato valore per la chiave si accede agli indice a partire da quello a livello più alto; a mano a mano che si scende nella gerarchia di indice si restringe la porzione (insieme di blocchi) del file principale in cui deve trovarsi il record desiderato, fino a che, nell’ultimo livello (più basso nella gerarchia) tale porzione è ristretta ad un unico blocco
+
+Più in dettaglio, per ricercare il record del file principale con un dato valore $v$ per la chiave si procede nel modo seguente. Si parte dall’indice a livello più alto (che è costituito da un unico blocco) e ad ogni passo si esamina un unico blocco. Se il blocco esaminato è un blocco del file principale, tale blocco è quello in deve trovarsi il record desiderato; se, invece, è un blocco di un file indice, si cerca in tale blocco un valore della chiave che ricopre $v$ e si segue il puntatore associato (che sarà o un puntatore ad un blocco dell’indice al livello immediatamente inferiore o un blocco del file principale)
+
+![[Pasted image 20241214164234.png]]
+
+Per la ricerca sono necessari $\boldsymbol{h+1}$ accessi dove $h$ è l’altezza dell’albero (basta visitare un blocco per ogni livello)
