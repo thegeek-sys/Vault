@@ -35,3 +35,6 @@ Per la ricerca sono necessari $\boldsymbol{h+1}$ accessi dove $h$ è l’altezza
 >
 >Se i blocchi sono completamente pieni un inserimento può richiedere una modifica dell’indice ad ogni livello e in ultima ipotesi può far crescere l’altezza dell’albero di un livello
 
+---
+## Inserimento
+Immaginiamo di voler inserire il record con chiave $40$. Ogni blocco del file principale deve contenere almeno $2$ recrod
