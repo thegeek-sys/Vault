@@ -32,3 +32,6 @@ Per la ricerca sono necessari $\boldsymbol{h+1}$ accessi dove $h$ è l’altezza
 >[!info] Osservazione
 >L’altezza dell’albero dipende da quanto sono pieni i blocchi (dalla loro densità). Infatti più sono i blocchi più $h$ è piccolo (e quindi meno costa la ricerca)
 >Come conseguenza di ciò si richiede che ogni blocco (sia del file principale sia dell’indice) sia pieno almeno per metà
+>
+>Se i blocchi sono completamente pieni un inserimento può richiedere una modifica dell’indice ad ogni livello e in ultima ipotesi può far crescere l’altezza dell’albero di un livello
+
