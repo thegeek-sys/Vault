@@ -36,6 +36,25 @@ Per la ricerca sono necessari $\boldsymbol{h+1}$ accessi dove $h$ è l’altezza
 >Se i blocchi sono completamente pieni un inserimento può richiedere una modifica dell’indice ad ogni livello e in ultima ipotesi può far crescere l’altezza dell’albero di un livello
 
 ---
+## Massimo valore di $h$
+Siano:
+- $N$ numero di record del file principale
+- $2e-1$ numero massimo di record del file principale che possono essere memorizzati in un blocco ($e$  numero minimo di record per ogni foglia)
+- $2d-1$ numero massimo di record del file indice che possono essere memorizzati in un blocco ($d$ numero minimo di record per ogni blocco indice)
+
+>[!info]
+>L’assunzione che il numero di record del file principale e del file indice che possono essere memorizzati in un blocco sia dispari viene fatta esclusivamente per rendere semplici i calcoli
+
+L’altezza massima dell’albero denotata con $k$ si ha quando i blocchi sono pieni al minimo, cioè quando:
+- ogni blocco del file principale contiene esattamente $e$ record
+- ogni blocco del file indice contiene esattamente $d$ record
+Pertanto:
+- il file principale ha al più $\frac{N}{e}$ blocchi
+- al livello $1$ il file indice ha $\frac{N}{e}$ record che possono essere memorizzati in $\frac{N}{ed}$ blocchi
+- al livello $2$ il file indice ha $\frac{N}{ed}$ record che possono essere memorizzati in $\frac{N}{ed^2}$ blocchi
+- …
+- al livello $i$ il file indice ha 
+
 ## Inserimento
 Immaginiamo di voler inserire il record con chiave $40$ nel seguente b-tree
 
@@ -43,4 +62,4 @@ Immaginiamo di voler inserire il record con chiave $40$ nel seguente b-tree
 
 Ogni blocco del file principale deve contenere almeno $2$ record
 
-
+![[Pasted image 20241214170106.png|500]]
