@@ -21,4 +21,4 @@ Un blocco del file indice è memorizzato come quello di un ISAM; ma ogni blocco 
 
 ---
 ## Ricerca
-Durante la ricerca di un record con un dato valore per la chiave si accede agli indice a partire da quello a livello più alto; a mano a mano che si scende nella gerarchia di indice si restringe la porzione (insieme di blocchi)
+Durante la ricerca di un record con un dato valore per la chiave si accede agli indice a partire da quello a livello più alto; a mano a mano che si scende nella gerarchia di indice si restringe la porzione (insieme di blocchi) del file principale in cui deve trovarsi il record desiderato, fino a che, nell’ultimo livello (più basso nella gerarchia) tale porzione è ristretta ad un unico blocco
