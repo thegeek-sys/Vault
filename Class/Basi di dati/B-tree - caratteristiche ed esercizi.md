@@ -53,7 +53,9 @@ Pertanto:
 - al livello $1$ il file indice ha $\frac{N}{e}$ record che possono essere memorizzati in $\frac{N}{ed}$ blocchi
 - al livello $2$ il file indice ha $\frac{N}{ed}$ record che possono essere memorizzati in $\frac{N}{ed^2}$ blocchi
 - …
-- al livello $i$ il file indice ha 
+- al livello $i$ il file indice ha $\frac{N}{ed^{i-1}}$ record che possono essere memorizzati in $\frac{N}{ed^i}$ blocchi
+
+Al livello $k$ il file indice ha esattamente $1$ blocco quindi $\left\lceil  \frac{N}{ed^k}  \right\rceil=1$. Consideriamo per semplicità 
 
 ## Inserimento
 Immaginiamo di voler inserire il record con chiave $40$ nel seguente b-tree
