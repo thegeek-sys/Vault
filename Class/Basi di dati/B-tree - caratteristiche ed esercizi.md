@@ -77,16 +77,12 @@ Il costo di un inserimento **se nel blocco non c’è spazio sufficiente** per i
 >Inserendolo si ha quindi
 >![[Pasted image 20241214174558.png]]
 
->[!exaple]- Non c’è spazio sufficiente
+>[!example]- Non c’è spazio sufficiente
 >Immaginiamo di voler inserire il record con chiave $25$
 >
 >![[Pasted image 20241214174642.png]]
 >
+>Inserendolo si ha quindi
+>![[Pasted image 20241214174919.png]]
 
-Immaginiamo di voler inserire il record con chiave $40$ nel seguente b-tree
 
-![[Pasted image 20241214165932.png|450]]
-
-Ogni blocco del file principale deve contenere almeno $2$ record
-
-![[Pasted image 20241214170106.png|500]]
