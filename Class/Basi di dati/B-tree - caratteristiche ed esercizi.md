@@ -55,9 +55,34 @@ Pertanto:
 - …
 - al livello $i$ il file indice ha $\frac{N}{ed^{i-1}}$ record che possono essere memorizzati in $\frac{N}{ed^i}$ blocchi
 
-Al livello $k$ il file indice ha esattamente $1$ blocco quindi $\left\lceil  \frac{N}{ed^k}  \right\rceil=1$. Consideriamo per semplicità 
+Al livello $k$ il file indice ha esattamente $1$ blocco quindi $\left\lceil  \frac{N}{ed^k}  \right\rceil=1$. Consideriamo per semplicità che $\frac{N}{ed^k}=1$ da cui $d^k=\frac{N}{e}$ e infine $k=\log_{g}\left( \frac{N}{e} \right)$
 
+Quindi il valore che rappresenta il limite superiore per l’altezza dell’albero è
+$$
+k=\log_{d}\left( \frac{N}{e} \right)
+$$
+
+---
 ## Inserimento
+Il costo di un inserimento **se nel blocco c’è spazio sufficiente** per inserire il record è il costo di una ricerca per trovare il blocco in cui deve essere inserito il record più un accesso per riscrivere il blocco $h+1+1$
+
+Il costo di un inserimento **se nel blocco non c’è spazio sufficiente** per inserire il record è il costo di una ricerca per trovare il blocco in cui deve essere inserito il record più $s\leq 2h+1$ (nel caso peggiore per ogni livello dobbiamo sdoppiare un blocco quindi effettuare due accessi più uno alla fine per la nuova radice)
+
+### Esempi
+>[!example]- C’è spazio sufficiente
+>Immaginiamo di voler inserire il record con chiave $22$
+>
+>![[Pasted image 20241214174528.png]]
+>
+>Inserendolo si ha quindi
+>![[Pasted image 20241214174558.png]]
+
+>[!exaple]- Non c’è spazio sufficiente
+>Immaginiamo di voler inserire il record con chiave $25$
+>
+>![[Pasted image 20241214174642.png]]
+>
+
 Immaginiamo di voler inserire il record con chiave $40$ nel seguente b-tree
 
 ![[Pasted image 20241214165932.png|450]]
