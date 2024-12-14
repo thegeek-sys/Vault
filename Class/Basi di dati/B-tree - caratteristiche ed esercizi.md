@@ -28,3 +28,6 @@ Più in dettaglio, per ricercare il record del file principale con un dato valor
 ![[Pasted image 20241214164234.png]]
 
 Per la ricerca sono necessari $\boldsymbol{h+1}$ accessi dove $h$ è l’altezza dell’albero (basta visitare un blocco per ogni livello)
+
+>[!info] Osservazione
+>L’altezza dell’albero dipende da quanto sono pieni i blocchi (dalla loro densità). Infatti più sono i blocchi più $h$ è piccolo (e quindi meno costa la ricerca)
