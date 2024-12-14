@@ -37,4 +37,10 @@ Per la ricerca sono necessari $\boldsymbol{h+1}$ accessi dove $h$ è l’altezza
 
 ---
 ## Inserimento
-Immaginiamo di voler inserire il record con chiave $40$. Ogni blocco del file principale deve contenere almeno $2$ recrod
+Immaginiamo di voler inserire il record con chiave $40$ nel seguente b-tree
+
+![[Pasted image 20241214165932.png|450]]
+
+Ogni blocco del file principale deve contenere almeno $2$ record
+
+
