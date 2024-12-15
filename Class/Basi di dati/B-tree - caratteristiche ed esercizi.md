@@ -141,5 +141,38 @@ Se non coinvolge campi della chiave $h+1$ (costo della ricerca del blocco da mod
 >
 >Il costo della ricerca sarà $5$ (un blocco per ognuno dei $4$ livelli di indice $+1$ blocco per il file principale)
 
-
-
+>[!example]- Esercizio 2
+>Supponiamo di avere un file di $170.000$ record. Ogni record occupa $200$ byte, di cui $20$ per il campo chiave. Ogni blocco contiene $1024$ byte. Un puntatore a blocco occupa $4$ byte
+>
+>- Se usiamo un B-tree e assumiamo che sia i blocchi indice che i blocchi del file sono pieni al massimo, quanti blocchi vengono usati per il livello foglia (file principale) e quanti per l’indice, considerando tutti i livelli foglia? Quale è il costo di una ricerca in questo caso?
+>
+>Abbiamo i seguenti dati:
+>- il file contiene $170.000$ record → $NR=170.000$
+>- ogni record occupa $200$ byte → $R=200$
+>- il campo chiave occupa $20$ byte → $K=20$
+>- ogni blocco contiene $1024$ byte → $CB=1024$
+>- un puntatore a blocco occupa $4$ byte → $P=4$
+>
+>Calcoliamo il numero di record per blocco (file principale)
+>$$MR=\left\lfloor  \frac{CB}{R}  \right\rfloor =\left\lfloor  \frac{1024}{200}  \right\rfloor =5$$
+>Poiché è riempito al massimo non devo togliere alcun blocco
+>
+>Calcolo il numero di blocchi per il file principale (ovvero il numero di record del file indice)
+>$$BF=\left\lceil  \frac{NR}{e}  \right\rceil =\left\lceil  \frac{170.000}{5}  \right\rceil =34000$$
+>
+>Calcoliamo il numero di record memorizzabili in un blocco del file indice
+>$$d=\left\lceil  \frac{CB/2-P}{K+P}  \right\rceil +1 = \left\lceil  \frac{1024-4}{24} \right\rceil+1=22+1=43$$
+>Poiché è riempito al massimo non devo togliere alcun blocco
+>
+>Calcoliamo il numero di blocchi per il file indice al primo livello
+>$$B_{1}=\left\lceil  \frac{BR}{d}  \right\rceil =\left\lceil  \frac{34000}{43}  \right\rceil =791$$
+>Calcoliamo il numero di blocchi per il file indice al secondo livello
+>$$B_{2}=\left\lceil  \frac{B_{1}}{d}  \right\rceil =\left\lceil  \frac{791}{43}  \right\rceil =19$$
+>Calcoliamo il numero di blocchi per il file indice al terzo livello
+>$$B_{3}=\left\lceil  \frac{B_{2}}{d}  \right\rceil =\left\lceil  \frac{19}{43}  \right\rceil =1$$
+>A questo punto mi fermo poiché ho trovato la radice (livello con un solo blocco)
+>
+>Complessivamente quindi si avranno
+>$$BI=B_{1}+B_{2}+B_{3}=791+19+1=2578$$
+>
+>Il costo della ricerca sarà $4$ (un blocco per ognuno dei $3$ livelli di indice $+1$ blocco per il file principale)
