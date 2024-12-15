@@ -108,8 +108,7 @@ Se non coinvolge campi della chiave $h+1$ (costo della ricerca del blocco da mod
 >[!example]- Esercizio 1
 >Supponiamo di avere un file di $170.000$ record. Ogni record occupa $200$ byte, di cui $20$ per il campo chiave. Ogni blocco contiene $1024$ byte. Un puntatore a blocco occupa $4$ byte
 >
->1. Se usiamo un B-tree e assumiamo che sia i blocchi indice che i blocchi del file sono pieni al minimo, quanti blocchi vengono usati per il livello foglia (file principale) e quanti per l’indice, considerando tutti i livelli foglia?
->2. Quale è il costo di una ricerca in questo caso?
+>- Se usiamo un B-tree e assumiamo che sia i blocchi indice che i blocchi del file sono pieni al minimo, quanti blocchi vengono usati per il livello foglia (file principale) e quanti per l’indice, considerando tutti i livelli foglia? Quale è il costo di una ricerca in questo caso?
 >
 >Abbiamo i seguenti dati:
 >- il file contiene $170.000$ record → $NR=170.000$
@@ -117,3 +116,30 @@ Se non coinvolge campi della chiave $h+1$ (costo della ricerca del blocco da mod
 >- il campo chiave occupa $20$ byte → $K=20$
 >- ogni blocco contiene $1024$ byte → $CB=1024$
 >- un puntatore a blocco occupa $4$ byte → $P=4$
+>
+>Calcoliamo il numero di record per blocco (file principale)
+>$$MR=\left\lfloor  \frac{CB}{R}  \right\rfloor =\left\lfloor  \frac{1024}{200}  \right\rfloor =5$$
+>Divido il numero per $2$ e prendo la parte intera per prendere il numero di record occupati
+>$$e=\left\lfloor  \frac{5}{2}  \right\rfloor =3$$
+>Calcolo il numero di blocchi per il file principale (ovvero il numero di record del file indice)
+>$$BF=\left\lceil  \frac{NR}{e}  \right\rceil =\left\lceil  \frac{170.000}{3}  \right\rceil =56667$$
+>
+>Calcoliamo il numero di record memorizzabili in un blocco del file indice; per farlo all’inizio tolgo i $4$ byte del record puntatore dalla metà della dimensione totale del blocco e alla fine lo riaggiungo per raggiungere il riempimento richiesto
+>$$d=\left\lceil  \frac{CB/2-P}{K+P}  \right\rceil +1 = \left\lceil  \frac{512-4}{24} \right\rceil+1=22+1=23$$
+>Calcoliamo il numero di blocchi per il file indice al primo livello
+>$$B_{1}=\left\lceil  \frac{BR}{d}  \right\rceil =\left\lceil  \frac{56667}{23}  \right\rceil =2464$$
+>Calcoliamo il numero di blocchi per il file indice al secondo livello
+>$$B_{2}=\left\lceil  \frac{B_{1}}{d}  \right\rceil =\left\lceil  \frac{2464}{23}  \right\rceil =108$$
+>Calcoliamo il numero di blocchi per il file indice al terzo livello
+>$$B_{3}=\left\lceil  \frac{B_{2}}{d}  \right\rceil =\left\lceil  \frac{108}{23}  \right\rceil =5$$
+>Calcoliamo il numero di blocchi per il file indice al quarto livello
+>$$B_{4}=\left\lceil  \frac{B_{3}}{d}  \right\rceil =\left\lceil  \frac{5}{23}  \right\rceil =1$$
+>A questo punto mi fermo poiché ho trovato la radice (livello con un solo blocco)
+>
+>Complessivamente quindi si avranno
+>$$BI=B_{1}+B_{2}+B_{3}+B_{4}=2464+108+5+1=2578$$
+>
+>Il costo della ricerca sarà $5$ (un blocco per ognuno dei $4$ livelli di indice $+1$ blocco per il file principale)
+
+
+
