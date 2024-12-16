@@ -171,7 +171,7 @@ Esistono inoltre dei file di sistema che permettono di associare i nomi con i co
 
 Una tipica entry del file `/etc/passwd` è formata così
 `sabinar:x:6335:283:Sabina Rossi:/home/sabinar:/bin/csh`
-In cui `sabrinar` indica l’username `6335` indica lo uid e `283` il gip, `x` password, `/home/sabrinar` current working directory, `/bin/csh` shell da eseguire
+In cui `sabrinar` indica l’username `6335` indica lo uid e `283` il gip, `x` password (oscurata), `/home/sabrinar` current working directory, `/bin/csh` shell da eseguire
 
 Invece una tipica entry del file `/etc/group` è formata così
 `aan:x:283`
@@ -179,3 +179,7 @@ Invece una tipica entry del file `/etc/group` è formata così
 
 ### Login
 Il login può essere fatto su un terminale della macchina (processo `getty`) o tramite rete (`telnet`, `ssh`). Questi processi richiedono una coppia `username+password`. Se corrisponde ad une entry di `/etc/passwd`, viene eseguita la shell indicata, a partire dalla directory di home indicata
+Quando la shell esegue `exit`, o si ritorna al `getty` o si chiude la connessione di rete.
+All’interno di una shell si può cambiare identità con il comando `su`
+
+### Accesso ai file
