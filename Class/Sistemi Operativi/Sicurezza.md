@@ -127,3 +127,31 @@ Recentemente, la biometria è stata espansa come segue:
 ---
 ## Controllo di accesso
 Il controllo di accesso serve a determinare quali tipi di accesso sono ammessi, sotto quali circostanze, e da chi
+Il controllo di accesso può essere:
+- **discrezionale** → un utente può concedere i suoi privilegi ad altri utenti
+- **obbligatorio** → un utente non può concedere i suoi stessi privilegi ad altri utenti
+- **basato su ruoli**
+
+Le tre modalità possono essere presenti contemporaneamente, ovviamente applicate a diverse classi di risorse
+![[Pasted image 20241216150151.png|center|350]]
+
+### Discrezionale
+![[Pasted image 20241216150249.png]]
+I soggetti riguardano degli utenti o dei processi. Ovviamente ogni utente/processo controlla sé stesso ma solo un utente è proprietario dell’altro. Sui file i soggetti possono leggere scrivere ed eseguire. Sui processi li possono svegliare e fermare
+
+Dunque per ogni soggetto bisogna definire che azioni può eseguire sugli oggetti esistenti (in linux è ogni singolo file che ha le proprietà di chi lo può gestire)
+
+![[Pasted image 20241216150607.png]]
+
+### Basato sui ruoli
+In questo tipo di controllo dell’accesso ci sta l’implementazione del cosiddetto **principio di minimo privilegio** secondo cui ci sono dei ruoli che definiscono il minimo insieme di diritti che devono avere gli utenti che appartengono a quei ruoli.
+Dunque ad ogni utente, alla creazione, viene assegnato un ruolo che lo abilita ad effettuare le operazioni richieste per quel ruolo (ma solo mentre si sta agendo sotto quel ruolo)
+
+![[Pasted image 20241216151053.png|center|350]]
+
+Dunque in questo abbiamo bisogno di due tabelle per la gestione dei ruoli e dei permessi. Una per gestire a quali utenti sono assegnati quali ruoli e una per assegnare i permessi a ciascun ruolo
+![[Pasted image 20241216151249.png]]
+![[Pasted image 20241216151308.png]]
+
+---
+## Unix: meccanismi di protezione
