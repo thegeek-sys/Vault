@@ -183,3 +183,17 @@ Quando la shell esegue `exit`, o si ritorna al `getty` o si chiude la connession
 All’interno di una shell si può cambiare identità con il comando `su`
 
 ### Accesso ai file
+Per ogni file ci sono tre terne di permessi: lettura, scrittura, esecuzione.
+La prima terna è il proprietario del file, la seconda per il gruppo cui il proprietario del file appartiene, la terza per tutti gli altri utenti.
+
+Le terne di diritti sono usate ogni volta che un processo richiede l’accesso ad un file. Se il proprietario del file e del processo coincidono, si guarda la prima terna, altrimenti la seconda terna se almeno appartengono allo stesso gruppo, altrimenti la terza terna. Si prende poi l’elemento della terna corrispondente all’accesso richiesto
+
+Il proprietario è lo stesso del processo che ha creato il file, ma si può cambiare con `chown`, mentre si possono cambiare diritti del file con `chmod`
+
+```
+-rwxr-xr-x 1 federico em 5120 Nov 7 11:03 a.out
+-rw-r--r-- 1 federico em 233 Nov 7 11:03 test.c
+```
+
+### SETUID e STGID
+Ci sono dei casi in cui un utente normale deve essere messo nelle condizioni di poter accedere a dei file di sistema casomai solo in alcune situazioni particolari
