@@ -83,3 +83,47 @@ Gli asset sono categorizzati come:
 ### Relazione tra Asset e Triade
 ![[Pasted image 20241216124151.png]]
 
+---
+## Autenticazione
+L’autenticazione è alla base per la maggior parte dei tipi di controllo di accesso e tracciabilità. Questa consiste in:
+- identificazione
+- verifica
+
+L’autenticazione serve a determinare **se un utente è abilitato ad accedere al sistema**, e inoltre determina anche i privilegi dell’utente abilitato
+Ciò rende possibile il *discretionary control access* (controllo di accesso discrezionale), che consiste nel fatto che un utente può decidere a quali utenti concedere determinati permessi
+
+### Mezzi per l’autenticazione
+L’autenticazione generalmente si può fare in tre modi (almeno uno deve essere presente, meglio due contemporaneamente):
+- qualcosa che *sai* (password)
+- qualcosa che *hai* (chiave, badge RFID)
+- qualcosa che *sei* (biometrica)
+
+Per sottolineare le possibili problematiche, Nick Mathewson notò come i mezzi per l’autenticazione possano anche essere:
+- qualcosa che *hai dimenticato*
+- qualcosa che *avevi*
+- qualcosa che *eri*
+
+#### Autenticazione con password
+E’ il tipo di autenticazione più nota e usata (spesso anche l’unica). In questo caso l’importante è che le password siano memorizzate non in chiaro
+
+#### Autenticazione con Token
+Riguarda oggetti fisici posseduti da un utente per l’autenticazione e vengono chiamati **token**
+
+**Memory card**
+Possono essere utilizzate solo per memorizzare dati, ma senza elaborarli (es. bancomat), per questo motivo vengono spesso usati insieme a password o PIN
+
+**Smartcard**
+Hanno un microprocessore, memoria e porte I/O. Ne esistono di diversi tipi, a seconda dei seguenti aspetti:
+- caratteristiche fisiche → come una carta di credito o una chiavetta USB
+- interfaccia → lettore apposito, ma alcune hanno un tastierino
+- protocollo di autenticazione → generatore di password statico o dinamico, domanda - risposta
+
+#### Biometria
+Recentemente, la biometria è stata espansa come segue:
+- qualcosa che *sei* → biometrica statica: impronta digitale, faccia, … (basata su riconoscimento di pattern, complesso e costoso)
+- qualcosa che *fai* → biometria dinamica: scrittura a mano, riconoscimento vocale, ritmo di battitura (i pattern possono cambiare)
+![[Pasted image 20241216125604.png|350]]
+
+---
+## Controllo di accesso
+Il controllo di accesso serve a determinare quali tipi di accesso sono ammessi, sotto quali circostanze, e da chi
