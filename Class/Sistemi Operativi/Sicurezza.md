@@ -155,3 +155,4 @@ Dunque in questo abbiamo bisogno di due tabelle per la gestione dei ruoli e dei 
 
 ---
 ## Unix: meccanismi di protezione
+Tipicamente in Unix la sicurezza è basata sull’autenticazione dell’utente (User-Oriented Access Control) 
