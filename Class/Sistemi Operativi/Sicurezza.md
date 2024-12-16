@@ -62,4 +62,24 @@ Questo tipo di minaccia può avvenire per:
 - corruzione → alterazione dei servizi
 
 ### Usurpazione
-Si parla di usurpazione quando il sistema viene direttamente controllato da chi non ne ha l’autorizzazione
+Si parla di usurpazione quando il sistema viene direttamente controllato da chi non ne ha l’autorizzazione. Ciò costituisce una minaccia all’integrità del sistema
+
+Questo tipo di minaccia può avvenire per:
+- attacchi → appropriazione indebita (diventare amministratore di una macchina non propria, es. le macchine che compongono le botnet per poter poi fare DoS)
+- uso non appropriato → virus che cancella file o fa danni
+
+---
+## Asset
+Un’altra cosa da considerare quando si parla di sicurezza sono gli asset. Gli asset consistono nelle **risorse da proteggere**
+Gli asset sono categorizzati come:
+- hardware
+- software
+- dati
+- linee di comunicazione e reti
+
+### Ambito della sicurezza informatica
+![[Pasted image 20241216124113.png]]
+
+### Relazione tra Asset e Triade
+![[Pasted image 20241216124151.png]]
+
