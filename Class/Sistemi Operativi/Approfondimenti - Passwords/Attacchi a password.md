@@ -32,3 +32,17 @@ L’attacco del dizionario consiste nel compilare una lista di password comuneme
 
 ---
 ## Attacco Rainbow Table
+Questo risulta essere un attacco dizionario ma migliorato sull’efficienza. Infatti in questo caso il nostro dizionario è composto da password e hash corrispondente, in modo tale che non bisogna calcolare l’hash in real-time ma mi basta confrontare l’hash calcolato con l’hash da trovare e, in caso di corrispondenza, vedere a quale password corrisponde (nella realtà utilizza un sistema più complesso di funzioni di riduzione per mantenere trattabili le dimensioni della tabella)
+
+**Vantaggi**
+- Molto semplice da effettuare, data la rainbow table precompilata
+- Molto più veloce rispetto a dictionary bruteforce
+**Svantaggi**
+- Rigidità → funziona solo per la funzione di hash per la quale è stata creata la rainbow table (se vogliamo più funzioni servono più rainbow tables)
+
+---
+## Salvati dal sale
+A proteggersi da questi attacchi ci pensa il `salt`
+Il `salt` infatti è un valore randomico, generato quando un utente sceglie la password, che viene aggiunto alla computazione dell’hash (prima $d = hash(x)$, dopo $d=hash(x,s)$)
+
+Il salt viene poi salvato in chiaro assieme all’hash calcolato rendendo impossibile l’uso di rainbow tables (se per ogni utente c’è un salt randomico diverso, non posso precomputare gli hash). Come conseguenza inoltre si ha che due utenti con la stessa password hanno hash diversi
