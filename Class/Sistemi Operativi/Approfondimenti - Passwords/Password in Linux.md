@@ -16,3 +16,40 @@ Originariamente esisteva soltanto il file `passwd`, che includeva le password de
 
 ---
 ## `/etc/passwd`
+E’ un plaintext file contenente l’intera lista di utenti (account) presenti nel sistema (include non solo gli utenti “normali”, ma anche utenti standard di sistema e utenti speciali)
+
+Di default ha i seguenti permessi:
+```
+-rw-r--r-- 1 root root 2659 Dec 22 12:21 /etc/passwd
+```
+
+Ciascuna riga del file `passwd` indica informazioni fondamentali su un utente del sistema e ha il seguente formato
+![[Pasted image 20241216170859.png]]
+1. username → nome dell’utente usato per il login (alfanumerico max. 32 caratteri)
+2. password → inutilizzato oggi (il carattere `x` indica che l’hash della password è nel file `shadow`)
+3. user id (uid) → ogni utente nel sistema ha uno user id numerico assegnato (`0` indica sempre l’utente root mentre `1-999` sono riservati per account predefiniti e di sistema)
+4. group id (gid) → una volta creato ogni utente è assegnato ad un *primary group* ovvero il gruppo che il sistema operativo assegna ai file creati dall’utente (la descrizione del gruppo e i suoi dettagli sono contenuti in `/etc/group`)
+5. GECOS → campo descrittivo che contiene informazioni generali sull’utente
+6. home directory → path assoluto alla home directory dell’utente
+7. shell → path assoluto della command shell usata dall’utente (eseguibile)
+
+---
+## `/etc/shadow`
+E’ un plaintext file contenente, per ciascun utente del sistema, l’hash della sua password ed altre informazioni aggiuntive. Data la criticità delle informazioni contenute, sottrarre e decifrare lo shadow file spesso è uno degli obiettivi principali di un attaccante; conseguentemente ha permessi molto più restrittivi di `passwd`
+
+Di default, ha i seguenti permessi
+```
+-rw-r----- 1 root root 2659 Dec 22 12:21 /etc/shadow
+```
+
+Ciascuna riga del file shadow contiene informazioni sulla password del rispettivo utente:
+![[Pasted image 20241216171702.png]]
+1. username → nome dell’utente a cui la password appartiene (definito in `passwd`)
+2. password → password dell’utente salvata usando il **Modular Crypt Format**
+3. last changed → data dell’ultimo cambiamento della password, espresso in giorni trascorsi da Unix Epoch (01/01/1970)
+4. min age → minimo numero di giorni dall’ultimo cambio prima che la password possa essere nuovamente cambiata
+5. max age → massimo numero di giorni dopo i quali è necessario cambiare la password
+6. warn → quantigiorni prima della scadenza della password va avvisato l’utente
+
+---
+## Modular Crypt Format
