@@ -155,4 +155,27 @@ Dunque in questo abbiamo bisogno di due tabelle per la gestione dei ruoli e dei 
 
 ---
 ## Unix: meccanismi di protezione
-Tipicamente in Unix la sicurezza è basata sull’autenticazione dell’utente (User-Oriented Access Control) 
+Tipicamente in Unix la sicurezza è basata sull’**autenticazione dell’utente** (*User-Oriented Access Control*) e il modello di controllo degli accessi si concentra sui dati stessi come punto centrale per decidere chi può fare cosa (*Data-Oriented Access Control*)
+
+Nonostante ciò ci potrebbero essere altri meccanismi:
+- NIS
+- NDAP
+- Kerberos
+
+### Utenze e gruppi
+In Unix dunque per ogni utente ci sta uno *`username`* (alfanumerico) e un *`uid`* (numero intero).
+Lo uid è usato ogni volta che occorre dare un proprietario ad una risorsa (file, processi, …)
+Inoltre ogni utente appartiene ad un **gruppo** (analogamente identificato da *`groupname`* e *`gip`*)
+
+Esistono inoltre dei file di sistema che permettono di associare i nomi con i corrispettivi codici numerici che sono `/etc/group` e `/etc/passwd` (talvolta in combinazione con `/etc/shadow`)
+
+Una tipica entry del file `/etc/passwd` è formata così
+`sabinar:x:6335:283:Sabina Rossi:/home/sabinar:/bin/csh`
+In cui `sabrinar` indica l’username `6335` indica lo uid e `283` il gip, `x` password, `/home/sabrinar` current working directory, `/bin/csh` shell da eseguire
+
+Invece una tipica entry del file `/etc/group` è formata così
+`aan:x:283`
+`aan` groupname e `283` il gip
+
+### Login
+Il login può essere fatto su un terminale della macchina (processo `getty`) o tramite rete (`telnet`, `ssh`). Questi processi richiedono una coppia `username+password`. Se corrisponde ad une entry di `/etc/passwd`, viene eseguita la shell indicata, a partire dalla directory di home indicata
