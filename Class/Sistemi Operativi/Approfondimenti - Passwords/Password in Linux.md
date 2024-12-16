@@ -6,6 +6,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#`/etc/passwd`|/etc/passwd]]
+- [[#`/etc/shadow`|/etc/shadow]]
+- [[#Modular Crypt Format|Modular Crypt Format]]
+- [[#Hash functions|Hash functions]]
+	- [[#Hash functions#Password hashing o cirfratura|Password hashing o cirfratura]]
+---
 ## Introduction
 Linux usa due file per gestire utenti e le relative password
 - `/etc/passwd`
@@ -53,3 +61,25 @@ Ciascuna riga del file shadow contiene informazioni sulla password del rispettiv
 
 ---
 ## Modular Crypt Format
+Il Modular Crypt Format è il formato usato usato nello shadow file per salvare gli hash delle password ed è strutturato così
+```
+$ID$salt$hash
+```
+- `ID` → algoritmo di hashing usato per questa password (MD5, blowfish, SHA265, ...)
+- `salt` → salt usato nel processo di hashing; si tratta di una stringa randomica utilizzata nel processo di hashing per poter garantire unicità dell’hash (facendo l’hash di due password identiche si devono avere due hash diversi)
+- `hash` → hash della password, calcolato con l’algoritmo ID e salt
+
+---
+## Hash functions
+![[Pasted image 20241216172653.png|center]]
+
+Le funzioni di hash sono delle funzioni matematiche che permettono di trasformare sequenze di dati di lunghezza variabile in output di lunghezza fissa in maniera deterministica (ovvero data la stessa stringa in input, darà sempre lo stesso output)
+
+Inoltre una funzione di hash è detta **crittografica** se è computazionalmente difficile:
+- calcolare l’inverso della funzione hash
+- dato un input $x$ ed il suo hash $d$, trovare un altro input $x_{1}$ che abbia lo stesso hash $d$
+- trovare due input diversi di lunghezza arbitraria $x_{1}$ e $x_{2}$ che abbiano lo stesso hash $d$
+
+### Password hashing o cirfratura
+Date le caratteristiche elencate, capiamo perché le funzioni di hash sono usate per le password. Ma perché non cifrare direttamente la password? In entrambi i casi, le password non sono leggibili da un attaccante
+Se si usa cifratura ed un attaccante ottiene la chiave privata, potrebbe decifrare ed ottenere tutte le password in plaintext. Inoltre le funzioni hash sono *one-way* (una volta fatto l’hash non si torna più indietro). Dunque se un attaccante ottiene l’hash non potrà mai scoprire la password che l’ha generato (salvo eccezioni), ma rimane comunque semplice verificare se una password corrisponde a quella salvata in formato hash, basta infatti fare l’hash della password e verificarne l’equivalenza (hashing è deterministico)

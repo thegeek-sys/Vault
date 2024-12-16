@@ -38,6 +38,20 @@
             }
           },
           {
+            "id": "0336f3eea8c767ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Approfondimenti - Passwords/Attacchi a password.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Attacchi a password"
+            }
+          },
+          {
             "id": "bd461f1d313c6fe3",
             "type": "leaf",
             "state": {
@@ -209,12 +223,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bd461f1d313c6fe3",
+  "active": "0336f3eea8c767ca",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Password in Linux.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Attacchi a password.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
+    "Files/Pasted image 20241216172653.png",
     "Files/Pasted image 20241216171702.png",
     "Files/Pasted image 20241216170859.png",
-    "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
-    "Class/Sistemi Operativi/Approfondimenti - Passwords/Password in Linux.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Approfondimenti - Passwords",
     "Class/Sistemi Operativi/Sicurezza.md",
@@ -225,8 +241,6 @@
     "Files/Pasted image 20241216150249.png",
     "Files/Pasted image 20241216150151.png",
     "Files/Pasted image 20241216125604.png",
-    "Files/Pasted image 20241216124151.png",
-    "Files/Pasted image 20241216124113.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Dispositivi di I-O.md",
     "Flet-notes/2024-12-11.md",
