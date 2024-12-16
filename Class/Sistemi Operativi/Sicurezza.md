@@ -197,3 +197,17 @@ Il proprietario è lo stesso del processo che ha creato il file, ma si può camb
 
 ### SETUID e STGID
 Ci sono dei casi in cui un utente normale deve essere messo nelle condizioni di poter accedere a dei file di sistema casomai solo in alcune situazioni particolari
+Per questo motivo comandi come `passwrd` hanno il permesso speciale `SETUID` e/o  `SETGID`. Tale permesso può essere accordato solo da un utente amministratore con `chmod u+s nomefile` e/o `chmod g+s nomefile`
+
+In questo modo dunque l’uid o il gid del processo non sono quelli dell’utente che lo ha lanciato, ma **del proprietario del file eseguibile**
+
+```
+-rwxr-xr-x 1 federico em 5120 Nov 7 11:03 a.out
+-rw-r--r-- 1 root root 1715 Oct 12 2014 /etc/passwd
+-r-sr-sr-x 1 root sys 21964 Apr 7 2002 /bin/passwd
+
+ci sta s al posto si x
+```
+
+>[!warning] Meccanismo da usare con estrema cautela, facile fare attacchi `rootkit`
+
