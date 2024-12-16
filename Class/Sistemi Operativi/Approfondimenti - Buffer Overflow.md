@@ -49,3 +49,80 @@ Tra parentesi si trovano i valori che prendono i diversi indirizzi dello stack (
 In realtà un indirizzo conterrà più lettere, in base alla dimensione delle parole in memoria
 ![[Pasted image 20241216190501.png|400]]
 
+---
+## Stack Smashing - conseguenze
+Di solito, fare overflow di un buffer nel modo visto sopra, porta alla terminazione del programma, tuttavia, se i dati che sono usati nell’overflow del buffer sono preparati in modo accurato, è possibile eseguire codice arbitrario
+
+### Il problema
+Cosa succede se cambiamo la stringa?
+
+```c
+void foo(char *s) {
+	char buf[10];
+	strcpy(buf, s);
+	printf("buf is %s\n", s);
+}
+
+foo("stringatroppolun\xda\x51\x55\x55\x55\x55\x00\x00");
+```
+
+Facendo in questo sovrascriviamo l’indirizzo di ritorno a piacere
+![[Pasted image 20241216191130.png|center|400]]
+
+---
+## Esecuzione di codice arbitrario
+Modificare l’indirizzo di ritorno arbitrariamente è utile, ma come eseguiamo del codice arbitrario?
+Per farlo si hanno diverse tecniche:
+- Shellcode
+- return-to-libc
+- Stack frame pointer replacement
+- return-oriented programming (ROP)
+
+### Shellcode
+Con questa modalità un piccolo (deve rientrare nelle dimensioni del buffer) pezzo di codice viene eseguito quando si sfrutta una vulnerabilità (es. buffer overflow) per attaccare un sistema
+Viene chiamato **shellcode**, perché solitamente avvia una command shell, dalla quale l’attaccante può prendere il controllo della macchina
+
+L’idea consiste nell’inserire del codice eseguibile arbitrario nel buffer, e cambiare il return address con l’indirizzo del buffer
+
+Assumendo che l’indirizzo di `buf` sia `0x00005555555551da` possiamo eseguire così l’attacco
+
+```c
+void foo(char *s) {
+	char buf[10];
+	strcpy(buf, s);
+	printf("buf is %s\n", s);
+}
+
+foo("<shellcode>\xda\x51\x55\x55\x55\x55\x00\x00");
+```
+
+In questo modo, una volta completata la chiamata a `foo()`, il processore salterà all’indirizzo `0x00005555555551da` ed eseguirà il codice che trova (shellcode)
+![[Pasted image 20241216191901.png|center|400]]
+
+### return-to-libc
+Poiché non è sempre possibile inserire shellcode arbitrario (es. buffer piccolo, meccanismi di difesa), si può utilizzare come indirizzo di ritorno l’indirizzo di una funzione di sistema utile per un attacco (es. system). Infatti le librerie dinamiche e di sistema sono sempre presenti in RAM e sono raggiungibili dal nostro processo
+Viene chiamato **return-to-libc** in quanto solitamente modifica l’indirizzo di ritorno con l’indirizzo di una funzione standard della libreria C
+
+Assumendo di conoscere l’indirizzo di `system()`, possiamo effettuare così l’attacco
+
+```c
+void foo(char *s) {
+	char buf[10];
+	strcpy(buf, s);
+	printf("buf is %s\n", s);
+}
+
+foo("AAAAAAAAAAAAAAAA<indirizzo di system>AAAA’bin/sh'");
+```
+
+In questo modo, una volta completata la chiamata a `foo()`, il processore salterà all’indirizzo di `system()` e ne eseguirà il codice usando come parametro `bin/sh`
+![[Pasted image 20241216192503.png|center|400]]
+
+---
+## Contromisure
+Esistono due tipi di contromisure per il buffer overflow:
+- difese a tempo di compilazione
+- difese a tempo di esecuzione
+
+### Tempo di compilazione
+L
