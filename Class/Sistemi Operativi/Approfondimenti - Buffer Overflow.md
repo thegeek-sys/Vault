@@ -5,6 +5,21 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Stack|Stack]]
+	- [[#Introduction#Chiamata di funzione|Chiamata di funzione]]
+- [[#Il problema|Il problema]]
+	- [[#Il problema#Evoluzione dello stack|Evoluzione dello stack]]
+- [[#Stack Smashing - conseguenze|Stack Smashing - conseguenze]]
+	- [[#Stack Smashing - conseguenze#Il problema|Il problema]]
+- [[#Esecuzione di codice arbitrario|Esecuzione di codice arbitrario]]
+	- [[#Esecuzione di codice arbitrario#Shellcode|Shellcode]]
+	- [[#Esecuzione di codice arbitrario#return-to-libc|return-to-libc]]
+- [[#Contromisure|Contromisure]]
+	- [[#Contromisure#Tempo di compilazione|Tempo di compilazione]]
+	- [[#Contromisure#Tempo di esecuzione|Tempo di esecuzione]]
+---
 ## Introduction
 L’area di memoria di un processo caricato in memoria è diviso nelle sezioni seguenti
 ![[Pasted image 20241216185400.png|140]]
@@ -125,4 +140,12 @@ Esistono due tipi di contromisure per il buffer overflow:
 - difese a tempo di esecuzione
 
 ### Tempo di compilazione
-L
+A tempo di compilazione è risolvibile usando **linguaggi di programmazione e di funzioni sicure**, infatti in C l’overflow è possibile in quanto ci sono anche funzioni che spostano dati senza limiti di dimensione, oppure con l’uso dello **Stack Stashing Protection**, tramite il quale il compilatore inserisce del codice per generare un valore casuale (*canary*) a runtime. Il valore *canary* viene inserito tra il frame pointer e l’indirizzo di ritorno, se il valore canary viene modificato prima che la funzione ritorni, viene interrotta l’esecuzione (vuol dire che è stato sovrascritto da un possibile attacco)
+
+### Tempo di esecuzione
+A tempo di esecuzione si hanno due possibili soluzioni:
+- **Executable Space Protection**
+- **Address Space Layout Randomization**
+
+Tramite lo *Executable Space Protection* il SO marca le pagine/segmenti dello stack e heap come non eseguibile (infatti stack e heap non contengono codice eseguibile), quindi se un attaccante cerca di eseguire del codice nello stack (shellcode), il sistema terminerà il processo con un errore (return-to-libc funziona comunque)
+Tramite l’*Address Space Layout Randomization* vengono randomizzati, ad ogni esecuzione, gli indirizzi dove sono caricati i diversi segmenti del programma (stack, heap, …), quindi se l’attaccante non sa dove inizia lo stack, è molto più difficile indovinare l’indirizzo del buffer contenente lo shellcode ed anche l’indirizzo delle librerie standard per attacco return-to-libc

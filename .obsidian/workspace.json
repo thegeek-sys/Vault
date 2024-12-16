@@ -37,8 +37,7 @@
               "title": "Approfondimenti - Buffer Overflow"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,8 +195,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6cf7b8e836ade70",
+  "active": "86b7c0e96592df9e",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Approfondimenti - Buffer Overflow.md",
     "Files/Pasted image 20241216192503.png",
     "Files/Pasted image 20241216191901.png",
     "Files/Pasted image 20241216191130.png",
@@ -206,7 +206,6 @@
     "Files/Pasted image 20241216185902.png",
     "Files/Pasted image 20241216185400.png",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Sistemi Operativi/Approfondimenti - Buffer Overflow.md",
     "Class/Sistemi Operativi/Approfondimenti - Passwords/Attacchi a password.md",
     "Class/Sistemi Operativi/Approfondimenti - Passwords/Password in Linux.md",
     "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
@@ -215,7 +214,6 @@
     "Files/Pasted image 20241216170859.png",
     "Class/Sistemi Operativi/Approfondimenti - Passwords",
     "Class/Sistemi Operativi/Sicurezza.md",
-    "Files/Pasted image 20241216151308.png",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Dispositivi di I-O.md",
     "Flet-notes/2024-12-11.md",
