@@ -24,17 +24,17 @@
             }
           },
           {
-            "id": "dc7a5fa9689d4731",
+            "id": "51e522e373653bbe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sicurezza.md",
+                "file": "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sicurezza"
+              "title": "Approfondimenti - Passwords"
             }
           }
         ],
@@ -90,13 +90,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273,
-    "collapsed": true
+    "width": 243.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -197,8 +195,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dc7a5fa9689d4731",
+  "active": "51e522e373653bbe",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords",
+    "Class/Sistemi Operativi/Sicurezza.md",
     "Files/Pasted image 20241216151308.png",
     "Files/Pasted image 20241216151249.png",
     "Files/Pasted image 20241216151053.png",
@@ -209,14 +211,11 @@
     "Files/Pasted image 20241216124151.png",
     "Files/Pasted image 20241216124113.png",
     "Files/Pasted image 20241216115902.png",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Sistemi Operativi/Sicurezza.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Dispositivi di I-O.md",
     "Flet-notes/2024-12-11.md",
     "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
     "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
-    "Files/Pasted image 20241214180318.png",
     "orphaned files output.md",
     "broken links output.md",
     "Programming languages/Verilog/Verilog.md",
@@ -244,7 +243,6 @@
     "Class/Sistemi Operativi/Gestione della memoria",
     "Dispositivi di I",
     "Class/Sistemi Operativi/Gestione dell'Input-Output",
-    "Gestione dell’Input",
     "Untitled.canvas"
   ]
 }

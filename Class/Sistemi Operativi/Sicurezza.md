@@ -5,6 +5,32 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#La triade|La triade]]
+- [[#Gli obiettivi nel dettaglio|Gli obiettivi nel dettaglio]]
+- [[#Minacce (threats)|Minacce (threats)]]
+	- [[#Minacce (threats)#Accesso non autorizzato|Accesso non autorizzato]]
+	- [[#Minacce (threats)#Imbroglio|Imbroglio]]
+	- [[#Minacce (threats)#Interruzione|Interruzione]]
+	- [[#Minacce (threats)#Usurpazione|Usurpazione]]
+- [[#Asset|Asset]]
+	- [[#Asset#Ambito della sicurezza informatica|Ambito della sicurezza informatica]]
+	- [[#Asset#Relazione tra Asset e Triade|Relazione tra Asset e Triade]]
+- [[#Autenticazione|Autenticazione]]
+	- [[#Autenticazione#Mezzi per l’autenticazione|Mezzi per l’autenticazione]]
+		- [[#Mezzi per l’autenticazione#Autenticazione con password|Autenticazione con password]]
+		- [[#Mezzi per l’autenticazione#Autenticazione con Token|Autenticazione con Token]]
+		- [[#Mezzi per l’autenticazione#Biometria|Biometria]]
+- [[#Controllo di accesso|Controllo di accesso]]
+	- [[#Controllo di accesso#Discrezionale|Discrezionale]]
+	- [[#Controllo di accesso#Basato sui ruoli|Basato sui ruoli]]
+- [[#Unix: meccanismi di protezione|Unix: meccanismi di protezione]]
+	- [[#Unix: meccanismi di protezione#Utenze e gruppi|Utenze e gruppi]]
+	- [[#Unix: meccanismi di protezione#Login|Login]]
+	- [[#Unix: meccanismi di protezione#Accesso ai file|Accesso ai file]]
+	- [[#Unix: meccanismi di protezione#SETUID e STGID|SETUID e STGID]]
+---
 ## Introduction
 Iniziamo riportando la definizione di **sicurezza informatica** del NIST (National Institute of Standards and Technology) ovvero: “è la protezione offerta da un sistema informativo automatico al fine di conservare integrità, disponibilità e confidenzialità delle risorse del sistema stesso”
 
