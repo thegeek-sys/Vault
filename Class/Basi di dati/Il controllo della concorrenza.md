@@ -4,6 +4,25 @@ Class: "[[Basi di dati]]"
 Related:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Accesso concorrente alla BD|Accesso concorrente alla BD]]
+- [[#Transazione|Transazione]]
+	- [[#Transazione#Proprietà delle transazioni|Proprietà delle transazioni]]
+- [[#Schedule di un insieme di transazioni|Schedule di un insieme di transazioni]]
+	- [[#Schedule di un insieme di transazioni#Schedule seriale|Schedule seriale]]
+- [[#Problemi|Problemi]]
+	- [[#Problemi#Aggiornamento perso (update loss)|Aggiornamento perso (update loss)]]
+	- [[#Problemi#Dato sporco (dirty data)|Dato sporco (dirty data)]]
+	- [[#Problemi#Aggregato non corretto|Aggregato non corretto]]
+- [[#Serializzabilità|Serializzabilità]]
+- [[#Equivalenza di schedule|Equivalenza di schedule]]
+- [[#Testare la serializzabilità|Testare la serializzabilità]]
+- [[#Garantire la serializzabilità|Garantire la serializzabilità]]
+	- [[#Garantire la serializzabilità#Metodi che garantiscono la serializzabilità|Metodi che garantiscono la serializzabilità]]
+- [[#Item|Item]]
+- [[#Granularità|Granularità]]
+---
 ## Introduction
 In sistemi di calcolo con un a sola CPU i programmi sono eseguiti concorrentemente in modo *interleaved* (interfogliato), quindi la CPU può:
 - eseguire alcune istruzioni di un programma
@@ -60,3 +79,51 @@ Consideriamo il seguente schedule di $T_{1}$ e $T_{2}$
 
 Se il valore iniziale di $X$ è $X_{0}$ e il valore iniziale di $Y$ è $Y_{0}$, al termine dell’esecuzione dello schedule il valore di $somma$ è $X_{0}-N+Y_{0}$ invece di $X_{0}+Y_{0}$
 Il valore di $somma$ è un **dato aggregato**
+
+>[!info] Osservazione
+>Perché nei tre casi visti siamo portati a considerare gli schedule **non corretti**?
+>Perché i valori prodotti non sono quelli che si avrebbero se le due transazioni fossero eseguite nel modo “naturale” cioè **sequenzialmente**
+
+---
+## Serializzabilità
+Tutti gli schedule **seriali** sono **corretti** (grazie alla proprietà di isolamento), invece uno schedule **non seriale** è corretto se è *serializzabile*, cioè se è “**equivalente**” ad uno schedule seriale
+
+>[!warning]
+>Per **equivalente** non si intende che due schedule (per ogni dati modificato) producono valori uguali. Si potrebbero essere corretti anche se non producono gli stessi valori
+
+---
+## Equivalenza di schedule
+Due schedule sono uguali se (per ogni dato modificato) producono valori uguali, dove due valori sono uguali solo se sono **prodotti dalla stessa sequenza di operazioni**
+
+![[Pasted image 20241218214504.png|450]]
+In questo caso infatti non sono equivalenti anche se danno lo stesso risultato su $X$, ma sono entrambi seriali quindi corretti
+
+---
+## Testare la serializzabilità
+Dobbiamo comunque considerare che esistono dei problemi “pratici”. Le transazioni infatti vengono sottomesse al sistema in modo continuo e quindi è difficile stabilire quando uno scheduler comincia e quando finisce.
+Inoltre è praticamente impossibile determinare in anticipo in quale ordine le operazioni verranno eseguire in quanto esso è determinato in base a diversi fattori:
+- carico del sistema
+- ordine temporale in cui le transizioni vengono sottomesse al sistema
+- priorità delle transazioni
+Infine se prima si eseguono le operazioni e poi si testa la serializzabilità dello schedule, i suoi effetti devono essere annullati e lo schedule risulta non serializzabile
+
+---
+## Garantire la serializzabilità
+L’approccio seguito nei sistemi è quello di determinare **metodi che garantiscano la serializzabilità** di uno schedule eliminando così la necessità di doverla testare ogni volta
+
+### Metodi che garantiscono la serializzabilità
+Si hanno due possibilità per garantire la serializzabilità:
+- **protocolli**
+- **timestamp**
+Nel dettaglio si ha: imporre dei *protocolli*, cioè delle regole, alle transazioni in modo da garantire la serializzabilità di ogni schedule oppure usare i *timestamp* delle transazioni, cioè degli identificatori delle transazioni che vengono generati dal sistema e in base ai quali le operazioni delle transazioni possono essere ordinate in modo da garantire serializzabilità
+
+---
+## Item
+Entrambi i metodi sopracitati fanno uso del concetto di *item*, ovvero l’unità a cui l’accesso è controllato
+Le dimensioni degli item devono essere definite in base all’uso che viene fatto sulla base di dati in modo tale che in media una transazione acceda a pochi item
+
+---
+## Granularità
+Le dimensioni degli item usate da un sistema sono dette la sua **granularità**.
+La granularità dell’item va dal singolo campo della tabella all’intera tabella e oltre.
+Una granularità **grande** permette una **gestione efficiente** della concorrenza. Una granularità **piccola** può **sovraccaricare** il sistema, ma **aumenta il livello di concorrenza** (consente l’esecuzione concorrente di molte transazioni)
