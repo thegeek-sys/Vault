@@ -74,3 +74,6 @@ e lo schedule
 ![[Pasted image 20241218225014.png|550]]
 
 Considerando $X_{0}$ il valore iniziale di $X$ e $Y_{0}$ il valore iniziale di $Y$ allora $f_{4}(f_{1}(X_{0}),Y_{0})$ è il valore finale di $X$
+
+#### I possibili schedule seriali
+Consideriamo lo schedule seriale $T_{1}$, $T_{2}$
