@@ -58,4 +58,5 @@ Il valore di $X$ letto da $T_{2}$ è un **dato sporco** (temporaneo) in quanto p
 Consideriamo il seguente schedule di $T_{1}$ e $T_{2}$
 ![[Pasted image 20241218213203.png|240]]
 
-Se il valore iniziale di $X$ è $X_{0}$ e il valore iniziale di $Y$ è $Y_{0}$, al termine dell’esecuzione dello schedule il valore di $X$ è $X_{0}-N+M$ invece di $X_{0}+M$
+Se il valore iniziale di $X$ è $X_{0}$ e il valore iniziale di $Y$ è $Y_{0}$, al termine dell’esecuzione dello schedule il valore di $somma$ è $X_{0}-N+Y_{0}$ invece di $X_{0}+Y_{0}$
+Il valore di $somma$ è un **dato aggregato**
