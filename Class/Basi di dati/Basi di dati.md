@@ -17,6 +17,9 @@
 - [[File con indice - caratteristiche ed esercizi|File con indice: caratteristiche ed esercizi]]
 - [[B-tree - caratteristiche ed esercizi|B-tree: caratteristiche ed esercizi]]
 
+- [[Il controllo della concorrenza]]
+- 
+
 - [[Class/Basi di dati/Esercizi|Esercizi]]
 - [[Tips esame]]
 - 
