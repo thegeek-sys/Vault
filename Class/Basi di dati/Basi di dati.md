@@ -18,7 +18,7 @@
 - [[B-tree - caratteristiche ed esercizi|B-tree: caratteristiche ed esercizi]]
 
 - [[Il controllo della concorrenza]]
-- 
+- [[Il meccanismo di lock - lock binario]]
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
 - [[Tips esame]]
