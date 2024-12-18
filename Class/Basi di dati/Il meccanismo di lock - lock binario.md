@@ -65,3 +65,12 @@ Due schedule sono **equivalenti** se le formule che danno i valori finali per ci
 ---
 ## Schedule serializzabile
 Uno schedule è **serializzabile** se è equivalente ad uno schedule seriale (basta trovarne uno)
+
+### Esempio
+Consideriamo le due transazioni
+![[Pasted image 20241218224919.png|500]]
+
+e lo schedule
+![[Pasted image 20241218225014.png|550]]
+
+Considerando $X_{0}$ il valore iniziale di $X$ e $Y_{0}$ il valore iniziale di $Y$ allora $f_{4}(f_{1}(X_{0}),Y_{0})$ è il valore finale di $X$
