@@ -66,14 +66,40 @@ Due schedule sono **equivalenti** se le formule che danno i valori finali per ci
 ## Schedule serializzabile
 Uno schedule è **serializzabile** se è equivalente ad uno schedule seriale (basta trovarne uno)
 
-### Esempio
+### Esempio #1
 Consideriamo le due transazioni
 ![[Pasted image 20241218224919.png|500]]
-
 e lo schedule
 ![[Pasted image 20241218225014.png|550]]
-
 Considerando $X_{0}$ il valore iniziale di $X$ e $Y_{0}$ il valore iniziale di $Y$ allora $f_{4}(f_{1}(X_{0}),Y_{0})$ è il valore finale di $X$
 
 #### I possibili schedule seriali
 Consideriamo lo schedule seriale $T_{1}$, $T_{2}$
+![[Screenshot 2024-12-18 alle 22.54.17.png|550]]
+Il valore finale di $X$ è $f_{4}(f_{1}(X_{0}),f_{2}(X_{0},Y_{0}))$
+
+Consideriamo lo schedule seriale $T_{2}$, $T_{1}$
+![[Screenshot 2024-12-18 alle 22.57.35.png|550]]
+Il valore finale di $X$ è $f_{1}(f_{4}(X_{0},Y_{0}))$
+
+Pertanto lo schedule **non è serializzabile** in quanto produce per $X$ un valore finale ($f_{4}(f_{1}(X_{0}),Y_{0})$) diverso sia da quello prodotto dallo schedule seriale $T_{1}$, $T_{2}$, sia da quello prodotto dallo schedule seriale $T_{2}$, $T_{1}$
+Vale lo stesso anche per $Y$
+
+>[!info] Osservazione
+>Basta che le formule siano diverse anche per un solo item per concludere che gli schedule non sono equivalenti. Quindi per verificare che uno schedule non è serializzabile, possiamo fermarci appena troviamo un item le cui formule finali sono diverse da quelle di ogni schedule seriale
+>
+>Per verificare che uno schedule è serializzabile occorre verificare che le formule finali di tutti gli item coincidono con quelle di uno (stesso) schedule seriale
+
+### Esempio #2
+Consideriamo le due transazioni
+![[Pasted image 20241218230404.png|500]]
+e lo schedule
+![[Pasted image 20241218230439.png|550]]
+
+Consideriamo lo schedule seriale $T_{1}$, $T_{2}$
+![[Screenshot 2024-12-18 alle 23.05.19.png|550]]
+
+In questo caso lo schedule è serializzabile in quando produce sia per $X$ che per $Y$ gli stessi valori finali prodotti dallo schedule seriale $T_{1}$, $T_{2}$
+
+---
+## Testare la serializzabilità
