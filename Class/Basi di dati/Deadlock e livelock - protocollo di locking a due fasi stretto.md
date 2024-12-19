@@ -33,3 +33,8 @@ Si cerca di evitare il verificarsi di situazioni di stallo adottando opportuni p
 Si ordinano gli item e si impone alle transazioni si richiedere i lock necessari seguendo tale ordine. In tal modo non ci possono essere cicli nel grafo di attesa (e quindi non si può verificare un deadlock)
 
 Se per assurdo supponiamo che le transazioni richiedono gli item seguendo l’ordine fissato e nel grafo di attesa c’è un ciclo
+![[Screenshot 2024-12-19 alle 23.50.31.png|500]]
+
+---
+## Livelock
+Si verifica un **livelock** quando una transazione aspetta indefinitivamente che gli venga garantito un lock su un certo item
