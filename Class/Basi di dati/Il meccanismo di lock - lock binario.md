@@ -50,6 +50,7 @@ Le transazioni fanno uso di due operazioni:
 
 L’insieme degli item letti e quello degli item scritti da una transazione coincidono
 
+Il lock binario permette di risolvere il problema del lost update (non dirty data né aggregato non corretto)
 ### Esempio
 Risolviamo il primo dei problemi visti, cioè il lost update
 ![[Screenshot 2024-12-18 alle 21.22.35.png|300]]

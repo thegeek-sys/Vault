@@ -108,7 +108,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -266,12 +266,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f67c62e4964769d6",
+  "active": "869793890c546897",
   "lastOpenFiles": [
-    "Class/Basi di dati/Il controllo della concorrenza.md",
-    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
-    "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
+    "Class/Basi di dati/Il controllo della concorrenza.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
     "Files/Pasted image 20241219235406.png",
     "Files/Screenshot 2024-12-19 alle 23.50.31.png",
     "Files/Pasted image 20241219234416.png",

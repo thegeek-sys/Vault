@@ -75,4 +75,3 @@ Quando una transazione $T$ viene abortita devono essere annullati gli effetti su
 - da $T$
 - da qualsiasi transazione che abbia letto dati sporchi
 
-### Esempio
