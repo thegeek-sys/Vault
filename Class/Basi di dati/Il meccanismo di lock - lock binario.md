@@ -51,14 +51,14 @@ Le transazioni fanno uso di due operazioni:
 L’insieme degli item letti e quello degli item scritti da una transazione coincidono
 
 ### Esempio
-Risolviamo il primo dei problemi visti, cioè l’update loss
+Risolviamo il primo dei problemi visti, cioè il lost update
 ![[Screenshot 2024-12-18 alle 21.22.35.png|300]]
 ![[Pasted image 20241218212457.png|200]]
 
 Riscriviamo le transazioni utilizzando le primitive del lock binario
 ![[Pasted image 20241218223002.png|300]]
 
-Vediamo ora uno schedule legale di $T_{1}$ e $T_{2}$ che risolve il problema dell’update loss
+Vediamo ora uno schedule legale di $T_{1}$ e $T_{2}$ che risolve il problema del lost update
 ![[Pasted image 20241218223108.png|250]]
 
 ---

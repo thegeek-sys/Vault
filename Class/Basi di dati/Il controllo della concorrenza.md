@@ -12,7 +12,7 @@ Related:
 - [[#Schedule di un insieme di transazioni|Schedule di un insieme di transazioni]]
 	- [[#Schedule di un insieme di transazioni#Schedule seriale|Schedule seriale]]
 - [[#Problemi|Problemi]]
-	- [[#Problemi#Aggiornamento perso (update loss)|Aggiornamento perso (update loss)]]
+	- [[#Problemi#Aggiornamento perso (lost update)|Aggiornamento perso (lost update)]]
 	- [[#Problemi#Dato sporco (dirty data)|Dato sporco (dirty data)]]
 	- [[#Problemi#Aggregato non corretto|Aggregato non corretto]]
 - [[#Serializzabilità|Serializzabilità]]
@@ -59,12 +59,12 @@ Consideriamo le due transazioni:
 ![[Screenshot 2024-12-18 alle 21.22.35.png|300]]
 Si possono presentare tre diversi tipi di problemi a causa dell’interleaving
 
-### Aggiornamento perso (update loss)
+### Aggiornamento perso (lost update)
 Consideriamo il seguente schedule di $T_{1}$ e $T_{2}$
 ![[Pasted image 20241218212457.png|200]]
 
 Se il valore iniziale di $X$ è $X_{0}$ al termine dell’esecuzione dello schedule il valore $X$ è $X_{0}+M$ invece di $X_{0}-N+M$
-L’**aggiornamento** di $X$ prodotto da $T_{1}$ viene **perso**
+L’**aggiornamento** di $X$ prodotto da $T_{1}$ viene **perso** (lost update o ghost update)
 
 ### Dato sporco (dirty data)
 Consideriamo il seguente schedule di $T_{1}$ e $T_{2}$
