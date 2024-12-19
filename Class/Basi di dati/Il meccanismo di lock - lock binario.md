@@ -117,3 +117,4 @@ Crea un grafo diretto $G$ (*grafo di serializzazione*) in cui:
 
 #### Esempio
 ![[Screenshot 2024-12-19 alle 21.43.12.png|350]]
+Questo rappresenta il più piccolo gruppo ciclico di due transazioni
