@@ -125,7 +125,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Definizione",
+                "query": "\\square",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,11 +146,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -252,6 +254,13 @@
   },
   "active": "869793890c546897",
   "lastOpenFiles": [
+    "Files/Pasted image 20241219223158.png",
+    "Files/Pasted image 20241219223139.png",
+    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
+    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
+    "Files/Immagine JPEG-417D-9810-A6-0.jpeg",
     "Files/Pasted image 20241219221335.png",
     "Files/Pasted image 20241219221233.png",
     "Files/Pasted image 20241219221140.png",
@@ -260,11 +269,7 @@
     "Files/Screenshot 2024-12-19 alle 21.43.12.png",
     "Files/Screenshot 2024-12-18 alle 23.05.19.png",
     "Files/Pasted image 20241218230439.png",
-    "Files/Pasted image 20241218230404.png",
-    "Files/Pasted image 20241218230338.png",
-    "Files/Pasted image 20241218230335.png",
     "Class/Basi di dati/Il controllo della concorrenza.md",
-    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
     "Flet-notes/2024-12-11.md",
@@ -285,10 +290,7 @@
     "Programming languages/Verilog/Verilog.md",
     "Programming languages/Python/Python.md",
     "empty files.md",
-    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
-    "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
-    "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Problema dei lettori",
     "Class/Sistemi Operativi/Processi",
     "Class/Sistemi Operativi/Scheduling",

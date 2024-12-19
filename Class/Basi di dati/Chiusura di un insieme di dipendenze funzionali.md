@@ -77,7 +77,7 @@ $$
 >- Se $X\rightarrow Y \in F^A$, per l’assioma dell’aumento si ha $X\rightarrow XY \in F^A$
 >- Analogamente se $X\rightarrow Z \in F^A$, per l’assioma dell’aumento si ha $XY \rightarrow YZ \in F^A$
 >- Quindi poiché $X\rightarrow XY \in F^A$ e $XY \rightarrow YZ \in F^A$, per l’assioma della transitività si ha $X\rightarrow YZ \in F^A$
->$\begin{flalign}&& \square\end{flalign}$
+>$\begin{flalign}&& \blacksquare\end{flalign}$
 
 ### Regola della decomposizione
 $$
@@ -87,7 +87,7 @@ $$
 >[!info] Dimostrazione
 >- Se $Z \subseteq Y$ allora per l’assioma della riflessività, si ha $Y\to Z\in F^A$
 >- Quindi poiché $X\to Y\in F^A$ e $Y\to Z\in F^A$ per l’assioma della transitività si ha $X\to Z\in F^A$
->$\begin{flalign}&& \square\end{flalign}$
+>$\begin{flalign}&& \blacksquare\end{flalign}$
 
 ### Regola della pseudotransitività
 $$
@@ -96,7 +96,7 @@ $$
 >[!info] Dimostrazione
 >- Se $X\to Y\in F^A$, per l’assioma dell’aumento si ha $WX\to WY\in F^A$
 >- Quindi poiché $WX\to WY\in F^A$ e $WY\to Z\in F^A$, per l’assioma della transitività si ha $WX\to Z\in F^A$
->$\begin{flalign}&& \square\end{flalign}$
+>$\begin{flalign}&& \blacksquare\end{flalign}$
 
 ### Osservazione
 Osserviamo che:
@@ -161,7 +161,7 @@ Si ha che: $X\rightarrow Y \in F^A \Leftrightarrow Y \subseteq X^+$
 >
 >**Parte solo se**
 >Poiché $X\rightarrow Y \in F^A$, per la regola della decomposizione si ha che, per ogni $i$, $i=1, \dots, n$, $X \rightarrow A_{i} \in F^A$, cioè $A_{i} \in X^+$ per ogni $i, i=1,\, \dots,\, n$, e, quindi, $Y \subseteq X^+$
->$\begin{flalign}&& \square\end{flalign}$
+>$\begin{flalign}&& \blacksquare\end{flalign}$
 
 ---
 ## Teorema: $F^+=F^A$
@@ -227,7 +227,7 @@ Si ha $F^+=F^A$
 >###### $X\to Y\in F^+\implies X\to Y\in F^A$
 >Supponiamo per assurdo che $X\to Y\in F^+$ e $X\to Y\notin F^A$. Essendo $r$ un’istanza legale le dipendenze di $F^+$ sono soddisfatte anche per $r$.
 >Dunque se $t_{1}[X]=t_{2}[X] \text{ allora }t_{1}[Y]=t_{2}[Y]\implies Y\subseteq X^+ \xRightarrow{\text{Lemma 1}} X\to Y\in F^A$
->$\begin{flalign}&& \square\end{flalign}$
+>$\begin{flalign}&& \blacksquare\end{flalign}$
 
 ### Nota finale
 E’ molto utile notare che la dimostrazione di questo teorema si basa su due collegamenti molto importanti

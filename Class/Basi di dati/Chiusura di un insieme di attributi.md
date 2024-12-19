@@ -129,7 +129,7 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >###### $A\in X^+\Rightarrow A\in Z^{(j)}$
 >Come detto precedentemente $X\to A\in F^+$ ed essendo questa un’istanza legale di $R$ anche qui deve essere soddisfatta.
 >Sapendo che $X= Z^{(0)}\subseteq Z^{(j)}$ allora le due tuple devono essere anche uguali su $A$, quindi $A\in Z^{(j)}$
->$\begin{flalign}&& \square\end{flalign}$
+>$\begin{flalign}&& \blacksquare\end{flalign}$
 
 ---
 ## Proprietà dell’insieme vuoto

@@ -164,3 +164,13 @@ Sia $T$ un insieme di transazioni. Se ogni transazione in $T$ è a due fasi allo
 
 >[!info] Dimostrazioni
 >Supponiamo per assurdo che ogni transazione in $S$ è a due fasi ma nel grafo di serializzazione c’è un ciclo
+>![[Immagine JPEG-417D-9810-A6-0.jpeg|400]]
+>Avendo uno schedule nel corso della sua esecuzione ha eseguito prima una $unlock(X_{2})$ e poi una $lock(X_{1})$ e dunque lo schema non è a due fasi **CONTRADDIZIONE**
+>$\begin{flalign}&& \blacksquare\end{flalign}$
+
+Bisogna però ricordare che questo teorema non implica il contrario. Possono quindi esistere schedule non a due fasi ma serializzabili
+![[Pasted image 20241219223158.png|500]]
+
+>[!hint]
+>Tutti i protocolli di lock a due fasi (a prescindere dal numero di valori di lock) risolvono il problema dell’aggregato non corretto
+
