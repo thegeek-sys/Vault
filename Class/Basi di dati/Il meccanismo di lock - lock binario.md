@@ -5,6 +5,27 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Schedule legale|Schedule legale]]
+- [[#Lock binario|Lock binario]]
+	- [[#Lock binario#Esempio|Esempio]]
+- [[#Modello per le transazioni|Modello per le transazioni]]
+- [[#Equivalenza|Equivalenza]]
+- [[#Schedule serializzabile|Schedule serializzabile]]
+	- [[#Schedule serializzabile#Esempio #1|Esempio #1]]
+		- [[#Esempio #1#I possibili schedule seriali|I possibili schedule seriali]]
+	- [[#Schedule serializzabile#Esempio #2|Esempio #2]]
+- [[#Testare la serializzabilità|Testare la serializzabilità]]
+	- [[#Testare la serializzabilità#Passo 1|Passo 1]]
+		- [[#Passo 1#Esempio|Esempio]]
+	- [[#Testare la serializzabilità#Passo 2|Passo 2]]
+		- [[#Passo 2#Esempio|Esempio]]
+- [[#Teorema (correttezza dell’algoritmo del grafo di serializzazione)|Teorema (correttezza dell’algoritmo del grafo di serializzazione)]]
+	- [[#Teorema (correttezza dell’algoritmo del grafo di serializzazione)#Esempio|Esempio]]
+- [[#Protocollo di locking a due fasi|Protocollo di locking a due fasi]]
+- [[#Teorema sul lock a due fasi|Teorema sul lock a due fasi]]
+---
 ## Introduction
 Per **lock** si intende il **privilegio di accesso** ad un **singolo item** realizzato mediante una variabile associata all’item (variabile lucchetto) il cui valore descrive lo stato dell’item rispetto alle operazioni che possono essere effettuate su di esso (ogni item può essere locked o unlocked)
 
