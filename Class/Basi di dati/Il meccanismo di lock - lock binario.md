@@ -140,3 +140,27 @@ Uno schedule $S$ è serializzabile se e solo se il suo grafo di serializzazione 
 
 ### Esempio
 Prendiamo questo schedule di $5$ transazioni
+![[Pasted image 20241219221140.png|600]]
+
+Applichiamo l’algoritmo e segniamo sulla tabella le relazioni tra le transazioni che produrranno archi nel grafo
+![[Pasted image 20241219221233.png|600]]
+
+![[Pasted image 20241219221335.png|350]]
+Il grafo presenta il ciclo $T_{1}-T_{2}-T_{3}-T_{4}$, possiamo quindi concludere che lo schedule non è serializzabile
+
+>[!warning]
+>$T_{1}-T_{2}-T_{5}$ e $T_{2}-T_{5}-T_{3}$ non sono cicli in quanto i senti delle frecce non descrivono cicli, mentre $T_{1}-T_{5}-T_{3}-T_{4}-T_{1}$ lo è
+
+---
+## Protocollo di locking a due fasi
+Una transazione obbedisce al protocollo di **locking a due fasi** se prima effettua tutte le operazioni di lock (*fase di locking*) e poi tutte le operazioni di unlock (*fase di unlocking*)
+
+>[!warning]
+>Da non confondere con il lock a due valori. Il fatto di essere a due fasi è una caratteristica in più ma ci sono protocolli a due fasi e tre valori
+
+---
+## Teorema sul lock a due fasi
+Sia $T$ un insieme di transazioni. Se ogni transazione in $T$ è a due fasi allora ogni schedule di $T$ è serializzabile
+
+>[!info] Dimostrazioni
+>Supponiamo per assurdo che ogni transazione in $S$ è a due fasi ma nel grafo di serializzazione c’è un ciclo
