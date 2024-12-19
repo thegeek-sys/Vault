@@ -118,3 +118,13 @@ Crea un grafo diretto $G$ (*grafo di serializzazione*) in cui:
 #### Esempio
 ![[Screenshot 2024-12-19 alle 21.43.12.png|350]]
 Questo rappresenta il più piccolo gruppo ciclico di due transazioni
+
+![[Screenshot 2024-12-19 alle 21.48.39.png|350]]
+Questo rappresenta il più piccolo gruppo aciclico di due transazioni
+
+### Passo 2
+Se $G$ ha un ciclo allora $S$ non è serializzabile, altrimenti applicando a $G$ l’**ordinamento topologico** si ottiene uno schedule seriale $S'$ equivalente ad $S$
+Per ottenere l’ordinamento topologico è necessario ricorsivamente un nodo che non ha archi entranti, insieme ai suoi archi uscenti
+
+#### Esempio
+In questo esempio i possibili punti di partenza sono $T_{1}$, $T_{4}$, $T_{7}$ quindi ho almeno $3$ possibili schedule seriali
