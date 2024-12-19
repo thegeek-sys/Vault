@@ -50,3 +50,24 @@ Quindi uno schedule è serializzabile se per ciascun item acceduto da più di un
 A ciascun item $X$ vengono associati due timestamp:
 - **read timestamp** di $X$ ($read\_TS(X)$) → il valore più grande fra tutti i timestamp delle transazioni che hanno letto con successo $X$
 - **write timestamp** di $X$ ($read\_WS(X)$) → il valore più grande fra tutti i timestamp delle transazioni che hanno scritto con successo $X$
+
+### Esempi
+Tornando agli esempi di prima
+
+>[!example] Esempio 1
+>![[Pasted image 20241220005213.png|center|500]]
+
+>[!example] Esempio 2
+>![[Pasted image 20241220005112.png|center|500]]
+
+---
+## Controllo della serializzabilità
+Ogni volta che una transazione $T$ cerca di eseguire un $read(X)$ o un $write(X)$, occorre confrontare il timestamp $TS(T)$ di $T$ con il read timestamp e il write timestamp di $X$ per assicurarsi che l’ordine basato sui timestamp non è violato
+
+### Algoritmo
+$T$ cerca di eseguire una $write(X)$:
+1. $read\_WS(X)>TS(T)$ → $T$ viene rolled back
+2. $write\_WS(X)>TS(T)$ → l’operazione di scrittura non viene effettuata
+3. se nessuna delle condizioni precedenti è soddisfatta allora
+	- $write(X)$ è eseguita
+	- $write\_TS(X):=TS(T)$

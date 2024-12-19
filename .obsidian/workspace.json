@@ -122,7 +122,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -280,8 +280,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "afd8b510f4f400bf",
+  "active": "f67c62e4964769d6",
   "lastOpenFiles": [
+    "Class/Basi di dati/Timestamp.md",
+    "Files/Pasted image 20241220005213.png",
+    "Files/Pasted image 20241220005112.png",
     "Files/Pasted image 20241220004637.png",
     "Files/Pasted image 20241220004619.png",
     "Files/Pasted image 20241220004538.png",
@@ -289,15 +292,11 @@
     "Files/Pasted image 20241220004232.png",
     "Files/Pasted image 20241220004123.png",
     "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Timestamp.md",
     "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
     "Files/Pasted image 20241220002312.png",
     "Files/Pasted image 20241220002224.png",
-    "Files/Pasted image 20241220001846.png",
     "Class/Basi di dati/Il controllo della concorrenza.md",
     "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
-    "Files/Pasted image 20241220001636.png",
-    "Files/Pasted image 20241219235406.png",
     "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
