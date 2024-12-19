@@ -115,6 +115,9 @@ Crea un grafo diretto $G$ (*grafo di serializzazione*) in cui:
 >[!warning]
 >Non un successivo ma **il** successivo, cioè $T_{j}$ è la prima transazione che effettua il lock di $X$ dopo che $T_{i}$ ha effettuato l’unlock, anche se le due operazioni sono di seguito
 
+>[!hint]
+>Per avere un ciclo bisogna avere archi nella stessa direzione
+
 #### Esempio
 ![[Screenshot 2024-12-19 alle 21.43.12.png|350]]
 Questo rappresenta il più piccolo gruppo ciclico di due transazioni
@@ -128,3 +131,12 @@ Per ottenere l’ordinamento topologico è necessario ricorsivamente un nodo che
 
 #### Esempio
 In questo esempio i possibili punti di partenza sono $T_{1}$, $T_{4}$, $T_{7}$ quindi ho almeno $3$ possibili schedule seriali
+![[IMG_56D528C66EEF-1.jpeg|center|350]]
+
+
+---
+## Teorema (correttezza dell’algoritmo del grafo di serializzazione)
+Uno schedule $S$ è serializzabile se e solo se il suo grafo di serializzazione è **aciclico**
+
+### Esempio
+Prendiamo questo schedule di $5$ transazioni
