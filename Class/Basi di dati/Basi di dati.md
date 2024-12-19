@@ -20,7 +20,7 @@
 - [[Il controllo della concorrenza]]
 - [[Il meccanismo di lock - lock binario]]
 - [[Deadlock e livelock - protocollo di locking a due fasi stretto]]
-- 
+- [[Timestamp]]
 
 - [[Class/Basi di dati/Esercizi|Esercizi]]
 - [[Tips esame]]

@@ -180,6 +180,8 @@ Una transazione obbedisce al protocollo di **locking a due fasi** se prima effet
 >[!warning]
 >Da non confondere con il lock a due valori. Il fatto di essere a due fasi è una caratteristica in più ma ci sono protocolli a due fasi e tre valori
 
+Risolve il problema dell’aggregato non corretto (non dirty data)
+
 ---
 ## Teorema sul lock a due fasi
 Sia $T$ un insieme di transazioni. Se ogni transazione in $T$ è a due fasi allora ogni schedule di $T$ è serializzabile

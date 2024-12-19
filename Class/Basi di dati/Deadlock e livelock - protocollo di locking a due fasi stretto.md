@@ -5,6 +5,26 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Soluzioni per il deadlock|Soluzioni per il deadlock]]
+	- [[#Soluzioni per il deadlock#Approcci risolutivi|Approcci risolutivi]]
+	- [[#Soluzioni per il deadlock#Approcci preventivi|Approcci preventivi]]
+		- [[#Approcci preventivi#Esempio|Esempio]]
+- [[#Livelock|Livelock]]
+- [[#Soluzioni per il livelock|Soluzioni per il livelock]]
+- [[#Abort di una transazione|Abort di una transazione]]
+- [[#Punto di commit|Punto di commit]]
+	- [[#Punto di commit#Dati sporchi|Dati sporchi]]
+- [[#Rollback a cascata|Rollback a cascata]]
+- [[#Soluzione a dirty data|Soluzione a dirty data]]
+- [[#Protocollo a due fasi stretto|Protocollo a due fasi stretto]]
+	- [[#Protocollo a due fasi stretto#Esempio|Esempio]]
+- [[#Classificazione dei protocolli|Classificazione dei protocolli]]
+	- [[#Classificazione dei protocolli#Protocolli conservativi|Protocolli conservativi]]
+	- [[#Classificazione dei protocolli#Protocolli aggressivi|Protocolli aggressivi]]
+	- [[#Classificazione dei protocolli#Protocolli a confronto|Protocolli a confronto]]
+---
 ## Introduction
 Un **deadlock** si verifica quando ogni transazione in un insieme $T$ è in attesa di ottenere un lock su un item sul quale qualche altra transazione nell’insieme $T$ mantiene un lock, e quindi rimane bloccata, e quindi non rilascia i lock, e quindi può bloccare anche transazioni che non sono in $T$
 
@@ -69,9 +89,66 @@ Vengono quindi esaurite tutte le situazioni che possono portare ad un deadlock, 
 ### Dati sporchi
 Per dati sporchi si intendono i dati scritti da una transazione sulla base di dati prima che abbia raggiunto il punto di commit
 
+>[!example]- Rivediamo gli esempi
+>Lock risolve → lost update (no aggregato non corretto, no dirty data)
+>Lock a due fasi risolve → lost update, aggregato non corretto (no dirty data)
+>
+>Vediamo gli esempi
+>**Ghost update con lock**
+>![[Pasted image 20241220001636.png|200]]
+>
+>**Aggregato non corretto con locking a due fasi**
+>![[Pasted image 20241220001846.png|250]]
+
 ---
 ## Rollback a cascata
 Quando una transazione $T$ viene abortita devono essere annullati gli effetti sulla base di dati prodotti:
 - da $T$
 - da qualsiasi transazione che abbia letto dati sporchi
 
+---
+## Soluzione a dirty data
+Per risolvere il problema della lettura di dati sporchi occorre che le transazioni obbediscano a regole più restrittive del protocollo di locking a due fasi
+
+---
+## Protocollo a due fasi stretto
+Una transazione soddisfa il protocollo di **locking a due fasi stretto** se:
+1. non scrive sulla base di dati fino a quando non ha raggiunto il suo punto di commit (se una transazione è abortita non ha modificato nessun item sulla base di dati)
+2. non rilascia un lock finché non ha finito di scrivere sulla base di dati (se una transazione legge un item scritto da un’altra transazione quest’ultima non può essere abortita)
+
+Ciò mi permette di evitare di dover fare rollback sui dati
+### Esempio
+Aggregato non corretto
+![[Pasted image 20241220002224.png|250]]
+
+Dirty data
+![[Pasted image 20241220002312.png|200]]
+
+---
+## Classificazione dei protocolli
+I protocolli si distinguono in:
+- **conservativi** → cercano di evitare il verificarsi di situazioni di stallo
+- **aggressivi** → cercano di processare più rapidamente possibile anche ciò che può portare a situazioni di stallo
+
+### Protocolli conservativi
+Nella versione più conservativa una transazione $T$ richiede tutti i lock che servono all’inizio e li ottiene se e solo se **tutti i lock sono disponibili**. Se non li può ottenere tutti viene messa in una cosa di attesa.
+Si evita il deadlock, ma non il livelock
+
+Per evitare il verificarsi sia del deadlock che del livelock occorre che una transazione $T$ richiede tutti i lock che servono all’inizio e li ottiene se e solo se tutti i lock sono disponibili e nessuna transazione che precede $T$ nella coda è in attesa di un lock richiesto da $T$
+
+**Vantaggi**
+- si evita il verificarsi del deadlock che del livelock
+**Svantaggi**
+- l’esecuzione di una transazione può essere ritardata
+- una transazione è costretta a richiedere un lock su ogni item che potrebbe anche se poi di fatto non lo utilizza
+
+### Protocolli aggressivi
+Nella versione più aggressiva una transazione deve richiedere un lock su un item immediatamente prima di leggerlo o scriverlo
+Può verificarsi un deadlock
+
+### Protocolli a confronto
+Se la probabilità che due transazioni richiedano un lock sullo stesso item è:
+- alta
+	è conveniente un protocollo conservativo in quanto evita al sistema il sovraccarico dovuto alla gestione dei deadlock (rilevare e risolvere situazioni di stallo, eseguire parzialmente transazioni che poi vengono abortite, rilascio dei lock mantenuti da transazioni abortite)
+- bassa
+	è conveniente un protocollo aggressivo in quanto evita al sistema il sovraccarico dovuto alla gestione dei lock (decidere se garantire un lock su un dato item ad una data transazione, gestire la tavola dei lock, mettere le transazioni in una coda o prelevarle da essa)
