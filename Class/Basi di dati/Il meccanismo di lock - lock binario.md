@@ -116,3 +116,4 @@ Crea un grafo diretto $G$ (*grafo di serializzazione*) in cui:
 >Non un successivo ma **il** successivo, cioè $T_{j}$ è la prima transazione che effettua il lock di $X$ dopo che $T_{i}$ ha effettuato l’unlock, anche se le due operazioni sono di seguito
 
 #### Esempio
+![[Screenshot 2024-12-19 alle 21.43.12.png|350]]
