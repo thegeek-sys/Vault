@@ -104,9 +104,10 @@ In questo caso lo schedule è serializzabile in quando produce sia per $X$ che p
 ---
 ## Testare la serializzabilità
 Per testare la serializzabilità di uno schedule utilizzo il seguente algoritmo
+
 Dato uno schedule $S$
 
-**Passo 1**
+### Passo 1
 Crea un grafo diretto $G$ (*grafo di serializzazione*) in cui:
 - nodi → transazioni
 - archi → $T_{i}\longrightarrow T_{j}$ (con etichetta $X$) se in $S$ si ha che $T_{i}$ esegue un $unlock(X)$ e $T_{j}$ esegue il successivo $lock(X)$
@@ -114,3 +115,4 @@ Crea un grafo diretto $G$ (*grafo di serializzazione*) in cui:
 >[!warning]
 >Non un successivo ma **il** successivo, cioè $T_{j}$ è la prima transazione che effettua il lock di $X$ dopo che $T_{i}$ ha effettuato l’unlock, anche se le due operazioni sono di seguito
 
+#### Esempio
