@@ -79,6 +79,7 @@ $T$ cerca di eseguire una $read(X)$:
 	- se $read\_TS(X)<TS(T)$ allora $read\_TS(X):=TS(T)$
 
 #### Esempio
+
 >[!example] Esempio 1
 >Il controllo della concorrenza è basato su timestamp, e le transazioni hanno i seguenti timestamp: $TS(T_{1})=110$, $TS(T_{2})=100$, $TS(T_{3})=105$
 >
@@ -88,6 +89,24 @@ $T$ cerca di eseguire una $read(X)$:
 >
 >![[Pasted image 20241220010833.png]]
 >
->Al passo 9 la transazione $T_{2}$ viene abortita. Dovrebbe eseguire la scirttura sull’item $X$, ma il suo timestamp è minore del timestamp della transazione più giovane (con timestamp più alto) che ha letto l’item $X$ ($RTS(X)=100>TS(T_{2})=100$).
->Ciò significa che una transazione che ha iniziato le proprie operazioni dopo che $T_{2}$ ha già letto il velore dell’item $X$, mentre second l’ordine di esecuzione avrebbe dovuto leggere il valore di $X$ già modificato da $T_{2}$
+>Al passo 9 la transazione $T_{2}$ viene abortita. Dovrebbe eseguire la scrittura sull’item $X$, ma il suo timestamp è minore del timestamp della transazione più giovane (con timestamp più alto) che ha letto l’item $X$ ($RTS(X)=100>TS(T_{2})=100$).
+>
+>Ciò significa che una transazione che ha iniziato le proprie operazioni dopo che $T_{2}$ ha già letto il velore dell’item $X$, mentre secondo l’ordine di esecuzione corretto avrebbe dovuto leggere il valore di $X$ già modificato da $T_{2}$. Da qui la necessità di eseguire il rollback della transazione $T_{2}$
 
+>[!example] Esempio 2
+>Il controllo della concorrenza è basato su timestamp, e le transazioni hanno i seguenti timestamp: $TS(T_{1})=120$, $TS(T_{2})=110$, $TS(T_{3})=100$
+>
+>![[Pasted image 20241220011442.png|450]]
+>
+>Assumiamo che all’inizio tutti i valori siano azzerati
+>
+>![[Pasted image 20241220011528.png]]
+>
+>Al passo 9 la transazione $T_{2}$ viene abortita. Dovrebbe eseguire la scrittura sull’item $X$, ma il suo timestamp è minore del timestamp della transazione più giovane (con timestamp più alto) che ha letto l’item $X$ ($RTS(X)=120>TS(T_{2})=110$).
+>
+>Ciò significa che una transazione che ha iniziato le proprie operazioni dopo che $T_{2}$ ha già letto il velore dell’item $X$, mentre secondo l’ordine di esecuzione corretto avrebbe dovuto leggere il valore di $X$ già modificato da $T_{2}$. Da qui la necessità di eseguire il rollback della transazione $T_{2}$
+>
+>Al passo 11 la transazione $T_{3}$ viene abortita per lo stesso motivo. Dovrebbe eseguire la scrittura dell’item $Y$, ma il suo timestamp è minore del timestamp della transazione più giovane (con timestamp più alto) che ha letto $X$ ($RTS(X)=120>TS(T_{3})=100$)
+
+---
+## Osservazioni
