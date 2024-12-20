@@ -110,3 +110,16 @@ $T$ cerca di eseguire una $read(X)$:
 
 ---
 ## Osservazioni
+In entrambi gli esempi precedenti, lo schedule delle transazioni superstiti è equivalente allo schedule seriale delle transazioni eseguite in ordine di arrivo
+
+Quello che provoca il rollback di una transazione $Tr$ che vuole leggere è trovare che una più giovane $Tw$ ha già scritto i dati (nello schedule seriale $Tr$ avrebbe letto la versione precedente alla modifica di $Tw$ che ma non ha eseguito la lettura “in tempo“)
+
+Quello che provoca il rollback di una transazione $Tw$ che vuole scrivere è trovare che una più giovane $Tr$ ha già letto i dati (nello schedule seriale avrebbe letto quelli di $Tw$ che però non ha eseguito la scrittuta “in tempo“)
+
+>[!hint]
+>Se $Tw$ vuole srivere, non c’è stata una transazione più giovane $Tr$ che ha già letto i dati, ma una transazione più giovane $Tw'$ li ha già scritti, non è necessario il rollback
+
+**Domanda**: come mai possiamo saltare l’operazione di scrittura di una transazione T senza violare la proprietà di atomicità (la transazione viene eseguita per intero oppure ogni suo effetto viene annullato)?
+
+La proprietà di atomicità serve a garantire la coerenza dei dati nella base di dati. Dal punto di vista degli effetti della transazione sulla base di dati e di questa coerenza, le transazioni che potrebbero trovare una situazione incoerente sono quelle che avrebbero dovuto leggere
+proprio i dati scritti da $T$, e invece hanno trovato quelli di una transazione più giovane $T'$ ma nessuna transazione $T''$ con $TS(T')>TS(T'')>TS(T)$, (arrivata dopo $T$ ma prima di $T'$, che avrebbe dovuto quindi leggere il valore prodotto da $T$) può aver letto $X$ altrimenti $T$ sarebbe stata rolled back al passo precedente dell’algoritmo di controllo della scrittura e se poi dovesse arrivare, $T''$ sarebbe rolled back in base al primo passo dell’algoritmo di controllo della lettura (a causa della scrittura di $T''$) ma se $T''$ non arriva abbiamo risparmiato un roll back! 
