@@ -24,101 +24,31 @@
             }
           },
           {
-            "id": "afd8b510f4f400bf",
+            "id": "5d238addc35be1a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
+                "file": "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File con indice - caratteristiche ed esercizi"
+              "title": "Decomposizioni che preservano le dipendenze"
             }
           },
           {
-            "id": "f67c62e4964769d6",
+            "id": "a016310b16d9832d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
+                "file": "Class/Basi di dati/Chiusura di un insieme di attributi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deadlock e livelock - protocollo di locking a due fasi stretto"
-            }
-          },
-          {
-            "id": "869793890c546897",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Il meccanismo di lock - lock binario"
-            }
-          },
-          {
-            "id": "ac1ad6d3b2390370",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Il controllo della concorrenza.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Il controllo della concorrenza"
-            }
-          },
-          {
-            "id": "804d3ac91ec01625",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "B-tree - caratteristiche ed esercizi"
-            }
-          },
-          {
-            "id": "8cb4f71672998ab1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "File con indice - caratteristiche ed esercizi"
-            }
-          },
-          {
-            "id": "52a2c2e4113a10d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "File hash - caratteristiche ed esercizi"
+              "title": "Chiusura di un insieme di attributi"
             }
           }
         ],
@@ -280,8 +210,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "afd8b510f4f400bf",
+  "active": "5d238addc35be1a9",
   "lastOpenFiles": [
+    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+    "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
+    "Class/Basi di dati/Il controllo della concorrenza.md",
+    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
     "Class/Basi di dati/Timestamp.md",
     "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
     "Files/Pasted image 20241220011528.png",
@@ -289,15 +225,12 @@
     "Files/Pasted image 20241220011439.png",
     "Files/Pasted image 20241220010833.png",
     "Files/Pasted image 20241220010722.png",
-    "Class/Basi di dati/Il controllo della concorrenza.md",
     "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
     "Files/Pasted image 20241220005213.png",
     "Files/Pasted image 20241220005112.png",
     "Files/Pasted image 20241220004637.png",
     "Files/Pasted image 20241220004619.png",
     "Files/Pasted image 20241220004538.png",
-    "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
@@ -312,8 +245,6 @@
     "Class/Sistemi Operativi/Sicurezza.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
     "Class/Sistemi Operativi/Gestione dell'Input-Output/Dispositivi di I-O.md",
-    "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
-    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
     "orphaned files output.md",
     "broken links output.md",
     "Programming languages/Verilog/Verilog.md",

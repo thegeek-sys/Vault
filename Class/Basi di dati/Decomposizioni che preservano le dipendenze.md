@@ -4,7 +4,7 @@ Class: "[[Basi di dati]]"
 Related: 
 Completed:
 ---
----
+ ---
 ## Index
 - [[#Cosa significa preservare le dipendenze?|Cosa significa preservare le dipendenze?]]
 - [[#Decomposizione di uno schema di relazione|Decomposizione di uno schema di relazione]]
