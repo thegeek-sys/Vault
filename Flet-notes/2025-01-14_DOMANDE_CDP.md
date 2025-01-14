@@ -2,3 +2,4 @@
 - probabilità discreta congiunta
 - principio di inclusione/esclusione (2 e 3 eventi)
 - legge della probabilità totale (generalizzata)
+- regola del prodotto (generalizzata)
