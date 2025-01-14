@@ -4,3 +4,6 @@
 - legge della probabilità totale (generalizzata)
 - regola del prodotto (generalizzata)
 - spazio di probabilità
+- regola del prodotto
+- indipendenza di eventi
+- 
