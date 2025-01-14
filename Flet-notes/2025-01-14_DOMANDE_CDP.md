@@ -6,4 +6,4 @@
 - spazio di probabilità
 - regola del prodotto
 - indipendenza di eventi
-- 
+- monotonia di eventi
