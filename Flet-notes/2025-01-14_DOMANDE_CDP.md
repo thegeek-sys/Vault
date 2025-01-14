@@ -9,4 +9,4 @@
 - monotonia di eventi
 - funzione di probabilità 
 - eventi condizionati
-- 
+- legge forte dei grandi numeri
