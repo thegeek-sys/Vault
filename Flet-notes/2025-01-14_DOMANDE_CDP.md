@@ -1,2 +1,4 @@
 - variabile aleatoria binomiale negativa
 - probabilità discreta congiunta
+- principio di inclusione/esclusione
+- 
