@@ -1,2 +1,2 @@
 - variabile aleatoria binomiale negativa
-- 
+- probabilità discreta congiunta
