@@ -7,3 +7,6 @@
 - regola del prodotto
 - indipendenza di eventi
 - monotonia di eventi
+- funzione di probabilità 
+- eventi condizionati
+- 
