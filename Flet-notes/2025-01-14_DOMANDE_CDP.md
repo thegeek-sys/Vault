@@ -1,1 +1,2 @@
+- variabile aleatoria binomiale negativa
 - 
