@@ -39,7 +39,9 @@ Si ha quindi questo cambiamento in seguito a (esplicitamente voluti):
 Codice eseguito per conto dello stesso processo interrotto, che non lo ha esplicitamente voluto:
 - errore fatale (*abort*) → il processo spesso viene terminato
 - errore non fatale (*fault*) → viene eseguito un qualcosa prima di tornare in user mode e continuare il processo
-Codice eseguito per conto di qualche processo. In particolare avviene quando un processo A ha fatto una richiesta I/O quindi il SO lo ho messo in blocked, il SO intanto mette in esecuzione un secondo processo B, nel mentre viene esaudita la richiesta di A ma ciò avviene per conto del processo B
+
+Codice eseguito per conto di qualche processo
+- In particolare avviene quando un processo A ha fatto una richiesta I/O quindi il SO lo ho messo in blocked, il SO intanto mette in esecuzione un secondo processo B, nel mentre viene esaudita la richiesta di A ma ciò avviene per conto del processo B
 
 ### System call sui Pentium
 Il codice per una system call sui Pentium è strutturata così:
