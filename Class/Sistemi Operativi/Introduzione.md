@@ -49,6 +49,7 @@ Il sistema operativo ha il compito di  gestire le risorse hardware di un sistema
 - memoria primaria (RAM o memoria reale) → definita volatile, se si spegne il computer infatti se ne perde il contenuto
 - dispositivi  di input/output → come ad esempio dispositivi di memoria secondaria (non volatile), dispositivi per la comunicazione (es. schede di rete) ecc.
 - “bus” di sistema → mezzo per far comunicare tra loro le parti interne del computer (infatti i sistemi di input output scambiano direttamente informazioni con la ram e indirettamente con il sistema operativo attraverso la RAM)
+
 Il suo scopo è quello di **fornire un insieme di servizi agli utenti**: sia per gli sviluppatori che per i semplici utilizzatori
 
 ---
@@ -79,6 +80,7 @@ Questi sono:
 - *Memory Buffer Register* (MBR) → contiene i dati da scrivere in memoria, o fornisce lo spazio dove scrivere i dati letti dalla memoria
 - *I/O address register*
 - *I/O buffer register*
+
 Per capire il funzionamento e come interagiscono MAR e MBR prendiamo questo esempio: nell’istruzione `lw $s1, 4($s2)` concettualmente, prima viene copiato l’indirizzo con l’offset di `4($s2)` in MAR, poi si utilizza il valore in MAR per accedere alla memoria e si scrive il valore letto `s1` in MBR, e infine viene copiato il contenuto di MBR in `$s1`
 
 ---
@@ -196,6 +198,7 @@ La cache contiene copie di porzioni della memoria principale. Questi dati in par
 Quando però si scrive sulla cache il valore che precedentemente era scritto in RAM non viene aggiornato, per questo esistono due politiche di scrittura:
 - **write-through** → viene modificato il dato in RAM ogni volta che questo viene modificato in cache
 - **write-back** → si scrive in memoria solo quando il blocco di cache viene rimpiazzato
+
 ![[Screenshot 2024-09-30 alle 23.45.21.png|300]]
 Funzione di mappatura → determina la locazione della cache nella quale andrà messo il blocco proveniente dalla memoria
 Algoritmo di rimpiazzamento → sceglie il blocco da rimpiazzamento, l’algoritmo Least-Recently-Used (LRU) rimpiazza il blocco usato meno di recente

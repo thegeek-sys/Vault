@@ -24,21 +24,105 @@
             }
           },
           {
-            "id": "d6cf7b8e836ade70",
+            "id": "0c60347a4bfced86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2025-01-14_DOMANDE_CDP.md",
+                "file": "Class/Sistemi Operativi/Approfondimenti - Buffer Overflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-14_DOMANDE_CDP"
+              "title": "Approfondimenti - Buffer Overflow"
+            }
+          },
+          {
+            "id": "e369bdc5816dd74d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Approfondimenti - Passwords"
+            }
+          },
+          {
+            "id": "8cf36eacccffeb33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Approfondimenti - Passwords/Attacchi a password.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Attacchi a password"
+            }
+          },
+          {
+            "id": "8b37cde041383301",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Approfondimenti - Passwords/Password in Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Password in Linux"
+            }
+          },
+          {
+            "id": "fae4e6027469d375",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Sicurezza.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sicurezza"
+            }
+          },
+          {
+            "id": "577e5bd7c7430631",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Deadlock.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Deadlock"
+            }
+          },
+          {
+            "id": "a66dfce0e7ff84d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Sistemi Operativi/Introduzione.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduzione"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -195,44 +279,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6cf7b8e836ade70",
+  "active": "a66dfce0e7ff84d4",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Approfondimenti - Buffer Overflow.md",
-    "Flet-notes/2025-01-14_DOMANDE_CDP.md",
-    "Class/Sistemi Operativi/Processi/Vita di un processo.md",
-    "Class/Sistemi Operativi/Processi/Processi.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Sistemi Operativi/Introduzione.md",
-    "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Terza forma normale.md",
-    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
-    "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
-    "Class/Basi di dati/File heap.md",
-    "Class/Basi di dati/Algoritmo di decomposizione.md",
-    "Class/Basi di dati/Modello relazionale.md",
-    "Class/Basi di dati/Algebra relazionale.md",
-    "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
-    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
-    "Class/Basi di dati/Identificazione di una chiave.md",
-    "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
-    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
-    "Class/Basi di dati/Il controllo della concorrenza.md",
-    "Class/Basi di dati/Timestamp.md",
-    "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
+    "Class/Sistemi Operativi/Approfondimenti - Buffer Overflow.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Attacchi a password.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
+    "Class/Sistemi Operativi/Approfondimenti - Passwords/Password in Linux.md",
+    "Class/Sistemi Operativi/Sicurezza.md",
+    "Class/Sistemi Operativi/Deadlock.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Equivalenze.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Problema dei lettori-scrittori.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Passaggio di messaggi.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - soluzioni software.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
+    "Class/Sistemi Operativi/File-system/Directory.md",
+    "Class/Sistemi Operativi/File-system/Gestione della memoria secondaria.md",
+    "Class/Sistemi Operativi/File-system/Gestione dei file in UNIX.md",
+    "Class/Sistemi Operativi/File-system/Gestione dei file su Windows.md",
+    "Class/Sistemi Operativi/File-system/File-system.md",
+    "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Problemi nel progetto del sistema operativo.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Cache del disco.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/Gestione dell'Input-Output.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/IO in Linux.md",
+    "Class/Sistemi Operativi/Gestione dell'Input-Output/RAID.md",
     "Files/Pasted image 20241220011528.png",
     "Files/Pasted image 20241220011442.png",
     "Files/Pasted image 20241220011439.png",
     "Files/Pasted image 20241220010833.png",
     "Files/Pasted image 20241220010722.png",
-    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
     "Files/Pasted image 20241220005213.png",
     "Files/Pasted image 20241220005112.png",
     "Files/Pasted image 20241220004637.png",
     "Files/Pasted image 20241220004619.png",
     "Files/Pasted image 20241220004538.png",
-    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
-    "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
     "Class/Sistemi Operativi/Approfondimenti - Passwords",
     "Problema dei lettori",
     "Class/Sistemi Operativi/Processi",
