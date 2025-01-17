@@ -35,6 +35,7 @@ Dunque un processo utente può cambiare modalità a sé stesso, ma **solo per es
 Si ha quindi questo cambiamento in seguito a (esplicitamente voluti):
 - system call
 - in risposta ad una sua precedente richiesta di I/O (in generale di risorse)
+
 Codice eseguito per conto dello stesso processo interrotto, che non lo ha esplicitamente voluto:
 - errore fatale (*abort*) → il processo spesso viene terminato
 - errore non fatale (*fault*) → viene eseguito un qualcosa prima di tornare in user mode e continuare il processo
@@ -46,6 +47,7 @@ Il codice per una system call sui Pentium è strutturata così:
 	tra di essi ci sta il numero che identifica la system call
 2. esegue l’istruzione `int 0x80`, che appunto solleva un interrupt (in realtà un’eccezione)
 2. in alternativa, dal Pentium 2 in poi, può eseguire l’istruzione `sysenter`, che omette alcuni controlli inutili
+
 Da notare che anche creare un nuovo processo è una system call: in Linux *fork* (oppure *clone* più generale)
 
 ---
