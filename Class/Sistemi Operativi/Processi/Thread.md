@@ -21,6 +21,7 @@ Diversi thread di uno stesso processo condividono le risorse **tranne** lo **sta
 Teoricamente viene molto bene: si può dire che il concetto di processo incorpori le seguenti 2 caratteristiche
 - gestione delle risorse (memoria, I/O ecc.)
 - scheduling/esecuzione (stack e processore)
+
 Dunque per quanto riguarda le risorse i processi vanno presi come un blocco unico, per quanto riguarda lo schedulung, i processi possono contenere diversi thread, e per questo vanno trattati in maniera diversa
 
 ![[Pasted image 20241011134132.png]]
