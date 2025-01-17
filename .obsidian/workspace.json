@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Scheduling/Scheduling.md",
+                "file": "Class/Sistemi Operativi/Scheduling/Concetti basilari di scheduling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scheduling"
+              "title": "Concetti basilari di scheduling"
             }
           },
           {
@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -223,11 +223,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0c10c6d1d7785873",
+  "active": "823257d1492d920e",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/Processi/Processi.md",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Scheduling/Scheduling.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Processi/Thread.md",
+    "Class/Sistemi Operativi/Processi/Processi.md",
     "Class/Sistemi Operativi/Processi/Vita di un processo.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Class/Sistemi Operativi/Processi/Introduzione ai processi.md",
@@ -250,7 +251,6 @@
     "Class/Sistemi Operativi/File-system/Gestione dei file in UNIX.md",
     "Class/Sistemi Operativi/File-system/Gestione dei file su Windows.md",
     "Class/Sistemi Operativi/File-system/File-system.md",
-    "Class/Sistemi Operativi/File-system/Visione d’insieme.md",
     "Files/Pasted image 20241220011528.png",
     "Files/Pasted image 20241220011442.png",
     "Files/Pasted image 20241220011439.png",

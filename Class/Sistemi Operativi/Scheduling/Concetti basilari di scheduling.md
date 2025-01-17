@@ -101,6 +101,7 @@ Prestazionali:
 - **Turnaround time**
 - **Response time**
 - **Deadline**
+
 Non prestazionali:
 - **Predictability**
 ##### Turn-around Time
