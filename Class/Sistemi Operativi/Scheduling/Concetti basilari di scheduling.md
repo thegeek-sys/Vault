@@ -119,6 +119,7 @@ Per predictability si intende che non deve esserci troppa variabilità nei tempi
 Prestazionali:
 - **Throughput**
 - **Processor utilization**
+
 Non prestazionali
 - **Fairness**
 - **Enforcing priorities**
