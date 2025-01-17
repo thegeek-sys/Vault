@@ -110,10 +110,12 @@ Prima si eseguono i processi in `SCHED_FIFO` e `SCHED_RR`, poi quelli in `SCHED_
 Per quanto riguarda `SCHED_OTHER` a differenza di UNIX la preemption può essere dovuta a due casi:
 - si esaurisce il  quanto di tempo del processo attualmente in esecuzione
 - un altro processo passa da uno degli stati blocked a `RUNNING` (in modo tale da favorire i processi interattivi)
+
 Molto spesso capita che il processo che è appena diventato eseguibile verrà effettivamente eseguito dal processore e a seconda di quante CPU ci sono, può soppiantare il processo precedente questo perché probabilmente si tratta di un processo interattivo, cui bisogna dare precedenza
 
 Un processo `SCHED_FIFO` essendo FIFO, non viene bloccato da interrupt ma viene preempted e rimesso in coda solo se:
 - si blocca per I/O (o rilascia volontariamente la CPU)
 - un altro processo passa da uno degli stati blocked a `RUNNING` ed ha priorità più alta
+
 Altrimenti, non viene mai fermato.
 `SCHED_RR` invece, come `SCHED_OTHER`, lavora su quanti di tempo
