@@ -159,7 +159,7 @@ La tabella delle pagine contiene tutte le pagine di un processo, mentre per quan
 
 Si può risolvere questo problema sfruttando il parallelo e controllando contemporaneamente tutte le entry del TLB. Questo supporto hardware che mi permette di fare questa ricerca veloce è chiamato **mapping associativo**
 
-Ci sta però un altro problema, bisogna fare in modo che nel TLB contenga solo pagine in RAM, altrimenti si incorrerebbe in un page fault dopo un TLB git, ma sarebbe impossibile accorgersene (il bit di presenza potrebbe infatti essere obsoleto).
+Ci sta però un altro problema, bisogna fare in modo che il TLB contenga solo pagine in RAM, altrimenti si incorrerebbe in un page fault dopo un TLB, ma sarebbe impossibile accorgersene (il bit di presenza potrebbe infatti essere obsoleto).
 Quindi quando viene messo il bit di presenza a zero deve essere opportunamente modificato il TLB attraverso un reset parziale
 
 ![[Pasted image 20241029001206.png]]
@@ -170,12 +170,12 @@ Quindi quando viene messo il bit di presenza a zero deve essere opportunamente m
 ---
 ## Dimensione delle pagine
 Ma quanto dovrebbe essere la giusta dimensione di una pagina
-### Perché grande
+### Perché piccola
 Più piccola è una pagina, minore è la frammentazione all’interno delle pagine ma è anche maggiore il numero di pagine per processo. Il che significa che è più grande la tabella delle pagine per ogni processo e quindi la maggior parte delle tabelle finisce in memoria secondaria.
 La memoria secondaria è ottimizzata per trasferire grossi blocchi di dati, quindi avere le pagine ragionevolmente grandi non sarebbe male
 
-### Perché piccola
-Più piccola è una pagina, maggiore il numero di pagine che si trovano in memoria principale. Lo stesso processo può riuscire ad avere un resident set più grande facendo diminuire i page fault e aumentanto la multiprogrammazione
+### Perché grande
+Più grande è una pagina, maggiore il numero di pagine che si trovano in memoria principale. Lo stesso processo può riuscire ad avere un resident set più grande facendo diminuire i page fault e aumentanto la multiprogrammazione
 
 Per risolvere questo problema sono stati fatti diversi esperimenti per capire quale fosse il giusto compromesso
 ![[Pasted image 20241029002627.png]]
