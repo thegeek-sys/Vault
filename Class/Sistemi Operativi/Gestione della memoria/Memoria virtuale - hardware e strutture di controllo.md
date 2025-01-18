@@ -54,7 +54,7 @@ Quando verrà eseguito, occorrerà eseguire nuovamente la stessa istruzione che 
 ## Conseguenze
 Abbiamo due principali conseguenze a ciò:
 - Svariati processi possono essere in memoria principale. Questo vuol dire che è molto probabile che ci sia sempre almeno un processo ready, aumentando così il grado di multiprogrammazione
-- Un processo potrebbe richiedere più dell’intera memoria princiapale
+- Un processo potrebbe richiedere più dell’intera memoria principale
 
 ---
 ## Memoria virtuale: terminologia
@@ -63,6 +63,7 @@ Abbiamo due principali conseguenze a ciò:
 - c’è una fase di traduzione automatica dai primi nei secondi
 - la dimensione della memoria virtuale è limitata dallo schema di indirizzamento, oltre che ovviamente dalla dimensione della memoria secondaria
 - la dimensione della memoria principale, invece, non influisce sulla dimensione della memoria virtuale
+
 **Memoria reale** → quella principale (la RAM)
 **Indirizzo virtuale** → l’indirizzo associato ad una locazione della memoria virtuale (fa sì che si possa accedere a tale locazione come se fosse parte della memoria principale)
 **Spazio degli indirizzi virtuali** → la quantità di memoria virtuale assegnata ad un processo
