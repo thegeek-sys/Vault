@@ -89,6 +89,7 @@ La funzione `exchange` ha il compito di scambiare il contenuto di due argomenti 
 void exchange(int register, int memory) {
 	int temp;
 	temp = memory;
+	memory = register;
 	register = temp;
 }
 ```
