@@ -141,12 +141,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
+                "file": "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mutua esclusione - supporto hardware"
+              "title": "Semafori"
             }
           }
         ],
@@ -310,6 +310,7 @@
   "active": "08d36a44ef553f7f",
   "lastOpenFiles": [
     "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Gestione della memoria/Partizionamento della memoria.md",
     "Class/Sistemi Operativi/Gestione della memoria/Gestione della memoria.md",
@@ -333,7 +334,6 @@
     "Class/Sistemi Operativi/Gestione della concorrenza/Passaggio di messaggi.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - soluzioni software.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
-    "Class/Sistemi Operativi/Gestione della concorrenza/Mutua esclusione - supporto hardware.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Concetti basilari di concorrenza.md",
     "Files/Pasted image 20241220011528.png",
     "Files/Pasted image 20241220011442.png",

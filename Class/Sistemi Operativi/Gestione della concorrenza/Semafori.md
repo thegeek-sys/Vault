@@ -201,7 +201,6 @@ void consumer() {
 		semWaitB(s);
 		take();
 		n--;
-		m = n;
 		semSignalB(s);
 		consume();
 		if(n == 0) semWaitB(delay);
