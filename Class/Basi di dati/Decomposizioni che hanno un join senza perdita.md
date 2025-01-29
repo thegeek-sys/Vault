@@ -330,8 +330,11 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ 
 >Quando si fa il join naturale tra due proiezioni $\pi_{R_{i}}(r)$ e $\pi_{R_{j}}(r)$ (chiameremo le rispettive tuple con sole $'a'$ $t_{i}$ e $t_{j}$) si ottengono due possibili casi:
 >- $R_{i}$ e $R_{j}$ condividono (almeno) un attributo, quindi il risultato del join naturale sarà un’istanza con un’unica tupla contenente sole $'a'$
 >- $R_{i}$ e $R_{j}$ non condividono alcun attributi, quindi il join naturale degenera in un prodotto cartesiano, che conterrà, tra tutte le tuple, anche quella con sole $'a'$ ($t_{i}$ e $t_{j}$)
-
-
+>
+>In entrambi i casi, il join naturale ci porterà ad unire $t_{i}$ e $t_{j}$ in una singola tupla con sole $'a'$
+>
+>Visto che $m_{\rho}(r)$ è il join naturale di tutte le proiezioni, esso contiene anche una tupla con tutte $'a'$ contraddicendo quindi il l’ipotesi per assurdo.
+>
 >##### Parte $\Leftarrow$
 >Per uno sketch della prova della parte “se” consultare il testo J. D. Ullman, “Principles of database and knowledge-base systems”, vol. I, Computer Science Press, 1988.
 
