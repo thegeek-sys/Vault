@@ -318,7 +318,17 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ 
 >La tabella $r$ può essere interpretata come un’istanza legale di $R$ (basta sostituire ai simboli $'a'$ e $'b'$ valori presi dai domini dei corrispondenti attributi in modo tale che ad uno stesso simbolo venga sostituito lo stesso valore) in quando l’algoritmo termina quando non ci sono più violazioni delle dipendenze in $F$.
 >
 >La tabella $r$ iniziale contiene $'a'$ in ogni riga per gli attributi che appartengono al sottoschema a cui fa riferimento quella riga.
->>
+>
+>>[!example]
+>>![[Pasted image 20241121212835.png|440]]
+>
+>Quindi ogni proiezione $\pi_{R_{i}}(r)$ della tabella su un sottoschema avrà una tupla di tutte $'a'$ (la riga che corrisponde a $R_{i}$)
+>
+>>[!example] Proiettando su $ABDE$
+>>![[Pasted image 20250129182237.png]]
+>
+>Quando si fa il join naturale tra due proiezioni $\pi_{R_{i}}(r)$ e $\pi_{R_{j}}(r)$ (chiameremo le rispettive tuple con sole $'a'$ $t_{i}$ e $t_{j}$) si ottengono due possibili casi:
+>- $R_{i}$ e $R_{j}$ condividono (almeno) un attributo
 >
 >##### Parte $\Leftarrow$
 >Per uno sketch della prova della parte “se” consultare il testo J. D. Ullman, “Principles of database and knowledge-base systems”, vol. I, Computer Science Press, 1988.
