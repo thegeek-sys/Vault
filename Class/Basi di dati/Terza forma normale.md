@@ -208,7 +208,7 @@ Dato uno schema $R$ e un insieme funzionali $F$ su $R$, $R$ è in 3NF se e solo 
 Abbiamo visto che uno schema in 3NF ha delle buone proprietà che lo rendono preferibile ad uno che non è in 3NF. Un obbiettivo da tener presente quando si progetta una base di dati è quello di produrre uno schema in un ogni relazione sia in 3NF.
 Normalmente nella fase di progettazione concettuale si usa il modello Entità-Associazione e si individuano per l’appunto i concetti che devono essere rappresentati nella base di dati
 
-Se il lavoro di individuazione è fatto accuratamente lo schema relaziona può essere derivato con opportune regole, è in 3NF. Se tuttavia, dopo tale processo, ci ritrovassimo a produrre uno schema che non è in 3NF dovremmo procedere ad una fare di **decomposizione** di tale schema in maniera analoga a quella esaminata nell’esempio sui dati di un’Università ([[Progettazione di una base di dati relazionale - Problemi e vincoli#Introduzione|qui]])
+Se il lavoro di individuazione è fatto accuratamente lo schema relazionale può essere derivato con opportune regole, è in 3NF. Se tuttavia, dopo tale processo, ci ritrovassimo a produrre uno schema che non è in 3NF dovremmo procedere ad una fare di **decomposizione** di tale schema in maniera analoga a quella esaminata nell’esempio sui dati di un’Università ([[Progettazione di una base di dati relazionale - Problemi e vincoli#Introduzione|qui]])
 ### La 3NF non basta
 Uno schema che non è in 3NF può essere decomposto in più modi in un insieme di schemi in 3NF. Ad esempio lo schema $R=ABC$ con l’insieme di dipendenze funzionali $F=\{A\to B, B\to C\}$ non è in 3NF per la presenza in $F^+$ della dipendenza transitiva $B\to C$, dato che la chiave è evidentemente $A$.
 $R$ può essere decomposto in:
