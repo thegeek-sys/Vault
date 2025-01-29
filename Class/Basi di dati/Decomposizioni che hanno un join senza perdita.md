@@ -312,13 +312,13 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ 
 >[!info] Dimostrazione
 >Occorre dimostrare che: $\rho$ ha un join senza perdita ($m_{\rho}(r)=r$ per ogni $r$ legale) **se e solo se** quando l’algoritmo termina la tabella $r$ ha una tupla con tutte $'a'$
 >
->##### Parte solo se
+>##### Parte $\Rightarrow$
 >Supponiamo per assurdo che $\rho$ abbia un join senza perdita ($m_{\rho}(r)=r$) e che quando l’algoritmo termina la tabella $r$ non abbia una tupla con tutte $'a'$.
 >
 >La tabella $r$ può essere interpretata come un’istanza legale di $R$ (basta sostituire ai simboli $'a'$ e $'b'$ valori presi dai domini dei corrispondenti attributi in modo tale che ad uno stesso simbolo venga sostituito lo stesso valore) in quando l’algoritmo termina quando non ci sono più violazioni delle dipendenze in $F$.
 >
 >Poiché nessun simbolo $'a'$ che compare nella tabella costruita inizialmente viene mai modificato dall’algoritmo, per ogni $i$,  $i=1,\dots,k$, $\pi_{Ri}(r)$ contiene (fin dall’inizio) una tupla con tutte $'a'$ (quella ottenuta proiettando l’istanza $r$ sugli attributi di $R_{i}$ e precisamente nella riga corrispondente al sottoschema $R_{i}$) pertanto $m_{\rho}(r)$ contiene sicuramente una tupla con tutte $'a'$ e, quindi, $m_{\rho}(r)\neq r$ (contraddizione)
 >
->##### Parte se
+>##### Parte $\Leftarrow$
 >Per uno sketch della prova della parte “se” consultare il testo J. D. Ullman, “Principles of database and knowledge-base systems”, vol. I, Computer Science Press, 1988.
 
