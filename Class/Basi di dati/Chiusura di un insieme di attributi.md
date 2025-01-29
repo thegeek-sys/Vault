@@ -4,7 +4,7 @@ Class: "[[Basi di dati]]"
 Related: 
 Completed:
 ---
-f---
+---
 ## Index
 - [[#Utilità della chiusura $X^+$|Utilità della chiusura $X^+$]]
 - [[#Come si calcola $X^+$|Come si calcola $X^+$]]
