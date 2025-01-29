@@ -315,7 +315,7 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ 
 >##### Parte $\Rightarrow$
 >Supponiamo per assurdo che $\rho$ abbia un join senza perdita ($m_{\rho}(r)=r$) e che quando l’algoritmo termina la tabella $r$ non abbia una tupla con tutte $'a'$.
 >
->La tabella $r$ può essere interpretata come un’istanza legale di $R$ (basta sostituire ai simboli $'a'$ e $'b'$ valori presi dai domini dei corrispondenti attributi in modo tale che ad uno stesso simbolo venga sostituito lo stesso valore) in quando l’algoritmo termina quando non ci sono più violazioni delle dipendenze in $F$.
+>La tabella $r$ può essere interpretata come un’istanza legale di $R$ (basta sostituire ai simboli $'a'$ e $'b'$ valori presi dai domini dei corrispondenti attributi in modo tale che ad uno stesso simbolo venga sostituito lo stesso valore) in quanto l’algoritmo termina quando non ci sono più violazioni delle dipendenze in $F$.
 >
 >La tabella $r$ iniziale contiene $'a'$ in ogni riga per gli attributi che appartengono al sottoschema a cui fa riferimento quella riga.
 >
