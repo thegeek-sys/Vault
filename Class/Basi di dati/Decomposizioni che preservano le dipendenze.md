@@ -169,7 +169,6 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >Possiamo quindi dire che siccome:
 >- $(Z^{(i-1)}\cap R_{j})\to A\in F^+$
 >- $A\in R_{j}$
->- $A\in Z^{(i-1)}$
 >
 >allora $(Z^{(i-1)}\cap R_{j})\to A\in G$  ($G=\cup_{i=1}^k\pi_{R_{i}}(F)$)
 >
