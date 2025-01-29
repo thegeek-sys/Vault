@@ -177,7 +177,7 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$,
 >Per la regola di decomposizione si ha anche che $X\to(Z^{(i-1)}\cap R_{j})\in G^+$ poiché $R_{j}\subseteq Z^{(i-1)}$
 >Dunque per transitività $X\to A\in G^+$ e quindi $A\in X^+_{G}$
 >
->##### Parte $\Rightarrow$
+>##### Parte $\Leftarrow$
 >Vedi dispensa associata al corso (non necessario)
 
 ---
