@@ -317,7 +317,8 @@ Sia $R$ uno schema di relazione, $F$ un insieme di dipendenze funzionali su $R$ 
 >
 >La tabella $r$ può essere interpretata come un’istanza legale di $R$ (basta sostituire ai simboli $'a'$ e $'b'$ valori presi dai domini dei corrispondenti attributi in modo tale che ad uno stesso simbolo venga sostituito lo stesso valore) in quando l’algoritmo termina quando non ci sono più violazioni delle dipendenze in $F$.
 >
->Poiché nessun simbolo $'a'$ che compare nella tabella costruita inizialmente viene mai modificato dall’algoritmo, per ogni $i$,  $i=1,\dots,k$, $\pi_{Ri}(r)$ contiene (fin dall’inizio) una tupla con tutte $'a'$ (quella ottenuta proiettando l’istanza $r$ sugli attributi di $R_{i}$ e precisamente nella riga corrispondente al sottoschema $R_{i}$) pertanto $m_{\rho}(r)$ contiene sicuramente una tupla con tutte $'a'$ e, quindi, $m_{\rho}(r)\neq r$ (contraddizione)
+>La tabella $r$ iniziale contiene $'a'$ in ogni riga per gli attributi che appartengono al sottoschema a cui fa riferimento quella riga.
+>>
 >
 >##### Parte $\Leftarrow$
 >Per uno sketch della prova della parte “se” consultare il testo J. D. Ullman, “Principles of database and knowledge-base systems”, vol. I, Computer Science Press, 1988.
