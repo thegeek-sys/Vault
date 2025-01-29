@@ -97,7 +97,7 @@ L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un in
 >>
 >>Alla fine di ogni iterazione aggiungiamo qualcosa a $Z$, ma non eliminiamo mai alcun attributo
 >
->Sia $j$ tale che $S(j)\subseteq Z(j)$ (cioè $Z(j)$ è il valore di $Z$ quando l’algoritmo termina); proveremo che: $\mathbf{A\in Z^{(j)}\Leftrightarrow A\in X^+}$
+>Sia $j$ tale che $S^{(j)}\subseteq Z^{(j)}$ (cioè $Z^{(j)}$ è il valore di $Z$ quando l’algoritmo termina); proveremo che: $\mathbf{A\in Z^{(j)}\Leftrightarrow A\in X^+}$
 >
 >##### Parte $\Rightarrow$
 >Mostreremo per induzione su $i$ che $Z^{(i)}\subseteq X^+$, per ogni $i$ (e quindi, in particolare $Z^{(j)}\subseteq X^+$)
