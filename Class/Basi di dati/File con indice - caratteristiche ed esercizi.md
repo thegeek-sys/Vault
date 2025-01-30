@@ -21,7 +21,7 @@ Completed:
 - [[#Esercizi|Esercizi]]
 ---
 ## Introduction
-Quando le chiavi ammettono un ordinamento significativo per l’applicazione, è più conveniente utilizzare un’organizzazione fisica dei fati che ne tanga conto (nel caso di campi multipli, si ordina sul primo campo, poi sul secondo e così via)
+Quando le chiavi ammettono un ordinamento significativo per l’applicazione, è più conveniente utilizzare un’organizzazione fisica dei dati che ne tanga conto (nel caso di campi multipli, si ordina sul primo campo, poi sul secondo e così via)
 
 ---
 ## File ISAM
