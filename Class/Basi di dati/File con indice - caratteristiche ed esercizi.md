@@ -27,7 +27,7 @@ Quando le chiavi ammettono un ordinamento significativo per l’applicazione, è
 ## File ISAM
 Il file **ISAM** (Indexed Sequential Access Method) è il primo esempio significativo della richiesta fatta.
 
-Il file principale viene ordinato in base al valore della chiave di ricerca e generalmente viene lasciata una carta percentuale di spazio libero in ogni blocco (necessario per l’inserimento)
+Il file principale viene ordinato in base al valore della chiave di ricerca e generalmente viene lasciata una certa percentuale di spazio libero in ogni blocco (necessario per l’inserimento)
 
 ![[Pasted image 20241213170716.png|500]]
 Nel file ISAM si ha un **file indice** (table of contents) e un **file principale**.
