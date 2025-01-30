@@ -15,7 +15,7 @@ Completed:
 - [[#Cancellazione|Cancellazione]]
 ---
 ## Introduction
-Nei file heap artiamo da una non organizzazione dei record, cioè una collocazione dei record nei file in un ordine determinato solo dall’ordine di inserimento
+Nei file heap partiamo da una non organizzazione dei record, cioè una collocazione dei record nei file in un ordine determinato solo dall’ordine di inserimento
 
 >[!warning] Non si parla dell’heap inteso come albero di ricerca
 
