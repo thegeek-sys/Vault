@@ -19,7 +19,7 @@ Nei file heap artiamo da una non organizzazione dei record, cioè una collocazio
 
 >[!warning] Non si parla dell’heap inteso come albero di ricerca
 
-Il fatto di non adottare nessun particolare accorgimento nell’inserimento dei record che possa poi facilitare la ricerca, ci favorisce le prestazioni peggiori in termini di numero di accessi in memoria richiesti dalle operazioni di ricerca, mentre l’inserimento è molto veloci se ammettiamo duplicati
+Il fatto di non adottare nessun particolare accorgimento nell’inserimento dei record che possa poi facilitare la ricerca, ci favorisce le prestazioni peggiori in termini di numero di accessi in memoria richiesti dalle operazioni di ricerca, mentre l’inserimento è molto veloce se ammettiamo duplicati
 
 ![[Pasted image 20241210232816.png|center|270]]
 In un file heap un record viene inserito sempre come ultimo record del file, pertanto tutti i blocchi tranne l’ultimo sono pieni. L’accesso al file avviene attraverso la directory (puntatori ai blocchi)
