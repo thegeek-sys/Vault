@@ -5,6 +5,21 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#File ISAM|File ISAM]]
+- [[#Ricerca|Ricerca]]
+	- [[#Ricerca#Ricerca binaria|Ricerca binaria]]
+	- [[#Ricerca#Ricerca per interpolazione|Ricerca per interpolazione]]
+- [[#Inserimento|Inserimento]]
+	- [[#Inserimento#Esempi|Esempi]]
+- [[#Cancellazione|Cancellazione]]
+	- [[#Cancellazione#Esempi|Esempi]]
+- [[#Modifica|Modifica]]
+- [[#File con record puntati|File con record puntati]]
+- [[#Indici sparsi e densi|Indici sparsi e densi]]
+- [[#Esercizi|Esercizi]]
+---
 ## Introduction
 Quando le chiavi ammettono un ordinamento significativo per l’applicazione, è più conveniente utilizzare un’organizzazione fisica dei fati che ne tanga conto (nel caso di campi multipli, si ordina sul primo campo, poi sul secondo e così via)
 
