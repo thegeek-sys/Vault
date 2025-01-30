@@ -38,6 +38,7 @@ ES: se $B=3$ allora il record con chiave $v$ deve trovarsi nel bucket $2$ in qua
 Una qualsiasi operazione (ricerca, inserimento, cancellazione, modifica) su un file hash richiede:
 - la valutazione di $h(v)$ per individuare il bucket
 - esecuzione dell’operazione sul bucket che è organizzato come un heap
+
 Poiché l’inserimento di un record viene effettuato sull’ultimo blocco del bucket è opportuno che la bucket directory contenga anche, per ogni bucket, il puntatore all’ultimo record del bucket
 
 ### Costo operazioni
