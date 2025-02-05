@@ -98,6 +98,7 @@ Un’operazione sulla base di dati consiste di:
 - **inserimento** (implica la ricerca se vogliamo evitare duplicati)
 - **cancellazione** (implica ricerca)
 - **modifica** (implica ricerca)
+
 di un record
 
 >[!info]
