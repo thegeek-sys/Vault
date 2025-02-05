@@ -34,7 +34,7 @@ Nella sua forma più semplice, un lock:
 - viene **rilasciato** da una transazione mediante un’operazione di *unlocking* che assegna alla variabile il valore unlocked
 
 Quindi il locking agisce come **primitiva di sincronizzazione**, cioè se una transazione richiede un lock su un item su cui un’altra transazione mantiene un lock, la transazione non può procedere finché il lock non viene rilasciato dalla prima transazione
-Fra l’esecuzioen di un’operazione di locking su un certo item $X$ e l’esecuzione di un’operazione di unlocking su $X$ la transazione **mantiene un lock su $X$**
+Fra l’esecuzione di un’operazione di locking su un certo item $X$ e l’esecuzione di un’operazione di unlocking su $X$ la transazione **mantiene un lock su $X$**
 
 ---
 ## Schedule legale
@@ -50,7 +50,7 @@ Le transazioni fanno uso di due operazioni:
 
 L’insieme degli item letti e quello degli item scritti da una transazione coincidono
 
-Il lock binario permette di risolvere il problema del lost update (non dirty data né aggregato non corretto)
+Il lock binario permette di **risolvere il problema del lost update** (non dirty data né aggregato non corretto)
 ### Esempio
 Risolviamo il primo dei problemi visti, cioè il lost update
 ![[Screenshot 2024-12-18 alle 21.22.35.png|300]]
@@ -149,7 +149,7 @@ Questo rappresenta il più piccolo gruppo aciclico di due transazioni
 
 ### Passo 2
 Se $G$ ha un ciclo allora $S$ non è serializzabile, altrimenti applicando a $G$ l’**ordinamento topologico** si ottiene uno schedule seriale $S'$ equivalente ad $S$
-Per ottenere l’ordinamento topologico è necessario ricorsivamente un nodo che non ha archi entranti, insieme ai suoi archi uscenti
+Per ottenere l’ordinamento topologico è necessario eliminare ricorsivamente un nodo che non ha archi entranti, insieme ai suoi archi uscenti
 
 #### Esempio
 In questo esempio i possibili punti di partenza sono $T_{1}$, $T_{4}$, $T_{7}$ quindi ho almeno $3$ possibili schedule seriali
@@ -171,7 +171,7 @@ Applichiamo l’algoritmo e segniamo sulla tabella le relazioni tra le transazio
 Il grafo presenta il ciclo $T_{1}-T_{2}-T_{3}-T_{4}$, possiamo quindi concludere che lo schedule non è serializzabile
 
 >[!warning]
->$T_{1}-T_{2}-T_{5}$ e $T_{2}-T_{5}-T_{3}$ non sono cicli in quanto i senti delle frecce non descrivono cicli, mentre $T_{1}-T_{5}-T_{3}-T_{4}-T_{1}$ lo è
+>$T_{1}-T_{2}-T_{5}$ e $T_{2}-T_{5}-T_{3}$ non sono cicli in quanto i sentieri delle frecce non descrivono cicli, mentre $T_{1}-T_{5}-T_{3}-T_{4}-T_{1}$ lo è
 
 ---
 ## Protocollo di locking a due fasi
@@ -180,7 +180,7 @@ Una transazione obbedisce al protocollo di **locking a due fasi** se prima effet
 >[!warning]
 >Da non confondere con il lock a due valori. Il fatto di essere a due fasi è una caratteristica in più ma ci sono protocolli a due fasi e tre valori
 
-Risolve il problema dell’aggregato non corretto (non dirty data)
+**Risolve il problema dell’aggregato non corretto** (non dirty data)
 
 ---
 ## Teorema sul lock a due fasi

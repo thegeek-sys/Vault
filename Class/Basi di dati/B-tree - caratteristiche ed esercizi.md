@@ -48,6 +48,7 @@ Siano:
 L’altezza massima dell’albero denotata con $k$ si ha quando i blocchi sono pieni al minimo, cioè quando:
 - ogni blocco del file principale contiene esattamente $e$ record
 - ogni blocco del file indice contiene esattamente $d$ record
+
 Pertanto:
 - il file principale ha al più $\frac{N}{e}$ blocchi
 - al livello $1$ il file indice ha $\frac{N}{e}$ record che possono essere memorizzati in $\frac{N}{ed}$ blocchi

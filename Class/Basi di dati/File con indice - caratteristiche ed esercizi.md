@@ -44,6 +44,7 @@ La ricerca di un record con chiave $k$ richiede una **ricerca sul file indice** 
 
 Poiché il file indice è ordinato in base al valore della chiave, la ricerca di un valore che ricopre la chiave può essere fatta in modo efficiente mediante la **ricerca binaria**
 
+> [!hint]
 > se $k>k_{1}$ allora verifico tutte le chiavi successive all’interno del blocco e controllo se trovo $k_{n}$ tale che $k_{n}<k<k_{n+1}$ in tal caso la ricerca dovrà proseguire nel blocco puntato da $k_{n}$ (questa ricerca non aggiunge costo, sto leggendo un blocco già caricato); in caso contrario ($k$ maggiore di tutte le chiavi del blocco) prosegue la ricerca binaria sui blocchi da 
 
 ### Ricerca binaria

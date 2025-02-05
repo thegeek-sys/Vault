@@ -24,35 +24,63 @@
             }
           },
           {
-            "id": "259e6072f6b0e74b",
+            "id": "2ad40ae5520d1b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "File hash - caratteristiche ed esercizi"
-            }
-          },
-          {
-            "id": "2f8aee383ebfe3f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Untitled.md",
+                "file": "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "B-tree - caratteristiche ed esercizi"
             }
           },
           {
-            "id": "36a9105c0e9012d1",
+            "id": "6293f0661e541d5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Timestamp.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Timestamp"
+            }
+          },
+          {
+            "id": "4eef61255ebabd5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Decomposizioni che preservano le dipendenze"
+            }
+          },
+          {
+            "id": "4adaf5ba32cc5666",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Algebra relazionale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Algebra relazionale"
+            }
+          },
+          {
+            "id": "791b163349279c54",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,9 +92,35 @@
               "icon": "lucide-file",
               "title": "File con indice - caratteristiche ed esercizi"
             }
+          },
+          {
+            "id": "368c59e28a98fcef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Timestamp.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Timestamp"
+            }
+          },
+          {
+            "id": "b30db08c29903e12",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -97,7 +151,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lemma 1",
+                "query": "roll",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -224,75 +278,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "floating": {
-    "id": "cfc0a0a1f5ad1665",
-    "type": "floating",
-    "children": [
-      {
-        "id": "26be606b5efc79a9",
-        "type": "window",
-        "children": [
-          {
-            "id": "36fef7fba72c4a2c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "4840698a8b93486d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Basi di dati/File heap.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "File heap"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 790,
-        "y": 47,
-        "width": 670,
-        "height": 898,
-        "maximize": false,
-        "zoom": 0.5
-      }
-    ]
-  },
-  "active": "4840698a8b93486d",
+  "active": "b30db08c29903e12",
   "lastOpenFiles": [
-    "Class/Basi di dati/Untitled.md",
-    "Class/Basi di dati/File heap.md",
-    "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
-    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
     "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Algoritmo di decomposizione.md",
-    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
-    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
     "Class/Basi di dati/Algebra relazionale.md",
+    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+    "Class/Basi di dati/Timestamp.md",
+    "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
+    "Class/Basi di dati/File heap.md",
+    "Class/Basi di dati/Il controllo della concorrenza.md",
+    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
+    "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
+    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
+    "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
+    "Class/Basi di dati/Identificazione di una chiave.md",
+    "Class/Basi di dati/Algoritmo di decomposizione.md",
+    "Class/Basi di dati/Terza forma normale.md",
+    "Class/Basi di dati/Modello relazionale.md",
+    "Class/Basi di dati/Esercizi.md",
+    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
+    "Class/Basi di dati/Untitled.md",
+    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
     "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
-    "Class/Basi di dati/Terza forma normale.md",
     "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
     "Files/Pasted image 20250129182237.png",
     "Files/Pasted image 20250129182000.png",
-    "Class/Basi di dati/Identificazione di una chiave.md",
-    "Class/Basi di dati/Modello relazionale.md",
-    "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
     "Class/Basi di dati/Organizzazione fisica dei dati.md",
-    "Class/Basi di dati/Il controllo della concorrenza.md",
-    "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
-    "Class/Basi di dati/Timestamp.md",
-    "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
     "Class/Basi di dati/Tips esame.md",
     "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
-    "Class/Sistemi Operativi/Gestione della concorrenza/Gestione della concorrenza.md",
     "Files/Pasted image 20241220011528.png",
     "Files/Pasted image 20241220011442.png",
     "Files/Pasted image 20241220011439.png",

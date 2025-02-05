@@ -42,13 +42,13 @@ Una **transazione** è l’esecuzione di una parte di un programma che rappresen
 ### Proprietà delle transazioni
 Le proprietà logiche delle transazioni si racchiudono sotto l’acronimo **ACID** (Atomicità, Consistenza, Isolamento, Durabilità). Analizziamole nel dettaglio:
 - **atomicità** → la transazione è indivisibile nella sua esecuzione e la sua **esecuzione deve essere totale o nulla**, non sono ammesse esecuzioni parziali (se per qualche problema una transizione non va a termine bisogna fare un rollback sui dati)
-- **consistenza** → quando una transazione il database si trova in uno stato consistente e quando la transazione termina, il database deve essere in un altro stato consistente, ovvero **non deve violare eventuali vincoli di integrità**, quindi non devono verificarsi contraddizioni tra i dati archiviati nel DB
+- **consistenza** → quando una transazione il database si trova in uno stato consistente e quando la transazione termina, il database deve essere in un altro stato consistente, ovvero **non deve violare eventuali [[Modello relazionale#Vincoli di integrità|vincoli di integrità]]**, quindi non devono verificarsi contraddizioni tra i dati archiviati nel DB
 - **isolamento** → ogni transazione deve essere eseguita **in modo isolato e indipendente** dalle altre transazione, l’eventuale fallimento di una transazione non deve interferire con le altre transazioni in esecuzione (è ammesso che il risultato cambi a causa di diverse operazioni, è un problema quando ci viene restituito un dato che non era quello richiesto)
 - **durabilità** → detta anche persistenza, si riferisce al fatto che una volta che una transazione abbia richiesto un *commit work*, i cambiamenti apportati **non dovranno più essere persi**. Per evitare che nel lasso di tempo fra il momento in cui la base di dati si impegna a scrivere le modifiche e quelli in cui li scrive effettivamente si verifichino perdite di dati dovuti a malfunzionamenti, vengono tenuti dei registri di log dove sono annotate tutte le operazioni sul DB
 
 ---
 ## Schedule di un insieme di transazioni
-Per **schedule** si intende un insieme di $T$ transizioni nella cui esecuzione viene mantenuto l’ordine delle singole operazioni di una transizioni, ma ci può essere interleaving tra le transizioni (esecuzione di una parte di una transizione, e una parte di un’altra transizione)
+Per **schedule** si intende un insieme di $T$ transizioni nella cui esecuzione viene mantenuto l’ordine delle singole operazioni di una transizioni, ma ci può essere interleaving tra le transazioni (esecuzione di una parte di una transizione, e una parte di un’altra transizione)
 
 ### Schedule seriale
 Si parla di **schedule seriale**, quando lo schedule è ottenuto permutando le transazioni in $T$, quindi uno schedule seriale corrisponde ad una esecuzione **sequenziale** (non interfoglia) delle transazioni
@@ -88,8 +88,8 @@ Il valore di $somma$ è un **dato aggregato**
 ## Serializzabilità
 Tutti gli schedule **seriali** sono **corretti** (grazie alla proprietà di isolamento), invece uno schedule **non seriale** è corretto se è *serializzabile*, cioè se è “**equivalente**” ad uno schedule seriale
 
->[!warning]
->Per **equivalente** non si intende che due schedule (per ogni dati modificato) producono valori uguali. Si potrebbero essere corretti anche se non producono gli stessi valori
+>[!warning] Equivalente non è uguale!
+>Ricordiamo ad esempio che nel caso di insiemi di dipendenze funzionali l’equivalenza era data di al fatto di avere la stessa chiusura
 
 ---
 ## Equivalenza di schedule
@@ -105,6 +105,7 @@ Inoltre è praticamente impossibile determinare in anticipo in quale ordine le o
 - carico del sistema
 - ordine temporale in cui le transizioni vengono sottomesse al sistema
 - priorità delle transazioni
+
 Infine se prima si eseguono le operazioni e poi si testa la serializzabilità dello schedule, i suoi effetti devono essere annullati e lo schedule risulta non serializzabile
 
 ---
@@ -115,6 +116,7 @@ L’approccio seguito nei sistemi è quello di determinare **metodi che garantis
 Si hanno due possibilità per garantire la serializzabilità:
 - **protocolli**
 - **timestamp**
+
 Nel dettaglio si ha: imporre dei *protocolli*, cioè delle regole, alle transazioni in modo da garantire la serializzabilità di ogni schedule oppure usare i *timestamp* delle transazioni, cioè degli identificatori delle transazioni che vengono generati dal sistema e in base ai quali le operazioni delle transazioni possono essere ordinate in modo da garantire serializzabilità
 
 ---

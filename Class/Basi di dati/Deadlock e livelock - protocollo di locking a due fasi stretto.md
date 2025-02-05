@@ -38,9 +38,10 @@ Quando si verifica una situazione di stallo questa viene risolta
 Per **verificare** il sussistere di una situazione di stallo si mantiene il **grafo di attesa**:
 - nodi → le transazioni
 - archi → $T_{i}\longrightarrow T_{j}$ se la transazione $T_{i}$ è in attesa di ottenere un lock su un item sul quale $T_{j}$ mantiene un lock
+
 Se in tale grafo c’è un ciclo si sta verificando una situazione di stallo che coinvolge le transazioni nel ciclo
 
->[!note]- Esempio
+>[!example]- Esempio
 >![[Pasted image 20241219235406.png]]
 
 Per **risolvere** il sussistere di una situazione di stallo viene fatto un *rollback* su una transazione nel ciclo e successivamente viene fatta ripartire
@@ -51,7 +52,6 @@ Quando si parla di rollback nello specifico avviene:
 
 ### Approcci preventivi
 Si cerca di evitare il verificarsi di situazioni di stallo adottando opportuni protocolli
-
 #### Esempio
 Si ordinano gli item e si impone alle transazioni si richiedere i lock necessari seguendo tale ordine. In tal modo non ci possono essere cicli nel grafo di attesa (e quindi non si può verificare un deadlock)
 
@@ -94,7 +94,7 @@ Per dati sporchi si intendono i dati scritti da una transazione sulla base di da
 >Lock a due fasi risolve → lost update, aggregato non corretto (no dirty data)
 >
 >Vediamo gli esempi
->**Ghost update con lock**
+>**Lost update con lock**
 >![[Pasted image 20241220001636.png|200]]
 >
 >**Aggregato non corretto con locking a due fasi**
@@ -134,13 +134,14 @@ I protocolli si distinguono in:
 Nella versione più conservativa una transazione $T$ richiede tutti i lock che servono all’inizio e li ottiene se e solo se **tutti i lock sono disponibili**. Se non li può ottenere tutti viene messa in una cosa di attesa.
 Si evita il deadlock, ma non il livelock
 
-Per evitare il verificarsi sia del deadlock che del livelock occorre che una transazione $T$ richiede tutti i lock che servono all’inizio e li ottiene se e solo se tutti i lock sono disponibili e nessuna transazione che precede $T$ nella coda è in attesa di un lock richiesto da $T$
+Per evitare il verificarsi sia del deadlock che del livelock occorre che una transazione $T$ richiede tutti i lock che servono all’inizio e li ottiene se e solo se tutti i lock sono disponibili e **nessuna transazione che precede $T$ nella coda è in attesa di un lock richiesto da $T$**
 
 **Vantaggi**
 - si evita il verificarsi del deadlock che del livelock
+
 **Svantaggi**
 - l’esecuzione di una transazione può essere ritardata
-- una transazione è costretta a richiedere un lock su ogni item che potrebbe anche se poi di fatto non lo utilizza
+- una transazione è costretta a richiedere un lock su ogni item che potrebbe essergli necessario, anche se poi di fatto non lo utilizza
 
 ### Protocolli aggressivi
 Nella versione più aggressiva una transazione deve richiedere un lock su un item immediatamente prima di leggerlo o scriverlo

@@ -14,20 +14,6 @@ Completed:
 - [[#Modifica|Modifica]]
 - [[#Cancellazione|Cancellazione]]
 ---
-## Corollario
-### Record
-I record corrispondono alla tuple della nostra tabella, e oltre ai campi che corrispondono agli attributi, ci possono essere altri campi che contengono **informazioni sul record stesso** o **puntatori ad altri record/blocchi**
-
-Possono essere ad esempio utilizzati per:
-- specificare il **tipo del record** → è necessario quando in uno stesso blocco sono memorizzati record di tipo diverso, cioè record appartenenti a più file
-- specificare la **lunghezza del record** → se il record ha campi a lunghezza variabile
-- contenere un bit di “cancellazione” o un bit di “usato/non usato”
-- **offset** → numero di byte del record che il campo occupa
-	- se tutti i campi del record hanno lunghezza fissa, l’inizio di ciascun campo sarà sempre ad un numero fisso dall’inizio del record
-	- se invece il record contiene campi  a lunghezza variabile, all’inizio di ogni campo c’è un contatore che specifica la lunghezza del campo in numero di byte, **oppure** all’inizio del record ci sono gli offset dei campi a lunghezza variabile (**tutti i campi a lunghezza fissa precedono quelli a lunghezza variabile**)
-		>[!hint]
-		>
-
 ## Introduction
 Nei file heap partiamo da una non organizzazione dei record, cioè una collocazione dei record nei file in un ordine determinato solo dall’ordine di inserimento
 
@@ -89,5 +75,5 @@ Per la modifica è necessario il costo della ricerca più un accesso in scrittur
 
 ---
 ## Cancellazione
-Per la modifica è necessario il costo della ricerca più un accesso in lettura (per leggere l’ultimo blocco) più due accessi in scrittura (per riscrivere in memoria secondaria il blocco modificato e l’ultimo blocco).
+Per la cancellazione di un record evitando di lasciare buchi è necessario il costo della ricerca più un accesso in lettura (per leggere l’ultimo blocco) più due accessi in scrittura (per riscrivere in memoria secondaria il blocco modificato e l’ultimo blocco).
 Se volessimo riutilizzare riutilizzare spazio ed evitare “buchi” ci basta riempire il posto mancante con il nuovo record, risulta invece essere più complicato nel caso in cui i record sono a lunghezza variabile, in quel caso dobbiamo spostare verso l’alto tutti i record successivi modificando eventuali puntatori

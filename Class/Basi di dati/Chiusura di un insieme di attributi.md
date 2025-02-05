@@ -86,7 +86,7 @@ L’algoritmo si ferma quando il nuovo insieme $S$ che otteniamo è (già) conte
 > STOP
 
 ---
-## L’algoritmo è corretto (teorema)
+		## L’algoritmo è corretto (teorema)
 L’algoritmo per il calcolo di $X^+$ calcola correttamente la chiusura di un insieme di attributi $X$ rispetto ad un insieme $F$ di dipendenze funzionali.
 
 >[!info] Dimostrazione
