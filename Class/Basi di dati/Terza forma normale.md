@@ -203,7 +203,7 @@ Dato uno schema $R$ e un insieme funzionali $F$ su $R$, $R$ è in 3NF se e solo 
 >- Se $X$ è una porzione di una chiave, ovvero se $\exists K\in R \mid X\subset K$, in tal caso $X\to A$ è una dipendenza parziale su $R$. **CONTRADDIZIONE**
 
 
----
+!
 ## Cosa vogliamo ottenere?
 Abbiamo visto che uno schema in 3NF ha delle buone proprietà che lo rendono preferibile ad uno che non è in 3NF. Un obbiettivo da tener presente quando si progetta una base di dati è quello di produrre uno schema in un ogni relazione sia in 3NF.
 Normalmente nella fase di progettazione concettuale si usa il modello Entità-Associazione e si individuano per l’appunto i concetti che devono essere rappresentati nella base di dati
