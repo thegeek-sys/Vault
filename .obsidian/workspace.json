@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "Class/Basi di dati/Basi di dati.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "pinned": true,
@@ -24,115 +24,17 @@
             }
           },
           {
-            "id": "c0ba3e42e1fbccde",
+            "id": "01d0adaef8d1b183",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Il controllo della concorrenza.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Il controllo della concorrenza"
-            }
-          },
-          {
-            "id": "54ae6c2b09bcfdbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Il meccanismo di lock - lock binario"
-            }
-          },
-          {
-            "id": "c0945e7f65111995",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Deadlock e livelock - protocollo di locking a due fasi stretto"
-            }
-          },
-          {
-            "id": "7a5c78df09cfb37c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Timestamp.md",
+                "file": "Flet-notes/2025-02-26_BD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Timestamp"
-            }
-          },
-          {
-            "id": "bb67288d72ba79f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Decomposizioni che preservano le dipendenze"
-            }
-          },
-          {
-            "id": "aeb7ef0551d974fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Chiusura di un insieme di dipendenze funzionali"
-            }
-          },
-          {
-            "id": "2cf4908fca774d6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Copertura minimale di un insieme di dipendenze"
-            }
-          },
-          {
-            "id": "99dd01a1a1b8dc11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "File con indice - caratteristiche ed esercizi"
+              "title": "2025-02-26_BD"
             }
           }
         ],
@@ -155,7 +57,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -188,13 +91,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -294,36 +195,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c0ba3e42e1fbccde",
+  "active": "01d0adaef8d1b183",
   "lastOpenFiles": [
-    "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
-    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
+    "Flet-notes/2025-02-26_BD.md",
     "Class/Basi di dati/Basi di dati.md",
-    "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
-    "Class/Basi di dati/Il controllo della concorrenza.md",
-    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
-    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
-    "Class/Basi di dati/Algoritmo di decomposizione.md",
-    "Class/Basi di dati/Timestamp.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/Processi/Vita di un processo.md",
+    "Class/Sistemi Operativi/Scheduling/Scheduling.md",
+    "Class/Sistemi Operativi/Scheduling/Scheduling nei sistemi operativi.md",
+    "Class/Sistemi Operativi/Processi/Thread.md",
+    "Class/Sistemi Operativi/Gestione della memoria/Memoria virtuale - hardware e strutture di controllo.md",
+    "Class/Sistemi Operativi/Processi/Processi.md",
+    "Class/Sistemi Operativi/Gestione della memoria/Partizionamento della memoria.md",
+    "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
+    "Class/Sistemi Operativi/Approfondimenti - Buffer Overflow.md",
+    "Class/Class.md",
     "Class/Basi di dati/Il meccanismo di lock - lock binario.md",
+    "Class/Basi di dati/Deadlock e livelock - protocollo di locking a due fasi stretto.md",
+    "Class/Basi di dati/Timestamp.md",
+    "Class/Basi di dati/Decomposizioni che preservano le dipendenze.md",
+    "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
+    "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
+    "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
+    "Class/Basi di dati/Il controllo della concorrenza.md",
+    "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Class/Basi di dati/B-tree - caratteristiche ed esercizi.md",
     "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
     "Class/Basi di dati/File heap.md",
     "Class/Basi di dati/Organizzazione fisica dei dati.md",
-    "Class/Basi di dati/Modello relazionale.md",
-    "Class/Basi di dati/Terza forma normale.md",
-    "Class/Basi di dati/Algebra relazionale.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale - Dipendenze funzionali.md",
-    "Class/Basi di dati/Identificazione di una chiave.md",
-    "Class/Basi di dati/Esercizi.md",
-    "Class/Basi di dati/Chiusura di un insieme di attributi.md",
-    "Class/Basi di dati/Untitled.md",
-    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
-    "Class/Basi di dati/Progettazione di una base di dati relazionale - Problemi e vincoli.md",
     "Files/Pasted image 20250129182237.png",
     "Files/Pasted image 20250129182000.png",
-    "Class/Basi di dati/Tips esame.md",
-    "Class/Sistemi Operativi/Gestione della concorrenza/Semafori.md",
     "Files/Pasted image 20241220011528.png",
     "Files/Pasted image 20241220011442.png",
     "Files/Pasted image 20241220011439.png",
