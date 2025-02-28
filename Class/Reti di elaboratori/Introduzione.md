@@ -94,4 +94,22 @@ ricerca, biblioteche, musei, scuole e altri luoghi in cui si fa istruzione, scie
 Oggi la capacità delle singole tratte della dorsale arriva a 100 Gbps, mentre quella dei collegamenti di accesso può raggiungere i 40 Gbps in base alle necessità di banda della sede. Grazie alla grande scalabilità delle tecnologie utilizzate, queste capacità possono evolvere facilmente insieme alle necessità degli utenti. È prossimo infatti il primo collegamento utente a 100 Gbps.
 
 ---
-## Commutazione
+## Commutazione (switching)
+Una internet è una combinazione di link e dispositivi capaci di scambiarsi informazioni. In particolare i sistemi terminali appartenenti alla rete comunicano tra loro per mezzo di dispositivi come switch e router che si trovano nel percorso tra i sistemi sorgente e destinazione
+
+In base al funzionamento degli switch esistono due tipi di reti:
+- **reti a commutazione di circuito**
+- **reti a commutazione di pacchetto**
+
+### Reti a commutazione di circuito
+Tra due dispositivi è sempre disponibile un collegamento dedicato, chiamato circuito, usato per l’intera comunicazione.
+Vengono riservate le risorse necessarie per la comunicazione (banda, etc.) e le informazioni riguardanti il circuito vengono mantenute all’interno della rete (simile al sistema telefonico)
+
+![[Pasted image 20250228103801.png|center|400]]
+Anche se esistono più percorsi tra due dispositivi in comunicazione, solo uno di questi verrà usato per l’intera comunicazione
+
+#### Efficienza
+La sua efficienza sta nel fatto che nel momento in cui viene stabilito un circuito viene garantita una certa capacità
+![[Pasted image 20250228104052.png|400]]
+
+Infatti  le risorse di rete vengono suddivise in “pezzi”
