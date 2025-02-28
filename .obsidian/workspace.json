@@ -226,19 +226,19 @@
           }
         ],
         "direction": "vertical",
-        "x": 760,
+        "x": 780,
         "y": 499,
-        "width": 700,
+        "width": 680,
         "height": 447,
         "maximize": false,
         "zoom": 0.5
       }
     ]
   },
-  "active": "dffa3650798a8b01",
+  "active": "a6a92bee2edf7936",
   "lastOpenFiles": [
-    "Flet-notes/2025-02-27_RDE.md",
     "Class/Reti di elaboratori/Introduzione.md",
+    "Flet-notes/2025-02-27_RDE.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Class/Sistemi Operativi/Introduzione.md",
     "Class/Basi di dati/Basi di dati.md",
