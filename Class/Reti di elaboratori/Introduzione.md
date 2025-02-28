@@ -112,4 +112,4 @@ Anche se esistono più percorsi tra due dispositivi in comunicazione, solo uno d
 La sua efficienza sta nel fatto che nel momento in cui viene stabilito un circuito viene garantita una certa capacità
 ![[Pasted image 20250228104052.png|400]]
 
-Infatti  le risorse di rete vengono suddivise in “pezzi”
+Infatti  le risorse di rete vengono suddivise in “pezzi”, i quali vengono allocati ai vari collegamenti. Questa tipo di suddivisione può essere della
