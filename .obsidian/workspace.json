@@ -8,19 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7c9b28144daa001a",
+            "id": "6e67d30870868a0e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Progettazione di algoritmi/Progettazione di algoritmi.md",
+                "file": "Class/Algoritmi/Algoritmi.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Progettazione di algoritmi"
+              "title": "Algoritmi"
             }
           },
           {
@@ -38,21 +38,20 @@
             }
           },
           {
-            "id": "6e67d30870868a0e",
+            "id": "613c45aeb770dd6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Algebra/Algebra.md",
+                "file": "Class/Algoritmi/II/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algebra"
+              "title": "Introduzione"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,19 +208,29 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6e67d30870868a0e",
+  "active": "9da67dfcce4e8838",
   "lastOpenFiles": [
-    "Class/Progettazione di algoritmi/Progettazione di algoritmi.md",
-    "Class/Algoritmi/I/Visitare gli alberi.md",
-    "Class/Algoritmi/I/Strutture dati.md",
-    "Class/Algoritmi/I/Esercizi.md",
-    "Class/Algoritmi/I/Algoritmi.md",
-    "Class/Algoritmi/I/Algoritmi di sorting.md",
-    "Class/Algoritmi/I/Alberi di ricerca.md",
+    "Class/Algoritmi/II/Introduzione.md",
     "Class/Algoritmi/Algoritmi.md",
-    "Class/Algoritmi/Alberi di ricerca.md",
-    "Class/Algoritmi/I",
+    "Class/Algoritmi/II",
+    "Class/Algoritmi/untitled folder",
+    "Class/Introduzione agli algoritmi/Strutture dati.md",
+    "Class/Introduzione agli algoritmi",
+    "Class/Algoritmi/I/Algoritmi di sorting.md",
     "Flet-notes/2025-02-27_ALG.md",
+    "Class/Progettazione di algoritmi/Progettazione di algoritmi.md",
+    "Class/Algebra/Algebra.md",
+    "Class/Algoritmi/I/Esercizi.md",
+    "Class/Algoritmi/I/Strutture dati.md",
+    "Class/Algoritmi/I/Visitare gli alberi.md",
+    "Class/Algoritmi/I/Alberi di ricerca.md",
+    "Class/Algoritmi/Visitare gli alberi.md",
+    "Class/Algoritmi/Strutture dati.md",
+    "Class/Algoritmi/Esercizi.md",
+    "Class/Algoritmi/Algoritmi di sorting.md",
+    "Class/Algoritmi/Alberi di ricerca.md",
+    "Class/Algoritmi/I/Algoritmi.md",
+    "Class/Algoritmi/I",
     "Class/Reti di elaboratori/Introduzione.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Class/Basi di dati/Modello relazionale.md",
@@ -243,20 +252,10 @@
     "Class/Progettazione di algoritmi",
     "Class/Reti di elaboratori",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Sistemi Operativi/Processi/Vita di un processo.md",
-    "Class/Sistemi Operativi/Scheduling/Scheduling.md",
-    "Class/Sistemi Operativi/Scheduling/Scheduling nei sistemi operativi.md",
-    "Class/Sistemi Operativi/Processi/Thread.md",
-    "Class/Sistemi Operativi/Gestione della memoria/Memoria virtuale - hardware e strutture di controllo.md",
-    "Class/Sistemi Operativi/Processi/Processi.md",
-    "Class/Sistemi Operativi/Gestione della memoria/Partizionamento della memoria.md",
     "Class/Sistemi Operativi/Approfondimenti - Passwords",
     "Problema dei lettori",
     "Class/Sistemi Operativi/Processi",
     "Class/Sistemi Operativi/Scheduling",
-    "Class/Sistemi Operativi/Gestione della concorrenza",
-    "Files/Pasted image 20241122000018.png.sb-52feadf3-bWZpro",
-    "Class/Sistemi Operativi/File-system",
     "Untitled.canvas"
   ]
 }
