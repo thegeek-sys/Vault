@@ -87,3 +87,11 @@ Ad esempio un’azienda che ha due uffici in città differenti ha una rete LAN i
 
 ### Rete eterogenea composta da quattro WAN e tre LAN
 ![[Pasted image 20250228102901.png|center|500]]
+
+### GARR
+La rete GARR interconnette ad altissima capacità università, centri di
+ricerca, biblioteche, musei, scuole e altri luoghi in cui si fa istruzione, scienza, cultura e innovazione su tutto il territorio nazionale. È un’infrastruttura in fibra ottica che utilizza le più avanzate tecnologie di comunicazione e si sviluppa su circa 15.000 km tra collegamenti di dorsale e di accesso.
+Oggi la capacità delle singole tratte della dorsale arriva a 100 Gbps, mentre quella dei collegamenti di accesso può raggiungere i 40 Gbps in base alle necessità di banda della sede. Grazie alla grande scalabilità delle tecnologie utilizzate, queste capacità possono evolvere facilmente insieme alle necessità degli utenti. È prossimo infatti il primo collegamento utente a 100 Gbps.
+
+---
+## Commutazione
