@@ -55,4 +55,35 @@ Si differenziano in due tipi:
 
 ### LAN con cavo condiviso (broadcast)
 ![[Pasted image 20250228101112.png|center|400]]
-Qui quando un nodo trasmette, tutti gli altri ricevono quella trasmissione ma solo il destinatario la elabora
+Qui quando un nodo trasmette, tutti gli altri ricevono quella trasmissione ma solo il destinatario la elabora.
+In questo caso solo un terminale alla volta può trasmettere
+
+### LAN con switch di interconnessione
+![[Pasted image 20250228101606.png|center|350]]
+Qui ogni dispositivo in rete è direttamente collegato allo switch, il quale è in grado di riconoscere l’indirizzo di destinazione e di inviare il pacchetto al solo destinatario (senza inviarlo agli altri).
+In questo caso più host alla volta possono trasmettere contemporaneamente
+
+---
+## Rete WAN
+Le reti WAN permettono l’**interconnessione di dispositivi in grado di comunicare** (interconnette switch, router, modem) e tipicamente è gestita da un internet service provider (*ISP*) che fornisce servizi alle varie LAN
+
+Esistono di due tipi:
+- WAN punto-punto
+- WAN a commutazione (switched)
+
+>[!example]- WAN punto-punto
+>
+![[Pasted image 20250228102058.png|center|450]]
+Collega due mezzi di comunicazione tramite un mezzo trasmissivo (cavo o wireless)
+
+>[!example]- WAN a commutazione
+>![[Pasted image 20250228102209.png|center|450]]
+>Compone una rete con più di due punti di terminazione e viene utilizzata nelle dorsali di internet
+
+###  Internetwork composta da due LAN e una WAN punto-punto
+Oggigiorno tipicamente LAN e WAN sono connesse tra loro per formare una internetwork (o internet).
+Ad esempio un’azienda che ha due uffici in città differenti ha una rete LAN in ogni singolo ufficio (per far comunicare gli impiegati tra loro) e affitta una WAN punto-punto da un ISP realizzando un internet privato
+![[Pasted image 20250228102755.png|center|550]]
+
+### Rete eterogenea composta da quattro WAN e tre LAN
+![[Pasted image 20250228102901.png|center|500]]
