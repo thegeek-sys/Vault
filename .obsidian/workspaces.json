@@ -1113,8 +1113,23 @@
                   "icon": "lucide-file",
                   "title": "Basi di dati"
                 }
+              },
+              {
+                "id": "3ca506e484c95efa",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Modello relazionale.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modello relazionale"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1271,8 +1286,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "785e57b5e4fd92db",
-      "mtime": "2025-02-26T14:26:36+01:00"
+      "active": "3ca506e484c95efa",
+      "mtime": "2025-02-28T11:14:47+01:00"
     },
     "Reti di elaboratori": {
       "main": {
@@ -1284,64 +1299,9 @@
             "type": "tabs",
             "children": [
               {
-                "id": "785e57b5e4fd92db",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Basi di dati/Basi di dati.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file",
-                  "title": "Basi di dati"
-                }
-              },
-              {
-                "id": "01d0adaef8d1b183",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2025-02-26_BD.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2025-02-26_BD"
-                }
-              },
-              {
-                "id": "44121268e24b74a1",
-                "type": "leaf",
-                "state": {
-                  "type": "release-notes",
-                  "state": {
-                    "currentVersion": "1.8.7"
-                  },
-                  "icon": "lucide-book-up",
-                  "title": "Release Notes 1.8.7"
-                }
-              },
-              {
-                "id": "a6a92bee2edf7936",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2025-02-27_RDE.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2025-02-27_RDE"
-                }
-              },
-              {
                 "id": "2fa9fe16485b867d",
                 "type": "leaf",
+                "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
@@ -1349,12 +1309,27 @@
                     "mode": "source",
                     "source": false
                   },
+                  "pinned": true,
                   "icon": "lucide-file",
                   "title": "Reti di elaboratori"
                 }
+              },
+              {
+                "id": "dffa3650798a8b01",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Reti di elaboratori/Introduzione.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Introduzione"
+                }
               }
             ],
-            "currentTab": 4
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1411,7 +1386,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1511,8 +1487,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "2fa9fe16485b867d",
-      "mtime": "2025-02-27T16:41:15+01:00"
+      "active": "dffa3650798a8b01",
+      "mtime": "2025-02-28T11:14:32+01:00"
     },
     "Progettazione di algoritmi": {
       "main": {

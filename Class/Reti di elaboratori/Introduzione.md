@@ -5,6 +5,34 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#La rete|La rete]]
+	- [[#La rete#Dispositivi terminali|Dispositivi terminali]]
+	- [[#La rete#Dispositivi di interconnessione|Dispositivi di interconnessione]]
+- [[#Collegamenti|Collegamenti]]
+	- [[#Collegamenti#Mezzi trasmissivi cablati|Mezzi trasmissivi cablati]]
+	- [[#Collegamenti#Mezzi trasmissivi wireless|Mezzi trasmissivi wireless]]
+- [[#Classificazione delle reti|Classificazione delle reti]]
+- [[#Reti LAN|Reti LAN]]
+	- [[#Reti LAN#LAN con cavo condiviso (broadcast)|LAN con cavo condiviso (broadcast)]]
+	- [[#Reti LAN#LAN con switch di interconnessione|LAN con switch di interconnessione]]
+- [[#Rete WAN|Rete WAN]]
+	- [[#Rete WAN#Internetwork composta da due LAN e una WAN punto-punto|Internetwork composta da due LAN e una WAN punto-punto]]
+	- [[#Rete WAN#Rete eterogenea composta da quattro WAN e tre LAN|Rete eterogenea composta da quattro WAN e tre LAN]]
+	- [[#Rete WAN#GARR|GARR]]
+- [[#Commutazione (switching)|Commutazione (switching)]]
+	- [[#Commutazione (switching)#Reti a commutazione di circuito|Reti a commutazione di circuito]]
+		- [[#Reti a commutazione di circuito#Efficienza|Efficienza]]
+		- [[#Reti a commutazione di circuito#FDM e TDM|FDM e TDM]]
+	- [[#Commutazione (switching)#Rete a commutazione di pacchetto (store and forward)|Rete a commutazione di pacchetto (store and forward)]]
+- [[#Internet|Internet]]
+- [[#L’accesso a Internet|L’accesso a Internet]]
+	- [[#L’accesso a Internet#Accesso via rete telefonica|Accesso via rete telefonica]]
+		- [[#Accesso via rete telefonica#Servizio dial-up|Servizio dial-up]]
+		- [[#Accesso via rete telefonica#Servizio DSL|Servizio DSL]]
+	- [[#L’accesso a Internet#Accesso tramite Ethernet|Accesso tramite Ethernet]]
+	- [[#L’accesso a Internet#Accesso wireless|Accesso wireless]]
+---
 ## La rete
 La rete è composta tipicamente da due tipi di dispositivi in grado di scambiarsi informazioni:
 - **dispositivi terminali** (end system)
@@ -152,4 +180,22 @@ Si hanno tre modi per accedere ad Internet:
 ### Accesso via rete telefonica
 E’ possibile collegarsi a Internet modificando la linea telefonica fra la sede del dispositivo che vuole connettersi (casa, azienda, etc.) e la centrale telefonica con una WAN punto-punto
 #### Servizio dial-up
-Consiste nell’inserire sulla linea telefonica un modem (modulatore-demodulatore) che converte i dati digitali (del computer) 
+![[Pasted image 20250228110626.png|center|550]]
+
+Consiste nell’inserire sulla linea telefonica un modem (modulatore-demodulatore) che converte i dati digitali (del computer) in analogici (per trasmetterli sulla linea telefonica) e viceversa.
+Però questo metodo risulta essere lento e non permette di parlare e navigare contemporaneamente
+
+#### Servizio DSL
+![[Pasted image 20250228110939.png|center|550]]
+
+Il servizio DSL (*Digital Subscriber Line*) è una tecnologia che supporta la **comunicazione digitale ad alta velocità sulla linea telefonica**. In questo caso infatti la divisione del collegamento tra abitazione e ISP consiste di tre bande di frequenza non sovrapposte, garantendo velocità e la possibilità di utilizzare voce e dati in contemporanea
+
+### Accesso tramite Ethernet
+Nelle reti aziendali e universitarie le tecnologie usate per l’accesso a Internet sono **Ethernet**. Lo switch (Ethernet) della LAN è generalmente collegato a un router istituzionale che è connesso ai router della dorsale
+
+### Accesso wireless
+L’accesso wireless può essere di due tipi:
+- Wi-Fi
+	Access Point (locale) connesso alla Ethernet cablata con raggio di azione di qualche decina di metri
+- Cellulare
+	Si usa la rete cellulare attraverso gli access point (base station) della compagnia telefonica cellulare, che hanno raggio di azione di decine di kilometri
