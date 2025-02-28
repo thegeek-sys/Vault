@@ -1488,7 +1488,7 @@
         }
       },
       "active": "dffa3650798a8b01",
-      "mtime": "2025-02-28T11:14:32+01:00"
+      "mtime": "2025-02-28T11:16:34+01:00"
     },
     "Progettazione di algoritmi": {
       "main": {
@@ -1692,5 +1692,5 @@
       "mtime": "2025-02-28T09:46:26+01:00"
     }
   },
-  "active": "Reti di elaboratori"
+  "active": "Progettazione di algoritmi"
 }

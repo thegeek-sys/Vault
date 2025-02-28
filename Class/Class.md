@@ -1,6 +1,6 @@
 # 2023/2024
 - [[Architettura degli elaboratori]]
-- [[Introduzione agli algoritmi]]
+- [[Algoritmi]]
 
 # 2024/2025
 - [[Sistemi Operativi]]
