@@ -8,33 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7c9b28144daa001a",
+            "id": "2fa9fe16485b867d",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Progettazione di algoritmi/Progettazione di algoritmi.md",
+                "file": "Class/Reti di elaboratori/Reti di elaboratori.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Progettazione di algoritmi"
+              "title": "Reti di elaboratori"
             }
           },
           {
-            "id": "f060008ce34c492a",
+            "id": "dffa3650798a8b01",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flet-notes/2025-02-27_ALG.md",
+                "file": "Class/Reti di elaboratori/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-27_ALG"
+              "title": "Introduzione"
             }
           }
         ],
@@ -196,17 +196,58 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f060008ce34c492a",
+  "floating": {
+    "id": "6692f1f911f16ebc",
+    "type": "floating",
+    "children": [
+      {
+        "id": "1922e15836437716",
+        "type": "window",
+        "children": [
+          {
+            "id": "4fedef1e69424fd9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a6a92bee2edf7936",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Flet-notes/2025-02-27_RDE.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "2025-02-27_RDE"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 641,
+        "y": 499,
+        "width": 819,
+        "height": 447,
+        "maximize": false,
+        "zoom": 0.5
+      }
+    ]
+  },
+  "active": "dffa3650798a8b01",
   "lastOpenFiles": [
-    "Class/Progettazione di algoritmi/Progettazione di algoritmi.md",
     "Flet-notes/2025-02-27_RDE.md",
-    "Class/Class.md",
-    "Class/Progettazione di algoritmi",
+    "Class/Reti di elaboratori/Introduzione.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
+    "Class/Sistemi Operativi/Introduzione.md",
+    "Class/Basi di dati/Basi di dati.md",
     "Flet-notes/2025-02-26_BD.md",
     "Flet-notes/2025-02-27_ALG.md",
+    "Class/Progettazione di algoritmi/Progettazione di algoritmi.md",
+    "Class/Class.md",
+    "Class/Progettazione di algoritmi",
     "Class/Reti di elaboratori",
-    "Class/Basi di dati/Basi di dati.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/Processi/Vita di un processo.md",
     "Class/Sistemi Operativi/Scheduling/Scheduling.md",
@@ -224,8 +265,6 @@
     "Class/Basi di dati/Chiusura di un insieme di dipendenze funzionali.md",
     "Class/Basi di dati/Copertura minimale di un insieme di dipendenze.md",
     "Class/Basi di dati/File con indice - caratteristiche ed esercizi.md",
-    "Class/Basi di dati/Il controllo della concorrenza.md",
-    "Class/Basi di dati/Algoritmo di decomposizione.md",
     "Files/Pasted image 20250129182237.png",
     "Files/Pasted image 20250129182000.png",
     "Files/Pasted image 20241220011528.png",
