@@ -49,4 +49,10 @@ In questo caso i segnali si propagano nell’**atmosfera** e possono avere molte
 ## Reti LAN
 Una rete LAN solitamente è una **rete privata che collega i sistemi terminali** in un singolo ufficio (azienda, università), per permettergli di condividere risorse. Ogni sistema terminale nella LAN ha un indirizzo che lo identifica univocamente nella rete.
 
-Si differenziano in due tipi
+Si differenziano in due tipi:
+- LAN a cavo condiviso (broadcast)
+- LAN a commutazione (con switch)
+
+### LAN con cavo condiviso (broadcast)
+![[Pasted image 20250228101112.png|center|400]]
+Qui quando un nodo trasmette, tutti gli altri ricevono quella trasmissione ma solo il destinatario la elabora
