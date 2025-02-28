@@ -112,4 +112,44 @@ Anche se esistono più percorsi tra due dispositivi in comunicazione, solo uno d
 La sua efficienza sta nel fatto che nel momento in cui viene stabilito un circuito viene garantita una certa capacità
 ![[Pasted image 20250228104052.png|400]]
 
-Infatti  le risorse di rete vengono suddivise in “pezzi”, i quali vengono allocati ai vari collegamenti. Questa tipo di suddivisione può essere della
+Infatti  le risorse di rete vengono suddivise in “pezzi”, i quali vengono allocati ai vari collegamenti. Questa tipo di suddivisione può essere: della frequenza o del tempo
+
+#### FDM e TDM
+>[!info] FDM → Frequency Division Multiplexing
+>![[Pasted image 20250228104803.png|450]]
+
+>[!info] TDM → Time Division Multiplexing
+>![[Pasted image 20250228104847.png|450]]
+
+### Rete a commutazione di pacchetto (store and forward)
+In questo caso non viene riservato nessun tipo di risorsa, ma quello che si va a “suddividere” sono i dati. Per mandare ad esempio un video viene diviso in pacchetti per poi essere condiviso (non si ha una comunicazione continua). I dati vengono quindi trasmessi in blocchi, o **pacchetti**.
+
+Il mittente dunque spedisce i suoi pacchetti al router che li inserisce in una coda (*store*) e uno alla volta li inoltra (*forward*).
+
+![[Pasted image 20250228105203.png|500]]
+
+Ogni nodo deve ricevere un pacchetto per intero e poi lo invia all’host ricevente (in realtà i router hanno una coda per singolo host). In questo esempio hanno 5 code di entrata/uscita (può ricevere anche dall’altro router)
+
+![[Pasted image 20250228105456.png|450]]
+
+Inoltre **ogni pacchetto viaggia indipendentemente dagli altri**, per questo motivo non necessariamente se vengono mandati più pacchetti da uno stesso mittente ad uno stesso ricevente questi arrivano nello stesso momento (possono prendere percorsi diversi).
+
+Risulta essere molto più flessibile in termine di prestazioni rispetto alla commutazione di circuito, infatti se ci sta un solo dispositivo può trasmettere a velocità piena e solo se ci stanno più host viene suddivisa la banda
+
+---
+## Internet
+Si è detto che una internet (con i minuscola) è costituita da due o più reti interconnesse. L’internet più famosa è chiamata Internet (I maiuscola) ed è composta da migliaia di reti interconnesse (è una rete a commutazione di pacchetto)
+
+![[Pasted image 20250228105858.png|500]]
+
+---
+## L’accesso a Internet
+Si hanno tre modi per accedere ad Internet:
+- accesso via **rete telefonica** → servizio dial-up (via modem), servizio DSL (digital subscriber line)
+- accesso tramite **reti wireless** → WiFi, cellulare
+- **collegamento diretto** → aziende di grandi dimensioni possono divenire ISP locali, affittando delle reti WAN da un operatore
+
+### Accesso via rete telefonica
+E’ possibile collegarsi a Internet modificando la linea telefonica fra la sede del dispositivo che vuole connettersi (casa, azienda, etc.) e la centrale telefonica con una WAN punto-punto
+#### Servizio dial-up
+Consiste nell’inserire sulla linea telefonica un modem (modulatore-demodulatore) che converte i dati digitali (del computer) 
