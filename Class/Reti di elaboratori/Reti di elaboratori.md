@@ -1,2 +1,3 @@
 - [[Class/Reti di elaboratori/Introduzione|Introduzione]]
+- [[Capacità e prestazioni delle reti]]
 - 
