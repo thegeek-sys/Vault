@@ -56,4 +56,9 @@ Per rappresentare un grafo tramite matrice di adiacenza, metteremo $M[i][j]=1$ s
 >>[!info] Se il grafo è non diretto, la matrice di adiacenza è sempre simmetrica rispetto alla diagonale
 
 >[!example]
->
+>![[Pasted image 20250303114617.png|200]]
+>![[Pasted image 20250303114545.png|300]]
+
+---
+## Rappresentazione di grafi tramite liste di adiacenza
+Utilizzo una lista di liste $G$, la lista ha tanti elementi quanti sono i nodi del grafo $G$. $G[x]$ è una lista contenente i nodi adiacenti al nodo $x$, ovvero i nodi raggiunti da archi che partono da $x$
