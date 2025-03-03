@@ -95,9 +95,9 @@ Nell’esempio il thoughput è il minimo tra $T_{1}$ e $T_{2}$. Se $T_{1}$ è $1
 ## Latenza (delay) e perdite (loss) di pacchetti
 La **latenza** è il tempo impiegato affinché un pacchetto arrivi completamente a destinazione del momento in cui il primo bit parte dalla sorgente
 
-![[Pasted image 20250303100144.png|450]]
-
 Nella commutazione di pacchetto i pacchetti si accodano nei buffer dei router, ma se il tasso di arrivo dei pacchetti sul collegamento eccede la capacità del collegamento di evaderli, i pacchetti si accordano in attesa del proprio turno
+
+![[Pasted image 20250303100144.png|450]]
 
 Esistono quattro tipi di case di ritardo per i pacchetti:
 - ritardo di **elaborazione** (*processing delay*)
@@ -108,4 +108,9 @@ Esistono quattro tipi di case di ritardo per i pacchetti:
 	- attesa di trasmissione → sia nella coda di input che nella coda di output in base al grado di congestione del router (devono attendere che gli altri pacchetti entrino/escano)
 	- varia da pacchetto a pacchetto → infatti potrebbe succedere che la coda verso un router sia piena mentre la coda verso un altro router è vuota (quello verso il secondo router verrà inviato prima)
 - ritardo di **trasmissione** (*transmission delay*)
+	- il ritardo di trasmissione dipende dal rate del collegamento e dalla lunghezza del pacchetto (bit che devo trasmettere). 
+		Quindi il ritardo di trasmissione è dato da $L/R$ dove $R$ è il rate del collegamento (in $bps$) e $L$ è la lunghezza del pacchetto (in $bit$)
 - ritardo di **propagazione** (*propagation delay*)
+	- il tempo impiegato dal pacchetto, una volta immesso sul canale, per raggiungere (propagarsi) il prossimo router/destinazione.
+		Questo è dato dalla $d/s$ dove $d$ è la lunghezza del canale (distanza che devo percorrere) e $s$ è la velocità di propagazione (velocità della luce, valida per il singolo bit)
+
