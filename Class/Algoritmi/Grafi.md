@@ -20,3 +20,10 @@ Inoltre un grafo denso si dice *completo* se ha tutti gli archi (es. $m=\theta(n
 
 ---
 ## L’albero
+![[Pasted image 20250303111727.png|center|200]]
+Un grafo **connesso** (esiste almeno un cammino tra ogni coppia di nodi) e senza **cicli** è detto **albero**
+
+
+>[!example] Grafo sconnesso con ciclo
+>![[Pasted image 20250303111808.png|200]]
+
