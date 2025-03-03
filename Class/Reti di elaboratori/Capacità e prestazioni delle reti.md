@@ -5,6 +5,22 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Rete di acceso|Rete di acceso]]
+- [[#Struttura di Internet|Struttura di Internet]]
+- [[#Capacità e prestazioni|Capacità e prestazioni]]
+- [[#Bandwidth e bit rate|Bandwidth e bit rate]]
+- [[#Throughput|Throughput]]
+	- [[#Throughput#Un percorso attraverso il backbone Internet|Un percorso attraverso il backbone Internet]]
+	- [[#Throughput#Effetto del throughput nei link condivisi|Effetto del throughput nei link condivisi]]
+- [[#Latenza (delay)|Latenza (delay)]]
+	- [[#Latenza (delay)#Ritardo di nodo|Ritardo di nodo]]
+	- [[#Latenza (delay)#Ritardo di accodamento|Ritardo di accodamento]]
+- [[#Perdita di pacchetti (packet loss)|Perdita di pacchetti (packet loss)]]
+- [[#Ritardi e percorsi in Internet|Ritardi e percorsi in Internet]]
+- [[#Prodotto $\text{rate}\cdot \text{ritardo}$|Prodotto rate*ritardo]]
+---
 ## Introduction
 L’internet può essere interpretato come una **rete di reti** composta da reti di accesso e backbone Internet
 
@@ -192,7 +208,12 @@ Il tempo di andata e ritorno (**round trip time** - *RTT*) include i 4 ritardi v
 
 ---
 ## Prodotto $\text{rate}\cdot \text{ritardo}$
-Il prodotto $\text{rate}\cdot \text{ritardo}$ rappresenta il **massimo numero di bit che possono trovarsi sul canale**. Può essere visto come la sezione trasversale del tubo che rappresenta il canale
+Il prodotto $\text{rate}\cdot \text{ritardo}$ rappresenta il **massimo numero di bit che possono trovarsi sul canale**.
 
 >[!example]
->Supponiamo di avere un link 
+>Supponiamo di avere un link con rate di $1\text{ bps}$ e un ritardo di $5 \text{ sec}$
+>![[Pasted image 20250303105915.png|300]]
+>Ciò vuol dire dunque che non possono esserci più di $5\text{ bit}$ contemporaneamente sul link
+
+Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale del tubo rappresenta il rate e la lunghezza rappresenta il ritardo. Possiamo dire che il volume del tubo definisce il prodotto $\text{rate-ritardo}$
+![[Pasted image 20250303110147.png|460]]
