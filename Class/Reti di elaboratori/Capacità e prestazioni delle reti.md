@@ -92,7 +92,7 @@ Nell’esempio il thoughput è il minimo tra $T_{1}$ e $T_{2}$. Se $T_{1}$ è $1
 >![[Pasted image 20250303095710.png|400]]
 
 ---
-## Latenza (delay) e perdite (loss) di pacchetti
+## Latenza (delay)
 La **latenza** è il tempo impiegato affinché un pacchetto arrivi completamente a destinazione del momento in cui il primo bit parte dalla sorgente
 
 Nella commutazione di pacchetto i pacchetti si accodano nei buffer dei router, ma se il tasso di arrivo dei pacchetti sul collegamento eccede la capacità del collegamento di evaderli, i pacchetti si accordano in attesa del proprio turno
@@ -137,3 +137,62 @@ Esistono quattro tipi di case di ritardo per i pacchetti:
 >>[!warning]
 >>l primo bit di un pacchetto può arrivare al secondo router prima che il pacchetto sia stato interamente trasmesso dal primo router
 
+### Ritardo di nodo
+$$
+d_{\text{nodo 1}}=d_{\text{proc}}+d_{\text{queue}}+d_{\text{trans}}+d_{\text{prop}}
+$$
+- $d_{\text{trans}}$ → ritardo di trasmissione (significativo sui collegamenti a bassa velocità)
+- $d_{\text{prop}}$ → ritardo di propagazione (da pochi microsecondi a centinaia di millisecondi)
+- $d_{\text{proc}}$ → ritardo di elaborazione (in genere pochi microsecondi, o anche meno)
+- $d_{\text{queue}}$ → ritardo di accodamento (dipende dalla congestione)
+
+### Ritardo di accodamento
+Il ritardo di accodamento, come già detto, può variare da pacchetto a pacchetto e dipende dal tasso di arrivo, dal rate e dalla lunghezza dei pacchetti
+- $R=\text{rate di trasmissione (bps)}$
+- $L=\text{lunghezza del pacchetto (bit)}$
+- $a = \text{tasso medio di arrivo dei pacchetti (pkt/s)}$
+$$
+\frac{La}{R}=\text{intensità di traffico}
+$$
+![[Pasted image 20250303104413.png|center]]
+
+Se:
+- $La/R \sim 0$ → poco ritardo
+- $La/R \rightarrow 1$ → il ritardo si fa consistente
+- $La/R>1$ → più “lavoro” in arrivo di quanto possa essere effettivamente svolto
+
+---
+## Perdita di pacchetti (packet loss)
+Se una coda (detta anche buffer) ha capacità finita, **quando il pacchetto trova la coda piena, viene scartato** (e quindi va perso).
+Il pacchetto perso può essere ritrasmesso dal nodo precedente, del sistema terminale che lo ha generato o non essere ritrasmesso affatto
+
+![[Pasted image 20250303104710.png|400]]
+
+---
+## Ritardi e percorsi in Internet
+Ma cosa significano effettivamente packet delay e loss nella “vera” Internet?
+`traceroute` è il programma diagnostico che fornisce una misura del ritardo dalla sorgente a tutti i router lungo il percorso Internet punto-punto verso la destinazione.
+
+![[Pasted image 20250303105053.png|400]]
+In particolare invia gruppi di tre pacchetti, dove ogni gruppo ha tempo di vita incrementale (da $1$ a $n$, massimo valore $30$) che raggiungeranno il router ($i=1,\dots,n$) sul percorso verso la destinazione. Il router $i$ restituirà i pacchetti al mittente e il mittente calcola l’intervallo tra trasmissione e risposta
+
+L’output presenta 6 colonne:
+1. Il numero di router sulla rotta
+2. Nome del router
+3. Indirizzo del router
+4. Tempo di andata e ritorno 1° pacchetto
+5. Tempo di andata e ritorno 2° pacchetto
+6. Tempo di andata e ritorno 3° pacchetto
+
+Il tempo di andata e ritorno (**round trip time** - *RTT*) include i 4 ritardi visti precedentemente. Può accadere (se c’è congestione o se si segue un percorso diverso) che il RTT del router $n$ sia maggiore del RTT del router $n+1$ a causa dei ritardi di accodamento (dipendono dalla stato attuale della rete). Se la sorgente non riceve risposta da un router intermedio (o ne riceve meno di 3) allora pone un asterisco al posto del tempo RTT
+
+>[!example] `traceroute` da `gaia.cs.umass.edu` a `www.eurecom.fr`
+>![[Pasted image 20250303105409.png]]
+>Ogni riga di `traceroute` rappresenta un router che viene attraversato
+
+---
+## Prodotto $\text{rate}\cdot \text{ritardo}$
+Il prodotto $\text{rate}\cdot \text{ritardo}$ rappresenta il **massimo numero di bit che possono trovarsi sul canale**. Può essere visto come la sezione trasversale del tubo che rappresenta il canale
+
+>[!example]
+>Supponiamo di avere un link 
