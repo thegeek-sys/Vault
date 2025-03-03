@@ -21,9 +21,24 @@ Inoltre un grafo denso si dice *completo* se ha tutti gli archi (es. $m=\theta(n
 ---
 ## L’albero
 ![[Pasted image 20250303111727.png|center|200]]
-Un grafo **connesso** (esiste almeno un cammino tra ogni coppia di nodi) e senza **cicli** è detto **albero**
+Un grafo **connesso** (esiste almeno un cammino tra ogni coppia di nodi) e senza **cicli** è detto **albero** (non necessariamente deve essere radicato)
 
 
 >[!example] Grafo sconnesso con ciclo
 >![[Pasted image 20250303111808.png|200]]
+
+Un albero ha sempre $m=n-1$ archi, ed è facilmente dimostrabile per induzione. Si parla di **foglia** di un albero non radicato se un nodo ha un solo arco (ogni albero ha almeno due foglie). Per **grado** si intende il numero di archi che incidono sul nodo
+
+---
+## Grafo planare
+I **grafi planari** sono quei grafi che posso disegnare sul piano senza che gli archi si intersechino
+
+Nonostante possa non sembrare a primo impatto **tutti i grafi di 4 nodi sono planari** 
+![[Pasted image 20250303112318.png|380]]
+
+>[!example] Più piccolo grafo non planare
+>![[Pasted image 20250303112424.png|200]]
+
+>[!info] Gli alberi sono un sottoinsieme dei grafi planari
+>![[Pasted image 20250303112539.png|400]]
 
