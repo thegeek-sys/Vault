@@ -114,3 +114,17 @@ Esistono quattro tipi di case di ritardo per i pacchetti:
 	- il tempo impiegato dal pacchetto, una volta immesso sul canale, per raggiungere (propagarsi) il prossimo router/destinazione.
 		Questo è dato dalla $d/s$ dove $d$ è la lunghezza del canale (distanza che devo percorrere) e $s$ è la velocità di propagazione (velocità della luce, valida per il singolo bit)
 
+>[!example] Analogia del casello autostradale #1
+>![[Pasted image 20250303101909.png|500]]
+>Le automobili viaggiano (ossia “si propagano”) alla velocità di $100\text{ km/h}$. Il casello serve (ossia “trasmette“) un’auto ogni $12 \text{ sec}$ (rate)
+>
+>Quanto occorre perché le $10$ auto abbiano superato il secondo casello?
+>Tempo richiesto al casello per trasmettere l’intera colonna sull’autostrada:
+>$$\frac{10}{5\text{ auto/min}}=2\text{ min}$$
+>Tempo richiesto a un’auto per viaggiare dall’uscita di un casello fino al casello successivo:
+>$$\frac{100\text{ km}}{100 \text{ km/h}}=1\text{ h}$$
+>
+>Il tempo che intercorre da quando l’intera colonna di vetture di trova di fronte al casello di partenza fino al momento in cui raggiunge quello successivo è la somma del ritardo di trasmissione e del ritardo di propagazione ovvero $62 \text{ minuti}$
+
+
+
