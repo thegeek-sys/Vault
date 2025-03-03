@@ -1,5 +1,5 @@
 # I modulo
-- [[Class/Sistemi Operativi/Introduzione]]
+- [[Class/Sistemi Operativi/Introduzione|Introduzione]]
 - [[Processi]]
 - [[Scheduling]]
 - [[Class/Sistemi Operativi/Gestione della memoria/Gestione della memoria|Gestione della memoria]]
