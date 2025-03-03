@@ -1086,35 +1086,21 @@
                 }
               },
               {
-                "id": "dffa3650798a8b01",
+                "id": "7dc1034de11c9f5b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Reti di elaboratori/Introduzione.md",
+                    "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Introduzione"
-                }
-              },
-              {
-                "id": "a26ac8c808cd3bf3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Flet-notes/2025-02-28_RDE.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2025-02-28_RDE"
+                  "title": "Capacità e prestazioni delle reti"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1188,7 +1174,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-12-11.md",
+                    "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1198,7 +1184,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for 2024-12-11"
+                  "title": "Backlinks for Capacità e prestazioni delle reti"
                 }
               },
               {
@@ -1272,8 +1258,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "a26ac8c808cd3bf3",
-      "mtime": "2025-02-28T16:13:23+01:00"
+      "active": "7dc1034de11c9f5b",
+      "mtime": "2025-03-03T11:05:32+01:00"
     },
     "Algoritmi": {
       "main": {
@@ -1403,7 +1389,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Flet-notes/2024-12-11.md",
+                    "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1491,5 +1477,5 @@
       "mtime": "2025-03-02T16:41:26+01:00"
     }
   },
-  "active": "Reti di elaboratori"
+  "active": "Algoritmi"
 }
