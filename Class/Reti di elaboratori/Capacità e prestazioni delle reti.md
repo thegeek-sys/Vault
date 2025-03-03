@@ -57,3 +57,29 @@ Throughput è una misura che ci dice quanto **effettivamente** (in contrapposizi
 >[!example]
 >Una strada è progettata per far transitare $1000$ auto al minuto da un punto all’altro. Se c’è traffico, tale cifra può essere ridotta a $100$. Il rate è $1000$ auto al minuti, il troughput è di $100$ auto al minuto
 
+In un percorso da una sorgente ad una destinazione un pacchetto può passare attraverso numerosi link, ognuno con throughtput diverso
+
+>[!question] Come si determina il thoughput dell’intero percorso (end to end)?
+>![[Pasted image 20250303094542.png|500]]
+>In questo primo caso il throughput è $R_{s}$
+>
+>![[Pasted image 20250303094617.png|500]]
+>In questo caso invece il throughput è $R_{c}$
+
+>[!example] Throughput su un percorso di tre link
+>![[Pasted image 20250303094845.png|440]]
+>Il throughput dei dati per il percorso è $100 \text{ kbps}$
+
+In generale in un percorso con $n$ link in serie abbiamo:
+$$
+\text{Throughput = min}\{T_{1},T_{2},\dots,T_{n}\}
+$$
+
+### Un percorso attraverso il backbone Internet
+La situazione reale in Internet è che i dati normalmente passano attraverso due reti di accesso e la dorsale Internet.
+
+![[Pasted image 20250303095214.png]]
+
+La dorsale ha un throughput molto alto (nell’ordine dei gigabit al secondo), quindi il thoughput viene definito come il minimo tra i due link di accesso che collegano la sorgente e la destinazione alla dorsale
+
+Nell’esempio il thoughput è il minimo tra $T_{1}$ e $T_{2}$. Se $T_{1}$ è $100 \text{ Mbps}$ (Fast Ethernet LAN) e $T_{2}$ è $40 \text{ kbps}$ (linea telefonica commutata), il troughput è $40 \text{ kbps}$
