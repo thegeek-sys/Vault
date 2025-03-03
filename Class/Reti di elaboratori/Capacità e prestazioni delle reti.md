@@ -98,3 +98,14 @@ La **latenza** è il tempo impiegato affinché un pacchetto arrivi completamente
 ![[Pasted image 20250303100144.png|450]]
 
 Nella commutazione di pacchetto i pacchetti si accodano nei buffer dei router, ma se il tasso di arrivo dei pacchetti sul collegamento eccede la capacità del collegamento di evaderli, i pacchetti si accordano in attesa del proprio turno
+
+Esistono quattro tipi di case di ritardo per i pacchetti:
+- ritardo di **elaborazione** (*processing delay*)
+	- controllo errori sui bit (in questo caso viene scartato)
+	- determinazione del canale di uscita
+	- tempo della recezione della porta di input alla consegna alla porta di output
+- ritardo di **accodamento** (*queueing delay*)
+	- attesa di trasmissione → sia nella coda di input che nella coda di output in base al grado di congestione del router (devono attendere che gli altri pacchetti entrino/escano)
+	- varia da pacchetto a pacchetto → infatti potrebbe succedere che la coda verso un router sia piena mentre la coda verso un altro router è vuota (quello verso il secondo router verrà inviato prima)
+- ritardo di **trasmissione** (*transmission delay*)
+- ritardo di **propagazione** (*propagation delay*)
