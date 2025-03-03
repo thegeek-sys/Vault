@@ -83,3 +83,14 @@ La situazione reale in Internet è che i dati normalmente passano attraverso due
 La dorsale ha un throughput molto alto (nell’ordine dei gigabit al secondo), quindi il thoughput viene definito come il minimo tra i due link di accesso che collegano la sorgente e la destinazione alla dorsale
 
 Nell’esempio il thoughput è il minimo tra $T_{1}$ e $T_{2}$. Se $T_{1}$ è $100 \text{ Mbps}$ (Fast Ethernet LAN) e $T_{2}$ è $40 \text{ kbps}$ (linea telefonica commutata), il troughput è $40 \text{ kbps}$
+
+### Effetto del throughput nei link condivisi
+ùIl link tra due router non è sempre dedicato a un flusso di dati, ma raccoglie il flusso da varie sorgenti e/o lo distribuisce a varie destinazioni. Il **rate del link tra i due router è condiviso tra i flussi di dati**.
+
+>[!example]
+>La velocità del link principale nel calcolo del troughput è solo  $200\text{ kbps}$ in quanto il link è condiviso. Il troughput end to end è $200\text{ kbps}$
+>![[Pasted image 20250303095710.png|400]]
+
+---
+## Latenza (delay) e perdite (loss) di pacchetti
+La **latenza** è il tempo impiegato affinché un pacchetto arrivi completamente a destinazione del momento in cui il primo bit parte dalla sorgente
