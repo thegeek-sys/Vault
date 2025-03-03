@@ -5,6 +5,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#L’albero|L’albero]]
+- [[#Grafo planare|Grafo planare]]
+- [[#Rappresentazione di grafi tramite matrici binarie (matrice di adiacenza)|Rappresentazione di grafi tramite matrici binarie (matrice di adiacenza)]]
+- [[#Rappresentazione di grafi tramite liste di adiacenza|Rappresentazione di grafi tramite liste di adiacenza]]
+- [[#Esercizi|Esercizi]]
+---
 ## Introduction
 
 Un grafo è rappresentato da $G(V,E)$ dove $V$ è l’insieme dei vertici (nodi) e $E$ l’insieme degli archi
@@ -62,3 +70,38 @@ Per rappresentare un grafo tramite matrice di adiacenza, metteremo $M[i][j]=1$ s
 ---
 ## Rappresentazione di grafi tramite liste di adiacenza
 Utilizzo una lista di liste $G$, la lista ha tanti elementi quanti sono i nodi del grafo $G$. $G[x]$ è una lista contenente i nodi adiacenti al nodo $x$, ovvero i nodi raggiunti da archi che partono da $x$
+
+>[!example]
+>![[Pasted image 20250303114309.png|200]]
+> ```python
+> G=[
+> 	[2, 5],       # vicini di 0
+> 	[5],          # vicini di 1
+> 	[0, 4, 5],    # vicini di 2
+> 	[4],          # vicini di 3
+> 	[2, 3, 5],    # vicini di 4
+> 	[0, 1, 2, 4], # vicini di 5
+> ]
+> ```
+
+>[!example]
+>![[Pasted image 20250303114617.png|200]]
+> ```python
+> G=[
+> 	[2, 5],    # vicini di 0
+> 	[],        # vicini di 1
+> 	[],        # vicini di 2
+> 	[4],       # vicini di 3
+> 	[2, 3, 5], # vicini di 4
+> 	[0, 1],    # vicini di 5
+> ]
+> ```
+
+>[!info] Vantaggi e svantaggi rispetto alla rappresentazione tramite matrice
+>- notevole risparmio di spazio nel caso di grafi sparsi
+>- vedere se due archi son connessi può costare anche $O(n)$
+
+---
+## Esercizi
+![[Esercizi2#28/02#1]]
+

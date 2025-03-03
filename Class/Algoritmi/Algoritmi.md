@@ -10,4 +10,6 @@
 # II
 - [[Class/Algoritmi/II/Introduzione|Introduzione]]
 - [[Grafi]]
+
+- [[Class/Agloritmi/Esercizi2|Esercizi]]
 - 
