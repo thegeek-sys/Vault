@@ -48,4 +48,12 @@ Dalla tabella si deduce che da $n=5$ in poi esistono di certo grafi non planari 
 
 ---
 ## Rappresentazione di grafi tramite matrici binarie (matrice di adiacenza)
-	
+Per rappresentare un grafo tramite matrice di adiacenza, metteremo $M[i][j]=1$ se e solo se c’è un arco diretto da $i$ a $j$
+
+>[!example]
+>![[Pasted image 20250303114309.png|200]]
+>![[Pasted image 20250303114209.png|300]]
+>>[!info] Se il grafo è non diretto, la matrice di adiacenza è sempre simmetrica rispetto alla diagonale
+
+>[!example]
+>
