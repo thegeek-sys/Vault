@@ -126,5 +126,10 @@ Esistono quattro tipi di case di ritardo per i pacchetti:
 >
 >Il tempo che intercorre da quando l’intera colonna di vetture di trova di fronte al casello di partenza fino al momento in cui raggiunge quello successivo è la somma del ritardo di trasmissione e del ritardo di propagazione ovvero $62 \text{ minuti}$
 
-
-
+>[!example] Analogia del casello autostradale #2
+>![[Pasted image 20250303101909.png|500]]
+>Le auto ora “si propagano” alla velocità di $1000\text{ km/h}$
+>Al casello adesso occorre $1\text{ min}$ per servire ciascuna auto
+>
+>Le prime auto arriveranno al secondo casello prima che le ultime auto della colonna lascino il primo? Si
+>Dopo $7$ minuti, la prima auto sarà al secondo casello, 
