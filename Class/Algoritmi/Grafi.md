@@ -42,3 +42,10 @@ Nonostante possa non sembrare a primo impatto **tutti i grafi di 4 nodi sono pla
 >[!info] Gli alberi sono un sottoinsieme dei grafi planari
 >![[Pasted image 20250303112539.png|400]]
 
+Per il **teorema di Eulero** si può dire che un grafo planare di $n>2$ nodi ha al più $3n-6$ archi, dunque tutti i grafi planari sono sparsi
+![[Pasted image 20250303112901.png|center|500]]
+Dalla tabella si deduce che da $n=5$ in poi esistono di certo grafi non planari ($m$ in completi $>$ $m$ max in planari)
+
+---
+## Rappresentazione di grafi tramite matrici binarie (matrice di adiacenza)
+	
