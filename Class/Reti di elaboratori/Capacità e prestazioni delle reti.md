@@ -94,3 +94,7 @@ Nell’esempio il thoughput è il minimo tra $T_{1}$ e $T_{2}$. Se $T_{1}$ è $1
 ---
 ## Latenza (delay) e perdite (loss) di pacchetti
 La **latenza** è il tempo impiegato affinché un pacchetto arrivi completamente a destinazione del momento in cui il primo bit parte dalla sorgente
+
+![[Pasted image 20250303100144.png|450]]
+
+Nella commutazione di pacchetto i pacchetti si accodano nei buffer dei router, ma se il tasso di arrivo dei pacchetti sul collegamento eccede la capacità del collegamento di evaderli, i pacchetti si accordano in attesa del proprio turno
