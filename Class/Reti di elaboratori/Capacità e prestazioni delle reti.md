@@ -132,4 +132,8 @@ Esistono quattro tipi di case di ritardo per i pacchetti:
 >Al casello adesso occorre $1\text{ min}$ per servire ciascuna auto
 >
 >Le prime auto arriveranno al secondo casello prima che le ultime auto della colonna lascino il primo? Si
->Dopo $7$ minuti, la prima auto sarà al secondo casello, 
+>Dopo $7$ minuti, la prima auto sarà al secondo casello, e tre auto saranno ancora in coda davanti al primo casello
+>
+>>[!warning]
+>>l primo bit di un pacchetto può arrivare al secondo router prima che il pacchetto sia stato interamente trasmesso dal primo router
+
