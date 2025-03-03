@@ -756,7 +756,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 243.50390243530273
+        "width": 243.50390243530273,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -858,7 +859,7 @@
         }
       },
       "active": "86b7c0e96592df9e",
-      "mtime": "2025-02-26T14:26:55+01:00"
+      "mtime": "2025-03-03T18:02:26+01:00"
     },
     "Basi di Dati": {
       "main": {
@@ -1491,5 +1492,5 @@
       "mtime": "2025-03-03T16:23:17+01:00"
     }
   },
-  "active": "Sistemi Operativi"
+  "active": "Algoritmi"
 }
