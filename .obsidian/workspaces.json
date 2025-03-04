@@ -859,7 +859,7 @@
         }
       },
       "active": "86b7c0e96592df9e",
-      "mtime": "2025-03-03T18:02:26+01:00"
+      "mtime": "2025-03-04T11:34:02+01:00"
     },
     "Basi di Dati": {
       "main": {
@@ -900,8 +900,7 @@
                   "title": "Modello relazionale"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -1058,8 +1057,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "3ca506e484c95efa",
-      "mtime": "2025-02-28T11:14:47+01:00"
+      "active": "785e57b5e4fd92db",
+      "mtime": "2025-03-04T11:34:08+01:00"
     },
     "Reti di elaboratori": {
       "main": {
@@ -1329,8 +1328,7 @@
                   "title": "Introduzione"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -1488,9 +1486,9 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "8b1ad34e1dadbec0",
-      "mtime": "2025-03-03T16:23:17+01:00"
+      "active": "6e67d30870868a0e",
+      "mtime": "2025-03-04T11:34:17+01:00"
     }
   },
-  "active": "Algoritmi"
+  "active": "Sistemi Operativi"
 }
