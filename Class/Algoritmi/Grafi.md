@@ -142,4 +142,12 @@ def DFS(u, G):
 	return [x for x in range(len(G)) if visitati[x]]
 ```
 
-Ogni nodo viene visitato al più una volta e ogni elemento della lista contiene al più $n$ elementi quindi il totale è  $\mid \text{adj 0}\mid+\mid \text{adj 1}\mid+\dots+\mid \text{adj }n-1\mid=m$ numero di archi
+Ogni nodo viene visitato al più una volta e ogni elemento della lista contiene al più $n$ elementi; in questo caso quindi l’algoritmo controllerà gli adiacenti di tutti gli elementi, quindi il totale è  $\mid \text{adj 0}\mid+\mid \text{adj 1}\mid+\dots+\mid \text{adj }n-1\mid=m$ numero di archi
+
+Si può quindi concludere che la complessità è $O(m+n)$ e la complessità di spazio è $O(n)$
+
+>[!info] Se il grafo è sparso $m=O(n)$ quindi la DFS ha costo $O(n)$
+
+>[!warning]
+>Si sarebbe potuto risolvere questo problema e il precedente usando per visitati un insieme invece di una lista in modo tale da guadagnare a livello di spazio ma perdendo a livello temporale (per poter inserire un elemento si deve prima controllare se questo è già presente)
+
