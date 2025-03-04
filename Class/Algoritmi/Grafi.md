@@ -107,3 +107,39 @@ Utilizzo una lista di liste $G$, la lista ha tanti elementi quanti sono i nodi d
 
 ---
 ## Visitare in profondità (DFS)
+### Matrice di adiacenza
+Per visitare in profondità un grafo rappresentato tramite matrice di adiacenza:
+```python
+def DFSr(u, M, visitati):
+	visitati[u] = 1
+	for i in range(len(M)):                  # θ(n)
+		# con il controllo su visitati evito di entrare in dei cicli
+		# del grafo
+		if M[u][i] == 1 and not visitati[i]:
+			DFSr(i, M, visitati)             # O(n)
+
+def DFS(u, M):
+	visitati = [0]*len(M) # θ(n)
+	DFSr(u, M, visitati)
+	# in visitati[i] ho 1 se e solo se i è raggiungibile da u
+	return [x for x in range(len(M)) if visitati[x]]
+```
+
+La complessità della procedura è $O(n)\times \theta(n)=O(n^2)$
+
+### Liste di adiacenza
+Per visitare in profondità un grafo rappresentato tramite liste di adiacenza:
+```python
+def DFSr(u, G, visitati):
+	visitati[u] = 1
+	for v in G[u]:
+		if not visitati[v]:
+			DFSr(v, G, visitati)
+
+def DFS(u, G):
+	visitati = [0]*len(G)
+	DFSr(u, G, visitati)
+	return [x for x in range(len(G)) if visitati[x]]
+```
+
+Ogni nodo viene visitato al più una volta e ogni elemento della lista contiene al più $n$ elementi quindi il totale è  $\mid \text{adj 0}\mid+\mid \text{adj 1}\mid+\dots+\mid \text{adj }n-1\mid=m$ numero di archi
