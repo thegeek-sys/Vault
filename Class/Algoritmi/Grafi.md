@@ -105,3 +105,5 @@ Utilizzo una lista di liste $G$, la lista ha tanti elementi quanti sono i nodi d
 ## Esercizi
 ![[Esercizi2#28/02#1]]
 
+---
+## Visitare in profondità (DFS)
