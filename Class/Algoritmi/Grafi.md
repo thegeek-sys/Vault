@@ -178,4 +178,16 @@ I nodi visitati e gli archi effettivamente attraversati formano un albero detto 
 >[!tldr] Procedimento
 >Partendo da un grafo qualsiasi, scelgo il nodo da cui far partire la DFS (in questo caso è stato scelto il 9)
 >![[Pasted image 20250306191115.png|350]]
+>
+>Quindi acceso tramite DFS ai vicini di 9 ordinati in ordine crescente (nella lista di adiacenza l’index 9 sarebbe del tipo `[0, 2, 8]`)
+>![[Pasted image 20250306191738.png|350]]
+>
+>Adesso ho quindi un albero di questo tipo
+>![[Pasted image 20250306191932.png|350]]
+
+### Vettore dei padri
+Un albero DFS può essere memorizzato tramite il **vettore dei padri**.
+Il vettori dei padri `P` di un albero DFS di un grafo di $n$ nodi ha $n$ componenti in cui:
+- se $i$ è un nodo dell’albero DFS → `P[i]` contiene il padre del nodo $i$ (per convenzione il padre della radice è la radice stessa)
+- se $i$ non è un nodo dell’albero DFS → `P[i]` per convenzione contiene $-1$
 
