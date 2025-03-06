@@ -240,4 +240,16 @@ Disponendo del vettore dei padri, la complessità è $O(n)$
 
 Procedura *ricorsiva* per la ricerca del cammino:
 ```python
+def CamminoR(u, P):
+	if P[u] == -1: return []
+	if P[u] == u: return [u]
+	return CamminoR(P[u], P) + [u]
 ```
+Disponendo del vettore dei padri, la complessità è $O(n)$
+
+>[!warning]
+>Se esistono più cammini che dal nodo $x$ portano al nodo $y$ la procedura appena vista non garantisce di restituire il **cammino minimo** (vale a dire quello che attraversa il minor numero di archi)
+>![[Pasted image 20250306195630.png|400]]
+>
+>Il cammino minimo da $4$ a $3$ è `[4, 3]` mentre la procedura restituisce il cammino `[4, 0, 1, 2, 3]`
+
