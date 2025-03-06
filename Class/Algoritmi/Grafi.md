@@ -191,3 +191,53 @@ Il vettori dei padri `P` di un albero DFS di un grafo di $n$ nodi ha $n$ compone
 - se $i$ è un nodo dell’albero DFS → `P[i]` contiene il padre del nodo $i$ (per convenzione il padre della radice è la radice stessa)
 - se $i$ non è un nodo dell’albero DFS → `P[i]` per convenzione contiene $-1$
 
+>[!example] Esempio albero precedente
+>![[Pasted image 20250306192823.png|400]]
+
+Modificando leggermente la procedura DFS  è possibile fare in modo che restituisca il vettore dei padri `P` anziché il vettore dei visitati
+
+```python
+def DFSr(x, G, P):
+	for y in G[x]:
+		if P[y] == -1:
+			P[y] = x
+			DFSr(y, G, P)
+
+def Padri(u, G):
+	n = len(G)
+	P = [-1]*n
+	P[u] = [u]
+	DFSr(u, G, P)
+	return P
+
+# >> G=[[1], [2,3,5], [4], [5], [6], [], [2]]
+# >> Padri(0,G)
+# [0, 0, 1, 1, 2, 3, 4]
+```
+
+In molti casi non basta sapere se un nodo $y$ è raggiungibile a partire dal nodo $x$ de grafo, si vuole anche sapere il **cammino che lo permette**. Il vettore dei padri dell’albero DFS, radicato in $x$, permette di ricavare facilmente tale cammino.
+Basta controllare che il nodo $y$ sia nell’albero e poi da $y$ risalire ed effettuare `reverse` dei nodi incontrati
+
+>[!example] Nodo dei padri precedente
+>Immaginiamo di voler sapere il cammino che da 9 porta a 7
+>![[Pasted image 20250306193657.png|400]]
+>
+>Invertendo si avrebbe `[9, 2, 7]`
+
+Procedura *iterativa* per la ricerca del cammino:
+```python
+def Cammino(u, P):
+	path = []
+	if P[u] == -1: return path
+	while P[u] != u:
+		path.append(u)
+		u = P[u]
+	path.append(u)
+	path.reverse()
+	return path
+```
+Disponendo del vettore dei padri, la complessità è $O(n)$
+
+Procedura *ricorsiva* per la ricerca del cammino:
+```python
+```
