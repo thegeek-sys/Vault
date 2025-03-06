@@ -151,3 +151,31 @@ Si può quindi concludere che la complessità è $O(m+n)$ e la complessità di s
 >[!warning]
 >Si sarebbe potuto risolvere questo problema e il precedente usando per visitati un insieme invece di una lista in modo tale da guadagnare a livello di spazio ma perdendo a livello temporale (per poter inserire un elemento si deve prima controllare se questo è già presente)
 
+### Versione iterativa
+```python
+def DFS_iterativo(u, G):
+	# visita dei nodi di G raggiunbili a partire dal nodo u
+	visitati = [0]*len(G)
+	pila = [u] # inizializza la pila con il nodo di partenza
+	while pila:
+		u = pila.pop()
+		if not visitati[u]:
+			visitati[u] = 1
+			# aggiungiamo i vicini non visitati
+			for v in G[u]:
+				if not visitati[v]:
+					pila.append(v)
+	return [x for x in range(len(G)) if visitati[x]]
+```
+
+Al termine di `DFS_iterativo(u,G)` si ha `visitati[i]=1` se e solo se `i` è raggiungibile da `u`. La complessità di tempo della procedura è $O(n+m)$, mentre la complessità di spazio della procedura è $O(n)$
+
+---
+## Albero DFS
+E’ possibile trasformare qualunque grafo in un albero; infatti con una visita DFS gli archi del grafo si bipartiscono in quelli che nel corso della visita sono stati attraversati (perché permettevano di raggiungere nuovi nodi) e gli altri.
+I nodi visitati e gli archi effettivamente attraversati formano un albero detto **albero DFS**
+
+>[!tldr] Procedimento
+>Partendo da un grafo qualsiasi, scelgo il nodo da cui far partire la DFS (in questo caso è stato scelto il 9)
+>![[Pasted image 20250306191115.png|350]]
+

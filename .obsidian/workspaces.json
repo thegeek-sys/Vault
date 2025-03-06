@@ -1113,9 +1113,23 @@
                   "icon": "lucide-file",
                   "title": "Capacità e prestazioni delle reti"
                 }
+              },
+              {
+                "id": "a5a580268106498d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Reti di elaboratori/Introduzione.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Introduzione"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1273,8 +1287,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "7dc1034de11c9f5b",
-      "mtime": "2025-03-03T11:05:32+01:00"
+      "active": "a5a580268106498d",
+      "mtime": "2025-03-06T11:33:13+01:00"
     },
     "Algoritmi": {
       "main": {
@@ -1342,8 +1356,23 @@
                   "icon": "lucide-file",
                   "title": "Introduzione"
                 }
+              },
+              {
+                "id": "a2408e1409854094",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Algoritmi/Grafi.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Grafi"
+                }
               }
-            ]
+            ],
+            "currentTab": 4
           }
         ],
         "direction": "vertical"
@@ -1501,8 +1530,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "6e67d30870868a0e",
-      "mtime": "2025-03-04T11:34:17+01:00"
+      "active": "a2408e1409854094",
+      "mtime": "2025-03-05T11:16:00+01:00"
     }
   },
   "active": "Algoritmi"

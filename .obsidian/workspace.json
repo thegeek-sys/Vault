@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -238,15 +238,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a2408e1409854094",
+  "active": "81e0b66614fbb6f3",
   "lastOpenFiles": [
+    "Files/Pasted image 20250306191115.png",
+    "Class/Algoritmi/II/Introduzione.md",
+    "Class/Algoritmi/Grafi.md",
+    "Class/Reti di elaboratori/Introduzione.md",
+    "Class/Reti di elaboratori/Reti di elaboratori.md",
+    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
     "Class/Algoritmi/Algoritmi.md",
     "Class/Sistemi Operativi/Introduzione2.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
-    "Class/Algoritmi/Grafi.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Modello relazionale.md",
-    "Class/Algoritmi/II/Introduzione.md",
     "Class/Agloritmi/Esercizi2.md",
     "Files/Pasted image 20250303120210.png",
     "Files/Pasted image 20250303115954.png",
@@ -260,10 +264,7 @@
     "Files/Pasted image 20250303112424.png",
     "Files/Pasted image 20250303112318.png",
     "Flet-notes/2025-02-28_ALG.md",
-    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
     "Flet-notes/2025-02-28_RDE.md",
-    "Class/Reti di elaboratori/Reti di elaboratori.md",
-    "Class/Reti di elaboratori/Introduzione.md",
     "Flet-notes/2025-02-27_ALG.md",
     "Class/Algoritmi/II",
     "Class/Algoritmi/untitled folder",
@@ -279,7 +280,6 @@
     "Class/Algoritmi/Visitare gli alberi.md",
     "Class/Algoritmi/Strutture dati.md",
     "Class/Algoritmi/Esercizi.md",
-    "Class/Algoritmi/Algoritmi di sorting.md",
     "Class/Algoritmi/I",
     "Class/Progettazione di algoritmi",
     "Class/Reti di elaboratori",
