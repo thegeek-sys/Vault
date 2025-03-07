@@ -28,3 +28,7 @@ Ogni file o directory è raggiungibile dalla directory principale `/` mediante u
 >[!info]
 >Un’eccezione di path assoluto riguarda l’utente corrente (`userX`), infatti `~` equivale a `/home/userX`
 
+### Current working directory `cwd`
+Per conoscere la current working directory si usa il comando `pwd`. Per cambiare cwd usare il comando `cd [path]` dove `[path]` può essere assoluto o relativo (`cd` senza path ritorna alla home)
+E’ possibile inoltre usare `..` (parent directory) e `.` (directory attuale)
+
