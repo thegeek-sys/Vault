@@ -40,3 +40,44 @@ L’algoritmo di bi-colorazione che segue prova che un grafo senza cicli dispari
 
 >[!info] Dimostrazione
 >Siano $x$ e $y$ due nodi adiacenti in $G$, consideriamo i due possibili casi e facciamo vedere che in entrambi i casi i due nodi al termine avranno colori opposti
+>1. L’arco $(x,y)$ viene attraversato durante la visita → in questo caso banalmente hanno colori distinti
+>2. L’arco $(x,y)$ non viene attraversato durante la visita → sia $x$ il nodo visitato prima. Esiste un cammino in $G$ che porta da $x$ porta a $y$ (quello seguito dalla visita), questo cammino si chiude a formare un ciclo con l’arco $(y,x)$. Il ciclo è di lunghezza pari per ipotesi, quindi il cammino è di lunghezza dispari. Poiché sul cammino i colori si alternano il primo nodo ($x$) e l’ultimo nodo ($y$) del cammino avranno colori diversi
+
+```python
+def DFSr(x, G, Colore, c):
+	Colore[x] = c
+	for y in G[x]:
+		if Colore[y]==-1:
+			DFSr(y, G, Colore, 1-c)
+
+def Colora(G):
+	Colore = [-1]*len(G)
+	DFSr(0, G, Colore, 0)
+	return Colore
+```
+
+>[!warning] Se il grafo $G$ contiene cicli dispari l’algoritmo produce un assegnamento di colori sbagliato
+
+Nella versione che segue l’algoritmo produce una bi-colorazione se il grafo $G$ è bi-colorabile, produce una lista vuota in caso contrario:
+```python
+def DFSr(x, G, Colore, c):
+	Colore[x] = c
+	for y in G[x]:
+		if Colore[y]==-1:
+			if not DFSr(y, G, Colore, 1-c):
+				return False
+		elif Colore[y] == Colore[x]:
+			return False
+	return True
+
+def Colora1(G):
+	Colore = [-1]*len(G)
+	if DFSr(0, G, Colore, 0):
+		return Colore
+	return []
+```
+La complessità dell’algoritmo per testare se un grafo è bicolorabile è quella di una semplice visita del grafo connesso da colorare:
+$$
+O(n+m)=O(m)
+$$
+Dove l’ultima uguaglianza dipende dal fatto che in un grafo connesso $m\geq n-1$
