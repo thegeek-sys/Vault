@@ -81,3 +81,39 @@ $$
 O(n+m)=O(m)
 $$
 Dove l’ultima uguaglianza dipende dal fatto che in un grafo connesso $m\geq n-1$
+
+---
+## Componente connessa
+Una **componente connessa** du un grafo (indiretto) è un sottografo composto da un insieme massimale di nodi connessi da cammini. Un grafo si dice connesso se ha una sola componente
+![[Pasted image 20250307114201.png]]
+Vogliamo calcolare il **vettore $C$ delle componenti connesse** di un grafo $G$. Vale a dire il vettore `C` che ha tanti elementi quanti sono i nodi del grafo e `C[u]=C[v]` se e solo se `u` e `v` sono nella stessa componente connessa
+![[Pasted image 20250307114326.png]]
+
+```python
+def DFSr(x, G, C, c):
+	C[x] = c
+	for y in G[x]:
+		if C[y] == 0:
+			DFSr(y, G, C, c)
+
+def Componenti(G):
+	C = [0]*len(G)
+	c = 0
+	for x in range(len(G)):
+		if C[x] == 0:
+			c+=1
+			DFSr(x, G, C, c)
+	return C
+
+# >> G = [[1, 5], [0, 5], [4], [], [2], [0, 1]]
+# >> Componenti(G)
+# [1, 1, 2, 3, 2, 1]
+```
+Poiché ogni visita agisce su archi diversi, il costo rimane $O(n+m)$. Se ad esempio abbiamo 3 componenti connesse si ha:
+$$
+O(n_{1}+m_{1})+O(n_{2}+m_{2})+O(n_{3}+m_{3})=O(n+m)
+$$
+Infatti la somma deve essere la totalità dei nodi
+
+---
+## Componente fortemente connessa
