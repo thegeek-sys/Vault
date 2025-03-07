@@ -11,5 +11,5 @@
 - [[Class/Algoritmi/II/Introduzione|Introduzione]]
 - [[Grafi]]
 
-- [[Class/Agloritmi/Esercizi2|Esercizi]]
+- [[Class/Algoritmi/II/Esercizi|Esercizi]]
 - 
