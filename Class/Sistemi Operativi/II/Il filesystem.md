@@ -42,3 +42,17 @@ Si puo’ visualizzare l’albero delle directory con il comando
 ```bash
 tree [-a] [-L maxdepth] [-d] [-x] [nomedir]
 ```
+
+---
+## Creazione di directory e file
+Per creare directory:
+```bash
+mkdir [-p] nomedir
+```
+Crea la directory `nomedir` vuota. Se si vuole creare un intero path di directory (es. `./dir11/dir12/dir13`) è necessario l’opzione `-p`
+
+Per creare un file:
+```bash
+touch nomefile
+```
+Crea il file `nomefile` vuoto
