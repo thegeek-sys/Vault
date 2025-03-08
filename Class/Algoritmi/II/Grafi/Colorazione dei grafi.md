@@ -139,6 +139,8 @@ Vogliamo calcolare il vettore $C$ delle componenti fortemente connesse di un gra
 >mentre la soluzione corretta è
 >![[Pasted image 20250308123742.png|300]]
 >
+>Il problema sta nel fatto che se c’è un cammino che da $x$ mi porta a $y$ questo non significa che $x$ e $y$ sono nella stessa componente fortemente connessa, perché questo sia vero è necessario che ci sia un cammino che da $y$ mi porti a $x$
+>
 >>[!info]
 >>Togliendo un arco e calcolando le componenti connesse, il numero di componenti potrebbe aumentare al più di 1, mentre calcolando le componenti fortemente connesse potrebbe addirittura aumentare fino al numero di nodi del grafo
 >>
@@ -148,3 +150,15 @@ Vogliamo calcolare il vettore $C$ delle componenti fortemente connesse di un gra
 >>
 >>In questo caso il grafo è fortemente connesso (una sola componente), ma togliendo un arco le componenti diventano 5
 
+### Aglritmo
+Idea per un algoritmo che, dato il grafo diretto $G$ ed un suo nodo $u$, restituisce i nodi della componente fortemente connessa che contiene $u$:
+1. calcola l’insieme $A$ dei nodi di $G$ **raggiungili da** $u$
+2. calcola l’insieme $B$ dei nodi di $G$ che **portano a** $u$
+3. restituisci l’intersezione dei due insiemi $A$ e $B$
+
+La complessità dell’algoritmo sarebbe:
+- passo 1 → $O(n+m)$ (DFS che parte da $u$)
+- passo 2 → $O(?)$
+- passo 3 → $O(n)$
+
+E’ facile calcolare il costo del passo 3, infatti il passo 2 e il passo 1 restituiranno delle liste lunghe $n$ con $0$ nel caso in cui il nodo non sia raggiungile/porta a $u$, 1 altrimenti.
