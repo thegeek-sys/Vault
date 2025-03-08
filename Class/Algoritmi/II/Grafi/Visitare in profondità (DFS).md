@@ -33,7 +33,7 @@ def DFS(u, M):
 	return [x for x in range(len(M)) if visitati[x]]
 ```
 
-La complessità della procedura è $O(n)\times \theta(n)=O(n^2)$
+La complessità della procedura è $O(n)\times \Theta(n)=O(n^2)$
 
 ### Liste di adiacenza
 Per visitare in profondità un grafo rappresentato tramite liste di adiacenza:

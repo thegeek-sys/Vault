@@ -6,6 +6,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Teorema dei 4 colori|Teorema dei 4 colori]]
+- [[#Grafi 2-colorabili|Grafi 2-colorabili]]
+	- [[#Grafi 2-colorabili#Algoritmo|Algoritmo]]
+- [[#Componente connessa|Componente connessa]]
+- [[#Componente fortemente connessa|Componente fortemente connessa]]
+	- [[#Componente fortemente connessa#Algoritmo|Algoritmo]]
+---
 ## Introduction
 Dato un grafo connesso $G$ ed un intero $k$ vogliamo sapere se è possibile colorare i nodi del grafo in modo che i nodi adiacenti abbiano sempre colori distinti
 
@@ -23,7 +31,7 @@ La prima dimostrazione fu proposta solo nel 1879, ma nel 1890 si scoprì che la 
 La dimostrazione che 4 colori sono sufficienti fu trovata solo nel 1977. Si basa sulla riduzione del numero infinito di mappe possibili a 1936 configurazioni, per le quali la validità del teorema viene verificata caso per caso con l’ausilio di un calcolatore
 Nel 2000 infine è stata proposta una nuova dimostrazione del teorema che richiede l’utilizzo della teoria dei gruppi
 
-In generale si può dire che un grafo può richiedere anche $\theta(n)$ colori. Inoltre non è noto alcun algoritmo polinomiale che, dato un grafo planare $G$, determini se $G$ è 3-colorabile, ma **non è difficile progettare un algoritmo che determini se un grafo è 2-colorabile**
+In generale si può dire che un grafo può richiedere anche $\Theta(n)$ colori. Inoltre non è noto alcun algoritmo polinomiale che, dato un grafo planare $G$, determini se $G$ è 3-colorabile, ma **non è difficile progettare un algoritmo che determini se un grafo è 2-colorabile**
 
 ---
 ## Grafi 2-colorabili
@@ -150,7 +158,7 @@ Vogliamo calcolare il vettore $C$ delle componenti fortemente connesse di un gra
 >>
 >>In questo caso il grafo è fortemente connesso (una sola componente), ma togliendo un arco le componenti diventano 5
 
-### Aglritmo
+### Algoritmo
 Idea per un algoritmo che, dato il grafo diretto $G$ ed un suo nodo $u$, restituisce i nodi della componente fortemente connessa che contiene $u$:
 1. calcola l’insieme $A$ dei nodi di $G$ **raggiungili da** $u$
 2. calcola l’insieme $B$ dei nodi di $G$ che **portano a** $u$
@@ -214,3 +222,7 @@ def compFC(G):
 # >> compFC(G)
 # [1,1,2,1,1,3,1,1,4,5,4,4]
 ```
+La complessità dell’algoritmo è:
+$$
+\Theta(n)\cdot O(n+m)=O(n^2+nm)=O\left( n^2+n\frac{n^2}{2} \right)=O(n^3)
+$$

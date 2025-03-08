@@ -22,10 +22,10 @@ I grafi si distinguono in grafi **diretti** (gli archi sono con direzione) e **n
 Se il grafo è diretto il numero massimo di archi è $n(n-1)=O(n^2)$, mentre se è non diretto $m$ massimo è $\frac{n(n-1)}{2}=O(n^2)$
 
 Un grafo si dice **sparso** se $m=O(n)$, e **denso** se $m=\Omega(n^2)$ (molti archi).
-Inoltre un grafo denso si dice *completo* se ha tutti gli archi (es. $m=\theta(n^2)$), e *torneo* se tra ogni coppia di nodi c’è esattamente un arco (es. $m=\theta(n^2)$)
+Inoltre un grafo denso si dice *completo* se ha tutti gli archi (es. $m=\Theta(n^2)$), e *torneo* se tra ogni coppia di nodi c’è esattamente un arco (es. $m=\Theta(n^2)$)
 
 >[!warning]
->Un grafo non sparso non è necessariamente denso, ad esempio può avere $\theta(n\log n)$ archi
+>Un grafo non sparso non è necessariamente denso, ad esempio può avere $\Theta(n\log n)$ archi
 
 ---
 ## L’albero
