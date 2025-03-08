@@ -172,3 +172,45 @@ Inoltre per eseguire efficientemente il passo 2 si può ricorrere al **grafo tra
 
 Così facendo il passo 2 dell’algoritmo può essere eseguito in tempo $O(n+m)$ cercando i raggiungibili da $u$ in $G^T$ (ovviamente il grafo $G^T$ andrà prima costruito)
 
+```python
+def Trasposto(G):
+	GT = [[] for _ in G]
+	for i in range(len(G)):
+		for v in G[i]:
+			GT[v].append(i)
+	return GT
+
+def ComponenteFC(x, G):
+	visitati1 = DFS(x, G)
+	G1 = Traposto(G)
+	visitati2 = DFS(x,G1)
+	componente = []
+	for i in range(len(G)):
+		if visitati1 == visitati2 == 1:
+			componente.append(i)
+	return componente
+
+# >> G=[
+#	[1], [2,4,5], [5], [1,6], [0,5,7,8], [], [3], [6,8,9,10],
+#	[11], [], [8], [10]
+#	]
+# >> componenteFC(0,G)
+# [0,1,3,4,6,7]
+```
+
+Utilizzando l’algoritmo `ComponenteFC(x,G)` è possibile ottenere un algoritmo per calcolare il vettore CF delle componenti fortemente connesse:
+```python
+def compFC(G):
+	FC = [0]*len(G)
+	c = 0
+	for i in range(len(G)):
+		if FC[i] == 0:
+			E = ComponenteFC(i, G)
+			c+=1
+			for x in E:
+				FC[x] = c
+	return FC
+
+# >> compFC(G)
+# [1,1,2,1,1,3,1,1,4,5,4,4]
+```
