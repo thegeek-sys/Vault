@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,8 +224,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "48d3abf65b755b08",
+  "active": "e96e71bc6db7eca1",
   "lastOpenFiles": [
+    "Files/Pasted image 20250308123742.png",
+    "Files/Pasted image 20250308123641.png",
+    "Files/Pasted image 20250308123417.png",
+    "Files/Pasted image 20250308123137.png",
+    "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/II/Grafi/Introduzione.md",
     "Class/Sistemi Operativi/II/Il filesystem.md",
@@ -248,14 +253,10 @@
     "Files/Pasted image 20250307114201.png",
     "Files/Pasted image 20250307104502.png",
     "Files/Pasted image 20250307103527.png",
-    "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
     "Class/Algoritmi/II/Grafi",
     "Files/Pasted image 20250306195630.png",
     "Files/Pasted image 20250306193657.png",
     "Files/Pasted image 20250306192823.png",
-    "Files/Pasted image 20250306191932.png",
-    "Files/Pasted image 20250306191738.png",
-    "Files/Pasted image 20250306191115.png",
     "Class/Algoritmi/II/Introduzione.md",
     "Class/Reti di elaboratori/Introduzione.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
@@ -265,7 +266,6 @@
     "Class/Agloritmi",
     "Flet-notes/2025-02-28_ALG.md",
     "Flet-notes/2025-02-28_RDE.md",
-    "Flet-notes/2025-02-27_ALG.md",
     "Class/Algoritmi/II",
     "Class/Algoritmi/untitled folder",
     "Class/Introduzione agli algoritmi",

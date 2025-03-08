@@ -117,3 +117,34 @@ Infatti la somma deve essere la totalità dei nodi
 
 ---
 ## Componente fortemente connessa
+Una **componente fortemente connessa** di un grafo diretto è un sottografo composto da un insieme massimale di nodi connessi da cammini.
+Un grafo si dice *fortemente connesso* se ha una sola componente
+
+![[Pasted image 20250308123137.png|550]]
+
+Vogliamo calcolare il vettore $C$ delle componenti fortemente connesse di un grafo $G$, ovvero un vettore $C$ che tanti elementi quanti sono i nodi del grafo e `C[u]=C[v]` se e solo se `u` e `v` sono nella stessa componente fortemente connessa
+
+![[Pasted image 20250308123417.png|550]]
+
+>[!warning]
+>L’algoritmo utilizzato per le componenti connesse non funziona nel caso di componenti fortemente connesse
+>
+>Basta pensare al grafo costituito dalla catena:
+>```
+>0-->1-->2-->3-->4
+>```
+> 
+>La procedura delle componenti connesse produce la soluzione
+>![[Pasted image 20250308123641.png|300]]
+>mentre la soluzione corretta è
+>![[Pasted image 20250308123742.png|300]]
+>
+>>[!info]
+>>Togliendo un arco e calcolando le componenti connesse, il numero di componenti potrebbe aumentare al più di 1, mentre calcolando le componenti fortemente connesse potrebbe addirittura aumentare fino al numero di nodi del grafo
+>>
+>>```
+>>0-->1-->2-->3-->4-->0
+>>```
+>>
+>>In questo caso il grafo è fortemente connesso (una sola componente), ma togliendo un arco le componenti diventano 5
+
