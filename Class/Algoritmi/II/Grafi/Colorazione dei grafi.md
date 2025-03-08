@@ -163,3 +163,12 @@ La complessità dell’algoritmo sarebbe:
 
 E’ facile calcolare il costo del passo 3, infatti il passo 2 e il passo 1 restituiranno delle liste lunghe $n$ con $0$ nel caso in cui il nodo non sia raggiungile/porta a $u$, 1 altrimenti. Così facendo è possibile fare un confronto 1 ad uno tra le due liste, e in caso trovi un 1 in entrambe ho l’intersezione
 
+>[!example]-
+>![[Pasted image 20250308125919.png|300]]
+
+Inoltre per eseguire efficientemente il passo 2 si può ricorrere al **grafo trasposto di G** ($G^T$), ovvero lo stesso grafo diretto $G$ ma con archi con direzione opposta. In questo modo infatti, facendo la DFS su questo nuovo grafo, ottengo i nodi che portano a $u$ nel grafo originale
+
+![[Pasted image 20250308130316.png]]
+
+Così facendo il passo 2 dell’algoritmo può essere eseguito in tempo $O(n+m)$ cercando i raggiungibili da $u$ in $G^T$ (ovviamente il grafo $G^T$ andrà prima costruito)
+
