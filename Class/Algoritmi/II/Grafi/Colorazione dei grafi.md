@@ -161,4 +161,5 @@ La complessità dell’algoritmo sarebbe:
 - passo 2 → $O(?)$
 - passo 3 → $O(n)$
 
-E’ facile calcolare il costo del passo 3, infatti il passo 2 e il passo 1 restituiranno delle liste lunghe $n$ con $0$ nel caso in cui il nodo non sia raggiungile/porta a $u$, 1 altrimenti.
+E’ facile calcolare il costo del passo 3, infatti il passo 2 e il passo 1 restituiranno delle liste lunghe $n$ con $0$ nel caso in cui il nodo non sia raggiungile/porta a $u$, 1 altrimenti. Così facendo è possibile fare un confronto 1 ad uno tra le due liste, e in caso trovi un 1 in entrambe ho l’intersezione
+
