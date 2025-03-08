@@ -700,21 +700,49 @@
                 }
               },
               {
+                "id": "535b731e6b0aa1fe",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Sistemi Operativi/II/II.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "II"
+                }
+              },
+              {
+                "id": "ed92920375912e96",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Sistemi Operativi/II/Il filesystem.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Il filesystem"
+                }
+              },
+              {
                 "id": "6cca2c5f12de3b94",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Sistemi Operativi/Introduzione2.md",
+                    "file": "Class/Sistemi Operativi/II/Introduzione.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Introduzione2"
+                  "title": "Introduzione"
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -872,8 +900,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "9da67dfcce4e8838",
-      "mtime": "2025-03-07T11:52:31+01:00"
+      "active": "ed92920375912e96",
+      "mtime": "2025-03-07T12:37:49+01:00"
     },
     "Basi di Dati": {
       "main": {
@@ -1518,5 +1546,5 @@
       "mtime": "2025-03-07T11:53:59+01:00"
     }
   },
-  "active": "Sistemi Operativi"
+  "active": "Algoritmi"
 }

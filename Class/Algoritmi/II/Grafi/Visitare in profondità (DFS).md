@@ -47,7 +47,7 @@ def DFSr(u, G, visitati):
 def DFS(u, G):
 	visitati = [0]*len(G)
 	DFSr(u, G, visitati)
-	return [x for x in range(len(G)) if visitati[x]]
+	return [x for x i range(len(G)) if visitati[x]]
 ```
 
 Ogni nodo viene visitato al più una volta e ogni elemento della lista contiene al più $n$ elementi; in questo caso quindi l’algoritmo controllerà gli adiacenti di tutti gli elementi, quindi il totale è  $\mid \text{adj 0}\mid+\mid \text{adj 1}\mid+\dots+\mid \text{adj }n-1\mid=m$ numero di archi
