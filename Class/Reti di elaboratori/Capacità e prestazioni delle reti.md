@@ -228,10 +228,10 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 
 
 $$
-2\text{ Mbps}=2000\text{ Bps}
+2\text{ Mbps}=2.000.000\text{ Bps}
 $$
 $$
-\frac{1000\text{ byte}}{2000\text{ Bps}}=0,5\text{ sec}
+\frac{1000\text{ byte}}{2000000\text{ Bps}}=0,5\text{ sec}
 $$
 $$
 2500\text{ km}=2.500.000\text{ m}
