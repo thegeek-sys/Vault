@@ -123,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -226,10 +225,10 @@
   },
   "active": "7dc1034de11c9f5b",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
     "Flet-notes/2025-03-11_RETI.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
-    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/II/Il filesystem.md",
     "Files/Pasted image 20250311121421.png",
     "Files/Pasted image 20250311121337.png",

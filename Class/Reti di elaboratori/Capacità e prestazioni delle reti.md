@@ -246,6 +246,8 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >>[!done]-
 >>##### 1
 >>$$10\text{ Mbps}=10.000.000\text{ bps}$$
->>$$\frac{3000\text{ bit}}{10.000.000\text{ bps}} =0,0003\text{ sec}$$
+>>$$\frac{3000\text{ bit}}{10.000.000\text{ bps}} =0,0003\text{ sec}=0,3\text{ ms}$$
 >>##### 2
 >>$$(0,0002+0,0003)\text{ sec}=0,0005\text{ sec}$$
+>>##### 3
+>>Si, infatti il tempo di propagazione è minore del tempo di propagazione. Quindi il primo bit arriva dopo $0,2\text{ ms}$
