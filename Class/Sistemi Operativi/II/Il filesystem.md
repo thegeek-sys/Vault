@@ -100,7 +100,13 @@ Ci sono anche file system non linux, ad esempio windows: NTFS, MSDOS, FAT32, FAT
 - `cat /etc/mtab`
 - `cat /etc/fstab` (montati al boot)
 
->[!warning] Possibile domanda di esame
+>[!warning] Domanda di esame
 >- Usare il comando mount o consultare il contenuto del file `/etc/mtab` per verdere I file system montati.
 >- Con l’aiuto del `mount` cercare di capire le varie opzioni di mounting dei vari filesystems
+
+---
+## File `passwd` e `group`
+Il file `/etc/passwd` contiene tutti gli utenti, mentre il file `/etc/groups` contiene tutti i gruppi. Rappresentano una delle filosofie di Linux, e poiché hanno una struttura ben definita e conosciuta dei programmi, questi ci possono direttamente interagire
+
+![[Sicurezza#Utenze e gruppi]]
 
