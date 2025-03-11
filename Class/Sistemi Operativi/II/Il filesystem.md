@@ -110,3 +110,18 @@ Il file `/etc/passwd` contiene tutti gli utenti, mentre il file `/etc/groups` co
 
 ![[Sicurezza#Utenze e gruppi]]
 
+---
+## I file
+Ogni filesystem è rappresentato da una struttura dai **inode** ed è univocamente identificato da un **inode number**. La cancellazione di un file libera l’**inode number** che verrà riutilizzato quando necessario per un nuovo file
+
+![[Pasted image 20250311120539.png|500]]
+
+Principali attributi della struttura dati inode:
+- **Type** → tipo di file (regular, block, fifo ...)
+- **User ID** → id dell'utente proprietario del file
+- **Group ID** → id del gruppo a cui e associato il file
+- **Mode** → permessi (read, write, exec) di accesso per il proprietario, il gruppo e tutti gli altri
+- **Size** → dimensione in byte del file
+- **Timestamps** → *ctime* (inode changing time, cambiamento di un attributo), *mtime* (content modication time, solo scrittura), *atime* (content access time: solo lettura)
+- **Link count** → numero di hard links
+- **Data pointers** → puntatore alla lista dei blocchi che compongono il file; se si tratta di una directory, il contenuto su disco e costituito di una tabella con 2 colonne: nome del file/directory e suo inode number
