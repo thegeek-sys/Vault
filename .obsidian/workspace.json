@@ -44,7 +44,7 @@
               "type": "markdown",
               "state": {
                 "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,10 +224,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "27625168f8ba7a83",
+  "active": "7dc1034de11c9f5b",
   "lastOpenFiles": [
-    "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Flet-notes/2025-03-11_RETI.md",
+    "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/II/Il filesystem.md",

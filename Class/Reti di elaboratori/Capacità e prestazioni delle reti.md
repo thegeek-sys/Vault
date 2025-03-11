@@ -237,3 +237,19 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >>$$1000\text{ byte}=8000\text{ bit}$$
 >>$$\frac{8000\text{ bit}}{2000000\text{ bps}}=0,004\text{ sec}$$
 >>$$(0,004+0,01)\text{ sec}=0,014\text{ sec}$$
+
+>[!question]
+>Si consideri un host $A$ che trasmette pacchetti, ognuno di lunghezza $L=3000\text{ bit}$, su un canale di trasmissione con rate $10\text{ Mbps}$ verso un host $B$ all’altro estremo del link. Si supponga inoltre che il ritardo di propagazione sia pari a $0,2 \text{ millisecondi}$
+>1. Quanto impiega l’host $A$ a trasmettere un pacchetto?
+>2. Dopo quanto tempo l’host $B$ avrà ricevuto l’intero pacchetto
+>3. Quando l’host $A$ ha terminato di trasmettere un pacchetto, l’host $B$ ha già ricevuto parte di esso?
+>>[!done]-
+>>##### 1
+>>$$10\text{ Mbps}=10.000.000\text{ bps}$$
+>>$$\frac{3000\text{ bit}}{10.000.000\text{ bps}} =0,0003\text{ sec}$$
+>>##### 2
+>>$$(0,0002+0,0003)\text{ sec}=0,0005\text{ sec}$$
+
+
+
+
