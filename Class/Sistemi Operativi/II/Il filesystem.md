@@ -56,3 +56,24 @@ Per creare un file:
 touch nomefile
 ```
 Crea il file `nomefile` vuoto
+
+---
+## root directory
+Il filesystem root (`/`) contiene elementi eterogenei:
+- disco interno solido o magnetico
+- filesystem su disco esterno (es. usb)
+- filesystem di rete
+- filesystem virtuali (usati dal kernel per gestire risorse)
+- filesystem in memoria principale
+
+Tutto questo è possibile solo grazie al meccanismo del *mounting*
+
+### mouting
+Una qualsiasi directory $D$ dell’albero gerarchico può diventare punto di mount per un altro filesystem $F$ se e solo se la directory root di $F$ diventa accessibile da $D$.
+
+Si hanno due possibilità per $D$:
+- se $D$ è vuota, dopo il mount conterrà $F$
+- se $D$ non è vuota, dopo il mount conterrà $F$ ma ciò non significa che i dati che vi erano dentro sono persi, saranno infatti **di nuovo disponibili dopo l’unmount** di $F$
+
+---
+## Partizioni e mounting
