@@ -125,3 +125,8 @@ Principali attributi della struttura dati inode:
 - **Timestamps** → *ctime* (inode changing time, cambiamento di un attributo), *mtime* (content modication time, solo scrittura), *atime* (content access time: solo lettura)
 - **Link count** → numero di hard links
 - **Data pointers** → puntatore alla lista dei blocchi che compongono il file; se si tratta di una directory, il contenuto su disco e costituito di una tabella con 2 colonne: nome del file/directory e suo inode number
+
+### Tabella inode
+All’inizio del disco è sempre presente una **tabella inode**
+
+>[!example] Esempio per ext2
