@@ -6,6 +6,11 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#DAG|DAG]]
+	- [[#DAG#Algoritmo alternativo|Algoritmo alternativo]]
+---
 ## Introduction
 Spesso un grafo diretto cattura relazione di *propedeuticità* (una arco da $a$ a $b$ indica che $a$ è propedeutico a $b$).
 Potrò rispettare tutte le propedeuticità se riesco ad ordinare i nodi del grafo in modo che gli archi vadano tutti da sinistra verso destra. Questo ordinamento è detto **ordinamento topologico**
@@ -59,3 +64,29 @@ Il costo dell’algoritmo è $O(n+m)$
 >- L’arco $(x,y)$ viene attraversato durante la visita → in questo caso banalmente la visita di $y$ finisce prima della visita di $x$ e $y$ finisce nella lista prima che ci finisca $x$
 >- L’arco $(x,y)$ non viene attraversato durante la visita → durante la visita di $x$ il nodo $y$ è già visitato e la sua visita è anche già terminata (infatti da $y$ non c’è un cammino che porta a $x$, in caso contrario nel DAG ci sarebbe un ciclo), anche in questo caso $y$ finisce nella lista prima che ci finisca $x$
 
+>[!example]
+>![[Pasted image 20250311103303.png]]
+>Ordine di fine visita → $4,3,2,1,5,0,6$
+>Sort topologico → $6,0,5,1,2,3,4$
+
+```python
+def DFSr(u, G, visitati, lista):
+	visitati[u] = 1
+	for v in G[u]:
+		if visitati[v] == 0:
+			DFSr(v, G, visitati, lista)
+	lista.append(u)
+
+def sortTop1(G):
+	visitati = [0]*len(G)
+	lista = []
+	for u in range(len(G)):
+		if visitati[u] == 0:
+			DFSr(u, G, visitati, lista)
+	lista.reverse()
+	return lista
+```
+Poiché si visitano sempre nodi diversi il costo della DFS è $O(n+m)$ (compreso il for), rimane solo da aggiungere il costo di `reverse`:
+$$
+O(n+m)+O(n)=O(n+m)
+$$
