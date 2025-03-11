@@ -41,3 +41,38 @@ Posso individuare i visitati all’indietro notando che **solo nel caso di archi
 Per il vettore $V$ dei visitati uso tre step:
 - in $V$ un nodo vale $0$ se il nodo non è stato ancora visitato
 - in $V$ un nodo vale $1$ se il nodo è stato visitato ma la ricorsione su quel nodo non è ancora finita
+- in $V$ un nodo vale $2$ se il nodo è stato visitato e la ricorsione su quel nodo è finita
+In questo modo scopro un ciclo quando trovo un arco diretto verso un nodo già visitato che si trova nello stato $1$
+
+```python
+def DFSr(u, G, visitati):
+	visitati[u] = 1
+	for v in G[u]:
+		if vistati[v] == 1:
+			# ciclo trovato (nodo già visitato)
+			return True
+		if visitati[v] == 0:
+			# non visitato, continua DFS
+			if DFSr(v, G, visitati):
+				return True
+	visitati[u] = 2 # nodo completamete esplorato
+	return False
+
+def cicloD(u, G):
+	visitati = [0]*len(G)
+	return DFSr(u, G, visitati)
+```
+La complessità di questo algoritmo sarà: $O(n+m)$
+
+Se voglio sapere se un grafo contiene un ciclo o meno, devo visitarlo tutto, non importa il punto da cui parto. Non è quindi difficile modificare la procedure appena viste senza alterarne la complessità $O(n+m)$
+
+Di seguito la procedura modificata nel caso di grafi diretti:
+```python
+def cicloD(G):
+	visitati = [0]*len(G)
+	for u in range(len(G)):
+		if visitati[u] == 0:
+			if DFSr(u, G, visitati):
+				return True
+	return False
+```
