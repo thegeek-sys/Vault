@@ -220,29 +220,21 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 
 ---
 ## Esercizio
-$
+
 >[!question]
->- Quanto tempo impiega un pacchetto di $1000\text{ byte}$ byte per propagarsi su un collegamento di $2500\text{ km}$, con velocità di propagazione pari a $2,5\text{ x }10^8 \text{ m/s}$ e rate di $2 \text{ Mbps}$
->- Questo ritardo dipende dalla lunghezza del pacchetto?
->- Calcolare il ritardo di trasmissione
+>1. Quanto tempo impiega un pacchetto di $1000\text{ byte}$ byte per propagarsi su un collegamento di $2500\text{ km}$, con velocità di propagazione pari a $2,5\times10^8 \text{ m/s}$ e rate di $2 \text{ Mbps}$
+>2. Questo ritardo dipende dalla lunghezza del pacchetto?
+>3. Calcolare il ritardo di trasmissione
+>>[!done]-
+>>##### 1.
+>>$$2500\text{ km}=2.500.000\text{ m}$$
+>>$$\frac{2500000\text{ m}}{2,5\times10^8\text{ m/s}}=0,01\text{ sec}$$
+>>##### 2.
+>>No
+>>##### 3.
+>>$$2\text{ Mbps}=2.000.000\text{ bps}$$
+>>$$1000\text{ byte}=8000\text{ bit}$$
+>>$$\frac{8000\text{ bit}}{2000000\text{ bps}}=0,004\text{ sec}$$
+>>$$(0,004+0,01)\text{ sec}=0,014\text{ sec}$$
 
-$$
-2500\text{ km}=2.500.000\text{ m}
-$$
-$$
-\frac{2500000\text{ m}}{2,5\cdot10^8\text{ m/s}}=0,01\text{ sec}
-$$
-No
 
-$$
-2\text{ Mbps}=2.000.000\text{ bps}
-$$
-$$
-1000\text{ byte}=8000\text{ bit}
-$$
-$$
-\frac{8000\text{ bit}}{2000000\text{ bps}}=0,004\text{ sec}
-$$
-$$
-(0,004+0,01)\text{ sec}=0,014\text{ sec}
-$$
