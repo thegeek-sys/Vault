@@ -220,7 +220,7 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 
 ---
 ## Esercizio
-
+$
 >[!question]
 >- Quanto tempo impiega un pacchetto di $1000\text{ byte}$ byte per propagarsi su un collegamento di $2500\text{ km}$, con velocità di propagazione pari a $2,5\text{ x }10^8 \text{ m/s}$ e rate di $2 \text{ Mbps}$
 >- Questo ritardo dipende dalla lunghezza del pacchetto?
