@@ -20,6 +20,7 @@ Completed:
 - [[#Perdita di pacchetti (packet loss)|Perdita di pacchetti (packet loss)]]
 - [[#Ritardi e percorsi in Internet|Ritardi e percorsi in Internet]]
 - [[#Prodotto $\text{rate}\cdot \text{ritardo}$|Prodotto rate*ritardo]]
+- [[#Esercizio|Esercizio]]
 ---
 ## Introduction
 L’internet può essere interpretato come una **rete di reti** composta da reti di accesso e backbone Internet
@@ -236,5 +237,3 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >>$$1000\text{ byte}=8000\text{ bit}$$
 >>$$\frac{8000\text{ bit}}{2000000\text{ bps}}=0,004\text{ sec}$$
 >>$$(0,004+0,01)\text{ sec}=0,014\text{ sec}$$
-
-
