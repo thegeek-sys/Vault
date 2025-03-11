@@ -130,3 +130,10 @@ Principali attributi della struttura dati inode:
 All’inizio del disco è sempre presente una **tabella inode**
 
 >[!example] Esempio per ext2
+>![[Pasted image 20250311121231.png]]
+>![[Pasted image 20250311121310.png|400]]
+>![[Pasted image 20250311121337.png|400]]
+>
+>Come viene seguito un path:
+>![[Pasted image 20250311121421.png]]
+
