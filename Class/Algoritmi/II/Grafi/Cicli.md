@@ -11,9 +11,33 @@ Dato un grafo $G$ (diretto o indiretto) ed un suo nodo $u$ vogliamo sapere se da
 
 ![[Pasted image 20250311104046.png]]
 
+---
+## Errori
 L’idea di partenza **sbagliata** è: visita il grafo, e se nel corso della visita incontri un nodo già visitato interrompila e restituisci `True`, se al contrario la visita termina regolarmente restituisci `False`
 
 Nei grafi non diretti l’algoritmo restituirebbe sempre `True` in quanto ogni arco nei grafi non diretti risulterebbe come due archi nelle direzioni opposte se fosse un grafo diretto (il nostro algoritmo troverebbe sempre un ciclo)
 ![[Pasted image 20250311104743.png|600]]
 
-Per risolvere il problema, durante la visita alla ricerca del ciclo, devo distinguere nella lista di adiacenza di ciascun nodo $y$ che incontro il nodo $x$ che mi ha portato a visitarlo (il padre di $y$ nell’albero DFS)
+Per risolvere il problema, durante la visita alla ricerca del ciclo, devo distinguere nella lista di adiacenza di ciascun nodo $y$ che incontro, il nodo $x$ che mi ha portato a visitarlo (non devo continuare la ricerca su $y$ se il prossimo nodo $x$ è il padre)
+
+Ma anche in questo caso l’algoritmo risulterebbe essere **scorretto** nel caso di grafi diretti. Infatti incontrare in un grafo diretto un nodo già visitato non significa necessariamente che si è in presenza di un ciclo (la procedure può terminare con `True` anche se in assenza di ciclo)
+![[Pasted image 20250311105608.png]]
+
+---
+## Algoritmo
+Durante la visita DFS posso incontrare nodi già visitati in tre modi diversi:
+- **archi in avanti** → frecce dirette da un antenato ad un discendente
+- **archi all’indietro** → frecce dirette da un discendente ad un altenato
+- **archi di attraversamento**
+
+>[!example]
+>![[Pasted image 20250311105859.png|600]]
+
+**Solo** la presenza di **archi all’indietro** testimonia la presenza di un **ciclo**
+
+Per risolvere il problema, durante la visita DFS alla ricerca del ciclo, devo poter distinguere la scoperta di nodi già visitati grazie ad un arco all’indietro dagli altri.
+Posso individuare i visitati all’indietro notando che **solo nel caso di archi all’indietro la visita del nodo ha già terminato la sua ricorsione**
+
+Per il vettore $V$ dei visitati uso tre step:
+- in $V$ un nodo vale $0$ se il nodo non è stato ancora visitato
+- in $V$ un nodo vale $1$ se il nodo è stato visitato ma la ricorsione su quel nodo non è ancora finita
