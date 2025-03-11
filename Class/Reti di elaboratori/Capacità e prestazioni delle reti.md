@@ -254,4 +254,3 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >>Si, infatti il tempo di propagazione è minore del tempo di propagazione. Quindi il primo bit arriva dopo $0,2\text{ ms}$
 >>##### 4
 >>$$10.000.000\text{ bps}\cdot 0,0002 \text{ sec} = 2000\text{ bit}$$
-	
