@@ -209,7 +209,7 @@ Il tempo di andata e ritorno (**round trip time** - *RTT*) include i 4 ritardi v
 
 ---
 ## Prodotto $\text{rate}\cdot \text{ritardo}$
-Il prodotto $\text{rate}\cdot \text{ritardo}$ rappresenta il **massimo numero di bit che possono trovarsi sul canale**.
+Il prodotto $\text{rate}\cdot \text{ritardo}$ (di propagazione) rappresenta il **massimo numero di bit che possono trovarsi sul canale**.
 
 >[!example]
 >Supponiamo di avere un link con rate di $1\text{ bps}$ e un ritardo di $5 \text{ sec}$
@@ -253,5 +253,4 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >>##### 3
 >>Si, infatti il tempo di propagazione è minore del tempo di propagazione. Quindi il primo bit arriva dopo $0,2\text{ ms}$
 >>##### 4
->>$$10.000.000\text{ bps}\cdot 0,0005 \text{ sec} = 5000\text{ bit}$$
-
+>>$$10.000.000\text{ bps}\cdot 0,0002 \text{ sec} = 2000\text{ bit}$$
