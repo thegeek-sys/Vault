@@ -243,6 +243,7 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >1. Quanto impiega l’host $A$ a trasmettere un pacchetto?
 >2. Dopo quanto tempo l’host $B$ avrà ricevuto l’intero pacchetto
 >3. Quando l’host $A$ ha terminato di trasmettere un pacchetto, l’host $B$ ha già ricevuto parte di esso?
+>4. Calcolare il numero massimo di bit che si possono trovare su un canale
 >>[!done]-
 >>##### 1
 >>$$10\text{ Mbps}=10.000.000\text{ bps}$$
@@ -251,3 +252,6 @@ Possiamo pensare al link tra due punti come a un tubo. La sezione trasversale de
 >>$$(0,0002+0,0003)\text{ sec}=0,0005\text{ sec}$$
 >>##### 3
 >>Si, infatti il tempo di propagazione è minore del tempo di propagazione. Quindi il primo bit arriva dopo $0,2\text{ ms}$
+>>##### 4
+>>$$10.000.000\text{ bps}\cdot 0,0005 \text{ sec} = 5000\text{ bit}$$
+
