@@ -77,3 +77,6 @@ Si hanno due possibilità per $D$:
 
 ---
 ## Partizioni e mounting
+Un singolo disco può essere suddiviso in due o più partizioni.
+Una partizione $A$ può contenere il sistema operativo e la partizione $B$ i dati degli utenti (home directory degli utenti). La partizione $A$ verrà montata su `/`, mentre la partizione $B$ verrà montata su `/home`
+
