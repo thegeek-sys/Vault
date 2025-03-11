@@ -4,60 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "455919ad3cc4a222",
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "2fa9fe16485b867d",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Reti di elaboratori/Reti di elaboratori.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Sistemi Operativi"
+              "title": "Reti di elaboratori"
             }
           },
           {
-            "id": "535b731e6b0aa1fe",
+            "id": "a5a580268106498d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/II/II.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "II"
-            }
-          },
-          {
-            "id": "ed92920375912e96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Sistemi Operativi/II/Il filesystem.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Il filesystem"
-            }
-          },
-          {
-            "id": "6cca2c5f12de3b94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Sistemi Operativi/II/Introduzione.md",
+                "file": "Class/Reti di elaboratori/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
@@ -66,21 +38,35 @@
             }
           },
           {
-            "id": "359d43189bf13422",
+            "id": "7dc1034de11c9f5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/I/Sicurezza.md",
+                "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Capacità e prestazioni delle reti"
+            }
+          },
+          {
+            "id": "27625168f8ba7a83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2025-03-11_RETI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sicurezza"
+              "title": "2025-03-11_RETI"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -112,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "disco",
+                "query": "successo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273,
+    "width": 245.51103591918945,
     "collapsed": true
   },
   "right": {
@@ -154,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +150,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Gestione della memoria"
+              "title": "Backlinks for Capacità e prestazioni delle reti"
             }
           },
           {
@@ -173,12 +159,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Gestione della memoria"
+              "title": "Outgoing links from Basi di dati"
             }
           },
           {
@@ -200,10 +186,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
+                "file": "Class/Basi di dati/Esercizi.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gestione della memoria"
+              "title": "Outline of Esercizi"
             }
           },
           {
@@ -216,8 +202,7 @@
               "title": "Advanced Tables"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -239,8 +224,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ed92920375912e96",
+  "active": "27625168f8ba7a83",
   "lastOpenFiles": [
+    "Class/Reti di elaboratori/Reti di elaboratori.md",
+    "Flet-notes/2025-03-11_RETI.md",
+    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
+    "Class/Sistemi Operativi/Sistemi Operativi.md",
+    "Class/Sistemi Operativi/II/Il filesystem.md",
     "Files/Pasted image 20250311121421.png",
     "Files/Pasted image 20250311121337.png",
     "Files/Pasted image 20250311121310.png",
@@ -248,10 +238,8 @@
     "Files/Pasted image 20250311120539.png",
     "Class/Sistemi Operativi/II/Introduzione.md",
     "Class/Sistemi Operativi/I/Sicurezza.md",
-    "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Sistemi Operativi/I/Approfondimenti - Passwords/Password in Linux.md",
     "Class/Sistemi Operativi/I/Approfondimenti - Passwords/Approfondimenti - Passwords.md",
-    "Class/Sistemi Operativi/II/Il filesystem.md",
     "Files/Pasted image 20250311114805.png",
     "Class/Sistemi Operativi/II/II.md",
     "Class/Algoritmi/II/Grafi/Cicli.md",
@@ -262,12 +250,9 @@
     "Files/Pasted image 20250311104046.png",
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/II/Grafi/Ordinamento topologico.md",
-    "Files/Pasted image 20250311103303.png",
     "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
     "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
     "Class/Algoritmi/II/Grafi/Introduzione.md",
-    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
-    "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Class/Reti di elaboratori/Introduzione.md",
     "Class/Algoritmi/Algoritmi.md",
     "Class/Sistemi Operativi/I/Gestione della concorrenza/Gestione della concorrenza.md",
