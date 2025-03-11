@@ -93,5 +93,14 @@ Una partizione $A$ può contenere il sistema operativo e la partizione $B$ i dat
 ![[Pasted image 20250311114805.png]]
 
 Ci sono anche file system non linux, ad esempio windows: NTFS, MSDOS, FAT32, FAT64. Di questi FAT (qualsiasi) e NTFS possono essere montati su un filesystem Linux
-• mount e’ il comando per montare un fs e visualizzare il fs
-montati
+`mount` è il comando per montare un fsfilesystem e visualizzare il filesystem montati
+
+### `mount`
+`mount` visualizza gli fs montati, ma ciò può essere fatto anche con:
+- `cat /etc/mtab`
+- `cat /etc/fstab` (montati al boot)
+
+>[!warning] Possibile domanda di esame
+>- Usare il comando mount o consultare il contenuto del file `/etc/mtab` per verdere I file system montati.
+>- Con l’aiuto del `mount` cercare di capire le varie opzioni di mounting dei vari filesystems
+
