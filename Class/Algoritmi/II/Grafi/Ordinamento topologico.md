@@ -48,3 +48,14 @@ Complessità:
 - inizializzare l’insieme delle sorgenti costa $O(n)$
 - il `while` viene iterato $O(n)$ volte e il costo totale del `for` al termine del `while` è $O(m)$
 Il costo dell’algoritmo è $O(n+m)$
+
+### Algoritmo alternativo
+1. Effettua una visita DFS del DAG a partire dal nodo $0$
+2. Man mano che termina la visita dei vari nodi, inseriscili in una lista
+3. Restituisci come ordinamento dei nodi il `reverse` della lista
+
+>[!info] Dimostrazione
+>Siano $x$ e $y$ due nodi in $G$, con arco che va da $x$ a $y$. Consideriamo i due possibili casi e facciamo vedere che in entrambi i casi nella lista, prima di effettuare il reverse, $y$ prevede $x$
+>- L’arco $(x,y)$ viene attraversato durante la visita → in questo caso banalmente la visita di $y$ finisce prima della visita di $x$ e $y$ finisce nella lista prima che ci finisca $x$
+>- L’arco $(x,y)$ non viene attraversato durante la visita → durante la visita di $x$ il nodo $y$ è già visitato e la sua visita è anche già terminata (infatti da $y$ non c’è un cammino che porta a $x$, in caso contrario nel DAG ci sarebbe un ciclo), anche in questo caso $y$ finisce nella lista prima che ci finisca $x$
+
