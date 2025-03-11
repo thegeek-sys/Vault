@@ -80,3 +80,18 @@ Si hanno due possibilità per $D$:
 Un singolo disco può essere suddiviso in due o più partizioni.
 Una partizione $A$ può contenere il sistema operativo e la partizione $B$ i dati degli utenti (home directory degli utenti). La partizione $A$ verrà montata su `/`, mentre la partizione $B$ verrà montata su `/home`
 
+---
+## Tipi di filesystem
+
+| Nome     | Journal | Partiz (TB) | File (TB) | Nome file (bytes) |
+| -------- | ------- | ----------- | --------- | ----------------- |
+| ext2     | No      | 32          | 2         | 255               |
+| ext3     | Si      | 32          | 2         | 255               |
+| ext4     | Si      | 1000        | 16        | 255               |
+| reiserFS | Si      | 16          | 8         | 4032              |
+
+![[Pasted image 20250311114805.png]]
+
+Ci sono anche file system non linux, ad esempio windows: NTFS, MSDOS, FAT32, FAT64. Di questi FAT (qualsiasi) e NTFS possono essere montati su un filesystem Linux
+• mount e’ il comando per montare un fs e visualizzare il fs
+montati
