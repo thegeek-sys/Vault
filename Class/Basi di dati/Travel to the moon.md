@@ -4,7 +4,14 @@
 	2. Data di inizio
 	3. Data di fine
 	4. Nave utilizzata (vd. 2)
-	5. Itinerario seguito (vd.. 4)
+	5. Itinerario seguito (vd. 4)
+	6. Tipo uno tra
+		1. luna di miele, di cui interessa
+			1. sottotipo, uno tra:
+				1. tradizionali → quelli che prevedono un numero di destinazioni romantiche (vd. 3.4.1) maggiore o uguale al numero di destinazioni divertenti (vd. 3.4.2)
+				2. alternative → quelle che non sono tradizionali
+		2. per famiglie, di cui interessa
+			1. se sono adatte per bambini (un booleano)
 2. Requisiti sulle navi
 	1. Nome
 	2. Gradi di comfort (un intero tra 3 e 5)
