@@ -137,3 +137,5 @@ All’inizio del disco è sempre presente una **tabella inode**
 >Come viene seguito un path:
 >![[Pasted image 20250311121421.png]]
 
+### Visualizzare le informazioni contenute nell’inode di un file
+Tra le opzioni del comando `ls` vi è la possibilità di visualizzare l’inode number tramite il flag `-i`, e i diritti, user, group, date, size, time tramite l’opzione `-l`
