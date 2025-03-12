@@ -23,5 +23,5 @@
 		1. Destinazione (vd. 3)
 		2. Arrivo
 			1. Ora
-			2. 
+			2. Numero d’ordine del giorno (rispetto alla data di inizio della crociera)
 5. Posti da vedere
