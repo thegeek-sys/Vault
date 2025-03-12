@@ -139,3 +139,7 @@ All’inizio del disco è sempre presente una **tabella inode**
 
 ### Visualizzare le informazioni contenute nell’inode di un file
 Tra le opzioni del comando `ls` vi è la possibilità di visualizzare l’inode number tramite il flag `-i`, e i diritti, user, group, date, size, time tramite l’opzione `-l`
+
+![[Pasted image 20250312124306.png]]
+Il numero dopo i diritti indica il numero di directory all’interno della directory (vengono contate anche `.` e `..`); per i file è ovviamente 1.
+Totale invece rappresenta la dimensione della directory in blocchi su disco, ma non per il suo sottoalbero (normalmente un blocco ha dimensione tra $1\text{kB}$ e $4\text{kB}$)
