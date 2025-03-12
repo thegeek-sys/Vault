@@ -29,4 +29,5 @@
 			2. Numero d’ordine del giorno (rispetto alla data di inizio della crociera)
 5. Posti da vedere
 	1. Nome
-	2. Fascia oraria
+	2. Descrizione
+	3. Orari di apertura (una mappa che associa ad ogni giorno della settimana un insieme di fascia oraria, definita in termini di una coppia di orari)
