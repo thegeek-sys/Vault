@@ -38,3 +38,13 @@
 	1. Nome
 	2. Descrizione
 	3. Orari di apertura (una mappa che associa ad ogni giorno della settimana un insieme di fascia oraria, definita in termini di una coppia di orari)
+6. Clienti
+	1. Nome
+	2. Cognome
+	3. Età
+	4. Indirizzo
+7. Prenotazioni
+	1. Istante
+	2. Crociera (vd. 1)
+	3. Numero di posti prenotati (un intero maggiore di zero)
+	4. Cliente  che effettua la prenotazione (vd. 6)
