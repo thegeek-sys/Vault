@@ -8,51 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "785e57b5e4fd92db",
+            "id": "2fa9fe16485b867d",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Reti di elaboratori/Reti di elaboratori.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Basi di dati"
+              "title": "Reti di elaboratori"
             }
           },
           {
-            "id": "487e02a69f634897",
+            "id": "a5a580268106498d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Travel to the moon.md",
+                "file": "Class/Reti di elaboratori/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Travel to the moon"
+              "title": "Introduzione"
             }
           },
           {
-            "id": "3ca506e484c95efa",
+            "id": "7dc1034de11c9f5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md",
+                "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modello relazionale"
+              "title": "Capacità e prestazioni delle reti"
+            }
+          },
+          {
+            "id": "27625168f8ba7a83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2025-03-11_RETI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-03-11_RETI"
+            }
+          },
+          {
+            "id": "ab7cdd866c3b4d58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flet-notes/2025-03-13_RETI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-03-13_RETI"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -126,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-12-11.md",
+                "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +164,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-12-11"
+              "title": "Backlinks for Capacità e prestazioni delle reti"
             }
           },
           {
@@ -210,13 +238,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "487e02a69f634897",
+  "active": "ab7cdd866c3b4d58",
   "lastOpenFiles": [
+    "Flet-notes/2025-03-13_RETI.md",
+    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
     "Class/Basi di dati/Travel to the moon.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Sistemi Operativi/II/Il filesystem.md",
     "Files/Pasted image 20250312124306.png",
-    "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
     "Flet-notes/2025-03-11_RETI.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
@@ -250,7 +279,6 @@
     "Class/Sistemi Operativi/I",
     "Class/Algoritmi/II/Esercizi.md",
     "Class/Algoritmi/I/I.md",
-    "Class/Algoritmi/II/II.md",
     "Class/Algoritmi/II/Grafi",
     "Class/Agloritmi",
     "Class/Algoritmi/II",
