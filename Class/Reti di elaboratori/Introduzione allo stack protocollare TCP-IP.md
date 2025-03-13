@@ -5,6 +5,41 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Protocollo|Protocollo]]
+- [[#Organizzazione a più livelli|Organizzazione a più livelli]]
+	- [[#Organizzazione a più livelli#Principi della strutturazione a livelli|Principi della strutturazione a livelli]]
+	- [[#Organizzazione a più livelli#Collegamento logico fra i livelli|Collegamento logico fra i livelli]]
+- [[#Lo stack protocollare TCP/IP|Lo stack protocollare TCP/IP]]
+	- [[#Lo stack protocollare TCP/IP#Pila di protocolli TCP/IP|Pila di protocolli TCP/IP]]
+		- [[#Pila di protocolli TCP/IP#Applicazione|Applicazione]]
+		- [[#Pila di protocolli TCP/IP#Trasporto|Trasporto]]
+		- [[#Pila di protocolli TCP/IP#Rete|Rete]]
+		- [[#Pila di protocolli TCP/IP#Link|Link]]
+		- [[#Pila di protocolli TCP/IP#Fisico|Fisico]]
+	- [[#Lo stack protocollare TCP/IP#Comunicazione in una internet|Comunicazione in una internet]]
+- [[#Gerarchia dei protocolli|Gerarchia dei protocolli]]
+- [[#Servizi e protocolli|Servizi e protocolli]]
+	- [[#Servizi e protocolli#Architettura di rete|Architettura di rete]]
+- [[#Incapsulamento e decapsulamento|Incapsulamento e decapsulamento]]
+	- [[#Incapsulamento e decapsulamento#Multiplexing e demultiplexing|Multiplexing e demultiplexing]]
+- [[#Indirizzamento nel modello TCP/IP|Indirizzamento nel modello TCP/IP]]
+- [[#Layering|Layering]]
+	- [[#Layering#Vantaggi|Vantaggi]]
+	- [[#Layering#Svantaggi|Svantaggi]]
+- [[#Modello OSI|Modello OSI]]
+	- [[#Modello OSI#Confronto tra OSI e TCP/IP|Confronto tra OSI e TCP/IP]]
+	- [[#Modello OSI#Insuccesso del modello OSI|Insuccesso del modello OSI]]
+- [[#Gli standard|Gli standard]]
+	- [[#Gli standard#Livello di maturità|Livello di maturità]]
+- [[#Livello applicazione|Livello applicazione]]
+	- [[#Livello applicazione#Offerta di servizi|Offerta di servizi]]
+		- [[#Offerta di servizi#Protocolli standard|Protocolli standard]]
+		- [[#Offerta di servizi#Protocolli non standard|Protocolli non standard]]
+	- [[#Livello applicazione#Architettura di un’applicazione|Architettura di un’applicazione]]
+		- [[#Architettura di un’applicazione#Paradigma client-server|Paradigma client-server]]
+---
 ## Introduction
 Si è fornita una panoramica della struttura e delle prestazioni di Internet, che è costituita da numerose reti di varie dimensioni interconnesse tramite opportuni dispositivi di comunicazione. Tuttavia per poter comunicare non è sufficiente assicurare questi collegamenti, ma è necessario utilizzare sia dell’hardware che del software (**hardware e software devono essere coordinati**)
 
@@ -191,4 +226,40 @@ specifica diviene uno standard Internet. Il primo stadio di una specifica è que
 ![[Pasted image 20250313225612.png|400]]
 
 ---
-## Modello TCP/IP
+## Livello applicazione
+Il livello applicazione fornisce **servizi all’utente**.
+La comunicazione è fornita per mezzo di una **connessione logica**: questo significa
+che i livelli applicazione nei due lati della comunicazione agiscono **come se esistesse un collegamento diretto** attraverso il quale poter inviare e ricevere messaggi, nonostante la comunicazione reale avviene attraverso più livelli, più dispositivi e vari canali fisici
+
+![[Pasted image 20250313230039.png|500]]
+
+### Offerta di servizi
+Internet è stata progettata per fornire servizi agli utenti. Dato che il livello applicazione è l’unico che fornisce servizi agli utenti di Internet, la sua flessibilità consente di **aggiungere nuovi protocolli con estrema facilità**, così come si è verificato nella storia di Internet e sta tuttora avvenendo.
+
+Un protocollo che viene aggiunto a un dato livello deve essere progettato in modo da usare i servizi del livello inferiore, ma aggiungere o eliminare protocolli dal livello applicazione è relativamente facile perché non comporta modifiche agli altri livelli
+#### Protocolli standard
+Esistono diversi protocolli di livello applicazione che sono standardizzati e documentati dagli enti responsabili della gestione di Internet.
+Ogni protocollo standard è costituito da una coppia di programmi che interagiscono con l’utente e con il livello di trasporto per fornire uno specifico servizio. Un esempio è un’applicazione Web specificata dal protocollo di comunicazione HTTP
+#### Protocolli non standard
+E’ possibile creare un’applicazione non standard scrivendo due programmi che forniscono servizi agli utenti, facendo uso dei servizi di trasporto
+Non è necessario chiedere autorizzazioni: un’azienda può sviluppare il proprio protocollo di livello applicazione per far comunicare i propri uffici sparsi nel mondo
+
+### Architettura di un’applicazione
+I due programmi applicativi devono essere entrambi in grado di richiedere e offrire servizi,
+oppure ciascuno deve occuparsi di uno dei due compiti?
+
+Esistono tre differenti paradigmi:
+- Client-server
+- Peer-to-peer (P2P)
+- Architetture ibride (client-server e P2P)
+#### Paradigma client-server
+![[Pasted image 20250313230815.png|600]]
+Il **client** è il richiedente del del servizio e rimane in esecuzione solo quando il servizio è necessario. Numerosi client che richiedono i servizi
+Il **server** invece fornisce i servizi e rimane sempre in esecuzione in attesa di richieste client. Numero limitato di processi server pronti a offrire uno specifico servizio
+
+>[!info] Il ruolo delle due entità è totalmente differente: non è possibile eseguire un client come programma server e viceversa
+
+Svantaggi:
+- Carico di comunicazione risulta concentrato sul server (che deve essere molto potente)
+- Server farm per creare un potente server virtuale
+- Costi di gestione per offrire servizio
