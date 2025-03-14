@@ -5,6 +5,45 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Web e HTTP|Web e HTTP]]
+	- [[#Web e HTTP#Architettura generale di un browser|Architettura generale di un browser]]
+	- [[#Web e HTTP#Terminologia|Terminologia]]
+		- [[#Terminologia#URL|URL]]
+	- [[#Web e HTTP#Documenti Web|Documenti Web]]
+- [[#Panoramica su HTTP (RFC 2616)|Panoramica su HTTP (RFC 2616)]]
+- [[#Connessioni HTTP|Connessioni HTTP]]
+- [[#Schema del tempo di risposta|Schema del tempo di risposta]]
+	- [[#Schema del tempo di risposta#Connessioni persistenti|Connessioni persistenti]]
+- [[#Formato generale dei messaggi di richiesta HTTP|Formato generale dei messaggi di richiesta HTTP]]
+- [[#Upload dell’input di un form|Upload dell’input di un form]]
+	- [[#Upload dell’input di un form#Tipi di metodi (HTTP/1.1)|Tipi di metodi (HTTP/1.1)]]
+	- [[#Upload dell’input di un form#Intestazioni nella richiesta|Intestazioni nella richiesta]]
+- [[#Formato generale dei messaggi di risposta HTTP|Formato generale dei messaggi di risposta HTTP]]
+	- [[#Formato generale dei messaggi di risposta HTTP#Codici di stato della risposta HTTP|Codici di stato della risposta HTTP]]
+	- [[#Formato generale dei messaggi di risposta HTTP#Intestazioni nella risposta|Intestazioni nella risposta]]
+- [[#Esempio GET|Esempio GET]]
+- [[#Esempio PUT|Esempio PUT]]
+- [[#Cookie|Cookie]]
+	- [[#Cookie#Sessione|Sessione]]
+	- [[#Cookie#Interazione utente-server|Interazione utente-server]]
+	- [[#Cookie#Nel dettaglio|Nel dettaglio]]
+	- [[#Cookie#Durata di un cookie|Durata di un cookie]]
+	- [[#Cookie#Altre soluzione per mantenere lo stato|Altre soluzione per mantenere lo stato]]
+- [[#Web caching|Web caching]]
+	- [[#Web caching#Browser caching|Browser caching]]
+	- [[#Web caching#Server proxy|Server proxy]]
+		- [[#Server proxy#Server proxy in una LAN|Server proxy in una LAN]]
+- [[#Esempio in assenza di cache|Esempio in assenza di cache]]
+	- [[#Esempio in assenza di cache#Ipotesi|Ipotesi]]
+	- [[#Esempio in assenza di cache#Stima del tempo di risposta|Stima del tempo di risposta]]
+	- [[#Esempio in assenza di cache#Soluzione possibile|Soluzione possibile]]
+		- [[#Soluzione possibile#Conseguenze|Conseguenze]]
+- [[#Esempio in presenza di cache|Esempio in presenza di cache]]
+- [[#Inserimento di un oggetto in cache|Inserimento di un oggetto in cache]]
+- [[#Validazione dell’oggetto|Validazione dell’oggetto]]
+	- [[#Validazione dell’oggetto#GET condizionale|GET condizionale]]
+---
 ## Web e HTTP
 Il **World Wide Web** (*WWW*) è un’applicazione Internet nata dalla necessità di scambio e condivisione di informazioni tra ricercatori universitari di varie nazioni.
 
