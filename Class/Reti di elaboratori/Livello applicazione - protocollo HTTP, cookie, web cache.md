@@ -278,3 +278,98 @@ Il browser può essere configurato per inviare le richieste dell’utente alla c
 ![[Pasted image 20250314012155.png|550]]
 Anche gli ISP possono mantenere un proxy per le richieste dei vari utenti
 
+---
+## Esempio in assenza di cache
+![[Pasted image 20250314100050.png|center|250]]
+### Ipotesi
+Dimensione media dell’oggetto: $1\text{ Mb}$
+Frequenza media di richieste dai browser istituzionali ai server d’origine: $15 \text{ richieste al secondo}$
+Ritardo per recuperare un oggetto sulla rete internet (*Internet delay*): $2\text{ sec}$
+Tempo totale di risposta (*total delay*): $\text{LAN delay}+\text{access delay}+\text{Internet delay}$
+
+### Stima del tempo di risposta
+Valutiamo l’intensità di traffico $\frac{La}{R}$
+$$
+\text{utilizzo sulla LAN}=\frac{15\text{ req/s}\cdot 1\text{ Mb/req}}{100\text{ Mbps}}=15\%
+$$
+$$
+\text{utilizzo sul collegamento d'accesso}=\frac{15\text{ req/s}\cdot 1\text{ Mb}}{15 \text{ Mbps}}=100\%
+$$
+Ricordiamo che quando l’intensità di traffico riempie il collegamento, il ritardo tende ad aumentare, quindi si ha:
+$$
+\begin{align}
+\text{ritardo totale}&=\text{ritardo di Internet}+\text{ritardo di accesso}+\text{ritardo della LAN} \\
+&=2\text{ sec}+\text{minuti}+\text{millisecondi}
+\end{align}
+$$
+### Soluzione possibile
+![[Pasted image 20250314100029.png|250]]
+Una possibile soluzione sta nell’aumentare l’ampiezza di banda del collegamento d’accesso a $100\text{ Mbps}$ per esempio
+#### Conseguenze
+$$
+\text{utilizzo sulla LAN}=15\%
+$$
+$$
+\text{utilizzo sul collegamento d'accesso}=15\%
+$$
+$$
+
+\begin{align}
+\text{ritardo totale}&=\text{ritardo di Internet}+\text{ritardo di accesso}+\text{ritardo della LAN} \\
+&=2\text{ sec}+\text{millisecondi}+\text{millisecondi}
+\end{align}
+$$
+Ma non sempre è attuabile e comunque risulta costoso aggiornare il collegamento
+
+---
+## Esempio in presenza di cache
+Una soluzione alternativa all’esempio precedente consiste nell’installare la cache
+![[Pasted image 20250314100541.png|250]]
+Supponiamo una percentuale di successo (*hit rate*) pari a $0,4$.
+Come conseguenza si ha che:
+- il $40\%$ delle richieste sarà soddisfatto quasi immediatamente (circa $10\text{ ms}$)
+- il $60\%$ delle richieste sarà soddisfatto dal server d’origine
+- l’utilizzo del collegamento d’accesso si è ridotto del $60\%$, determinando ritardi trascurabili (circa $10\text{ ms}$)
+$$
+\begin{align}
+\text{ritardo totale medio}&=\text{ritardo di Internet}+\text{ritardo di accesso}+\text{ritardo della LAN} \\
+&=0,6\cdot 2,01\text{ sec}+0,4\cdot 0,01\text{ sec} \sim 1,2\text{ sec}
+\end{align}
+$$
+
+---
+## Inserimento di un oggetto in cache
+Il **client** invia un messaggio di richiesta HTTP alla cache
+```
+GET /page/figure.gif
+Host: www.sito.com
+```
+La cache non ha l’oggetto, quindi invia la richiesta HTTP al **server**. Quindi il server invia la risposta  HTTP alla cache
+```
+HTTP/1.1 200 OK
+Date: ...
+...
+Last-Modified: Wed, 2 Jul 2008 9:23:24
+```
+La cache così memorizza la pagina per richieste future, mantenendo la data di ultima modifica. Infine la cache invia la risposta al client
+
+---
+## Validazione dell’oggetto
+Il **client** invia un messaggio di richiesta HTTP alla cache
+```
+GET /page/figure.gif
+Host: www.sito.com
+```
+La cache ha l’oggetto, a prima di inviarlo al client deve verificare che non sia scaduto (modificato sul server di origine).
+Quindi la cache esegue una richiesta verso il Web server che mantiene l’oggetto per verificarne la validità mediante un **GET condizionale**
+### GET condizionale
+Il GET condizionale permette di inviare una richiesta se e solo se determinati requisiti sono soddisfatti
+![[Pasted image 20250314101320.png|250]]
+In questo caso la cache specifica la data della copia dell’oggetto nella richiesta HTTP
+```
+If-modified-since
+```
+Ora la risposta del server non contiene l’oggetto se la copia della cache è aggiornata
+```
+HTTP/1.1 304 Not Modified
+```
