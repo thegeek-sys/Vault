@@ -25,5 +25,54 @@ La **visita in ampiezza** (*Breadth First Search*) esplora i nodi del grafo part
 
 Si genera così un albero detto **albero BFS** tramite il quale si visitano nodi sempre più distanti dalla radice
 
-Per effettuare questo tipo di visita manteniamo in una coda i nodi visitati i cui adiacenti non sono stati ancora esaminati. Ad ogni passo, preleviamo il primo nodo dalla coda, esaminiamo i suoi adiacenti e se scopriamo un nuovo nodo lo visitiamo e lo aggiungiamo alla coda.
+Per effettuare questo tipo di visita manteniamo in una **coda** i nodi visitati i cui adiacenti non sono stati ancora esaminati. Ad ogni passo, preleviamo il primo nodo dalla coda, esaminiamo i suoi adiacenti e se scopriamo un nuovo nodo lo visitiamo e lo aggiungiamo alla coda.
 
+![[Pasted image 20250314112303.png|500]]
+
+I relativi **alberi dei cammini minimi** risultati da tre visite BFS del grafo $G$ che partono da $0$, $5$ e $2$ rispettivamente
+![[Pasted image 20250314112347.png|500]]
+
+Si comincia con una coda contenente il solo nodo di partenza x. Fino a che la coda non risulta vuota: ad ogni passo un nodo viene estratto dalla coda, tutti i suoi adiacenti vengono visitati e messi in coda
+```python
+def BFS(x, G):
+	visitati = [0]*len(G)       # θ(n)
+	visitati[x] = 1
+	coda = [x]
+	while coda:
+		u = coda.pop(0)          # O(n)
+		for y in G[u]:           # O(n)
+			if visitati[y] == 0: # O(m)
+				visitati[y] = 1
+				coda.append(y)
+	return visitati
+
+# >> G=[[1,5], [2], [3], [4], [], [2,4], [2]]
+# >> BFS(0,G)
+# [1,1,1,1,1,1,0]
+```
+Alla fine $\text{visitati}[u]=1$ se e solo se $u$ è raggiungibile da $x$.
+Un nodo finisce in coda al più una volta (poi risulterà visitato e non ci finisce più) quindi il `while` verrà eseguito $O(n)$ volte. Le liste di adiacenza dei nodi verranno scorse al più una volta quindi il costo totale del `for` sarò $O(m)$. Infine l’estrazione in testa `pop(0)` ha costo $O(n)$.
+Inoltre poiché vengono sempre visitati archi e nodi diversi posso sommare $n$ e $m$ (per lo stesso motivo della [[Visitare in profondità (DFS)#Visitare in profondità (DFS)#Liste di adiacenza|DFS]]). Quindi la complessità è:
+$$
+\theta (n)+O(m)+O(n^2)=O(n^2)
+$$
+
+### Ottimizzazione
+Se però riuscissimo a eseguire `pop(0)` in $O(1)$ il costo diventerebbe $O(n+m)$
+Per farlo mi è sufficiente effettuare solo **cancellazioni logiche** e non effettive. Uso un puntatore $i$ che indica l’inizio della coda all’interno della lista. Il puntatore si incrementa ogni volta che si cancella nella coda (quindi il test di coda vuota va opportunamente modificato)
+```python
+def BFS(x, G):
+	visitati = [0]*len(G)       # θ(n)
+	visitati[x] = 1
+	coda = [x]
+	i = 0
+	while len(coda) > i:
+		u = coda[i]              # O(1)
+		i += 1
+		for y in G[u]:           # O(n)
+			if visitati[y] == 0: # O(m)
+				visitati[y] = 1
+				coda.append(y)
+	return visitati
+```
+Ora la procedura ha complessità $O(n+m)$
