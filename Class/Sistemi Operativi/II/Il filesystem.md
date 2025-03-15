@@ -187,3 +187,11 @@ Risulta analogo di setuid ma per i gruppi (i privilegi sono quelli del gruppo he
 Può essere applicato anche ad una directory, e allora ogni file creato al suo interno ha il gruppo della directory, anziché quello primario di chi crea i file
 
 ### Visualizzare pemessi speciali
+Vengono visualizzati al posto del bit di esecuzione:
+- il setuid nella terna utente (`user`)
+- il setgit nella terna gruppo (`group`)
+- lo sticky nella terna altro (`other`)
+
+![[Pasted image 20250315124907.png]]
+
+Se il permesso di esecuzione c’è, allora la `s` o la `t` saranno minuscoli, altrimenti saranno maiuscoli
