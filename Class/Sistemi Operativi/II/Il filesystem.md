@@ -234,3 +234,4 @@ Sposta un file (o lo rinomina). Le opzioni hanno lo stesso significato di `cp`, 
 Stesso significato delle opzioni per rispetto ai precedenti
 
 ### `ln [-s] src [dest]`
+Questo comando serve per creare dei symbolic e hard link. Di default verranno creati degli hard link ma con `-s` diventano soft
