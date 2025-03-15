@@ -218,4 +218,5 @@ Per settare il mode usando dei simboli il formato è: `[ugoa][+-=][perms...]`, d
 ---
 ## Comandi
 ### `umask [mode]`
-Setta la maschera dei file a `mode`, ovvero i diritti di accesso al file o alle directory nel momento della loro creazione
+Setta la maschera dei file a `mode`, ovvero i diritti di accesso al file o alle directory nel momento della loro creazione.
+La *umask* è rappresentata in numeri ottali (es. 022, 002, 077). Ogni cirfra rappresenta i permessi da rimuovere per utente (u), gruppo (g) e altri (o)
