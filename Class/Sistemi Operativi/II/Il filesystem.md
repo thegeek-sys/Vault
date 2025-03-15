@@ -144,4 +144,10 @@ Tra le opzioni del comando `ls` vi è la possibilità di visualizzare l’inode 
 Il numero dopo i diritti indica il numero di directory all’interno della directory (vengono contate anche `.` e `..`); per i file è ovviamente 1.
 Totale invece rappresenta la dimensione della directory in blocchi su disco, ma non per il suo sottoalbero (normalmente un blocco ha dimensione tra $1\text{kB}$ e $4\text{kB}$)
 
-L’opzione `-n` consente di visualizzare ID utente e ID gruppo invece del nome esteso
+L’opzione `-n` consente di visualizzare ID utente e ID gruppo invece dell’user esteso
+Per vedere i timestamp si usa l’opzione `-l` ma in combinazione con:
+- `-c` → **ctime** (change time, data di ultima modifica metadati del file)
+- `-u` → **atime** (access time, data di ultimo accesso)
+- senza niente → **mtime** (modification time, data di ultima modifica del contenuto del file)
+
+La sintesi delle opzioni sopra elencate la si ha con il comando `stat filename`
