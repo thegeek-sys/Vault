@@ -176,6 +176,14 @@ Esistono però anche dei permessi speciali che possono essere applicati a file e
 
 #### Sticky bit (t)
 Questo viene applicato sulle directory per correggere il comportamento di `w+x`, permettendo la cancellazione di file se si hanno permessi di scrittura su essi.
-Senza sticky bit infatti per cancellare un file in una directory, sarà sufficiente avere i diritti di scrittura sulla directory (non sono necessari permessi di scrittura sul file). Mentre con lo sticky bit sono necessari sia i permessi di scrittura sulla directory che sul file
+Senza sticky bit infatti per cancellare un file in una directory, sarà sufficiente avere i diritti di scrittura sulla directory (non sono necessari permessi di scrittura sul file). Mentre con lo sticky bit sono **necessari sia i permessi di scrittura sulla directory che sul file**
 
 #### Setuid bit (s)
+Questo si usa solo per i file eseguibili. Garantisce che **quando sono eseguiti**, hanno i **privilegi del proprietario del file**, e non quelli dell’utente che lo esegue (quindi se il proprietario è root, viene eseguito con privilegi di root indipendentemente da chi lo ha eseguito)
+Ad esempio il comando `passwd` ha il setuid, che permette ad un utente di moficare la propria password (nonostante il proprietario del comando sia `root`)
+
+#### Setgid bit (s)
+Risulta analogo di setuid ma per i gruppi (i privilegi sono quelli del gruppo he è proprietario del file eseguibile)
+Può essere applicato anche ad una directory, e allora ogni file creato al suo interno ha il gruppo della directory, anziché quello primario di chi crea i file
+
+### Visualizzare pemessi speciali
