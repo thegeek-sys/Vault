@@ -19,3 +19,7 @@ Questo presenta una **struttura gerarchica** composta da:
 ---
 ## DNS: Domain Name System
 Il **DNS** (*Domain Name System*) ha il compito di associare un hostname al relativo indirizzo ip
+
+![[Pasted image 20250315174220.png]]
+
+Ai tempi di ARPANET era un file `host.txt` che 
