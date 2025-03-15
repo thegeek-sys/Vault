@@ -186,7 +186,9 @@ Ad esempio il comando `passwd` ha il setuid, che permette ad un utente di mofica
 Risulta analogo di setuid ma per i gruppi (i privilegi sono quelli del gruppo he è proprietario del file eseguibile)
 Può essere applicato anche ad una directory, e allora ogni file creato al suo interno ha il gruppo della directory, anziché quello primario di chi crea i file
 
-
+### Visualizzare attributi di accesso
+Tramite il comando `ls` o `stat`
+![[Pasted image 20250315130553.png|400]]
 ### Visualizzare permessi speciali
 Vengono visualizzati al posto del bit di esecuzione:
 - il setuid nella terna utente (`user`)
@@ -196,3 +198,19 @@ Vengono visualizzati al posto del bit di esecuzione:
 ![[Pasted image 20250315124907.png]]
 
 Se il permesso di esecuzione c’è, allora la `s` o la `t` saranno minuscoli, altrimenti saranno maiuscoli
+
+### Settare i permessi
+```bash
+chmod mode[, mode...] filename
+```
+Setta la modalità (diritti) di accesso a file o directory
+Si può fare in due modi o tramite **formato ottale** o in **modalità simbolica** (lettere)
+L’opzione `-R` può essere applicata solo da `root` ed applica il comando a tutte le sottodirectory
+#### Formato ottale
+Si usano 4 numeri tra 0 e 7, il primo indica setuid (4), setgid (2) e sticky (1), gli altri sono utente, gruppo ed altri
+Si possono fornire 3 numeri se si assume setuid, setgid e sticky settati tutti a 0
+#### Modalità simbolica
+Per settare il mode usando dei simboli il formato è: `[ugoa][+-=][perms...]`, dove `perms` è:
+- `zero`
+- una o più lettere nell’insieme `{rxwXst}`
+- una lettera nell’insieme `{ugo}`
