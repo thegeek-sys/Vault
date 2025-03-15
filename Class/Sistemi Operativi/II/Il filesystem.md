@@ -156,3 +156,5 @@ Dove:
 - `Size` → dimensione del file in byte
 - `Blocks` → numero di blocchi allocati sul disco
 - `IO Block` → dimensione del blocco I/O del filesystem
+
+`stat -c %B filename` invece ci permette di stampare la dimensione in byte dei blocchi di I/O del filesystem su cui si trova il file (non la dimensione del file)
