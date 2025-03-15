@@ -214,3 +214,8 @@ Per settare il mode usando dei simboli il formato è: `[ugoa][+-=][perms...]`, d
 - `zero`
 - una o più lettere nell’insieme `{rxwXst}`
 - una lettera nell’insieme `{ugo}`
+
+---
+## Comandi
+### `umask [mode]`
+Setta la maschera dei file a `mode`, ovvero i diritti di accesso al file o alle directory nel momento della loro creazione
