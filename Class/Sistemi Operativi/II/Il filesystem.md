@@ -158,3 +158,21 @@ Dove:
 - `IO Block` → dimensione del blocco I/O del filesystem
 
 `stat -c %B filename` invece ci permette di stampare la dimensione in byte dei blocchi di I/O del filesystem su cui si trova il file (non la dimensione del file)
+
+---
+## Permessi di accesso ai file
+Chi può fare cosa:
+- Utente proprietario → solitamente chi crea il file/directory
+- Gruppo proprietario → gruppo primario dell’utente proprietario (specificato in `/etc/passwd`)
+
+Il proprietario è colui che definisce i permessi di accesso
+![[Pasted image 20250315122439.png|300]]
+
+### Permessi speciali
+Esistono però anche dei permessi speciali che possono essere applicati a file e directory:
+- sticky bit (t)
+- stuid bit (s)
+- setgit bit (s)
+
+#### Sticky bit (t)
+Questo viene applicato sulle directory per correggere il comportamento di `w+x`, permettendo la cancellazione di file se si hanno permessi di scrittura su essi
