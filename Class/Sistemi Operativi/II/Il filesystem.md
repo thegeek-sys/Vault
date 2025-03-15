@@ -186,7 +186,8 @@ Ad esempio il comando `passwd` ha il setuid, che permette ad un utente di mofica
 Risulta analogo di setuid ma per i gruppi (i privilegi sono quelli del gruppo he è proprietario del file eseguibile)
 Può essere applicato anche ad una directory, e allora ogni file creato al suo interno ha il gruppo della directory, anziché quello primario di chi crea i file
 
-### Visualizzare pemessi speciali
+
+### Visualizzare permessi speciali
 Vengono visualizzati al posto del bit di esecuzione:
 - il setuid nella terna utente (`user`)
 - il setgit nella terna gruppo (`group`)
