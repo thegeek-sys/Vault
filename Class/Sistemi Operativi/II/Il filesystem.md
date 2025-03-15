@@ -151,3 +151,8 @@ Per vedere i timestamp si usa l’opzione `-l` ma in combinazione con:
 - senza niente → **mtime** (modification time, data di ultima modifica del contenuto del file)
 
 La sintesi delle opzioni sopra elencate la si ha con il comando `stat filename`
+![[Pasted image 20250315121755.png]]
+Dove:
+- `Size` → dimensione del file in byte
+- `Blocks` → numero di blocchi allocati sul disco
+- `IO Block` → dimensione del blocco I/O del filesystem
