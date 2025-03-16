@@ -21,3 +21,42 @@ Dei progetti interessa il nome, un acronimo, la data di inizio, la data di fine 
 Un progetto è composto da molti Work Package (WP). Oltre al progetto a cui fa riferimento, del WP interessa sapere il nome, la data di inizio e la data di fine.
 Il sistema deve permettere ai docenti di registrare impegni di diverso tipo. Degli impegni interessa sapere il giorno in cui avvengono, la durata in ore e la tipologia di impegno con relativa motivazione.
 
+---
+## Raffinamento dei requisiti
+1. Docenti universitari
+    1. Nome (una stringa)
+    2. Cognome (una stringa)
+    3. Data di nascita (una data)
+    4. Matricola (un intero)
+    5. Posizione universitaria tra:
+        1. Ricercatore
+        2. Professore associato
+        3. Professore ordinario
+    6. Progetti a cui partecipa (vd. 2)
+    7. Impegni che ha (vd. 4)
+2. Progetti
+    8. Nome (una stringa)
+    9. Acronimo (una stringa)
+    10. Data di inizio (una data)
+    11. Data di fine (una data)
+    12. Docenti che vi partecipano
+    13. molti Work Package (vd. 3)
+3. Work Package
+    1. Nome (una stringa)
+    2. Data di inizio (una data)
+    3. Data di fine (una data)
+4. Imepgni
+    4. Giorno in cui avvengono (una data)
+    5. Durata in ore (un intero)
+    6. Tipologia di impegno (vd. 5)
+5. Tipologia di impegno
+    1. Motivazione (una stringa)
+
+---
+## Diagramma UML delle classi
+![[Pasted image 20250316194223.png]]
+
+---
+## Specifica dei tipi di dato
+- PosizioneUniversitaria → {ricercatore, professore_associato, professore_ordinario}
+- InizioFine → (inizio:Data, fine:Data>inizio)
