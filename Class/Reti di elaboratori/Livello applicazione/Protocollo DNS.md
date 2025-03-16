@@ -115,3 +115,77 @@ Quando un host effettua una richiesta DNS, la query viene inviata al suo server 
 
 ---
 ## Query ricorsiva
+In una query ricorsiva si affida il compito di tradurre il nome al server DNS contattato
+
+![[Pasted image 20250316174149.png|center|400]]
+
+### Caching
+Il DNS sfrutta il caching per migliorare le prestazioni di ritardo e per ridurre il numero di messaggi DNS che “rimbalzano” in Internet.
+Una volta che un server DNS impara la mappatura, la mette nella cache. Le informazioni nella cache vengono invalidate (spariscono) dopo un certo periodo di tempo e tipicamente un server DNS locale memorizza nella cache gli indirizzi IP dei server TLD (ma anche quelli di competenza), quindi i server DNS radice non vengono visitati spesso
+
+I meccanismi di aggiornamento/notifica sono progettati da IETF
+
+---
+## DNS record e messaggi
+Il mapping è mantenuto nei database sotto forma di **resource record** (RR).
+Ogni RR mantiene un mapping (es. tra hostname e indirizzo IP, alias e nome canonico, etc.)
+
+I record vengono spediti tra server e all’host  richiedente all’interno di **messaggi DNS**. Un messaggio può contenere più RR
+
+### Record DNS
+Dunque il database distribuito ha il compito di memorizzare i resource record
+Ogni messaggio di risposta DNS trasporta uno o più RR
+
+![[Pasted image 20250316174904.png|center|600]]
+
+#### Type=A
+$$
+\text{Hostname} \Rightarrow \text{IP \textcolor{red}{a}ddress}
+$$
+All’interno di questo tipo di record:
+- `name` → nome dell’host (nome canonico)
+- `value` → indirizzo IP
+
+>[!example] `(relay1.bar.foo.com, 45.37.93.126, A)`
+
+#### Type=CNAME
+$$
+\text{Alias} \Rightarrow \text{\textcolor{red}{C}anonical \textcolor{red}{Name}}
+$$
+All’interno di questo tipo di record:
+- `name` → alias di qualche nome canonico
+- `value` → nome canonico
+
+>[!example] `(foo.com, relay1.bar.foo.com, CNAME)`
+
+#### Type=NS
+$$
+\text{Domain name} \Rightarrow \text{\textcolor{red}{N}ame \textcolor{red}{S}erver}
+$$
+All’interno di questo tipo di record:
+- `name` → dominio (es. `foo.com`)
+- `value` → nome dell’host del server di competenza di questo dominio
+
+>[!example] `(foo.com, dns.foo.com, NS)`
+
+#### Type=MX
+$$
+\text{Alias} \Rightarrow \text{\textcolor{red}{M}ail server canonical name}
+$$
+All’interno di questo tipo di record:
+- `name` → alias di qualche nome canonico
+- `value` → nome canonico del server di posta associato a `name`
+
+>[!example] `(foo.com, mail.bar.foo.com, MX)`
+
+#### Tipi di record
+![[Pasted image 20250316175929.png]]
+
+>[!example]
+>Server di competenza per un hostname contiene:
+>- un record di tipo `A` per l’hostname
+>
+>Server non di competenza per un dato hostname contiene:
+>- un record di tipo `NS` per il dominio che include l’hostname
+>- un record di tipo `A` che fornisce l’indirizzo IP del server DNS nel campo `value` del record DNS
+

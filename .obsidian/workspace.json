@@ -109,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -212,10 +211,13 @@
   },
   "active": "72d638d35def0267",
   "lastOpenFiles": [
+    "Files/Pasted image 20250316175929.png",
+    "Files/Pasted image 20250316174904.png",
+    "Files/Pasted image 20250316174149.png",
+    "Class/Reti di elaboratori/Livello applicazione/Protocollo DNS.md",
     "Files/Pasted image 20250316173719.png",
     "Files/Pasted image 20250316173624.png",
     "Files/Pasted image 20250316172952.png",
-    "Class/Reti di elaboratori/Livello applicazione/Protocollo DNS.md",
     "Files/DNS.png",
     "Files/Pasted image 20250315174220.png",
     "Class/Reti di elaboratori/Livello applicazione/Livello applicazione.md",
@@ -230,9 +232,6 @@
     "Files/Pasted image 20250315124907.png",
     "Files/Pasted image 20250315124907.png.sb-8f8904c5-2l36i4",
     "Files/Pasted image 20250315124510.png",
-    "Files/Pasted image 20250315124507.png",
-    "Files/Pasted image 20250315122439.png",
-    "Files/Pasted image 20250315121755.png",
     "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
     "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
     "Class/Algoritmi/II/Grafi/Grafi.md",
