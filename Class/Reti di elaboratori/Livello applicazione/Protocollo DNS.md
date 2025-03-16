@@ -78,3 +78,13 @@ Ci sono 3 classi di server DNS organizzati in una gerarchia:
 - **authoritative** → qui ci sono i mapping veri e propri tra hostname e IP (punto più vicino ai client)
 
 Ci sono poi i server DNS **locali** con cui interagiscono direttamente le applicazioni
+
+![[DNS.png]]
+
+>[!example]
+>Il client vuole l’IP di `www.amazon.com`
+>1. Il DNS interroga il server root per trovare il server DNS `com`
+>2. Il client interroga il server DNS `com` per ottenere il server DNS `amazon.com`
+>3. Il client interroga il server DNS `amazon.com` per ottenere l’indirizzo IP di `www.amazon.com`
+
+### Server radice
