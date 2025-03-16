@@ -69,3 +69,12 @@ Dunque l’hostname canonico (`cnn.com`) è associato ad un insieme di indirizzi
 
 ---
 ## Gerarchia server DNS
+Nessun server DNS mantiene il mapping per tutti gli host in Internet. Il mapping è infatti distribuito su svariati server DNS
+
+Per garantire un tempo di ricerca veloce si organizzano le informazioni **in base al dominio**
+Ci sono 3 classi di server DNS organizzati in una gerarchia:
+- **root**
+- **top-level domain** (TLD)
+- **authoritative** → qui ci sono i mapping veri e propri tra hostname e IP (punto più vicino ai client)
+
+Ci sono poi i server DNS **locali** con cui interagiscono direttamente le applicazioni
