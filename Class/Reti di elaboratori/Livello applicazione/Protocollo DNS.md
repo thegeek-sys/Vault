@@ -187,6 +187,29 @@ All’interno di questo tipo di record:
 >
 >Server non di competenza per un dato hostname contiene:
 >- un record di tipo `NS` per il dominio che include l’hostname
->- un record di tipo `A` che fornisce l’indirizzo IP del server DNS nel campo `value` del record DNS
+>- un record di tipo `A` che fornisce l’indirizzo IP del server DNS di competenza nel campo `value` del record DNS
+>
+>>[!question] Come funziona nella pratica?
+>>1. Se un resolver DNS cerca `www.example.com`, ma il server interrogato non è autoritativo, ottiene l'indicazione di un altro server da contattare
+>>2. Il resolver ripete la richiesta al server autoritativo (indicato nel record `NS`), che infine risponde con il record `A` contenente l’indirizzo IP richiesto
 
 ### Messaggi DNS
+Per il protocollo DNS **domande** (query) e messaggi di **risposta** hanno entrambi lo **stesso formato**
+
+![[Pasted image 20250316181354.png|center|500]]
+
+Nell’intestazione del messaggio si ha:
+- **identificazione** → numero di $16\text{ bit}$ per la domanda; la risposta alla domanda usa lo stesso numero (così da identificare chi nello specifico ha fatto la domanda)
+- **flag**
+	- domanda o risposta
+	- richiesta di ricorsione
+	- ricorsione disponibile
+	- risposta di competenza (il server competente per il nome richiesto)
+- numero di occorrenze delle quattro sezioni di tipo dati successive
+
+Nel corpo del messaggio si ha in ordine:
+- campi per il nome richiesto e il tipo di domanda (`A, MX`)
+- RR nella risposta alla domanda; più RR nel caso di server replicati
+- record per i server di competenza
+- informazioni extra che possono essere usate (nel caso di una risposta `MX`, il campo di riposta contiene il record `MX` con il nome canonico del server di posta, mentre la sezione agguintiva contiene un record di tipo `A` con l’indirzzo IP relativo all’hostname canonico del server di posta)
+
