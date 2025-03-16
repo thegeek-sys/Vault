@@ -39,4 +39,5 @@ Il DNS viene utilizzato dagli altri protocolli di livello applicazione (HTTP, SM
 >1. L’host esegue il lato client dell’applicazione DNS
 >2. Il browser estrae il nome dell’host `www.someschool.edu` dall’URL e lo passa al lato client dell’applicazione DNS
 >3. Il client DNS invia una query contenente l’hostname a un server DNS
->4. Il client
+>4. Il client DNS riceve una risposta che include l’indirizzo IP corrispondente all’hostname
+>5. Ottenuto l’indirizzo IP dal DNS, il browser può dare inizio alla connessione TCP verso il server HTTP localizzato a quell’indirizzo IP
