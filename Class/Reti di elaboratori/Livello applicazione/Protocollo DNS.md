@@ -41,3 +41,7 @@ Il DNS viene utilizzato dagli altri protocolli di livello applicazione (HTTP, SM
 >3. Il client DNS invia una query contenente l’hostname a un server DNS
 >4. Il client DNS riceve una risposta che include l’indirizzo IP corrispondente all’hostname
 >5. Ottenuto l’indirizzo IP dal DNS, il browser può dare inizio alla connessione TCP verso il server HTTP localizzato a quell’indirizzo IP
+
+### Host aliasing
+L'**host aliasing** è un servizio DNS che permette di associare un nome più semplice da ricordare ad un nome più complesso, permettendo ad un host di avere uno o più sinonimi
+Ad esempio `relay1.west-coast.enterprise.com` potrebbe avere due sinonimi, quali `enterprise.com` e `www.enterprise.com`. In questo caso `relay1.west-coast.enterprise.com` è un hostname
