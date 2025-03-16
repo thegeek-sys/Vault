@@ -23,3 +23,11 @@ Il **DNS** (*Domain Name System*) ha il compito di associare un hostname al rela
 ![[Pasted image 20250315174220.png]]
 
 Ai tempi di ARPANET era un file `host.txt` che veniva caricato durante la notte (erano pochi indirizzi), adesso è un’applicazione che gira su ogni host costituita da un gran numero di server DNS distribuiti per il mondo e un protocollo a livello applicazione che specifica la comunicazione tra server DNS e host richiedenti
+
+### E’ un applicazione?
+E’ un protocollo del livello applicazione che viene eseguito dagli end systems secondo il paradigma client-server. Utilizza un protocollo end-to-end per trasferire messaggi tra gli end system (UDP).
+Non è un’applicazione con cui gli utenti interagiscono direttamente (ecctto gli amministratori di rete), ma fornisce funzionalità di base di internet per le applicazione complesse
+Inoltre rispecchia la filosofia di concentrare la complessità nelle parti delle periferiche di rete
+
+---
+## Servizio DNS
