@@ -88,3 +88,30 @@ Ci sono poi i server DNS **locali** con cui interagiscono direttamente le applic
 >3. Il client interroga il server DNS `amazon.com` per ottenere l’indirizzo IP di `www.amazon.com`
 
 ### Server radice
+In Internet ci sono $13$ server DNS radice. Ognuno di questi server è replicato per motivi di sicurezza e affidabilità (in totale diventano 247 root server)
+I root server vengono contattati dei server DNS locali, il server DNS radice quindi:
+- contatta un server DNS TLD se non conosce la mappatura
+- ottiene la mappatura
+- restituisce la mappatura al server DNS locale
+
+![[Pasted image 20250316172952.png]]
+
+### Server TLD e server di competenza
+I **server TLD** (*top-level domain*) si occupano dei domini `com`, `org`, `net`, ecc. e di tutti i domini locali di alto livello quali `it`, `uk`, `fr`, `ca` e `jp`
+La compagnia Verisign Global Registry Services gestisce i server TLD per il dominio `com`, mentre il Registro.it che ha sede a Pisa all’Istituto di Informatica e Telematica (CNR) gestisce il dominio `it`
+
+I **server di competenza** (*authoritative server*) li ha ogni organizzazione dotata di host Internet pubblicamente accessibili (server web e server di posta) e hanno il compito di fornire i record DNS di pubblico dominio che mappano i nomi di tali host in indirizzi IP
+Questi possono essete mantenuti dall’organizzazione (università) o da un service provider. In generale sono due server (primario e secondario) per ridondanza
+
+![[Pasted image 20250316173624.png|600]]
+
+### Etichette dei domini generici
+![[Pasted image 20250316173719.png]]
+
+### Server DNS locale
+Il server **DNS locale** non appartiene strettamente alla gerarchia dei server, ma ciascun ISP (università, società, ISP residenziale) ha un server DNS locale (detto anche “*default name server*“)
+
+Quando un host effettua una richiesta DNS, la query viene inviata al suo server DNS locale, il quale opera da proxy e inoltra la query in una gerarchia di server DNS
+
+---
+## Query ricorsiva
