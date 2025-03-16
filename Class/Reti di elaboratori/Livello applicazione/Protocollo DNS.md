@@ -189,3 +189,4 @@ All’interno di questo tipo di record:
 >- un record di tipo `NS` per il dominio che include l’hostname
 >- un record di tipo `A` che fornisce l’indirizzo IP del server DNS nel campo `value` del record DNS
 
+### Messaggi DNS
