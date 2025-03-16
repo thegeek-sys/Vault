@@ -6,6 +6,33 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Identificazione degli host|Identificazione degli host]]
+	- [[#Identificazione degli host#Indirizzo IP|Indirizzo IP]]
+- [[#DNS: Domain Name System|DNS: Domain Name System]]
+	- [[#DNS: Domain Name System#E’ un applicazione?|E’ un applicazione?]]
+	- [[#DNS: Domain Name System#Può essere centralizzato?|Può essere centralizzato?]]
+	- [[#DNS: Domain Name System#Perché UDP?|Perché UDP?]]
+- [[#Servizio DNS|Servizio DNS]]
+	- [[#Servizio DNS#Host aliasing|Host aliasing]]
+	- [[#Servizio DNS#Distribuzione del carico|Distribuzione del carico]]
+- [[#Gerarchia server DNS|Gerarchia server DNS]]
+	- [[#Gerarchia server DNS#Server radice|Server radice]]
+	- [[#Gerarchia server DNS#Server TLD e server di competenza|Server TLD e server di competenza]]
+	- [[#Gerarchia server DNS#Etichette dei domini generici|Etichette dei domini generici]]
+	- [[#Gerarchia server DNS#Server DNS locale|Server DNS locale]]
+- [[#Query ricorsiva|Query ricorsiva]]
+	- [[#Query ricorsiva#Caching|Caching]]
+- [[#DNS record e messaggi|DNS record e messaggi]]
+	- [[#DNS record e messaggi#Record DNS|Record DNS]]
+		- [[#Record DNS#Type=A|Type=A]]
+		- [[#Record DNS#Type=CNAME|Type=CNAME]]
+		- [[#Record DNS#Type=NS|Type=NS]]
+		- [[#Record DNS#Type=MX|Type=MX]]
+		- [[#Record DNS#Tipi di record|Tipi di record]]
+	- [[#DNS record e messaggi#Messaggi DNS|Messaggi DNS]]
+- [[#Inserire record nel database DNS|Inserire record nel database DNS]]
+---
 ## Identificazione degli host
 Gli host internet hanno nomi (*hostname*) che sono facili da ricordare ma forniscono poca informazione sulla collocazione degli host all’interno di Internet (`w3.uniroma1.it` ci dice che l’host si trova probabilmente in Italia ma non dove)
 Per questo motivo esistono gli **indirizzi IP** per gli host, delle sequenze a $32\text{ bit}$, usati per indirizzare i datagrammi
@@ -36,6 +63,13 @@ No! Per diversi motivi:
 - **manutenzione** → il server dovrebbe essere aggiornato di continuo per includere i nuovi nomi di host
 
 Dunque un database centralizzato su un singolo server DNS non è *scalabile*
+
+### Perché UDP?
+- Less overhead (traffico aggiuntivo non usato per trasmettere dati):
+	- Messaggi corti
+	- Tempo per set-up connessione di TCP lungo
+	- Un unico messaggio deve essere scambiato tra una coppia di server (nella risoluzione contattati diversi server, se si usasse TCP ogni volta dovremmo mettere su la connessione)
+- Se un messaggio non ha risposta entro un timeout semplicemente viene ri-inviato dal resolver (problema risolto dallo strato applicativo)
 
 ---
 ## Servizio DNS
@@ -212,4 +246,45 @@ Nel corpo del messaggio si ha in ordine:
 - RR nella risposta alla domanda; più RR nel caso di server replicati
 - record per i server di competenza
 - informazioni extra che possono essere usate (nel caso di una risposta `MX`, il campo di riposta contiene il record `MX` con il nome canonico del server di posta, mentre la sezione agguintiva contiene un record di tipo `A` con l’indirzzo IP relativo all’hostname canonico del server di posta)
+
+
+> [!example]
+> Immaginiamo che un client voglia risolvere `www.example.com` in un indirizzo IP.
+> 
+> ##### Query
+>Il client invia al server DNS una richiesta con:
+>- `ID`: 1234
+>- `Flags`: richiesta (`QR = 0`)
+>- `Numero di domande`: 1 (`www.example.com`, tipo `A`)
+>- Le altre sezioni sono vuote.
+> 
+>##### Risposta
+>Il server DNS risponde con:
+>- `ID`: 1234 (lo stesso della richiesta)
+>- `Flags`: risposta (`QR = 1`)
+>- `Numero di domande`: 1 (`www.example.com`)
+>- `Numero di RR di risposta`: 1 (`A 93.184.216.34`)
+>- `Numero di RR autorevoli`: 1 (`NS ns1.example.net`)
+>- `Numero di RR addizionali`: 1 (`ns1.example.net A 203.0.113.10`)
+> 
+>La risposta dice che:
+>- `www.example.com` ha l’IP `93.184.216.34` (sezione Risposte).
+>- Il server DNS autoritativo è `ns1.example.net` (sezione Competenza).
+>- L'IP di `ns1.example.net` è `203.0.113.10` (sezione Informazioni Aggiuntive).
+
+---
+## Inserire record nel database DNS
+Immaginiamo di aver appena avviato la nuova società “Network Stud”
+
+>[!info]
+>E’ possibile aggiungere nuovi domini al DNS contattando un registrar (aziende commerciali accreditate dall’ ICANN).
+>Il registrar in cambio di un compenso verifica l’unicità del dominio richiesto e lo inserisce nel database
+
+Registriamo il nome networkstud.it presso un *registrar* (www.registro.it) e inseriamo nel server di competenza (es. un nostro DNS server `dns1.networkstud.it`) un record tipo `A` per `www.networkstud.it` e un record tipo `MX` per `networkstud.it`
+- `A` record → $\verb|www.networkstud.it|\rightarrow \verb|150.160.15.12|$ (indirizzo del server web)
+- `MX` record: $\verb|networkstud.it|\rightarrow \verb|mail.networkstud.it|$ (posta elettronica)
+- `CNAME` record:  $\verb|mail.networkstud.it|\rightarrow \verb|mail.google.com|$ (se usiamo Gmail)
+
+![[Pasted image 20250316182758.png]]
+
 
