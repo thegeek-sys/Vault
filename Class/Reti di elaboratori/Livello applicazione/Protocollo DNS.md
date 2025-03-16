@@ -28,6 +28,15 @@ E’ un protocollo del livello applicazione che viene eseguito dagli end systems
 Non è un’applicazione con cui gli utenti interagiscono direttamente (ecctto gli amministratori di rete), ma fornisce funzionalità di base di internet per le applicazione complesse
 Inoltre rispecchia la filosofia di concentrare la complessità nelle parti delle periferiche di rete
 
+### Può essere centralizzato?
+No! Per diversi motivi:
+- **singolo punto di fallimento** → se crasha il server DNS allora crasha Internet
+- **volume di traffico troppo elevato** → un singolo server non potrebbe gestire tutte le query DNS (generate da tutto il mondo)
+- **distanza dal database centralizzato** → un singolo server non può essere fisicamente vicino a tutti i client
+- **manutenzione** → il server dovrebbe essere aggiornato di continuo per includere i nuovi nomi di host
+
+Dunque un database centralizzato su un singolo server DNS non è *scalabile*
+
 ---
 ## Servizio DNS
 Note le premesse, si è deciso di memorizzare i dati in un **database distribuito** implementato in una gerarchia di server DNS che è accessibile tramite una **protocollo a livello applicazione** che consente agli host di interrogare il database distribuito per *risolvere i nomi* (tradurre indirizzi/nomi)
@@ -44,4 +53,19 @@ Il DNS viene utilizzato dagli altri protocolli di livello applicazione (HTTP, SM
 
 ### Host aliasing
 L'**host aliasing** è un servizio DNS che permette di associare un nome più semplice da ricordare ad un nome più complesso, permettendo ad un host di avere uno o più sinonimi
-Ad esempio `relay1.west-coast.enterprise.com` potrebbe avere due sinonimi, quali `enterprise.com` e `www.enterprise.com`. In questo caso `relay1.west-coast.enterprise.com` è un hostname
+
+Ad esempio `relay1.west-coast.enterprise.com` potrebbe avere due sinonimi, quali `enterprise.com` e `www.enterprise.com`. In questo caso `relay1.west-coast.enterprise.com` è un hostname *canonico*, mentre `enterprise.com` e `www.enterprise.com` sono *alias*. Spesso viene fatto per i **mail server**, infatti il mail server e il web server di una società hanno lo stesso alias, ma nomi canonici diversi
+
+Dunque il DNS può essere invocato da un’applicazione per l’hostname canonico di un sinonimo così come l’IP
+
+### Distribuzione del carico
+Il DNS viene utilizzato anche per **distribuire il carico** tra server replicati (es. web server). Infatti i siti con molto traffico (es. `cnn.com`) vengono replicati su più server, e ciascuno di questi gira su un sistema terminare diverso e presenta IP differente; per `cnn.com`:
+- `151.101.3.5`
+- `151.101.67.5`
+- `151.101.131.5`
+- `151.101.195.5`
+
+Dunque l’hostname canonico (`cnn.com`) è associato ad un insieme di indirizzi IP, e il DNS contiene questo insieme di indirizzi IP. Quando un client effettua una richiesta DNS per un nome mappato ad un insieme di indirizzi, il server risponde con l’insieme di indirizzi ma variando l’ordine ad ogni risposta; questa rotazione permette di distribuire il traffico sui server replicati
+
+---
+## Gerarchia server DNS
