@@ -22,4 +22,4 @@ Il **DNS** (*Domain Name System*) ha il compito di associare un hostname al rela
 
 ![[Pasted image 20250315174220.png]]
 
-Ai tempi di ARPANET era un file `host.txt` che 
+Ai tempi di ARPANET era un file `host.txt` che veniva caricato durante la notte (erano pochi indirizzi), adesso è un’applicazione che gira su ogni host costituita da un gran numero di server DNS distribuiti per il mondo e un protocollo a livello applicazione che specifica la comunicazione tra server DNS e host richiedenti
