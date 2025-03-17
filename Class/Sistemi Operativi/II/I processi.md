@@ -93,4 +93,9 @@ Per eseguire un comando in background viene usato l’operatore **`&`** (ampersa
 >[!example] `sleep 15s &`
 
 ### Lista di job
-Per vedere la lista di job in esecuzione si usa il comando `jobs [-l] [`
+Per vedere la lista di job in esecuzione si usa il comando `jobs [-l] [-p]`
+
+![[Pasted image 20250317231704.png|500]]
+Se un job è composto da più task
+
+### Comandi $\verb|bg|$ e $\verb|fg|$
