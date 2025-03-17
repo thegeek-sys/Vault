@@ -245,7 +245,9 @@ Questo comando permette di creare dei file, ma anche di modificarne il timestamp
 
 ### $\verb|du [-c] [-s] [-a] [-h] [--exclude=PATTERN] [files]|$
 Questo comando stima lo spazio occupato del/dei file e/o directories dati in input. Vediamo ora le opzioni:
-- `-c` → restituisce la somma del totale
-- `-s` → mostra un totale 
-- `-a` → oltre alla directory restituisce le dimensioni anche dei file in esso contenuta (vale anche per altre directory dentro la principale, valido solo per directory)
+- `-c` → restituisce la somma del totale (di tutti i file passati in input)
+- `-s` → non mostra eventuali sottodirectory o file contenuti
+- `-a` → ricorsivo sulle directories in essa contenuta (valido solo per directory)
 - `-h` → restituisce i risultati in formato leggibile (e.g., 1K 234M 2G)
+
+### $\verb|df [-h] [-l] [-i] [file]|$
