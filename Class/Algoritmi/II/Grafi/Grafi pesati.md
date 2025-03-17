@@ -53,6 +53,16 @@ Il problema diventa ora quello di trovare un cammino dal nodo $(4,7,0)$ al nodo 
 >Il problema di questo secondo modo però nella pratica non viene usato per due motivi:
 >- spazio
 >- non è possibile rappresentare pesi non interi (non scalabile)
+>
+>In questa rappresentazione tutti gli archi valgono 1. E’ come se ogni arco corrisponda al versamento di un litro d’acqua. Così contando semplicemente gli archi di un cammino tra due nodi configurazione contiamo proprio il numero totale di litri versati nelle mosse relative al cammino. Quindi per risolvere il problema possiamo eseguire una BFS nel nuovo grafo a partire dal nodo $(4,7,0)$ che si ferma non appena trova il nodo $(1,1,1)$
+>L’algoritmo avrà complessità $O(n'+m')$ dove $n'$ ed $m'$ sono i nodi e gli archi del nuovo grafo rispettivamente
+>Nel nostro caso il peso degli archi non poteva superare 7, si aveva quindi $n'<7n$ ed $m'\leq 7m$ dove $n$ ed $m$ sono i nodi e gli archi del grafo pesato, rispettivamente
+>
+>Abbiamo quindi ricondotto un problema di cammini minimi su grafi pesati a quello dei cammini minimi in un grafo non pesato
+
+
+
+
 
 
 
