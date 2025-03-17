@@ -76,3 +76,59 @@ def BFS(x, G):
 	return visitati
 ```
 Ora la procedura ha complessità $O(n+m)$
+
+---
+## BFS e albero dei padri
+Modifichiamo ora la procedura in modo tale che restituisca in $O(n+m)$ l’albero di visita BFS rappresentato tramite vettore dei padri
+
+>[!info]
+>Grazie al vettore dei padri $P$ con la procedura $\text{cammini}(x,P)$ in $O(n)$ potremo ottenere un cammino in $G$ dalla radice dell’albero al nodo $x$ (posto che $x$ sia raggiungibile)
+
+```python
+def BFSpadri(x, G):
+	P = [-1]*len(G)
+	P[x] = x
+	coda = [x]
+	i = 0
+	while len(coda) > i:
+		u = coda[i]
+		i += 1
+		for y in G[u]:
+			if P[y] == -1:
+				P[y] = u
+				coda.append(y)
+	return P
+```
+
+>[!info] Proprietà
+>La distanza minima di un vertice $x$ da $s$ nel grafo $G$ equivale alla profondità di $X$ nell’albero BFS
+>>[!done] Dimostrazione
+>>Per induzione sulla distanza $d$ di $x$ da $s$. E’ ovviamente vero per $d=0$ in quando l’univo vertice a distanza $0$ da $s$ è $s$ stesso (che è a profondità $0$ nell’albero).
+>>Supponiamo sia vero per tutti i vertici con distanza al più $d-1$ e consideriamo quindi un vertice $x$ a distanza $d$. Sia $P$ un cammino da $s$ a $x$ e sia $v$ il predecessore di $x$ in questo cammino. Per ipotesi induttiva $v$ è a profondità $d-1$ nell’albero BFS.
+>>Se $x$ è stato inserito nell’albero grazie a $v$ allora si troverà a profondità $d$, assumiamo che $v$ sia stato inserito nell’albero grazie ad un nodo $u\neq v$
+>>La profondità di $u$ non può essere inferiore a $d-1$ altrimenti avremmo trovato un cammino che parte da $s$ e porta a $v$ (tramite $u$) di lunghezza inferiore a $d$. D’altra parte non può essere la profondità di $u$ maggiore di $d-1$ perché il nodo $v$ sarebbe stato visitato prima di $u$ e $x$ sarebbe stato inserito grazie al nodo $v$. Deve quindi aversi che la profondità di $u$ è $d-1$ quindi la profondità di $v$ è comunque $d$
+
+Grazie alla proprietà appena dimostrata i cammini prodotti grazie all’albero sono quelli di lunghezza minima ecco perché l’albero BFS che si ottiene dalla visita è detto anche albero dei cammini minimi
+
+---
+## BFS e vettore delle distanze $D$
+Modifichiamo ora leggermente la procedura di visita in modo che restituisca in $O(n+m)$ il vettore delle distanze $D$
+Al nodo $x$ viene assegnata distanza zero e a tutti gli altri nodi il valore $-1$. A ciascun nodo via via visitato viene assegnata la distanza corrispondente al padre incrementata di $1$. 
+Al termine $D[u]$ conterrà $-1$ se il nodo $u$ non è raggiungibile a partire da $x$, la distanza minima di $u$ da $x$ altrimenti
+
+```python
+def BFSdistanze(x, G):
+	D = [-1]*len(G)
+	D[x] = 0
+	coda = [x]
+	i = 0
+	while  len(coda) > i:
+		u = coda[i]
+		i += 1
+		for y in G[u]:
+			if D[y] == -1:
+				D[y] = D[u]+1
+				coda.append(y)
+	return D
+```
+

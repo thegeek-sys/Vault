@@ -8,79 +8,151 @@
         "type": "tabs",
         "children": [
           {
-            "id": "785e57b5e4fd92db",
+            "id": "6e67d30870868a0e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Algoritmi/Algoritmi.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Basi di dati"
+              "title": "Algoritmi"
             }
           },
           {
-            "id": "314e7cb50d9ccc7c",
+            "id": "42953f8e6c4fccf2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Grafi.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Grafi"
+            }
+          },
+          {
+            "id": "89f182de26bd4315",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Voli aerei 2.md",
+                "file": "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Voli aerei 2"
+              "title": "Visitare in profondità (DFS)"
             }
           },
           {
-            "id": "f263357d0ad639a8",
+            "id": "b5204cff04115117",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Accademia 1.md",
+                "file": "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Accademia 1"
+              "title": "Visitare in ampiezza (BFS)"
             }
           },
           {
-            "id": "487e02a69f634897",
+            "id": "80618ae33a1aee94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Travel to the moon.md",
+                "file": "Class/Algoritmi/II/Grafi/Ponti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Travel to the moon"
+              "title": "Ponti"
             }
           },
           {
-            "id": "3ca506e484c95efa",
+            "id": "3aeefc577591ffc5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md",
+                "file": "Class/Algoritmi/II/Grafi/Cicli.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modello relazionale"
+              "title": "Cicli"
+            }
+          },
+          {
+            "id": "2ca398dfc5b46779",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Ordinamento topologico.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ordinamento topologico"
+            }
+          },
+          {
+            "id": "e96e71bc6db7eca1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Colorazione dei grafi"
+            }
+          },
+          {
+            "id": "5c57313e45c84c1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Introduzione.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduzione"
+            }
+          },
+          {
+            "id": "79f360896c7eff6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Visitare in profondità (DFS)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -154,7 +226,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-12-11.md",
+                "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,10 +310,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "314e7cb50d9ccc7c",
+  "active": "b5204cff04115117",
   "lastOpenFiles": [
-    "Class/Basi di dati/Accademia 1.md",
     "Class/Basi di dati/Voli aerei 2.md",
+    "Class/Basi di dati/Accademia 1.md",
     "Files/Pasted image 20250317094328.png",
     "Class/Basi di dati/Basi di dati.md",
     "Files/Pasted image 20250317091511.png",
