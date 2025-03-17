@@ -244,4 +244,4 @@ Questo comando permette di creare dei file, ma anche di modificarne il timestamp
 - `-t timestamp` → usa il timestamp indicato invece del timestamp corrente seguendo questo formato `[[CC]YY]MMDDhhmm[.ss]`
 
 ### $\verb|du [-c] [-s] [-a] [-h] [--exclude=PATTERN] [files]|$
-Questo comando stima lo spazio occupato del/dei file e/o directories dati in input
+Questo comando stima lo spazio occupato del/dei file e/o directories dati in input. 
