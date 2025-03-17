@@ -5,6 +5,43 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Path|Path]]
+	- [[#Path#Current working directory $ verb cwd $|Current working directory cwd]]
+- [[#Contenuto di una directory|Contenuto di una directory]]
+- [[#Creazione di directory e file|Creazione di directory e file]]
+- [[#root directory|root directory]]
+	- [[#root directory#mouting|mouting]]
+- [[#Partizioni e mounting|Partizioni e mounting]]
+- [[#Tipi di filesystem|Tipi di filesystem]]
+	- [[#Tipi di filesystem#$ verb mount $|mount]]
+- [[#File $ verb passwd $ e $ verb groups $|File passwd e group]]
+- [[#I file|I file]]
+	- [[#I file#Tabella inode|Tabella inode]]
+	- [[#I file#Visualizzare le informazioni contenute nell’inode di un file|Visualizzare le informazioni contenute nell’inode di un file]]
+- [[#Permessi di accesso ai file|Permessi di accesso ai file]]
+	- [[#Permessi di accesso ai file#Permessi speciali|Permessi speciali]]
+		- [[#Permessi speciali#Sticky bit (t)|Sticky bit (t)]]
+		- [[#Permessi speciali#Setuid bit (s)|Setuid bit (s)]]
+		- [[#Permessi speciali#Setgid bit (s)|Setgid bit (s)]]
+	- [[#Permessi di accesso ai file#Visualizzare attributi di accesso|Visualizzare attributi di accesso]]
+	- [[#Permessi di accesso ai file#Visualizzare permessi speciali|Visualizzare permessi speciali]]
+	- [[#Permessi di accesso ai file#Settare i permessi|Settare i permessi]]
+		- [[#Settare i permessi#Formato ottale|Formato ottale]]
+		- [[#Settare i permessi#Modalità simbolica|Modalità simbolica]]
+- [[#Comandi|Comandi]]
+	- [[#Comandi#$ verb umask [mode] $|umask]]
+	- [[#Comandi#$ verb cp [-r] [-i] [-a] [-u] {file_src} file_dst $|cp]]
+	- [[#Comandi#$ verb mv [-i] [-u] [-f] {file_src} file_dst $|mv]]
+	- [[#Comandi#$ verb rm [-f] [-i] [-r] {file} $|rm]]
+	- [[#Comandi#$ verb ln [-s] src [dest] $|ln]]
+	- [[#Comandi#$ verb touch [-a] [-m] [-t timestamp] {file} $|touch]]
+	- [[#Comandi#$ verb du [-c] [-s] [-a] [-h] [--exclude=PATTERN] [files] $|du]]
+	- [[#Comandi#$ verb df [-h] [-l] [-i] [file] $|df]]
+	- [[#Comandi#$ verb dd [opzioni] $|dd]]
+	- [[#Comandi#$ verb mkfs [-t type fs-options] device $|mkfs]]
+---
 ## Introduction
 L’organizzazione di un area di memoria è basata sul concetto di file e di directory
 Una directory contiene file e directory ed ha una struttura gerarchica da albero (ma solo le directory possono avere figli)
@@ -28,7 +65,7 @@ Ogni file o directory è raggiungibile dalla directory principale `/` mediante u
 >[!info]
 >Un’eccezione di path assoluto riguarda l’utente corrente (`userX`), infatti `~` equivale a `/home/userX`
 
-### Current working directory `cwd`
+### Current working directory $\verb|cwd|$
 Per conoscere la current working directory si usa il comando `pwd`. Per cambiare cwd usare il comando `cd [path]` dove `[path]` può essere assoluto o relativo (`cd` senza path ritorna alla home)
 E’ possibile inoltre usare `..` (parent directory) e `.` (directory attuale)
 
@@ -95,7 +132,7 @@ Una partizione $A$ può contenere il sistema operativo e la partizione $B$ i dat
 Ci sono anche file system non linux, ad esempio windows: NTFS, MSDOS, FAT32, FAT64. Di questi FAT (qualsiasi) e NTFS possono essere montati su un filesystem Linux
 `mount` è il comando per montare un fsfilesystem e visualizzare il filesystem montati
 
-### `mount`
+### $\verb|mount|$
 `mount` visualizza gli fs montati, ma ciò può essere fatto anche con:
 - `cat /etc/mtab`
 - `cat /etc/fstab` (montati al boot)
@@ -105,7 +142,7 @@ Ci sono anche file system non linux, ad esempio windows: NTFS, MSDOS, FAT32, FAT
 >- Con l’aiuto del `mount` cercare di capire le varie opzioni di mounting dei vari filesystems
 
 ---
-## File `passwd` e `group`
+## File $\verb|passwd|$ e $\verb|groups|$
 Il file `/etc/passwd` contiene tutti gli utenti, mentre il file `/etc/groups` contiene tutti i gruppi. Rappresentano una delle filosofie di Linux, e poiché hanno una struttura ben definita e conosciuta dei programmi, questi ci possono direttamente interagire
 
 ![[Sicurezza#Utenze e gruppi]]
