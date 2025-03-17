@@ -84,7 +84,7 @@ Ci sono due modi per poter eseguire i processi:
 - **forground**
 - **background**
 
-I **forground** sono praticamente tutti quelli visti fino ad ora, ovvero quelli in cui il comando può leggere l’input da tastiera e scrivere su schermo. Finché questo non termina, il prompt non viene restituito e non si possono sottomettere altri job alla shell
+I **forground** sono praticamente tutti quelli visti fino ad ora, ovvero quelli in cui il comando può leggere l’input da tastiera e scrivere su schermo. Finché questo non termina, il prompt non viene restituito e non si possono sottomettere altri comandi alla shell
 I processi in **background** non possono leggere l’input da tastiera ma può scrivere su schermo. In questo caso il prompt viene immediatamente restituito e mentre il job viene eseguito in background, si possono da subito dare altri comandi alla shell
 
 ### Esecuzione in background
