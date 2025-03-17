@@ -61,7 +61,7 @@ Il sistema deve permettere ai docenti di registrare impegni di diverso tipo. Deg
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250317091511.png]]
+![[Pasted image 20250317160959.png]]
 
 ---
 ## Specifica dei tipi di dato
