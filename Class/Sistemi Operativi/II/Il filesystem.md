@@ -241,4 +241,4 @@ Questo comando serve per creare dei symbolic e hard link. Di default verranno cr
 Questo comando permette di creare dei file, ma anche di modificarne il timestamp:
 - `-a` → modifica unicamente il tempo di accesso
 - `-m` → modifica unicamente il tempo di modifica
-- `-t timestamp` → usa il timestamp indicato invece del timestamp correnteq
+- `-t timestamp` → usa il timestamp indicato invece del timestamp corrente seguendo questo formato `[[CC]YY]MMDDhhmm[.ss]`
