@@ -242,3 +242,6 @@ Questo comando permette di creare dei file, ma anche di modificarne il timestamp
 - `-a` → modifica unicamente il tempo di accesso
 - `-m` → modifica unicamente il tempo di modifica
 - `-t timestamp` → usa il timestamp indicato invece del timestamp corrente seguendo questo formato `[[CC]YY]MMDDhhmm[.ss]`
+
+### $\verb|du [-c] [-s] [-a] [-h] [--exclude=PATTERN] [files]|$
+Questo comando stima lo spazio occupato del/dei file e/o directories dati in input
