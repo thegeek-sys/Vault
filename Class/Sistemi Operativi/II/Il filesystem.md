@@ -262,4 +262,8 @@ Serve per copiare un file in modo elaborato e le opzioni sono una sequenza di `v
 Vediamo le opzioni:
 - `bs=BYTES` → legge e scrive fino a `BYTES` bytes alla volta (default 512)
 - `count=N` → copia solamente `N` blocchi di input
-- `conv=CONVS` → converte il file come da comma-separated `CONVS` in input
+- `conv=CONVS` → converte il file come da comma-separated `CONVS` in input (es. `ucase`, `lcase`, `noerror`, …)
+- `if=FILE` → leggi da `FILE` invece di `stdin` (`cat file | dd of=output_file bs=1M`)
+- `of=FILE` → scrivi su `FILE` invece che su `stdout`
+Oltre che per le conversioni si usa per copiare file speciali che non possono essere copiati con `cp`
+
