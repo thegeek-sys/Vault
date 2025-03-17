@@ -99,3 +99,4 @@ Per vedere la lista di job in esecuzione si usa il comando `jobs [-l] [-p]`
 Se un job è composto da più task
 
 ### Comandi $\verb|bg|$ e $\verb|fg|$
+Il comando `bg` permette di portare un processo in background (lancio il processo; lo interrompo con `CTRL+Z`; lo risveglio con `bg`)
