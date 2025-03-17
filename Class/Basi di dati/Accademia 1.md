@@ -56,12 +56,12 @@ Il sistema deve permettere ai docenti di registrare impegni di diverso tipo. Deg
     4. Giorno in cui avvengono (una data)
     5. Durata in ore (un intero)
     6. Tipologia di impegno (vd. 5)
+	    1. Motivazione (una stringa)
 5. Tipologia di impegno
-    1. Motivazione (una stringa)
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250316194223.png]]
+![[Pasted image 20250317091511.png]]
 
 ---
 ## Specifica dei tipi di dato
