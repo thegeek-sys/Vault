@@ -24,4 +24,32 @@ I simboli `>` e `<` possono essere utilizzati per redirigere l’output di un co
 Ad esempio:
 - `ls>dirlist` → output di `ls` redirezionato in `dirlist`
 - `ls>dirlist 2>&1` → l'output di `ls` viene redirezionato in `dirlist`, includendo sia l'output normale (stdout, 1) che gli errori (stderr, 2). Redireziona stderr a stdout che è gia stato redirezionato a `dirlist`, allora anche gli errori finiranno lì
-- `ls 2>&1 > dirlist`
+- `ls 2>&1 > dirlist` → redirezione stderr a stdout (il terminale) così che gli errori mi vengano mostrati a terminale e poi redireziono stdout a `dirlist` (solo stdout va nel file, mentre gli errori rimangono sul terminale)
+
+---
+## Rappresentazione dei processi
+I processi sono identificati da:
+- **Process Identifier** (*PID*)
+- **Process Control Block** (*PCB*)
+- Sei aree di memoria
+
+### Process Identifier
+E’ un identificatore univoco di un processo. In un dato istante, non ci possono essere 2 processi con lo stesso PID
+Una volta che un processo e’ terminato, il suo PID viene liberato, e potrebbe essere prima o poi riusato per un altro processo
+
+### Process Control Block
+Il PCB è unico per ogni processo e contiene:
+- PID: Process Identifier
+- PPID: Parent Process Identifier
+- Real UID: Real User Identifier
+- Real GID: Real Group ID
+- Effective UID: Effective User Identifier (UID assunto dal processo in esecuzione)
+- Effective GID: Effective Group ID (come sopra per GID)
+- Saved UID: Saved User Identifier (UID avuto prima dell’eseccuzione del SetUID)
+- Saved GID: Saved Group Identifier (come supra per GID)
+- Current Working Directory: directory di lavoro corrente
+- Umask: file mode creation mask
+- Nice: priorita statica del processo
+
+### Aree di memoria
+Le sei ree di memoria sono:
