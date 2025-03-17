@@ -93,3 +93,4 @@ Per eseguire un comando in background viene usato l’operatore **`&`** (ampersa
 >[!example] `sleep 15s &`
 
 ### Lista di job
+Per vedere la lista di job in esecuzione si usa il comando `jobs [-l] [`
