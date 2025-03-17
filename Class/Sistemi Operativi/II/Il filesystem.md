@@ -217,7 +217,7 @@ Per settare il mode usando dei simboli il formato è: `[ugoa][+-=][perms...]`, d
 
 ---
 ## Comandi
-### `umask [mode]`
+### $\verb|umask [mode]|$
 Setta la maschera dei file a `mode`, ovvero i diritti di accesso al file o alle directory nel momento della loro creazione.
 La *umask* è rappresentata in numeri ottali (es. 022, 002, 077). Ogni cifra rappresenta i permessi da rimuovere per utente (u), gruppo (g) e altri (o). Per i file devo sottrarre a partire da `666` mentre per le directory a partire a `777`
 Se ad esempio l’umask è `022`, allora i permessi per i file saranno `644` (`rw-r--r--`) mentre per le directory `755` (`rwxr-xr-x`)
@@ -231,8 +231,9 @@ Se ad esempio l’umask è `022`, allora i permessi per i file saranno `644` (`r
 ### $\verb|mv [-i] [-u] [-f] {file_src} file_dst|$
 Sposta un file (o lo rinomina). Le opzioni hanno lo stesso significato di `cp`, invece `-f` indica force (è il default)
 
-### `rm [-f] [-i] [-r] {file}`
+### $\verb|rm [-f] [-i] [-r] {file}|$
 Stesso significato delle opzioni per rispetto ai precedenti
 
-### `ln [-s] src [dest]`
+### $\verb|ln [-s] src [dest]|$
 Questo comando serve per creare dei symbolic e hard link. Di default verranno creati degli hard link ma con `-s` diventano soft
+
