@@ -263,6 +263,7 @@ Vediamo le opzioni:
 - `bs=BYTES` → legge e scrive fino a `BYTES` bytes alla volta (default 512)
 - `count=N` → copia solamente `N` blocchi di input
 - `skip=N` → salta i primi `N` blocchi di input
+- `seek=N` → salta i primi `N` blocchi di input
 - `conv=CONVS` → converte il file come da comma-separated `CONVS` in input (es. `ucase`, `lcase`, `noerror`, …)
 - `if=FILE` → leggi da `FILE` invece di `stdin` (`cat file | dd of=output_file bs=1M`)
 - `of=FILE` → scrivi su `FILE` invece che su `stdout`
