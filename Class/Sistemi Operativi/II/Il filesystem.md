@@ -271,4 +271,4 @@ Vediamo le opzioni:
 Oltre che per le conversioni si usa per copiare file speciali che non possono essere copiati con `cp`
 
 ### $\verb|mkfs [-t type fsoptions] device|$
-
+Questo comando serve per creare un filesystem Linux su un `device`, tipicamente una partizione su disco rigido
