@@ -100,3 +100,4 @@ Se un job è composto da più task
 
 ### Comandi $\verb|bg|$ e $\verb|fg|$
 Il comando `bg` permette di portare un processo in background (lancio il processo; lo interrompo con `CTRL+Z`; lo risveglio con `bg`)
+Invece `fg %n` dove `%n` è il numero del job, lo riporta in foreground, mentre `gb %n` porta in background il processo `%n`
