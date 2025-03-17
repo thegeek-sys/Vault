@@ -94,7 +94,7 @@ Utilizzo una lista di liste $G$, la lista ha tanti elementi quanti sono i nodi d
 > 	[],        # vicini di 2
 > 	[4],       # vicini di 3
 > 	[2, 3, 5], # vicini di 4
-> 	[0, 1],    # vicini di 5
+> 	[1, 2],    # vicini di 5
 > ]
 > ```
 

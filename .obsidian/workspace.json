@@ -59,12 +59,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
+                "file": "Class/Algoritmi/II/Grafi/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visitare in ampiezza (BFS)"
+              "title": "Introduzione"
             }
           },
           {
@@ -184,7 +184,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "successo",
+                "query": "lista di adiacenza",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -205,12 +205,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -312,6 +312,8 @@
   },
   "active": "b5204cff04115117",
   "lastOpenFiles": [
+    "Class/Algoritmi/II/Grafi/Cicli.md",
+    "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
     "Class/Basi di dati/Voli aerei 2.md",
     "Class/Basi di dati/Accademia 1.md",
     "Files/Pasted image 20250317094328.png",
@@ -336,12 +338,10 @@
     "Class/Reti di elaboratori/Livello applicazione",
     "Class/Sistemi Operativi/II/Il filesystem.md",
     "Files/Pasted image 20250315124907.png.sb-8f8904c5-2l36i4",
-    "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
     "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/II/Grafi/Ponti.md",
     "Class/Architettura degli elaboratori/Architettura degli elaboratori.md",
-    "Class/Algoritmi/II/Grafi/Cicli.md",
     "Flet-notes/2025-03-13_RETI.md",
     "Introduzione allo stack protocollare TCP/IP.md",
     "Introduzione allo stack protocollare TCP",
