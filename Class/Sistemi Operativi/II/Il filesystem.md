@@ -244,4 +244,8 @@ Questo comando permette di creare dei file, ma anche di modificarne il timestamp
 - `-t timestamp` → usa il timestamp indicato invece del timestamp corrente seguendo questo formato `[[CC]YY]MMDDhhmm[.ss]`
 
 ### $\verb|du [-c] [-s] [-a] [-h] [--exclude=PATTERN] [files]|$
-Questo comando stima lo spazio occupato del/dei file e/o directories dati in input. 
+Questo comando stima lo spazio occupato del/dei file e/o directories dati in input. Vediamo ora le opzioni:
+- `-c` → restituisce la somma del totale
+- `-s` → mostra un totale 
+- `-a` → oltre alla directory restituisce le dimensioni anche dei file in esso contenuta (vale anche per altre directory dentro la principale, valido solo per directory)
+- `-h` → restituisce i risultati in formato leggibile (e.g., 1K 234M 2G)
