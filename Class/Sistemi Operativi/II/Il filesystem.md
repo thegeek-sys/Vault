@@ -251,3 +251,15 @@ Questo comando stima lo spazio occupato del/dei file e/o directories dati in inp
 - `-h` → restituisce i risultati in formato leggibile (e.g., 1K 234M 2G)
 
 ### $\verb|df [-h] [-l] [-i] [file]|$
+Restituisce un report sullo spazio libero. Vediamo le opzioni:
+- `-h` → restituisce i risultati in formato leggibile (e.g., 1K 234M 2G)
+- `-l` → mostra solo i filesystem locali (esclude quelli remoti come NFS o montaggi di rete)
+- `-i` → restituisce le informazioni riguardanti gli inodi invece di quelle rispetto ai blocchi
+- `file` → restituisce le informazioni rispetto al filesystem in cui è memorizzato il `file`
+
+### $\verb|dd [opzioni]|$
+Serve per copiare un file in modo elaborato e le opzioni sono una sequenza di `var=value`
+Vediamo le opzioni:
+- `bs=BYTES` → legge e scrive fino a `BYTES` bytes alla volta (default 512)
+- `count=N` → copia solamente `N` blocchi di input
+- `conv=CONVS` → converte il file come da comma-separated `CONVS` in input
