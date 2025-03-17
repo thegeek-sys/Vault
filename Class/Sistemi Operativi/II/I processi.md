@@ -22,5 +22,6 @@ Un file eseguibile più essere eseguito più volte dando vita ad un nuovo proces
 ### Ridirezione dell’output
 I simboli `>` e `<` possono essere utilizzati per redirigere l’output di un comando su di un file
 Ad esempio:
-- `ls > dirlist` → output di `ls` redirezionato in `dirlist`
-- `ls > dirlist 2 > &1` →
+- `ls>dirlist` → output di `ls` redirezionato in `dirlist`
+- `ls>dirlist 2>&1` → l'output di `ls` viene redirezionato in `dirlist`, includendo sia l'output normale (stdout, 1) che gli errori (stderr, 2). Redireziona stderr a stdout che è gia stato redirezionato a `dirlist`, allora anche gli errori finiranno lì
+- `ls 2>&1 > dirlist`
