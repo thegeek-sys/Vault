@@ -237,3 +237,8 @@ Stesso significato delle opzioni per rispetto ai precedenti
 ### $\verb|ln [-s] src [dest]|$
 Questo comando serve per creare dei symbolic e hard link. Di default verranno creati degli hard link ma con `-s` diventano soft
 
+### $\verb|touch [-a] [-m] [-t timestamp] {file}|$
+Questo comando permette di creare dei file, ma anche di modificarne il timestamp:
+- `-a` → modifica unicamente il tempo di accesso
+- `-m` → modifica unicamente il tempo di modifica
+- `-t timestamp` → usa il timestamp indicato invece del timestamp correnteq
