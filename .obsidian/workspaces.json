@@ -1042,7 +1042,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1200,8 +1200,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "314e7cb50d9ccc7c",
-      "mtime": "2025-03-17T09:46:34+01:00"
+      "active": "f263357d0ad639a8",
+      "mtime": "2025-03-17T18:54:11+01:00"
     },
     "Reti di elaboratori": {
       "main": {
@@ -1776,5 +1776,5 @@
       "mtime": "2025-03-17T16:08:29+01:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }

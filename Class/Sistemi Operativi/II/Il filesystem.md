@@ -222,12 +222,13 @@ Setta la maschera dei file a `mode`, ovvero i diritti di accesso al file o alle 
 La *umask* è rappresentata in numeri ottali (es. 022, 002, 077). Ogni cifra rappresenta i permessi da rimuovere per utente (u), gruppo (g) e altri (o). Per i file devo sottrarre a partire da `666` mentre per le directory a partire a `777`
 Se ad esempio l’umask è `022`, allora i permessi per i file saranno `644` (`rw-r--r--`) mentre per le directory `755` (`rwxr-xr-x`)
 
-### `cp [-r] [-i] [-a] [-u] {file_src} file_dst`
-- `-r` → per le directory
+### $\verb|cp [-r] [-i] [-a] [-u] {file_src} file_dst|$
+- `-r` → per le directory (può perdere attributi e timestamp)
 - `-i` → interactive per essere avvisati in caso di sovrascrizione
 - `-u` → la sovrascrittura avviene solo se l’mtime del sorgente è più recente di quello della destinazione
+- `-a` → copia ricorsiva che preserva attributi e timestamp
 
-### `mv [-i] [-u] [-f] {file_src} file_dst`
+### $\verb|mv [-i] [-u] [-f] {file_src} file_dst|$
 Sposta un file (o lo rinomina). Le opzioni hanno lo stesso significato di `cp`, invece `-f` indica force (è il default)
 
 ### `rm [-f] [-i] [-r] {file}`

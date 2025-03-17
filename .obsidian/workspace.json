@@ -4,79 +4,79 @@
     "type": "split",
     "children": [
       {
-        "id": "455919ad3cc4a222",
+        "id": "36e4e4609b40d962",
         "type": "tabs",
         "children": [
           {
-            "id": "785e57b5e4fd92db",
+            "id": "86b7c0e96592df9e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Basi di dati"
+              "title": "Sistemi Operativi"
             }
           },
           {
-            "id": "314e7cb50d9ccc7c",
+            "id": "535b731e6b0aa1fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Voli aerei 2.md",
+                "file": "Class/Sistemi Operativi/II/II.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Voli aerei 2"
+              "title": "II"
             }
           },
           {
-            "id": "f263357d0ad639a8",
+            "id": "ed92920375912e96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Accademia 1.md",
+                "file": "Class/Sistemi Operativi/II/Il filesystem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Accademia 1"
+              "title": "Il filesystem"
             }
           },
           {
-            "id": "487e02a69f634897",
+            "id": "6cca2c5f12de3b94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Travel to the moon.md",
+                "file": "Class/Sistemi Operativi/II/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Travel to the moon"
+              "title": "Introduzione"
             }
           },
           {
-            "id": "3ca506e484c95efa",
+            "id": "359d43189bf13422",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md",
+                "file": "Class/Sistemi Operativi/I/Sicurezza.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modello relazionale"
+              "title": "Sicurezza"
             }
           }
         ],
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "successo",
+                "query": "disco",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,8 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 243.50390243530273
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -154,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-12-11.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +163,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-12-11"
+              "title": "Backlinks for Gestione della memoria"
             }
           },
           {
@@ -173,12 +172,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Basi di dati"
+              "title": "Outgoing links from Gestione della memoria"
             }
           },
           {
@@ -200,10 +199,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Basi di dati/Esercizi.md"
+                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Esercizi"
+              "title": "Outline of Gestione della memoria"
             }
           },
           {
@@ -216,7 +215,8 @@
               "title": "Advanced Tables"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -238,8 +238,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f263357d0ad639a8",
+  "active": "ed92920375912e96",
   "lastOpenFiles": [
+    "Class/Basi di dati/Accademia 1.md",
     "Files/Pasted image 20250317160959.png",
     "Files/Pasted image 20250317160912.png",
     "Class/Basi di dati/Voli aerei 2.md",
@@ -254,7 +255,6 @@
     "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
     "Class/Algoritmi/II/Grafi/Introduzione.md",
     "Class/Algoritmi/II/Grafi/Cicli.md",
-    "Class/Basi di dati/Accademia 1.md",
     "Files/Pasted image 20250317094328.png",
     "Class/Basi di dati/Basi di dati.md",
     "Files/Pasted image 20250317091511.png",
@@ -262,7 +262,6 @@
     "Class/Basi di dati/Travel to the moon.md",
     "Class/Reti di elaboratori/Livello applicazione/Protocollo DNS.md",
     "Files/Pasted image 20250316182758.png",
-    "Files/Pasted image 20250316181354.png",
     "Class/Reti di elaboratori/Livello applicazione/Livello applicazione.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Class/Reti di elaboratori/Introduzione.md",
