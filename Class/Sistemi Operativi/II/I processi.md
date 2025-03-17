@@ -53,3 +53,43 @@ Il PCB è unico per ogni processo e contiene:
 
 ### Aree di memoria
 Le sei ree di memoria sono:
+- **Text Segmento** → le istruzioni da eseguire
+- **Data Segment** → i dati statici (variabili globali, variabili locali static) inizializzati e alcune costanti di ambiente
+- **BSS** → dati statici non inizializzati (block started from symbol); la distinzione dal segmento dati si fa per motivi di realizzazione hardware
+- **Heap** → dati dinamici (allocati con malloc e simili)
+- **Stack** → chiamate a funzioni, con i corrispondenti dati dinamici (variabili locali non static)
+- **Memory Mapping Segment** → tutto ciò che riguarda librerie esterne dinamiche usate dal processo, nonché estensione dello heap in alcuni casi
+
+Alcune aree di memoria però potrebbero essere condivise:
+- il text segment tra più istanze dello stesso processo
+- 2 processi potrebbero avere lo stesso BSS o Data segment o MMS
+- Lo stack non è mai condiviso
+
+![[Pasted image 20250317230250.png|600]]
+
+---
+## Stato di un processo
+Un processo può trovarsi in vari stati:
+- **Running** (R) → in esecuzione su un processore
+- **Runnable** (R) → pronto per essere eseguito (non è in attesa di alcun evento); in attesa che lo scheduler lo (ri)seleziona per l’esecuzione
+- (Interruptible) **Sleep** (S) → e in attesa di un qualche evento (ad esempio, lettura di blocchi dal disco), e non puo quindi essere scelto dallo scheduler
+- **Zombie** (Z) → il processo e’ terminato e le sue 6 aree di memoria non sono più in memoria; tuttavia, il suo PCB viene ancora mantenuto dal kernel perche il processo padre non ha ancora richiesto il suo “exit status" (ritorneremo su questo punto)
+- **Stopped** (T) → caso particolare di sleeping: avendo ricevuto un segnale STOP, e in attesa di un segnale CONT
+- **Traced** (t) → in esecuzione di debug, oppure in generale in attesa di un segnale (altro caso particolare di sleeping; vedremo più avanti)
+- **Uninterruptible sleep** (D) → come sleep, ma tipicamente sta facendo operazioni di IO su dischi lenti e non può essere interrotto ne ucciso
+
+---
+## Modalità di esecuzione dei processi
+Ci sono due modi per poter eseguire i processi:
+- **forground**
+- **background**
+
+I **forground** sono praticamente tutti quelli visti fino ad ora, ovvero quelli in cui il comando può leggere l’input da tastiera e scrivere su schermo. Finché questo non termina, il prompt non viene restituito e non si possono sottomettere altri job alla shell
+I processi in **background** non possono leggere l’input da tastiera ma può scrivere su schermo. In questo caso il prompt viene immediatamente restituito e mentre il job viene eseguito in background, si possono da subito dare altri comandi alla shell
+
+### Esecuzione in background
+Per eseguire un comando in background viene usato l’operatore **`&`** (ampersand) che non è disponibile in tutte le shell. Questo viene posto alla fine di un comando
+
+>[!example] `sleep 15s &`
+
+### Lista di job
