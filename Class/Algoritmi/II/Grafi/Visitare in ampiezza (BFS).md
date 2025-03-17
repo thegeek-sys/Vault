@@ -6,6 +6,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Visita in ampiezza|Visita in ampiezza]]
+	- [[#Visita in ampiezza#Ottimizzazione|Ottimizzazione]]
+- [[#BFS e albero dei padri|BFS e albero dei padri]]
+- [[#BFS e vettore delle distanze $D$|BFS e vettore delle distanze D]]
+---
 ## Introduction
 Dati due nodi $a$ e $b$ di un grafo $G$, definiamo **distanza** (minima) in $G$ di $a$ da $b$ il numero minimo di archi che bisogna attraversare per raggiungere $b$ a partire da $a$. La distanza è posta a $+\infty$ se $b$ non è raggiungibile partendo da $a$, e $0$ se è il nodo da cui sto calcolando le distanze (dista $0$ da sé stesso)
 
