@@ -270,5 +270,8 @@ Vediamo le opzioni:
 
 Oltre che per le conversioni si usa per copiare file speciali che non possono essere copiati con `cp`
 
-### $\verb|mkfs [-t type fsoptions] device|$
-Questo comando serve per creare un filesystem Linux su un `device`, tipicamente una partizione su disco rigido
+### $\verb|mkfs [-t type fs-options] device|$
+Questo è un comando fontend (non gestiamo davvero la creazione di un filesystem) serve per creare un filesystem Linux su un `device`, tipicamente una partizione su disco rigido. Vediamo le opzioni:
+- `-t type` → specifica il filesystem da usare tra [[#Tipi di filesystem|questi]] (default `ext2`)
+- `fs-options` → opzioni specifiche del filesystem da passare al vero costruttore del filesystem (es. `ro` read-only, `rw` read-write)
+- `device` → può essere sia il nome del dispositivo (es. `/dev/hda1/`, `/dev/sdb2`) ma anche un file
