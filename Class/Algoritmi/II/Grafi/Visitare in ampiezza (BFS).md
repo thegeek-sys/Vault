@@ -101,7 +101,7 @@ def BFSpadri(x, G):
 ```
 
 >[!info] Proprietà
->La distanza minima di un vertice $x$ da $s$ nel grafo $G$ equivale alla profondità di $X$ nell’albero BFS
+>La distanza minima di un vertice $x$ da $s$ nel grafo $G$ equivale alla profondità di $x$ nell’albero BFS
 >>[!done] Dimostrazione
 >>Per induzione sulla distanza $d$ di $x$ da $s$. E’ ovviamente vero per $d=0$ in quando l’univo vertice a distanza $0$ da $s$ è $s$ stesso (che è a profondità $0$ nell’albero).
 >>Supponiamo sia vero per tutti i vertici con distanza al più $d-1$ e consideriamo quindi un vertice $x$ a distanza $d$. Sia $P$ un cammino da $s$ a $x$ e sia $v$ il predecessore di $x$ in questo cammino. Per ipotesi induttiva $v$ è a profondità $d-1$ nell’albero BFS.
