@@ -106,4 +106,13 @@ Invece `fg %n` dove `%n` è il numero del job, lo riporta in foreground, mentre 
 
 ---
 ## Pipelining dei comandi
-Per eseguire un job composto da più comandi 
+Per eseguire un job composto da più comandi si usa la **pipe** `|`
+
+>[!example]
+>```bash
+>comando1 | comando2 | … comando n
+>```
+
+**Lo standard output di un comando $i$ diventa l’input del commando $i+1$**
+
+Se uso `|&` è lo standard error che viene redirezionato sullo standard input del comando successivo. Inoltre bisogna ricordare che il comando $i+1$ non deve necessariamente usare lo stdout/stderr del comando $i$
