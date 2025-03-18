@@ -105,7 +105,9 @@ Invece `fg [job_id]` dove `[job_id]` è il numero del job, lo riporta in foregro
 ![[Pasted image 20250317232711.png|400]]
 
 Si possono identificare i job anche con:
-- `[prefix]` → dove `prefix` è la parte iniziale d
+- `[prefix]` → dove `prefix` è la parte iniziale del job desiderato
+- `+` oppure `%` → l’ultimo job mandato
+- `-` → il penultimo job mandato
 
 ---
 ## Pipelining dei comandi
