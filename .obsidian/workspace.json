@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +123,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945
+    "width": 245.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -223,10 +224,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "72d638d35def0267",
+  "active": "9082d86a3b444ecf",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/II/I processi.md",
     "Class/Reti di elaboratori/Livello applicazione/Protocollo DNS.md",
+    "Class/Sistemi Operativi/II/I processi.md",
     "Class/Reti di elaboratori/Livello applicazione/Protocollo HTTP, cookie, web cache.md",
     "Class/Reti di elaboratori/Livello applicazione/Livello applicazione.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
