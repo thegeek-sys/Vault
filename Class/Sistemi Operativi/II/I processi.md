@@ -103,3 +103,7 @@ Il comando `bg` permette di portare un processo in background (lancio il process
 Invece `fg %n` dove `%n` è il numero del job, lo riporta in foreground, mentre `gb %n` porta in background il processo `%n`
 
 ![[Pasted image 20250317232711.png|400]]
+
+---
+## Pipelining dei comandi
+Per eseguire un job composto da più comandi 

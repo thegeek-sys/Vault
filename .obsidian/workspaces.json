@@ -1626,7 +1626,7 @@
                 }
               }
             ],
-            "currentTab": 10
+            "currentTab": 12
           }
         ],
         "direction": "vertical"
@@ -1785,9 +1785,9 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "f35497fc62b631e4",
-      "mtime": "2025-03-17T16:08:29+01:00"
+      "active": "323bee179374fab9",
+      "mtime": "2025-03-18T12:12:15+01:00"
     }
   },
-  "active": "Algoritmi"
+  "active": "Sistemi Operativi"
 }
