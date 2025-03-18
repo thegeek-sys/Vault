@@ -121,3 +121,7 @@ Per eseguire un job composto da più comandi si usa la **pipe** `|`
 **Lo standard output di un comando $i$ diventa l’input del commando $i+1$**
 
 Se uso `|&` è lo standard error che viene redirezionato sullo standard input del comando successivo. Inoltre bisogna ricordare che il comando $i+1$ non deve necessariamente usare lo stdout/stderr del comando $i$
+
+---
+## $\verb|ps [opzioni] [pid...]|$
+Il comando `ps` mostra le informazioni riguardo una selezione dei processi attivi (se si vuole un aggiornamento continua della selezione e le informazioni mostrare usare `top`)
