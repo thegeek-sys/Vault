@@ -5,7 +5,7 @@ Related:
   - "[[Grafi]]"
 Completed:
 ---
-	---
+---
 ## Problema
 Abbiamo tre contenitori di capienza 4, 7 e 10 litri. Inizialmente i contenitori da 4 e 7 litri sono pieni d’acqua e quello da 10 è vuoto.
 ![[Pasted image 20250317115117.png|center|150]]
@@ -89,5 +89,34 @@ Per applicare questo algoritmo bisogna:
 >Ora si può andare in 2 (costo 17) o in 2 (costo 19). Scelgo di andare in 2 (costo 17) tramite il nodo 3
 >![[Pasted image 20250319190408.png|300]]
 >
->Sono quindi terminati i nodi da poter esplorare, termina quindi l’algoritmo
+>Sono quindi terminati i nodi da poter esplorare, termina quindi l’algoritmo. L’albero costruito da questa visita sarebbe del tipo:
+>![[Pasted image 20250319190758.png|200]]
+
+Per come è strutturato questo algoritmo rientra perfettamente nel **paradigma della tecnica greedy**. Si tratta infatti di una sequenza di **decisioni irrevocabili**: ad ogni passo viene deciso il cammino (e quindi la distanza) dal nodo sorgente ad un nuovo nodo e questa decisione non viene più modificata
+
+Le decisioni vengono prese in base ad un **criterio “locale”**: tra tutti i nuovi cammini che puoi trovare estendendo i vecchi di un arco prendi quello che costa meno. Ma questa tecnica spesso non porta a decisioni corrette a livello globale ma ci permette di ottenere soluzioni sub-ottimali
+
+Lo pseudo-codice dell’algoritmo di Dijkstra:
+$$
+\begin{flalign}
+&\text{Dijkstra}(s,G): \\
+&P[0\dots n-1] \text{ vettore dei padri inizializzato a -1}\\
+&D[0\dots n-1] \text{ vettore delle distanze inizializzato a }+\infty\\ \\
+&D[s], P[s]=0,s\\ \\
+&while \text{ esistono archi } \{x,y\} \text{ con } P[x]\neq-1 \text{ e }P[y]==-1: \\
+&\qquad \text{sia }\{x,y\} \text{ quello per cui è minimo } D[x]+peso(x,y)\\
+&\qquad D[y], P[y] = D[x] + peso(x,y), x\\
+&return\; P,D
+\end{flalign}
+$$
+
+La prima cosa da notare è che l’algoritmo **non è corretto nel caso di grafi con pesi anche negativi**
+![[Pasted image 20250319192054.png]]
+Al centro la soluzione prodotta da Dijkstra per il grafo $G$, a destra la soluzione corretta
+
+>[!done] Dimostrazione correttezza nel caso di pesi positivi
+>Ad ogni iterazione del $while$ viene assegnata una nuova distanza ad un nodo.
+>Per induzione sul numero di iterazione mostreremo che la distanza assegnata è quella minima
+>
+>Il
 

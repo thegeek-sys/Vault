@@ -999,6 +999,34 @@
                 }
               },
               {
+                "id": "7ec0cd7226082df9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Decomposizioni che hanno un join senza perdita"
+                }
+              },
+              {
+                "id": "f135a7a3c4eaf515",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "File hash - caratteristiche ed esercizi"
+                }
+              },
+              {
                 "id": "314e7cb50d9ccc7c",
                 "type": "leaf",
                 "state": {
@@ -1055,7 +1083,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1213,8 +1241,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "f263357d0ad639a8",
-      "mtime": "2025-03-17T18:54:11+01:00"
+      "active": "7ec0cd7226082df9",
+      "mtime": "2025-03-19T19:17:17+01:00"
     },
     "Reti di elaboratori": {
       "main": {
@@ -1485,9 +1513,8 @@
                 }
               },
               {
-                "id": "42953f8e6c4fccf2",
+                "id": "4a73d73f54234965",
                 "type": "leaf",
-                "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
@@ -1495,149 +1522,8 @@
                     "mode": "source",
                     "source": false
                   },
-                  "pinned": true,
                   "icon": "lucide-file",
                   "title": "Grafi"
-                }
-              },
-              {
-                "id": "89f182de26bd4315",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Visitare in profondità (DFS)"
-                }
-              },
-              {
-                "id": "b5204cff04115117",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Introduzione.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Introduzione"
-                }
-              },
-              {
-                "id": "80618ae33a1aee94",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Ponti.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ponti"
-                }
-              },
-              {
-                "id": "3aeefc577591ffc5",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Cicli.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Cicli"
-                }
-              },
-              {
-                "id": "2ca398dfc5b46779",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Ordinamento topologico.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ordinamento topologico"
-                }
-              },
-              {
-                "id": "e96e71bc6db7eca1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Colorazione dei grafi"
-                }
-              },
-              {
-                "id": "5c57313e45c84c1d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Introduzione.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Introduzione"
-                }
-              },
-              {
-                "id": "79f360896c7eff6b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Visitare in profondità (DFS)"
-                }
-              },
-              {
-                "id": "f35497fc62b631e4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Visitare in ampiezza (BFS)"
-                }
-              },
-              {
-                "id": "ab3d96ad0a319a0f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Colorazione dei grafi"
                 }
               },
               {
@@ -1655,7 +1541,7 @@
                 }
               }
             ],
-            "currentTab": 12
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1815,7 +1701,7 @@
         }
       },
       "active": "323bee179374fab9",
-      "mtime": "2025-03-18T12:12:15+01:00"
+      "mtime": "2025-03-19T19:16:55+01:00"
     }
   },
   "active": "Algoritmi"
