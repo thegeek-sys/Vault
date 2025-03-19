@@ -121,3 +121,28 @@ Ogni trasferimento di questo tipo è caratterizzato da tre fasi:
 1. **Handshaking**
 2. **trasferimento dei messaggi**
 3. **chiusura**
+
+Il formato del comando/risposta:
+- comandi → testo ASCII
+- risposta → codice di stato ed espressione
+
+Inoltre i messaggi devono essere nel formato ASCII
+
+>[!example] Scenario: Alice invia un messaggio a Roberto
+>1. Alice usa il suo user agent per comporre il messaggio da inviare “a” `rob@someshool.edu`
+>2. Lo user agent di Alice invia un messaggio al server di posta di Alice; il messaggio è posto nella coda dei messaggi
+>3. Il lato client di SMTP apre una connessione TCP con il server di risposta di Roberto
+>4. Il client SMTP invia il messaggio di alice sulla connessione TCP
+>5. Il server i posta di Roberto riceve il messaggio e lo pone nella casella di posta di Roberto
+>6. Roberto invoca il suo agente utente per leggere il messaggio
+>
+>![[Pasted image 20250319102220.png]]
+>
+>**Protocolli utilizzati**:
+>![[Pasted image 20250319102252.png]]
+
+### Scambio di messaggi a livello di protocollo
+Il client SMTP (che gira sull’host server di posta in invio) fa stabilire una connessione sulla porta 25 verso il server SMTP (che gira sull’host server di posta in ricezione)
+Se il server è **inattivo** il client riprova più tardi, mentre se il server è **attivo** viene stabilita la connessione
+
+Il server e il client effettuano una forma di handshaking (il client indica indirizzo email del mittente )
