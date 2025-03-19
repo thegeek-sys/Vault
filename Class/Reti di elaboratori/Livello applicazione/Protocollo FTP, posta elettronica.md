@@ -192,4 +192,19 @@ Nell’intestazione dei messaggi (in caso di contenuti MIME) viene dichiarato il
 ![[Pasted image 20250319105319.png]]
 
 ### Formato del messaggio ricevuto
-Un’altra classe di 
+Un’altra classe di righe di intestazione viene inserita dal server di ricezione SMTP
+
+>[!example]
+>Il server di ricezione aggiunge `Received:` in cima la messaggio, che specifica il nome del server che ha inviato il messaggio (`from`), il nome del server che lo ha ricevuto (`by`) e l’orario di ricezione
+>![[Pasted image 20250319111704.png]]
+
+---
+## Protocolli di accesso alla posta
+Il protocollo SMTP non può essere usato dall’agente utente del destinatario perché è un protocollo `push`, mentre l’utente deve eseguire un’operazione `pull`
+
+Per questo motivo esistono dei protocolli ad hoc di accesso alla porta (per ottenere i messaggi dal server):
+- **POP3** (*Post Office Protocol - version 3*)
+- **IMAP** (*Internet Mail Access Protocol*) → con funzioni più complesse e che permette la manipolazione di messaggi memorizzati sul server
+- **HTTP** → gmail, Hotmail, ecc.
+
+### Protocollo POP3
