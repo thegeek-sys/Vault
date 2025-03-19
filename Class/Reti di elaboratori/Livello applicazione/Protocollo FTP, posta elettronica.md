@@ -177,5 +177,15 @@ Confronto con HTTP:
 >[!example] Esempio: fasi trasferimento
 >![[Pasted image 20250319104226.png]]
 
+---
+## Protocollo MIME
+Come si possono inviare messaggi in formati non ASCII? Bisogna convertire i dati
 
+![[Pasted image 20250319105054.png]]
 
+Per inviare contenuti diversi dal testo ASCII si usano interazioni aggiuntive
+Il **MIME** (*Multipurpose Internet Mail Extension*) sono estensioni di messaggi di posta multimediali
+
+Nell’intestazione dei messaggi (in caso di contenuti MIME) viene dichiarato il tipo di contenuto MIME
+
+![[Pasted image 20250319105319.png]]
