@@ -172,3 +172,58 @@ Seguono una serie di iterazioni dove vengono eseguiti i seguenti passaggi:
 2. **Verifica di terminazione**: se il costo trovato è $\infty$, significa che non esistono altri nodi raggiungibili non ancora definitivi. In tal caso, il ciclo si interrompe
 3. **Marcare il nodo $x$ come definitivo**: il nodo $x$ selezionato viene aggiornato in $\text{Lista}$ impostando il flag a $1$, indicando che il suo costo definitivo è stato fissato e non verrà più modificato
 4. **Aggiornamento dei vicini di $x$**: per ogni nodo $y$ adiacente a $x$, se $y$ non è ancora definitivo e il nuovo costo ottenuto passato per $x$ (cioè $\text{costo}(x)+\text{costo}(x,y)$) è inferiore al costo attuale memorizzato per $y$, allora si aggiorna la terna corrispondente a $y$ in $\text{Lista}$: $$\text{Lista}[y]=(0,\text{costo}(x)+\text{costo}(x,y),x)$$
+```python
+def dijkstra(s, G):
+	n = len(G)
+	Lista = [(0, float('inf'), -1)]*n
+	Lista[s] = (1, 0, s)
+	
+	for y, costo in G[s]:
+		# aggiorno vicini di s
+		Lista[y] = (0, costo, s)
+	
+	while True:
+		minimo, x = float('inf'), -1
+		# nodo non definitivo con costo minore
+		for i in range(n):
+			if Lista[i][0] == 0 and Lista[i][1] < minimo:
+				minimo, x = Lista[i][1], i
+		
+		if minimo == float('inf'):
+			# non ci sono più nodi raggiunbili non definitivi
+			break
+		
+		# rendi definitivo il nodo x
+		definitivo, costo_x, origine = Lista[x]
+		Lista[x] = (1, costo_x, origine)
+		
+		# aggiornamento vicini
+		for y, corso_arco in G[x]:
+			if Lista[y][0] == 0 and minimo+costo_arco < Lista[y][1]:
+				# y non definitivo e passando per x c'è un cammino
+				# migliore
+				Lista[y] = (0, minimo+costo_arco, x)
+	
+	# estrae i vettori delle distanze e dei padri
+	D,P = [costo for _,costo,_ in Lista], [origine for _,_,origine in Lista]
+	return D, P
+```
+Il costo delle istruzioni al di fuori del $while$ è $\Theta (n)$. Il $while$ viene eseguito al più $n-1$ volte (ad ogni iterazione un nuovo nodo viene selezionato e reso definitivo). All’interno del $while$ c’è:
+- un primo $for$ che viene iterato esattamente $n$ volte
+- un secondo $for$ che viene eseguito al più $n$ volte (tante volte quanti sono gli adiacenti presenti nella lista del nodo appena inserito nell’albero)
+
+Il costo del $while$ è dunque $\Theta(n^2)$ e questa è anche la complessità dell’implementazione
+
+>[!hint]
+>Questa implementazione è ottima nel caso di grafi densi dove $m = \Theta(n^2)$
+
+### Implementazione tramite heap
+Sostituendo il vettore lista con un **heap minimo** potremmo estrarre l’elemento minimo in tempo logaritmico nel numero di elementi presenti nell’heap
+
+L’idea è di mantenere un heap minimo contenente triple $(costo, u, v)$ dove $u$ è un nodo già inserito nell’albero dei cammini minimi e $costo$ rappresenta la distanza che si avrebbe qualora il nodo $y$ venisse inserito nell’albero dei cammini minimi attraverso il nodo $x$.
+
+In questo modo, ad ogni estrazione dall’heap possiamo individuare in tempo logaritmico nella dimensione dell’heap il nodo $v$ da inserire nell’albero, il costo da assegnargli come distanza da $s$ e il padre $u$ a cui collegarlo.
+
+Ogni volta che aggiungiamo un nodo $x$ all’albero, aggiorniamo anche l’heap inserendo, per ogni vicino $y$ di $x$, una nuova tripla $(DistanzaAggiornata, x, y)$. Poichè ogni inserimento ha costo logaritmico nella dimensione dell’heap, il tempo complessivo rimane gestibile.
+
+Dato che non rimuoviamo elementi già presenti nell’heap, possono esistere più entry dello stesso nodo $y$ con distanze differenti. Tuttavia, la prima volta che il nodo $y$ viene estratto dall’heap, questa corrisponde necessariamente alla distanza minima calcolata fino a quel punto e le estrazioni successive di $y$ possono essere trascurate. Quindi ad ogni estrazione di un nodo, controlliamo come prima cosa se esso è giò stato aggiunto all’albero; in tal caso, l’informazione estratta viene ignorata.
