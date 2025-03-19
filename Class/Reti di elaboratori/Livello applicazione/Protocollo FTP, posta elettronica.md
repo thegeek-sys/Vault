@@ -76,3 +76,17 @@ Esiste una corrispondenza uno a uno tra il comando immesso dall’utente e quell
 | `STOR filename`<br>memorizza (`put`) un file nell’host remoto                                                             | `452 Error writing file`                              |
 ### Principali comandi FTP
 La codifica standard per i comandi e le risposte FTP è la NVT ASCII
+![[Pasted image 20250319091403.png]]
+
+#### Esempi di risposte FTP
+Le risposte sono composte da due parti: un **numero di 3 cifre e un testo**.
+La parte numerica costituisce il codice della risposta, quella di testo contiene i parametri necessari o informazioni supplementari
+La tabella riporta alcuni codici (non il testo)
+![[Pasted image 20250319091555.png]]
+
+### Esempio
+La connessione dati viene aperta e chiusa per ogni trasferimento di file (porte 1267-20)
+![[Pasted image 20250319091713.png]]
+
+---
+## Posta elettronica: scenario classico
