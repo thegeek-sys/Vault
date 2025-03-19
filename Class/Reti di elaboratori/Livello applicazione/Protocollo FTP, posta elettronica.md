@@ -90,3 +90,7 @@ La connessione dati viene aperta e chiusa per ogni trasferimento di file (porte 
 
 ---
 ## Posta elettronica: scenario classico
+Ci sono tre componenti principali:
+- **User agent** → usato per scrivere e inviare un messaggio o leggerlo
+- **Message Transfer Agent** → usato per trasferire il messaggio attraverso Internet
+- **Message Access Agent** → usato per leggere la mail in arrivo234
