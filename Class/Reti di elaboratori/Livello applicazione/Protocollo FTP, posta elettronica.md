@@ -145,4 +145,30 @@ Inoltre i messaggi devono essere nel formato ASCII
 Il client SMTP (che gira sull’host server di posta in invio) fa stabilire una connessione sulla porta 25 verso il server SMTP (che gira sull’host server di posta in ricezione)
 Se il server è **inattivo** il client riprova più tardi, mentre se il server è **attivo** viene stabilita la connessione
 
-Il server e il client effettuano una forma di handshaking (il client indica indirizzo email del mittente )
+Il server e il client effettuano una forma di handshaking (il client indica indirizzo email del mittente e del destinatario). Quindi il client invia il messaggio e il messaggio arriva al server destinatario grazie all’affidabilità del TCP
+Se ci sono altri messaggi si usa la stessa connessione (connessione persistente), altrimenti il client invia richiesta di chiusura connessione
+
+>[!example] Esempio di interazione SMTP
+>- Client → `crepes.fr`
+>- Server → `hamburger.edu`
+>
+>La seguente transazione inizia appena si stabilisce la connessione TCP
+>![[Pasted image 20250319102941.png]]
+>
+>>[!info] Note
+>>- SMTP usa connessioni persistenti (ripete i passi da `MAIL FROM:`)
+>>- SMTP richiede che il messaggio (intestazione e corpo) sia nel formato ASCII a 7 bit
+>>- Il server SMTP usa **`CRLF.CRLF`** per determinare la fine del messaggio
+
+Confronto con HTTP:
+
+| HTTP                                                                     | SMTP                                                                           |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| utilizzato per trasferire file da un host all’altro                      | utilizzato per trasferire file da un host all’altro                            |
+| `pull`<br>gli utenti scaricano i file e inizializzano le connessioni TCP | `push`<br>il server di posta spedisce il file e inizializza la connessione TCP |
+| ciascun oggetto è incapsulato nel suo messaggio di risposta              | più oggetti vengono trasmessi in un unico messaggio                            |
+
+---
+## Formato dei messaggi di posta elettronica
+
+
