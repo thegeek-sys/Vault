@@ -66,3 +66,5 @@ Il problema diventa ora quello di trovare un cammino dal nodo $(4,7,0)$ al nodo 
 >[!question] Problema
 >Dato un grafo pesato vogliamo trovare i cammini minimi e quindi anche le distanze da un certo nodo  $s$ (detto sorgente) a tutti gli altri nodi
 
+![[Pasted image 20250319184703.png]]
+
