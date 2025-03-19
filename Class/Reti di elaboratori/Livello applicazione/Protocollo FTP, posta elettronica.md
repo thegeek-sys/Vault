@@ -6,8 +6,34 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#File Transfer Protocol (FTP)|File Transfer Protocol (FTP)]]
+- [[#FTP client e server|FTP client e server]]
+	- [[#FTP client e server#Connessione di controllo|Connessione di controllo]]
+	- [[#FTP client e server#Connessione dati|Connessione dati]]
+- [[#Comandi e risposte FTP|Comandi e risposte FTP]]
+	- [[#Comandi e risposte FTP#Principali comandi FTP|Principali comandi FTP]]
+	- [[#Comandi e risposte FTP#Esempi di risposte FTP|Esempi di risposte FTP]]
+	- [[#Comandi e risposte FTP#Esempio|Esempio]]
+- [[#Posta elettronica: scenario classico|Posta elettronica: scenario classico]]
+	- [[#Posta elettronica: scenario classico#User agent|User agent]]
+	- [[#Posta elettronica: scenario classico#Mail Transfer Agent|Mail Transfer Agent]]
+- [[#SMTP (RFC 5321)|SMTP (RFC 5321)]]
+	- [[#SMTP (RFC 5321)#Scambio di messaggi a livello di protocollo|Scambio di messaggi a livello di protocollo]]
+- [[#Formato dei messaggi di posta elettronica|Formato dei messaggi di posta elettronica]]
+- [[#Protocollo MIME|Protocollo MIME]]
+	- [[#Protocollo MIME#Formato del messaggio inviato|Formato del messaggio inviato]]
+	- [[#Protocollo MIME#Formato del messaggio ricevuto|Formato del messaggio ricevuto]]
+- [[#Protocolli di accesso alla posta|Protocolli di accesso alla posta]]
+	- [[#Protocolli di accesso alla posta#Protocollo POP3|Protocollo POP3]]
+		- [[#Protocollo POP3#Comandi|Comandi]]
+		- [[#Protocollo POP3#POP3 e IMAP|POP3 e IMAP]]
+	- [[#Protocolli di accesso alla posta#Protocollo IMAP|Protocollo IMAP]]
+	- [[#Protocolli di accesso alla posta#Protocollo HTTP|Protocollo HTTP]]
+---
 ## Introduction
-In questa sezione affronteremo i protocolli:
+In questa sezione affronte2remo i protocolli:
 - FTP
 - SMTP
 - POP3
@@ -213,3 +239,44 @@ Quando la connessione è stabilita si procede in tre fasi:
 1. **Autorizzazione** → l’agente utente invia nome utente e password per essere identificato
 2. **Transazione** → l’agente utente recupera i messaggi
 3. **Aggiornamento** → dopo che il client ha inviato il `QUIT`, e quindi conclusa la connessine, vengono cancellati i messaggi marcati per la rimozione
+
+#### Comandi
+![[Pasted image 20250319182927.png|300]]
+
+**Fase di autorizzazione**
+Comandi del client:
+- `user` → dichiara il nome dell’utente
+- `pass` → password
+
+Risposte del server:
+- `+OK`
+- `-ERR`
+
+**Fase di transazione**
+Comandi client:
+- `list` → elenca i numeri dei messaggi
+- `retr` → ottiene i messaggi in base al numero
+- `dele` → cancella
+- `quit`
+
+#### POP3 e IMAP
+Il precedente esempio usa la modalità “scarica e cancella”, dunque Roberto non può rileggere le email se cambia client. Con la modalità “scarica e mantieni”, i messaggi vengono mantenuti sul server anche dopo averli scaricati
+
+POP3 inoltre è un protocollo senza stato tra le varie sessioni (non ricorda quali mail sono state scaricate) e non fornisce all’utente alcuna procedura per creare cartelle remote ed assegnare loro messaggi, l’utente può solo crearle localmente sul proprio computer
+
+### Protocollo IMAP
+A risolvere i problemi sopra citati ci sta il protocollo **IMAP**. Questo infatti mantiene tutti i messaggi in un unico posto: il server.
+Permette inoltre di **organizzare i messaggi in cartelle** e **conserva lo stato dell’utente** tra le varie sessioni (nomi di cartelle, associazioni messaggi-cartelle)
+
+Nel pratico un server IMAP associa ad una cartella (`INBOX`) ogni messaggio arrivato al server, fornendo agli utenti dei comandi per:
+- creare cartelle e spostare messaggi da una cartella all’altra
+- effettuare ricerche nelle cartelle remote
+
+IMAP presenta anche comandi che permettono agli utenti di ottenere componenti di un messaggio (intestazione, parte di un messaggio)
+
+### Protocollo HTTP
+Alcuni mail server forniscono accesso alla mail via web (ovvero mediante il protocollo HTTP)
+In questo caso lo user agent è il web browser stesso.
+L’utente/il ricevente comunica/accede con il/al suo mailbox mediante il protocollo HTTP, ma SMTP rimane il protocollo di comunicazione tra mail server
+
+![[Pasted image 20250319184048.png|550]]
