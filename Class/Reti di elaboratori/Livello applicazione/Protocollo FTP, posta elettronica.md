@@ -170,5 +170,12 @@ Confronto con HTTP:
 
 ---
 ## Formato dei messaggi di posta elettronica
+![[Pasted image 20250319104133.png]]
+
+>[!warning] Differenti dai comandi SMTP
+
+>[!example] Esempio: fasi trasferimento
+>![[Pasted image 20250319104226.png]]
+
 
 
