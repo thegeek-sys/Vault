@@ -123,6 +123,17 @@ Al centro la soluzione prodotta da Dijkstra per il grafo $G$, a destra la soluzi
 >Sia $T_{i}$ l’albero dei cammini minimi costruito fino al passo $i>0$ e $(u,v)$ l’arco aggiunto al passo $i+1$. Faremo vedere che $D[v]$ è la distanza minima di $v$ da $s$. Baserà mostrare che il costo di un eventuale cammino alternativo è sempre superiore o uguale a $D[v]$
 >
 >Sia $C$ un qualsiasi cammino da $s$ a $v$ alternativo a quello presente nell’albero e $(x,y)$ il primo arco che incontriamo percorrendo il cammino $C$ all’indietro tale che $x$ è nell’albero $T_{i}$ e $y$ no (tale arco deve esistere perché $s$ è in $T_{i}$ mentre $v$ no)
+>
+>Per ipotesi induttiva $\text{costo}(C)\geq D[x]+peso(x,y)$
+>>[!info]
+>>Quest’affermazione è vera perché i pesi del grafo sono tutti non negativi
+>
+>L’algoritmo ha preferito estendere l’albero $T_{i}$ con l’arco $(u,v)$ anziché l’arco $(x,y)$ e in base alla regola con cui l’algoritmo sceglie l’arco con cui estendere l’albero deve quindi aversi $D[x]+peso(x,y)\geq D[u]+peso(u,v)$
+>Da cui segue: $\text{costo}(C)\geq D[x]+peso(x,y) \geq D[u]+peso(u,v)=D[v]$
+>
+>Il cammino alternativo ha un costo superiore a $D[v]$
+
+
 
 
 
