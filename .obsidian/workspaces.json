@@ -1256,6 +1256,20 @@
                 }
               },
               {
+                "id": "fbda07d958551d43",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Reti di elaboratori/Livello applicazione/Protocollo FTP, posta elettronica.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Protocollo FTP, posta elettronica"
+                }
+              },
+              {
                 "id": "72d638d35def0267",
                 "type": "leaf",
                 "state": {
@@ -1341,7 +1355,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 245.51103591918945
+        "width": 245.51103591918945,
+        "collapsed": true
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -1441,8 +1456,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "72d638d35def0267",
-      "mtime": "2025-03-18T15:48:17+01:00"
+      "active": "fbda07d958551d43",
+      "mtime": "2025-03-19T18:43:02+01:00"
     },
     "Algoritmi": {
       "main": {
@@ -1803,5 +1818,5 @@
       "mtime": "2025-03-18T12:12:15+01:00"
     }
   },
-  "active": "Reti di elaboratori"
+  "active": "Algoritmi"
 }

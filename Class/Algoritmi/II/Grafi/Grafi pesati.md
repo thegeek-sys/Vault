@@ -5,7 +5,7 @@ Related:
   - "[[Grafi]]"
 Completed:
 ---
----
+	---
 ## Problema
 Abbiamo tre contenitori di capienza 4, 7 e 10 litri. Inizialmente i contenitori da 4 e 7 litri sono pieni d’acqua e quello da 10 è vuoto.
 ![[Pasted image 20250317115117.png|center|150]]
@@ -60,9 +60,9 @@ Il problema diventa ora quello di trovare un cammino dal nodo $(4,7,0)$ al nodo 
 >
 >Abbiamo quindi ricondotto un problema di cammini minimi su grafi pesati a quello dei cammini minimi in un grafo non pesato
 
+---
+## Algoritmo di Dijkstra
 
-
-
-
-
+>[!question] Problema
+>Dato un grafo pesato vogliamo trovare i cammini minimi e quindi anche le distanze da un certo nodo  $s$ (detto sorgente) a tutti gli altri nodi
 
