@@ -44,14 +44,15 @@ Quando l’utente fornisce il nome dell’host remoto (`ftp NomeHost`), il proce
 Stabilita la connessione, il client fornisce nome utente e password che vengon inviate sulla connessione TCP come parte dei comandi
 Ottenuta l’autorizzazione del server il client può inviare uno o più file memorizzati nel filesystem locale verso quello remoto (o viceversa)
 
-### FTP client e server
+---
+## FTP client e server
 ![[Pasted image 20250318212817.png|center|500]]
 Nel protocollo FTP si distinguono due tipi di connessione:
 - **connessione di controllo** → si occupa delle informazioni di controllo del trasferimento e usa regole molto semplici, così che lo scambio di informazioni si riduce allo scambio di  una riga di comando (o risposta) per ogni interazione
 - **connessione dati** → si occupa del trasferimento file
 
 ![[Pasted image 20250318213621.png|center|350]]
-#### Connessione di controllo
+### Connessione di controllo
 La **connessione di controllo** (porta 21) viene usata per inviare informazioni di controllo (vengono ad esempio trasferite identificativo utente, password, comandi per cambiare cartella, comandi per richiedere trasferimento di file).
 Tutti i comandi eseguiti dall’utente sono trasferiti sulla connessione di controllo
 
@@ -59,11 +60,12 @@ Questa connessione viene definita *out of band* poiché è separata dalla connes
 
 Il server FTP inoltre mantiene lo stato riguardo directory corrente e autenticazione precedente
 
-#### Connessione dati
+### Connessione dati
 Quando il server riceve un comando per trasferire un file, apre una connessione dati TCP sulla porta 20 con il client. Dopo il trasferimento di un file, il server chiude la connessione (si crea una nuova connessione per ogni file trasferito all’interno della sessione).
 La connessione dati viene aperta dal server e utilizzata per il vero e proprio invio del file.
 
-### Comandi e risposte FTP
+---
+## Comandi e risposte FTP
 Esiste una corrispondenza uno a uno tra il comando immesso dall’utente e quello FTP inviato sulla connessione di controllo. Ciascun domando è seguito da una risposta spedita dal server al client (codice di ritorno)
 
 | Comandi comuni                                                                                                            | Codici di ritorno comuni                              |
@@ -78,7 +80,7 @@ Esiste una corrispondenza uno a uno tra il comando immesso dall’utente e quell
 La codifica standard per i comandi e le risposte FTP è la NVT ASCII
 ![[Pasted image 20250319091403.png]]
 
-#### Esempi di risposte FTP
+### Esempi di risposte FTP
 Le risposte sono composte da due parti: un **numero di 3 cifre e un testo**.
 La parte numerica costituisce il codice della risposta, quella di testo contiene i parametri necessari o informazioni supplementari
 La tabella riporta alcuni codici (non il testo)
@@ -104,3 +106,18 @@ I messaggi in uscita vengono quindi memorizzati sul server attraverso il **Mail 
 Sia i messaggi in uscita che in arrivo però sono memorizzati sul server
 
 ### Mail Transfer Agent
+Il **Mail Transfer Agent** dunque è il software lato **server** che gestisce l’invio e la ricezione della mail. Questo è composto da una **casella di posta** (*mailbox*) che contiene i messaggi in arrivo per l’utente e da una **coda dei messaggi** da trasmettere (con tentativi ogni $x$ minuti per alcuni giorni)
+
+![[Pasted image 20250319101234.png|center|350]]
+
+Per comunicare tra server di posta il MTA utilizza il protocollo **SMTP** (*Simple Mail Transfer Protocol*)
+
+---
+## SMTP (RFC 5321)
+Il protocollo **SMTP** usa TCP per trasferire in modo affidabile i messaggi di posta elettronica dal client al server, e lo fa attraverso la porta 25
+Si tratta di un trasferimento diretto: dal server trasmittente al server ricevente
+
+Ogni trasferimento di questo tipo è caratterizzato da tre fasi:
+1. **Handshaking**
+2. **trasferimento dei messaggi**
+3. **chiusura**
