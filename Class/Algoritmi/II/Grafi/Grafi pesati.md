@@ -74,3 +74,20 @@ Per applicare questo algoritmo bisogna:
 	- ad ogni passo aggiungi all’albero l’arco che produce il nuovo cammino più economico
 	- alla nuova destinazione assegna come distanza il costo del cammino
 
+>[!example]- Esempio applicazione algoritmo
+>Nelle seguenti immagini in verde saranno i possibili archi da attraversare. I costi sono calcolati con il costo del nodo in cui mi trovo + costo dell’arco da attraversare
+>
+>![[Pasted image 20250319185650.png|300]]
+>Al primo passo è possibile scegliere se andare in 5 (costo 4) o in 1 (costo 17). Scelgo il nodo 5 (costo 4)
+>![[Pasted image 20250319185800.png|300]]
+>Ora si può andare in 3 (costo 5), in 1 (costo 10) o in 1 (costo 17). Scelgo di andare in 3 (costo 5) tramite il nodo 5
+>![[Pasted image 20250319190022.png|300]]
+>Ora si può andare in 1 (costo 17), in 1 (costo 10), in 4 (costo 9) o in 2 (costo 17). Scelgo di andare in 4 (costo 9) tramite il nodo 3
+>![[Pasted image 20250319190123.png|300]]
+>Ora si può andare in 1 (costo 17), in 1 (costo 10), in 1 (costo 14), in 2 (costo 19) o in 2 (costo 17). Scelgo di andare in 1 (costo 10) tramite il nodo 5
+>![[Pasted image 20250319190321.png|300]]
+>Ora si può andare in 2 (costo 17) o in 2 (costo 19). Scelgo di andare in 2 (costo 17) tramite il nodo 3
+>![[Pasted image 20250319190408.png|300]]
+>
+>Sono quindi terminati i nodi da poter esplorare, termina quindi l’algoritmo
+
