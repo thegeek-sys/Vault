@@ -118,5 +118,11 @@ Al centro la soluzione prodotta da Dijkstra per il grafo $G$, a destra la soluzi
 >Ad ogni iterazione del $while$ viene assegnata una nuova distanza ad un nodo.
 >Per induzione sul numero di iterazione mostreremo che la distanza assegnata è quella minima
 >
->Il
+>Il caso base è banale (al passo $0$ viene assegnata distanza zero alla sorgente e con pesi positivi non può esserci una distanza inferiore).
+>
+>Sia $T_{i}$ l’albero dei cammini minimi costruito fino al passo $i>0$ e $(u,v)$ l’arco aggiunto al passo $i+1$. Faremo vedere che $D[v]$ è la distanza minima di $v$ da $s$. Baserà mostrare che il costo di un eventuale cammino alternativo è sempre superiore o uguale a $D[v]$
+>
+>Sia $C$ un qualsiasi cammino da $s$ a $v$ alternativo a quello presente nell’albero e $(x,y)$ il primo arco che incontriamo percorrendo il cammino $C$ all’indietro tale che $x$ è nell’albero $T_{i}$ e $y$ no (tale arco deve esistere perché $s$ è in $T_{i}$ mentre $v$ no)
+
+
 
