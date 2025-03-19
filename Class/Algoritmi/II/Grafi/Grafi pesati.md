@@ -6,6 +6,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Problema|Problema]]
+- [[#Algoritmo di Dijkstra|Algoritmo di Dijkstra]]
+	- [[#Algoritmo di Dijkstra#Implementazione tramite lista|Implementazione tramite lista]]
+	- [[#Algoritmo di Dijkstra#Implementazione tramite heap|Implementazione tramite heap]]
+	- [[#Algoritmo di Dijkstra#Le due implementazioni a confronto|Le due implementazioni a confronto]]
+---
 ## Problema
 Abbiamo tre contenitori di capienza 4, 7 e 10 litri. Inizialmente i contenitori da 4 e 7 litri sono pieni d’acqua e quello da 10 è vuoto.
 ![[Pasted image 20250317115117.png|center|150]]
@@ -227,3 +234,51 @@ In questo modo, ad ogni estrazione dall’heap possiamo individuare in tempo log
 Ogni volta che aggiungiamo un nodo $x$ all’albero, aggiorniamo anche l’heap inserendo, per ogni vicino $y$ di $x$, una nuova tripla $(DistanzaAggiornata, x, y)$. Poichè ogni inserimento ha costo logaritmico nella dimensione dell’heap, il tempo complessivo rimane gestibile.
 
 Dato che non rimuoviamo elementi già presenti nell’heap, possono esistere più entry dello stesso nodo $y$ con distanze differenti. Tuttavia, la prima volta che il nodo $y$ viene estratto dall’heap, questa corrisponde necessariamente alla distanza minima calcolata fino a quel punto e le estrazioni successive di $y$ possono essere trascurate. Quindi ad ogni estrazione di un nodo, controlliamo come prima cosa se esso è giò stato aggiunto all’albero; in tal caso, l’informazione estratta viene ignorata.
+
+```python
+from heapq import heappush, heappop
+
+def dijkstra1(s, G):
+	n = len(G)
+	D = [float('inf')]*n
+	P = [-1]*n
+	D[s] = 0
+	P[s] = s
+	H = [] # min-heap
+	
+	# inizializzazione heap con vicini di s
+	for y, costo in G[s]:
+		heappush(H, (costo, s, y))
+	
+	while H:
+		# estrai nodo con distanza minore
+		costo, x, y = heappop(H)
+		if P[y] == -1:
+			P[y] = x
+			D[y] = costo
+			
+			for v, peso in G[y]:
+				if P[v] == -1:
+					heappush(H, (D[y]+peso, y, v))
+	
+	return D, P
+```
+Prima dell’accesso al while abbiamo l’inizializzazione di $D$ e $P$ per un costo $\Theta(n)$ e l’inserimento dei vicini di $s$ nell’heap per un costo di $O(n \log n)$. Abbiamo poi un $while$ con all’interno un $for$.
+
+Ad ogni iterazione del $while$ si elimina un elemento da $H$ e eventualmente per mezzo del $for$ annidato si scorre la lista di adiacenza di un nodo e vengono aggiunti elementi ad $H$. Ogni lista di adiacenza può essere scorsa al più una volta quindi ad $H$ in totale possono essere aggiunti al più $O(m)$ elementi. Per quanto detto il numero di iterazioni del $while$ è $O(m)$.
+
+Senza tener conto del $for$ annidato (i cui costi verranno calcolati a parte al prossimo punto), il costo di ciascuna iterazione del $while$ richiede $O(\log n)$ a causa dell’estrazione da $H$. Quindi il costo totale del while, senza tener conto del $for$, sarà $O(m \log m)$
+
+Il tempo totale richiesto dalle varie iterazioni del $for$ annidato nel $while$ è $O(m \log n)$ in quando ad ogni iterazione scorro una lista di adiacenza diversa. In totale scorrerò $O(m)$ archi e per ogni arco pagherò $O(\log n)$ per inserimento in $H$.
+
+La complessità di questa implementazione è dunque:
+$$
+O(n\log n)+O(m\log n)+O(m\log n)=O((n+m)\log n)
+$$
+
+### Le due implementazioni a confronto
+Abbiamo visto due implementazioni dell’algoritmo di Dijkstra: la prima richiede $O(n^2)$ tempo, la seconda $O((n + m) \log n)$ .
+La **prima** (rappresentazione tramite liste) è ottimale nel caso di **grafi densi**.
+La **seconda** (rappresentazione tramite heap) è da preferirsi nel caso di **grafi sparsi**, presentando in quel caso una complessità $O(n \log n)$ mentre andrebbe evitata nel caso di grafi densi dove la complessità risultante sarebbe $O(n^2 \log n)$
+
+Esistono implementazioni più e cienti di quest’algoritmo ottenute utilizzando strutture dati più sofisticate. Ad esempio utilizzando gli heap di Fibonacci il tempo d’esecuzione scende a $O(m + n \log n)$.
