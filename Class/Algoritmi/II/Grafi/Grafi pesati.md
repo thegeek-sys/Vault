@@ -168,4 +168,7 @@ $$
 $$
 
 Seguono una serie di iterazioni dove vengono eseguiti i seguenti passaggi:
-1. 
+1. **Selezione del nodo con costo minimo non definitivo**: si scorre l’intera struttura $\text{Lista}$ per individuare il nodo $x$ che non è ancora definitivo (cioè, il cui flag è $0$) e che ha il costo corrente minimo. Questo nodo rappresenta il candidato per il quale il cammino minimo dalla sorgente è attualmente noto
+2. **Verifica di terminazione**: se il costo trovato è $\infty$, significa che non esistono altri nodi raggiungibili non ancora definitivi. In tal caso, il ciclo si interrompe
+3. **Marcare il nodo $x$ come definitivo**: il nodo $x$ selezionato viene aggiornato in $\text{Lista}$ impostando il flag a $1$, indicando che il suo costo definitivo è stato fissato e non verrà più modificato
+4. **Aggiornamento dei vicini di $x$**: per ogni nodo $y$ adiacente a $x$, se $y$ non è ancora definitivo e il nuovo costo ottenuto passato per $x$ (cioè $\text{costo}(x)+\text{costo}(x,y)$) è inferiore al costo attuale memorizzato per $y$, allora si aggiorna la terna corrispondente a $y$ in $\text{Lista}$: $$\text{Lista}[y]=(0,\text{costo}(x)+\text{costo}(x,y),x)$$
