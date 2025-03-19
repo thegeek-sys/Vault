@@ -186,6 +186,10 @@ Come si possono inviare messaggi in formati non ASCII? Bisogna convertire i dati
 Per inviare contenuti diversi dal testo ASCII si usano interazioni aggiuntive
 Il **MIME** (*Multipurpose Internet Mail Extension*) sono estensioni di messaggi di posta multimediali
 
+### Formato del messaggio inviato
 Nell’intestazione dei messaggi (in caso di contenuti MIME) viene dichiarato il tipo di contenuto MIME
 
 ![[Pasted image 20250319105319.png]]
+
+### Formato del messaggio ricevuto
+Un’altra classe di 
