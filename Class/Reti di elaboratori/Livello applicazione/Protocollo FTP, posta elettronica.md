@@ -208,4 +208,8 @@ Per questo motivo esistono dei protocolli ad hoc di accesso alla porta (per otte
 - **HTTP** → gmail, Hotmail, ecc.
 
 ### Protocollo POP3
-Ì2
+Il protocollo **POP3** (RFC 1939) permette, al client ricevente la posta, di aprire una connessione TCP verso il server stabilita sulla porta 110.
+Quando la connessione è stabilita si procede in tre fasi:
+1. **Autorizzazione** → l’agente utente invia nome utente e password per essere identificato
+2. **Transazione** → l’agente utente recupera i messaggi
+3. **Aggiornamento** → dopo che il client ha inviato il `QUIT`, e quindi conclusa la connessine, vengono cancellati i messaggi marcati per la rimozione
