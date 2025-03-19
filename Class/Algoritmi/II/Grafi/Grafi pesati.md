@@ -122,6 +122,8 @@ Al centro la soluzione prodotta da Dijkstra per il grafo $G$, a destra la soluzi
 >
 >Sia $T_{i}$ l’albero dei cammini minimi costruito fino al passo $i>0$ e $(u,v)$ l’arco aggiunto al passo $i+1$. Faremo vedere che $D[v]$ è la distanza minima di $v$ da $s$. Baserà mostrare che il costo di un eventuale cammino alternativo è sempre superiore o uguale a $D[v]$
 >
+>![[Pasted image 20250319215140.png]]
+>
 >Sia $C$ un qualsiasi cammino da $s$ a $v$ alternativo a quello presente nell’albero e $(x,y)$ il primo arco che incontriamo percorrendo il cammino $C$ all’indietro tale che $x$ è nell’albero $T_{i}$ e $y$ no (tale arco deve esistere perché $s$ è in $T_{i}$ mentre $v$ no)
 >
 >Per ipotesi induttiva $\text{costo}(C)\geq D[x]+peso(x,y)$
@@ -133,7 +135,37 @@ Al centro la soluzione prodotta da Dijkstra per il grafo $G$, a destra la soluzi
 >
 >Il cammino alternativo ha un costo superiore a $D[v]$
 
+In un grafo pesato ogni arco ha associato un peso. Per rappresentare questo tipo di grafi per l’arco $(x,y)$ di peso $c$ nella lista di adiacenza di $x$ invece che il solo nodo di destinazione $y$ ci sarà la coppia $(y,c)$ con l’informazione sul nodo destinazione e il peso dell’arco
 
+>[!example]
+>![[Pasted image 20250319215505.png|400]]
+>
+>Ad esempio il grafo pesato $G$ in figura viene codificato come segue:
+>$$\begin{align}G=[& \\&[(1,17),(5,4)], \\&[(0,17),(4,5),(5,6)], \\&[(3,12),(4,10)], \\&[(2,12),(4,4),(5,1)], \\&[(1,5),(2,10),(3,4)], \\&[(0,4),(1,6),(3,1)] \\]\end{align}$$
 
+### Implementazione tramite lista
+Nel vettore $\text{Lista}$, per ogni nodo $x$ memorizziamo una terna nella forma $\text{(definitivo, costo, origine)}$. Ecco cosa rappresenta ciascun elemento della terna per il nodo $x$:
+- **definitivo**
+	- è un flag che assume il valore $1$ se il costo per raggiungere $x$ è stato “definitivamente” stabilito, ossia se l’algoritmo ha confermato che non è possibile ottenere un percorso migliore a parte della sorgente
+	- se vale $0$, significa che il costo per $x$ è ancora in fase di aggiornamento (non definitivo)
+- **costo**
+	- rappresenta il costo corrente minimo noto per raggiungere $x$ dalla sorgente $s$
+	- all’inizio, per ogni nodo diverso da $s$ se questo valore è inizializzato a $\infty$, e per $s$ a $0$. Durante l’esecuzione dell’algoritmo, questo valore può essere aggiornato quando si trova in un percorso migliore
+- **origine**
+	- indica il nodo “padre” o “predecessore” lungo il cammino minimo dalla sorgente $s$ a $x$
+	- se non è ancora stato trovato un percorso per $x$ oppure $x$ non ha ancora un predecessore, questo valore è inizialmente impostato a $-1$
 
+In sintesi, la terna $\text{(definitivo, costo, origine)}$ associata al nodo $x$ in $\text{Lista}$ contiene tutte le informazioni necessarie per sapere se il cammino minimo verso $x$ è stato determinato, qual è il costo di tale cammino, e da quale nodo si giunge a $x$ lungo il percorso minimo
 
+All’inizio l0unico nodo nell’albero è la sorgente, di conseguenza la lista è inizializzata come segue:
+$$
+\text{Lista}[x]=
+\begin{cases}
+(1,0,s)&\text{se } x=s \\
+(0, costo, s)&\text{se }(costo,x)\in G[s] \\
+(0,+\infty,-1)&\text{altrimenti}
+\end{cases}
+$$
+
+Seguono una serie di iterazioni dove vengono eseguiti i seguenti passaggi:
+1. 
