@@ -67,4 +67,10 @@ Il problema diventa ora quello di trovare un cammino dal nodo $(4,7,0)$ al nodo 
 >Dato un grafo pesato vogliamo trovare i cammini minimi e quindi anche le distanze da un certo nodo  $s$ (detto sorgente) a tutti gli altri nodi
 
 ![[Pasted image 20250319184703.png]]
+I cammini minimi (in grassetti) e le distanze (in rosso) quando la sorgente è il nodo $0$
+
+Per applicare questo algoritmo bisogna:
+- costruire l’albero dei cammini minimi un arco per volta partendo dal nodo sorgente nel modo seguente
+	- ad ogni passo aggiungi all’albero l’arco che produce il nuovo cammino più economico
+	- alla nuova destinazione assegna come distanza il costo del cammino
 
