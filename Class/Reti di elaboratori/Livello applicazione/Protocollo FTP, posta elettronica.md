@@ -74,4 +74,5 @@ Esiste una corrispondenza uno a uno tra il comando immesso dall’utente e quell
 | `LIST`<br>elenca i file della directory corrente, la lista di file viene inviata dal server su una nuova connessione dati | `125 data connection already open; transfer starting` |
 | `RETR filename`<br>recupera (`get`) un file dalla directory corrente                                                      | `425 Can't open data connection`                      |
 | `STOR filename`<br>memorizza (`put`) un file nell’host remoto                                                             | `452 Error writing file`                              |
-					3
+### Principali comandi FTP
+La codifica standard per i comandi e le risposte FTP è la NVT ASCII
