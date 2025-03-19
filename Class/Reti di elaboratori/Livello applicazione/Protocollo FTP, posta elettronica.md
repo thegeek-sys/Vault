@@ -93,4 +93,14 @@ La connessione dati viene aperta e chiusa per ogni trasferimento di file (porte 
 Ci sono tre componenti principali:
 - **User agent** → usato per scrivere e inviare un messaggio o leggerlo
 - **Message Transfer Agent** → usato per trasferire il messaggio attraverso Internet
-- **Message Access Agent** → usato per leggere la mail in arrivo234
+- **Message Access Agent** → usato per leggere la mail in arrivo
+
+![[Pasted image 20250319100251.png]]
+
+### User agent
+Lo **user agent** (detto anche “mail reader”) viene attivato dall’utente o da un timer: se c’è una nuova mail informa l’utente; è inoltre responsabile di composizione, editing e lettura dei messaggi di posta elettronica
+
+I messaggi in uscita vengono quindi memorizzati sul server attraverso il **Mail Transfer Agent**
+Sia i messaggi in uscita che in arrivo però sono memorizzati sul server
+
+### Mail Transfer Agent
