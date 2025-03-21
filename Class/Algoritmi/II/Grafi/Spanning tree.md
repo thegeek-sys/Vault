@@ -76,4 +76,7 @@ kursal(G):
 >
 >Considera l’ordine $e_{1},e_{2},\dots$ con cui gli archi sono presi in considerazione nel corso dell’algoritmo e sia $e$ il primo arco preso che non compare in $T^*$. Se inserisco $e$ in $T^*$ si forma un ciclo $C$. Il ciclo $C$ contiene almeno un arco $e'$ che non compare in $T$ (infatti non tutti gli archi del ciclo $C$ sono in $T$ altrimenti $e$ non sarebbe stato preso dall’algoritmo di Kursal).
 >
->Considera ora l’albero $T'$ che ottengo da $T^*$ inserendo l’arco $e$ ed eliminando l’arco $e'$. Il costo del nuovo albero $T'$ (che è $\text{costo}(T^*)-\text{costo}(e')+\text{costo}(e)$) non può aumentare rispetto a quello di $T^*$
+>Considera ora l’albero $T'$ che ottengo da $T^*$ inserendo l’arco $e$ ed eliminando l’arco $e'$. Il costo del nuovo albero $T'$ (che è $\text{costo}(T^*)-\text{costo}(e')+\text{costo}(e)$) non può aumentare rispetto a quello di $T^*$; infatti $\text{costo}(e)\leq \text{costo}(e')$ poiché tra i due archi $e$ ed $e'$ che non creavano ciclo, Kursal ha considerato prima l’arco $e$, ma allora $T'$ è un altro albero di copertura ottimo che differisce da $T$ in meno archi di quanto faccia $T^*$, il che contraddice l’ipotesi che $T^*$ differisce da $T$ nel minor numero di archi
+>**CONTRADDIZIONE**
+
+
