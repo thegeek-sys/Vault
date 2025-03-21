@@ -28,3 +28,6 @@ Il problema può essere rappresentato tramite un grafo pesato e connesso $G$ i c
 
 Il sosttoinsieme degli archi del grafo che formano la soluzione è dunue un albero (grafo connesso aciclico). Andiamo quindi alla ricerca in $G$ di un albero che “copre” l’intero grafo e la somma dei costi dei suoi archi sia minima. Questo problema prende il nome di **minimo albero di copertura** (*minimum spanning tree*)
 
+---
+## Algoritmo di Kursal
+Per risolvere il problema del minimo albero di copertura, data la sua importanza esistono diversi algoritmi per risolvere questo problema. Ora analizzeremo **l’algoritmo di Kursal**
