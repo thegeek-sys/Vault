@@ -78,5 +78,49 @@ kursal(G):
 >
 >Considera ora l’albero $T'$ che ottengo da $T^*$ inserendo l’arco $e$ ed eliminando l’arco $e'$. Il costo del nuovo albero $T'$ (che è $\text{costo}(T^*)-\text{costo}(e')+\text{costo}(e)$) non può aumentare rispetto a quello di $T^*$; infatti $\text{costo}(e)\leq \text{costo}(e')$ poiché tra i due archi $e$ ed $e'$ che non creavano ciclo, Kursal ha considerato prima l’arco $e$, ma allora $T'$ è un altro albero di copertura ottimo che differisce da $T$ in meno archi di quanto faccia $T^*$, il che contraddice l’ipotesi che $T^*$ differisce da $T$ nel minor numero di archi
 >**CONTRADDIZIONE**
+>
+>![[correttezza.png]]
 
+### Implementazione
+**Idee**:
+- con un pre-processing ordino gli archi in $E$ in ordine crescente cosicché l’estrazione da $E$ dell’arco di costo minimo costi $O(1)$
+- verifico che l’arco $(x,y)$ non formi ciclo in $T$ controllando se $y$ è raggiungibile da $x$ in $T$
 
+![[Pasted image 20250321113013.png]]
+
+```python
+def connessi(x,y,T):
+	def connessiR(a,b,T):
+		visitati[a] = 1
+		for z in T[a]:
+			if z == b: return True
+			if not visitati[z] and connessiR(z,b,T): return True
+		return False
+	visitati = [0]*len(T)
+	return connessiR(x,y,T)
+
+def kursal(G):
+	E = [(c,u,v) for u in range(len(G)) for v,c in G[u] if u<v]
+	E.sort(reverse=True)
+	T = [[] for _ in G]
+	
+	while E:
+		c,x,y = E.pop()
+		if not connessi(x,y,T):
+			T[x].append(y)
+			T[y].append(x)
+	return T
+
+# >> G = [
+#	[(1,25),(2,10),(3,35)],
+#	[(0,25),(2,20),(3,42)],
+#	[(0,10),(1,20),(3,40)],
+#	[(0,35),(1,42),(2,40)]
+#	]
+# >> kursal(G)
+# [[2,3], [2], [0,1], [0]]
+```
+L’ordinamento esterno al $while$ ci costa $O(m\log m)=O(m\log n)$. Il $while$ vine iterato $m$ volte (ad ogni passo viene inserito un arco in $T$)
+L’estrazione dell’arco $(a,b)$ di costo minimo da $E$ richiede tempo $O(1)$ e controllare che l’arco $(a,b)$ non crei un ciclo in $T$ con la procedura $\verb|connessi(a,b,T)|$ richiede il costo di una visita in un grafo aciclico quindi $O(n)$
+
+La complessità di questa implementazione è $O(m\cdot n)$
