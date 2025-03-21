@@ -17,3 +17,4 @@ Una possibile soluzione (di costo 22):
 >[!info]
 >Il costo dello spanning tree è la somma dei costi dei singoli archi
 
+Il problema può essere rappresentato tramite un grafo pesato e connesso $G$ i cui nodi sono i computer, gli archi sono i possibili 
