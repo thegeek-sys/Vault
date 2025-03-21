@@ -74,4 +74,6 @@ kursal(G):
 >
 >Supponiamo per assurdo che $T$ differisca da $T^*$. Faremo vedere che questa assunzione porterebbe all’assurdo perché avrebbe come conseguenza l’esistenza di un altro albero di copertura di costo minimo per $G$ che differisce da $T$ in meno archi di $T^*$
 >
->Considera l’ordine $e_{1},e_{2},\dots$ con cui gli archi sono presi in considerazione nel corso dell’algoritmo e sia $e$ il primo arco preso che non compare in $T^*$. Se inserisco $e$ in $T^*$ si forma un ciclo $C$. Il ciclo $C$ contiene almeno un arco $e'$ che non compare 
+>Considera l’ordine $e_{1},e_{2},\dots$ con cui gli archi sono presi in considerazione nel corso dell’algoritmo e sia $e$ il primo arco preso che non compare in $T^*$. Se inserisco $e$ in $T^*$ si forma un ciclo $C$. Il ciclo $C$ contiene almeno un arco $e'$ che non compare in $T$ (infatti non tutti gli archi del ciclo $C$ sono in $T$ altrimenti $e$ non sarebbe stato preso dall’algoritmo di Kursal).
+>
+>Considera ora l’albero $T'$ che ottengo da $T^*$ inserendo l’arco $e$ ed eliminando l’arco $e'$. Il costo del nuovo albero $T'$ (che è $\text{costo}(T^*)-\text{costo}(e')+\text{costo}(e)$) non può aumentare rispetto a quello di $T^*$
