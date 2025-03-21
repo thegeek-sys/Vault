@@ -20,6 +20,21 @@ Nei grafi non diretti l’algoritmo restituirebbe sempre `True` in quanto ogni a
 
 Per risolvere il problema, durante la visita alla ricerca del ciclo, devo distinguere nella lista di adiacenza di ciascun nodo $y$ che incontro, il nodo $x$ che mi ha portato a visitarlo (non devo continuare la ricerca su $y$ se il prossimo nodo $x$ è il padre)
 
+```python
+def DFSr(u, G, visitati):
+	visitati[u] = 1
+	for v in G[u]:
+		if visitati[v] == 1:
+			return True
+		if DFSr(v, G, visitati):
+			return True
+	return False
+
+def ciclo(u, G):
+	visitati = [0]*len(G)
+	return DFSr(u, G, visitati)
+```
+
 Ma anche in questo caso l’algoritmo risulterebbe essere **scorretto** nel caso di grafi diretti. Infatti incontrare in un grafo diretto un nodo già visitato non significa necessariamente che si è in presenza di un ciclo (la procedure può terminare con `True` anche se in assenza di ciclo)
 ![[Pasted image 20250311105608.png]]
 
