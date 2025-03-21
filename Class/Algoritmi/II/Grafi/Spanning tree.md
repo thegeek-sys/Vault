@@ -46,3 +46,32 @@ Per risolvere il problema del minimo albero di copertura, data la sua importanza
 >![[Pasted image 20250321104543.png|450]]
 >![[Pasted image 20250321104600.png|450]]
 
+```
+kursal(G):
+	T=set()
+	inizializza E con gli archi di G
+	while E!=[]
+		estrai da E un arco (x,y) di peso minimo
+		if l'inserimento di (x,y) in T non crea ciclo con gli archi in T:
+			inserisci arco (x,y) in T
+	return T
+```
+
+>[!done] Dimostrazione correttezza
+>Dobbiamo far vedere che al termine dell’algoritmo, $T$ è albero di copertura e che non c’è un altro albero che costa meno
+>
+>Lo dimostreremo **per assurdo**
+>
+>##### Produce un albero di copertura
+>Supponiamo che al termine in $T$ ci sia più di una componente ($T$ non è connesso). 
+>Se è così vuol dire che sono presenti almeno 2 componenti nel grafo $T$ e il che vuol dire che l’arco che connetteva le due componenti (presente in $G$) non è stato scelto.
+>
+>Ma l’unico motivo per cui un arco non viene scelto è poiché questo crea un ciclo, ma un arco che connette due componenti non crea mai un ciclo
+>**CONTRADDIZIONE**
+>
+>##### Non c’è un albero di copertura per $G$ che costa meno di $T$
+>Tra tutti gli alberi di copertura di costo minimo per $G$ prendiamo quello che differisce nel minor numero di archi da $T$; sia questo grafo $T^*$.
+>
+>Supponiamo per assurdo che $T$ differisca da $T^*$. Faremo vedere che questa assunzione porterebbe all’assurdo perché avrebbe come conseguenza l’esistenza di un altro albero di copertura di costo minimo per $G$ che differisce da $T$ in meno archi di $T^*$
+>
+>Considera l’ordine $e_{1},e_{2},\dots$ con cui gli archi sono presi in considerazione nel corso dell’algoritmo e sia $e$ il primo arco preso che non compare in $T^*$. Se inserisco $e$ in $T^*$ si forma un ciclo $C$. Il ciclo $C$ contiene almeno un arco $e'$ che non compare 
