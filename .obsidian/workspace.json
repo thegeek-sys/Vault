@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -239,8 +239,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ec71cb044f3595b0",
+  "active": "797fde0f968d27b6",
   "lastOpenFiles": [
+    "Class/Algoritmi/II/Grafi/Spanning tree.md",
     "Files/Pasted image 20250321113013.png",
     "Files/correttezza.png",
     "Files/Pasted image 20250321112200.png",
@@ -248,7 +249,6 @@
     "Class/Algoritmi/II/Grafi/Grafi pesati.md",
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/II/Grafi/Cicli.md",
-    "Class/Algoritmi/II/Grafi/Spanning tree.md",
     "Files/Pasted image 20250321104600.png",
     "Files/Pasted image 20250321104543.png",
     "Files/Pasted image 20250321104501.png",
@@ -256,7 +256,6 @@
     "Files/Pasted image 20250321102251.png",
     "Files/Pasted image 20250321101724.png",
     "Files/Pasted image 20250321101724.png.sb-93948681-IGzd5G",
-    "Files/Pasted image 20250321101549.png",
     "Files/Pasted image 20250321101549.png.sb-93948681-tKXoVf",
     "Class/Algoritmi/Algoritmi.md",
     "Class/Algoritmi/II/Grafi/Introduzione.md",
