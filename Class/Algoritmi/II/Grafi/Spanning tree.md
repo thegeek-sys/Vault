@@ -31,4 +31,5 @@ Il sosttoinsieme degli archi del grafo che formano la soluzione è dunue un albe
 ---
 ## Algoritmo di Kursal
 Per risolvere il problema del minimo albero di copertura, data la sua importanza esistono diversi algoritmi per risolvere questo problema. Ora analizzeremo **l’algoritmo di Kursal**:
-- Parti con il grafo $T$ che contiene tutti i nodi di $G$ e 
+- Parti con il grafo $T$ che contiene tutti i nodi di $G$ e nessun arco di $G$
+- Considera
