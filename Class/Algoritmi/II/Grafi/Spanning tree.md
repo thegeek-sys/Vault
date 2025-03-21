@@ -17,4 +17,14 @@ Una possibile soluzione (di costo 22):
 >[!info]
 >Il costo dello spanning tree è la somma dei costi dei singoli archi
 
-Il problema può essere rappresentato tramite un grafo pesato e connesso $G$ i cui nodi sono i computer, gli archi sono i possibili 
+Il problema può essere rappresentato tramite un grafo pesato e connesso $G$ i cui nodi sono i computer, gli archi sono i possibili collegamenti con i loro costi
+
+![[Pasted image 20250321102251.png|400]]
+![[Pasted image 20250321102329.png|400]]
+
+>[!warning]
+>Nel grafo soluzione (con gli archi in rosso in figura) non sono mai presenti cicli.
+>Infatti l’eliminazione di qualunque arco del ciclo non farebbe perdere la connessione e diminuirebbe il costo della soluzione
+
+Il sosttoinsieme degli archi del grafo che formano la soluzione è dunue un albero (grafo connesso aciclico). Andiamo quindi alla ricerca in $G$ di un albero che “copre” l’intero grafo e la somma dei costi dei suoi archi sia minima. Questo problema prende il nome di **minimo albero di copertura** (*minimum spanning tree*)
+
