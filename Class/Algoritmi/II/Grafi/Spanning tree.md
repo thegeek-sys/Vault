@@ -39,4 +39,10 @@ Per risolvere il problema del minimo albero di copertura, data la sua importanza
 >[!hint]
 >L’algoritmo rientra perfettamente nel paradigma della **tecnica greedy**:
 >- la sequenza di decisioni irrevocabili → decidi per ciascun arco di $G$ se inserirlo o meno in $T$. Una volta deciso cosa fare dell’arco non ritornare più su questa decisione
->- le decisioni vengono prese in base ad un criterio “locale” → se l’arco crea un ciclo non lo prendi, in caso
+>- le decisioni vengono prese in base ad un criterio “locale” → se l’arco crea un ciclo non lo prendi, in caso contrario lo prendi in quanto è il meno costoso a non creare cicli tra gli archi che restano da considerare
+
+>[!example]
+>![[Pasted image 20250321104501.png|350]]
+>![[Pasted image 20250321104543.png|450]]
+>![[Pasted image 20250321104600.png|450]]
+
