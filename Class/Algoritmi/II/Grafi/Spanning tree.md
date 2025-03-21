@@ -32,4 +32,11 @@ Il sosttoinsieme degli archi del grafo che formano la soluzione è dunue un albe
 ## Algoritmo di Kursal
 Per risolvere il problema del minimo albero di copertura, data la sua importanza esistono diversi algoritmi per risolvere questo problema. Ora analizzeremo **l’algoritmo di Kursal**:
 - Parti con il grafo $T$ che contiene tutti i nodi di $G$ e nessun arco di $G$
-- Considera
+- Considera uno dopo l’altro gli archi del grafo $G$ in ordine di costo creascente
+- Se l’arco forma un ciclo in $T$ con archi già presi allora non prenderlo altrimenti inseriscilo in $T$
+- Al termine restituisci $T$
+
+>[!hint]
+>L’algoritmo rientra perfettamente nel paradigma della **tecnica greedy**:
+>- la sequenza di decisioni irrevocabili → decidi per ciascun arco di $G$ se inserirlo o meno in $T$. Una volta deciso cosa fare dell’arco non ritornare più su questa decisione
+>- le decisioni vengono prese in base ad un criterio “locale” → se l’arco crea un ciclo non lo prendi, in caso
