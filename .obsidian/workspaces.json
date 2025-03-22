@@ -1502,12 +1502,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Grafi.md",
+                    "file": "Class/Algoritmi/II/Grafi/Cicli.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Grafi"
+                  "title": "Cicli"
                 }
               },
               {
@@ -1537,9 +1537,23 @@
                   "icon": "lucide-file",
                   "title": "Spanning tree"
                 }
+              },
+              {
+                "id": "445057c46084a2aa",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Algoritmi/II/Grafi/Ponti.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ponti"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -1571,7 +1585,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "pozzo",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -1698,9 +1712,9 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "797fde0f968d27b6",
-      "mtime": "2025-03-21T12:09:30+01:00"
+      "active": "1b4a71a485119707",
+      "mtime": "2025-03-22T18:03:50+01:00"
     }
   },
-  "active": "Algoritmi"
+  "active": "Basi di Dati"
 }

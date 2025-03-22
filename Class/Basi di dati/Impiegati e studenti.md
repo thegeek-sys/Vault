@@ -34,3 +34,4 @@ Completed:
 
 ## Specifica dei tipi di dato
 - CodiceFiscale → come da standard
+- Matricola → come da standard
