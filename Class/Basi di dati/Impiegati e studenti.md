@@ -23,7 +23,7 @@ Completed:
 	1. Stipendio (un intero ≥ 0)
 	2. Ruolo (può essere **segretario**, **direttore** o **progettista** vd.4 )
 4. **Progettisti**
-	1. Progetto/i (vd.5) di cui sono responsabili 
+	1. Progetto/i (vd.5) di cui sono responsabili (anche nessuno)
 5. **Progetti**
 	1. Nome (una stringa)
 6. **Studenti**
