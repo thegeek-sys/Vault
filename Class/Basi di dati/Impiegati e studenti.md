@@ -29,3 +29,8 @@ Completed:
 6. **Studenti**
 	1. Numero di matricola (un intero ≥ 0, univoco)
 
+## Diagramma UML delle classi
+![[Pasted image 20250322123314.png]]
+
+## Specifica dei tipi di dato
+- CodiceFiscale → come da standard
