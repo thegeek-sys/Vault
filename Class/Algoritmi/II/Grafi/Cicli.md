@@ -5,7 +5,7 @@ Related:
   - "[[Grafi]]"
 Completed:
 ---
----
+£---
 ## Introduction
 Dato un grafo $G$ (diretto o indiretto) ed un suo nodo $u$ vogliamo sapere se da $u$ è possibile raggiungere un ciclo in $G$
 
