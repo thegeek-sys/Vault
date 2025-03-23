@@ -50,12 +50,12 @@ Un messaggio UDP è composto da $4$ campi da $2\text{ byte}$ ciascuno per l’in
 #### Checksum
 Il compito del checksum è quello di rilevare gli “errori” (bit alterati) nel datagrammi tramesso
 
-| Mittente                                                                                                    | Ricevente                                                                                        |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 1. Il messaggio viene diviso in “parole” da $16 \text{ bit}$                                                | 1. Il messaggio (che comprende il checksum viene ricevuto)                                       |
-| 2. Il valore del checksum viene inizialmente impostato a zero                                               | 2. Il messaggio viene diviso in parole da $16 \text{ bit}$                                       |
-| 3. Tutte le parole del messaggio, incluso il checksum, vengono sommato usando l’addizione complemento a uno | 3. Tutte le parole vengono sommate usando l’addizione complemento a uno                          |
-| 4. Viene fatto il complemento a uno della somma e il risultato è il checksum                                | 4. Viene fatto il complemento a uno della somma e il risultato diventa il nuovo checksum         |
-| 5. Il checksum viene inviato assieme ai dati                                                                | 5. Se il valore del checksum è $0$ allora il messaggio viene accettato altrimenti viene scartato |
+| Mittente                                                                              | Ricevente                                                                                        |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 1. Il messaggio viene diviso in “parole” da $16 \text{ bit}$                          | 1. Il messaggio (che comprende il checksum viene ricevuto)                                       |
+| 2. Il valore del checksum viene inizialmente impostato a zero                         | 2. Il messaggio viene diviso in parole da $16 \text{ bit}$                                       |
+| 3. Tutte le parole del messaggio vengono sommato usando l’addizione complemento a uno | 3. Tutte le parole, incluso il checksum, vengono sommate usando l’addizione complemento a uno    |
+| 4. Viene fatto il complemento a uno della somma e il risultato è il checksum          | 4. Viene fatto il complemento a uno della somma e il risultato diventa il nuovo checksum         |
+| 5. Il checksum viene inviato assieme ai dati                                          | 5. Se il valore del checksum è $0$ allora il messaggio viene accettato altrimenti viene scartato |
 >[!example] Esempio di checksum
 
