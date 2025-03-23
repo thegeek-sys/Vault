@@ -127,11 +127,11 @@ Se uso `|&` è lo standard error che viene redirezionato sullo standard input de
 Il comando `ps` mostra le informazioni riguardo una selezione dei processi attivi (se si vuole un aggiornamento continua della selezione e le informazioni mostrare usare `top`)
 Legge le informazioni dai file virtuali in `/proc`
 
-`ps` senza argomenti mostra i processi dell’utente attuale lanciati dalla shell corrente. Per ognuno di essi mostra `PID`, `TTY`, `TIME` e `CMD`
+`ps` senza argomenti mostra i processi dell’utente attuale lanciati dalla shell corrente. Per ognuno di essi mostra `PID`, `TTY`, `TIME` (tempo totale di esecuzione) e `CMD`
 
 Vediamo ora le opzioni disponibili:
 - `-e` → tutti i processi di tutti gli utenti lanciati da tutte le shell o al boot (figli del processo 0)
 - `-u {user}` → tutti i processi degli utenti nella lista in input
 - `-p {pid}` → tutti i processi con i PID nella lista
-- `-f` → restituisce in output delle colonne addizionali quali `UID`, `PPID`, `C` e `STIME`
-- `-l`
+- `-f` → restituisce in output delle colonne addizionali quali `UID`, `PPID`, `C` (fattore di utilizzo della CPU, da $0$ a $99$) e `STIME` (tempo di avvio)
+- `-l` → 
