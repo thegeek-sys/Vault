@@ -134,4 +134,6 @@ Vediamo ora le opzioni disponibili:
 - `-u {user}` → tutti i processi degli utenti nella lista in input
 - `-p {pid}` → tutti i processi con i PID nella lista
 - `-f` → restituisce in output delle colonne addizionali quali `UID`, `PPID`, `C` (fattore di utilizzo della CPU, da $0$ a $99$) e `STIME` (tempo di avvio)
-- `-l` → 
+- `-l` → altre colonne addizionali quali `F` (flag), `PRI` (priorità del processo, più basso → più alta priorità), `NI` (nice value, influenza la priorità), `ADDR` (indirizzo di memoria del processo), `SZ` (dimensione dell’immagine del processo in pagine), `WCHAN` (indirizza la funzione in cui il processo è in attesa, se dormiente)
+- `-o {fields}` → per scegliere i campi da visualizzare
+
