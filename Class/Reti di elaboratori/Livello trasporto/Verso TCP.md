@@ -6,6 +6,20 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Diagramma di flusso a confronto|Diagramma di flusso a confronto]]
+- [[#Servizi del TCP|Servizi del TCP]]
+	- [[#Servizi del TCP#Demultiplexing orientato alla connessione|Demultiplexing orientato alla connessione]]
+- [[#Servizio connection oriented|Servizio connection oriented]]
+- [[#Rappresentazione mediante FSM|Rappresentazione mediante FSM]]
+- [[#Controllo di flusso|Controllo di flusso]]
+	- [[#Controllo di flusso#Livello di trasporto|Livello di trasporto]]
+- [[#Controllo degli errori|Controllo degli errori]]
+	- [[#Controllo degli errori#Realizzazione|Realizzazione]]
+- [[#Integrazione del controllo degli errori e controllo di flusso|Integrazione del controllo degli errori e controllo di flusso]]
+	- [[#Integrazione del controllo degli errori e controllo di flusso#Rappresentazione lineare della finestra scorrevole|Rappresentazione lineare della finestra scorrevole]]
+- [[#Controllo della congestione|Controllo della congestione]]
+---
 ## Diagramma di flusso a confronto
 ![[Pasted image 20250323231944.png]]
 
@@ -119,4 +133,20 @@ La combinazione dei due meccanismi crea un **buffer numerato** (presso mittente 
 - quando passa il pacchetto $y$ al livello applicazione invia ack al mittente
 
 Poiché i numeri di sequenza sono calcolati in modulo $2^m$, possono essere rappresentati con un cerchio. Il buffer viene rappresentato con un insieme di settori, chiamati *sliding windows*, che in ogni istante occupano una parte del cerchio
+
+![[Pasted image 20250324004029.png]]
+
+### Rappresentazione lineare della finestra scorrevole
+Nella realtà si usano variabili per contenere i numeri di sequenza del pacchetto successivo da inviare e dell’ultimo pacchetto inviato
+In genere la finestra scorrevole viene rappresentata linearmente
+
+![[Pasted image 20250324004214.png]]
+
+---
+## Controllo della congestione
+Nella commutazione a pacchetto, la congestione avviene se il carico della rete (numero di pacchetti inviati alla rete) è superiore alla capacità della rete (numero di pacchetti che la rete può gestire)
+Il controllo della congestione consiste di una serie di meccanismi e tecniche per controllare la congestione mantenendo il carico della rete al di sotto della sua capacità
+
+>[!question] Perché congestione?
+>Se router e switch non riescono ad elaborare i pacchetti alla stessa velocità con cui arrivano, le code si sovraccaricano e avviene la congestione
 
