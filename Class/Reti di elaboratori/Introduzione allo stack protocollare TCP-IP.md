@@ -96,18 +96,21 @@ L’applicazione è la sede delle applicazioni di rete. I protocolli sono:
 - SMTP
 - FTP
 - DNS
+
 Qui i pacchetti sono denominati **messaggi**. E’ solo software
 
 #### Trasporto
 Il trasporto consiste nel trasferimento dei messaggi a livello di applicazione tra il modulo client e server di un’applicazione. I protocolli sono:
 - TCP
 - UDP
+
 Qui i pacchetti sono denominati **segmenti**. E’ solo software
 
 #### Rete
 La rete è l’instradamento dei segmenti dall’origine alla destinazione (*end-to-end*). I protocolli sono:
 - IP
 - protocolli di instradamento
+
 Qui i pacchetti sono denominati **datagrammi**. E’ parzialmente software e parzialmente hardware
 
 #### Link
@@ -115,6 +118,7 @@ Un link trasmette datagrammi da un nodo a quello successivo sul percorso (*hop-t
 - Ethernet
 - Wi-Fi
 - PPP
+
 Seppur lungo un percorso sorgente-destinazione un datagramma può essere gestito da protocolli diversi.
 Qui i pacchetti sono denominati **frame**. E’ solo hardware
 
