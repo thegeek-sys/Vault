@@ -56,3 +56,4 @@ Per stabilire una comunicazione tra i due processi è necessario un metodo per i
 ![[Pasted image 20250323115919.png]]
 
 I pacchetto a livello di trasporto sono chiamati **segmenti** (*TCP*) o **datagrammi utente** (*UDP*)
+	
