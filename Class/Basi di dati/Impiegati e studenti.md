@@ -30,7 +30,7 @@ Completed:
 	1. Numero di matricola (un intero ≥ 0, univoco)
 
 ## Diagramma UML delle classi
-![[Pasted image 20250322180558.png]]
+![[Pasted image 20250322181147.png]]
 
 ## Specifica dei tipi di dato
 - CodiceFiscale → come da standard
