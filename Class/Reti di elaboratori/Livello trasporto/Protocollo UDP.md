@@ -57,5 +57,9 @@ Il compito del checksum è quello di rilevare gli “errori” (bit alterati) ne
 | 3. Tutte le parole del messaggio vengono sommato usando l’addizione complemento a uno | 3. Tutte le parole, incluso il checksum, vengono sommate usando l’addizione complemento a uno    |
 | 4. Viene fatto il complemento a uno della somma e il risultato è il checksum          | 4. Viene fatto il complemento a uno della somma e il risultato diventa il nuovo checksum         |
 | 5. Il checksum viene inviato assieme ai dati                                          | 5. Se il valore del checksum è $0$ allora il messaggio viene accettato altrimenti viene scartato |
+>[!warning]
+>Quando si sommano i numeri, un riporto dal bit più significativo deve essere sommato al risultato
+
 >[!example] Esempio di checksum
+>Calcolare  il checksum della seguente stringa di $32\text{ bit}$
 
