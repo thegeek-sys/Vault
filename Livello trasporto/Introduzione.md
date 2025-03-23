@@ -154,4 +154,4 @@ Esistono due tipi di servizi di trasporto:
 - non affidabile → UDP
 
 ### Servizio di TCP
-Il servizio TCP è **orientato alla connessione** (è richiesto un setup fra i processi client e server)
+Il servizio TCP è **orientato alla connessione** (è richiesto un setup fra i processi client e server) 
