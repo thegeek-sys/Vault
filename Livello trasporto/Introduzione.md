@@ -17,3 +17,8 @@ I protocolli di trasporto vengono eseguiti nei sistemi terminali:
 
 ---
 ## Relazione tra livello di trasporto e livello di rete
+Mentre il livello di rete regola la **comunicazione tra host** (si basa sui servizi del livello di collegamento), il livello di trasporto regola la **comunicazione tra processi** (si basa sui servizi del livello di rete e li potenzia)
+
+![[Pasted image 20250323113733.png]]
+
+>[!example]
