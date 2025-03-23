@@ -94,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -251,12 +251,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ce4fb924902cd197",
+  "active": "1eacbc948483f818",
   "lastOpenFiles": [
-    "Class/Reti di elaboratori/Livello trasporto/Protocollo UDP.md",
+    "Files/Pasted image 20250323232811.png",
     "Class/Reti di elaboratori/Livello trasporto/Verso TCP.md",
-    "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
     "Livello trasporto/Introduzione.md",
+    "Class/Reti di elaboratori/Livello trasporto/Protocollo UDP.md",
+    "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
     "Files/Pasted image 20250323231944.png",
     "Files/Pasted image 20250323231641.png",
     "Files/Pasted image 20250323230825.png",
@@ -266,7 +267,6 @@
     "Files/Pasted image 20250323224901.png",
     "Files/Pasted image 20250323224801.png",
     "Files/Pasted image 20250323224603.png",
-    "Files/Pasted image 20250323224341.png",
     "Class/Reti di elaboratori/Introduzione allo stack protocollare TCP-IP.md",
     "Class/Reti di elaboratori/Introduzione.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
