@@ -15,3 +15,5 @@ I protocolli di trasporto vengono eseguiti nei sistemi terminali:
 
 ![[Pasted image 20250323112619.png|550]]
 
+---
+## Relazione tra livello di trasporto e livello di rete
