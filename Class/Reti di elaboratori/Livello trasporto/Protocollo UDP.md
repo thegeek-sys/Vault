@@ -62,4 +62,5 @@ Il compito del checksum è quello di rilevare gli “errori” (bit alterati) ne
 
 >[!example] Esempio di checksum
 >Calcolare  il checksum della seguente stringa di $32\text{ bit}$
+>![[Pasted image 20250323230702.png]]
 
