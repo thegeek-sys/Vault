@@ -8,135 +8,51 @@
         "type": "tabs",
         "children": [
           {
-            "id": "785e57b5e4fd92db",
+            "id": "2fa9fe16485b867d",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Basi di dati.md",
+                "file": "Class/Reti di elaboratori/Reti di elaboratori.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Basi di dati"
+              "title": "Reti di elaboratori"
             }
           },
           {
-            "id": "62440129c7a022fc",
+            "id": "c5ef72e88a14dbc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Impiegati e studenti.md",
+                "file": "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Impiegati e studenti"
+              "title": "Livello trasporto"
             }
           },
           {
-            "id": "7ec0cd7226082df9",
+            "id": "ce4fb924902cd197",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
+                "file": "Livello trasporto/Introduzione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Decomposizioni che hanno un join senza perdita"
-            }
-          },
-          {
-            "id": "f135a7a3c4eaf515",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "File hash - caratteristiche ed esercizi"
-            }
-          },
-          {
-            "id": "314e7cb50d9ccc7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Voli aerei 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Voli aerei 2"
-            }
-          },
-          {
-            "id": "f263357d0ad639a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Accademia 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Accademia 1"
-            }
-          },
-          {
-            "id": "487e02a69f634897",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Travel to the moon.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Travel to the moon"
-            }
-          },
-          {
-            "id": "3ca506e484c95efa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Modello relazionale.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Modello relazionale"
-            }
-          },
-          {
-            "id": "8cf7463b8fd4331e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class/Basi di dati/Impiegati e studenti.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Impiegati e studenti"
+              "title": "Introduzione"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.51103591918945,
-    "collapsed": true
+    "width": 245.51103591918945
   },
   "right": {
     "id": "82c60f36bf5d1248",
@@ -210,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flet-notes/2024-12-11.md",
+                "file": "Class/Reti di elaboratori/Capacità e prestazioni delle reti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +135,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-12-11"
+              "title": "Backlinks for Capacità e prestazioni delle reti"
             }
           },
           {
@@ -294,8 +209,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8cf7463b8fd4331e",
+  "active": "ce4fb924902cd197",
   "lastOpenFiles": [
+    "Files/Pasted image 20250323112619.png",
+    "Livello trasporto/Introduzione.md",
+    "Livello trasporto",
+    "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
+    "Class/Basi di dati/Impiegati e studenti.md",
     "Files/Pasted image 20250322181147.png",
     "Files/Pasted image 20250322180558.png",
     "Files/Pasted image 20250322180504.png",
@@ -304,13 +224,11 @@
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/Algoritmi.md",
     "Class/Algoritmi/II/Grafi/Ponti.md",
-    "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
     "Class/Reti di elaboratori/Livello applicazione/Livello applicazione.md",
     "Class/Reti di elaboratori/Livello applicazione/Protocollo FTP, posta elettronica.md",
     "Class/Reti di elaboratori/Livello applicazione/Protocollo DNS.md",
     "Class/Reti di elaboratori/Livello applicazione/Protocollo HTTP, cookie, web cache.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
-    "Class/Basi di dati/Impiegati e studenti.md",
     "Class/Basi di dati/Voli aerei 2.md",
     "Class/Basi di dati/Accademia 1.md",
     "Files/Pasted image 20250322123314.png",
@@ -324,7 +242,6 @@
     "Class/Algoritmi/II/Grafi/Grafi pesati.md",
     "Files/Pasted image 20250321104600.png",
     "Files/Pasted image 20250321104543.png",
-    "Files/Pasted image 20250321104501.png",
     "Files/Pasted image 20250321101724.png.sb-93948681-IGzd5G",
     "Files/Pasted image 20250321101549.png.sb-93948681-tKXoVf",
     "Class/Algoritmi/II/Grafi/Introduzione.md",
@@ -336,12 +253,10 @@
     "Class/Algoritmi/II/Grafi/Ordinamento topologico.md",
     "Files/Pasted image 20250319182927.png.sb-93948681-qPryQH",
     "Files/Pasted image 20250318212416.png.sb-5a416e10-705BPp",
-    "Class/Sistemi Operativi/II/I processi.md",
     "Class/Reti di elaboratori/Livello applicazione",
     "Files/Pasted image 20250315124907.png.sb-8f8904c5-2l36i4",
     "Introduzione allo stack protocollare TCP",
     "Files/Pasted image 20250311105859.png.sb-8f8904c5-tt9tNV",
-    "Class/Sistemi Operativi/II",
     "Untitled.canvas"
   ]
 }
