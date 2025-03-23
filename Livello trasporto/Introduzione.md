@@ -6,6 +6,26 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Connessione logica a livello trasporto|Connessione logica a livello trasporto]]
+- [[#Relazione tra livello di trasporto e livello di rete|Relazione tra livello di trasporto e livello di rete]]
+- [[#Indirizzamento|Indirizzamento]]
+- [[#Incapsulamento/decapsulamento|Incapsulamento/decapsulamento]]
+- [[#Multiplexing/demultiplexing|Multiplexing/demultiplexing]]
+	- [[#Multiplexing/demultiplexing#Multiplexing|Multiplexing]]
+	- [[#Multiplexing/demultiplexing#Demultiplexing|Demultiplexing]]
+	- [[#Multiplexing/demultiplexing#Come funziona il demultiplexing|Come funziona il demultiplexing]]
+- [[#API di comunicazione|API di comunicazione]]
+	- [[#API di comunicazione#Comunicazione tra processi|Comunicazione tra processi]]
+- [[#Numeri di porta|Numeri di porta]]
+- [[#Individuare i socket address|Individuare i socket address]]
+	- [[#Individuare i socket address#Individuare i socket address lato client|Individuare i socket address lato client]]
+	- [[#Individuare i socket address#Individuare i socket address lato server|Individuare i socket address lato server]]
+- [[#Servizi di trasporto|Servizi di trasporto]]
+	- [[#Servizi di trasporto#Servizio di TCP|Servizio di TCP]]
+	- [[#Servizi di trasporto#Servizio di UDP|Servizio di UDP]]
+	- [[#Servizi di trasporto#Protocollo a livello applicazione e protocollo di trasporto|Protocollo a livello applicazione e protocollo di trasporto]]
+---
 ## Connessione logica a livello trasporto
 I protocolli di trasporti forniscono la **comunicazione logica** tra processi applicativi di host differenti. Con la connessione logica gli host eseguono i processi come se fossero direttamente connessi (in realtà possono trovarsi agli antipodi del pianeta)
 
@@ -154,4 +174,29 @@ Esistono due tipi di servizi di trasporto:
 - non affidabile → UDP
 
 ### Servizio di TCP
-Il servizio TCP è **orientato alla connessione** (è richiesto un setup fra i processi client e server) 
+Il servizio TCP è **orientato alla connessione** (è richiesto un setup fra i processi client e server). In questo senso si può dire che somiglia al sistema telefonico: come per eseguire una telefonata l’utente deve stabilire una connessione, usarla e quindi rilasciarla.
+
+Funziona come un tubo: il trasmettitore vi spinge oggetti (bit) a una estremità e il ricevitore li prende dall’altra. L’**ordine è conservato**, ovvero i bit arrivano nella sequenza in cui sono stati trasmessi
+
+E’ inoltre un **trasporto affidabile** fra i processi di invio e di ricezione. Permette inoltre  **controllo del flusso** (il mittente non vuole sovraccaricare il destinatario) e **controllo della congestione** (riguarda la rete, “strozza“ il processo di invio quando la rete è sovraccarica)
+Non offre però temporizzazione, garanzie su ampiezza di banda minima e sicurezza
+
+### Servizio di UDP
+Il servizio UDP è **senza connessione** (non è richiesto alcun setup fra i processi client e server).
+
+Inoltre il **trasferimento dati è inaffidabile** fra i processi d’invio e di ricezione (non viene garantito l’ordine di ricezione e neanche la sicurezza di ricevere i dati). In questo senso somiglia al sistema postale: ogni messaggio è instradato attraverso il sistema postale in modo indipendente dagli altri, è quindi possibile che due messaggi mandati alla stessa destinazione arrivino in tempi diversi
+
+Non offre setup della connessione, affidabilità, controllo di flusso, controllo della congestione, temporizzazione, ampiezza di banda minima e sicuezza
+
+Viene però utilizzato perché risulta **molto velore**
+
+### Protocollo a livello applicazione e protocollo di trasporto
+
+| Applicazione               | Protocollo a livello applicazione  | Protocollo di trasporto sottostante |
+| -------------------------- | ---------------------------------- | ----------------------------------- |
+| Posta elettonica           | SMTP                               | TCP                                 |
+| Accesso a terminali remoti | Telnet                             | TCP                                 |
+| Web                        | HTTP                               | TCP                                 |
+| Trasferimento file         | FTP                                | TCP                                 |
+| Multimedia streaming       | HTTP (es. YouTube), RTP            | TCP o UDP                           |
+| Telefonia Internet         | SIP, RTP, proprietario (es. Skype) | Tipicamente UDP                     |
