@@ -6,6 +6,16 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Diagramma di comunicazione|Diagramma di comunicazione]]
+- [[#Rappresentazione mediante FSM|Rappresentazione mediante FSM]]
+- [[#Datagrammi UDP|Datagrammi UDP]]
+	- [[#Datagrammi UDP#Struttura|Struttura]]
+		- [[#Struttura#Checksum|Checksum]]
+- [[#DNS usa UDP|DNS usa UDP]]
+- [[#Ulteriori informazioni su UDP|Ulteriori informazioni su UDP]]
+---
 ## Introduction
 Il **protocollo UDP** (*User Datagram Protocol*) è un protocollo di trasporto inaffidabile e privo di connessione.
 Questo fornisce servizi di:
@@ -63,4 +73,20 @@ Il compito del checksum è quello di rilevare gli “errori” (bit alterati) ne
 >[!example] Esempio di checksum
 >Calcolare  il checksum della seguente stringa di $32\text{ bit}$
 >![[Pasted image 20250323230702.png]]
+>
+>![[Pasted image 20250323230825.png]]
+
+---
+## DNS usa UDP
+Quando vuole effettuare una query, DNS costruisce un messaggio di query e lo passa a UDP
+L’entità UDP aggiunge i campi di intestazione al messaggio e trasferisce il segmento risultate al livello di rete etc.
+L’applicazione DNS aspetta quindi una risposta. Se non ne riceve, tenta di inviarla a un altro server dei nomi.
+
+In questo caso la semplicità della richiesta/risposta (molto breve) motiva l’utilizzo di UDP, che risulta più veloce poiché non viene stabilita nessuna connessione, non si ha nessuno stato di connessione e le intestazioni di pacchetto sono più corte rispetto al TCP
+
+UDP in generale viene utilizzato anche perché consente un controllo più sottile a livello di applicazione su quali dati sono inviati e quando
+
+---
+## Ulteriori informazioni su UDP
+Il protocollo UDP viene inoltre spesso utilizzato nelle applicazioni multimediali che infatti tollerano perite di pacchetti (anche se limitate)
 

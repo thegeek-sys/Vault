@@ -200,3 +200,7 @@ Viene però utilizzato perché risulta **molto velore**
 | Trasferimento file         | FTP                                | TCP                                 |
 | Multimedia streaming       | HTTP (es. YouTube), RTP            | TCP o UDP                           |
 | Telefonia Internet         | SIP, RTP, proprietario (es. Skype) | Tipicamente UDP                     |
+| Server di file remoto      | NFS                                | Tipicamente UDP                     |
+| Gestione network           | SNMP                               | Tipicamente UDP                     |
+| Protocollo di routing      | RIP                                | Tipicamente UDP                     |
+| Traduzione nomi            | DNS                                | Tipicamente UDP                     |
