@@ -4,83 +4,153 @@
     "type": "split",
     "children": [
       {
-        "id": "36e4e4609b40d962",
+        "id": "455919ad3cc4a222",
         "type": "tabs",
         "children": [
           {
-            "id": "86b7c0e96592df9e",
+            "id": "785e57b5e4fd92db",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/Sistemi Operativi.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "Sistemi Operativi"
+              "title": "Basi di dati"
             }
           },
           {
-            "id": "535b731e6b0aa1fe",
+            "id": "380319d40a3fe7ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/II/II.md",
+                "file": "Class/Basi di dati/Accademia 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "II"
+              "title": "Accademia 2"
             }
           },
           {
-            "id": "e6fe7af362ff3919",
+            "id": "62440129c7a022fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/II/I processi.md",
+                "file": "Class/Basi di dati/Impiegati e studenti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "I processi"
+              "title": "Impiegati e studenti"
             }
           },
           {
-            "id": "42bbb1773e354adb",
+            "id": "7ec0cd7226082df9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/II/Il filesystem.md",
+                "file": "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Il filesystem"
+              "title": "Decomposizioni che hanno un join senza perdita"
             }
           },
           {
-            "id": "6cca2c5f12de3b94",
+            "id": "f135a7a3c4eaf515",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class/Sistemi Operativi/II/Introduzione.md",
+                "file": "Class/Basi di dati/File hash - caratteristiche ed esercizi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduzione"
+              "title": "File hash - caratteristiche ed esercizi"
+            }
+          },
+          {
+            "id": "314e7cb50d9ccc7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Voli aerei 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Voli aerei 2"
+            }
+          },
+          {
+            "id": "f263357d0ad639a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Accademia 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Accademia 1"
+            }
+          },
+          {
+            "id": "487e02a69f634897",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Travel to the moon.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Travel to the moon"
+            }
+          },
+          {
+            "id": "3ca506e484c95efa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Modello relazionale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Modello relazionale"
+            }
+          },
+          {
+            "id": "8cf7463b8fd4331e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Basi di dati/Impiegati e studenti.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Impiegati e studenti"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +182,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "disco",
+                "query": "successo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.50390243530273,
+    "width": 245.51103591918945,
     "collapsed": true
   },
   "right": {
@@ -154,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Flet-notes/2024-12-11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +234,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Gestione della memoria"
+              "title": "Backlinks for 2024-12-11"
             }
           },
           {
@@ -173,12 +243,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md",
+                "file": "Class/Basi di dati/Basi di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Gestione della memoria"
+              "title": "Outgoing links from Basi di dati"
             }
           },
           {
@@ -200,10 +270,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Class/Sistemi Operativi/Gestione della memoria.md"
+                "file": "Class/Basi di dati/Esercizi.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gestione della memoria"
+              "title": "Outline of Esercizi"
             }
           },
           {
@@ -216,8 +286,7 @@
               "title": "Advanced Tables"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -239,10 +308,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e6fe7af362ff3919",
+  "active": "380319d40a3fe7ec",
   "lastOpenFiles": [
-    "Class/Sistemi Operativi/II/Il filesystem.md",
+    "Class/Basi di dati/Impiegati e studenti.md",
+    "Class/Basi di dati/Basi di dati.md",
+    "Class/Basi di dati/Accademia 2.md",
+    "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
+    "Class/Algoritmi/II/Grafi/Cicli.md",
     "Class/Sistemi Operativi/II/I processi.md",
+    "Class/Sistemi Operativi/II/Il filesystem.md",
     "Class/Sistemi Operativi/II/II.md",
     "Class/Sistemi Operativi/II/Introduzione.md",
     "Class/Sistemi Operativi/I/Sicurezza.md",
@@ -265,9 +339,6 @@
     "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Files/Pasted image 20250323115546.png.sb-93948681-zEfrT7",
     "Livello trasporto",
-    "Class/Basi di dati/Impiegati e studenti.md",
-    "Class/Basi di dati/Basi di dati.md",
-    "Class/Algoritmi/II/Grafi/Cicli.md",
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/Algoritmi.md",
     "Class/Algoritmi/II/Grafi/Ponti.md",
@@ -277,9 +348,7 @@
     "Class/Reti di elaboratori/Livello applicazione/Protocollo HTTP, cookie, web cache.md",
     "Class/Basi di dati/Voli aerei 2.md",
     "Class/Basi di dati/Accademia 1.md",
-    "Class/Basi di dati/Decomposizioni che hanno un join senza perdita.md",
     "Class/Reti di elaboratori/Livello trasporto",
-    "Class/Algoritmi/II/Grafi/Spanning tree.md",
     "Files/Pasted image 20250321101724.png.sb-93948681-IGzd5G",
     "Files/Pasted image 20250321101549.png.sb-93948681-tKXoVf",
     "Files/Pasted image 20250319182927.png.sb-93948681-qPryQH",
