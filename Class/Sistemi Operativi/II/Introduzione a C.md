@@ -91,3 +91,8 @@ gcc -c precompilato.c -o test.o
 ```
 In questo modo `gcc` controlla che la sia sintassi sia corrette e per ogni chiamata a funzione, controlla che venga rispettato il corrispettivo header (che quindi deve esistere al momento della chiamata) e infine crea effettivamente del codice macchina, ma solo per il contenuto delle funzioni (ogni chiamata a funzione ha una destinazione simbolica)
 
+Solo linking
+```bash
+gcc file.o
+```
+Risolve tutte le chiamate a funzione: adesso, per ogni funzione chiamata 
