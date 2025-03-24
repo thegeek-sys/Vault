@@ -32,3 +32,6 @@ Completed:
 	2. Giorno in cui avvengono (una data)
 	3. Durata (per alcuni impegni va misurata in giorni per altri in ore)
 	4. Tipologia di impegno
+
+---
+## Diagramma UML delle classi
