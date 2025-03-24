@@ -31,4 +31,4 @@ Completed:
 		3. Impegni progettuali
 	2. Giorno in cui avvengono (una data)
 	3. Durata (in ore, un intero)
-	4. 1
+	4. 
