@@ -1,9 +1,22 @@
 ---
 Created: 2025-03-24
 Class: "[[Sistemi Operativi]]"
-Related: 
-Completed:
+Programming language: "[[C]]"
+Related:
 ---
+---
+## Index
+- [[#Ambiente di sviluppo in C|Ambiente di sviluppo in C]]
+	- [[#Ambiente di sviluppo in C#Ambiente di esecuzione in C|Ambiente di esecuzione in C]]
+- [[#Differenze con Java (e Python)|Differenze con Java (e Python)]]
+- [[#Struttura di un programma C|Struttura di un programma C]]
+	- [[#Struttura di un programma C#Functions|Functions]]
+	- [[#Struttura di un programma C#Return statement|Return statement]]
+- [[#Per compilare ed eseguire|Per compilare ed eseguire]]
+	- [[#Per compilare ed eseguire#Precompilazione, compilazione e linking|Precompilazione, compilazione e linking]]
+- [[#Direttive al processore $\verb|#|$|Direttive al processore $\verb|#|$]]
+- [[#Input e Output|Input e Output]]
+	- [[#Input e Output#Output|Output]]
 ---
 ## Ambiente di sviluppo in C
 ![[Pasted image 20250324183949.png]]
@@ -112,5 +125,42 @@ Il file (usualmente  `.h`) è detto **header file**
 >- `""` → indicano che il file header è dell’utente e si trova nella directory corrente o in un path specificato
 >- `-I` → permette di specificare le directory in cui cercare gli header file
 
+---
+## Input e Output
+L’**input** viene letto da tastiera o altro dispositivo e memorizzato in variabili, l’**output** invece p visualizzato a schermo o inviato ad un altro dispostivo (es. stampante) prendendo valori da variabili
+L’ambiente run-time del C, quando un programma viene eseguito, apre 2 file: `stdin` e `stdout`
 
+>[!hint] Tutte le funzioni essenziali per l’I/O sono nel file `stdio.h`
 
+### Output
+```c
+printf("format string", value-list);
+```
+In questo caso `value-list` può contenere:
+- sequenze di caratteri
+- variabili
+- costanti
+- espressioni logico-matematiche
+
+`printf` riceve valori, ma il C permette di manipolare anche indirizzi di memoria e passarli come input a funzioni (per stampare il contenuto di una locazione di memoria di cui si conosce l’indirizzo si usa `scanf`)
+
+Vedremo che ci sono altre funzioni per gestire l’output
+
+Nella `printf` possiamo controllare la spaziatura orizzontale e verticale, e l’output di caratteri speciali utilizzano le sequenze di escape `\`
+
+| Escape Sequence | Name               | Description                                                                            |
+| --------------- | ------------------ | -------------------------------------------------------------------------------------- |
+| `\a`            | Alarm or Beep      | It is used to generate a bell sound in the C program.                                  |
+| `\b`            | Backspace          | It is used to move the cursor one place backward.                                      |
+| `\f`            | Form Feed          | It is used to move the cursor to the start of the next logical page.                   |
+| `\n`            | New Line           | It moves the cursor to the start of the next line.                                     |
+| `\r`            | Carriage Return    | It moves the cursor to the start of the current line.                                  |
+| `\t`            | Horizontal Tab     | It inserts some whitespace to the left of the cursor and moves the cursor accordingly. |
+| `\v`            | Vertical Tab       | It is used to insert vertical space.                                                   |
+| `\\`            | Backlash           | Use to insert backslash character.                                                     |
+| `\’`            | Single Quote       | It is used to display a single quotation mark.                                         |
+| `\”`            | Double Quote       | It is used to display double quotation marks.                                          |
+| `\?`            | Question Mark      | It is used to display a question mark.                                                 |
+| `\ooo`          | Octal Number       | It is used to represent an octal number.                                               |
+| `\xhh`          | Hexadecimal Number | It represents the hexadecimal number.                                                  |
+| `\0`            | NULL               | It represents the NULL character.                                                      |
