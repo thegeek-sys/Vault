@@ -5,3 +5,30 @@ Related:
 Completed:
 ---
 ---
+## Raffinamento dei requisiti
+1. Docenti
+	1. Nome (una stringa)
+	2. Cognome (una stringa)
+	3. Data di nascita (una data)
+	4. Luogo di nascita (vd. 2)
+	5. Posizione universitaria (tra ricercatore, professore associato, professore ordinario)
+	6. Impegni che ha (vd. 5)
+2. Luoghi
+3. Progetti
+	1. Nome (una stringa)
+	2. Acronimo (una stringa, univoca)
+	3. Data di inizio e di fine
+	4. Docenti che vi partecipano (vd. 1)
+	5. Ogni progetto è composto da work packages (vd. 4)
+4. Work Packages
+	1. Progetto cui fa riferimento (vd. 3)
+	2. Nome (una stringa)
+	3. Data di inizio e data di fine
+5. Impegni
+	1. Gli impegni sono di diversi tipi:
+		1. Assenza
+		2. Impegni istituzionali
+		3. Impegni progettuali
+	2. Giorno in cui avvengono (una data)
+	3. Durata (in ore, un intero)
+	4. 
