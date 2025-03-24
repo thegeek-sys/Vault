@@ -167,3 +167,22 @@ Un processo che riceve un segnale fa o un’azione predefinita (`man 7 signal`) 
 >- `CTRL+C` invia un `SIGINT`
 >- `bg` invia `SIGCONT` al job indicato
 >- con `kill` si può usare la notazione con `%` (usata in `bg` e `fg`) per indicare i job destinatari del messaggio
+
+### $\verb|SIGUSR1|$ e $\verb|SIGUSR2|$
+I segnali `SIGUSR1` e `SIGUSR2`sono impostai per essere usati dall’utente per le proprie necessità. Essi consentono una semplice forma di comunicazione tra processi
+
+>[!example]
+>In un programma $P_{1}$ si puó definire un gestore del segnale (signal handler) per `SIGUSR1`(o 2). Se un programma $P_{2}$ invia un `SIGUSR1` (o 2) a $P_{1}$, $P_{1}$ eseguirà il codice del gestore del segnale
+
+---
+## $\verb|nice [-n num] [command]|$
+`nice` senza opzioni dice quant’è il *niceness* di partenza. Il niceness può essere pensato come un’addizione sulla priorità: se positivo, ne aumenta il valore (quindi la priorità decresce), altrimenti ne diminuisce il valore (la priorità cresce). Questo può andare a $-19$ a $+20$ con valore di default $0$
+
+`command` → lancia `command` con niceness `num` ($0$ se non dato) 
+
+---
+## $\verb|renice priority {pid}|$
+Interviene su processi già in esecuzione (infatti richiede dei PID) e serve per cambiare la priorità dei processi
+
+---
+## $\verb|strace [-p pid] [command]|$
