@@ -36,3 +36,47 @@ Ogni funzione consiste di un header e di un basic block
 	basic block
 ```
 
+Basic block
+```
+{
+	declaration of variables
+	executable statements
+}
+```
+
+### Return statement
+```
+return expression
+```
+Imposta il valore di ritorno di una funzione al valore di `expression` e ritorna il valore al caller/invoker
+
+```c
+int main()    // header
+{             // beginning of basic block
+              // ...
+	return 0; // program ending successfully
+}             // end of basic block
+```
+
+`expresion` può essere una costante, una variabile, un’espressione logico-aritmetica, una funzione
+
+---
+## Per compilare ed eseguire
+```
+gcc -Wall prog-name.c
+```
+In questo modo vengono stampati tutti i messaggi di warning (se presenti)
+
+```
+gcc -Wall prog-name.c -lm
+```
+Il flag `-lm` va specificato se si includono le librerie matematiche `<math.h>`, ad esempio per usare funzioni come `sin`, `cos`, `log`, `ln`, ecc.
+
+Il risultato si trova in un file eseguibile `a.out`
+Per specificare il nome dell’output
+```
+gcc -Wall prog-name.c -o executable-name.o
+```
+
+### Precompilazione, compilazione e linking
+Per fare solo la precompilazione (o preprocessamento)
