@@ -148,3 +148,6 @@ Permette di avere un `ps` ma costantemente aggiornato
 
 Una volta aperto in modo interattivo, basta premere `?` per avere la lista dei comandi accettati
 
+---
+## $\verb|kill [-l [signal]] [-signal] [pid...]|$
+Permette di inviare segnali ad un processo (non sono la terminazione)
