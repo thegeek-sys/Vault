@@ -5,6 +5,28 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Ridirezione dell’output|Ridirezione dell’output]]
+- [[#Rappresentazione dei processi|Rappresentazione dei processi]]
+	- [[#Rappresentazione dei processi#Process Identifier|Process Identifier]]
+	- [[#Rappresentazione dei processi#Process Control Block|Process Control Block]]
+	- [[#Rappresentazione dei processi#Aree di memoria|Aree di memoria]]
+- [[#Stato di un processo|Stato di un processo]]
+- [[#Modalità di esecuzione dei processi|Modalità di esecuzione dei processi]]
+	- [[#Modalità di esecuzione dei processi#Esecuzione in background|Esecuzione in background]]
+	- [[#Modalità di esecuzione dei processi#Lista di job|Lista di job]]
+	- [[#Modalità di esecuzione dei processi#Comandi $\verb|bg|$ e $\verb|fg|$|Comandi $\verb|bg|$ e $\verb|fg|$]]
+- [[#Pipelining dei comandi|Pipelining dei comandi]]
+- [[#$ verb ps [opzioni] [pid...] $|ps]]
+- [[#$ verb top [-b] [-n num] [-p {pid}] $|top]]
+- [[#$ verb kill [-l [signal [-signal] [pid...] $|kill]]
+	- [[#Alcuni segnali|Alcuni segnali]]
+	- [[#$ verb SIGUSR1 $ e $ verb SIGUSR2 $|SIGUSR1 e SIGUSR2]]
+- [[#$ verb nice [-n num] [command] $|nice]]
+- [[#$ verb renice priority {pid} $|renice]]
+- [[#$ verb strace [-p pid] [command] [-o file] $|strace]]
+---
 ## Introduction
 In Linux le due entità fondamentali sono:
 - **file** → descrivono/rappresentano le risorse
@@ -185,4 +207,7 @@ I segnali `SIGUSR1` e `SIGUSR2`sono impostai per essere usati dall’utente per 
 Interviene su processi già in esecuzione (infatti richiede dei PID) e serve per cambiare la priorità dei processi
 
 ---
-## $\verb|strace [-p pid] [command]|$
+## $\verb|strace [-p pid] [command] [-o file]|$
+Lancia `command` mostrando tutte le sue system calls, oppure visualizza le system call del processo `pid`. Tramite `-o file` ridimensiona l’output su un file
+
+Ci sarà utile per il debug dei programmi che usano le system call
