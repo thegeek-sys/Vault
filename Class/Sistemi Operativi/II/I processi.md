@@ -151,3 +151,18 @@ Una volta aperto in modo interattivo, basta premere `?` per avere la lista dei c
 ---
 ## $\verb|kill [-l [signal]] [-signal] [pid...]|$
 Permette di inviare segnali ad un processo (non sono la terminazione)
+- `-l` → mostra la lista dei segnali; un segnale `signal` è identificato da un numero oppure dal nome con `SIG` o senza `SIG` (es. `kill -9 pid` oppure `kill -l SIGKILL pid` oppure `kill -l KILL pid`)
+
+I segnali verranno presi in considerazione solo se il *real user* del processo è lo stesso che invia il segnale (oppure se lo invia un superuser).
+Un processo che riceve un segnale fa o un’azione predefinita (`man 7 signal`) o un’azione personalizzata
+
+### Alcuni segnali
+- `SIGSTOP`, `SIGSTP` → sospensione processo
+- `SIGCONT` → per la continuazione di processi stoppati
+- `SIGKILL`, `SIGINT` → per la terminazione dei processi
+
+>[!info]
+>- `CTRL+Z` invia un `SIGSTOP`
+>- `CTRL+C` invia un `SIGINT`
+>- `bg` invia `SIGCONT` al job indicato
+>- con `kill` si può usare la notazione con `%` (usata in `bg` e `fg`) per indicare i job destinatari del messaggio
