@@ -137,3 +137,14 @@ Vediamo ora le opzioni disponibili:
 - `-l` → altre colonne addizionali quali `F` (flag), `PRI` (priorità del processo, più basso → più alta priorità), `NI` (nice value, influenza la priorità), `ADDR` (indirizzo di memoria del processo), `SZ` (dimensione dell’immagine del processo in pagine), `WCHAN` (indirizza la funzione in cui il processo è in attesa, se dormiente)
 - `-o {fields}` → per scegliere i campi da visualizzare
 
+Ci stanno anche i campi `RUSER` per il reale utente che ha avviato il processo e `EUSER` che corrisponde all’utente che ha eseguito il processo
+
+---
+## $\verb|top [-b] [-n num] [-p {pid}]|$
+Permette di avere un `ps` ma costantemente aggiornato
+- `-b` → non accetta più comandi interattivi, ma continua a fare refresh ogni pochi secondi
+- `-n num` → fa solo `num` refresh
+- `-p {pid}` → come in `ps`
+
+Una volta aperto in modo interattivo, basta premere `?` per avere la lista dei comandi accettati
+
