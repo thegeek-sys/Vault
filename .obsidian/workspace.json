@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -239,11 +239,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e6fe7af362ff3919",
+  "active": "42bbb1773e354adb",
   "lastOpenFiles": [
+    "Class/Sistemi Operativi/II/I processi.md",
     "Class/Sistemi Operativi/II/Il filesystem.md",
     "Class/Sistemi Operativi/II/II.md",
-    "Class/Sistemi Operativi/II/I processi.md",
     "Class/Sistemi Operativi/II/Introduzione.md",
     "Class/Sistemi Operativi/I/Sicurezza.md",
     "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",

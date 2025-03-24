@@ -136,6 +136,7 @@ Vediamo ora le opzioni disponibili:
 - `-f` → restituisce in output delle colonne addizionali quali `UID`, `PPID`, `C` (fattore di utilizzo della CPU, da $0$ a $99$) e `STIME` (tempo di avvio)
 - `-l` → altre colonne addizionali quali `F` (flag), `PRI` (priorità del processo, più basso → più alta priorità), `NI` (nice value, influenza la priorità), `ADDR` (indirizzo di memoria del processo), `SZ` (dimensione dell’immagine del processo in pagine), `WCHAN` (indirizza la funzione in cui il processo è in attesa, se dormiente)
 - `-o {fields}` → per scegliere i campi da visualizzare
+- `-C {cmds}` → mostra solo i processi il cui nome eseguibile è in `{cmds}`
 
 Ci stanno anche i campi `RUSER` per il reale utente che ha avviato il processo e `EUSER` che corrisponde all’utente che ha eseguito il processo
 
