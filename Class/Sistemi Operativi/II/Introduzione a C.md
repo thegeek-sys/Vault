@@ -80,3 +80,14 @@ gcc -Wall prog-name.c -o executable-name.o
 
 ### Precompilazione, compilazione e linking
 Per fare solo la precompilazione (o preprocessamento)
+```bash
+cpp helloworld.c > precompilato.c
+```
+Esegue tutte le direttive del compilatore ed elimina i commenti
+
+Solo compilazione (di un precompilato)
+```bash
+gcc -c precompilato.c -o test.o
+```
+In questo modo `gcc` controlla che la sia sintassi sia corrette e per ogni chiamata a funzione, controlla che venga rispettato il corrispettivo header (che quindi deve esistere al momento della chiamata) e infine crea effettivamente del codice macchina, ma solo per il contenuto delle funzioni (ogni chiamata a funzione ha una destinazione simbolica)
+
