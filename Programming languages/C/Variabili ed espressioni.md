@@ -86,4 +86,12 @@ optional_modifier data_type name_list
 | `int`            | 2 o 4 bytes  | -32.768 to 32.767 o -2.147.483.648 a 2.147.483.647 |
 | `unsigned int`   | 2 o 4 bytes  | 0 a 65.535 o 0 a 4.294.967.295                     |
 | `short`          | 2 bytes      | -32.768 a 32.767                                   |
-| `unsigned short` |              |                                                    |
+| `unsigned short` | 2 bytes      | 0 a 65.535                                         |
+| `long`           | 8 bytes      | -9223372036854775808 a<br>9223372036854775807      |
+| `unsigned long`  | 8 bytes      | 0 a 18446744073709551615                           |
+
+| Type          | Storage size | Value range               | Precision             |
+| ------------- | ------------ | ------------------------- | --------------------- |
+| `float`       | 4 bytes      | 1.2E-38 a<br>3.4E+38      | 6 posizioni decimali  |
+| `double`      | 8 bytes      | 2.3E-308 to<br>1.7E+308   | 15 posizioni decimali |
+| `long double` | 10 bytes     | 3.4E-4932 to<br>1.1E+4932 | 19 posizioni decimali |
