@@ -30,5 +30,5 @@ Completed:
 		2. Impegni istituzionali
 		3. Impegni progettuali
 	2. Giorno in cui avvengono (una data)
-	3. Durata (in ore, un intero)
-	4. 
+	3. Durata (per alcuni impegni va misurata in giorni per altri in ore)
+	4. Tipologia di impegno
