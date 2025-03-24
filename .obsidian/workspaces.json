@@ -986,6 +986,20 @@
                 }
               },
               {
+                "id": "380319d40a3fe7ec",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Accademia 2.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Accademia 2"
+                }
+              },
+              {
                 "id": "62440129c7a022fc",
                 "type": "leaf",
                 "state": {
@@ -1098,7 +1112,7 @@
                 }
               }
             ],
-            "currentTab": 8
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -1256,8 +1270,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "8cf7463b8fd4331e",
-      "mtime": "2025-03-23T11:21:15+01:00"
+      "active": "380319d40a3fe7ec",
+      "mtime": "2025-03-24T11:03:54+01:00"
     },
     "Reti di elaboratori": {
       "main": {
@@ -1541,35 +1555,7 @@
                 }
               },
               {
-                "id": "797fde0f968d27b6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Cicli.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Cicli"
-                }
-              },
-              {
-                "id": "1b4a71a485119707",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Colorazione dei grafi"
-                }
-              },
-              {
-                "id": "0278cc05cbdb833e",
+                "id": "3dde162c5d749ba6",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -1583,31 +1569,17 @@
                 }
               },
               {
-                "id": "ec71cb044f3595b0",
+                "id": "c37557fcbc2007b0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Spanning tree.md",
+                    "file": "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Spanning tree"
-                }
-              },
-              {
-                "id": "445057c46084a2aa",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Algoritmi/II/Grafi/Ponti.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ponti"
+                  "title": "Visitare in ampiezza (BFS)"
                 }
               }
             ],
@@ -1769,9 +1741,9 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "1b4a71a485119707",
-      "mtime": "2025-03-24T09:44:45+01:00"
+      "active": "c37557fcbc2007b0",
+      "mtime": "2025-03-24T18:38:16+01:00"
     }
   },
-  "active": "Basi di Dati"
+  "active": "Sistemi Operativi"
 }
