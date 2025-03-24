@@ -95,4 +95,22 @@ Solo linking
 ```bash
 gcc file.o
 ```
-Risolve tutte le chiamate a funzione: adesso, per ogni funzione chiamata 
+Risolve tutte le chiamate a funzione: adesso, per ogni funzione chiamata non basta più l’header, ci deve essere anche l’implementazione (blocco di istruzioni). L’implementazione più essere o data dal programmatore o fornita da librerie esterne. L’inclusione delle librerie puo’ essere automatica o specificata dall’utente (ad esempio la libreria `libc.a` che contiene la `printf` e’ inclusa automaticamente)
+
+---
+## Direttive al processore $\verb|#|$
+Con `#` si indicano le direttive al processore
+
+`#include filename` dice di includere il contenuto di `filename` specificato al posto di `#`
+Il file (usualmente  `.h`) è detto **header file**
+
+>[!example]
+>```c
+>#include <stdio.h>
+>```
+>- `<>` → indicano che il file header è un file standard del C in `/usr/include`
+>- `""` → indicano che il file header è dell’utente e si trova nella directory corrente o in un path specificato
+>- `-I` → permette di specificare le directory in cui cercare gli header file
+
+
+
