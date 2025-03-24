@@ -95,3 +95,17 @@ optional_modifier data_type name_list
 | `float`       | 4 bytes      | 1.2E-38 a<br>3.4E+38      | 6 posizioni decimali  |
 | `double`      | 8 bytes      | 2.3E-308 to<br>1.7E+308   | 15 posizioni decimali |
 | `long double` | 10 bytes     | 3.4E-4932 to<br>1.1E+4932 | 19 posizioni decimali |
+
+---
+## Tipi di dato booleano
+`_Bool` può memorizzare solo 0 e 1 (valori diversi da 0 vengono memorizzati come 1)
+
+`bool` richiede l’uso di `<stdbool.h>` e memorizza `true` e `false`
+
+---
+## Assegnazione di valori a variabili
+Quando una variabile viene dichiarata e non inizializzata assume un valore indeterminato.
+L’assegnazione può essere fatta in tre modi:
+- in fase di dichiarazione
+- in fase di elaborazione mediante l’operatore di assegnazione `=`
+- leggendo un valore in input, ad esempio con `scanf`
