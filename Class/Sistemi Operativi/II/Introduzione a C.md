@@ -21,3 +21,18 @@ La “compilazione” di un programma in C mediante **gcc** (fasi 2-4) produce u
 
 ---
 ## Struttura di un programma C
+Tipicamente un programma C è strutturato in due parti:
+- **Main function** (compulsory) → può essere semplicemente il punto da cui vengono invocate tutte le funzioni che compongono il programma o può contenere una logica complessa (può anche essere l’ultimo blocco di codice del programma)
+- **Function** → un blocco di codice che esegue uno specifico compito identificato da un nome univoco
+
+>[!info]
+>Main function e functions possono  risiedere nello stesso file `.c` o in file diversi `.c`
+
+### Functions
+Ogni funzione consiste di un header e di un basic block
+
+```
+<return-type> fn-name (parameter-list)
+	basic block
+```
+
