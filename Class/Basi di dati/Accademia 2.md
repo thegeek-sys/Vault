@@ -5,6 +5,11 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Raffinamento dei requisiti|Raffinamento dei requisiti]]
+- [[#Diagramma UML delle classi|Diagramma UML delle classi]]
+- [[#Specifica dei tipi di dato|Specifica dei tipi di dato]]
+---
 ## Raffinamento dei requisiti
 1. Docenti
 	1. Nome (una stringa)
@@ -32,6 +37,13 @@ Completed:
 	2. Giorno in cui avvengono (una data)
 	3. Durata (per alcuni impegni va misurata in giorni per altri in ore)
 	4. Tipologia di impegno
+	5. Motivazione (una stringa)
 
 ---
 ## Diagramma UML delle classi
+![[Pasted image 20250324104754.png]]
+
+---
+## Specifica dei tipi di dato
+- PosizioneUniversitaria → {ricercatore, professore_associato, professore_ordinario}
+- InizioFine → (inizio:Data, fine:Data>inizio)
