@@ -742,7 +742,7 @@
                 }
               },
               {
-                "id": "535b731e6b0aa1fe",
+                "id": "5c8345206969bc61",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -756,49 +756,35 @@
                 }
               },
               {
-                "id": "e6fe7af362ff3919",
+                "id": "61ce67efacbd3ce0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Sistemi Operativi/II/I processi.md",
+                    "file": "Programming languages/C/C.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "I processi"
+                  "title": "C"
                 }
               },
               {
-                "id": "42bbb1773e354adb",
+                "id": "87095a88f3db806a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Class/Sistemi Operativi/II/Il filesystem.md",
+                    "file": "Programming languages/C/Variabili ed espressioni.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Il filesystem"
-                }
-              },
-              {
-                "id": "6cca2c5f12de3b94",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Class/Sistemi Operativi/II/Introduzione.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Introduzione"
+                  "title": "Variabili ed espressioni"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "vertical"
@@ -830,7 +816,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "disco",
+                    "query": "tag:#include",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -855,8 +841,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 243.50390243530273,
-        "collapsed": true
+        "width": 243.50390243530273
       },
       "right": {
         "id": "82c60f36bf5d1248",
@@ -957,8 +942,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "e6fe7af362ff3919",
-      "mtime": "2025-03-24T09:40:19+01:00"
+      "active": "87095a88f3db806a",
+      "mtime": "2025-03-25T01:33:21+01:00"
     },
     "Basi di Dati": {
       "main": {
@@ -1110,9 +1095,23 @@
                   "icon": "lucide-file",
                   "title": "Impiegati e studenti"
                 }
+              },
+              {
+                "id": "fd9b3157d83bb26a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Class/Basi di dati/Travel to the moon.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Travel to the moon"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 10
           }
         ],
         "direction": "vertical"
@@ -1270,8 +1269,8 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "380319d40a3fe7ec",
-      "mtime": "2025-03-24T11:03:54+01:00"
+      "active": "fd9b3157d83bb26a",
+      "mtime": "2025-03-25T09:24:29+01:00"
     },
     "Reti di elaboratori": {
       "main": {
@@ -1745,5 +1744,5 @@
       "mtime": "2025-03-24T18:38:16+01:00"
     }
   },
-  "active": "Sistemi Operativi"
+  "active": "Algoritmi"
 }

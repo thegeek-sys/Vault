@@ -101,14 +101,13 @@ def connessi(x,y,T):
 
 def kursal(G):
 	E = [(c,u,v) for u in range(len(G)) for v,c in G[u] if u<v]
-	E.sort(reverse=True)
+	E.sort()
 	T = [[] for _ in G]
 	
-	while E:
-		c,x,y = E.pop()
-		if not connessi(x,y,T):
-			T[x].append(y)
-			T[y].append(x)
+	for c,u,v in E:
+		if not connessi(u,v,T):
+			T[u].append(v)
+			T[v].append(u)
 	return T
 
 # >> G = [
