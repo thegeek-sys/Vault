@@ -126,4 +126,10 @@ La complessità di questa implementazione è $O(m\cdot n)$
 
 ---
 ## $\verb|UNION|$ e $\verb|FIND|$
-Per migliorare l’implementazione non possiamo 
+Per migliorare l’implementazione non possiamo permetterci di pagare tempo $O(n)$ ad ogni iterazione del $for$ a causa della visita per testare la raggiungibilità.
+
+Ricorreremo alla struttura dati **UNION e FIND** che permette di testare efficientemente se due nodi appartengono o meno alla stessa componente connessa
+
+La UNION-FIND, è una struttura dati per la collezione $C$ delle componenti connesse di un grafo di $n$ nodi in modo tale che sia possibile “efficientemente” effettuare le due seguenti operazioni:
+- $UNION(a,b,C)$ → fonde due componenti connesse $a$ e $b$ in $C$ in tempo $O(1)$
+- $FIND(x,C)$ → trova in $C$ la componente connessa in cui 
