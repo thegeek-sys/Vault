@@ -132,4 +132,62 @@ Ricorreremo alla struttura dati **UNION e FIND** che permette di testare efficie
 
 La UNION-FIND, è una struttura dati per la collezione $C$ delle componenti connesse di un grafo di $n$ nodi in modo tale che sia possibile “efficientemente” effettuare le due seguenti operazioni:
 - $UNION(a,b,C)$ → fonde due componenti connesse $a$ e $b$ in $C$ in tempo $O(1)$
-- $FIND(x,C)$ → trova in $C$ la componente connessa in cui 
+- $FIND(x,C)$ → trova in $C$ la componente connessa in cui si trova il nodo $x$ in tempo $O(\log n)$
+
+```python
+def kruskal(G):
+	E = [(c,u,v) for u in G for v,c in G[u] if u<v]
+	E.sort()
+	T = [[] for _ in G]
+	C = crea(T)
+	for c,u,v in E:
+		cu = find(u, C)
+		cv = find(v, C)
+		if cu != cv:
+			T[x].append(y)
+			T[y].append(x)
+			union(cu, cv, C)
+	return T
+```
+
+## Kruskal in $O(m\log n)$
+```python
+def Crea(G):
+	C = [(i,1) for i in range(len(G))]
+	return C
+
+def Find(u, C):
+	while u != C[u]:
+		u = C[u]
+	return u
+
+def Union(a, b, C):
+	tota, totb = C[a][1], C[b][1]
+	if tota >= totb:
+		C[a] = (a, tota + totb)
+		C[b] = (a, totb)
+	else:
+		C[b] = (b, tota + totb)
+		C[b] = (a, totb)
+
+def kruskal1(G):
+	E = [(c,u,v) for u in range(len(G)) for v,c in G[u] if u<v]
+	E.sort()
+	T = [[] for _ in G]
+	C = Crea(T)
+	for c,u,v in E:
+		cu = Find(u, C)
+		cv = Find(v, C)
+		if cu != cv:
+			T[u].append(v)
+			T[v].append(u)
+			Union(cu, cv, C)
+	return T
+```
+L’ordinamento costa $O(m \log n)$. Il $for$ viene iterato $m$ volte:
+- l’estrazione dell’arco $(a,b)$ di costo minimo $E$ richiede $\Theta(1)$
+- esegue il `FIND` costa $O(\log n)$
+- esegue l’`UNION` costa $\Theta(1)$ (e all’interno del $for$ viene eseguito esattamente $n-1$ volte)
+
+Quindi il costo del $for$ è $O(m\log n)$. La complessità totale è $O(m\log n)$
+
