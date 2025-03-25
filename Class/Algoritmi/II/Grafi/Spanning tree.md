@@ -123,3 +123,7 @@ L’ordinamento esterno al $while$ ci costa $O(m\log m)=O(m\log n)$. Il $while$ 
 L’estrazione dell’arco $(a,b)$ di costo minimo da $E$ richiede tempo $O(1)$ e controllare che l’arco $(a,b)$ non crei un ciclo in $T$ con la procedura $\verb|connessi(a,b,T)|$ richiede il costo di una visita in un grafo aciclico quindi $O(n)$
 
 La complessità di questa implementazione è $O(m\cdot n)$
+
+---
+## $\verb|UNION|$ e $\verb|FIND|$
+Per migliorare l’implementazione non possiamo 
