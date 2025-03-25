@@ -119,6 +119,9 @@ printf(format_string, expression_list)
 ```
 `format_string` deve contenere dei placeholder. Ogni placeholder inizia con `%` e serve a dire che al suo posto ci andrà il valore di una variabile e che tipo di dato deve essere scritto
 
+Assegnando `printf` a una variabile, in essa verrà salvato il numero di caratteri stampati
+
+
 ### Placeholder comuni
 - `%d` o `%i` per integer, `%l` per long
 - `%o` per integers in ottale
@@ -129,4 +132,4 @@ printf(format_string, expression_list)
 ```
 %[parameter][flags][width][.precision][length]type
 ```
-- `[parameter]` → 
+[qui](https://en.wikipedia.org/wiki/Printf)
