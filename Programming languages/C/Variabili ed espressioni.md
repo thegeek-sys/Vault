@@ -109,3 +109,24 @@ L’assegnazione può essere fatta in tre modi:
 - in fase di dichiarazione
 - in fase di elaborazione mediante l’operatore di assegnazione `=`
 - leggendo un valore in input, ad esempio con `scanf`
+
+---
+## Output di variabili
+Vediamo come con `printf` possiamo scrivere su `stdout` il valore di una variabile
+
+```c
+printf(format_string, expression_list)
+```
+`format_string` deve contenere dei placeholder. Ogni placeholder inizia con `%` e serve a dire che al suo posto ci andrà il valore di una variabile e che tipo di dato deve essere scritto
+
+### Placeholder comuni
+- `%d` o `%i` per integer, `%l` per long
+- `%o` per integers in ottale
+- `%f`, `%e`, `%g` per float (f - formato standard, e - notazione scientifica, g - sceglie automaticamente il formato migliore tra f ed e
+- `%lf` per double
+
+### Formato completo di un placeholder
+```
+%[parameter][flags][width][.precision][length]type
+```
+- `[parameter]` → 
