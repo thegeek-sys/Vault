@@ -133,3 +133,18 @@ Assegnando `printf` a una variabile, in essa verrà salvato il numero di caratte
 %[parameter][flags][width][.precision][length]type
 ```
 [qui](https://en.wikipedia.org/wiki/Printf)
+
+---
+## Input da terminale - $\verb|scanf|$
+```c
+scanf(format_string, address_list)
+```
+`format_string` contiene dei placeholder che dicono a `scanf` in che tipo di dato la stringa in input viene convertita.
+`address_list` contiene gli indirizzi di memoria in cui devono essere memorizzare i valori ricevuti in input
+
+>[!example]
+>```c
+>scanf("%d", &peso)
+>```
+
+La funzione restituisce come risultato il numero di valori di input letti (come per `printf`)
