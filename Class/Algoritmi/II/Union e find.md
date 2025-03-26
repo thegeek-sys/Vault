@@ -88,4 +88,7 @@ Per evitare questo problema, è preferibile mantenere gli alberi bilanciati
 
 Quando esegui la $\verb|UNION|$ per fondere due componenti scelgo sempre come nuova radice la componente che contiene il maggior numero di elementi
 
-L’intuizione è che in questo modo
+L’intuizione è che in questo modo per almeno la metà dei nodi presenti nelle due componenti coinvolte nella fusione la lunghezza del cammino non aumenta.
+Fondendo le componenti con questo accorgimento garantiamo le seguenti proprietà:
+- se un insieme ha altezza $h$ allora l’insieme contiene almeno $2^h$ elementi
+- 
