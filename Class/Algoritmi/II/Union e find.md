@@ -48,8 +48,11 @@ def Union(a,b,C):
 Costo computazionale:
 - $Crea()$ → costo $\Theta(n)$
 - $Find()$  → costo $\Theta(1)$
-- $Union()$ → cost $\Theta(n)$
+- $Union()$ → costo $\Theta(n)$
 
 ### Miglioramento dei costi computazionali
 Meglio però bilanciare i costi: rendere meno costosa la $\verb|UNION|$ anche a costo di pagare qualcosa in più per la $\verb|FIND|$
 
+Uso il vettore dei padri:
+- $\verb|FIND|$ → quando voglio sapere in che componente si trova un nudo devo semplicemente risalire alla sua radice. $\Theta(n)$
+- $\verb|UNION|$ → 
