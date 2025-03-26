@@ -64,9 +64,37 @@
               "icon": "lucide-file",
               "title": "Spanning tree"
             }
+          },
+          {
+            "id": "a05e8c65f9e9bb68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Introduzione.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduzione"
+            }
+          },
+          {
+            "id": "76ac832ac5a7d56c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Grafi/Spanning tree.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spanning tree"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -225,15 +253,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cc84811458ab00f2",
+  "active": "76ac832ac5a7d56c",
   "lastOpenFiles": [
     "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/Algoritmi.md",
     "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
+    "Programming languages/C/Variabili ed espressioni.md",
+    "Class/Algoritmi/II/Grafi/Introduzione.md",
+    "Class/Reti di elaboratori/Introduzione allo stack protocollare TCP-IP.md",
+    "Class/Reti di elaboratori/Reti di elaboratori.md",
+    "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
+    "Class/Algoritmi/II/Grafi/Spanning tree.md",
     "Class/Basi di dati/Travel to the moon.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Accademia 2.md",
-    "Programming languages/C/Variabili ed espressioni.md",
     "Files/Pasted image 20250324201607.png",
     "Programming languages/C/C.md",
     "Class/Sistemi Operativi/Sistemi Operativi.md",
@@ -250,14 +283,9 @@
     "Class/Algoritmi/II/Grafi/Grafi pesati.md",
     "Class/Algoritmi/II/Grafi/Cicli.md",
     "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
-    "Class/Algoritmi/II/Grafi/Spanning tree.md",
     "Class/Algoritmi/II/Grafi/Ponti.md",
     "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
-    "Class/Basi di dati/Accademia 1.md",
-    "Class/Basi di dati/Impiegati e studenti.md",
     "Files/Pasted image 20250324104754.png",
-    "Class/Sistemi Operativi/I/Sicurezza.md",
-    "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
     "Files/Pasted image 20250324004214.png",
     "Files/Pasted image 20250324004029.png",
     "Files/Pasted image 20250324002827.png",
