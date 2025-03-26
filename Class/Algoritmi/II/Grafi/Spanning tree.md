@@ -125,7 +125,7 @@ L’estrazione dell’arco $(a,b)$ di costo minimo da $E$ richiede tempo $O(1)$ 
 La complessità di questa implementazione è $O(m\cdot n)$
 
 ---
-## $\verb|UNION|$ e $\verb|FIND|$
+## Kruskal con $\verb|UNION|$ e $\verb|FIND|$
 Per migliorare l’implementazione non possiamo permetterci di pagare tempo $O(n)$ ad ogni iterazione del $for$ a causa della visita per testare la raggiungibilità.
 
 Ricorreremo alla struttura dati **UNION e FIND** che permette di testare efficientemente se due nodi appartengono o meno alla stessa componente connessa
@@ -150,7 +150,7 @@ def kruskal(G):
 	return T
 ```
 
-## Kruskal in $O(m\log n)$
+### Kruskal in $O(m\log n)$
 ```python
 def Crea(G):
 	C = [(i,1) for i in range(len(G))]

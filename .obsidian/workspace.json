@@ -24,6 +24,34 @@
             }
           },
           {
+            "id": "4641ee41737b795e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/II.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "II"
+            }
+          },
+          {
+            "id": "7eb0ff833a4123c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class/Algoritmi/II/Union e find.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Union e find"
+            }
+          },
+          {
             "id": "3dde162c5d749ba6",
             "type": "leaf",
             "state": {
@@ -94,7 +122,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -253,17 +281,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "76ac832ac5a7d56c",
+  "active": "7eb0ff833a4123c6",
   "lastOpenFiles": [
-    "Class/Algoritmi/II/Grafi/Grafi.md",
+    "Class/Algoritmi/II/Union e find.md",
+    "Class/Algoritmi/II/II.md",
     "Class/Algoritmi/Algoritmi.md",
+    "Class/Algoritmi/II/Grafi/Spanning tree.md",
+    "Class/Algoritmi/II/Grafi/Grafi.md",
     "Class/Algoritmi/II/Grafi/Visitare in ampiezza (BFS).md",
     "Programming languages/C/Variabili ed espressioni.md",
     "Class/Algoritmi/II/Grafi/Introduzione.md",
     "Class/Reti di elaboratori/Introduzione allo stack protocollare TCP-IP.md",
     "Class/Reti di elaboratori/Reti di elaboratori.md",
     "Class/Reti di elaboratori/Livello trasporto/Livello trasporto.md",
-    "Class/Algoritmi/II/Grafi/Spanning tree.md",
     "Class/Basi di dati/Travel to the moon.md",
     "Class/Basi di dati/Basi di dati.md",
     "Class/Basi di dati/Accademia 2.md",
@@ -283,8 +313,6 @@
     "Class/Algoritmi/II/Grafi/Grafi pesati.md",
     "Class/Algoritmi/II/Grafi/Cicli.md",
     "Class/Algoritmi/II/Grafi/Colorazione dei grafi.md",
-    "Class/Algoritmi/II/Grafi/Ponti.md",
-    "Class/Algoritmi/II/Grafi/Visitare in profondità (DFS).md",
     "Files/Pasted image 20250324104754.png",
     "Files/Pasted image 20250324004214.png",
     "Files/Pasted image 20250324004029.png",
