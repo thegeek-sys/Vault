@@ -22,4 +22,24 @@ Discutiamo brevemente su cosa intendiamo con **nome dell’insieme** (ad esempio
 La scelta fatta nelle implementazioni che seguono. è quella di scegliere come **nome dell’insieme quello di un particolare elemento dell’insieme stesso**
 Come primo approccio possiamo pensare di assegnare all’insieme il nome dell’elemento massimo in esso contenuto
 
-Probabilmente il modo più semplice di 
+---
+## Prima implementazione
+Probabilmente il modo più semplice di implementare questa struttura dati per $n$ elementi è di mantenere il vettore $C$ delle $n$ componenti.
+All’inizio ogni elemento è in un insieme distinto vale a dire $C[i] =i$. Quando la componente $i$ viene fusa con la componente $j$, se $i>j$ allora tutte le occorrenze di $j$ nel vettore $C$ verranno sostituite da $i$ (se $i<j$ accadrà il contrario)
+
+```python
+def Crea(G):
+	C = [i for i in range(len(G))]
+	return C
+
+def Find(u,C):
+	return C[u]
+
+def Union(a,b,C):
+	if a>b:
+		for i in range(len(C))
+			if C[i] == b:
+				C[i] = a
+	else:
+		for i in range()
+```
