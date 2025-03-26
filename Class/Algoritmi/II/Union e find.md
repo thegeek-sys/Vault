@@ -50,9 +50,42 @@ Costo computazionale:
 - $Find()$  → costo $\Theta(1)$
 - $Union()$ → costo $\Theta(n)$
 
-### Miglioramento dei costi computazionali
+### Miglioramento dei costi computazionali di $\verb|UNION|$
 Meglio però bilanciare i costi: rendere meno costosa la $\verb|UNION|$ anche a costo di pagare qualcosa in più per la $\verb|FIND|$
 
 Uso il vettore dei padri:
 - $\verb|FIND|$ → quando voglio sapere in che componente si trova un nudo devo semplicemente risalire alla sua radice. $\Theta(n)$
-- $\verb|UNION|$ → 
+- $\verb|UNION|$ → quando fondo due componenti una diventa figlia dell’altra. $O(1)$
+
+![[Pasted image 20250326110049.png|500]]
+![[Pasted image 20250326110105.png|500]]
+
+```python
+def Crea(G):
+	C = [i for i in range(len(G))]
+	return C
+
+def Find(u,C):
+	while u != C[u]:
+		u = C[u]
+	return u
+
+def Union(a,b,C):
+	if a>b:
+		C[b]=a
+	else:
+		C[a]=b
+```
+Costo computazionale:
+- $Crea()$ → costo $\Theta(n)$
+- $Find()$  → costo $\Theta(n)$
+- $Union()$ → costo $\Theta(1)$
+
+---
+## Bilanciamento dei costi computazionali
+Non voglio però che l’operazione $\verb|FIND|$ abbia un costo elevato quindi è importante che i cammini per raggiungere le radici del vettore dei padri non diventino troppo lunghi.
+Per evitare questo problema, è preferibile mantenere gli alberi bilanciati
+
+Quando esegui la $\verb|UNION|$ per fondere due componenti scelgo sempre come nuova radice la componente che contiene il maggior numero di elementi
+
+L’intuizione è che in questo modo
