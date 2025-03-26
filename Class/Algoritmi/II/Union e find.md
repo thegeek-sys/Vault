@@ -89,6 +89,49 @@ Per evitare questo problema, è preferibile mantenere gli alberi bilanciati
 Quando esegui la $\verb|UNION|$ per fondere due componenti scelgo sempre come nuova radice la componente che contiene il maggior numero di elementi
 
 L’intuizione è che in questo modo per almeno la metà dei nodi presenti nelle due componenti coinvolte nella fusione la lunghezza del cammino non aumenta.
-Fondendo le componenti con questo accorgimento garantiamo le seguenti proprietà:
-- se un insieme ha altezza $h$ allora l’insieme contiene almeno $2^h$ elementi
-- 
+Fondendo le componenti con questo accorgimento garantiamo le seguenti proprietà: se un insieme ha altezza $h$ allora l’insieme contiene almeno $2^h$ elementi
+
+Dalla proprietà deduciamo che l’altezza delle componenti non potrà mai superare $\log_{2}n$ (poiché in caso contrario avrei nella componente più di $n$ nodi il che è assurdo)
+
+### Implementazione
+In questa implementazione della Union-Find devo fare in modo che ai nodi radice sia associato anche il numero di elementi che la componente contiene.
+Ogni elemento è caratterizzato da una coppia $(x,\text{numero})$ dove $x$
+è il nome dell’elemento e $\text{numero}$ è il numero di nodi nell’albero radicato in $x$
+
+```python
+def Crea(G):
+	C = [(i,1) for i in range(len(G))]
+	return C
+
+def Find(u, C):
+	while u != C[u]:
+		u = C[u]
+	return u
+
+def Union(a, b, C):
+	tota, totb = C[a][1], C[b][1]
+	if tota >= totb:
+		C[a] = (a, tota + totb)
+		C[b] = (a, totb)
+	else:
+		C[b] = (b, tota + totb)
+		C[b] = (a, totb)
+```
+Costo computazionale:
+- $Crea()$ → costo $\Theta(n)$
+- $Find()$  → costo $\Theta(\log n)$
+- $Union()$ → costo $\Theta(1)$
+
+>[!info] Proprietà
+>Se una componente ha altezza $h$ allora la componente contiene almeno  $2^h$ nodi
+>
+>>[!done] Dimostrazione
+>>Assumiamo per assurdo durante una delle fusioni si sia formata una nuova componente di altezza $h$ che non rispetta la proprietà.
+>>
+>>Considera la prima volta ciò che accade e siano $ca$ e $cb$ le componenti che si fondono.
+>>Possono accadere due cose:
+>>- **$ca$ e $cb$ erano componenti della stessa altezza**, allora avevano entrambe altezza $h-1$ ed ognuna aveva almeno $2^{h-1}$ elementi (perché  nelle fusioni precedenti la proprietà era smepre verificata). Quindi il numero totale di elementi della nuova componente è $2^{h-1}+2^{h-1}=2^h$ e la proprietà è verificata
+>>- **$ca$ e $cb$ avevano diverse altezze**, allora l’altezza dopo la fusione è quella della componente di altezza maggiore che doveva essere già di altezza $h$ e conteneva da sola già $2^h$ elementi
+>>
+>>![[Pasted image 20250326112648.png]]
+
