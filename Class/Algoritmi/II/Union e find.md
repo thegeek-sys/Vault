@@ -41,5 +41,15 @@ def Union(a,b,C):
 			if C[i] == b:
 				C[i] = a
 	else:
-		for i in range()
+		for i in range(len(C)):
+			if C[i] == a:
+				C[i] = b
 ```
+Costo computazionale:
+- $Crea()$ → costo $\Theta(n)$
+- $Find()$  → costo $\Theta(1)$
+- $Union()$ → cost $\Theta(n)$
+
+### Miglioramento dei costi computazionali
+Meglio però bilanciare i costi: rendere meno costosa la $\verb|UNION|$ anche a costo di pagare qualcosa in più per la $\verb|FIND|$
+
