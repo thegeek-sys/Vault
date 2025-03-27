@@ -115,3 +115,7 @@ In questo caso il destinatario è pronto ricevere un solo pacchetto con un numer
 ### FSM mittente
 ![[Pasted image 20250328001429.png]]
 
+### FSM destinatario
+![[Pasted image 20250328001611.png]]
+
+### Diagramma di comunicazione
