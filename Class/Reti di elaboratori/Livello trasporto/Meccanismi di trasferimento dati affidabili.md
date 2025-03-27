@@ -42,3 +42,23 @@ Una volta inviato un pacchetto, il mittente si blocca (non spedisce pacchetto su
 Il destinatario è sempre nello stato ready
 
 ### Diagramma di comunicazione
+![[immagine_sfondo_bianco.png]]
+
+### Efficienza
+Consideriamo il prodotto $\text{rate}\cdot \text{ritardo}$ (misura del numero di bit che il mittente può inviare prima di ricevere un ack, volume della pipe in bit). Se il rate è elevato e il ritardo consistente allora lo stop and wait sarà inefficiente
+
+>[!example]
+>In un sistema che utilizza stop and wait abbiamo:
+>- rate → $1 \text{ Mbps}$
+>- ritardo di andata e ritorno di $1\text{ bit}$ → $20\text{ ms}$
+>
+>Quanto vale $\text{rate}\cdot \text{ritardo}$?
+>Se i pacchetti hanno dimensione $1000\text{ bit}$, qual è la percentuale di utilizzo del canale
+>
+>$\text{rate}\cdot \text{ritardo}=(1\times 10^6)\times(20\times 10^{-3})=20000\text{ bit}$
+>Il mittente potrebbe inviare $200000\text{ bit}$ nel tempo necessario per andare dal mittente al ricevente e viceversa ma ne invia solo $1000$
+>
+>Il **coefficiente di utilizzo** del canale è $\frac{1000}{200000}=5\%$, risultando molto inefficiente
+
+---
+## Protocolli con pipeline
