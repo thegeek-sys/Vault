@@ -144,4 +144,8 @@ Nella **ripetizione selettiva**, il mittente ritrasmette soltanto i pacchetti pe
 ![[Pasted image 20250328003421.png|650]]
 
 ### Finestra di invio e ricezione
-La finestra di invio e ricezione 
+La finestra di invio e ricezione hanno la stessa dimensione (a differenza del precedente)
+
+![[Pasted image 20250328003638.png]]
+
+### Timer e riscontri
