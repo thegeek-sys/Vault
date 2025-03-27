@@ -62,3 +62,29 @@ Consideriamo il prodotto $\text{rate}\cdot \text{ritardo}$ (misura del numero di
 
 ---
 ## Protocolli con pipeline
+Tramite il **pipelining**, il mittente ammette più pacchetti in transito ancora da notificare. Ciò però comporta due principali modifiche del modello precedente:
+- l’intervallo dei numeri di sequenza deve essere incrementato
+- buffering dei pacchetti presso il mittente e/o ricevente
+
+![[Pasted image 20250327235619.png]]
+
+Esistono due forme generiche di meccanismi con pipeline:
+- **Go-back-N**
+- **ripetizione selettiva**
+
+---
+## Go back N
+Lo schema generale prevede che possano essere mandati più pacchetti nonostante questi non siano stati ancora ricevuti
+
+![[Pasted image 20250327235853.png|center|650]]
+
+### Numeri di sequenza e riscontro
+I numeri di sequenza sono calcolati modulo $2^m$ dove $m$ è la dimensioen del campo “numero di sequenza” in bit.
+
+Ack (come nel precedente) indica il numero di sequenza del prossimo pacchetto atteso. Però in questo caso si tratta di un **ack comulativo** che indica che tutti i pacchetti fino al numero di sequenza indicato nell’ack sono stati ricevuti correttamente
+
+>[!example]
+>$\text{AckNo}=7$ → i pacchetti fino al $6$ sono stati ricevuti correttamente e il destinatario attende il $7$
+
+### Finestra di invio
+
