@@ -1,0 +1,12 @@
+Don't forget that creating the file from here may create the file in the wrong directory!
+- [[Class/Introduzione agli algoritmi/Strutture dati]] in [[Class/Algoritmi/I/Algoritmi di sorting]], [[Class/Algoritmi/I/Visitare gli alberi]]
+- [[Screenshot 2024-03-19 alle 13.20.59.png]] in [[Flet-notes/2024-03-19_AE]]
+- [[Screenshot 2024-10-09 alle 16.16.50.png]] in [[Flet-notes/2024-10-09_BD]]
+- [[Pasted image 20241128140607.png]] in [[Flet-notes/2024-11-28_BD]]
+- [[gerarchia collections.png]] in [[Programming languages/Java/POSSIBILI DOMANDE ORALE]]
+- [[complex]] in [[Programming languages/Python/Python]]
+- [[with]] in [[Programming languages/Python/Python]]
+- [[try-except]] in [[Programming languages/Python/Python]]
+- [[Conditional assignment]] in [[Programming languages/Verilog/Verilog]]
+- [[Class/Introduzione agli algoritmi/Esercizi]] in [[To-Do]]
+- [[Files/Pasted image 20250308125900.png]] in [[empty files]]

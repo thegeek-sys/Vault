@@ -119,3 +119,8 @@ In questo caso il destinatario è pronto ricevere un solo pacchetto con un numer
 ![[Pasted image 20250328001611.png]]
 
 ### Diagramma di comunicazione
+#### Ack cumulativo
+![[Pasted image 20250328001758.png]]
+
+#### Perso pacchetto dati
+![[Pasted image 20250328002027.png]]
