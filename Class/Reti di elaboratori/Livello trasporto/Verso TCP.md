@@ -120,7 +120,7 @@ Il destinatario può scartare i pacchetti corrotti e duplicati
 
 ---
 ## Integrazione del controllo degli errori e controllo di flusso
-Il controllo di flusso richiede due buffer (mittente e destinatario) mentre il controllo degli errori richiede il numero di sequenza e ack
+Il controllo di flusso richiede due buffer (mittente e destinatario) mentre il controllo degli errori richiede il **numero di sequenza** e ack
 La combinazione dei due meccanismi crea un **buffer numerato** (presso mittente e destinatario)
 
 **Mittente**:
