@@ -124,3 +124,6 @@ In questo caso il destinatario è pronto ricevere un solo pacchetto con un numer
 
 #### Perso pacchetto dati
 ![[Pasted image 20250328002027.png]]
+
+### Dimensione della finestra di invio
+Quale è la relazione fra lo spazio dei numeri di sequenza e la dimensione della finestra di invio? Possiamo avere una finestra di dimensione $2^m$
