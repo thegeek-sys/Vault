@@ -87,4 +87,31 @@ Ack (come nel precedente) indica il numero di sequenza del prossimo pacchetto at
 >$\text{AckNo}=7$ → i pacchetti fino al $6$ sono stati ricevuti correttamente e il destinatario attende il $7$
 
 ### Finestra di invio
+![[Pasted image 20250328000419.png|center|550]]
+
+>[!info]
+>La finestra di invio è un concetto astratto che definisce una porzione immaginaria di dimensione massima $2^m-1$ con tre variabili, $S_{f}$, $S_{n}$, $S_{\text{size}}$
+
+La finestra di invio può scorrere uno o più posizioni quando viene un riscontro privo di errori con $\text{ackNo}$ maggiore o oguale a $S_{f}$ e, minore di $S_{n}$ in aritmetica modulare
+
+>[!example]
+>![[Pasted image 20250328000712.png|550]]
+
+### Finestra di ricezione
+La finestra di ricezione ha dimensione $1$, infatti il destinatario è sempre in attesa di uno specifico pacchetto, qualsiasi pacchetto arrivato fuori sequenza (appartenente alle due regioni esterne all finestra) viene scartato
+
+![[Pasted image 20250328000836.png|center|550]]
+
+La finestra di ricezione può scorrere di una sola posizione: $R_{n}=(R_{n}+1)\text{ mod }2^m$
+
+### Timer e rispedizione
+Il mittente mantiene un timer per il più vecchio pacchetto non riscontrato. Allo scadere del timer, Go back N, vengono rispediti tutti i pacchetti a partire dal più vecchio non riscontrato
+
+In questo caso il destinatario è pronto ricevere un solo pacchetto con un numero di sequenza determinato. Se salta il pacchetto, ma ne vengono ricevuti altri successi, bisognerà rimandare tutti i pacchetti a partire dal primo non ricevuto
+
+>[!example]
+>$S_{f}=3$ è il mittente ha inviato il pacchetto $6$ ($S_{n}=7$). Scade il timer, allora i pacchetti $3,4,5,6$ nono sono stati riscontrati e devono essere rispediti
+
+### FSM mittente
+![[Pasted image 20250328001429.png]]
 
