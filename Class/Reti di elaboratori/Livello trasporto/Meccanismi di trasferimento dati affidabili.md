@@ -127,3 +127,21 @@ In questo caso il destinatario è pronto ricevere un solo pacchetto con un numer
 
 ### Dimensione della finestra di invio
 Quale è la relazione fra lo spazio dei numeri di sequenza e la dimensione della finestra di invio? Possiamo avere una finestra di dimensione $2^m$
+
+![[Pasted image 20250328002549.png|550]]
+In questo caso nonostante venga rinviato il pacchetto zero poiché è perso $\text{ack}0$, il destinatario pensa di aver ricevuto pacchetto iniziale di una nuova sequenza e quindi fa scorrere la finestra
+
+Per risolvere questo problema la dimensione deve essere $2^m -1$
+![[Pasted image 20250328002848.png|450]]
+
+---
+## Ripetizione selettiva
+In Go back N per un solo pacchetto perso si trasmettono tutti i successivi già inviati nel pipeline. Ciò potrebbe essere sconveniente soprattutto nel caso in cui in rete ci sia un congestione, infatti la rispedizione di tutti i pacchetti peggiora la congestione
+
+Nella **ripetizione selettiva**, il mittente ritrasmette soltanto i pacchetti per i quali non ha ricevuto un ack (un timer del mittente per ogni pacchetto non riscontrato). Quindi il ricevente invia **riscontri specifici** per tutti i pacchetti ricevuti correttamente (sia in ordine, sia fuori sequenza) e se necessario un buffer dei pacchetti per eventuali consegne in sequenza al livello superiore
+
+### Schema generale
+![[Pasted image 20250328003421.png|650]]
+
+### Finestra di invio e ricezione
+La finestra di invio e ricezione 
