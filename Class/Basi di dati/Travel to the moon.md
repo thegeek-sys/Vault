@@ -79,4 +79,18 @@ Un’istanza di questa classe rappresenta una destinazione, ossia un luogo tocca
 	- nessuna modifica al livello estensionale
 	- il valore di ritorno `result` è così definito
 		- sia `c:Continente` tale che `(this,c):destinazione_continente`
-		- `result = true` se e solo se
+		- `result = true` se e solo se `c.esotico = true`
+
+### Crociera
+Un’istanza di questa classe rappresenta una corciera
+#### Specifica delle operazioni di classe
+`fine(): Data`
+- precondizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- sia `i` il valore dell’attributo `inizio` di `this`
+	- sia `it:Itinerario` tale che esiste il link `(this, it):crociera_itinerario`
+	- sia `d` il risultato di `it.durata_g()`
+	- `result` è uguale a `i+d`
+
+`posti_disponibili(t:DataOra): Intero >= 0`
