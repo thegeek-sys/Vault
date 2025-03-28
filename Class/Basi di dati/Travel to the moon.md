@@ -56,7 +56,6 @@
 ## Specifica dei tipi di dato
 - DeltaDataOra → {giorno:Intero > 0, ora:Ora}
 - CodiceCrociera → secondo standard
-- Orari → {giorno_settimana:\[0..7\], }
 
 ---
 ## Specifica di classe
@@ -83,7 +82,7 @@ Un’istanza di questa classe rappresenta una destinazione, ossia un luogo tocca
 		- `result = true` se e solo se `c.esotico = true`
 
 ### Crociera
-Un’istanza di questa classe rappresenta una corciera
+Un’istanza di questa classe rappresenta una crociera
 #### Specifica delle operazioni di classe
 `fine(): Data`
 - precondizioni → nessuna
@@ -95,3 +94,9 @@ Un’istanza di questa classe rappresenta una corciera
 	- `result` è uguale a `i+d`
 
 `posti_disponibili(t:DataOra): Intero >= 0`
+
+### PostiDaVedere
+Un’istanza di questa classe rappresenta un posto da vedere durante eventuali escursioni organizzate
+#### Specifica delle operazioni di classe
+`apertura(g:Stringa): {Ora, Ora}`
+- precondizioni → 
