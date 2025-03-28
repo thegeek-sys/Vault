@@ -56,6 +56,7 @@
 ## Specifica dei tipi di dato
 - DeltaDataOra → {giorno:Intero > 0, ora:Ora}
 - CodiceCrociera → secondo standard
+- Orari → {giorno_settimana:\[0..7\], }
 
 ---
 ## Specifica di classe
