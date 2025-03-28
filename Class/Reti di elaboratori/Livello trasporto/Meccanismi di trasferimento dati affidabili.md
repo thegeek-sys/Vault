@@ -149,3 +149,20 @@ La finestra di invio e ricezione hanno la stessa dimensione (a differenza del pr
 ![[Pasted image 20250328003638.png]]
 
 ### Timer e riscontri
+Selective repeat usa **un timer per ogni pacchetto** in attesa di riscontro (quando scade un timer si rinvia solo il relativo pacchetto). Dunque si tratta di un **riscontro invidivuale** ovvero associato al singolo pacchetto; il numero di riscontro indica il numero di sequenza di un pacchetto ricevuto correttamente (non il prossimo atteso, in questo caso non ha alcun senso)
+
+### FMS mittente
+![[Pasted image 20250328005951.png]]
+
+### FSM destinatario
+![[Pasted image 20250328010024.png]]
+
+### Diagramma di comunicazione
+![[Pasted image 20250328010109.png]]
+
+>[!warning]
+>I pacchetti possono essere consegnati al livello applicazione se:
+>- è stato ricevuto un insieme di pacchetti consecutivi
+>- l’insieme deve partire dall’inizio della finestra
+
+### Dimensione delle finestre di invio e ricezione
