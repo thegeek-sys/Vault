@@ -5,6 +5,36 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Stop-and-wait|Stop-and-wait]]
+	- [[#Stop-and-wait#Numeri di sequenza e riscontro|Numeri di sequenza e riscontro]]
+	- [[#Stop-and-wait#FSM mittente|FSM mittente]]
+	- [[#Stop-and-wait#FSM destinatario|FSM destinatario]]
+	- [[#Stop-and-wait#Diagramma di comunicazione|Diagramma di comunicazione]]
+	- [[#Stop-and-wait#Efficienza|Efficienza]]
+- [[#Protocolli con pipeline|Protocolli con pipeline]]
+- [[#Go back N|Go back N]]
+	- [[#Go back N#Numeri di sequenza e riscontro|Numeri di sequenza e riscontro]]
+	- [[#Go back N#Finestra di invio|Finestra di invio]]
+	- [[#Go back N#Finestra di ricezione|Finestra di ricezione]]
+	- [[#Go back N#Timer e rispedizione|Timer e rispedizione]]
+	- [[#Go back N#FSM mittente|FSM mittente]]
+	- [[#Go back N#FSM destinatario|FSM destinatario]]
+	- [[#Go back N#Diagramma di comunicazione|Diagramma di comunicazione]]
+		- [[#Diagramma di comunicazione#Ack cumulativo|Ack cumulativo]]
+		- [[#Diagramma di comunicazione#Perso pacchetto dati|Perso pacchetto dati]]
+	- [[#Go back N#Dimensione della finestra di invio|Dimensione della finestra di invio]]
+- [[#Ripetizione selettiva|Ripetizione selettiva]]
+	- [[#Ripetizione selettiva#Schema generale|Schema generale]]
+	- [[#Ripetizione selettiva#Finestra di invio e ricezione|Finestra di invio e ricezione]]
+	- [[#Ripetizione selettiva#Timer e riscontri|Timer e riscontri]]
+	- [[#Ripetizione selettiva#FMS mittente|FMS mittente]]
+	- [[#Ripetizione selettiva#FSM destinatario|FSM destinatario]]
+	- [[#Ripetizione selettiva#Diagramma di comunicazione|Diagramma di comunicazione]]
+	- [[#Ripetizione selettiva#Dimensione delle finestre di invio e ricezione|Dimensione delle finestre di invio e ricezione]]
+- [[#Protocolli bidirezionali: piggybacking|Protocolli bidirezionali: piggybacking]]
+- [[#Riassunto dei meccanismi|Riassunto dei meccanismi]]
+---
 ## Stop-and-wait
 Lo **stop-and-wait** è un meccanismo di trasferimento dati orientato alla connessione con controllo di flusso e controllo degli errori
 
@@ -166,3 +196,25 @@ Selective repeat usa **un timer per ogni pacchetto** in attesa di riscontro (qua
 >- l’insieme deve partire dall’inizio della finestra
 
 ### Dimensione delle finestre di invio e ricezione
+Con le finestre $2^m-1$ potrebbe accadere che gli ack si perdano e nonostante ciò, quando il mittente rispedisce i pacchetti, questi vengono accettati da destinatario e interpretati come nuovi pacchetti della nuova sequenza
+
+![[Pasted image 20250328010542.png|500]]
+
+Usando come dimensione $2^{m-1}$ invece questo problema non si pone poiché quando viene rispedito un pacchetto, ormai la finestra del destinatario sarà slidata quindi non sarò più possibile ricevere quel pacchetto
+
+![[Pasted image 20250328010749.png|500]]
+
+---
+## Protocolli bidirezionali: piggybacking
+Abbiamo mostrato fino ad ora meccanismi unidirezionali in cui i pacchetti vengono mandati in una direzione e gli ack nella direzione opposta.
+Per migliorare l’efficienza dei protocolli bidirezionali viene utilizzata la tecnica del **piggybacking**: quando un pacchetto trasporta dati da $A$ a $B$, può trasportare anche i riscontri relativi ai pacchetti ricevuti da $B$ e viceversa
+
+---
+## Riassunto dei meccanismi
+
+| Meccanismo                      | Uso                           |
+| ------------------------------- | ----------------------------- |
+| Checksum                        | Per gestire errori nel canale |
+| Ackknowledgement                | Per gestire errori nel canale |
+| Timeout                         | Perdita pacchetti             |
+| Finestra scorrevole, pipelining | Maggior utilizzo della rete   |
