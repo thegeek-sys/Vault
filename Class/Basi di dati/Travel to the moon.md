@@ -100,6 +100,10 @@ Un’istanza di questa classe rappresenta una crociera
 Un’istanza di questa classe rappresenta un posto da vedere durante eventuali escursioni organizzate
 #### Specifica delle operazioni di classe
 `apertura(g:Stringa): {Ora, Ora}`
-- precondizioni → sia `gio:Giorno` tale che esista almeno un link `(this, gio):posti_giorno` tale che `g==gio`
+- precondizioni → sia `gio:Giorno` tale che esista esattamente un link `(this, gio):posti_giorno` tale che `g==gio.giorno`
 - postcondizioni →
 	- l’operazione non modifica il livello estensionale
+	- il valore di ritorno `result` è cosi definito
+		- `result` è uguale a `gio.orari`
+
+
