@@ -88,10 +88,11 @@ Un’istanza di questa classe rappresenta una crociera
 - precondizioni → nessuna
 - postcondizioni →
 	- non modifica il livello estensionale
-	- sia `i` il valore dell’attributo `inizio` di `this`
-	- sia `it:Itinerario` tale che esiste il link `(this, it):crociera_itinerario`
-	- sia `d` il risultato di `it.durata_g()`
-	- `result` è uguale a `i+d`
+	- il valore di ritorno `result` è così definito
+		- sia `i` il valore dell’attributo `inizio` di `this`
+		- sia `it:Itinerario` tale che esiste il link `(this, it):crociera_itinerario`
+		- sia `d` il risultato di `it.durata_g()`
+		- `result` è uguale a `i+d`
 
 `posti_disponibili(t:DataOra): Intero >= 0`
 
@@ -99,4 +100,6 @@ Un’istanza di questa classe rappresenta una crociera
 Un’istanza di questa classe rappresenta un posto da vedere durante eventuali escursioni organizzate
 #### Specifica delle operazioni di classe
 `apertura(g:Stringa): {Ora, Ora}`
-- precondizioni → 
+- precondizioni → sia `gio:Giorno` tale che esista almeno un link `(this, gio):posti_giorno` tale che `g==gio`
+- postcondizioni →
+	- l’operazione non modifica il livello estensionale
