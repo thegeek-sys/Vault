@@ -48,3 +48,35 @@
 	2. Crociera (vd. 1)
 	3. Numero di posti prenotati (un intero maggiore di zero)
 	4. Cliente  che effettua la prenotazione (vd. 6)
+
+---
+## Diagramma delle classi UML
+
+---
+## Specifica dei tipi di dato
+- DeltaDataOra → {giorno:Intero > 0, ora:Ora}
+- CodiceCrociera → secondo standard
+
+---
+## Specifica di classe
+### Itinerario
+Un’istanza di questa classe rappresenta un itinerario, cioè una sequenza di destinazione, che può essere seguita dalle crociere
+#### Specifica delle operazioni di classe
+`durata_g(): Intero >= 0`
+- precondizioni → nessuna
+- postcondizioni:
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `(this, d):arrivo` l’unico link `arrivo` che coinvolge `this`
+		- `result` è `(this, d).ora.giorno`
+
+### Destinazione
+Un’istanza di questa classe rappresenta una destinazione, ossia un luogo toccato da itinerari di crociere
+#### Specifica delle operazioni di classe
+`esotica(): Booleano`
+- precondizioni → nessuna
+- postcondizioni →
+	- nessuna modifica al livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `c:Continente` tale che `(this,c):destinazione_continente`
+		- `result = true` se e solo se
