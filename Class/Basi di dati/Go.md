@@ -5,6 +5,11 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Raffinamento dei requisiti|Raffinamento dei requisiti]]
+- [[#Diagramma UML delle classi|Diagramma UML delle classi]]
+- [[#Specifica dei tipi di dato|Specifica dei tipi di dato]]
+---
 ## Raffinamento dei requisiti
 1. Giocatori
 	1. nickname (una stringa, univoca)
@@ -27,3 +32,11 @@ Completed:
 	1. Nome (una stringa)
 	2. Desctizione testuale (una stringa)
 	3. edizione (un intero, riferisce un anno)
+
+---
+## Diagramma UML delle classi
+![[Pasted image 20250329150930.png]]
+
+---
+## Specifica dei tipi di dato
+- Punteggio → {bianco:Intero≥0, nero:Intero≥0}
