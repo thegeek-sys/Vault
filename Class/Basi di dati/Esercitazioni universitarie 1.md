@@ -24,3 +24,11 @@ Completed:
 	3. ogni esercizio puo essere:
 		1. solo presentato (svolto in modo autonomo)
 		2. risolto in aula (quale delle soluzioni disponibili è stata mostrata)
+
+---
+## Diagramma UML delle classi
+![[Pasted image 20250329225747.png]]
+
+---
+## Specifica sui tipi di dato
+- Matricola → secondo standard
