@@ -40,6 +40,7 @@ def sortTop(G):
 	ST = []
 	while sorgenti:
 		u = sorgenti.pop()
+		ST.append(u)
 		for v in G[u]
 			gradoEnt[v]-=1
 			if gradoEnt[v] == 0:
