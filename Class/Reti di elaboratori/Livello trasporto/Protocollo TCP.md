@@ -140,4 +140,21 @@ Quando un segmento viene inviato, una copia viene memorizzata in una coda di att
 ## Controllo del flusso
 L’obbiettivo del mittente (per quanto riguarda il controllo del flusso) è quello di non sovraccaricare il buffer del destinatario ritrasmettendo troppi dati, troppo velocemente (bilanciare velocità di invio con velocità di ricezione a livello di processi)
 
-Per farlo il destinatario invia un feedback esplicito in cui domunica al mittente lo spazio disponibile includendo
+![[Pasted image 20250401011345.png|center|650]]
+
+Per farlo il destinatario invia un feedback esplicito in cui comunica al mittente lo spazio disponibile includendo il valore di **receive window** (*RWND*) nei segmenti (header TCP)
+
+![[Pasted image 20250401011426.png|center|650]]
+
+### Finestra di invio
+L’apertura, la chiusura e la riduzione della finestra di invio sono controllare dal destinatario
+
+![[Pasted image 20250401011547.png]]
+![[Pasted image 20250401011621.png]]
+
+>[!example] Esempio
+>>[!info]
+>>Si ipotizza una comunicazione unidirezionale dal client al server. Per questo motivo viene mostrata una sola finestra per lato
+>
+>![[Pasted image 20250401011737.png]]
+
