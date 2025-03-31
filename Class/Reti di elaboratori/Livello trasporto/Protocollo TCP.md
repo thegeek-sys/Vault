@@ -116,4 +116,8 @@ Quando un segmento viene inviato, una copia viene memorizzata in una coda di att
 ![[Pasted image 20250401005143.png]]
 
 ### Segmento smarrito
-![[Pasted image 20250401005305.png]]
+![[Pasted image 20250401005305.png|600]]
+
+### Ritrasmissione rapida
+![[Pasted image 20250401005441.png|600]]
+
