@@ -5,7 +5,7 @@ Related:
   - "[[Grafi]]"
 Completed:
 ---
-	---
+---
 ## Index
 - [[#Introduction|Introduction]]
 - [[#Visita in ampiezza|Visita in ampiezza]]
@@ -54,7 +54,7 @@ def BFS(x, G):
 	return visitati
 
 # >> G=[[1,5], [2], [3], [4], [], [2,4], [2]]
-# >> BFS(0,G)
+# >> BFS(0,G£)
 # [1,1,1,1,1,1,0]
 ```
 Alla fine $\text{visitati}[u]=1$ se e solo se $u$ è raggiungibile da $x$.
