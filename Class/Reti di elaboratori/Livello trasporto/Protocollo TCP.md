@@ -75,3 +75,41 @@ Si utilizza un half close quando non si è ancora finito di trasferire dati. Inf
 ![[Pasted image 20250331235213.png]]
 
 ---
+## Numeri di sequenza e ACK
+I **numeri di sequenza** indicano il “numero” del primo byte del segmento nel flusso di byte, mentre l’**ACK** indica il numero di sequenza del prossimo byte  atteso dall’altro alto (è un ACK cumulativo)
+
+>[!question] Come gestisce il destinatario i segmenti fuori sequenza?
+>La specifica TCP non lo dice, solitamente il destinatario mantiene i byte non ordinati
+
+>[!example] Una semplice applicazione Telnet
+>![[Pasted image 20250401003521.png|370]]
+
+---
+## Affidabilità TCP (controllo degli errori)
+Per il controllo degli errori nel TCP vengono utilizzati tre mezzi:
+- Checksum → se un segmento arriva corrotto viene scartato dal destinatario
+- Riscontri e timer di ritrasmissione (RTO) → ack cumulativi e timer associato al più vecchio pacchetto non riscontrato
+- Ritrasmissione → ritrasmissione del segmento all’inizio della coda di spedizione
+
+>[!question] Perché ACK cumulativi?
+
+
+---
+## Generazione di ACK
+
+| Evento                                                                                                                                     | Azione                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. ACK trasmesso in piggy backing                                                                                                          |                                                                                                                                                     |
+| 2. Arrivo ordinato di un segmento con numero di sequenza atteso. Tutti i dati fino al numero di sequenza atteso sono già stati riscontrati | ACK delayed. Attende fino a 500 ms l’arrivo del prossimo segmento (per poter riscontrare un ack cumulativo). Se il segmento non arriva, inva un ACK |
+| 3. Arrivo ordinato di un segmento con numero di sequenza atteso. Un altro segmento è in attesa di trasmissione dell’ACK (vedi precedente)  | Invia immediatamente un singolo ACK cumulativo, riscontrando entrambi i segmenti ordinati                                                           |
+| 4. Arrivo non ordinato di un segmento con numero di sequenza superiore a quello atteso. Viene rilevato un buco                             | Invia immediatamente un ACK duplicato, indicando il numero di sequenza del prossimo byte atteso (ritrasmissione rapida)                             |
+| 5. Arrivo di un segmento mancante (uno o più dei successivi è stato ricevuto)                                                              | Invia immediatamente un ACK                                                                                                                         |
+| 6. Arrivo di un segmento duplicato                                                                                                         | Invia immediatamente un riscontro con numero di sequenza atteso                                                                                     |
+### Ritrasmissione dei segmenti
+Quando un segmento viene inviato, una copia viene memorizzata in una coda di attesa di essere riscontrato (finestra di invio). Se il segmento non viene riscontrato può accadere che:
+- scade il timer (è il primo segmento all’inizio della coda) → il segmento viene ritrasmesso e viene riavviato il timer
+- vengono ricevuti 3 ack duplicati → ritrasmissione veloce del segmento (senza attendere il timeout)
+
+---
+## FSM mittente
+![[Pasted image 20250401004742.png]]
