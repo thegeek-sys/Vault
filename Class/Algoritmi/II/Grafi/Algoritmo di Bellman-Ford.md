@@ -27,6 +27,8 @@ Alla luce di quanto appena detto sui cicli negativi, la formulazione del problem
 >[!question] Problema
 >Dato un grafo diretto e pesato $G$ in cui i pesi degli archi possono essere anche negativi **ma che non contiene cicli negativi**, e fissato un suo nodo $s$, vogliamo determinare il costo minimo dei cammini che conducono da $s$ a tutti gli altri nodi del grafo. Se non esiste un cammino verso un determinato nodo il costo sarà infinito
 
+---
+## Algoritmo di Bellman-Ford
 Per risolvere questo problema, come abbiamo già visto, non è possibile usare l’algoritmo di Dijsktra. Useremo quindi l’**algoritmo di Bellman-Ford**, di complessità $O(n^2+m\cdot n)$
 
 >[!info] Proprietà
@@ -75,3 +77,47 @@ $$
 >
 >Questo permette di accedere rapidamente agli archi entranti di un nodo, migliorando l’efficienza
 
+### Implementazione
+
+```python
+def trasposto(G):
+	GT = [[] for _ in G]
+	for i in range(len(G)):
+		for j,costo in G[i]:
+			GT[j].append((i,costo))
+	return GT
+
+def costo_cammini(G, s):
+	T = [[float('inf')]*len(G) for _ in range(len(G))]
+	T[0][s] = 0
+	GT = trasposto(G)
+	for i in range(1,n)
+		for j in range(n):
+			T[i][j] = T[i-1][j]
+			if j!=s:
+				for x,costo in GT[j]:
+					T[i][j]=min(T[i][j], T[i-1][x]+costo)
+	return T[len(G)-1]
+
+# >> G = [
+# [(1,3),(3,6)],
+# [],
+# [(1,1)],
+# [(2,-5)],
+# [(0,2)]
+# ]
+# >> costo_cammini(G,0)
+# [0,2,1,6,inf]
+# >> costo_cammini(G,4)
+# [-2,0,-1,4,0]
+```
+La complessità è:
+- l’inizializzazione della tabella $T$ costa $\Theta(n^2)$
+- la costruzione del grafo trasposto $GT$ richiede tempo $O(n+m)$
+- per i tre $\verb|for|$ annidati è ovvio il limite superiore $O(n^3)$, ma facciamo un’analisi più attenta. I due $\verb|for|$ più interni hanno costo totale $\Theta(m)$, infatti il tempo richiesto è sostanzialmente quello di scorrere tutte le lista di adiacenza del grafo $GT$ che hanno lunghezza totale $m$. Se ad esempio nel primo $\verb|for|$ interno si itera su tutti i nodi (caso peggiore), nel secondo non si entrerà neanche una volta (non ci saranno archi entranti)
+
+La complessità complessiva è $O(n^2+mn)$
+
+---
+## Trovare anche i cammini
+Per ritrovare anche i cammini (oltre al loro costo)
