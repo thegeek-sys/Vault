@@ -44,4 +44,6 @@ Calcoleremo la soluzione al nostro problema determinando i valori della tabella.
 
 >[!example]
 >Alla creazione, la tabella sarà del tipo:
+>![[Pasted image 20250331105341.png]]
 >
+>Se $n-1$ e 
