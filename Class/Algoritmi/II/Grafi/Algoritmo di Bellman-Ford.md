@@ -33,5 +33,15 @@ Per risolvere questo problema, come abbiamo già visto, non è possibile usare l
 >Se il grafo $G$ non contiene cicli negativi, allora per ogni nodo $t$ raggiungibile dalla sorgente $s$ esiste un cammino di costo minimo che attraversa al più $n-1$ archi
 
 Infatti, se un cammino avesse più di $n-1$ archi, allora almeno un nodo verrebbe ripetuto, formando un ciclo. Poiché il grafo non ha cicli negativi, rimuovere eventuali cicli dal cammino **non aumenta** il suo costo complessivo, di conseguenza esiste sempre un cammino ottimale di lunghezza $n-1$
-Questo garantisce che il costo minimo può essere calcolato considerando solo cammini di questa lunghezza
+Questo garantisce che il costo minimo può essere calcolato considerando solo cammini di questa lunghezza, è quindi possibile considerare sottoproblemi che si ottengono limitando la lunghezza dei cammini.
 ![[Pasted image 20250328013014.png|600]]
+
+Definiamo così la seguente tabella di dimensione $n\times n$
+$$
+T[i][j]=\text{costo di un cammino minimo da }s\text{ al nodo }j\text{ attraversando al più }i\text{ archi}
+$$
+Calcoleremo la soluzione al nostro problema determinando i valori della tabella. Infatti il costo minimo per andare da $s$ (sorgente) al generico nodo $t$ sarà $T[n-1][t]$
+
+>[!example]
+>Alla creazione, la tabella sarà del tipo:
+>
