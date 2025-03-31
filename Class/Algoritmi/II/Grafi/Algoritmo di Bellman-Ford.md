@@ -120,4 +120,30 @@ La complessità complessiva è $O(n^2+mn)$
 
 ---
 ## Trovare anche i cammini
-Per ritrovare anche i cammini (oltre al loro costo)
+Per ritrovare anche i cammini (oltre al loro costo) con la tabella $T$ bisogna calcolare anche l’albero $P$ dei padri (cammini minimi). Questo si può fare facilmente mantenendo per ogni nodo $j$ il suo predecessore, cioè il nodo $u$ che precede $j$ nel cammino. Il valore di $P[j]$ andrà aggiornando ogni volta che il valore di $T[k][j]$ cambia (ovvero diminuisce) in quanto abbiamo trovato un cammino migliore
+
+```python
+def costo_cammini1(G, s):
+	T = [[float('inf')]*len(G) for _ in range(len(G))]
+	P = [-1]*len(G)
+	GT = trasposto(G)
+	
+	T[0][s] = 0
+	P[s] = s
+	for i in range(1,n)
+		for j in range(n):
+			if j==s:
+				T[k][j] = 0
+			else:
+				for x,costo in GT[j]:
+					if T[k-1][x]+costo < T[k][j]:
+						T[k][j] = T[k-1][x]+costo
+						P[j] = x
+	return T[len(G)-1], P
+```
+Con questa implementazione al temine dell’algoritmo:
+- $T[n-1][j]\neq+\infty$ indica che $j$ è raggiungibile da $s$ (in questo caso $P[j]$ conterrà il nodo che precede $j$ nel cammino minimo da $s$ a $j$)
+- $T[n-1][j]=+\infty$ indica che $j$ non è raggiungibile a partire da $s$ (in questo caso $P[j]$ conterrà il valore $-1$)
+
+---
+## Ottimizzazioni
