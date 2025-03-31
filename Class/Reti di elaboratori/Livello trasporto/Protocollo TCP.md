@@ -49,4 +49,29 @@ E’ strutturata in 3 fasi:
 3. chiusura della connessione
 
 ### Apertura della connessione - 3 way handshake
+![[Pasted image 20250331233933.png]]
+Il numero di sequenza viene assegnato randomicamente (risulterebbe improbabile che due connessioni abbiamo lo stesso numero di sequenza, in ogni caso cambierebbe il socket)
 
+### Trasferimento dati
+#### Push
+![[Pasted image 20250331234135.png]]
+
+#### Urgent
+I dati **URG** vengono elaborati subito indipendentemente dalla loro posizione nel flusso. Quando il flag è attivo infatti si controlla il campo puntatore urgente (16 bit) che contiene un indirizzo relativo ad una posizione nel campo dati.
+
+Infatti i dati urgenti vengono inseriti all’inizio di un nuovo segmento (che può contenere dati non urgenti a seguire) e il puntatore nell’intestazione indica dove finiscono i dati urgenti ed iniziano quelli normali
+
+>[!example] Interruzione data transfer
+
+### Chiusura della connessione
+Ciascuna delle due parti coinvolta nello scambio dati può richiedere la chiusura della connessione (sebbene sia solitamente richiesta dal client), oppure timer nel server (se non si ricevono richieste entro un determinato tempo si chiude la connessione)
+
+La chiusura avviene attraverso un doppio scambio di messaggi FIN e ACK
+![[Pasted image 20250331234714.png]]
+
+#### Half close
+Si utilizza un half close quando non si è ancora finito di trasferire dati. Infatti il server al posto di inviare FIN e ACK in risposta a FIN del client, invia solo ACK e solo una volta finito il trasferimento verrà inviato FIN
+
+![[Pasted image 20250331235213.png]]
+
+---
