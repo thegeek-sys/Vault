@@ -121,3 +121,23 @@ Quando un segmento viene inviato, una copia viene memorizzata in una coda di att
 ### Ritrasmissione rapida
 ![[Pasted image 20250401005441.png|600]]
 
+### Riscontro smarrito senza ritrasmissione
+![[Pasted image 20250401005628.png|600]]
+
+### Riscontro smarrito con ritramissione
+![[Pasted image 20250401005715.png|600]]
+
+### Riassunto sui meccanismi adottati da TCP
+- **pipeline** → approccio ibrido tra GBN e ripetizione selettiva
+- **numero di sequenza** → primo byte del segmento
+- **ACK cumulativo** (conferma tutti i byte precedenti a quello indicato) e **delayed** (posticipato, nel caso di arrivo di un pacchetto in sequenza, con precedenti già riscontrati)
+- **timeout** basato su RTT → unico timer di ritrasmissione (associato al più vecchio segmento non riscontrato). Quando arriva un notifica immediata, si riavvia il timer sul più vecchio segmento non riscontrato
+- **ritrasmissione**
+	- **singola** → solo il segmento non riscontrato (non i successivi)
+	- **rapida** → al terzo ACK duplicato prima del timeout si ritrasmette
+
+---
+## Controllo del flusso
+L’obbiettivo del mittente (per quanto riguarda il controllo del flusso) è quello di non sovraccaricare il buffer del destinatario ritrasmettendo troppi dati, troppo velocemente (bilanciare velocità di invio con velocità di ricezione a livello di processi)
+
+Per farlo il destinatario invia un feedback esplicito in cui domunica al mittente lo spazio disponibile includendo
