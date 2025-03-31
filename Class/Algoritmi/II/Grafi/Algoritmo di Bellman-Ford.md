@@ -46,4 +46,10 @@ Calcoleremo la soluzione al nostro problema determinando i valori della tabella.
 >Alla creazione, la tabella sarà del tipo:
 >![[Pasted image 20250331105556.png]]
 >
->Se $n-1$ e $n-2$ sono uguali allora ho il costo minimo, se sono diversi vuol dire che ci sta un ciclo negativo
+>Se $n-1$ e $n-2$ sono uguali allora ho il costo minimo, se sono diversi vuol dire che ci sta un ciclo negativo (i costi sono calcolati in base alla riga precedente)
+
+I valori della prima riga della tabella $T$ sono ovviamente tutti $+\infty$ tranne $T[0][s]$ che vale $0$. Inoltre $T[i][s]=0$ per ogni $i>0$
+
+Resta da definire la regola che permette di calcolare i valori delle celle $T[i][j]$ con $j\neq s$ della riga $i>0$ in funzione delle celle già calcolare della riga $i-1$
+Distinguiamo due casi a seconda che il cammino di lunghezza al più $i$ da $s$ a $j$ abbia lunghezza inferiore a $i$ o esattamente $i$:
+- nel primo caso ovviamente si ha $T[i][j]=T[i][j-1]$
