@@ -114,3 +114,6 @@ Quando un segmento viene inviato, una copia viene memorizzata in una coda di att
 
 ### Normale operatività
 ![[Pasted image 20250401005143.png]]
+
+### Segmento smarrito
+![[Pasted image 20250401005305.png]]
