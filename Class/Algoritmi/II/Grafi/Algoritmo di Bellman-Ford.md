@@ -53,11 +53,11 @@ I valori della prima riga della tabella $T$ sono ovviamente tutti $+\infty$ tran
 Resta da definire la regola che permette di calcolare i valori delle celle $T[i][j]$ con $j\neq s$ della riga $i>0$ in funzione delle celle già calcolare della riga $i-1$
 Distinguiamo due casi a seconda che il cammino di lunghezza al più $i$ da $s$ a $j$ abbia lunghezza esattamente $i$ o inferiore a $i$:
 - nel primo caso ovviamente si ha $T[i][j]=T[i][j-1]$
-- nel secondo caso deve invece esistere un cammino minimo di lunghezza al più $i-1$ ad un nodo $x$ e poi un arco che da $x$ mi porta a $j$, ovvero $T[i][j]=\underset{(x,j)\in E}{\text{min}}\left(T[i-1][x]+\text{costo}(x,j)\right)$. Tradotta questo formula significa “tra tutti gli archi che portano a $x$, scegli quello che costa meno”
+- nel secondo caso deve invece esistere un cammino minimo di lunghezza al più $i-1$ ad un nodo $x$ e poi un arco che da $x$ mi porta a $j$, ovvero $T[i][j]=\underset{(x,j)\in E}{\text{min}}\left(T[i-1][x]+\text{costo}(x,j)\right)$. Tradotta questo formula significa “tra tutti gli archi $x$ che portano a $j$, scegli quello che costa meno prendendolo dalla riga precedente e sommando il costo di $(x,j)$”
 
 Non sapendo in quale dei due casi siamo la formula giusta è:
 $$
 T[i][j]=\underset{(x,j)\in E}{\text{min}}\biggl(T[i-1][j],\;\;T[i-1][x]+\text{costo}(x,j)\biggl)
 $$
 
-Risssumento 
+Riassumendo le celle della tabella possono essere riempite per righe in base a questa regola:
