@@ -41,3 +41,12 @@ I flag di controllo assumono significato quando sono impostati a $1$
 
 ---
 ## Connessione TCP
+La connessione TCP è il percorso virtuale tra il mittente e il destinatario, sopra IP che è privo di connessione
+
+E’ strutturata in 3 fasi:
+1. apertura della connessione
+2. trasferimento dei dati
+3. chiusura della connessione
+
+### Apertura della connessione - 3 way handshake
+
