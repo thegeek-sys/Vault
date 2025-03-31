@@ -57,7 +57,21 @@ Distinguiamo due casi a seconda che il cammino di lunghezza al più $i$ da $s$ a
 
 Non sapendo in quale dei due casi siamo la formula giusta è:
 $$
-T[i][j]=\underset{(x,j)\in E}{\text{min}}\biggl(T[i-1][j],\;\;T[i-1][x]+\text{costo}(x,j)\biggl)
+T[i][j]=\underset{(x,j)\in E}{\text{min}}\Bigl(T[i-1][j],\;\;T[i-1][x]+\text{costo}(x,j)\Bigl)
 $$
 
 Riassumendo le celle della tabella possono essere riempite per righe in base a questa regola:
+$$
+T[i][j]=
+\begin{cases}
+0&\text{se }j=s \\
++\infty&\text{se }i=0 \\
+\underset{(x,j)\in E}{\text{min}}\Bigl(T[i-1][j],\;\;T[i-1][x]+\text{costo}(x,j)\Bigl)&\text{altriementi}
+\end{cases}
+$$
+
+>[!hint]
+>Per un’implementazione efficiente, poiché nel calcolo della formula è necessario più volte conoscere gli archi entranti del generico nodo $j$, conviene precalcolare il grafo trasposto $GT$ di $G$. In questo modo, in $GT[j]$ avremo l’elenco di tutti i nodi $x$ tali che in $G$ esiste un arco da $x$ a $j$.
+>
+>Questo permette di accedere rapidamente agli archi entranti di un nodo, migliorando l’efficienza
+
