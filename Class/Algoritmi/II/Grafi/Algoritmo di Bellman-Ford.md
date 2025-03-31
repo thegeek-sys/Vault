@@ -6,6 +6,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Algoritmo di Bellman-Ford|Algoritmo di Bellman-Ford]]
+	- [[#Algoritmo di Bellman-Ford#Implementazione|Implementazione]]
+- [[#Trovare anche i cammini|Trovare anche i cammini]]
+- [[#Ottimizzazioni|Ottimizzazioni]]
+---
 ## Introduction
 
 >[!question] Problema
@@ -147,3 +154,12 @@ Con questa implementazione al temine dell’algoritmo:
 
 ---
 ## Ottimizzazioni
+Il contenuto di una cella della riga $k$ dipende dal contenuto delle celle alla riga $k-1$, quindi:
+- se la riga $k$ della tabella $T$ è identica alla riga $k-1$ anche le righe seguenti non varieranno, tanto vale allora terminare l’algoritmo senza aver calcolato le restanti della tabella. Questo accorgimento non modifica la complessità asintotica dell’algoritmo ma in pratica può contare molto
+- non serve memorizzare l’intera tabella $T$, bastano le ultime due righe. Perciò l’algoritmo può essere facilmente modificato in modo da utilizzare memoria $O(n)$ anziché $O(n^2)$
+
+Una piccola modifica della versione dell’algoritmo di Bellman-Ford appena descritto permette di scoprire se il grafo contiene cicli negativi raggiungibili da $s$ o meno:
+- calcola una riga in più della tabella (vale a dire la riga $n$) con il costo dei cammini minimi di lunghezza al più $n$
+- le righe $n$ ed $n-1$ della tabella risultano identiche se e solo se nel grafo non ci sono cicli negativi raggiungibili da $s$
+
+Implementare questo test ovviamente non cambia l’asintotica dell’algoritmo
