@@ -5,7 +5,14 @@ Related:
   - "[[Grafi]]"
 Completed:
 ---
-£---
+---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Errori|Errori]]
+	- [[#Errori#Algoritmo grafi non diretti|Algoritmo grafi non diretti]]
+- [[#Algoritmo|Algoritmo]]
+	- [[#Algoritmo#Algoritmo grafi diretti|Algoritmo grafi diretti]]
+---
 ## Introduction
 Dato un grafo $G$ (diretto o indiretto) ed un suo nodo $u$ vogliamo sapere se da $u$ è possibile raggiungere un ciclo in $G$
 
@@ -20,6 +27,7 @@ Nei grafi non diretti l’algoritmo restituirebbe sempre `True` in quanto ogni a
 
 Per risolvere il problema, durante la visita alla ricerca del ciclo, devo distinguere nella lista di adiacenza di ciascun nodo $y$ che incontro, il nodo $x$ che mi ha portato a visitarlo (non devo continuare la ricerca su $y$ se il prossimo nodo $x$ è il padre)
 
+### Algoritmo grafi non diretti
 ```python
 def DFSr(u, padre, G, visitati):
 	visitati[u] = 1
@@ -61,6 +69,7 @@ Per il vettore $V$ dei visitati uso tre step:
 - in $V$ un nodo vale $2$ se il nodo è stato visitato e la ricorsione su quel nodo è finita
 In questo modo scopro un ciclo quando trovo un arco diretto verso un nodo già visitato che si trova nello stato $1$
 
+### Algoritmo grafi diretti
 ```python
 def DFSr(u, G, visitati):
 	visitati[u] = 1
