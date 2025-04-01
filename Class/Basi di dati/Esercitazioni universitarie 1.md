@@ -27,7 +27,7 @@ Completed:
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250329225747.png]]
+![[Pasted image 20250401092945.png]]
 
 ---
 ## Specifica sui tipi di dato
