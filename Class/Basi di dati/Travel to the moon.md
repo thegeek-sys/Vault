@@ -97,6 +97,15 @@ Un’istanza di questa classe rappresenta una crociera
 		- `result` è uguale a `i+d`
 
 `posti_disponibili(t:DataOra): Intero >= 0`
+- precondizioni → nessuna
+- postcondizioni → 
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito:
+		- sia `n:Nave` tale che `(this, n):croc_nave`
+		- sia `c=n.capienza`
+		- sia `P` l’insieme di tutti i `p:Prenotazione` tali che `(this, p):croc_pren` e `p.ora<=t`
+		- sia `N` la somma dei valori `p.posti` di tutti gli elementi di `P`
+		- `result=c-N`
 
 ### PostiDaVedere
 Un’istanza di questa classe rappresenta un posto da vedere durante eventuali escursioni organizzate
