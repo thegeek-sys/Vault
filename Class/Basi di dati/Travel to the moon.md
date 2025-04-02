@@ -102,7 +102,8 @@ Un’istanza di questa classe rappresenta una crociera
 Un’istanza di questa classe rappresenta un posto da vedere durante eventuali escursioni organizzate
 
 `[V.Posto.Apertura.non_sovrapposte]`
-Per ogni `p:Posto`, per ogni coppia `(a1,a2)` di valori distinti di `p.apertura`
+Per ogni `p:Posto`, per ogni coppia `(a1,a2)` di valori distinti di `p.apertura` deve valere che:
+- `a1.ora>a1.ora+durata_min` oppure `a1.ora+a1.durata_min<=a2.ora`
 #### Specifica delle operazioni di classe
 `apertura(g:Stringa): {Ora, Ora}`
 - precondizioni → sia `gio:Giorno` tale che esista esattamente un link `(this, gio):posti_giorno` tale che `g==gio.giorno`
