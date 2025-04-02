@@ -55,7 +55,7 @@
 
 ---
 ## Specifica dei tipi di dato
-- DeltaDataOra → {giorno:Intero > 0, ora:Ora}
+- DeltaDataOra → {giorno:Intero > 0, ora:Ora} // numero di giorni dall’inizio della crociera
 - CodiceCrociera → secondo standard
 
 ---
