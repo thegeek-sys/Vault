@@ -57,6 +57,7 @@
 ## Specifica dei tipi di dato
 - DeltaDataOra → {giorno:Intero > 0, ora:Ora} // numero di giorni dall’inizio della crociera
 - CodiceCrociera → secondo standard
+- Apertura → {giorno: {lun,mart,…}, ora_apertura:Ora, durata_min:Intero}
 
 ---
 ## Specifica di classe
@@ -99,6 +100,9 @@ Un’istanza di questa classe rappresenta una crociera
 
 ### PostiDaVedere
 Un’istanza di questa classe rappresenta un posto da vedere durante eventuali escursioni organizzate
+
+`[V.Posto.Apertura.non_sovrapposte]`
+Per ogni `P`
 #### Specifica delle operazioni di classe
 `apertura(g:Stringa): {Ora, Ora}`
 - precondizioni → sia `gio:Giorno` tale che esista esattamente un link `(this, gio):posti_giorno` tale che `g==gio.giorno`
@@ -106,5 +110,4 @@ Un’istanza di questa classe rappresenta un posto da vedere durante eventuali e
 	- l’operazione non modifica il livello estensionale
 	- il valore di ritorno `result` è cosi definito
 		- `result` è uguale a `gio.orari`
-
 
