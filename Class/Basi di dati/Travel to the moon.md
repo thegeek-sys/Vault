@@ -85,6 +85,12 @@ Un’istanza di questa classe rappresenta una destinazione, ossia un luogo tocca
 
 ### Crociera
 Un’istanza di questa classe rappresenta una crociera
+
+`[Crociera.no_overbooking]`
+- Per ogni `c:Crociera`
+- Per ogni `t:DataOra`
+- deve essere `c.posti_disponibili(t)>=0`
+
 #### Specifica delle operazioni di classe
 `fine(): Data`
 - precondizioni → nessuna
