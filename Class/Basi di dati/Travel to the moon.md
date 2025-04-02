@@ -51,7 +51,7 @@
 
 ---
 ## Diagramma delle classi UML
-![[Pasted image 20250328101936.png]]
+
 
 ---
 ## Specifica dei tipi di dato
