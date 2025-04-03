@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Algoritmo di Kursal|Algoritmo di Kursal]]
+	- [[#Algoritmo di Kursal#Implementazione|Implementazione]]
+- [[#Kruskal con $ verb UNION $ e $ verb FIND $|Kruskal con UNION e FIND]]
+	- [[#Kruskal in $O(m log n)$|Kruskal in O(m log n)]]
+---
 ## Introduction
 Consideriamo un insieme di computer (server e/o router) che devono essere connessi tramite cavi a formare una rete in modo che ogni computer possa comunicare con ogni altro o tramite un cavo che li collega direttamente o passando per gli altri computer. Ogni possibile collegamento tramite cavo ha un costo. Un esempio è mostrato nella figura seguente:
 ![[Pasted image 20250321101549.png|450]]
