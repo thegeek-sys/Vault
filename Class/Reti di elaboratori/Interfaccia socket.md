@@ -113,3 +113,8 @@ Quando viene contattato dal client, il server TCP crea un nuovo socket per il pr
 
 ---
 ## Interazione client/server
+![[Pasted image 20250404191252.png|center|500]]
+
+### Terminologia
+- **Flusso** (*stream*) → una sequenza di caratteri che fluisce verso/da un processo
+- **Flusso d’ingresso** (*input stream*) → collegato a un’origine di input per il processo ad esempio la tastiera o la socket
