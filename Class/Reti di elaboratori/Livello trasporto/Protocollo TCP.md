@@ -245,6 +245,15 @@ La **TCP Tahoe** considera timeout e 3 ack duplicati come congestione e riparte 
 
 ![[Pasted image 20250404105849.png|550]]
 
+#### FSM
+![[Pasted image 20250404111354.png]]
 #### Affinamento
 Per ottimizzare questo processo si potrebbero utilizzare due approcci differenti nel caso in cui la congestione sia lieve o meno.
-Infatti 3 ack duplicati indicano la capacità della rete di consegnare qualche segmento (3 pacchetti oltre quelli di cui arriva l’ack sono arrivati), mentre un timeout prima di 3 ack duplicati è “più allarmante” poiché vuol dire che non 
+Infatti 3 ack duplicati indicano la capacità della rete di consegnare qualche segmento (3 pacchetti oltre quelli di cui arriva l’ack sono arrivati), mentre un timeout prima di 3 ack duplicati è “più allarmante” poiché vuol dire che non arrivano nemmeno i pacchetti seguenti
+
+Dunque nel caso di congestione leggera si utilizza la **fast recovery**, che permette di incrementare linearmente la `cwnd`. Ciò viene implementato nel **TCP Reno**
+
+### TCP Reno
+A differenza del TCP Tahoe qui si distingue la congestione importante (riparte da 1) dalla congestione lieve (applica fast recovery a partire da $\text{ssthreshold+3}$)
+
+![[Pasted image 20250404111443.png|550]]
