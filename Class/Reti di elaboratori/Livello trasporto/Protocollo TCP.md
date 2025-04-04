@@ -158,3 +158,5 @@ L’apertura, la chiusura e la riduzione della finestra di invio sono controllar
 >
 >![[Pasted image 20250401011737.png]]
 
+---
+## Controllo della congestione
