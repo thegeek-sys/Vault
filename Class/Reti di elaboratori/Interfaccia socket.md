@@ -96,3 +96,5 @@ Si hanno due tipi di servizio di trasporto tramite socket API:
 - datagramma inaffidabile
 - affidabile, orientata ai byte
 
+![[Pasted image 20250404122435.png|550]]
+
