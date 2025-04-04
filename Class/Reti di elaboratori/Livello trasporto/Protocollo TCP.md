@@ -195,7 +195,7 @@ $$
 $$
 
 ### 2. Rilevare la congestione
-Per rilevare la congestione si utilizzano, nell’approccio end-to-end, **ACK duplicati** e **timeout** poiché possono essere intesi come eventi di perdita (danno indicazione dello stato della rete)
+Per rilevare la congestione si utilizzano, nell’approccio end-to-end, **ACK duplicati** e **timeout** (diverso da [[#Riassunto sui meccanismi adottati da TCP|questo]] timeout) poiché possono essere intesi come eventi di perdita (danno indicazione dello stato della rete)
 
 In particolare se gli **ACK arrivano in sequenza e con buona frequenza**, vuol dire che si può inviare e **incrementare** la quantità di segmenti inviati, se invece si hanno **ACK duplicati o timeout**, vuol dire che è necessario **ridurre** la finestra dei pacchetti che si spediscono senza aver ricevuto riscontri
 
@@ -240,7 +240,7 @@ Con la congestion avoidance si ha un incremento lineare ogni qual volta che vien
 >
 >Con l’algoritmo congestion avoidance, la dimensione della finestra di congestione viene aumentata linearmente fino alla rilevazione della congestione
 
-### Implementazione TCP - TCP Tahoe
+### TCP Tahoe
 La **TCP Tahoe** considera timeout e 3 ack duplicati come congestione e riparte da $1$ con $\text{ssthreshold}=\frac{cwnd}{2}$
 
 ![[Pasted image 20250404105849.png|550]]
@@ -257,3 +257,19 @@ Dunque nel caso di congestione leggera si utilizza la **fast recovery**, che per
 A differenza del TCP Tahoe qui si distingue la congestione importante (riparte da 1) dalla congestione lieve (applica fast recovery a partire da $\text{ssthreshold+3}$)
 
 ![[Pasted image 20250404111443.png|550]]
+
+#### FSM
+![[Pasted image 20250404111737.png]]
+
+### Timeout
+
+>[!question] Come impostare il valore del timeout di TCP?
+>Si hanno varie possibilità di scelta:
+>- viene impostato al più grande tempo di andata e ritorno della connessione (RTT), ma questo varia
+>- se è troppo piccolo si ha un timeout prematuro (ritrasmissioni non necessarie)
+>- se è troppo grande si ha una reazione lenta alla perdita dei segmenti
+>
+>La soluzione quindi dovrebbe essere riuscire a stimare RTT
+
+>[!question] Come stimare RTT?
+>La misura di base per poter stimare RTT è il `SampleRTT`, ovvero il tempo misurato dalla trasmissione del segmento fino alla ricezione di ACK (questo ignora le ritrasmissione e si ha un solo `SampleRTT` per più segmenti trasmessi insieme)
