@@ -30,3 +30,6 @@ Il **socket** appare come un terminale o un file ma non è un’entità fisica. 
 Un socket address è composto da indirizzo IP e numero di porta
 ![[Pasted image 20250323170357.png|500]]
 
+---
+## Indirizzamento dei processi
+Affinché un processo su un host invii un messaggio a un processo su un altro host, il mittente deve identificare il processo destinatario
