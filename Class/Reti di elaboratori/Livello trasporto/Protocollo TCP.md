@@ -160,3 +160,4 @@ L’apertura, la chiusura e la riduzione della finestra di invio sono controllar
 
 ---
 ## Controllo della congestione
+Per congestione si intende informalmente che “troppe sorgenti trasmettono troppi dati, a una velocità talmente elevata che la rete ”
