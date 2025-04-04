@@ -213,3 +213,33 @@ L’algoritmo di controllo della congestione si basa su tre componenti:
 Nello **slow start** (*incremento esponenziale*) la `CWND` è inizializzata a $1\text{ MSS}$ (maximum segment size) e viene incrementata di $1\text{ MSS}$ per ogni segmento riscontrato
 
 ![[Pasted image 20250404103757.png|550]]
+
+>[!example]
+>Se arriva un riscontro, $cwnd=cwnd+1$ quindi:
+>- Inizio → $cwnd=1\to 2^0$
+>- Dopo 1 RTT → $cwnd=cwnd+1=1+1=2\to 2^1$
+>- Dopo 2 RTT → $cwnd=cwnd+2=2+2=4\to 2^2$
+>- Dopo 3 RTT → $cwnd=cwnd+4=4+4=8\to 2^3$
+
+Ma **fino a quando cresce la CWND**?
+La dimensione della finestra di congestione nell’algoritmo slow start viene aumentata esponenzialmente fino al raggiungimento di una soglia (*ssthreshold*)
+
+#### Congestion avoidance
+La `CWND` cresce finché non viene perso un pacchetto (in tal caso si pone $\text{ssthreshold}=cwnd/2$, *slow start treshold*). Solo a questo punto si arresta slow start e inizia **congestion avoidance** (*additive increase*)
+
+Con la congestion avoidance si ha un incremento lineare ogni qual volta che viene riscontrata l’intera finestra di segmenti (si incrementa di 1 la `cwnd`) finché non si rileva una congestione (timeout o 3 ack duplicati). Solo a questo punto si imposta $\text{ssthreshold}=\frac{cwnd}{2}$ e $cwnd=1$
+
+![[Pasted image 20250404104906.png|550]]
+
+>[!example]
+>Se arriva un riscontro, $cwnd=cwnd+\frac{1}{cwnd}$ quindi:
+>- Inizio → $cwnd=i$
+>- Dopo 1 RTT → $cwnd=i+1$
+>- Dopo 2 RTT → $cwnd=i+2$
+>- Dopo 3 RTT → $cwnd=i+3$
+>
+>Con l’algoritmo congestion avoidance, la dimensione della finestra di congestione viene aumentata linearmente fino alla rilevazione della congestione
+
+### Implementazione TCP - TCP Tahoe
+La **TCP Tahoe** considera timeout e 3 ack duplicati come congestione e riparte da $1$ con $\text{ssthreshold}=\frac{cwnd}{2}$
+
