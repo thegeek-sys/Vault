@@ -80,4 +80,19 @@ Nel livello trasporto della pila di protocolli TCP/IP sono previsti due protocol
 
 ### Quale servizio richiede l’applicazione?
 #### Perdita di dati
-Alcune applicazione (ad esempio )
+Alcune applicazione (es. audio) possono tollerare qualche perdita, mentre altre applicazioni (es. trasferimento dati) richiedono un trasferimento dati affidabile al 100%
+#### Temporizzazione
+Alcune applicazioni (es. giochi, Internet) per essere “realistiche” richiedono piccoli ritardi, mentre altre applicazioni (es. posta elettronica) non hanno particolari requisiti di temporizzazione
+#### Throughput
+Alcune applicazioni (es. multimediali) per essere efficaci richiedono un’ampiezza di banda minima, mentre altre applicazioni (“le applicazioni elastiche”) utilizzano l’ampiezza di banda che si rende disponibile
+#### Sicurezza
+Cifratura, integrità dei dati, …
+
+---
+## Programmazione con socket
+La **socket API** è stato introdotta in BDS4.1 UNIX nel 1981. Questa viene esplicitamente creata, usata, distribuita dalle applicazioni secondo il paradigma client/server
+
+Si hanno due tipi di servizio di trasporto tramite socket API:
+- datagramma inaffidabile
+- affidabile, orientata ai byte
+
