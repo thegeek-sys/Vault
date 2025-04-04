@@ -98,3 +98,15 @@ Si hanno due tipi di servizio di trasporto tramite socket API:
 
 ![[Pasted image 20250404122435.png|550]]
 
+**Pre-requisiti per contattare il server**:
+- il processo server deve essere in esecuzione
+- il server deve aver creato un socket che dà il benvenuto al contatto con il client
+
+**Il client contatta il server**:
+- creando un socket TCP
+- specificando l’indirizzo IP, il numero di porta del processo server
+- una volta fatto ciò il client TCP stabilisce una connessione con il server TCP
+
+![[Pasted image 20250404122919.png|400]]
+
+Quando viene contattato dal client, il server TCP crea un nuovo socket per il processo server per comunicare con il client che 
