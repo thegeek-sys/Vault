@@ -243,4 +243,8 @@ Con la congestion avoidance si ha un incremento lineare ogni qual volta che vien
 ### Implementazione TCP - TCP Tahoe
 La **TCP Tahoe** considera timeout e 3 ack duplicati come congestione e riparte da $1$ con $\text{ssthreshold}=\frac{cwnd}{2}$
 
+![[Pasted image 20250404105849.png|550]]
 
+#### Affinamento
+Per ottimizzare questo processo si potrebbero utilizzare due approcci differenti nel caso in cui la congestione sia lieve o meno.
+Infatti 3 ack duplicati indicano la capacità della rete di consegnare qualche segmento (3 pacchetti oltre quelli di cui arriva l’ack sono arrivati), mentre un timeout prima di 3 ack duplicati è “più allarmante” poiché vuol dire che non 
