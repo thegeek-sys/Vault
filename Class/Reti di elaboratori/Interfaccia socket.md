@@ -110,3 +110,6 @@ Si hanno due tipi di servizio di trasporto tramite socket API:
 ![[Pasted image 20250404122919.png|400]]
 
 Quando viene contattato dal client, il server TCP crea un nuovo socket per il processo server per comunicare con il client, così fa poter comunicare con più client utilizzando i numeri di porta di origine per distinguerli
+
+---
+## Interazione client/server
