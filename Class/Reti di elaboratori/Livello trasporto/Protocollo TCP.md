@@ -243,3 +243,4 @@ Con la congestion avoidance si ha un incremento lineare ogni qual volta che vien
 ### Implementazione TCP - TCP Tahoe
 La **TCP Tahoe** considera timeout e 3 ack duplicati come congestione e riparte da $1$ con $\text{ssthreshold}=\frac{cwnd}{2}$
 
+
