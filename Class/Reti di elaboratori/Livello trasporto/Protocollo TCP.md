@@ -212,3 +212,4 @@ L’algoritmo di controllo della congestione si basa su tre componenti:
 #### Slow start
 Nello **slow start** (*incremento esponenziale*) la `CWND` è inizializzata a $1\text{ MSS}$ (maximum segment size) e viene incrementata di $1\text{ MSS}$ per ogni segmento riscontrato
 
+![[Pasted image 20250404103757.png|550]]
