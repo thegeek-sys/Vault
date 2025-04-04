@@ -160,4 +160,55 @@ L’apertura, la chiusura e la riduzione della finestra di invio sono controllar
 
 ---
 ## Controllo della congestione
-Per congestione si intende informalmente che “troppe sorgenti trasmettono troppi dati, a una velocità talmente elevata che la rete ”
+Per congestione si intende informalmente che “troppe sorgenti trasmettono troppi dati, a una velocità talmente elevata che la rete non è in grado di gestirli”
+
+Questo problema influenza:
+- pacchetti smarriti → overflow nei buffer dei router
+- lunghi ritardi → accodamento nei buffer dei router
+
+>[!hint] Tra i dieci problemi più importanti del networking
+
+>[!info] Controllo della congestione vs. controllo del flusso
+>Con il controllo del flusso la dimensione della finestra di invio è controllata dal destinatario tramite il valore `rwnd` che viene indicato in ogni segmento trasmesso nella direzione opposta, in modo tale che la finestra del ricevente non viene mai sovraccaricata con i dati ricevuti
+>
+>I buffer intermedi (nei router) però possono comunque congestionarsi poiché un router riceve dati da più mittenti (non vi è congestione agli estremi ma vi può essere congestione nei nodi intermedi)
+>
+>La perdita di segmenti comporta la loro rispedizione, aumentando la congestione.
+>Dunque la congestione è un problema che riguarda IP ma viene gestito dal TCP
+
+### Approcci
+Esistono due principali approcci al controllo della congestione.
+
+Il **controllo di congestione end-to-end** non ha nessun supporto esplicito dalla rete, dunque la congestione è dedotta osservando le perdite e i ritardi nei sistemi terminali (metodo adottato da TCP).
+Mentre nel **controllo di congestione assistito dalla rete** i router forniscono feedback ai sistemi terminali, in particolare utilizzano un singolo bit per indicare la congestione (TCP/IP ENC) comunicando in modo esplicito al mittente la frequenza trasmissiva
+
+### Problematiche
+1. Come può il mittente limitare la frequenza di invio del traffico sulla propria connessione? [[#1. Finestra di congestione|Finestra di congestione]]
+2. Come può il mittente rilevare la congestione? [[#2. Rilevare la congestione|Rilevare la congestione]]
+3. Quale algoritmo dovrebbe essere usato per limitare la frequenza di invio in funzione della congestione end-to-end? [[#3. Controllo della congestione|Controllo della congestione]]
+
+### 1. Finestra di congestione
+Per controllare la congestione si usa la variabile `CWND` (*congestion window*, relativa alla congestione della rete) che insieme a `RWND` (relativa alla congestione del ricevente) definisce la dimensione della finestra di invio
+
+$$
+\text{Dimensione della finestra}=\text{min(rwnd, cwnd)}
+$$
+
+### 2. Rilevare la congestione
+Per rilevare la congestione si utilizzano, nell’approccio end-to-end, **ACK duplicati** e **timeout** poiché possono essere intesi come eventi di perdita (danno indicazione dello stato della rete)
+
+In particolare se gli **ACK arrivano in sequenza e con buona frequenza**, vuol dire che si può inviare e **incrementare** la quantità di segmenti inviati, se invece si hanno **ACK duplicati o timeout**, vuol dire che è necessario **ridurre** la finestra dei pacchetti che si spediscono senza aver ricevuto riscontri
+
+Dunque si può dire che il TCP è **auto-temporizzante** in quanto reagisce in base ai riscontri che ottiene
+
+### 3. Controllo della congestione
+L’idea alla base del controllo della congestione è quella di incrementare il rate di trasmissione se non c’è congestione (ack), diminuire se c’è congestione (segmenti persi)
+
+L’algoritmo di controllo della congestione si basa su tre componenti:
+- **slow start**
+- **congestion avoidance**
+- **fast recovery**
+
+#### Slow start
+Nello **slow start** (*incremento esponenziale*) la `CWND` è inizializzata a $1\text{ MSS}$ (maximum segment size) e viene incrementata di $1\text{ MSS}$ per ogni segmento riscontrato
+
