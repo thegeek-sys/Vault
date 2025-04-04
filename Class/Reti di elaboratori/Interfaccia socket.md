@@ -33,3 +33,51 @@ Un socket address è composto da indirizzo IP e numero di porta
 ---
 ## Indirizzamento dei processi
 Affinché un processo su un host invii un messaggio a un processo su un altro host, il mittente deve identificare il processo destinatario
+Un host ha un indirizzo IP univoco a $32\text{ bit}$ ma non è sufficiente questo per identificare anche il processo (sullo stesso host possono essere in esecuzione più processi) ma è necessario anche il **numero di porta** associato al processo
+
+### Come viene recapitato un pacchetto all’applicazione
+![[Pasted image 20250404120414.png|400]]
+
+---
+## Numeri di porta
+I numeri di porta sono contenuti in $16 \text{ bit}$ ($0-65535$). Svariate porte sono usate da server noti (FTP 20, TELNET 23, SMTP 25, HTTP 80, POP3 110 etc.)
+
+L’assegnamento delle porte segue queste regole:
+- $0$ → non usata
+- $1-255$ → riservate per processi noti
+- $256-1023$ → riservate per altri processi
+- $1024-65535$ → dedicate alle app utente
+
+---
+## Individuare i socket address
+L’interazione tra client e server è **bidirezionale**. E’ necessaria quindi una coppia di indirizzi socket: **locale** (mittente) e **remoto** (destinatario); l’indirizzo locale in una direzione e l’indirizzo remoto nell’altra
+
+### Individuare i socket address lato client
+Il client ha bisogno di un socket address locale (client) e uno remoto (server) per comunicare
+
+Il socket address **locale** viene **fornito dal sistema operativo**, infatti il SO conosce l’indirzzo IP del computer su cui il client è in esecuzione e il numero di porta è assegnato temporaneamente dal sistema operativo (numero di porta effimero, non viene utilizzato da latri processi)
+
+Per quanto riguarda il socket address **remoto** il numero di porta è noto in base all’applicazione, mentre l’indirizzo IP è fornito dal DNS (oppure porta e indirizzo noti al programmatore quando si vuole verificare il corretto funzionamento di un’applicazione)
+
+### Individuare i socket address lato server
+Il server ha bisogno di un socket address locale (client) e uno remoto (server) per comunicare
+
+Il socket address **locale** viene fornito dal sistema operativo, infatti il SO conosce l’indirzzo IP del computer su cui il server è in esecuzione e il numero di porta è **assegnato dal progettista** (numero well known o scelto)
+
+Il socket address remoto è il socket address locale del client che si connette e poiché numerosi client possono connettersi, il server non può conoscere a priori tutti i socket address, ma li trova all’interno del pacchetto di richiesta
+
+>[!warning]
+>Il socket address locale di un server non cambia (è fissato e rimane invariato), mentre il socket address remoto varia ad ogni interazione con client diversi (anche con stesso client su connessioni diverse). Infatti se mi connetto da due browser allo stesso server cambierà il socket (hanno porte diverse); quindi dal server si riceveranno due risposte su due porte diverse
+
+---
+## Utilizzo dei servizi di livello trasporto
+Una coppia di processi fornisce servizi agli utenti Internet, siano questi persone o applicazioni.
+La coppia di processi, tuttavia, deve utilizzare i servizi offerti dal livello trasporto per la comunicazione, poiché non vi è comunicazione fisica a livello applicazione
+
+Nel livello trasporto della pila di protocolli TCP/IP sono previsti due protocolli principali:
+- protocollo UDP
+- protocollo TCP
+
+### Quale servizio richiede l’applicazione?
+#### Perdita di dati
+Alcune applicazione (ad esempio )
