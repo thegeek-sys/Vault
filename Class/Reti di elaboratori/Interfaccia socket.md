@@ -109,4 +109,4 @@ Si hanno due tipi di servizio di trasporto tramite socket API:
 
 ![[Pasted image 20250404122919.png|400]]
 
-Quando viene contattato dal client, il server TCP crea un nuovo socket per il processo server per comunicare con il client che consente al server id comunicare 
+Quando viene contattato dal client, il server TCP crea un nuovo socket per il processo server per comunicare con il client che consente al server di comunicare con più client
