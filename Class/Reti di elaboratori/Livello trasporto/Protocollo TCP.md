@@ -272,4 +272,38 @@ A differenza del TCP Tahoe qui si distingue la congestione importante (riparte d
 >La soluzione quindi dovrebbe essere riuscire a stimare RTT
 
 >[!question] Come stimare RTT?
->La misura di base per poter stimare RTT è il `SampleRTT`, ovvero il tempo misurato dalla trasmissione del segmento fino alla ricezione di ACK (questo ignora le ritrasmissione e si ha un solo `SampleRTT` per più segmenti trasmessi insieme)
+>La misura di base per poter stimare RTT è il `SampleRTT`, ovvero il tempo misurato dalla trasmissione del segmento fino alla ricezione di ACK (questo ignora le ritrasmissione e si ha un solo `SampleRTT` per più segmenti trasmessi insieme).
+>
+>Però il `SampleRTT` varia a causa di congestione nei router e carico nei sistemi terminali, quindi occorre una stima “più livellata” di RTT (bisogna fare una media di più misure recenti non semplicemente il valore corrente di `SampleRTT`)
+
+Si utilizza quindi la formula della **media mobile esponenziale ponderata**:
+$$
+\text{EstimatedRTT}_{t+1}=(1-\alpha)\cdot \text{EstimatedRTT}_{t}+\alpha \cdot \text{SampleRTT}_{t+1}
+$$
+In questo caso infatti l’influenza delle misura passate decresce esponenzialmente
+
+Come valore tipico si usa $\alpha=0.125$, quindi la formula diventa:
+$$
+\text{EstimatedRTT}_{t+1}=0.875\cdot \text{EstimatedRTT}_{t}+0.125 \cdot \text{SampleRTT}_{t+1}
+$$
+con tale valore di $\alpha$ si assegna minore peso alle misure recenti che a quelle più vecchie
+
+![[Pasted image 20250404113401.png|550]]
+
+#### Impostazione del timeout
+Come valore finale per il timeout si usa $\text{EstimatedRTT}$ più un “margine di sicurezza” che viene assegnato in base all’$\text{EstimatedRTT}$ (grande variazione di $\text{EstimatedRTT}$ comporta un margine di sicurezza maggiore)
+
+Il margine di sicurezza viene assegnato secondo la seguente formula:
+$$
+\text{DevRTT}_{t+1}=(1-\beta)\cdot \text{DevRTT}_{t}+\beta \cdot\mid \text{SampleRTT}_{t+1}-\text{EstimatedRTT}_{t+1}\mid
+$$
+Con tipicamente $\beta=0.25$
+
+Per impostare l’intervallo di timeout:
+- si imposta un valore iniziale pari a $1\text{ secondo}$
+- se avviene un timeout si raddoppia
+- appena ricevuto un segmento e aggiornato $\text{EstimatedRTT}$, si usa la formula
+
+$$
+\text{TimeoutInteval}=\text{EstimatedRTT}+4\cdot \text{DevRTT}
+$$
