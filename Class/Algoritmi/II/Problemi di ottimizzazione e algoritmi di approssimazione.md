@@ -50,3 +50,9 @@ In questi casi potrebbe essere già soddisfacente ottenere una soluzione **ammis
 Fra gli algoritmi che non trovano sempre una soluzione ammissibile ottima, è importante distinguere due categorie piuttosto differenti:
 - **algoritmi di approssimazione**
 - **euristiche**
+
+Gli **algoritmi di approssimazione** sono algoritmi per cui si dimostra che la soluzione ammissibile prodotta ha una certa “vicinanza” alla soluzione ottima. In altre parole, è garantito che la soluzione prodotta approssima entro un certo grado la soluzione ottima
+
+Le **euristiche** sono algoritmi per cui non si riesce a dimostrare che la soluzione ammissibile prodotta ha sempre una certa vicinanza ad una soluzione ottima. Però sperimentalmente sembrano comportarsi bene. Sono l’ultima spiaggia quando non si riesce a trovare algoritmi corretti efficienti né algoritmi di approssimazione efficienti che garantiscono un buon gradi di approssimazione
+
+Per una gran parte dei problemi computazionalmente difficili non solo non si conoscono algoritmi corretti efficienti ma neanche buoni algoritmi di approssimazione. Non è quindi sorprendente che fra tutti i tipi di algoritmi, gli algoritmi euristici costituiscono la classe più ampia e che ha dato luogo ad una lettura sterminata
