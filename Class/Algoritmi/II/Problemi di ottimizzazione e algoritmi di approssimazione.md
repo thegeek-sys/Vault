@@ -83,3 +83,14 @@ Dove con $OPT(I)$ si indica il costo di una soluzione ottima per l’istanza $I$
 >
 >Ovviamente quanto più il rapporto di approssimazione è vicino ad $1$ tanto più l’algoritmo d’approssimazione è buono
 
+---
+## Rapporto d’approssimazione - Ricoprimento tramite nodi
+Proviamo a valutare il rapporto d’approssimazione dell’algoritmo greedy visto prima per il problema del ricoprimento tramite nodi
+
+Abbiamo notato che l’algoritmo greedy non è corretto, infatti abbiamo trovato un’istanza per cui l’algoritmo produce una soluzione con $5$ nodi mentre la soluzione ottima ha $4$ nodi. Da ciò possiamo dedurre che il fattore di approssimazione è almeno $\frac{5}{4}>1$, ma **potrebbe essere peggiore**
+
+Preso infatti questo grafo
+![[Pasted image 20250405223345.png]]
+Il rapporto di approssimazione diventa di $\frac{4}{3}$
+![[Pasted image 20250405223425.png|500]]
+In effetti per 
