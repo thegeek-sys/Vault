@@ -44,3 +44,9 @@ Infatti, tramite l’algoritmo prima descritto, al primo passo verrebbe inserito
 Ma la soluzione ottima usa solo 4 nodi:
 ![[Pasted image 20250405162341.png|180]]
 
+Ci sono moltissimi problemi di ottimizzazione come copertura tramite nodi che sono computazionalmente difficili. Infatti per questi problemi non si conoscono algoritmi neanche lontanamente efficienti (sostanzialmente per questi problemi sono noti solo algoritmi esponenziali)
+
+In questi casi potrebbe essere già soddisfacente ottenere una soluzione **ammissibile** che sia soltanto “vicina” ad una soluzione ottima e, ovviamente, più è vicina meglio è
+Fra gli algoritmi che non trovano sempre una soluzione ammissibile ottima, è importante distinguere due categorie piuttosto differenti:
+- **algoritmi di approssimazione**
+- **euristiche**
