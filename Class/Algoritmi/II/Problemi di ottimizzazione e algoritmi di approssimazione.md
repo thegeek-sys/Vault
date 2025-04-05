@@ -93,4 +93,15 @@ Preso infatti questo grafo
 ![[Pasted image 20250405223345.png]]
 Il rapporto di approssimazione diventa di $\frac{4}{3}$
 ![[Pasted image 20250405223425.png|500]]
-In effetti per 
+In effetti per ogni costante $R$ si possono esibire grafi per cui l’algoritmo sbaglia di un fattore superiore a $R$. Quindi l’algoritmo greedy in esame non garantisce nessun fattore di approssimazione costante (sarà $\Omega(\log l)$)
+
+### Soluzione migliorata
+Ovviamente il fatto d’aver dimostrato che per un problema un certo algoritmo d’approssimazione ha un cattivo rapporto d’approssimazione non impedisce che per il problema possano esistere altri algoritmi d’approssimazione con un fattore d’approssimazione costante.
+
+Consideriamo il seguente algoritmo greedy per la copertura di nodi: considera i vari archi del grafo uno dopo l’altro e ogni volta che ne trovi uno non coperto (vale a dire nessuno dei suoi estremi è in $S$) aggiungi entrambi gli estremi dell’arco alla soluzione $S$
+
+Questa soluzione sicuramente produce una copertura, ma non è detto che sia minima (nel grafo con due soli nodi e un arco il rapporto d’approssimazione è $2$)
+
+>[!info] Dimostrazione
+>Dimostreremo qui che il rapporto d’approssimazione dell’algoritmo greedy è limitato a $2$
+>
