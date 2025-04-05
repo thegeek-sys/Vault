@@ -24,7 +24,7 @@ Completed:
 - [[#Programmazione con socket|Programmazione con socket]]
 - [[#Terminologia|Terminologia]]
 - [[#Programmazione socket con TCP|Programmazione socket con TCP]]
-	- [[#Programmazione socket con TCP#Package $\verb|java.net|$|Package $\verb|java.net|$]]
+	- [[#Programmazione socket con TCP#Package $ verb java.net $|Package java.net]]
 	- [[#Programmazione socket con TCP#Interazione client/server|Interazione client/server]]
 	- [[#Programmazione socket con TCP#Client Java (TCP)|Client Java (TCP)]]
 	- [[#Programmazione socket con TCP#Server Java (TCP)|Server Java (TCP)]]
