@@ -46,6 +46,7 @@ Ma la soluzione ottima usa solo 4 nodi:
 
 Ci sono moltissimi problemi di ottimizzazione come copertura tramite nodi che sono computazionalmente difficili. Infatti per questi problemi non si conoscono algoritmi neanche lontanamente efficienti (sostanzialmente per questi problemi sono noti solo algoritmi esponenziali)
 
+### Euristiche
 In questi casi potrebbe essere già soddisfacente ottenere una soluzione **ammissibile** che sia soltanto “vicina” ad una soluzione ottima e, ovviamente, più è vicina meglio è
 Fra gli algoritmi che non trovano sempre una soluzione ammissibile ottima, è importante distinguere due categorie piuttosto differenti:
 - **algoritmi di approssimazione**
@@ -56,3 +57,29 @@ Gli **algoritmi di approssimazione** sono algoritmi per cui si dimostra che la s
 Le **euristiche** sono algoritmi per cui non si riesce a dimostrare che la soluzione ammissibile prodotta ha sempre una certa vicinanza ad una soluzione ottima. Però sperimentalmente sembrano comportarsi bene. Sono l’ultima spiaggia quando non si riesce a trovare algoritmi corretti efficienti né algoritmi di approssimazione efficienti che garantiscono un buon gradi di approssimazione
 
 Per una gran parte dei problemi computazionalmente difficili non solo non si conoscono algoritmi corretti efficienti ma neanche buoni algoritmi di approssimazione. Non è quindi sorprendente che fra tutti i tipi di algoritmi, gli algoritmi euristici costituiscono la classe più ampia e che ha dato luogo ad una lettura sterminata
+
+---
+## Minimizzazione
+Un algoritmo di approssimazione per un dato problema è un algoritmo per cui si dimostra che la soluzione prodotta a**pprossima sempre entro un certo grado una soluzione ottima** per il problema. Si tratta quindi di specificare cosa si intende per "approssimazione entro un certo grado".
+
+Iniziamo con problemi di **minimizzazione** dove ad ogni soluzione ammissibile è associato un costo e cerchiamo quindi la soluzione ammissibile di costo minimo
+
+Il modo usuale di misurare il gradi di approssimazione è il rapporto tra il costo della soluzione prodotta dall’algoritmo e il costo della soluzione ottima
+
+Più formalmente si dice che $A$ approssima il problema di minimizzazione entro un fattore di approssimazione $\rho$ se *per ogni istanza* $I$ del problema vale:
+$$
+\frac{A(I)}{OPT(I)}\leq \rho
+$$
+Dove con $OPT(I)$ si indica il costo di una soluzione ottima per l’istanza $I$ e con $A(I)$ il costo della soluzione prodotta dall’algoritmo $A$ per quell’istanza
+
+>[!hint]
+>Per problemi di massimizzazione dove ad ogni soluzione ammissibile è associato un valore si considera il rapporto inverso vale a dire:
+>$$\frac{OPT(I)}{A(I)}$$
+
+>[!info]
+>Nota che, trattandosi di un problema di minimizzazione, risulta sempre $A(I)\geq OPT(I)$, di conseguenza il rapporto di approssimazione $\rho$ è sempre un numero maggiore o uguale a $1$
+>- se $A$ approssima $P$ con fattore $1$, allora $A$ è corretto per $P$ perché trova sempre una soluzione ottima
+>- se $A$ approssima $P$ entro un fattore $2$, allora $A$ trova sempre una soluzione di costo al più doppio di quello della soluzione ottima
+>
+>Ovviamente quanto più il rapporto di approssimazione è vicino ad $1$ tanto più l’algoritmo d’approssimazione è buono
+
