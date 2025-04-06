@@ -32,3 +32,35 @@ while (expression) {
 - `expression` → la condizione da testare
 - `basic block` → racchiuso tra `{}` se contiene più di un’istruzione
 
+---
+## $\verb|for|$ loop
+Nel `for` loop il numero di iterazioni è noto a priori (ma tale comportamento può essere sovvertito). Nella definizione dello statement del `for` si ha inizializzazione, test della condizione e incremento/decremento dell’LCV
+
+```c
+for (inizialization; test; increment) {
+	basic block
+}
+```
+
+---
+## $\verb|do-while|$ loop
+Simile al `while`, ma la condizione è testata solo alla fine, cosicché il body è eseguito almeno una volta
+
+```c
+do {
+	basic block
+} while (condition);
+```
+
+---
+## $\verb|break|$ statement
+Lo statement `break` viene usato per uscire da un ciclo e dallo `switch`. Quando viene eseguito il `break` il ciclo termina indipendentemente dal valore della condizione
+
+![[Pasted image 20250406173841.png|150]]
+
+---
+## $\verb|continue|$ statement
+Lo statement `continue` passa all’iterazione successiva
+
+![[Pasted image 20250406174011.png|150]]
+
