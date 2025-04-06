@@ -33,4 +33,6 @@ char r[10]={‘L‘,’9’,’ ’,’4’,’a’,’p’,’r’};
 >
 >In questo caso invece `\0` non è inserito automaticamente, quindi non è una stringa
 
+---
+## Lunghezza, copia, confronto e concatenazione
 
