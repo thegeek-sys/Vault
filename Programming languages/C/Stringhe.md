@@ -89,3 +89,8 @@ La funzione restituisce un puntatore alla stringa di destinazione `dest`
 
 ---
 ## Input/output
+### Output
+Per visualizzare una stringa su `stdout`, oltre al classico `printf` usando `%s` come placeholder, abbiamo altre opzioni più flessibili:
+- `int putchar(int c)` → stampa a schermo un singolo carattere (restituisce il carattere stampato o errore)
+- `int puts(const char *s)` → scrive su `stdout` una stringa, inoltre aggiunge il carattere di nuova riga `\n` e non mostra il carattere null `\0`
+- `int fputs(const char *s, FILE *stream)` →
