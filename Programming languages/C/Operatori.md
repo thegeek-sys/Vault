@@ -53,6 +53,19 @@ Ritorna il resto della divisione
 Troncamento
 ```c
 int x;
-
-x=3.14 // x conterrà solo 3, non dà warning
+x=3.14; // x conterrà solo 3, non dà warning
 ```
+
+---
+## Shortcut
+
+| Assegnamento | Shortcut |
+| ------------ | -------- |
+| `d=d-4`      | `d-=4`   |
+| `a=a+3`      | `a+=3`   |
+| `e=e*5`      | `e*=5`   |
+| `f=f/3`      | `f/=3`   |
+| `g=g%9`      | `g%=9`   |
+
+---
+## Shorthand
