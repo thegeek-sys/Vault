@@ -4,6 +4,15 @@ Class: "[[Algoritmi]]"
 Related:
 ---
 ---
+## Index
+- [[#Problemi di ottimizzazione|Problemi di ottimizzazione]]
+- [[#Algoritmi di approssimazione|Algoritmi di approssimazione]]
+	- [[#Algoritmi di approssimazione#Euristiche|Euristiche]]
+- [[#Minimizzazione|Minimizzazione]]
+- [[#Rapporto d’approssimazione - Ricoprimento tramite nodi|Rapporto d’approssimazione - Ricoprimento tramite nodi]]
+	- [[#Rapporto d’approssimazione - Ricoprimento tramite nodi#Soluzione migliorata|Soluzione migliorata]]
+		- [[#Soluzione migliorata#Implementazione|Implementazione]]
+---
 ## Problemi di ottimizzazione
 Un problema di ottimizzazione è un tipo di problema in cui l’obbiettivo è trovare la migliore soluzione possibile tra un insieme di soluzioni ammissibili.
 Ogni soluzione ammissibile, cioè una soluzione che soddisfa tutte le condizioni imposte dal problema, ha un valore associato che può essere un “costo” o un “beneficio”
