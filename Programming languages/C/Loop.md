@@ -12,6 +12,13 @@ Esistono tre tipi di costrutti iterativi in C:
 - `do-while` statement → esegue il body almeno una volta
 
 ---
+## Loop Control Variable
+La **Loop Control Variable** (*LCV*) è la variabile che il cui valore controlla la ripetizione del loop. Per una corretta esecuzione del loop la LCV deve:
+- essere dichiarata e inizializzata prima del loop
+- testata nella condizione del loop
+- aggiornata nel body del loop in modo che prima o poi la condizione diventi falsa (altrimenti loop infinito)
+
+---
 ## $\verb|while|$ loop
 La condizione viene valutata prima di entrare nel loop e se `condizione==true` viene eseguito il body e poi viene rivalutata la condizione. Per fare in modo di non entrare in un loop infinito è necessario che un evento esterno o intero cambi la condizione. Infatti solo quando `condizione==false` il loop termina
 
@@ -23,5 +30,5 @@ while (expression) {
 }
 ```
 - `expression` → la condizione da testare
-- `basi block` → racchiuso tra `{}` se contiene più di un’istruzione
-	
+- `basic block` → racchiuso tra `{}` se contiene più di un’istruzione
+
