@@ -57,3 +57,4 @@ void incrementVal(int num) {
 ```
 
 ### Vettori e puntatori
+Il p
