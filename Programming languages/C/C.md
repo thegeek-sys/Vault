@@ -17,4 +17,4 @@
 - 
 
 ##### Extras
-- 
+- [[Allocazione dinamica della memoria]]
