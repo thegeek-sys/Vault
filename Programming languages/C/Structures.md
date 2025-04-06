@@ -50,4 +50,11 @@ typedef struct {
 	long int income;
 	float taxRate;
 } taxpayer_t; // nome del nuovo tipo di dato
+
+taxpayer_t person1, persone2;
+taxpayer_t persons[100];
 ```
+
+Il **`typedef`** consente di creare un nuovo nome per un tipo di dato già esistente. È utile per ridurre la complessità delle dichiarazioni di variabili e migliorare la leggibilità del codice, senza alterare il comportamento del programma.
+In particolare viene spesso usato in combinazione con `struct` per “far finta” di creare un nuovo dato
+
