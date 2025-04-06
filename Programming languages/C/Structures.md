@@ -62,6 +62,7 @@ In particolare viene spesso usato in combinazione con `struct` per “far finta�
 >Quando accedo ad una struttura tramite un puntatore non posso usare `.` per accedere ai suoi campi ma sono costretto ad usare l’operatore `->`
 >```c
 taxpayer_t persona;
+persona.ID = “TPLMCK28A01Z404Z”;
 persona.income = 100;
 persona.taxRate = 23.1;
 taxpayer_t *pTP = &persona;
