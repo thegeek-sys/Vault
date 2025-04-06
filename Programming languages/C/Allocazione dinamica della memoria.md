@@ -57,4 +57,20 @@ void incrementVal(int num) {
 ```
 
 ### Vettori e puntatori
-Il p
+Il puntatore al primo elemento il puntatore al vettore sono la stessa cosa, inoltre, dato che i vettori sono allocati in celle di memoria continue, si può iterare sul puntatore usando il suo stesso indirizzo
+```c
+int vect[10];
+int *ptr=NULL;
+ptr = &vect[0]; // putatore al primo elemento
+ptr = vect;     // puntatore al vettore
+
+i=0;
+// assegna a vect i valori da 0 a 10
+do{
+	*ptr = i;
+	ptr++; i++;
+} while (ptr<=&vect[10]);
+```
+
+---
+## Allocazione dinamica
