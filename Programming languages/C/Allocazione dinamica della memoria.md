@@ -55,3 +55,5 @@ void incrementVal(int num) {
 	num += 1; // o (*num)++;
 }
 ```
+
+### Vettori e puntatori
