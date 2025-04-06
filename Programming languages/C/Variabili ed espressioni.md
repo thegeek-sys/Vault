@@ -148,6 +148,3 @@ scanf(format_string, address_list)
 >```
 
 La funzione restituisce come risultato il numero di valori di input letti (come per `printf`)
-
----
-## Operatori

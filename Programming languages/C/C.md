@@ -2,6 +2,8 @@
 ##### Basics
 - [[Introduzione a C]]
 - [[Variabili ed espressioni]]
+- [[Programming languages/C/Operatori|Operatori]]
+- 
 - 
 
 ##### Data types
