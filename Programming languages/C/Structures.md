@@ -83,6 +83,6 @@ struct point3d pointB={0.3, 4.5};
 E’ possibile anche allocare dinamicamente delle strutture
 
 ```c
-
+taxpayer_t p1 = {""}
 pset=calloc(50,sizeof(taxpayer_t));
 ```
