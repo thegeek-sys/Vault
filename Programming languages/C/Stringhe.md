@@ -35,4 +35,17 @@ char r[10]={‘L‘,’9’,’ ’,’4’,’a’,’p’,’r’};
 
 ---
 ## Lunghezza, copia, confronto e concatenazione
+All’interno della libreria `string.h` sono presenti diverse funzioni comode per poter gestire le stringhe
 
+### Lunghezza
+Per calcolare la lunghezza di una stringa si usa il comando:
+```c
+size_t strlen(const char *s);
+```
+Che prende in input una stringa (insieme di `char`) e restituisce un intero
+
+### Copia
+Per creare una copia di una stringa si usa il comando:
+```c
+char *strcpy(char *dest, const char *src)
+```
