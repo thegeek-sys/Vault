@@ -7,6 +7,7 @@
 - 
 
 ##### Data types
+- [[Stringhe]]
 - 
 
 ##### Object oriented programming
