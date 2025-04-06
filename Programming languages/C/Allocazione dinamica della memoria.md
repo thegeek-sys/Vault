@@ -74,3 +74,24 @@ do{
 
 ---
 ## Allocazione dinamica
+Mentre vettori e altre variabili sono allocate nello stack a tempo di compilazione, esistono dei modi per allocare memoria a runtime (viene allocata nell’heap).
+Per farlo usiamo i comandi:
+```c
+void *calloc(size_t nmemb, size_t size);
+void *malloc(size_t size);
+void free(void *prt)
+```
+
+### $\verb|calloc|$
+`calloc` riserva spazio di memoria per un array di `size` elementi, ciascuno di dimensione `nmemb` byte; inoltre questa funzione inizializza tutti bit a $0$
+
+> [!example]
+> ```c
+> char *a;
+> const int SIZE_OF_ARRAY=30;
+> a = (char *) calloc(SIZE_OF_ARRAY, sizeof(char));
+> ```
+>
+>>[!question] Perché si usa il casting?
+>>Il casting è principalmente una convenzione derivante dal fatto che queste funzioni restituiscono un **puntatore generico di tipo `void*`**, mentre in C è **preferibile specificare il tipo di puntatore** (es. `int*`, `char*`, ecc.) per evitare confusione, migliorare la leggibilità del codice e per compatibilità con C++
+
