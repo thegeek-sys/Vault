@@ -105,3 +105,29 @@ Questa soluzione sicuramente produce una copertura, ma non è detto che sia mini
 >[!info] Dimostrazione
 >Dimostreremo qui che il rapporto d’approssimazione dell’algoritmo greedy è limitato a $2$
 >
+>Siano $e_{1},e_{2},\dots,e_{k}$ gli archi di $G$ che vengono trovati non coperti durante l’esecuzione dell’algoritmo greedy
+>Per come funziona l’algoritmo deduciamo che $A(I)=2k$. I $k$ archi non coperti sono tra loro disgiunti (infatti i due estremi di ciascuno di questi archi vengono incontrati per la prima volta quando viene esaminato l’arco), questo significa che in qualunque delle soluzioni ottime almeno un estremo di ciascuno di questi $k$ archi deve essere presente.
+>
+>Ne deduciamo che $k\leq OPT(I)$
+>
+>Dunque si ha che $A(I)=2k\leq 2\cdot OPT(I)$ da cui segue $\frac{A(I)}{OPT(I)}\leq 2$
+>
+>![[Pasted image 20250406153051.png]]
+
+#### Implementazione
+
+```python
+def copertura1(G):
+	n = len(G)
+	E = [(x,y) for x in range(n) for y in G[x] if x<y]
+	presi = [0]*n
+	sol = []
+	
+	for a, b in E:
+		if presi[a]==presi[b]==0:
+			sol.append(a)
+			sol.append(b)
+			presi[a] = presi[b] = 1
+	return sol
+```
+La complessità dell’algoritmo è $O(n+m)$
