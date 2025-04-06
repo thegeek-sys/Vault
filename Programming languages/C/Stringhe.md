@@ -54,6 +54,13 @@ char *strncpy(char *dest, const char *src, size_t n);
 ```
 I due comandi ritornando il puntatore alla stringa di destinazione `dest`
 
+Si può utilizzare `strcpy` anche per assegnare un valore ad una variabile (previa inizializzazione)
+
+>[!example]
+>```c
+strcpy(s, “Lezione 9“);
+>```
+
 ### Confronto
 Per confrontare due stringhe si usa il comando:
 ```c
