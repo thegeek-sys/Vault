@@ -47,3 +47,26 @@ La soluzione corretta sta nel prendere sempre l’attività compatibile che **fi
 >
 >![[Pasted image 20250406163221.png]]
 
+### Implementazione
+
+```python
+def selezione_a(lista):
+	lista.sort(key = lambda x: x[1])
+	libero = 0
+	sol = []
+	for inizio, fine in lista:
+		if libero < inizio:
+			sol.append((inizio,fine))
+			libero = fine
+	return sol
+
+# >> lista = [(1,5),(14,21),(15,20),(2,9),(3,8),(6,13),(18,22),(10,13),(12,17),(16,19)]
+# >> selezione_a(lista)
+# [(1,5),(6,11),(12,17),(18,22)]
+```
+Complessità:
+- ordinare la lista delle attività costa $\Theta(n\log n)$
+- il $for$ viene eseguito $n$ volte e il costo di ogni iterazione è $O(1)$
+
+Il costo totale è $\Theta(n\log n)$
+
