@@ -95,3 +95,8 @@ void free(void *prt)
 >>[!question] Perché si usa il casting?
 >>Il casting è principalmente una convenzione derivante dal fatto che queste funzioni restituiscono un **puntatore generico di tipo `void*`**, mentre in C è **preferibile specificare il tipo di puntatore** (es. `int*`, `char*`, ecc.) per evitare confusione, migliorare la leggibilità del codice e per compatibilità con C++
 
+### $\verb|malloc|$
+`malloc` riserva spazio di memoria di `size` byte. A differenza di `calloc` non inizializza gli elementi a $0$
+
+### $\verb|free|$
+`free` serve a liberare il blocco di memoria `prt`
