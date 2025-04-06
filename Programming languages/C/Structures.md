@@ -58,3 +58,31 @@ taxpayer_t persons[100];
 Il **`typedef`** consente di creare un nuovo nome per un tipo di dato già esistente. È utile per ridurre la complessità delle dichiarazioni di variabili e migliorare la leggibilità del codice, senza alterare il comportamento del programma.
 In particolare viene spesso usato in combinazione con `struct` per “far finta” di creare un nuovo dato
 
+>[!warning]
+>Quando accedo ad una struttura tramite un puntatore non posso usare `.` per accedere ai suoi campi ma sono costretto ad usare l’operatore `->`
+>```c
+taxpayer_t persona;
+persona.income = 100;
+persona.taxRate = 23.1;
+taxpayer_t *pTP = &persona;
+// devo usare -> per modificare i valori di pTP (quindi di persona)
+pTP->income = 450;
+>```
+
+---
+## Inizializzazione strutture
+E’ possibile inizializzare una struttura direttamente nella definizione della variabile, inoltre è legale inizializzare meno campi (del totale)
+
+```c
+struct point3d pointA={1.1, 1.2, 1.3};
+struct point3d pointB={0.3, 4.5};
+```
+
+---
+## Allocazione dinamica di strutture
+E’ possibile anche allocare dinamicamente delle strutture
+
+```c
+
+pset=calloc(50,sizeof(taxpayer_t));
+```
