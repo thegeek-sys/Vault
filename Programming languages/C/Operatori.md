@@ -6,6 +6,16 @@ Related:
   - "[[Variabili ed espressioni]]"
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Operatori aritmetici|Operatori aritmetici]]
+	- [[#Operatori aritmetici#Regole di precedenza|Regole di precedenza]]
+	- [[#Operatori aritmetici#Operatore di divisione $\verb|/|$|Operatore di divisione $\verb|/|$]]
+	- [[#Operatori aritmetici#Operazione resto $\verb+\%+$|Operazione resto $\verb+\%+$]]
+	- [[#Operatori aritmetici#Altre regole|Altre regole]]
+- [[#Shortcut|Shortcut]]
+- [[#Shorthand|Shorthand]]
+---
 ## Introduction
 Gli operatori sono i seguenti:
 - **aritmetici** → $\verb|+, -, *, /, %|$
@@ -69,3 +79,5 @@ x=3.14; // x conterrà solo 3, non dà warning
 
 ---
 ## Shorthand
+In C esistono anche gli operatori di pre-incremento/decremento (`++x`) e di post-incremento/decremento (`x++`)
+
