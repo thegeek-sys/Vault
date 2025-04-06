@@ -96,3 +96,7 @@ Per visualizzare una stringa su `stdout`, oltre al classico `printf` usando `%s`
 - `int fputs(const char *s, FILE *stream)` → scrive la stringa `s` sullo stream indicato, non scrive il carattere di fine stringa `\0`
 
 ### Input
+Oltre al classico `scanf`, per prendere stringhe in input si usa:
+- `char *gets(char *s)` (deprecato) → legge una linea da `stdin` e la memorizza in `s`
+- `char *fgets(char *s, int size, FILE *stream)` → legge i caratteri dal flusso indicato posizionandosi fino al primo carattere di nuova riga incluso e ne salva il contenuto in `s`
+- `int getchar(void)` → legge un carattere da `stdin` e lo restituisce in output
