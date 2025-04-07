@@ -60,16 +60,16 @@ Nel caso di una rete a commutazione di pacchetto, le metriche ne determinano le 
 ## Bandwidth e bit rate
 Con il termine **ampiezza di banda** si indicano due concetti diversi ma strettamente legati: la **bandwidth** e il **bit rate**
 
-La **bandwidth** è una caratteristica del mezzo trasmissivo, si misura i Hz e rappresenta l’**ampiezza dell’intervallo di frequenza utilizzato dal mezzo trasmissivo**.
+La **bandwidth** è una **caratteristica del mezzo trasmissivo**, si misura in $\text{Hz}$ e rappresenta l’**ampiezza dell’intervallo di frequenza utilizzato dal mezzo trasmissivo**.
 Maggiore e la ampiezza di banda maggiore è la quantità di informazione che può essere veicolata attraverso il mezzo.
 
-Il **bit rate** indica quanti bit posso trasmettere per unità di tempo; la sua unità di misura è il bps (bit per second)
+Il **bit rate** indica **quanti bit posso trasmettere per unità di tempo**; la sua unità di misura è il bps (bit per second)
 
 Il bit rate dipende sia dalla banda (maggiore è la banda maggiore è il bit rate) che dalla specifica tecnica di trasmissione
 
 ---
 ## Throughput
-Throughput è una misura che ci dice quanto **effettivamente** (in contrapposizione a nominalmente) una rete riesce ad inviare dati. Somiglia al bit rate ma tendenzialmente gli è minore o uguale (il bit rate è la potenziale velocità di un link)
+**Throughput** è una misura che ci dice quanto **effettivamente** (in contrapposizione a nominalmente) una rete riesce ad inviare dati. Somiglia al bit rate ma tendenzialmente gli è minore o uguale (**il bit rate è la potenziale velocità di un link**)
 
 >[!example]
 >Una strada è progettata per far transitare $1000$ auto al minuto da un punto all’altro. Se c’è traffico, tale cifra può essere ridotta a $100$. Il rate è $1000$ auto al minuti, il troughput è di $100$ auto al minuto
