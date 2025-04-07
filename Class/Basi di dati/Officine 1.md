@@ -31,8 +31,31 @@ Related:
 
 ---
 ## Diagramma UML della classi
-![[Pasted image 20250407132128.png]]
+![[Pasted image 20250407132905.png]]
 
 ---
 ## Specifica dei tipi di dato
-- 
+- CodiceFiscale → secondo standard
+- Telefono → secondo standard
+
+---
+## Specifica di classe
+### Officina
+Un’istanza di questa classe rappresenta un’officina della catena
+#### Specifica delle operazioni di classe
+`numero_dipendenti(): Intero >= 0`
+- precondizioni → nessuna
+- post condizioni
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `d:Dipendente`
+		- sia `(this,d):off_dip` e sia `D` l’insieme dei link `off_dip`
+		- `result` è la cardinalità di `D`
+
+### Dipendente
+Un’istanza di questa classe rappresenta un dipendente dell’officina
+#### Specifica delle operazioni di classe
+`anni_servizio(): Intero >= 0`
+- precondizioni → nessuna
+- postcondizioni
+	- sia `o:Officina` e `(this,o):`
