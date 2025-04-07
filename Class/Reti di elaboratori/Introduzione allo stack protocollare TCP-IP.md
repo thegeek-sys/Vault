@@ -227,6 +227,7 @@ specifica diviene uno standard Internet. Il primo stadio di una specifica è que
 - Livello storico
 - Livello sperimentale
 - Livello informativo
+
 ![[Pasted image 20250313225612.png|400]]
 
 ---
