@@ -50,3 +50,12 @@ int main() {
 	else printf("errore  in chiusura");
 }
 ```
+
+---
+## Input/output
+```c
+int fscanf(FILE *stream, const char *format, ...);
+int fprintf(FILE *stream, const char *format, ...);
+char *fgets(char *s, int size, FILE *stream);
+int fputs(const char *s, FILE *stream);
+```
