@@ -29,7 +29,7 @@ L’internet può essere interpretato come una **rete di reti** composta da reti
 ## Rete di acceso
 ![[Pasted image 20250302164539.png|center|350]]
 
-La rete di accesso è composta da tutti i dispositivi che ci danno la possibilità di raggiungere il primo router del backbone (*edge router*); dove per **backbone** si intende la rete di tutti i router (composta solamente da router e dai loro collegamenti)
+La **rete di accesso** è composta da tutti i dispositivi che ci danno la possibilità di **raggiungere il primo router del backbone** (*edge router*); dove per **backbone** si intende la rete di tutti i router (composta solamente da router e dai loro collegamenti)
 
 Il backbone Internet può essere di due tipi (come già precedentemente detto):
 - a **commutazione di circuito** → circuito dedicato per l’intera durata della sessione
