@@ -58,4 +58,7 @@ int fscanf(FILE *stream, const char *format, ...);
 int fprintf(FILE *stream, const char *format, ...);
 char *fgets(char *s, int size, FILE *stream);
 int fputs(const char *s, FILE *stream);
+
+// restituisce valore diverso da 0 se e solo trova EOR; altrimenti 0
+int feof(FILE *stream);
 ```
