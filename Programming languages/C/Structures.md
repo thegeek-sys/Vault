@@ -89,3 +89,12 @@ pset = calloc(50,sizeof(taxpayer_t));
 pset[2] = p1
 free(pset)
 ```
+
+---
+## Passaggio delle strutture come parametri a funzione
+**Per valore**
+- vantaggio → semplice e intuitivo
+- svantaggio → dati copiati nello stack
+
+**Per riferimento**
+- vantaggio → parametri non memorizzati nello stack, andando ad ottimizzare l’uso essendo una risorsa limitata
