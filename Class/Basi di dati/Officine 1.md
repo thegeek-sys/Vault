@@ -28,3 +28,11 @@ Related:
 	2. codice fiscale (una stringa)
 	3. indirizzo
 	4. telefono
+
+---
+## Diagramma UML della classi
+![[Pasted image 20250407132128.png]]
+
+---
+## Specifica dei tipi di dato
+- 
