@@ -31,7 +31,7 @@ Related:
 
 ---
 ## Diagramma UML della classi
-![[Pasted image 20250407132905.png]]
+![[Pasted image 20250407134910.png]]
 
 ---
 ## Specifica dei tipi di dato
@@ -48,16 +48,29 @@ Un’istanza di questa classe rappresenta un’officina della catena
 - post condizioni
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `d:Dipendente`
-		- sia `(this,d):off_dip` e sia `D` l’insieme dei link `off_dip`
+		- sia `d:Dipendente` tale che esista il link `(this,d):off_dip`
+		- sia `D` l’insieme dei link `off_dip`
 		- `result` è la cardinalità di `D`
 
 ### Dipendente
 Un’istanza di questa classe rappresenta un dipendente dell’officina
 #### Specifica delle operazioni di classe
 `anni_servizio(): Intero >= 0`
-- precondizioni → nessuna
+- precondizioni → sia `o:Officina` tale che esista l’unico link `(this, o):off_dip`
 - postcondizioni
+	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `o:Officina` e `(this,o):off_dip` l’unico link `off_dip` che coinvolge `this`
-		- `result`
+		- sia `a=off_dip.anno_assunzione`
+		- `result=adesso.anno-a`
+
+### Riparazione
+Un’istanza di questa classe rappresenta una riparazione dell’officina
+#### Specifica delle operazioni di classe
+`fine_riparazione(): Data`
+- precondizioni → sia `vei:Veicolo` tale che esista l’unico link `(this, vei):fine_rip`
+- postcondizioni → 
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `v:velicolo` tale che esista il link `(this, v):rip_vei`
+		- sia `f=fine_rip.durata_giorni` e sia `i=rip_vei.data`
+		- `result=i+f`
