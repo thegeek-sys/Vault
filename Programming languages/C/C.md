@@ -9,6 +9,7 @@
 ##### Data types
 - [[Stringhe]]
 - [[Structures]]
+- [[File I-O|File I/O]]
 - 
 
 ##### Object oriented programming
