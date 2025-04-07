@@ -58,4 +58,6 @@ Un’istanza di questa classe rappresenta un dipendente dell’officina
 `anni_servizio(): Intero >= 0`
 - precondizioni → nessuna
 - postcondizioni
-	- sia `o:Officina` e `(this,o):`
+	- il valore di ritorno `result` è così definito
+		- sia `o:Officina` e `(this,o):off_dip` l’unico link `off_dip` che coinvolge `this`
+		- `result`
