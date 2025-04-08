@@ -33,7 +33,7 @@ Completed:
 	- [[#Protocolli di accesso alla posta#Protocollo HTTP|Protocollo HTTP]]
 ---
 ## Introduction
-In questa sezione affronte2remo i protocolli:
+In questa sezione affronteremo i protocolli:
 - FTP
 - SMTP
 - POP3
