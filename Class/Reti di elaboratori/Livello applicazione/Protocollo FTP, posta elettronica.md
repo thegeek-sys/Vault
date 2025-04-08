@@ -126,7 +126,7 @@ Ci sono tre componenti principali:
 ![[Pasted image 20250319100251.png]]
 
 ### User agent
-Lo **user agent** (detto anche “mail reader”) viene attivato dall’utente o da un timer: se c’è una nuova mail informa l’utente; è inoltre responsabile di composizione, editing e lettura dei messaggi di posta elettronica
+Lo **user agent** (detto anche “mail reader”) viene attivato dall’utente o da un timer: se c’è una nuova mail informa l’utente; è inoltre responsabile di composizione, editing e lettura dei messaggi di posta elettronica (è il client vero e proprio usato dall’utente)
 
 I messaggi in uscita vengono quindi memorizzati sul server attraverso il **Mail Transfer Agent**
 Sia i messaggi in uscita che in arrivo però sono memorizzati sul server
