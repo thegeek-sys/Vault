@@ -199,9 +199,9 @@ Confronto con HTTP:
 ![[Pasted image 20250319104133.png]]
 
 >[!warning] Differenti dai comandi SMTP
->Questi infatti non sono dei comandi ma semplicemente gli header del messaggio che effettivamente viene visto dall’utente che lo riceve (il destinatario non ha accesso al campo `MAIL FROM` del comando SMTP)
+>Questi infatti non sono dei comandi ma semplicemente gli header del messaggio che effettivamente viene visto dall’utente che lo riceve (il destinatario non vede il campo `MAIL FROM` del comando SMTP)
 >
->Per questo motivo potrebbe accadere 
+>Per questo motivo potrebbe accadere che `From` del messaggio e `MAIL FROM` del comando SMTP non coincidano, per questo esistono dei controlli anti-spoofing
 
 >[!example] Esempio: fasi trasferimento
 >![[Pasted image 20250319104226.png]]
