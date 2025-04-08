@@ -304,7 +304,7 @@ Il caching può essere eseguito da:
 Il browser può mantenere una cache personalizzabile delle pagine visitate
 
 Esistono vari meccanismi per la gestione della cache locale:
-- L’utente può impostare il n**umero di giorni dopo i quali i contenuti della cache vengono cancellati** e l’eventuale gestione
+- L’utente può impostare il **numero di giorni dopo i quali i contenuti della cache vengono cancellati** e l’eventuale gestione
 - La pagina può essere **mantenuta in cache in base alla sua ultima modifica** (es. modificata un’ora prima → mantenuta per un’ora, un giorno, etc.)
 - Si possono utilizzare informazioni nei **campi intestazione dei messaggi** per gestire la cache (es. campo `Expires` specifica la scadenza dopo la quale la pagina è considerata obsoleta, ma non sempre è rispettato dai browser)
 
