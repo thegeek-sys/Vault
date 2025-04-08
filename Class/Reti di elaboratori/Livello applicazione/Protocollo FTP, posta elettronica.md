@@ -199,6 +199,9 @@ Confronto con HTTP:
 ![[Pasted image 20250319104133.png]]
 
 >[!warning] Differenti dai comandi SMTP
+>Questi infatti non sono dei comandi ma semplicemente gli header del messaggio che effettivamente viene visto dall’utente che lo riceve (il destinatario non ha accesso al campo `MAIL FROM` del comando SMTP)
+>
+>Per questo motivo potrebbe accadere 
 
 >[!example] Esempio: fasi trasferimento
 >![[Pasted image 20250319104226.png]]
