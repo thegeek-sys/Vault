@@ -68,6 +68,7 @@ Un **Uniform Resource Locator** (URL) è composto da 3 parti:
 1. Protocollo
 2. Nome della macchina in cui è situata la pagina
 3. Percorso del file (locale alla macchina)
+
 E’ possibile inoltre specificare una **porta** diversa da quella standard
 
 ![[Pasted image 20250313235915.png|500]]
@@ -85,7 +86,7 @@ L’**HTTP** (*hypertext trasfer protocol*) è un protocollo a livello di applic
 >[!info] HTTP definisce in che modo i client web richiedono pagine ai server web e come questi le trasferiscono ai client
 
 ![[Pasted image 20250314000430.png|300]]
-Il server può servire più richiede provenienti anche da client diversi
+Il server può servire più richieste provenienti anche da client diversi
 
 Dal lato client si ha che:
 1. il browser determina l’URL ed estrae host e filename
