@@ -274,7 +274,7 @@ Il server mediante il cookie fornito dal client accede al relativo file e fornis
 ### Durata di un cookie
 Il server chiude una sessione inviando al client una intestazione `Set-Cookie` nel messaggio con `Max-Age=0`. Infatti l’attributo `Max-Age` definisce il tempo di vita in secondi di un cookie. Dopo delta secondi il client dovrebbe rimuovere il cookie. Il valore zero indica che il cookie deve essere rimosso subito.
 
-### Altre soluzione per mantenere lo stato
+### Altre soluzioni per mantenere lo stato
 Per mantenere lo stato (e quindi creare una sessione) il client mantiene tutte le informazioni sullo stato della sessione e le inserisce in ogni richiesta inviata al server tramite metodo POST o inserendole nella URL
 
 Vantaggi:
