@@ -50,9 +50,9 @@ Il mittente deve tenere una copia del pacchetto spedito finché non riceve risco
 Per gestire i pacchetti duplicati lo stop&wait utilizza i numeri di sequenza. Per fare ciò si vuole identificare l’intervallo più piccolo possibile che possa consentire la comunicazione senza ambiguità.
 
 Supponiamo che il mittente abbia inviato il pacchetto con numero di sequenza $x$. Si possono verificare 3 casi:
-1. Il pacchetto arriva correttamente al destinatario che invia un riscontro. Il riscontro arriva al mittente che invia il pacchetto successivo numerato $x+1$
-2. Il pacchetto risulta corrotto o non arriva al destinatario. Il mittente allo scadere del timer invia nuovamente il pacchetto $x$
-3. Il pacchetti arriva correttamente al destinatario ma il riscontro viene perso o corrotto. Scade il timer e il mittente rispedisce $x$. *Il destinatario riceve un duplicato, se ne accorge?*
+1. il pacchetto arriva correttamente al destinatario che invia un riscontro. Il riscontro arriva al mittente che invia il pacchetto successivo numerato $x+1$
+2. il pacchetto risulta corrotto o non arriva al destinatario. Il mittente allo scadere del timer invia nuovamente il pacchetto $x$
+3. il pacchetto arriva correttamente al destinatario ma il riscontro viene perso o corrotto. Scade il timer e il mittente rispedisce $x$. *Il destinatario riceve un duplicato, se ne accorge?*
 
 I numeri di sequenza $0$ e $1$ sono sufficienti per il protocollo stop and wait.
 Come convenzione infatti si è scelto che il numero di riscontro (ack) indica il numero di sequenza del prossimo pacchetto atteso dal destinatario (pacchetto che deve arrivare).
