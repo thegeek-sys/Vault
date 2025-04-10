@@ -150,7 +150,7 @@ In questo caso il destinatario è pronto ricevere un solo pacchetto con un numer
 
 ### Diagramma di comunicazione
 #### Ack cumulativo
-
+![[WhatsApp Image 2025-04-10 at 13.25.09.jpeg]]
 
 #### Perso pacchetto dati
 ![[Pasted image 20250328002027.png]]
