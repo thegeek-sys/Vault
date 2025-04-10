@@ -150,7 +150,7 @@ In questo caso il destinatario è pronto ricevere un solo pacchetto con un numer
 
 ### Diagramma di comunicazione
 #### Ack cumulativo
-![[Pasted image 20250328001758.png]]
+
 
 #### Perso pacchetto dati
 ![[Pasted image 20250328002027.png]]
@@ -188,7 +188,7 @@ Selective repeat usa **un timer per ogni pacchetto** in attesa di riscontro (qua
 ![[Pasted image 20250328010024.png]]
 
 ### Diagramma di comunicazione
-![[Pasted image 20250328010109.png]]
+![[Pasted image 20250328001758.png]]
 
 >[!warning]
 >I pacchetti possono essere consegnati al livello applicazione se:
