@@ -69,6 +69,7 @@ Si hanno due approcci allo switching:
 - **circuito virtuale** (servizio orientato alla connessione) → prima che i datagrammi fluiscano, i due sistemi terminali e i router intermedi stabiliscano una connessione virtuale
 - **datagramma** (servizio senza connessione) → ogni datagramma viaggia indipendentemente dagli altri
 
+
 ---
 ## Rete a circuito virtuale
 Il pacchetto di un circuito virtuale ha un numero **VC** (etichetta di circuito) nella propria intestazione.
