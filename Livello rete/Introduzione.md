@@ -65,7 +65,7 @@ Hanno dunque il compito di instradare i pacchetti al livello 3 (rete), inoltrand
 
 ---
 ## Switching
-Si hanno due approcci allo switching:
+Esistono due tipi di rete, a:
 - **circuito virtuale** (servizio orientato alla connessione) → prima che i datagrammi fluiscano, i due sistemi terminali e i router intermedi stabiliscano una connessione virtuale
 - **datagramma** (servizio senza connessione) → ogni datagramma viaggia indipendentemente dagli altri
 
