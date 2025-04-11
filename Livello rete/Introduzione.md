@@ -71,4 +71,12 @@ Si hanno due approcci allo switching:
 
 ---
 ## Rete a circuito virtuale
-Il pacchetto di un circuito virtuale ha un numero **VC** (etichetta di circuito)
+Il pacchetto di un circuito virtuale ha un numero **VC** (etichetta di circuito) nella propria intestazione.
+Un circuito virtuale può avere un numero VC diverso su ogni collegamento, infatti ogni router sostituisce il numero VC con un nuovo numero
+
+![[Pasted image 20250411101704.png]]
+
+### Implementazioni
+Un circuito virtuale consiste in:
+1. un percorso tra gli host origine e destinazione
+2. numeri
