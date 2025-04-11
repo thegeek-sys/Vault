@@ -76,7 +76,27 @@ Un circuito virtuale può avere un numero VC diverso su ogni collegamento, infat
 
 ![[Pasted image 20250411101704.png]]
 
+>[!info] ATM (Asynchronous transfer mode)
+>La ATC è la prima rete orientata alla connessione, progettata nei primi anni 90.
+>Il suo scopo era quello di unificare voce, dati, televisione via cavo, …
+>
+>Attualmente viene usata nella rete telefonica per trasportare (internamente) pacchetti IP. Quando una connessione è stabilita, ciascuna parte può inviare dati (suddivisi in celle di 53 bytes)
 ### Implementazioni
 Un circuito virtuale consiste in:
 1. un percorso tra gli host origine e destinazione
-2. numeri
+2. numeri VC, uno per ciascun collegamento
+3. righe nella tabella d’inoltro in ciascun router
+
+Il pacchetto di un circuito virtuale ha un numero VC nella propria intestazione che rappresenta un’etichetta di flusso. Questo numero cambia su tutti i collegamenti lungo il percorso (il nuovo numero viene rilevato dalla tabella di inoltro)
+
+### Tabella di inoltro
+![[Pasted image 20250411102430.png]]
+
+>[!warning] I router mantengono le informazioni sullo stato delle connessioni
+>Aggiungono alla tabella d’inoltro una nuova riga ogni volta che stabiliscono una nuova connessione (la cancellano quando la connessione viene rilasciata)
+
+---
+## Reti a datagramma
+Internet è una **rete a datagramma** (*packet switched*). In questo tipo di rete l’impostazione della chiamata non avviene a livello di rete e i router non conservano informazioni sullo stato dei circuiti virtuali (non c’è il concetto di “connessione” a livello di rete)
+
+I pacchetti vengono inoltrati utilizzano l’indirizzo dell’host destinatario, passando attraverso una serie di router che utilizzano gli indirizzi di destinazione per inviarli (possono intraprendere percorsi diversi)
