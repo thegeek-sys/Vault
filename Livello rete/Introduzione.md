@@ -100,3 +100,6 @@ Il pacchetto di un circuito virtuale ha un numero VC nella propria intestazione 
 Internet è una **rete a datagramma** (*packet switched*). In questo tipo di rete l’impostazione della chiamata non avviene a livello di rete e i router non conservano informazioni sullo stato dei circuiti virtuali (non c’è il concetto di “connessione” a livello di rete)
 
 I pacchetti vengono inoltrati utilizzano l’indirizzo dell’host destinatario, passando attraverso una serie di router che utilizzano gli indirizzi di destinazione per inviarli (possono intraprendere percorsi diversi)
+
+![[Pasted image 20250411103729.png]]
+
