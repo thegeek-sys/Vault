@@ -6,6 +6,14 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Formato dei datagrammi|Formato dei datagrammi]]
+- [[#Frammentazione|Frammentazione]]
+	- [[#Frammentazione#Frammentazione dei datagrammi IP|Frammentazione dei datagrammi IP]]
+	- [[#Frammentazione#Identificatore, flag e offset di frammentazione nel dettaglio|Identificatore, flag e offset di frammentazione nel dettaglio]]
+	- [[#Frammentazione#Riassemblaggio a destinazione|Riassemblaggio a destinazione]]
+---
 ## Introduction
 L’**Internet Protocol** è responsabile della suddivisione, dell’inoltro e della consegna dei datagrammi a livello di rete (host to host).
 
@@ -72,7 +80,5 @@ Per fare ciò si usano i campi **identificatore, flag e offset di frammentazione
 
 ### Riassemblaggio a destinazione
 Il primo frammento ha un valore del campo offset pari a $0$. L’offset del secondo frammento si ottiene dividendo per $8$ la lunghezza del primo frammento (esclusa l’intestazione). Il valore del terzo frammento si ottiene dividendo per $8$ la somma della lunghezza del primo e del secondo frammento (escluse le
-intestazioni)
-❒ …
-❒ L’ultimo frammento ha il bit M impostato a 0
+intestazioni). Si continua così finché non si raggiunge l’ultimo frammento che ha il bit $M$ (more fragments) impostato a $0$
 
