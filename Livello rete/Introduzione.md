@@ -103,4 +103,34 @@ I pacchetti vengono inoltrati utilizzano l’indirizzo dell’host destinatario,
 
 ![[Pasted image 20250411103729.png]]
 
-### Processo di inoltro 
+### Processo di inoltro
+![[Pasted image 20250411104650.png]]
+
+### Tabella di inoltro
+![[Pasted image 20250411104816.png]]
+
+#### Confronta un prefisso dell’indirizzo
+Quando si verificano corrispondenze multiple si prende la corrispondenza a **prefisso più lungo**, in cui viene determinata la corrispondenza più lunga all’interno della tabella e si inoltrano i pacchetti sull’interfaccia corrispondente, garantendo la **continuità** degli indirizzi
+
+>[!example] Esempio
+>![[Pasted image 20250411105035.png|400]]
+>
+>- `11001000 00010111 00010110 10100001` → $0$
+>- `11001000 00010111 00011000 10101010` → $1$
+
+---
+## Funzioni del router
+![[Pasted image 20250411105336.png]]
+
+### Architettura del router
+![[Pasted image 20250411105411.png]]
+
+### Porte d’ingresso
+![[Pasted image 20250411105557.png]]
+
+---
+## Ricerca nella tabella di inoltro
+La ricerca nella tabella di inoltro deve essere veloce (possibilmente con lo stesso tasso della linea) per evitare accodamento, per questo motivo è implementata in una **struttura ad albero**.
+
+Ogni livello dell’albero corrisponde ad un bit dell’indirizzo di destinazione, dunque per cercare un indirizzo si comincia dalla radice dell’albero (se $0$ allora sottoalbero di sinistra, se $1$ allora sottoalbero di destra), garantendo una ricerca in $N$ passi dove $N$ è il numero di bit nell’indirizzo
+
