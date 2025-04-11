@@ -103,3 +103,4 @@ I pacchetti vengono inoltrati utilizzano l’indirizzo dell’host destinatario,
 
 ![[Pasted image 20250411103729.png]]
 
+### Processo di inoltro 
