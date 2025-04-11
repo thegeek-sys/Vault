@@ -23,6 +23,26 @@ Completed:
 >- livello di trasporto → comunicazione tra processi
 >- livello di rete → comunicazione tra host
 >
->Il livello di rete di $\text{H1}$ prende i segmenti dal livello di trasporto, li incapsula in un datagramma e li tramette al router più vicino
->Il livello di rete di $\text{H2}$ riceve i datagrammi da $\text{R7}$, estrae i segmenti e li consegna al 
+>Il livello di rete di $\text{H1}$ prende i segmenti dal livello di trasporto, li incapsula in un datagramma e li tramette al router più vicino. Il livello di rete di $\text{H2}$ riceve i datagrammi da $\text{R7}$, estrae i segmenti e li consegna al livello di trasporto
+>Il livello di rete dei nodi intermedi inoltra verso il prossimo router
 
+---
+## Funzioni chiave a livello di rete
+Il livello svolge fondamentalmente due funzioni:
+- **instradamento** (*routing*)
+- **inoltro** (*forwarding*)
+
+Con l’**instradamento** si determina il percorso seguito dai pacchetti dall’origine alla destinazione (crea i percorsi). Con l’**inoltro** si trasferiscono i pacchetti dall’input di un router all’output del router appropriato (utilizza i percorsi creati dal routing)
+
+>[!hint]
+>Gli algoritmi di routing creano le tabelle di routing che vengono usate per il forwarding
+
+### Routing e forwarding
+In sintesi si può dire quindi che il routing algorithm crea la **forwarding table** (determina i valori inseriti nella tabella), ovvero una tabella che specifica quale collegamento di uscita bisogna prendere per raggiungere la destinazione
+
+>[!warning]
+>Ogni router ha la propria forwarding table
+
+![[Pasted image 20250411095158.png|450]]
+
+	
