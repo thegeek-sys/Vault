@@ -71,3 +71,4 @@ Si hanno due approcci allo switching:
 
 ---
 ## Rete a circuito virtuale
+Il pacchetto di un circuito virtuale ha un numero **VC** (etichetta di circuito)
