@@ -45,4 +45,7 @@ In sintesi si può dire quindi che il routing algorithm crea la **forwarding tab
 
 ![[Pasted image 20250411095158.png|450]]
 
-	
+---
+## Switch e router
+Il **packet switch** (commutatore di pacchetto) è un dispositivo che si occupa del trasferimento dall’interfaccia di ingresso a quella di uscita in base al valore del campo dell’intestazione del pacchetto
+
