@@ -49,3 +49,25 @@ In sintesi si può dire quindi che il routing algorithm crea la **forwarding tab
 ## Switch e router
 Il **packet switch** (commutatore di pacchetto) è un dispositivo che si occupa del trasferimento dall’interfaccia di ingresso a quella di uscita in base al valore del campo dell’intestazione del pacchetto
 
+![[Pasted image 20250411100535.png]]
+
+### Link-layer switch
+I **link-layer switch** (commutatore a livello di commutatore) stabiliscono l’inoltro in relazione al valore nel campo nel livello di collegamento (livello 2)
+Hanno dunque il compito di instradare i pacchetto al livello 2 (collegamento), e viene utilizzato per **collegare singoli computer all’interno di una rete LAN**
+
+![[Pasted image 20250411100811.png]]
+
+### Router
+I **router** stabiliscono l’inoltro in base al valore del campo nel livello di rete (livello 3)
+Hanno dunque il compito di instradare i pacchetti al livello 3 (rete), inoltrando un pacchetto che arriva su uno dei suoi collegamenti di comunicazione ad uno dei sui collegamenti di comunicazione (*next hop*)
+
+![[Pasted image 20250411101039.png]]
+
+---
+## Switching
+Si hanno due approcci allo switching:
+- **circuito virtuale** (servizio orientato alla connessione) → prima che i datagrammi fluiscano, i due sistemi terminali e i router intermedi stabiliscano una connessione virtuale
+- **datagramma** (servizio senza connessione) → ogni datagramma viaggia indipendentemente dagli altri
+
+---
+## Rete a circuito virtuale
