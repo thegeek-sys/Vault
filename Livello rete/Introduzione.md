@@ -6,6 +6,35 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Pila di protocolli internet|Pila di protocolli internet]]
+- [[#Funzioni chiave a livello di rete|Funzioni chiave a livello di rete]]
+	- [[#Funzioni chiave a livello di rete#Routing e forwarding|Routing e forwarding]]
+- [[#Switch e router|Switch e router]]
+	- [[#Switch e router#Link-layer switch|Link-layer switch]]
+	- [[#Switch e router#Router|Router]]
+- [[#Switching|Switching]]
+- [[#Rete a circuito virtuale|Rete a circuito virtuale]]
+	- [[#Rete a circuito virtuale#Implementazioni|Implementazioni]]
+	- [[#Rete a circuito virtuale#Tabella di inoltro|Tabella di inoltro]]
+- [[#Reti a datagramma|Reti a datagramma]]
+	- [[#Reti a datagramma#Processo di inoltro|Processo di inoltro]]
+	- [[#Reti a datagramma#Tabella di inoltro|Tabella di inoltro]]
+		- [[#Tabella di inoltro#Confronta un prefisso dell’indirizzo|Confronta un prefisso dell’indirizzo]]
+- [[#Funzioni del router|Funzioni del router]]
+	- [[#Funzioni del router#Architettura del router|Architettura del router]]
+	- [[#Funzioni del router#Porte d’ingresso|Porte d’ingresso]]
+	- [[#Funzioni del router#Porte d’uscita|Porte d’uscita]]
+- [[#Ricerca nella tabella di inoltro|Ricerca nella tabella di inoltro]]
+- [[#Tecniche di switching (commutazione)|Tecniche di switching (commutazione)]]
+	- [[#Tecniche di switching (commutazione)#Commutazione in memoria|Commutazione in memoria]]
+	- [[#Tecniche di switching (commutazione)#Commutazione tramite bus|Commutazione tramite bus]]
+	- [[#Tecniche di switching (commutazione)#Commutazione attraverso rete di interconnessione|Commutazione attraverso rete di interconnessione]]
+- [[#Dove si verifica l’accodamento?|Dove si verifica l’accodamento?]]
+	- [[#Dove si verifica l’accodamento?#Accodamento su porte di ingresso|Accodamento su porte di ingresso]]
+	- [[#Dove si verifica l’accodamento?#Accodamento sulle porte di uscita|Accodamento sulle porte di uscita]]
+- [[#Protocolli del livello di rete|Protocolli del livello di rete]]
+---
 ## Pila di protocolli internet
 - **applicazione** → di supporto alle applicazioni di rete
 	- FTP, SMTP, HTTP
@@ -65,9 +94,18 @@ Hanno dunque il compito di instradare i pacchetti al livello 3 (rete), inoltrand
 
 ---
 ## Switching
-Esistono due tipi di rete, a:
+Esistono due **tipi di rete**, a:
 - **circuito virtuale** (servizio orientato alla connessione) → prima che i datagrammi fluiscano, i due sistemi terminali e i router intermedi stabiliscano una connessione virtuale
 - **datagramma** (servizio senza connessione) → ogni datagramma viaggia indipendentemente dagli altri
+
+La rete gestisce il percorso dei pacchetti (modelli di comportamento della rete)
+
+Per ogni rete però esistono diverse **tecniche di commutazione**:
+- commutazione in memoria
+- commutazione tramite bus
+- commutazione attraverso rete d’interconnessione
+
+Le tecniche di commutazione gestiscono come un dispositivo inoltra i pacchetti al suo interno (meccanismo interno all’apparato)
 
 
 ---
@@ -129,9 +167,80 @@ Quando si verificano corrispondenze multiple si prende la corrispondenza a **pre
 ### Porte d’ingresso
 ![[Pasted image 20250411105557.png]]
 
+### Porte d’uscita
+![[Pasted image 20250411111935.png]]
+
+- **Funzionalità di accodamento** → quando la struttura di commutazione consegna pacchetti alla porta d’uscita a una frequenza che supera quella del collegamento uscente
+- **Schedulatore di pacchetti** → stabilisce in quale ordine trasmettere i pacchetti accodati
+
 ---
 ## Ricerca nella tabella di inoltro
 La ricerca nella tabella di inoltro deve essere veloce (possibilmente con lo stesso tasso della linea) per evitare accodamento, per questo motivo è implementata in una **struttura ad albero**.
 
 Ogni livello dell’albero corrisponde ad un bit dell’indirizzo di destinazione, dunque per cercare un indirizzo si comincia dalla radice dell’albero (se $0$ allora sottoalbero di sinistra, se $1$ allora sottoalbero di destra), garantendo una ricerca in $N$ passi dove $N$ è il numero di bit nell’indirizzo
 
+---
+## Tecniche di switching (commutazione)
+![[Pasted image 20250411110957.png]]
+
+### Commutazione in memoria
+Riguarda la prima generazione di router, in cui questi erano dei tradizionali calcolatori e la commutazione era effettuata sotto il controllo diretto della CPU.
+Il pacchetto veniva copiato nella memoria del processore e in seguito veniva trasferito dalle porte di ingresso a quelle di uscita
+
+![[Pasted image 20250411111210.png|600]]
+
+### Commutazione tramite bus
+In questo caso le porte di ingresso trasferiscono un pacchetto direttamente alle porte di uscita su un bus condiviso, senza l’intervento del processore di instradamento, ma questo permette di trasferire un solo pacchetto alla volta.
+Infatti i pacchetti che arrivano e trovano il bus occupato vengono accodati alla porta di ingresso, limitando la larghezza di banda a quella del bus
+
+![[Pasted image 20250411111459.png|350]]
+
+### Commutazione attraverso rete di interconnessione
+Questo tipo di commutazione supera il limite di banda si un singolo bus condiviso.
+La **crossbar switch** infatti è una rete di interconnessione che consiste di $2n$ bus che collegano $n$ porte d’ingresso a $n$ porte di uscita.
+
+Attualmente si tende a frammentare dei pacchetti IP a lunghezza variabile in celle di lunghezza fissa, per poi essere riassemblati nella porta di uscita
+
+![[Pasted image 20250411111802.png|280]]
+
+---
+## Dove si verifica l’accodamento?
+L’accodamento si verifica sia nelle porte di uscita che in quelle di ingresso
+
+>[!info] Velocità di commutazione
+>Frequenza alla quale tale un router può trasferire i pacchetti dalle porte di ingresso a quelle di uscita
+
+>[!question] Quale deve essere la capacità dei buffer?
+>Per diversi anni si è seguita la regola definita in RFC 3439: la quantità di buffering dovrebbe essere uguale a una media del tempo di andata e ritorno (RTT ad esempio $250 \text{ ms}$) per la capacità del collegamento $C$
+>
+>Le attuali raccomandazioni invece dicono che la quantità di buffering necessaria per $N$ flussi TCP è:
+>$$\frac{\text{RTT}\cdot \text{C}}{\sqrt{ n }}$$
+### Accodamento su porte di ingresso
+Si ha accodamento su porte di ingresso quando la struttura di commutazione ha una velocità inferiore a quella delle porte di ingresso (per non avere accodamento la velocità di commutazione dovrebbe essere $n\cdot \text{velocità della linea di ingresso}$)
+
+Oltre a ciò, anche quando si ha un **blocco in testa alla fila** (*HOL - head-of-line blocking*, ovvero quando un pacchetto nella coda di ingresso deve attendere il trasferimento (anche se la propria destinazione è libera) in quanto risulta bloccato da un altro pacchetto in testa alla fila
+
+>[!hint]
+>Se le code diventano troppo lunghe, i buffer si possono saturare e quindi causare una perdita di pacchetti
+
+![[Pasted image 20250411112815.png|500]]
+
+### Accodamento sulle porte di uscita
+Se la struttura di commutazione non è sufficientemente rapida nel trasferire i pacchetti, si può verificare un accodamento sulle porte di uscita
+
+Potrebbe avvenire anche nel caso in cui troppi pacchetti vanno sulla stessa porta di uscita
+
+![[Pasted image 20250411113034.png|450]]
+
+>[!hint]
+>Se le code diventano troppo lunghe, i buffer si possono saturare e quindi causare una perdita di pacchetti
+
+---
+## Protocolli del livello di rete
+
+![[Pasted image 20250411113431.png|center|600]]
+
+- **IP** → *Internet Protocol* v4 (anche v6)
+- **IGMP** → *Internet Group Management Protocol* (multicasting)
+- **ICMP** → *Internet Control Message Protocol* (gestione errori)
+- **ARP** → *Address Resolution Protocol* (associazione indirizzo IP – ind. collegamento)
