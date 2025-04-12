@@ -109,7 +109,7 @@ Lo schema generale prevede che possano essere mandati più pacchetti nonostante 
 ![[Pasted image 20250327235853.png|center|650]]
 
 ### Numeri di sequenza e riscontro
-I numeri di sequenza sono calcolati modulo $2^m$ dove $m$ è la dimensioen del campo “numero di sequenza” in bit.
+I numeri di sequenza sono calcolati modulo $2^m$ dove $m$ è la dimensione del campo “numero di sequenza” in bit.
 
 Ack (come nel precedente) indica il numero di sequenza del prossimo pacchetto atteso. Però in questo caso si tratta di un **ack comulativo** che indica che tutti i pacchetti fino al numero di sequenza indicato nell’ack sono stati ricevuti correttamente
 
