@@ -140,7 +140,7 @@ Il mittente mantiene un timer per il più vecchio pacchetto non riscontrato. All
 In questo caso il destinatario è pronto ricevere un solo pacchetto con un numero di sequenza determinato. Se salta il pacchetto, ma ne vengono ricevuti altri successi, bisognerà rimandare tutti i pacchetti a partire dal primo non ricevuto
 
 >[!example]
->$S_{f}=3$ è il mittente ha inviato il pacchetto $6$ ($S_{n}=7$). Scade il timer, allora i pacchetti $3,4,5,6$ nono sono stati riscontrati e devono essere rispediti
+>$S_{f}=3$ è il mittente ha inviato il pacchetto $6$ ($S_{n}=7$). Scade il timer, allora i pacchetti $3,4,5,6$ non sono stati riscontrati e devono essere rispediti
 
 ### FSM mittente
 ![[Pasted image 20250328001429.png]]
