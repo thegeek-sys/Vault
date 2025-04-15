@@ -70,3 +70,12 @@ Complessità:
 
 Il costo totale è $\Theta(n\log n)$
 
+---
+## Assegnazione di attività
+Consideriamo ora questo nuovo problema noto come **assegnazione di attività**
+
+Abbiamo una lista di attività, ciascuna caratterizzata da un tempo di inizio ed un tempo di fine. Le attività vanno tutte eseguite e vogliamo assegnarle al minor numero di aule tenendo conto che in una stessa aula non possono eseguirsi più attività in parallelo
+
+>[!example]
+>![[Pasted image 20250415212324.png]]
+
