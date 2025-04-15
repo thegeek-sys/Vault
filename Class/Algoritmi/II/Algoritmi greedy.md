@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Implementazione|Implementazione]]
+- [[#Assegnazione di attività|Assegnazione di attività]]
+	- [[#Assegnazione di attività#Implementazione|Implementazione]]
+- [[#Esercizio|Esercizio]]
+---
 ## Introduction
 Per illustrare il progetto e l’analisi di una algoritmo greedy consideriamo un problema piuttosto semplice chiamato **selezione di attività**
 
