@@ -77,17 +77,21 @@ Consideriamo ora questo nuovo problema noto come **assegnazione di attività**
 Abbiamo una lista di attività, ciascuna caratterizzata da un tempo di inizio ed un tempo di fine. Le attività vanno tutte eseguite e vogliamo assegnarle al minor numero di aule tenendo conto che in una stessa aula non possono eseguirsi più attività in parallelo
 
 >[!example]
+>`lista = [(1,4),(1,6),(7,8),(5,10)]`
 >![[Pasted image 20250415212324.png]]
 
-Un possibile algoritmo greedy si basa sull’idea di occupare aule finché ci sono aule da assegnare e ad ogni aula, una volta inaugurata, assegnare il maggior numero di attività non ancora assegnate che è in grado di contenere
+Un possibile algoritmo greedy si basa sull’idea di occupare aule finché ci sono aule da assegnare e ad ogni aula, una volta inaugurata, assegnare il maggior numero di attività non ancora assegnate che è in grado di contenere, utilizzando la funzione `soluzione_a` creata in precedenza
 
-```python
-def assegnazione_a(l):
-	i, f = 0, []
-	while l:
-		i+=1
-		l1 = selezione_a(l)
-		f.append(l)
-		elimina da lista le attività in l1
-	return f
-```
+Ma in questo caso l’algoritmo non produce una soluzione corretta, infatti utilizzando l’esempio precedente si avrebbe
+![[Pasted image 20250415213430.png]]
+
+### Implementazione
+Una soluzione alternativa sta nel selezionare ogni volta l’attività **che inizia prima** e, se è già presente nella soluzione un’aula in cui è possibile eseguirla gli viene assegnata, altrimenti si inserisce nella soluzione una nuova aula e gli viene assegnata l’attività
+
+>[!info] Correttezza
+>Sia $k$ il numero di aule utilizzate dalla soluzione. Fremo vedere che ci sono nella lista $k$ attività incompatibile a coppie e questo ovviamente implica che $k$ aule sono necessarie
+>
+>Sia $(a,b)$ l’attività che ha portato all’introduzione nella soluzione della $k$-esima aula. 
+>In quel momento nelle altre $k-1$ aule era impossibile eseguire l’attività $(a,b)$ ma per il criterio della scelta greedy posso anche dire che nell’istante di tempo $a$ erano tutte occupate (le attività loro assegnate iniziavano prima del tempo $a$ e non sono ancora finite) quindi nell’istante di tempo $a$ a due a due tutte queste $k$ attività sono incompatibili
+>![[Pasted image 20250415214045.png]]
+
