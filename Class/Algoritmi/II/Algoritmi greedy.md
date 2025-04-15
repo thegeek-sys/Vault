@@ -79,3 +79,15 @@ Abbiamo una lista di attività, ciascuna caratterizzata da un tempo di inizio ed
 >[!example]
 >![[Pasted image 20250415212324.png]]
 
+Un possibile algoritmo greedy si basa sull’idea di occupare aule finché ci sono aule da assegnare e ad ogni aula, una volta inaugurata, assegnare il maggior numero di attività non ancora assegnate che è in grado di contenere
+
+```python
+def assegnazione_a(l):
+	i, f = 0, []
+	while l:
+		i+=1
+		l1 = selezione_a(l)
+		f.append(l)
+		elimina da lista le attività in l1
+	return f
+```
