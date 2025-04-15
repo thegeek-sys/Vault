@@ -338,7 +338,7 @@ Come valore finale per il timeout si usa $\text{EstimatedRTT}$ più un “margin
 
 Il margine di sicurezza viene assegnato secondo la seguente formula:
 $$
-\text{DevRTT}_{t+1}=(1-\beta)\cdot \text{DevRTT}_{t}+\beta \cdot\mid \text{SampleRTT}_{t+1}-\text{EstimatedRTT}_{t+1}\mid
+\text{DevRTT}_{t+1}=(1-\beta)\cdot \text{DevRTT}_{t}+\beta \cdot\mid \text{SampleRTT}_{t+1}-\text{EstimatedRTT}_{t}\mid
 $$
 Con tipicamente $\beta=0.25$
 
