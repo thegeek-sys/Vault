@@ -93,5 +93,67 @@ Una soluzione alternativa sta nel selezionare ogni volta l’attività **che ini
 >
 >Sia $(a,b)$ l’attività che ha portato all’introduzione nella soluzione della $k$-esima aula. 
 >In quel momento nelle altre $k-1$ aule era impossibile eseguire l’attività $(a,b)$ ma per il criterio della scelta greedy posso anche dire che nell’istante di tempo $a$ erano tutte occupate (le attività loro assegnate iniziavano prima del tempo $a$ e non sono ancora finite) quindi nell’istante di tempo $a$ a due a due tutte queste $k$ attività sono incompatibili
->![[Pasted image 20250415214045.png]]
+>
+>![[Pasted image 20250415214045.png|250]]
+
+L’idea consiste quindi in individuare efficientemente l’attività che inizia prima effettuando un pre-processing in cui ordino le attività per tempo di inizio.
+Una volta fatto ciò un **heap minimo** in cui metto le coppie $(libera,i)$ dove $libera$ indica il tempo in cui si libera l’aula $i$. In questo modo in tempo $O(1)$ posso sapere qual’è l’aula che si libera prima semplicemente verificando $H[0][0]$
+
+Se nell’aula che si libera prima si può eseguire l’attività allora dovrà assegnargliela e aggiornare il valore $libera$ della coppia che la rappresenta nell’heap. Se al contrario l’aula non può eseguire l’attività allora non sarà possibile farlo in nessuna delle altre aule e bisognerà assegnare l’attività ad una nuova aula ed inserire nell’heap la coppia che rappresenta questa nuova aula. Inserimenti e cancellazioni dall’heap costeranno $O(\log n)$
+
+```python
+def assegnazioneAule(lista):
+	from heapq import heappop, heappush
+	f = [[]]
+	H = [(0,0)]
+	lista.sort()
+	
+	for inizio, fine in lista:
+		libera, aula = H[0]
+		if libera<inizio:
+			f[aula].append((inizio, fine))
+			heappop(H)
+			heappush(H, (fine, aula))
+		else:
+			f.append([(inizio, fine)])
+			heappush(H, (fine, len(f)-1))
+	return f
+```
+Complessità:
+- ordinare la lista costa $\Theta(n\log n)$
+- il $for$ viene eseguito $n$ volta ed all’interno del $for$ al caso pessimo può essere eseguita un’estrazione dall’heap seguita subito dopo da un inserimento nell’heap, entrambe le operazioni di costo $O(\log n)$. Il $for$ richiederà quindi tempo $O(n\log n)$
+
+La complessità dell’algoritmo è $\Theta(n\log n)$
+
+---
+## Esercizio
+Abbiamo $n$ file di dimensioni $d_{0},d_{1},\dots,d_{n-1}$ che vorremmo memorizzare su un disco di capacità $k$. Tuttavia la somma delle dimensioni di questi file eccede la capacità del disco. Vogliamo dunque selezionare un sottoinsieme degli $n$ file che abbia cardinalità massima e che possa essere memorizzato sul disco
+
+Descrivere un algoritmo greedy che risolve il problema in tempo $\Theta(n\log n)$ e provarne la correttezza
+
+Un algoritmo greedy per questo problema è quello che si presenta naturalmente: consideriamo i file per dimensione crescente e se c’è spazio per memorizzare il file sul disco allora facciamolo
+
+```python
+def file(D,k):
+	l = [(D[i],i) for i in range(len(D))]
+	l.sort()
+	spazio, sol = 0, []
+	for d,i in l:
+		if spazio+d<=k:
+			sol.append(i)
+			spazio+=d
+		else:
+			return sol
+```
+La complessità dell’algoritmo è $\Theta(n\log n)$
+
+>[!info] Correttezza
+>Assumiamo per assurdo che la soluzione $sol$ prodotta dal greedy non sia ottima, devono quindi esistere insiemi con più file di $sol$ che rispettano la capacità del disco.
+>Tra questi insiemi prendiamo quello con più elementi in comune con $sol$ e denotiamolo con $sol^*$
+>
+>Nota che:
+>- esiste un file $a$ che appartiene a $sol^*$ e non a $sol$ e che occupa più spazio di qualunque file in $sol$ (questo solo perché tutti gli elementi in $sol$ occupano meno spazio di quelli non presenti in $sol$)
+>- esiste un file $b$ che appartiene a $sol$ e non a $sol^*$ (questo perché $sol \not\subset sol^*$, infatti l’aggiunta di qualunque elemento a $sol$ porterebe a superare la capacità del disco)
+>
+>Posso dunque eliminare da $sol^*$ il file $a$ e inserire il file $b$ ottenendo un nuovo insieme di file che rispetta ancora le capacità del disco ed ha un elemento in più in comune con $sol$ contraddicendo le nostre ipotesi (il file $sol^*$ è quello con più elementi in comune con $sol$)
 
