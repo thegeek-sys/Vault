@@ -3,6 +3,7 @@
 - [[Union e find]]
 - [[Problemi di ottimizzazione e algoritmi di approssimazione]]
 - [[Algoritmi greedy]]
+- [[Divide et Impera]]
 - 
 
 - [[Class/Algoritmi/II/Esercizi|Esercizi]]
