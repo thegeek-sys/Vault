@@ -35,3 +35,32 @@ Un possibile approccio è:
 >[!info]
 >Dopo aver costruito la lista $A$ di $n$ elementi le due liste $A_{1}$ e $A_{2}$, grazie al test sulla cardinalità di $A_{1}$ il problema della selezione dell’elemento di rango $k$ o risulta risolto o viene ricondotto alla selezione di un elemento in una lista con meno di $n$ elementi
 
+```python
+def selezione2(A, k):
+	if len(A) == 1:
+		return A[0]
+	pivot = A[0]
+	A1, A2 = [], []
+	for i in range(1,len(A)):
+		if A[i]<pivot:
+			A1.append(A[i])
+		else:
+			A2.append(A[i])
+	if len(A1)>=k:
+		return slezione2(A1,k)
+	elif len(A1) == k-1:
+		return pivot
+	return selezione2(A2, k-len(A1)-1)
+```
+
+La procedura che tripartisce la lista in $A_{1}$, $A[0]$ e $A_{2}$ può restituire una partizione massimamente sbilanciata in cui si ha ad esempio $|A_{1}|=1$ e $|A_{2}|=n-1$, questo accade quando il pivot risulta l’elemento minimo nella lista.
+Qualora questo evento sfortunato si ripetesse sistematicamente nel corso delle varie partizioni eseguite dall’algoritmo (questo può accadere quando cerco il massimo in una lista ordinata), allora la complessità dell’algoritmo al caso pessimo viene catturata dalla seguente equazione:
+$$
+T(n)=T(n-1)+\Theta(n)=T(n)=\Theta(n^2)
+$$
+
+In generale la complessità superiore alla procedura è catturata dalla ricorrenza:
+$$
+T(n)=T(m)+\Theta(n)
+$$
+dove $m=\text{max}\{|A_{1}|,|A_{2}|\}$
