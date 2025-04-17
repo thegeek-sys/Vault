@@ -60,7 +60,7 @@ char *fgets(char *s, int size, FILE *stream);
 int fputs(const char *s, FILE *stream);
 
 // restituisce valore diverso da 0 se e solo trova EOR; altrimenti 0
-int feof(FILE *stream);
+int feof(FILE *stream);2
 // posizione il puntatore all'inizio del file
 void rewind(FILE *stream);
 ```
