@@ -229,3 +229,22 @@ O(1)&\text{se }n\leq 120 \\
 T\left( \frac{n}{5} \right)+T\left( \frac{3}{4}n \right)+\Theta(n)&\text{altrimenti}
 \end{cases}
 $$
+
+Notiamo che la ricorrenza è del tipo:
+$$
+T(n)=T(\alpha \cdot n)+T(\beta \cdot n)+\Theta(n)
+$$
+con $\alpha+\beta=\frac{1}{5}+\frac{3}{4}=\frac{19}{20}<1$. Ora dimostreremo che ricorrenze di questo tipo hanno tutte come soluzione $T(n)=\Theta(n)$
+
+>[!info] Se $T(n)=T(\alpha \cdot n)+T(\beta \cdot n)+cn$ e $\alpha+\beta<1$, allora $T(n)=\Theta(n)$
+>Il fatto che $\alpha+\beta$ sia inferiore a $1$ gioca un ruolo fondamentale nella prova
+>
+>Consideriamo l’albero delle chiamare ricorsive generato dalla ricorrenza e analizzaimone il cost per livelli
+>![[Pasted image 20250419222653.png]]
+>
+>Al primo livello abbiamo un costo $(\alpha+\beta)\cdot n$, al secondo un costo $(\alpha+\beta)^2\cdot n$, al terzo un costo $(\alpha+\beta)^3\cdot n$ e così via
+>
+>Il tempo di esecuzione totale è la somma dei contributi dei vari livelli:
+>$$T(n)<c\cdot n+c\cdot(\alpha+\beta)\cdot n+c\cdot(\alpha+\beta)^2\cdot n+\dots=cn\cdot \sum^\infty_{i=0}(\alpha+\beta)^i=cn \frac{1}{1-(\alpha+\beta)}=\Theta (n)$$
+>dove nel calcolare la serie abbiamo sfruttato il fatto che $\alpha+\beta<1$ e la seria geometrica
+
