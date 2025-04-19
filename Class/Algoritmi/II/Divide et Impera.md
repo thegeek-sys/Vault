@@ -5,6 +5,13 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Il problema della selezione|Il problema della selezione]]
+	- [[#Il problema della selezione#Approccio basato sul divide et impera|Approccio basato sul divide et impera]]
+- [[#Scelta del pivot in modo equiprobabile|Scelta del pivot in modo equiprobabile]]
+- [[#Soluzione in $O(n)$|Soluzione in O(n)]]
+	- [[#Soluzione in $O(n)$#Algoritmo per la selezione|Algoritmo per la selezione]]
+---
 ## Il problema della selezione
 Data una lista $A$ di $n$ interi distinti, ed un intero $k$, con $1\leq k\leq n$, vogliamo sapere quale elemento occuperebbe la posizione $k$ se il vettore venisse ordinato
 
@@ -149,7 +156,7 @@ Abbiamo visto che riuscire a selezionare un pivot in grado di garantire che ness
 Descriviamo ora un metodo (noto come il *mediano dei mediani*) per selezionare un pivot che garantisce di produrre sempre due sottoliste $A_{1}$ ed $A_{2}$ ciascuna delle quali non ha più di $\frac{3}{4}n$ elementi
 
 ### Algoritmo per la selezione
-Iniziamo dividendo l’insieme $A$, contentente $n$ elementi, in gruppi da $5$ elementi ciascuno; l’ultimo gruppo però potrebbe avere meno di $5$ elementi, quindi consideriamo solo i primi $\left\lfloor  \frac{n}{5}  \right\rfloor$ gruppi, ciascuno composto esattamente da $5$ elementi
+Iniziamo dividendo l’insieme $A$, contentente $n$ elementi, in gruppi da $5$ elementi ciascuno (anche $7,9,\dots$, non $3$ poiché nella dimostrazione del costo computazionale la serie risultante non convergerebbe); l’ultimo gruppo però potrebbe avere meno di $5$ elementi, quindi consideriamo solo i primi $\left\lfloor  \frac{n}{5}  \right\rfloor$ gruppi, ciascuno composto esattamente da $5$ elementi
 Quindi bisogna trovare il mediano all’interno di ciascuno di questi $\left\lfloor  \frac{n}{5}  \right\rfloor$ gruppi e infine calcoliamo il mediano $p$ dei mediani ottenuti.
 
 Useremo $p$ come elemento pivot per l’insieme $A$
@@ -246,5 +253,11 @@ con $\alpha+\beta=\frac{1}{5}+\frac{3}{4}=\frac{19}{20}<1$. Ora dimostreremo che
 >
 >Il tempo di esecuzione totale è la somma dei contributi dei vari livelli:
 >$$T(n)<c\cdot n+c\cdot(\alpha+\beta)\cdot n+c\cdot(\alpha+\beta)^2\cdot n+\dots=cn\cdot \sum^\infty_{i=0}(\alpha+\beta)^i=cn \frac{1}{1-(\alpha+\beta)}=\Theta (n)$$
->dove nel calcolare la serie abbiamo sfruttato il fatto che $\alpha+\beta<1$ e la seria geometrica
+>dove nel calcolare la serie abbiamo sfruttato il fatto che $\alpha+\beta<1$ e la seria geometrica $\sum^\infty_{i=0}x^i$ con $x<1$ converge (dividendo $A$ in gruppi da $3$, invece che $5$, si avrebbe $\alpha+\beta=\frac{1}{3}+\frac{3}{4}=\frac{13}{12}>1$, quindi non convergerebbe)
 
+Abbiamo quindi dimostrato che il problema della selezione può essere risolto in
+tempo lineare.
+Abbiamo infatti un algoritmo che risolve il problema in $O(n)$ al caso pessimo.
+Tuttavia, a causa delle grandi costanti moltiplicative nascoste da $O(n)$, nella
+pratica l’algoritmo randomizzato, che ha tempo $O(n)$ con alta probabilità, si
+comporta molto meglio
