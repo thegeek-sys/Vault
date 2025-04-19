@@ -219,4 +219,13 @@ def selezione(A,k):
 >[!hint]
 >- ordinare $120$ elementi richiede tempo $O(1)$
 >- ordinare una lista di $n$ elementi in gruppetti di $5$ richiede $\Theta\left( \frac{n}{5} \right)=\Theta(n)$ (infatti ordinare una lista di $5$ elementi richiede tempo costante)
->- selezionare i mediani dei mediani di gruppi da $5$ da una lista in cui gli elementi sono stati ordinati in gruppetti  
+>- selezionare i mediani dei mediani di gruppi da $5$ da una lista in cui gli elementi sono stati ordinati in gruppetti da $5$ richiede tempo $\Theta(n)$
+
+Sappiamo che per $n\geq 120$ risulta $|A_{1}|\leq \frac{3}{4}n$ e $|A_{2}|\leq \frac{3}{4}n$. Dunque per la complessità $T(n)$ dell’algoritmo si ha:
+$$
+T(n)\leq
+\begin{cases}
+O(1)&\text{se }n\leq 120 \\
+T\left( \frac{n}{5} \right)+T\left( \frac{3}{4}n \right)+\Theta(n)&\text{altrimenti}
+\end{cases}
+$$
