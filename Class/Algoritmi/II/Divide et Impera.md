@@ -173,4 +173,50 @@ Useremo $p$ come elemento pivot per l’insieme $A$
 >>
 >>Abbiamo dunque:
 >>$$|A_{2}|\leq n-\left( 3 \frac{n}{10} -3\right)=\frac{7}{10}n+3\leq \frac{3}{4}n$$
+>>dove l’ultima diseguaglianza segue dal fatto che $n\geq 120$
+>>
+>>##### Prova che $|A_{1}|< \frac{3}{4}n$
+>>Ci sono invece:
+>>$$\left\lfloor  \frac{n}{5}  \right\rfloor -\left\lceil  \frac{n}{10}  \right\rceil \geq\left( \frac{n}{5}-1 \right)-\left( \frac{n}{10}+1 \right)=\frac{n}{10}-2$$
+>>mediani di valore superiore a $p$
+>>
+>>Ognuno di questi mediani appartiene ad un gruppo di $5$ elementi in $A$. Ci sono dunque in $A$ altri $2$ elementi superiori a $p$ per ogni mediano.
+>>
+>>Sostituendo abbiamo in totale almeno
+>>$$3 \frac{n}{10}-6$$
+>>elementi di $A$ che finiranno in $A_{2}$
+>>
+>>Abbiamo dunque:
+>>$$|A_{2}|\leq n-\left( 3 \frac{n}{10} -6\right)=\frac{7}{10}n+6\leq \frac{3}{4}n$$
+>>dove l’ultima diseguaglianza segue dal fatto che $n\geq 120$
 
+```python
+from math import ceil
+
+def selezione(A,k):
+	if len(A)<=120: # niente sondaggio, costo costante 120 log 120
+		A.sort()
+		return A[k-1]
+	
+	# inizializza B con i mediani dei len(A)//5 gruppi di 5 elementi di A
+	B = [sorted(A[5*1 : 5*i+5])[2] for i in range(len(A)//5)] #
+	# individua il pivot p con la revola del mediano dei mediani
+	pivot = selezione(B, ceil(len(A)/10))
+	
+	A1, A2 = [], []
+	for x in A:
+		if x<pivot:
+			A1.append(x)
+		elif x>pivot:
+			A2.append(x)
+	if len(A1)>=k:
+		return selezione(A1,k)
+	elif len(A1)==k-1:
+		return pivot
+	return selezione(A2, k-len(A1)-1)
+```
+
+>[!hint]
+>- ordinare $120$ elementi richiede tempo $O(1)$
+>- ordinare una lista di $n$ elementi in gruppetti di $5$ richiede $\Theta\left( \frac{n}{5} \right)=\Theta(n)$ (infatti ordinare una lista di $5$ elementi richiede tempo costante)
+>- selezionare i mediani dei mediani di gruppi da $5$ da una lista in cui gli elementi sono stati ordinati in gruppetti  
