@@ -84,7 +84,8 @@ T(n)\leq T\left( \frac{3}{4} n\right)+\Theta(n)=\Theta(n)
 $$
 In generale finché $m$ è una frazione di $n$ (anche piuttosto vicina ad $n$ come ad esempio $\frac{99}{100}n$) la ricorrenza dà sempre $T(n)=\Theta(n)$
 
-### Scelta del pivot in modo equiprobabile
+---
+## Scelta del pivot in modo equiprobabile
 Una possibile idea per risolvere questo problema è quindi quella di scegliere il pivot $p$ a caso in modo equiprobabile tra gli elementi della lista
 
 Anche se la scelta “casuale” non produce necessariamente una partizione bilanciata, quanto visto ci fa intuire che la complessità rimane lineare in $n$
@@ -107,31 +108,69 @@ def selezione2R(A,k):
 	return selezione2R(A2, k-len(A1)-1)
 ```
 
-#### Analisi formale del caso medio
-Con la randomizzazione introdotta per la scelta del pivot possiamo assumere che uno qualunque degli elementi del vettore, con uguale probabilità $\frac{1}{n}$, diventi pivot e, poiché la scelta dell’elemento di rango $k$ produce $|A_{1}|=k-1$ e $|A_{2}|=n-k$, per il tempo atteso dell’algoritmo va studiata la ricorrenza:
-$$
-T(n)\leq \frac{1}{n}\sum^n_{k=1}T\Big(\text{max}\big\{T(k-1),T(n-k)\big\}\Big)+\Theta(n)\leq \frac{1}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }2T(k)+\Theta(n)
-$$
-possiamo dimostrare che per questa ricorrenza vale $T(n)=O(n)$ col metodo di sostituzione
-$$
-T(n)=
-\begin{cases}
-\frac{1}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }2T(k)+a\cdot n&\text{se }n\geq 3 \\
-b&\text{altrimenti}
-\end{cases}
-$$
-Dimostriamo $T(n)<cn$ per una qualunque $c>0$ costante
-Per $n\leq 3$ abbiamo $T(n)\leq b\leq 3c$ che è vera ad esempio per $c\geq b$
+> [!info] Analisi formale del caso medio
+> Con la randomizzazione introdotta per la scelta del pivot possiamo assumere che uno qualunque degli elementi del vettore, con uguale probabilità $\frac{1}{n}$, diventi pivot e, poiché la scelta dell’elemento di rango $k$ produce $|A_{1}|=k-1$ e $|A_{2}|=n-k$, per il tempo atteso dell’algoritmo va studiata la ricorrenza:
+> $$
+> T(n)\leq \frac{1}{n}\sum^n_{k=1}T\Big(\text{max}\big\{T(k-1),T(n-k)\big\}\Big)+\Theta(n)\leq \frac{1}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }2T(k)+\Theta(n)
+> $$
+> possiamo dimostrare che per questa ricorrenza vale $T(n)=O(n)$ col metodo di sostituzione
+> $$
+> T(n)=
+> \begin{cases}
+> \frac{1}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }2T(k)+a\cdot n&\text{se }n\geq 3 \\
+> b&\text{altrimenti}
+> \end{cases}
+> $$
+> Dimostriamo $T(n)<cn$ per una qualunque $c>0$ costante
+> Per $n\leq 3$ abbiamo $T(n)\leq b\leq 3c$ che è vera ad esempio per $c\geq b$
+> 
+> Sfruttando l’ipotesi induttiva $T(k)\leq c\cdot k$ per $k<n$ abbiamo
+> $$
+> T(n)\leq \frac{2c}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }k+a\cdot n
+> $$
+> da cui ricaviamo
+> $$
+> \begin{align}
+> T(n)&\leq \frac{2c}{n}\left( \sum^{n-1}_{k=1}k-\sum^{\lfloor n/2 \rfloor -1}_{k=1}k \right)+a\cdot n\leq \frac{2c}{n}\left( \frac{n(n-1)}{2}-\frac{\left( \frac{n}{2}-1 \right)\left( \frac{n}{2}-2 \right)}{2} \right)+a\cdot n \leq\\
+> &\leq \frac{c}{n}\left( \frac{3n^2}{4}+\frac{n}{2}-2 \right)+a\cdot n\leq \frac{3cn}{4}+\frac{c}{2}+a\cdot n=cn-\left( \frac{cn}{4}-\frac{c}{2}-a\cdot n \right)\leq cn
+> \end{align}
+> $$
+> dove l’ultima diseguaglianza segue prendendo $c$ in modo che $\left( \frac{cn}{4}-\frac{c}{2}-a\cdot n \right)\leq 0$; basta ad esempio prendere $c\geq 8a$
 
-Sfruttando l’ipotesi induttiva $T(k)\leq c\cdot k$ per $k<n$ abbiamo
-$$
-T(n)\leq \frac{2c}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }k+a\cdot n
-$$
-da cui ricaviamo
-$$
-\begin{align}
-T(n)&\leq \frac{2c}{n}\left( \sum^{n-1}_{k=1}k-\sum^{\lfloor n/2 \rfloor -1}_{k=1}k \right)+a\cdot n\leq \frac{2c}{n}\left( \frac{n(n-1)}{2}-\frac{\left( \frac{n}{2}-1 \right)\left( \frac{n}{2}-2 \right)}{2} \right)+a\cdot n \leq\\
-&\leq \frac{c}{n}\left( \frac{3n^2}{4}+\frac{n}{2}-2 \right)+a\cdot n\leq \frac{3cn}{4}+\frac{c}{2}+a\cdot n=cn-\left( \frac{cn}{4}-\frac{c}{2}-a\cdot n \right)\leq cn
-\end{align}
-$$
-dove l’ultima diseguaglianza segue prendendo $c$ in modo che $\left( \frac{cn}{4}-\frac{c}{2}-a\cdot n \right)\leq 0$; basta ad esempio prendere $c\geq 8a$
+L’analisi rigorosa appena fatta dimostra che, se la scelta del pivot avviene in modo equiprobabile a caso tra i vari elementi della lista $A$, il tempo di calcolo dell’algoritmo risulta con altra probabilità lineare in $n$.
+Ovviamente nel caso peggiore, quando nelle varie partizioni che si succedono nell’interazione dell’algoritmo si verifica che il perno scelto a caso risulta sempre vicino al massimo o al minimo della lista, la complessità rimane $O(n^2)$. Però questo accade con probabilità molto piccola
+
+---
+## Soluzione in $O(n)$
+Vedremo ora un algoritmo deterministico che garantisce complessità $O(n)$ anche nel caso pessimo
+
+Abbiamo visto che riuscire a selezionare un pivot in grado di garantire che nessuna delle due sottoliste $A_{1}$ e $A_{2}$ abbia più di $c\cdot n$ elementi, per una qualche costante $0<c<1$, avrebbe come conseguenza una complessità di calcolo $O(n)$
+
+Descriviamo ora un metodo (noto come il *mediano dei mediani*) per selezionare un pivot che garantisce di produrre sempre due sottoliste $A_{1}$ ed $A_{2}$ ciascuna delle quali non ha più di $\frac{3}{4}n$ elementi
+
+### Algoritmo per la selezione
+Iniziamo dividendo l’insieme $A$, contentente $n$ elementi, in gruppi da $5$ elementi ciascuno; l’ultimo gruppo però potrebbe avere meno di $5$ elementi, quindi consideriamo solo i primi $\left\lfloor  \frac{n}{5}  \right\rfloor$ gruppi, ciascuno composto esattamente da $5$ elementi
+Quindi bisogna trovare il mediano all’interno di ciascuno di questi $\left\lfloor  \frac{n}{5}  \right\rfloor$ gruppi e infine calcoliamo il mediano $p$ dei mediani ottenuti.
+
+Useremo $p$ come elemento pivot per l’insieme $A$
+
+>[!example] Scelta del perno
+>![[Pasted image 20250419214511.png]]
+
+>[!info] Proprietà
+>Se la lista $A$ contiene almeno $120$ elementi e il perno $p$ con cui partizionarla viene scelto in base alla regola appena descritta si può essere sicuri che la dimensione di ciascuna delle due sottoliste $A_{1}$ e $A_{2}$ ottenute sarà limitata da $\frac{3}{4}n$
+>
+>>[!done] Prova
+>>Il perno scelto $p$ ha la proprietà di trovarsi in posizione $\left\lceil  \frac{n}{10}  \right\rceil$ nella lista degli $\left\lfloor  \frac{n}{5}  \right\rfloor$ mediani selezionati in $A$.
+>>Ci sono dunque $\left\lceil  \frac{n}{10}  \right\rceil-1$ mediani di valore inferiore a $p$ e $\left\lceil  \frac{n}{5}  \right\rceil-\left\lfloor  \frac{n}{10}  \right\rfloor$ mediani di valore superiore a $p$
+>>
+>>##### Prova che $|A_{2}|< \frac{3}{4}n$
+>>Considera i $\left\lceil  \frac{n}{10}  \right\rceil-1$ mediani di valore inferiore a $p$. Ognuno di questi mediani appartiene ad un gruppo di $5$ elementi in $n$. Ci sono dunque in $A$ altri $2$ elementi inferiori a $p$ per ogni mediano
+>>
+>>In totale abbiamo
+>>$$3\left( \left\lceil  \frac{n}{10}  \right\rceil -1 \right)\geq 3 \frac{n}{10}-3$$
+>>elementi di $A$ che finiranno in $A_{1}$
+>>
+>>Abbiamo dunque:
+>>$$|A_{2}|\leq n-\left( 3 \frac{n}{10} -3\right)=\frac{7}{10}n+3\leq \frac{3}{4}n$$
+
