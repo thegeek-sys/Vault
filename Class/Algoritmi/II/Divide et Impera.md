@@ -64,3 +64,66 @@ $$
 T(n)=T(m)+\Theta(n)
 $$
 dove $m=\text{max}\{|A_{1}|,|A_{2}|\}$
+
+Se avessimo una regola di scelta del pivot in grado di garantire una partizione bilanciata, ossia:
+$$
+m=\text{max}\{|A_{1}|,|A_{2}|\}\approx \frac{n}{2}
+$$
+allora per la complessità $T(n)$ dell’algoritmo avremmo:
+$$
+T(n)=T\left( \frac{n}{2} \right)+\Theta(n)=\Theta(n)
+$$
+
+Chiedere però che la partizione sia perfettamente bilanciata è forse chiedere troppo, potremmo allora accontentarci di chiedere che la scelta del primo garantisca partizioni non troppo sbilanciate come ad esempio quelle per cui:
+$$
+m=\text{max}\{|A_{1}|,|A_{2}|\}\approx \frac{3}{4}n
+$$
+In questo caso si ha:
+$$
+T(n)\leq T\left( \frac{3}{4} n\right)+\Theta(n)=\Theta(n)
+$$
+In generale finché $m$ è una frazione di $n$ (anche piuttosto vicina ad $n$ come ad esempio $\frac{99}{100}n$) la ricorrenza dà sempre $T(n)=\Theta(n)$
+
+### Scelta del pivot in modo equiprobabile
+Una possibile idea per risolvere questo problema è quindi quella di scegliere il pivot $p$ a caso in modo equiprobabile tra gli elementi della lista
+
+Anche se la scelta “casuale” non produce necessariamente una partizione bilanciata, quanto visto ci fa intuire che la complessità rimane lineare in $n$
+
+```python
+def selezione2R(A,k):
+	if len(A)==1:
+		return A[0]
+	pivot = A[randint(0, len(A)-1)]
+	A1, A2 = [], []
+	for x in A:
+		if x<pivot:
+			A1.append(x)
+		elif x>pivot:
+			A2.append(x)
+	if len(A1)>=k:
+		return selezione2R(A1,k)
+	elif len(A1)==k-1:
+		return pivot
+	return selezione2R(A2, k-len(A1)-1)
+```
+
+#### Analisi formale del caso medio
+Con la randomizzazione introdotta per la scelta del pivot ossiamo assumere che uno qualunque degli elementi del vettore, con uguale probabilità $\frac{1}{n}$, diventi pivot e, poiché la scelta dell’elemento di rango $k$ produce $|A_{1}|=k-1$ e $|A_{2}|=n-k$, per il tempo atteso dell’algoritmo va studiata la ricorrenza:
+$$
+T(n)\leq \frac{1}{n}\sum^n_{k=1}T\Big(\text{max}\big\{T(k-1),T(n-k)\big\}\Big)+\Theta(n)\leq \frac{1}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }2T(k)+\Theta(n)
+$$
+possiamo dimostrare che per questa ricorrenza vale $T(n)=O(n)$ col metodo di sostituzione
+$$
+T(n)=
+\begin{cases}
+\frac{1}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }2T(k)+a\cdot n&\text{se }n\geq 3 \\
+b&\text{altrimenti}
+\end{cases}
+$$
+Dimostriamo $T(n)<cn$ per una qualunque $c>0$ costante
+Per $n\leq 3$ abbiamo $T(n)\leq b\leq 3c$ che è vera ad esempio per $c\geq b$
+
+Sfruttando l’ipotesi induttiva $T(k)\leq c\cdot k$ per $k<n$ abbiamo
+$$
+T(n)\leq \frac{2c}{n}\sum^{n-1}_{k=\left\lfloor  \frac{n}{2}  \right\rfloor }k+a\cdot n
+$$
