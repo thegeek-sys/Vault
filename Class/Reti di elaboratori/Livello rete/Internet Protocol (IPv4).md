@@ -105,3 +105,25 @@ Ogni indirizzo è composto da un prefisso e da un suffisso. Il prefisso può ave
 - **variabile** → indirizzamento senza classi
 
 ### Indirizzamento con classi
+Questo viene usato sia per reti piccole che grandi e si hanno tre possibili lunghezze del prefisso: 8, 16 e 24
+
+| Classe | Prefissi          | Primo byte       |
+| ------ | ----------------- | ---------------- |
+| A      | $n=8\text{ bit}$  | da $0$ a $127$   |
+| B      | $n=16\text{ bit}$ | da $128$ a $191$ |
+| C      | $n=24\text{ bit}$ | da $192$ a $223$ |
+| D      | non applicabile   | da $224$ a $239$ |
+| E      | non applicabile   | da $240$ a $255$ |
+![[Pasted image 20250420112605.png|450]]
+
+#### Pros e cons
+**Pro**
+Una volta individuato un indirizzo si può facilmente risalire alla classe e la lunghezza del prefisso
+
+**Contro**
+Con il passare del tempo ci si è resi conto che gli indirizzi andavano esaurendosi
+- la classe A può essere assegnata solo a $128$ organizzazioni al mondo, ognuna con $16.777.216$ nodi. Così facendo la maggior parte degli indirizzi andava sprecata e solo poche organizzazione potevano usufruire  di indirizzi di classe A
+- con la classe B si hanno gli stessi problemi della classe A
+- con la classe C invece si hanno pochi indirizzi ($256$) per la rete
+
+### Indirizzamento senza classi
