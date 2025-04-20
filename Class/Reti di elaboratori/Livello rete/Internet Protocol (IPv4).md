@@ -82,3 +82,26 @@ Per fare ciò si usano i campi **identificatore, flag e offset di frammentazione
 Il primo frammento ha un valore del campo offset pari a $0$. L’offset del secondo frammento si ottiene dividendo per $8$ la lunghezza del primo frammento (esclusa l’intestazione). Il valore del terzo frammento si ottiene dividendo per $8$ la somma della lunghezza del primo e del secondo frammento (escluse le
 intestazioni). Si continua così finché non si raggiunge l’ultimo frammento che ha il bit $M$ (more fragments) impostato a $0$
 
+---
+## Indirizzamento IPv4
+Un **indirizzo IP** è formato da $32\text{ bit}$ ($4\text{ byte}$) in notazione decimale puntata (ciascun byte dell’indirizzo viene indicato in forma decimale) e ogni interfaccia di host e router di Internet ha un indirizzo IP globalmente univoco a $32\text{ bit}$
+
+![[Pasted image 20250420111723.png|400]]
+
+Una **interfaccia** è il confine tra host e collegamento fisico. I router devono necessariamente essere connessi ad almeno due collegamenti, un host invece, generalmente, ha un’interfaccia e a ciascuna di loro è associato un indirizzo IP
+
+### Spazio degli indirizzi
+Il numero totale degli indirizzi è $2^{32}$ ovvero più di $4$ miliardi. Per identificarli si usano diverse notazioni:
+- binaria
+- decimale puntata
+- esadecimale (usata nella programmazione di rete)
+
+![[Pasted image 20250420111857.png|450]]
+
+---
+## Gerarchia dell’indirizzo
+Ogni indirizzo è composto da un prefisso e da un suffisso. Il prefisso può avere lunghezza:
+- **fissa** → indirizzamento con classi
+- **variabile** → indirizzamento senza classi
+
+### Indirizzamento con classi
