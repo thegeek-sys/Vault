@@ -127,3 +127,25 @@ Con il passare del tempo ci si è resi conto che gli indirizzi andavano esaurend
 - con la classe C invece si hanno pochi indirizzi ($256$) per la rete
 
 ### Indirizzamento senza classi
+Venne introdotto l’indirizzamento senza classi per la necessità di avere maggiore flessibilità nell’assegnamento degli indirizzi. Infatti, in questo caso, vengono utilizzati blocchi di lunghezza variabile che non appartengono a nessuna classe.
+
+Così facendo però un indirizzo non è in grado di definire da solo la rete (o blocco) a cui appartiene per questo motivo la lunghezza del prefisso (da $0$ a $32\text{ bit}$) viene aggiunta all’indirizzo separata da uno slash
+
+#### Notazione CIDR
+Il **CIDR** (*Classless InterDomain Routing*) è la strategia adottata per l’assegnazione degli indirizzi. L’indirizzo IP in questo caso viene diviso in due parti e mantiene la forma decimale puntata $a.b.c.d/n$ dove $n$ indica il numero di bit nella prima parte dell’indirizzo
+
+![[Pasted image 20250422173314.png|center|400]]
+
+>[!example]
+>![[Pasted image 20250422173352.png|400]]
+
+#### Estrazione delle informazioni
+Se $n$ è la lunghezza del prefisso:
+1. il numero di indirizzi nel blocco è dato da $N=2^{32-n}$
+2. per trovare il primo indirizzo si impostano a $0$ tutti i bit del suffisso ($32-n$)
+3. per trovare l’ultimo indirizzo si impostano a $1$ tutti i bit del suffisso ($32-n$)
+
+![[Pasted image 20250422173630.png]]
+
+---
+## Maschera e 
