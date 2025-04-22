@@ -149,3 +149,7 @@ Se $n$ è la lunghezza del prefisso:
 
 ---
 ## Maschera e indirizzo di rete
+La maschera dell’indirizzo è un numero composto da 32 bit in cui i primi $n$ bit a sinistra sono impostati a 1 e il resto ($32-n$) a 0 e permette di ottenere l’**indirizzo di rete che è usato nell’instradamento dei datagrammi verso la destinazione**
+
+![[Pasted image 20250422174214.png]]
+
