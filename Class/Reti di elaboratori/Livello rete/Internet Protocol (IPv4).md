@@ -187,3 +187,17 @@ Gli indirizzi nella forma $127.\text{xx}.\text{yy}.\text{zz}$ sono riservati al 
 >[!question] Ma come fa un ISP, a sua volta, ad ottenere un blocco di indirizzi?
 >L’**ICANN** (*Internet Corporation for Assigned Names and Numbers*) ha la responsabilità di allocare i blocchi di indirizzi (inoltre gestisce i server radice DNS e assegna e risolve dispute sui nomi di dominio)
 
+---
+## DHCP
+Il **DHCP** (*Dynamic Host Configuration Protocol*) consente all’host di ottenere dinamicamente il suo indirizzo IP dal server di rete. Ciò permette di rinnovare la proprietà dell’indirizzo in uso e rende possibile il riuso degli indirizzi (si possono avere meno indirizzi del numero totale di utenti)
+
+Inoltre supporta anche gli utenti mobili che si vogliono unire alla rete e viene utilizzato nelle reti residenziali di accesso a Internet e nelle LAN wireless, dove gli host si aggiungono e si rimuovono dalla rete con estrema facilità
+
+Nel pratico si tratta di un programma client/server di livello applicazione responsabile dell’assegnazione automatizzata degli indirizzi ai singoli host o router
+
+Quando un host vuole entrare a far parte di una rete necessita di:
+- indirizzo IP
+- maschera di rete
+- indirizzo del router
+- indirizzo DNS
+
