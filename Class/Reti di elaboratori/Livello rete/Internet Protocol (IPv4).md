@@ -238,3 +238,32 @@ E’ detta **sottrete** una rete isolata i cui punti terminali sono collegati al
 >[!example]
 >Ad esempio la maschera di sottorete `\24` indica che i $24\text{ bit}$ più a sinistra dell’indirizzo definiscono l’indirizzo della sottorete. Dunque ogni host connesso ad esempio alla sottorete $223.1.1.0/24$ deve avere un indirizzo della forma $223.1.1.\text{xx}$
 
+### Problema
+La notazione CIDR ha reso molto più flessibile l’assegnazione di blocchi di indirizzi (di dimensione variabile) ad aziende, istituzioni, utenti privati; ma cosa succede se l’entità che ha ricevuto il blocco ha bisogno di un numero maggiore di indirizzi?
+
+---
+## Indirizzi privati
+Ogni volta che si vuole installare una rete locale per connettere più macchine, l’ISP deve allocare un intervallo di indirizzi per coprire la sottorete, ma ciò è spesso impossibile per mancanza di indirizzi aggiuntivi nella sottorete
+
+Come soluzione si usano gli **indirizzi privati**, adottando la traduzione degli indirizzi di rete (*NAT*)
+
+| Indirizzi                     | CIDR             |
+| ----------------------------- | ---------------- |
+| $10.0.0.0-10.255.255.255$     | $10.0.0.0/8$     |
+| $172.16.0.0-172.31.255.255$   | $172.16.0.0/12$  |
+| $192.168.0.0-192.168.255.255$ | $192.168.0.0/16$ |
+
+---
+## Traduzione degli indirizzi di rete (NAT)
+Il **NAT** (*Network Address Translation*) è una tecnica tramite la quale i router abilitati al NAT non appaiono al mondo esterno come router ma come un unico dispositivo con un unico indirizzo IP
+
+![[Pasted image 20250422195952.png]]
+
+Dunque il router abilitato al NAT nasconde i dettagli della rete domestica al mondo esterno in questo modo non è più necessario allocare un intervallo di indirizzi IP da un ISP, infatti un unico indirizzo IP è sufficiente per tutte le macchine di una rete locale.
+
+Ciò permette inoltre la possibilità di cambiare gli indirizzi delle macchine di una rete privata senza doverlo comunicare all’internet globale e anche ISP senza modificare gli indirizzi delle macchine della rete privata
+
+### Implementazione
+Quando un router NAT riceve il datagramma, genera per esso un nuovo numero di porta di origine (es. 5001), sostituisce l’indirizzo IP origine con il proprio indirizzo IP sul lato WAN (es. 138.76.29.7) e sostituisce il numero di porta origine iniziale (es. 3348) con il nuovo numero (5001)
+
+![[Pasted image 20250422200552.png]]
