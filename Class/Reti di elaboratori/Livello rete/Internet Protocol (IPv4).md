@@ -210,3 +210,17 @@ Panoramica di DHCP:
 ### Formato messaggi
 ![[Pasted image 20250422191305.png]]
 
+>[!example]
+>![[Pasted image 20250422191604.png]]
+>
+>>[!hint]
+>>La DHCP request viene mandata in broadcast a tutta la rete (e non al solo server che ha offerto l’IP) poiché ci potrebbero essere più server DHCP. Così facendo vengono mantenuti aggiornati
+
+>[!question] Usa porte well-known (client: 68, server: 67), perché?
+>La risposta del server è broadcast (due processi su host diversi potrebbero aver scelto la stessa porta effimera)
+
+>[!question] Come può il client ottenere le altre info (maschera, server DNS, router)?
+>Nel DHCP ack il server inserisce il pathname di un file contenente le info mancanti. Il client usa FTP per ottenere il file
+
+### Formato opzioni
+Nel pacchetto non è previsto un campo per il tipo di messaggio
