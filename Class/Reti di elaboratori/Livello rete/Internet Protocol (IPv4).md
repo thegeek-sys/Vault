@@ -223,4 +223,12 @@ Panoramica di DHCP:
 >Nel DHCP ack il server inserisce il pathname di un file contenente le info mancanti. Il client usa FTP per ottenere il file
 
 ### Formato opzioni
-Nel pacchetto non è previsto un campo per il tipo di messaggio
+Nel pacchetto non è previsto un campo per il tipo di messaggio.
+
+Per questo motivo nelle opzioni viene indicato un **magic cookie** per poter indicare il tipo di messaggio DHCP che è stato mandato
+
+![[Pasted image 20250422192338.png]]
+
+---
+## Sottorete
+E’ detta **sottrete** una rete isolata i cui punti terminali sono collegati all’interfaccia di un host o di un router
