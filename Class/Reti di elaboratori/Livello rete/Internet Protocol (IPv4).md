@@ -156,4 +156,34 @@ La maschera dell’indirizzo è un numero composto da 32 bit in cui i primi $n$ 
 ### Perché la maschera?
 La maschera può essere usata da un programma per calcolare in modo efficiente le informazioni di un blocco usando solo tre operazioni sui bit:
 - numero degli indirizzi del blocco → $N=\text{NOT(maschera)}+1$
-- 
+- primo indirizzo del blocco → $\text{qualsiasi indirizzo del blocco AND maschera}$
+- ultimo indirizzo del blocco → $\text{qualsiasi indirizzo del blocco OR NOT(maschera)}$
+
+>[!example]
+>Una maschera di sottorete $/24$ ($255.255.255.0$) indica che i primi $24\text{ bit}$ sono per la rete
+>
+>L’operazione $\text{NOT}$ inverte tutti i bit della maschera ($NOT(255.255.255.0)=0.0.0.255$)
+>Aggiungendo uno si ottiene $255+1=256$, ovvero il numero di indirizzi possibili in quella subnet
+
+---
+## Indirizzi IP speciali
+![[Pasted image 20250422175646.png]]
+L’indirizzo $0.0.0.0$ è utilizzato dagli host al momento del boot
+Gli indirizzi che hanno lo $0$ come numero di rete si riferiscono alla rete corrente
+L’indirizzo composto da tutti $1$ permette la trasmissione broadcast sulla rete locale (in genere una LAN)
+Gli indirizzi con numero di rete opportuno e tutti $1$ nel campo host permettono l’invio di pacchetti broadcast a LAN distanti
+Gli indirizzi nella forma $127.\text{xx}.\text{yy}.\text{zz}$ sono riservati al **loopback** (questi pacchetti non vengono immessi nel cavo ma elaborati localmente e trattati come pacchetti in arrivo)
+
+---
+## Come ottenere un blocco di indirizzi
+
+>[!question] Cosa deve fare un amministratore di rete per ottenere un blocco di indirizzi IP da usare in una sottorete?
+>Deve contattare il proprio ISP e ottenere un blocco di indirizzi contigui con un prefisso comune
+>
+>Otterrà indirizzi nella forma $a.b.c.d/n$ dove $n$ bit indicano al sottorete e $32-n$ indicano i singoli dispositivi dell’organizzazione
+>
+>>[!hint] i $32-n$ bit possono presentare un’aggiuntiva struttura di sottorete
+
+>[!question] Ma come fa un ISP, a sua volta, ad ottenere un blocco di indirizzi?
+>L’**ICANN** (*Internet Corporation for Assigned Names and Numbers*) ha la responsabilità di allocare i blocchi di indirizzi (inoltre gestisce i server radice DNS e assegna e risolve dispute sui nomi di dominio)
+
