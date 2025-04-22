@@ -153,3 +153,7 @@ La maschera dell’indirizzo è un numero composto da 32 bit in cui i primi $n$ 
 
 ![[Pasted image 20250422174214.png]]
 
+### Perché la maschera?
+La maschera può essere usata da un programma per calcolare in modo efficiente le informazioni di un blocco usando solo tre operazioni sui bit:
+- numero degli indirizzi del blocco → $N=\text{NOT(maschera)}+1$
+- 
