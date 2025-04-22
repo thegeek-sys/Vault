@@ -232,3 +232,9 @@ Per questo motivo nelle opzioni viene indicato un **magic cookie** per poter ind
 ---
 ## Sottorete
 E’ detta **sottrete** una rete isolata i cui punti terminali sono collegati all’interfaccia di un host o di un router
+
+![[Pasted image 20250422192821.png|center|400]]
+
+>[!example]
+>Ad esempio la maschera di sottorete `\24` indica che i $24\text{ bit}$ più a sinistra dell’indirizzo definiscono l’indirizzo della sottorete. Dunque ogni host connesso ad esempio alla sottorete $223.1.1.0/24$ deve avere un indirizzo della forma $223.1.1.\text{xx}$
+
