@@ -148,4 +148,4 @@ Se $n$ è la lunghezza del prefisso:
 ![[Pasted image 20250422173630.png]]
 
 ---
-## Maschera e 
+## Maschera e indirizzo di rete
