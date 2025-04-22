@@ -193,11 +193,20 @@ Il **DHCP** (*Dynamic Host Configuration Protocol*) consente all’host di otten
 
 Inoltre supporta anche gli utenti mobili che si vogliono unire alla rete e viene utilizzato nelle reti residenziali di accesso a Internet e nelle LAN wireless, dove gli host si aggiungono e si rimuovono dalla rete con estrema facilità
 
-Nel pratico si tratta di un programma client/server di livello applicazione responsabile dell’assegnazione automatizzata degli indirizzi ai singoli host o router
+Nel pratico si tratta di un programma client/server di livello applicazione **responsabile dell’assegnazione automatizzata degli indirizzi ai singoli host o router** (tipicamente ogni sottorete dispone di un server DHCP, altrimenti il router fa da agente di appoggio DHCP)
 
 Quando un host vuole entrare a far parte di una rete necessita di:
 - indirizzo IP
 - maschera di rete
 - indirizzo del router
 - indirizzo DNS
+
+Panoramica di DHCP:
+1. l’host invia un messaggio broadcast *DHCP discover*
+2. il server DHCP risponde con *DHCP offer*
+3. l’host richiede l’indirizzo IP *DHCP request*
+4. il server DHCP invia l’indirizzo *DHCP ack*
+
+### Formato messaggi
+![[Pasted image 20250422191305.png]]
 
