@@ -22,6 +22,11 @@ Related:
 			- solo il prezzo di vendita
 
 ---
+## Specifica dei tipi di dato
+- Condizione → {ottimo, buono, discreto, da_sistemare}
+- Telefono → secondo standard
+
+---
 ## Specifica di classe
 ### AstaConclusa
 Un’istanza di questa classe rappresenta un’asta conclusa
