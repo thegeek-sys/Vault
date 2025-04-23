@@ -6,6 +6,11 @@ Related:
 Completed:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Inviare il datagramma al prossimo hop|Inviare il datagramma al prossimo hop]]
+- [[#Aggregazione degli indirizzi|Aggregazione degli indirizzi]]
+---
 ## Introduction
 Inoltrare significa collocare il datagramma sul giusto percorso (porta di uscita del router) che lo porterà a destinazione (o lo farà avanzare verso la destinazione)
 
