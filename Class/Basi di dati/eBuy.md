@@ -70,7 +70,7 @@ Un’istanza di questa classe rappresenta un venditore professionale
 		- sia `u:UtentePrivato`
 		- sia `a:Asta`
 		- sia `A` l’insieme dei link `(u, a):bid` tale che `adesso-bid.istante<=12 mesi`
-		- sia `c:CompraSubito`
+		- sia `c:CompraloSubito`
 		- sua `C` l’insieme dei link `(u, c):acquista` tale che `adesso-acquista.istante<=12 mesi
 		- `result="bassa"` se `|C|+|A|<50`
 		- `result="media"` se `50<=|C|+|A|<=300`
