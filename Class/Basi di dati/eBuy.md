@@ -11,7 +11,12 @@ Related:
 - gli utenti registrati possono pubblicare dei **post**
 	- descrizione (una stringa)
 	- categoria a cui appartiene
-	- prezzo di vendita (un numero)
 	- metodi di pagamento accettati (bonifico o carta di credito)
 	- se l’oggetto è nuovo o usato
-- 
+	- i posto possono essere di due tipi
+		- asta
+			- prezzo iniziale
+			- rialzo
+			- scadenza dell’asta
+		- compralo subito
+			- solo il prezzo di vendita
