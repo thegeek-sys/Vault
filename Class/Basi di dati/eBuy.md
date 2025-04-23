@@ -64,11 +64,15 @@ Un’istanza di questa classe rappresenta una categoria degli oggetti
 Un’istanza di questa classe rappresenta un venditore professionale
 #### Specifica delle operazioni di classe
 `popolarità():Stringa`
-- precondizioni → sia `a:Asta` tale che esista almeno un link `(this, a):pubblica`
+- precondizioni → sia `p:Post` tale che esista almeno un link `(this, p):pubblica`
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `c:Categoria`
-		- sia `R` l’insieme dei link `(this, c):gerarchia` tale che `c` abbia il ruolo di sottocategoria
-		- sia `S` l’insieme degli oggetti `c` nell’insieme `R`
-		- `result=S`
+		- sia `u:UtentePrivato`
+		- sia `a:Asta`
+		- sia `A` l’insieme dei link `(u, a):bid` tale che `adesso-bid.istante<=12 mesi`
+		- sia `c:CompraSubito`
+		- sua `C` l’insieme dei link `(u, c):acquista` tale che `adesso-acquista.istante<=12 mesi
+		- `result="bassa"` se `|C|+|A|<50`
+		- `result="media"` se `50<=|C|+|A|<=300`
+		- `result="media"` se `|C|+|A|>300`
