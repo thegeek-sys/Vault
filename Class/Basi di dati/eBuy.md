@@ -24,8 +24,7 @@ Related:
 ---
 ## Specifica dei tipi di dato
 - Condizione → {ottimo, buono, discreto, da_sistemare}
-- Telefono → secondo standard
-
+- URL → secondo standard
 ---
 ## Specifica di classe
 ### AstaConclusa
