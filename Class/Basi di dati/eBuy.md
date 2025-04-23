@@ -75,3 +75,13 @@ Un’istanza di questa classe rappresenta un venditore professionale
 		- `result="bassa"` se `|C|+|A|<50`
 		- `result="media"` se `50<=|C|+|A|<=300`
 		- `result="media"` se `|C|+|A|>300`
+
+### UtenteRegistrato
+Un’istanza di questa classe rappresenta un utente registrato
+#### Specifica delle operazioni di classe
+`affidabilità():Reale`
+- precondizioni → sia `f:Feedback` tale che esista almeno un link `(this, f):pubblica`
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `F` l’insieme
