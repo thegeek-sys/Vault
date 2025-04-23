@@ -59,3 +59,16 @@ Un’istanza di questa classe rappresenta una categoria degli oggetti
 		- sia `R` l’insieme dei link `(this, c):gerarchia` tale che `c` abbia il ruolo di sottocategoria
 		- sia `S` l’insieme degli oggetti `c` nell’insieme `R`
 		- `result=S`
+
+### VenditoreProfessionale
+Un’istanza di questa classe rappresenta un venditore professionale
+#### Specifica delle operazioni di classe
+`popolarità():Stringa`
+- precondizioni → sia `a:Asta` tale che esista almeno un link `(this, a):pubblica`
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `c:Categoria`
+		- sia `R` l’insieme dei link `(this, c):gerarchia` tale che `c` abbia il ruolo di sottocategoria
+		- sia `S` l’insieme degli oggetti `c` nell’insieme `R`
+		- `result=S`
