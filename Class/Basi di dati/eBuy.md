@@ -79,11 +79,13 @@ Un’istanza di questa classe rappresenta un venditore professionale
 ### UtenteRegistrato
 Un’istanza di questa classe rappresenta un utente registrato
 #### Specifica delle operazioni di classe
-`affidabilità():Reale`
+`affidabilità():Reale 0..1`
 - precondizioni → sia `f:Feedback` tale che esista almeno un link `(this, f):pubblica`
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
 		- sia `F` l’insieme dei feedback `f`
 		- sia `z=|{f| f in F e f<=2}|/|F|`
-		- sia `m=`
+		- sia `u` la somma di tutti gli `f` in `F`
+		- sia `m=u/|F|`
+		- `result=m*(1-z)/5`
