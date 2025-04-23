@@ -84,4 +84,5 @@ Un’istanza di questa classe rappresenta un utente registrato
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `F` l’insieme
+		- sia `F` l’insieme dei feedback `f`
+		- per ogni `f`
