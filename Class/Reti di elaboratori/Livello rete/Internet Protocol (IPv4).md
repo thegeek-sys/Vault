@@ -13,6 +13,26 @@ Completed:
 	- [[#Frammentazione#Frammentazione dei datagrammi IP|Frammentazione dei datagrammi IP]]
 	- [[#Frammentazione#Identificatore, flag e offset di frammentazione nel dettaglio|Identificatore, flag e offset di frammentazione nel dettaglio]]
 	- [[#Frammentazione#Riassemblaggio a destinazione|Riassemblaggio a destinazione]]
+- [[#Indirizzamento IPv4|Indirizzamento IPv4]]
+	- [[#Indirizzamento IPv4#Spazio degli indirizzi|Spazio degli indirizzi]]
+- [[#Gerarchia dell’indirizzo|Gerarchia dell’indirizzo]]
+	- [[#Gerarchia dell’indirizzo#Indirizzamento con classi|Indirizzamento con classi]]
+		- [[#Indirizzamento con classi#Pros e cons|Pros e cons]]
+	- [[#Gerarchia dell’indirizzo#Indirizzamento senza classi|Indirizzamento senza classi]]
+		- [[#Indirizzamento senza classi#Notazione CIDR|Notazione CIDR]]
+		- [[#Indirizzamento senza classi#Estrazione delle informazioni|Estrazione delle informazioni]]
+- [[#Maschera e indirizzo di rete|Maschera e indirizzo di rete]]
+	- [[#Maschera e indirizzo di rete#Perché la maschera?|Perché la maschera?]]
+- [[#Indirizzi IP speciali|Indirizzi IP speciali]]
+- [[#Come ottenere un blocco di indirizzi|Come ottenere un blocco di indirizzi]]
+- [[#DHCP|DHCP]]
+	- [[#DHCP#Formato messaggi|Formato messaggi]]
+	- [[#DHCP#Formato opzioni|Formato opzioni]]
+- [[#Sottorete|Sottorete]]
+	- [[#Sottorete#Problema|Problema]]
+- [[#Indirizzi privati|Indirizzi privati]]
+- [[#Traduzione degli indirizzi di rete (NAT)|Traduzione degli indirizzi di rete (NAT)]]
+	- [[#Traduzione degli indirizzi di rete (NAT)#Implementazione|Implementazione]]
 ---
 ## Introduction
 L’**Internet Protocol** è responsabile della suddivisione, dell’inoltro e della consegna dei datagrammi a livello di rete (host to host).
@@ -267,3 +287,10 @@ Ciò permette inoltre la possibilità di cambiare gli indirizzi delle macchine d
 Quando un router NAT riceve il datagramma, genera per esso un nuovo numero di porta di origine (es. 5001), sostituisce l’indirizzo IP origine con il proprio indirizzo IP sul lato WAN (es. 138.76.29.7) e sostituisce il numero di porta origine iniziale (es. 3348) con il nuovo numero (5001)
 
 ![[Pasted image 20250422200552.png]]
+
+Poiché il campo numero di porta è lungo $16\text{ bit}$, il protocollo NAT può supportare più di $60.000$ connessioni simultanee con un solo indirizzo IP sul lato WAN
+Risulta però contestato poiché:
+- i router dovrebbero elaborare i pacchetti solo fino al livello 3
+- il numero di porta viene usato per identificare l’host e non i processi
+- viola il cosiddetto *argomento punto-punto* (gli host infatti dovrebbero comunicare tra loro direttamente senza intromissione di nodi né modifica di indirizzi IP e numeri di porta)
+- causa interferenza con le applicazioni P2P in cui ogni peer dovrebbe essere in grado di avviare una connessione TCP con qualunque altro peer, a meno che il NAT non sia specificamente configurato per quella specifica applicazione P2P
