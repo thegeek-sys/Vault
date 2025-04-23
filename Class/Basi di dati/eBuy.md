@@ -20,3 +20,24 @@ Related:
 			- scadenza dell’asta
 		- compralo subito
 			- solo il prezzo di vendita
+
+---
+## Specifica di classe
+### AstaConclusa
+Un’istanza di questa classe rappresenta un’asta conclusa
+#### Specifica delle operazioni di classe
+`acquirente():Utente`
+- precondizioni → sia `u:Utente` tale che esista almeno un link `(this, u):bid`
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `R` l’insieme dei link `(this, u):bid`
+		- `result=u` tale che `bid.istante` sia il massimo tra tutti i link in `R`
+
+`prezzo_vendita():Reale>=0`
+- precondizioni → sia `u:Utente` tale che esista almeno un link `(this, u):bid`
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `R` l’insieme dei link `(this, u):bid`
+		- `result=|R|*this.rialzo+this.prezzo_iniziale`
