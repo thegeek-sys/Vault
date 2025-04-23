@@ -85,4 +85,5 @@ Un’istanza di questa classe rappresenta un utente registrato
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
 		- sia `F` l’insieme dei feedback `f`
-		- per ogni `f` `z=|F| tale che f.valutazione<=2`
+		- sia `z=|{f| f in F e f<=2}|/|F|`
+		- sia `m=`
