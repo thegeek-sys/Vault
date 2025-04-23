@@ -46,3 +46,23 @@ Un’istanza di questa classe rappresenta un’asta conclusa
 	- il valore di ritorno `result` è così definito
 		- sia `R` l’insieme dei link `(this, u):bid`
 		- `result=|R|*this.rialzo+this.prezzo_iniziale`
+
+### Categoria
+Un’istanza di questa classe rappresenta una categoria degli oggetti
+#### Specifica delle operazioni di classe
+`sottocategorie():Categoria [0..*]`
+- precondizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `c:Categoria`
+		- sia `R` l’insieme dei link `(this, c):gerarchia`
+		- `result=u` tale che `bid.istante` sia il massimo tra tutti i link in `R`
+
+`prezzo_vendita():Reale>=0`
+- precondizioni → sia `u:Utente` tale che esista almeno un link `(this, u):bid`
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `R` l’insieme dei link `(this, u):bid` con ruolo `sottocategoria`
+		- `result=|R|*this.rialzo+this.prezzo_iniziale`
