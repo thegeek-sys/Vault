@@ -22,9 +22,14 @@ Related:
 			- solo il prezzo di vendita
 
 ---
+## Diagramma UML delle classi
+![[Pasted image 20250423210847.png]]
+
+---
 ## Specifica dei tipi di dato
 - Condizione → {ottimo, buono, discreto, da_sistemare}
 - URL → secondo standard
+- Popolarità → {bassa, media, alta}
 ---
 ## Specifica di classe
 ### AstaConclusa
@@ -62,7 +67,7 @@ Un’istanza di questa classe rappresenta una categoria degli oggetti
 ### VenditoreProfessionale
 Un’istanza di questa classe rappresenta un venditore professionale
 #### Specifica delle operazioni di classe
-`popolarità():Stringa`
+`popolarità():Popolarità`
 - precondizioni → sia `p:Post` tale che esista almeno un link `(this, p):pubblica`
 - postcondizioni →
 	- non modifica il livello estensionale
@@ -72,9 +77,9 @@ Un’istanza di questa classe rappresenta un venditore professionale
 		- sia `A` l’insieme dei link `(u, a):bid` tale che `adesso-bid.istante<=12 mesi`
 		- sia `c:CompraloSubito`
 		- sua `C` l’insieme dei link `(u, c):acquista` tale che `adesso-acquista.istante<=12 mesi
-		- `result="bassa"` se `|C|+|A|<50`
-		- `result="media"` se `50<=|C|+|A|<=300`
-		- `result="media"` se `|C|+|A|>300`
+		- `result=bassa` se `|C|+|A|<50`
+		- `result=media` se `50<=|C|+|A|<=300`
+		- `result=alta` se `|C|+|A|>300`
 
 ### UtenteRegistrato
 Un’istanza di questa classe rappresenta un utente registrato
