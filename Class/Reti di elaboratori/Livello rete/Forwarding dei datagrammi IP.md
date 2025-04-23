@@ -36,7 +36,28 @@ L’inoltro richiede una riga della tabella per ogni blocco di rete
 >>>
 >>>La tabella mostra chiaramente che la prima riga ha un prefisso più lungo (che matcha con il successivo) che indica uno spazio di indirizzi più piccolo
 
+---
+## Aggregazione degli indirizzi
+Inserire nella tabella una riga per ogni blocco può portare a tabelle molto lunghe, con aumento del tempo necessario per effettuare la ricerca. Come soluzione si ha l’**aggregazione degli indirizzi**
 
-
+> [!example] Aggregazione di indirizzi nella tabella di R2
+> 
+> ![[Pasted image 20250423101336.png|450]]
+> Tabella d’inoltro per R1
+> 
+> | Indirizzo di rete | Hop successivo  | Interfaccia |
+> | ----------------- | --------------- | ----------- |
+> | $140.24.7.0/26$   | -               | m0          |
+> | $140.24.7.64/26$  | -               | m1          |
+> | $140.24.7.128/26$ | -               | m2          |
+> | $140.24.7.192/26$ | -               | m3          |
+> | $0.0.0.0/0$       | indirizzo di R2 | m4          |
+> 
+> Tabella d’inoltro per R2
+> 
+> | Indirizzo di rete | Hop successivo    | Interfaccia |
+> | ----------------- | ----------------- | ----------- |
+> | $140.24.7.0/24$   | -                 | m0          |
+> | $0.0.0.0/0$       | Router di default | m1          |
 
 
