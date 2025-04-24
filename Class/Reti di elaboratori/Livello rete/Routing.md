@@ -73,3 +73,26 @@ Un albero a costo minimo è una combinazione di percorsi a costo minimo dalla ra
 
 Il vettore di distanza p un array monodimensionale che rappresenta l’albero. Un vettore di distanza non fornisce il percorso da seguire per giungere alla destinazione ma solo i costi minimi per le destinazioni
 
+---
+## Come viene creato il vettore delle distanze?
+Ogni nodo della rete quando viene inizializzato crea un vettore distanza iniziale con le informazioni che riesce ad ottenere dai propri vicini (nodi a cui è direttamente collegato)
+
+Per creare il vettore dei vicini invia messaggi di `hello` attraverso le sue interfacce (e lo stesso fanno i vicini) e scopre l’identità dei vicini e la sua distanza da ognuno di essi
+Dopo che ogni nodo ha creato il suo vettore ne invia una copia ai suoi vicini
+
+>[!example]
+>Vettori distanza iniziali dopo messaggi di hello
+>![[Pasted image 20250424235444.png|400]]
+>
+>Quando un nodo riceve un vettore distanza un vicino provvede ad aggiornare il suo vettore distanza applicando l’equazione di Bellman-Ford
+>
+>Cosa succede quando $B$ riceve una copia di $A$?
+>![[Pasted image 20250424235730.png|300]]
+>
+>Cosa succede se ora $B$ riceve una copia di $E$?
+>![[Pasted image 20250424235818.png|300]]
+
+
+
+
+
