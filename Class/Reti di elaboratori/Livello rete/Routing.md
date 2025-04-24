@@ -103,3 +103,5 @@ per ciascun nodo $y$ in $N$
 Se il vettore distanza del nodo $x$ è cambiato per via di tale passo di aggiornamento, il nodo $x$ manderà il proprio vettore distanza aggiornato a ciascuno dei suoi vicini, i quali a loro volta aggiornano il loro vettore distanza
 
 ![[Pasted image 20250425000618.png|250]]
+
+### Modifica dei costi e problema
