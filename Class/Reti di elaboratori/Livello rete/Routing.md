@@ -104,4 +104,9 @@ Se il vettore distanza del nodo $x$ è cambiato per via di tale passo di aggiorn
 
 ![[Pasted image 20250425000618.png|250]]
 
-### Modifica dei costi e problema
+### Guasto del collegamento
+Sfruttando il fatto che ad ogni aggiornamento viene aggiornato il vettore delle distanze è possibile verificare la presenza di un guasto
+
+>[!example] Si guarda il collegamento tra $A$ e $X$
+>![[Pasted image 20250425002059.png]]
+
