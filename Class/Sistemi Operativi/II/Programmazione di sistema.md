@@ -175,3 +175,10 @@ Questa funzione permette di modificare la dimensione dell’area di memoria prec
 >Infatti, nel caso di aumento della dimensione, qualora non riuscisse ad allargare l’area correttamente allocata e puntata da `ptr`, allora una nuova area liberando quella correttamente puntata da `ptr` e copiando tutti i contenuti all’interno di `ptr`
 
 E’ inoltre importante ricordare che la nuova area di memoria allocata non viene inizializzata (se ad esempio quella originale lo era)
+
+---
+## Memory leakage
+L’esecuzione di un programma che non gestisce correttamente la liberazione della memoria non più utilizzata, può causare un aumento del consumo della memoria del sistema.
+Questo può portare al fallimento del programma stesso, non riuscendo più ad allocare altra memoria da utilizzare, ed in generale, può portare al deterioramento delle performance e del funzionamento del sistema.
+
+Dunque è importante usare sempre `free()` dopo aver terminato l’uso della memoria allocata dinamicamente
