@@ -92,7 +92,13 @@ Dopo che ogni nodo ha creato il suo vettore ne invia una copia ai suoi vicini
 >Cosa succede se ora $B$ riceve una copia di $E$?
 >![[Pasted image 20250424235818.png|300]]
 
+---
+## Algoritmo con vettore distanza
+L’idea di base è che ogni nodo invia una copia del proprio vettore distanza a ciascuno dei suoi vicini. Quando un nodo $x$ riceve un nuovo vettore distanza $DV$ da qualcuno dei suoi vicini, lo salva e usa la formula Bellman-Ford per aggiornare il proprio vettore distanza come segue:
+$$
+D_{x}(y)\gets \text{min}_{v}(c(x,v)+D_{v}(y))
+$$
+per ciascun nodo $y$ in $N$
 
-
-
+Se il vettore distanza del nodo $x$ è cambiato per via di tale passo di aggiornamento, il nodo $x$ manderà il proprio vettore distanza aggiornato a ciascuno dei suoi vicini, i quali a loro volta aggiornano il loro vettore distanza
 
