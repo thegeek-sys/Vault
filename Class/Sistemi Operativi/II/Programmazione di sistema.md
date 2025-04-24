@@ -91,6 +91,8 @@ if (una-syscall() == -1) {
 } ..
 ```
 
+### Debug syscall
+
 ---
 ## Funzioni di libreria general purpose
 A differenza delle system call, le funzioni di libreria general purpose non sono punti di accesso ai servizi del kernel, ma possono invocare una o più system call (ad esempio `printf` può usare la system call `write` per scrivere una stringa in output), ma anche nessuna (es. `strcpy`, `atoi`)
