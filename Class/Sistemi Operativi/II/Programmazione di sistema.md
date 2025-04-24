@@ -141,3 +141,5 @@ Le `m/c/ralloc` usano le vere system call per la gestione della memoria (es. `mm
 ```c
 void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
 ```
+Questa syscall crea un area di memoria per mappare un file a partire da un indirizzo
+specificato, con livello di protezione indicato
