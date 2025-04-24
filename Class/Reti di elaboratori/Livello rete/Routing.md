@@ -52,3 +52,24 @@ Si basa su:
 2. concetto di vettore di distanza
 
 ### Equazione di Bellman-Ford
+Definisce $D_{x}(y):=\text{il costo del percoso a costo minimo dal nodo y al nodo y}$
+
+Allora
+$$
+D_{x}(y)=\text{min}_{v}\{c(x,v)+D_{v}(y)\}
+$$
+dove $\text{min}_{v}$ riguarda tutti i vicini di $x$
+
+#### Rappresentazione grafica
+I percorsi $a\to b$, $b\to y$, $c\to y$ sono percorsi a costo minimo precedentemente stabiliti e $x\to y$ è un nuovo percorso a costo minimo
+
+![[Pasted image 20250424234155.png|450]]
+$$
+D_{xy}=\text{min}\{(c_{xa}+D_{ay}),(c_{xb}+D_{by}),(c_{xc}+D_{cy})\}
+$$
+
+### Vettore distanza
+Un albero a costo minimo è una combinazione di percorsi a costo minimo dalla radice dell’albero verso tutte le destinazioni
+
+Il vettore di distanza p un array monodimensionale che rappresenta l’albero. Un vettore di distanza non fornisce il percorso da seguire per giungere alla destinazione ma solo i costi minimi per le destinazioni
+
