@@ -137,3 +137,7 @@ void *alloca(size_t size);
 
 ### $\verb|mmap|$, $\verb|brk|$, $\verb|sbrk|$ system call
 Le `m/c/ralloc` usano le vere system call per la gestione della memoria (es. `mmap` alloca memoria, `brk` cambia la dimensione data segment di un processo)
+
+```c
+void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
+```
