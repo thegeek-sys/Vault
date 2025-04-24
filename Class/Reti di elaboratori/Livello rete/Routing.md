@@ -109,4 +109,20 @@ Sfruttando il fatto che ad ogni aggiornamento viene aggiornato il vettore delle 
 
 >[!example] Si guarda il collegamento tra $A$ e $X$
 >![[Pasted image 20250425002059.png]]
+>al punto b. il router $A$ si aggiorna male a causa del guasto di $X$, quindi invia l’aggiornamento a $B$ che incrementa il vettore delle distanze. D’ora in poi la richiesta  di aggiornamento continuerà a rimbalzare tra $A$ e $B$ (di conseguenza aumenterà il costo) finché il costo non sarà $\infty$
+
+Per poter evitare di entrare in questo loop infinito si hanno due possibilità:
+- **split horizon** → se il nodo $B$ ritiene che il percorso ottimale per raggiungere il nodo $X$ passi attraverso $A$, allora non deve fornire questa informazione ad $A$ (l’informazione è arrivata da $A$ e quindi la conosce già). Come risultato si ha che $B$ elimina la riga di $X$ dalla tabella prima di inviarla ad $A$
+- **poisoned reverse** → se un nodo usa un vicino per raggiungere una destinazione (ormai guesta), segnala attivamente a quel vicino che il percorso ha costo $\infty$, così il vicino non sarà tentato di usarlo per quella destinazione.
+
+---
+## RIP
+Il **RIP** (*Routing Information Protocol*) è un protocollo a vettore di distanza ed è tipicamente incluso in UNIX BSD dal 1982
+La distanza viene misurata in hop ed ha un massimo di $15$ hop (il valore $16$ indica l’infinito)
+
+![[Pasted image 20250425003656.png]]
+
+### Tabelle di routing
+L’informazione della tabella di routing è sufficiente per raggiungere la destinazione
+![[Pasted image 20250425003842.png]]
 
