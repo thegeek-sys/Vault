@@ -49,6 +49,9 @@ La variabile globale `errno` rappresenta il codice di errore dell’ultima syste
 
 Di fatto le system call che terminano con un errore tipicamente ritornano il valore $-1$ e impostano `errno` con il codice specifico dell’errore che si è generato durante l’esecuzione
 
+#### $\verb|perror()|$
+
+
 ---
 ## Funzioni di libreria general purpose
 A differenza delle system call, le funzioni di libreria general purpose non sono punti di accesso ai servizi del kernel, ma possono invocare una o più system call (ad esempio `printf` può usare la system call `write` per scrivere una stringa in output), ma anche nessuna (es. `strcpy`, `atoi`)
