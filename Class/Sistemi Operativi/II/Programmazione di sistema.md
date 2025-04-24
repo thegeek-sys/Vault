@@ -92,6 +92,13 @@ if (una-syscall() == -1) {
 ```
 
 ### Debug syscall
+E’ spesso utile monitorare il comportamento di un processo relativamente all’invocazione di system call. In nostro aiuto ci sta il comando `strace` che permette di tracciare l’invocazione di system call da parte di un processo. In particolare consente di stampare la lista di system call invocate da un processo e relativi parametri
+
+```bash
+strace -o strace.txt -s <max_string_size> /path2/program
+strace -p <pid> -e trace=syscall1,syscall2... -o strace_<pid>.txt
+strace -o passwd.strace -s 100 cat /etc/passwd
+```
 
 ---
 ## Funzioni di libreria general purpose
@@ -112,3 +119,21 @@ man 2 nome_funz_libreria
 - una funzione general purpose può essere rimpiazzata ma una system call no → la syscall `skbr` permette di allocare memoria e la funzione `malloc` è implementata usando la `skbr`; dunque possiamo implementare la `malloc` ma dovremo sempre utilizzare la `sbrk`
 - le system call introducono una sperazione di compiti → la `sbrk` alloca chunk di memoria (kernel mode) per il processo utente, mentre la `malloc` gestisce l’area di memoria in user mode
 - le funzioni di libreria semplificano l’uso delle system call → le system call espongono un’iterfaccia minimale, mentre le funzioni di libreria forniscono funzionalità elaborate e semplificano la gestione delle strutture dati di input e output (es. la syscall `time` restituisce lo Unix time mentre `ctime` restituisce la data attuale)
+
+---
+## Allocazione di memoria
+
+```c
+#include <stdlib.h> // funzioni di libreria, non syscall
+
+// allocano nell'heap
+void *malloc(size_t size);
+void *calloc(size_t nmemb, size_t size);
+void *realloc(void *ptr, size_t size);
+
+#include <alloca.h> // alloca nello stack
+void *alloca(size_t size);
+```
+
+### $\verb|mmap|$, $\verb|brk|$, $\verb|sbrk|$ system call
+Le `m/c/ralloc` usano le vere system call per la gestione della memoria (es. `mmap` alloca memoria, `brk` cambia la dimensione data segment di un processo)
