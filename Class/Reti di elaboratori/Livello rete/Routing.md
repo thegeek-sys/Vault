@@ -5,6 +5,28 @@ Related:
   - "[[Livello rete]]"
 ---
 ---
+## Index
+- [[#Recap Forwarding dei datagrammi IP forwarding datagrammi IP|Recap forwarding datagrammi IP]]
+- [[#Introduction|Introduction]]
+- [[#Grafo di una rete di calcolatori|Grafo di una rete di calcolatori]]
+	- [[#Grafo di una rete di calcolatori#Costi|Costi]]
+- [[#Algoritmo d’instradamento con vettore distanza|Algoritmo d’instradamento con vettore distanza]]
+	- [[#Algoritmo d’instradamento con vettore distanza#Equazione di Bellman-Ford|Equazione di Bellman-Ford]]
+		- [[#Equazione di Bellman-Ford#Rappresentazione grafica|Rappresentazione grafica]]
+	- [[#Algoritmo d’instradamento con vettore distanza#Vettore distanza|Vettore distanza]]
+- [[#Come viene creato il vettore delle distanze?|Come viene creato il vettore delle distanze?]]
+- [[#Algoritmo con vettore distanza|Algoritmo con vettore distanza]]
+	- [[#Algoritmo con vettore distanza#Guasto del collegamento|Guasto del collegamento]]
+- [[#RIP|RIP]]
+	- [[#RIP#Tabelle di routing|Tabelle di routing]]
+	- [[#RIP#RIP protocol|RIP protocol]]
+	- [[#RIP#Messaggi RIP|Messaggi RIP]]
+		- [[#Messaggi RIP#Struttura|Struttura]]
+	- [[#RIP#Timer RIP|Timer RIP]]
+		- [[#Timer RIP#Guasto sul collegamento e recupero|Guasto sul collegamento e recupero]]
+	- [[#RIP#Caratteristiche di RIP|Caratteristiche di RIP]]
+	- [[#RIP#Implementazione di RIP|Implementazione di RIP]]
+---
 ## Recap [[Forwarding dei datagrammi IP|forwarding datagrammi IP]]
 Inoltrare significa collocare il datagramma sul giusto percorso (porta di uscita del router) che lo porterà a destinazione (o lo farà avanzare verso la prossima destinazione)
 
@@ -145,3 +167,36 @@ Ogni messaggio contiene un elenco comprendente fino a $25$ sottoreti di destinaz
 
 #### Struttura
 ![[Pasted image 20250425004840.png]]
+
+### Timer RIP
+Il protocollo RIP presenta diversi timer:
+- timer periodico → controlla invio di messaggi di aggiornamento (25-35 secondi)
+- timer di scadenza → regola la validità dei percorsi (180 secondi); se entro lo scadere del timer non si riceve aggiornamento, il percorso viene considerato scaduto e il suo costo impostato a $16$
+- timer per garbage collection → elimina percorsi dalla tabella (120 secondi); quando le informazioni non sono più valide, il router continua ad annunciare il percorso con costo pari a 16, e, allo scadere del timer, rimuove il percorso
+
+#### Guasto sul collegamento e recupero
+Se un router non riceve notizie dal suo vicino per 180 sec allora il nodo adiacente/il collegamento viene considerato spento o guasto. Quindi:
+- RIP modifica la tabella d’instradamento locale
+- RIP propagare l’informazione mandando annunci ai router vicini
+- i vicini inviano nuovi messaggi (se la loro tabella d’instradamento è cambiata)
+- l’informazione che il collegamento è fallito si propaga rapidamente su tutta la rete.
+- l’utilizzo del poisoned reverse evita i loop ($\text{distanza infinita} = 16 \text{ hop}$)
+
+### Caratteristiche di RIP
+- **split horizon with poisoned reverse** (inversione avvelenata)
+	- serve per evitare che un router invii rotte non valide al router da cui ha imparato la rotta (evitare cicli)
+	- si imposta a infinito ($16$) il costo della rotta che passa attraverso il vicino a cui si manda l’advertisement
+- **triggered updates**
+	- riduce il problema della convergenza lenta
+	- quando cambia una rotta si inviano immediatamente informazioni ai vicini senza attendere il timeout.
+- **hold-down**
+	- fornisce robustezza
+	- quando si riceve una informazione di una rotta non più valida, si avvia un timer e tutti gli advertisement riguardanti quella rotta che arrivano entro il timeout vengono tralasciati
+
+### Implementazione di RIP
+Il protocollo RIP è implementato nel livello applicazione tramite UDP (porta 520)
+Un processo chiamato *routed* (*route daemon*) esegue RIP, ossia mantiene le informazioni di instradamento e scambia messaggi con i processi routed nei router vicini
+
+Poiché RIP viene implementato come un processo a livello applicazione, può inviare e riceve messaggi su una socket standard e utilizzare un protocollo di trasporto standard
+
+![[Pasted image 20250425010334.png]]
