@@ -63,7 +63,33 @@ void perror(const char *prefix);
 dove `errno_string` rappresenta il messaggio di errore in formato di stringa (e quindi mnemonico) associato al valore di `errno` (es. `perror("main");` invia su srderr la stringa `main:mess_errore_mnemonico=errno`)
 
 #### $\verb|strerror()|$
-Questa è una funzione di libreria che consente di convertire un codice di errore
+Questa è una funzione di libreria che consente di convertire un codice di errore numerico `errno` (che acquisisce come parametro di input nella sua equivalente rappresentazione in stringa)
+```c
+#include <string.h>
+char *strerror(int errnum);
+
+// ad esempio
+printf("Si è verificato errore:%s\n", strerror(errno));
+```
+
+#### Esempio di gestione errore
+```c
+..
+#include <syscall_lib.h>
+#include <stdio.h> /* per perror() */
+#include <string.h> /* per strerror() */
+#include <errno.h>
+..
+if (una-syscall() == -1) {
+	int errsv = errno;
+	perror("main"); // stderr
+	printf(”Si è verificato errore:%s\n”, strerror(errsv)); //stdout
+	
+	if (errsv == ...) {
+		...
+	}
+} ..
+```
 
 ---
 ## Funzioni di libreria general purpose
