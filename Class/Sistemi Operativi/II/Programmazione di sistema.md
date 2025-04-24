@@ -20,9 +20,14 @@ Per ogni system call esiste un omonimo comando in C. Infatti quando il processo 
 
 Le system call sono utilizzate per:
 - file
-	- file e directory
-	- IPC (*Inter Process Communication*) → pipe e fifo
-	- socket e socket di rete (networking)
+	- file e directory → creazione, accesso/modifica contenuto/attributi
+	- IPC (*Inter Process Communication*) → pipe e fifo (processi residenti sulla stessa macchina)
+	- socket e socket di rete (networking) → comunicazione tra processi mediante protocolli di rete
+- gestione della memoria
+- processi
+	- gestione di processi → creazione/terminazione, esecuzione, sincronizzazione, accesso/modifica attributi/ambiente
+	- gestione dei thread (POSIX Thread) → processi leggeri, creazione/terminazione, sincronizzazione
+	- segnali → interazione/comunicazione tra processi, creazione sezioni critiche
 
 ### Dove trovare la descrizione delle syscall
 Nella sezione 2 del `man` sono contenute informazioni dettagliate sull’utilizzo ed il funzionamento delle system call
@@ -30,6 +35,9 @@ Nella sezione 2 del `man` sono contenute informazioni dettagliate sull’utilizz
 ```bash
 man 2 nome_system_call
 ```
+
+### Gestione errory system call
+L’esecuzione di una system call può interrompere 
 
 ---
 ## Funzioni di libreria general purpose
