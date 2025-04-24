@@ -43,3 +43,12 @@ Serve quindi un **algoritmo di instradamento** per poter determinare il cammino 
 
 ---
 ## Algoritmo d’instradamento con vettore distanza
+L’algoritmo d’instradamento presenta  due principali caratteristiche, è:
+- **distribuito** → ogni nodo riceve informazione dai vicini e opera su quelle
+- **asincrono** → non richiede che tutti i nodi operino al passo con gli altri
+
+Si basa su:
+1. equazione di Bellman-Ford
+2. concetto di vettore di distanza
+
+### Equazione di Bellman-Ford
