@@ -36,8 +36,18 @@ Nella sezione 2 del `man` sono contenute informazioni dettagliate sull’utilizz
 man 2 nome_system_call
 ```
 
-### Gestione errory system call
-L’esecuzione di una system call può interrompere 
+### Gestione errori system call
+L’esecuzione di una system call può interrompere e non andare a buon fine per diversi motivi, principalmente per:
+- il processo che la invoca non ha sufficienti privilegi per l’esecuzione
+- non ci sono sufficienti risorse per l’esecuzione
+- gli argomenti in ingresso alla system call non sono validi
+
+Per questi motivi è fondamentale controllare i valori di ritorno per rilevare e segnalare all’utente il verificarsi di errori. Per un corretto funzionamento del programma è inoltre **fondamentale gestire in maniere opportuna** l’eventuale errore verificatosi
+
+#### $\verb|errno|$
+La variabile globale `errno` rappresenta il codice di errore dell’ultima system call invocata che ha generato un errore (le syscall che terminano con successo lasciano `errno` invariato)
+
+Di fatto le system call che terminano con un errore tipicamente ritornano il valore $-1$ e impostano `errno` con il codice specifico dell’errore che si è generato durante l’esecuzione
 
 ---
 ## Funzioni di libreria general purpose
