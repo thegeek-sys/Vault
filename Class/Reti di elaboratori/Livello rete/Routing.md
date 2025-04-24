@@ -126,3 +126,22 @@ La distanza viene misurata in hop ed ha un massimo di $15$ hop (il valore $16$ i
 L’informazione della tabella di routing è sufficiente per raggiungere la destinazione
 ![[Pasted image 20250425003842.png]]
 
+### RIP protocol
+Periodicamente, ogni router che esegue RIP invia le righe della propria tabella di routing (vettore di distanza) per fornire informazioni agli altri router sulle reti e sugli host che è in grado di raggiungere
+Qualsiasi router sulla stessa rete di quello che invia queste informazioni potrà aggiornare la propria tabella in base alle informazioni ricevute
+Un router che riceve un messaggio da un altro router sulla stessa rete, in cui si dice che può raggiungere la rete $X$ con un costo $N$, sa di poter raggiungere la rete $X$ con un costo pari a $N+1$ inviando i pacchetti al router da cui ha ricevuto il messaggio
+
+>[!warning]
+>Invece di inviare solo i vettori di distanza, i router inviano l’intero contenuto della tabella di routing
+
+### Messaggi RIP
+RIP si basa su una coppia di processi client-server e sul loro scambio di messaggi (protocollo di livello rete, implementato a livello applicazione)
+
+Si hanno due tipi di messaggi RIP:
+- **RIP Request** → quando un nuovo router viene inserito nella rete invia una RIP Request per ricevere immediatamente informazioni di routing
+- **RIP Response** (o *advertisements*) → si ha o in risposta una Request (solicited response) oppure periodicamente ogni $30$ secondi (unsolicited response)
+
+Ogni messaggio contiene un elenco comprendente fino a $25$ sottoreti di destinazione all’interno del sistema autonomo, nonché la distanza del mittente rispetto a ciascuna di tali sottoreti
+
+#### Struttura
+![[Pasted image 20250425004840.png]]
