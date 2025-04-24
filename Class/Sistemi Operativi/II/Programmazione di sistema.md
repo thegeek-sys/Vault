@@ -161,7 +161,7 @@ La funzione `brk()` viene utilizzata per modificare lo spazio assegnato per il p
 ```c
 void *realloc(void *ptr, size_t size)
 ```
-Questa funzione permette di modificare la dimensione dell’area di memoria precedentemente allocata con `m/calloc` e puntata da `ptr` nella dimensione specificata dal valore di `size`. Ritorna `NULL` in caso di errore
+Questa funzione permette di modificare la dimensione dell’area di memoria precedentemente allocata con `m/calloc` e puntata da `ptr` nella dimensione specificata dal valore di `size`. Ritorna `NULL` in caso di errore (ma l’area di memoria originale rimane intatta)
 
 > [!example]
 > ```c
@@ -172,5 +172,6 @@ Questa funzione permette di modificare la dimensione dell’area di memoria prec
 > ```
 
 >[!hint] `strptr1` potrebbe essere diverso da `strptr`
->Infatti, nel caso di aumento della dimensione, qualora non riuscisse ad allargare l’area correttamente allocata e puntata da `ptr`, allora una nuova area liberando quella correttamente puntata da `ptr`
+>Infatti, nel caso di aumento della dimensione, qualora non riuscisse ad allargare l’area correttamente allocata e puntata da `ptr`, allora una nuova area liberando quella correttamente puntata da `ptr` e copiando tutti i contenuti all’interno di `ptr`
 
+E’ inoltre importante ricordare che la nuova area di memoria allocata non viene inizializzata (se ad esempio quella originale lo era)
