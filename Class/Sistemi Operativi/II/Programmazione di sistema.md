@@ -50,7 +50,20 @@ La variabile globale `errno` rappresenta il codice di errore dell’ultima syste
 Di fatto le system call che terminano con un errore tipicamente ritornano il valore $-1$ e impostano `errno` con il codice specifico dell’errore che si è generato durante l’esecuzione
 
 #### $\verb|perror()|$
+Questa è una funzione della libreria standard
+```c
+#include <stdio.h>
+void perror(const char *prefix);
+```
 
+`perror` stampa su `stderr` il messaggio di errore, convertendo il codice di errore `errno` in una stringa formata da
+```
+<prefix>:<errno_string>
+```
+dove `errno_string` rappresenta il messaggio di errore in formato di stringa (e quindi mnemonico) associato al valore di `errno` (es. `perror("main");` invia su srderr la stringa `main:mess_errore_mnemonico=errno`)
+
+#### $\verb|strerror()|$
+Questa è una funzione di libreria che consente di convertire un codice di errore
 
 ---
 ## Funzioni di libreria general purpose
