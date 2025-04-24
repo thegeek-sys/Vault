@@ -169,7 +169,7 @@ Useremo $p$ come elemento pivot per l’insieme $A$
 >
 >>[!done] Prova
 >>Il perno scelto $p$ ha la proprietà di trovarsi in posizione $\left\lceil  \frac{n}{10}  \right\rceil$ nella lista degli $\left\lfloor  \frac{n}{5}  \right\rfloor$ mediani selezionati in $A$.
->>Ci sono dunque $\left\lceil  \frac{n}{10}  \right\rceil-1$ mediani di valore inferiore a $p$ e $\left\lceil  \frac{n}{5}  \right\rceil-\left\lfloor  \frac{n}{10}  \right\rfloor$ mediani di valore superiore a $p$
+>>Ci sono dunque $\left\lceil  \frac{n}{10}  \right\rceil-1$ mediani di valore inferiore a $p$ e $\left\lfloor  \frac{n}{5}  \right\rfloor-\left\lceil  \frac{n}{10}  \right\rceil$ mediani di valore superiore a $p$
 >>
 >>##### Prova che $|A_{2}|< \frac{3}{4}n$
 >>Considera i $\left\lceil  \frac{n}{10}  \right\rceil-1$ mediani di valore inferiore a $p$. Ognuno di questi mediani appartiene ad un gruppo di $5$ elementi in $n$. Ci sono dunque in $A$ altri $2$ elementi inferiori a $p$ per ogni mediano
