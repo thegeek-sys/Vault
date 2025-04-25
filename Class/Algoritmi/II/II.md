@@ -4,6 +4,7 @@
 - [[Problemi di ottimizzazione e algoritmi di approssimazione]]
 - [[Algoritmi greedy]]
 - [[Divide et Impera]]
+- [[Programmazione dimanica]]
 - 
 
 - [[Class/Algoritmi/II/Esercizi|Esercizi]]
