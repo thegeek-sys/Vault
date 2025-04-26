@@ -96,6 +96,12 @@ def Fib3(n):
 >
 >$$T[i]=\text{il numero di stringhe binaria lunghe }i\text{ senza 2 zeri consecutivi}$$
 >
->Il problema dunque si limita a definire quante stringhe si aggiungono aumentando di un elemento la lunghezza
+>Il problema dunque si limita a definire quante stringhe si aggiungono aumentando di un elemento la lunghezza (dando per scontato che tutte le stringhe fino a $i-1$ sono valide)
+>![[Pasted image 20250426114844.png|250]]
 >
+>Se alla posizione $i$ ci sta un $1$, allora aggiungo $T[i-1]$ modi (non ci sono vincoli sui valori precedenti)
+>Se alla posizione $i$ ci sta uno $0$, vuol dire che necessariamente alla posizione $i-1$ ci deve essere un $1$. Aggiungo quindi $T[i-2]$ modi
+>
+>In totale si ha dunque:
+>$$T[i]=T[i-1]+T[i-2]$$
 
