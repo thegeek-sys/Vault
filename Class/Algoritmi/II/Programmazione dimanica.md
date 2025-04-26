@@ -136,18 +136,16 @@ def Fib3(n):
 >>
 >>$$T[i]=\text{il numero di modi in cui posso sistemare }i\text{ persone}$$
 >>
->>Il problema dunque si limita a definire quante stringhe si aggiungono aumentando di un elemento la lunghezza (dando per scontato che tutte le stringhe fino a $i-1$ sono valide)
->>![[Pasted image 20250426114844.png|200]]
+>>Abbiamo quindi due casi: se la persona aggiunta viene inserita in una camera singola o in una camera doppia
+>>Mettendo la persona nella camera singola dovremo aggiungere $T[i-1]$ possibilità. Mettendo invece la persona nella camera doppia avremo $i-1$ modi per poter scegliere il suo compagno di stanza a cui dovremo aggiungere le $T[i-2]$ possibili combinazioni precedenti
+>>$$T[i]=\underset{ \text{sing} }{ ? }+\underset{ \text{doppia} }{ ? }=T[i-1]+(i-1)T[i-2]$$
 >>
->>Se alla posizione $i$ ci sta un $1$, allora aggiungo $T[i-1]$ modi (non ci sono vincoli sui valori precedenti)
->>Se alla posizione $i$ ci sta uno $0$, è necessario controllare anche il valore precedente ($i-1$):
->>- se ci sta uno $0$, allora $i-2$ deve necessariamente essere un $1$ → aggiungo $T[i-3]$
->>- se ci sta un $1$, allora sulla posizione $i-2$ non ci sono vincoli → aggiungo $T[i-2]$
->>
->>In totale si ha dunque:
->>$$T[i]=T[i-1]+T[i-2]+T[i-3]$$
->>e posso iniziare ad applicare la formula a partire da $T[2]$
+>>Implementazione:
+>>```python
+>>def es(n):
+>>	T=[0]*(n+1)
+>>	T[1],T[2] = 1,2
+>>	for i in range(3, n+1):
+>>		T[i]=T[i-1]+(i-1)T[i-2]
+>>```
 
-$$
-T[i]=
-$$
