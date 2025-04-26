@@ -78,3 +78,5 @@ def Fib3(n):
 		a,b = b, a+b
 	return b
 ```
+
+### In sintesi
