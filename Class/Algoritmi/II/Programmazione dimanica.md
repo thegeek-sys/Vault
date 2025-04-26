@@ -130,9 +130,11 @@ def Fib3(n):
 >[!question] Abbiamo $n$ ($n\geq 1$) persone da distribuire in un albero con stanze singole o doppie. In quanti modi si possono distribuire le persone?
 >>[!done]
 >>Come prima precalcoliamo i primi valori, per poi capire il pattern per la costruzione dei successivi
->>![[Pasted image 20250426123938.png|300]]
+>>![[Pasted image 20250426124538.png|300]]
+>>- $n=1$ → $1$
+>>- $n=2$ → $2$ ($[[1],[2]],[[1,2]]$)
 >>
->>$$T[i]=\text{il numero di stringhe binaria lunghe }i\text{ senza 3 zeri consecutivi}$$
+>>$$T[i]=\text{il numero di modi in cui posso sistemare }i\text{ persone}$$
 >>
 >>Il problema dunque si limita a definire quante stringhe si aggiungono aumentando di un elemento la lunghezza (dando per scontato che tutte le stringhe fino a $i-1$ sono valide)
 >>![[Pasted image 20250426114844.png|200]]
@@ -145,3 +147,7 @@ def Fib3(n):
 >>In totale si ha dunque:
 >>$$T[i]=T[i-1]+T[i-2]+T[i-3]$$
 >>e posso iniziare ad applicare la formula a partire da $T[2]$
+
+$$
+T[i]=
+$$
