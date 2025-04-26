@@ -106,22 +106,42 @@ def Fib3(n):
 >>
 >>In totale si ha dunque:
 >>$$T[i]=T[i-1]+T[i-2]$$
->>e posso iniziare ad applicare la formula a partire da $T[2]$
+>>e posso iniziare ad applicare la formula a partire da $T[1]$
 
 >[!question] Vogliamo contare il numero di stringhe binarie lunghe $n$ senza 3 zeri consecutivi
 >>[!done]
->>Per questo tipo di esercizi è necessario tendenzialmente precalcolarsi i primi valori, per poi capire il pattern per la costruzione dei successivi
->>![[Pasted image 20250426115415.png|300]]
+>>Come prima precalcoliamo i primi valori, per poi capire il pattern per la costruzione dei successivi
+>>![[Pasted image 20250426123938.png|300]]
 >>
->>$$T[i]=\text{il numero di stringhe binaria lunghe }i\text{ senza 2 zeri consecutivi}$$
+>>$$T[i]=\text{il numero di stringhe binaria lunghe }i\text{ senza 3 zeri consecutivi}$$
 >>
 >>Il problema dunque si limita a definire quante stringhe si aggiungono aumentando di un elemento la lunghezza (dando per scontato che tutte le stringhe fino a $i-1$ sono valide)
 >>![[Pasted image 20250426114844.png|200]]
 >>
 >>Se alla posizione $i$ ci sta un $1$, allora aggiungo $T[i-1]$ modi (non ci sono vincoli sui valori precedenti)
->>Se alla posizione $i$ ci sta uno $0$, vuol dire che necessariamente alla posizione $i-1$ ci deve essere un $1$. Aggiungo quindi $T[i-2]$ modi
+>>Se alla posizione $i$ ci sta uno $0$, è necessario controllare anche il valore precedente ($i-1$):
+>>- se ci sta uno $0$, allora $i-2$ deve necessariamente essere un $1$ → aggiungo $T[i-3]$
+>>- se ci sta un $1$, allora sulla posizione $i-2$ non ci sono vincoli → aggiungo $T[i-2]$
 >>
 >>In totale si ha dunque:
->>$$T[i]=T[i-1]+T[i-2]$$
+>>$$T[i]=T[i-1]+T[i-2]+T[i-3]$$
 >>e posso iniziare ad applicare la formula a partire da $T[2]$
 
+>[!question] Abbiamo $n$ ($n\geq 1$) persone da distribuire in un albero con stanze singole o doppie. In quanti modi si possono distribuire le persone?
+>>[!done]
+>>Come prima precalcoliamo i primi valori, per poi capire il pattern per la costruzione dei successivi
+>>![[Pasted image 20250426123938.png|300]]
+>>
+>>$$T[i]=\text{il numero di stringhe binaria lunghe }i\text{ senza 3 zeri consecutivi}$$
+>>
+>>Il problema dunque si limita a definire quante stringhe si aggiungono aumentando di un elemento la lunghezza (dando per scontato che tutte le stringhe fino a $i-1$ sono valide)
+>>![[Pasted image 20250426114844.png|200]]
+>>
+>>Se alla posizione $i$ ci sta un $1$, allora aggiungo $T[i-1]$ modi (non ci sono vincoli sui valori precedenti)
+>>Se alla posizione $i$ ci sta uno $0$, è necessario controllare anche il valore precedente ($i-1$):
+>>- se ci sta uno $0$, allora $i-2$ deve necessariamente essere un $1$ → aggiungo $T[i-3]$
+>>- se ci sta un $1$, allora sulla posizione $i-2$ non ci sono vincoli → aggiungo $T[i-2]$
+>>
+>>In totale si ha dunque:
+>>$$T[i]=T[i-1]+T[i-2]+T[i-3]$$
+>>e posso iniziare ad applicare la formula a partire da $T[2]$
