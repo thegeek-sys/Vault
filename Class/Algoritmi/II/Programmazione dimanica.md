@@ -58,5 +58,23 @@ In questo modo l’algoritmo effettuerà esattamente $n$ chiamate ricorsive (una
 Tenendo conto che ogni chiamata ricorsiva costa $O(1)$ il tempo di calcolo di `Fib` è $O(n)$, un miglioramento esponenziale rispetto alla versione da cui eravamo partiti
 
 A questo punto è ormai semplice eliminare la ricorsione:
+```python
+def Fib2(n):
+	F=[-1]*(n+1)
+	F[0] = F[1] = 1
+	for i in range(2, n+1):
+		F[i] = F[i-2]+F[i-1]
+	return F[n]
 ```
+La complessità asintotica rimane $\Theta(n)$ ma abbiamo un risparmio di tempo e spazio (per la gestione della ricorsione)
+
+E’ possibile inoltre ridurre utilizzare complessità di spazio $O(1)$ (mantenendo la complessità di tempo $\Theta(n)$), ci è infatti necessario mantenere solo gli ultimi due valori calcolati
+```python
+def Fib3(n):
+	if n<=1:
+		return n
+	a=b=1
+	for i in range(2, n+1):
+		a,b = b, a+b
+	return b
 ```
