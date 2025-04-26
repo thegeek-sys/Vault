@@ -34,5 +34,29 @@ Negli esempi finora visti i sottoproblemi che si ottenevano dall’applicazione 
 >Il motivo di tale inefficienza sta nel fatto che il programma viene chiamato sullo stesso input molte volte (ridondante)
 >![[Pasted image 20250425224006.png]]
 
+Individuata la causa dell’inefficienza dell’algoritmo è facile individuare la cura. Basta memorizzare in una lista i valori $fib(i)$ quando li si calcola la prima volta cosicché nelle future chiamate ricorsive a $fib(i)$ non ci sarà più bisogno di ricalcolarli, ma potranno essere ricavati dalla lista. Questa tecnica prende il nome di **memoizzazione**
 
+Si risparmia così tempo di calcolo al costo di un piccolo incremento di occupazione di memoria
 
+```python
+def Fib(n):
+	F = [-1]*(n+1)
+	return memFib(n, F)
+
+def memFib(n, F):
+	if n<=1:
+		return 1
+	if F[n] == -1:
+		a = memFib(n-1, F)
+		b = memFib(n-2, F)
+		F[n] = a+b
+	return F[n]
+```
+La novità di questo secondo algoritmo è che esso, prima di attivare la ricorsione per il calcolo di qualche $f_{i}$, con $i<n$, controlla se quel valore è stato calcolato precedentemente e posto in $F[i]$. In caso affermativo la ricorsione non viene effettuata ma viene restituito direttamente il valore $F[i]$
+In questo modo l’algoritmo effettuerà esattamente $n$ chiamate ricorsive (una sola  chiamata per il calcolo di ogni $f_{i}$ con $i<n$)
+
+Tenendo conto che ogni chiamata ricorsiva costa $O(1)$ il tempo di calcolo di `Fib` è $O(n)$, un miglioramento esponenziale rispetto alla versione da cui eravamo partiti
+
+A questo punto è ormai semplice eliminare la ricorsione:
+```
+```
