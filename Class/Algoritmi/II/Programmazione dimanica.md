@@ -80,3 +80,8 @@ def Fib3(n):
 ```
 
 ### In sintesi
+- siamo partiti da un algoritmo ricorsivo e non efficiente ottenuto applicando la tecnica del divide et impera al problema in esame
+- ci siamo accorti che il motivo dell’inefficienza era la presenza di overlapping di sottoproblemi
+- abbiamo risolto il problema del ricalcolo di soluzioni allo stesso sottoproblema mediante la tecnica della memoizzazione e quindi ricorrendo a ”tabelle” per conservare i risultati a sottoproblemi già calcolati
+- abbiamo sviluppato una versione dell’algoritmo iterativa che ha permesso di sbarazzarsi della ricorsione, permettando una approccio **bottom-up** (la versione ricorsiva usa l’approccio top-down)
+- abbiamo ottimizzato lo spazio di memoria mantenendo memorizzata nel corso dell’algoritmo solo la parte della tabella che sarebbe servita nel seguito
