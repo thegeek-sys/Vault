@@ -19,4 +19,3 @@ $$
 >[!question] Non ci sono dipendenti che lavorano in più di due dipartimenti
 >$$\forall x\text{ dipendente}(x)\to \forall d_{1},d_{2},d_{3}\Bigl(\bigl(\text{ lavora}(x,d_{1})\land \text{ lavora}(x,d_{2})\land \text{ lavora}(x,d_{3})\bigr)\to(d_{1}=d_{2}\lor d_{1}=d_{3}\lor d_{2}=d_{3})\Bigr)$$
 
->[!question]
