@@ -149,4 +149,4 @@ def Fib3(n):
 >>		T[i]=T[i-1]+(i-1)T[i-2]
 >>```
 
->[!question]
+>[!question] Abbiamo $n$ file di varie dimensioni ciascuna inferiore a $C$ ed un disco di capacità $C$, bisogna trovare il sottoinsieme di file che può essere memorizzato sul disco e che massimizza lo spazio occupato. Progettare un algoritmo che, dati $C$ e la lista $A$, dove $A[i]$ è la dimensione del file $i$, risolva il problema
