@@ -103,3 +103,10 @@ Un’istanza di questa classe rappresenta un utente privato
 Per ogni `p:Post`, `u:UtentePrivato` nella relazione `(u,p):feedback` allora:
 - se `p:CompraloSubito` allora esiste la relazione `(u,p):acquista`
 - se `p:AstaConclusa` allora `b=p.bid_vincente()` e esista un unico link `(u,b):bid_utente`
+
+### Bid
+Un’istanza di questa classe rappresenta una bid
+
+`[Bid.tempo]`
+Sia `a:Asta` l’unica associazione coinvolta in `(this,a):bid_asta`
+- `a.scadenza>this.istante`
