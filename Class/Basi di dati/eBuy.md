@@ -5,21 +5,44 @@ Related:
 ---
 ---
 ## Raffinamento dei requisiti
-- Utenti registrati
-	- nome (una stringa)
-	- data di registrazione (una data)
-- gli utenti registrati possono pubblicare dei **post**
-	- descrizione (una stringa)
-	- categoria a cui appartiene
-	- metodi di pagamento accettati (bonifico o carta di credito)
-	- se l’oggetto è nuovo o usato
-	- i posto possono essere di due tipi
-		- asta
-			- prezzo iniziale
-			- rialzo
-			- scadenza dell’asta
-		- compralo subito
-			- solo il prezzo di vendita
+1. utenti registrati
+	1. nickname
+	2. data registrazione
+	3. post pubblicati (vedi req. 2)
+	4. affidabilità (operazione)
+2. post (annunci per la vendita di **singoli** oggetti)
+	1. descrizione
+	2. categoria a cui appartiene l’oggetto (vedi req. 4)
+	3. metodi di pagamento accettati (bonifico o carta di credito)
+	4. stato dell’oggetto
+		1. nuovo
+			1. durata della garanzia (obbligatorio)
+		2. usato
+			1. durata della garanzia (non obbligatorio)
+			2. condizioni (ottimo, buono, discreto, da sistemare)
+	5. tipologia di post
+		1. con asta al rialzo
+			1. prezzo iniziale dell’asta
+			2. prezzo dei singoli rialzi (in euro)
+			3. istante di scadenza dell’asta
+			4. se è stata conclusa
+				1. il bid che si è aggiudicato l’oggetto in vendita (se esiste)
+		2. “compralo subito”
+			1. prezzo di vendita dell’oggetto
+3. bid (offerte a post con asta al rialzo)
+	1. istante in cui è stata proposta
+	2. utente offerente (bidder)
+	3. meccanismo su aumento sistematico del prezzo
+4. categorie
+	1. livello della gerarchia ad albero
+5. venditori professionali
+	1. URL della vetrina online
+	2. ulteriori informazioni legali
+	3. popolarità (operazione)
+			utenti professionali non posson fare bid
+6. feeback
+	1. voto numerico (0-5)
+	2. commento testuale (non obbligatorio)
 
 ---
 ## Diagramma UML delle classi
