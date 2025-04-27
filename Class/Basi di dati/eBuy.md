@@ -35,13 +35,13 @@ Related:
 ### AstaConclusa
 Un’istanza di questa classe rappresenta un’asta conclusa
 #### Specifica delle operazioni di classe
-`acquirente():Utente`
-- precondizioni → sia `u:Utente` tale che esista almeno un link `(this, u):bid`
+`bid_vincente():Bid`
+- precondizioni → sia `b:Bid` tale che esista almeno un link `(this, b):bid_asta`
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `R` l’insieme dei link `(this, u):bid`
-		- `result=u` tale che `bid.istante` sia il massimo tra tutti i link in `R`
+		- sia `R` l’insieme dei link `(this, b):bid_asta`
+		- `result=b` tale che `b.istante` sia il massimo tra tutti i link in `R`
 
 `prezzo_vendita():Reale>=0`
 - precondizioni → sia `u:Utente` tale che esista almeno un link `(this, u):bid`
@@ -102,4 +102,4 @@ Un’istanza di questa classe rappresenta un utente privato
 `[UtentePrivato.utente_feedback.verifica_acquisto]`
 Per ogni `p:Post`, `u:UtentePrivato` nella relazione `(u,p):feedback` allora:
 - se `p:CompraloSubito` allora esiste la relazione `(u,p):acquista`
-- se `p:AstaConclusa` allora `p.acquirente()=u`
+- se `p:AstaConclusa` allora `b=p.bid_vincente()` e esista un unico link `(u,b):bid_utente`
