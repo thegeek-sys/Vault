@@ -4,6 +4,12 @@ Class: "[[Algoritmi]]"
 Related:
 ---
 ---
+## Index
+- [[#Dal divide et impera alla programmazione dinamica|Dal divide et impera alla programmazione dinamica]]
+	- [[#Dal divide et impera alla programmazione dinamica#In sintesi|In sintesi]]
+- [[#Esercizi|Esercizi]]
+- [[#Algoritmi pseudopolinomiali|Algoritmi pseudopolinomiali]]
+---
 ## Dal divide et impera alla programmazione dinamica
 Sappiamo che gli algoritmi basati sulla tecnica del divide et impera seguono i 3 passi di questo schema:
 1. dividi il problema in sottoproblemi di taglia inferiore
@@ -90,8 +96,6 @@ def Fib3(n):
 ## Esercizi
 
 >[!question] Vogliamo contare il numero di stringhe binarie lunghe $n$ senza 2 zeri consecutivi
-
->[!question] Vogliamo contare il numero di stringhe binarie lunghe $n$ senza 2 zeri consecutivi
 >>[!done]
 >>Per questo tipo di esercizi è necessario tendenzialmente precalcolarsi i primi valori, per poi capire il pattern per la costruzione dei successivi
 >>![[Pasted image 20250426115415.png|300]]
@@ -159,5 +163,19 @@ def Fib3(n):
 >>
 >>Per compilare la tabella:
 >>$$T[i,j]=\begin{cases}T[i-1,j]&\text{se non prendo} \\A[i]+T[i-1,j-A[i]]&\text{se prendo}\end{cases}$$
+>>>[!info]
+>>>Quando prendo il file, per calcolare la nuova posizione $T[i,j]$, utilizzo la dimensione del file $i$ più $T$ della riga precedente e colonna corrispondente a $j-A[i]$ (devo avere sufficiente spazio)
+>>
+>>Quindi:
+>>$$T[i,j]=\text{max}\{T[i-1,j],A[i]+T[i-1,j-A[i]]\}$$
+>>e la soluzione si troverà nella posizione $T[C,len(A)]$
+>>
+>>Questa tabella ci permette anche di ricostruire le scelte prese per poter arrivare alla soluzione
+>>>[!example] $C=10$ e $A=[1,5,3,4,2,2]$
+>>>![[Pasted image 20250427130630.png]]
+>>
+>>Dunque la complessità risulta essere $\Theta(n\cdot c)$, ma come già detto è pseudopolinomiale. Infatti $C$ potrebbe essere molto più grande di $len(A)$
 
-
+---
+## Algoritmi pseudopolinomiali
+Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
