@@ -85,13 +85,14 @@ Un’istanza di questa classe rappresenta un venditore professionale
 Un’istanza di questa classe rappresenta un utente registrato
 #### Specifica delle operazioni di classe
 `affidabilità():Reale 0..1`
-- precondizioni → sia `f:Feedback` tale che esista almeno un link `(this, f):utente_feedback`
+- precondizioni → sia `p:Post` tale che esista almeno un link `(this, p):feedback`
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `F` l’insieme dei feedback `f`
-		- sia `z=|{f t.c. f in F e f<=2}|/|F|`
-		- sia `u` la somma di tutti gli `f` in `F`
+		- sia `p:Post`
+		- sia `F` l’insieme delle relazioni `(this, p):feedback`
+		- sia `z=|{f t.c. f in F e f.valutazione<=2}|/|F|`
+		- sia `u` la somma di tutti gli `f.valutazione` in `F`
 		- sia `m=u/|F|`
 		- `result=m*(1-z)/5`
 
@@ -99,5 +100,6 @@ Un’istanza di questa classe rappresenta un utente registrato
 Un’istanza di questa classe rappresenta un utente privato
 
 `[UtentePrivato.utente_feedback.verifica_acquisto]`
-Per ogni `f:Feedback`, `u:UtentePrivato` nella relazione `(u,f):utente_feedback` allora:
-- 
+Per ogni `p:Post`, `u:UtentePrivato` nella relazione `(u,p):feedback` allora:
+- se `p:CompraloSubito` allora esiste la relazione `(u,p):acquista`
+- se `p:AstaConclusa` allora `p.acquirente()=u`
