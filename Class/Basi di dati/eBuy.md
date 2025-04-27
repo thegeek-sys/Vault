@@ -85,7 +85,7 @@ Un’istanza di questa classe rappresenta un venditore professionale
 Un’istanza di questa classe rappresenta un utente registrato
 #### Specifica delle operazioni di classe
 `affidabilità():Reale 0..1`
-- precondizioni → sia `f:Feedback` tale che esista almeno un link `(this, f):acquista`
+- precondizioni → sia `f:Feedback` tale che esista almeno un link `(this, f):utente_feedback`
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
