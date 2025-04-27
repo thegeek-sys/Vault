@@ -151,4 +151,13 @@ def Fib3(n):
 
 >[!question] Abbiamo $n$ file di varie dimensioni ciascuna inferiore a $C$ ed un disco di capacità $C$, bisogna trovare il sottoinsieme di file che può essere memorizzato sul disco e che massimizza lo spazio occupato. Progettare un algoritmo che, dati $C$ e la lista $A$, dove $A[i]$ è la dimensione del file $i$, risolva il problema
 >>[!done]
->>Non è difficile rendersi conto che gli algoritmi greedy non trovano sempre la soluzione ottima
+>>Non è difficile rendersi conto che gli algoritmi greedy non trovano sempre la soluzione ottima.
+>>Tramite la programmazione dinamica è possibile trovare la soluzione ottima in tempo **pseudopolinomiale**
+>>
+>>Ci è infatti possibile creare una tabella $C\times len(A)$ dove $T[i,j]$ è il massimo spazio che posso occupare con i primi $i$ file in un blocco grande $j$
+>>Inoltre, poiché la compilazione della tabella è sequenziale, quando calcolo $T[i,j]$ ho già calcolato tutti i precedenti
+>>
+>>Per compilare la tabella:
+>>$$T[i,j]=\begin{cases}T[i-1,j]&\text{se non prendo} \\A[i]+T[i-1,j-A[i]]&\text{se prendo}\end{cases}$$
+
+
