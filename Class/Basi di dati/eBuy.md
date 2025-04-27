@@ -46,7 +46,7 @@ Related:
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250427161413.png]]
+![[Pasted image 20250427232131.png]]
 
 ---
 ## Specifica dei tipi di dato
