@@ -94,3 +94,10 @@ Un’istanza di questa classe rappresenta un utente registrato
 		- sia `u` la somma di tutti gli `f` in `F`
 		- sia `m=u/|F|`
 		- `result=m*(1-z)/5`
+
+### UtentePrivato
+Un’istanza di questa classe rappresenta un utente privato
+
+`[UtentePrivato.utente_feedback.verifica_acquisto]`
+Per ogni `f:Feedback`, `u:UtentePrivato` nella relazione `(u,f):utente_feedback` allora:
+- 
