@@ -22,7 +22,7 @@ Related:
 			- solo il prezzo di vendita
 
 ---
-## Diagramma UML dell%e classi
+## Diagramma UML delle classi
 ![[Pasted image 20250427161413.png]]
 
 ---
