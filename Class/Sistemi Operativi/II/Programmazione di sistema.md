@@ -221,3 +221,17 @@ E’ dunque possibile mappare un file su disco in un area di memoria (`buffer`),
 
 ---
 ## Sync e demapping
+```c
+int msync(void *addr, size_t len, int flags);
+```
+
+`msync` è una funzione che serve a sincronizzare una regione di memoria mappata (ottenuta con `mmap`) con il file o il dispositivo da cui quella memoria è stata creata. Senza `msync` le modifiche potrebbero rimanere solo in memoria (RAM) e non finire mai fisicamente sul file
+
+>[!warning]
+>E’ possibile usarlo solo se la memoria è `MAP_SHARED`
+
+```c
+int munmap(void *addr, size_t len);
+```
+
+**`munmap`** è la funzione che serve per liberare una porzione di memoria che era stata mappata precedentemente usando `mmap` (l’equivalente di `free` per la memoria allocata con `malloc`)
