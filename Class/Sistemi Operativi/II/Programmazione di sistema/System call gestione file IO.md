@@ -40,4 +40,41 @@ Si differenziano due tipi di flags:
 	- alcuni definiti solo per alcuni tipi di file speciali (es. fifo, socket)
 
 #### Rappresentazione dei flag
-I flag sono rappresentati con maschere di bit
+I flag sono rappresentati con maschere di bit. Per poter gestire i flag si usano dei bit (ciascun bit rappresenta un flag). Quindi:
+- `1` → flag attivo
+- `0` → flag non attivo
+
+Per ogni flag esiste una maschera (valore numerico dove un certo bit è $1$ e tutti gli altri $0$). Ad esempio `O_RDONLY` è una maschera
+Se si vogliono attivare più flag insieme è possibile fare un ora bitwise
+
+```
+MACRO1 = 01000000;
+MACRO2 = 00010000;
+MACRO1|MACRO2 = 01010000;
+```
+
+#### File status flags
+Esistono tre categorie di file status flags:
+- *modalità di accesso* → `read`, `write`, `read&write` che sono specificati nella `open` e non possono essere modificati una volta aperto il file
+- *di apertura* → definiscono il comportamento della open e non vengono mantenuti
+- *modalità operative* → definiscono il comportamento delle operazioni `read` e `write` e sono specificati nella open ma possono essere modificati anche dopo l’apertura del file
+
+---
+## System call principali
+- `open`
+- `chown`
+- `read`
+- `chmod`
+- `write`
+- `stat`
+- `lseek`
+- `select`
+- `close`
+- `ioctl`
+- `unlink`
+- `fnctl`
+- `symlink`
+- `rename`
+- `rmdir`
+- `chdir`
+
