@@ -130,3 +130,11 @@ Restituisce $-1$ in caso di errore, altrimenti il numero di byte letti (che può
 Mentre `fread` legge da uno stream di tipo `FILE` (bufferizzata) `read` non è bufferizzata. Inoltre `fread` prende in input la dimensione del tipo di dato da leggere, mentre `read` lavora sui byte indipendentemente dal tipo di dati in essi contenuto
 
 ### $\verb|write()|$
+
+```c
+ssize_t write(int fd, const void *buf, size_t count);
+```
+
+- `fd` → file descriptor
+- `buf` → area di memoria da cui leggere i dati; dichiarata `const` per non essere modificata dalla funzione
+- `count` → numero di byte da scrivere
