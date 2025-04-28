@@ -40,3 +40,4 @@ Si differenziano due tipi di flags:
 	- alcuni definiti solo per alcuni tipi di file speciali (es. fifo, socket)
 
 #### Rappresentazione dei flag
+I flag sono rappresentati con maschere di bit
