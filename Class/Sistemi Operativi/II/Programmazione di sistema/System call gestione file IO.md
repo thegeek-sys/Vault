@@ -203,6 +203,9 @@ A tali insiemi di operazioni sono associati un insieme di comandi passati come p
 
 Esempi:
 ```c
-val = fcntl(fd, F_GETFL); // restituisce file access mode e file status flag
+fcntl(fd, F_GETFL); // restituisce file access mode e file status flag
 fcntl(fd, F_SETFL, O_APPEND); // importa i file status flag
+ftncl(fd, F_SETLK, F_WRLCK); // acquisice/rilascia lock
+ftncl(fd, F_SETLKW, F_WRLCK); // acquisisce/rilascia lock bloccante (se è presente un lock attende il suo rilascio)
+
 ```
