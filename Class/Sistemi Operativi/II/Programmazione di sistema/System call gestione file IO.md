@@ -127,3 +127,6 @@ ssize_t read(int fd, void *buf, size_t count);
 Restituisce $-1$ in caso di errore, altrimenti il numero di byte letti (che può essere minore di `count` se si raggiunge EOF)
 
 #### Differenza con $\verb|fread|$
+Mentre `fread` legge da uno stream di tipo `FILE` (bufferizzata) `read` non è bufferizzata. Inoltre `fread` prende in input la dimensione del tipo di dato da leggere, mentre `read` lavora sui byte indipendentemente dal tipo di dati in essi contenuto
+
+### $\verb|write()|$
