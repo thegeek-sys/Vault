@@ -237,3 +237,22 @@ Dopo l’esecuzione ritorna:
 - $-1$ → errore
 
 Inoltre `readfds`, `writefds`, `exceptfds` vengono modificati per contenere solo i fd effettivamente pronti. Quindi, dopo `select()`, è necessario usare `FD_ISSET(fd, &readfds)` per sapere se un `fd` è pronto.
+
+Il parametro `timeout` controlla **quanto aspetta** `select()` prima di restituire:
+- `NULL` (nessun timeout) → la chiamata è bloccante, quindi attende indefinitamente finché un `fd` non è pronto.
+- `timeout = 0` → la chiamata è non bloccante, quindi controlla i `fd` e ritorna subito.
+- `timeout > 0` → attende per quel tempo massimo
+
+Sono messe a disposizioni quattro macro per la gestione degli insieme dei file descriptor:
+- `FD_ZERO()` → svuota un insieme.
+- `FD_SET()` → aggiunge un file descriptor ad un insieme
+- `FD_CLR()` → rimuove un file descriptor da un insieme
+- `FD_ISSET()` → testa se un file descriptor appartiene ad un insieme. Utile quando select ritorna
+
+I prototipi sono:
+```c
+void FD_ZERO(fd_set *set);
+void FD_SET(int fd, fd_set *set);
+void FD_CLR(int fd, fd_set *set);
+int FD_ISSET(int fd, fd_set *set);
+```
