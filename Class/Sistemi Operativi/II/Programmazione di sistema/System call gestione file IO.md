@@ -78,3 +78,52 @@ Esistono tre categorie di file status flags:
 - `rmdir`
 - `chdir`
 
+### $\verb|open()|$
+
+```c
+int open(const char *pathname, int flags);
+int open(const char *pathname, int flags, mode_t mode);
+```
+
+La syscall `open` restituisce $-1$ in caso di errore, altrimenti il file descriptor
+Il parametro `flags` (file status flags) è l’equivalente del parametro `mode` della `fopen`
+Infine il parametro opzionale `mode` indica i bit dei permessi di un file in creazione
+
+![[Pasted image 20250428221217.png|450]]
+
+#### Differenza con $\verb|fopen|$
+Mentre `open` ritorna solo il file descriptor `fopen` ritorna il puntatore a un oggetto `FILE`. Questo oggetto è tipicamente una struttura che contiene tutte le informazioni richiesta dalla standard libreria I/O per gestire lo stream, in particolare contiene:
+- il file descriptor al file effettivo
+- un puntatore ad un buffer per lo stream
+- la dimensione del buffer
+- un conteggio del numero di caratteri attualmente contenuti nel buffer
+- un flag di errore
+
+#### Flags
+Come già detto ci sono diversi tipi di flags:
+- flags modalità di accesso
+	- `O_RDONLY`
+	- `O_WRONLY`
+	- `O_RDWR`
+- flags di apertura
+	- `O_CREAT` → crea il file se non esiste
+	- `O_EXCL` (quando specificato insieme a `O_CREAT` dà errore se il file esiste già)
+	- …
+- flags modalità operativa
+	- `O_APPEND` → scrive sempre alla fine del file
+	- `O_SYNC` → scrittura sincrona, la call ritorna solamente quando la scrittura dei dati nel file è terminata
+	- `O_TRUNC` → se il file esiste, è un file regolare, e la modalità di accesso consente la scrittura, allora il file viene troncato alla posizione $0$
+
+### $\verb|read()|$
+
+```c
+ssize_t read(int fd, void *buf, size_t count);
+```
+
+- `fd` → file descriptor
+- `buf` → puntatore all’area di memoria in cui memorizzare i byte letti
+- `count` → numero di byte da leggere
+
+Restituisce $-1$ in caso di errore, altrimenti il numero di byte letti (che può essere minore di `count` se si raggiunge EOF)
+
+#### Differenza con $\verb|fread|$
