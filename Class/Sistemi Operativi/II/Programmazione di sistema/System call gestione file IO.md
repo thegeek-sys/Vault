@@ -220,3 +220,20 @@ L’argomento è la struttura lock:
 
 Il lock è *advisory*, ovvero richiede cooperazione tra processi, infatti tutti I processi fanno una `F_GETLK` o `F_SETLK/LKW` e osservano il risultato (cercare di scrivere un file sul quale un processo detiene un lock non ha l'effetto di bloccare la scrittura)
 Per avere un lock mandatory, ovvero che impedisce la scrittura o lettura richiede che il file system supporti il mandatory locking
+
+#### $\verb|select()|$
+La syscall `select` ha lo scopo di attendere che almeno uno tra i file descriptor `fd` diventi pronto per leggere, scrivere o segnalare errori
+
+Parametri:
+- `nfds` → il più grande `fd` + 1 tra tutti quelli nei set (`readfds`, `writefds`, etc.).
+- `readfds`→ `fd` da controllare per **lettura** (es. `read()` non bloccante).
+- `writefds`→ `fd` da controllare per **scrittura** (es. `write()` non bloccante).
+- `exceptfds`→ `fd` da controllare per **eccezioni** (es. errori su socket).
+- `timeout` → quanto tempo **aspettare** (può essere 0 o NULL).
+
+Dopo l’esecuzione ritorna:
+- $>0$ → numero di descriptor pronti
+- $0$ → timer scaduto, nessun `fd` pronto
+- $-1$ → errore
+
+Inoltre `readfds`, `writefds`, `exceptfds` vengono modificati per contenere solo i fd effettivamente pronti. Quindi, dopo `select()`, è necessario usare `FD_ISSET(fd, &readfds)` per sapere se un `fd` è pronto.
