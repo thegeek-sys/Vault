@@ -4,7 +4,7 @@ Class: "[[Sistemi Operativi]]"
 Related:
   - "[[Programmazione di sistema]]"
 ---
----
+€---
 ## Operare sui file
 
 >[!info]
