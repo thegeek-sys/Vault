@@ -182,3 +182,15 @@ L’esecuzione di un programma che non gestisce correttamente la liberazione del
 Questo può portare al fallimento del programma stesso, non riuscendo più ad allocare altra memoria da utilizzare, ed in generale, può portare al deterioramento delle performance e del funzionamento del sistema.
 
 Dunque è importante usare sempre `free()` dopo aver terminato l’uso della memoria allocata dinamicamente
+
+### $\verb|memset()|$ e $\verb|memcpy()|$
+```c
+void *memset(void *s, int c, size_t n);
+```
+La funzione `memset()` assegna il valore intero `c` ad `n` bytes contigui dell’area di memoria puntata da `s`
+
+```c
+void *memcpy(void *dest, const void *src, size_t n);
+```
+Copia `n` bytes contigui a partire da `src` in `dest`, però le due aree di memoria non devono sovrapporsi (può risultare ad esempio utile per duplicare rapidamente un array)
+
