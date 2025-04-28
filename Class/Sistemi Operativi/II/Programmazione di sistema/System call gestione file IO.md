@@ -191,3 +191,18 @@ Il parametro `mode` è un numero ottale (es. $0755$). Si possono inoltre usare l
 
 #### $\verb|opendir()|$, $\verb|readdir()|$ e $\verb|closedir()|$
 Non sono system call ma funzioni di libreria che permettono di gestire una directory tramite stream (ritornato da `opendir`). `readdir` legge il contenuto della directory (prossimo elemento disponibile) ritornando la struttura `dirent` o NULL se non ci sono più elementi
+
+#### $\verb|fcntl()|$
+E’ una system call che permette di effettuare operazioni sul file descriptor `fd`, ad esempio:
+- duplicazione del `fd`
+- manipolazione flag file descriptor
+- manipolazione flag di stato
+- gestione lock su `fd`
+
+A tali insiemi di operazioni sono associati un insieme di comandi passati come parametro `cmd`, mentre gli argomenti del comando `cmd`, se presenti, si passano come parametri `arg` della syscall e vanno messi dopo `cmd`
+
+Esempi:
+```c
+val = fcntl(fd, F_GETFL); // restituisce file access mode e file status flag
+fcntl(fd, F_SETFL, O_APPEND); // importa i file status flag
+```
