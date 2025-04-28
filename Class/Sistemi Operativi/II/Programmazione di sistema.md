@@ -135,14 +135,8 @@ void *realloc(void *ptr, size_t size);
 void *alloca(size_t size);
 ```
 
-### $\verb|mmap|$, $\verb|brk|$, $\verb|sbrk|$ system call
+### $\verb|brk|$, $\verb|sbrk|$ system call
 Le `m/c/ralloc` usano le vere system call per la gestione della memoria (es. `mmap` alloca memoria, `brk` cambia la dimensione data segment di un processo)
-
-```c
-void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
-```
-Questa syscall crea un area di memoria per mappare un file a partire da un indirizzo
-specificato, con livello di protezione indicato e, come altre funzioni di gestione della memoria in C, ritorna un puntatore (serve fare il casting al tipo di puntatore relativo al tipo di dato contenuto nella memoria per poter utilizzare correttamente l’aritmetica dei puntatori)
 
 > [!example]
 > ```c
@@ -194,3 +188,36 @@ void *memcpy(void *dest, const void *src, size_t n);
 ```
 Copia `n` bytes contigui a partire da `src` in `dest`, però le due aree di memoria non devono sovrapporsi (può risultare ad esempio utile per duplicare rapidamente un array)
 
+### $\verb|mmap|$
+```c
+void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
+```
+
+Questa syscall crea un area di memoria per mappare un file a partire da un indirizzo
+specificato, con livello di protezione indicato (lettura, scrittura, esecuzione) e, come altre funzioni di gestione della memoria in C, ritorna un puntatore (serve fare il casting al tipo di puntatore relativo al tipo di dato contenuto nella memoria per poter utilizzare correttamente l’aritmetica dei puntatori)
+
+- `addr` → indirizzo iniziale dell’area di memoria in cui vogliamo mappare il file (se `addr=0` sceglie il sistema)
+- `fd` → file descriptor (il file va aperto prima)
+- `len` → il numero di byte da trasferire
+- `off` → offset nel file
+- `prot` → indica il livello di protezione
+	- `PROT_READ` → solo lettura
+	- `PROT_WRITE` → solo scrittura
+	- `PROT_EXEC` → sola esecuzione
+	- `PROT_NONE` → nessun accesso
+- `flags`
+	- `MAP_SHARED` → le operazioni modificano il file (R/W)
+	- `MAP_PRIVATE` → viene creata una copia private del file mappato e solo questa viene modificata
+
+Si preferisce usare `mmap` a `malloc` se:
+- serve un controllo preciso su protezioni e indirizzamento
+- si vuole mappare file in memoria (es. modificare un file grande senza copiarlo)
+- si vuole memoria condivisa fra processi diversi
+- si gestiscono grossi blocchi di memoria (`mmap` è più efficiente per allocazioni molto grandi)
+
+![[Pasted image 20250428123232.png|center|450]]
+
+E’ dunque possibile mappare un file su disco in un area di memoria (`buffer`), per cui la lettura/scrittura dal/sul `buffer` risultano in lettura/scrittura dal/sul disco (senza accedere al disco)
+
+---
+## Sync e demapping
