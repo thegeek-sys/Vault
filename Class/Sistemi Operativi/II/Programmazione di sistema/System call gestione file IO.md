@@ -173,7 +173,14 @@ Duplica il file descriptor `oldfd` e restituisce il valore del nuovo `fd`. Resti
 #### $\verb|stat()|$
 Restituisce informazioni di stato riguardo uno specifico file e le memorizza nell’area di memoria puntata da `buf`
 
+![[Pasted image 20250429002302.png]]
+
+Sono definire anche una serie di macro da utilizzare sulla struttura dati `stat` (buf) per verificare il tipo del file:
+- `S_ISREG(m)`, `S_ISDIR(m)`, `S_ISCHR(m)`,
+- `S_ISBLK(m)`, `S_ISFIFO(m)`, `S_ISLNK(m)`,
+- `S_ISSOCK(m)`
+
 #### $\verb|fstat()|$
 Restituisce in `buf` le informazioni di stato del file specificato con nome file `path` o con file descriptor `fd`. Ritorna $0$ se termina correttamente, $-1$ altrimenti
 
-
+#### $\verb|chmod()|$
