@@ -2,7 +2,31 @@
 Created: 2025-04-24
 Class: "[[Sistemi Operativi]]"
 Related:
+  - "[[Programmazione di sistema]]"
 ---
+---
+## Index
+- [[#Introduction|Introduction]]
+- [[#System call|System call]]
+	- [[#System call#Dove trovare la descrizione delle syscall|Dove trovare la descrizione delle syscall]]
+	- [[#System call#Gestione errori system call|Gestione errori system call]]
+		- [[#Gestione errori system call#$\verb|errno|$|$\verb|errno|$]]
+		- [[#Gestione errori system call#$\verb|perror()|$|$\verb|perror()|$]]
+		- [[#Gestione errori system call#$\verb|strerror()|$|$\verb|strerror()|$]]
+		- [[#Gestione errori system call#Esempio di gestione errore|Esempio di gestione errore]]
+	- [[#System call#Debug syscall|Debug syscall]]
+- [[#Funzioni di libreria general purpose|Funzioni di libreria general purpose]]
+	- [[#Funzioni di libreria general purpose#Dove trovare la descrizione delle funzioni general purpose|Dove trovare la descrizione delle funzioni general purpose]]
+	- [[#Funzioni di libreria general purpose#Differenza tra system call e funzioni general purpose|Differenza tra system call e funzioni general purpose]]
+		- [[#Differenza tra system call e funzioni general purpose#Analogie|Analogie]]
+		- [[#Differenza tra system call e funzioni general purpose#Differenze|Differenze]]
+- [[#Allocazione di memoria|Allocazione di memoria]]
+	- [[#Allocazione di memoria#$\verb|brk|$, $\verb|sbrk|$ system call|$\verb|brk|$, $\verb|sbrk|$ system call]]
+	- [[#Allocazione di memoria#$\verb|realloc|$|$\verb|realloc|$]]
+- [[#Memory leakage|Memory leakage]]
+	- [[#Memory leakage#$\verb|memset()|$ e $\verb|memcpy()|$|$\verb|memset()|$ e $\verb|memcpy()|$]]
+	- [[#Memory leakage#$\verb|mmap|$|$\verb|mmap|$]]
+- [[#Sync e demapping|Sync e demapping]]
 ---
 ## Introduction
 Il **kernel** è la componente del sistema operativo che gestisce le risorse disponibili ed offre l’accesso e l’utilizzo delle risorse da parte dei processi

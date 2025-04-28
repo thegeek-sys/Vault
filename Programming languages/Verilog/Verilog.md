@@ -1,4 +1,4 @@
-[[Introduction|Introduction]]
+[[Programming languages/Verilog/Introduction|Introduction]]
 [[Programming languages/Verilog/Modules|Modules]]
 [[Syntax|Syntax]]
 [[Conditional assignment|Conditional assignment]]
