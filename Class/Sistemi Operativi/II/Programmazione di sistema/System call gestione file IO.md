@@ -183,4 +183,11 @@ Sono definire anche una serie di macro da utilizzare sulla struttura dati `stat`
 #### $\verb|fstat()|$
 Restituisce in `buf` le informazioni di stato del file specificato con nome file `path` o con file descriptor `fd`. Ritorna $0$ se termina correttamente, $-1$ altrimenti
 
-#### $\verb|chmod()|$
+#### $\verb|chmod()|$ e $\verb|fchmod()|$
+La syscall `chmod` permette di cambiare il file mode. Ritorna $-1$ se errore, $0$ altrimenti
+Il parametro `mode` è un numero ottale (es. $0755$). Si possono inoltre usare le maschere predefinite tipo:
+
+![[Pasted image 20250429002835.png]]
+
+#### $\verb|opendir()|$, $\verb|readdir()|$ e $\verb|closedir()|$
+Non sono system call ma funzioni di libreria che permettono di gestire una directory tramite stream (ritornato da `opendir`). `readdir` legge il contenuto della directory (prossimo elemento disponibile) ritornando la struttura `dirent` o NULL se non ci sono più elementi
