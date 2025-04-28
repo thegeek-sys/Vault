@@ -207,5 +207,16 @@ fcntl(fd, F_GETFL); // restituisce file access mode e file status flag
 fcntl(fd, F_SETFL, O_APPEND); // importa i file status flag
 ftncl(fd, F_SETLK, F_WRLCK); // acquisice/rilascia lock
 ftncl(fd, F_SETLKW, F_WRLCK); // acquisisce/rilascia lock bloccante (se è presente un lock attende il suo rilascio)
-
+fcntl(fd, F_GETLK, F_WRLCK); // testa se è presente un lock di scrittura, se il lock può essere messo fcntl aggiorna l_type a F_UNLCK. deve quindi essere eseguita da F_SETLK/LKW
 ```
+
+L’argomento è la struttura lock:
+- `l_whence` → dice da dove parte
+- `l_start` (> o < 0)
+	- `SEEK_SET`→ inizio file
+	- `SEEK_CUR`→ posizione corrente
+	- `SEEK_END`→ fine file
+- `l_len=0` → tutto il file viene bloccato altrimenti vengono bloccati `l_len` byte a partire da `l_start`
+
+Il lock è *advisory*, ovvero richiede cooperazione tra processi, infatti tutti I processi fanno una `F_GETLK` o `F_SETLK/LKW` e osservano il risultato (cercare di scrivere un file sul quale un processo detiene un lock non ha l'effetto di bloccare la scrittura)
+Per avere un lock mandatory, ovvero che impedisce la scrittura o lettura richiede che il file system supporti il mandatory locking
