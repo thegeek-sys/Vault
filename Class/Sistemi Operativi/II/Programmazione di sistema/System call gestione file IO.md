@@ -4,7 +4,7 @@ Class: "[[Sistemi Operativi]]"
 Related:
   - "[[Programmazione di sistema]]"
 ---
-€---
+---
 ## Operare sui file
 
 >[!info]
@@ -138,4 +138,42 @@ ssize_t write(int fd, const void *buf, size_t count);
 - `fd` → file descriptor
 - `buf` → area di memoria da cui leggere i dati; dichiarata `const` per non essere modificata dalla funzione
 - `count` → numero di byte da scrivere
-- 
+
+Restituisce $-1$ in caso di errore, altrimenti il numero di byte scritti (che può essere minore di `count` se si ad esempio dà un segnale)
+
+### $\verb|close()|$
+
+```c
+int close(int fd);
+```
+
+Permette di chiudere il file descriptor `fd` (il file descriptor viene liberato e può essere quindi riutilizzato)
+Ritorna $-1$ in caso di errore e $0$ in caso la chiamata termini correttamente. Nel caso venga chiuso l’ultimo file descriptor che fa riferimento ad un file rimosso, allora il file viene cancellato
+
+### Altre syscall e funzioni di libreria
+
+```c
+int dup(int oldfd);
+int stat(const char *path, struct stat *buf);
+int chmod(const char *path, mode_t mode)
+int chown(const char *path, uid_t owner, gid_t group)
+int rename(const char *oldpath, const char *newpath);
+int mkdir(const char *pathname, mode_t mode);
+DIR *opendir(const char *name); //Libreria
+struct dirent *readdir(DIR *dirp); //Libreria
+int closedir(DIR *dirp); //Libreria
+int chdir(const char *path);
+int fcntl(int fd, int cmd, ... /* arg */ );
+int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout); // la vedremo dopo
+```
+
+#### $\verb|dup()|$
+Duplica il file descriptor `oldfd` e restituisce il valore del nuovo `fd`. Restituisce $-1$ in caso di errore
+
+#### $\verb|stat()|$
+Restituisce informazioni di stato riguardo uno specifico file e le memorizza nell’area di memoria puntata da `buf`
+
+#### $\verb|fstat()|$
+Restituisce in `buf` le informazioni di stato del file specificato con nome file `path` o con file descriptor `fd`. Ritorna $0$ se termina correttamente, $-1$ altrimenti
+
+
