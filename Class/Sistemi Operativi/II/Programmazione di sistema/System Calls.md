@@ -34,3 +34,33 @@ Richiedono:
 #include <unistd.h>
 ```
 
+---
+## $\verb|fork()|$
+
+```c
+pid_t fork(void);
+```
+
+La syscall `fork` crea un nuovo processo che è la copia del processo chiamante, a parte alcune strutture dati come il PID
+
+Una volta chiamata `fork()`, seppure eseguita una sola volta, ritorna due volte: una volta al processo che l’ha invocata, un’altra al nuovo processo che è stato generato dall’esecuzione della fork stessa
+In caso di errore ritorna $-1$ al chiamante e non viene creato nessun processo figlio
+
+---
+## Ereditarietà attributi
+**Non ereditati**:
+- process id (pid) → il figlio ha il suo proprio pid
+- parent pid (ppid) → nel figlio il parent pid è uguale al pid del padre
+- timer → ogni processo ha i propri timer
+- record lock/memory lock → due processi non possono detenere gli stessi lock
+- contatori risorse → i contatori dell’utilizzo delle risorse sono impostati a zero nel figlio
+- coda dei segnali → la coda dei segnali in attesa viene svuotata nel figlio
+
+**Ereditati**:
+- real ed effective user e group ID
+- groups id
+- working directory
+- ambiente del processo
+- descrittori dei file
+- terminale di controllo
+- memoria condivisa

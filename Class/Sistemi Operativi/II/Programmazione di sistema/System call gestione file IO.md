@@ -5,6 +5,29 @@ Related:
   - "[[Programmazione di sistema]]"
 ---
 ---
+## Index
+- [[#Operare sui file|Operare sui file]]
+- [[#File descriptor|File descriptor]]
+	- [[#File descriptor#File flags associati a file descriptor|File flags associati a file descriptor]]
+		- [[#File flags associati a file descriptor#Rappresentazione dei flag|Rappresentazione dei flag]]
+		- [[#File flags associati a file descriptor#File status flags|File status flags]]
+- [[#System call principali|System call principali]]
+	- [[#System call principali#$ verb open() $|open()]]
+		- [[#System call principali#$ verb open() $#Differenza con $ verb fopen $|Differenza con fopen]]
+		- [[#System call principali#$ verb open() $#Flags|Flags]]
+	- [[#System call principali#$ verb read() $]]
+		- [[#System call principali#Differenza con $ verb fread $|Differenza con fread]]
+	- [[#System call principali#$ verb write() $|write()]]
+	- [[#System call principali#$ verb close() $|close()]]
+	- [[#System call principali#Altre syscall e funzioni di libreria|Altre syscall e funzioni di libreria]]
+		- [[#Altre syscall e funzioni di libreria#$ verb dup() $|dup()]]
+		- [[#Altre syscall e funzioni di libreria#$ verb stat() $|stat()]]
+		- [[#Altre syscall e funzioni di libreria#$ verb fstat() $|fstat()]]
+		- [[#Altre syscall e funzioni di libreria#$ verb chmod() $ e $ verb fchmod() $|chmod() e fchmod()]]
+		- [[#Altre syscall e funzioni di libreria#$ verb opendir() $, $ verb readdir() $ e $ verb closedir() $|opendir(), readdir() e closedir()]]
+		- [[#Altre syscall e funzioni di libreria#$ verb fcntl() $|fcntl()]]
+		- [[#Altre syscall e funzioni di libreria#$ verb select() $|select()]]
+---
 ## Operare sui file
 
 >[!info]
