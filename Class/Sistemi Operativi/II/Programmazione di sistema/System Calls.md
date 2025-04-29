@@ -64,3 +64,27 @@ In caso di errore ritorna $-1$ al chiamante e non viene creato nessun processo f
 - descrittori dei file
 - terminale di controllo
 - memoria condivisa
+
+---
+## $\verb|exit()|$
+
+```c
+void _exit(int status); // unistd.h
+void exit(int status); // stdlib.h
+```
+La **syscall** `_exit()` termina direttamente il processo che la invoca senza invocare handler. Con la terminazione:
+- vengono chiusi tutti i file descriptor
+- i child vengono ereditati dal processo $1$ (`child`)
+- invia il segnale SIGCHLD al processo padre
+- ritorna `status` e l’exit status al processo padre
+
+La **funzione di libreria** `exit()`:
+- invoca tutti gli handler registrati con `atexit` e `on_exit`
+- chiude tutti i file descriptor, svuota gli stream `stdio` e li chiude
+- termina il processo
+- ritorna (`status & 0377`) al padre (vedi `wait()`)
+- `EXIT_SUCCESS`e `EXIT_FAILURE` sono $2$ costanti predefinite che possono essere passate come status (soluzione portabile)
+
+---
+## Come un programma C è lanciato e terminato
+![[Pasted image 20250429213742.png]]
