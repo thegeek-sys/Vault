@@ -176,6 +176,16 @@ def Fib3(n):
 >>
 >>Dunque la complessità risulta essere $\Theta(n\cdot c)$, ma come già detto è pseudopolinomiale. Infatti $C$ potrebbe essere molto più grande di $len(A)$
 
+>[!question] Dato l’intero $n$ vogliamo contare il numero di differenti tassellamenti di una superficie di dimensione $n\times2$ tramite tessere di dominio di dimensione $1\times 2$
+>Ad esempio:
+>- per $n=1$ la risposta dell’algoritmo deve ovviamente essere $1$
+>- per $n=2$ la risposta deve essere $2$ perché sono possibili i soli due tassellamenti seguenti
+>
+>![[Pasted image 20250429102731.png|300]]
+>L’algoritmo deve avere complessità $O(n)$
+>>[!done]
+>>Utilizzeremo 
+
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
