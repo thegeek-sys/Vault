@@ -282,7 +282,23 @@ def Fib3(n):
 >>	return max(T)
 >>```
 
->[!question] Un numero intero può sempre essere rappre
+>[!question] Un numero intero può sempre essere rappresentato come somma di quadrati di altri numeri interi. Infatti, usando il quadrato $1^2$, il numero generico $x$ possiamo sempre scomporlo come somma di $n$ addendi tutti uguali a $1^2$ (vale a dire $x=1^2+\dots+1^2$)
+>Dato un intero $n$ vogliamo sapere qual’è il numero minimo di quadrati necessari per rappresentare $n$
+>
+>Ad esempio:
+>- per $n=0$ la risposta è $0$
+>- per $n=41$ la risposta è $2$, infatti $41=5^2+4^2$
+>- per $n=6$ la risposta è $3$, infatti $6=2^2+1^2+1^2$ ($6$ non può esprimersi come somma di due soli quadrati)
+>
+>Progettare un algoritmo che dato $n$ in $\Theta(n^{\frac{3}{2}})$ calcoli il numero minimo di quadrati che servono per rappresentarlo
+>
+>>[!done]
+>>Utilizzeremo una tabella monodimensionale di dimensioni $n+1$ e definiamo il contenuto delle celle come segue:
+>>$$T[i]=\text{numero minimo di quadrati per rappresentare l'intero }i$$
+>>
+>>Una volta riempita la tabella troveremo la soluzione in $T[n]$
+
+
 
 
 ---
