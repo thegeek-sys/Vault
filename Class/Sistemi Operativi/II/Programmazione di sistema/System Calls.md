@@ -95,6 +95,31 @@ La differenza principale sta nel fatto che la syscall non flusha i buffer (`stdo
 ```c
 void abort(void); // stdlib.h
 ```
-La syscall `abort`
+La syscall `abort` serve per terminare bruscamente un processo in modo anomalo, simulando un crash. In particolare:
+1. invia al processo il segnale `SIGABORT`
+2. il processo termina subito, saltando qualsiasi tipo di cleanup (es. `free()`, `fclose()`, …)
+3. può essere intercettato
+
+---
 ## Come un programma C è lanciato e terminato
 ![[Pasted image 20250429213742.png]]
+
+---
+## $\verb|wait()|$, $\verb|waitpid|$
+Queste chiamate di sistema si usano per:
+- attendere cambiamenti di stato in un figlio del processo chiamante
+- ottenere informazioni sul figlio in cui è avvenuto il cambiamento
+
+Un cambiamento avviene quando:
+- il processo figlio è terminato
+- il figlio è stato arrestato da un segnale
+- il figlio è stato ripristinato da un sengale
+
+Se un figlio è terminato `wait`/`waitpid` permettono al sistema di rilasciare le risorse associate al figlio, infatti se non viene eseguita un’attesa allora il figlio terminato rimane in uno stato zombie
+Se un figlio ha già cambiato stato, allora le chiamate tornano immediatamente, altrimenti esse si bloccano fino a quando un figlio cambia stato o un gestore di segnale interrompe la chiamata
+
+```c
+pid_t wait(int *status);
+```
+La syscall `wait()` sospende l’esecuzione del processo chiamante fino a quando uno dei suoi figli termina. Ritorna $-1$ in caso di errore
+
