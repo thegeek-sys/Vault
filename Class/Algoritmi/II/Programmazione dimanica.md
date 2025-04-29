@@ -180,12 +180,59 @@ def Fib3(n):
 >Ad esempio:
 >- per $n=1$ la risposta dell’algoritmo deve ovviamente essere $1$
 >- per $n=2$ la risposta deve essere $2$ perché sono possibili i soli due tassellamenti seguenti
->
 >![[Pasted image 20250429102731.png|300]]
+>- per $n=3$ la risposta deve essere $3$
+>![[Pasted image 20250429103612.png|300]]
 >L’algoritmo deve avere complessità $O(n)$
 >>[!done]
->>Utilizzeremo 
+>>Utilizzeremo una tabella monodimensionale di dimensioni $n+1$ e definiamo il contenuto delle celle come segue:
+>>$$T[i]=\text{numero di tassellamenti possibili per la superficie di dimensione}\,i\times 2$$
+>>
+>>Una volta riempita la tabella la soluzione al nostro problema la troveremo nella locazione $T[n]$
+>>
+>>Resta definire la rgeola ricorsiva con cui calcolare i valori $T[i]$ nella tabella
+>>$$T[i]=\begin{cases}1&\text{se}\,i=1 \\2&\text{se}\,i=2 \\T[i-1]+T[i-2]&\text{altrimenti}\end{cases}$$
+>>Dove $T[i-1]$ se sto aggiungendo una piastrella orizzontale, e $T[i-2]$ se sto aggiungendo una piastrella verticale (all’$i$-esimo livello ce ne sono $2$ verticali che quindi coprono il livello $i$ e $i-1$)
+>>
+>>Implementazione:
+>> ```python
+>>def es(n):
+>>	m = max(3,n)
+>>	T=[0]*(n+1)
+>>	T[1] ,T[2] = 1, 2
+>>	for i in range(3, n+1):
+>>		T[i] = T[i-1]+T[i-2]
+>>	return T[n]
+>>```
+
+>[!question] Il problema del massimo sottovettore
+>Data una lista $A$ di $n$ interi, vogliamo trovare una sottolsita (una sequenza di elementi consecutivi della lista) la somma dei cui elementi è massima
+>![[Pasted image 20250429104738.png|450]]
+>
+>Progettare una algoritmo che risolva il problema in tempo $O(n)$
+>>[!done]
+>>Tentiamo un approccio basato sulla programmazione dinamica. Come è tipico di questa tecnica ci concentriamo sul calcolare il valore della soluzione. In un secondo momento, grazie alla tabella utilizzata, sarà possibile ottenere anche la sottosequenza
+>>
+>>Cominciamo con l’individuare i sottoproblemi dalla composizioni delle cui soluzioni sarà poi possibile risolvere il problema originario
+>>Una scelta che ci porta a definire $n$ sottoproblemi è la seguente:
+>>$$T[i]=\text{massima somma possibile per le sottoliste di}\,A\,\text{che terminano nella posizione}\,i$$
+>>
+>>Poiché la sottolista a valore massimo deve terminare in una qualche posizione, il valore della soluzione che cerchiamo sarà poi dato da:
+>>$$\underset{ 0\leq i<n }{ \text{max} }\,T[i]$$
+>>
+>>Resta da definire la regola ricorsiva con cui calcolare i valori di $T[i]$ della tabella
+>>$$T[i]=\begin{cases}A[0]&\text{se}\,i=0 \\\text{max}\bigl\{A[i],\,\,A[i]+T[i-1]\bigr\}&\text{altrimenti}\end{cases}$$
+>>- $T[0]=A[0]$ in quanto esiste una sola sottosequenza nell’array di un solo elemento
+>>- per $T[i]$ con $i>0$, la sottolista di valore massimo che termina con $A[i]$ può essere di due soli tipi:
+>>	- consiste del solo elemento $A[i]$ → in questo caso ha valore $A[i]$
+>>	- ha lunghezza superiore ad $1$ → in questo caso vale $A[i]+S$ dove $S$ è la massima somma di un sottovettore che termina in $i-1$ (il che significa che $S=T[i-1]$)
+>>
+>>Pertanto si ha:
+>>$$T[i]=\text{max}\bigl\{A[i],\,\,A[i]+T[i-1]\bigr\}$$
+
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
+
+
