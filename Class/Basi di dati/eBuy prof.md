@@ -45,3 +45,30 @@ Related:
 
 ---
 ## Diagramma UML delle classi
+
+---
+## Specifica di classe
+### PostOggettoAsta
+Una oggetto di questa classe rappresenta un’asta
+#### Operazioni di classe
+`fine(): DataOra`
+- precodizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore restituito `result` è uguale a `this.instante_pubblicazione + this.durata_minuti`
+#### Vincoli esterni
+Il requisito 3.3.1 è sparito grazie a una modellazione intelligente
+
+### Bid
+Un’istanza di questa classe rappresenta una bid
+#### Vincoli esterni
+`[V.Bid.istante_dopo_pubblicazione_asta]`
+// 5.1.1 deve essere successivo all’istante di pubblicazione del post (vd. 2.7)
+Per ogni `b:Bid`, sia `a:PostOggettoAsta` tale che esiste il link `(b,a):bid_asta`, deve essere vero `b.istante >= a.istante_pubblicazione`
+
+`[V.Bid.istante_prima_scadenza_asta]`
+// 5.1.2 deve essere precedente (o uguale) all’istante di scadenza dell’asta (vd. 3.3)
+Per ogni `b:Bid`, sia `a:PostOggettoAsta` tale che esiste il link `(b,a):bid_asta`, deve essere vero che `b.istante <= a.fine()`
+
+`[V.Bid.no_due_bid_stesso_istante_stessa_asta_utenti_diversi]`
+// modellato come vincolo di classe
