@@ -230,7 +230,30 @@ def Fib3(n):
 >>Pertanto si ha:
 >>$$T[i]=\text{max}\bigl\{A[i],\,\,A[i]+T[i-1]\bigr\}$$
 >>
->>I
+>>Implementazione:
+>>```python
+>>def es(A):
+>>	n=len(A)
+>>	if n==0:
+>>		T = [0]*n
+>>		T[0] = A[0]
+>>		for i in range(i,n):
+>>			T[i] = max(A[i], A[i]+T[i-1])
+>>		return max(T)
+>>```
+
+>[!question] Data una sequenza $S$ di elementi di una sottosequenza di $S$ si ottiene eliminando zero o più elementi da $S$
+>Ad esempio: data la sequenza $9,3,2,4,1,5,8,6,7,2$ una sua sottosequenza è $3,1,5,6$ (si ottiene eliminando i seguenti elementi $\textcolor{red}{9},3,\textcolor{red}{2},\textcolor{red}{4},1,5,\textcolor{red}{8},6,\textcolor{red}{7},\textcolor{red}{2}$)
+>
+>>[!info]
+>>Le sottosequenze possibili per una sequenza di $n$ elementi sono $\Theta(2^n)$
+>
+>Una sottosequenza è detta crescente se i suoi elementi risultano ordinati in modo crescente
+>Data una sequenza di interi, vogliamo trovare la lunghezza massima per le sottosequenze crescenti presenti in $S$
+>
+>Ad esempio per $S=9,3,2,4,1,5,8,6,7,2$ la risposta è $5$ infatti la sottosequenza crescente più lunga in $S$ è $3,4,5,6,7$ (non è l’unica, un’altra possibile soluzione è $2,4,5,6,7$)
+>
+>Progettare un algoritmo che data una sequenza $S$ di $n$ elementi, in tempo $O(n^2)$ risolve il problema
 
 
 ---
