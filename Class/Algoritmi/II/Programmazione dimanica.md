@@ -254,6 +254,35 @@ def Fib3(n):
 >Ad esempio per $S=9,3,2,4,1,5,8,6,7,2$ la risposta è $5$ infatti la sottosequenza crescente più lunga in $S$ è $3,4,5,6,7$ (non è l’unica, un’altra possibile soluzione è $2,4,5,6,7$)
 >
 >Progettare un algoritmo che data una sequenza $S$ di $n$ elementi, in tempo $O(n^2)$ risolve il problema
+>>[!done]
+>>Utilizzeremo una tabella monodimensionale di dimensioni $n$ e definiamo il contenuto delle celle come segue:
+>>$$T[i]=\text{la lunghezza massima per una sottosequenza crescente che termina con l'elemento di}\,S\,\text{in posizione}\,i$$
+>>
+>>Poiché la sottosequenza di lunghezza massima da qualche parte dovrà pur terminare, la soluzione al nostro problema sarà data da:
+>>$$\underset{ 0\leq i<n }{ \text{max} }(T[i])$$
+>>
+>>Resta da definire la regola ricorsiva con cui calcolare i valori $T[i]$ nella tabella
+>>$$T[i]=\begin{cases}1&\text{se }S_{j}>S_{i}\text{ per }0\leq j<i \\\underset{ 0\leq j<i \text{ con }S_{j}<S_{i}}{ \text{max} }\,\,(T[j])+1&\text{altrimenti}\end{cases}$$
+>>
+>>- se tutti gli elementi che precedono $S_{i}$ sono maggiori di $S_{i}$ allora l’unica sottosequenza crescente che termina in una posizione $i$ è data dal solo elemento $S_{i}$
+>>- in caso contrario la sottosequenza che termina con $S_{i}$ avrà come prefisso una sottosequenza crescente che termina in una posizione $j$ con $j<i$ e $S_{j}\leq S_{i}$ e tra tutti i possibili “agganci” prendo quello che produce la sottosequenza più lunga
+>>
+>>Implementazione:
+>>```python
+>>def es(A):
+>>	n=len(A)
+>>	if n==0:
+>>		return 0
+>>	T = [0]*n
+>>	for i in range(1, n):
+>>		for j in range(i):
+>>			if A[i]>A[j]:
+>>				T[i] = max(T[i], T[j])
+>>		T[i]+=1
+>>	return max(T)
+>>```
+
+>[!question]
 
 
 ---
