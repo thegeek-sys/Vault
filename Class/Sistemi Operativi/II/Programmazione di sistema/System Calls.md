@@ -132,7 +132,16 @@ pid_t waitpid(pid_t pid, int *status, int options);
 La syscall `waitpid` sospende l’esecuzione del processo chiamante fino a quando un figlio specificato dall’argomento pid ha cambiato stato
 
 Il valore di PID può essere:
-- $<-1$ → attesa di qualunque processo figlio il cui gruppo ID del processo sia uguale al valore assoluto di `pid`
+- $<-1$ → attesa di qualunque processo figlio il cui group ID del processo sia uguale al valore assoluto di `pid` (utile in caso di modifica del group ID dei figli)
 - $-1$ → aspettare qualunque processo figlio (equivale a `wait`)
-- $0$ → aspettare qualunque processo figlio il cui gruppo ID del processo sia uguale a quello del processo chiamante
+- $0$ → aspettare qualunque processo figlio il cui group ID del processo sia uguale a quello del processo chiamante
 - $>0$ → aspettare il figlio il cui ID di processo sia uguale al valore di `pid`
+
+Il comportamento predefinito di `waitpid()` è attendere solo i figli terminati, ed è modificabile attraverso l’argomento `options`:
+- `WNOHANG` → torna immediatamente se nessun figlio è uscito
+- `WUNTRACED` → torna anche se un figlio si è arrestato (ma non tracciato attraverso `ptrace(2)`). Lo stato del figlio non tracciato che è stato arrestato è fornito anche se l’opzione non è specificata
+- `WCONTINUED` → torna anche se un figlio arrestato è stato riesumato inviando `SIGCONT`
+
+Queste opzioni possono essere messi in OR
+
+### Verifica dello stato ritornato
