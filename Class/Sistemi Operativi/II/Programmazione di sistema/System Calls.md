@@ -115,11 +115,24 @@ Un cambiamento avviene quando:
 - il figlio è stato arrestato da un segnale
 - il figlio è stato ripristinato da un sengale
 
-Se un figlio è terminato `wait`/`waitpid` permettono al sistema di rilasciare le risorse associate al figlio, infatti se non viene eseguita un’attesa allora il figlio terminato rimane in uno stato zombie
+Se un figlio è terminato `wait`/`waitpid` permettono al sistema di rilasciare le risorse associate al figlio, infatti se non viene eseguita un’attesa allora il figlio terminato rimane in uno stato zombie (permettono al padre di recuperare lo stato di uscita del figlio)
+
 Se un figlio ha già cambiato stato, allora le chiamate tornano immediatamente, altrimenti esse si bloccano fino a quando un figlio cambia stato o un gestore di segnale interrompe la chiamata
+
+Infatti se il processo padre non chiamasse mai `wait` o `waitpid` il processo figlio, dopo la terminazione, rimarrebbe per sempre nello stato zombie (o finché non termina anche il processo padre)
 
 ```c
 pid_t wait(int *status);
 ```
 La syscall `wait()` sospende l’esecuzione del processo chiamante fino a quando uno dei suoi figli termina. Ritorna $-1$ in caso di errore
 
+```c
+pid_t waitpid(pid_t pid, int *status, int options);
+```
+La syscall `waitpid` sospende l’esecuzione del processo chiamante fino a quando un figlio specificato dall’argomento pid ha cambiato stato
+
+Il valore di PID può essere:
+- $<-1$ → attesa di qualunque processo figlio il cui gruppo ID del processo sia uguale al valore assoluto di `pid`
+- $-1$ → aspettare qualunque processo figlio
+- $0$ → aspettare qualunque processo figlio il cui gruppo ID del processo sia uguale a quello del processo chiamante
+- $>0$ → aspettare il figlio il cui ID di processo sia uguale al valore di `pid`
