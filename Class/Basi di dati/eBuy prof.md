@@ -24,7 +24,7 @@ Related:
 	3. istante di scadenza
 		1. successivo all'istante di creazione del post (vd. 2.8)
 	4. bid piazzati (vd. 5)
-	5. il prezzo finale di vendita è calcolabile ed è pari a al prezzo iniziale (vd. 3.1) sommato al numero di rialzi moltiplicato per l'ammontare del singolo rialzo (req 3.2)
+	5. il prezzo finale di vendita è calcolabile ed è pari a al prezzo iniziale (vd. 3.1) sommato al numero di rialzi moltiplicato per l'ammontare del singolo rialzo (vd. 3.2)
 	6. l'utente che si aggiudica l'asta è quello che ha offerto l'ultimo bid in ordine cronologico
 4. Post "Compralo Subito"
 	1. prezzo di vendita (vd. 2.4)
