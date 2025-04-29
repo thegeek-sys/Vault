@@ -297,12 +297,27 @@ def Fib3(n):
 >>$$T[i]=\text{numero minimo di quadrati per rappresentare l'intero }i$$
 >>
 >>Una volta riempita la tabella troveremo la soluzione in $T[n]$
-
-
-
+>>
+>>Resta da definire la regola ricorsiva con cui calcolare i valori $T[i]$ nella tabella
+>>$$T[i]=\begin{cases}0&\text{se }i=0 \\\underset{ 1\leq j\leq \lfloor \sqrt{ i } \rfloor  }{ \text{min} }(T[i-j^2])+1&\text{altrimenti}\end{cases}$$
+>>
+>>- per $i=0$ ovviamente vale $T[0]=0$
+>>- per il caso generale dove $i>0$ servirà utilizzare almeno un quadrato. Tra tutti i quadrati potenzialmente utili ad ottenere $i$ servirà dunque trovare quello che poi permette di ottenere $i$ con il minor numero di quadrati. I due quadrati potenzialmente utili sono del tipo $j$ con $1\leq j\leq \lfloor \sqrt{ i } \rfloor$ e, notando che si usa il quadrato $j$ resterà poi ancora da rappresentare il numero $i-j^2$ che si ottiene dalla seguente formula: $$T[i]=\underset{ 1\leq j\leq \lfloor \sqrt{ i } \rfloor  }{ \text{min} }(T[i-j^2])+1$$
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
 
 
+```python
+def es(n):
+	T=[0]*(n+1)
+	for i in range(1, n+1):
+		T[i]=n
+		j=1
+		while j**2 <= i:
+			if T[i-j**2]+1 < T[i]:
+				T[i] = T[i-j**2]+1
+			j+=1
+	return T[n]
+```
