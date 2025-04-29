@@ -229,6 +229,8 @@ def Fib3(n):
 >>
 >>Pertanto si ha:
 >>$$T[i]=\text{max}\bigl\{A[i],\,\,A[i]+T[i-1]\bigr\}$$
+>>
+>>I
 
 
 ---
