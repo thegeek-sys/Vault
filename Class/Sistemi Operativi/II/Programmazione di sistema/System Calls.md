@@ -46,6 +46,8 @@ La syscall `fork` crea un nuovo processo che è la copia del processo chiamante,
 Una volta chiamata `fork()`, seppure eseguita una sola volta, ritorna due volte: una volta al processo che l’ha invocata, un’altra al nuovo processo che è stato generato dall’esecuzione della fork stessa
 In caso di errore ritorna $-1$ al chiamante e non viene creato nessun processo figlio
 
+E’ inoltre importante ricordare che quando viene forkato un processo le variabili globali vengono duplicate (dal padre al figlio) così come le variabili locali che vengono copiate sullo stack. Dunque le variabili del padre e del figlio non si influenzeranno (non sono condivise) 
+
 ---
 ## Ereditarietà attributi
 **Non ereditati**:
