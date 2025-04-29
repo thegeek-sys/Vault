@@ -35,20 +35,6 @@ Richiedono:
 ```
 
 ---
-## $\verb|fork()|$
-
-```c
-pid_t fork(void);
-```
-
-La syscall `fork` crea un nuovo processo che è la copia del processo chiamante, a parte alcune strutture dati come il PID
-
-Una volta chiamata `fork()`, seppure eseguita una sola volta, ritorna due volte: una volta al processo che l’ha invocata, un’altra al nuovo processo che è stato generato dall’esecuzione della fork stessa
-In caso di errore ritorna $-1$ al chiamante e non viene creato nessun processo figlio
-
-E’ inoltre importante ricordare che quando viene forkato un processo le variabili globali vengono duplicate (dal padre al figlio) così come le variabili locali che vengono copiate sullo stack. Dunque le variabili del padre e del figlio non si influenzeranno (non sono condivise) 
-
----
 ## Ereditarietà attributi
 **Non ereditati**:
 - process id (pid) → il figlio ha il suo proprio pid
@@ -66,6 +52,20 @@ E’ inoltre importante ricordare che quando viene forkato un processo le variab
 - descrittori dei file
 - terminale di controllo
 - memoria condivisa
+
+---
+## $\verb|fork()|$
+
+```c
+pid_t fork(void);
+```
+
+La syscall `fork` crea un nuovo processo che è la copia del processo chiamante, a parte alcune strutture dati come il PID
+
+Una volta chiamata `fork()`, seppure eseguita una sola volta, ritorna due volte: una volta al processo che l’ha invocata, un’altra al nuovo processo che è stato generato dall’esecuzione della fork stessa
+In caso di errore ritorna $-1$ al chiamante e non viene creato nessun processo figlio
+
+E’ inoltre importante ricordare che quando viene forkato un processo le variabili globali vengono duplicate (dal padre al figlio) così come le variabili locali che vengono copiate sullo stack. Dunque le variabili del padre e del figlio non si influenzeranno (non sono condivise) 
 
 ---
 ## $\verb|exit()|$
@@ -87,6 +87,14 @@ La **funzione di libreria** `exit()`:
 - ritorna (`status & 0377`) al padre (vedi `wait()`)
 - `EXIT_SUCCESS`e `EXIT_FAILURE` sono $2$ costanti predefinite che possono essere passate come status (soluzione portabile)
 
+La differenza principale sta nel fatto che la syscall non flusha i buffer (`stdout` e `stderr`), quindi potrebbe accadere che se ad esempio viene un `fprintf` su `stderr` oppure un `printf` potrebbe accadere che gli output non verranno mai mostrati se bufferizzati
+
 ---
+## $\verb|abort()|$
+
+```c
+void abort(void); // stdlib.h
+```
+La syscall `abort`
 ## Come un programma C è lanciato e terminato
 ![[Pasted image 20250429213742.png]]
