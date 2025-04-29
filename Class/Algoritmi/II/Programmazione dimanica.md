@@ -282,7 +282,7 @@ def Fib3(n):
 >>	return max(T)
 >>```
 
->[!question]
+>[!question] Un numero intero può sempre essere rappre
 
 
 ---
