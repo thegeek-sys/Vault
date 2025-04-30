@@ -97,4 +97,4 @@ Il **protocollo OSPF** (*Open Shortest Path First*) è basato sull’algoritmo L
 I messaggi OSPF vengono trasportati direttamente in datagrammi IP usando il numero di protocollo $89$ nel campo IP protocol
 
 ### Messaggi OSPF
-- 
+- **hello** → usato dai router per annunciare 
