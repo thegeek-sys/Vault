@@ -145,3 +145,23 @@ Il comportamento predefinito di `waitpid()` è attendere solo i figli terminati,
 Queste opzioni possono essere messi in OR
 
 ### Verifica dello stato ritornato
+`wait` e `waitpid` memorizzano in `status` `NULL` o il valore dello stato del processo figlio.
+
+`status` può essere verificato con le seguenti macro:
+- `WIFEXITED` → ritorna true se terminato normalmente
+- `WEXITSTATUS` → ritorna l’exit status del figlio
+- `WIFSIGNALED` → ritorna true se è terminato per la ricezione di un segnale
+- `WTERMSIG` → ritorna il numero del segnale che ha causato la terminazione
+- `WCOREDUMP` → ritorna true se ha generato un core dump
+- `WIFSTOPPED` → ritorna true se il processo è in stato stopped per la ricezione di un segnale
+- `WSTOPSIG` → ritorna il numero del segnale che ha causato lo switch in stato di stopped
+- `WIFCONTINUED` → ritorna true se il processo ha continuato per la ricezione di un segnale `SIGCONT`
+
+>[!example]
+>```c
+>...
+>int &s;
+>wait(&s);
+>WIFIEXITED(&s); // o altra macro W*
+>```
+
