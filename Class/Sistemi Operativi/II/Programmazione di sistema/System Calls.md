@@ -220,4 +220,39 @@ Le funzioni `execv`, `execvp` e `execvpe` prendono in ingresso un puntatore ad u
 
 Le funzioni `execlp`, `execvp` e `execvpe` nel caso il nome del file non contenga uno `/`, usano la variabile di ambiente `PATH` per cercare il file da utilizzare per la nuova immagine (le altre usano path relativo o assoluto specificato in `filename`)
 
-Le funzioni ``
+Le funzioni `execle` e `execvpe` accettano il parametro `envp` che consente di specificare l’environment della nuova immagine
+
+### Ambiente di un processo
+L’ambiente di un processo è costituito da una serie di stringhe della forma `key=value` ed è definito tramite un array di puntatori a caratteri terminato da `NULL`. Viene utilizzato per comunicare informazioni di configurazione o sistema tra il sistema operativo, la shell e i programmi
+
+Per default, l’ambiente di un processo coincide con l’ambiente del processo padre (ereditato mediante la `fork`), ma lo si può modificare tramite il pametro `envp[]`
+
+#### Modifica ambiente
+Per poter accedere all’ambiente da un programma C si può:
+- aggiungere l’argomento `envp` ai parametri del main
+	`main(int argc, char **argv, char **envp)`
+- utilizzare la variabile globale `**environ`
+	`extern char **environ;`
+
+#### Funzioni utili per la gestione dell’ambiente ($\verb|stdlib.h|$)
+
+```c
+// ritorna il valore nella variabile name
+char *getenv(const char *name);
+// setta (o aggiunge la variabile) name = value
+int setenv(const char *name, const char *value, int overwrite);
+// come sopra string=“name=value”
+int putenv(char *string);
+// rimuove name dalle variabili di ambiente
+int unsetenv(const char *name);
+// resetta l’ambiente *environ=NULL
+int clearenv(void);
+```
+
+### Cambiare working dir o root dir del processo
+
+```c
+#include <unistd.h>
+int chdir(const char *path);
+int chroot(const char *path);
+```
