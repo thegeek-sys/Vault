@@ -49,4 +49,9 @@ Questo algoritmo è **iterativo**, dunque dopo la $k$-esima iterazione i cammini
 ![[Pasted image 20250430224414.png]]
 
 >[!example]
+>Dato il seguente grafo
+>![[Pasted image 20250430224644.png|350]]
 >
+>![[Pasted image 20250430224601.png]]
+
+
