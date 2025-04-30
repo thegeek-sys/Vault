@@ -5,6 +5,28 @@ Related:
   - "[[Programmazione di sistema]]"
 ---
 ---
+## Index
+- [[#La creazione $ verb fork() $|La creazione fork()]]
+- [[#Nascita e morte|Nascita e morte]]
+- [[#Zombie|Zombie]]
+- [[#System call controllo processi|System call controllo processi]]
+- [[#Ereditarietà attributi|Ereditarietà attributi]]
+- [[#$ verb fork() $|fork()]]
+- [[#$ verb exit() $|exit()]]
+- [[#$ verb abort() $|abort()]]
+- [[#Come un programma C è lanciato e terminato|Come un programma C è lanciato e terminato]]
+- [[#$ verb wait() $, $ verb waitpid $|wait(), waitpid()]]
+	- [[#Verifica dello stato ritornato]]
+- [[#Rimpiazzare un processo figlio con un altro processo|Rimpiazzare un processo figlio con un altro processo]]
+	- [[#Rimpiazzare un processo figlio con un altro processo#$ verb execve $ e gli attributi di processo|execve e gli attributi di processo]]
+		- [[#Preservati]]
+		- [[#Non preservati]]
+	- [[#Rimpiazzare un processo figlio con un altro processo#Funzioni di libreria $ verb exec* $|Funzioni di libreria exec*]]
+	- [[#Rimpiazzare un processo figlio con un altro processo#Ambiente di un processo|Ambiente di un processo]]
+		- [[#Ambiente di un processo#Modifica ambiente|Modifica ambiente]]
+		- [[#Ambiente di un processo#Funzioni utili per la gestione dell’ambiente ($ verb stdlib.h $)|Funzioni utili per la gestion dell’ambiente (stdlib.h)]]
+	- [[#Rimpiazzare un processo figlio con un altro processo#Cambiare working dir o root dir del processo|Cambiare working dir o root dir del processo]]
+---
 ## La creazione $\verb|fork()|$
 `Init` è il processo $0$ (`pid=1`) padre di tutti i processi del sistema in esecuzione. Da esso vengono creati tutti i processi mediante system call `fork()`
 

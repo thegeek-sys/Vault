@@ -60,7 +60,7 @@ Il mid-term scheduler si occupa dello swapping tra memoria principale e disco (e
 Lo short-term scheduler si occupa di decidere quali processi ready devono essere running
 
 >[!info]- Modello a 7 stati
->![[Processi#Processi sospesi]]
+>![[Class/Sistemi Operativi/I/Processi/Processi#Processi sospesi]]
 
 ### Code dei processi
 ![[Pasted image 20241014213625.png|550]]

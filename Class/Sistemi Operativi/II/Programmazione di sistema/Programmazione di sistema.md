@@ -1,4 +1,4 @@
 - [[Class/Sistemi Operativi/II/Programmazione di sistema/Introduction|Introduction]]
-- [[System call gestione file IO|System call gestione file I/O]]
-- [[Class/Sistemi Operativi/II/Programmazione di sistema/System Calls|System Calls]]
+- [[Gestione file IO|System call gestione file I/O]]
+- [[Class/Sistemi Operativi/II/Programmazione di sistema/Processi|Processi]]
 - 

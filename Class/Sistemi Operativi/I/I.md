@@ -1,5 +1,5 @@
 - [[Class/Sistemi Operativi/I/Introduzione|Introduzione]]
-- [[Processi]]
+- [[Class/Sistemi Operativi/I/Processi/Processi]]
 - [[Scheduling]]
 - [[Gestione della memoria|Gestione della memoria]]
 - [[Gestione dell'Input-Output|Gestione dell’Input/Output]]

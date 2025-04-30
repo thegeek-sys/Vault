@@ -2,8 +2,8 @@
 Created: 2024-11-25
 Class: "[[Sistemi Operativi]]"
 Related:
-  - "[[Processi]]"
-Completed:
+  - "[[Class/Sistemi Operativi/I/Processi/Processi]]"
+Completed: 
 ---
 ---
 ## Index
