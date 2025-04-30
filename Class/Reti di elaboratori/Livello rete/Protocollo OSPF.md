@@ -95,3 +95,6 @@ Il **protocollo OSPF** (*Open Shortest Path First*) è basato sull’algoritmo L
  Ogni volta che si verifica un cambiamento nello stato di un collegamento, il router manda informazioni d’instradamento a tutti gli altri router e inoltre invia periodicamente (ogni 30 minuti) messaggi OSPF all’intero sistema autonomo (utilizzando il flooding)
 
 I messaggi OSPF vengono trasportati direttamente in datagrammi IP usando il numero di protocollo $89$ nel campo IP protocol
+
+### Messaggi OSPF
+- 
