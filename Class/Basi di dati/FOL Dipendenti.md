@@ -27,7 +27,8 @@ $$
 >>$$\text{nome}=\{(a,c),(b,e)\}$$
 
 >[!question] Non ci sono dipendenti che lavorano in più di due dipartimenti
->$$\begin{align*}\forall x \, \text{dipendente}(x) \to \forall d_{1}, d_{2}, d_{3} \Big(& \left( \text{lavora}(x,d_{1}) \land \text{lavora}(x,d_{2}) \land \text{lavora}(x,d_{3}) \right) \\& \to \left( d_{1} = d_{2} \lor d_{1} = d_{3} \lor d_{2} = d_{3} \right)\Big)\end{align*}$$
+>$$\begin{align*}\forall x \, \text{dipendente}(x) \to \forall d_{1}, d_{2}, d_{3} &\Big( \bigl( \text{lavora}(x,d_{1}) \land \text{lavora}(x,d_{2}) \land \text{lavora}(x,d_{3})\,\land \\& \text{dipartimento}(d_{1})\land \text{dipartimento}(d_{2})\land \text{dipartimento}(d_{3}) \bigr) \\& \to \left( d_{1} = d_{2} \lor d_{1} = d_{3} \lor d_{2} = d_{3} \right)\Big)\end{align*}$$
 
 >[!question] Ogni dipartimento ha esattamente un direttore che è una persona
 >$$\begin{align*}\forall x \, \text{dipartimento}(x) \to &\exists y\, \text{persona}(y_1) \land \text{direttore}(y_1,x)\\&\land\neg\exists y_2\left(\text{persona}(y_2)\land\text{direttore}(y_2,x)\land\neg(y_1=y_2)\right)\end{align*}$$
+
