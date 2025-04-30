@@ -44,3 +44,9 @@ Questo algoritmo è **iterativo**, dunque dopo la $k$-esima iterazione i cammini
 >- $c(x,y)$ → costo del cammino minimo dal nodo origine alla destinazione $v$ per quanto riguarda l’iterazione corrente
 >- $p(v)$ → immediato predecessore di $v$ lungo il cammino
 >- $N'$ → sottoinsieme di nodi per cui il cammino a costo minimo dall’origine è definitivamente noto
+
+### Pseudocodice
+![[Pasted image 20250430224414.png]]
+
+>[!example]
+>

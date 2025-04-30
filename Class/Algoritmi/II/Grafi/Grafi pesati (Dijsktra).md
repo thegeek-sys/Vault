@@ -196,8 +196,8 @@ def dijkstra(s, G):
 			if Lista[i][0] == 0 and Lista[i][1] < minimo:
 				minimo, x = Lista[i][1], i
 		
+		# non ci sono più nodi raggiunbili non definitivi
 		if minimo == float('inf'):
-			# non ci sono più nodi raggiunbili non definitivi
 			break
 		
 		# rendi definitivo il nodo x
