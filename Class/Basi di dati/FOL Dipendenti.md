@@ -8,6 +8,8 @@ Related:
 $$
 P=\{\text{persona/1},\text{telefono/2},\text{nome/2}, \text{dipendente/1},\text{dipartimento/1},\text{lavora/2}\}
 $$
+
+---
 ## Formule
 
 >[!question] Tutte le persone hanno almeno un numero di telefono
