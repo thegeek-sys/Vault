@@ -5,7 +5,7 @@
 - [[Cicli]]
 - [[Ponti]]
 - [[Visitare in ampiezza (BFS)]]
-- [[Grafi pesati]]
+- [[Grafi pesati (Dijsktra)]]
 - [[Spanning tree]]
 - [[Algoritmo di Bellman-Ford]]
 - 
