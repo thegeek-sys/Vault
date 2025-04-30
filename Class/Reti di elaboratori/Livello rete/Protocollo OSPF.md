@@ -5,6 +5,16 @@ Related:
   - "[[Livello rete]]"
 ---
 ---
+## Index
+- [[#Link state|Link state]]
+- [[#Link state database (LSDB)|Link state database (LSDB)]]
+	- [[#Link state database (LSDB)#Come può un nodo costruire il LSDB?|Come può un nodo costruire il LSDB?]]
+- [[#Algoritmo d’instradamento a link state|Algoritmo d’instradamento a link state]]
+	- [[#Algoritmo d’instradamento a link state#Pseudocodice|Pseudocodice]]
+- [[#Confronto tra LS e DV|Confronto tra LS e DV]]
+- [[#Protocollo OSPF|Protocollo OSPF]]
+	- [[#Protocollo OSPF#Messaggi OSPF|Messaggi OSPF]]
+---
 ## Link state
 Lo stato di un link indica il costo associato al link. Se il costo è $\infty$ significa che il collegamento non esiste oppure è stato interrotto
 
@@ -97,4 +107,9 @@ Il **protocollo OSPF** (*Open Shortest Path First*) è basato sull’algoritmo L
 I messaggi OSPF vengono trasportati direttamente in datagrammi IP usando il numero di protocollo $89$ nel campo IP protocol
 
 ### Messaggi OSPF
-- **hello** → usato dai router per annunciare 
+- **hello** → usato dai router per annunciare la propria e i vicini che conosce
+- **database description** → risposta ad hello (consente di ottenere il LSDB a chi si è appena connesso)
+- **link-state request** → usato per richiedere specifiche informazioni su un collegamento
+- **link-state update** → messaggio principale usato da OSPF per la costruzione del LSDP
+- **link-state ack** → riscontro ai link-state update (per fornire affidabilità)
+
