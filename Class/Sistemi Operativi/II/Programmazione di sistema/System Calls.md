@@ -191,3 +191,33 @@ L’argomento `envp[]` contiene l’ambiente della nuova immagine (lo vediamo do
 >[!example] `exec` esegue il programma `vi`
 >![[Pasted image 20250430110659.png]]
 
+### $\verb|execve|$ e gli attributi di processo
+Quando si chiama al syscall `execve` alcuni attributi vengono persi mentre altri preservati
+#### Preservati
+- process ID (PID) e parent PID
+- real uid e real gid
+- groups id
+- session ID
+- terminale di controllo
+- working directory e root directory
+- maschera creazione file (umask)
+- file locks
+- file descriptors (ad eccezione di quelli con flag `FD_CLOEXEC` impostato)
+- maschera dei segnali
+- segnali in attesa
+
+#### Non preservati
+- effective uid ed effective gid
+- memory mapping
+- timers
+- memoria condivisa
+- memory lock
+
+### Funzioni di libreria $\verb|exec*|$
+Le funzioni `execl`, `execlp` e `execle` prendono in ingresso un numero variabile di puntatori per specificare gli argomenti in ingresso alla nuova immagine del processo, un puntatore per ogni argomento
+
+Le funzioni `execv`, `execvp` e `execvpe` prendono in ingresso un puntatore ad un vettore per specificare gli argomenti in ingresso alla nuova immagine, un vettore dove ogni elemento è un argomento in ingresso
+
+Le funzioni `execlp`, `execvp` e `execvpe` nel caso il nome del file non contenga uno `/`, usano la variabile di ambiente `PATH` per cercare il file da utilizzare per la nuova immagine (le altre usano path relativo o assoluto specificato in `filename`)
+
+Le funzioni ``
