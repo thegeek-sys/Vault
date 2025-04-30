@@ -132,7 +132,7 @@ pid_t waitpid(pid_t pid, int *status, int options);
 La syscall `waitpid` sospende l’esecuzione del processo chiamante fino a quando un figlio specificato dall’argomento pid ha cambiato stato
 
 Il valore di PID può essere:
-- $<-1$ → attesa di qualunque processo figlio il cui group ID del processo sia uguale al valore assoluto di `pid` (utile in caso di modifica del group ID dei figli)
+- $<-1$ → attesa di q1ualunque processo figlio il cui group ID del processo sia uguale al valore assoluto di `pid` (utile in caso di modifica del group ID dei figli)
 - $-1$ → aspettare qualunque processo figlio (equivale a `wait`)
 - $0$ → aspettare qualunque processo figlio il cui group ID del processo sia uguale a quello del processo chiamante
 - $>0$ → aspettare il figlio il cui ID di processo sia uguale al valore di `pid`
