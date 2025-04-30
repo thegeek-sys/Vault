@@ -20,3 +20,4 @@ Viene rappresentato tramite una matrice
 ![[Pasted image 20250430220006.png]]
 
 ### Come può un nodo costruire il LSDB?
+Ogni nodo della rete deve innanzitutto conoscere i propri vicini 
