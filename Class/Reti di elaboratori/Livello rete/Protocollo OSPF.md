@@ -20,4 +20,10 @@ Viene rappresentato tramite una matrice
 ![[Pasted image 20250430220006.png]]
 
 ### Come può un nodo costruire il LSDB?
-Ogni nodo della rete deve innanzitutto conoscere i propri vicini e i costi dei collegamenti verso di loro. Per cui 
+Ogni nodo della rete deve innanzitutto conoscere i propri vicini e i costi dei collegamenti verso di loro. Per cui ogni nodo invia un messaggio di `hello` a tutti i suoi vicini di conseguenza ogni nodo riceve gli `hello` dei vicini e crea la lista dei vicini con i relativi costi dei collegamenti
+
+La lista (vicino, costo) viene chiamata **LS packet** (*LSP*)
+Si può dire dunque che ogni nodo esegue un *flooding* degli LSP:
+- invia a tutti i vicini il proprio LSP
+- quando riceve l’LSP di un vicino, se è un nuovo LSP allora lo inoltra a tutti i suoi vicini eccetto quello da cui lo ha ricevuto
+
