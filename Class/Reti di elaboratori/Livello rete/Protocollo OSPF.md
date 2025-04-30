@@ -27,3 +27,20 @@ Si può dire dunque che ogni nodo esegue un *flooding* degli LSP:
 - invia a tutti i vicini il proprio LSP
 - quando riceve l’LSP di un vicino, se è un nuovo LSP allora lo inoltra a tutti i suoi vicini eccetto quello da cui lo ha ricevuto
 
+>[!example]
+>Gli LSP dei singoli nodi
+>![[Pasted image 20250430223004.png|450]]
+>
+>Link-state database
+>![[Pasted image 20250430223041.png|300]]
+
+---
+## Algoritmo d’instradamento a link state
+In questo caso viene utilizzato l’**algoritmo di Dijkstra** che permette di calcolare il cammino minimo a costo minimo da un nodo a tutti gli altri nodi della rete (crea una tabella di inoltro per quel nodo)
+Questo algoritmo è **iterativo**, dunque dopo la $k$-esima iterazione i cammini a costo minimo sono noti a $k$ nodi di destinazione. Viene quindi eseguito un numero di volte pari al numero di nodi nella rete
+
+>[!info] Notazione
+>- $N$ → insieme dei nodi della rete
+>- $c(x,y)$ → costo del cammino minimo dal nodo origine alla destinazione $v$ per quanto riguarda l’iterazione corrente
+>- $p(v)$ → immediato predecessore di $v$ lungo il cammino
+>- $N'$ → sottoinsieme di nodi per cui il cammino a costo minimo dall’origine è definitivamente noto
