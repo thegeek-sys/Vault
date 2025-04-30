@@ -23,6 +23,3 @@ $$
 
 >[!question] Ogni dipartimento ha esattamente un direttore che è una persona
 >$$\begin{align*}\forall x \, \text{dipartimento}(x) \to &\exists y\, \text{persona}(y_1) \land \text{direttore}(y_1,x)\\&\land\neg\exists y_2\left(\text{persona}(y_2)\land\text{direttore}(y_2,x)\land\neg(y_1=y_2)\right)\end{align*}$$
-
-
-
