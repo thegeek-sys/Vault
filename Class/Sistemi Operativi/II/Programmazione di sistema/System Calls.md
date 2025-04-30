@@ -165,3 +165,29 @@ Queste opzioni possono essere messi in OR
 >WIFIEXITED(&s); // o altra macro W*
 >```
 
+---
+## Rimpiazzare un processo figlio con un altro processo
+La syscall `fork()` crea 2 processi identici con attributi comuni e altri no, potrei quindi utilizzare il controllo del flusso per far si che il processo figlio faccia qualcosa diverso dal padre, ma risulta poco efficiente
+
+Come soluzione è possibile approfittare della syscall `execve` o delle funzioni della famiglia `exec`, che permettono la sostituzione dell’immagine del processo che la invoca con una nuova immagine
+
+```c
+int execve(const char *filename, char *const argv[], char *const envp[]);
+// funzioni di libreria
+int execl(const char *path, const char *arg, ...);
+int execlp(const char *file, const char *arg, ...);
+int execle(const char *path, const char *arg, ..., char * const envp[]);
+int execv(const char *path, char *const argv[]);
+int execvp(const char *file, char *const argv[]);
+int execvpe(const char *file, char *const argv[], char *const envp[]);
+```
+
+In particolare `execve` sostituisce l’immagine del processo con quella contenuta in `filename` (che è un file binario oppure uno script che inizia con `#! interpreter [opt-args]`)
+L’argomento `argv[]` contiene gli argomenti in input per il comando eseguito (`argv[0]` deve essere il comando stesso) e l’array deve essere terminato con `NULL`
+L’argomento `envp[]` contiene l’ambiente della nuova immagine (lo vediamo dopo)
+
+`execve` sostituisce le zone di memoria `text`, `bss` e `stack` del processo che invoca la funzione con quelle del nuovo programma mandato in esecuzione
+
+>[!example] `exec` esegue il programma `vi`
+>![[Pasted image 20250430110659.png]]
+
