@@ -53,6 +53,21 @@ Per ogni `v:Video` coinvolto nel link `(v:principale, v:risposta):video_risposta
 
 ### Utente
 Un’istanza di questa classe rappresenta un utente
+#### Specifica delle operazioni di classe
+`cerca_playlist(u:Utente): Playlist [0..*]`
+- precondizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `P` l’insieme di `p:Playlist` tali che esiste il link `(u,p):utente_playlist`e che `p.visibilità=pubblico`
+		- `result=P`
+
+`cerca_video(c:Stringa, t:Stringa [0..*], v:Intero):Video [0..*]`
+- precondizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `V` l’insieme dei `v:Video` tali che `v.categoria=c` e `v.tag=t`
 
 `[V.Utente.no_valutazioni_video_non_visto]`
 Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` deve succedere che esiste `vis:Visualizza` tale ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
