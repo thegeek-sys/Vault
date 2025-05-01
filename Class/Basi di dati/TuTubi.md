@@ -42,6 +42,7 @@ Related:
 
 ---
 ## Diagramma UML delle classi
+![[Pasted image 20250502011212.png]]
 
 ---
 ## Specifica delle classi
@@ -89,6 +90,10 @@ Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i
 
 `[V.Utente.no_interazioni_video_censurati]`
 Per ogni `u:Utente`, per ogni `v:Video` se esiste il link `(u,v):valutazione` oppure (sia `c:Commento` il link `(u,c):utente_comm` e `(c,v):comm_video`) oppure (sia `vis:Visualizza` il link `(u,vis):utente_vis` e `(vis,v):vis_video`) allora `v.censurato=false`
+
+---
+## Diagramma degli use case
+![[Pasted image 20250502011240.png]]
 
 ---
 ## Specifica degli use case
