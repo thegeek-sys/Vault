@@ -87,6 +87,9 @@ Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` d
 `[V.Utente.no_commenti_video_non_visto]`
 Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i link `(u,c):utente_comm` e `(c,v):comm_video` deve esistere `vis:Visualizza` tale che ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
 
+`[V.Utente.no_interazioni_video_censurati]`
+Per ogni `u:Utente`, per ogni `v:Video` se esiste il link `(u,v):valutazione` oppure (sia `c:Commento` il link `(u,c):utente_comm` e `(c,v):comm_video`) oppure (sia `vis:Visualizza` il link `(u,vis):utente_vis` e `(vis,v):vis_video`) allora `v.censurato=false`
+
 ---
 ## Specifica degli use case
 ### Pubblicazione
