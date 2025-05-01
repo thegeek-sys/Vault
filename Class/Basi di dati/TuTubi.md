@@ -39,3 +39,23 @@ Related:
 7. deve essere la ricerca di un video
 	1. data categoria, insieme di tag e un intero tra 0 e 5 (se un video non ha nessuna valutazione va comunque restituito)
 	2. data una categoria restituire i video con più video in risposta
+
+---
+## Diagramma UML delle classi
+
+---
+## Specifica delle classi
+### Video
+Un’istanza di questa classe rappresenta un video
+
+`[V.Video.no_risposte_da_stesso_utente]`
+Per ogni `v:Video` coinvolto nel link `(v:principale, v:risposta):video_risposta` deve essere che `(principlale, u1):pubblica` e `(risposta, u2):pubblica` tale che `u1!=u2`
+
+### Utente
+Un’istanza di questa classe rappresenta un utente
+
+`[V.Utente.no_valutazioni_video_non_visto]`
+Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` deve succedere che esiste `vis:Visualizza` tale ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
+
+`[V.Utente.no_commenti_video_non_visto]`
+Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i link `(u,c):utente_comm` e `(c,v):comm_video` deve esistere `vis:Visualizza` tale che ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
