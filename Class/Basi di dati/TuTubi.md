@@ -112,6 +112,19 @@ Per ogni `u:Utente`, per ogni `v:Video` se esiste il link `(u,v):valutazione` op
 	- `v.censura=true`
 
 ### AggiuntaVideo
-`aggiungi_video(p:Playlist, v:Video)`
-- precondizioni → `v.censurato=false`
-- postcondizioni → viene creato il link `(v,p):pubblica`
+`aggiungi_video(p:Playlist, v:Video, u:Utente)`
+- precondizioni → `v.censurato=false` e esiste il link `(u,p):utente_playlist`
+- postcondizioni → viene creato il link `(v,p):video_playlist`
+
+### CommentaVideo
+`commenta(c:Stringa, v:Video, u:Utente):Commento`
+- precondizioni → `v.censurato=false` e sia `vis:Visualizza` esistono i link `(v,vis):vis_video` e `(vis,u):utente_vis`
+- postcondizioni →
+	- viene creato e restituito un nuovo oggetto `result:Commento` con i valori `c`, `adesso:Data` rispettivamente per gli attributi `commento`, `pubblicazione`
+	- viene creato il link `(result,u):utente_comm` e viene creato il link `(result,v):comm_video`
+
+### ValutaVideo
+`valutazione(val:Intero, v:Video, u:Utente):Commento`
+- precondizioni → `v.censurato=false` e sia `v:Visualizza` esistono i link `(v,vis):vis_video` e `(vis,u):utente_vis`
+- postcondizioni →
+	- viene creato il link `(u,v):valutazione` con valore per l’attributo `valore=val`
