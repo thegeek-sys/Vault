@@ -86,3 +86,18 @@ Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` d
 
 `[V.Utente.no_commenti_video_non_visto]`
 Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i link `(u,c):utente_comm` e `(c,v):comm_video` deve esistere `vis:Visualizza` tale che ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
+
+---
+## Specifica degli use case
+### Pubblicazione
+`pubblica(u:Utente, c:Stringa, d:Stringa, tag:Stringa, t:Stringa):Video`
+- precondizioni → nessuna
+- postcondizioni → 
+	- viene creato e restituito un nuovo oggetto `result:Video` con i valori `c`, `d`, `tag`, `t` rispettivamente per gli attributi `categoria`, `descrizione`, `tag`, `titolo`
+	- viene creato il link `(result,u):pubblica`
+
+### Censuramento
+`censura(v:Video)`
+- precondizioni → esiste `u:Utente` tale che esiste il link `(v,u):pubblica`
+- postcondizioni →
+	- `v.censura=true`
