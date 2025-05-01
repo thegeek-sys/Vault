@@ -20,6 +20,7 @@ Related:
 	7. un video può essere in risposta ad un video esistente (vd. 2)
 		1. nessun utente può pubblicare un video in risposta ad un video pubblicato da sé stesso
 	8. numero di visualizzazioni (vd. 3)
+	9. censurato
 3. servizio di cronologia
 	1. data di visualizzazione
 4. valutazione al video (vd. 2)
@@ -30,3 +31,11 @@ Related:
 	1. commento
 	2. data e ora
 	3. ogni utente può commentare più volte uno stesso video (ma lo deve aver visionato)
+6. ogni utente può creare delle playlist personali (collezioni ordinate di video)
+	1. nome
+	2. data di creazione
+	3. privata o pubblica
+		1. è possibile ottenere le playlist pubbliche degli altri utenti
+7. deve essere la ricerca di un video
+	1. data categoria, insieme di tag e un intero tra 0 e 5 (se un video non ha nessuna valutazione va comunque restituito)
+	2. data una categoria restituire i video con più video in risposta
