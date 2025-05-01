@@ -99,8 +99,19 @@ Per ogni `u:Utente`, per ogni `v:Video` se esiste il link `(u,v):valutazione` op
 	- viene creato e restituito un nuovo oggetto `result:Video` con i valori `c`, `d`, `tag`, `t` rispettivamente per gli attributi `categoria`, `descrizione`, `tag`, `titolo`
 	- viene creato il link `(result,u):pubblica`
 
+### CreazionePlaylist
+`crea_playlist(nom:Stringa, vis:{pubblico, privato}):Playlist`
+- precondizioni → nessuna
+- postcondizioni →
+	- viene creato e restituito un nuovo oggetto `result:Playlist` con i valori `nom`, `vis`, `adesso:Data` rispettivamente per gli attributi `nome`, `visibilità`, `creazione`
+
 ### Censuramento
 `censura(v:Video)`
 - precondizioni → esiste `u:Utente` tale che esiste il link `(v,u):pubblica`
 - postcondizioni →
 	- `v.censura=true`
+
+### AggiuntaVideo
+`aggiungi_video(p:Playlist, v:Video)`
+- precondizioni → `v.censurato=false`
+- postcondizioni → viene creato il link `(v,p):pubblica`
