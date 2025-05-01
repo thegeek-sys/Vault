@@ -67,7 +67,18 @@ Un’istanza di questa classe rappresenta un utente
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `V` l’insieme dei `v:Video` tali che `v.categoria=c` e `v.tag=t`
+		- sia `V` l’insieme dei `vid:Video` tali che `vid.categoria=c` e `vid.tag=t` e `vid.censurato=false`
+		- per ogni `vid` in `V`, per ogni `u:Utente` se esiste il link `(vid,u):valutazione`, allora deve essere che `valutazione.valore=v`
+		- `result=V`
+
+`cerca_più_risposte(c:Stringa):Video [0..*]`
+- precondizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `V` l’insieme dei `v:Video` tali che `v.categoria=c`
+		- per ogni `v` in `V` per ogni `v1:Video` coinvolto nei link `(v,v1):video_risposta` tale che `v` abbia il ruolo `principale`, sia `P` il numero di `v` che rispettano questa condizione
+		- 
 
 `[V.Utente.no_valutazioni_video_non_visto]`
 Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` deve succedere che esiste `vis:Visualizza` tale ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
