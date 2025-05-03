@@ -55,4 +55,11 @@ In generale si possono eseguire tre tipi di azione:
 - catturare il segnale (*catch*) → il processo chiede al kernel di eseguire una funzione definita dal programmatore (**signal handler**); i segnali `SIGKILL` e `SIGSTOP` non possono essere catturati
 - eseguire l’azione di default → ad ogni segnale è associata un’azione di default (*default handler*)
 
-### Handler
+### Default handler
+Ogni segnale ha un default handeler. Eccone alcuni esempi:
+- termina il processo e genera il core dump (file core) → salva sul disco lo stato della memoria del processo
+- termina il processo senza generare il core dump
+- ignora e rimuovi il segnale
+- sospende il processo
+- riesuma il processo
+
