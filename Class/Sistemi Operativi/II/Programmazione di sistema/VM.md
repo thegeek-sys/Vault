@@ -24,3 +24,33 @@ Ma un segnale può essere generato anche da condizioni non anomale
 >- un dato arriva su di una connessione di rete → `SIGURG`
 >- un processo scrive su di una PIPE che non ha un “lettore” → `SIGPIPE`
 
+### $\verb|signal.h|$
+La lista completa dei segnali (costanti intere) è contenuta in `<signal.h>` e ad ogni evento è associato un segnale
+
+>[!info] Segnali principali (`man 7 signal`)
+>- `SIGINT 2` → terminazione, `CTRL+C` da tastiera
+>- `SIGQUIT 3` → core dump, uscita
+>- `SIGILL 4` → core dump, istruzione illegale
+>- `SIGABR 6` → core dump, abort
+>- `SIGFPE 8` → core dump, eccezione di tipo aritmetico
+>- `SIGKILL 9` → terminazione, kill (non gestibile)
+>- `SIGUSR1 10` → terminazione, definito dall’utente
+>- `SIGSEGV 11` → core dump, segmentation Fault
+>- `SIGUSR2 12` → terminazione, definito dall’utente
+>- `SIGPIPE 13` → terminazione, scrittura senza lettori su pipe o socket
+>- `SIGALRM 14` → terminazione, allarme temporizzato
+>- `SIGTERM 15` → terminazione, terminazione software
+>- `SIGCHLD 17` → ignorato, status del figlio cambiato
+>- `SIGSTOP 19` → stop, sospende del processo (non gestibile)
+>- `SIGTSTP 20` → stop, stop da tastiera
+>- `SIGTTIN 21` → stop, lettura su `tty` in background
+>- `SIGTTOU 22` → stop, scrittura su `tty` in background
+
+---
+## Gestione dei segnali
+I segnali sono un esempio di **eventi asincroni**, ovvero eventi che possono avvenire in qualunque momento (non prevedibile dal programma) e al cui ricevimento il processo deve dire al kernel cosa fare
+
+In generale si possono eseguire tre tipi di azione:
+- ignorare il segnale → possibile con tutti tranne che con `SIGKILL` e `SIGSTOP`
+- catturare il segnale (*catch*) → il processo chiede al kernel di eseguire una funzione definita dal programmatore (**signal handler**); i segnali `SIGKILL` e `SIGSTOP` non possono essere catturati
+- eseguire l’azione di default → ad ogni segnale è associata un’azione di default (*default handler*)
