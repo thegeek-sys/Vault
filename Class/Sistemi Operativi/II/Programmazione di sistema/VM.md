@@ -147,3 +147,23 @@ struct sigaction {
 	void (*sa_restorer)(void);
 };
 ```
+
+### $\verb|kill|$
+
+```c
+ int kill(pid_t pid, int sig);
+```
+
+La system call kill invia il segnale `sig` ad un processo `pid`:
+- `pid>0` → il segnale è inviato al processo con pid `pid`
+- `pid=0` → il segnale è inviato a tutti i processi del process group del chiamante
+- `pid=-1` → il segnale è inviato a tutti i processi (tranne `init`) per cui il chiamante ha i privilegi per inviare un segnale
+- `pid<-1` → il segnale è inviato a tutti i processi del process group del chiamante con pid uguale a `-pid`
+
+### $\verb|sigsuspend|$
+
+```c
+int sigsuspend(const sigset_t *mask);
+```
+
+Sospende il processo che invoca la call e rimpiazza la maschera con mask. Il processo rimane sospeso finché non arriva un segnale per cui è definito un handler o un segnale di terminazione
