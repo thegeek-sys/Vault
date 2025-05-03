@@ -42,7 +42,7 @@ Related:
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250502011212.png]]
+![[Pasted image 20250503105015.png]]
 
 ---
 ## Specifica delle classi
