@@ -63,3 +63,25 @@ Ogni segnale ha un default handeler. Eccone alcuni esempi:
 - sospende il processo
 - riesuma il processo
 
+### Esecuzione handler
+Quando un processo riceve un segnale che deve gestire con un handler:
+1. interrompe il proprio flusso di esecuzione
+2. esegue l’handler associato al segnale
+3. riprende l’esecuzione dal punto in cui era stato interrotto
+
+Tali passi possono essere realizzati con:
+```c
+int sigprocmask(int how, const sigset_t *set, sigset_t *oldset);
+int rt_sigprocmask(int how, const kernel_sigset_t *set, kernel_sigset_t *oldset, size_t sigsetsize);
+```
+
+---
+## Syscalls
+### $\verb|sigprocmask|$
+
+```c
+int sigprocmask(int how, const sigset_t *set, sigset_t *oldset);
+```
+
+Consente di ottenere/settare la maschera segnali (ci dice i segnali bloccati)
+Un segnale bloccato non viene perso ma considerato pending e consegnato al processo quando viene sbloccato (ad eccezione di `SIGCHILD`, istanze multiple di segnali pending non vengono considerate)
