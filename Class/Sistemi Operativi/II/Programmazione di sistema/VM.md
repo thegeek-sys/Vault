@@ -54,3 +54,5 @@ In generale si possono eseguire tre tipi di azione:
 - ignorare il segnale → possibile con tutti tranne che con `SIGKILL` e `SIGSTOP`
 - catturare il segnale (*catch*) → il processo chiede al kernel di eseguire una funzione definita dal programmatore (**signal handler**); i segnali `SIGKILL` e `SIGSTOP` non possono essere catturati
 - eseguire l’azione di default → ad ogni segnale è associata un’azione di default (*default handler*)
+
+### Handler
