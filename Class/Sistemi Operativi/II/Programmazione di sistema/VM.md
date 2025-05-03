@@ -93,7 +93,7 @@ L’argomento `how` dice come gestire il segnale e può assumere i seguenti valo
 - `SIG_UNBLOC` → sblocca i segnali definiti in set
 - `SIG_SETMASK` → setta la maschera a set
 
-`set` è la maschera da usare mentre `old_set` è la maschera prima dell’invocazione della funzione (può essere utile per ripristinare la maschera dopo la chiamata)
+`set` è la maschera da usare mentre in `old_set` viene salvata la maschera prima della modifica (può essere utile per ripristinare la maschera dopo la chiamata)
 
 >[!hint]
 >E’ importante ricordare che:
@@ -115,5 +115,35 @@ Sono definite 2 macro:
 - `SIG_DFL` → assegna l’handler di default (utile per ripristinare l’handler del segnale a default)
 
 >[!warning]
->L’uso di `signal` è deprecato perché l’implementazione non è standard e può variare da sistema a sistema
+>L’uso di `signal` è **deprecato** perché l’implementazione non è standard e può variare da sistema a sistema
 
+### $\verb|sigaction|$
+
+```c
+int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
+```
+- `signum` → segnale
+- `act` → handler del segnale (se `NULL` viene usato `oldact`)
+- `oldact` → handler precedente (viene popolato quando si invoca la syscall)
+
+Questa è la struttura dell’`act`
+```c
+struct sigaction {
+	// puntatore alla funzione signal handler
+	// può essere SIG_IGN, SIG_DFL o puntatore a funzione
+	void (*sa_handler)(int);
+	
+	// Alternativo a sa_handler
+	void (*sa_sigaction)(int, siginfo_t *, void *);
+	
+	// speficia la maschera dei segnali che dovrebbero essere bloccati 
+	// durante l’esecuzione dell’handler
+	sigset_t sa_mask;
+	
+	// flags per modificare il comportamento del segnale
+	int sa_flags;
+	
+	// obsoleto
+	void (*sa_restorer)(void);
+};
+```
