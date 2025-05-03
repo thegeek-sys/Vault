@@ -51,6 +51,15 @@ Un’istanza di questa classe rappresenta un video
 #### Vincoli esterni
 `[V.Video.no_risposte_da_stesso_utente]`
 Per ogni `v:Video` coinvolto nel link `(v:principale, v:risposta):video_risposta` deve essere che `(principlale, u1):pubblica` e `(risposta, u2):pubblica` tale che `u1!=u2`
+#### Specifica delle operazioni di classe
+`media_valutazioni():Reale 0..5`
+- precondizioni → esiste `u:Utente` tale che esiste il link `(u,this):valutazione`
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `V` l’insieme dei link `valutazione` a cui `this` partecipa
+		- sia `S` la somma di `valutazione.valore` in `V`
+		- `result=S/|V|`
 
 ### Utente
 Un’istanza di questa classe rappresenta un utente
@@ -69,7 +78,7 @@ Un’istanza di questa classe rappresenta un utente
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
 		- sia `V` l’insieme dei `vid:Video` tali che `vid.categoria=c` e `vid.tag=t` e `vid.censurato=false`
-		- per ogni `vid` in `V`, per ogni `u:Utente` se esiste il link `(vid,u):valutazione`, allora deve essere che `valutazione.valore=v`
+		- per ogni `vid` in `V`, per ogni `u:Utente` se esiste il link `(vid,u):valutazione`, allora deve essere che `vid.media_valutazione()>=v`
 		- `result=V`
 
 `cerca_più_risposte(c:Stringa):Video [0..*]`
