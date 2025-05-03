@@ -87,3 +87,10 @@ Consente di ottenere/settare la maschera segnali (ci dice i segnali bloccati)
 Un segnale bloccato viene considerato pending e consegnato al processo solo quando viene sbloccato (ad eccezione di `SIGCHLD`, se più figli terminano mentre `SIGCHL` è bloccato il kernel non tiene traccia di tutte le singole istanze)
 
 Potrebbe risultare utile ad esempio quando si sta eseguendo un’operazione delicata, e quindi viene ritardato l’arrivo del segnale al momento in cui l’operazione termina
+
+L’argomento `how` dice come gestire il segnale e può assumere i seguenti valori:
+- `SIG_BLOCK` → blocca i segnali definiti in set
+- `SIG_UNBLOC` → sblocca i segnali definiti in set
+- `SIG_SETMASK` → setta la maschera a set
+
+`set` è la maschera da usare mentre `old_set` è la maschera prima dell’invocazione della funzione (può essere utile per ripristinare la maschera dopo la chiamata)
