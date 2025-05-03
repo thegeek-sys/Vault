@@ -84,6 +84,6 @@ int sigprocmask(int how, const sigset_t *set, sigset_t *oldset);
 ```
 
 Consente di ottenere/settare la maschera segnali (ci dice i segnali bloccati)
-Un segnale bloccato viene considerato pending e consegnato al processo solo quando viene sbloccato (ad eccezione di `SIGCHLD`, istanze multiple di segnali pending non vengono considerate)
+Un segnale bloccato viene considerato pending e consegnato al processo solo quando viene sbloccato (ad eccezione di `SIGCHLD`, se più figli terminano mentre `SIGCHL` è bloccato il kernel non tiene traccia di tutte le singole istanze)
 
 Potrebbe risultare utile ad esempio quando si sta eseguendo un’operazione delicata, e quindi viene ritardato l’arrivo del segnale al momento in cui l’operazione termina
