@@ -94,3 +94,18 @@ L’argomento `how` dice come gestire il segnale e può assumere i seguenti valo
 - `SIG_SETMASK` → setta la maschera a set
 
 `set` è la maschera da usare mentre `old_set` è la maschera prima dell’invocazione della funzione (può essere utile per ripristinare la maschera dopo la chiamata)
+
+>[!hint]
+>E’ importante ricordare che:
+>- `sigprocmask` è applicabile solo a processi e non a threads (infatti ognuno ha la sua maschera)
+>- `SIGKILL` e `SIGSTOP` non possono essere bloccati
+>- ogni processo creato tramite `fork` eredita maschera dei segnali
+>- la maschera dei segnali viene mantenuta dopo `exec`
+
+### $\verb|signal|$
+
+```c
+sighandler_t signal(int signum, sighandler_t handler);
+```
+
+La syscall `signal` importa l’handler del segnale `signum` alla funzione hander passata come parametro. Restituisce `SIG_ERR` o il valore del precedente handler
