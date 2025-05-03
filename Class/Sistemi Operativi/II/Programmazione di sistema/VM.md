@@ -109,3 +109,11 @@ sighandler_t signal(int signum, sighandler_t handler);
 ```
 
 La syscall `signal` importa l’handler del segnale `signum` alla funzione hander passata come parametro. Restituisce `SIG_ERR` o il valore del precedente handler
+
+Sono definite 2 macro:
+- `SIG_IGN` → ignora il segnale
+- `SIG_DFL` → assegna l’handler di default (utile per ripristinare l’handler del segnale a default)
+
+>[!warning]
+>L’uso di `signal` è deprecato perché l’implementazione non è standard e può variare da sistema a sistema
+
