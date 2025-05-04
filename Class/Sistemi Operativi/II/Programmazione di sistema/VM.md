@@ -5,6 +5,19 @@ Related:
   - "[[Programmazione di sistema]]"
 ---
 ---
+## Index
+- [[#Segnali|Segnali]]
+	- [[#Segnali#$ verb signal.h $|signal.h]]
+- [[#Gestione dei segnali|Gestione dei segnali]]
+	- [[#Gestione dei segnali#Default handler|Default handler]]
+	- [[#Gestione dei segnali#Esecuzione handler|Esecuzione handler]]
+- [[#Syscalls|Syscalls]]
+	- [[#Syscalls#$ verb sigprocmask $|sigprocmask]]
+	- [[#Syscalls#$ verb signal $|signal]]
+	- [[#Syscalls#$ verb sigaction $|sigaction]]
+	- [[#Syscalls#$ verb kill $|kill]]
+	- [[#Syscalls#$ verb sigsuspend $|sigsuspend]]
+---
 ## Segnali
 I segnali sono degli interrupt software inviati dal kernel ad un processo oppure da un processo ad un altro processo
 
