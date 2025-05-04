@@ -74,7 +74,7 @@ Si basa su:
 2. concetto di vettore di distanza
 
 ### Equazione di Bellman-Ford
-Definisce $D_{x}(y):=\text{il costo del percoso a costo minimo dal nodo y al nodo y}$
+Definisce $D_{x}(y):=\text{il costo del percoso a costo minimo dal nodo x al nodo y}$
 
 Allora
 $$
