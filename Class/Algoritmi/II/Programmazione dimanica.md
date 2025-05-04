@@ -115,7 +115,7 @@ def Fib3(n):
 >[!question] Vogliamo contare il numero di stringhe binarie lunghe $n$ senza 3 zeri consecutivi
 >>[!done]
 >>Come prima precalcoliamo i primi valori, per poi capire il pattern per la costruzione dei successivi
->>![[Pasted image 20250426123938.png|300]]
+>>![[Pasted image 20250504105448.png|300]]
 >>
 >>$$T[i]=\text{il numero di stringhe binaria lunghe }i\text{ senza 3 zeri consecutivi}$$
 >>
