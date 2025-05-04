@@ -42,7 +42,7 @@ Related:
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250503105015.png]]
+![[Pasted image 20250504110126.png]]
 
 ---
 ## Specifica delle classi
@@ -77,7 +77,7 @@ Un’istanza di questa classe rappresenta un utente
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `V` l’insieme dei `vid:Video` tali che `vid.categoria=c` e `vid.tag=t` e `vid.censurato=false`
+		- sia `V` l’insieme dei `vid:Video` tali che `vid.categoria=c` e `vid.tag=t` e `vid` non è istanza di `VideoCensurato`
 		- per ogni `vid` in `V`, per ogni `u:Utente` se esiste il link `(vid,u):valutazione`, allora deve essere che `vid.media_valutazione()>=v`
 		- `result=V`
 
@@ -98,7 +98,7 @@ Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` d
 Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i link `(u,c):utente_comm` e `(c,v):comm_video` deve esistere `vis:Visualizza` tale che ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
 
 `[V.Utente.no_interazioni_video_censurati]`
-Per ogni `u:Utente`, per ogni `v:Video` se esiste il link `(u,v):valutazione` oppure (sia `c:Commento` il link `(u,c):utente_comm` e `(c,v):comm_video`) oppure (sia `vis:Visualizza` il link `(u,vis):utente_vis` e `(vis,v):vis_video`) allora `v.censurato=false`
+Per ogni `u:Utente`, per ogni `v:VideoCensurato` non esiste nessun link `(u,v):valutazione`, (`c:Commento` il link `(u,c):utente_comm` e `(c,v):comm_video`), (`vis:Visualizza` il link `(u,vis):utente_vis` e `(vis,v):vis_video`)
 
 ---
 ## Diagramma degli use case
@@ -123,22 +123,22 @@ Per ogni `u:Utente`, per ogni `v:Video` se esiste il link `(u,v):valutazione` op
 `censura(v:Video)`
 - precondizioni → esiste `u:Utente` tale che esiste il link `(v,u):pubblica`
 - postcondizioni →
-	- `v.censura=true`
+	- crea un’istanza di `VideoCensurato` a partire da `v`
 
 ### AggiuntaVideo
 `aggiungi_video(p:Playlist, v:Video, u:Utente)`
-- precondizioni → `v.censurato=false` e esiste il link `(u,p):utente_playlist`
+- precondizioni → `v` non è istanza di `VideoCensurato` e esiste il link `(u,p):utente_playlist`
 - postcondizioni → viene creato il link `(v,p):video_playlist`
 
 ### CommentaVideo
 `commenta(c:Stringa, v:Video, u:Utente):Commento`
-- precondizioni → `v.censurato=false` e sia `vis:Visualizza` esistono i link `(v,vis):vis_video` e `(vis,u):utente_vis`
+- precondizioni → `v` non è istanza di `VideoCensurato` e sia `vis:Visualizza` esistono i link `(v,vis):vis_video` e `(vis,u):utente_vis`
 - postcondizioni →
 	- viene creato e restituito un nuovo oggetto `result:Commento` con i valori `c`, `adesso:Data` rispettivamente per gli attributi `commento`, `pubblicazione`
 	- viene creato il link `(result,u):utente_comm` e viene creato il link `(result,v):comm_video`
 
 ### ValutaVideo
 `valutazione(val:Intero, v:Video, u:Utente):Commento`
-- precondizioni → `v.censurato=false` e sia `v:Visualizza` esistono i link `(v,vis):vis_video` e `(vis,u):utente_vis`
+- precondizioni → `v` non è istanza di `VideoCensurato` e sia `v:Visualizza` esistono i link `(v,vis):vis_video` e `(vis,u):utente_vis`
 - postcondizioni →
 	- viene creato il link `(u,v):valutazione` con valore per l’attributo `valore=val`
