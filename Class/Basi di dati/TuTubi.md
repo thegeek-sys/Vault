@@ -42,7 +42,7 @@ Related:
 
 ---
 ## Diagramma UML delle classi
-![[Pasted image 20250505105610.png]]
+![[Pasted image 20250505224336.png]]
 
 ---
 ## Specifica delle classi
@@ -105,6 +105,11 @@ Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` d
 
 `[V.Utente.no_commenti_video_non_visto]`
 Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i link `(u,c):utente_comm` e `(c,v):comm_video` deve esistere `vis:Visualizza` tale che ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
+
+`[V.Utente.no_inserimenti_precedenti_iscrizione]`
+Per ogni `u:Utente`, per ogni `c:Commento` coinvolto nel link `(u,c):utente_comm` deve essere vero che `u.iscrizione<c.pubblicazione`
+Per ogni `u:Utente`, per ogni `p:Playlist` coinvolto nel link `(u,p):utente_playlist` deve essere vero che `u.iscrizione<p.creazione`
+Per ogni `u:Utente`, per ogni `v:Visualizza` coinvolto nel link `(u,v):utente_vis` deve essere vero che `u.iscrizione<v.data`
 
 ---
 ## Diagramma degli use case
