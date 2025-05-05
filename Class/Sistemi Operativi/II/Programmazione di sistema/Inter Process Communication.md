@@ -22,4 +22,4 @@ int pipe(int pipefd[2])
 - `pipefd[0]` → file descriptor di input
 - `pipefd[1]` → file descriptor di output
 
-I dati 
+I dati scri
