@@ -14,7 +14,9 @@ La fifo è uno speciale tipo di file che può essere creato per mezzo delle syst
 La pipe invece è una struttura dati in memoria *half-duplex* (la comunicazione è unidirezionale, un processo scrive l’altro legge). La creazione della pipe può essere effettuata con la system call `pipe` che crea due file descriptor (uno in lettura e uno in scrittura). Ad esempio un processo crea una pipe, poi crea un figlio e usa la pipe per comunicare con il figlio che eredita i descrittori dei file
 
 ## Pipe
-Le pipe sono usato per IPC e, come già detto, sono unidireziali
+Le pipe sono usato per IPC e, come già detto, sono unidireziali in particolare tra un processo padre e un figlio
+
+Dopo il `fork()`
 ### $\verb|pipe|$
 
 ```c
