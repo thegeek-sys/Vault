@@ -61,6 +61,15 @@ Per ogni `v:Video` coinvolto nel link `(v:principale, v:risposta):video_risposta
 		- sia `S` la somma di `valutazione.valore` in `V`
 		- `result=S/|V|`
 
+`visualizzazioni():Intero>=0`
+- precondizioni → nessuna
+- postcondizioni →
+	- non modifica il livello estensionale
+	- il valore di ritorno `result` è così definito
+		- sia `v:Visualizza`
+		- sia `V` l’insieme dei link `(v,this):vis_video`
+		- `result=|V|`
+
 ### Utente
 Un’istanza di questa classe rappresenta un utente
 #### Specifica delle operazioni di classe
