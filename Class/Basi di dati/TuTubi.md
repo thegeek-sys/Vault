@@ -106,9 +106,6 @@ Per ogni `u:Utente` e per ogni `v:Video` coinvolto in link `(u,v):valutazione` d
 `[V.Utente.no_commenti_video_non_visto]`
 Per ogni `c:Commento` tale che esiste `u:Utente` e `v:Video` tale che ci siano i link `(u,c):utente_comm` e `(c,v):comm_video` deve esistere `vis:Visualizza` tale che ci siano sia `(u,vis):utente_vis` che `(vis,v):vis_video`
 
-`[V.Utente.no_interazioni_video_censurati]`
-Per ogni `u:Utente`, per ogni `v:VideoCensurato` non esiste nessun link `(u,v):valutazione`, (`c:Commento` il link `(u,c):utente_comm` e `(c,v):comm_video`), (`vis:Visualizza` il link `(u,vis):utente_vis` e `(vis,v):vis_video`)
-
 ---
 ## Diagramma degli use case
 ![[Pasted image 20250502011240.png]]
@@ -121,6 +118,13 @@ Per ogni `u:Utente`, per ogni `v:VideoCensurato` non esiste nessun link `(u,v):v
 - postcondizioni → 
 	- viene creato e restituito un nuovo oggetto `result:Video` con i valori `c`, `d`, `tag`, `t` rispettivamente per gli attributi `categoria`, `descrizione`, `tag`, `titolo`
 	- viene creato il link `(result,u):pubblica`
+
+`pubblica_risposta(u:Utente, c:Stringa, d:Stringa, tag:Stringa, t:Stringa, v:Video):Video`
+- precondizioni → nessuna
+- postcondizioni → 
+	- viene creato e restituito un nuovo oggetto `result:Video` con i valori `c`, `d`, `tag`, `t` rispettivamente per gli attributi `categoria`, `descrizione`, `tag`, `titolo`
+	- viene creato il link `(result,u):pubblica`
+	- viene creato il link `(result,v):video_risposta` in cui `result` ha ruolo `risposta`
 
 ### CreazionePlaylist
 `crea_playlist(nom:Stringa, vis:{pubblico, privato}):Playlist`
