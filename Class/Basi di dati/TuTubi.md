@@ -86,7 +86,7 @@ Un’istanza di questa classe rappresenta un utente
 - postcondizioni →
 	- non modifica il livello estensionale
 	- il valore di ritorno `result` è così definito
-		- sia `V` l’insieme dei `vid:Video` tali che `vid.categoria=c` e `vid.tag=t` e `vid` non è istanza di `VideoCensurato`
+		- sia `V` l’insieme dei `vid:Video` tali che `vid.categoria=c` e che esiste almeno un `vid.tag` tale che esiste almeno un `t` per cui sono uguali e `vid` non è istanza di `VideoCensurato`
 		- per ogni `vid` in `V`, per ogni `u:Utente` se esiste il link `(vid,u):valutazione`, allora deve essere che `vid.media_valutazione()>=v`
 		- `result=V`
 
