@@ -2,4 +2,5 @@
 - [[Gestione file IO|System call gestione file I/O]]
 - [[Class/Sistemi Operativi/II/Programmazione di sistema/Processi|Processi]]
 - [[Segnali]]
+- [[Inter Process Communication - PIPE e FIFO]]
 - 
