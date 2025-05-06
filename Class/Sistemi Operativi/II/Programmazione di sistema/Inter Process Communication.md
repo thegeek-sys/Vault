@@ -17,6 +17,8 @@ La pipe invece è una struttura dati in memoria *half-duplex* (la comunicazione 
 Le pipe sono usato per IPC e, come già detto, sono unidireziali in particolare tra un processo padre e un figlio
 
 Dopo il `fork()` entrambi i processi (padre e figlio) ereditano i file descriptor, in questo modo entrambi i processi possono leggere e scrivere
+In questo modo però, se un processo legge e scrive dalla stessa pipe, rischia di leggere i propri dati (non si ha una vera comunicazione), per questo motivo si utilizzano due pipe:
+
 
 ### $\verb|pipe|$
 
