@@ -16,11 +16,19 @@ La pipe invece è una struttura dati in memoria *half-duplex* (la comunicazione 
 ## Pipe
 Le pipe sono usato per IPC e, come già detto, sono unidireziali in particolare tra un processo padre e un figlio
 
-Dopo il `fork()` entrambi i processi (padre e figlio) ereditano i file descriptor, in questo modo entrambi i processi possono leggere e scrivere
+![[Pasted image 20250506215825.png|center|250]]
+
+Quando il processo padre invoca le 2 `pipe` per creare un canale di comunicazione bidirezionale e fa una `fork`, il processo figlio eredita tutti e 4 i file descriptor (2 `pipe` ognuna delle quali crea 2 `fd`, uno per la lettura e uno per la scrittura), in questo modo entrambi i processi possono leggere e scrivere
+
+Stato delle connessioni alle `pipe1` e `pipe2` dopo la `fork`:
+![[Pasted image 20250506215731.png|450]]
+
 In questo modo però, se un processo legge e scrive dalla stessa pipe, rischia di leggere i propri dati (non si ha una vera comunicazione), per questo motivo è necessario limitare la scrittura e la lettura del processo padre e figlio:
 - il padre scrive in `pipe1` e il figlio legge da `pipe1` → viene chiusa la lettura su `pipe1` e la scrittura su `pipe2` per il padre
 - il figlio scrive in `pipe2` e il padre legge da `pipe2`→ viene chiusa la lettura su `pipe2` e la scrittura su `pipe1` per il figlio
 
+Stato delle connessioni alle `pipe1` e `pipe2` dopo la chiusura appropriata dei canali di read e write:
+![[Pasted image 20250506215949.png|450]]
 ### $\verb|pipe|$
 
 ```c
