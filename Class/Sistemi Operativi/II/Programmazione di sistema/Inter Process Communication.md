@@ -97,8 +97,19 @@ Le socket sono definite da 3 attributi:
 	- possiamo impostarlo a $0$
 
 ### Anatomia server TCP
+![[Pasted image 20250507105054.png|center|300]]
 #### $\verb|psrv|$
 1. `psrv` definisce il socket invocando `socket()`, che crea un **unnamed socket**, ovvero una struttura dati che rappresenta il socket ma al quale non è associato un nome (indirizzo)
 2. `psrv` associa un nome al socket invocando `bind()`, che trasforma l’unnamed socket in un **named socket**
 3. `psrv` definisce la lunghezza della coda di ingresso invocando `listen()` (il numero massimo gestibile di connessioni pending)
-4. `psrv` si mette in ascolto sulla socket in attesa di una richiesta di connessione del client invocando `accept()`, che ritorna un `fd`
+4. `psrv` si mette in ascolto sulla socket in attesa di una richiesta di connessione del client invocando `accept()`, che ritorna un `fd` usato per comunicare con il client
+5. `psrv` crea un figlio che userà `fd` per comunicare con il client
+6. `psrv` si rimette in ascolto sulla socket con `accept()`per una nuova connessione
+
+#### $\verb|pcli|$
+1. `pcli` definisce il socket invocando `socket()`, che crea un **unnamed socket** (`csd`), ovvero una struttura dati che rappresenta il socket ma al quale non è associato un nome (indirizzo)
+2. `pcli` imposta una struttura dati `sin` di tipo `struct sockaddr in` in modo da scriverci le informazioni del server al quale si vuole connettere
+3. `pcli` si connette al server invocando la syscall `connect()` alla quale passa il socket (`csd`) e l’indirizzo del server al quale connettersi, e che ritorna un `fd` del server (`ssd`) oppure $-1$ in caso di errore
+4. `pcli` utilizza `ssd` per leggere e scrivere da/su server
+5. finita la necessità di comunicare con il server, `pcli` chiude la connessione invocando `close(ssd)`
+
