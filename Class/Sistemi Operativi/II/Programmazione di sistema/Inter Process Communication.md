@@ -62,3 +62,43 @@ Un processo che apre la fifo in lettura rimane bloccato finchè non c’è un pr
 `mkfifo` ritorna $0$ in caso di successo e $-1$ in caso di errore impostando `errno` di conseguenza. Una volta creata può essere gestita come qualsiasi altro file
 
 E’ inoltre possibile aprire una fifo in maniera non bloccante passando i flags `O_NONBLOCK` alla syscall `open`
+
+---
+## Socket
+I socket consentono la comunicazione tra processi nel paradigma client-server. Ognuno dei due terminali ha compiti ben diversi
+
+Server:
+- definisce il socket
+- il riferimento (nome di file o indirizzo di rete) è noto al client
+- accetta connessioni sul socket da parte di uno o più client → ricava il full descriptor (*full-duplex*) sulla connessione
+
+Client:
+- definisce il socket
+- crea una connessione sul socket → ricava un file descriptor (*full duplex*) sulla connessione
+
+### Syscall di interesse
+- `socket` → crea struttura dati della socket
+- `bind` → associa un nome alla socket
+- `listen` → mette un processo in ascolto su una socket
+- `accept` → accetta una connessione su di una socket
+
+### Tipologia di socket
+Le socket sono definite da 3 attributi:
+- **domain** (o family) → modalità del collegamento
+	- `AF_LOCAL` (o `AF_UNIX`) → client e server devono risiedere sulla stessa maccina
+	- `AF_INET` → client e server comunicano in rete con protocollo IPv4
+	- `AF_INET6` → client e server comunicano in rete con protocollo IPv6
+- **type** → semantica del collegamento
+	- `SOCK_STREAM` → flusso bidirezionale di byte affidabile basato su connessione (socket TCP); supporta notifiche asincrone (*out of band*)
+	- `SOCK_DGRAM` → supporta comunicazioni datagram, senza connessione (socket UDP) e con sequenze inaffidabili di messaggi
+	- `SOCK_RAW` → per l’accesso diretto (raw socket) alle comunicazioni di rete (protocolli ed interfacce)
+- **protocol** → protocollo usato
+	- per noi ne esiste solo uno, UDP per `SOCK_DGRAM`, TCP per `SOCK_STREAM`
+	- possiamo impostarlo a $0$
+
+### Anatomia server TCP
+#### $\verb|psrv|$
+1. `psrv` definisce il socket invocando `socket()`, che crea un **unnamed socket**, ovvero una struttura dati che rappresenta il socket ma al quale non è associato un nome (indirizzo)
+2. `psrv` associa un nome al socket invocando `bind()`, che trasforma l’unnamed socket in un **named socket**
+3. `psrv` definisce la lunghezza della coda di ingresso invocando `listen()` (il numero massimo gestibile di connessioni pending)
+4. `psrv` si mette in ascolto sulla socket in attesa di una richiesta di connessione del client invocando `accept()`, che ritorna un `fd`
