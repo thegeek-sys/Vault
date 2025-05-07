@@ -251,4 +251,4 @@ int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
 
 Usata per i socket con connessione (non per `SOCK_DGRAM`) e serve ad estrarre la prima richiesta di connessione nella coda delle richieste in attesa sulla coda si listening del socket `sockfd`
 
-Questa inoltre crea un nuovo socket con connessione e ritorna un nuovo `fd` (il nuovo socket non è in ascolto)
+Questa inoltre crea un nuovo socket di connessione con il client e lo ritorna (il nuovo socket non è in ascolto); questo socket serve per 
