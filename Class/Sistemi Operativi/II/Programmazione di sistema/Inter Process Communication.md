@@ -103,7 +103,7 @@ Le socket sono definite da 3 attributi:
 2. `psrv` associa un nome al socket invocando `bind()`, che trasforma l’unnamed socket in un **named socket**
 3. `psrv` definisce la lunghezza della coda di ingresso invocando `listen()` (il numero massimo gestibile di connessioni pending)
 4. `psrv` si mette in ascolto sulla socket in attesa di una richiesta di connessione del client invocando `accept()`, che ritorna un `fd` usato per comunicare con il client
-5. `psrv` crea un figlio che userà `fd` per comunicare con il client
+5. `psrv` crea un figlio che userà `fd` per comunicare con il client (fa un `fork` così da poter gestire più client in contemporanea)
 6. `psrv` si rimette in ascolto sulla socket con `accept()`per una nuova connessione
 
 #### $\verb|pcli|$
@@ -113,14 +113,14 @@ Le socket sono definite da 3 attributi:
 4. `pcli` utilizza `ssd` per leggere e scrivere da/su server
 5. finita la necessità di comunicare con il server, `pcli` chiude la connessione invocando `close(ssd)`
 
-#### Struttura codice server
+### Struttura codice server
 
 ```c
 int main() {
 	int sd = socket(AF_INET, SOCKET_STREAM, 0);
 	bind(sd, ...);
 	listen(sd, MAX_QUEUED);
-	// disabilito il segnale SIGCHLD
+	// disabilito il segnale SIGCHLD per evitare di creare zombie process
 	while (1) {
 		int client sd=accpet(sd, ...);
 		if (client_sd==-1) {
@@ -136,10 +136,68 @@ int main() {
 }
 ```
 
-#### Struttura codice client
+### Struttura codice client
 
 ```c
-int main() {
-	
+int main (){
+	int cfd;
+	int cfd = socket(AF_INET, SOCK_STREAM,0);
+	// set sockaddr_in structure
+	if (connect(cfd,….)!=0) {
+		perror(“connessione non riuscita”);
+	}
+	// read(cfd,…) e write(cfd,…) da/verso server
+	close(cfd);	
 }
 ```
+
+### $\verb|socket|$
+
+```c
+#include <sys/types.h>
+#include ~sys/socket.h>
+int socket(int domain, int type, int protocol);
+```
+
+La syscall `socket` ritorna $-1$ in caso di errore e la scrittura/lettura su un socket chiuso genera un errore **`SIGPIPE`**
+
+> [!example]
+>```c
+>int sd;
+>sd=socket(AF_UNIX, SOCK_STREAM, 0);
+>if (sd==-1) {
+>	perror("Errore creando socket");
+>	exit(-1);
+>}
+>```
+
+### $\verb|bind|$
+
+```c
+int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+```
+
+- `sockfd` → id unnamed socket
+- `addr` → struttura di tipo `sockaddr` che contiene l’indirizzo IP/nome della socket (`socaddr_in` per `AF_INET` e `AF_INET6`, `socaddr_un` per `AF_LOCAL`)
+- `addrlen` → dimensione struttura `sockaddr`
+
+>[!hint]
+>Solo `AF_INET` socket possono fare binding su `IP_address:porta`
+
+#### $\verb|sockaddr_in|$
+
+```c
+struct sockaddr_in {
+	sa_family_t sin_family; /* address family: AF_INET */
+	in_port_t sin_port; /* port in network byte order */
+	struct in_addr sin_addr; /* internet address */
+};
+/* Internet address. */
+struct in_addr {
+	uint32_t s_addr; /* address in network byte order */
+};
+```
+
+Sia il valore di `sin_port` che quello di `sin_addr` sono binari in formato **network byte order** (*NBO*)
+
+I numeri di porta del protocollo e gli indirizzi internet vanno quindi tradotti in formato NBO
