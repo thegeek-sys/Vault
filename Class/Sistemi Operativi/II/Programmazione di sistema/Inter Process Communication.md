@@ -113,3 +113,33 @@ Le socket sono definite da 3 attributi:
 4. `pcli` utilizza `ssd` per leggere e scrivere da/su server
 5. finita la necessità di comunicare con il server, `pcli` chiude la connessione invocando `close(ssd)`
 
+#### Struttura codice server
+
+```c
+int main() {
+	int sd = socket(AF_INET, SOCKET_STREAM, 0);
+	bind(sd, ...);
+	listen(sd, MAX_QUEUED);
+	// disabilito il segnale SIGCHLD
+	while (1) {
+		int client sd=accpet(sd, ...);
+		if (client_sd==-1) {
+			perror("Errore accettando connessione dal client");
+			continue;
+		}
+		if (fork()==0) { // eseguito dal client
+			// read/write su client_sd
+			close(client_sd);
+			exit(0);
+		}
+	}
+}
+```
+
+#### Struttura codice client
+
+```c
+int main() {
+	
+}
+```
