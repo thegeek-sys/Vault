@@ -200,4 +200,14 @@ struct in_addr {
 
 Sia il valore di `sin_port` che quello di `sin_addr` sono binari in formato **network byte order** (*NBO*)
 
-I numeri di porta del protocollo e gli indirizzi internet vanno quindi tradotti in formato NBO
+>[!info] Network Byte Order e Host Byte Order (i386)
+>- Network Byte Order → byte più significativo prima
+>- Host Byte Order → byte meno significativo prima
+>
+>>[!example] `0x12345678`
+>>- NBO → `[12] [34] [56] [78]`
+>>- HBO → `[78] [56] [34] [12]`
+
+I numeri di porta del protocollo e gli indirizzi internet vanno quindi tradotti in formato NBO. E’ inoltre possibile assegnare un valore a `sin_addr` assegnandogli una delle seguenti macro:
+- `INADDR_LOOPBACK` → $127.0.0.1$ (locale)
+- `INADDR_ANY` → $0.0.0.0$ (qualsiasi IP)
