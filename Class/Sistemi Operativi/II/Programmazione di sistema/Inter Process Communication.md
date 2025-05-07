@@ -222,8 +222,12 @@ uint16_t htons(uint16_t hostshort);
 `htons` converte un `unsigned int` a $16$ bit in formato NBO
 
 ```c
-uint32_t ntohl(uint32_t netlong);
-uint16_t ntohs(uint16_t netshort);
+int inet_aton(const char *cp, struct in_addr *inp);
+char *inet_ntoa(struct in_addr in);
 ```
-`ntohl` converte un `unsigned int` a $32$ bit in formato ottale puntato
-`ntohs` converte un `unsigned int` a $16$ bit in formato ottale puntato
+`inet_aton` converte un indirizzo `cp` di tipo ottale puntato (stringa), in formato NBO (`stuct in_addr`)
+
+```c
+struct hostent *gethostbyname(const char *name);
+```
+Dato un nome logico (`mio.dominio.toplevel`) o un indirizzo in formato ottale punatto ritorna una struttura `hostent` che contiene l’indirizzo in formato NBO
