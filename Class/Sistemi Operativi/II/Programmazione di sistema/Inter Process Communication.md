@@ -226,8 +226,9 @@ int inet_aton(const char *cp, struct in_addr *inp);
 char *inet_ntoa(struct in_addr in);
 ```
 `inet_aton` converte un indirizzo `cp` di tipo ottale puntato (stringa), in formato NBO (`stuct in_addr`)
+`inet_ntoa` converte un indirizzo `in` di tipo NBO, in formato ottale puntato (stringa)
 
 ```c
 struct hostent *gethostbyname(const char *name);
 ```
-Dato un nome logico (`mio.dominio.toplevel`) o un indirizzo in formato ottale punatto ritorna una struttura `hostent` che contiene l’indirizzo in formato NBO
+Dato un nome logico (`mio.dominio.toplevel`) o un indirizzo in formato ottale puntato ritorna una struttura `hostent` che contiene l’indirizzo in formato NBO, facendo una query DNS
