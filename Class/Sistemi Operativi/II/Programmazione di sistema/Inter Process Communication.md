@@ -46,3 +46,19 @@ Comportamento:
 - una pipe viene chiusa quando tutti e due i processi hanno invocato la `close`
 - operazioni di lettura (`read`) su una pipe il cui `fd` di scrittura è stato chiuso con `close` ritorna $0$
 - operazioni di scrittura (`write`) su una pipe il cui `fd` di lettura è stato chiuso con `close` ritornano $-1$ e ricevono il segnale `SIGPIPE`
+
+---
+## FIFO
+
+```c
+int mkfifo(const char *pathname, mode_t mode);
+```
+
+La sysacall `mkfifo` crea una fifo con nome `pathname` e modalità di accesso `mode`
+Una volta creata una fifo, può essere acceduta da qualsiasi processo (che abbia i diritti per l’accesso al file) in lettura/scrittura, tuttavia, le operazioni devono essere simultanee
+
+Un processo che apre la fifo in lettura rimane bloccato finchè non c’è un processo che la apre in scrittura e viceversa
+
+`mkfifo` ritorna $0$ in caso di successo e $-1$ in caso di errore impostando `errno` di conseguenza. Una volta creata può essere gestita come qualsiasi altro file
+
+E’ inoltre possibile aprire una fifo in maniera non bloccante passando i flags `O_NONBLOCK` alla syscall `open`
