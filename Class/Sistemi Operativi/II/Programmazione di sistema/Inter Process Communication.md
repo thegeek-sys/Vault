@@ -231,4 +231,24 @@ char *inet_ntoa(struct in_addr in);
 ```c
 struct hostent *gethostbyname(const char *name);
 ```
-Dato un nome logico (`mio.dominio.toplevel`) o un indirizzo in formato ottale puntato ritorna una struttura `hostent` che contiene l’indirizzo in formato NBO, facendo una query DNS
+Dato un nome logico (`mio.dominio.toplevel`) o un indirizzo in formato ottale puntato ritorna una struttura `hostent` che contiene l’indirizzo in formato NBO (se riceve un IP fa la stessa cosa di `inet_aton`, mentre se riceve un hostname fa una query DNS)
+
+### $\verb|listen|$
+
+```c
+int listen(int sockfd, int backlog);
+```
+
+Marca il socket `sockfd` come passive, ovvero pronto a ricevere richieste mediante una `accept()`. `backlog` invece indica la lunghezza della coda di attesa
+
+Restituisce $0$ in caso di successo e $-1$ in caso di errore
+
+### $\verb|accept|$
+
+```c
+int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+```
+
+Usata per i socket con connessione (non per `SOCK_DGRAM`) e serve ad estrarre la prima richiesta di connessione nella coda delle richieste in attesa sulla coda si listening del socket `sockfd`
+
+Questa inoltre crea un nuovo socket con connessione e ritorna un nuovo `fd` (il nuovo socket non è in ascolto)
