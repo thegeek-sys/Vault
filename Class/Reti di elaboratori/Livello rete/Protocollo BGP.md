@@ -16,4 +16,6 @@ Gli ISP forniscono servizi a livelli differenti:
 ### Impossibilità di usare un singolo protocollo di routing
 Abbiamo fin qui visto la rete come una collezione di router interconnessi in cui ogni router era indistinguibile dagli altri
 
-Però nella pratica si hanno 200 milioni di destinazioni e archiviare le informazioni d’instradamento su ciascun host richiederebbe un’enorme quantità di memoria
+Però nella pratica si hanno 200 milioni di destinazioni e archiviare le informazioni d’instradamento su ciascun host richiederebbe un’enorme quantità di memoria, il traffico generato dagli aggiornamenti link state non lascerebbero banda per i pacchetti di dati e il distance vector non convergerebbe mai
+
+Per questi motivi 
