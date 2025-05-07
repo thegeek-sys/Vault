@@ -128,7 +128,7 @@ int main() {
 			continue;
 		}
 		if (fork()==0) { // eseguito dal client
-			// read/send su client_sd
+			// read/write (o send) su client_sd
 			close(client_sd);
 			exit(0);
 		}
@@ -251,4 +251,16 @@ int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
 
 Usata per i socket con connessione (non per `SOCK_DGRAM`) e serve ad estrarre la prima richiesta di connessione nella coda delle richieste in attesa sulla coda si listening del socket `sockfd`
 
-Questa inoltre crea un nuovo socket di connessione con il client e lo ritorna (il nuovo socket non è in ascolto); questo socket serve per 
+Questa inoltre crea un nuovo socket di connessione con il client e lo ritorna (il nuovo socket non è in ascolto); questo socket serve per comunicare con il client tramite le `read/write` (o `send`)
+
+Nel mentre il socket `sockfd` continua il suo lavoro
+
+### $\verb|connect|$
+
+```c
+int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+```
+
+`connect` viene invocato da un client per associare un indirizzo `addr` ad un unnamed socket `sockfd`. `addrlen` è la dimensione di `addr` (ovvero `sockaddr`)
+
+Se va a buon fine ritorna $0$ e quindi `sockfd` può essere utilizzato come file descriptor per leggere e scrivere sul server
