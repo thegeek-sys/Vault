@@ -128,7 +128,7 @@ int main() {
 			continue;
 		}
 		if (fork()==0) { // eseguito dal client
-			// read/write su client_sd
+			// read/send su client_sd
 			close(client_sd);
 			exit(0);
 		}
