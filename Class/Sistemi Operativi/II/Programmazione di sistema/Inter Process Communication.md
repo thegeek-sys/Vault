@@ -210,4 +210,20 @@ Sia il valore di `sin_port` che quello di `sin_addr` sono binari in formato **ne
 
 I numeri di porta del protocollo e gli indirizzi internet vanno quindi tradotti in formato NBO. E’ inoltre possibile assegnare un valore a `sin_addr` assegnandogli una delle seguenti macro:
 - `INADDR_LOOPBACK` → $127.0.0.1$ (locale)
-- `INADDR_ANY` → $0.0.0.0$ (qualsiasi IP)
+- `INADDR_ANY` → $0.0.0.0$ (qualsiasi IPa)
+
+### Funzioni per convertire indirizzi
+
+```c
+uint32_t htonl(uint32_t hostlong);
+uint16_t htons(uint16_t hostshort);
+```
+`htonl` converte un `unsigned int` a $32$ bit in formato NBO
+`htons` converte un `unsigned int` a $16$ bit in formato NBO
+
+```c
+uint32_t ntohl(uint32_t netlong);
+uint16_t ntohs(uint16_t netshort);
+```
+`ntohl` converte un `unsigned int` a $32$ bit in formato ottale puntato
+`ntohs` converte un `unsigned int` a $16$ bit in formato ottale puntato
