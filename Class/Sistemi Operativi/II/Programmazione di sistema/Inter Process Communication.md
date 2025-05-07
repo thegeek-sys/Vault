@@ -5,6 +5,27 @@ Related:
   - "[[Programmazione di sistema]]"
 ---
 ---
+## Index
+- [[#PIPE e FIFO|PIPE e FIFO]]
+- [[#Pipe|Pipe]]
+	- [[#Pipe#$ verb pipe $|Syscall pipe]]
+- [[#FIFO|FIFO]]
+- [[#Socket|Socket]]
+	- [[#Socket#Syscall di interesse|Syscall di interesse]]
+	- [[#Socket#Tipologia di socket|Tipologia di socket]]
+	- [[#Socket#Anatomia server TCP|Anatomia server TCP]]
+		- [[#Anatomia server TCP#$ verb psrv $|psrv]]
+		- [[#Anatomia server TCP#$ verb pcli $|pcli]]
+	- [[#Socket#Struttura codice server|Struttura codice server]]
+	- [[#Socket#Struttura codice client|Struttura codice client]]
+	- [[#Socket#$ verb socket $|socket]]
+	- [[#Socket#$ verb bind $|bind]]
+		- [[#Socket#$ verb bind $#$ verb sockaddr_in $|sockaddr_in]]
+	- [[#Socket#Funzioni per convertire indirizzi|Funzioni per convertire indirizzi]]
+	- [[#Socket#$ verb listen $|listen]]
+	- [[#Socket#$ verb accept $|accept]]
+	- [[#Socket#$ verb connect $|connect]]
+---
 ## PIPE e FIFO
 Unix mette a disposizione due tipi di **Inter Process Communication** (*IPC*): **fifo** (o *named pipe*), per far comunicare processi non imparentati, e **pipe** (o *unamed pipe*), per far comunicare processi con un antenato in comune
 
