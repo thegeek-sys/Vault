@@ -122,7 +122,7 @@ int main() {
 	listen(sd, MAX_QUEUED);
 	// disabilito il segnale SIGCHLD per evitare di creare zombie process
 	while (1) {
-		int client sd=accpet(sd, ...);
+		int client_sd=accpet(sd, ...);
 		if (client_sd==-1) {
 			perror("Errore accettando connessione dal client");
 			continue;
