@@ -38,3 +38,50 @@ Forwarda il pacchetto se e solo se è arrivato dal link che è sul suo shortest 
 
 ![[Pasted image 20250508122803.png|350]]
 
+Viene in questo modo eliminato il problema di inondare la rete con troppi pacchetti. Però l’RPF non elimina completamente la trasmissione di pacchetti ridondanti
+
+>[!example]
+>$B$, $C$, $D$, $E$, $F$ ricevono uno o due pacchetti ridondati
+
+Ma ogni pacchetto dovrebbe ricevere una sola copia del pacchetto broadcast, la soluzione sta nel costruire uno **spanning tree** prima di inviare i pacchetti broadcast
+
+### Spanning tree (center-based)
+Una volta preso come centro un nodo ($E$), ogni nodo invia un messaggio di join in unicast verso il centro
+
+I messaggi vengono inoltrati finché arrivano o a un nodo che già appartiene all’albero o alla radice ($E$)
+
+![[Pasted image 20250508124954.png]]
+
+#### Broadcast
+I pacchetti vengono inoltrati solo sui link dell’albero, ogni nodo riceve solo una copia del pacchetto
+
+![[Pasted image 20250508125117.png]]
+
+---
+## Multicast
+Si parla di routing **broadcast** quando si ha una comunicazione tra una sorgente e un gruppo di destinazioni
+
+![[Pasted image 20250508125201.png]]
+
+### Confronto tra multicast e unicast multiplo
+![[Pasted image 20250508125308.png]]
+
+Nel caso di multicast si ha un solo datagramma alla sorgente che viene duplicato dai router, mentre l’unicast multiplo risulta essere inefficiente e aggiunge ritardi
+
+### Indirizzamento multicast
+Molte applicazioni richiedono il trasferimento di pacchetti da uno o più mittenti ad un gruppo di destinatari:
+- trasferimento di un aggiornamento SW su un gruppo di macchine
+- streaming (audio/video) ad un gruppo di utenti o studenti
+- applicazioni con dati condivisi (lavagna elettronica condivisa da più utenti)
+- aggiornamento di dati (andamento di borsa)
+- giochi multi-player interattivi
+
+>[!question] Come è possibile comunicare con host che partecipano ad un gruppo ma appartengono a reti diverse?
+>L’indirizzo di destinazione nell’IP può essere uno solo, quindi la soluzione è di usare un indirizzo per tutto il gruppo, il cosiddetto **indirizzo multicast**
+
+>[!example]
+>![[Pasted image 20250508125721.png]]
+>
+>I router devono sapere quali host sono associati ad un gruppo multicast
+
+### Indirizzi multicast
