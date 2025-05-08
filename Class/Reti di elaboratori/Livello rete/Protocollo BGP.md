@@ -37,6 +37,10 @@ Gli AS possono avere diverse dimensioni e sono classificati in base al modo in c
 - **AS multihomed** → ha più di una connessione con altri AS ma non consente transito di traffico (azienda che usa servizi di più di un network provider ma non fornisce connettività agli altri AS)
 - **AS di transito** → è collegato a più AS e consente il traffico (network provider e dorsali)
 
+>[!example] Instradamento inter-AS
+>![[Pasted image 20250508101453.png]]
+>Ogni router all’interno degli AS sa come raggiungere tutte le reti che si trovano nel suo AS ma non sa come raggiungere una rete che si trova in un altro AS
+
 ### Sistemi autonomi interconnessi
 Ciascun sistema autonomo sa come inoltrare pacchetti lungo il percorso ottimo verso qualsiasi destinazione interna al gruppo
 
@@ -54,5 +58,4 @@ Ciascun sistema autonomo sa come inoltrare pacchetti lungo il percorso ottimo ve
 - BGP → Border Gateway Protocol
 
 ---
-## Istradamento inter-AS
-
+## Border Gateway Protocol
