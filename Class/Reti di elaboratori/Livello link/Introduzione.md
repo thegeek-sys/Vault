@@ -100,4 +100,32 @@ Il **Data-Link Control** si occupa di tutte le questioni comuni sia ai collegame
 
 Si occupa dunque delle procedure per la comunicazione tra due nodi adiacenti (comunicazione nodo-a-nodo), indipendentemente dal fatto che il collegamento sia dedicato o broadcast
 
+![[Pasted image 20250509164921.png|280]]
+
 Il **Media Access Control** si occupa solo degli aspetti specifici dei canali broadcast, ovvero del controllo dell’accesso al mezzo condiviso
+
+---
+## Errori su bit
+Gli errori sui bit sono dovuti a interferenze che possono cambiare la forma del segnale
+La probabilità che avvenga un errore di tipo **burst** (a raffica) è più elevata rispetto a quella di un errore sul singolo bit, in quanto la durata dell’interferenza (detta anche rumore) normalmente è più lunga rispetto a quella di un solo bit
+
+![[Pasted image 20250509165310.png|400]]
+
+Il numero di bit coinvolti dipende dalla velocità di trasferimento dati e dalla durata del rumore
+
+>[!example]
+>$1\text{ kbps}$ con un rumore di $\frac{1}{100} \text{ sec}$ può influire su $10\text{ bit}$
+
+### Tecniche di rilevazione degli errori
+Per proteggere dei dati da errori vengono aggiunti dei bit *EDC* (**Error Detection and Corretion**)
+
+Però la rilevazione degli errori non è attendibile al 100%, infatti è possibile che ci siano errori non rilevati. Per ridurre la possibilità di questo evento, le tecniche più sofisticare prevedono un’elevata **ridondanza**
+
+![[Pasted image 20250509165646.png|450]]
+
+#### Controllo di parità
+Il bit aggiuntivo (di parità) viene selezionato in modo da rendere pari il numero totale di $1$ all’interno della codeword
+
+Con un’unico bit di parità si può solo avere la certezza che si sia verificato almeno un errore in un bit, mentre tramite la **parità bidimensionale** è possibile individuare e correggere il bit alterato
+
+![[Pasted image 20250509165921.png|450]]
