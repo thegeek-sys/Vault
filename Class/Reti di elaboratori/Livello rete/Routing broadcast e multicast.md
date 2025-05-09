@@ -113,3 +113,5 @@ Messaggi IGMP:
 
 Un router multicast tiene una lista per ciascuna sottorete dei gruppi multicast con un timer per membership (la membership può essere aggiornata o da report inviati prima della scadenza del timer oppure tramite messaggi di leave espliciti)
 
+### Problema del routing multicast
+Fra la popolazione complessiva di router solo alcuni (quelli collegati a host del gruppo multicast)
