@@ -1,4 +1,4 @@
-- [[Livello rete/Introduzione|Introduzione]]
+- [[Class/Reti di elaboratori/Livello rete/Introduzione|Introduzione]]
 - [[Internet Protocol (IPv4)]]
 - [[Forwarding dei datagrammi IP]]
 - [[ICMP]]

@@ -1,4 +1,4 @@
-- [[Livello trasporto/Introduzione|Introduzione]]
+- [[Class/Reti di elaboratori/Livello trasporto/Introduzione|Introduzione]]
 - [[Protocollo UDP]]
 - [[Verso TCP]]
 - [[Meccanismi di trasferimento dati affidabili]]
