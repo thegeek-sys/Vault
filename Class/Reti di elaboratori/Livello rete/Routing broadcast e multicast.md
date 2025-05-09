@@ -5,6 +5,26 @@ Related:
   - "[[Livello rete]]"
 ---
 ---
+## Index
+- [[#Unicast|Unicast]]
+- [[#Broadcast|Broadcast]]
+	- [[#Broadcast#Uncontrolled flooding|Uncontrolled flooding]]
+	- [[#Broadcast#Controlled flooding|Controlled flooding]]
+		- [[#Controlled flooding#Sequence number|Sequence number]]
+		- [[#Controlled flooding#Reverse path forwarding (RPF)|Reverse path forwarding (RPF)]]
+	- [[#Broadcast#Spanning tree (center-based)|Spanning tree (center-based)]]
+		- [[#Spanning tree (center-based)#Broadcast|Broadcast]]
+- [[#Multicast|Multicast]]
+	- [[#Multicast#Confronto tra multicast e unicast multiplo|Confronto tra multicast e unicast multiplo]]
+	- [[#Multicast#Indirizzamento multicast|Indirizzamento multicast]]
+	- [[#Multicast#Indirizzi multicast|Indirizzi multicast]]
+	- [[#Multicast#Gruppi multicast|Gruppi multicast]]
+	- [[#Multicast#Protocolli multicast|Protocolli multicast]]
+		- [[#Protocolli multicast#IGMP|IGMP]]
+	- [[#Multicast#Problema del routing multicast|Problema del routing multicast]]
+		- [[#Problema del routing multicast#Approcci per determinare l’albero di instradamento multicast|Approcci per determinare l’albero di instradamento multicast]]
+	- [[#Multicast#Instradamento multicast in Internet|Instradamento multicast in Internet]]
+---
 ## Unicast
 Per routing **unicast** si intende la comunicazione tra una sorgente e una destinazione (IP sorgente → IP destinazione)
 
@@ -114,4 +134,33 @@ Messaggi IGMP:
 Un router multicast tiene una lista per ciascuna sottorete dei gruppi multicast con un timer per membership (la membership può essere aggiornata o da report inviati prima della scadenza del timer oppure tramite messaggi di leave espliciti)
 
 ### Problema del routing multicast
-Fra la popolazione complessiva di router solo alcuni (quelli collegati a host del gruppo multicast)
+Fra la popolazione complessiva di router solo alcuni (quelli collegati a host del gruppo multicast). E’ quindi necessario un protocollo che coordini i router multicast in Internet (instradare pacchetti multicast dalla sorgente alla destinazione)
+
+>[!example]
+>$A$, $B$, $E$, $F$ sono router che devono ricevere il traffico multicast
+>![[Pasted image 20250509122958.png|350]]
+>
+>L’obiettivo è quello di trovare un albero che colleghi tutti i router connessi ad host che appartengono al gruppo multicast. I pacchetti verranno instradati su questo albero
+
+#### Approcci per determinare l’albero di instradamento multicast
+Si hanno due possibili approcci:
+- **albero condiviso dal gruppo**
+- **albero basato sull’origine**
+
+![[Pasted image 20250509123415.png|center|300]]
+Nell’albero condiviso dal gruppo viene costruito un singolo albero d’instradamento condiviso da tutto il gruppo multicast in cui un router agisce da rappresentante del gruppo
+Se il mittente del traffico multicast non è il centro, allora esso invierà il traffico in unicast al centro, e il centro provvederà a inviarlo al gruppo
+
+![[Pasted image 20250509123442.png|center|300]]
+Nell’albero basato sull’origine viene creato un albero per ciascuna origine nel gruppo multicast dunque ci sono tanti alberi quanti sono i mittenti nel gruppo multicast
+Per la costruzione si usa un algoritmo basato su reverse path forwarding, con pruning (potatura)
+
+### Instradamento multicast in Internet
+*Intra-dominio* multicast (interno a un sistema autonomo)
+- **DVMRP** → distance-vector multicast routing protocol
+- **MOSPF** → multicast open shortest path first
+- **PIM** → protocol independent multicast
+
+*Inter-dominio* multicast (tra sistemi autonomi)
+- **MBGP** → multicast border gateway protocol
+
