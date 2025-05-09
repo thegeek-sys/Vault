@@ -86,3 +86,28 @@ Molte applicazioni richiedono il trasferimento di pacchetti da uno o più mitten
 
 ### Indirizzi multicast
 Il blocco di indirizzi riservati per il multicast in IPv4 è `224.0.0.0/4` (ovvero da `224.0.0.0` a `239.255.255.255`) per un totale di $2^{28}$ gruppi
+
+### Gruppi multicast
+L’appartenenza ad un gruppo non ha alcuna relazione con il prefisso associato alla rete. Infatti un host che appartiene ad un gruppo ha un indirizzo multicast separato e aggiuntivo rispetto all primario
+L’appartenenza non è un attributo fisso dell’host (il periodo di appartenenza può essere limitato)
+
+![[Pasted image 20250509110428.png|350]]
+Un router inoltre deve scoprire quali gruppi sono presenti in ciascuna delle sue interfacce per poter propagare le informazioni agli altri router
+
+### Protocolli multicast
+Per il multicast sono necessari due protocolli:
+- per raccogliere le informazioni di appartenenza ai gruppi
+- per diffondere le informazioni di appartenenza
+
+#### IGMP
+L’**Internet Group Management Protocol** (*IGMP*) è un protocollo che lavora tra un host e il router che gli è direttamente connesso e offre agli host il mezzo di informare i router ad essi connessi del fatto che un’applicazione in esecuzione vuole aderire ad uno specifico gruppo multicast
+
+![[Pasted image 20250509110843.png]]
+
+I messaggi in questo caso sono incapsulati in datagrammi IP, con IP protocol number 2 (sono mandati con TTL a 1)
+
+Messaggi IGMP:
+- `membership query` ($\text{router}\to \text{host}$) → per determinare a quali gruppi hanno aderito gli host su ogni interfaccia (inviati periodicamente)
+- `membership report` ($\text{host}\to \text{router}$) → per informare il router su un’adesione, anche non in seguito a una query (al momento dell’adesione)
+- `leave group` ($\text{host}\to \text{router}$) → quando si lascia un gruppo (è opzionale, il router può capire che non ci sono host associati a quel gruppo quando non riceve report in risposta a query)
+
