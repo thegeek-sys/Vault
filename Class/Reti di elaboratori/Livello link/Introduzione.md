@@ -47,6 +47,12 @@ E’ possibile utilizzare:
 Un datagramma può essere gestito da diversi protocolli su collegamenti diversi (es. un datagramma può essere gestito da Ethernet sul primo collegamento, da PPP sull’ultimo e da un protocollo WAN nel collegamento intermedio)
 Anche i servizi erogati dai protocolli del livello di link possono essere diversi (es. non tutti i protocolli forniscono un servizio di consegna affidabile)
 
+>[!question] Dove è implementato il livello di collegamento?
+>In tutti gli host ed è realizzato in un adattatore (*NIC*, **network interface card**) come la scheda Ethernet, PCMCI e 802.11 che implementano il livello di collegamento e fisico
+>
+>E’ una combinazione di hardware, software e firmware
+>![[Pasted image 20250509162723.png|350]]
+
 ---
 ## Servizi offerti dal livello di collegamento
 ### Framing
@@ -58,3 +64,31 @@ La consegna affidabile è basata su ACK come nel livello di trasporto, ma è con
 
 E’ spesso utilizzata nei collegamenti soggetti a elevati tassi di errori (es. collegamenti wireless)
 
+### Controllo di flusso
+Evita che il nodo trasmittente saturi quello ricevente
+
+### Rilevazione degli errori
+Gli errori sono causati dalle *interferenze* (attenuazione del segnale e rumore elettromagnetico) e il nodo ricevete può individuarli grazie all’inserimento, da parte del nodo trasmittente, di bit di controllo di errore all’interno del frame
+
+### Correzione degli errori
+Il nodo ricevente determina anche in punto in cui si è verificato l’errore e lo corregge
+
+---
+## Adattatori
+![[Pasted image 20250509162816.png]]
+
+Dal lato del mittente:
+- si incapsula un datagramma in un frame
+- viene impostato il bit di rilevazione degli errori, trasferimento dati affidabile, controllo di flusso, etc.
+
+Dal lato del ricevente:
+- si individuano gli errori, trasferimento dati affidabile, controllo di flusso, etc.
+- vengono estratti i datagrammi e passati al nodo ricevente
+
+---
+## Due sottolivelli
+Il livello di collegamento in ulteriori due sottolivelli:
+- **Data-Link Control** (*DLC*)
+- **Media Access Control** (*MAC*)
+
+Il **Data-Link Control** si occupa di tutte le questioni comuni sia ai collegamenti punto-punto che a quelli broadcast
