@@ -128,4 +128,16 @@ Il bit aggiuntivo (di parità) viene selezionato in modo da rendere pari il nume
 
 Con un’unico bit di parità si può solo avere la certezza che si sia verificato almeno un errore in un bit, mentre tramite la **parità bidimensionale** è possibile individuare e correggere il bit alterato
 
-![[Pasted image 20250509165921.png|450]]
+![[Pasted image 20250509165921.png|420]]
+
+---
+## Protocolli di accesso multiplo
+Esistono due tipi di collegamenti di rete:
+- **collegamento punto-punto**, impiegato per
+	- connessioni telefoniche
+	- collegamenti punto-punto tra Ethernet e host
+	- point-to-point protocol (PPP) del DLC
+- **collegamento broadcast** (cavo o canale condiviso), impiegato per
+	- Ethernet tradizionale
+	- Wireless LAN 802.11
+
