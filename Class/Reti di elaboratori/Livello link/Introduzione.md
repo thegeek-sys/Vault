@@ -141,3 +141,6 @@ Esistono due tipi di collegamenti di rete:
 	- Ethernet tradizionale
 	- Wireless LAN 802.11
 
+In una connessione a un canale broadcast condiviso, centinaia o anche migliaia di nodi possono comunicare direttamente su un canale broadcast e si genera una collisione quando i nodi ricevono due o più frame contemporaneamente
+
+Con i protocolli di accesso multiplo
