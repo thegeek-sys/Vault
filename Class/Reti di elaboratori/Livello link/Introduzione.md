@@ -91,4 +91,13 @@ Il livello di collegamento in ulteriori due sottolivelli:
 - **Data-Link Control** (*DLC*)
 - **Media Access Control** (*MAC*)
 
-Il **Data-Link Control** si occupa di tutte le questioni comuni sia ai collegamenti punto-punto che a quelli broadcast
+![[Pasted image 20250509163618.png|280]]
+
+Il **Data-Link Control** si occupa di tutte le questioni comuni sia ai collegamenti punto-punto che a quelli broadcast, ovvero:
+- framing
+- controllo del flusso e degli errori
+- rilevamento e correzione degli errori
+
+Si occupa dunque delle procedure per la comunicazione tra due nodi adiacenti (comunicazione nodo-a-nodo), indipendentemente dal fatto che il collegamento sia dedicato o broadcast
+
+Il **Media Access Control** si occupa solo degli aspetti specifici dei canali broadcast, ovvero del controllo dell’accesso al mezzo condiviso
