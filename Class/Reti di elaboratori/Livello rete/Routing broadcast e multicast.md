@@ -111,3 +111,4 @@ Messaggi IGMP:
 - `membership report` ($\text{host}\to \text{router}$) → per informare il router su un’adesione, anche non in seguito a una query (al momento dell’adesione)
 - `leave group` ($\text{host}\to \text{router}$) → quando si lascia un gruppo (è opzionale, il router può capire che non ci sono host associati a quel gruppo quando non riceve report in risposta a query)
 
+Un router multicast tiene una lista per ciascuna sottorete dei gruppi multicast con un timer per membership (la membership può essere aggiornata o da report inviati prima della scadenza del timer oppure tramite messaggi di leave espliciti)
