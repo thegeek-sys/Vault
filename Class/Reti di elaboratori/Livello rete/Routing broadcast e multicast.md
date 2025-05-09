@@ -85,3 +85,4 @@ Molte applicazioni richiedono il trasferimento di pacchetti da uno o più mitten
 >I router devono sapere quali host sono associati ad un gruppo multicast
 
 ### Indirizzi multicast
+Il blocco di indirizzi riservati per il multicast in IPv4 è `224.0.0.0/4` (ovvero da `224.0.0.0` a `239.255.255.255`) per un totale di $2^{28}$ gruppi
