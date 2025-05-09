@@ -5,6 +5,13 @@ Related:
   - "[[Livello rete]]"
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Formato datagramma IPv6|Formato datagramma IPv6]]
+- [[#Dual stack|Dual stack]]
+- [[#Tunneling|Tunneling]]
+- [[#Traduzione dell’intestazione|Traduzione dell’intestazione]]
+---
 ## Introduction
 L’**IPv6** (o IP new generation) è nato con lo scopo di:
 - aumentare lo spazio di indirizzi rispetto a IPv4 → indirizzi lunghi 128 bit
@@ -40,3 +47,16 @@ Per determinare quale versione utilizzare per inviare un pacchetto a una destina
 
 ---
 ## Tunneling
+Il **tunneling** è la tecnica da utilizzare quando due host IPv6 che vogliono comunicare devono passare attraverso una regione IPv4.
+
+In particolare si incapsula il datagramma IPv6 nel payload di un datagramma IPv4 e si inseriscono come IP sorgente e destinazione gli estremi del tunnel
+
+![[Pasted image 20250509125553.png]]
+
+---
+## Traduzione dell’intestazione
+Quando un mittente IPv6 comunica con un destinatario IPv4 è necessario effettuare una traduzione del datagramma prima che arrivi a destinazione
+![[Pasted image 20250509125705.png]]
+
+
+![[Pasted image 20250509125747.png]]
