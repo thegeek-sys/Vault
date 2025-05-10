@@ -30,4 +30,9 @@ L’**Ethernet** detiene una posizione dominante nel mercato delle LAN cablate. 
 ![[Pasted image 20250510223223.png]]
 
 ### Ethernet standard
-L’Ethernet standard 
+L’Ethernet standard supporta fino a $10\text{ Mbps}$. I frame sono così formati
+![[Pasted image 20250510224214.png]]
+- **preambolo** ($7$ byte) → sette byte hanno i bit $10101010$ e server per “attivare” le network interface card dei riceventi e sincronizzare i loro orologi con quello del trasmittente (fa parte dell’header del livello fisico)
+- **SFD** (Start Frame Delimiter, $1$ byte) → $10101011$, flag che definisce l’inizio del frame (ultima possibilità di sincronizzazione); gli ultimi due bit $11$ indicano che inizia l’header MAC
+- **indirizzo sorgente e destinazione** ($6$ byte) → quando una NIC riceve un pacchetto contenente il proprio indirizzo di destinazione o l’indirizzo boradcast (es. pacchetto APR), trasferisce il contenuto del campo dati del pacchetto al livello di rete (i pacchetti con altri indirizzi MAC vengono ignorati)
+- **tipo** ($2$ byte) → utile per multiplexing/demultiplexing; il protocollo di livello superiore del pacchetto 
