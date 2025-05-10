@@ -53,4 +53,14 @@ In questo caso il TTL è un valore in unità di tempo che indica quando bisogner
 >$B$ riceve il pacchetto APR e risponde ad $A$ comunicandogli il proprio indirizzo MAC. Il frame viene inviato all’indirizzo MAC di $A$ (in unicast)
 >
 >Il messaggio di richiesta APR è inviato in un pacchetto broadcast mentre il messaggio di risposta APR è inviato in un pacchetto standard. Dunque la tabella APR di un nodo si costruisce automaticamente e non deve essere configurata dall’amministratore del sistema (plug and play)
+>
+>![[Pasted image 20250510220416.png]]
+
+### Formato del pacchetto APR
+I pacchetti APR vengono incapsulati direttamente all’interno di frame di livello di collegamento
+
+![[Pasted image 20250510220522.png]]
+
+>[!example]
+>![[Pasted image 20250510220554.png]]
 
