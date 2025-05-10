@@ -27,6 +27,8 @@ I vari standard differiscono a livello fisico e nel sottolivello MAC, ma sono co
 ## Ethernet
 L’**Ethernet** detiene una posizione dominante nel mercato delle LAN cablate. E’ stato infatti la prima LAN ad alta velocità con vasta diffusione in quanto più semplice e meno costosa di token ring, FDDI e ATM, e riesce a stare al passo dei tempi con il tasso trasmissivo
 
+Tutte le stazioni che fanno parte di una ethernet sono dotate di una Network Interface Card (NIC, o scheda di rete). La NIC fornisce un indirizzo di rete di livello di collegamento. Gli indirizzi vengono trasmessi da sinistra verso destra, byte per byte, ma per ciascun byte il bit meno significativo viene inviato per primo e quello più significativo per ultimo
+
 ![[Pasted image 20250510223223.png]]
 
 ### Ethernet standard
@@ -40,4 +42,7 @@ L’Ethernet standard supporta fino a $10\text{ Mbps}$. I frame sono così forma
 - **CNR** → consente alla NIC ricevente di rilevare la presenza di un errore nei bit sul campo indirizzo, tipo e dati
 
 L’Ethernet standard è un protocollo senza connessione, e dunque è non affidabile (la NIC ricevente non invia un riscontro)
+
+La lunghezza minima del frame è di $64$ byte di cui $18$ per l’intestazione e trailer e $46$ dei dati provenienti dal livello superiore (se inferiore si esegue il padding, bit nulli di riempimento). E’ necessaria per il corretto funzionamento del CSMA/CD.
+La lunghezza massima del frame è di $1518$ byte, di cui $18$ di intestazione e trailer e $1500$ di dati. E’ necessaria per evitare che una stazione possa monopolizzare il mezzo e per ragioni storiche (la memoria era molto costosa e questa restrizione permetteva di ridurre la memoria necessaria nei buffer dei dispositivi)
 
