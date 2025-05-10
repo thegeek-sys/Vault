@@ -5,6 +5,22 @@ Related:
   - "[[Livello link]]"
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Standard IEEE 802|Standard IEEE 802]]
+- [[#Switch|Switch]]
+	- [[#Switch#Apprendimento|Apprendimento]]
+	- [[#Switch#Proprietà degli switch|Proprietà degli switch]]
+- [[#Ethernet|Ethernet]]
+	- [[#Ethernet#Faso operative del protocollo Protocolli di accesso multiplo Protocolli ad accesso casuale CSMA/CD CSMA/DM|Faso operative del protocollo CSMA/CD]]
+	- [[#Ethernet#Ethernet standard ($10\text{ Mbps}$)|Ethernet standard (10 Mbps)]]
+	- [[#Ethernet#Fast ethernet ($100\text{ Mbps}$)|Fast ethernet (100 Mbps)]]
+		- [[#Fast ethernet ($100\text{ Mbps}$)#Prima soluzione|Prima soluzione]]
+		- [[#Fast ethernet ($100\text{ Mbps}$)#Seconda soluzione|Seconda soluzione]]
+	- [[#Ethernet#Gigabit Ethernet|Gigabit Ethernet]]
+- [[#LAN virtuale|LAN virtuale]]
+	- [[#LAN virtuale#Una LAN su più switch|Una LAN su più switch]]
+---
 ## Introduction
 Nel 1985 la IEEE Computer Society iniziò un progetto chiamato **Progetto 802** con l’obiettivo di definire uno standard per l’interconnessione tra dispositivi di produttori differenti così da poter definire le funzioni del livello fisico e di collegamento dei protocolli LAN
 
@@ -43,6 +59,16 @@ Inizialmente gli switch venivano configurati staticamente, ora invece c’è un 
 >Lo switch apprende quali nodi possono essere raggiunti attraverso determinate interfacce
 >
 >Quando riceve un pacchetto, lo switch “impara” l’indirizzo del mittente e registra la coppia mittente/interfaccia nella sua tabella di commutazione
+>
+>![[Screenshot 2025-05-11 at 00.03.33.png|500]]
+>
+>Quindi se la destinazione del frame è ignota viene fatto flooding, mentre se la destinazione è nota viene fatto selective send
+
+### Proprietà degli switch
+Sono dispositivi plug-and-play che non richiedono intervento dell’amministratore di rete o dell’utente. Inoltre:
+- eliminano le collisioni → bufferizzano i frame e non trasmettono più di un frame alla volta su ogni segmento di rete
+- interconnettono link eterogenei → collegamenti che operano a diverse velocità possono essere collegati a uno switch
+- aumentano la sicurezza della rete e migliorano il network management → no packet sniffer e forniscono informazioni su uso di banda, collisioni, tipi di traffico, etc.
 
 ---
 ## Ethernet
@@ -102,3 +128,30 @@ Lo switch riceve un frame da un host, lo memorizza nel buffer, verifica l’indi
 
 ### Gigabit Ethernet
 Si tratta della versione successiva al fast Ethernet. Ha una topologia a stella con switch (non ci sono collisioni) e permette di arrivare fino a $10\text{ Gbps}$
+
+---
+## LAN virtuale
+Supponiamo di avere uno switch che collega 3 LAN (interconnesse mediante switch) e 3 gruppi di lavoro
+
+![[Pasted image 20250511001007.png]]
+
+>[!question] Cosa succede se una persona del primo gruppo viene spostata in un altro gruppo?
+
+>[!question] Se invece di $3$ gruppi si hanno $10$ gruppi di poche persone, bisognerebbe avere $10$ switch? Oppure un unico switch che non rispecchia la separazione tra gruppi e non isola il traffico?
+
+La **LAN virtuale** è una rete locale configurata per mezzo del software anziché
+del cablaggio fisico (la LAN viene suddivisa in segmenti logici anziché fisici). Per questo motivo una LAN può essere suddivisa in più VLAN e il gruppo di appartenenza è definito dal software
+
+![[Pasted image 20250511001227.png]]
+
+>[!example] Uno switch con $2$ LAN
+>![[Pasted image 20250511001323.png]]
+
+Il management software dello switch permette all’amministratore di rete di dichiarare quali porte appartengono a una data LAN, e lo switch mantiene una tabella di associazioni porta-VLAN
+
+### Una LAN su più switch
+Supponiamo di avere partecipanti a due gruppi in edifici diversi
+
+Il **VLAN trunking** consiste in una porta speciale su ogni switch che viene configurata come porta trunk per interconnettere i due switch degli edifici. La porta trunk appartiene ad entrambe le VLAN e riceve i frammenti indirizzati a entrambe le VLAN
+
+![[Pasted image 20250511001646.png]]
