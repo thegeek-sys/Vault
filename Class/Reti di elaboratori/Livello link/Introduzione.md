@@ -148,3 +148,9 @@ Il bit aggiuntivo (di parità) viene selezionato in modo da rendere pari il nume
 Con un’unico bit di parità si può solo avere la certezza che si sia verificato almeno un errore in un bit, mentre tramite la **parità bidimensionale** è possibile individuare e correggere il bit alterato
 
 ![[Pasted image 20250509165921.png|420]]
+
+---
+## Indirizzi MAC
+Negli indirizzi IP a 32 bit l’indirizzo riguarda il livello di rete e servono ad individuare con esattezza i punti di Internet dove sono connessi gli host sorgente e destinazione. Gli indirizzi IP sorgente e destinazione definiscono le estremità della rete ma non dicono attraverso quali collegamenti deve passare il datagramma
+
+L’**indirizzo MAC** (o LAN o fisico o Ethernet) è un indirizzo a 48 bit (6 byte rappresentati in esadecimali)
