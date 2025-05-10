@@ -226,3 +226,7 @@ Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i s
 
 >[!question] Quanto si aspetta prima di ritrasmettere
 >Il tempo di back-off $T_{B}$ è un valore scelto casualmente che dipende dal numero $K$ di trasmissioni fallite
+
+$$
+\text{Backoff time}=R\cdot T_{fr}
+$$
