@@ -205,3 +205,10 @@ E’ stato ideato per mettere in comunicazione gli atolli mediante una LAN radio
 
 Essendo un protocollo ad accesso casuale possono verificarsi collisioni
 
+### ALOHA puro
+Nell’ALOHA puro ogni stazione può inviare un frame tutte le volte che ha dati da inviare e il ricevente invia un ACK per notificare la corretta ricezione del frame
+Se il mittente non riceve una ACK entro un *timeout* deve ritrasmettere
+
+Se due stazioni ritrasmettono contemporaneamente si ha di nuovo una collisione, allora si attende un tempo random (**back-off**) prima di effettuare la ritrasmissione (è proprio la casualità del back-off che aiuta ad evitare altre collisioni)
+
+Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i suoi tentativi e riprova più tardi
