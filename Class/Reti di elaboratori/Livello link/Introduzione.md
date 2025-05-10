@@ -156,4 +156,31 @@ Con i protocolli di accesso multiplo l’obiettivo è quello di evitare caos e r
 >	- non ci sono nodi master
 >	- non c’è sincronizzazione dei clock
 
-I protocolli di accesso multiplo si possono classificare in una di queste tre categorie
+I protocolli di accesso multiplo si possono classificare in una di queste tre categorie:
+- **protocolli a suddivisione del canale** (*channel partitioning*) → suddivide un canale in “parti più piccole” (slot di temo, frequenza, codice) e li colloca presso un nodo per utilizzo esclusivo (non si hanno collisioni)
+- **protocolli ad accesso casuale** (*random access*) → i canali non vengono divisi e si può verificare una collisione; i nodi coinvolti ritrasmettono ripetutamente i pacchetti
+- **protocolli a rotazione** (*”taking-turn”*) → ciascun nodo ha il suo turno di trasmissione, ma i nodi che hanno molto da trasmettere possono avere turni più lunghi
+
+![[Pasted image 20250510122402.png]]
+
+---
+## Protocolli a suddivisione del canale
+### TDMA
+Il **time division multiple access** (*TDMA*) utilizza dei turni per accedere al canale (ogni nodo ha un turno assegnato) e suddivide il canale condiviso in intervalli di tempo
+Gli slot non usati rimangono inattivi
+
+>[!example]
+>Gli slot $1$, $3$ e $4$ hanno un pacchetto, $2$, $5$ e $6$ sono inattivi
+>![[Pasted image 20250510122618.png]]
+
+Il tasso trasmissivo risulta essere $\frac{R}{N}$ bps e non è flessibile rispetto a variazioni nel numero di nodi
+
+### FDMA
+Il **frequency division multiple access** (*FDMA*) suddivide il canale in bande di frequenza e a ciascuna stazione è assegnata una banda di frequenza prefissata
+
+>[!example]
+>Le bande $1$, $3$ e $4$ hanno un pacchetto, $2$, $5$ e $6$ sono inattive
+>![[Pasted image 20250510122816.png]]
+
+---
+## Protocolli ad accesso casuale
