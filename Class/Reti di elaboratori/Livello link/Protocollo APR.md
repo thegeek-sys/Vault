@@ -64,3 +64,19 @@ I pacchetti APR vengono incapsulati direttamente all’interno di frame di livel
 >[!example]
 >![[Pasted image 20250510220554.png]]
 
+---
+## Indirizzamento
+In ognuno dei 4 livelli dello stack protocollare TCP/IP è presente l’indirizzamento fatta eccezione per il livello fisico. Infatti il livello fisico si occupa solo di trasferire i singoli bit che vengono spediti in broadcast nel mezzo trasmissivo e ricevuti da tutti i nodi che sono collegati
+
+>[!example] Invio verso un nodo esterno alla sottorete
+>![[Pasted image 20250510221120.png]]
+>>[!example] Flusso di pacchetti alla sorgente ($A$)
+>>![[Pasted image 20250510221231.png]]
+>>>[!example] Attività nel router $R 1$
+>>>![[Pasted image 20250510221309.png]]
+>
+>>[!example] Flusso di pacchetti alla destinazione ($B$)
+>>![[Pasted image 20250510221356.png|400]]
+
+
+
