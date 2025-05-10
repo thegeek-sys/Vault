@@ -216,3 +216,13 @@ Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i s
 >[!example]
 >![[Pasted image 20250510125012.png]]
 
+>[!warning]
+>La durata della connessione è variabile, può essere anche di un solo bit
+
+#### Timeout e back-off
+
+>[!question] Per quanto tempo si aspetta l’ACK?
+>Il periodo di timeout equivale al massimo ritardo di propagazione di round-trip (andata del frame e ritorno dell’ACK) tra le due stazioni più lontane ($2\times T_{p}$)
+
+>[!question] Quanto si aspetta prima di ritrasmettere
+>Il tempo di back-off $T_{B}$ è un valore scelto casualmente che dipende dal numero $K$ di trasmissioni fallite
