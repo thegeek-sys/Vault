@@ -26,8 +26,25 @@ Gli indirizzi MAC hanno una struttura non gerarchica. Ciò rendere possibile spo
 ## Protocollo APR
 L’**Address Resolution Protocol** (*APR*) è il protocollo utilizzato per tradurre un indirizzo IP in un indirizzo MAC
 
+![[Pasted image 20250510215109.png|450]]
+
 Ogni nodo IP (host, router) nella LAN ha una **tabella APR**, la quale contiene la corrispondenza tra indirizzi IP e MAC
 
 ```
 <Indirizzo IP; Indirizzo MAC; TTL>
 ```
+
+![[Pasted image 20250510215226.png|450]]
+
+In questo caso il TTL è un valore in unità di tempo che indica quando bisognerà eliminare una data voce nella tabella (tipicamente 20 min)
+
+>[!example] Tabella APR
+>![[Pasted image 20250510215202.png]]
+
+>[!example] Protocollo APR nella stessa sottorete
+>$A$ vuole inviare un datagramma a $B$, e l’indirizzo MAC di $B$ non è nella tabella APR di $A$
+>
+>$A$ trasmette in un pacchetto broadcast ($FF-FF-FF-FF-FF-FF$) il messaggio di richiesta APR contenente l’indirizzo IP di $B$
+>
+>![[Pasted image 20250510215451.png]]
+
