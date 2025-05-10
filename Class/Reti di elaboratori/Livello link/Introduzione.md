@@ -212,3 +212,7 @@ Se il mittente non riceve una ACK entro un *timeout* deve ritrasmettere
 Se due stazioni ritrasmettono contemporaneamente si ha di nuovo una collisione, allora si attende un tempo random (**back-off**) prima di effettuare la ritrasmissione (è proprio la casualità del back-off che aiuta ad evitare altre collisioni)
 
 Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i suoi tentativi e riprova più tardi
+
+>[!example]
+>![[Pasted image 20250510125012.png]]
+
