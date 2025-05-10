@@ -226,7 +226,14 @@ Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i s
 
 >[!question] Quanto si aspetta prima di ritrasmettere
 >Il tempo di back-off $T_{B}$ è un valore scelto casualmente che dipende dal numero $K$ di trasmissioni fallite
+>
+>$$ \begin{align}\text{Backoff time}=R\cdot T_{fr}\qquad\text{dove}\quad &R\in[0,2^k-1] \\ &K=\#\text{tentativi} \\ &T_{fr}=\text{tempo per inviare un frame} \\ &K_{\text{max}}=15 \end{align} $$
+>
+>>[!example] Calcolo back-off
+>>Le stazioni di una rete wireless ALOHA sono a una distanza massima di $600\text{ km}$. Supponendo che i segnali si propaghino a $3\times 10^8\text{ m/s}$, troviamo:
+>>$$T_{p}=\frac{600\cdot 10^3}{3\cdot 10^8}=2\text{ ms}$$
+>>
+>>Per $K=2$ l’intervallo di $R$ è $\{0,1,2,3\}$
 
-$$
-\text{Backoff time}=R\cdot T_{fr}
-$$
+
+
