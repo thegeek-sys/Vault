@@ -199,10 +199,9 @@ Inoltre il protocollo ad accesso casuale definisce come rilevare un’eventuale 
 >- CSMA/CD
 >- CSMA/CA
 
-### Efficienza
+>[!info] Efficienza
+>L’efficienza è definita come la frazione di slot vincenti in presenza di un elevato numero $N$ di nodi attivi, che hanno sempre un elevato numero di pacchetti da spedire
 
->[!info] Definizione
->L’efficienza è definita come la frazione di slot vincenti in presenza di un elevato numero $N$ di nodi attivi, che hanno sempre un elevato numero di pacchetti 
 ### ALOHA
 L’**ALOHA** è stato il primo metodo di accesso casuale che è stato proposto in letteratura ed è stato sviluppato all’Università delle Hawaii nei primi anni 70
 E’ stato ideato per mettere in comunicazione gli atolli mediante una LAN radio (wireless) ma può essere utilizzato su qualsiasi mezzo trasmissivo
@@ -245,4 +244,86 @@ Nonostante tutto ciò questo protocollo ha:
 - tempo di vulnerabilità → l’intervallo di tempo nel quale il frame è a rischio di collisioni
 	- il frame trasmesso a $t$ si sovrappone con la trasmissione di qualsiasi altro frame inviato in $[t-1,t+1]$, dunque il tempo di vulnerabilità risulta essere $2T_{fr}$
 
-![[Pasted image 20250510171946.png]]
+![[Pasted image 20250510171946.png|500]]
+
+#### Efficienza
+Assumiamo che tutti i frame hanno la stessa dimensione e ogni nodo ha sempre un frame da trasmettere. In ogni istante di tempo, $p$ è la probabilità che un nodo trasmetta un frame, $1-p$ che non trasmetta
+
+Supponendo che un nodo inizi a trasmettere al tempo $t_{0}$, perché la trasmissione vada a buon fine, nessun altro nodo deve aver iniziato una trasmissione nel tempo $[t_{0}-1,t_{0}]$. Tale probabilità è data da $(1-p)^{N-1}$
+
+Allo stesso modo nessun nodo deve iniziare a trasmettere nel tempo $[t_{0},t_{0}+1]$, e la probabilità di questo evento è ancora $(1-p)^{N-1}$
+
+La probabilità che un nodo trasmetta con successo è dunque $p(1-p)^{2(N-1)}$
+Studiando il valore di $p$ che massimizza la probabilità di successo per $N$ che tende a infinito si ottiene che l’efficienza massima è $\frac{1}{2}e$ ovvero $0.18$ che risulta molto bassa
+
+$$
+\begin{align}
+P(\text{trasmissione c}&\text{on successo di un dato nodo})= \\
+&P(\text{il nodo trasmette})\cdot P(\text{nessun altro nodo trasmette in }[t_{0}-1,t_{0}])\,\cdot \\
+&P(\text{nessun altro nodo trasmette in }[t_{0},t_{0}+1])= \\
+&=p\cdot(1-p)^{N-1}\cdot(1-p)^{N-1}=p\cdot(1-p)^{2(N-1)}\underset{N\to\infty}{\longrightarrow} \frac{1}{2e}=0.18
+\end{align}
+$$
+
+Dunque il throughput è $0.18R$ bps
+
+### Slotted ALOHA
+Un modo per aumentare l'efficienza di ALOHA (Roberts, 1972) consiste nel dividere il tempo in intervalli discreti, ciascuno corrispondente ad un frame time ($T_{fr}$)
+I nodi dunque devono essere d’accordo nel confine fra gli intervalli, e ciò può essere fatto facendo emettere da una attrezzatura speciale un breve segnale all’inizio di ogni intervallo
+
+Assumiamo che:
+- tutti i pacchetti hanno la stessa dimensione
+- il tempo è suddiviso in slot; ogni slot equivale al tempo di trasmissione di un pacchetto
+- i nodi iniziano la trasmissione dei pacchetti solo all’inizio degli slot
+- i nodi sono sincronizzati
+- se in uno slot due o più pacchetti collidono, i nodi coinvolti rilevano l’evento prima del termine dello slot
+
+![[Pasted image 20250510175510.png]]
+
+Dunque quando a un nodo arriva un nuovo pacchetto da spedire, il nodo attende l’inizio del prossimo slot. Se non si verifica una collisione il nodo può trasmette un nuovo pacchetto nello slot successivo, altrimenti il nodo ritrasmette con probabilità $p$ il suo pacchetto durante gli slot successivi
+
+#### Pro e contro
+**PRO**
+- consente ad un singolo nodo di trasmette continuamente pacchetti alla massima velocità del canale
+- il tempo di vulnerabilità si riduce ad un solo slot ($T_{fr}$)
+
+**CONTRO**
+- una certa frazione degli slot presenterà collisioni e di conseguenza andrà “sprecata”
+- un’altra frazione degli slot rimane vuota, quindi inattiva
+
+#### Efficienza
+Supponiamo $N$ nodi con pacchetti da spedire, ognuno trasmette i pacchetti in uno slot con probabilità $p$. La probabilità di successo di un dato nodo è $p(1-p)^{N-1}$
+Poiché ci sono $N$ nodi, la probabilità che ogni nodo abbia successo è $N\cdot p(1-p)^{N-1}$
+
+Per un elevato numero di nodi ricaviamo il limite per $N$ che tende a infinito, ovvero $\frac{1}{e}=0.37$
+Il throughput non è $R$ ma $0.37R$ bps
+
+### CSMA
+Nel **Carrier Sense Multiple Access** (*CSMA*) si pone in ascolto prima di trasmettere (*sense before transmit*). Se rileva che il canale è libero, trasmette l’intero pacchetto, se invece il canale sta già trasmettendo, il nodo aspetta un altro intervallo di tempo
+
+Nonostante ciò le collisioni possono ancora verificarsi, infatti il ritardo di propagazione fa si che due nodi non rilevino la reciproca trasmissione (il tempo di vulnerabilità è il tempo di propagazione)
+
+>[!note]
+>La distanza e il ritardo di propagazione giocano un ruolo importante nel determinare la probabilità di collisione
+
+![[Pasted image 20250510175832.png|320]]
+
+### CSMA/CD
+Con il **CSMA/CD** (*collision detection*) è possibile anche rilevare una collisione, infatti ascolta il canale anche durante la trasmissione. Ciò permette di rilevare la collisione in poco tempo, e viene annullata la trasmissione non appena si accorge che c’è un’altra trasmissione in corso
+
+Rilevare la collisione però risulta essere facile nelle LAN cablate ma difficile nelle LAN wireless
+
+>[!example]
+>![[Pasted image 20250510180203.png]]
+>
+>- $A$ ascolta il canale e inizia la trasmissione al tempo $t_{1}$
+>- $C$ al tempo $t_{2}$ ascolta il canale (non rileva ancora il prossimo bit di $A$) e quindi inizia a trasmettere
+>- al tempo $t_{3}$ $C$ riceve il primo bit di $A$ e interrompe la trasmissione perché c’è collisione
+>- al tempo $t_{4}$ $A$ riceve il primo bit di $C$ e interrompe la collisione perché c’è collisione
+
+>[!question] Cosa ssuccederebbe se un mittente finisse di trasmettere un frame prima di ricevere il primo bit di un’altra stazione (che ha già iniziato a trasmettere)?
+>Una stazione una volta inviato un frame non tiene una copia del frame, né controlla il mezzo trasmissivo per rilevare collisioni
+>Perché il Collision Detection funzioni, il mittente deve poter rilevare la trasmissione mentre sta trasmettendo ovvero prima di inviare l’ultimo bit del frame
+>
+>Il tempo di trasmissione di un frame deve essere almeno due volte il tempo di propagazione $T_{p}$; quindi la prima stazione deve essere ancora in trasmissione dopo $2T_{p}$
+
