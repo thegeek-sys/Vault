@@ -5,6 +5,12 @@ Related:
   - "[[Livello link]]"
 ---
 ---
+## Index
+- [[#Indirizzi MAC|Indirizzi MAC]]
+- [[#Protocollo APR|Protocollo APR]]
+	- [[#Protocollo APR#Formato del pacchetto APR|Formato del pacchetto APR]]
+- [[#Indirizzamento|Indirizzamento]]
+---
 ## Indirizzi MAC
 Negli indirizzi IP a 32 bit l’indirizzo riguarda il livello di rete e servono ad individuare con esattezza i punti di Internet dove sono connessi gli host sorgente e destinazione. Gli indirizzi IP sorgente e destinazione definiscono le estremità della rete ma non dicono attraverso quali collegamenti deve passare il datagramma
 
@@ -76,7 +82,7 @@ In ognuno dei 4 livelli dello stack protocollare TCP/IP è presente l’indirizz
 >>>![[Pasted image 20250510221309.png]]
 >
 >>[!example] Flusso di pacchetti alla destinazione ($B$)
->>![[Pasted image 20250510221356.png|400]]
+>>![[Pasted image 20250510221356.png|300]]
 
 
 
