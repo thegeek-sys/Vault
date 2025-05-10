@@ -199,6 +199,10 @@ Inoltre il protocollo ad accesso casuale definisce come rilevare un’eventuale 
 >- CSMA/CD
 >- CSMA/CA
 
+### Efficienza
+
+>[!info] Definizione
+>L’efficienza è definita come la frazione di slot vincenti in presenza di un elevato numero $N$ di nodi attivi, che hanno sempre un elevato numero di pacchetti 
 ### ALOHA
 L’**ALOHA** è stato il primo metodo di accesso casuale che è stato proposto in letteratura ed è stato sviluppato all’Università delle Hawaii nei primi anni 70
 E’ stato ideato per mettere in comunicazione gli atolli mediante una LAN radio (wireless) ma può essere utilizzato su qualsiasi mezzo trasmissivo
