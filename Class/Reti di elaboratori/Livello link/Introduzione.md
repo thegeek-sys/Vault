@@ -235,3 +235,10 @@ Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i s
 >>
 >>Per $K=2$ l’intervallo di $R$ è $\{0,1,2,3\}$. Ciò significa che $T_{B}=R\cdot T_{Fr}$ può essere $0,2,4,6 \text{ ms}$ sulla base del risultato della variabile casuale $R$
 
+#### Compromessi
+Nonostante tutto ciò questo protocollo ha:
+- elevate probabilità di collisione
+- tempo di vulnerabilità → l’intervallo di tempo nel quale il frame è a rischio di collisioni
+	- il frame trasmesso a $t$ si sovrappone con la trasmissione di qualsiasi altro frame inviato in $[t-1,t+1]$, dunque il tempo di vulnerabilità risulta essere $2T_{fr}$
+
+![[Pasted image 20250510171946.png]]
