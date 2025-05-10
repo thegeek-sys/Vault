@@ -26,6 +26,23 @@ I vari standard differiscono a livello fisico e nel sottolivello MAC, ma sono co
 ---
 ## Switch
 Lo **switch** è un dispositivo de livello di link che svolge un ruolo attivo. Opera infatti a livello di collegamento e filtra e inoltra i pacchetti Ethernet. In particolare esamina l’indirizzo di destinazione e lo invia all’interfaccia corrispondente alla sua destinazione
+Inoltre risulta trasparente agli host
+
+![[Pasted image 20250510235509.png]]
+
+Lo switch dunque consente più trasmissioni simultanee, infatti gli host hanno collegamenti dedicati e diretti con lo switch che bufferizza i pacchetti
+Il protocollo Ethernet è usato su ciascun collegamento in entrata, ma non si verificano collisioni (full duplex)
+
+>[!example]
+>Da $A$ ad $A'$ e da $B$ a $B'$ simultaneamente, senza collisioni (non possibile con gli hub)
+
+### Apprendimento
+Inizialmente gli switch venivano configurati staticamente, ora invece c’è un meccanismo dinamico di auto-apprendimento che usa una tabella dinamica che associa automaticamente gli indirizzi MAC alle interfacce
+
+>[!question] Come fa lo switch a creare la tabella di commutazione (*switch table*)?
+>Lo switch apprende quali nodi possono essere raggiunti attraverso determinate interfacce
+>
+>Quando riceve un pacchetto, lo switch “impara” l’indirizzo del mittente e registra la coppia mittente/interfaccia nella sua tabella di commutazione
 
 ---
 ## Ethernet
@@ -76,3 +93,12 @@ La prima soluzione consiste nell’utilizzo di repeater e hub. L’hub (ripetito
 - non implementa la rilevazione della portante né CSMA/CD
 - ripete il bit entrante su tutte le interfacce uscenti anche se su qualcuna di queste c’è un segnale
 - trasmette in broadcast, e quindi ciascuna NIC può sondare il canale per verificare se è libero e rilevare una collisione mentre trasmette
+
+#### Seconda soluzione
+Nella seconda soluzione si usa uno switch di collegamento dotato di buffer per memorizzare i frame e connessione full duplex per ciascun host
+Il mezzo trasmissivo è privato per ciascun host e non c’è bisogno di usare CSMA/CD dal momento che gli host non sono più in competizione
+
+Lo switch riceve un frame da un host, lo memorizza nel buffer, verifica l’indirizzo di destinazione e invia il frame attraverso l’interfaccia corrispondente. Il singolo mezzo condiviso è stato modificato in molti mezzi punto-punto
+
+### Gigabit Ethernet
+Si tratta della versione successiva al fast Ethernet. Ha una topologia a stella con switch (non ci sono collisioni) e permette di arrivare fino a $10\text{ Gbps}$
