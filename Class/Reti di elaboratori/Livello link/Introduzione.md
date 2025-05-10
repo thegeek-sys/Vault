@@ -184,3 +184,24 @@ Il **frequency division multiple access** (*FDMA*) suddivide il canale in bande 
 
 ---
 ## Protocolli ad accesso casuale
+Nei protocolli ad accesso casuale nessuna stazione ha il controllo sulle altre, infatti ogni volta che una stazione ha dei dati da inviare usa una procedura definita dal protocollo per decidere se spedire o meno
+
+Per **accesso casuale** si intende che non c’è un tempo programmato nel quale la stazione deve trasmettere e che nessuna regola specifica quale sarà la prossima stazione a trasmettere
+
+Le stazioni competono l’una con l’altra per accedere al mezzo trasmissivo (*contesa del canale*) e se ci sono due o più nodi trasmettenti si verifica una **collisione**
+
+Inoltre il protocollo ad accesso casuale definisce come rilevare un’eventuale collisione e come ritrasmettere se si è verificata una collisione
+
+>[!example] Esempi di protocolli
+>- ALOHA
+>- slotted ALOHA
+>- CSMA
+>- CSMA/CD
+>- CSMA/CA
+
+### ALOHA
+L’**ALOHA** è stato il primo metodo di accesso casuale che è stato proposto in letteratura ed è stato sviluppato all’Università delle Hawaii nei primi anni 70
+E’ stato ideato per mettere in comunicazione gli atolli mediante una LAN radio (wireless) ma può essere utilizzato su qualsiasi mezzo trasmissivo
+
+Essendo un protocollo ad accesso casuale possono verificarsi collisioni
+
