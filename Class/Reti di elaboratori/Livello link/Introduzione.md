@@ -143,4 +143,17 @@ Esistono due tipi di collegamenti di rete:
 
 In una connessione a un canale broadcast condiviso, centinaia o anche migliaia di nodi possono comunicare direttamente su un canale broadcast e si genera una collisione quando i nodi ricevono due o più frame contemporaneamente
 
-Con i protocolli di accesso multiplo l’obiettivo è quello di evitare caos e realizzare una condivisione
+Con i protocolli di accesso multiplo l’obiettivo è quello di evitare caos e realizzare una condivisione. I protocolli dunque fissano le modalità con cui i nodi regolano le loro trasmissioni sul canale condiviso
+
+>[!warning]
+>La comunicazione relativa al canale condiviso deve utilizzare lo stesso canale (non c’è un canale “out-of-bound“ per la coordinazione)
+
+>[!info] Protocolli di accesso multiplo ideali
+>Canale broadcast con velocità di $R$ bit al secondo:
+>1. quando un nodo deve inviare dati, questo dispone di un tasso trasmissivo pari a $R$ bps
+>2. quando $M$ nodi devono inviare dati, questi dispongono di un tasso trasmissivo pari a $\frac{R}{M}$ bps
+>3. il protocollo è decentralizzato
+>	- non ci sono nodi master
+>	- non c’è sincronizzazione dei clock
+
+I protocolli di accesso multiplo si possono classificare in una di queste tre categorie
