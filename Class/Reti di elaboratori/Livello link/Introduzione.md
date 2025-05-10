@@ -233,7 +233,5 @@ Dopo un numero massimo di tentativi $K_{\text{max}}$ una stazione interrompe i s
 >>Le stazioni di una rete wireless ALOHA sono a una distanza massima di $600\text{ km}$. Supponendo che i segnali si propaghino a $3\times 10^8\text{ m/s}$, troviamo:
 >>$$T_{p}=\frac{600\cdot 10^3}{3\cdot 10^8}=2\text{ ms}$$
 >>
->>Per $K=2$ l’intervallo di $R$ è $\{0,1,2,3\}$
-
-
+>>Per $K=2$ l’intervallo di $R$ è $\{0,1,2,3\}$. Ciò significa che $T_{B}=R\cdot T_{Fr}$ può essere $0,2,4,6 \text{ ms}$ sulla base del risultato della variabile casuale $R$
 
