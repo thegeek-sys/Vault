@@ -458,6 +458,13 @@ def Fib3(n):
 >>$T[i][j]=\text{massimo valore ottenibile dai primi }i\text{ oggetti per uno zaino di capacità }j$
 >>
 >>La soluzione al nostro problema sarà $T[n][c]$
+>>
+>>Ecco di seguito la regola ricorsiva che permetta di calcolare i vari valori della tabella:
+>>$$T[i][j]=\begin{cases}0&\text{se }i=0 or j=0\\ T[i-1][j]&\text{se }P[i]>j\\ \text{max}\bigl\{T[i-1][j]\;,V[i]+T[i-1][j-P[i]]\bigr\}&\text{altrimenti}\end{cases}$$
+>>
+>>La ricorrenza viene fuori dal seguente ragionamento:
+>>- se non si hanno oggetti ($i=0$) o la capacità dello zaino è nulla ($j=0$) allora il valore della soluzione sarà $0$
+>>- se l’$i$-esimo oggetto ha un peso superiore alla capacità $j$ dello zaino (vale a dire $j<P[i]$), allora non può esservi inserito e quindi il valore della soluzione dipenderà da quello che si può ottenere dagli altri $i-1$ oggetti (vale a dire $T[i-1,c]$)
 
 ---
 ## Algoritmi pseudopolinomiali
