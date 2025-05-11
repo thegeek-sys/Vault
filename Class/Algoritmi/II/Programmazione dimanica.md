@@ -412,4 +412,4 @@ def Fib3(n):
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
-
+ 
