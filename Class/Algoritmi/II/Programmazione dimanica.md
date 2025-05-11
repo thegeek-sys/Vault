@@ -471,6 +471,33 @@ def Fib3(n):
 >>
 >>Implementazione:
 
+>[!question] Una transazione è l’acquisto di un oggetto seguito dalla sua vendita (che non può ovviamente avvenire prima del giorno dell’acquisto). Disponiamo di un vettore di interi dove è la quotazione dell'oggetto nel giorno. Dato il vettore con le quotazione dei prossimi giorni e dovendo eseguire una singola transazione vogliamo sapere qual è il guadagno massimo cui possiamo aspirare.
+>Nota che se il vettore è decrescente il guadagno massimo è $0$
+>
+>Ad esempio:
+>- per $A=[7,9,5,6,3,2]$ il guadagno massimo è $2$ (basta acquistare a $7$ e rivendere a $9$)
+>- per $B=[3,2,6,10,4,8,1]$ il guadagno massimo è $8$ (basta acquistare a $2$ e rivendere a $10$)
+>
+>Progettare un algoritmo che risolve il problema in tempo $\Theta(n)$
+>
+>>[!done]
+>>Utilizziamo una tabella $T$ monodimensionale di lunghezza $n$ dove:
+>>$$T[i]=\text{guadagno massimo vendendo il giorno }i$$
+>>
+>>La soluzione al problema sarà $\text{max}(T)$
+>>
+>>La ricorrenza che permette di riempire la tabella è la seguente:
+>>$$T[i]=\begin{cases}0&\text{se }i=0\\ A[i]-\text{min}(A[:i+ 1])&\text{altrimenti}\end{cases}$$
+>>
+>>La ricorrenza viene fuori dal seguente ragionamento:
+>>- se vendo il giorno iniziale non posso che comprare il giorno stesso e quindi il guadagno è $0$
+>>- se vendo il giorno $i$ ottengo $A[i]$ per la vendita e per avere il guadagno massimo devo aver acquistato nel giorno tra $0$ ed $i$ in cui l’oggetto costava meno
+>>
+>>Per ottenere tempo $\Theta(n)$ devo essere in grado di calcolare ciascuna delle $n$ celle in $O(1)$ tempo e per far ciò basta pre-calcolare per ciascun giorno $i$ il costo minimo fino a quel giorno
+>>
+>>Implementazione:
+>>
+
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
@@ -487,3 +514,4 @@ def es(P, V, c):
 			else:
 				T[i][j] = max(T[i-1][j], V[i-1]+T[i-1][j-P[i-1]])
 ```
+
