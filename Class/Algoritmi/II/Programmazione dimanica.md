@@ -96,7 +96,7 @@ def Fib3(n):
 ## Esercizi
 
 >[!question] Vogliamo contare il numero di stringhe binarie lunghe $n$ senza 2 zeri consecutivi
->>[!done]
+>>[!done]-
 >>Per questo tipo di esercizi è necessario tendenzialmente precalcolarsi i primi valori, per poi capire il pattern per la costruzione dei successivi
 >>![[Pasted image 20250426115415.png|300]]
 >>
@@ -113,7 +113,7 @@ def Fib3(n):
 >>e posso iniziare ad applicare la formula a partire da $T[1]$
 
 >[!question] Vogliamo contare il numero di stringhe binarie lunghe $n$ senza 3 zeri consecutivi
->>[!done]
+>>[!done]-
 >>Come prima precalcoliamo i primi valori, per poi capire il pattern per la costruzione dei successivi
 >>![[Pasted image 20250504105448.png|300]]
 >>
@@ -132,7 +132,7 @@ def Fib3(n):
 >>e posso iniziare ad applicare la formula a partire da $T[2]$
 
 >[!question] Abbiamo $n$ ($n\geq 1$) persone da distribuire in un albero con stanze singole o doppie. In quanti modi si possono distribuire le persone?
->>[!done]
+>>[!done]-
 >>Come prima precalcoliamo i primi valori, per poi capire il pattern per la costruzione dei successivi
 >>![[Pasted image 20250426124538.png|300]]
 >>- $n=1$ → $1$
@@ -154,7 +154,7 @@ def Fib3(n):
 >>```
 
 >[!question] Abbiamo $n$ file di varie dimensioni ciascuna inferiore a $C$ ed un disco di capacità $C$, bisogna trovare il sottoinsieme di file che può essere memorizzato sul disco e che massimizza lo spazio occupato. Progettare un algoritmo che, dati $C$ e la lista $A$, dove $A[i]$ è la dimensione del file $i$, risolva il problema
->>[!done]
+>>[!done]-
 >>Non è difficile rendersi conto che gli algoritmi greedy non trovano sempre la soluzione ottima.
 >>Tramite la programmazione dinamica è possibile trovare la soluzione ottima in tempo **pseudopolinomiale**
 >>
@@ -184,7 +184,7 @@ def Fib3(n):
 >- per $n=3$ la risposta deve essere $3$
 >![[Pasted image 20250429103612.png|300]]
 >L’algoritmo deve avere complessità $O(n)$
->>[!done]
+>>[!done]-
 >>Utilizzeremo una tabella monodimensionale di dimensioni $n+1$ e definiamo il contenuto delle celle come segue:
 >>$$T[i]=\text{numero di tassellamenti possibili per la superficie di dimensione}\,i\times 2$$
 >>
@@ -210,7 +210,7 @@ def Fib3(n):
 >![[Pasted image 20250429104738.png|450]]
 >
 >Progettare una algoritmo che risolva il problema in tempo $O(n)$
->>[!done]
+>>[!done]-
 >>Tentiamo un approccio basato sulla programmazione dinamica. Come è tipico di questa tecnica ci concentriamo sul calcolare il valore della soluzione. In un secondo momento, grazie alla tabella utilizzata, sarà possibile ottenere anche la sottosequenza
 >>
 >>Cominciamo con l’individuare i sottoproblemi dalla composizioni delle cui soluzioni sarà poi possibile risolvere il problema originario
@@ -254,7 +254,7 @@ def Fib3(n):
 >Ad esempio per $S=9,3,2,4,1,5,8,6,7,2$ la risposta è $5$ infatti la sottosequenza crescente più lunga in $S$ è $3,4,5,6,7$ (non è l’unica, un’altra possibile soluzione è $2,4,5,6,7$)
 >
 >Progettare un algoritmo che data una sequenza $S$ di $n$ elementi, in tempo $O(n^2)$ risolve il problema
->>[!done]
+>>[!done]-
 >>Utilizzeremo una tabella monodimensionale di dimensioni $n$ e definiamo il contenuto delle celle come segue:
 >>$$T[i]=\text{la lunghezza massima per una sottosequenza crescente che termina con l'elemento di}\,S\,\text{in posizione}\,i$$
 >>
@@ -292,7 +292,7 @@ def Fib3(n):
 >
 >Progettare un algoritmo che dato $n$ in $\Theta(n^{\frac{3}{2}})$ calcoli il numero minimo di quadrati che servono per rappresentarlo
 >
->>[!done]
+>>[!done]-
 >>Utilizzeremo una tabella monodimensionale di dimensioni $n+1$ e definiamo il contenuto delle celle come segue:
 >>$$T[i]=\text{numero minimo di quadrati per rappresentare l'intero }i$$
 >>
@@ -329,7 +329,7 @@ def Fib3(n):
 >
 >Progettare un algoritmo che trova la risposta in tempo $O(n)$
 >
->>[!done]
+>>[!done]-
 >>Utilizzeremo una tabella bidimensionale di dimensioni $n\times 10$ e definiamo il contenuto delle celle come segue:
 >>$$T[i][j]=\text{numero di sequenze decimali non decrescenti lunghe }i\text{ che terminano con la cifra }j$$
 >>
@@ -367,7 +367,7 @@ def Fib3(n):
 >
 >Progettare un algoritmo che in $\Theta(n^2)$ risolve il problema rispondendo `True` o `False`
 >
->>[!done]
+>>[!done]-
 >>Utilizziamo una tabella $T$ bidimensionale $n\times n$ dove:
 >>$$T[i][j]=True \text{ se esiste un cammino che in }M\text{ va dalla cella }M[0][0]\text{ in alto a sinistra e arriva alla cella }M[i][j]\text{ senza toccare celle con valore }1 (False \text{ altrimenti})$$
 >>
@@ -410,7 +410,7 @@ def Fib3(n):
 >Progettare un algoritmo che data la matrice $M$ restituisce il massimo intero $l$ per cui la matrice $l\times l$ è una sottomatrice di soli uni di $M$
 >L’algoritmo deve avere complessità $O(n^2)$
 >
->>[!done]
+>>[!done]-
 >>Utilizziamo una tabella $T$ bidimensionale $n\times n$ dove:
 >>$$T[i][j]=\text{il lato della matrice quadrata più grande contentente tutti uni e con cella in basso a destra }M[i][j] \text{ (se }M[i][j]=0\text{ allora }T[i][j]=0\text{)}$$
 >>
@@ -453,7 +453,7 @@ def Fib3(n):
 >
 >Progettare un algoritmo che, data la capacità $c$ dello zaino e i vettori $P$ (dei pesi) e $V$ (dei valori) degli oggetti, risolve il problema in tempo $\Theta(n\cdot c)$
 >
->>[!done]
+>>[!done]-
 >>Utilizziamo la tabella bidimensionale $T$ di dimensione $(n+1)\cdot(c+1)$ dove:
 >>$T[i][j]=\text{massimo valore ottenibile dai primi }i\text{ oggetti per uno zaino di capacità }j$
 >>
@@ -470,8 +470,20 @@ def Fib3(n):
 >>	- l’oggetto $i$ viene inserito nello zaino. In questo caso c’è un guadagno $V[i]$ e per i rimanenti $i-1$ oggetti resta disponibile una capacità residua di $j-P[i]$. Di conseguenza il valore massimo della soluzione sarà $V[i-1]+T[i-1,j-P[i-1]]$
 >>
 >>Implementazione:
+>>```python
+>>def es(P, V, c):
+>>	n=len(P)
+>>	T=[[0]*(c+1) for _ in range(n+1)]
+>>	
+>>	for i in range(1, n+1):
+>>		for j in range(1, c+1)
+>>			if j<P[i-1]:
+>>				T[i][j]=T[i-1][j]
+>>			else:
+>>				T[i][j] = max(T[i-1][j], V[i-1]+T[i-1][j-P[i-1]])
+>>```
 
->[!question] Una transazione è l’acquisto di un oggetto seguito dalla sua vendita (che non può ovviamente avvenire prima del giorno dell’acquisto). Disponiamo di un vettore di interi dove è la quotazione dell'oggetto nel giorno. Dato il vettore con le quotazione dei prossimi giorni e dovendo eseguire una singola transazione vogliamo sapere qual è il guadagno massimo cui possiamo aspirare.
+>[!question] Una transazione è l’acquisto di un oggetto seguito dalla sua vendita (che non può ovviamente avvenire prima del giorno dell’acquisto). Disponiamo di un vettore di interi dove è la quotazione dell'oggetto nel giorno. Dato il vettore con le quotazione dei prossimi giorni e dovendo eseguire una singola transazione vogliamo sapere qual è il guadagno massimo possibile
 >Nota che se il vettore è decrescente il guadagno massimo è $0$
 >
 >Ad esempio:
@@ -480,7 +492,7 @@ def Fib3(n):
 >
 >Progettare un algoritmo che risolve il problema in tempo $\Theta(n)$
 >
->>[!done]
+>>[!done]-
 >>Utilizziamo una tabella $T$ monodimensionale di lunghezza $n$ dove:
 >>$$T[i]=\text{guadagno massimo vendendo il giorno }i$$
 >>
@@ -496,22 +508,19 @@ def Fib3(n):
 >>Per ottenere tempo $\Theta(n)$ devo essere in grado di calcolare ciascuna delle $n$ celle in $O(1)$ tempo e per far ciò basta pre-calcolare per ciascun giorno $i$ il costo minimo fino a quel giorno
 >>
 >>Implementazione:
->>
+>>```python
+>>def es(A):
+>>	B=[0]*n
+>>	B[0]=A[0]
+>>	for i in range(1, n):
+>>		B[i] = min(A[i], B[i-1])
+>>	
+>>	T=[0]*n
+>>	for i in range(1,n):
+>>		T[i]=A[i]-B[i]
+>>	return max(T)
+>>```
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
-
-```python
-def es(P, V, c):
-	n=len(P)
-	T=[[0]*(c+1) for _ in range(n+1)]
-	
-	for i in range(1, n+1):
-		for j in range(1, c+1)
-			if j<P[i-1]:
-				T[i][j]=T[i-1][j]
-			else:
-				T[i][j] = max(T[i-1][j], V[i-1]+T[i-1][j-P[i-1]])
-```
-
