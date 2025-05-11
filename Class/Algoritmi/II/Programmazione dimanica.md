@@ -319,6 +319,27 @@ def Fib3(n):
 >>	return T[n]
 >>```
 
+>[!question] Dato un intero $n$ vogliamo sapere quante sono le sequenze di cifre decimali non decrescenti lunghe $n$
+>Ad esempio:
+>- per $n=1$ la risposta deve essere $10$
+>- per $n=2$ la risposta deve essere $55$
+>
+>Infatti alla cifra $x$ al primo posto possono seguire $10-x$ cifre diverse. Quindi si ha:
+>$$\sum^9_{x=0}(10-x)=\sum^{10}_{i=1}i=\frac{10\cdot 11}{2}=55$$
+>
+>Progettare un algoritmo che trova la risposta in tempo $O(n)$
+>
+>Utilizzeremo una tabella bidimensionale di dimensioni $n\times 10$ e definiamo il contenuto delle celle come segue:
+>$$T[i][j]=\text{numero di sequenze decimali non decrescenti lunghe }i\text{ che terminano con la cifra }j$$
+>
+>Una volta riempita la tabella, la soluzione al nostro problema sarà data dalla somma degli elementi dell’ultima riga: $\sum^9_{j=0}T[i][j]$
+>
+>Resta da definire la regola ricorsiva con cui calcolare i valori $T[i][j]$ della tabella
+>$$T[i][j]=\begin{cases}0&\text{se }i=0\\1&\text{se }i=1\\ \sum^j_{k=0}T[i-1][k]&\text{altrimenti}\end{cases}$$
+>
+>La ricorrenza viene fuori dal seguente ragionamento:
+>
+
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
