@@ -329,20 +329,38 @@ def Fib3(n):
 >
 >Progettare un algoritmo che trova la risposta in tempo $O(n)$
 >
->Utilizzeremo una tabella bidimensionale di dimensioni $n\times 10$ e definiamo il contenuto delle celle come segue:
->$$T[i][j]=\text{numero di sequenze decimali non decrescenti lunghe }i\text{ che terminano con la cifra }j$$
->
->Una volta riempita la tabella, la soluzione al nostro problema sarà data dalla somma degli elementi dell’ultima riga: $\sum^9_{j=0}T[i][j]$
->
->Resta da definire la regola ricorsiva con cui calcolare i valori $T[i][j]$ della tabella
->$$T[i][j]=\begin{cases}0&\text{se }i=0\\1&\text{se }i=1\\ \sum^j_{k=0}T[i-1][k]&\text{altrimenti}\end{cases}$$
->
->La ricorrenza viene fuori dal seguente ragionamento:
->- esiste un’unica sequenza lunga $0$
->- esiste un’unica sequenza lunga $1$ che termina con la cifra $j$, la cifra $j$ è ovviamente non decrescente
->- la sequenza lunga $i$ non decrescente che termina con $j$ è composta da una sequenza non decrescente lunga $i-1$ cui si accoda la cifra $j$. Perché la sequenza risultante sia non decrescente la sequenza non decrescente lunga $i-1$ deve terminare con una qualunque cifra $k$ non superiore a $j$
+>>[!done]
+>>Utilizzeremo una tabella bidimensionale di dimensioni $n\times 10$ e definiamo il contenuto delle celle come segue:
+>>$$T[i][j]=\text{numero di sequenze decimali non decrescenti lunghe }i\text{ che terminano con la cifra }j$$
+>>
+>>![[Pasted image 20250511104411.png|350]]
+>>
+>>Una volta riempita la tabella, la soluzione al nostro problema sarà data dalla somma degli elementi dell’ultima riga: $\sum^9_{j=0}T[i][j]$
+>>
+>>Resta da definire la regola ricorsiva con cui calcolare i valori $T[i][j]$ della tabella
+>>$$T[i][j]=\begin{cases}0&\text{se }i=0\\1&\text{se }i=1\\ \sum^j_{k=0}T[i-1][k]&\text{altrimenti}\end{cases}$$
+>>
+>>La ricorrenza viene fuori dal seguente ragionamento:
+>>- esiste un’unica sequenza lunga $0$
+>>- esiste un’unica sequenza lunga $1$ che termina con la cifra $j$, la cifra $j$ è ovviamente non decrescente
+>>- la sequenza lunga $i$ non decrescente che termina con $j$ è composta da una sequenza non decrescente lunga $i-1$ cui si accoda la cifra $j$. Perché la sequenza risultante sia non decrescente la sequenza non decrescente lunga $i-1$ deve terminare con una qualunque cifra $k$ non superiore a $j$
+>>
+>>Implementazione:
+>>```python
+>>def es(n):
+>>	T = [[0]*10 for _ in range(n+1)]
+>>	for j in range(10):
+>>		T[1][j] = 1
+>>	for i in range(2, n+1):
+>>		for j in range(10):
+>>			for k in range(j+1):
+>>				T[i][j] += T[i-1][k]
+>>	return sum(T[n])
+>>```
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
+
+
 
