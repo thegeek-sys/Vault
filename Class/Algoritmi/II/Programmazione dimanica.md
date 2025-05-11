@@ -454,7 +454,10 @@ def Fib3(n):
 >Progettare un algoritmo che, data la capacità $c$ dello zaino e i vettori $P$ (dei pesi) e $V$ (dei valori) degli oggetti, risolve il problema in tempo $\Theta(n\cdot c)$
 >
 >>[!done]
+>>Utilizziamo la tabella bidimensionale $T$ di dimensione $(n+1)\cdot(c+1)$ dove:
+>>$T[i][j]=\text{massimo valore ottenibile dai primi }i\text{ oggetti per uno zaino di capacità }j$
 >>
+>>La soluzione al nostro problema sarà $T[n][c]$
 
 ---
 ## Algoritmi pseudopolinomiali
