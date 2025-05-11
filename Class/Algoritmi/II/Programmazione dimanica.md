@@ -460,12 +460,30 @@ def Fib3(n):
 >>La soluzione al nostro problema sarà $T[n][c]$
 >>
 >>Ecco di seguito la regola ricorsiva che permetta di calcolare i vari valori della tabella:
->>$$T[i][j]=\begin{cases}0&\text{se }i=0 or j=0\\ T[i-1][j]&\text{se }P[i]>j\\ \text{max}\bigl\{T[i-1][j]\;,V[i]+T[i-1][j-P[i]]\bigr\}&\text{altrimenti}\end{cases}$$
+>>$$T[i][j]=\begin{cases}0&\text{se }i=0 or j=0\\ T[i-1][j]&\text{se }P[i]>j\\ \text{max}\bigl\{T[i-1][j]\;,V[i-1]+T[i-1][j-P[i-1]]\bigr\}&\text{altrimenti}\end{cases}$$
 >>
 >>La ricorrenza viene fuori dal seguente ragionamento:
 >>- se non si hanno oggetti ($i=0$) o la capacità dello zaino è nulla ($j=0$) allora il valore della soluzione sarà $0$
->>- se l’$i$-esimo oggetto ha un peso superiore alla capacità $j$ dello zaino (vale a dire $j<P[i]$), allora non può esservi inserito e quindi il valore della soluzione dipenderà da quello che si può ottenere dagli altri $i-1$ oggetti (vale a dire $T[i-1,c]$)
+>>- se l’$i$-esimo oggetto ha un peso superiore alla capacità $j$ dello zaino (vale a dire $j<P[i-1]$), allora non può esservi inserito e quindi il valore della soluzione dipenderà da quello che si può ottenere dagli altri $i-1$ oggetti (vale a dire $T[i-1,c]$)
+>>- in generale, se nello zaino c’è possibilità di inserire l’oggetto $i$ (vale a dire $P[i-1]\leq j$) allora ci sono due possibilità
+>>	- l’oggetto $i$ non viene inserito nello zaino. In questo caso il massimo valore della soluzione sarà $T[i-1,c]$
+>>	- l’oggetto $i$ viene inserito nello zaino. In questo caso c’è un guadagno $V[i]$ e per i rimanenti $i-1$ oggetti resta disponibile una capacità residua di $j-P[i]$. Di conseguenza il valore massimo della soluzione sarà $V[i-1]+T[i-1,j-P[i-1]]$
+>>
+>>Implementazione:
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
+
+```python
+def es(P, V, c):
+	n=len(P)
+	T=[[0]*(c+1) for _ in range(n+1)]
+	
+	for i in range(1, n+1):
+		for j in range(1, c+1)
+			if j<P[i-1]:
+				T[i][j]=T[i-1][j]
+			else:
+				T[i][j] = max(T[i-1][j], V[i-1]+T[i-1][j-P[i-1]])
+```
