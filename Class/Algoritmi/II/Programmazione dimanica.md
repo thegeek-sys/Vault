@@ -423,6 +423,25 @@ def Fib3(n):
 >>- se $M[i][j]=0$ allora il rettangolo di tutti uni che ha come cella in basso a destra quella cella ha lato zero
 >>- se ci troviamo nella prima riga o nella prima colonna (abbiamo già escluso il caso in cui la cella contiene $0$) allora mettiamo un $1$
 >>- se ci troviamo all’interno allora il lato del rettangolo di soli uni che ha come cella in basso a destra quella cella non può superare $T[i-1][j]+1$ né $T[i][j-1]+1$ né $T[i-1][j-1]+1$; ne segue che il lato di quel rettangolo è al più $\text{min}\bigl\{T[i][j-1],\;T[i-1][j-1],\;T[i-1][j]\bigr\}+1$ (tanto se ci sta uno zero nella cella sopra, a sinistra o in alto in diagonale verrà messo un $1$)
+>>
+>>Implementazione:
+>>```python
+>>def es(M):
+>>	n=len(M)
+>>	T=[[0]*n for _ in range(n)]
+>>	for i in range(n):
+>>		for j in range(n):
+>>			if M[i][j] == 0:
+>>				T[i][j] = 0
+>>			elif i==0 or j==0:
+>>				T[i][j]=1
+>>			else:
+>>				T[i][j] = min(T[i][j-1], T[i-1][j-1], T[i-1][j])+1
+>>	m=0
+>>	for i in range(n):
+>>		m = max(m, max(T[i]))
+>>	return m
+>>```
 
 ---
 ## Algoritmi pseudopolinomiali
