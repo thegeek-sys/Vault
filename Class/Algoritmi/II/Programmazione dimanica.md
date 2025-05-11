@@ -407,9 +407,23 @@ def Fib3(n):
 >Ad esempio, per la matrice $M$ in figura la risposta è $3$
 >![[Pasted image 20250511113644.png|center|230]]
 >
->Progettare un algoritmo che data la matrice $M$ restituisce il massimo intero $l$ per cui la matrice $l\times l$
+>Progettare un algoritmo che data la matrice $M$ restituisce il massimo intero $l$ per cui la matrice $l\times l$ è una sottomatrice di soli uni di $M$
+>L’algoritmo deve avere complessità $O(n^2)$
+>
+>>[!done]
+>>Utilizziamo una tabella $T$ bidimensionale $n\times n$ dove:
+>>$$T[i][j]=\text{il lato della matrice quadrata più grande contentente tutti uni e con cella in basso a destra }M[i][j] \text{ (se }M[i][j]=0\text{ allora }T[i][j]=0\text{)}$$
+>>
+>>La soluzione al nostro problema sarà il massimo tra i valori della tabella
+>>
+>>Ecco di seguito la regola ricorsiva che permette di calcolare i vari valori della tabella:
+>>$$T[i][j]=\begin{cases}0&\text{se }M[i][j]=0\\1&\text{se }(i\mid \mid j)=0\\\text{min}\bigl\{T[i][j-1],\;T[i-1][j-1],\;T[i-1][j]\bigr\}+1&\text{altrimenti}\end{cases}$$
+>>
+>>La ricorrenza viene fuori dal seguente ragionamento:
+>>- se $M[i][j]=0$ allora il rettangolo di tutti uni che ha come cella in basso a destra quella cella ha lato zero
+>>- se ci troviamo nella prima riga o nella prima colonna (abbiamo già escluso il caso in cui la cella contiene $0$) allora mettiamo un $1$
+>>- se ci troviamo all’interno allora il lato del rettangolo di soli uni che ha come cella in basso a destra quella cella non può superare $T[i-1][j]+1$ né $T[i][j-1]+1$ né $T[i-1][j-1]+1$; ne segue che il lato di quel rettangolo è al più $\text{min}\bigl\{T[i][j-1],\;T[i-1][j-1],\;T[i-1][j]\bigr\}+1$ (tanto se ci sta uno zero nella cella sopra, a sinistra o in alto in diagonale verrà messo un $1$)
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
- 
