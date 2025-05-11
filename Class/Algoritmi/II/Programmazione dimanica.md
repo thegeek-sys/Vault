@@ -338,7 +338,9 @@ def Fib3(n):
 >$$T[i][j]=\begin{cases}0&\text{se }i=0\\1&\text{se }i=1\\ \sum^j_{k=0}T[i-1][k]&\text{altrimenti}\end{cases}$$
 >
 >La ricorrenza viene fuori dal seguente ragionamento:
->
+>- esiste un’unica sequenza lunga $0$
+>- esiste un’unica sequenza lunga $1$ che termina con la cifra $j$, la cifra $j$ è ovviamente non decrescente
+>- la sequenza lunga $i$ non decrescente che termina con $j$ è composta da una sequenza non decrescente lunga $i-1$ cui si accoda la cifra $j$. Perché la sequenza risultante sia non decrescente la sequenza non decrescente lunga $i-1$ deve terminare con una qualunque cifra $k$ non superiore a $j$
 
 ---
 ## Algoritmi pseudopolinomiali
