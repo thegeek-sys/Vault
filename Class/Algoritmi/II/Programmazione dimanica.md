@@ -443,6 +443,19 @@ def Fib3(n):
 >>	return m
 >>```
 
+>[!question] Abbiamo uno zaino di capacità $c$ ed $n$ oggetti, ognuno con un peso $p_{i}$ e un valore $v_{i}$. Vogliamo sapere il valore massimo che si può inserire nello zaino
+>Ad esempio, si consideri l’istanza con $c=11$ e $n=5$ oggetti con peso e valore riportati nella seguente tabella
+>![[Pasted image 20250511193917.png|250]]
+>
+>- il sottoinsieme di oggetti $\{3,5\}$ non è una soluzione ammissibile (perché di peso $12>c$)
+>- il sottoinsieme di oggetti $\{1,2,4\}$ è una soluzione ammissibile (di peso $10$ e valore $29$) ma non ottima (ne esistono di valore maggiore)
+>- il sottoinsieme di oggetti $\{1,3,4\}$ è una soluzione ammissibile (di peso $11$ e valore $41$) si può dimostrare che è anche una soluzione ottima
+>
+>Progettare un algoritmo che, data la capacità $c$ dello zaino e i vettori $P$ (dei pesi) e $V$ (dei valori) degli oggetti, risolve il problema in tempo $\Theta(n\cdot c)$
+>
+>>[!done]
+>>
+
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
