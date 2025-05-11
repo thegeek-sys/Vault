@@ -384,10 +384,32 @@ def Fib3(n):
 >>- una cella della prima riga può essere raggiunta solo dalla cella che la precede sulla riga
 >>- una della della prima colonna può essere raggiunta solo dalla cella che la precede sulla solonna
 >>- una cella “interna” è raggiunta se posso raggiungerla dalla cella che la precede sulla riga e/o dalla cella che la precede sulla colonna
+>>
+>>Implementazione:
+>>```python
+>>def es(M):
+>>	n=len(M)
+>>	T=[[True]*n for _ in range(n)]
+>>	for i in range(0,n):
+>>		for j in range(0,n):
+>>			if M[i][j]==1:
+>>				T[i][j]==False
+>>			elif i==0:
+>>				T[i][j]=T[i][j-1]
+>>			elif j==0:
+>>				T[i][j]=T[i-1][j]
+>>			else:
+>>				T[i][j]=T[i-1][j] or T[i][j-1]
+>>return T[n-1][n-1]
+>>```
+
+>[!question] Abbiamo una matrice quadrata binaria $M$ di dimensione $n\times n$ e vogliamo sapere quale è la dimensione massima per le sottomatrici quadrate di soli uni contenute in $M$
+>Ad esempio, per la matrice $M$ in figura la risposta è $3$
+>![[Pasted image 20250511113644.png|center|230]]
+>
+>Progettare un algoritmo che data la matrice $M$ restituisce il massimo intero $l$ per cui la matrice $l\times l$
 
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
-
-
 
