@@ -358,6 +358,33 @@ def Fib3(n):
 >>	return sum(T[n])
 >>```
 
+>[!question] Data una matrice $M$ binaria $n\times n$ vogliamo verificare se nella matrice è possibile raggiungere la cella in basso a destra partendo da quella in alto a sinistra senza mai toccare celle che contengono il numero $1$
+>Si può assumere che $M[0][0]=0$
+>Si tenga conto che ad ogni passo ci si può spostare di un solo passo verso destra o un passo verso il basso
+>
+>Ad esempio per la matrice $A$ la risposta è si, mentre per la matrice $B$ è no
+>![[Pasted image 20250511111649.png]]
+>
+>Progettare un algoritmo che in $\Theta(n^2)$ risolve il problema rispondendo `True` o `False`
+>
+>>[!done]
+>>Utilizziamo una tabella $T$ bidimensionale $n\times n$ dove:
+>>$$T[i][j]=True \text{ se esiste un cammino che in }M\text{ va dalla cella }M[0][0]\text{ in alto a sinistra e arriva alla cella }M[i][j]\text{ senza toccare celle con valore }1 (False \text{ altrimenti})$$
+>>
+>>La soluzione al problema sarà nella cella $T[n-1][n-1]$
+>>
+>>Ecco di seguito la regola ricorsiva che permette di calcolare i valori della tabella:
+>>$$T[i][j]=\begin{cases}False&\text{se }M[i][j]=1\\True&\text{se }i=j=0\\T[i][j-1]&\text{se }i=0\\T[i-1][j]&\text{se }j=0\\T[i][j-1] \mid\mid T[i-1][j]&\text{altrimenti}\end{cases}$$
+>>
+>>La ricorrenza viene fuori dal seguente ragionamento:
+>>- la cella $M[0][0]$ è ovviamente raggiungibile
+>>- se la cella $M[i][j]$ contiene $1$ allora non è possibile raggiungerla
+>>
+>>Assumiamo quindi nel seguito che $M[i][j]=0$:
+>>- una cella della prima riga può essere raggiunta solo dalla cella che la precede sulla riga
+>>- una della della prima colonna può essere raggiunta solo dalla cella che la precede sulla solonna
+>>- una cella “interna” è raggiunta se posso raggiungerla dalla cella che la precede sulla riga e/o dalla cella che la precede sulla colonna
+
 ---
 ## Algoritmi pseudopolinomiali
 Viene detto **pseudopolinomiale** un algoritmo che risolve un problema in tempo polinomiale quando i numeri presenti nell’input sono codificati in unario
