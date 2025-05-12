@@ -252,6 +252,9 @@ L’argomento è la struttura lock:
 	- `SEEK_CUR`→ posizione corrente
 	- `SEEK_END`→ fine file
 - `l_len=0` → tutto il file viene bloccato altrimenti vengono bloccati `l_len` byte a partire da `l_start`
+- `F_SETLK` → acquisisce lock se `l_type=F_RDLCK` o `F_WRLCK`, rilascia se `l_type=F_UNLCK`; restituisce $-1$ se un altro processo ha il lock
+- `F_SETLKW` → come la `F_SETLK` ma se c’è un lock sul file attende (`wait`) che il lock venga rilasciato
+- F_GETLK, testa esistenza lock; la struttura `flock` contiene il lock che si vuole mettere, se il lock può essere messo `fcntl` aggiorna `l_type` a `F_UNLCK` (deve quindi essere seguita da `F_SETLK`/`LKW`)
 
 Il lock è *advisory*, ovvero richiede cooperazione tra processi, infatti tutti I processi fanno una `F_GETLK` o `F_SETLK/LKW` e osservano il risultato (cercare di scrivere un file sul quale un processo detiene un lock non ha l'effetto di bloccare la scrittura)
 Per avere un lock mandatory, ovvero che impedisce la scrittura o lettura richiede che il file system supporti il mandatory locking
