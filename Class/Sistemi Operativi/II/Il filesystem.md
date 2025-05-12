@@ -52,7 +52,7 @@ Linux ha un solo filesystem principale che ha come directory radice `/` (root). 
 In una stessa directory è vietato creare:
 - 2 file con lo stesso nome
 - 2 directory con lo stesso nome
-- Un file ed una directory con lo stesso nome
+- un file ed una directory con lo stesso nome
 
 ---
 ## Path
