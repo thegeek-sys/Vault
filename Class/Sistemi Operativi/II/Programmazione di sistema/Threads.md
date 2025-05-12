@@ -83,4 +83,66 @@ In sostanza tutte le implementazioni sono caratterizzate dalla relazione tra:
 >[!warning]
 >La definizione di thread utente o thread kernel non è basata su una diversa modalità d’esecuzione (User Mode o Kernel Mode)
 
+### User-level vs Kernel-level threads
+
+| User level                                                         | Kernel level                                                                        |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| SO inconsapevole dei threads                                       | SO consapevole dei threads                                                          |
+| Facile implementazione dei thread                                  | Difficile implementazione dei threads                                               |
+| Context switch veloce, senza supporto hardware                     | Context switch e costoso a livello di tempo e risorse, e richiede supporto hardware |
+| Una chiamata bloccante fatta da un thread blocca l’intero processo | Una chiamata bloccante fatta da un thread non blocca l’intero processo              |
+| ss. POSIX, Java threads                                            | es. Windows, Solaris                                                                |
+
 ### Modello “da molti a 1”
+Una applicazione multithread è costituita da un singolo processo del SO e a diversi thread utente corrisponde un singolo thread kernel (un singolo processo tradizionale)
+
+Il nucleo del SO non è coinvolto nella gestione dei flussi dell’applicazione, la quale (eventualmente usando una libreria di sistema) gestisce autonomamente i thread utente. In particolare schedula i vari flussi di esecuzione e salva e ripristina gli stack UM e i contesti
+
+Se un thread invoca una chiamata di sistema bloccante, il processo (e quindi tutti i thread utente) vengono bloccati. Risulta quindi impossibile sfruttare in modo implicito il parallelismo interno del calcolatore (implementazione detta “a livello utente” o green threads)
+
+### Modello “da 1 a 1”
+In questo modello ciascun thread dell’applicazione corrisponde ad un singolo thread kernel
+
+Per cui il nucleo del SO si occupa della gestione e schedulazione dei thread kernel (perciò gestisce anche i thread utente) e l’applicazione utilizza le API definite in una libreria di sistema per creare e distruggere i thread utente e per gestire comunicazione e sincronizzazione
+La libreria implementa i servizi richiesti dall’applicazione invocando opportune chiamate di sistema
+
+Ciascun thread utente può invocare chiamate di sistema bloccanti senza bloccare gli altri thread. Dunque l’applicazione sfrutta in modo implicito il parallelismo interno del calcolatore (implementazione detta “a livello kernel“, o native threads)
+
+### Modello “da molti a molti”
+Gli $n_{u}$ thread utente della applicazione corrispondono a $n_{k}$ thread kernel (con $n_{k}\leq n_{u}$)
+
+Il nucleo del SO si occupa della gestione e schdulazione dei thread kernel (non gestisce direttamente i thread utente) e l’applicazione utilizza le API definite in una libreria di sistema che definisce il numero $n_{k}$ di thread kernel, crea e distrugge i thread utente e mappa i thread utente sui thread kernel
+La libreria di sistema:
+- usa chiamate di sistema per gestire i thread kernel
+- gestisce la schedulazione e lo stack UM dei thread utente mappati sullo stesso thread kernel
+- gestisce comunicazione e sincronizzazione
+
+### Esempi di implementazione
+Esempi di implementazioni con modello “da molti a uno” (possono essere utilizzate con qualunque sistema operative):
+- la libreria green threads disponibile in Sun Solaris
+- la libreria GNU Pth (GNU Portable Threads)
+
+Tutti i maggiori SO oggi supportano i thread nativi, e dunque i modelli “da uno a uno” e “da molti a molti”:
+- Linux, MS Windows, MacOS X tendono ad adottare il modello “da uno a uno”
+- IRIX, HP-UX, Tru64 UNIX adottano il modello “da molti a molti”
+
+In ogni caso la scelta del modello “da uno a uno” piuttosto che “da molti a molti” dipende dalla libreria di thread utilizzata, e non dal sistema operativo
+
+### Librerie dei thread
+Generalmente il programmatore utilizza una libreria di sistema per realizzare una applicazione multithread che offre API non direttamente correlate con la tipologia di thread utilizzata
+Possono infatti esistere diverse versioni di una libreria con identiche API ma thread a livello utente oppure kernel (es. `pthreads`, POSIX threads)
+
+Alcune librerie e le relative API sono invece specifiche per un determinato sistema operativo e tipologia di thread (es. libreria per i thread delle API Win32)
+Altre librerie, e le relative API, invece sono specifiche di un linguaggio ad alto livello rendendo l’uso della libreria implicito e automatico (la libreria utilizza una libreria di thread di livello più basso), ne è un esempio la libreria di thread del linguaggio Java
+
+#### $\verb|pthreads|$
+La libreria `pthreads` è definita dallo standard POSIX (IEEE 1003.1c) che definisce le API, ma non stabilisce quale debba essere la loro implementazione in uno specifico SO
+
+In Linux sono coesistite tre diverse implementazioni:
+- LinuxThreads → prima implementazione basata sul modello “da uno a uno”, non più supportata
+- NGPT (Next Generation POSIX Threads) → sviluppata da IBM sul modello “da molti a molti”, non più supportata
+- NPTL (Native POSIX Threads Library) → ultima implementazione, più efficiente e più aderente allo standard, basata sullo standard “da uno a uno”
+
+Oggi in Linux si utilizza esclusivamente NPTL
+
+---
