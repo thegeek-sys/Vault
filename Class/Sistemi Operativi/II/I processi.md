@@ -162,6 +162,21 @@ Vediamo ora le opzioni disponibili:
 
 Ci stanno anche i campi `RUSER` per il reale utente che ha avviato il processo e `EUSER` che corrisponde all’utente che ha eseguito il processo
 
+### Significato campi di output
+- `PPID` → parent pid, pid del processo che ha creato questo processo
+- `C` → parte intera della percentuale di uso della CPU
+- `STIME` (o `START`) → l'ora in cui e stato invocato il comando, oppure la data, se e stato fatto partire da piu di un giorno
+- `TIME` → tempo di CPU usato finora
+- `CMD` → comando con argomenti
+- `F` → flags associati al processo: 1 il processo e stato “forkato", ma ancora non eseguito; 4, ha usato privilegi da superutente; 5, entrambi i precedenti; 0, nessuno dei precedenti (`-y -l` elimina questo campo che e’ poco utile)
+- `S` → stato (modalita) del processo in una sola lettera
+- `UID` → utente che ha lanciato il processo (se SetUID presente pottrebbe non essere chi ha dato il comando)
+- `PRI` → attuale priorita del processo (piu il numero e alto, minore e la priorita)
+- `NI` → valore di nice, da aggiungere alla priorita’ (vedere piu avanti)
+- `ADDR` → indirizzo in memoria del processo, ma e mostrato (senza valore) solo per compatibilita all'indietro (`-y -l` toglie questo campo e lo sostituisce con RSS - resident set size - dimensione del processo in memoria principale in $KB$ - non tiene conto delle pagine su disco)
+- `SZ` → dimensione totale attuale del processo in numero di pagine (tutte le 6 aree di memoria del processo) sia in memoria che su disco (memoria virtuale)
+- `WCHAN` → se il processo e in attesa di un qualche segnale o comunque in sleep, qui c'e la funzione del kernel all'interno della quale si e fermato
+
 ---
 ## $\verb|top [-b] [-n num] [-p {pid}]|$
 Permette di avere un `ps` ma costantemente aggiornato
