@@ -109,7 +109,7 @@ La **funzione di libreria** `exit()`:
 - ritorna (`status & 0377`) al padre (vedi `wait()`)
 - `EXIT_SUCCESS`e `EXIT_FAILURE` sono $2$ costanti predefinite che possono essere passate come status (soluzione portabile)
 
-La differenza principale sta nel fatto che la syscall non flusha i buffer (`stdout` e `stderr`), quindi potrebbe accadere che se ad esempio viene un `fprintf` su `stderr` oppure un `printf` potrebbe accadere che gli output non verranno mai mostrati se bufferizzati
+La differenza principale sta nel fatto che la syscall non flusha i buffer (`stdout` e `stderr`), quindi potrebbe accadere che se ad esempio viene un `fprintf` su `stderr` oppure un `printf` potrebbe accadere che gli output non verranno mai mostrati se bufferizzatiw
 
 ---
 ## $\verb|abort()|$
