@@ -213,9 +213,21 @@ Il parametro `mode` è un numero ottale (es. $0755$). Si possono inoltre usare l
 ![[Pasted image 20250429002835.png]]
 
 #### $\verb|opendir()|$, $\verb|readdir()|$ e $\verb|closedir()|$
+
+```c
+DIR *opendir(const char *name);
+struct dirent *readdir(DIR *dirp);
+int closedir(DIR *dirp);
+```
+
 Non sono system call ma funzioni di libreria che permettono di gestire una directory tramite stream (ritornato da `opendir`). `readdir` legge il contenuto della directory (prossimo elemento disponibile) ritornando la struttura `dirent` o NULL se non ci sono più elementi
 
 #### $\verb|fcntl()|$
+
+```c
+int fcntl(int fd, int cmd, ... /* arg */ );
+```
+
 E’ una system call che permette di effettuare operazioni sul file descriptor `fd`, ad esempio:
 - duplicazione del `fd`
 - manipolazione flag file descriptor
