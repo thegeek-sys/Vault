@@ -14,5 +14,12 @@ Le applicazioni multithread consentono al programmatore di definire diversi flus
 - ciascun flusso di esecuzione procede in modo concorrente ed indipendente dagli altri flussi
 - l’applicazione finisce solo quando tutti i flussi di esecuzione vengono terminati
 
+### Motivazioni
+Il motivo principale dell’utilizzo dei threads è l’**elevato parallelismo interno dei calcolatori elettronici**:
+- DMA → trasferimento dati tra macchina primaria e periferiche di I/O senza intervento della CPU
+- hyperthreading → supporto a diversi flussi di esecuzione, ciascuno con un proprio insieme di registri, che si alternano sulle unità funzionali della CPU
+
 ---
 ## Processi e threads
+![[Pasted image 20250512225949.png]]
+
