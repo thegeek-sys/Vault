@@ -37,25 +37,22 @@ create domain denaro as real
 ### Persona
 ```sql
 create table Persona (
-	id pos_integer not null,
+	id pos_integer primary key,
 	nome stringa_m not null,
 	cognome stringa_m not null,
 	posizione strutturato not null,
 	stipendio denaro not null
-	primary key (id)
 )
 ```
 
 ### Progetto
 ```sql
 create table Progetto (
-	id pos_integer not null,
-	nome stringa_m not null,
+	id pos_integer primary key,
+	nome stringa_m unique,
 	inizio date not null,
 	fine date not null,
 	budget denaro not null
-	primary key (id),
-	unique (nome),
 	check (inizio < fine)
 )
 ```
@@ -78,14 +75,13 @@ create table WP (
 ### AttivitàProgetto
 ```sql
 create table AttivitàProgetto (
-	id pos_integer not null,
+	id pos_integer primary key,
 	persona pos_integer not null,
 	progetto pos_integer not null,
 	wp pos_integer not null,
 	giorno date not null,
 	tipo lavoro_progetto not null,
 	ore_durata numero_ore not null,
-	primary key (id),
 	foreign key (persona) references Persona(id),
 	foreign key (progetto, wp) references WP(progetto, id)
 )
@@ -94,12 +90,11 @@ create table AttivitàProgetto (
 ### AttivitàNonProgettuale
 ```sql
 create table AttivitàNonProgettuale (
-	id pos_integer not null,
+	id pos_integer primary key,
 	persona pos_integer not null,
 	tipo lavoro_non_progettuale not null,
 	giorno date not null,
 	ore_durata numero_ore not null,
-	primary key (id),
 	foreign key (persona) references Persona(id),
 )
 ```
@@ -107,11 +102,10 @@ create table AttivitàNonProgettuale (
 ### Assenza
 ```sql
 create table Assenza (
-	id pos_integer not null,
+	id pos_integer primary key,
 	persona pos_integer not null,
 	tipo causa_assenza not null,
 	giorno date not null,
-	primary key (id),
 	foreign key (persona) references Persona(id),
 )
 ```

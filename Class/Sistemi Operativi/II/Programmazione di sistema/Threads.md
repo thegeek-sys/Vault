@@ -146,3 +146,4 @@ In Linux sono coesistite tre diverse implementazioni:
 Oggi in Linux si utilizza esclusivamente NPTL
 
 ---
+##
