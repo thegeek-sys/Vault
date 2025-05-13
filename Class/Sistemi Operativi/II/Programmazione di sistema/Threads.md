@@ -212,7 +212,7 @@ void exit(int status);
 ```
 
 In Unix un processo viene terminato con `exit()`. In Linux però le cose sono più complicate, infatti:
-- la chiamata di sistema `_exit` termina un singolo thread
+- la chiamata di sistema `_exit` termina un singolo thread (NO TERMINA TUTTI I THREAD)
 - la chiamata di sistema `exit_group` termina tutti i thread di un processo
 - la funzione wrapper `_exit()` esegue la chiamata di sistema `exit_group`, non `_exit`
 - la funzione di libreria `exit()` invoca, alla fine, la funzione wapper `_exit()`
