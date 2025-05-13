@@ -150,7 +150,7 @@ Oggi in Linux si utilizza esclusivamente NPTL
 ### Creazione di un nuovo thread in $\verb|pthreads|$
 
 ```c
-int pthread_create(ptid, pattr, start, arg)
+int pthread_create(ptid, pattr, start, arg);
 ```
 
 La funzione di libreria `pthread_create()` crea un nuovo thread. Analizziamo gli argomenti:
@@ -158,3 +158,14 @@ La funzione di libreria `pthread_create()` crea un nuovo thread. Analizziamo gli
 - `pattr` → puntatore ad una variabile contenente attributi (flag) per la creazione del thread (opzionale)
 - `start` → funzione inizialmente eseguita dal thread, con recipe `void *start(void *)`
 - `arg` → puntatore passato come argomento a `start()`
+
+Se la funzione ha esito positivo, la funzione restituisce $0$, altrimenti viene restituito un numero di errore per indicare l’errore
+
+### Terminazione di un nuovo thread in $\verb|pthreads|$
+
+```c
+void pthread_exit(void *value_ptr);
+```
+
+La funzione di libreria `pthread_exit()` termina l’esecuzione del thread che la invoca
+Il valore passato come argomento può essere passato ad altri thread dello stesso processo
