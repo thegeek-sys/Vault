@@ -168,4 +168,23 @@ void pthread_exit(void *value_ptr);
 ```
 
 La funzione di libreria `pthread_exit()` termina l’esecuzione del thread che la invoca
-Il valore passato come argomento può essere passato ad altri thread dello stesso processo
+Il valore passato come argomento può poi essere usato dal processo padre
+
+La funzione viene implicitamente invocata quando la funzione iniziale `start` del thread termina. Se viene eseguita dall’ultimo thread di un processo, il processi termina con una `exit(0)`
+
+### Attesa della terminazione di un thread in $\verb|pthreads|$
+
+```c
+int pthread_join(pthread_t tid, void *pret);
+```
+
+La funzione di libreria `pthread_join()` attende la conclusione di un thread. Vediamo gli argomenti:
+- `tid` → identificatore del thread di cui si vuole attendere la terminazione
+- `pret` → eventuale indirizzo di una variabile che rieceverà il valore passato dal thread terminato in `pthread_exit()`
+
+>[!warning]
+>Non esiste alcun modo per indicare che si vuole attendere la terminazione di un thread qualunque
+
+Se l'operazione ha esito positivo, la funzione `pthread_join` restituisce zero, altrimenti, viene restituito un numero di errore per indicare l'errore
+
+>[!example] Esempio 1
