@@ -188,3 +188,34 @@ La funzione di libreria `pthread_join()` attende la conclusione di un thread. Ve
 Se l'operazione ha esito positivo, la funzione `pthread_join` restituisce zero, altrimenti, viene restituito un numero di errore per indicare l'errore
 
 >[!example] Esempio 1
+>```c
+>#include <pthread.h>
+>long start(long v) {
+>	return v+1;
+>}
+>
+>int main(int argc, char *argv[]) {
+>	pthread_t tid;
+>	pthread_create(&tid, 0, start, argc);
+>	pthread_join(tid, &argc);
+>	return argc;
+>}
+>```
+>
+>>[!info]
+>>Da compilare con `gcc` con l’opzione `-pthread`
+
+### Terminazione di un processo multithread
+
+```c
+void exit(int status);
+```
+
+In Unix un processo viene terminato con `exit()`. In Linux però le cose sono più complicate, infatti:
+- la chiamata di sistema `_exit` termina un singolo thread
+- la chiamata di sistema `exit_group` termina tutti i thread di un processo
+- la funzione wrapper `_exit()` esegue la chiamata di sistema `exit_group`, non `_exit`
+- la funzione di libreria `exit()` invoca, alla fine, la funzione wapper `_exit()`
+- eseguire `return` nel `main()` è equivalente ad invocare la funzione di libreria `exit()`
+- la funzione wrapper `_Exit()` (standard C99) è equivalente alla funzione wrapper `_exit()`
+- la funzione di libreria `pthread_exit()` invoca direttamente la chiamata di sistema `_exit`
