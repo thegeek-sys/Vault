@@ -146,4 +146,15 @@ In Linux sono coesistite tre diverse implementazioni:
 Oggi in Linux si utilizza esclusivamente NPTL
 
 ---
-##
+## Implementazione
+### Creazione di un nuovo thread in $\verb|pthreads|$
+
+```c
+int pthread_create(ptid, pattr, start, arg)
+```
+
+La funzione di libreria `pthread_create()` crea un nuovo thread. Analizziamo gli argomenti:
+- `ptid` → puntatore a variabile di tipo `pthread_t` che conterrà l’identificatore del nuovo thread (TID)
+- `pattr` → puntatore ad una variabile contenente attributi (flag) per la creazione del thread (opzionale)
+- `start` → funzione inizialmente eseguita dal thread, con recipe `void *start(void *)`
+- `arg` → puntatore passato come argomento a `start()`
