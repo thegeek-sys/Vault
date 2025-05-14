@@ -286,12 +286,30 @@ pthread_attr_setstacksize(3)
 ## Implementazione dei thread in Linux
 L’implementazione dei thread in Linux è basata sul concetto di processo leggero o **LWP** (*Light Weight Process*). Un processo leggero è un processo che condivide alcune risorse selezionate con il proprio genitore
 
-```c
-int clone(int (*fn)(void *), void *child_stack, int flags, void *arg, ...);
-```
-
-Per clonare processi leggeri si utilizza l’API `clone()` (fork ma per i thread) con diversi possibili flag `CLONE_XXX`, ad esempio:
+Per clonare processi leggeri si utilizza l’API `clone()` (permette anche di creare processi) con diversi possibili flag `CLONE_XXX`, ad esempio:
 - `CLONE_FILES` → condivide descrittori di file
 - `CLONE_FS` → condivide info sul filesystem (cwd, root, umask)
 - `CLONE_SIGHAND` → condivide handler dei segnali
-- `CLONE_THREAD`
+- `CLONE_THREAD` → il figlio diventa un thread e non un processo (condivide PID e risorse con il padre)
+- `CLONE_VM` → condivide lo spazio di memoria (il figlio vede le stesse variabili)
+
+>[!hint] `fork() ≡ clone()`
+>La differenza principale tra i due comandi è che `clone` permette di avere un controllo più fine sul comportamento del figlio
+>
+>Inoltre `pthread_create` corrisponde a `clone` con tutti i flag
+
+### $\verb|clone(3)|$ - funzione di libreria
+
+```c
+int clone(int (*fn)(void *), void *stack, int flags, void *arg, ...);
+```
+
+Vediamo gli argomenti:
+- `fn` → funzione inizialmente eseguita dal nuovo processo
+- `stack` → indirizzo della cima dello stack UM del nuovo processo
+- `flags` → sono i flags descritti precedentemente
+- `arg` → argomento passato a `fn()`
+
+La funzione di libreria `clone()` si basa sulla chiamata di sistema `clone` con semantica differente
+
+### $\verb|clone(2)|$ - syscall
