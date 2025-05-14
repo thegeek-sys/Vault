@@ -171,3 +171,57 @@ int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex);
 int pthread_cond_timedwait(pthread_cond_t *cond, pthread_mutex_t *mutex, const struct timespec *abstime);
 int pthread_cond_destroy(pthread_cond_t *cond);
 ```
+
+#### $\verb|pthread_cond_init|$
+
+```c
+int pthread_cond_init(pthread_cond_t *cond, pthread_condattr_t *cond_attr);
+```
+
+Inizializza una condition variable su `cond`. Se `attr` è `NULL`, vengono usati gli attributi di default  
+Ritorna $0$ in caso di successo, altrimenti un codice di errore
+
+#### $\verb|pthread_cond_signal|$
+
+```c
+int pthread_cond_signal(pthread_cond_t *cond);
+```
+
+Risveglia uno solo dei thread in attesa sulla condition variable `cond`  
+Ritorna $0$ in caso di successo, oppure un codice di errore
+
+#### $\verb|pthread_cond_broadcast|$
+
+```c
+int pthread_cond_broadcast(pthread_cond_t *cond);
+```
+
+Risveglia tutti i thread in attesa sulla condition variable `cond`  
+Ritorna $0$ in caso di successo, oppure un codice di errore
+
+#### $\verb|pthread_cond_wait|$
+
+```c
+int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex);
+```
+
+Fa unlock del `mutex` associato alla condizione e attende che un altro thread esegua un `pthread_cond_signal` sulla condizione. Il mutex va prima lockato dal thread the invoca la `wait` e prima di terminare, la `wait` rimette il lock sul `mutex`
+Ritorna $0$ se la condizione è stata segnalata, o un errore
+
+#### $\verb|pthread_cond_timedwait|$
+
+```c
+int pthread_cond_timedwait(pthread_cond_t *cond, pthread_mutex_t *mutex, const struct timespec *abstime);
+```
+
+Come `pthread_cond_wait`, ma attende al massimo fino al tempo assoluto `abstime`  
+Ritorna $0$ se la condizione è stata segnalata, oppure `ETIMEDOUT` se scade il tempo
+
+#### $\verb|pthread_cond_destroy|$
+
+```c
+int pthread_cond_destroy(pthread_cond_t *cond);
+```
+
+Distrugge una condition variable, liberando le risorse  
+Ritorna $0$ se l’operazione ha successo, oppure un errore se ci sono thread ancora in attesa
