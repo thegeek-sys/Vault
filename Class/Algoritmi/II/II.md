@@ -5,6 +5,7 @@
 - [[Algoritmi greedy]]
 - [[Divide et Impera]]
 - [[Programmazione dimanica]]
+- [[Backtracking]]
 - 
 
 - [[Class/Algoritmi/II/Esercizi|Esercizi]]
