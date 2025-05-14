@@ -60,3 +60,13 @@ Il semaforo può essere contatore ($n>1$, può essere acquisito da $n$ flussi di
 ---
 ## POSIX Mutex
 La **mutex** (*MUTal EXclusion device*) è utile per proteggere strutture dati condivise e realizzare sezioni critiche
+
+Questi sono i principali comandi:
+
+```c
+int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *mutexattr);
+int pthread_mutex_lock(pthread_mutex_t *mutex));
+int pthread_mutex_trylock(pthread_mutex_t *mutex);
+int pthread_mutex_unlock(pthread_mutex_t *mutex);
+int pthread_mutex_destroy(pthread_mutex_t *mutex);
+```
