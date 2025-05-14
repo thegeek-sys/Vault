@@ -70,3 +70,104 @@ int pthread_mutex_trylock(pthread_mutex_t *mutex);
 int pthread_mutex_unlock(pthread_mutex_t *mutex);
 int pthread_mutex_destroy(pthread_mutex_t *mutex);
 ```
+
+### $\verb|pthread_mutex_init|$
+
+```c
+int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *mutexattr);
+```
+
+Il comando `pthread_mutex_init` inizializza un mutex e imposta gli attributi a `mutexattr`
+Gli attributi determinano il comportamento del semaforo quando il thread invoca un lock/unlock più volte consecutivamente
+
+Se `mutexattr=NULL` il tipo di `mutexattr` viene impostato a fast. Possibili tipi di `pthread_mutexattr_t`:
+- `PTHREAD_MUTEX_NORMAL` (fast) → un lock blocca il thread finche’ il lock precedente non è rilasciato (può creare stallo); unlock rilascia il semaforo e ritorna subito
+- `PTHREAD_MUTEX_RECURSIVE` → permette allo stesso thread di mettere più lock (un contatore tiene conto del numero di lock messi); unlock decrementa il contatore ma non rilascia il semaforo finchè il contatore non è $0$
+- `PTHREAD_MUTEX_ERRORCHECK` → genera un errore in caso il thread cerchi di mettere un lock su di un mutex sul quale già di detiene un lock; unlock ritorna errore se il thread non aveva fatto una lock precedentemente
+
+Il tipo può essere impostato tramite la funzione di libreria `pthread_mutexattr_settype`
+
+### $\verb|pthread_mutex_lock|$
+
+```c
+int pthread_mutex_lock(pthread_mutex_t *mutex));
+```
+
+Acquisisce (blocca) il mutex. Se il mutex è già bloccato da un altro thread, il chiamante si blocca in attesa
+Ritorna $0$ se il mutex è libero e viene acquisito
+
+### $\verb|pthread_mutex_trylock|$
+
+```c
+int pthread_mutex_trylock(pthread_mutex_t *mutex);
+```
+
+Tenta di acquisire il mutex, ma non blocca il thread chiamante
+Se il mutex è libero, allora lo acquisisce e ritorna $0$, se invece è occupato ritorna il valore `EBUSY`
+
+### $\verb|pthread_mutex_unlock|$
+
+```c
+int pthread_mutex_unlock(pthread_mutex_t *mutex);
+```
+
+Rilascia il mutex precedentemente acquisito
+Ritorna $0$ in caso di esito positivo, altrimenti viene restituito un numero per indicare l’errore
+
+### $\verb|pthread_mutex_destroy|$
+
+```c
+int pthread_mutex_destroy(pthread_mutex_t *mutex);
+```
+
+Distrugge un mutex, liberando risorse
+Ritorna $0$ in caso di esito positivo, altrimenti viene restituito $-1$ e viene impostato `errno`
+
+---
+## Sincronizzazione thread
+### Barriera
+La **barriera** è un metodo di sincronizzazione tra processi o thread. Fa si che un set di processo o thread possa continuare il proprio flusso di esecuzione solo se tutti hanno raggiunto la barriera
+
+```c
+int pthread_barrier_init(pthread_barrier_t * restrict barrier, const pthread_barrierattr_t * restrict attr, unsigned int count);
+int pthread_barrier_wait(pthread_barrier_t *barrier);
+int pthread_barrier_destroy(pthread_barrier_t *barrier);
+```
+
+#### $\verb|pthread_barrier_init|$
+
+```c
+int pthread_barrier_init(pthread_barrier_t * restrict barrier, const pthread_barrierattr_t * restrict attr, unsigned int count);
+```
+
+Crea una nuova barriera con attributi `attr` e per `count` thread (`count` thread partecipano alla barriera). Se `attr=NULL` viene impostato l’attributi di default
+
+#### $\verb|pthread_barrier_wait|$
+
+```c
+int pthread_barrier_wait(pthread_barrier_t *barrier);
+```
+
+Ogni thread che che invoca questo comando si blocca fino a che `count` thread non ci sono arrivati
+Uno di questi riceverà un valore speciale di ritorno: `PTHREAD_BARRIER_SERIAL_THREAD` (gli altri $0$)
+
+#### $\verb|pthread_barrier_destroy|$
+
+```c
+int pthread_barrier_destroy(pthread_barrier_t *barrier);
+```
+
+Distrugge una barrier, liberando risorse
+Ritorna $0$ in caso di esito positivo, altrimenti viene restituito un numero per indicare l’errore
+
+### Condition
+La **condition** è un metodo di sincronizzazione che permette ad un thread di sospendere la sua esecuzione finché un predicato su di un dato condiviso non è verificato
+
+```c
+int pthread_cond_init(pthread_cond_t *cond, pthread_condattr_t *cond_attr);
+int pthread_cond_signal(pthread_cond_t *cond);
+int pthread_cond_broadcast(pthread_cond_t *cond);
+int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex);
+int pthread_cond_timedwait(pthread_cond_t *cond, pthread_mutex_t *mutex, const struct timespec *abstime);
+int pthread_cond_destroy(pthread_cond_t *cond);
+```
