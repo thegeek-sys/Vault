@@ -228,11 +228,39 @@ Si può ad esempio utilizzare all’interno del comando `pthread_create()` per s
 
 I principali  attributi sono:
 - `scope` → determina l’ambito di competizione del thread per le risorse di sistema
-	- `PTHREAD_SCOPE_SYSTEM`
-	- `PTHREAD_SCOPE_PROCESS` → predefinito, compete per le risorse con tutti gli altri thread nel processo e nel sistema
+	- `PTHREAD_SCOPE_SYSTEM` → compete con tutti i thread del sistema (tutti i processi)
+	- `PTHREAD_SCOPE_PROCESS` → predefinito, compete solo con altri thread dello stesso processo
 - `detachstate` → determina se il thread è “joinable” (ovvero se gli si può applicare `pthread_join()`) oppure se è “detached” (le sue risorse vengono liberate automaticamente alla liberazione)
 	- `PTHREAD_CREATE_JOINABLE` → predefinito
 	- `PTHREAD_CREATE_DETACHED`
 - `stackaddr` → permette di specificare un indirizzo di memoria per lo stack del thread. Se impostato  a `NULL`, il sistema alloca automaticamente lo stack
 - `stacksize` → specifica la dimensione dello stack del thread. Il valore predefinito è di solito `1MB`, ma può variare a seconda del sistema
 - `inheritssched` → indica se il thread eredita la politica di scheduling del thread padre (???)
+- **`schedpolicy`** → definisce la politica di scheduling del thread.
+	- `SCHED_OTHER` → predefinito
+	- `SCHED_FIFO`
+	- `SCHED_RR`
+
+### $\verb|pthread_attr_init|$
+
+```c
+int pthread_attr_init(pthread_attr_t *attr);
+```
+
+Inizializza la struttura `attr` con i valori di default
+
+### $\verb|pthread_attr_destroy|$
+
+```c
+int pthread_attr_destroy(pthread_attr_t *attr);
+```
+
+Rilascia le risorse associate alla struttura `attr` (gli erano state associate tramite il comando `init`, è buona norma distruggerlo per evitare memory leak)
+
+### $\verb|pthread_setstacksize|$
+
+```c
+int pthread_attr_setstacksize(pthread_attr_t *attr, size_t stacksize);
+```
+
+Imposta la dimensione dello stack di `attr` che verrà allocato per il thread
