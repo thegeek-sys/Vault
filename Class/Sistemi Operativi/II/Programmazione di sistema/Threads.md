@@ -227,4 +227,12 @@ Il tipo `pthread_attr_t` è una struttura per definire gli attributi di un threa
 Si può ad esempio utilizzare all’interno del comando `pthread_create()` per specificare gli attributi del thread che verrà creato
 
 I principali  attributi sono:
--
+- `scope` → determina l’ambito di competizione del thread per le risorse di sistema
+	- `PTHREAD_SCOPE_SYSTEM`
+	- `PTHREAD_SCOPE_PROCESS` → predefinito, compete per le risorse con tutti gli altri thread nel processo e nel sistema
+- `detachstate` → determina se il thread è “joinable” (ovvero se gli si può applicare `pthread_join()`) oppure se è “detached” (le sue risorse vengono liberate automaticamente alla liberazione)
+	- `PTHREAD_CREATE_JOINABLE` → predefinito
+	- `PTHREAD_CREATE_DETACHED`
+- `stackaddr` → permette di specificare un indirizzo di memoria per lo stack del thread. Se impostato  a `NULL`, il sistema alloca automaticamente lo stack
+- `stacksize` → specifica la dimensione dello stack del thread. Il valore predefinito è di solito `1MB`, ma può variare a seconda del sistema
+- 
