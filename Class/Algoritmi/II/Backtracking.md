@@ -49,7 +49,7 @@ Related:
 >>- $k=0$ → $1$ stringa
 >>- $k=1$ → $n+1$ stringhe (uno in qualsiasi posizione e tutti zeri)
 >
->>[!done]
+>>[!done]-
 >>Un possibile algoritmo che risolve il problema in $\Omega(2^n\cdot n)$:
 >>```python
 >>def es(n, k, sol=[]):
@@ -78,25 +78,69 @@ Related:
 >>![[Pasted image 20250515003712.png]]
 >>
 >>Implementazione:
+>>```python
+>>def es(n, k, sol=[], uni=0):
+>>	if len(sol)==n:
+>>		print(sol)
+>>		return
+>>	sol.append(0)
+>>	es(n, k, sol, uni)
+>>	sol.pop()
+>>	if uni<k:
+>>		sol.append(1)
+>>		es(n, k, sol, uni+1)
+>>		sol.pop()
+>>```
 >>
->>L’albero binario di ricorsione ha $2\cdot2^n$ nodi di cui $2^n$ foglie:
->>- ciascun nodo interno richiede tempo $O(1)$
->>- ciascuna foglia richiede tempo $\Theta(n)$ (il print costa $\Theta(n)$)
+>>Si consideri un algoritmo di enumerazione basato sul backtracking dove l’albero di ricorsione ha altezza $h$, il costo di una foglia è $g(n)$ e il costo di un nodo interno è $O(f(n))$
+>>Se l’algoritmo gode della seguente proprietà:
+>>$$\text{un nodo viene generato solo se ha la possibilità di portare ad una foglia da stampare}$$
 >>
->>La complessità dell’algoritmo è $\Theta(2^n)+2^n\Theta(n)=\Theta(2^n\cdot n)$
+>>Allora la complessità dell’algoritmo è proporzionale al numero di cose da stampare $S(n)$, più precisamente la complessità dell’algoritmo è:
+>>$$O(S(n)\cdot h\cdot f(n)+S(n)\cdot g(n))$$
+>>questo perché:
+>>- il costo totale dei nodi foglia sarà $O(S(n)\cdot g(n))$ (in quanto solo le foglie da enumerare verranno generate)
+>>- i nodi interni dell’albero che verranno effettivamente generati saranno $O(S(n)\cdot h)$ (in quanto ogni nodo interno generato apparterrà ad un cammino che parte dalla radice e arriva ad una delle $S(n)$ foglie da enumerare)
+>>
+>>Analizzando l’algoritmo scritto la proprietà di generare un nodo solo se questo può portare ad una delle $S(n,k)$ foglie da stampare è rispettata. Inoltre $h=n$, $g(n)=\Theta(n)$, $f(n)=O(1)$
+>>Quindi la complessità è:
+>>$$S(n,k)\cdot n\cdot O(1)+S(n,k)\cdot \Theta(n)=\Theta(S(n,k)\cdot n)$$
+>>e l’algoritmo risulta ottimale
+>>
+>>La complessità dell’algoritmo è $O(n^{k+1})$ infatti: $S(n,k)=\binom{n}{0}+\binom{n}{0}+\dots+\binom{n}{k}<2\cdot n^k$
 
-
-
-
-```python
->>def es(n, k, sol=[]):
->>	if len(sol)==n and sol.count(1)<=k:
+>[!question] Progettare un algoritmo che prende come parametro $n$ e stampa le stringhe che non hanno $3$ uni consecutivi
+>>[!done]-
+>>Implementazione:
+>>```python
+>>def es(n, sol=[]):
+>>	if len(sol)==n:
 >>		print(sol)
 >>		return
 >>	sol.append(0)
 >>	es(n, k, sol)
 >>	sol.pop()
->>	sol.append(1)
+>>	if len(sol)<2 or sol[-1]!=1 or sol[-2]!=1:
+>>		sol.append(1)
+>>		es(n, sol)
+>>		sol.pop()
+>>```
+>>
+>>La complessità è:
+>>$$O(S(n)\cdot h\cdot f(n)+S(n)\cdot g(n))=O(S(n)\cdot n\cdot \Theta(1)+S(n)\cdot n)=O(S(n)\cdot n)$$
+
+
+
+```python
+>>def es(n, sol=[]):
+>>	if len(sol)==n:
+>>		print(sol)
+>>		return
+>>	sol.append(0)
 >>	es(n, k, sol)
 >>	sol.pop()
+>>	if len(sol)<2 or sol[-1]!=1 or sol[-2]!=1:
+>>		sol.append(1)
+>>		es(n, sol)
+>>		sol.pop()
 >>```
