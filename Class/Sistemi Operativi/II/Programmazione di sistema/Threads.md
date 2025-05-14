@@ -219,3 +219,5 @@ In Unix un processo viene terminato con `exit()`. In Linux però le cose sono pi
 - eseguire `return` nel `main()` è equivalente ad invocare la funzione di libreria `exit()`
 - la funzione wrapper `_Exit()` (standard C99) è equivalente alla funzione wrapper `_exit()`
 - la funzione di libreria `pthread_exit()` invoca direttamente la chiamata di sistema `_exit`
+
+>[!example] Esepkmio+z
