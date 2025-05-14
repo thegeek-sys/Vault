@@ -150,7 +150,7 @@ Oggi in Linux si utilizza esclusivamente NPTL
 ### Creazione di un nuovo thread in $\verb|pthreads|$
 
 ```c
-int pthread_create(ptid, pattr, start, arg);
+int pthread_create(pthread_t ptid, pthread_attr_t pattr, start, arg);
 ```
 
 La funzione di libreria `pthread_create()` crea un nuovo thread. Analizziamo gli argomenti:
@@ -220,4 +220,11 @@ In Unix un processo viene terminato con `exit()`. In Linux però le cose sono pi
 - la funzione wrapper `_Exit()` (standard C99) è equivalente alla funzione wrapper `_exit()`
 - la funzione di libreria `pthread_exit()` invoca direttamente la chiamata di sistema `_exit`
 
->[!example] Esepkmio+z
+---
+## $\verb|pthread_attr_t|$
+Il tipo `pthread_attr_t` è una struttura per definire gli attributi di un thread al momento della sua creazione. Questa struttura consente di personalizzare il comportamento del thread, come la sua modalità di esecuzione, la dimensione dello stack e le politiche di scheduling
+
+Si può ad esempio utilizzare all’interno del comando `pthread_create()` per specificare gli attributi del thread che verrà creato
+
+I principali  attributi sono:
+-
