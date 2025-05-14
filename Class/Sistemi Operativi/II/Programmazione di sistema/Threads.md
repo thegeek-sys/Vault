@@ -313,3 +313,13 @@ Vediamo gli argomenti:
 La funzione di libreria `clone()` si basa sulla chiamata di sistema `clone` con semantica differente
 
 ### $\verb|clone(2)|$ - syscall
+La syscall `clone` è simile a `fork()`
+
+```c
+int clone(void *stack, int flags);
+```
+
+- `flags` → descritti predentemente
+- `stack` → indirizzo della cima dello stack UM del nuovo processo, se è nullo, il figlio utilizza una copia dello stack del padre
+
+L’esecuzione del figlio inizia con l’istruzione seguente l’invocazione di clone
