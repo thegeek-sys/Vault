@@ -264,3 +264,34 @@ int pthread_attr_setstacksize(pthread_attr_t *attr, size_t stacksize);
 ```
 
 Imposta la dimensione dello stack di `attr` che verrà allocato per il thread
+
+### Leggere e modificare gli attributi di un $\verb|pthread|$
+La famiglia di funzioni `pthread_attr_*` sono usate per leggere e modificare gli attributi di un `pthread_attr_t`
+
+Eccone alcuni esempi
+
+```c
+pthread_getattr_np(3)
+pthread_attr_setdetachstate(3)
+pthread_attr_setinheritsched(3)
+pthread_attr_setschedparam(3) (priority)
+pthread_attr_setschedpolicy(3)
+pthread_attr_setscope(3)
+pthread_attr_setstack(3)
+pthread_attr_setstackaddr(3)
+pthread_attr_setstacksize(3)
+```
+
+---
+## Implementazione dei thread in Linux
+L’implementazione dei thread in Linux è basata sul concetto di processo leggero o **LWP** (*Light Weight Process*). Un processo leggero è un processo che condivide alcune risorse selezionate con il proprio genitore
+
+```c
+int clone(int (*fn)(void *), void *child_stack, int flags, void *arg, ...);
+```
+
+Per clonare processi leggeri si utilizza l’API `clone()` (fork ma per i thread) con diversi possibili flag `CLONE_XXX`, ad esempio:
+- `CLONE_FILES` → condivide descrittori di file
+- `CLONE_FS` → condivide info sul filesystem (cwd, root, umask)
+- `CLONE_SIGHAND` → condivide handler dei segnali
+- `CLONE_THREAD`
