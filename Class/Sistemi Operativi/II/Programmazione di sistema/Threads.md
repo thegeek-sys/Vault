@@ -235,4 +235,4 @@ I principali  attributi sono:
 	- `PTHREAD_CREATE_DETACHED`
 - `stackaddr` → permette di specificare un indirizzo di memoria per lo stack del thread. Se impostato  a `NULL`, il sistema alloca automaticamente lo stack
 - `stacksize` → specifica la dimensione dello stack del thread. Il valore predefinito è di solito `1MB`, ma può variare a seconda del sistema
-- 
+- `inheritssched` → indica se il thread eredita la politica di scheduling del thread padre (???)
