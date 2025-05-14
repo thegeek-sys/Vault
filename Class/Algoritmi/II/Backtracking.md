@@ -4,6 +4,9 @@ Class: "[[Algoritmi]]"
 Related:
 ---
 ---
+## Index
+- [[#Esercizi|Esercizi]]
+---
 ## Esercizi
 
 >[!question] Progettare un algoritmo che prendere come parametro un intero $n$ e stampa tutte le stringhe binarie lunghe $n$
@@ -129,18 +132,35 @@ Related:
 >>La complessità è:
 >>$$O(S(n)\cdot h\cdot f(n)+S(n)\cdot g(n))=O(S(n)\cdot n\cdot \Theta(1)+S(n)\cdot n)=O(S(n)\cdot n)$$
 
-
-
-```python
->>def es(n, sol=[]):
+>[!question] Progettare un algoritmo che prendere come parametri due interi $n$ e $k$, con $0\leq k\leq n$, e stampa tutte le stringhe binarie lunghe $n$ che contengono esattamente $k$ uni
+>Ad esempio per $n=6$ e $k=3$ delle $2^6=64$ stringhe lunghe $n$ bisogna stampare le seguenti $20$:
+>```
+>000111, 0011011, 001101, 001110, 010011, 010101, 010110, 011001, 011010, 011100, 100011, 100101, 100110, 101001, 101010, 101100, 110001, 110010, 110100, 111000
+>```
+>
+>>[!done]-
+>>Rispetto all’esercizio precedente aggiungiamo ora una funzione di taglio anche nel caso in cui al prefisso viene aggiunto uno zero. Bisogna assicurarsi infatti che sia sempre completare quel prefisso in modo da ottenere una stringa valida da stampare
+>>
+>>Implementazione
+>>```python
+>>def es(n, k, sol=[], uni):
 >>	if len(sol)==n:
 >>		print(sol)
 >>		return
->>	sol.append(0)
->>	es(n, k, sol)
->>	sol.pop()
->>	if len(sol)<2 or sol[-1]!=1 or sol[-2]!=1:
+>>	if n-len(sol)>k-uni:
+>>		sol.append(0)
+>>		es(n, k, sol)
+>>		sol.pop()
+>>	if uni<k:
 >>		sol.append(1)
->>		es(n, sol)
+>>		es(n, k, sol, uni+1)
 >>		sol.pop()
 >>```
+>>
+>>Analizzando l’algoritmo scritto la proprietà di generare un nodo solo se questo può portare ad una delle $S(n,k)$ foglie da stampare è rispettata. Inoltre $h=n$, $g(n)=\Theta(n)$, $f(n)=O(1)$
+>>Quindi la complessità è:
+>>$$S(n,k)\cdot n\cdot O(1)+S(n,k)\cdot \Theta(n)=\Theta(S(n,k)\cdot n)$$
+>>e l’algoritmo risulta ottimale
+>>
+>>La complessità dell’algoritmo è $O(n^{k+1})$ infatti: $S(n,k)=\binom{n}{k}<n^k$
+

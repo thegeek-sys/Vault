@@ -5,6 +5,33 @@ Related:
   - "[[Programmazione di sistema]]"
 ---
 ---
+## Index
+- [[#Applicazioni multithread|Applicazioni multithread]]
+	- [[#Applicazioni multithread#Motivazioni|Motivazioni]]
+	- [[#Applicazioni multithread#Vantaggi|Vantaggi]]
+- [[#Processi e threads|Processi e threads]]
+- [[#Implementazione di applicazioni multithread|Implementazione di applicazioni multithread]]
+	- [[#Implementazione di applicazioni multithread#User-level vs Kernel-level threads|User-level vs Kernel-level threads]]
+	- [[#Implementazione di applicazioni multithread#Modello “da molti a 1”|Modello “da molti a 1”]]
+	- [[#Implementazione di applicazioni multithread#Modello “da 1 a 1”|Modello “da 1 a 1”]]
+	- [[#Implementazione di applicazioni multithread#Modello “da molti a molti”|Modello “da molti a molti”]]
+	- [[#Implementazione di applicazioni multithread#Esempi di implementazione|Esempi di implementazione]]
+	- [[#Implementazione di applicazioni multithread#Librerie dei thread|Librerie dei thread]]
+		- [[#Librerie dei thread#$ verb pthreads $|pthreads]]
+- [[#Implementazione|Implementazione]]
+	- [[#Implementazione#Creazione di un nuovo thread in $ verb pthreads $|Creazione di un nuovo thread in pthreads]]
+	- [[#Implementazione#Terminazione di un nuovo thread in $ verb pthreads $|Terminazione di un nuovo thread in pthreads]]
+	- [[#Implementazione#Attesa della terminazione di un thread in $ verb pthreads $|Attesa della terminazione di un thread in pthreads]]
+	- [[#Implementazione#Terminazione di un processo multithread|Terminazione di un processo multithread]]
+- [[#$ verb pthread_attr_t $|pthread_attr_t]]
+	- [[#$ verb pthread_attr_init $|pthread_attr_init]]
+	- [[#$ verb pthread_attr_destroy $|pthread_attr_destroy]]
+	- [[#$ verb pthread_setstacksize $|pthread_setstacksize]]
+	- [[#Leggere e modificare gli attributi di un $ verb pthread $|Leggere e modificare gli attributi di un pthread]]
+- [[#Implementazione dei thread in Linux|Implementazione dei thread in Linux]]
+	- [[#Implementazione dei thread in Linux#$ verb clone(3) $ - funzione di libreria|clone(3) - funzione di libreria]]
+	- [[#Implementazione dei thread in Linux#$ verb clone(2) $ - syscall|clone(2) - syscall]]
+---
 ## Applicazioni multithread
 In una applicazione tradizionale, il programmatore definisce un unico flusso di esecuzione delle istruzioni. La CPU esegue istruzioni macchina in sequenza e il flusso di esecuzione “segue” la logica del programma (cicli, funzioni, chiamate di sistema, gestori di segnali…)
 Quando il flusso di esecuzione arriva ad eseguire la API `exit()` l’applicazione termina
