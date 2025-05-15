@@ -199,41 +199,6 @@ Related:
 >>
 >>L’algoritmo è ottimo
 
->[!question] Progettare un algoritmo che prende come parametro un intero $n$ e stampa tutte le matrici binarie $n\times n$ in cui non compaiono uni adiacenti (in orizzontale, verticale o diagonale)
->Ad esempio per $n=3$ bisogna stampare le seguenti $2^9=512$ matrici quadrate $3\times 3$ bisogna stampare le seguenti $34$:
->![[Pasted image 20250515234124.png]]
->
->La complessità dell’algoritmo deve essere $O(n^2S(n))$ dove $S(n)$ è il numero di matrici da stampare
->
->>[!done]-
->>Implementazione:
->>```python
->>def es(n):
->>	sol=[[0]*n for _ in range(n)]
->>	es1(n, sol)
->>
->>def es1(n, sol, i=0, j=0):
->>	if i==n:          # non necessario j, infatti i==n vuol dire che ho
->>		for k in sol: # superato la fine
->>			print(k)
->>		print()
->>	i1,j1 = i,j+1
->>	if j1==n:
->>		i1,j1 = i+1,0
->>	sol[i][j]=0
->>	es1(n, sol, i1, j1)
->>	if T[max(i-1,0),j]==1 or T[i,max(j-1,0)] or T[max(i-1,0),max(j-1,0)]:
->>		sol[i][j]=1
->>		es1(n, sol, i1, j1)
->>```
->>
->>L’albero di ricorsione è binario e di altezza $n^2$ e solo i nodi che portano ad una delle $S(n)$ soluzioni vengono effettivamente generati
->>
->>I nodi interni all’albero di ricorsione effettivamente generati saranno $O(S(n)\cdot n^2)$ e la foglie effettivamente generate saranno $S(n)$. Ciascun nodo interno richiede tempo $O(1)$ e ciascuna foglia richiede $O(n^2)$
->>
->>Il tempo totale sarà $O(S(n)\cdot n^2)+O(S(n)\cdot n^2)=O(S(n)\cdot n^2)$
->>L’algoritmo proposto è ottimo
-
 >[!question] Progettare un algoritmo che prende come parametro un intero $n$ e stampa tutte le matrici binarie $n\times n$ in cui righe e colonne risultano ordinate in modo non decrescente
 >Ad esempio per $n=2$ bisogna stampare le seguenti $2^4=16$ matrici quadrate $3\times 3$ bisogna stampare le seguenti $6$:
 >![[Pasted image 20250515235045.png]]
@@ -268,6 +233,40 @@ Related:
 >>
 >>Il tempo totale sarà $O(S(n)\cdot n^2)+O(S(n)\cdot n^2)=O(S(n)\cdot n^2)$
 >>L’algoritmo proposto è ottimo
+
+>[!question] Progettare un algoritmo che prende come parametro un intero $n$ e stampa tutte le permutazioni dei numeri da $0$ a $n-1$
+>Ad esempio per $n=4$ bisogna stampare le seguenti $4!=24$ permutazioni:
+>![[Pasted image 20250516002328.png]]
+>
+>>[!done]-
+>>Implementazione:
+>>```python
+>>def es(n):
+>>	sol=[[0]*n for _ in range(n)]
+>>	es1(n, sol)
+>>
+>>def es1(n, sol, i=0, j=0):
+>>    if i==n:          # non necessario j, infatti i==n vuol dire che ho
+>>        for k in sol: # superato la fine
+>>            print(k)
+>>        print()
+>>        return
+>>    i1,j1 = i,j+1
+>>    if j1==n:
+>>        i1,j1 = i+1,0
+>>    if (i==0 or sol[i-1][j]==0) and (j==0 or sol[i][j-1]==0):
+>>        sol[i][j]=0
+>>        es1(n, sol, i1, j1)
+>>    sol[i][j]=1
+>>```
+>>
+>>L’albero di ricorsione è binario e di altezza $n^2$ e solo i nodi che portano ad una delle $S(n)$ soluzioni vengono effettivamente generati
+>>
+>>I nodi interni all’albero di ricorsione effettivamente generati saranno $O(S(n)\cdot n^2)$ e la foglie effettivamente generate saranno $S(n)$. Ciascun nodo interno richiede tempo $O(1)$ e ciascuna foglia richiede $O(n^2)$
+>>
+>>Il tempo totale sarà $O(S(n)\cdot n^2)+O(S(n)\cdot n^2)=O(S(n)\cdot n^2)$
+>>L’algoritmo proposto è ottimo
+
 
 
 
