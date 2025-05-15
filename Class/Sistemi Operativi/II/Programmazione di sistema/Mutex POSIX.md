@@ -19,7 +19,7 @@ Related:
 	- [[#POSIX Mutex#$ verb pthread_mutex_destroy $|pthread_mutex_destroy]]
 - [[#Sincronizzazione thread|Sincronizzazione thread]]
 	- [[#Sincronizzazione thread#Barriera|Barriera]]
-		- [[#Barriera#$ verb pthread_barrier_init $|pthread_barrier_init]]
+		- [[#Barriera#$ verb pthread_barrier_init $|pthread_barrier_init]]w
 		- [[#Barriera#$ verb pthread_barrier_wait $|pthread_barrier_wait]]
 		- [[#Barriera#$ verb pthread_barrier_destroy $|pthread_barrier_destroy]]
 	- [[#Sincronizzazione thread#Condition|Condition]]
