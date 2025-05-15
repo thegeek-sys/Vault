@@ -248,18 +248,18 @@ Related:
 >>	es1(n, sol)
 >>
 >>def es1(n, sol, i=0, j=0):
->>	if i==n:          # non necessario j, infatti i==n vuol dire che ho
->>		for k in sol: # superato la fine
->>			print(k)
->>		print()
->>	i1,j1 = i,j+1
->>	if j1==n:
->>		i1,j1 = i+1,0
->>	sol[i][j]=0
->>	es1(n, sol, i1, j1)
->>	if T[max(i-1,0),j]==1 or T[i,max(j-1,0)] or T[max(i-1,0),max(j-1,0)]
->>	sol[i][j]=1
->>	es1(n, sol, i1, j1)
+>>    if i==n:          # non necessario j, infatti i==n vuol dire che ho
+>>        for k in sol: # superato la fine
+>>            print(k)
+>>        print()
+>>        return
+>>    i1,j1 = i,j+1
+>>    if j1==n:
+>>        i1,j1 = i+1,0
+>>    if (i==0 or sol[i-1][j]==0) and (j==0 or sol[i][j-1]==0):
+>>        sol[i][j]=0
+>>        es1(n, sol, i1, j1)
+>>    sol[i][j]=1
 >>```
 >>
 >>L’albero di ricorsione è binario e di altezza $n^2$ e solo i nodi che portano ad una delle $S(n)$ soluzioni vengono effettivamente generati
@@ -277,16 +277,16 @@ Related:
 >>	es1(n, sol)
 >>
 >>def es1(n, sol, i=0, j=0):
->>	if i==n:          # non necessario j, infatti i==n vuol dire che ho
->>		for k in sol: # superato la fine
->>			print(k)
->>		print()
->>	i1,j1 = i,j+1
->>	if j1==n:
->>		i1,j1 = i+1,0
->>	sol[i][j]=0
->>	es1(n, sol, i1, j1)
->>	if sol[max(i-1,0),j]==1 or sol[i,max(j-1,0)]==1 or sol[max(i-1,0),max(j-1,0)]==1:
->>		sol[i][j]=1
->>		es1(n, sol, i1, j1)
+>>    if i==n:          # non necessario j, infatti i==n vuol dire che ho
+>>        for k in sol: # superato la fine
+>>            print(k)
+>>        print()
+>>        return
+>>    i1,j1 = i,j+1
+>>    if j1==n:
+>>        i1,j1 = i+1,0
+>>    if (i==0 or sol[i-1][j]==0) and (j==0 or sol[i][j-1]==0):
+>>        sol[i][j]=0
+>>        es1(n, sol, i1, j1)
+>>    sol[i][j]=1
 >>```
