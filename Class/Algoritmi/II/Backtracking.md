@@ -248,29 +248,25 @@ Related:
 >>Implementazione:
 >>```python
 >>def es(n):
->>	sol=[[0]*n for _ in range(n)]
->>	es1(n, sol)
+>>	preso=[0]*n
+>>	es1(n, [], preso)
 >>
->>def es1(n, sol, i=0, j=0):
->>    if i==n:          # non necessario j, infatti i==n vuol dire che ho
->>        for k in sol: # superato la fine
->>            print(k)
->>        print()
->>        return
->>    i1,j1 = i,j+1
->>    if j1==n:
->>        i1,j1 = i+1,0
->>    if (i==0 or sol[i-1][j]==0) and (j==0 or sol[i][j-1]==0):
->>        sol[i][j]=0
->>        es1(n, sol, i1, j1)
->>    sol[i][j]=1
+>>def es1(n, sol, preso):
+>>	if len(sol)==n:
+>>		print(sol)
+>>		return
+>>	for j in range(n):
+>>	    if preso[j]==0:
+>>		    sol.append(k)
+>>		    preso[j]=1
+>>		    es1(n, sol, preso)
+>>		    sol.pop()
+>>		    preso[j]=0
 >>```
 >>
->>L’albero di ricorsione è binario e di altezza $n^2$ e solo i nodi che portano ad una delle $S(n)$ soluzioni vengono effettivamente generati
+>>L’albero delle permutazioni ha $\Theta(n!)$ nodi interni e $n!$ foglie e ciascun nodo interno richiede tempo $\Theta(n)$ e ciascuna foglia richiede $\Theta(n)$
 >>
->>I nodi interni all’albero di ricorsione effettivamente generati saranno $O(S(n)\cdot n^2)$ e la foglie effettivamente generate saranno $S(n)$. Ciascun nodo interno richiede tempo $O(1)$ e ciascuna foglia richiede $O(n^2)$
->>
->>Il tempo totale sarà $O(S(n)\cdot n^2)+O(S(n)\cdot n^2)=O(S(n)\cdot n^2)$
+>>Il tempo totale sarà $\Theta(n!\cdot n)$
 >>L’algoritmo proposto è ottimo
 
 
@@ -278,20 +274,18 @@ Related:
 
 ```python
 >>def es(n):
->>	sol=[[0]*n for _ in range(n)]
->>	es1(n, sol)
+>>	preso=[0]*n
+>>	es1(n, [], preso)
 >>
->>def es1(n, sol, i=0, j=0):
->>    if i==n:          # non necessario j, infatti i==n vuol dire che ho
->>        for k in sol: # superato la fine
->>            print(k)
->>        print()
->>        return
->>    i1,j1 = i,j+1
->>    if j1==n:
->>        i1,j1 = i+1,0
->>    if (i==0 or sol[i-1][j]==0) and (j==0 or sol[i][j-1]==0):
->>        sol[i][j]=0
->>        es1(n, sol, i1, j1)
->>    sol[i][j]=1
+>>def es1(n, sol, preso):
+>>	if len(sol)==n:
+>>		print(sol)
+>>		return
+>>	for j in range(n):
+>>	    if preso[j]==0:
+>>		    sol.append(k)
+>>		    preso[j]=1
+>>		    es1(n, sol, preso)
+>>		    sol.pop()
+>>		    preso[j]=0
 >>```
