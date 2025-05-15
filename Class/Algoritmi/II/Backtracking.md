@@ -7,7 +7,7 @@ Related:
 ## Index
 - [[#Esercizi|Esercizi]]
 ---
-## Esercizi
+## Esercizi liste
 
 >[!question] Progettare un algoritmo che prendere come parametro un intero $n$ e stampa tutte le stringhe binarie lunghe $n$
 >Ad esempio per $n=3$ l’algoritmo deve stampare $2^3=8$ stringhe:
@@ -164,3 +164,68 @@ Related:
 >>
 >>La complessità dell’algoritmo è $O(n^{k+1})$ infatti: $S(n,k)=\binom{n}{k}<n^k$
 
+---
+## Esercizi matrici
+
+>Progettare un algoritmo che prende come parametro un intero $n$ e stampa tutte le matrici binarie $n\times n$
+>Ad esempio per $n=2$ bisogna stampare le seguenti $2^4=16$ matrici:
+>![[Pasted image 20250515233047.png]]
+>
+>>[!done]-
+>>Implementazione:
+>>```python
+>>def es(n):
+>>	sol=[[0]*n for _ in range(n)]
+>>	es1(n, sol)
+>>
+>>def es1(n, sol, i=0, j=0):
+>>	if i==n:          # non necessario j, infatti i==n vuol dire che ho
+>>		for k in sol: # superato la fine
+>>			print(k)
+>>		print()
+>>	i1,j1 = i,j+1
+>>	if j1==n:
+>>		i1,j1 = i+1,0
+>>	sol[i][j]=0
+>>	es1(n, sol, i1, j1)
+>>	sol[i][j]=1
+>>	es1(n, sol, i1, j1)
+>>```
+>>
+>>L’albero di ricorsione è binario e di altezza $n^2$; ha dunque $2^{n^2}-1$ nodi interni e $2^{n^2}$ foglie. Ciascun nodo interno richiede tempo $O(1)$ e ciascuna foglia $\Theta(n^2)$
+>>L’algoritmo ha complessità $O(2^{n^2}n^2)$
+>>
+>>Poiché le matrici da stampare sono $2^{n^2}$ e la stampa di una matrice richiede $\Theta(n^2)$, qualunque algoritmo di per questo problema richiede $\Omega(2^{n^2}n^2)$
+>>
+>>L’algoritmo è ottimo
+
+>Progettare un algoritmo che prende come parametro un intero $n$ e stampa tutte le matrici binarie $n\times n$ in cui non compaiono uni adiacenti (in orizzontale, verticale o diagonale)
+>Ad esempio per $n=3$ bisogna stampare le seguenti $2^9=512$ matrici quadrate $3\times 3$ bisogna stampare le seguenti $34$:
+>![[Pasted image 20250515234124.png]]
+>
+>La complessità dell’algoritmo deve essere $O(n^2S(n))$ dove $S(n)$ è il numero di matrici da stampare
+>
+>>[!done]-
+>>Implementazione:
+>>
+
+
+```python
+>>def es(n):
+>>	sol=[[0]*n for _ in range(n)]
+>>	es1(n, sol)
+>>
+>>def es1(n, sol, i=0, j=0):
+>>	if i==n:          # non necessario j, infatti i==n vuol dire che ho
+>>		for k in sol: # superato la fine
+>>			print(k)
+>>		print()
+>>	i1,j1 = i,j+1
+>>	if j1==n:
+>>		i1,j1 = i+1,0
+>>	sol[i][j]=0
+>>	es1(n, sol, i1, j1)
+>>	if T[i-1,j]==1 or T[i,j-1] or T[max(i-1, 0),]
+>>	sol[i][j]=1
+>>	es1(n, sol, i1, j1)
+>>```
