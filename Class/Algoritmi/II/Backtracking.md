@@ -269,10 +269,13 @@ Related:
 >>Il tempo totale sarà $\Theta(n!\cdot n)$
 >>L’algoritmo proposto è ottimo
 
-
-
-
-```python
+>[!question] Progettare un algoritmo che prende come parametro un intero $n$ e stampa tutte le permutazioni dei numeri da $0$ a $n-1$ dove nelle posizioni pari compaiono numeri pari e viceversa
+>Ad esempio per $n=5$ delle $5!=125$ permutazioni bisogna stampare le seguenti $12$:
+>![[Pasted image 20250516004444.png]]
+>
+>>[!done]-
+>>Implementazione:
+>>```python
 >>def es(n):
 >>	preso=[0]*n
 >>	es1(n, [], preso)
@@ -282,10 +285,18 @@ Related:
 >>		print(sol)
 >>		return
 >>	for j in range(n):
->>	    if preso[j]==0:
+>>	    if preso[j]==0 and j%2==len(sol)%s:
 >>		    sol.append(k)
 >>		    preso[j]=1
 >>		    es1(n, sol, preso)
 >>		    sol.pop()
 >>		    preso[j]=0
 >>```
+>>
+>>L’albero delle permutazioni è di altezza $n$ e solo i nodi che portano ad una delle $S(n)$ soluzioni vengono effettivamente generati
+>>
+>>I nodi effettivamente generati saranno $O(S(n)\cdot n)$ e le foglie effettivamente generate saranno $S(n)$. Ciascun nodo interno richiede tempo $\Theta(n)$ e ciascuna foglia richiede tempo $\Theta(n)$
+>>
+>>Il tempo totale sarà $O(S(n)\cdot n)\cdot \Theta(n)+S(n)\cdot \Theta(n)=O(S(n)\cdot n^2)$
+>>L’algoritmo proposto è ottimo
+
