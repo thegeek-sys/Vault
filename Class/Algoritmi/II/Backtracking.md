@@ -238,6 +238,12 @@ Related:
 >Ad esempio per $n=4$ bisogna stampare le seguenti $4!=24$ permutazioni:
 >![[Pasted image 20250516002328.png]]
 >
+>>[!info] Albero delle permutazioni
+>>![[Pasted image 20250516002529.png]]
+>>
+>>L’albero delle permutazioni ha $\Theta(n!)$ foglie e $\Theta(n!)$ nodi interni
+>>$$\text{nodi int.}=\sum^n_{i=0} \frac{n!}{i!}<n!\cdot \sum^{\infty}_{i=0} \frac{1}{i!}\leq n!\cdot \sum^{\infty}_{i=0} \frac{2}{2^i}=n! \frac{2}{1-1/2}=4\cdot n!$$
+>
 >>[!done]-
 >>Implementazione:
 >>```python
