@@ -284,9 +284,9 @@ Related:
 >>	i1,j1 = i,j+1
 >>	if j1==n:
 >>		i1,j1 = i+1,0
->>	sol[i][j]=1
+>>	sol[i][j]=0
 >>	es1(n, sol, i1, j1)
->>	if T[max(i-1,0),j]==0 or T[i,max(j-1)]:
->>		sol[i][j]=0
+>>	if sol[max(i-1,0),j]==1 or sol[i,max(j-1,0)]==1 or sol[max(i-1,0),max(j-1,0)]==1:
+>>		sol[i][j]=1
 >>		es1(n, sol, i1, j1)
 >>```
