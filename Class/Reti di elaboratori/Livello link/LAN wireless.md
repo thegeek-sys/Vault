@@ -117,3 +117,9 @@ La ESS è un’architettura molto comune nelle reti Wi-Fi moderne, soprattutto i
 ![[Pasted image 20250517125651.png|580]]
 
 ### Architettura generale
+![[Pasted image 20250517125946.png|400]]
+
+---
+## Canali e associazione
+Lo spettro $2.4 \text{ GHz}-2.485 \text{ GHz}$ è diviso in $11$ canali parzialmente sovrapposti
+L’amministratore dell’AP sceglie una frequenza, ma sono possibili delle interferenze (stesso canale per AP vicini) e il numero massimo di frequenza utilizzabili da diversi AP per evitare interferenze è 
