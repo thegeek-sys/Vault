@@ -60,3 +60,60 @@ La forza dei segnali elettromagnetici diminuisce rapidamente all’aumentare del
 ![[Pasted image 20250517112628.png|400]]
 
 ### Propagazione multi-path
+Quando un’onda radio trova un ostacolo, tutta o una parte dell’onda è riflessa, con una perdita di potenza
+Un segnale sorgente può arrivare, tramite riflessi successivi (su muri, terreno, oggetti), a raggiungere una stazione o un punto di accesso attraverso percorsi multipli
+
+![[Pasted image 20250517124218.png|350]]
+
+### Interferenze
+Si possono avere due tipi di interferenze:
+- dalla stessa sorgente → un destinatario può ricevere più segnali dal mittente desiderato a causa del multipath
+- da altre sorgenti → altri trasmettitori stanno usando la stessa banda di frequenza per comunicare con altri destinatari
+
+---
+## Errori
+Le caratteristiche dei link wireless causano errori. Il tasso di errore è misurato con il *Signal to Noise Radio* (**SNR**, o rapporto segnale-rumore) che misura il rapporto tra il segnale buono e il rumore esterno
+
+Se l’SNR è alto, il segnale è più forte del rumore, quindi può essere convertito in dati reali, se invece è basso il segnale è stato danneggiato dal rumore e i dati non possono essere recuperati
+
+### Controllo dell’accesso al mezzo condiviso
+Per evitare collisioni (trasmissioni che si sovrappongono) è necessario controllare l’accesso al mezzo
+
+>[!question] Perche non si può usare il CSMA/CD anche per le reti wireless?
+>##### No collision detection
+>Per rilevare una collisione un host deve poter trasmettere (il proprio frame) e ricevere (ascoltare il canale) conteportaneamente
+>
+>Poiché la potenza del segnale ricevuto è molto inferiore a quella del segnale trasmesso, sarebbe troppo costoso usare un adattatore in grado di rilevare le collisioni (i dispositivi wireless hanno un’energia limitata fornita dalla batteria che non gli consente di usare un tale dispositvo)
+>
+>##### Hidden terminal problem
+>Un host potrebbe non accorgersi che un altro host sta trasmettendo e quindi non sarebbe in grado rilevare la collisione (ascoltando il canale)
+>
+>Attenuazione del segnale:
+>![[Pasted image 20250517125050.png|350]]
+>
+>Ostacoli:
+>![[Pasted image 20250517125116.png|250]]
+
+---
+## IEEE 802.11
+La IEEE ha definito le specifiche per le LAN wireless, chiamate $802.11$, che coprono i livelli fisico e collegamento
+
+Il Wi-Fi (wireless fidelity) è una LAN wireless dalla Wi-Fi Alliance, ovvero un’associazione ($300$ aziende) no profit che si occupa di promuovere la crescita delle LAN wireless
+
+---
+## Architettura
+### BSS
+La **BSS** (*Basic Service Set*) è una LAN wireless costituita da uno o più host wireless e da un access point
+
+![[Pasted image 20250517125454.png]]
+
+### ESS
+La **ESS** (*Extended Service Set*) è una LAN wireless costituita da due o più BSS con infrastruttura
+
+I BSS sono collegati tramite un sistema di distribuzione che è una rete cablata (Ethernet) o wireless. Quando i BSS sono collegati, le stazioni in visibilità comunicano direttamente, mentre le altre comunicano tramite l’AP
+
+La ESS è un’architettura molto comune nelle reti Wi-Fi moderne, soprattutto in ambienti dove è necessario coprire aree estese con accesso continuo alla rete wireless
+
+![[Pasted image 20250517125651.png|580]]
+
+### Architettura generale
