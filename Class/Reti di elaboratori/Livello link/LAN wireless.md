@@ -236,9 +236,18 @@ Una stazione (nell’esempio C) si astiene dall’usare il canale anche se potre
 ![[Pasted image 20250517182917.png]]
 
 - **FC** (frame control) → indica il tipo di frame e alcune informazioni di controllo; una LAN wireless ha 3 categorie di frame
+	-  ![[Pasted image 20250517184345.png]]
 	- *00* → frame di gestione, usati per le comunicazioni iniziali tra stazioni e punti di accesso
 	- *01* → frame di controllo, si usano per accedere al canale e dare discontro (si imposta il subtype in questo modo $1011$ per RTS, $1100$ per CTS, $1101$ per ACK)
 	- *10* → frame di dati, vengono usati per trasportare i dati
+		- frame di controllo
 - **D** → durata della trasmissione, usata per impostare il NAV (impostata sia per DATA che per RTS che CTS)
 - **indirizzi** → indirizzi MAC
-- **SC** → informazioni sui frammenti ($\#\text{frammento e }\#\text{sequenza}$); il numero di numero di sequenza serve per distinguere frame ritrasmessi come nel livello trasporto (ACK possono andare )
+- **SC** → informazioni sui frammenti ($\#\text{frammento e }\#\text{sequenza}$); il numero di numero di sequenza serve per distinguere frame ritrasmessi come nel livello trasporto (ACK possono andare perduti)
+- **Frame body** → payload
+- **FCS** → codice CRC a 32 bit
+
+#### Frame di controllo
+![[Pasted image 20250517184453.png|450]]
+
+![[Pasted image 20250517184510.png|450]]
