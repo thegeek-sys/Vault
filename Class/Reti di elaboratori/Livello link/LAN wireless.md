@@ -5,6 +5,39 @@ Related:
   - "[[Livello link]]"
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#Elementi|Elementi]]
+- [[#Caratteristiche|Caratteristiche]]
+	- [[#Caratteristiche#Migrazione dall’ambiente cablato al wireless|Migrazione dall’ambiente cablato al wireless]]
+- [[#Reti ad hoc|Reti ad hoc]]
+- [[#Caratteristiche del link wireless|Caratteristiche del link wireless]]
+	- [[#Caratteristiche del link wireless#Attenuazione del segnale|Attenuazione del segnale]]
+	- [[#Caratteristiche del link wireless#Propagazione multi-path|Propagazione multi-path]]
+	- [[#Caratteristiche del link wireless#Interferenze|Interferenze]]
+- [[#Errori|Errori]]
+	- [[#Errori#Controllo dell’accesso al mezzo condiviso|Controllo dell’accesso al mezzo condiviso]]
+- [[#IEEE 802.11|IEEE 802.11]]
+- [[#Architettura|Architettura]]
+	- [[#Architettura#BSS|BSS]]
+	- [[#Architettura#ESS|ESS]]
+	- [[#Architettura#Architettura generale|Architettura generale]]
+- [[#Canali e associazione|Canali e associazione]]
+- [[#Protocollo MAC 802.11|Protocollo MAC 802.11]]
+- [[#CMSA/CA|CMSA/CA]]
+	- [[#CMSA/CA#ACK|ACK]]
+	- [[#CMSA/CA#Spazio interframe|Spazio interframe]]
+	- [[#CMSA/CA#Finestra di contesa|Finestra di contesa]]
+	- [[#CMSA/CA#Evitare collisioni sul destinatario|Evitare collisioni sul destinatario]]
+	- [[#CMSA/CA#RTS/CTS|RTS/CTS]]
+	- [[#CMSA/CA#NAV|NAV]]
+	- [[#CMSA/CA#Collisioni durante l’handshaking|Collisioni durante l’handshaking]]
+	- [[#CMSA/CA#Problema della stazione esposta|Problema della stazione esposta]]
+	- [[#CMSA/CA#Formato del frame|Formato del frame]]
+		- [[#Formato del frame#Frame di controllo|Frame di controllo]]
+		- [[#Formato del frame#Indirizzamento|Indirizzamento]]
+- [[#Mobilità all’interno della stessa sottorete IP|Mobilità all’interno della stessa sottorete IP]]
+---
 ## Introduction
 Esistono diversi tipi di reti wireless:
 - LAN wireless → disponibili in campus universitari, uffici, bar, aree pubbliche
@@ -268,3 +301,17 @@ In sintesi si può dire che in $\text{Address 1}$ ci sta l’indirizzo del dispo
 
 ---
 ## Mobilità all’interno della stessa sottorete IP
+All’interno della stessa sottorete la mobilità è semplice e l’IP rimane lo stesso
+
+![[Pasted image 20250517190040.png|550]]
+
+Per fare in modo di cambiare AP mantenendo attive tutte le connessioni TCP :
+- $H1$ sente che il segnale da $AP 1$ si affievolisce e avvia una scansione per un segnale più forte
+- $H 1$ rileva $AP 2$, si dissocia da $AP 1$ e si associa a $AP 2$, mentendo lo stesso IP e sessioni TCP
+
+>[!question] Come si comporta lo switch?
+>Autoimapara, ma non può supportare utenti con elevata mobilità
+>
+>In particolare $AP 2$ invia un frame broadcast allo switch con indirizzo mittente $H 1$ e lo switch capisce che $H 1$ è ora nel $BSS 2$
+>
+>Un protocollo inter-AP è in via di sviluppo
