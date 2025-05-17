@@ -241,4 +241,4 @@ Una stazione (nell’esempio C) si astiene dall’usare il canale anche se potre
 	- *10* → frame di dati, vengono usati per trasportare i dati
 - **D** → durata della trasmissione, usata per impostare il NAV (impostata sia per DATA che per RTS che CTS)
 - **indirizzi** → indirizzi MAC
-- **SC** → informazioni sui frammenti ($\#\text{frammento e }\#\text{sequenza}$); il numero di 
+- **SC** → informazioni sui frammenti ($\#\text{frammento e }\#\text{sequenza}$); il numero di numero di sequenza serve per distinguere frame ritrasmessi come nel livello trasporto (ACK possono andare )
