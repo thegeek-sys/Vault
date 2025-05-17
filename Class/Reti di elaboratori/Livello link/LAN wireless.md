@@ -223,4 +223,6 @@ Le stazioni influenzate da tale trasmissione avviano un timer chiamato NAV che i
 
 ### Collisioni durante l’handshaking
 
->[!question]
+>[!question] Cosa succede se avviene una collisione durante la trasmissione di RTS o CTS?
+>Se il mittente non riceve CTS allora assume che c’è stata collisione e riprova dopo un tempo di backoff
+
