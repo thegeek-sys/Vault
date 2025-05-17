@@ -32,3 +32,7 @@ Una LAN wireless è composta da:
 - *base station* → tipicamente connesso ad una rete cablata; rasponsabile di mandare pacchetti tra la rete cablata e gli host wireless nella propria “area”
 - *wireless link* → tipicamente usato per connettere gli host alla base station (usato anche come collegamento con il backbone); i protocolli ad accesso multiplo regolano l’accesso al link ed ha vari rates e range di trasmissione
 
+![[Screenshot 2025-05-17 at 11.09.15.png]]
+
+---
+## Caratteristiche
