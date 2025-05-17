@@ -220,3 +220,7 @@ Le stazioni influenzate da tale trasmissione avviano un timer chiamato NAV che i
 
 >[!info]
 >Ogni stazione, prima di ascoltare il canale, verifica il NAV
+
+### Collisioni durante l’handshaking
+
+>[!question]
