@@ -226,3 +226,19 @@ Le stazioni influenzate da tale trasmissione avviano un timer chiamato NAV che i
 >[!question] Cosa succede se avviene una collisione durante la trasmissione di RTS o CTS?
 >Se il mittente non riceve CTS allora assume che c’è stata collisione e riprova dopo un tempo di backoff
 
+### Problema della stazione esposta
+Una stazione (nell’esempio C) si astiene dall’usare il canale anche se potrebbe trasmettere (C è la stazione esposta)
+
+![[Pasted image 20250517182840.png]]
+
+### Formato del frame
+
+![[Pasted image 20250517182917.png]]
+
+- **FC** (frame control) → indica il tipo di frame e alcune informazioni di controllo; una LAN wireless ha 3 categorie di frame
+	- *00* → frame di gestione, usati per le comunicazioni iniziali tra stazioni e punti di accesso
+	- *01* → frame di controllo, si usano per accedere al canale e dare discontro (si imposta il subtype in questo modo $1011$ per RTS, $1100$ per CTS, $1101$ per ACK)
+	- *10* → frame di dati, vengono usati per trasportare i dati
+- **D** → durata della trasmissione, usata per impostare il NAV (impostata sia per DATA che per RTS che CTS)
+- **indirizzi** → indirizzi MAC
+- **SC** → informazioni sui frammenti ($\#\text{frammento e }\#\text{sequenza}$); il numero di 
