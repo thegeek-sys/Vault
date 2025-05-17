@@ -137,3 +137,23 @@ L’AP accetta la richiesta con un frame di risposta associazione che permetter�
 
 ---
 ## Protocollo MAC 802.11
+Più stazioni possono voler comunicare nello stesso momento. Sono state quindi definite due tecniche di accesso al mezzo:
+- **distributed coordination function** (*DCF*) → i nodi si contendono l’accesso al canale (sistema distribuito)
+- **point coordination function** (*PCF*) → non ci sta contesa e l’AP coordina l’accesso dei nodi al canale (sistema centralizzato)
+
+D’ora in poi analizzeremo il DCF
+
+---
+## CMSA/CA
+Il **CSMA/CA** permette di evitare le collisioni quando due o più nodi provano a trasmette simultaneamente (nel CSMA/CD, le collisioni venivano trovate, qui evitate)
+
+### ACK
+Poiché non è possibile effettuare collision detection come precedentemente detto, è necessario un riscontro per capire se una trasmissione è andata a buon fine. Per farlo si utilizza un **ACK**
+
+![[Pasted image 20250517171333.png|250]]
+
+>[!warning]
+>Ci sta possibilità di collisione anche sull’ack
+
+### Spazio interframe
+Lo **spazio interframe** (*IFS*)
