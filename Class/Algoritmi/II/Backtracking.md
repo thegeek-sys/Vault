@@ -300,4 +300,3 @@ Related:
 >>Il tempo totale sarà $O(S(n)\cdot n)\cdot \Theta(n)+S(n)\cdot \Theta(n)=O(S(n)\cdot n^2)$
 >>L’algoritmo proposto è ottimo
 
-p
