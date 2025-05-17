@@ -150,6 +150,8 @@ Il **CSMA/CA** permette di evitare le collisioni quando due o più nodi provano 
 ### ACK
 Poiché non è possibile effettuare collision detection come precedentemente detto, è necessario un riscontro per capire se una trasmissione è andata a buon fine. Per farlo si utilizza un **ACK**
 
+Però il mittente non può aspettare l’ACK all’infinito per sapere se i dati sono stati ricevuti correttamente, dunque imposta un timer. Se il timer scade senza aver ricevuto l’ACK, il nodo suppone che la trasmissione sia fallita e tenta una ritrasmissione (il Wi-Fi ritrasmette fino a 7 volte)
+
 ![[Pasted image 20250517171333.png|250]]
 
 >[!warning]
@@ -181,6 +183,40 @@ Dopo aver atteso un tempo IFS, se il canale è ancora inattivo, la stazione atte
 
 La **finestra di contesa** (*contention window*) è il lasso di tempo (backoff) per cui deve sentire il canale libero prima di trasmettere (il tempo è suddiviso in slot e ad ogni slot si esegue il sensing del canale)
 
-In particolare si sceglie un $R$ casuale in $[0,CW]$, e finché $R>0$ e si ascolta il canale. Se il canale è libero per la durata dello slot $R=R-1$, altrimenti interrompe il timer e aspetta che il canale si liberi (e riavvia il timer)
+In particolare si sceglie un $R$ casuale in $[0,CW-1]$, e finché $R>0$ e si ascolta il canale. Se il canale è libero per la durata dello slot $R=R-1$, altrimenti interrompe il timer e aspetta che il canale si liberi (e riavvia il timer da dove lo aveva lasciato)
 
 ![[Pasted image 20250517172552.png|550]]
+
+Nel complesso ora si ha
+- fase 1 → attesa dell’IFS (es. DIFS)
+	- il nodo rileva il canale libero
+	- attende un tempo fisso (es. in IEEE 802.11b $34\mu s$ per DIFS)
+	- se il canale rimane libero per tutto il DIFS, si passa alla finestra di contesa
+- fase 2 → finestra di contesa (backoff)
+	- il nodo scegli un numero casuale in un intervallo $[0,CW-1]$, dove $CW$ è la contention window
+	- ogni unità di tempo della finestra si chiama slot time (es. $20\mu s$)
+	- il nodo inizia a contare all’indietro (backoff counter), solo se il canale rimane libero
+
+>[!example] Esempio
+>Se $CW=16$ l’intervallo è $[0,15]$. Supponiamo si scelga casualmente il $7$
+>
+>Quindi il nodo attende $7\cdot \text{slot time}=7\cdot 20\mu s=140\mu s$, solo se il canale è libero
+>
+>Se durante questo tempo qualcun altro inizia a trasmettere, il nodo pausa il coundown, e lo riprende da dove lo aveva interrotto una volta che il canale torna libero
+
+### Evitare collisioni sul destinatario
+Per fare in modo che le stazioni che non sono coinvolte nella comunicazione (sono nel raggio di trasmissione della destinazione ma non del mittente) sappiano quanto tempo devono astenersi dal trasmettere si utilizza l’RTS e CTS
+
+### RTS/CTS
+Il problema dell’hidden terminal non viene risolto con l’IFS e la finestra contesa. E’ dunque necessario un meccanismo di prenotazione del canale: il *request to send* (**RTS**) e *clear to send* (**CTS**)
+
+![[Pasted image 20250517180406.png|500]]
+
+### NAV
+Quando una stazione invia un frame RTS include la durata di tempo in cui occuperà il canale per trasmettere il frame e riceve l’ACK
+Questo tempo viene incluso anche nel CTS (per i vicini del destinatario)
+
+Le stazioni influenzate da tale trasmissione avviano un timer chiamato NAV che indica quanto tempo devono attendere prima di eseguire il sensing del canale
+
+>[!info]
+>Ogni stazione, prima di ascoltare il canale, verifica il NAV
