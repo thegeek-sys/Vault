@@ -250,4 +250,21 @@ Una stazione (nell’esempio C) si astiene dall’usare il canale anche se potre
 #### Frame di controllo
 ![[Pasted image 20250517184453.png|450]]
 
-![[Pasted image 20250517184510.png|450]]
+#### Indirizzamento
+In base ai campi $\text{To DS}$ e $\text{From DS}$ del campo FC, si ha un diverso formato per i campi degli indirizzi
+
+| Significato                    | To DS | From DS | Address 1    | Address 2   | Address 3    | Address 4 |
+| ------------------------------ | ----- | ------- | ------------ | ----------- | ------------ | --------- |
+| comunicazione diretta (ad-hoc) | 0     | 0       | destinazione | sorgente    | BSS ID       | N/A       |
+| da AP a host                   | 0     | 1       | destinazione | AP mittente | sorgente     | N/A       |
+| da host ad AP                  | 1     | 0       | AP ricevente | sorgente    | destinazione | N/A       |
+| da AP ad AP                    | 1     | 1       | AP ricevente | AP mittente | destinazione | sorgente  |
+In sintesi si può dire che in $\text{Address 1}$ ci sta l’indirizzo del dispositivo successivo a cui viene trasmesso il frame, mentre in $\text{Address 2}$ l’indirizzo del dispositivo che il frame ha lasciato
+
+![[Pasted image 20250517185352.png|400]]
+![[Pasted image 20250517185422.png|400]]
+![[Pasted image 20250517185438.png|400]]
+![[Pasted image 20250517185503.png|400]]
+
+---
+## Mobilità all’interno della stessa sottorete IP
