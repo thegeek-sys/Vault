@@ -122,4 +122,18 @@ La ESS è un’architettura molto comune nelle reti Wi-Fi moderne, soprattutto i
 ---
 ## Canali e associazione
 Lo spettro $2.4 \text{ GHz}-2.485 \text{ GHz}$ è diviso in $11$ canali parzialmente sovrapposti
-L’amministratore dell’AP sceglie una frequenza, ma sono possibili delle interferenze (stesso canale per AP vicini) e il numero massimo di frequenza utilizzabili da diversi AP per evitare interferenze è 
+L’amministratore dell’AP sceglie una frequenza, ma sono possibili delle interferenze (stesso canale per AP vicini) e il numero massimo di frequenza utilizzabili da diversi AP per evitare interferenze è 3 (usando i canali 1, 6, 11)
+I canali non interferiscono se separati da 4 o più canali
+
+L’architettura IEEE 802.11 prevede che una stazione wireless si associ ad un AP per accedere a Internet
+
+Per associare una stazione (host) ad un AP è necessario conoscere gli AP disponibili in un BSS e un protocollo di associazione
+
+In particolare l’AP invia segnali periodici (beacon) che includono l’identificatore dell’AP (*Service Set Identifier* - **SSID**) e il suo indirizzo MAC. La stazione wireless che vuole entrare in un BSS scandisce gli $11$ canali trasmissivi alla ricerca di frame beacon (passive scanning) e alla fine della scansione, la stazione sceglie l’AP da cui ha ricevuto il beacon con la maggiore potenza di segnale e gli invia un frame con la richiesta di associazione
+L’AP accetta la richiesta con un frame di risposta associazione che permetterà all’host entrante di inviare una richiesta DHCP per ottenere un indirizzo IP
+
+>[!warning]
+>Può essere prevista un’autenticazione per eseguire l’associazione
+
+---
+## Protocollo MAC 802.11
