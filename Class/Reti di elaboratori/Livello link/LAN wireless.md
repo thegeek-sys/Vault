@@ -36,3 +36,27 @@ Una LAN wireless è composta da:
 
 ---
 ## Caratteristiche
+Si hanno numerose differenze rispetto ad una classica rete calbata:
+- mezzo trasmissivo → aria, segnale broadcast, mezzo condiviso dagli host della rete
+- host wireless → non è fisicamente connesso alla rete e può muoversi liberamente
+- connessione ad altre reti → mediante una stazione base detta Access Point (AP) che unisce l’ambiente wireless all’ambiente cablato
+
+### Migrazione dall’ambiente cablato al wireless
+Il funzionamento di una rete cablata o wireless dipende dai due sottolivelli inferiori dello stack protocollare (collegamento e fisico)
+
+Per migrare dalla rete cablata a quella wireless è sufficiente cambiare le schede di rete e sostituire lo switch di collegamento con un AP (gli indirizzi MAC cambiano mentre gli IP rimangono gli stessi)
+
+---
+## Reti ad hoc
+Le **reti ad hoc** (senza infrastruttura, senza un hotspot) sono composte da un insieme di host che si auto-organizzano per formare una rete e comunicano liberamente tra di loro (ogni host deve eseguire le funzionalità di rete quali network setup, routing, forwarding, etc.)
+
+![[Pasted image 20250517112420.png|250]]
+
+---
+## Caratteristiche del link wireless
+### Attenuazione del segnale
+La forza dei segnali elettromagnetici diminuisce rapidamente all’aumentare della distanza dal trasmettitore in quanto il segnale si disperde in tutte le direzioni, fino ad arrivare al punto in cui la trasmissione non è più decodificabile
+
+![[Pasted image 20250517112628.png|400]]
+
+### Propagazione multi-path
