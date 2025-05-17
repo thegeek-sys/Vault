@@ -156,4 +156,31 @@ Poiché non è possibile effettuare collision detection come precedentemente det
 >Ci sta possibilità di collisione anche sull’ack
 
 ### Spazio interframe
-Lo **spazio interframe** (*IFS*)
+Lo **spazio interframe** (*IFS*) è un intervallo di tempo che una stazione deve attendere dopo aver rilevato che il canale è libero, prima di iniziare una trasmissione. Questo meccanismo serve a evitare collisioni con altre stazioni che potrebbero aver già iniziato a trasmettere
+
+Esistono diversi tipi di IFS, ciascuno con una priorità diversa:
+- **SIFS** (Short IFS) → garantisce **alta priorità** alle trasmissioni (usato ad esempio per ACK)
+- **DIFS** (Distributed IFS) → garantisce **bassa priorità**, utilizzato per le trasmissioni dati normali
+
+>[!example] Funzionamento
+>- Mittente → ascolta il canale, se libero per DIFS tempo, allora inizia a trasmettere
+>- Ricevente → se il frame è ricevuto correttamente invia un ACK dopo SIFS tempo
+>
+>![[Pasted image 20250517171904.png|250]]
+
+>[!hint] DIFS > SIFS
+>In modo tale da dare priorità alle comunicazioni già iniziate (quindi priorità all’ack)
+
+Se durante l’intervallo DIFS il canale diventa occupato:
+- il nodo interrompe il conteggio del DIFS
+- aspetta il canale torni completamente libero
+- quando il canale torna libero, riavvia da zero il conteggio del DIFS completo (es. $50 \mu s$)
+
+### Finestra di contesa
+Dopo aver atteso un tempo IFS, se il canale è ancora inattivo, la stazione attende un ulteriore *tempo di contesa*
+
+La **finestra di contesa** (*contention window*) è il lasso di tempo (backoff) per cui deve sentire il canale libero prima di trasmettere (il tempo è suddiviso in slot e ad ogni slot si esegue il sensing del canale)
+
+In particolare si sceglie un $R$ casuale in $[0,CW]$, e finché $R>0$ e si ascolta il canale. Se il canale è libero per la durata dello slot $R=R-1$, altrimenti interrompe il timer e aspetta che il canale si liberi (e riavvia il timer)
+
+![[Pasted image 20250517172552.png|550]]
