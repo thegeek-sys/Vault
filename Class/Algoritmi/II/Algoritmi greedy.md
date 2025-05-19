@@ -138,7 +138,7 @@ Abbiamo $n$ file di dimensioni $d_{0},d_{1},\dots,d_{n-1}$ che vorremmo memorizz
 
 Descrivere un algoritmo greedy che risolve il problema in tempo $\Theta(n\log n)$ e provarne la correttezza
 
-Un algoritmo greedy per questo problema è quello che si presenta naturalmente: consideriamo i file per dimensione crescente e se c’è spazio per memorizzare il file sul disco allora facciamolo
+				Un algoritmo greedy per questo problema è quello che si presenta naturalmente: consideriamo i file per dimensione crescente e se c’è spazio per memorizzare il file sul disco allora facciamolo
 
 ```python
 def file(D,k):
