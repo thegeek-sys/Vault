@@ -9,4 +9,5 @@
 - 
 
 - [[Class/Algoritmi/II/Esercizi|Esercizi]]
+- [[Dimostrazioni greedy]]
 - 
