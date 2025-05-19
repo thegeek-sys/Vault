@@ -46,7 +46,7 @@ La soluzione corretta sta nel prendere sempre l’attività compatibile che **fi
 >
 >Nel caso ci fossero più di una soluzione ottima prendiamo quella che differisce nel minor numero di attività da $SOL$, sia $SOL^*$. Dimostreremo ora che esiste un’altra soluzione ottima $SOL'$ che differisce ancora meno da $SOL$ che è assurdo
 >
->Siano $A_{1},A_{2},\dots$ le attività nell’ordine in cui sono state scelte dal greedy e sia $A_{i}$ la prima attività scelta dal greedy e non dall’ottimo (questa attività deve essitere perché tutte le attività scartate dal greedy erano incompatibili con quelle prese dal greedy e se la soluzione avesse preso tutte le attività scelte dal greedy non potrebbe averne prese di più). 
+>Siano $A_{1},A_{2},\dots$ le attività nell’ordine in cui sono state scelte dal greedy e sia $A_{i}$ la prima attività scelta dal greedy e non dall’ottimo (questa attività deve esitere perché tutte le attività scartate dal greedy erano incompatibili con quelle prese dal greedy e se la soluzione avesse preso tutte le attività scelte dal greedy non potrebbe averne prese di più). 
 >
 >Nell’ottimo deve esserci un’altra attività $A'$ che va in conflitto con $A_{i}$ (altrimenti $SOL^*$ non sarebbe ottima in quanto potrei aggiungervi l’attività $A_{i}$). A questo punto posso sostituire in $SOL^*$ l’attività $A'$ con l’attività senza creare conflitti (perché in base alla regole di scelta greedy $A_{i}$ termina prima di $A'$).
 >
