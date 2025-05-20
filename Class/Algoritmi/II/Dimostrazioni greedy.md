@@ -52,7 +52,5 @@ Abbiamo così costruito una nuova soluzione ottima OPT′\text{OPT}'OPT′, che:
 L’ipotesi che SOL\text{SOL}SOL **non sia ottima** porta a una contraddizione.  
 Quindi la strategia greedy che seleziona **il flacone con capacità massima residua** ad ogni passo è **ottima per minimizzare il numero di flaconi**.
 
----
 
-![[Pasted image 20250519170355.png]]
 
