@@ -123,6 +123,30 @@ Regole per la codifica:
 >![[Pasted image 20250522001722.png]]
 >$$[-1-1-3+1]\cdot[+1-1+1-1]=-4\to\frac{-4}{4}=-1\to \text{bit }0$$
 
+#### Generazione sequenze di chip
+Per generare sequenze di chip usiamo una tabella di Walsh (matrice quadrata). Nella tabella di Walsh ogni riga è una sequenza di chip
+
+$W_{1}$ indica una sequenza con un chip solo (con una riga e una colonna) e può assumere valore $+1$ o $-1$ (a scelta). Conoscendo $W_{N}$ possiamo creare $W_{2N}$ nel seguente modo:
+$$
+W_{1}=\begin{bmatrix}
++1
+\end{bmatrix}\;\, W_{2N}=
+\begin{bmatrix}
+W_{N}&W_{N} \\
+W_{N}&\overline{W_{N}}
+\end{bmatrix}
+$$
+
+$$
+W_{2}=
+\begin{bmatrix}
+\colorbox{darkjunglegreen}{+1}+1&+1 \\
++1&+1
+\end{bmatrix}
+$$
+>[!example] Esempio
+>
+
 ---
 ## Protocolli ad accesso casuale
 Nei protocolli ad accesso casuale nessuna stazione ha il controllo sulle altre, infatti ogni volta che una stazione ha dei dati da inviare usa una procedura definita dal protocollo per decidere se spedire o meno
