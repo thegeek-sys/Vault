@@ -81,6 +81,48 @@ Il **frequency division multiple access** (*FDMA*) suddivide il canale in bande 
 >Le bande $1$, $3$ e $4$ hanno un pacchetto, $2$, $5$ e $6$ sono inattive
 >![[Pasted image 20250510122816.png]]
 
+### CDMA
+Nel **code division multiple access** (*CDMA*) si ha un solo canale che occupa l’intera ampiezza di banda (non c’è divisione di frequenze) e tutte le stazioni possono inviare contemporaneamente (non si ha divisione di tempo)
+
+>[!example]
+>Assumiamo di avere 4 stazioni connesse sullo stesso canale
+>I dati spediti sono $d_{1},d_{2},d_{3},d_{4}$, i codici assegnati sono $c_{1},c_{2},c_{3},c_{4}$
+>
+>Ogni stazione moltiplica i propri dati per il proprio codice e trasmette
+>![[Pasted image 20250522000215.png]]
+
+#### Proprietà dei codici
+I codici godono di diverse proprietà, in particolare:
+- se moltiplichiamo ogni codice per un altro otteniamo 0
+- se moltiplichiamo ogni codice per sé stesso otteniamo il numero delle stazioni (4)
+
+Dunque qualsiasi stazione voglia ricevere dati da una delle altre tre stazioni moltiplica i dati ricevuti per il codice del mittente e divide per il numero delle stazioni
+
+>[!example] Stazione 2 vuole ricevere dalla stazione 1
+>$$\begin{align}\text{dati}=&\frac{(d_{1}\cdot c_{1}+d_{2}\cdot c_{2}+d_{3}\cdot c_{3}+d_{4}\cdot c_{4})\cdot c_{1}}{4}=\\=&\frac{d_{1}\cdot c_{1}\cdot c_{1}+d_{2}\cdot c_{2}\cdot c_{1}+d_{3}\cdot c_{3}\cdot c_{1}+d_{4}\cdot c_{4}\cdot c_{1}}{4}=\frac{4\cdot d_{1}}{4}=d_{1}\end{align}$$
+
+#### Sequenze ortogonali
+Il CDMA si basa sulla teoria della codifica. Ad ogni stazione viene assegnato un codice che è una sequenza di numeri chiamati **chip** (*sequenze ortogonali*)
+
+Le sequenze ortogonali godono di svariate proprietà:
+- ogni sequenza è composta da $N$ elementi (stazioni), dove $N$ deve essere una potenza di 2
+- se moltiplichiamo una sequenza per un numero, ogni elemento della sequenza viene moltiplicato per tale numero 
+	$$2\cdot[+1+1-1-1]=[+2+2-2-2]$$
+- se moltiplichiamo due sequenze uguali e sommiamo i risultati otteniamo $N$
+	$$[+1+1-1-1]\cdot[+1+1-1-1]=1+1+1+1=4$$
+- se moltiplichiamo due sequenze diverse e sommiamo i risultati otteniamo 0
+	$$[+1+1-1-1]\cdot[+1+1+1+1]=1+1-1-1=0$$
+- sommare due sequenze significa sommare gli elementi corrispondenti
+	$$[+1+1+1+1]+[+1+1+1+1]=[+2+2\;\,0\;0\,]$$
+
+#### Rappresentazione dei dati
+Regole per la codifica:
+![[Pasted image 20250522001621.png|450]]
+
+>[!example] La stazione 3 ascolta la 2
+>![[Pasted image 20250522001722.png]]
+>$$[-1-1-3+1]\cdot[+1-1+1-1]=-4\to\frac{-4}{4}=-1\to \text{bit }0$$
+
 ---
 ## Protocolli ad accesso casuale
 Nei protocolli ad accesso casuale nessuna stazione ha il controllo sulle altre, infatti ogni volta che una stazione ha dei dati da inviare usa una procedura definita dal protocollo per decidere se spedire o meno
