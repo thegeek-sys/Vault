@@ -137,20 +137,9 @@ W_{N}&\overline{W_{N}}
 \end{bmatrix}
 $$
 
-$$
-W_{2}=
-\begin{bmatrix}
-\colorbox{brown}{+1}&\colorbox{brown}{+1} \\
-\colorbox{brown}{+1}&+1
-\end{bmatrix}
-\qquad W_{4}=
-\colorbox{brown}{\begin{matrix}
-+1&\colorbox{brown}{+1} \\
-\colorbox{brown}{+1}&+1
-\end{matrix}}
-$$
 >[!example] Esempio
->
+>Le righe di $W_{2}$ e $W_{4}$ sono sequenze di hip per reti con 2 e 4 stazioni
+>![[Pasted image 20250522003716.png]]
 
 ---
 ## Protocolli ad accesso casuale
