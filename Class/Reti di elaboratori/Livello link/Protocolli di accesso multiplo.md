@@ -140,9 +140,14 @@ $$
 $$
 W_{2}=
 \begin{bmatrix}
-\colorbox{darkjunglegreen}{+1}+1&+1 \\
-+1&+1
+\colorbox{brown}{+1}&\colorbox{brown}{+1} \\
+\colorbox{brown}{+1}&+1
 \end{bmatrix}
+\qquad W_{4}=
+\colorbox{brown}{\begin{matrix}
++1&\colorbox{brown}{+1} \\
+\colorbox{brown}{+1}&+1
+\end{matrix}}
 $$
 >[!example] Esempio
 >
