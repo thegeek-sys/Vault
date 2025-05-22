@@ -218,7 +218,7 @@ L’accodamento si verifica sia nelle porte di uscita che in quelle di ingresso
 ### Accodamento su porte di ingresso
 Si ha accodamento su porte di ingresso quando la struttura di commutazione ha una velocità inferiore a quella delle porte di ingresso (per non avere accodamento la velocità di commutazione dovrebbe essere $n\cdot \text{velocità della linea di ingresso}$)
 
-Oltre a ciò, anche quando si ha un **blocco in testa alla fila** (*HOL - head-of-line blocking*, ovvero quando un pacchetto nella coda di ingresso deve attendere il trasferimento (anche se la propria destinazione è libera) in quanto risulta bloccato da un altro pacchetto in testa alla fila
+Oltre a ciò, anche quando si ha un **blocco in testa alla fila** (*HOL - head-of-line blocking*), ovvero quando un pacchetto nella coda di ingresso deve attendere il trasferimento (anche se la propria destinazione è libera) in quanto risulta bloccato da un altro pacchetto in testa alla fila
 
 >[!hint]
 >Se le code diventano troppo lunghe, i buffer si possono saturare e quindi causare una perdita di pacchetti
