@@ -57,8 +57,8 @@ Questo è inaffidabile, senza connessione e basato su datagrammi, offrendo un se
 	- 89 → OSPF
 - **Checksum dell’intestazione** → consente ai router di rilevare errori sui datagrammi ricevuti. Questa viene calcolata solo sull’intestazione e ricalcolata nei router intermedi (TTL e frammentazione); invece la checksum UDP/TCP è calcolata sull’intero segmento
 - **Indirizzi IP di origine e destinazione** → inseriti dall’host che crea il datagramma (dopo aver effettuato una ricerca DNS)
-- **Opzioni**: campi che consentono di estendere l’intestazione IP (usate per test o debug della rete)
-- Dati: contiene il segmento di trasporto da consegnare alla destinazione e può trasportare altri tipi di dati, quali i messaggi ICMP, IGMP, ecc.
+- **Opzioni** → campi che consentono di estendere l’intestazione IP (usate per test o debug della rete)
+- **Dati** → contiene il segmento di trasporto da consegnare alla destinazione e può trasportare altri tipi di dati, quali i messaggi ICMP, IGMP, ecc.
 
 ---
 ## Frammentazione
