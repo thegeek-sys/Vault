@@ -36,7 +36,7 @@ Come soluzione a tutti questi problemi interviene l’**ICMP** (*Internet Contro
 
 ---
 ## Nel dettaglio
-Dunque l’ICMP viene usato da host e router per scambiarsi informazioni a livello di rete (report degli errori, echo request/reply). Inoltre ICMP è considerato parte di IP anche se usa IP per inviare i suoi messaggi
+Dunque l’ICMP viene usato da host e router per scambiarsi informazioni a livello di rete (report degli errori, echo request/reply). Inoltre **ICMP è considerato parte di IP anche se usa IP per inviare i suoi messaggi**
 
 I messaggi ICMP hanno un campo tipo e un campo codice, e contengono l’intestazione e i primi 8 byte del datagramma IP che ha provocato la generazione del messaggio.
 
