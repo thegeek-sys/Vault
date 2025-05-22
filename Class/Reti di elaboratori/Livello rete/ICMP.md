@@ -29,10 +29,10 @@ Come soluzione a tutti questi problemi interviene l’**ICMP** (*Internet Contro
 >[!example]
 >![[Pasted image 20250423102328.png]]
 >
->Un uso tipico dell'ICMP è fornire un meccanismo di feedback quando viene inviato un messaggio IP. In questo esempio, il dispositivo **A** sta cercando di inviare un datagramma IP al dispositivo B. Tuttavia, quando arriva al router R3, viene rilevato un problema di qualche tipo che causa l'eliminazione del datagramma.
->**R3 invia un messaggio ICMP indietro ad A per informarlo che è successo qualcosa,** auspicabilmente con informazioni sufficienti per permettere ad A di correggere il problema, se possibile.
+>Un uso tipico dell'ICMP è fornire un meccanismo di feedback quando viene inviato un messaggio IP. In questo esempio, il dispositivo $A$ sta cercando di inviare un datagramma IP al dispositivo $B$. Tuttavia, quando arriva al router $R3$, viene rilevato un problema di qualche tipo che causa l'eliminazione del datagramma.
+>**$R3$ invia un messaggio ICMP indietro ad $A$ per informarlo che è successo qualcosa,** auspicabilmente con informazioni sufficienti per permettere ad A di correggere il problema, se possibile.
 >
->**R3 può inviare il messaggio ICMP solo ad A, non a R2 o R1.**
+>**$R3$ può inviare il messaggio ICMP solo ad $A$, non a $R2$ o $R1$.**
 
 ---
 ## Nel dettaglio
