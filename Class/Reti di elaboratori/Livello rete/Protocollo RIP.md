@@ -93,7 +93,7 @@ $$
 ### Vettore distanza
 Un albero a costo minimo è una combinazione di percorsi a costo minimo dalla radice dell’albero verso tutte le destinazioni
 
-Il vettore di distanza p un array monodimensionale che rappresenta l’albero. Un vettore di distanza non fornisce il percorso da seguire per giungere alla destinazione ma solo i costi minimi per le destinazioni
+Il vettore di distanza è un array monodimensionale che rappresenta l’albero. Un vettore di distanza non fornisce il percorso da seguire per giungere alla destinazione ma solo i costi minimi per le destinazioni
 
 ---
 ## Come viene creato il vettore delle distanze?
