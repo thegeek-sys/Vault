@@ -135,7 +135,7 @@ Sfruttando il fatto che ad ogni aggiornamento viene aggiornato il vettore delle 
 
 Per poter evitare di entrare in questo loop infinito si hanno due possibilità:
 - **split horizon** → se il nodo $B$ ritiene che il percorso ottimale per raggiungere il nodo $X$ passi attraverso $A$, allora non deve fornire questa informazione ad $A$ (l’informazione è arrivata da $A$ e quindi la conosce già). Come risultato si ha che $B$ elimina la riga di $X$ dalla tabella prima di inviarla ad $A$
-- **poisoned reverse** → se un nodo usa un vicino per raggiungere una destinazione (ormai guesta), segnala attivamente a quel vicino che il percorso ha costo $\infty$, così il vicino non sarà tentato di usarlo per quella destinazione.
+- **poisoned reverse** → se un nodo usa un vicino per raggiungere una destinazione (ormai guasta), segnala attivamente a quel vicino che il percorso ha costo $\infty$, così il vicino non sarà tentato di usarlo per quella destinazione.
 
 ---
 ## RIP
