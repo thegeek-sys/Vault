@@ -79,7 +79,7 @@ I pacchetti vengono inoltrati solo sui link dell’albero, ogni nodo riceve solo
 
 ---
 ## Multicast
-Si parla di routing **broadcast** quando si ha una comunicazione tra una sorgente e un gruppo di destinazioni
+Si parla di routing **multicast** quando si ha una comunicazione tra una sorgente e un gruppo di destinazioni
 
 ![[Pasted image 20250508125201.png]]
 
