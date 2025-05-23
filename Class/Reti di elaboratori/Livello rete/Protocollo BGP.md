@@ -191,9 +191,9 @@ Le informazioni ottenute da eBGP e iBGP vengono combinate per creare le tabelle 
 ![[Pasted image 20250508115219.png]]
 
 ### Tabelle di routing
-Le tabelle di percorso ottenute da BGO non vengono usate di per sé per l’instradamento dei pacchetti bensì inserite nelle tabelle di routing intra-dominio (generate da RIP o OSPF)
+Le tabelle di percorso ottenute da BGP non vengono usate di per sé per l’instradamento dei pacchetti bensì inserite nelle tabelle di routing intra-dominio (generate da RIP o OSPF)
 
-Nel caso di stub, l’unico router di confinde dell’area aggiunge una regola di default alla fine della sua tabella di routing e definisce come prossimo router quello che si trova dall’altro lato della connessione
+Nel caso di stub, l’unico router di confine dell’area aggiunge una regola di default alla fine della sua tabella di routing e definisce come prossimo router quello che si trova dall’altro lato della connessione
 Nel caso di AS di transito, il contenuto della tabella di percorso deve essere inserito nella tabella di routing, ma bisogna impostare il costo (RIP e OSPF usano metriche differenti) pari a quello per raggiungere il primo AS nel percorso
 
 >[!example] Tabelle di inoltro dopo l’aggiunta delle informazioni BGP
