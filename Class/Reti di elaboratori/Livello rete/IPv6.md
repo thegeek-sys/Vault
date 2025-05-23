@@ -43,7 +43,7 @@ Durante la transizione gli host devono avere una doppia pila di protocolli per l
 
 ![[Pasted image 20250509124958.png]]
 
-Per determinare quale versione utilizzare per inviare un pacchetto a una destinazione l’host sorgente interroga il DNS e si usa il protocollo relativo all’indirizzo ritornato (se ritorna un indirizzo IPv4 o IPv6)
+	Per determinare quale versione utilizzare per inviare un pacchetto a una destinazione l’host sorgente interroga il DNS e si usa il protocollo relativo all’indirizzo ritornato (se ritorna un indirizzo IPv4 o IPv6)
 
 ---
 ## Tunneling
