@@ -24,7 +24,7 @@ Related:
 	- [[#Architettura#Architettura generale|Architettura generale]]
 - [[#Canali e associazione|Canali e associazione]]
 - [[#Protocollo MAC 802.11|Protocollo MAC 802.11]]
-- [[#CMSA/CA|CMSA/CA]]
+- [[#CSMA/CA|CSMA/CA]]
 	- [[#CMSA/CA#ACK|ACK]]
 	- [[#CMSA/CA#Spazio interframe|Spazio interframe]]
 	- [[#CMSA/CA#Finestra di contesa|Finestra di contesa]]
@@ -177,7 +177,7 @@ Più stazioni possono voler comunicare nello stesso momento. Sono state quindi d
 D’ora in poi analizzeremo il DCF
 
 ---
-## CMSA/CA
+## CSMA/CA
 Il **CSMA/CA** permette di evitare le collisioni quando due o più nodi provano a trasmette simultaneamente (nel CSMA/CD, le collisioni venivano trovate, qui evitate)
 
 ### ACK
