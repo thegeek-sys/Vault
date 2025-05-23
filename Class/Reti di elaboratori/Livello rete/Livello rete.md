@@ -7,4 +7,3 @@
 - [[Protocollo BGP]]
 - [[Routing broadcast e multicast]]
 - [[IPv6]]
-- 
