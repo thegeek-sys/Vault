@@ -48,13 +48,13 @@ In questo caso il TTL è un valore in unità di tempo che indica quando bisogner
 >![[Pasted image 20250510215202.png]]
 
 >[!example] Protocollo APR nella stessa sottorete
->$A$ vuole inviare un datagramma a $B$, e l’indirizzo MAC di $B$ non è nella tabella APR di $A$
+>$A$ vuole inviare un datagramma a $B$, e l’indirizzo MAC di $B$ non è nella tabella ARP di $A$
 >
 >$A$ trasmette in un pacchetto broadcast ($FF-FF-FF-FF-FF-FF$) il messaggio di richiesta APR contenente l’indirizzo IP di $B$
 >
 >![[Pasted image 20250510215451.png]]
 >
->Ogni nodo della rete riceve ed elabora il pacchetto di richiesta APR ma solo il nodo con l’indirizzo IP specificato risponde
+>Ogni nodo della rete riceve ed elabora il pacchetto di richiesta ARP ma solo il nodo con l’indirizzo IP specificato risponde
 >
 >$B$ riceve il pacchetto APR e risponde ad $A$ comunicandogli il proprio indirizzo MAC. Il frame viene inviato all’indirizzo MAC di $A$ (in unicast)
 >
