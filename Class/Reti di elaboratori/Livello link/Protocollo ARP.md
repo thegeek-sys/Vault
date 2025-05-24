@@ -56,9 +56,9 @@ In questo caso il TTL è un valore in unità di tempo che indica quando bisogner
 >
 >Ogni nodo della rete riceve ed elabora il pacchetto di richiesta ARP ma solo il nodo con l’indirizzo IP specificato risponde
 >
->$B$ riceve il pacchetto APR e risponde ad $A$ comunicandogli il proprio indirizzo MAC. Il frame viene inviato all’indirizzo MAC di $A$ (in unicast)
+>$B$ riceve il pacchetto ARP e risponde ad $A$ comunicandogli il proprio indirizzo MAC. Il frame viene inviato all’indirizzo MAC di $A$ (in unicast)
 >
->Il messaggio di richiesta APR è inviato in un pacchetto broadcast mentre il messaggio di risposta APR è inviato in un pacchetto standard. Dunque la tabella APR di un nodo si costruisce automaticamente e non deve essere configurata dall’amministratore del sistema (plug and play)
+>Il messaggio di richiesta ARP è inviato in un pacchetto broadcast mentre il messaggio di risposta ARP è inviato in un pacchetto standard. Dunque la tabella ARP di un nodo si costruisce automaticamente e non deve essere configurata dall’amministratore del sistema (plug and play)
 >
 >![[Pasted image 20250510220416.png]]
 
