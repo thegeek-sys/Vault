@@ -78,7 +78,7 @@ Tutte le stazioni che fanno parte di una ethernet sono dotate di una Network Int
 
 ![[Pasted image 20250510223223.png]]
 
-### Faso operative del protocollo [[Protocolli di accesso multiplo#Protocolli ad accesso casuale#CSMA/CD|CSMA/DM]]
+### Faso operative del protocollo [[Protocolli di accesso multiplo#Protocolli ad accesso casuale#CSMA/CD|CSMA/CD]]
 1. **framing**
 	- la NIC riceve un datagramma di rete dal nodo cui è collegato e prepara un frame Ethernet
 2. **carrier sense e trasmissione**
