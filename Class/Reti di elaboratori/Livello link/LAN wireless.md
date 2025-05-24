@@ -246,7 +246,7 @@ Il problema dell’hidden terminal non viene risolto con l’IFS e la finestra c
 ![[Pasted image 20250517180406.png|500]]
 
 ### NAV
-Quando una stazione invia un frame RTS include la durata di tempo in cui occuperà il canale per trasmettere il frame e riceve l’ACK
+Quando una stazione invia un frame RTS include la durata di tempo in cui occuperà il canale per trasmettere il frame e ricevere l’ACK
 Questo tempo viene incluso anche nel CTS (per i vicini del destinatario)
 
 Le stazioni influenzate da tale trasmissione avviano un timer chiamato NAV che indica quanto tempo devono attendere prima di eseguire il sensing del canale
