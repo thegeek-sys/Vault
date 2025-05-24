@@ -7,8 +7,8 @@ Related:
 ---
 ## Index
 - [[#Indirizzi MAC|Indirizzi MAC]]
-- [[#Protocollo APR|Protocollo APR]]
-	- [[#Protocollo APR#Formato del pacchetto APR|Formato del pacchetto APR]]
+- [[#Protocollo ARP|Protocollo ARP]]
+	- [[#Protocollo ARP#Formato del pacchetto ARP|Formato del pacchetto ARP]]
 - [[#Indirizzamento|Indirizzamento]]
 ---
 ## Indirizzi MAC
@@ -26,15 +26,15 @@ La IEEE sovrintende alla gestione degli indirizzi MAC. Quando una società vuole
 Gli indirizzi MAC hanno una struttura non gerarchica. Ciò rendere possibile spostare una scheda LAN da una LAN ad un’altra, invece gli indirizzi IP hanno una struttura gerarchica e dunque devono essere aggiornati se spostati (dipendono dalla sottorete IP cui il nodo è collegato)
 
 >[!question] Come vengono determinati gli indirizzi di collegamento dalla sorgente alla destinazione?
->**Address Resolution Protocol** (*APR*)
+>**Address Resolution Protocol** (*ARP*)
 
 ---
-## Protocollo APR
-L’**Address Resolution Protocol** (*APR*) è il protocollo utilizzato per tradurre un indirizzo IP in un indirizzo MAC
+## Protocollo ARP
+L’**Address Resolution Protocol** (*ARP*) è il protocollo utilizzato per tradurre un indirizzo IP in un indirizzo MAC
 
 ![[Pasted image 20250510215109.png|450]]
 
-Ogni nodo IP (host, router) nella LAN ha una **tabella APR**, la quale contiene la corrispondenza tra indirizzi IP e MAC
+Ogni nodo IP (host, router) nella LAN ha una **tabella ARP**, la quale contiene la corrispondenza tra indirizzi IP e MAC
 
 ```
 <Indirizzo IP; Indirizzo MAC; TTL>
@@ -62,7 +62,7 @@ In questo caso il TTL è un valore in unità di tempo che indica quando bisogner
 >
 >![[Pasted image 20250510220416.png]]
 
-### Formato del pacchetto APR
+### Formato del pacchetto ARP
 I pacchetti APR vengono incapsulati direttamente all’interno di frame di livello di collegamento
 
 ![[Pasted image 20250510220522.png]]

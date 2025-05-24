@@ -1,6 +1,6 @@
 - [[Class/Reti di elaboratori/Livello link/Introduzione|Introduzione]]
 - [[Protocolli di accesso multiplo]]
-- [[Protocollo APR]]
+- [[Protocollo ARP]]
 - [[Ethernet]]
 - [[LAN wireless]]
 - [[Altre tecnologie]]
