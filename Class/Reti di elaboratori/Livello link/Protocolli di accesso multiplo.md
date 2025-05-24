@@ -283,7 +283,7 @@ Rilevare la collisione però risulta essere facile nelle LAN cablate ma difficil
 >- $A$ ascolta il canale e inizia la trasmissione al tempo $t_{1}$
 >- $C$ al tempo $t_{2}$ ascolta il canale (non rileva ancora il prossimo bit di $A$) e quindi inizia a trasmettere
 >- al tempo $t_{3}$ $C$ riceve il primo bit di $A$ e interrompe la trasmissione perché c’è collisione
->- al tempo $t_{4}$ $A$ riceve il primo bit di $C$ e interrompe la collisione perché c’è collisione
+>- al tempo $t_{4}$ $A$ riceve il primo bit di $C$ e interrompe la trasmissione perché c’è collisione
 
 >[!question] Cosa succederebbe se un mittente finisse di trasmettere un frame prima di ricevere il primo bit di un’altra stazione (che ha già iniziato a trasmettere)?
 >Una stazione una volta inviato un frame non tiene una copia del frame, né controlla il mezzo trasmissivo per rilevare collisioni
