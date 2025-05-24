@@ -63,7 +63,7 @@ In questo caso il TTL è un valore in unità di tempo che indica quando bisogner
 >![[Pasted image 20250510220416.png]]
 
 ### Formato del pacchetto ARP
-I pacchetti APR vengono incapsulati direttamente all’interno di frame di livello di collegamento
+I pacchetti ARP vengono incapsulati direttamente all’interno di frame di livello di collegamento
 
 ![[Pasted image 20250510220522.png]]
 
