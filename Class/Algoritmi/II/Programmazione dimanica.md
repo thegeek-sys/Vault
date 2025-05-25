@@ -175,7 +175,7 @@ def Fib3(n):
 >>>![[Pasted image 20250427130630.png]]
 >>
 >>Dunque la complessità risulta essere $\Theta(n\cdot c)$, ma come già detto è pseudopolinomiale. Infatti $C$ potrebbe essere molto più grande di $len(A)$
-
+	
 >[!question] Dato l’intero $n$ vogliamo contare il numero di differenti tassellamenti di una superficie di dimensione $n\times2$ tramite tessere di dominio di dimensione $1\times 2$
 >Ad esempio:
 >- per $n=1$ la risposta dell’algoritmo deve ovviamente essere $1$
