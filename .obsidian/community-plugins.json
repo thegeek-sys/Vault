@@ -10,5 +10,6 @@
   "folder-note-plugin",
   "abbreviations",
   "vscode-editor",
-  "find-unlinked-files"
+  "find-unlinked-files",
+  "omnisearch"
 ]
