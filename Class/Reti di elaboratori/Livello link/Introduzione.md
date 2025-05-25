@@ -133,7 +133,8 @@ La probabilità che avvenga un errore di tipo **burst** (a raffica) è più elev
 Il numero di bit coinvolti dipende dalla velocità di trasferimento dati e dalla durata del rumore
 
 >[!example]
->$1\text{ kbps}$ con un rumore di $\frac{1}{100} \text{ sec}$ può influire su $10\text{ bit}$
+>$1\text{ kbps}$ con un rumore di $\frac{1}{100} \text{ sec}$ può influire su:
+>$$1\cdot 10^3\cdot 1\cdot 10^{-2}=10 \text{ bit}$$
 
 ### Tecniche di rilevazione degli errori
 Per proteggere dei dati da errori vengono aggiunti dei bit *EDC* (**Error Detection and Corretion**)
