@@ -50,7 +50,7 @@ La soluzione corretta sta nel prendere sempre l’attività compatibile che **fi
 >
 >Nell’ottimo deve esserci un’altra attività $A'$ che va in conflitto con $A_{i}$ (altrimenti $SOL^*$ non sarebbe ottima in quanto potrei aggiungervi l’attività $A_{i}$). A questo punto posso sostituire in $SOL^*$ l’attività $A'$ con l’attività $A_{i}$ senza creare conflitti (perché in base alla regole di scelta greedy $A_{i}$ termina prima di $A'$).
 >
->Ottengo in questo modo una soluzione ottima $SOL'$ )infatti le attività in $SOL'$ sono tutte compatibili e la cardinalità di $SOL'$ è la stessa di $SOL^*$). Ma $SOL'$ differisce da $SOL$ di un’attività in meno rispetto a $SOL^*$
+>Ottengo in questo modo una soluzione ottima $SOL'$ (infatti le attività in $SOL'$ sono tutte compatibili e la cardinalità di $SOL'$ è la stessa di $SOL^*$). Ma $SOL'$ differisce da $SOL$ di un’attività in meno rispetto a $SOL^*$
 >
 >![[Pasted image 20250406163221.png]]
 
