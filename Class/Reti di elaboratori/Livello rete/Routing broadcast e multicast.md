@@ -51,7 +51,7 @@ In questo caso se il grafo ha cicli, una o più copie del pacchetto cicleranno a
 #### Sequence number
 Qui non vengono forwardati i pacchetti già ricevuti e inoltrati
 
-In particolare gni nodo tiene una lista di $(\text{indirizzo IP}, \#seq)$ dei pacchetti già ricevuti, duplicati, inoltrati. Quando riceve un pacchetto controlla nella lista, se già inoltrato lo scarta, altrimenti lo forwarda
+In particolare ogni nodo tiene una lista di $(\text{indirizzo IP}, \#seq)$ dei pacchetti già ricevuti, duplicati, inoltrati. Quando riceve un pacchetto controlla nella lista, se già inoltrato lo scarta, altrimenti lo forwarda
 
 #### Reverse path forwarding (RPF)
 Forwarda il pacchetto se e solo se è arrivato dal link che è sul suo shortest path (unicast) verso la sorgente
@@ -63,7 +63,7 @@ Viene in questo modo eliminato il problema di inondare la rete con troppi pacche
 >[!example]
 >$B$, $C$, $D$, $E$, $F$ ricevono uno o due pacchetti ridondati
 
-Ma ogni pacchetto dovrebbe ricevere una sola copia del pacchetto broadcast, la soluzione sta nel costruire uno **spanning tree** prima di inviare i pacchetti broadcast
+Ma ogni nodo dovrebbe ricevere una sola copia del pacchetto broadcast, la soluzione sta nel costruire uno **spanning tree** prima di inviare i pacchetti broadcast
 
 ### Spanning tree (center-based)
 Una volta preso come centro un nodo ($E$), ogni nodo invia un messaggio di join in unicast verso il centro
