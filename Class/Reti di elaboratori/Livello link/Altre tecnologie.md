@@ -42,7 +42,7 @@ La stazione primaria e secondaria possono entrambe ricevere e inviare i dati, ma
 
 Lo slot temporale è cosi utilizzato:
 - trasmissione pacchetto ($\sim 366\mu s$) → include access code, header e payload
-- tempo di guardia ($\sim 259\mu s$) → server per turnaround ($TX \iff RX$), salto di frequenza e sincronizzazione
+- tempo di guardia ($\sim 259\mu s$) → serve per turnaround ($TX \iff RX$), salto di frequenza e sincronizzazione
 
 Nella comunicazione con più secondarie, la primaria usa slot pari e ad ogni slot specifica chi deve trasmettere nello slot successivo
 ![[Pasted image 20250522005558.png]]
