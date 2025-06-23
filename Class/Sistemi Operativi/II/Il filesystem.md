@@ -44,7 +44,7 @@ Completed:
 ---
 ## Introduction
 L’organizzazione di un area di memoria è basata sul concetto di file e di directory
-Una directory contiene file e directory ed ha una struttura gerarchica da albero (ma solo le directory possono avere figli)
+Una directory contiene file e directory ed ha una struttura gerarchica ad albero (ma solo le directory possono avere figli)
 
 I file regolari contengono sequenze di bit dell’area di memoria sulla quale c’è il filesystem (ASCII o binari), ma esistono file **non regolari** o speciali
 
