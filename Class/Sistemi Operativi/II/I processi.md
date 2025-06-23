@@ -76,7 +76,7 @@ Il PCB è unico per ogni processo e contiene:
 
 ### Aree di memoria
 Le sei ree di memoria sono:
-- **Text Segmento** → le istruzioni da eseguire
+- **Text Segment** → le istruzioni da eseguire
 - **Data Segment** → i dati statici (variabili globali, variabili locali static) inizializzati e alcune costanti di ambiente
 - **BSS** → dati statici non inizializzati (block started from symbol); la distinzione dal segmento dati si fa per motivi di realizzazione hardware
 - **Heap** → dati dinamici (allocati con malloc e simili)
