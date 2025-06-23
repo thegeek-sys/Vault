@@ -24,9 +24,11 @@ La **shell** è un programma che esegue altri comandi, spesso chiamato terminale
 ---
 ## Il prompt
 La bash scrive un prompt ed attende che l’utente scriva un “comando”. Il prompt tipico è così costituito
+
 ```bash
 nomeutente@nomemacchina:~cammino$
 ```
+
 Dove `cammino` è il path della directory home alla directory attuale (quindi se si è semplicemente nella home, c’è solo `~`). Se la directory corrente non si trova nel sottoalbero radicato nella home, allora il `cammino` è il path assoluto
 
 ---
