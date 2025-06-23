@@ -64,7 +64,7 @@ Nonostante ciò non tutti gli utenti possono fare login, ad esempio tipicamente 
 Ogni utente appartiene almeno ad un gruppo automaticamente creato con lo stesso nome dell’utente principale. Per poter accedere ai gruppi di un utente è necessario il comando `groups [nomeutente]`
 
 ---
-## `sudo`
+## $\verb|sudo|$
 Nelle distribuzioni della famiglia Ubuntu l’utente principale è un `sudoer`, ovvero appartiene al gruppo predefinito `sudo`. Gli utenti appartenenti a questo gruppo possono eseguire comandi da `root` usando il comando `sudo comando`.
 
 ---
