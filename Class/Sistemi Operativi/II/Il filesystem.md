@@ -220,7 +220,7 @@ Questo si usa solo per i file eseguibili. Garantisce che **quando sono eseguiti*
 Ad esempio il comando `passwd` ha il setuid, che permette ad un utente di moficare la propria password (nonostante il proprietario del comando sia `root`)
 
 #### Setgid bit (s)
-Risulta analogo di setuid ma per i gruppi (i privilegi sono quelli del gruppo he è proprietario del file eseguibile)
+Risulta analogo di setuid ma per i gruppi (i privilegi sono quelli del gruppo che è proprietario del file eseguibile)
 Può essere applicato anche ad una directory, e allora ogni file creato al suo interno ha il gruppo della directory, anziché quello primario di chi crea i file
 
 ### Visualizzare attributi di accesso
