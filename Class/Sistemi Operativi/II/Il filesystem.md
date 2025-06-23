@@ -212,7 +212,7 @@ Esistono però anche dei permessi speciali che possono essere applicati a file e
 - setgit bit (s)
 
 #### Sticky bit (t)
-Questo viene applicato sulle directory per correggere il comportamento di `w+x`, permettendo la cancellazione di file se si hanno permessi di scrit22tura su essi.
+Questo viene applicato sulle directory per correggere il comportamento di `w+x`, permettendo la cancellazione di file se si hanno permessi di scrittura su essi.
 Senza sticky bit infatti per cancellare un file in una directory, sarà sufficiente avere i diritti di scrittura sulla directory (non sono necessari permessi di scrittura sul file). Mentre con lo sticky bit sono **necessari sia i permessi di scrittura sulla directory che sul file**
 
 #### Setuid bit (s)
