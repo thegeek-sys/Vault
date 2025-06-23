@@ -234,7 +234,7 @@ Vengono visualizzati al posto del bit di esecuzione:
 
 ![[Pasted image 20250315124907.png]]
 
-Se il permesso di esecuzione c’è, allora la `s` o la `t` saranno minuscoli, altrimenti saranno maiuscoli
+Se il permesso di esecuzione corrispondente c’è, allora la `s` o la `t` saranno minuscoli, altrimenti saranno maiuscoli
 
 ### Settare i permessi
 ```bash
