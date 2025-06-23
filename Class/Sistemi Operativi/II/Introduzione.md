@@ -29,11 +29,12 @@ La bash scrive un prompt ed attende che l’utente scriva un “comando”. Il p
 nomeutente@nomemacchina:~cammino$
 ```
 
-Dove `cammino` è il path della directory home alla directory attuale (quindi se si è semplicemente nella home, c’è solo `~`). Se la directory corrente non si trova nel sottoalbero radicato nella home, allora il `cammino` è il path assoluto
+Dove `cammino` è il path dalla directory home alla directory attuale (quindi se si è semplicemente nella home, c’è solo `~`). Se la directory corrente non si trova nel sottoalbero radicato nella home, allora il `cammino` è il path assoluto
 
 ---
 ## Il comando
 Ogni comando verrà eseguito come segue:
+
 ```bash
 comando [opzioni] argomenti obbligatori
 ```
