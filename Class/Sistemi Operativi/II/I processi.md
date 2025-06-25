@@ -4,7 +4,7 @@ Class: "[[Sistemi Operativi]]"
 Related: 
 Completed:
 ---
----
+3---
 ## Index
 - [[#Introduction|Introduction]]
 	- [[#Introduction#Ridirezione dell’output|Ridirezione dell’output]]
