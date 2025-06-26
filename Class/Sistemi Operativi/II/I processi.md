@@ -164,6 +164,8 @@ Vediamo ora le opzioni disponibili:
 Ci stanno anche i campi `RUSER` per il reale utente che ha avviato il processo e `EUSER` che corrisponde all’utente che ha eseguito il processo
 
 ### Significato campi di output con flag $\verb|-l|$
+![[Pasted image 20250626184323.png]]
+
 In ordine:
 - `F` → flags associati al processo: 1 il processo e stato “forkato", ma ancora non eseguito; 4, ha usato privilegi da superutente; 5, entrambi i precedenti; 0, nessuno dei precedenti (`-y -l` elimina questo campo che e’ poco utile)
 - `S` → stato (modalita) del processo in una sola lettera
@@ -176,16 +178,14 @@ In ordine:
 - `ADDR` → indirizzo in memoria del processo, ma e mostrato (senza valore) solo per compatibilita all'indietro (`-y -l` toglie questo campo e lo sostituisce con RSS - resident set size - dimensione del processo in memoria principale in $KB$ - non tiene conto delle pagine su disco)
 - `SZ` → dimensione totale attuale del processo in numero di pagine (tutte le 6 aree di memoria del processo) sia in memoria che su disco (memoria virtuale)
 - `WCHAN` → se il processo e in attesa di un qualche segnale o comunque in sleep, qui c'e la funzione del kernel all'interno della quale si e fermato
-- `STIME` (o `START`) → l'ora in cui e stato invocato il comando, oppure la data, se e stato fatto partire da piu di un giorno
+- `TTY` → rappresenta il nome del terminale da cui è stato avviato il processo
 - `TIME` → tempo di CPU usato finora
 - `CMD` → comando con argomenti
 
+### Significato campi di output con flag $\verb|-f|$
+![[Pasted image 20250626184356.png]]
 
-
-
-
-
-
+L’unica differenza è data da `STIME` (o `START`) che indica l'ora in cui e stato invocato il comando, oppure la data, se e stato fatto partire da più di un giorno
 
 ---
 ## $\verb|top [-b] [-n num] [-p {pid}]|$
