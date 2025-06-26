@@ -164,13 +164,15 @@ Vediamo ora le opzioni disponibili:
 Ci stanno anche i campi `RUSER` per il reale utente che ha avviato il processo e `EUSER` che corrisponde all’utente che ha eseguito il processo
 
 ### Significato campi di output con flag $\verb|-l|$
+In ordine:
+- `F` → flags associati al processo: 1 il processo e stato “forkato", ma ancora non eseguito; 4, ha usato privilegi da superutente; 5, entrambi i precedenti; 0, nessuno dei precedenti (`-y -l` elimina questo campo che e’ poco utile)
+- `S` → stato (modalita) del processo in una sola lettera
 - `PPID` → parent pid, pid del processo che ha creato questo processo
 - `C` → parte intera della percentuale di uso della CPU
 - `STIME` (o `START`) → l'ora in cui e stato invocato il comando, oppure la data, se e stato fatto partire da piu di un giorno
 - `TIME` → tempo di CPU usato finora
 - `CMD` → comando con argomenti
-- `F` → flags associati al processo: 1 il processo e stato “forkato", ma ancora non eseguito; 4, ha usato privilegi da superutente; 5, entrambi i precedenti; 0, nessuno dei precedenti (`-y -l` elimina questo campo che e’ poco utile)
-- `S` → stato (modalita) del processo in una sola lettera
+
 - `UID` → utente che ha lanciato il processo (se SetUID presente pottrebbe non essere chi ha dato il comando)
 - `PRI` → attuale priorita del processo (piu il numero e alto, minore e la priorita)
 - `NI` → valore di nice, da aggiungere alla priorita’ (vedere piu avanti)
