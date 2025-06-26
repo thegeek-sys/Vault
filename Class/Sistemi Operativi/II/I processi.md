@@ -163,7 +163,7 @@ Vediamo ora le opzioni disponibili:
 
 Ci stanno anche i campi `RUSER` per il reale utente che ha avviato il processo e `EUSER` che corrisponde all’utente che ha eseguito il processo
 
-### Significato campi di output
+### Significato campi di output con flag $\verb|-l|$
 - `PPID` → parent pid, pid del processo che ha creato questo processo
 - `C` → parte intera della percentuale di uso della CPU
 - `STIME` (o `START`) → l'ora in cui e stato invocato il comando, oppure la data, se e stato fatto partire da piu di un giorno
