@@ -216,7 +216,7 @@ Un processo che riceve un segnale fa o un’azione predefinita (`man 7 signal`) 
 >- con `kill` si può usare la notazione con `%` (usata in `bg` e `fg`) per indicare i job destinatari del messaggio
 
 ### $\verb|SIGUSR1|$ e $\verb|SIGUSR2|$
-I segnali `SIGUSR1` e `SIGUSR2`sono impostai per essere usati dall’utente per le proprie necessità. Essi consentono una semplice forma di comunicazione tra processi
+I segnali `SIGUSR1` e `SIGUSR2`sono impostati per essere usati dall’utente per le proprie necessità. Essi consentono una semplice forma di comunicazione tra processi
 
 >[!example]
 >In un programma $P_{1}$ si puó definire un gestore del segnale (signal handler) per `SIGUSR1`(o 2). Se un programma $P_{2}$ invia un `SIGUSR1` (o 2) a $P_{1}$, $P_{1}$ eseguirà il codice del gestore del segnale
