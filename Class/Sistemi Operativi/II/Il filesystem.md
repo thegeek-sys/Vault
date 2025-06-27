@@ -134,8 +134,8 @@ Ci sono anche file system non linux, ad esempio windows: NTFS, MSDOS, FAT32, FAT
 
 ### $\verb|mount|$
 `mount` visualizza gli fs montati, ma ciò può essere fatto anche con:
-- `cat /etc/mtab`
-- `cat /etc/fstab` (montati al boot)
+- `cat /etc/mtab` → fs montati all’avvio del sistema
+- `cat /etc/fstab` → fs montati al boot
 
 >[!warning] Domanda di esame
 >- Usare il comando mount o consultare il contenuto del file `/etc/mtab` per verdere I file system montati.
