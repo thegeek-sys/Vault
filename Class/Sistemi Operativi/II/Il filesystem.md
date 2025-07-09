@@ -20,7 +20,9 @@ Completed:
 - [[#I file|I file]]
 	- [[#I file#Tabella inode|Tabella inode]]
 	- [[#I file#Visualizzare le informazioni contenute nell’inode di un file|Visualizzare le informazioni contenute nell’inode di un file]]
-- [[#Permessi di accesso ai file|Permessi di accesso ai file]]
+- [[#Permessi|Permessi]]
+	- [[#Accesso ai file]]
+	- [[#Accesso alle directory]]
 	- [[#Permessi di accesso ai file#Permessi speciali|Permessi speciali]]
 		- [[#Permessi speciali#Sticky bit (t)|Sticky bit (t)]]
 		- [[#Permessi speciali#Setuid bit (s)|Setuid bit (s)]]
@@ -197,7 +199,8 @@ Dove:
 `stat -c %B filename` invece ci permette di stampare la dimensione in byte dei blocchi di I/O del filesystem su cui si trova il file (non la dimensione del file)
 
 ---
-## Permessi di accesso ai file
+## Permessi
+### Accesso ai file
 Chi può fare cosa:
 - Utente proprietario → solitamente chi crea il file/directory
 - Gruppo proprietario → gruppo primario dell’utente proprietario (specificato in `/etc/passwd`)
@@ -205,20 +208,18 @@ Chi può fare cosa:
 Il proprietario è colui che definisce i permessi di accesso
 ![[Pasted image 20250315122439.png|300]]
 
+### Accesso alle directory
 
-| Permesso | Oct | Significato                                                                                                                                          |
-| -------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `---`    | 0   | non si può fare nulla                                                                                                                                |
-| `--x`    | 1   | si può settare come cwd (ma solo se il permesso c’è per tutte le directory nel path); si può anche “attraversare”, se già se ne conosce il contenuto |
-| `-w-`    | 2   | non si può fare nulla                                                                                                                                |
-| `-wx`    | 3   | come il permesso 7, ma non si può listare il contenuto                                                                                               |
-| `r--`    | 4   | solo listarne il contenuto (senza vedere attribute file), non può essere “attraversata”                                                              |
-| `r-x`    | 5   | si può leggere (attributi compresi), settare come cwd ed attraversare; non è possibile cancellare o aggiungere file/directory                        |
-| `rw-`    | 6   | come il permesso 4                                                                                                                                   |
-| `rwx`    | 7   |                                                                                                                                                      |
-
-
-![[Pasted image 20250709153200.png]]
+| Permesso | Oct | Significato                                                                                                                                                                                                                                                                  |
+| -------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `---`    | 0   | non si può fare nulla                                                                                                                                                                                                                                                        |
+| `--x`    | 1   | si può settare come cwd (ma solo se il permesso c’è per tutte le directory nel path); si può anche “attraversare”, se già se ne conosce il contenuto                                                                                                                         |
+| `-w-`    | 2   | non si può fare nulla                                                                                                                                                                                                                                                        |
+| `-wx`    | 3   | come il permesso 7, ma non si può listare il contenuto                                                                                                                                                                                                                       |
+| `r--`    | 4   | solo listarne il contenuto (senza vedere attribute file), non può essere “attraversata”                                                                                                                                                                                      |
+| `r-x`    | 5   | si può leggere (attributi compresi), settare come cwd ed attraversare; non è possibile cancellare o aggiungere file/directory                                                                                                                                                |
+| `rw-`    | 6   | come il permesso 4                                                                                                                                                                                                                                                           |
+| `rwx`    | 7   | listare contenuto (attributi compresi), aggiungere file e directory, cancellare file contenuti in essa (anche senza avere il permessi di scrittura sul file, correggibile con lo sticky bit), cancellare directory in essa (ma occorrono tutti i permessi su tali directory) |
 
 ### Permessi speciali
 Esistono però anche dei permessi speciali che possono essere applicati a file e directory:
