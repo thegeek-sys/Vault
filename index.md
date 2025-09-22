@@ -1,4 +1,2 @@
-- [[Architettura degli elaboratori]]
-- [[Java]]
-
-[[To-Do]]
+- [[Class]]
+- [[Programming languages]]

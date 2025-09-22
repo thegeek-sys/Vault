@@ -1,5 +1,5 @@
 # I
-![[I]]
+![[Class/Algoritmi/I/I|I]]
 
 # II
-![[II]]
+![[Class/Algoritmi/II/II|II]]

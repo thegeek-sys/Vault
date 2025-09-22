@@ -6,3 +6,5 @@
 - [[Sistemi Operativi]]
 - [[Basi di dati]]
 - [[Algebra]]
+- [[Algoritmi]]
+- [[Reti di elaboratori]]
