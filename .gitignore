@@ -3,3 +3,5 @@
 .obsidian/hotkeys.json
 .obsidian/workspace.json
 .obsidian/workspaces.json
+.obsidian.mobile
+.DS_Store
