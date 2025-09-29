@@ -28,23 +28,39 @@ We can resume it as the avoidance of the unauthorized disclosure of information 
 ![[Pasted image 20250929154635.png|center|300]]
 
 The transformation of information using a secret, called an ecryption key, so that the transformed information can only be read using another secret, called the decryption key (which may, in some cases, be the same as the encryption key)
-
 ##### Access control
 Rules and policies that limit access to confidential information to those people and/or systems with a “need to know” (that may be determined by identity or by a role that a person has)
-
 ##### Authentication
 The determination of the identity role that someone has. This determination can be done in a number of different ways, but it is usually based on a combination of:
 - something the person *has*
 - something the person *knows*
 - something the person *is*
+##### Authorization
+The determination if a person or system is allowed to access to resources based on an access control policy
+##### Physical security
+The establishment of physical barriers to limit access to proptected computational resources
 
 ### Integrity
 Guarding against improper information modification or destruction, including ensuring information nonrepudiation and authenticity
 
 >[!example] Data integrity + system integrity
 
-### Availablity
+#### Tools for integrity
+##### Backups
+The periodic archiving of data
+##### Checksums
+The computation of a function that maps the contents of a file to a numerica value. A checksum function depends on the entire contents of a file and is designed in a way that event a small change to the input file (such as flipping a single bit) is highly likely to result in a different output value
+##### Data corrective coded
+Methods for storing data in such a way that small changes can be easily detected and automatically corrected
+
+### Availability
 Ensuring timely and reliable access to and use of information
+#### Tools for availability
+##### Physical protections
+An infrastructure meant to keep information available even in the event of physical challenges
+##### Computational redundancies
+Computers and storage devices that serve as fallbacks in the case of failures
+
 
 ### Levels of impact
 Depending on how much the system is compromised we have three levels of impact
@@ -99,4 +115,25 @@ The **asset** is a key concept. In fact te assets are the things that are import
 >- Risk → a measure of the extent to which an entity is threatened by a potential circumstance or event
 >- Threat → any circumstance or event with the potential to adversely impact organizational operations
 >- Vulnerability → weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source
+
+---
+## Other security concepts
+### Authenticity
+Authenticity is the ability to determine that statements, policies and permission issued by the persons or systems are genuine
+
+The primary tool to guarantee authenticity are **digital signatures**, that are cryptographic computations that allow a person or system to commit to the authenticity of their documents in a unique way that achieves non-repudiation (property that authentic statements issued by some person or system cannot be denied)
+
+### Accountability
+Accountability is the security goal that generates the requirement for actions of an entity to be **traced uniquely to that entity**
+
+This supports non-repudiation, deterrence, fault isolation, intrusion detection and prevention, and after-action recovery and legal action
+
+### Anonymity
+Anonymity is the property that certain records or transactions not to be attributable to any individual
+
+Tools:
+- aggregation → the combining of data from many individuals so that disclosed sums or averages cannot be tied to any individual
+- mixing → the intertwining of transactions, information, or communications in a way that cannot be traces back to that person
+- proxies → trusted agents that are willing to engage in actions for an individual in a way that cannot be traced back to that person
+- pseudonym → fictional identities that cha fill in for real identities in communications and transaction, but are otherwise known only to a trusted entity
 
