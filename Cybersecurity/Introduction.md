@@ -21,6 +21,12 @@ Preserving authorized restrictions on information access and disclosure, includi
 
 >[!example] Data + privacy
 
+We can resume it as the avoidance of the unauthorized disclosure of information (involves protection of date, providing access for those who are allowed to see it while disallowing others from learning anythimg about its content)
+
+#### Tools
+##### Encryption
+The transformation of information using a secret, called an ecryption key, so that the transformed information can only be read using another secret, called the decryption key (which may, in some cases, be the same as the encryption key)
+
 ### Integrity
 Guarding against improper information modification or destruction, including ensuring information nonrepudiation and authenticity
 
@@ -58,4 +64,28 @@ The **asset** is a key concept. In fact te assets are the things that are import
 >- Equipments
 >- Criminal records
 >- Keys for net-banking
+
+---
+## Vulnerabilities, threats and attacks
+![[Pasted image 20250929151258.png|center|400]]
+
+- **Categories of vulnerabilities**
+	- corrupted → loss of integrity
+	- leaky → loss of confidentiality
+	- unavailable or very slow → loss of availability
+- **Threats**
+	- capable of exploiting vulnerabilities
+	- represent potential security harm to an asset
+- **Attacks** (threats carried out)
+	- *passive* → attempt to learn of make use of information from the system that does not affect system resources (obtaining information that is being transmitted)
+	- *active* → attempt to alter system resources or affect their operation (involves some modification of the data stream or the creation of a false stream)
+	- *insider* → initiated by an entity inside the security perimeter. The insider is authorized to access system resources but uses them in a way not approved by those who granted the authorization
+	- *outsider* → initiated from outside the perimeter by an unauthorized or illegitimate user of the system
+
+>[!info] Security concepts
+>- Threat agent → who conducts or has the intent to conduct detrimental activities
+>- Countermeasure → a device or techniques that has as its objective  the impairment adversarial activity
+>- Risk → a measure of the extent to which an entity is threatened by a potential circumstance or event
+>- Threat → any circumstance or event with the potential to adversely impact organizational operations
+>- Vulnerability → weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source
 
