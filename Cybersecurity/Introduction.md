@@ -25,7 +25,7 @@ We can resume it as the avoidance of the unauthorized disclosure of information 
 
 #### Tools
 ##### Encryption
-The transformation of information using a secret, called an ecryption key, so that the transformed information can only be read using another secret, called the decryption key (which may, in some cases, be the same as the encryption key)
+	The transformation of information using a secret, called an ecryption key, so that the transformed information can only be read using another secret, called the decryption key (which may, in some cases, be the same as the encryption key)
 
 ### Integrity
 Guarding against improper information modification or destruction, including ensuring information nonrepudiation and authenticity
