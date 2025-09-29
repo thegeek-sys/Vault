@@ -23,9 +23,20 @@ Preserving authorized restrictions on information access and disclosure, includi
 
 We can resume it as the avoidance of the unauthorized disclosure of information (involves protection of date, providing access for those who are allowed to see it while disallowing others from learning anythimg about its content)
 
-#### Tools
+#### Tools for confidentiality
 ##### Encryption
+![[Pasted image 20250929154635.png|center|300]]
+
 The transformation of information using a secret, called an ecryption key, so that the transformed information can only be read using another secret, called the decryption key (which may, in some cases, be the same as the encryption key)
+
+##### Access control
+Rules and policies that limit access to confidential information to those people and/or systems with a “need to know” (that may be determined by identity or by a role that a person has)
+
+##### Authentication
+The determination of the identity role that someone has. This determination can be done in a number of different ways, but it is usually based on a combination of:
+- something the person *has*
+- something the person *knows*
+- something the person *is*
 
 ### Integrity
 Guarding against improper information modification or destruction, including ensuring information nonrepudiation and authenticity
