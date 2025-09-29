@@ -40,4 +40,22 @@ Depending on how much the system is compromised we have three levels of impact
 1. Computer security is not as simple as it might first appear to the novice
 2. In developing a particular security mechanism or algorithm, one must always considera potential attacks on those security features
 3. Procedures used to provide particular services are ofter counterintuitive
-4. 
+4. Physical and logical placement needs to be detected
+5. Security mechanisms typically involve more than a particular algorithm or protocol and also require that participants be in possession of some secret information which raises questions about the creation, distribution and protection of that secret information
+6. Attackers only need to find a single weakness, while the designer must find and eliminate all weaknesses to achieve protect security
+7. Security is still too ofter an afterthought to be incorporated into a system after the design is complete, rather than being an integral part of the design process
+8. Security requires regular and constant monitoring
+9. There is a natural tendency on the part of the users and system managers to perceive little benefit from security until a security failure occurs
+10. Many users and even security administrators view string security as in impediment to efficient and user-friendly operation of an information system or use of information
+
+---
+## Assets
+The **asset** is a key concept. In fact te assets are the things that are important for a person, a company or an institution, to be protected
+
+>[!example] Examples
+>- Staff address book
+>- Patient records
+>- Equipments
+>- Criminal records
+>- Keys for net-banking
+
