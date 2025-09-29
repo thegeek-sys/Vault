@@ -136,4 +136,3 @@ Tools:
 - mixing → the intertwining of transactions, information, or communications in a way that cannot be traces back to that person
 - proxies → trusted agents that are willing to engage in actions for an individual in a way that cannot be traced back to that person
 - pseudonym → fictional identities that cha fill in for real identities in communications and transaction, but are otherwise known only to a trusted entity
-
