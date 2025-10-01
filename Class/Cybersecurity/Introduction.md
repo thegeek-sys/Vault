@@ -4,6 +4,47 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#Definition|Definition]]
+	- [[#Definition#Computer security|Computer security]]
+- [[#C.I.A.|C.I.A.]]
+	- [[#C.I.A.#Confidentiality|Confidentiality]]
+		- [[#Confidentiality#Tools for confidentiality|Tools for confidentiality]]
+			- [[#Tools for confidentiality#Encryption|Encryption]]
+			- [[#Tools for confidentiality#Access control|Access control]]
+			- [[#Tools for confidentiality#Authentication|Authentication]]
+			- [[#Tools for confidentiality#Authorization|Authorization]]
+			- [[#Tools for confidentiality#Physical security|Physical security]]
+	- [[#C.I.A.#Integrity|Integrity]]
+		- [[#Integrity#Tools for integrity|Tools for integrity]]
+			- [[#Tools for integrity#Backups|Backups]]
+			- [[#Tools for integrity#Checksums|Checksums]]
+			- [[#Tools for integrity#Data corrective coded|Data corrective coded]]
+	- [[#C.I.A.#Availability|Availability]]
+		- [[#Availability#Tools for availability|Tools for availability]]
+			- [[#Tools for availability#Physical protections|Physical protections]]
+			- [[#Tools for availability#Computational redundancies|Computational redundancies]]
+	- [[#C.I.A.#Levels of impact|Levels of impact]]
+- [[#Computer security challenges|Computer security challenges]]
+- [[#Assets|Assets]]
+- [[#Vulnerabilities, threats and attacks|Vulnerabilities, threats and attacks]]
+	- [[#Vulnerabilities, threats and attacks#Threat consequeces|Threat consequeces]]
+	- [[#Vulnerabilities, threats and attacks#Threats and attacks|Threats and attacks]]
+- [[#Other security concepts|Other security concepts]]
+	- [[#Other security concepts#Authenticity|Authenticity]]
+	- [[#Other security concepts#Accountability|Accountability]]
+	- [[#Other security concepts#Anonymity|Anonymity]]
+- [[#Attack surfaces|Attack surfaces]]
+	- [[#Attack surfaces#Categories|Categories]]
+		- [[#Categories#Network attack surface|Network attack surface]]
+		- [[#Categories#Software attack surface|Software attack surface]]
+		- [[#Categories#Human attack surface|Human attack surface]]
+- [[#Computer security strategy|Computer security strategy]]
+	- [[#Computer security strategy#Security policy|Security policy]]
+	- [[#Computer security strategy#Security implementation|Security implementation]]
+	- [[#Computer security strategy#Assurance|Assurance]]
+	- [[#Computer security strategy#Evaluation|Evaluation]]
+---
 ## Definition
 The NIST definition says:
 
