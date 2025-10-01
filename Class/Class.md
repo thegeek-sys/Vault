@@ -8,6 +8,7 @@
 - [[Algebra]]
 - [[Algoritmi]]
 - [[Reti di elaboratori]]
+- [[Calcolo delle probabilità]]
 
 # 2025/2026
 - [[Cybersecurity]]
