@@ -1,2 +1,2 @@
-- [[Cybersecurity/Introduction|Introduction]]
+- [[Class/Cybersecurity/Introduction|Introduction]]
 - 
