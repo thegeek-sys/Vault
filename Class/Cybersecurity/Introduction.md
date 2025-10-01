@@ -116,6 +116,19 @@ The **asset** is a key concept. In fact te assets are the things that are import
 >- Threat → any circumstance or event with the potential to adversely impact organizational operations
 >- Vulnerability → weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source
 
+### Threat consequeces
+- *unauthorized disclosure* → is a threat to confidentiality (a circumstance or event whereby an entity gains access to data for which the entity is not authorized)
+- *deception* → is a threat ti either system integrity or data integrity (a circumstance or event that may result in an authorized entity receiving false data and believing it to be true)
+- *distruption* → is a threat to availability or system integrity (a circumstance or event that interrupts or prevents the correct operation of system services and functions)
+- *usurpation* → is a threat to system integrity (a circumstance or event that results in control of system services or functions by an unauthorized entity)
+
+### Threats and attacks
+- **falsification** → unauthorized modification of information (eg. MITM)
+- **denial-of-service** → the obstruction or degradation of a data service or information access (eg. email spam to slow down an email server)
+- **masquerading** → the fabrication of information that is purposed to be from someone who is not actually the author
+- **repudiation** → the denial of a commitment or data receipt (involves attempt to black out of a protocol that requires the different parties to provide receipts acknowledging that data has been received)
+- **interference** → the integration of multiple data sources and information flows to determine the source of a particular data stream or piece of information
+
 ---
 ## Other security concepts
 ### Authenticity
@@ -136,3 +149,33 @@ Tools:
 - mixing → the intertwining of transactions, information, or communications in a way that cannot be traces back to that person
 - proxies → trusted agents that are willing to engage in actions for an individual in a way that cannot be traced back to that person
 - pseudonym → fictional identities that cha fill in for real identities in communications and transaction, but are otherwise known only to a trusted entity
+
+---
+## Attack surfaces
+The **attack surfaces** are the reachable and exploitable vulnerabilities in a system
+### Categories
+#### Network attack surface
+Involves vulnerabilities over an enterprise network, wide-area network, or the Internet. 
+Included in this category are network protocol vulnerabilities, such as those used for a dos attack, disruption of communications links, and various forms of intruder attacks
+#### Software attack surface
+Involves vulnerabilities in application, utility, or operating system code. Particular focus is Web server software
+#### Human attack surface
+Involves vulnerabilities created by personnel or outsiders, such as social engineering, human error, and trusted insider
+
+---
+##  Computer security strategy
+### Security policy
+Formal statement of rules and practices that specify or regulate how a system or organization provides security services to protect sensitive and critical system resources
+
+### Security implementation
+Involves four complementary courses of action:
+- prevention
+- detection
+- response
+- recovery
+
+### Assurance
+Encompassing both system design and system implementation, assurance is an attribute of an information system that provides grounds for having confidence that the system operates such that the system’s security policy is enforced
+
+### Evaluation
+Process of examining a computer product or system with respect to certain criteria. Involves testing and may also involve formal analytic or mathematical techniques
