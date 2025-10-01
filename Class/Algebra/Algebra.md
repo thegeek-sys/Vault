@@ -1,1 +1,2 @@
-[[Algebra.pdf]]
+- [[Algebra.pdf]]
+- [[formulario algebra.pdf]]
