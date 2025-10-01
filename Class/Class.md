@@ -8,3 +8,8 @@
 - [[Algebra]]
 - [[Algoritmi]]
 - [[Reti di elaboratori]]
+
+# 2025/2026
+- [[Cybersecurity]]
+- [[Multicore]]
+- [[Automi calcolabilità e complessità]]
