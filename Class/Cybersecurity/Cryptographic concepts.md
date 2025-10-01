@@ -36,7 +36,7 @@ This kind of attack just tries all possible keys on some ciphertext until an int
 ![[Pasted image 20251001231041.png]]
 
 ### AES
-The **AES** (*Advances Encryption Standard*), also known as **Rikndael**, is the most popular and widely used encryption algorithm in the modern IT industry
+The **AES** (*Advances Encryption Standard*), also known as **Rikndael**, is the most popular and widely used encryption algorithm in the modern IT industry. It was published by the NIST in 1997, and should have a security equal to or better than 3DES but it is much faster in terms of efficiency
 
 It uses $128$ block cipher with $128$, $192$ (between 128 and 256) or $256$ bit secret keys
 
@@ -48,7 +48,7 @@ In fact it uses $64$ bit block cipher and $56$ bit secret key to produce 64 bit 
 >[!error]
 >Some people think that was chosen $56$ bit secret key because at that time just the NSA had enough powerful computers able to decrypt that kind of chipertext
 
-Due to its lack of safeness nowadays, it was introduced **3DES** which consists of cascading encrypting the same plaintext three times with three different keys
+Due to its lack of safeness nowadays, it was introduced **3DES** which consists of cascading encrypting the same plaintext three times with three different keys. It was first standardized by ANSI in 1985 as it solves the security problem that the original DES had but it is sluggish in software and uses a 64 bit block size
 
 ### RC4
 The **RC4**, also known as *ARC4* or *ARCFOUR*, is now considered insecure
