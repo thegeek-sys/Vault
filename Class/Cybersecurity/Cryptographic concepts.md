@@ -55,3 +55,20 @@ The **RC4**, also known as *ARC4* or *ARCFOUR*, is now considered insecure
 
 It used a *stream cipher* with $40-2048$ bits secret keys
 
+---
+## Practical security issues
+Typically symmetric encryption is applied to a unit of data larger than a single 64 bit or 128 bit block
+
+**Electronic codebook** (*ECB*) mode is the simplest approach to multiple-block encryption, but each block of plaintext is encrypted using the same key so that cryptoanalyst may be able to exploit regularities in the plaintext
+
+For this reason were developed alternative techniques to increase the security of symmetri block encryption for large sequences, overcoming the weaknesses of ECB
+
+---
+## Block and stream ciphers
+### Block cipher
+A block cipher processes the input one block of elements at a time and produces an output block for each input block
+
+It’s the widely used and can reuse keys
+
+### Stream cipher
+A stream cipher processes the input elements continously and produces output one element at a time
