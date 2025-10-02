@@ -66,7 +66,7 @@ For this reason were developed alternative techniques to increase the security o
 ---
 ## Block and stream ciphers
 ![[Pasted image 20251002164457.png|center]]
-
+$
 ### Block cipher
 A block cipher processes the input one block of elements at a time and produces an output block for each input block
 
