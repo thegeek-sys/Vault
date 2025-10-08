@@ -122,8 +122,16 @@ DELETE /courses/web-and-software-architecture
 | TRACE   | esegue un test di loop-back del messaggio lungo il percorso verso la risorsa target |
 ### Codici di stato della risposta
 Il codice di stato descrive il risultato della richiesta e la semantica della risposta, permettendo di sapere se la richiesta ha avuto successo e quale contenuto è allegato (se presente)
-
 #### 2xx successo
 - `200 OK` → in una richiesta GET, la risposta conterrà un'entità corrispondente alla risorsa richiesta; in una richiesta POST, la risposta conterrà un'entità che descrive o contiene il risultato dell'azione
 - `201 Created` → la richiesta è stata soddisfatta, risultando nella creazione di una nuova risorsa
 - `204 No Content` → il server ha elaborato con successo la richiesta e non sta restituendo alcun contenuto
+#### 3xx reindirizzamento
+- `301 Moved Permanently` → questa e tutte le richieste future dovrebbero essere indirizzate all’URI fornito
+- `302 Found` → guarda un’altra URL (prima “Moved temporarily“)
+#### 4xx errori client
+- `400 Bad Request` → apparente errore del client
+- `401 Unauthorized` → è richiesta l’autenticazione
+- `403 Forbidden` → la richiesta conteneva dati validi ed è stata compresa dal server, ma l’azione è proibita
+- `404 Not Found` → la risorsa non è stata trovata ma potrebbe essere disponibile in futuro
+- `405 Method Not Allowed` → il metodo di richiesta non è 
