@@ -4,6 +4,28 @@ Related:
 Class: "[[Programmazione per il Web]]"
 ---
 ---
+## Index 
+- [[#HyperText Transfer Protocol|HyperText Transfer Protocol]]
+	- [[#HyperText Transfer Protocol#Client|Client]]
+	- [[#HyperText Transfer Protocol#Server|Server]]
+	- [[#HyperText Transfer Protocol#Intermediari|Intermediari]]
+	- [[#HyperText Transfer Protocol#Cache|Cache]]
+- [[#Metodi HTTP|Metodi HTTP]]
+	- [[#Metodi HTTP#Proprietà|Proprietà]]
+		- [[#Proprietà#Safe|Safe]]
+		- [[#Proprietà#Idempotent|Idempotent]]
+		- [[#Proprietà#Cachable|Cachable]]
+	- [[#Metodi HTTP#PUT|PUT]]
+	- [[#Metodi HTTP#GET|GET]]
+	- [[#Metodi HTTP#POST|POST]]
+	- [[#Metodi HTTP#DELETE|DELETE]]
+	- [[#Metodi HTTP#Altri metodi|Altri metodi]]
+	- [[#Metodi HTTP#Codici di stato della risposta|Codici di stato della risposta]]
+		- [[#Codici di stato della risposta#2xx successo|2xx successo]]
+		- [[#Codici di stato della risposta#3xx reindirizzamento|3xx reindirizzamento]]
+		- [[#Codici di stato della risposta#4xx errori client|4xx errori client]]
+		- [[#Codici di stato della risposta#5xx errori server|5xx errori server]]
+---
 ## HyperText Transfer Protocol
 L’**HTTP** è un protocollo di livello applicazione nello stack di protocolli Internet, la cui variante sicura è chiamata **HTTPS**
 
@@ -134,4 +156,10 @@ Il codice di stato descrive il risultato della richiesta e la semantica della ri
 - `401 Unauthorized` → è richiesta l’autenticazione
 - `403 Forbidden` → la richiesta conteneva dati validi ed è stata compresa dal server, ma l’azione è proibita
 - `404 Not Found` → la risorsa non è stata trovata ma potrebbe essere disponibile in futuro
-- `405 Method Not Allowed` → il metodo di richiesta non è 
+- `405 Method Not Allowed` → il metodo di richiesta non è supportato (es. richiesta PUT su una risorsa di sola lettura)
+#### 5xx errori server
+- `500 Internal Server Error` → condizione inaspettata riscontrata
+- `501 Not Implemented` → metodo di richiesta non riconosciuto, oppure il server non ha la capacità di soddisfare la richiesta
+- `502 Bad Gateway` → un gateway o proxy ha ricevuto una risposta non valida dal server a monte
+- `503 Service Unavailable` → server sovraccarico o inattivo per manutenzione (temporaneo)
+- `504 Gateway Timeout` → il server non ha ricevuto una risposta tempestiva dal server a monte
