@@ -94,4 +94,36 @@ GET /course-descriptions/web-and-software-architecture
 ```
 
 ### POST
-Crea o modifica un subordinato della risorsa indicata nell’URI. L
+Crea o modifica un subordinato della risorsa indicata nell’URI. A differenza del PUT non sostituirà una risorsa esistente, ma ne crea una seconda
+
+```
+POST /announcements/
+POST /announcements/{id}/comments/
+POST /users/{id}/email
+```
+
+>[!warning]
+>L’azione non deve necessariamente creare una nuova risorsa
+
+### DELETE
+Richieste che il server di origine rimuova l’associazione tra la risorsa target e la sua funzionalità attuale
+
+```
+DELETE /courses/web-and-software-architecture
+```
+
+### Altri metodi
+
+| Metodo  | Descrizione                                                                         |
+| ------- | ----------------------------------------------------------------------------------- |
+| HEAD    | come GET, ma non trasferisce il contenuto della risposta                            |
+| CONNECT | stabilisce un tunnel verso il server identificato dalla risorsa target              |
+| OPTIONS | descrive le opzioni di comunicazione per la risorsa target                          |
+| TRACE   | esegue un test di loop-back del messaggio lungo il percorso verso la risorsa target |
+### Codici di stato della risposta
+Il codice di stato descrive il risultato della richiesta e la semantica della risposta, permettendo di sapere se la richiesta ha avuto successo e quale contenuto è allegato (se presente)
+
+#### 2xx successo
+- `200 OK` → in una richiesta GET, la risposta conterrà un'entità corrispondente alla risorsa richiesta; in una richiesta POST, la risposta conterrà un'entità che descrive o contiene il risultato dell'azione
+- `201 Created` → la richiesta è stata soddisfatta, risultando nella creazione di una nuova risorsa
+- `204 No Content` → il server ha elaborato con successo la richiesta e non sta restituendo alcun contenuto
