@@ -4,6 +4,14 @@ Related:
 Class: "[[Multicore]]"
 ---
 ---
+## Index
+- [[#How will we write parallel programs?|How will we write parallel programs?]]
+- [[#Type of parallel systems|Type of parallel systems]]
+- [[#Concurrent vs. parallel vs. distributed|Concurrent vs. parallel vs. distributed]]
+- [[#Why do we care about the hardware?|Why do we care about the hardware?]]
+	- [[#Why do we care about the hardware?#Von Neumann architecture|Von Neumann architecture]]
+		- [[#Von Neumann architecture#Its bottleneck|Its bottleneck]]
+---
 ## How will we write parallel programs?
 We will write programs that are explicitly parallel, using four different extentions of the C APIs:
 - **Message-Passing Interface** (*MPI*) `[Library]`
