@@ -51,3 +51,72 @@ Tells MPI we’re done, so clean up anything allocated for this program
 ```c
 int MPI_Finalize(void);
 ```
+
+### Basic outline
+
+```c
+...
+#include <mpi.h>
+...
+int main(int argc, char* argv[]) {
+	...
+	// no MPI calls before this
+	MPI_Init(&argc, &argv);
+	...
+	MPI_Finalize();
+	// no MPI calls after this
+	...
+	return 0;
+}
+```
+
+---
+## Compilation
+
+```c
+mpicc -g -Wall -o mpi_hello mpi_hello.c
+```
+
+Where:
+- `mpicc` → wrapper script to compile
+- `-g` → produce debugging information
+- `-Wall` → turns on all warnings
+
+---
+## Execution
+
+```c
+mpiexec -n <number of processes> <executable>
+```
+
+>[!example]- Example
+>```c
+>mpiexec -n 1 ./mpi_hello
+>// hello, world
+>
+>mpiexec -n 4 ./mpi_hello
+>// hello, world
+>// hello, world
+>// hello, world
+>// hello, world
+>```
+
+---
+## Debugging
+Parallel debugging is trickier than debugging serial programs. In fact many processes are computing so getting the state of one failed process is usually hard
+
+With MPI we can use ddd (or gdb) on one process:
+```c
+mpiexec -n 4 ./test : -n 1 ddd ./test : -n 1 ./test
+// launches the 5th process under "ddd" and all other processes normally
+```
+
+---
+## Identifying MPI process
+Common practice to identify processes is with nonnegative integer called **ranks**. The $p$ processes are numbered $0,1,\dots,p-1$
+
+### Communicators
+Communicators are a collection of processes that can send messages to each other
+
+`MPI_Init` defines a communicator that consists of all the processes created when the program is started called **`MPI_COMM_WORLD`**
+
