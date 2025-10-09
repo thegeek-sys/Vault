@@ -65,8 +65,8 @@ For this reason were developed alternative techniques to increase the security o
 
 ---
 ## Block and stream ciphers
-![[Pasted image 20251002164457.png|center]]
-$
+![[Pasted image 20251009223314.png|center|500]]
+
 ### Block cipher
 A block cipher processes the input one block of elements at a time and produces an output block for each input block
 
@@ -76,3 +76,9 @@ It’s the widely used and can reuse keys
 A stream cipher processes the input elements continuously and produces output one element at a time (it encrypts plaintext one byte at a time)
 
 The primary advantage is that they are almost always faster and use far less code. A pseudorandom stream is one that is unpredictable without knowledge of the input key
+
+---
+## Message authentication
+There are three layers of message authentication:
+- protects against acrive attacks
+- verified received message is authentic 
