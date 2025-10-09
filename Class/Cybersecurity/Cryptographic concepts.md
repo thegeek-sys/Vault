@@ -78,6 +78,13 @@ A stream cipher processes the input elements continuously and produces output on
 The primary advantage is that they are almost always faster and use far less code. A pseudorandom stream is one that is unpredictable without knowledge of the input key
 
 ---
+## Cryptographic hash function
+![[Pasted image 20251009225137.png|320]]
+
+The purpose of a hash function is to produce a “fingerprint” of a file, message, or other block of data. It generates a set of $k$ bits from a set of $L$ bits
+
+The result of applying a hash function is called **hash value**, or message digest, or checksum
+
 ## Message authentication
 The message authentication is used to verify if a message has not been altered and that comes from the real legitimate sender
 
@@ -90,3 +97,6 @@ Typically message authentication is separate from message encryption
 The **Message Authentication Code** (*MAC*) is typically a part of the result of applying an encryption algorithm to a message then attached to the message and used by the receiver to assure authentication
 
 ![[Pasted image 20251009224654.png|450]]
+
+#### MAC with one-way hash functions
+Unlike the MAC, a hash function does not take a secret key as input, however it is possible to get MACs using hash functions
