@@ -78,20 +78,39 @@ A stream cipher processes the input elements continuously and produces output on
 The primary advantage is that they are almost always faster and use far less code. A pseudorandom stream is one that is unpredictable without knowledge of the input key
 
 ---
-## Cryptographic hash function
+## Message authentication
+The message authentication is used to verify if a message has not been altered and that comes from the real legitimate sender
+
+### Message authentication without confidentiality
+Message encryption by itself does not provide a secure form of authentication, but we can solve it by combining authentication and confidentiality in a single algorithm
+
+Typically message authentication is separate from message encryption
+
+### Cryptographic hash function
 ![[Pasted image 20251009225137.png|320]]
 
 The purpose of a hash function is to produce a “fingerprint” of a file, message, or other block of data. It generates a set of $k$ bits from a set of $L$ bits
 
 The result of applying a hash function is called **hash value**, or message digest, or checksum
 
-## Message authentication
-The message authentication is used to verify if a message has not been altered and that comes from the real legitimate sender
+#### Properties of a hash function aimed at authentication
+- can be applied to a block of data of any size
+- produces a fixed length output
+- $H(x)$ is relatively easy to compute for any given $x$
+- one-way or pre-image resistance → computationally infeasible to find $x$ such that $H(x)=h$
+- computationally infeasible to find $y\neq x$ such that $H(y)=H(x)$
+- collision resistant → computationally infeasible to find any pair $(x,y)$ such that $H(x)=H(y)$
 
-### Message authentication without confidentiality
-Message encryption by itself does not provide a secure form of authentication, but we can solve it by combining authentication and confidentiality in a single algorithm 
+#### Security of hash functions
+There are two approaches to attacking a secure hash function:
+- exploit logical weakness in the algorithm
+- strength of hash function depends solely on the length of the hash code produces by the algorithm
 
-Typically message authentication is separate from message encryption
+SHA is the most widely used hash algorithm
+
+>[!tip] Additional secure hash function applications
+>- hash of a password is stored by an operating system
+>- store $H(F)$ for each file on a system and secure the hash values
 
 ### Message Authentication Code
 The **Message Authentication Code** (*MAC*) is typically a part of the result of applying an encryption algorithm to a message then attached to the message and used by the receiver to assure authentication
@@ -100,3 +119,38 @@ The **Message Authentication Code** (*MAC*) is typically a part of the result of
 
 #### MAC with one-way hash functions
 Unlike the MAC, a hash function does not take a secret key as input, however it is possible to get MACs using hash functions
+
+>[!example] Using symmetric encryption
+>![[Pasted image 20251009225708.png|450]]
+
+>[!example] Using public-key encryption
+>![[Pasted image 20251009225753.png|450]]
+
+>[!example] Using secret value
+>![[Pasted image 20251009225829.png|450]]
+
+---
+## Public-Key encryption structure
+Publicly proposed by Diffie and Hellman in 1976, the public-key encryption structure is based on mathematical functions and it’s **asymmetric**.
+So it uses two separate  keys, private and public key, one used by the sender to encrypt and one used by the receiver to decrypt
+
+>[!example] Encryption with public key
+>![[Pasted image 20251009231028.png]]
+
+>[!example] Encryption with private key
+>![[Pasted image 20251009231105.png]]
+
+### Applications for public-key cryptosystems
+
+| Algorithm      | Digital signature | Symmetric key distribution | Encryption of secret keys |
+| -------------- | ----------------- | -------------------------- | ------------------------- |
+| RSA            | yes               | yes                        | yes                       |
+| Diffie-Hellman | no                | yes                        | no                        |
+| DSS            | yes               | no                         | no                        |
+| Elliptic Curve | yes               | yes                        | yes                       |
+
+In board terms, we can classify the use of public-key cryptosystems into three categories:
+- digital signature
+- symmetric key distribution
+- encryption of secret keys
+
