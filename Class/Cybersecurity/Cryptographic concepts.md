@@ -85,3 +85,8 @@ The message authentication is used to verify if a message has not been altered a
 Message encryption by itself does not provide a secure form of authentication, but we can solve it by combining authentication and confidentiality in a single algorithm 
 
 Typically message authentication is separate from message encryption
+
+### Message Authentication Code
+The **Message Authentication Code** (*MAC*) is typically a part of the result of applying an encryption algorithm to a message then attached to the message and used by the receiver to assure authentication
+
+![[Pasted image 20251009224654.png|450]]
