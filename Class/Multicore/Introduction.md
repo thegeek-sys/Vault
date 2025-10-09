@@ -19,9 +19,14 @@ We can distinguish two different kind of system based on how they manage memory:
 - **shared memory** → the cores can share access to the computer’s memory, and they have to be coordinated to examine and update shared memory locations
 - **distributed memory** → each core has its own private memory, and the cores must communicate explicitly by sending messages across a network
 
+![[Pasted image 20251009165142.png]]
+
 But we can also distinguish two different kind of system based on which instruction each core can execute:
 - **Multiple-Instruction Multiple-Data** (*MIMD*) → each core has its own control units and can work independently from the others
 - **Single-Instruction Multiple-Data** (*SIMD*) → cores share the control units (they must all execute the same instruction, or stay idle)
+
+>[!info] NB
+>In SIMD it’s not necessary that all the cores execute the same instruction, you can assign different task to different groups of cores. Despite that it still has a low efficiency
 
 ![[Pasted image 20251008173131.png|350]]
 
