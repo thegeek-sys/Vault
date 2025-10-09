@@ -120,3 +120,92 @@ Communicators are a collection of processes that can send messages to each other
 
 `MPI_Init` defines a communicator that consists of all the processes created when the program is started called **`MPI_COMM_WORLD`**
 
+```c
+// returns total number of processes in the communicator
+int MPI_Comm_size(
+	MPI_Comm comm,      // in
+	int*     comm_sz_p, // out
+);
+
+// my rank (the process making this call)
+int MPI_Comm_rank(
+	MPI_Comm comm,      // in
+	int*     my_rank_p, // out
+);
+```
+
+>[!example]- Hello World! (v1)
+>```c
+>#include <stdio.h>
+>#include <mpi.h>
+>
+>int main(void) {
+>	int comm_sz, my_rank;
+>	MPI_Init(NULL, NULL);
+>	MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
+>	MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+>	printf(“hello, world from process %d out of %d\n”, my_rank, comm_sz);
+>	MPI_Finalize();
+>	return 0;
+>}
+>```
+>
+>
+>```c
+>mpiexec -n 4 ./mpi_hello
+>// hello, world from process 2 out of 4
+>// hello, world from process 3 out of 4
+>// hello, world from process 0 out of 4
+>// hello, world from process 1 out of 4
+>
+>mpiexec -n 4 ./mpi_hello
+>// hello, world from process 1 out of 4
+>// hello, world from process 0 out of 4
+>// hello, world from process 3 out of 4
+>// hello, world from process 2 out of 4
+>```
+
+---
+## Communication
+### $\verb|MPI_Send|$
+```c
+int MPI_Send(
+	void*        msg_buf_p, // in
+	int          msg_size,  // in
+	MPI_Datatype msg_type,  // in
+	int          dest,      // in
+	int          tag,       // in
+	MPI_Comm     comm       // in
+);
+```
+
+Where:
+- `msg_buf_p` → buffer that contains the message
+- `msg_size` → number of elements of the message, not number of bytes
+- `msg_type` → type the message (eg. `char`, `int`, …)
+- `dest` → rank of the destination process
+- `tag` → used to identify the message
+- `comm` → communicator
+### $\verb|MPI_Recv|$
+
+```c
+int MPI_Recv(
+	void*        msg_buf_p, // in
+	int          buf_size,  // in
+	MPI_Datatype buf_type,  // in
+	int          source,    // in
+	int          tag,       // in
+	MPI_Comm     comm,      // in
+	MPI_Status*  status_p   // in
+);
+```
+
+Where:
+- `msg_buf_p` → where we want to store the message
+- `buf_size` → number of elements of the buffer, not number of bytes
+- `buf_type` → type the message (eg. `char`, `int`, …)
+- `source` → rank of the destination process (I could specify from any sender)
+- `tag` → used to identify the message
+- `comm` → communicator
+- `status_p` → informations about what happened during the transmission (eg. who sent the message, …)
+
