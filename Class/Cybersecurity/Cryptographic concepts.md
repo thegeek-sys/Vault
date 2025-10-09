@@ -79,6 +79,9 @@ The primary advantage is that they are almost always faster and use far less cod
 
 ---
 ## Message authentication
-There are three layers of message authentication:
-- protects against acrive attacks
-- verified received message is authentic 
+The message authentication is used to verify if a message has not been altered and that comes from the real legitimate sender
+
+### Message authentication without confidentiality
+Message encryption by itself does not provide a secure form of authentication, but we can solve it by combining authentication and confidentiality in a single algorithm 
+
+Typically message authentication is separate from message encryption
