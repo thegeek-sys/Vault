@@ -171,3 +171,8 @@ In board terms, we can classify the use of public-key cryptosystems into three c
 ### Asymmetric encryption algorithms
 #### RSA
 The **RSA** (*Rivest, Shamir, Adleman*) was developed in 1977 and it’s the most widely accepted and implemented approach to public key encryption
+
+The RSA is a block cipher in which the plaintext and ciphertext are integers between $0$ and $n-1$ for come $n$
+
+#### Diffie-Hellman key exchange algorithm
+This algorithm enables two parties to securely reach agreement about a shared secret for subsequent symmetric encryption of messages
