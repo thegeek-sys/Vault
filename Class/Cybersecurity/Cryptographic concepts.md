@@ -202,6 +202,34 @@ FIPS 186-4 specifies the use of one of three digital signature algorithms:
 
 ---
 ## Public key certificate use
-The certificate let you associate an entity to its public key and is provided by a certification authority
+The certificate let you associate an entity to its public key and is guaranteed by a certification authority
 
 ![[Pasted image 20251010110404.png]]
+
+---
+## Digital envelope
+In this case you use asymmetric encryption to encrypt the symmetric key. Then the message (encrypted with the symmetric key) and the encrypted symmetric key are sent to the receiver.
+
+The receiver now has to decrypt the symmetric key using it’s private asymmetric key and then he can decrypt the message using the symmetric key
+
+![[Pasted image 20251010110703.png|500]]
+
+---
+## Random numbers
+In cryptography random numbers are essential. In fact they are used for the generation of:
+- keys for public-key algorithms
+- stream key for symmetric stream cipher
+- symmetric key for use as a temporary session key or in creating a digital envelope
+- handshaking to prevent replay attacks
+- session key
+
+### Requirements
+Random numbers have very specific requirements to be really defined “random”:
+- **randomness**
+	- uniform distribution → frequency of occurrence of each of the numbers should be approximately the same
+	- independence → no value in the sequence can be inferred from the others
+- **unpredictability**
+	- each number is statistically independent of other numbers in the sequence
+	- opponent should not be able to predict future elements of the sequence on the basis of earlier element
+
+### Random vs. Pseudorandom
