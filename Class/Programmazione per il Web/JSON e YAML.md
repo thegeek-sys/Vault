@@ -4,6 +4,13 @@ Class: "[[JSON e YAML]]"
 Related:
 ---
 ---
+## Index
+- [[#Oggetti e array|Oggetti e array]]
+	- [[#Oggetti e array#Oggetto|Oggetto]]
+	- [[#Oggetti e array#Array|Array]]
+- [[#YAML|YAML]]
+- [[#YAML superset di JSON|YAML superset di JSON]]
+---
 ## JSON
 Il **JSON** (*JavaScript Object Notation*) è un formato di testo leggero per lo scambio di dati basato su un sottoinsieme di Javascript (es. dati inviati con richieste e risposte RESTful). Viene anche utilizzato per archiviare dati
 
