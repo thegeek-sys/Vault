@@ -4,6 +4,41 @@ Created: 2025-10-01
 Related:
 ---
 ---
+## Index
+- [[#Symmetric encryption|Symmetric encryption]]
+	- [[#Symmetric encryption#Attacking symmetric encryption|Attacking symmetric encryption]]
+		- [[#Attacking symmetric encryption#Cryptoanalisys attacks|Cryptoanalisys attacks]]
+		- [[#Attacking symmetric encryption#Brute-force attacks|Brute-force attacks]]
+- [[#Most known symmetric encryption algorithms|Most known symmetric encryption algorithms]]
+	- [[#Most known symmetric encryption algorithms#AES|AES]]
+	- [[#Most known symmetric encryption algorithms#DES|DES]]
+	- [[#Most known symmetric encryption algorithms#RC4|RC4]]
+- [[#Practical security issues|Practical security issues]]
+- [[#Block and stream ciphers|Block and stream ciphers]]
+	- [[#Block and stream ciphers#Block cipher|Block cipher]]
+	- [[#Block and stream ciphers#Stream cipher|Stream cipher]]
+- [[#Message authentication|Message authentication]]
+	- [[#Message authentication#Message authentication without confidentiality|Message authentication without confidentiality]]
+	- [[#Message authentication#Cryptographic hash function|Cryptographic hash function]]
+		- [[#Cryptographic hash function#Properties of a hash function aimed at authentication|Properties of a hash function aimed at authentication]]
+		- [[#Cryptographic hash function#Security of hash functions|Security of hash functions]]
+	- [[#Message authentication#Message Authentication Code|Message Authentication Code]]
+		- [[#Message Authentication Code#MAC with one-way hash functions|MAC with one-way hash functions]]
+- [[#Public-Key encryption structure|Public-Key encryption structure]]
+	- [[#Public-Key encryption structure#Applications for public-key cryptosystems|Applications for public-key cryptosystems]]
+		- [[#Applications for public-key cryptosystems#Requirements|Requirements]]
+	- [[#Public-Key encryption structure#Asymmetric encryption algorithms|Asymmetric encryption algorithms]]
+		- [[#Asymmetric encryption algorithms#RSA|RSA]]
+		- [[#Asymmetric encryption algorithms#Diffie-Hellman key exchange algorithm|Diffie-Hellman key exchange algorithm]]
+		- [[#Asymmetric encryption algorithms#Digital Signature Standard (DSS)|Digital Signature Standard (DSS)]]
+		- [[#Asymmetric encryption algorithms#Elliptic curve cryptography (ECC)|Elliptic curve cryptography (ECC)]]
+- [[#Digital signature|Digital signature]]
+- [[#Public key certificate use|Public key certificate use]]
+- [[#Digital envelope|Digital envelope]]
+- [[#Random numbers|Random numbers]]
+	- [[#Random numbers#Requirements|Requirements]]
+	- [[#Random numbers#Random vs. Pseudorandom|Random vs. Pseudorandom]]
+---
 ## Symmetric encryption
 The universal technique for providing confidentiality for transmitted or stored data is **symmetric encryption**, also called conventional encryption or single-key encryption
 
@@ -233,3 +268,16 @@ Random numbers have very specific requirements to be really defined “random”
 	- opponent should not be able to predict future elements of the sequence on the basis of earlier element
 
 ### Random vs. Pseudorandom
+Cryptographic applications typically make use of algorithmic techniques for random number generation, because algorithms are **deterministic** and therefore produce sequences of numbers that are not statistically random
+
+**Pseudorandom numbers** are:
+- sequences produced that satisfy statistical randomness tests
+- likely to be predictable
+
+**True random number generator** (TRNG):
+- uses a nondeterministic source to produce randomness
+- most operate by measuring unpredictable natural processes (eg. radiation, gas discharge, leaky capacitors)
+- increasingly provided on modern processors
+
+Pseudorandom numbers are predictable because they use a key to initialize the algorithm (same key produce same numbers), and for this reason is typically used a TRNG to generate the key for the initialization
+
