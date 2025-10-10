@@ -17,6 +17,27 @@ Il **JSON** (*JavaScript Object Notation*) è un formato di testo leggero per lo
 }
 ```
 
+>[!example]- Esempio JSON
+>
+>```json
+>{
+>	"anObject": {
+>		"aNumber": 42,
+>		"aString": "This is a string",
+>		"aBoolean": true,
+>		"nothing": null,
+>		"anArray": [
+>			1,
+>			{
+>				"name": "value",
+>				"anotherName": 12
+>			},
+>			"something else"
+>		]
+>	}
+>}
+>```
+
 ### Oggetti e array
 JSON utilizza solo due concetti familiari:
 - **object**
@@ -47,27 +68,6 @@ Elenco ordinato di valori, separato da virgole, racchiuso tra parentesi quadre
 }
 ```
 
->[!example]- Esempio JSON
->
->```json
->{
->	"anObject": {
->		"aNumber": 42,
->		"aString": "This is a string",
->		"aBoolean": true,
->		"nothing": null,
->		"anArray": [
->			1,
->			{
->				"name": "value",
->				"anotherName": 12
->			},
->			"something else"
->		]
->	}
->}
->```
-
 ---
 ## YAML
 Lo YAML (YAML Ain’t Markup Language) è un linguaggio di serializzazione dei dati pensato per gli umani e viene usato per file di configurazione, per archiviare dati o per scambiare dati
@@ -78,3 +78,22 @@ user:
 	lastName: Smith
 	age: 27
 ```
+
+> [!example]- Esempio YAML
+>```yaml
+>anObject:
+>	aNumber: 42
+>	aString: This is a string
+>	aBoolean: true
+>	nothing: null
+>	anArray:
+>		- 1
+>		- anotherObject:
+>			  someName: some value
+>			  someOtherName: 1234
+>		- something else
+>```
+
+---
+## YAML superset di JSON
+Opzionalmente tutto quello che è il markup di JSON è accettato da YAML
