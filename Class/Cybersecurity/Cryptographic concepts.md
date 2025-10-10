@@ -196,3 +196,12 @@ FIPS 186-4 specifies the use of one of three digital signature algorithms:
 - **RSA Digital Signature Algorithm**
 - **Elliptic Curve Digital Signature Algorithm** (ECDSA)
 
+>[!example] Digital signature process
+>Bob signs a message and Alice verifies the signature
+>![[Pasted image 20251010110124.png|400]]
+
+---
+## Public key certificate use
+The certificate let you associate an entity to its public key and is provided by a certification authority
+
+![[Pasted image 20251010110404.png]]
