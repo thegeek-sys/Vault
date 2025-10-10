@@ -140,6 +140,7 @@ So it uses two separate  keys, private and public key, one used by the sender to
 >[!example] Encryption with private key
 >![[Pasted image 20251009231105.png]]
 
+In summary it is possible both to encrypt with the public key of the receiver (the receiver will then decrypt with his private key) and to encrypt with your private key (the receiver will then decrypt using the sender’s public key)
 ### Applications for public-key cryptosystems
 
 | Algorithm      | Digital signature | Symmetric key distribution | Encryption of secret keys |
@@ -154,3 +155,10 @@ In board terms, we can classify the use of public-key cryptosystems into three c
 - symmetric key distribution
 - encryption of secret keys
 
+#### Requirements
+- computationally easy to create key pairs
+- computationallly easy for sender knowing public key to encrypt messages
+- useful if either key can be used for each role
+- computationally infeasible for opponent to otherwise recover original message
+- computationally infeasible for opponent to determine private key from public key
+- 
