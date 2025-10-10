@@ -41,7 +41,7 @@ Related:
 ---
 ## Symmetric encryption
 The universal technique for providing confidentiality for transmitted or stored data is **symmetric encryption**, also called conventional encryption or single-key encryption
-
+1
 It has two requirements for secure use:
 - needs a strong encryption algorithm (AES standard wants a key 128 bit long)
 - sender and receiver must have obtained copies of the secret key in a secure fashion and must keep the key secure
