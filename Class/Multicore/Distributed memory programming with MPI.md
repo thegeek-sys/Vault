@@ -211,7 +211,7 @@ Where:
 
 >[!error] Issues with send and receive
 >- exact behavior is determined by the MPI implementation
->- `MPI_Send` may behave differently with regard to buffer size cutoffs and blocking. quando faccio la send non so se il messaggio sia ancora partito o meno, la mia unica garanzia è che quando eseguo l’istruzione successiva possono essere modificati dato che MPI li ha già copiati su un altro buffer di memoria (sicuramente però gli elementi che sono stati inviati sono quelli prima della modifica)
+>- `MPI_Send` may behave differently with regard to buffer size cutoffs and blocking
 >- `MPI_Recv` always blocks until a matching message is received
 >- even if you know your MPI implementation, stick to what is defined by the standard (don’t assume that the send returns immediately for small buffers), otherwise your code will not be portable
 
@@ -221,6 +221,8 @@ The `status_p` argument is used to provide informations about the transmission. 
 ```c
 MPI_Recv(recv_buf_p, rect_buf_sz, recv_type, src, recv_tag, recv_comm, &status);
 ```
+
+It it also possibile to use `MPI_Get_count` to retrieve the number of elements from a receive operation status
 
 ```c
 int MPI_Get_count(
@@ -273,3 +275,7 @@ A receiver can get a message without knowing:
 - or the tag of the message (`MPI_ANY_TAG`)
 
 ---
+quando faccio la send non so se il messaggio sia ancora partito o meno, la mia unica garanzia è che quando eseguo l’istruzione successiva possono essere modificati dato che MPI li ha già copiati su un altro buffer di memoria (sicuramente però gli elementi che sono stati inviati sono quelli prima della modifica)
+## What happens when you do a $\verb|Send|$
+![[Pasted image 20251008145432.png]]
+
