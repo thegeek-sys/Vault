@@ -209,6 +209,27 @@ Where:
 - `comm` → communicator
 - `status_p` → informations about what happened during the transmission (eg. who sent the message, …)
 
+>[!error] Issues with send and receive
+>- exact behavior is determined by the MPI implementation
+>- `MPI_Send` may behave differently with regard to buffer size cutoffs and blocking. quando faccio la send non so se il messaggio sia ancora partito o meno, la mia unica garanzia è che quando eseguo l’istruzione successiva possono essere modificati dato che MPI li ha già copiati su un altro buffer di memoria (sicuramente però gli elementi che sono stati inviati sono quelli prima della modifica)
+>- `MPI_Recv` always blocks until a matching message is received
+>- even if you know your MPI implementation, stick to what is defined by the standard (don’t assume that the send returns immediately for small buffers), otherwise your code will not be portable
+
+#### $\verb|status_p|$ argument
+The `status_p` argument is used to provide informations about the transmission. It contains three attributes: `MPI_SOURCE`, `MPI_TAG`, `MPI_ERROR`
+
+```c
+MPI_Recv(recv_buf_p, rect_buf_sz, recv_type, src, recv_tag, recv_comm, &status);
+```
+
+```c
+int MPI_Get_count(
+	MPI_Status*  status_p, // in
+	MPI_Datatype type,     // in
+	int*         count_p   // out
+);
+```
+
 ### Sending order
 MPI requires that messages be nonovertaking. This means that if process $q$ send two messages to process $r$, then the first message sent by $q$ must be available to $r$ before the second message. However, there is no restriction on the arrival of messages sent from different processes
 
@@ -239,7 +260,7 @@ User made communicators could be useful to integrate complex functionalities tog
 >
 >We can do it with tags, assigning tags $[1,n]$ and tags $[n+1,m]$ to the two libraries or **we simply pass one communicator to one library functions and a differente communicator to the other library**
 
-## Message matching
+### Message matching
 ![[Pasted image 20251012165039.png|500]]
 
 Message is successfully received if:
@@ -250,3 +271,5 @@ A receiver can get a message without knowing:
 - the amount of data in the message
 - the sender of the message (`MPI_ANY_SOURCE`)
 - or the tag of the message (`MPI_ANY_TAG`)
+
+---
