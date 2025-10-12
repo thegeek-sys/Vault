@@ -241,3 +241,12 @@ User made communicators could be useful to integrate complex functionalities tog
 
 ## Message matching
 ![[Pasted image 20251012165039.png|500]]
+
+Message is successfully received if:
+- `recv_type = send_type`
+- `recv_buf_sz >= send_buf_sz`
+
+A receiver can get a message without knowing:
+- the amount of data in the message
+- the sender of the message (`MPI_ANY_SOURCE`)
+- or the tag of the message (`MPI_ANY_TAG`)
