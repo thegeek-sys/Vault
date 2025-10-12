@@ -275,7 +275,17 @@ A receiver can get a message without knowing:
 - or the tag of the message (`MPI_ANY_TAG`)
 
 ---
-quando faccio la send non so se il messaggio sia ancora partito o meno, la mia unica garanzia è che quando eseguo l’istruzione successiva possono essere modificati dato che MPI li ha già copiati su un altro buffer di memoria (sicuramente però gli elementi che sono stati inviati sono quelli prima della modifica)
 ## What happens when you do a $\verb|Send|$
 ![[Pasted image 20251008145432.png]]
 
+>[!warning]
+>When you do a `MPI_Send` you don’t know if the message has been sent or not. Your only guarantee is that when you execute the next instructions the `msg_buf_p` could be edited because MPI have already copied the content in another memory buffer (but definitely the data that has been sent is the one before the edit)
+
+---
+## Point-to-point communication modes
+`MPI_Send` uses the so called standard communication mode. MPI decides based on the size of the message, whether to block the call until the destination process collects it or to return before a matching receive is issued. The latter is chosen if the message is small enough, making `MPI_Send` locally blocking
+
+There are three additional communication modes:
+- **buffered** → in buffered mode the sending operation is always locally blocking (eg. it will return as soon as the message is copied to a buffer). The second difference with the standard communication mode is that the buffer is *user-provided*
+- **synchronous** → in synchronous mode, the sending operation will return only after the destination process has initiated and started the retrieval of the message. This is a proper **globally blocking** operation
+- **ready** → the send operation will succeed only if a matching receive operation has been initiated already. Otherwise the function returns with an error code. The purpose of this mode is to reduce overhead of handshaking operations
