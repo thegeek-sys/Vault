@@ -209,3 +209,30 @@ Where:
 - `comm` → communicator
 - `status_p` → informations about what happened during the transmission (eg. who sent the message, …)
 
+### Sending order
+MPI requires that messages be nonovertaking. This means that if process $q$ send two messages to process $r$, then the first message sent by $q$ must be available to $r$ before the second message. However, there is no restriction on the arrival of messages sent from different processes
+
+| MPI datatype         | C datatype             |
+| -------------------- | ---------------------- |
+| `MPI_CHAR`           | `signed char`          |
+| `MPI_SHORT`          | `signed short int`     |
+| `MPI_LONG`           | `signed long int`      |
+| `MPI_LONG_LONG`      | `signed long long int` |
+| `MPI_UNSIGNED_CHAR`  | `unsigned char`        |
+| `MPI_UNSIGNED_SHORT` | `unsigned short int`   |
+| `MPI_UNSIGNED`       | `unsigned int`         |
+| `MPI_UNSIGNED_LONG`  | `unsigned long int`    |
+| `MPI_FLOAT`          | `float`                |
+| `MPI_DOUBLE`         | `double`               |
+| `MPI_LONG_DOUBLE`    | `long double`          |
+| `MPI_BYTE`           |                        |
+| `MPI_PACKED`         |                        |
+
+---
+## Communicators
+`MPI_Init` defines a communicator called **`MPI_COMM_WORLD`**, but MPI also provides functions to create new communicators
+
+User made communicators could be useful to integrate complex functionalities together
+
+>[!example]
+>Suppose you have 2 MPI independent libraries of functions 
