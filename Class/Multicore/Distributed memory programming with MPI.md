@@ -239,3 +239,5 @@ User made communicators could be useful to integrate complex functionalities tog
 >
 >We can do it with tags, assigning tags $[1,n]$ and tags $[n+1,m]$ to the two libraries or **we simply pass one communicator to one library functions and a differente communicator to the other library**
 
+## Message matching
+![[Pasted image 20251012165039.png|500]]
