@@ -235,4 +235,7 @@ MPI requires that messages be nonovertaking. This means that if process $q$ send
 User made communicators could be useful to integrate complex functionalities together
 
 >[!example]
->Suppose you have 2 MPI independent libraries of functions 
+>Suppose you have 2 MPI independent libraries of functions; they don’t communicate with each other, but they do communicate internally
+>
+>We can do it with tags, assigning tags $[1,n]$ and tags $[n+1,m]$ to the two libraries or **we simply pass one communicator to one library functions and a differente communicator to the other library**
+
