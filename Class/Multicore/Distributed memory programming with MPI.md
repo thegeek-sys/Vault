@@ -289,3 +289,60 @@ There are three additional communication modes:
 - **buffered** → in buffered mode the sending operation is always locally blocking (eg. it will return as soon as the message is copied to a buffer). The second difference with the standard communication mode is that the buffer is *user-provided*
 - **synchronous** → in synchronous mode, the sending operation will return only after the destination process has initiated and started the retrieval of the message. This is a proper **globally blocking** operation
 - **ready** → the send operation will succeed only if a matching receive operation has been initiated already. Otherwise the function returns with an error code. The purpose of this mode is to reduce overhead of handshaking operations
+
+```c
+int [MPI_Bsend | MPI_Ssend | MPI_Rsend] (void *buf, int count, MPI_Datatype datatype, int dest, int tag, MPI_Comm comm)
+```
+
+---
+## Non-blocking communication
+Buffered sends are considered bad for performance, because the caller has to block, waiting for the copy to take place.
+
+Non-blocking (or immediate) functions, maximize concurrency by returning immediately upon initiating a transfer, allowing communication and computation to overlap.
+There are both send and receive immediate variants
+
+>[!example]
+>While the copying is being done and/or the NIC is sending/receiving the data, I can compute something else
+
+The downside is that the completion of the operations both end-points, has to be queried explicitly:
+- for *senders* so that they can re-use or modify the message buffer
+- for *receivers* so that they can extract the message contents
+
+>[!tip]
+>Non-blocking communications can be coupled with any communication mode
+
+### Non-blocking $\verb|Send|$
+
+```c
+int MPI_Isend(
+	void *buf, // addfess of data buffer (IN)
+	int count, // number of data items (IN)
+	MPI_Datatype datatype, // type of buffer elements (IN)
+	int dest, // rank of destination process
+	int tag, // label to identify the message (IN)
+	MPI_Comm comm, // identifies the communicator
+	MPI_Request *req // used to return a handle for checking status (OUT)
+)
+```
+
+The only differing field from the standard `MPI_Send` is `req`. The `MPI_Request` that is returned, is a handle that allows a query on the status of the operation to take place
+
+With the `Isend` a new thread is opened so you can continue to compute data while the communication is ongoing
+
+### Non-blocking $\verb|Recv|$
+
+```c
+int MPI_Isend(
+	void *buf, // addfess of data buffer (IN)
+	int count, // number of data items (IN)
+	MPI_Datatype datatype, // type of buffer elements (IN)
+	int source, // rank of destination process
+	int tag, // label to identify the message (IN)
+	MPI_Comm comm, // identifies the communicator
+	MPI_Request *req // used to return a handle for checking status (OUT)
+)
+```
+
+In the `MPI_Irecv` the `MPI_Status` parameter is replaced by a `MPI_Request` one
+
+### Check for completion
