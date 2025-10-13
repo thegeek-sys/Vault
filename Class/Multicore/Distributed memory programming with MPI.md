@@ -346,3 +346,41 @@ int MPI_Isend(
 In the `MPI_Irecv` the `MPI_Status` parameter is replaced by a `MPI_Request` one
 
 ### Check for completion
+All the non-blocking functions are associated to a wait command. This command could be blocking (returns only when the task is completed) or non-blocking (returns immediately with the state of the task)
+
+**Blocking** (destroys handle)
+```c
+int MPI_Wait(
+	MPI_Request *req, // address of the handle identifying the
+					  // operation queried (IN/OUT)
+	                  // the call invalidates *req by 
+	                  // setting it to MPI_REQUEST_NULL
+	MPI_Status *st // addess of the structure that will hold the 
+				   // comm. information (OUT)
+)
+```
+
+**Non-blocking** (destroys handle if operation is successful, `*flag=1`)
+```c
+int MPI_Test(
+	MPI_Request *req, // address of the handle identifying the
+					  // operation queried (IN)
+	int *flag, // set to true is operation is complete (OUT)
+	MPI_Status *st // addess of the structure that will hold the 
+				   // comm. information (OUT)
+)
+```
+
+There are several variants available, here the main ones:
+- `Waitall`
+- `Testall`
+- `Waitany`
+- `Testany`
+
+>[!example] Example
+>**Problem** → ring: each rank sends something to left/right rank, and receives something from them
+>
+>![[Pasted image 20251008162902.png]]
+>
+>It could be helpful using a non-blocking send/receive because there could be deadlock problems (if two cores are doing a `Send` at the same time with messages sufficiently large, there would be a deadlock)
+
