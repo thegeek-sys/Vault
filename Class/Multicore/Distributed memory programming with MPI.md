@@ -382,5 +382,39 @@ There are several variants available, here the main ones:
 >
 >![[Pasted image 20251008162902.png]]
 >
->It could be helpful using a non-blocking send/receive because there could be deadlock problems (if two cores are doing a `Send` at the same time with messages sufficiently large, there would be a deadlock)
+>It could be helpful using a non-blocking send/receive because there could be deadlock problems (if one core is sending to the next one and the next one is sending to the previous one at the same time with sufficiently large messages, there will be a deadlock)
+>
+>>[!done]- Solution
+>>```c
+>>#include "mpi.h"
+>>#include <stdio.h>
+>>
+>>int main(void) {
+>>	int numtasks, rank, next, prev, buf[2];
+>>	MPI_Request reqs[4]; // required variable for non-blocking calls
+>>	MPI_Status stats[4]; // required variable for Waitall routine
+>>	MPI_Init(NULL, NULL);
+>>	MPI_Comm_size(MPI_COMM_WORLD, &numtasks);
+>>	MPI_Comm_rank(MPI_COMM_WORLD, &rank); // determine left and right neighbors
+>>	prev = (rank-1+numtask) % numtasks;
+>>	next = (rank+1) % numtasks;
+>>// post non-blocking receives and sends for neighbors
+>>	MPI_Irecv(&buf[0], 1, MPI_INT, prev, 0, MPI_COMM_WORLD, &reqs[0]);
+>>	MPI_Irecv(&buf[1], 1, MPI_INT, next, 0, MPI_COMM_WORLD, &reqs[1]);
+>>	MPI_Isend(&rank, 1, MPI_INT, prev, 0, MPI_COMM_WORLD, &reqs[2]);
+>>	MPI_Isend(&rank, 1, MPI_INT, next, 0, MPI_COMM_WORLD, &reqs[3]);
+>>	// do some work while sends/receives progress idn background
+>>	// wait for all non-blocking operations to complete
+>>	MPI_Waitall(4, reqs, stats);
+>>	// continue - do more work
+>>	MPI_Finalize();
+>>}
+>>```
 
+### Summary
+
+| A sending process                               | Function    |
+| ----------------------------------------------- | ----------- |
+| must block untile the message is delivered      | `MPI_Ssend` |
+| should wait only until the message is buffered  | `MPI_Bsend` |
+| should return immediately without ever blocking | `MPI_Isend` |
