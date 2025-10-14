@@ -36,3 +36,21 @@ This definition give some identification and authentication requirements for pro
 >[!info] NIST SP 800-63-3 Digital Identity Guidelines architecture model
 >![[Pasted image 20251014145201.png]]
 
+---
+## Authentication
+The four means of authenticating user identity are based on:
+- something the individual *knows*
+- something the individual *possesses*
+- something the individual *is*
+- something the individual *does*
+
+### Multifactor authentication
+Multifactor authentication is the use of more than one of the authentication means and using more factors is considered stronger than using less
+
+---
+## Assurance Levels for user authentication
+An organization can choose from a range of authentication technologies, based on the degree of confidence in identity proofing and authentication processes
+### IAL
+There are three levels of **Identity Assurance Levels** (*IAL*):
+- **IAL 1** → no need to link the applicant to a specific real-time identity
+- **IAL 2** → provides evidence for the claimed identity using either remote or physically-present identity proofing
