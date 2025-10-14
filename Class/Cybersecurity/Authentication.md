@@ -1,6 +1,7 @@
 ---
 Class: "[[Cybersecurity]]"
 Related:
+  - "[[Passwords]]"
 ---
 ---
 ## Introduction
@@ -49,8 +50,19 @@ Multifactor authentication is the use of more than one of the authentication mea
 
 ---
 ## Assurance Levels for user authentication
-An organization can choose from a range of authentication technologies, based on the degree of confidence in identity proofing and authentication processes
 ### IAL
+An organization can choose from a range of authentication technologies, based on the degree of confidence in identity proofing and authentication processes
+
 There are three levels of **Identity Assurance Levels** (*IAL*):
-- **IAL 1** → no need to link the applicant to a specific real-time identity
-- **IAL 2** → provides evidence for the claimed identity using either remote or physically-present identity proofing
+- *IAL 1* → no need to link the applicant to a specific real-time identity
+- *IAL 2* → provides evidence for the claimed identity using either remote or physically-present identity proofing
+- *IAL 3* → requires physical presence for identity proofing
+
+### AAL
+AALs define options an organization can select, based on their risk assessment and the potential harm caused by an attacker taking control of an authenticator and accessing their system
+
+There are three levels of **Authenticator Assurance Levels** (*AAL*):
+- *AAL 1* → provides some assurance of authentication via user-supplied ID and password
+- *AAL 2* → provides high confidence of authentication via proof or possession and control of two authentication factors
+- *AAL 3* → provides very high confidence of authentication via proof of possession and control of two authentication factors
+
