@@ -111,19 +111,23 @@ In un architettura RESTful, i metodi HTTP definiscono l’azione che si desidera
 
 ---
 ## Azione o risorsa?
-
-**Azione 1: ottenere dati**
+### Azione 1: ottenere dati
 - obiettivo → ottenere tutti i prodotti in vendita
 - design corretto → `GET /products`
 - motivazione → si sta recuperando una collezione di prodotti
 
-**Azione 2: creare una nuova risorsa**
+### Azione 2: creare una nuova risorsa
 - obiettivo → aggiungere un nuovo utente
 - design corretto → `POST /users` (corpo della richiesta contiene i dati del nuovo utente)
 - risposta attesa → `201 Created` (l’API dovrebbe restituire la nuova risorsa e l’URI per accedervi)
 
-**Azione 3: eseguire una funzione specifica**
+### Azione 3: eseguire una funzione specifica
 Se un’azione non è mappabile a CRUD ci sono due approcci accettati:
-1. Modeling come risorsa
+1. **Modeling come risorsa** → modellare l’azione come una risorsa
 	- esempio → pubblicare un documento
 	- URI → `POST /documents/{id}/publish`
+2. **PATCH (modifica stato)** → usiamo `PATCH` per aggiornare un attributo di stato
+	- esempio → pubblicare un documento aggiornando lo stato
+	- URI → `PATCH /documents/{id}` (corpo: `{"status":"published"}`)
+
+Il secondo approccio è preferito perché mantiene un modello più puro, in cui si agisce sullo **stato** della risorsa
