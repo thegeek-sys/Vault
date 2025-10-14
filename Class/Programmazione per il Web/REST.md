@@ -96,3 +96,34 @@ Nella comunicazione possono essere coinvolti diversi componenti in un’architet
 
 Inoltre ogni componente non può “vedere” oltre lo stato immediatamente adiacente con cui interagisce
 
+---
+## HTTP vs. REST
+In un architettura RESTful, i metodi HTTP definiscono l’azione che si desidera eseguire sulla risorsa (URI). Gli URI identificano la cosa, i metodi HTTP definiscono cosa fare con quella cosa
+
+>[!example] Esempio
+>| Metodo   | Funzione                                      | Corrispondenza CRUD |
+>| -------- | --------------------------------------------- | ------------------- |
+>| `GET`    | recupera una risorsa o una collezione         | read                |
+>| `POST`   | crea una nuova risorsa in una collezione      | create              |
+>| `PUT`    | sostituisce complemente una risorsa esistente | update/replace      |
+>| `DELETE` | rimuove una risorsa specifica                 | delete              |
+>| `PATCH`  | applica modifiche parziali a una risorsa      | update/modify       |
+
+---
+## Azione o risorsa?
+
+**Azione 1: ottenere dati**
+- obiettivo → ottenere tutti i prodotti in vendita
+- design corretto → `GET /products`
+- motivazione → si sta recuperando una collezione di prodotti
+
+**Azione 2: creare una nuova risorsa**
+- obiettivo → aggiungere un nuovo utente
+- design corretto → `POST /users` (corpo della richiesta contiene i dati del nuovo utente)
+- risposta attesa → `201 Created` (l’API dovrebbe restituire la nuova risorsa e l’URI per accedervi)
+
+**Azione 3: eseguire una funzione specifica**
+Se un’azione non è mappabile a CRUD ci sono due approcci accettati:
+1. Modeling come risorsa
+	- esempio → pubblicare un documento
+	- URI → `POST /documents/{id}/publish`
