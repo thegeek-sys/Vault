@@ -69,3 +69,11 @@ Non è consigliabile incorporare grandi dati binari (es. foto) direttamente all�
 
 #### Upload di dati strutturati + file (multipart)
 Se devi inviare dati JSON insieme a un file binario, l’approccio standard è utilizzare `multipart/form-data`
+
+>[!example] Aggiungere una nuova fontana (JSON) e caricarne contemporaneamente la foto (file)
+>**Corpo della richiesta**:
+>- media type: `multipart/form-data`
+>- part 1 (JSON): `Content-Disposition: name="fountain_data"` (contenente il JSON)
+>- part 2 (file binario): `Content-Disposition: name="photo"` (contiene i byte binari dell’immagine)
+
+#### 
