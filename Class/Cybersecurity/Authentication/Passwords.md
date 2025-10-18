@@ -36,3 +36,17 @@ An hash function to be considered safe has to be:
 
 ### UNIX-style, legacy
 It uses up to 8 printable character in length while a 12 bit *salt* is used to modify DES encryption into a one-way hash function (to make sure that two different have two different hash even if the password is the same)
+
+Once you have `password + salt` it is encrypted 25 times using DES with seed $0$, to get an output that consists of $11$ characters
+
+Now is regarded as inadequate, even if it is still often required for compatibility with existing account management software or multivendor environments
+
+### UNIX-style, today
+#### UNIX
+Unix uses a salt of up to 48 bits encrypted 1000 times with **MD5** crypt routine. It has no limitation on password length and produces a 128 bit hash value
+#### OpenBSD
+It uses *Bcrypt*, a hash function based on the Blowfish symmetric block cipher that allows passwords of up to 55 characters in length and requires a random salt value of 128 bits
+It produces a 192 bit hash value and also includes a configurable cost variable to increase the time required to perform a Bcrypt hash (administrators can assign higher cost to privileged users)
+
+---
+## Strong passwords
