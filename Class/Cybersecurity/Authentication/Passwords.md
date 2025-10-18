@@ -22,3 +22,16 @@ The user ID:
 >- *baiting* → offering a king of “gift” to get a user or agent to perform an insecure action
 >- *quid pro quo* → offering an action or service then expecting something in return
 
+---
+## How is password stored?
+The passwords are stored through a **cryptographic hash function** that outputs a checksum on messages of any length. The output is of a constant, fixed size, independent from the input length.
+
+An hash function to be considered safe has to be:
+- impossible to invert
+- very efficient to compute
+- very hard to fin two input values with the same output
+
+>[!question] Why don’t we use encryption?
+>Encryption is not used because we don’t want anyone to be able to revert it.
+
+### UNIX-style, legacy

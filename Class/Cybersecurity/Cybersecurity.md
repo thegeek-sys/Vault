@@ -1,5 +1,5 @@
 - [[Class/Cybersecurity/Introduction|Introduction]]
 - [[Cryptographic concepts]]
-- [[Authentication]]
+- [[Authentication/Authentication]]
 - [[Passwords]]
 - 
