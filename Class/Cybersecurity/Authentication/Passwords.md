@@ -50,3 +50,19 @@ It produces a 192 bit hash value and also includes a configurable cost variable 
 
 ---
 ## Strong passwords
+
+>[!example] A fixed 6 symbols password
+>- numbers → $10^6=1.000.000$
+>- upper or lower case characters → $26^6=308.915.776$
+>- upper and lower case characters → $52^6=19.770.609.664$
+>- 94 practical symbols available → $94^6=689.869.781.056$
+
+The main problem is that passwords have to be stored in human memory and they tend to be easy (far from being random). For this reason password crackers use dictionaries of words
+
+>[!example] Password does not change for 60 days, so how many passwords should I try for each second?
+>- 5 characters → 1,415 PW/sec
+>- 6 characters → 133,076 PW/sec
+>- 7 characters → 12,509,214 PW/sec
+>- 8 characters → 1,175,866,008 PW/sec
+>- 9 characters → 110,531,404,750 PW /sec
+
