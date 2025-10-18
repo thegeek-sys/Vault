@@ -35,3 +35,4 @@ An hash function to be considered safe has to be:
 >Encryption is not used because we don’t want anyone to be able to revert it.
 
 ### UNIX-style, legacy
+It uses up to 8 printable character in length while a 12 bit *salt* is used to modify DES encryption into a one-way hash function (to make sure that two different have two different hash even if the password is the same)
