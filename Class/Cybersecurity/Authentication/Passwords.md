@@ -188,3 +188,10 @@ The password is computed from the current Unix format time value and system usin
 
 ### Hardware authentication token pros-n-cons
 The main disadvantage is that any other person can see the code but for this reason it is only used in multifactor authentication
+
+## Biometrics
+Biometric refers to any measure used to uniquely identify a person based on biological or physical traits. A biometric system incorporate a sensor or scanner to read biometric information and then compare this information to stored templates of accepted users before granting access
+
+It is based on pattern recognition but is technically complex and expensive when compared to passwords tokens
+
+![[Pasted image 20251020164757.png]]
