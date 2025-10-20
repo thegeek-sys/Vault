@@ -66,3 +66,18 @@ The main problem is that passwords have to be stored in human memory and they te
 >- 8 characters → 1,175,866,008 PW/sec
 >- 9 characters → 110,531,404,750 PW /sec
 
+### Password cracking
+Typically password crackers exploit the fact that people choose easily guessable passwords (shorter password lengths are also easier to crack). 
+One of the most famous is **John the Ripper**, an open-source password cracker first developed in 1996; it uses a combination of brute-force and dictionary techniques.
+
+There are two possible ways of exploiting a password:
+- dictionary attacks
+- rainbow table attacks
+
+#### Dictionary attacks
+Consists of developing a large dictionary of possible passwords and try each against the password file. Each password must be hashed using each salt value and then compared to the stored hash values
+
+#### Rainbow table attacks
+It consists of precompiting tables of hash values for all salts (a *mammoth table* of hash values)
+It can be countered by using sufficiently large salt value and a sufficiently large hash length
+
