@@ -175,5 +175,16 @@ TOTP uses HMAC (mode of message authentication) with a hash function. It is used
 
 The password is computed from the current Unix format time value and system using time based OTP need to allow for clock drift between token and verifying system while systems using nonce need to allow for failed authentication attempts
 
+>[!info] Using SMS as OTP
+>Pros:
+>- one of the simplest authentication approaches
+>- no need to have any additional app on the phone
+>
+>Cons:
+>- requires mobile coverage to receive SMS
+>- when mobile phone is lost or stolen, user will lose access or an attacker might gain access
+>- attackers might use a SIM swap attack or change the authenticated phone number
+>- attacker might also intercept messages using either a fake mobile tower, or by attacking SS7 signaling protocol
+
 ### Hardware authentication token pros-n-cons
 The main disadvantage is that any other person can see the code but for this reason it is only used in multifactor authentication
