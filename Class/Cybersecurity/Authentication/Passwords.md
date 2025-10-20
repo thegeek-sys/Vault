@@ -124,4 +124,19 @@ In most other applications, however, barcodes provide convenience but not securi
 ### Magnetic stripe cards
 Those are plastic cards with a magnetic stripe containing personalized information about the card holder
 
-The first track of a magnetic stripe card contains the cardholder’s full name in addition to an account number, format information, and other data
+![[Pasted image 20251020150845.png|300]]
+
+The first track of a magnetic stripe card contains the cardholder’s full name in addition to an account number, format information, and other data. The second track may contain the account number, expiration date, information about the issuing bank, data specifying the exact format of the track, and other discretionary data.
+
+One vulnerability of the magnetic stripe medium is that it is easy to read and reproduce, in fact magnetic stripe readers can be purchased at relatively low cost, allowing attackers to read information off cards. When couples with magnetic stripe writer, an attacker can easily clone existing cards.
+For this reason, many uses require card holders to enter a PIN to use their cards.
+
+### Smart tokens
+Smart tokens unlike the other tokens, include an embedded microprocessor and typically have manual interfaces for human/token interaction.
+
+A smart card or other token requires an electronic interface to communicate with a compatible reader/writer (contact and contactless interfaces)
+
+Their authentication protocol is classified into three categories:
+- static
+- dynamic password generator
+- challenge-response
