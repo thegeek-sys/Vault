@@ -107,3 +107,21 @@ The goal is to eliminate guessable passwords while allowing the user to select a
 
 ---
 ## Tokens
+Other than passwords there are many possible ways to authenticate like through **authentication tokens**:
+- memory cards
+- barcodes
+- magnetic stripe cards
+- smart cards (contact, contactless)
+- RFIDs
+
+### Authentication via barcodes
+Boarding passes, which are created at flight check-in and scanned before boarding use barcodes
+
+The barcode in this case encodes an internal unique identifier that allows airport security to look up the corresponding passenger’s record
+
+In most other applications, however, barcodes provide convenience but not security (since barcodes are simply images, they are extremely easy to duplicate)
+
+### Magnetic stripe cards
+Those are plastic cards with a magnetic stripe containing personalized information about the card holder
+
+The first track of a magnetic stripe card contains the cardholder’s full name in addition to an account number, format information, and other data
