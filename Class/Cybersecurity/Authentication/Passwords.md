@@ -162,9 +162,18 @@ Human-readable data are printed on its surface
 >
 >For online applications, access is established by the user entering the six-digit PIN (which should be known only to the holder of the card)
 >For offline applications, either the MRZ printed on the back of the card or the six-digit access number (CAN) printed on the front is used
+>
+>![[Pasted image 20251020162917.png]]
 
+### One-time password (OTP) device
+It has a secret key to generate an OTP which is then validated by the system. 
 
-| Function      | Purpose | PACE password | Data | Uses |
-| ------------- | ------- | ------------- | ---- | ---- |
-| ePass (manda) |         |               |      |      |
-E
+It uses a block cipher/hash function to combine secret key and time or nonce value to create OTP and has a tamper-resistant module for secure storage of the secret key
+
+#### Time-bases one-time password (TOTP)
+TOTP uses HMAC (mode of message authentication) with a hash function. It is used in many hardware token and by many mobile authenticator apps.
+
+The password is computed from the current Unix format time value and system using time based OTP need to allow for clock drift between token and verifying system while systems using nonce need to allow for failed authentication attempts
+
+### Hardware authentication token pros-n-cons
+The main disadvantage is that any other person can see the code but for this reason it is only used in multifactor authentication
