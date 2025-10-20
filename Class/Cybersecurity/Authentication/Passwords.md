@@ -140,3 +140,12 @@ Their authentication protocol is classified into three categories:
 - static
 - dynamic password generator
 - challenge-response
+
+#### Smart cards
+These are the most important category of smart token. It contain an entire microprocessor with processor, memory, I/O ports
+
+Typically include three types of memory:
+- read-only memory (ROM) → stores data that does not change during the card’s life
+- electrically erasable programmable ROM (EEPROM) → holds application data and programs
+- random access memory (RAM) → holds temporary data generated when applications are executed
+
