@@ -67,6 +67,25 @@ The main problem is that passwords have to be stored in human memory and they te
 >- 9 characters → 110,531,404,750 PW /sec
 
 ### Password cracking
+
+>[!info] NIST 800-63-4 Digital Identity Guidelines
+>Proposed guidelines aim to inject badly needed common sense into password hygiene
+>
+>>[!example]
+>>- verifiers and CSPs shall not impose other composition rules for passwords
+>>- verifiers and CSPs shall not require users to change passwords periodically (but they shall force a change if there is evidence of compromise of the authenticator)
+>
+>When passwords are chosen properly, the requirement to periodically change them, typically every one or three months, can actually diminish security because the added burden incentivizes weaker passwords that are easier for people to set and remember
+>
+>Other password criteria:
+>- verifiers and CSPs SHALL require passwords to be a minimum of eight characters in length and SHOULD require passwords to be a minimum of 15 characters in length.
+>- verifiers and CSPs SHOULD permit a maximum password length of at least 64 characters.
+>- verifiers and CSPs SHOULD accept all printing ASCII characters and the space character in passwords.
+>- verifiers and CSPs SHOULD accept Unicode characters in passwords (each Unicode code point shall be counted as a single character when evaluating password length).
+>- verifiers and CSPs SHALL NOT permit the subscriber to store a hint that is accessible to an unauthenticated claimant.
+>- verifiers and CSPs SHALL NOT prompt subscribers to use knowledge-based authentication (KBA) (e.g. “What was the name of your first pet?”) or security questions when choosing passwords.
+>- verifiers SHALL verify the entire submitted password (not truncate it).
+
 Typically password crackers exploit the fact that people choose easily guessable passwords (shorter password lengths are also easier to crack). 
 One of the most famous is **John the Ripper**, an open-source password cracker first developed in 1996; it uses a combination of brute-force and dictionary techniques.
 
@@ -81,3 +100,10 @@ Consists of developing a large dictionary of possible passwords and try each aga
 It consists of precompiting tables of hash values for all salts (a *mammoth table* of hash values)
 It can be countered by using sufficiently large salt value and a sufficiently large hash length
 
+### Password selection strategies
+Many systems nowadays have a complex password policy (*proactive password checking*). With this policy users are allowed to select their own password, however the system checks to see if the password is allowable, and if not, rejects it (if the password is weak it is not accepted).
+
+The goal is to eliminate guessable passwords while allowing the user to select a password that is memorable. A disadvantage is the space required by dictionaries and the time to check
+
+---
+## Tokens
