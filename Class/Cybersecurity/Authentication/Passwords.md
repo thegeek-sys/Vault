@@ -159,4 +159,12 @@ Human-readable data are printed on its surface
 
 >[!info] Password Authenticated Connection Establishment
 >The **Password Authenticated Connection Establishment** (*PACE*) ensures that the contactless RF chip in the eID cannot be read without explicit access control.
+>
+>For online applications, access is established by the user entering the six-digit PIN (which should be known only to the holder of the card)
+>For offline applications, either the MRZ printed on the back of the card or the six-digit access number (CAN) printed on the front is used
 
+
+| Function      | Purpose | PACE password | Data | Uses |
+| ------------- | ------- | ------------- | ---- | ---- |
+| ePass (manda) |         |               |      |      |
+E
