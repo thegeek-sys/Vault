@@ -149,3 +149,14 @@ Typically include three types of memory:
 - electrically erasable programmable ROM (EEPROM) → holds application data and programs
 - random access memory (RAM) → holds temporary data generated when applications are executed
 
+##### eIDs
+A national electronic identity (eID) card can serve the same purposes as other national ID cards. In addition, an eID card can provide stronger proof of identity and be uses in a wider variety of applications:
+- *ePass* → a digital representation of the cardholder’s identity (ig. electronic passport)
+- *eID* → an identity record that authorized service can access with cardholder permission
+- *eSign* → this optional function stores a private key and a certificate verifying the key; it is used for generating a digital signature
+
+Human-readable data are printed on its surface
+
+>[!info] Password Authenticated Connection Establishment
+>The **Password Authenticated Connection Establishment** (*PACE*) ensures that the contactless RF chip in the eID cannot be read without explicit access control.
+
