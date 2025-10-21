@@ -41,6 +41,9 @@ Per la **gerarchia** si usa `/` per esprimere una gerarchia logica nella relazio
 >
 >Il dispositivo `{deviceid}` è una risorsa contenuta all’interno della collezione di dispositivi dell’utente `{userid}`
 
+>[!warning]
+>Potenzialmente il link con o senza slash possono essere diversi
+
 ---
 ## Gestione degli errori e filtri
 ### Codici di stato HTTP
