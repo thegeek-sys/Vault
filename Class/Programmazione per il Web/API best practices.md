@@ -4,6 +4,13 @@ Related:
   - "[[REST]]"
 ---
 ---
+## Campi opzionali
+In OpenAPI, il campo `required` definisce le regole di validazione del payload e non il comportamento logico dell’API
+
+La chiave `required` in uno schema determina se un campo deve essere presente nel payload in ingresso (es. nel `requestBody` di una `POST` o `PUT`)
+
+
+
 ## URIS
 
 >[!warning]
