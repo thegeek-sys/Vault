@@ -36,14 +36,15 @@ The execution steps are identical as SMPD but deployment involves different prog
 Both SMPD and MPMD are supported by MPI
 
 ### Master-Worker
-Two kind of components: Master and Workers
+It consists of two components: master and worker
 Master (one or more) is responsible for:
 - handing out pieces of work to workers
 - collecting the results of the computations from the workers
-- performing I/O duties on behalf of the workers, (ig. sending them the data that they are supposed to process, or accessing a file)
+- performing I/O duties on behalf of the workers (ig. sending them the data that they are supposed to process, or accessing a file)
 - interacting with the user
 
-It is good for implicit load balancing (no/few inter-worked data exchange) ogni volta che un worker finisce gli viene assegnato altro lavoro
+It is good for implicit load balancing (no/few inter-worked data exchange), in fact every time that a worker finishes to compute it gets another task until there are no more tasks available
+But for the same reason the master could be a bottle neck, so often there is a gerarchy of 
 Questa coda comporta che il master è un collo di bottiglia sul master (che divide il lavoro) per questo spesso si ha una gerarchia di master, così da poter evitare di avere un solo punto di fallimento
 #### Map-reduce
 It’s a variation of master-worker pattern and it’s an old concept, made popular by Google’s search engine
