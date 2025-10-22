@@ -33,7 +33,7 @@ SPMD fails when:
 
 The execution steps are identical as SMPD but deployment involves different programs
 
-Both SMPD and MPMD are supported by MPI
+>[!tip] Both SMPD and MPMD are supported by MPI
 
 ### Master-Worker
 It consists of two components: master and worker
@@ -62,9 +62,11 @@ Map and reduce workers can vary in number
 ---
 ## Globally Sequential, Locally Parallel
 ### Fork/join
-Single parent thread of execution and the children are created dynamically at run-time (can be slow, so usually, instead of creating/destroying, the processes are set idle until they are used again).
+Single parent thread of execution and the children are created dynamically at run-time. Tasks may run via spawning of threads, or via use of a static pool of threads (creating/destroying processes can be slow, so usually the processes are set idle until they are used again).
 
-Tasks may run via spawning of threads, or via use of a static pool of threads 
+Children tasks have to finish for parent thread to continue
+
+>[!tip] Used by OpenMP and Pthread
 
 >[!example]
 >```c
@@ -79,11 +81,13 @@ Tasks may run via spawning of threads, or via use of a static pool of threads
 >```
 
 ### Loop parallelism
-se ho ciclo da 10 volte eseguo 10 thread nei quali ognuno esegue un ciclo
+Employed for migration of legacy/sequential software to multicore. Focuses on breaking up loops by manipulating the loop control variable (but a loop has to be in a particular form to support this, eg. if there is a loop that executes 10 times, 10 threads are executed and each one compute one cycle)
 
-Employed for migration of legacy/sequential software to multicore. Focuses on breaking up loops by manipulating the loop control variable (but a loop has to be in a particular form to support this)
+It has limited flexibility, but limited development effort as well
 
-It has limited flexibility, but limited development effort as well and is supported by OpenMP
+>[!tip] Supported by OpenMP
+
+>[!]
 
 
 local_n numero di trapezi su cui ogni processo deve lavorare
