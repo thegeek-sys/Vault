@@ -44,9 +44,9 @@ Master (one or more) is responsible for:
 - interacting with the user
 
 It is good for implicit load balancing (no/few inter-worked data exchange), in fact every time that a worker finishes to compute it gets another task until there are no more tasks available
-But for the same reason the master could be a bottle neck, so often there is a gerarchy of 
-Questa coda comporta che il master è un collo di bottiglia sul master (che divide il lavoro) per questo spesso si ha una gerarchia di master, così da poter evitare di avere un solo punto di fallimento
-#### Map-reduce
+But for the same reason the master could be a bottle neck, so often there is a hierarchy of masters (more points of failure)
+
+### Map-reduce
 It’s a variation of master-worker pattern and it’s an old concept, made popular by Google’s search engine
 
   il tipo di operazione è molto specifico map o reduce
@@ -58,3 +58,40 @@ Map and reduce workers can vary in number
 >[!info] Master-worker vs. map-reduce
 >- master-worker → same function applied to different data items
 >- map-reduce → same function applied to different parts of a single data item (data parallel)
+
+---
+## Globally Sequential, Locally Parallel
+### Fork/join
+Single parent thread of execution and the children are created dynamically at run-time (can be slow, so usually, instead of creating/destroying, the processes are set idle until they are used again).
+
+Tasks may run via spawning of threads, or via use of a static pool of threads 
+
+>[!example]
+>```c
+>mergesort(A, lo, hi):
+>	if lo < hi:                    // at least one element of input
+>		mid = floor(lo+(hi-lo)/2)
+>		fork mergesort(A, lo, mid) // process (potentially) in parallel
+>								   // parallel with main task
+>		mergesort(A, mid, hi)      // main task handles second recursion
+>		join
+>		merges(A, lo, mid, hi)
+>```
+
+### Loop parallelism
+se ho ciclo da 10 volte eseguo 10 thread nei quali ognuno esegue un ciclo
+
+Employed for migration of legacy/sequential software to multicore. Focuses on breaking up loops by manipulating the loop control variable (but a loop has to be in a particular form to support this)
+
+It has limited flexibility, but limited development effort as well and is supported by OpenMP
+
+
+local_n numero di trapezi su cui ogni processo deve lavorare
+local_a punto da dove devo iniziare a lavorare
+local_b punto fino a dove devo lavorare
+
+il processo 0 deve fare la somma
+
+
+>[!error]
+>Non è possibile inviare puntatori tramite MPI (ha senso solo per il processo che invia)
