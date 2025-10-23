@@ -10,7 +10,21 @@ In OpenAPI, il campo `required` definisce le regole di validazione del payload e
 La chiave `required` in uno schema determina se un campo deve essere presente nel payload in ingresso (es. nel `requestBody` di una `POST` o `PUT`)
 
 
+| Contesto              | Campo id (`readOnly: true`)                | Regola di `required`                                                             |
+| --------------------- | ------------------------------------------ | -------------------------------------------------------------------------------- |
+| `POST /fountains`     | l’ID non può essere inviato                | deve essere omesso nel `requestBody`                                             |
+| `PUT /fountains/{id}` | l’ID non deve essere modificato dal client | deve essere inviato (per la sostituzione completa) ma il server lo ignora/valida |
+| `GET /fountains/{id}` | l’ID è restituito                          | deve essere presente nello schema di risposta                                    |
 
+I campi opzionali (quelli non elencati in `required: []`) e i campi in sola lettura (`readOnly: true`) dovrebbero essere gestiti in modo specifico negli esempi
+
+>[!example] Esempio di `requestBody` (POST)
+>- L’esempio non deve includere il campo id
+
+>[!example] Esempio di `responseBody` (201 Created)
+>L’esempio deve includere il campo id
+
+---
 ## URIS
 
 >[!warning]
