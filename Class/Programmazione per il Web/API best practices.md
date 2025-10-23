@@ -100,4 +100,8 @@ Se devi inviare dati JSON insieme a un file binario, l’approccio standard è u
 >- part 1 (JSON): `Content-Disposition: name="fountain_data"` (contenente il JSON)
 >- part 2 (file binario): `Content-Disposition: name="photo"` (contiene i byte binari dell’immagine)
 
-#### 
+#### Download e referenziamento di dati binari
+Quando il server risponde, deve evitare di inviare direttamente il contenuto binario all’interno del JSON
+
+>[!example] Risposta diretta del file
+>Se un endpoint serve **solo** il file, la risposta 
