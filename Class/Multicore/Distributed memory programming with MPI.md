@@ -4,6 +4,34 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Distributed memory systems|Distributed memory systems]]
+- [[#Single-Program Multiple Data|Single-Program Multiple Data]]
+- [[#MPI programs|MPI programs]]
+	- [[#MPI programs#MPI components|MPI components]]
+		- [[#MPI components#$\verb|MPI_Init|$|$\verb|MPI_Init|$]]
+		- [[#MPI components#$\verb|MPI_Finalize|$|$\verb|MPI_Finalize|$]]
+	- [[#MPI programs#Basic outline|Basic outline]]
+- [[#Compilation|Compilation]]
+- [[#Execution|Execution]]
+- [[#Debugging|Debugging]]
+- [[#Identifying MPI process|Identifying MPI process]]
+	- [[#Identifying MPI process#Communicators|Communicators]]
+- [[#Communication|Communication]]
+	- [[#Communication#$\verb|MPI_Send|$|$\verb|MPI_Send|$]]
+	- [[#Communication#$\verb|MPI_Recv|$|$\verb|MPI_Recv|$]]
+		- [[#$\verb|MPI_Recv|$#$\verb|status_p|$ argument|$\verb|status_p|$ argument]]
+	- [[#Communication#Sending order|Sending order]]
+- [[#Communicators|Communicators]]
+	- [[#Communicators#Message matching|Message matching]]
+- [[#What happens when you do a $\verb|Send|$|What happens when you do a $\verb|Send|$]]
+- [[#Point-to-point communication modes|Point-to-point communication modes]]
+- [[#Non-blocking communication|Non-blocking communication]]
+	- [[#Non-blocking communication#Non-blocking $\verb|Send|$|Non-blocking $\verb|Send|$]]
+	- [[#Non-blocking communication#Non-blocking $\verb|Recv|$|Non-blocking $\verb|Recv|$]]
+	- [[#Non-blocking communication#Check for completion|Check for completion]]
+	- [[#Non-blocking communication#Summary|Summary]]
+---
 ## Distributed memory systems
 ![[Pasted image 20251009165706.png]]
 

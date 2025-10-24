@@ -87,7 +87,12 @@ It has limited flexibility, but limited development effort as well
 
 >[!tip] Supported by OpenMP
 
->[!]
+>[!example] Trapezoidal rule in MPI
+>![[Pasted image 20251024180715.png]]
+>
+>![[Pasted image 20251024180827.png|300]]
+>$$\text{Area of one trapezoid}=\frac{h}{2}[f(x_{i})+f(x_{i+1})]$$
+>$$h=\frac{b-a}{n}$$
 
 
 local_n numero di trapezi su cui ogni processo deve lavorare
