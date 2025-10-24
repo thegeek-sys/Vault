@@ -92,7 +92,9 @@ It has limited flexibility, but limited development effort as well
 >
 >![[Pasted image 20251024180827.png|300]]
 >$$\text{Area of one trapezoid}=\frac{h}{2}[f(x_{i})+f(x_{i+1})]$$
+>$$x_{0}=a,\;x_{1}=a+h,\;x_{2}=a+2h, \dots,x_{n-1}=a+(n+1)h,\;x_{n}=b$$
 >$$h=\frac{b-a}{n}$$
+>$$\text{Sum of trapezoid areas}=h\left[ \frac{f(x_{0})}{2} +f(x_{1})+f(x_{2})+\dots+f(x_{n-1})+\frac{f(x_{n})}{2}\right]$$
 
 
 local_n numero di trapezi su cui ogni processo deve lavorare
