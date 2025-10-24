@@ -197,4 +197,43 @@ It is based on pattern recognition but is technically complex and expensive when
 ![[Pasted image 20251020164757.png|400]]
 
 ### Accuracy dilemma
-In this depiction, the comparison between the presented freatur and a reference feature is reduces to a single numeric value
+In this depiction, the comparison between the presented freature and a reference feature is reduces to a single numeric value
+
+![[Pasted image 20251024161156.png|500]]
+
+If the input value ($s$) is greater than a preassigned threshold ($t$), a match is declared
+
+>[!example] Example for a face recognition system
+>An instance of genuine and imposter score distributions for a face recognition system
+>
+>![[Pasted image 20251024161413.png|400]]
+
+### Security vs. convenience
+Idealized biometric measurement operating characteristic curves (log-log scale)
+
+![[Pasted image 20251024161626.png|450]]
+
+### Operation of a biometric authentication system
+There are three steps:
+- enrollment
+- verification
+- identification
+
+![[Pasted image 20251024161739.png|450]]
+![[Pasted image 20251024161753.png|450]]
+![[Pasted image 20251024161800.png|450]]
+
+---
+## Remote user authentication
+Authentication over a network, the Internet, or a communication link is more complex, in fact there are additional security threats such as: eavesdropping, capturing a password, replaying an authentication sequence that has been observed
+
+Usually, to counter threats, the remote user authentication rely in some form of a *challenge-response*
+
+### Basic challenge-response protocols: password and token
+![[Pasted image 20251024162315.png]]
+![[Pasted image 20251024162332.png]]
+
+---
+## Authentication security issues
+There are many security issues related to authentication:
+- client attacks
