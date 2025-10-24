@@ -1,10 +1,104 @@
 ---
 Class: "[[Cybersecurity]]"
 Related:
-  - "[[Authentication]]"
 ---
+---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Authentication|Authentication]]
+		- [[#Authentication#Multifactor authentication|Multifactor authentication]]
+	- [[#Introduction#Assurance Levels for user authentication|Assurance Levels for user authentication]]
+		- [[#Assurance Levels for user authentication#IAL|IAL]]
+		- [[#Assurance Levels for user authentication#AAL|AAL]]
+- [[#Passwords|Passwords]]
+- [[#How is password stored?|How is password stored?]]
+	- [[#How is password stored?#UNIX-style, legacy|UNIX-style, legacy]]
+	- [[#How is password stored?#UNIX-style, today|UNIX-style, today]]
+		- [[#UNIX-style, today#UNIX|UNIX]]
+		- [[#UNIX-style, today#OpenBSD|OpenBSD]]
+- [[#Strong passwords|Strong passwords]]
+	- [[#Strong passwords#Password cracking|Password cracking]]
+		- [[#Password cracking#Dictionary attacks|Dictionary attacks]]
+		- [[#Password cracking#Rainbow table attacks|Rainbow table attacks]]
+	- [[#Strong passwords#Password selection strategies|Password selection strategies]]
+- [[#Tokens|Tokens]]
+	- [[#Tokens#Authentication via barcodes|Authentication via barcodes]]
+	- [[#Tokens#Magnetic stripe cards|Magnetic stripe cards]]
+	- [[#Tokens#Smart tokens|Smart tokens]]
+		- [[#Smart tokens#Smart cards|Smart cards]]
+			- [[#Smart cards#eIDs|eIDs]]
+	- [[#Tokens#One-time password (OTP) device|One-time password (OTP) device]]
+		- [[#One-time password (OTP) device#Time-bases one-time password (TOTP)|Time-bases one-time password (TOTP)]]
+	- [[#Tokens#Hardware authentication token pros-n-cons|Hardware authentication token pros-n-cons]]
+- [[#Biometrics|Biometrics]]
+	- [[#Biometrics#Accuracy dilemma|Accuracy dilemma]]
+	- [[#Biometrics#Security vs. convenience|Security vs. convenience]]
+	- [[#Biometrics#Operation of a biometric authentication system|Operation of a biometric authentication system]]
+- [[#Remote user authentication|Remote user authentication]]
+	- [[#Remote user authentication#Basic challenge-response protocols: password and token|Basic challenge-response protocols: password and token]]
+- [[#Authentication security issues|Authentication security issues]]
 ---
 ## Introduction
+
+>[!quote] NISP SP 800-64-4 (Digital Authentication Guideline, October 2024)
+>”The process of establishing confidence in user identities that are presented electonically to an information system”
+
+This definition give some identification and authentication requirements for protecting data:
+- uniquely identify and authenticate system users, and associate that **unique identification** with processes acting of behalf of those users (reauthenticate users when needed)
+- implement **multi-factor authentication** for access to privileged and non-privileged accounts
+- implement **replay-resistant authentication** mechanisms for access to privileged and non-privileged accounts
+- **identifier management**
+	- receive authorization from organizational personnel or roles to assign an individual, group, role, service, or device identifier
+	- select and assign an identifier that identifies an individual, group, role or device
+	- prevent the reuse of identifiers for a defined time period
+	- manage individual identifiers by uniquely identifying each individual characteristic
+- **password management**
+	- maintain a list of commonly-used, expected, or compromised passwords, and frequently update the list, even when organizational passwords are suspected to have been compromised
+	- verify that passwords are not found on the list of commonly used, expected, or compromised passwords when users create or update passwords
+	- transmit passwords only over cryptographically protected channels
+	- store passwords in a cryptographically protected form
+	- select a new password upon first use after account recovery
+	- enforce composition and complexity rules for passwords.
+- obscure **feedback of authentication** information during the authentication process
+- **authenticator management** (the element that allows to perform the authentication passwords, biometrics, …)
+	- verify the identity of the individual, group, role, service, or device receiving the authenticator as part of the initial authenticator distribution
+	- establish initial authenticator content for any authenticators issued by the organization
+	- establish and implement administrative procedures for initial authenticator distribution; for lost, compromised, or damaged authenticators; and for revoking authenticators
+	- change default authenticators at first use
+	- change or refresh authenticators frequently or when relevant events occur
+	- protect authenticator content from unauthorized disclosure and modification
+
+>[!info] NIST SP 800-63-3 Digital Identity Guidelines architecture model
+>![[Pasted image 20251014145201.png]]
+### Authentication
+The four means of authenticating user identity are based on:
+- something the individual *knows*
+- something the individual *possesses*
+- something the individual *is*
+- something the individual *does*
+
+#### Multifactor authentication
+Multifactor authentication is the use of more than one of the authentication means and using more factors is considered stronger than using less
+
+### Assurance Levels for user authentication
+#### IAL
+An organization can choose from a range of authentication technologies, based on the degree of confidence in identity proofing and authentication processes
+
+There are three levels of **Identity Assurance Levels** (*IAL*):
+- *IAL 1* → no need to link the applicant to a specific real-time identity
+- *IAL 2* → provides evidence for the claimed identity using either remote or physically-present identity proofing
+- *IAL 3* → requires physical presence for identity proofing
+
+#### AAL
+AALs define options an organization can select, based on their risk assessment and the potential harm caused by an attacker taking control of an authenticator and accessing their system
+
+There are three levels of **Authenticator Assurance Levels** (*AAL*):
+- *AAL 1* → provides some assurance of authentication via user-supplied ID and password
+- *AAL 2* → provides high confidence of authentication via proof or possession and control of two authentication factors
+- *AAL 3* → provides very high confidence of authentication via proof of possession and control of two authentication factors
+
+---
+## Passwords
 In the password based authentication, the user provides name/login and password, so that the system can compare the password with the one stored for that specified login
 
 The user ID:
@@ -236,4 +330,27 @@ Usually, to counter threats, the remote user authentication rely in some form of
 ---
 ## Authentication security issues
 There are many security issues related to authentication:
-- client attacks
+- **client attacks** → adversary attempts to achieve user authentication without access to the remote host or the intervening communications path
+- **host attacks** → directed at the user file at the host where passwords, token passcodes, or biometric templates are stored
+- **eavesdropping** → adversary attempts to learn the password by some sort of attack that involves the physical proximity of user and adversary
+- **replay** → adversary repeats a previously captured user response
+- **trojan horse** → an application or physical device masquerades as an authentic application or device for the purpose of capturing a user password, passcode, or biometric
+- **denial-of-service** → attempts to disable a user authentication service by flooding the service with numerous authentication attempts
+
+
+| Attacks                       | Authenticators             | Examples                                       | Typical defenses                                                                                                           |
+| ----------------------------- | -------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| client attack                 | password                   | guessing, exhaustive search                    | large entropy; limited attempts                                                                                            |
+|                               | token                      | exhaustive search                              | large entropy; limited attempts; theft of object requires presence                                                         |
+|                               | biometric                  | false match                                    | large entropy; limited attempts                                                                                            |
+| host attacks                  | password                   | plaintext theft, dictionary/exhaustive search  | same as password; 1-time passcode                                                                                          |
+|                               | token                      | passcode theft                                 | capture device authentication; challenge response                                                                          |
+|                               | biometric                  | template theft                                 | capture device authentication; challenge response                                                                          |
+| eavesdropping, theft, copying | password                   | “shoulder surfing”                             | user diligence to keep secret; administrator diligence to quickly revoke compromised passwords; multifactor authentication |
+|                               | token                      | theft, counterfeiting hardware                 | multifactor authentication; tamper resistant/evident token                                                                 |
+|                               | biometric                  | copying (spoofing) biometric                   | copy detection at capture device and capture device authentication                                                         |
+| replay                        | password                   | replay stolen password response                | challenge-response protocol                                                                                                |
+|                               | token                      | replay stolen passcode response                | challenge-response protocol; 1-time passcode                                                                               |
+|                               | biometric                  | replay stolen biometric template response      | copy detection at capture device and capture device authentication via challenge-response protocol                         |
+| trojan horse                  | password, token, biometric | installation of rogue client or capture device | authentication of client or capture device within  trusted security perimeter                                              |
+| denial of service             | password, token, biometric | lockout by multiple failed authentication      | multifactor with token                                                                                                     |
