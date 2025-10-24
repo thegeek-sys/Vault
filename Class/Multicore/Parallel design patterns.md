@@ -94,7 +94,7 @@ It has limited flexibility, but limited development effort as well
 >$$\text{Area of one trapezoid}=\frac{h}{2}[f(x_{i})+f(x_{i+1})]$$
 >$$x_{0}=a,\;x_{1}=a+h,\;x_{2}=a+2h, \dots,x_{n-1}=a+(n+1)h,\;x_{n}=b$$
 >$$h=\frac{b-a}{n}$$
->$$\text{Sum of trapezoid areas}=h\left[ \frac{f(x_{0})}{2} +f(x_{1})+f(x_{2})+\dots+f(x_{n-1})+\frac{f(x_{n})}{2}\right]$$
+>$$\begin{align}&\text{Sum of trapezoids}=\sum_{i=0}^{n-1} \frac{h}{2}[f(x_{i})+f(x_{i+1})]= \\&= \frac{h}{2}[f(x_{0})+f(x_{1})+f(x_{1})+f(x_{2})+\dots+f(x_{n-1})+f(x_{n-1})+f(x_{n})]= \\&=h\left[ \frac{f(x_{0})}{2} +f(x_{1})+f(x_{2})+\dots+f(x_{n-1})+\frac{f(x_{n})}{2}\right]\end{align}$$
 
 
 local_n numero di trapezi su cui ogni processo deve lavorare
@@ -102,6 +102,8 @@ local_a punto da dove devo iniziare a lavorare
 local_b punto fino a dove devo lavorare
 
 il processo 0 deve fare la somma
+
+
 
 
 >[!error]
