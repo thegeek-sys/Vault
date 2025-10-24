@@ -194,4 +194,5 @@ Biometric refers to any measure used to uniquely identify a person based on biol
 
 It is based on pattern recognition but is technically complex and expensive when compared to passwords tokens
 
-![[Pasted image 20251020164757.png]]
+![[Pasted image 20251020164757.png|400]]
+
