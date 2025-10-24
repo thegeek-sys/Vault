@@ -196,3 +196,5 @@ It is based on pattern recognition but is technically complex and expensive when
 
 ![[Pasted image 20251020164757.png|400]]
 
+### Accuracy dilemma
+In this depiction, the comparison between the presented freatur and a reference feature is reduces to a single numeric value
