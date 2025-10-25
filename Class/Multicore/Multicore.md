@@ -1,4 +1,5 @@
 - [[Class/Multicore/Introduction|Introduction]]
 - [[Distributed memory programming with MPI]]
 - [[Parallel design patterns]]
+- [[Collective operations]]
 - 

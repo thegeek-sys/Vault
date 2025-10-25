@@ -198,15 +198,17 @@ It has limited flexibility, but limited development effort as well
 >>	return estimate;
 >>}
 >>```
-
-local_n numero di trapezi su cui ogni processo deve lavorare
-local_a punto da dove devo iniziare a lavorare
-local_b punto fino a dove devo lavorare
-
-il processo 0 deve fare la somma
-
-
-
+>
+>>[!bug] Issues with the trapezoidal rule implementation
+>>When doing the global sum, $p-1$ processes send their data to one process, which then computes all the sums. How long does it take?
+>>- for process $0$ → $(p-1)\cdot(T_{\text{sum}}+T_{\text{recv}})$
+>>- for all the other processes → $T_{\text{send}}$
+>>
+>>An alternative is to use a computation tree like this one:
+>>![[Pasted image 20251025230745.png|350]]
+>> that would result for process $0$ → $\log_{2}(p)\cdot(T_{\text{sum}}+T_{\text{recv}})$
+>>
+>>The optimal way to compute a global sum depends on the number of processes, the size of the data, and the system we are running on. So having a native way to express would simplify programming and improve performance, for this reason operations like [[Collective operations#$ verb MPI_Reduce $|MPI_Reduce]] exist
 
 >[!error]
 >Non è possibile inviare puntatori tramite MPI (ha senso solo per il processo che invia)

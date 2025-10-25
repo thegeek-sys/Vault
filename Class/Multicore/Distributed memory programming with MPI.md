@@ -302,6 +302,9 @@ A receiver can get a message without knowing:
 - the sender of the message (`MPI_ANY_SOURCE`)
 - or the tag of the message (`MPI_ANY_TAG`)
 
+>[!warning] Input
+>Most MPI implementations only allow process $0$ in `MPI_COMM_WORLD` access to `stdin`. Process $0$ must read the data (`scanf`) and send to the other processes
+
 ---
 ## What happens when you do a $\verb|Send|$
 ![[Pasted image 20251008145432.png]]
