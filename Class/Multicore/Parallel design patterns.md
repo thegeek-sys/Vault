@@ -1,6 +1,7 @@
 ---
 Class: "[[Multicore]]"
 Related:
+  - "[[Collective operations]]"
 ---
 ---
 ## Index
@@ -210,7 +211,7 @@ It has limited flexibility, but limited development effort as well
 >>}
 >>```
 >
->>[!bug] Issues with the trapezoidal rule implementation
+>>[!bug] Issues with the trapezoidal rule implementation (1)
 >>When doing the global sum, $p-1$ processes send their data to one process, which then computes all the sums. How long does it take?
 >>- for process $0$ → $(p-1)\cdot(T_{\text{sum}}+T_{\text{recv}})$
 >>- for all the other processes → $T_{\text{send}}$
@@ -220,4 +221,15 @@ It has limited flexibility, but limited development effort as well
 >> that would result for process $0$ → $\log_{2}(p)\cdot(T_{\text{sum}}+T_{\text{recv}})$
 >>
 >>The optimal way to compute a global sum depends on the number of processes, the size of the data, and the system we are running on. So having a native way to express would simplify programming and improve performance, for this reason operations like [[Collective operations#$ verb MPI_Reduce $|MPI_Reduce]] exist
+>
+>>[!bug] Issues with the trapezoidal rule implementation (2)
+>>When doing the global sum, $p-1$ processes receive data from one process. How long does it take?
+>>- for process $0$ → $(p-1)\cdot(T_{\text{send}})$
+>>- for all the other processes → $T_{\text{recv}}$
+>>
+>>An alternative is to use a computation tree like this one:
+>>![[Pasted image 20251026001926.png|350]]
+>>that would result for process $0$ → $\log_{2}(p)\cdot(T_{\text{send}})$
+>>
+>>This kind of tree is implemented in [[Collective operations#$ verb MPI_Bcast $|MPI_Bcast]]
 
