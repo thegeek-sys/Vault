@@ -45,7 +45,7 @@ Returns the number of seconds that have elapsed since some time in the past
 >
 >But even this solution could be not exact, in fact might happen that a process takes a lot because it’s waiting a receive
 
->[!question] Is every rank going to start at the same time?
+>[!question]- Is every rank going to start at the same time?
 >Not necessarily. If not, the time we report might be longer not because the application was performing poorly, but rather because someone started later than someone else
 >
 >To ensure that they are going to start at the same time we use **`MPI_Barrier`**
@@ -69,4 +69,78 @@ Returns the number of seconds that have elapsed since some time in the past
 >>Run the application multiple times and report the entire distribution of timing
 >>
 >>![[Pasted image 20251022162815.png]]
+>
+>>[!question] What’s the impact of noise in practice?
+>>![[Pasted image 20251026005634.png|300]]
+>>
+>>Intuitively, the more ranks you have, the more likely it is that at least one of them is affected by noise
+
+---
+## Example: run-times of serial and parallel matrix-vector multiplication
+
+
+![[Pasted image 20251026005908.png|470]]
+
+- the runtime increases with the problem size
+- the runtime decreases with the number of processes
+
+>[!question] What expectations do we have?
+>Ideally, when running with $p$ processes, the program should be $p$ times faster than when running with $1$ process
+>
+>Let’s define with $T_{\text{serial}}(n)$ the time of our sequential application on a problem of size $n$ (e.g. $n$ is the dimension of the matrix)
+>Let’s define with $T_{\text{parallel}}(n-p)$ the time of our parallel application on a problem of size $n$, when running with $p$ processes
+>Let’s define with $S(n,p)$ the **speedup** of our parallel application
+>
+>$$S(n,p)=\frac{T_{\text{serial}}(n)}{T_{\text{parallel}}(n,p)}$$
+>
+>Thus, ideally, we would like to have $S(n,p)=p$. In this case, we say our program has a *linear speedup*
+>
+>![[Pasted image 20251026010507.png]]
+>
+>In general, we expect the speedup to get better when increasing the problem size $n$
+
+>[!info] $T_{\text{serial}}(n)\neq T_{\text{parallel}}(n,1)$
+>- $T_{\text{serial}}(n)$ is the time of our sequential application on a problem of size $n$
+>- $T_{\text{parallel}}(n,1)$ is the time of our parallel application on a problem of size $n$, when running with one process
+>
+>These two implementations might be different; in general $T_{\text{parallel}}(n,1)\geq T_{\text{serial}}(n)$
+>
+>We define **scalability** in this way:
+>$$S(n,p)=\frac{T_{\text{parallel})}(n,1)}{T_{\text{parallel}}(n,p)}$$
+
+### Speedups of parallel matrix-vector multiplication
+$$S(n,p)=\frac{T_{\text{serial}}(n)}{T_{\text{parallel}}(n,p)}$$
+
+![[Pasted image 20251026010641.png|410]]
+### Efficiencies of parallel matrix-vector multiplication
+Here’s the definition of **efficiency**:
+$$
+E(n,p)=\frac{S(n,p)}{p}=\frac{T_{\text{serial}}(n)}{p\cdot T_{\text{parallel}}(n,p)}
+$$
+
+Ideally, we would like to have $E(n,p)=1$, but in practice it is $\leq 1$, and it gets worse with smaller problem sizes
+
+![[Pasted image 20251026011816.png|500]]
+
+![[Pasted image 20251026011839.png|410]]
+
+---
+## Strong vs. weak scaling
+**Strong scaling**
+Fix the problem size, and increase the number of processes. If we can keep a high efficiency, our program is *strong scalable*.
+
+**Weak scaling**
+Increase the problem size at the same rate at which you increase the number of processes (e.g. every time you  increase the number of processes by 2x, increase also the problem size by 2x). If we can keep a high efficiency, our program is *weak scalable*.
+
+>[!example] From speedup data
+>![[Pasted image 20251026012229.png|420]]
+>
+>Weakly scalable
+
+>[!example] From efficiency data
+>![[Pasted image 20251026012326.png|420]]
+>Not strongly scalable
+>
+>![[Pasted image 20251026012401.png|420]]
+>Weakly scalable
 
