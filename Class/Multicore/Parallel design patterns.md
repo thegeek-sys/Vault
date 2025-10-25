@@ -95,7 +95,71 @@ It has limited flexibility, but limited development effort as well
 >$$x_{0}=a,\;x_{1}=a+h,\;x_{2}=a+2h, \dots,x_{n-1}=a+(n+1)h,\;x_{n}=b$$
 >$$h=\frac{b-a}{n}$$
 >$$\begin{align}&\text{Sum of trapezoids}=\sum_{i=0}^{n-1} \frac{h}{2}[f(x_{i})+f(x_{i+1})]= \\&= \frac{h}{2}[f(x_{0})+f(x_{1})+f(x_{1})+f(x_{2})+\dots+f(x_{n-1})+f(x_{n-1})+f(x_{n})]= \\&=h\left[ \frac{f(x_{0})}{2} +f(x_{1})+f(x_{2})+\dots+f(x_{n-1})+\frac{f(x_{n})}{2}\right]\end{align}$$
+>
+>*Pseudo-code for a serial program*
+>```c
+>// input: a, b, n
+>h = (b-a)/n;
+>approx = (f(a) + f(b))/2.0;
+>for (i=1; i<=n-1; i++) {
+>	x_i = a + i*h;
+>	approx += f(x_i);
+>}
+>approx = h*approx
+>```
+>
+>*Parallelizing the Trapezoidal Rule*
+>1. partition problem solution into tasks
+>2. identify communication channels between tasks
+>3. aggregate tasks into composite tasks
+>4. map composite tasks to cores
+>
+>![[Pasted image 20251025223843.png|430]]
+>
+>Here it is the pseudo-code
+>
+>```c
+>get a, b, n;
+>h = (b-a)/n
+>local_n = n/comm_z // number of trapezoid for each core
+>local_a = a + my_rank*local_n*h; // from where the core has to start
+>local_b = local_a + local_n*h; // where the core has to end
+>local_integral = Trap(local_a, local_b, local_n, h);
+>
+>if (my_rank != 0) {
+>	Send local_integral to process 0;
+>} else {
+>	total_integral = local_intergral;
+>	for (proc=1; proc<comm_sz; proc++) {
+>		Receive local_integral from proc;
+>		total_integral += local_integral;
+>	}
+>}
+>
+>if (my_rank == 0) {
+>	print result;
+>}
+>```
+>
+>Now let’s implement it
 
+```c
+int main(void) {
+	int my_rank, comm_sz, n=1024, local_n;
+	double a=0.0, b=3.0, h, local_a, local_b;
+	double local_int, total_int;
+	int source;
+	
+	MPI_Init(NULL, NULL);
+	MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+	MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
+	
+	h = (b-a)/n;        // h is the same for all the processes
+	local_n = n/comm_sz // so is the number of trapezoid
+	
+	local_a
+}
+```
 
 local_n numero di trapezi su cui ogni processo deve lavorare
 local_a punto da dove devo iniziare a lavorare
