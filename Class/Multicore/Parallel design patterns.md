@@ -87,6 +87,9 @@ It has limited flexibility, but limited development effort as well
 
 >[!tip] Supported by OpenMP
 
+---
+## Example: trapezoidal rule in MPI
+
 >[!example] Trapezoidal rule in MPI
 >![[Pasted image 20251024180715.png]]
 >
