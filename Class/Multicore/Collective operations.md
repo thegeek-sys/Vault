@@ -3,6 +3,16 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+
+>[!warning] Caveats
+>*All* the processes in the communicator must call the same collective function. For example, a program that attempts to match a call to `MPI_Reduce` on one process with a call to `MPI_Recv` on another process is erroneous, and, in all likelihood, the program will hand or crash
+>
+>The arguments passed by each process to an MPI collective communication must be “compatible”. For example if one process passes in $0$ as the `dest_process` and another passes in $1$, then the outcome of a call to `MPI_Reduce` is erroneous, and, once again, the program is likely to hang or crash
+>
+>The `output_data_p` argument is only used on `dest_process`. However, all of the processes still need to pass in an actual argument corresponding to `output_data_p`, even if it’s just `NULL`
+>
+>Point-to-point communications are matched on the basis of tags and communicators, collective communications don’t use tags. They are matched solely on the basis of the communicator and the order in which they’re called
+
 ## $\verb|MPI_Reduce|$
 ![[Pasted image 20251025231822.png]]
 
