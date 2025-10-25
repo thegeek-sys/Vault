@@ -3,6 +3,17 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Globally Parallel, Locally Sequential|Globally Parallel, Locally Sequential]]
+	- [[#Globally Parallel, Locally Sequential#Single-Program, Multiple Data|Single-Program, Multiple Data]]
+	- [[#Globally Parallel, Locally Sequential#Multiple-Program, Multiple Data|Multiple-Program, Multiple Data]]
+	- [[#Globally Parallel, Locally Sequential#Master-Worker|Master-Worker]]
+	- [[#Globally Parallel, Locally Sequential#Map-reduce|Map-reduce]]
+- [[#Globally Sequential, Locally Parallel|Globally Sequential, Locally Parallel]]
+	- [[#Globally Sequential, Locally Parallel#Fork/join|Fork/join]]
+	- [[#Globally Sequential, Locally Parallel#Loop parallelism|Loop parallelism]]
+- [[#Example: trapezoidal rule in MPI|Example: trapezoidal rule in MPI]]
+---
 ## Introduction
 We can distinguish the parallel program structure patterns into two major categories:
 - **Globally Parallel, Locally Sequential** (*GPLS*) → this means that the application is able to perform multiple tasks concurrently, with each task running sequentially. Patterns that fall in this category include:
@@ -210,5 +221,3 @@ It has limited flexibility, but limited development effort as well
 >>
 >>The optimal way to compute a global sum depends on the number of processes, the size of the data, and the system we are running on. So having a native way to express would simplify programming and improve performance, for this reason operations like [[Collective operations#$ verb MPI_Reduce $|MPI_Reduce]] exist
 
->[!error]
->Non è possibile inviare puntatori tramite MPI (ha senso solo per il processo che invia)
