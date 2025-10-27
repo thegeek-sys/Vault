@@ -90,7 +90,7 @@ Per filtrare e impaginare i risultati bisogna usare i componenti *query string* 
 Non è consigliabile incorporare grandi dati binari (es. foto) direttamente all’interno di JSON per motivi di performance è piuttosto preferibile:
 - invio ($\text{Client} \to \text{Server}$)
 	- usa `multipart/form-data` per inviare dati strutturali (JSON) e il file in un’unica richiesta
-	- carica il file in una API dedicata (es. `POST /images/`) e poi usa l’URL/ID dell’immagine nella richiesta JSON principale
+		- carica il file in una API dedicata (es. `POST /images/`) e poi usa l’URL/ID dell’immagine nella richiesta JSON principale
 - ricezione ($\text{Server}\to \text{Client}$)
 	- restituisci un JSON con l’informazione strutturata e l’URL completo per accedere al file binario in un endpoint separato (es. `/images/{id}`)
 
