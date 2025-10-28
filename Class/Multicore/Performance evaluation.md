@@ -236,3 +236,5 @@ void Parallel_vector_sum(
 		local_z[local_i] = local_x[local_i] + local_y[local_i];
 }
 ```
+
+This function could also be optimized by using [[Collective operations#$ verb MPI_Scatter $|MPI_Scatter]]
