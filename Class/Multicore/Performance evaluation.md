@@ -144,3 +144,95 @@ Increase the problem size at the same rate at which you increase the number of p
 >![[Pasted image 20251026012401.png|420]]
 >Weakly scalable
 
+---
+## Amdahl’s law
+
+>[!info] Intuition
+>Each program has some part of it which cannot be parallelized (serial fraction, $1-\alpha$) like reading/writing a file from disk, sending/receiving data over the network, serialization due to lock/unlock, etc.
+
+![[Pasted image 20251028171035.png|400]]
+In this image $p$ is the part that can be parallelized while $s$ is the part that cannot be
+
+Amdahl’s law says that the speedup is limited by the **serial fraction** ($s$) 
+
+$$
+T_{\text{parallel}}(p)=(1-\alpha)T_{\text{serial}}+\frac{\alpha T_{\text{seiral}}}{p}
+$$
+
+A fraction $0\leq \alpha\leq 1$ can be parallelized while the remaining $1-a$ has to be done sequentially
+
+>[!example]
+>- if $\alpha= 0$, the code can’t be parallelized and $T_{\text{parallel}}(p)=T_{\text{serial}}$
+>- if $\alpha=1$, the entire code can be parallelized and $T_{\text{parallel}}(p)=\frac{T_{\text{serial}}}{p}$ (ideal speedup)
+
+Now let’s use $T_{\text{parallel}}(p)$ to express the speedup formula:
+$$
+S(p)=\frac{T_{\text{serial}}}{(1-\alpha)T_{\text{serial}}+\frac{\alpha T_{\text{serial}}}{p}}
+$$
+
+The following is the upper asymptotic limit of the speedup to which we can aim:
+$$
+\lim_{ p \to \infty } S(p)=\frac{1}{1-\alpha}
+$$
+
+>[!example]
+>- if $60\%$ of the application can be parallelized, $\alpha = 0.6$, which means we can expect a speedup of at most $2.5$
+>- if $80\%$ of the application can be parallelized, $\alpha = 0.8$, which means we can expect a speedup of at most $5$
+>
+>To be able to scale up to $100000$ processes, we need to have $\alpha \geq 0.99999$
+>
+>Let’s plot the Amdahl’s law:
+>![[Pasted image 20251028172251.png]]
+
+---
+## Gustafson’s law
+If we consider weak scaling (instead of the strong scaling considered in the Amdahl’s law), the parallel fraction increases with the problem size (i.e., the serial time remains constant, but the parallel time increases).
+
+It is also known as **scaled speedup**.
+$$
+S(n,p)=(1-\alpha)+\alpha p
+$$
+
+### Amdahl’s law vs. Gustafson’s law
+![[Pasted image 20251028172451.png]]
+
+### Amdahl’s law limitations
+The serial fraction could get bigger when increasing the number of processor (i.e. the runtime might increase when increasing the number of processors)
+
+![[Pasted image 20251028172559.png|300]]
+
+---
+## Example: sum between vectors
+$$
+\begin{align}
+x+y&=(x_{0},x_{1},\dots,x_{n-1})+(y_{0},y_{1},\dots,y_{n-1}) \\
+&=(x_{0}+y_{0},x_{1}+y_{1},\dots,x_{n-1}+y_{n-1}) \\
+&=(z_{0},z_{1},\dots,z_{n-1}) \\
+&=\pmb{z}
+\end{align}
+$$
+### Serial implementation
+
+```c
+void Vector_sum(double x[], double y[], double z[], int n) {
+	int i;
+	for(i=0; i<n; i++) {
+		z[i] = x[i] + y[i];
+	}
+}
+```
+
+### Parallel implementation
+
+```c
+void Parallel_vector_sum(
+		double local_x[], // in
+		double local_y[], // in
+		double local_z[], // out
+		int    local_n    // in
+) {
+	int local_i;
+	for (local_i=0; local_i<local_n; local_i++)
+		local_z[local_i] = local_x[local_i] + local_y[local_i];
+}
+```

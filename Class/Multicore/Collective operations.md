@@ -165,6 +165,50 @@ And it would act like this and would take $2\cdot \log_{2}(p)\cdot T_{\text{send
 >It is two times faster (other algos might be better depending on the data size)
 
 ---
+## $\verb|MPI_Scatter|$
+`MPI_Scatter` can be used in a function that reads in an entire vector on process 0 but only send the needed components to each of the other processes (i.g. given a vector, rank 0 splits it and sends one piece to each process)
+
+>[!question] What if I want to send a different number of element to each rank?
+>`MPI_Scatterv`. This function can be also helpful even if the number of elements that we are sending is not divisible by the number of processes. In fact the remaining elements (not assigned to any process) will be trashed
+
+![[Pasted image 20251029002615.png|center]]
+
+```c
+int MPI_Scatter(
+	void*        send_buf_p, // in
+	int          send_count, // in
+	MPI_Datatype send_type,  // in
+	void*        recv_buf_p, // out
+	int          recv_count, // in
+	MPI_Datatype recv_type,  // in
+	int          src_proc,   // in
+	MPI_Comm     comm        // in
+);
+```
+
+>[!warning]
+>`send_count` is the number of elements to send to each process, not the total number of elements!
+
+>[!example]
+>```c
+>MPI_Scatter(buff, 3, MPI_INT, dest, 3, MPI_INT, 0, MPI_COMM_WORLD);
+>```
+>
+>![[Pasted image 20251029003404.png]]
+
+### In place
+
+>[!example]
+>```c
+>if (rank == 0)
+>	MPI_Scatter(buff, 3, MPI_INT, MPI_IN_PLACE, 3, MPI_INT, 0, MPI_COMM_WORLD);
+>else
+>	MPI_Scatter(buff, 3, MPI_INT, dest, 3, MPI_INT, 0, MPI_COMM_WORLD);
+>```
+>
+>![[Pasted image 20251029003618.png]]
+
+---
 ## Relevance of collective algorithms
 Collective algorithms are widely used in large-scale parallel applications from many domains as they account for a large fraction of the total runtime and they are highly relevant for distributed training of deep-learning models
 
