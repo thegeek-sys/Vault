@@ -223,6 +223,7 @@ void Vector_sum(double x[], double y[], double z[], int n) {
 ```
 
 ### Parallel implementation
+#### Vector addition
 
 ```c
 void Parallel_vector_sum(
@@ -237,4 +238,61 @@ void Parallel_vector_sum(
 }
 ```
 
-This function could also be optimized by using [[Collective operations#$ verb MPI_Scatter $|MPI_Scatter]]
+But before `Parallel_vector_sum` we need to divide the vector into pieces and send it to the single processes. We can do this through [[Collective operations#$ verb MPI_Scatter $|MPI_Scatter]]
+
+#### Reading and distributing a vector
+
+```c
+void Read_vector(
+		double   local_a[],  // out
+		int      local_n,    // in
+		int      n,          // in
+		char     vec_name[], // in
+		int      my_rank,    // in
+		MPI_Comm comm        // in
+) {
+	double* a = NULL;
+	int i;
+	
+	if (my_rank == 0) {
+		a = malloc(n*sizeof(double));
+		printf("Enter the vector %s\n", vec_name);
+		for (i=0; i<n; i++)
+			scanf("%lf", &a[i]);
+		MPI_Scatter(a, local_n, MPI_DOUBLE, local_a, local_n, MPI_DOUBLE, 0, comm);
+		free(a);
+	} else {
+		MPI_Scatter(a, local_n, MPI_DOUBLE, local_a, local_n, MPI_DOUBLE, 0, comm);
+	}
+}
+```
+
+But now we need to create an output vector that contains all the single parts; we can do it through [[Collective operations#$ verb MPI_Gather $|MPI_Gather]]
+
+#### Print a distributed vector
+
+```c
+void Print_vector(
+	double   local_b[], // in
+	int      local_n,   // in
+	int      n,         // in
+	char     title[],   // in
+	int      my_rank,   // in
+	MPI_Comm comm       // in
+) {
+	double* b = NULL;
+	int i;
+	
+	if (my_rank == 0){
+		b = malloc(n*sizeof(double));
+		MPI_Gather(local_b, local_n, MPI_DOUBLE, b, local_n, MPI_DOUBLE, 0, comm);
+		printf("%s\n", title);
+		for (i=0; i<n; i++)
+			printf("%f ", b[i]);
+		printf("\n");
+		free(b);
+	} else {
+		MPI_Gather(local_b, local_n, MPI_DOUBLE, b, local_n, MPI_DOUBLE, 0, comm);
+	}
+}
+```

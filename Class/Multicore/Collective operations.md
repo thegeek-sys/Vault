@@ -209,6 +209,33 @@ int MPI_Scatter(
 >![[Pasted image 20251029003618.png]]
 
 ---
+## $\verb|MPI_Gather|$
+Collect all of the components of the vector onto process 0, and then process 0 can process all of the components
+
+![[Pasted image 20251029180322.png|center|350]]
+
+```c
+int MPI_Gather (
+	void*        send_buf_p, // in
+	int          send_count, // in
+	MPI_Datatype send_type,  // in
+	void*        recv_buf_p, // out
+	int          recv_count, // in
+	MPI_Datatype recv_type,  // in
+	int          dest_proc,  // in
+	MPI_Comm     comm        // in
+);
+```
+
+>[!warning]
+>`send_count` represents the number of elements that each process sends, not the total number of elements in the final vector
+
+>[!example]
+>![[Pasted image 20251029180757.png|350]]
+>
+>![[Pasted image 20251029180834.png|350]]
+
+---
 ## Relevance of collective algorithms
 Collective algorithms are widely used in large-scale parallel applications from many domains as they account for a large fraction of the total runtime and they are highly relevant for distributed training of deep-learning models
 
