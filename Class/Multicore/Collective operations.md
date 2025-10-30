@@ -236,6 +236,46 @@ int MPI_Gather (
 >![[Pasted image 20251029180834.png|350]]
 
 ---
+## Collectives on matrices
+If we are using a statically allocated matrix, they are stored in contiguous memory, and for this reason it is possible to use any collective operation without any problem (just like arrays)
+
+>[!example]
+>```c
+>int matrix[3][3];
+>```
+>
+>![[Pasted image 20251030165239.png]]
+>
+>```c
+>MPI_Reduce(sendbuf, recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+>```
+
+### Gather/Broadcast on dynamically allocated matrix
+Let’s allocate a dynamic matrix:
+```c
+int** a;
+a = (int**) malloc(sizeof(int*)*num_rows);
+for (int i=0; i<num_rows; i++) {
+	a[i] = (int*) malloc(sizeof(int)*num_cols)
+}
+```
+
+This is how the matrix would look like in memory:
+![[Pasted image 20251030165515.png|400]]
+
+>[!error] Wrong
+>```c
+>MPI_Reduce(a, recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+>MPI_Reduce(a[0], recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+>```
+
+>[!done] Correct
+>```c
+>for (int i=0; i<num_rows; i++) {
+>	MPI_Reduce(a[i], recvbuf[i], num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+>}
+>```
+
 ## Relevance of collective algorithms
 Collective algorithms are widely used in large-scale parallel applications from many domains as they account for a large fraction of the total runtime and they are highly relevant for distributed training of deep-learning models
 
