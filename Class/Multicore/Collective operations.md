@@ -265,7 +265,10 @@ This is how the matrix would look like in memory:
 
 >[!error] Wrong
 >```c
+>// after the first num_rows elements we don't know what there is
 >MPI_Reduce(a, recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+>
+>// after the first num_cols of the first row we don't know what there is
 >MPI_Reduce(a[0], recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
 >```
 
@@ -276,6 +279,23 @@ This is how the matrix would look like in memory:
 >}
 >```
 
+Another useful method would be to **linearize the matrix**. In this case we should allocate the memory like this
+
+```c
+int* a;
+a = (int*) malloc(sizeof(int)*num_rows*num_cols);
+// ...
+// ...
+// a[i][j]
+a[i * num_cols + j] = ...
+```
+
+Then apply the `Reduce` like if it would be allocated statically
+```c
+MPI_Reduce(a, recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD)
+```
+
+---
 ## Relevance of collective algorithms
 Collective algorithms are widely used in large-scale parallel applications from many domains as they account for a large fraction of the total runtime and they are highly relevant for distributed training of deep-learning models
 

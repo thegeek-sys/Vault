@@ -202,7 +202,7 @@ The serial fraction could get bigger when increasing the number of processor (i.
 ![[Pasted image 20251028172559.png|300]]
 
 ---
-## Example: sum between vectors
+## Example 1: sum between vectors
 $$
 \begin{align}
 x+y&=(x_{0},x_{1},\dots,x_{n-1})+(y_{0},y_{1},\dots,y_{n-1}) \\
@@ -296,3 +296,63 @@ void Print_vector(
 	}
 }
 ```
+
+---
+## Example 2: matrix-vector multiplication
+
+![[Pasted image 20251030171223.png|center]]
+
+### Serial implementation
+
+```c
+void Mat_vect_mult(
+	double A[], // in
+	double x[], // in
+	double y[], // out
+	int    m,   // in
+	int    n,   // in
+) {
+	int i,j;
+	for(i=0; i<m; i++) {
+		y[i] = 0.0;
+		for (j=0; j<n; j++)
+			y[i] += A[i*n+j]*x[j]
+	}
+}
+```
+
+### Parallel implementation
+1. broadcast the vector $x$ from rank 0 to the other processes
+2. scatter the rows of the matrix $A$ from rank 0 to the other processes
+3. each process computer a subset of the elements of the resulting vector $y$
+4. gather the final vector $y$ to rank 0
+
+The $A$ matrix is scattered by rows, so each process contains `local_m` rows
+```c
+void Read_matrix(
+	char     prompt[],  // in
+	double   local_A[], //out
+	int      m,         // in
+	int      local_m,   // in
+	int      n,         // in
+	int      my_rank,   // in
+	MPI_Comm comm       // in
+) {
+	double* A = NULL;
+	int local_ok = 1;
+	int i, j;
+	
+	if (my_rank == 0) {
+		A = malloc(m*n*sizeof(double));
+		printf("Enter the matrix %s\n", prompt)
+		for (j=0; j<n; j++)
+			scanf("%lf", &A[i*n+j]);
+		MPI_Scatter(A, local_m*n, MPI_DOUBLE, local_A, local_m*n, MPI_DOUBLE, 0, comm);
+		free(A);
+	} else {
+		MPI_Scatter(A, local_m*n, MPI_DOUBLE, local_A, local_m*n, MPI_DOUBLE, 0, comm);
+	}
+}
+```
+
+Now, let’s assume that this is done in a loop, and the output y is used as the input vector for the next iteration
