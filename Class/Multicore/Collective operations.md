@@ -7,8 +7,24 @@ Related:
 - [[#$ verb MPI_Reduce $|MPI_Reduce]]
 	- [[#$ verb MPI_Reduce $ operators|MPI_Reduce operators]]
 - [[#$ verb MPI_Bcast $|MPI_Bcast]]
-- [[#$ verb MPI_Allreduce $|MPI_Allreduce]]
+- [[#$\verb|MPI_Allreduce|$|$\verb|MPI_Allreduce|$]]
+- [[#$\verb|MPI_Scatter|$|$\verb|MPI_Scatter|$]]
+	- [[#$\verb|MPI_Scatter|$#In place|In place]]
+- [[#$\verb|MPI_Gather|$|$\verb|MPI_Gather|$]]
+- [[#Collectives on matrices|Collectives on matrices]]
+	- [[#Collectives on matrices#Gather/Broadcast on dynamically allocated matrix|Gather/Broadcast on dynamically allocated matrix]]
+- [[#$\verb|MPI_Allgather|$|$\verb|MPI_Allgather|$]]
+- [[#Other useful collective operations|Other useful collective operations]]
+	- [[#Other useful collective operations#Reduce-Scatter|Reduce-Scatter]]
+- [[#$\verb|MPI_Alltoall|$|$\verb|MPI_Alltoall|$]]
+- [[#MPI derived datatypes|MPI derived datatypes]]
+	- [[#MPI derived datatypes#$\verb|MPI_Type_create_struct|$|$\verb|MPI_Type_create_struct|$]]
+	- [[#MPI derived datatypes#$\verb|MPI_Get_address|$|$\verb|MPI_Get_address|$]]
+	- [[#MPI derived datatypes#$\verb|MPI_Type_commit|$|$\verb|MPI_Type_commit|$]]
+	- [[#MPI derived datatypes#$\verb|MPI_Type_free|$|$\verb|MPI_Type_free|$]]
+	- [[#MPI derived datatypes#Other functions for new datatypes|Other functions for new datatypes]]
 - [[#Relevance of collective algorithms|Relevance of collective algorithms]]
+
 ---
 
 >[!warning] Caveats
@@ -385,8 +401,66 @@ int MPI_Type_create_struct(
 >
 >- `count` → 3
 >- `blocklengths` → 1, 1, 1
->- `displacements` → 0, 16, 24
+>- `displacements` → ?, ?, ?
 >- `types` → `MPI_DOUBLE, MPI_DOUBLE, MPI_INT`
+
+Due to the different platform implementations of the datatypes, we can’t know for sure the displacements. For this reason we can get the address of the memory location through `MPI_Get_address`
+
+### $\verb|MPI_Get_address|$
+Returns the address of the memory location referenced by `location_p`.
+The special type `MPI_Aint` is an integer type that is big enough to store an address on the system.
+
+```c
+int MPI_Get_address(
+	void*     location_p, // in
+	MPI_Aint* address_p   // out
+);
+```
+
+>[!example]
+>```c
+>struct t {
+>	double a;
+>	double b;
+>	int n;
+>};
+>```
+>
+>```c
+>MPI_Aint a_addr, b_addr, n_addr;
+>
+>MPI_Get_address(&a, &a_addr);
+>array_of_displacements[0] = 0;
+>MPI_Get_address(&b, &b_addr);
+>array_of_displacements[1] = b_addr-a_addr;
+>MPI_Get_address(&c, &c_addr);
+>array_of_displacements[2] = c_addr-a_addr;
+>```
+>
+>>[!info]
+>>We can’t use `&a`, `&b`, `&c` because `&` cast-expression is a pointer, not an address. ISO C does not require that the value of a pointer (or the pointer cast to int) be the absolute address of the object pointed at (although this is commonly the case). Furthermore, referencing may not have a unique definition on machines with a segmented address space. The use of `MPI_Get_address` to “referenct” C variables guarantees portability to such machines as well. 
+
+### $\verb|MPI_Type_commit|$
+Allows the MPI implementation to optimize its internal representation of the datatype for use in communication functions.
+
+```c
+int MPI_Type_commit(MPI_Datatype* new_mpi_t_p /* in/out */);
+```
+
+### $\verb|MPI_Type_free|$
+When we’re finished with our new type, this frees any additional storage used.
+
+```c
+int MPI_Type_free(MPI_Datatype* old_mpi_t_p /* in/out */);
+```
+
+### Other functions for new datatypes
+![[Pasted image 20251031101938.png|500]]
+
+- `MPI_Type_contiguous` → contiguous elements
+- `MPI_Type_vector` → consists of a number of elements of the same datatype repeated with a certain stride
+- `MPI_Type_create_subarray` → for multidimensional subarrays
+- `MPI_pack` /`MPI_Unpack` → to pack data and send/receive packed data (see ex. 3.20)
 
 ---
 ## Relevance of collective algorithms
