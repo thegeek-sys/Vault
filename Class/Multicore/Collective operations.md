@@ -332,7 +332,61 @@ Each rank gets the sum of just a part of the vector
 
 ---
 ## MPI derived datatypes
-MPI derived datatypes are used to represent any collection of data items in memory by storing both the types of the items and their relative locations in memory. The idea is that if a function that sends data knows the information about a collection of data items, it can collect the items from memory before they are sent
+MPI derived datatypes are used to represent any collection of data items in memory by storing both the types of the items and their relative locations in memory. The idea is that if a function that sends data knows the information about a collection of data items, it can collect the items from memory before they are sent.
+
+Similarly, a function that receives data can distribute the items into their correct destinations in memory when they’re received.
+
+>[!info]
+>They are mainly used to send `struct`
+
+>[!question] Will the following work?
+>```c
+>const int N=...;
+>typedef struct Point {
+>	int x;
+>	int y;
+>	int color;
+>};
+>Point image[N];
+>...
+>MPI_Send(image, N*sizeof(Point), MPI_BYTE, dest, tag, MPI_COMM_WORLD);
+>```
+>
+>>[!example] A counter example
+>>A illustrating example of a structure’s layout in two different platforms:
+>>![[Pasted image 20251031100416.png|500]]
+
+Derived datatypes, formally, consist of a sequence of basic MPI data types together with a displacement for each of the data types
+
+### $\verb|MPI_Type_create_struct|$
+Builds a derived datatype that consists of individual elements that have different basic types
+
+```c
+int MPI_Type_create_struct(
+	int           count,                    // in
+	int           array_of_blocklengths[],  // in
+	MPI_Aint      array_of_displacements[], // in
+	MPI_Datatype  array_of_types[],         // in
+	MPI_Datatype* new_type_p                // out
+);
+```
+
+>[!info]
+>The `displacement` is the relative offset from the start of the `struct`
+
+>[!example]
+>```c
+>struct t {
+>	double a;
+>	double b;
+>	int n;
+>};
+>```
+>
+>- `count` → 3
+>- `blocklengths` → 1, 1, 1
+>- `displacements` → 0, 16, 24
+>- `types` → `MPI_DOUBLE, MPI_DOUBLE, MPI_INT`
 
 ---
 ## Relevance of collective algorithms
