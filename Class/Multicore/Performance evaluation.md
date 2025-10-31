@@ -3,6 +3,28 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Elapsed parallel time|Elapsed parallel time]]
+- [[#Example: run-times of serial and parallel matrix-vector multiplication|Example: run-times of serial and parallel matrix-vector multiplication]]
+	- [[#Example: run-times of serial and parallel matrix-vector multiplication#Speedups of parallel matrix-vector multiplication|Speedups of parallel matrix-vector multiplication]]
+	- [[#Example: run-times of serial and parallel matrix-vector multiplication#Efficiencies of parallel matrix-vector multiplication|Efficiencies of parallel matrix-vector multiplication]]
+- [[#Strong vs. weak scaling|Strong vs. weak scaling]]
+- [[#Amdahl’s law|Amdahl’s law]]
+- [[#Gustafson’s law|Gustafson’s law]]
+	- [[#Gustafson’s law#Amdahl’s law vs. Gustafson’s law|Amdahl’s law vs. Gustafson’s law]]
+	- [[#Gustafson’s law#Amdahl’s law limitations|Amdahl’s law limitations]]
+- [[#Example 1: sum between vectors|Example 1: sum between vectors]]
+	- [[#Example 1: sum between vectors#Serial implementation|Serial implementation]]
+	- [[#Example 1: sum between vectors#Parallel implementation|Parallel implementation]]
+		- [[#Parallel implementation#Vector addition|Vector addition]]
+		- [[#Parallel implementation#Reading and distributing a vector|Reading and distributing a vector]]
+		- [[#Parallel implementation#Print a distributed vector|Print a distributed vector]]
+- [[#Example 2: matrix-vector multiplication|Example 2: matrix-vector multiplication]]
+	- [[#Example 2: matrix-vector multiplication#Serial implementation|Serial implementation]]
+	- [[#Example 2: matrix-vector multiplication#Parallel implementation|Parallel implementation]]
+		- [[#Parallel implementation#Matrix scattering|Matrix scattering]]
+		- [[#Parallel implementation#Matrix-vector multiplication function|Matrix-vector multiplication function]]
+---
 ## Elapsed parallel time
 
 ```c
