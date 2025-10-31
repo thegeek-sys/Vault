@@ -325,6 +325,14 @@ Each rank gets the sum of just a part of the vector
 
 ## $\verb|MPI_Alltoall|$
 ![[Pasted image 20251031095519.png|300]]
+![[Pasted image 20251031095638.png|300]]
+
+>[!tip] `MPI_Alltoall` is also used to transpose matrix
+>![[Pasted image 20251031095753.png]]
+
+---
+## MPI derived datatypes
+MPI derived datatypes are used to represent any collection of data items in memory by storing both the types of the items and their relative locations in memory. The idea is that if a function that sends data knows the information about a collection of data items, it can collect the items from memory before they are sent
 
 ---
 ## Relevance of collective algorithms
