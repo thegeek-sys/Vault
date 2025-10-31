@@ -16,7 +16,7 @@ Related:
 - [[#$ verb MPI_Allgather$|MPI_Allgather]]
 - [[#Other useful collective operations|Other useful collective operations]]
 	- [[#Other useful collective operations#Reduce-Scatter|Reduce-Scatter]]
-- [[#$ verb MPI_Alltoall$|MPI_Alltoall]]
+	- [[#$ verb MPI_Alltoall$|MPI_Alltoall]]
 - [[#MPI derived datatypes|MPI derived datatypes]]
 	- [[#MPI derived datatypes#$ verb MPI_Type_create_struct$|MPI_Type_create_struct]]
 	- [[#MPI derived datatypes#$ verb MPI_Get_address$|MPI_Get_address]]
@@ -338,7 +338,7 @@ Each rank gets the sum of just a part of the vector
 
 ![[Pasted image 20251031095431.png|400]]
 
-## $\verb|MPI_Alltoall|$
+### $\verb|MPI_Alltoall|$
 ![[Pasted image 20251031095519.png|300]]
 ![[Pasted image 20251031095638.png|300]]
 
