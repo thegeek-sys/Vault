@@ -1,2 +1,2 @@
 - [Automi](./Automi.pdf)
-- 
+- [Calcolabilitá](./Calcolabilità.pdf)
