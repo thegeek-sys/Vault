@@ -356,3 +356,22 @@ void Read_matrix(
 ```
 
 Now, let’s assume that this is done in a loop, and the output y is used as the input vector for the next iteration
+
+>[!example]
+>- iteration $0$ → $A\cdot x$
+>- iteration $1$ → $A\cdot y_{0}$
+>- iteration $2$ → $A\cdot y_{1}$
+>- …
+
+**First iteration:**
+1. broadcast the vector $x$ from rank 0
+2. scatter the rows of the matrix $A$ from rank 0 to the other processes
+3. each process computes a subset of the elements of the resulting vector $y_{0}$
+4. gather the final vector $y_{0}$ to rank 0
+5. broadcast $y_{0}$ from rank 0 to the other processes
+
+**All the other iterations:**
+1. each process computes a subset of the elements of the resulting vector $y_{i}$ using $y_{i-1}$ received in previous step
+2. gather the final vector $y_{i}$ to rank 0
+3. broadcast $y_{i}$ from rank 0 to the other processes
+
