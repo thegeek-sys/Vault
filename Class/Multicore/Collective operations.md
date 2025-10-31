@@ -296,6 +296,27 @@ MPI_Reduce(a, recvbuf, num_rows*num_cols, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD)
 ```
 
 ---
+## $\verb|MPI_Allgather|$
+Conceptually, it is like a gather + broadcast; in practice it might be implemented in a more efficient way
+
+![[Pasted image 20251031092240.png|300]]
+
+```c
+MPI_Allgather(
+	void*        send_buf_p, // in
+	int          send_count, // in
+	MPI_Datatype send_type,  // in
+	void*        recv_buf_p, // out
+	int          recv_count, // in
+	MPI_Datatype recv_type,  // in
+	MPI_Comm     comm        // in
+);
+```
+
+>[!warning] Attention
+>`send_count` and `recv_count` are the number of elements sent by each process
+
+---
 ## Relevance of collective algorithms
 Collective algorithms are widely used in large-scale parallel applications from many domains as they account for a large fraction of the total runtime and they are highly relevant for distributed training of deep-learning models
 

@@ -322,6 +322,7 @@ void Mat_vect_mult(
 ```
 
 ### Parallel implementation
+#### Matrix scattering
 1. broadcast the vector $x$ from rank 0 to the other processes
 2. scatter the rows of the matrix $A$ from rank 0 to the other processes
 3. each process computer a subset of the elements of the resulting vector $y$
@@ -374,4 +375,38 @@ Now, let’s assume that this is done in a loop, and the output y is used as the
 1. each process computes a subset of the elements of the resulting vector $y_{i}$ using $y_{i-1}$ received in previous step
 2. gather the final vector $y_{i}$ to rank 0
 3. broadcast $y_{i}$ from rank 0 to the other processes
+
+>[!tip]
+>Usually when there are two consecutive collective operations, probably there is another collective operation that does it
+
+Thanks to [[Collective operations#$ verb MPI_Allgather $|MPI_Allgather]] it is possible to do (4) and (5) of the first iteration and (2) and (4) of the other iterations with just one collective operation
+
+#### Matrix-vector multiplication function
+
+```c
+void Mat_vect_mult(
+	double   local_A[], // in
+	double   local_x[], // in
+	double   local_y[], // out
+	int      local_m,   // in
+	int      n,         // in
+	int      local_n,   // in
+	MPI_Comm comm,      // in
+) {
+	double* x;
+	int local_i, j;
+	int local_ok = 1;
+	x = malloc(n*sizeof(double));
+	// collect x from different processes
+	MPI_Allgather(local_x, local_n, MPI_DOUBLE, x, local_n, MPI_DOUBLE, comm);
+	
+	for (local_i=0; local_i<local_m; local_i++) {
+		local_y[local_i] = 0.0;
+		for (j=0; j<n; j++)
+			// only local_m rows are used
+			local_y[local_i] += local_A[local_i*n+j]*x[j];
+	}
+	free(x);
+}
+```
 
