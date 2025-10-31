@@ -317,6 +317,16 @@ MPI_Allgather(
 >`send_count` and `recv_count` are the number of elements sent by each process
 
 ---
+## Other useful collective operations
+### Reduce-Scatter
+Each rank gets the sum of just a part of the vector
+
+![[Pasted image 20251031095431.png|400]]
+
+## $\verb|MPI_Alltoall|$
+![[Pasted image 20251031095519.png|300]]
+
+---
 ## Relevance of collective algorithms
 Collective algorithms are widely used in large-scale parallel applications from many domains as they account for a large fraction of the total runtime and they are highly relevant for distributed training of deep-learning models
 
