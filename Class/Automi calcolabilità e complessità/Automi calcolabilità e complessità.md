@@ -1,2 +1,2 @@
-- [[Automi calcolabilità e complessità.pdf]]
-
+- [Automi](./Automi.pdf)
+- 
