@@ -37,3 +37,24 @@ Where:
 - `required` → “threading level” (in)
 - `provided` → supported “threading level” (out)
 
+### Threading levels in MPI
+`MPI_THREAD_SINGLE` → ranks is not allowed to use threads, which is basically equivalent to calling MPI_Init
+`MPI_THREAD_FUNNELED` → MPI rank can be multi-threaded but only the main thread may call MPI functions. Ideal for fork-join parallelism such as used in `#pragma` omp parallel, where all MPI calls are outside the OpenMP regions
+`MPI_THREAD_SERIALIZED` → rank can be multi-threaded but only one thread at a time may call MPI functions. The rank must ensure that MPI is used in a thread-safe way. One approach is to ensure that MPI usage is mutally excluded by all the threads
+`MPI_THREAD_MULTIPLE` → rank can be multi-threaded and any thread may call MPI functions. The MPI library ensures that this access is safe  across threads. Note that this makes all MPI operations less efficient, even if only one thread makes MPI calls, so should be used only when necessary
+
+>[!warning]
+>Not all the threading levels are supported by all the MPI implementations (e.g. some implementations might not support `MPI_THREAD_MULTIPLE`)
+
+>[!example] `MPI_THREAD_SINGLE`
+>![[Pasted image 20251101221403.png]]
+
+>[!example] `MPI_THREAD_FUNNELED`
+>![[Pasted image 20251101221442.png]]
+
+>[!example] `MPI_THREAD_SERIALIZED`
+>![[Pasted image 20251101221519.png]]
+
+>[!example] `MPI_THREAD_MULTIPLE`
+>![[Pasted image 20251101221600.png]]
+
