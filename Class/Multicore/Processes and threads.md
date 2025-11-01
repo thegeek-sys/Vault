@@ -3,6 +3,15 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+- [[#OpenMP vs. Pthreads|OpenMP vs. Pthreads]]
+- [[#How many threads should we run?|How many threads should we run?]]
+- [[#Threads safety in MPI|Threads safety in MPI]]
+	- [[#Threads safety in MPI#Threading levels in MPI|Threading levels in MPI]]
+- [[#Thread-safety|Thread-safety]]
+	- [[#Thread-safety#“re-entrant” functions|“re-entrant” functions]]
+---
 ## Introduction
 A process is an instance of a running (or suspended) program, while threads are analogous to a “light-weight” process. In a shared memory program a single process may have multiple threads of control
 
@@ -57,4 +66,49 @@ Where:
 
 >[!example] `MPI_THREAD_MULTIPLE`
 >![[Pasted image 20251101221600.png]]
+
+---
+## Thread-safety
+A block of code is **thread-safe** if it can be simultaneously executed by multiple threads without causing problems
+
+>[!example]
+>Suppose we want to use multiple threads to “tokenize” a file that consists of ordinary English text. The tokens are just contiguous sequences of characters separated from the rest of the text by white-space
+>
+>>[!info] Simple approach
+>>Divide the input file into lines of text and assign the lines to the threads in a round-robin fashion.
+>>>[!example]-
+>>>The first line goes to thread 0, second goes to thread 1, …, the tth goes to thread t, the t+1st goes to thread 0, etc.
+>>
+>>We can serialize access to the lines of input using semaphores. After a thread has read a single line of input, it can tokenize the line using the `strtok` function
+>
+>The idea is that in the first call, `strtok` caches a pointer to string, and for subsequent calls it returns successive tokens taken from the cached pointer.
+>
+>il problema di questa funzione è che mantiene uno stato interno
+>>[!bug] Issues with `strtok`
+>>`strtok` caches the pointer to the input line by declaring a variable to have static storage class and this causes the value stored in this variable to persist from one call to the next.
+>>
+>>Unfortunately for us, this cashed string is shared, not private. So the `strtok` function is not thread-safe. If multiple threads call it simultaneously, the output may not be correct
+
+>[!example] Other unsafe C library functions
+>Regrettably, it’s not uncommon for C library functions to fail to be thread-safe.
+>- random number generator `random` in `stdlib.h`
+>- time conversion function `localtime` in `time.h`
+>- in older version of POSIX systems `srand`/`rand` were also not thread safe
+
+### “re-entrant” functions
+In some cases, the C standard specifies an alternate, thread-safe, version of a function.
+
+>[!example] `strtok_r`
+>```c
+>char *strtok_r(
+>	char*       string,     // in/out
+>	const char* separators, // in
+>	char**      saveptr_p   // in/out
+>);
+>```
+
+In principle “re-entrant” doesn’t mean “thread safe”, but in practice, re-entrant functions are often also thread safe
+
+>[!tip]
+>At the end of the manual of a non thread-safe function there is the thread-safe alternative
 

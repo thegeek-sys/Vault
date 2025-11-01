@@ -44,6 +44,17 @@ Returns the number of seconds that have elapsed since some time in the past
 >printf("Proc %d > Elapsed time = %e seconds\n", my_rank, finish-start);
 >```
 
+>[!bug] Correct performance measurements
+>To get correct performance measurements you should remember to:
+>- disable turbo boost → when possible (temperature-wise) it overclocks by a little your CPU
+>	```bash
+>	sudo bash -c "echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo“
+>	```
+>- disable frequency scaling → when possible (needing-wise) it lowers the frequency of your CPU to reduce power consuption
+>	```bash
+>	sudo cpupower frequency-set --governor performance
+>	```
+
 >[!question] Which rank?
 >Each rank might finish at a different time
 >>[!done] Solution
