@@ -81,3 +81,32 @@ It can also define a hierarchy of subjects
 | R6   | destroy object $X$                                                    | ‘owner’ in $A[S_0, X]$                               | delete column for $X$ from $A$                                                      |
 | R7   | create subject $S$                                                    | None                                                 | add row for $S$ to $A$; execute **create object $S$**; store ‘control’ in $A[S, S]$ |
 | R8   | destroy subject $S$                                                   | ’owner’ in $A[S_0, S]$                               | delete row for $S$ from $A$; execute **destroy object $S$**                         |
+
+### Organization of the access control function
+Every access by a subject to an object is mediates by the controller for that object and the controller’s decision is based on the current contents of the matrix.
+Certain subjects have the authority to make specific changes to the access matrix. 
+
+![[Pasted image 20251103225011.png|500]]
+
+>[!example] Unix subjects, objects, rights
+>- subjects → users, groups, others
+>- objects → files, directories
+>- access rights: read, write, execute
+>	- for files
+>		- read → reading from a file
+>		- write → writing to a file
+>		- execute → executing a (program) file
+>	- for directories
+>		- read → list the files within the directory
+>		- write → create, rename, or delete files within the directory
+>		- execute → enter the directory
+
+### UNIX file access control
+Every user has a unique user identification number and each member of a primary group is identifies by a group ID.
+
+There are 12 protection bits, specifying read, write, and execute permission for the owner of the file, members of the group and all other users.
+
+>[!info]
+>The owner ID, group ID and protection bits are part of the file’s inode
+
+#### Traditional UNIX File Access Control (minimal ACL)
