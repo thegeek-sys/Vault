@@ -113,18 +113,23 @@ There are 12 protection bits, specifying read, write, and execute permission for
 In UNIX systems, file access control mechanisms are essential for maintaining system security and managing user permissions. The traditional model, based on minimal Access Control Lists (ACLs), uses a combination of permission bits and special attributes to control how users and groups interact with files and directories. The main components of this model include SetUID, SetGID, the Sticky Bit, and the Superuser privilege.
 
 ##### Set User ID (SetUID) and Set Group ID (SetGID)
-- The system temporarily uses the rights of the file owner or group in addition to the real user’s rights when making access control decisions.
-    
-- This enables privileged programs to access files or resources that are not generally accessible.
-    
+The SetUID and SetGID mechanisms allow the system to temporarily use the rights of the file owner or group in addition to those of the real user when making access control decisions. This mechanism enables certain privileged programs to access files or resources that are not generally accessible to regular users, allowing controlled elevation of privileges when necessary.
+##### Sticky Bit
+The Sticky Bit is another important attribute, typically applied to directories. When a directory has the Sticky Bit set, only the owner of a file within that directory is allowed to rename, move, or delete the file, even if other users have write permissions for the directory.
+##### Superuser
+the Superuser is exempt from the usual access control restrictions. The superuser account has complete system-wide access, allowing it to read, modify, and execute any file or process on the system. This level of privilege is necessary for system administration tasks but must be handled carefully to maintain system security and stability.
 
-### Sticky Bit
+#### Access Control Lists (ACLs) in UNIX
+Many modern UNIX systems support access control lists (FreeBSD, OpenBSD, Linux, Solaris, …). In FreeBSD:
+- there is `setfacl` command to assigns a list of UNIX user IDs and groups
+- any number of users and groups can be associated with a file
+- there are read, write, execute protection bits
+- a file does not need to have an ACL
+- is included an additional protection bit that indicates whether the file has an extended ACL
 
-- When applied to a directory, it specifies that only the owner of a file in that directory can rename, move, or delete the file.
-    
+When a process requests access to a file system object two steps are performed:
+1. selects the most appropriate ACL
+2. checks if the matching entry contains sufficient permissions
 
-### Superuser
-
-- The superuser is exempt from the usual access control restrictions.
-    
-- Has system-wide access.
+#### Extended access control list
+![[Pasted image 20251103230539.png|400]]
