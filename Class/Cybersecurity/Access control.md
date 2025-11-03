@@ -133,3 +133,36 @@ When a process requests access to a file system object two steps are performed:
 
 #### Extended access control list
 ![[Pasted image 20251103230539.png|400]]
+
+---
+## Mandatory Access Control (MAC)
+It is inspired by the Bell-La Padula model in which each subject and each object is assigned to a security class.
+
+In the simples formulation, security classes from a strict hierarchy and are referred to as **security levels**. A subject is said to have a *security clearance* of a given levels and an object is said to have a *security classification* of a given level
+
+The security classes control the manner by  which a subject may access an object.
+
+>[!bug] Limitations
+>- cannot manage the “downgrade of objects”
+>- classification creep
+
+### Multilevel security (MLS)
+The model defined four access modes:
+- **read** → the subject is allowed only read access to the object
+– **append** → the subject is allowed only write access to the object
+– **write** → the subject is allowed both read and write access to the object
+– **execute** → the subject is allowed neither read nor write access to the object but may invoke the object for execution
+
+Confidentiality is achieved if a subject at a high level may not convey information to a subject at a lower level unless that flow accurately reflects the will of an authorized user as revealed by an authorized declassification.
+
+#### Multilevel security confidentiality
+MLS has the following characteristics:
+
+- no read up → a subject can only read an object of less or equal security level. This is referred to in the literature as the simple security property (*ss-property*).
+- no write down: A subject can only write into an object of greater or equal security level. This is referred to in the literature as the \*-property (pronounced starproperty).
+
+The more recent MAC implementations, are SELinux and AppArmor for
+Linux and Mandatory Integrity Control for Windows
+
+---
+## Role-based Access Control
