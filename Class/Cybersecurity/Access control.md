@@ -110,3 +110,21 @@ There are 12 protection bits, specifying read, write, and execute permission for
 >The owner ID, group ID and protection bits are part of the file’s inode
 
 #### Traditional UNIX File Access Control (minimal ACL)
+In UNIX systems, file access control mechanisms are essential for maintaining system security and managing user permissions. The traditional model, based on minimal Access Control Lists (ACLs), uses a combination of permission bits and special attributes to control how users and groups interact with files and directories. The main components of this model include SetUID, SetGID, the Sticky Bit, and the Superuser privilege.
+
+##### Set User ID (SetUID) and Set Group ID (SetGID)
+- The system temporarily uses the rights of the file owner or group in addition to the real user’s rights when making access control decisions.
+    
+- This enables privileged programs to access files or resources that are not generally accessible.
+    
+
+### Sticky Bit
+
+- When applied to a directory, it specifies that only the owner of a file in that directory can rename, move, or delete the file.
+    
+
+### Superuser
+
+- The superuser is exempt from the usual access control restrictions.
+    
+- Has system-wide access.
