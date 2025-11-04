@@ -185,3 +185,11 @@ To sum up:
 
 ### Access control matrix representation of RBAC
 ![[Pasted image 20251104100150.png]]
+
+>[!example] Exercise
+>Given the following User Assignment and Permission Assignment define the corresponding access matrix
+>
+>![[Pasted image 20251104101044.png]]
+>
+>>[!done] Solution
+>>
