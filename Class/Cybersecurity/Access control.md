@@ -191,5 +191,55 @@ To sum up:
 >
 >![[Pasted image 20251104101044.png]]
 >
->>[!done] Solution
->>
+>>[!done]- Solution
+>>![[Pasted image 20251104101231.png|400]]
+
+### Family of Role-Based Access Control models
+![[Pasted image 20251104101309.png|400]]
+
+### RBAC1: role hierarchy
+Some roles subsume others. This hierarchy is used when many operations are common to a large number of roles and reflect an organization’s role structure.
+
+In this way instead of specifying permissions for each role, one specifies it for a more generalized role, so that granting access to role $R$ implies that access is granted for all specialized roles of $R$.
+
+#### Role hierarchy
+Structuring roles, partial order ≤:
+$$
+x\leq y\quad\text{we say }x\text{ is specialization of }y
+$$
+Inheritance of permission from generalized role $y$ (top) to specialized role $x$ (bottom):
+- members of $x$ are also implicitly members of $y$
+- if $x\leq y$ then role $x$ inherits permissions of role $y$
+
+Partial order:
+- reflexivity → $x\leq x$
+- transitivity → $x\leq y \land y\leq x\to x\leq z$
+- antisymmetry → $x\leq y\land y\leq x\to x=y$
+
+>[!example]
+>![[Pasted image 20251104102144.png|450]]
+
+>[!example] Exercise
+>$$UA=\{(u_{1},r_{2}),(u_{2},r_{3}),(u_{3},r_{4}),(u_{4},r_{5})\}$$
+>$$PA=\{(r_{1},p_{1}),(r_{2},p_{2}),(r_{3},p_{3}),(r_{4},p_{4}),(r_{5},p_{5})\}$$
+>
+>Given the following role hierarchy, determine the permissions that users have in form of an access matrix
+>
+>>[!done]- Solution
+>>![[Pasted image 20251104102426.png|400]]
+
+### RBAC2: constrains
+RBAC2 provides a means of adapting RBAC to specifics of administrative and security policies of an organization and a defined relationship among roles or a condition related to roles.
+
+Types:
+- *mutually exclusive roles* → a user can only be assigned to one role in the set (either during a session or statically) and any permission (access right) can  be granted to only one role in the set
+- *cardinality* → setting a maximum number with respect to roles
+- *prerequisite roles* → dictates that a user can only be assigned to a particular role if it is already assigned to some other specified role
+
+---
+## Attribute-Based Access Control (ABAC)
+Attribute-Based Access Control can define authorizations that express conditions on properties of both the resource and the subject.
+Its strength is its flexibility and expressive power, but its main obstacle to its adoption in real systems had been concern about the performance impact of evaluating predicates on both resource and user properties for each access.
+
+Web services have been pioneering technologies through the introduction of the *eXtensible Access Control Markup Language* (**XAMCL**) and there is considerable interest in applying the model to cloud services
+
