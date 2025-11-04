@@ -243,3 +243,65 @@ Its strength is its flexibility and expressive power, but its main obstacle to i
 
 Web services have been pioneering technologies through the introduction of the *eXtensible Access Control Markup Language* (**XAMCL**) and there is considerable interest in applying the model to cloud services
 
+There are many kinds of attributes:
+- **subject attributes**
+	- a subject is a an active entity that causes information to flow among objects or changes the system state
+	- attributes define the identity and characteristics of the subject
+- **object attributes**
+	- an object (or resource) is a passive information system-related entity containing or receiving information
+	- objects have attributes that can be leverages to make access control decisions
+- **environment attributes**
+	- describe the operational, technical, and even situational environment or context in which the information access occurs
+	- these attributes have so far been largely ignored in most access control policies
+
+![[Pasted image 20251104104717.png|400]]
+
+ABAC is distinguishable because it controls access to objects by evaluating rules against the attributes of entities, operations, and the environment relevant to a request. It relies upon the evaluation of attributes of the subject, attributes of the object, and a formal relationship or access control rule defining the allowable operations for subject-object attribute combinations in a given environment
+
+ABAC systems are capable of enforcing DAC, RBAC, and MAC concepts as it allows an unlimited number of attributes to be combined to satisfy any access control rule
+
+### Policies
+A policy is a set of rules and relationships that govern allowable behavior within an organization, based on the privileges of subjects and how resources or objects  are to be protected under which environment conditions (typically written from the perspective of the object that needs protecting and the privileges available to subjects).
+
+Privileges represents the authorized behavior of a subject and are defined by an authority and embodies in a policy.
+
+>[!info] Policies model
+>- $S$, $O$ and $E$ are subjects, objects and environments, respectively
+>- $SA_{k}(1,\dots ,k, \dots, K)$, $OA_{m}(1,\dots m, \dots, M)$ and $EA_{n}(1,\dots,n, \dots N)$ are the pre-defined attributes for subjects, objects, and environments, respectively
+>- $ATTR(s)$, $ATTR(o)$, $ATTR(e)$ are attributes assignement relations, for example
+>	- $role(s)=\text{"Service Consumer"}$
+>	- $ServiceOwner(o)=\text{"XYZ, Inc"}$
+>	- $CurrentDate(e)=\text{"01-23-2005"}$
+>- rule → $\text{can\_access}(s,o,e)\leftarrow f(\text{ATTR}(s), \text{ATTR}(o), \text{ATTR}(e))$
+
+>[!example]
+>$$\begin{align}R_{1}:\text{can\_access}&(u,m,e)\leftarrow \\ \\&(\text{Age}(u)\leq 17 \land \text{Rating}(m)\in \{R, PG-13, G\}) \lor \\&(\text{Age}(u)\geq 13 \land \text{Age}(u)<17 \land \text{Rating}(m)\in \{PG-13,G\}) \lor \\&(\text{Age}(u)<13\land \text{Rating}(m)\in G)\end{align}$$
+>
+>![[Pasted image 20251104110010.png|400]]
+
+### ABAC vs RBAC
+In RBAC as the number of attributes increases to accommodate finer-grained policies, the number of roles and permission grows exponentially
+
+$$
+\prod^K_{k=1}\text{Range}(SA_{k})\land \prod^M_{m=1}\text{Range}(SA_{m})
+$$
+
+The ABAC model deals with additional attributes in an efficient way
+
+>[!example] Finer grained policy example
+>Movies are classified as either New release or Old Release, based on release date compared to the current date
+>Users are classified as Premium User and Regular User, based on the fee they pay
+>
+>Policy → only premium users can view new movies
+>
+>In RBAC you need to double the number of roles, to distinguish each user by age and fee and to double the number of separate permissions
+>
+>| Roles            | Permissions      |
+>| ---------------- | ---------------- |
+>| Adult-Regular    | R-Old_release    |
+>| Juvenile-Regular | PG13-Old_release |
+>| Child-Regular    | G-Old_release    |
+>| Adult-Premium    | R-New_release    |
+>| Juvenile-Premium | PG13-New_release | 
+>
+>
