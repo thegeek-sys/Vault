@@ -304,4 +304,10 @@ The ABAC model deals with additional attributes in an efficient way
 >| Adult-Premium    | R-New_release    |
 >| Juvenile-Premium | PG13-New_release | 
 >
->
+>In ABAC it would be:
+>- $$\begin{align}R_{2}:\text{can\_access}&(u,m,e)\leftarrow \\&(\text{MembershipType}(u)=\text{Premium}) \lor \\&(\text{MembershipType}(u)=\text{Regular} \land \text{MovieType}(m)=\text{OldRelease})\end{align}$$
+>- $$R_{3}:\text{can\_access}(u,m,e)\leftarrow R_{1} \land R_{2}$$
+
+
+
+
