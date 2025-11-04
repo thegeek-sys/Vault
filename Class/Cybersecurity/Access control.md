@@ -3,6 +3,42 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Access control concepts|Access control concepts]]
+	- [[#Introduction#Access control models|Access control models]]
+		- [[#Access control models#Discretionary access control (DAC)|Discretionary access control (DAC)]]
+		- [[#Access control models#Mandatory access control (MAC)|Mandatory access control (MAC)]]
+		- [[#Access control models#Role-based access control (RBAC)|Role-based access control (RBAC)]]
+		- [[#Access control models#Attribute-based access control (ABAC)|Attribute-based access control (ABAC)]]
+- [[#Subjects, objects and access rights|Subjects, objects and access rights]]
+	- [[#Subjects, objects and access rights#Subject|Subject]]
+	- [[#Subjects, objects and access rights#Object|Object]]
+	- [[#Subjects, objects and access rights#Access right|Access right]]
+- [[#Discretionary Access Control (DAC)|Discretionary Access Control (DAC)]]
+	- [[#Discretionary Access Control (DAC)#Access control list|Access control list]]
+		- [[#Access control list#Extended access control matrix|Extended access control matrix]]
+	- [[#Discretionary Access Control (DAC)#Organization of the access control function|Organization of the access control function]]
+	- [[#Discretionary Access Control (DAC)#UNIX file access control|UNIX file access control]]
+		- [[#UNIX file access control#Traditional UNIX File Access Control (minimal ACL)|Traditional UNIX File Access Control (minimal ACL)]]
+			- [[#Traditional UNIX File Access Control (minimal ACL)#Set User ID (SetUID) and Set Group ID (SetGID)|Set User ID (SetUID) and Set Group ID (SetGID)]]
+			- [[#Traditional UNIX File Access Control (minimal ACL)#Sticky Bit|Sticky Bit]]
+			- [[#Traditional UNIX File Access Control (minimal ACL)#Superuser|Superuser]]
+		- [[#UNIX file access control#Access Control Lists (ACLs) in UNIX|Access Control Lists (ACLs) in UNIX]]
+		- [[#UNIX file access control#Extended access control list|Extended access control list]]
+- [[#Mandatory Access Control (MAC)|Mandatory Access Control (MAC)]]
+	- [[#Mandatory Access Control (MAC)#Multilevel security (MLS)|Multilevel security (MLS)]]
+		- [[#Multilevel security (MLS)#Multilevel security confidentiality|Multilevel security confidentiality]]
+- [[#Role-based Access Control|Role-based Access Control]]
+	- [[#Role-based Access Control#Access control matrix representation of RBAC|Access control matrix representation of RBAC]]
+	- [[#Role-based Access Control#Family of Role-Based Access Control models|Family of Role-Based Access Control models]]
+	- [[#Role-based Access Control#RBAC1: role hierarchy|RBAC1: role hierarchy]]
+		- [[#RBAC1: role hierarchy#Role hierarchy|Role hierarchy]]
+	- [[#Role-based Access Control#RBAC2: constrains|RBAC2: constrains]]
+- [[#Attribute-Based Access Control (ABAC)|Attribute-Based Access Control (ABAC)]]
+	- [[#Attribute-Based Access Control (ABAC)#Policies|Policies]]
+	- [[#Attribute-Based Access Control (ABAC)#ABAC vs RBAC|ABAC vs RBAC]]
+---
 ## Introduction
 
 >[!quote] NISTRIR 7298
@@ -304,10 +340,12 @@ The ABAC model deals with additional attributes in an efficient way
 >| Adult-Premium    | R-New_release    |
 >| Juvenile-Premium | PG13-New_release | 
 >
+>
 >In ABAC it would be:
 >- $$\begin{align}R_{2}:\text{can\_access}&(u,m,e)\leftarrow \\&(\text{MembershipType}(u)=\text{Premium}) \lor \\&(\text{MembershipType}(u)=\text{Regular} \land \text{MovieType}(m)=\text{OldRelease})\end{align}$$
 >- $$R_{3}:\text{can\_access}(u,m,e)\leftarrow R_{1} \land R_{2}$$
-
-
-
-
+>
+>Environment attributes example:
+>- new policy → regular users are allowed to view new releases in promotional periods.
+>- difficult to express in an RBAC model.
+>- in an ABAC model, we only need to add a conjunctive (AND) rule that checks to see the environmental attribute today’s date falls in a promotional period.
