@@ -166,3 +166,22 @@ Linux and Mandatory Integrity Control for Windows
 
 ---
 ## Role-based Access Control
+In RBAC, rather than specifying access control rights for subjects directly, you define roles and then specify access control for these roles
+
+![[Pasted image 20251104095553.png]]
+
+The goal is to describe organizational access control policies based on job function (a user’s permissions are determined by her roles rather than by identity or clearance).
+This helps increasing flexibility/scalability in policy administration. In particular it helps:
+- meeting new security requirements
+- reduce errors in administration
+- reduce cost of administration
+
+![[Pasted image 20251104095858.png|450]]
+
+To sum up:
+- roles are defined based on job function → e.g. bookkeeper
+- permissions are defines based on job authority and responsibilities within a role → e.g. bookkeeper is allowed to read financial records
+- users have access to object based on the assigned role → e.g. Sally is the bookkeeper
+
+### Access control matrix representation of RBAC
+![[Pasted image 20251104100150.png]]
