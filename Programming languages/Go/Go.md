@@ -1,8 +1,7 @@
 
 # Index
 ##### Basics
-- [[Programming languages/Go/Introduction|Introduction]]
-- 
+- [[Basics]]
 
 ##### Data types
 - 
