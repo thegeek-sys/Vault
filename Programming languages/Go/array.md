@@ -34,5 +34,8 @@ Uno slice è una vista a dimensione dinamica su un array sottostante
 a[low : high]
 ```
 
-E ha come tipo `[]T` (non specifica la dimensione) e non serve a memorizzare dati direttamente, ma fa riferimento a una sezione di un array
+E ha come tipo `[]T` (non specifica la dimensione) e non serve a memorizzare dati direttamente, ma fa riferimento a una sezione di un array.
+La modifica degli elementi di una slice modifica l’array sottostante e qualsiasi slice corrispondente che punta allo stesso array.
+
+
 
