@@ -29,6 +29,41 @@ i := 42           // int
 f := 3.1415       // float64
 g := 0.867 + 0.5i // complex128
 ```
+
+### Costanti numeriche
+Le costanti senza tipo (`untyped`) assumono un solo tipo quando vengono usate. Possono essere usate infatti in contesti che richiedono tipi numerici diversi (come `int` o `float`), purché il valore rientri nel range.
+
+```go
+const (
+	// non hanno un tipo specifico
+	untypedInt = 1     // es. int o float64
+	untypedFloat = 1.1 // es. float64
+)
+
+func needInt(x int) int {
+	return x*10+1
+}
+func needFloat(x float64) float64 {
+	return x*0.1
+}
+
+func main() {
+	fmt.Println(needInt(untypedInt))   // ok
+	fmt.Println(needFloat(untypedInt)) // ok
+	fmt.Println(needInt(untypedFloat)) // errore non possibile convertire
+									   // float a int senza explicit casting
+}
+```
+
+#### Casting
+L’espressione `T(v)` converte il valore `v` al tipo `T` e risulta necessario per convertire tra tipi numerici.
+
+```go
+i := 42
+f := float64(i) // i (int) convertito in f (float64)
+u := uint(f)    // f (float64) convertito in u (uint)
+```
+
 ---
 ## Tipi di dati di base
 
@@ -51,5 +86,3 @@ I tipi `int`, `uint`, `uintptr` sono solitamente a 32 bit sui sistemi a 32 bit e
 - `""` (stringa vuota) → stringa
 
 ---
-## Costanti numeriche
-Le costanti senza tipo (`untyped`) assumono un solo tipo quando vengono usate. Possono essere usate infatti in contesti che richiedono tipi numerici diversi (come `int` o `float`), perché il valore rie
