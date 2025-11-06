@@ -24,3 +24,15 @@ primes := [6]int{2, 3, 5, 7, 11, 13}
 >>```
 >>
 >>Infatti i valori non specificati vengono inizializzati al valore di default del tipo
+
+---
+## Slice
+Uno slice è una vista a dimensione dinamica su un array sottostante
+
+```go
+// low incluso, high escluso
+a[low : high]
+```
+
+E ha come tipo `[]T` (non specifica la dimensione) e non serve a memorizzare dati direttamente, ma fa riferimento a una sezione di un array
+
