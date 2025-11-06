@@ -30,6 +30,7 @@
 
 ##### Advanced
 - [[Puntatori]]
+- [[Valori funzione]]
 - 
 
 ##### Functions
