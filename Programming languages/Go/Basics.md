@@ -33,3 +33,5 @@ func main() {
 	ftm.Println('Hello, world!')
 }
 ```
+
+E’ possibile utilizzare le funzioni del pacchetto importato se il loro nome inizia con una lettera maiuscola (lo stesso vale per le variabili, es. `math.Pi`)
