@@ -34,3 +34,4 @@
 [[Verilog]]
 [[Java]]
 [[C]]
+[[Programming languages/Go/Go|Go]]
