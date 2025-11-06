@@ -10,6 +10,8 @@
 
 ##### Statements
 - [[if]]
+- [[switch]]
+- [[defer]]
 - 
 
 ##### Loops
