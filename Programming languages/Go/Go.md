@@ -31,6 +31,7 @@
 ##### Advanced
 - [[Puntatori]]
 - [[Valori funzione]]
+- [[Closure]]
 - 
 
 ##### Functions
