@@ -80,9 +80,36 @@ complex64 complex128
 
 I tipi `int`, `uint`, `uintptr` sono solitamente a 32 bit sui sistemi a 32 bit e a 64 bit sui sistemi a 64 bit
 
+### Rune
+La `rune` rappresenta in senso proprio un carattere, che è diverso dalla vera e propria lunghezza di una stringa
+
+>[!example]
+>
+>```go
+>package main
+>import (
+>	'fmt'
+>	'uncode/utf8'
+>)
+>
+>func main() {
+>	s := 'Hello, world! 🌍'
+>	ftm.Println("Len (byte): ", len(s))                    // 17
+>	ftm.Println("Rune count: ", utf8.RuneCountInString(s)) // 14
+>}
+>```
+
+Infatti il carattere 🌍 (U+1F30D) viene codificato in UTF-8 usando 4 byte, ma rappresenta un solo Rune dato che questo è il carattere logico che Go usa per l’iterazione e il conteggio
+
+
+| Categoria Rune | Intervallo code point (hex) | Byte per rune (in UTF-8) | Esempio | Spiegazione                        |
+| -------------- | --------------------------- | ------------------------ | ------- | ---------------------------------- |
+| 1 byte         | `U+0000` a `U+007F`         | 1 byte                   | `A 1 !` | caratteri ASCII di base            |
+| 2 byte         | `U+0080` a `U+07FF`         | 2 byte                   | `é ñ £` | caratteri latini estesi, valute    |
+| 3 byte         | `U+0800` a `U+FFFF`         | 4 byte                   | `🔥 🥰` | emoji, pittogrammi, caratteri rari |
+
 ### Valori di default
 - `0` → tipi numerici
 - `false` → tipo booleano
 - `""` (stringa vuota) → stringa
 
----
