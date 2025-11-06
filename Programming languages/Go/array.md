@@ -37,5 +37,6 @@ a[low : high]
 E ha come tipo `[]T` (non specifica la dimensione) e non serve a memorizzare dati direttamente, ma fa riferimento a una sezione di un array.
 La modifica degli elementi di una slice modifica l’array sottostante e qualsiasi slice corrispondente che punta allo stesso array.
 
-
+### Slice literals
+Anche gli slice literals hanno come valore di default `nil`, ma a differenza degli array sono dinamici ed è quindi possibile utilizzare delle funzioni per poterne modificare la dimensione
 
