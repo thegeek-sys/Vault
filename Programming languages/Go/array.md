@@ -40,3 +40,21 @@ La modifica degli elementi di una slice modifica l’array sottostante e qualsia
 ### Slice literals
 Anche gli slice literals hanno come valore di default `nil`, ma a differenza degli array sono dinamici ed è quindi possibile utilizzare delle funzioni per poterne modificare la dimensione
 
+```go
+[]bool{true, true, false}
+```
+
+### Lunghezza e capacità della slice
+- `len` → restituisce il numero di elementi contenuti nella slice
+- `cap` → restituisce il numero di elementi nell’array sottostante, a partire del primo elemento della slice
+
+```go
+s := []int{1, 2, 3, 4, 5}
+fmt.Println(len(s))  // 5
+fmt.Println(cap(s))  // 5
+
+sub := s[1:3]
+fmt.Println(sub)       // [2 3]
+fmt.Println(len(sub))  // 2 (da indice 1 a 2)
+fmt.Println(cap(sub))  // 4 ([1, 2, 3, 4])
+```
