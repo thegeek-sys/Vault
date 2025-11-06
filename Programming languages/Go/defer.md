@@ -27,3 +27,4 @@ func main() {
 // out: hello cruel world!
 ```
 
+Tipicamente viene utilizzato ad esempio per pianificare la chiusura di un file al termine della funzione.

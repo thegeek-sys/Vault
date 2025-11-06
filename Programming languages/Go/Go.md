@@ -2,10 +2,12 @@
 # Index
 ##### Basics
 - [[Basics]]
-- [[Data types]]
+- 
 - 
 
 ##### Data types
+- [[Basic data types]]
+- [[struct]]
 - 
 
 ##### Statements
@@ -25,6 +27,7 @@
 - 
 
 ##### Advanced
+- [[Puntatori]]
 - 
 
 ##### Methods
