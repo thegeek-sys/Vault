@@ -12,7 +12,8 @@
 - 
 
 ##### Loops
-- [[for]]
+- [[Programming languages/Go/for|for]]
+- 
 
 ##### Files
 - 
