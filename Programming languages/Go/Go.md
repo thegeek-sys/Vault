@@ -8,6 +8,7 @@
 ##### Data types
 - [[Basic data types]]
 - [[struct]]
+- [[Programming languages/Go/array|array]]
 - 
 
 ##### Statements

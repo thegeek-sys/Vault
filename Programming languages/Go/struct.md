@@ -17,6 +17,20 @@ type Vertex struct {
 }
 
 var (
-	
+	v1 = Vertex{1, 2} // ha tipo Vertex
+	v2 = Vertex{X: 1} // Y:0 è implicito
+	v3 = Vertex{}     // X:0 e Y:0 impliciti
+	p = &Vertex{1, 2} // ha tipo *Vertex (puntatore a Vertex)
 )
+```
+
+---
+## struct anonime
+Le `struct` possono essere dichiarate senza un nome di tipo esplicito, utili se è necessaria una `struct` da usare solo localmente
+
+```go
+a := struct{
+	i int
+	b bool
+}{1, true}
 ```
