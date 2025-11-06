@@ -31,7 +31,7 @@
 - [[Puntatori]]
 - 
 
-##### Methods
+##### Functions
 - 
 
 ##### Operators
