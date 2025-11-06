@@ -2,6 +2,8 @@
 # Index
 ##### Basics
 - [[Basics]]
+- [[Data types]]
+- 
 
 ##### Data types
 - 
