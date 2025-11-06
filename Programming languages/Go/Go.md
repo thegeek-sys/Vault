@@ -9,6 +9,7 @@
 - [[Basic data types]]
 - [[struct]]
 - [[Programming languages/Go/array|array]]
+- [[map]]
 - 
 
 ##### Statements
