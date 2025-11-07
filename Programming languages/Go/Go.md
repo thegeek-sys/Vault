@@ -3,7 +3,6 @@
 ##### Basics
 - [[Basics]]
 - 
-- 
 
 ##### Data types
 - [[Basic data types]]
