@@ -77,8 +77,8 @@ Per creare un eseguibile binario e distribuibile si usa uno dei seguenti comando
 | Comando                  | Descrizione                                                                                                                                    |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | `go⠀build⠀.`             | compila il package corrente (o `main` se eseguibile) e genera un file binario nella directory corrente, chiamato come il modulo o la directory |
-| `go⠀build⠀-o app_name⠀.` | compila e specifica il nome del file di output (es. `app_name`)                                                                                |
-| `go⠀install⠀.`           | compila e install l’eseguibile nella cartella binari predefinita di Go (`$GOPATH/bin` o `$GOBIN`)                                              |
+| `go⠀build⠀-o⠀app_name⠀.` | compila e specifica il nome del file di output (es. `app_name`)                                                                                |
+| `go⠀install⠀.`⠀⠀⠀⠀⠀⠀⠀⠀   | compila e install l’eseguibile nella cartella binari predefinita di Go (`$GOPATH/bin` o `$GOBIN`)                                              |
 
 ### Test
 Il framework di testing è integrato nella toolchain
@@ -89,3 +89,49 @@ Il framework di testing è integrato nella toolchain
 | `go⠀build⠀test⠀./...` | esegue i test in tutte le sottodirectory                              |
 | `go⠀test⠀-v`          | esegue i test in modalità verbosa                                     |
 
+### Formattazione del codice
+Go impone uno stile di formattazione standardizzato
+
+| Comando    | Descrizione                                                                                                                     |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `go⠀fmt⠀.` | riformatta automaticamente tutti i file Go nella directory corrente in modo standardizzato, utilizzando lo stile canonico di Go |
+
+### Analisi e linting
+Strumenti integrati per l’analisi statistica del codice
+
+| Comando                 | Descrizione                                                                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `go⠀vet⠀.`              | analizza il codice sorgente per identificare potenziali bug o costrutti sospetti, come errori comuni di formattazione di stringhe o assegnazioni inutili |
+| `go⠀doc⠀<package/func>` | mostra la documentazione per un pacchetto o una funzione specifica                                                                                       |
+### Altri strumenti utili
+Comandi per la gestione e ispezione dell’ambiente
+
+| Comando                 | Descrizione                                                        |
+| ----------------------- | ------------------------------------------------------------------ |
+| `go⠀get⠀<path/package>` | aggiunge un nuovo pacchetto esterno al file `go.mod` e lo scarica. |
+| `go⠀version`            | mostra la versione di Go installata.                               |
+| `go⠀env`                | stampa le variabili d'ambiente di Go (es. `$GOPATH`, `$GOBIN`).    |
+### Aggiunta e aggiornamenti
+Comandi che gestiscono le dipendenze esterne richieste dal codice
+
+| Comando                        | Descrizione                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------- |
+| `go⠀get⠀<path/package>`        | aggiunge una nuova dipendenza al progetto (o aggiorna una esistente) e la registra in `go.mod`. |
+| `go⠀get⠀<path/package>@v1.2.3` | scarica e utilizza una specifica versione o un tag.                                             |
+| `go⠀get⠀-u⠀./...`              | aggiorna tutte le dipendenze del modulo alla versione patch o minor più recente.                |
+| `go⠀get⠀-u=patch⠀./...`        | aggiorna solo alle versioni patch più recenti (più sicuro).                                     |
+
+### Ispezione e blocco ($\verb|go.sum|$)
+Il file `go.sum` contiene gli hash crittografici per le dipendenze, garantendo l’integrità
+
+| Comando           | Descrizione                                                                                                           |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `go⠀list⠀-m⠀all`  | elenca tutte le dipendenze del modulo, incluse quelle transitive (di cui dipendono le tue dipendenze).                |
+| `go⠀mod⠀vendor`⠀⠀ | crea una cartella `vendor/` contenente le copie locali di tutte le dipendenze, per build isolate o per reti limitate. |
+| `go⠀mod⠀verify`   | verifica che i moduli scaricati nella cache Go corrispondano agli hash in `go.sum`.                                   |
+### Pulizia
+Per mantenere pulito l’ambiente del modulo
+
+| Comando                        | Descrizione                                                                                                            |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| `go⠀clean⠀-modcache` ⠀⠀⠀⠀⠀⠀⠀⠀⠀ | cancella la cache dei moduli (`$GOPATH/pkg/mod`), forzando il download di tutte le dipendenze alla prossima build/run. |
