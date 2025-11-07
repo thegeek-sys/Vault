@@ -41,5 +41,5 @@
 - 
 
 ##### Other
-- [[Cheat codes]]
+- [[Tips & tricks]]
 - 
