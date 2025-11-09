@@ -379,8 +379,9 @@ void Read_matrix(
 	if (my_rank == 0) {
 		A = malloc(m*n*sizeof(double));
 		printf("Enter the matrix %s\n", prompt)
-		for (j=0; j<n; j++)
-			scanf("%lf", &A[i*n+j]);
+		for (i=0; i<m; i++)
+			for (j=0; j<n; j++)
+				scanf("%lf", &A[i*n+j]);
 		MPI_Scatter(A, local_m*n, MPI_DOUBLE, local_A, local_m*n, MPI_DOUBLE, 0, comm);
 		free(A);
 	} else {
