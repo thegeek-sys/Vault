@@ -189,7 +189,7 @@ In this image $p$ is the part that can be parallelized while $s$ is the part tha
 Amdahl’s law says that the speedup is limited by the **serial fraction** ($s$) 
 
 $$
-T_{\text{parallel}}(p)=(1-\alpha)T_{\text{serial}}+\frac{\alpha T_{\text{seiral}}}{p}
+T_{\text{parallel}}(p)=(1-\alpha)T_{\text{serial}}+\alpha\frac{T_{\text{seiral}}}{p}
 $$
 
 A fraction $0\leq \alpha\leq 1$ can be parallelized while the remaining $1-a$ has to be done sequentially
