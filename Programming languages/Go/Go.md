@@ -2,6 +2,7 @@
 # Index
 ##### Basics
 - [[Basics]]
+- [[Programming languages/Go/Package|Package]]
 - 
 
 ##### Data types

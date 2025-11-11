@@ -3,14 +3,6 @@ Programming language: "[[Programming languages/Go/Go|Go]]"
 Related:
 ---
 ---
-## Packages
-Le funzioni Go sono raggruppate in pacchetti e ogni pacchetto è composto da uno o più file nella stessa directory. Il pacchetto è dichiarato all’inizio del file
-
-```go
-package main
-```
-
----
 ## Import
 Un file può importare altri pacchetti
 
