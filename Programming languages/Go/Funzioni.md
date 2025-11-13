@@ -73,3 +73,10 @@ func main() {
 
 Per quanto riguarda `slice`, `map` e `channel`, sono tipi di riferimento, dunque la loro struttura è copiata, ma il dato sottostante è condiviso (la copia contiene un puntatore alla struttura dati)
 
+---
+## Valori funzione
+Le funzioni possono essere passate come qualsiasi altro valore
+
+```go
+// funzione ipotenusa d'esempio
+```
