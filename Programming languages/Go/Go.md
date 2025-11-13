@@ -33,6 +33,7 @@
 - [[Puntatori]]
 - [[Valori funzione]]
 - [[Closure]]
+- [[Gestione errori]]
 - 
 
 ##### Functions
@@ -41,6 +42,6 @@
 ##### Operators
 - 
 
-##### Other
+##### Extras
 - [[Tips & tricks]]
 - 
