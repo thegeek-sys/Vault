@@ -64,4 +64,22 @@ Go fornisce una libreria standard con pacchetti comuni, ma è anche possibile cr
 >>// lettera per rendere questa funzione pubblica
 >>// altrimenti sarà disponibile solo all'interno di package1
 >>func Dummy() {}
+>>
+>>// questa funzione è privata
+>>func internalFunction() {}
 >>```
+>
+>
+>>[!example] Contenuto di `main.go`
+>>```go
+>>package main
+>>
+>>import "nome-modulo/package1" // importa il pacchetto interno
+>>
+>>func main() {
+>>	// chiama la funzione pubblica Dummy
+>>	package1.Dummy()
+>>	// package1.internalFunction() // errore
+>>}
+>>```
+
