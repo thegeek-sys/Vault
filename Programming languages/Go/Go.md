@@ -3,6 +3,7 @@
 ##### Basics
 - [[Basics]]
 - [[Programming languages/Go/Package|Package]]
+- [[Funzioni]]
 - 
 
 ##### Data types

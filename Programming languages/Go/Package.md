@@ -114,4 +114,6 @@ Questo comando scarica il pacchetto `gopkg.in/yaml.v2` e lo aggiunge a `go.mod`
 ## Layout standard
 I progetti Go seguono una convenzione semplice:
 - file sorgente → file Go finiscono con `.go`
-- package `main` → contiene
+- package `main` → contiene la funzione `main()` ed è il punto d’ingresso per un programma eseguibile
+- package personalizzato → contiene librerie e logica di business riutilizzabile
+
