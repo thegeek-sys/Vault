@@ -83,3 +83,35 @@ Go fornisce una libreria standard con pacchetti comuni, ma è anche possibile cr
 >>}
 >>```
 
+---
+## Moduli/pacchetti esterni
+Per utilizzare moduli esterni, è prima necessario scaricarli
+
+```go
+go get gopck.in/yaml.v2
+```
+
+Questo comando scarica il pacchetto `gopkg.in/yaml.v2` e lo aggiunge a `go.mod`
+
+>[!exampl] Importazione e utilizzo
+>```go
+>package main
+>import "gopkg.in/yaml.v2" // pacchetto esterno
+>
+>func main() {
+>	data := map[string]string{
+>		"name": "Go",
+>		"type": "Language"
+>	}
+>	
+>	// marshalling (conversione in yaml)
+>	yamlData, _ := yaml.Marshal(data)
+>	fmt.Println(string(yamlData))
+>}
+>```
+
+---
+## Layout standard
+I progetti Go seguono una convenzione semplice:
+- file sorgente → file Go finiscono con `.go`
+- package `main` → contiene
