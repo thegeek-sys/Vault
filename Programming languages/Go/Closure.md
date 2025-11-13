@@ -10,21 +10,23 @@ Una funzione che fa riferimento a variabili dall’esterno è chiamata **closure
 package main
 import 'fmt'
 
-func intSeq() func() int {
-    i := 0
-    return func() int {
-        i++
-        return i
+// adder restituise una closure
+func adder() func(int) int {
+    sum := 0 // questa variabile è "catturata" dalla closure
+    return func(x int) int {
+        sum += x
+        return sum
     }
 }
 
 func main() {
-    nextInt := intSeq()
-    fmt.Println(nextInt()) // 1
-    fmt.Println(nextInt()) // 2
-    fmt.Println(nextInt()) // 3
-	
-    newInts := intSeq()
-    fmt.Println(newInts()) // 1
+    pos, neg := adder(), adder()
+    for i:=0; i<10; i++ {
+	    fmt.Println(
+		    // pos e  neg mantengono stati sperati
+		    pos(i),
+		    neg(-2*i)
+	    )
+    }
 }
 ```
