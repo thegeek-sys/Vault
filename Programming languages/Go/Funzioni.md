@@ -71,4 +71,5 @@ func main() {
 }
 ```
 
-Per quanto riguarda `slice`, `map` e `channel`, sono tipi di riferimento. La loro struttura è copiata, ma il dato sottostante è condiviso
+Per quanto riguarda `slice`, `map` e `channel`, sono tipi di riferimento, dunque la loro struttura è copiata, ma il dato sottostante è condiviso (la copia contiene un puntatore alla struttura dati)
+
