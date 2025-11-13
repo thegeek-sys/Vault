@@ -79,4 +79,20 @@ Le funzioni possono essere passate come qualsiasi altro valore
 
 ```go
 // funzione ipotenusa d'esempio
+func hypot(x, y, float64) float64 {
+	return math.Sqrt(x*x + y*y)
+}
+
+// questa funzione accetta una funzione come argomento
+func compute(fn func(float64, float64) float64) float64 {
+	return fn(3, 4)
+}
+
+func main() {
+	// passiamo la funzione hypot
+	fmt.Println(compute(hypot)) // out: 5
+	
+	// passiamo la funzione math.Pow
+	fmt.Println(compute(math.Pow)) // out: 81 (3^4)
+}
 ```
