@@ -93,7 +93,7 @@ go get gopck.in/yaml.v2
 
 Questo comando scarica il pacchetto `gopkg.in/yaml.v2` e lo aggiunge a `go.mod`
 
->[!exampl] Importazione e utilizzo
+>[!example] Importazione e utilizzo
 >```go
 >package main
 >import "gopkg.in/yaml.v2" // pacchetto esterno
