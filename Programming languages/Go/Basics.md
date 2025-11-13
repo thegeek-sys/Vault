@@ -27,3 +27,5 @@ func main() {
 ```
 
 E’ possibile utilizzare le funzioni del pacchetto importato se il loro nome inizia con una lettera maiuscola (lo stesso vale per le variabili, es. `math.Pi`)
+
+Le funzioni che iniziano per lettera maiuscola saranno pubbliche, quelle che iniziano per lettera minuscola saranno disponibili solo all’interno del pacchetto
