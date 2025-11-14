@@ -73,3 +73,7 @@ func (v *Vertex) Scale(factor int) {
 // vtx := &Vertex{1,2}
 // vtx.Scale(10) // ora vtx.X e vtx.Y sono moltiplicati per 10
 ```
+
+---
+![[Composizione#Composizione]]
+

@@ -34,7 +34,7 @@
 - [[Valori funzione]]
 - [[Closure]]
 - [[Gestione errori]]
-
+- [[Composizione]]
 
 ##### Functions
 - [[Metodi]]
