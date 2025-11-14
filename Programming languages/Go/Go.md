@@ -34,9 +34,11 @@
 - [[Valori funzione]]
 - [[Closure]]
 - [[Gestione errori]]
-- 
+
 
 ##### Functions
+- [[Metodi]]
+- [[Programming languages/Go/Interfacce|Interfacce]]
 - 
 
 ##### Operators

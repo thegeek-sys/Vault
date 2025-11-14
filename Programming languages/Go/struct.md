@@ -34,3 +34,42 @@ a := struct{
 	b bool
 }{1, true}
 ```
+
+---
+## Metodi su struct
+I metodi sono funzioni con un argomento receiver speciale
+
+### Receiver per valore (copia)
+
+```go
+type Vertex struct {
+	X int
+	Y int
+}
+
+// receiver per valore: opera su una copia della struct
+func (v Vertex) Equal(other Vertex) bool {
+	return v.X == other.X && v.Y == other.Y
+}
+
+// vtx := Vertex{1,2}
+// if vtx.Equal(Vertex{2,3}) {...}
+```
+
+### Receiver per puntatore
+
+```go
+type Vertex struct {
+	X int
+	Y int
+}
+
+// receiver per puntatore: opera sulla struct originale (può modificare)
+func (v *Vertex) Scale(factor int) {
+	v.X *= factor
+	v.Y *= factor
+}
+
+// vtx := &Vertex{1,2}
+// vtx.Scale(10) // ora vtx.X e vtx.Y sono moltiplicati per 10
+```
