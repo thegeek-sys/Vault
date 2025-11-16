@@ -10,3 +10,7 @@ There are many reasons why database security has not kept pace with the increase
 - most enterprise environments consist of a heterogeneous mixture of database platforms, enterprise platforms, and OS platforms, crating an additional complexity hurdle for security personnel
 - the typical organization lacks full-time security personnel
 - effective database security requires a strategy based on a full understanding of the security vulnerabilities of SQL
+- databases have a sophisticated interaction protocol, Structured Query Language (SQL) which is complex
+
+### Databases
+Databases are structured collection of data stored for use by one or more applications
