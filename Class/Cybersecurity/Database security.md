@@ -13,4 +13,19 @@ There are many reasons why database security has not kept pace with the increase
 - databases have a sophisticated interaction protocol, Structured Query Language (SQL) which is complex
 
 ### Databases
-Databases are structured collection of data stored for use by one or more applications
+Databases are structured collection of data stored for use by one or more applications and contains the relationships between data items and groups of data items. It can sometimes contain sensitive data that needs to be secured
+
+### DBMS architecture
+![[Pasted image 20251117001038.png|400]]
+
+---
+## SQL injection attacks (SQLi)
+SQL injection attack is one of the most prevalent and dangerous network-based security threats and it’s designed to exploit the nature of Web application pages.
+
+It works by sending malicious SQL commands to the database server and the most common attack goal is bulk extraction of data. Depending on the environment, SQL injection can also be exploited to:
+- modify or delete data
+- execute arbitrary operating system commands
+- launch denial-of-service (DoS) attacks
+
+### Typical SQL injection attack
+![[Pasted image 20251117001410.png|400]]
