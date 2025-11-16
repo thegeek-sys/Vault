@@ -30,6 +30,29 @@ It works by sending malicious SQL commands to the database server and the most c
 ### Typical SQL injection attack
 ![[Pasted image 20251117001410.png|400]]
 
+>[!example]
+>Authentication bypass using [[#Inband attacks|tautologies]]
+>
+>##### 1.
+>1. query
+>	- `$q = "SELECT id FROM users WHERE user='".$user."' AND pass='".$pass."'";`
+>2. sent parameters
+>	- `$user = "admin";`
+>	- `$pass = "' OR '1'='1";`
+>3. query that is really executed
+>	- `$q = "SELECT id FROM users WHERE user='admin' AND pass='' OR '1'='1'";`
+>- if the input were sanitized (e.g., `mysql_escape_string()`):
+>	- `$q = "SELECT id FROM users WHERE user='admin' AND pass='\' OR \'\'=\''";`
+>
+>##### 2.
+>Choosing “blindly” the first available user
+>- `$pass = "' OR 1=1 # ";`
+>	- `$q = "SELECT id FROM users WHERE user='' AND pass='' OR 1=1 # '";`
+>- `$user = "' OR user LIKE '%' #";`
+>	- `$q = "SELECT id FROM users WHERE user='' OR user LIKE '%' #' AND pass=''";`
+>- `$user = "' OR 1 # ";`
+>	- `$q = "SELECT id FROM users WHERE user='' OR 1 #' AND pass=''";`
+
 ### Technique
 The SQLi attack typically works by prematurely terminating a text string and appending a new command. Because the inserted command may have additional strings appended to it before it is executed the attacker terminates the injected string with a comment mark `--` so that the subsequent text is ignored at execution time.
 
@@ -81,3 +104,8 @@ We talk about inferential attack when there is no actual transfer of data, but t
 | denial of service          | prevent legitimate user from using the web application (`LOCK`, `DELETE`, ...) |
 | authentication bypass      | bypass web application authentication mechanism                                |
 | remote command execution   | execution of commands not originally provided by the DBMS                      |
+
+### Ending the query
+Terminating the query properly can be cumbersome, in fact, frequently, the problem comes from what follows the integrated user parameter. This SQL segment if part of the query and the malicious input must be crafted to handle it without generating syntax errors.
+Usually the parameters include comment symbols like: `#`, `--`, `/*...*/`.
+
