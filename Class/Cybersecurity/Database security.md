@@ -101,6 +101,19 @@ The SQLi attack typically works by prematurely terminating a text string and app
 
 >[!example] Second order injection
 >To perform the attack a user with a malicious name is registered
+>```sql
+>$user = "admin'#"
+>```
+>
+>`$user` is correctly sanitized when it is inserted in the DB. Later on, the attacker asks to change the password of its malicious user, so the web app fetches info about the user from the db and uses them to perform another query
+>```sql
+>$q = "UPDATE users SET pass='".$_POST['newPass']."' WHERE user='".$row['user']."'";
+>```
+>
+>If the data coming from the database is not properly sanitized, the query will be:
+>```sql
+>$q = ”UPDATE users SET pass='password' WHERE user='admin'#'";
+>```
 ### Inband attacks
 We talk about inband attacks when it’s used the same communication channel for injecting SQL code and retrieving results. The retrieved data are presented directly in application Web page
 
