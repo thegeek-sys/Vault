@@ -36,6 +36,10 @@ func handler(w http.ResponseWriter, r *http.Request)
 
 ---
 ## Lettura e ricezione di dati
+
+>[!info] Input $\verb|*http.request|$
+Il parametro `r` (di tipo `*http.Request`) contiene tutte le informazioni inviate dal client. 
+
 ### Lettura: query string parameters
 Per accettare dati da un client tramite l’URL (metodo `GET`), si usano i **query string parameters**
 
@@ -48,6 +52,8 @@ Accesso ai parametri:
 >```go
 >func hi(w http.Responsewriter, r *http.Request) {
 >	// estrae il valore del parametro "name"
+>	// si tratta di una mappa che associa i nomi dei parametri
+>	// ai loro valori (url.Values)
 >	name := r.URL.Query().Get("name")
 >	
 >	w.Header().Set("Content-Type", "text/plain")
