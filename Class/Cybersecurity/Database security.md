@@ -3,6 +3,33 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#Databases|Databases]]
+	- [[#Introduction#DBMS architecture|DBMS architecture]]
+- [[#SQL injection attacks (SQLi)|SQL injection attacks (SQLi)]]
+	- [[#SQL injection attacks (SQLi)#Typical SQL injection attack|Typical SQL injection attack]]
+	- [[#SQL injection attacks (SQLi)#Technique|Technique]]
+		- [[#Technique#Attack avenues|Attack avenues]]
+	- [[#SQL injection attacks (SQLi)#Inband attacks|Inband attacks]]
+	- [[#SQL injection attacks (SQLi)#Inferential attack|Inferential attack]]
+	- [[#SQL injection attacks (SQLi)#Targets|Targets]]
+	- [[#SQL injection attacks (SQLi)#Ending the query|Ending the query]]
+	- [[#SQL injection attacks (SQLi)#SQLi with missing infos|SQLi with missing infos]]
+	- [[#SQL injection attacks (SQLi)#Blind SQLi|Blind SQLi]]
+		- [[#Blind SQLi#Exploiting blind SQLi|Exploiting blind SQLi]]
+	- [[#SQL injection attacks (SQLi)#SQLi countermeasures|SQLi countermeasures]]
+		- [[#SQLi countermeasures#Defensive coding practices|Defensive coding practices]]
+		- [[#SQLi countermeasures#Parametrized queries and SQL DOM|Parametrized queries and SQL DOM]]
+- [[#Database access control|Database access control]]
+	- [[#Database access control#Cascading authorizations|Cascading authorizations]]
+	- [[#Database access control#Role-Based Access Control (RBAC)|Role-Based Access Control (RBAC)]]
+	- [[#Database access control#Inference|Inference]]
+		- [[#Inference#Inference detection|Inference detection]]
+- [[#Database encryption|Database encryption]]
+	- [[#Database encryption#Encryption scheme|Encryption scheme]]
+	- [[#Database encryption#Encryption and indexing|Encryption and indexing]]
+---
 ## Introduction
 There are many reasons why database security has not kept pace with the increased reliance on databases, such as:
 - there is a dramatic imbalance between the complexity of modern database management systems (DBMS) and the security technique used to protect these critical systems
@@ -383,4 +410,17 @@ The disadvantages of encryption are:
 - inflexibility → when part or all of the database is encrypted it becomes more difficult to perform record searching
 
 ### Encryption scheme
-A straightforward solution is to encrypt the entire database and not provide the encryption 
+![[Pasted image 20251117120908.png|500]]
+
+A straightforward solution is to encrypt the entire database and not provide the encryption/decryption keys to the service provider. This solution by itself is inflexible as there is little ability to access individual data items based on searches or indexing on key parameters
+
+To provide more flexibility, it must be possible to work with the database in its encrypted form
+
+### Encryption and indexing
+![[Pasted image 20251117121222.png|400]]
+
+Each record (row) of a table in the database is encrypted as a block, and for each row in the original database, there is one row in the encrypted database while for any attribute, the range of attribute values is divided into a set of non-overlapping partitions that encompass all possible values, and an index value is assigned to each partition
+
+>[!example] Encrypted database example
+>![[Pasted image 20251117121256.png|430]]
+
