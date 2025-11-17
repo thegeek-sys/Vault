@@ -40,8 +40,9 @@ func handler(w http.ResponseWriter, r *http.Request)
 >[!info] Input $\verb|*http.request|$
 Il parametro `r` (di tipo `*http.Request`) contiene tutte le informazioni inviate dal client. 
 
-### Lettura: query string parameters
-Per accettare dati da un client tramite l’URL (metodo `GET`), si usano i **query string parameters**
+### Lettura
+#### Query string parameters
+I query string parameters sono parte dell’URL e vengono usati per passare dati semplici o opzioni di filtraggio. Si usano per accettare dati da un client tramite l’URL (metodo `GET`).
 
 Accesso ai parametri:
 1. la richiesta `r` contiene l’URL: `r.URL` (di tipo `*url.URL`)
@@ -63,7 +64,20 @@ Accesso ai parametri:
 >}
 >```
 
-### Ricezione: post body
+#### Path parameters
+Questi parametri sono integrati nel percorso dell’URL (`/users/101`)
+
+| Componente                        | Package       | Descrizione                                                                                                                                     |
+| --------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Standard Library (`net/http`)     |               | il gestore deve analizzare manualmente la stringa `r.URL.Path` (e.g. usando `strings.Split`) per estrarre i segmenti variabili. Non consigliato |
+| Router esterno (es. `Gorill Mux`) | `mux.Vars(r)` | restituisce una mappa (`map[string]string`) contiene i parametri estratti dal path. Approccio standard                                          |
+>[!example] Esempio manuale
+>Suddivide il percorso in segmenti per estrarre l’ID
+>```go
+>segments := string.Split(r.URL.Path, "/")
+>```
+
+### Recezione: post body
 Per ricevere dati strutturati (come testo o JSON) inviati con richiesta `POST`, è necessario leggere il corpo della richiesta.
 
 Lettura del body:
