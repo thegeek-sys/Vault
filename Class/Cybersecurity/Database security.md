@@ -99,7 +99,7 @@ The SQLi attack typically works by prematurely terminating a text string and app
 >- the database itself (second order injection)
 >	- the input of the application is stored in the database later, the same input may be fetched from the database and used to build another query
 
->[!example] Second order injection
+>[!example]- Second order injection
 >To perform the attack a user with a malicious name is registered
 >```sql
 >$user = "admin'#"
@@ -114,6 +114,28 @@ The SQLi attack typically works by prematurely terminating a text string and app
 >```sql
 >$q = ”UPDATE users SET pass='password' WHERE user='admin'#'";
 >```
+
+>[!example] Piggy-backed
+>Target: execute an arbitrary number of distinct queries
+>
+>Query:
+>```sql
+>$q = "SELECT id FROM users WHERE user='".$user."' AND pass='". $pass."'";
+>```
+>
+>Injected parameters:
+>```sql
+>$user = "'; DROP TABLE users −− ";
+>```
+>
+>Query executed:
+>```sql
+>$q="SELECT id FROM users WHERE user=''; DROP TABLE users -- ' AND pass=''";
+>```
+>
+>>[!warning]
+>>This is strictly dependent from the method/function invoked to perform the query
+
 ### Inband attacks
 We talk about inband attacks when it’s used the same communication channel for injecting SQL code and retrieving results. The retrieved data are presented directly in application Web page
 
