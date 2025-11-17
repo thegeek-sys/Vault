@@ -300,3 +300,52 @@ SQL DOM is a set of classes that enables automated data type validation and esca
 
 ---
 ## Database access control
+Database access control system determines if the user has access to the entire
+database or just portions of it and what access rights the user has (create, insert, delete, update, read, write)
+
+It can support a range of administrative policies:
+- **Centralized administration** → small number of privileged users may grant and revoke access rights
+- **Ownership-based administration** → the creator of a table may grant and revoke access rights to the table
+- **Decentralized administration** → the owner of the table may grant and revoke authorization rights to other users, allowing them to grant and revoke access rights to the table
+
+There are two commands for managing access rights:
+- `GRANT` → used to grant one or more access rights or can be used to assign a user to a role
+- `REVOKE` → remove the access rights
+
+>[!info] $\verb|GRANT|$/$\verb|REVOKE|$ command syntax
+>```sql
+>GRANT          {privileges|role}
+>[ON            table]
+>TO             {user|role|PUBLIC}
+>[IDENTIFIED BY password]
+>[WITH          GRANT OPTION]
+>```
+>
+>```sql
+>REVOKE {privileged|role}
+>[ON    role]
+>FROM   {user|role|PUBLIC}
+>```
+
+### Cascading authorizations
+![[Pasted image 20251117114354.png|400]]
+The grant/revoke option enables/disables an access right to cascade through a number of users. For example when user $A$ revokes an access right, any cascaded access right is also revoked unless that access right would exist even if the original grant from $A$ had never occurred.
+
+### Role-Based Access Control (RBAC)
+Role-based access control eases administrative burden and improves security. A database RBAC needs to provide the following capabilities:
+- create and delete roles
+- define permissions for a role
+- assign and cancel assignment of users to roles
+
+Categories of database users:
+- application owner → an end user who owns database objects as part of an application
+- end user → and end user who operates on database objects via a particular application but does not own any of the database objects
+- administrator → user who has administrative responsibility for part or all of the database
+
+### Inference
+![[Pasted image 20251117114704.png|350]]
+
+Inference, as it relates to database security, is the process of performing authorized queries and deducing unauthorized information from the legitimate responses received
+
+>[!example]
+>
