@@ -376,3 +376,11 @@ Some inference detection algorithm is needed for either of these approaches. Pro
 
 ---
 ## Database encryption
+The database is typically the most valuable information resource for any organization. In fact, it is protected by multiple layers of security (firewalls, authentication, encryption, etc.) and encryption becomes the last line of defense in database security, as it can be applied at the entire database, even at record level.
+
+The disadvantages of encryption are:
+- key managements → authorized must have access to the decryption key for the data for which they have access
+- inflexibility → when part or all of the database is encrypted it becomes more difficult to perform record searching
+
+### Encryption scheme
+A straightforward solution is to encrypt the entire database and not provide the encryption 
