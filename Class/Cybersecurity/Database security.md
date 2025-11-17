@@ -30,8 +30,7 @@ It works by sending malicious SQL commands to the database server and the most c
 ### Typical SQL injection attack
 ![[Pasted image 20251117001410.png|400]]
 
->[!example]
->Authentication bypass using [[#Inband attacks|tautologies]]
+>[!example]- Authentication bypass using [[#Inband attacks|tautologies]]
 >##### 1.
 >1. query
 >	- `$q = "SELECT id FROM users WHERE user='".$user."' AND pass='".$pass."'";`
@@ -64,6 +63,13 @@ It works by sending malicious SQL commands to the database server and the most c
 >- `$pass = "' OR 5>4 OR password='mypass";`
 >- `$pass = "' OR 'vulnerability'>'server";`
 
+>[!example]- UNION query
+>query → `$q = "SELECT id, name, price, description FROM products WHERE category=".$_GET['cat'];`
+>
+>injected code → `$cat="1 UNION SELECT 1, user, 1, pass FROM users";`
+>
+>the number and types of the columns returned by the two `SELECT` must match; in MySQL if types do not match, a cast is performed automatically
+>→ `$cat="1 UNION SELECT 1, 1, user, pass FROM user";`
 ### Technique
 The SQLi attack typically works by prematurely terminating a text string and appending a new command. Because the inserted command may have additional strings appended to it before it is executed the attacker terminates the injected string with a comment mark `--` so that the subsequent text is ignored at execution time.
 
@@ -93,6 +99,8 @@ The SQLi attack typically works by prematurely terminating a text string and app
 >- the database itself (second order injection)
 >	- the input of the application is stored in the database later, the same input may be fetched from the database and used to build another query
 
+>[!example] Second order injection
+>To perform the attack a user with a malicious name is registered
 ### Inband attacks
 We talk about inband attacks when it’s used the same communication channel for injecting SQL code and retrieving results. The retrieved data are presented directly in application Web page
 
