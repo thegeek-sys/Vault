@@ -348,4 +348,31 @@ Categories of database users:
 Inference, as it relates to database security, is the process of performing authorized queries and deducing unauthorized information from the legitimate responses received
 
 >[!example]
+>![[Pasted image 20251117114848.png|500]]
 >
+>A user who knows the structure of the `Inventory` table and who knows that the view tables maintain the same row order as the `Inventory` table is able to merge the two view
+>
+>```sql
+>CREATE view V1 AS
+>SELECT Availability, Cost from Inventory
+>WHERE Department = "hardware";
+>
+>CREATE view V2 AS
+>SELECT Items, Department from Inventory
+>WHERE Department = "hardware"
+>```
+
+#### Inference detection
+Is possible do detect inference during database design or at query time.
+During database design:
+- remove inference channels by altering the database structure or by changing the access control regime to prevent inference
+- techniques in this category  often result in unnecessarily stricter access control that reduce availability
+
+At query time:
+- seek to eliminate an interference channel violation during a query of series of queries
+- if an inference channel is detected, the query is denied or altered
+
+Some inference detection algorithm is needed for either of these approaches. Progress has been made in devising specific inference detection techniques for multilevel secure databases and statistical databases
+
+---
+## Database encryption
