@@ -78,7 +78,7 @@ Questi parametri sono integrati nel percorso dell’URL (`/users/101`)
 >```
 
 ### Recezione: post body
-Per ricevere dati strutturati (come testo o JSON) inviati con richiesta `POST`, è necessario leggere il corpo della richiesta.
+Per ricevere dati strutturati (come testo o JSON) inviati con richiesta `POST` (o `PUT`), è necessario leggere il corpo della richiesta.
 
 Lettura del body:
 1. il  corpo della richiesta è accessibile tramite `r.Body` (di tipo `io.ReadCloser`)
