@@ -78,7 +78,7 @@ Questi parametri sono integrati nel percorso dell’URL (`/users/101`)
 >```
 
 ### Recezione: post body
-Per ricevere dati strutturati (come testo o JSON) inviati con richiesta `POST` (o `PUT`), è necessario leggere il corpo della richiesta.
+Per ricevere dati strutturati (come testo o JSON) inviati con richiesta `POST` (o `PUT`), è necessario leggere il corpo della richiesta. In particolare il parametro `w` (di tipo `http.ResponseWriter`) è l’interfaccia usata per costruire e inviare la risposta al client.
 
 Lettura del body:
 1. il  corpo della richiesta è accessibile tramite `r.Body` (di tipo `io.ReadCloser`)
@@ -93,8 +93,14 @@ Lettura del body:
 >	// converte il body (si assume sia il nome in plain text) in stringa
 >	name := string(body)
 >	
+>	// header devono essere impostati prima di scrivere il
+>	// corpo della risposta
 >	w.Header().Set("Content-Type", "text/plain")
+>	
+>	// imposta lo statusc code HTTP. default 200 ok
+>	w.WriteHeader(htt.StatusCreated) // 201
 >	fmt.Fprintf(w, "Hi %s!", name)
+>	// in alternativa posso usare w.Writer([]byte)
 >	
 >	// in un server reale si deve sempre controllare l'errore di
 >	// io.ReadAll e l'header Content-Type della richiesta per dati
@@ -123,4 +129,35 @@ func main() {
 	// avvia il server sulla porta 8090
 	http.ListenAndServer(":8090", nil)
 }
+```
+
+---
+## Gestione di dati strutturati: json
+Nel web moderno, JSON è il formato standard per lo scambio di dati. Go usa il package `encoding/json` per mappare i dati tra le `struct` di Go e le stringhe di JSON
+
+### Leggere JSON della richiesta (decoding)
+Per leggere un corpo JSON in una `struct` Go, si usa `json.NewDecoder`
+
+```go
+type UserInput struct {
+	Name string 'json:"name"'
+	Age  int    'json:"age"'
+}
+// ...
+var input UserInput
+err := json.NewDecorder(r.Body).Decode(&input)
+// ...
+```
+
+### Scrivere JSON nella risposta
+Per inviare una `struct` Go come risposta JSON, si usa `json.Marshal` o `json.NewEncoder`
+
+```go
+type UserResponse struct {
+	Message string 'json:"status"'
+}
+// ...
+response := UserResponse{Message: "Success"}
+w.Header().Set("Content-Type", "application/json")
+json.NewEncoder(w).Encode(response)
 ```
