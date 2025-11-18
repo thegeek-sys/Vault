@@ -8,3 +8,5 @@
 - [[Processes and threads]]
 
 ### OpenMP
+- [[Shared memory programming with OpenMP]]
+- 
