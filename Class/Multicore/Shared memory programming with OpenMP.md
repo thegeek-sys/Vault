@@ -11,6 +11,13 @@ OpenMP (multi processing) is an API for shared-memory parallel programming, and 
 
 OpenMP aims to **decompose a sequential program into components** that can be executed in parallel and allows an “incremental” conversion of sequential programs into parallel ones, with the assistance of the compiler (much less invasive than MPI). OpenMP relies on compiler directives for decorating portions of the code that the compiler will attempt to parallelize.
 
+>[!info] Some teminology
+>- in OpenMP parlance the collection of threads executing the parallel block, the original thread and the new threads, is called a team
+>- master → the original thread of execution
+>- parent → thread that encountered a parallel directive and started a team of threads.
+>- in many cases, the parent is also the master thread.
+>- child → each thread started by the parent is considered a child thread.
+
 OpenMP programs are globally sequential, locally parallel and they follow the fork-join paradigm:
 ![[Pasted image 20251111172158.png|400]]
 
@@ -58,7 +65,11 @@ void Hello(void) {
 }
 ```
 
-This code snippet runs the `Hello` function with `thread_count` threads, and then waits for all the threads to finish (`join`). By default `thread_count` is the total number of available cores.
+This code snippet runs the `Hello` function with `thread_count` threads. By default `thread_count` is the total number of available cores.
+
+>[!info]
+>A OpenMP program waits for all the threads to finish (`join`)
+>![[Pasted image 20251111174218.png]]
 
 To run a program of this kind you need to:
 ```bash
@@ -89,3 +100,22 @@ Via the `num_threads` clause
 >[!example]
 >If universally is set to $8$ but on pragma to $4$, the remaining $4$ cores remain idle
 
+### clause
+A clause is some text that modifies a directive.
+
+>[!example]
+>The `num_threads` clause can be added to a parallel directive, it allows the programmer to specify the number of threads that should execute the following block
+>
+>```c
+># pragma omp parallel num_threads(thread_count)
+>```
+
+>[!warning]
+>- there may be system-defined limitations on the number of threads that a program can start
+>- the OpenMP standard doesn’t guarantee that this will actually start `thread_count` threads
+>- most current systems can start hundreds or even thousends of threads
+>- unless we’re trying to start a lot of threads, we will almost always get the desired number of threads
+>- after a block is completed, there is an implicit barrier (`join` is done)
+
+---
+Some teminology
