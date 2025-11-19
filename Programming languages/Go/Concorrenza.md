@@ -148,5 +148,9 @@ I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazion
 >}
 >```
 >
->
+>Il seguente codice invece non garantisce che i messaggi siano consumati in ordine
+>```go
+>func main() {
+>}
+>```
 
