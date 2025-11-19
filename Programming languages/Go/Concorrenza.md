@@ -91,8 +91,33 @@ func main() {
 ```
 
 ### Canali
-Se le goroutine devono anche scambiarsi dati, i canali sono lo strumento più idiomatico. Il canale non solo trasferisce dati, ma blocca l’esecuzione finché sia l’invio he la ricezione non sono pronti. Se il `main` attende di ricevere un segnale sul canale, attenderà fino a quando la goroutine non lo invierà
+Se le goroutine devono anche scambiarsi dati, i canali sono lo strumento più idiomatico. Il canale non solo trasferisce dati, ma blocca l’esecuzione finché sia l’invio he la ricezione non sono pronti. 
+
+Se il `main` attende di ricevere un segnale sul canale, attenderà fino a quando la goroutine non lo invierà
 
 ```go
-
+func main() {
+	// canale vuoto, usato solo come segnale
+	done := make(chan bool)
+	
+	go func() {
+		for i:=0; i<5; i++ {
+			fmt.Println("Goroutine: ", i)
+			time.Sleep(100*time.Millisecond)
+		}
+		done <- true // invia un segnale al main
+	}()
+	
+	fmt.Println("Main in attesa del segnale...")
+	<- done // main si blocca in attesa di un valore dal canale 'done'
+	fmt.Println("Programma completato")
+}
 ```
+
+I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazione tra Goroutine. Vediamo ora i principali comandi:
+- creazione
+	- `make(chan Type)` → canale non bufferizzato
+	- `make(chan Type, N)` → canale bufferizzato con capacità $N$
+- operazioni (bloccanti)
+	- `channel <- value` → invio
+	- `v := <-channel`
