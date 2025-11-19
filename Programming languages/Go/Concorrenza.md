@@ -109,7 +109,7 @@ func main() {
 	}()
 	
 	fmt.Println("Main in attesa del segnale...")
-	<- done // main si blocca in attesa di un valore dal canale 'done'
+	<-done // main si blocca in attesa di un valore dal canale 'done'
 	fmt.Println("Programma completato")
 }
 ```
@@ -121,3 +121,32 @@ I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazion
 - operazioni (bloccanti)
 	- `channel <- value` → invio
 	- `v := <-channel`
+
+>[!example] Esempio di sincronizzazione
+>I canali non bufferizzati garantiscono che invio e ricezione avvengano simltaneamente (*rendezvous*).
+>
+>Il seguente codice garantisce che i messaggi siano consumati in ordine
+>```go
+>fun main() {
+>	// canale non bufferizzato: richiede rendezvous
+>	var ch = make(chan int)
+>	
+>	go func() {
+>		var i=0
+>		for i<10 {
+>			ch <- i // 1. invio: si blocca finché qualcuno non riceve
+>			i++
+>		}
+>	}()
+>	
+>	var j = 0
+>	for j < 10 {
+>		// 2. ricezione: si blocca finché qualcuno non invia
+>		fmt.Println(<-ch)
+>		j++
+>	}
+>}
+>```
+>
+>
+
