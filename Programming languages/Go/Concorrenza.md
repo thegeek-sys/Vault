@@ -151,6 +151,20 @@ I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazion
 >Il seguente codice invece non garantisce che i messaggi siano consumati in ordine
 >```go
 >func main() {
+>	// creata struttura dati per canale e 'ch' contiene puntatore al canale
+>	var ch = make(chan int)
+>	
+>	// la goroutine 1 riceve una copia del puntatore
+>	go senderGoroutine(ch)
+>	
+>	// la goroutine 2 riceve una copia del puntatore
+>	go receiverGoroutine(ch)
+>	
+>	// ...
+>}
+>
+>func senderGoroutine(ch chan int) {
+>	ch <- 42 // invia sulla struttura condivisa
 >}
 >```
 
