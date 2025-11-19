@@ -3,6 +3,17 @@ Programming language: "[[Programming languages/Go/Go|Go]]"
 Related:
 ---
 ---
+## Index
+- [[#Il server http integrato di Go|Il server http integrato di Go]]
+- [[#Lettura e ricezione di dati|Lettura e ricezione di dati]]
+	- [[#Lettura e ricezione di dati#Lettura|Lettura]]
+		- [[#Lettura#Query string parameters|Query string parameters]]
+		- [[#Lettura#Path parameters|Path parameters]]
+	- [[#Lettura e ricezione di dati#Recezione: post body|Recezione: post body]]
+- [[#Riassunto e avvio|Riassunto e avvio]]
+- [[#Gestione di dati strutturati: json|Gestione di dati strutturati: json]]
+	- [[#Gestione di dati strutturati: json#Leggere JSON della richiesta (decoding)|Leggere JSON della richiesta (decoding)]]
+	- [[#Gestione di dati strutturati: json#Scrivere JSON nella risposta|Scrivere JSON nella risposta]]
 ## Il server http integrato di Go
 Go include una libreria HTTP completa nello standard package `net/http`
 - `http.Handler` → interfaccia usata per gestire le richieste
