@@ -172,4 +172,53 @@ I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazion
 >}
 >```
 
+### $\verb|select|$: multiplexing I/O
+L’istruzione `select` permette a una Goroutine di attendere su più operazioni di canali contemporaneamente. In particolare blocca finché uno dei suoi `case` (operazioni su canali) è pronto (se più canali sono pronti, ne sceglie uno casualmente).
+Se è presente un `default`, `select` lo esegue se nessun canale è immediatamente pronto
 
+```go
+select {
+case v1 := <-chan1:
+	fmt.Printf("ricevuto %v dal chan1\n", v1)
+case chan2 <- 1:
+	fmt.Printf("valore inviato a chan2")
+default:
+	fmt.Println("nessun canale è pronto")
+}
+```
+
+#### Gestione del timeout
+Un caso d’uso comune di `select` è l’implementazione di timeout usando `time.After`. Infatti `time.After(duration)` restituisce un canale che riceve un valore dopo la durata specificata
+
+Se il canale di timeout è pronto prima del canale dati, l’operazione scade
+
+```go
+select {
+case v1 := <-dataChannel:
+	// operazione riuscita
+	fmt.Println("ricevuto dato: %v\n", v1)
+case <-time.After(5*time.Second):
+	// operazione fallita per timeout
+	fmt.Println("timeout: nessun dato ricevuto")
+}
+```
+
+---
+## Sincronizzazione manuale
+Quando è necessario condividere la memoria (variabili) invece di comunicare tramite canali, si usano i mutex (`sync.Mutex`) per evitare race condition. Un mutex infatti ha il compito di proteggere una sezione critica del codice e solo un Goroutine alla volta può ottenere il lock
+
+Operazioni:
+- `mu.Lock()` → acquisisce il lock; blocca se già detenuto
+- `mu.Unlock()` → rilascia il lock
+
+```go
+var counter int
+var mu sync.Mutex // mutex per proteggere counter
+
+// Increment() è sicura per l'uso concorrente
+func Increment() {
+	mu.Lock() // inizio sezione cirica
+	defer mu.Unlock() // garantisce rilascio lock, anche in caso di panic
+	counter++ // accesso sicuro alla risorsa condivisa
+}
+```
