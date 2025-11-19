@@ -49,3 +49,50 @@ func main() {
 
 ### Lo scheduler (modello $M:N$)
 Mentre i thread sono programmati direttamente dal kernel, le Goroutine sono gestire dallo scheduler di Go, che si trova all’interno del runtime:
+1. **M:N scheduling** → lo scheduler di Go multiplexa molte Goroutine ($M$) su un numero molto minore di thread del sistema operativo ($N$)
+2. **blocco non fatale** → se una Goroutine si blocca (es. aspettando un I/O di rete), il runtime di Go sposta solo quella singola Goroutine in attesa, non blocca l’intero thread del sistema operativo su cui era in esecuzione. Il thread del So viene immediatamente riassegnato a un’altra Goroutine pronta per l’esecuzione
+3. **equità** → la commutazione di contesto delle Goroutine è molto più veloce di quella dei thread del SO e permette a Go di garantire equità e prevenire la starvation in modo efficiente
+
+---
+## Sincronizzazione
+Per garantire che una o più goroutine completino il loro lavoro prima che il programma principale termini, è necessario un meccanismo di sincronizzazione.
+
+Ci sono due modi principali per sincronizzare le goroutine:
+- `sync.WaitGroup` → per attendere il completamento
+- canali
+
+### $\verb|sync.WaitGroup|$
+Il `WaitGroup` è specificamente progettato per questo scopo: aspettare che un insieme di goroutine abbia completato le proprie operazioni.
+
+Vediamo i principali comandi:
+- `wg.Add(N)` → incrementa un contatore per il numero di goroutine da attendere
+- `wg.Done()` → decrementa il contatore all’interno della goroutine (tipicamente con `defer`)
+- `wg.Wait()` → blocca la goroutine chiamante (`main`) finché il contatore non torna a zero
+
+```go
+func main() {
+	var wg sync.WaitGroup
+	wg.Add(1) // dichiamo al WaitGroup di aspettare 1 goroutine
+	
+	go func() {
+		// garantisce che il contatore sia decrementato, anche in 
+		// caso di panic
+		defer wg.Done()
+		for i:=0; i<5; i++ {
+			fmt.Println("Goroutine: ", i)
+			time.Sleep(100 * time.Millisecond)
+		}
+	}()
+	
+	fmt.Println("Main in attesa...")
+	wg.Wait() // main si blocca finché la goroutine non chiama wg.Done()
+	fmt.Println("Programma completato")
+}
+```
+
+### Canali
+Se le goroutine devono anche scambiarsi dati, i canali sono lo strumento più idiomatico. Il canale non solo trasferisce dati, ma blocca l’esecuzione finché sia l’invio he la ricezione non sono pronti. Se il `main` attende di ricevere un segnale sul canale, attenderà fino a quando la goroutine non lo invierà
+
+```go
+
+```
