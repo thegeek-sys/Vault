@@ -167,6 +167,9 @@ I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazion
 >	ch <- 42 // invia sulla struttura condivisa
 >}
 >
->
+>func receiverGoroutine(ch chan int) {
+>	v := <-ch // riceve dalla struttura condivisa
+>}
 >```
+
 
