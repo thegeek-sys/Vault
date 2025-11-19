@@ -166,5 +166,7 @@ I canali sono dunque il mezzo primario per la comunicazione e la sincronizzazion
 >func senderGoroutine(ch chan int) {
 >	ch <- 42 // invia sulla struttura condivisa
 >}
+>
+>
 >```
 
