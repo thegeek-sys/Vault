@@ -35,6 +35,8 @@
 - [[Closure]]
 - [[Gestione errori]]
 - [[Composizione]]
+- [[Concorrenza]]
+- 
 
 ##### Functions
 - [[Metodi]]
