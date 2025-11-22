@@ -242,3 +242,5 @@ int thread_count = 1;
 In serial programming, the scope of a variable consists of those parts of a program in which the variable can be used
 
 In OpenMP, the scope of a variable refers to the set of threads that can access the variable in a parallel block.
+
+### Scope in OpenMP
