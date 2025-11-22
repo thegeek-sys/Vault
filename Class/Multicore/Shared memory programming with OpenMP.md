@@ -379,8 +379,7 @@ When we declare a variable as `private` it won’t exist anymore outside of the 
 >Thread 0 has 0
 >```
 
->[!example]
->If the thread private data starts out identical in all threads:
+>[!example]- If the thread private data starts out identical in all threads
 >```c
 >#pragma omp threadprivate(private_var)
 >…
@@ -389,8 +388,7 @@ When we declare a variable as `private` it won’t exist anymore outside of the 
 >	private_var += omp_get_thread_num()
 >```
 
->[!example]
->If one thread needs to set all thread private data to its value:
+>[!example]- If one thread needs to set all thread private data to its value
 >```c
 >#pragma omp threadprivate(private_var)
 >…
@@ -399,8 +397,7 @@ When we declare a variable as `private` it won’t exist anymore outside of the 
 >	private_var += omp_get_thread_num()
 >```
 
->[!example]
->If one thread need to set all thread private data to its value
+>[!example]- If one thread need to set all thread private data to its value
 >```c
 >#pragma omp parallel
 >{
@@ -411,33 +408,34 @@ When we declare a variable as `private` it won’t exist anymore outside of the 
 >}
 >```
 
-```c
-#include <omp.h>
-
-int x, y, z[1000];
-
-#pragma omp threadprivate(x)
-
-void default_none(int a) {
-    const int c = 1;
-    int i = 0;
-	
-    #pragma omp parallel default(none) private(a) shared(z)
-    {
-        int j = omp_get_num_threads(); // j is declared in a parallel region
-        a = z[j];                      // a is listed in private clause
-                                       // z is listed in shared clause
-        x = c;                         // x is threadprivate
-                                       // c has const-qualified type
-        z[i] = y;                      // cannot reference i or y here
-		
-        #pragma omp for firstprivate(y)
-        /* cannot reference y in the firstprivate clause */
-        for (i=0; i<10; i++) {
-            z[i] = i;                  // i is the loop iteration variable
-        }
-    }
-	
-    z[i] = y;                          // cannot reference i or y here
-}
-```
+>[!example]
+>```c
+>#include <omp.h>
+>
+>int x, y, z[1000];
+>
+>#pragma omp threadprivate(x)
+>
+>void default_none(int a) {
+>    const int c = 1;
+>    int i = 0;
+>	
+>    #pragma omp parallel default(none) private(a) shared(z)
+>    {
+>        int j = omp_get_num_threads(); // j is declared in a parallel region
+>        a = z[j];                      // a is listed in private clause
+>                                       // z is listed in shared clause
+>        x = c;                         // x is threadprivate
+>                                       // c has const-qualified type
+>        z[i] = y;                      // cannot reference i or y here
+>		
+>        #pragma omp for firstprivate(y)
+>        /* cannot reference y in the firstprivate clause */
+>        for (i=0; i<10; i++) {
+>            z[i] = i;                  // i is the loop iteration variable
+>        }
+>    }
+>	
+>    z[i] = y;                          // cannot reference i or y here
+>}
+>```
