@@ -44,8 +44,8 @@ Consequences:
 >	char str1[8];
 >	char str2[8];
 >	
->	next_tag(str1); // writes 7 chars string + EOL
->	gets(str2); // 
+>	gets(str2); // reads from stdin
+>	next_tag(str1); // copies str2 into 8 chars
 >	if (strncmp(str1, str2, 8) == 0) // compares just the first 8 chars
 >		valid = true;
 >	printf("buffer1: str1(%s), str2(%s), valid(%d)\n", str1, str2, valid);
