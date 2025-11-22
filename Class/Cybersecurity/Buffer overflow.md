@@ -44,10 +44,23 @@ Consequences:
 >	char str1[8];
 >	char str2[8];
 >	
->	next_tag(str1);
->	gets(str2);
->	if (strncmp(str1, str2, 8) == 0)
+>	next_tag(str1); // writes 7 chars string + EOL
+>	gets(str2); // 
+>	if (strncmp(str1, str2, 8) == 0) // compares just the first 8 chars
 >		valid = true;
 >	printf("buffer1: str1(%s), str2(%s), valid(%d)\n", str1, str2, valid);
 >}
+>```
+>
+>```bash
+>$ cc -g -o buffer1 buffer1.c
+>$ ./buffer1
+>START
+>buffer1: str1(START), str2(START), valid(1)
+>$ ./buffer1
+>EVILINPUTVALUE
+>buffer1: str1(TVALUE), str2(EVILINPUTVALUE), valid(0)
+>$ ./buffer1
+>BADINPUTBADINPUT
+>buffer1: str1(BADINPUT), str2(BADINPUTBADINPUT), valid(1)
 >```
