@@ -45,7 +45,7 @@ Consequences:
 >	char str2[8];
 >	
 >	gets(str2); // reads from stdin
->	next_tag(str1); // copies str2 into 8 chars
+>	next_tag(str1); // overflow of str2
 >	if (strncmp(str1, str2, 8) == 0) // compares just the first 8 chars
 >		valid = true;
 >	printf("buffer1: str1(%s), str2(%s), valid(%d)\n", str1, str2, valid);
