@@ -26,6 +26,9 @@ buffer or data holding area than the capacity allocated, overwriting other
 information. Attackers exploit such a condition to crash a system or to insert specially
 crafted code that allows them to gain control of the system.”
 
+### Programming language history
+At the machine level data manipulated by machine instructions executed by the computer processor are store in either the processor’s register or in memory
+
 ---
 ## Basics
 In practical a buffer overflow is a programming error that happens when a process attempts to store data beyond the limits of a fixed-sized buffer located on the stack, heap, or in the data section of the process (overwrites adjacent memory locations).
@@ -73,4 +76,10 @@ Consequences:
 To exploit a buffer overflow an attacker needs:
 - to identify a buffer overflow vulnerability in some program that can be triggered using externally sourced data under the attacker’s control
 - to understand how that buffer is stored in memory and determine potential for corruption
+
+
+Identifying vulnerable programs can be done by:
+- inspecting the program source
+- tracing the execution of programs as they process oversized input
+- using tools such as fuzzing to automatically identify potentially vulnerable programs
 
