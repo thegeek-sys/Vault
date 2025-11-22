@@ -3,6 +3,21 @@ Programming language: "[[Programming languages/Go/Go|Go]]"
 Related:
 ---
 ---
+## Index
+
+- [[#Concorrenza vs. parallelismo|Concorrenza vs. parallelismo]]
+	- [[#Concorrenza vs. parallelismo#Concorrenza|Concorrenza]]
+	- [[#Concorrenza vs. parallelismo#Parallelismo|Parallelismo]]
+- [[#Goroutine|Goroutine]]
+	- [[#Goroutine#Goroutine vs. thread|Goroutine vs. thread]]
+	- [[#Goroutine#Lo scheduler (modello $M:N$)|Lo scheduler (modello $M:N$)]]
+- [[#Sincronizzazione|Sincronizzazione]]
+	- [[#$ verb sync.WaitGroup $|sync.WaitGroup]]
+	- [[#Sincronizzazione#Canali|Canali]]
+	- [[#Sincronizzazione#$ verb select $ multiplexing I/O|select - multiplexing I/O]]
+		- [[#Gestione del timeout]]
+- [[#Sincronizzazione manuale|Sincronizzazione manuale]]
+---
 ## Concorrenza vs. parallelismo
 ### Concorrenza
 La concorrenza riguarda la struttura del programma. Essa infatti permette di gestire molte cose contemporaneamente (passando da un compito all’altro).
