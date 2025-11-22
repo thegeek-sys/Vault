@@ -260,5 +260,30 @@ int x; // shared
 ```
 
 ---
-## Reduction clause
-In the version shown, we use `global_result_p` as the output parameter, where each thread accumulates the result
+## Reduction operators
+A reduction operator is a binary operation (such as addition or multiplication) and is a computation that repeatedly applies the same reduction operator to a sequence of operands in order to get a single result
+
+All of the intermediate results of the operation should be stored in the same variable: the reduction variable.
+
+
+A reduction clause can be added to a parallel directive
+```c
+reduction(<operator>: <variable list>)
+```
+Where `<operator>` is the reduction operator to apply (from `+ * - & | ^ && ||`) and `<variable list>` is where to store the final value
+
+>[!example]
+>
+>```c
+>global_result = 0.0;
+>#pragma omp parallel num_threads(thread_count) \
+>	reduction(+: global_result)
+>global_result += Local_trap(double a, double b, int n);
+>```
+>
+>>[!warning]
+>>If is do not specify the reduction clause I would have a race condition
+
+The private variables created for a reduction clause are initialized to the *identity value* for the operator. For example of the operator is multiplication, the private variables would be initialized to $1$, while for sum it would be $0$
+
+The reduction at the end of the parallel section accumulates the *outside value* and the private values computed inside the parallel region.
