@@ -27,7 +27,11 @@ information. Attackers exploit such a condition to crash a system or to insert s
 crafted code that allows them to gain control of the system.”
 
 ### Programming language history
-At the machine level data manipulated by machine instructions executed by the computer processor are store in either the processor’s register or in memory
+At the machine level, data is manipulated by machine instructions executed by the computer processor and is stored either in the processor’s registers or in memory. In assembly language, the programmer is responsible for the correct interpretation of any saved data value, making programming at this level highly precise but also prone to errors.
+
+Languages like C and its derivatives provide high-level control structures, which make programming more convenient, but they still allow direct access to memory. This capability, while powerful, also makes programs written in these languages vulnerable to issues such as buffer overflows. As a result, a large legacy of widely used C code is potentially unsafe and prone to security vulnerabilities.
+
+Modern high-level programming languages, on the other hand, enforce a strong notion of data types and valid operations. This design helps prevent common memory-related vulnerabilities, such as buffer overflows, providing greater safety and reliability. However, these languages often incur additional overhead and impose some limitations on low-level operations compared to languages like C.
 
 ---
 ## Basics
@@ -82,4 +86,11 @@ Identifying vulnerable programs can be done by:
 - inspecting the program source
 - tracing the execution of programs as they process oversized input
 - using tools such as fuzzing to automatically identify potentially vulnerable programs
+
+### Stack buffer overflows
+This kind of overflows occur when buffer is located on stack (also known as stack smashing). It was firstly used by Morris Worm and exploits included an unchecked buffer overflow (but are still being widely exploited).
+
+On the stack frame when one function calls another it needs somewhere to save the return address and needs locations to save the parameters to be passed in to the called function and to possibly save register values
+
+![[Pasted image 20251122223824.png|250]]
 
