@@ -64,3 +64,11 @@ Consequences:
 >BADINPUTBADINPUT
 >buffer1: str1(BADINPUT), str2(BADINPUTBADINPUT), valid(1)
 >```
+>
+>>[!info] Stack values
+>>![[Pasted image 20251122183410.png|500]]
+
+---
+## Buffer overflow attacks
+To exploit a buffer overflow an attacker needs:
+- to indentify a buffer overflow vulnerability in some program that can be triggered using externally sourced data under the attacker’s control
