@@ -244,3 +244,21 @@ In serial programming, the scope of a variable consists of those parts of a prog
 In OpenMP, the scope of a variable refers to the set of threads that can access the variable in a parallel block.
 
 ### Scope in OpenMP
+A variable that can be accesses by all the threads in the team has *shared scope*, while a variable that can only be accessed by a single thread has *private scope*
+
+The **default** scope for variables declared before a parallel block is **shared**
+
+```c
+...
+int x; // shared
+#pragma omp parallel
+{
+	int y; // private
+	...
+}
+...
+```
+
+---
+## Reduction clause
+In the version shown, we use `global_result_p` as the output parameter, where each thread accumulates the result
