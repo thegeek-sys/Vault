@@ -71,4 +71,6 @@ Consequences:
 ---
 ## Buffer overflow attacks
 To exploit a buffer overflow an attacker needs:
-- to indentify a buffer overflow vulnerability in some program that can be triggered using externally sourced data under the attacker’s control
+- to identify a buffer overflow vulnerability in some program that can be triggered using externally sourced data under the attacker’s control
+- to understand how that buffer is stored in memory and determine potential for corruption
+
