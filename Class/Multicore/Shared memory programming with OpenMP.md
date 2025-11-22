@@ -294,18 +294,150 @@ The reduction at the end of the parallel section accumulates the *outside value*
 >#pragma omp parallel num_threads(5) reduction(* : acc)
 >{
 >	acc += omp_get_thread_num(); // 1,2,3,4,5 (1+tid)
->	printf("thread %d: private acc is %d\n",omp_get_thread_num(),acc);
+>	printf("tid=%d sum=%d\n",omp_get_thread_num(),acc);
 >}
->printf("after: acc is %d\n",acc); // acc=720
+>printf("final sum = %d\n",acc); // acc=720
 >```
 >
 >Output
 >```
->tid=0 sum = 1
->tid=3 sum = 4
->tid=4 sum = 5
->tid=2 sum = 3
->tid=1 sum = 2
->Final sum = 720
+>tid=0 sum=1
+>tid=3 sum=4
+>tid=4 sum=5
+>tid=2 sum=3
+>tid=1 sum=2
+>final sum = 720
 >```
 
+
+### The default clause
+Lets the programmer specify the scope of each variable in a block
+
+```c
+default(none)
+```
+
+With this clause the compiler will require that we specify the scope of each variable we use in the block and that has been declared outside the block
+
+#### Scope modifying clauses
+- `shared` → the default behavior for variables declared outside of a parallel block; it need to be used only if `default(none)` is also specified
+- `reduction` → a reduction operation is performed between the private copies and the “outside” object. The final value is store in the “outside” object
+- `private` → create a separate copy of a variable for each thread in the team. **Private variables are not initialized**, so one should not expect to get the value of the variable declared outside the parallel construct
+- `firstprivate` → behaves the same way as the private clause, but the private variable copies are initialized to the value of the “outside” object
+- `lastprivate` → behaves the same way as the private clause, but the thread finishing the last iteration of the sequential block copies the value of its object to the “outside object”
+
+>[!example]
+>```c
+>int x = 5;
+>#pragma omp parallel private(x)
+>	{
+>	x = x+1; // dangerous (x not initialized)
+>	printf("thread %d: private x is %d\n",omp_get_thread_num(),x);
+>	}
+>printf("after: x is %d\n",x); // also dangerous (prints the x declared in the first line)
+>```
+>
+>```
+>output:
+>thread 0: private x is 1
+>thread 1: private x is 1
+>thread 3: private x is 1
+>thread 2: private x is 1
+>after: x is 5
+>```
+
+When we declare a variable as `private` it won’t exist anymore outside of the scope. 
+- `threadprivate` → creates a thread-specific, persistent storage (i.e. for the duration of the program) for global data. The variable needs to be a global or static variable in C, or a static class member in C++
+- `copyin` → used in conjunction with the `threadprivate` clause to initialize the `threadprivate` copies of a team of threads from the master thread’s variables
+
+>[!example]
+>```c
+>int tp;
+>
+>int main(int argc,char **argv) {
+>	#pragma omp threadprivate(tp)
+>	
+>	#pragma omp parallel num_threads(7)
+>		tp = omp_get_thread_num();
+>	
+>	#pragma omp parallel num_threads(9)
+>		printf("Thread %d has %d\n", omp_get_thread_num(), tp);
+>	
+>	return 0;
+>}
+>```
+>
+>```
+>Thread 3 has 3
+>Thread 2 has 2
+>Thread 8 has 0
+>Thread 7 has 0
+>Thread 5 has 5
+>Thread 4 has 4
+>Thread 6 has 6
+>Thread 1 has 1
+>Thread 0 has 0
+>```
+
+>[!example]
+>If the thread private data starts out identical in all threads:
+>```c
+>#pragma omp threadprivate(private_var)
+>…
+>private_var = 1;
+>#pragma omp parallel copyin(private_var)
+>	private_var += omp_get_thread_num()
+>```
+
+>[!example]
+>If one thread needs to set all thread private data to its value:
+>```c
+>#pragma omp threadprivate(private_var)
+>…
+>private_var = 1;
+>#pragma omp parallel copyin(private_var)
+>	private_var += omp_get_thread_num()
+>```
+
+>[!example]
+>If one thread need to set all thread private data to its value
+>```c
+>#pragma omp parallel
+>{
+>	…
+>	#pragma omp single copyprivate(private_var)
+>	private_var = 4;
+>	…
+>}
+>```
+
+```c
+#include <omp.h>
+
+int x, y, z[1000];
+
+#pragma omp threadprivate(x)
+
+void default_none(int a) {
+    const int c = 1;
+    int i = 0;
+	
+    #pragma omp parallel default(none) private(a) shared(z)
+    {
+        int j = omp_get_num_threads(); // j is declared in a parallel region
+        a = z[j];                      // a is listed in private clause
+                                       // z is listed in shared clause
+        x = c;                         // x is threadprivate
+                                       // c has const-qualified type
+        z[i] = y;                      // cannot reference i or y here
+		
+        #pragma omp for firstprivate(y)
+        /* cannot reference y in the firstprivate clause */
+        for (i=0; i<10; i++) {
+            z[i] = i;                  // i is the loop iteration variable
+        }
+    }
+	
+    z[i] = y;                          // cannot reference i or y here
+}
+```
