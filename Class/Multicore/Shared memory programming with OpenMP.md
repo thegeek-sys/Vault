@@ -287,3 +287,25 @@ Where `<operator>` is the reduction operator to apply (from `+ * - & | ^ && ||`)
 The private variables created for a reduction clause are initialized to the *identity value* for the operator. For example of the operator is multiplication, the private variables would be initialized to $1$, while for sum it would be $0$
 
 The reduction at the end of the parallel section accumulates the *outside value* and the private values computed inside the parallel region.
+
+>[!example]
+>```c
+>int acc = 6;
+>#pragma omp parallel num_threads(5) reduction(* : acc)
+>{
+>	acc += omp_get_thread_num(); // 1,2,3,4,5 (1+tid)
+>	printf("thread %d: private acc is %d\n",omp_get_thread_num(),acc);
+>}
+>printf("after: acc is %d\n",acc); // acc=720
+>```
+>
+>Output
+>```
+>tid=0 sum = 1
+>tid=3 sum = 4
+>tid=4 sum = 5
+>tid=2 sum = 3
+>tid=1 sum = 2
+>Final sum = 720
+>```
+
