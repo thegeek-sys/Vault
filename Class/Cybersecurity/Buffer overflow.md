@@ -212,7 +212,84 @@ Defenses:
 - randomization of the stack in memory and of system libraries
 
 ### Heap overflow
-It is performed when the attack buffer is located in the heap (typically above the program code). As it has no return address it’s not easy to transfer control
+It is performed when the attack buffer is located in the heap (typically above the program code). As it has no return address it’s not easy to transfer control, so the attacker should exploit function pointers or manipulate management data structures
+
+Defenses:
+- making the heap non-executable
+- randomizing the allocation of memory on the heap
+
+>[!example]
+>```c
+>/* record type to allocate on heap */
+>typedef struct chunk {
+>	char inp[64]; /* vulnerable input buffer */
+>	void (*process)(char *); /* pointer to function to process data */
+>} chunk_t;
+>
+>void showlen(char *buf) {
+>	int len;
+>	len = strlen(buf);
+>	printf("buffer read %d chars\n", len);
+>}
+>
+>int main(int argc, char *argv[]) {
+>	chunk_t *next;
+>	
+>	setbuf(stdin, NULL);  // disables stdin buffering
+>                          // for immediate interactions
+>	// vulnerable location
+>	next = malloc(sizeof(chunk_t));
+>	// initialize pointer to function
+>	next->process = showlen;
+>	printf("Enter value: ");
+>	gets(next->inp);
+>	// execution of pointer to function
+>	// if input has been overwritten, shellcode is executed
+>	next->process(next->inp);
+>	printf("buffer done\n");
+>}
+>```
+>
+>![[Pasted image 20251123172103.png|400]]
+
+### Global data overflow
+It can attack buffer located in global data that may be located above program code. It can be used if the program has function pointer and vulnerable buffer or adjacent process management  tables, and aims to overwrite function pointer later called
+
+Defenses:
+- non executable or random global data region
+- move function pointers
+- guard pages
+
+>[!example]
+>```c
+>/* global static data - will be targeted for attack */
+>struct chunk {
+>	char inp[64]; /* input buffer */
+>	void (*process)(char *); /* pointer to function to process data */
+>} chunk; // note: 'chunk' is a global variable, not a typedef
+>
+>void showlen(char *buf) {
+>	int len;
+>	len = strlen(buf);
+>	printf("buffer6 read %d chars\n", len);
+>}
+>
+>int main(int argc, char *argv[]) {
+>	// disables stdin buffering for immediate interactions
+>	setbuf(stdin, NULL);
+>	// inizialization of pointer to function 'process'
+>	// of the global struct 'chunk'
+>	chunk.process = showlen;
+>	printf("Enter value: ");
+>	// will write over 'chink.inp' and will overwrite 'chunk.process'
+>	gets(chunk.inp);
+>	// execution of pointer to function overwritten
+>	chunk.process(chunk.inp);
+>	printf("buffer6 done\n");
+>}
+>```
+>
+>![[Pasted image 20251123172256.png|450]]
 
 ---
 ## Bufferoverflow defenses
