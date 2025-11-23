@@ -85,6 +85,36 @@ Consequences:
 | `strcpy(char *dest, char *src)`              | copy contents of string `stc` to string `dest`          |
 | `vsprintf(char⠀*str,⠀char⠀*fmt,⠀va_list⠀ap)` | create `str` according to supplied format and variables |
 
+### Common x86 Assembly language instructions
+
+| Instruction            | Description                                                            |
+| ---------------------- | ---------------------------------------------------------------------- |
+| `MOV src, dest`        | copy (move) value from `src` into `dest`                               |
+| `LEA src, dest`        | copy the address (load effective address) of `src` into `dest`         |
+| `ADD/SUB src, dest`    | add/sub value in `src` from dest leaving result in `dest`              |
+| `AND/OR/XOR⠀src,⠀dest` | logical and/or/xor value in `src` with `dest` leaving result in `dest` |
+| `CMP val1, val2`       | compare `val1` and `val2`, setting CPU flags as a result               |
+| `JMP/JZ/JNZ addr`      | jump/if zero/if not zero to addr                                       |
+| `PUSH src`             | push the value in `src` onto the stack                                 |
+| `POP dest`             | pop the value on the top of the stack into `dest`                      |
+| `CALL addr`            | call function at `addr`                                                |
+| `LEAVE`                | clean up stack frame before leaving function                           |
+| `RET`                  | return from function                                                   |
+| `INT num`              | software interrupt to access operating system function                 |
+| `NOP`                  | no operation or do nothing instruction                                 |
+
+### x86 registers
+| 32 bit | 16 bit | 8 bit (high) | 8 bit (low) | Use                                                                                                   |
+| ------ | ------ | ------------ | ----------- | ----------------------------------------------------------------------------------------------------- |
+| `%eax` | `%ax`  | `%ah`        | `%al`       | Accumulators used for arithmetical and I/O operations and execute interrupt calls                     |
+| `%ebx` | `%bx`  | `%bh`        | `%bl`       | Base registers used to access memory, pass system call arguments and return values                    |
+| `%ecx` | `%cx`  | `%ch`        | `%cl`       | Counter registers (often used for loop counts)                                                        |
+| `%edx` | `%dx`  | `%dh`        | `%dl`       | Data registers used for arithmetic operations, interrupt calls and I/O operations                     |
+| `%ebp` |        |              |             | Base Pointer containing the address of the current stack frame                                        |
+| `%eip` |        |              |             | Instruction Pointer or Program Counter containing the address of the next instruction to be executed5 |
+| `%esi` |        |              |             | Source Index register used as a pointer for string or array operations                                |
+| `%esp` |        |              |             | Stack Pointer containing the address of the top of stack                                              |
+
 ---
 ## Buffer overflow attacks
 To exploit a buffer overflow an attacker needs:
@@ -125,4 +155,7 @@ More recently a number of sites and tools have been developed to automate this p
 >```
 
 >[!warning] Shellcode caveats
->It has to be position independent, so the shellcode must be able to run no matter where in memory it is located. The attacker in fact generally cannot determine in advance exactly
+>It has to be position independent, so the shellcode must be able to run no matter where in memory it is located. The attacker in fact generally cannot determine in advance exactly where the targeted buffer will be located in the stack frame of the function in which it is defined, so only relative address references can be used (the attacker is not able to precisely specify the starting address of the instructions in the shellcode).
+>
+>It cannot contain any `NULL` values in fact it uses unsafe string manipulation routines and strings end with `NULL` values
+
