@@ -107,4 +107,22 @@ On the stack frame when one function calls another it needs somewhere to save th
 ### Shellcode
 The shellcode is some code supplied by the attacker that is often saved in buffer being overflowed. Usually it consist of transfering control to a command-line interpreter (shell)
 
-While machine code is specific to processor and operating system
+Shellcode is written in machine code and is therefore specific to both the processor architecture and the operating system. Classic examples include code that performs the equivalent of invoking a UNIX shell using a system call like `execve("/bin/sh")`, or launching a command interpreter such as `"command.exe"` on Windows systems. Historically, producing such code required strong assembly-language skills due to the low-level and architecture-dependent nature of the work.
+
+More recently a number of sites and tools have been developed to automate this process. A prime example is the Metasploit Project that provides useful information to people who perform penetration, IDS signature development, and exploit research
+
+>[!example]
+>```c
+>int main(int argc, char *argv[]) {
+>	char *sh;*
+>	char *args[2];
+>	
+>	sh = "/bin/sh";
+>	args[0] = sh;
+>	args[1] = NULL;
+>	execve(sh, args, NULL);
+>}
+>```
+
+>[!warning] Shellcode caveats
+>It has to be position independent, so the shellcode must be able to run no matter where in memory it is located. The attacker in fact generally cannot determine in advance exactly
