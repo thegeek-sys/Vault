@@ -203,8 +203,16 @@ Defenses:
 - randomization of the stack in memory and of system libraries
 
 ### Return to system call
-Stack overflow variant replaces return address with standard library function. It is used when there it non-executable stack defenses enabled
-The attacker constructs suitable parameters on stack above return address, so that function return and library function executes
+Stack overflow variant replaces return address with standard library function.
+The attacker constructs suitable parameters on stack above return address, so that function return and library function executes (can even chain two library calls). But the attacker may need exact buffer address 
+
+Defenses:
+- any stack protection mechanisms to detect modifications to the stack frame or return address by function exit code
+- use non-executable stacks
+- randomization of the stack in memory and of system libraries
+
+### Heap overflow
+It is performed when the attack buffer is located in the heap (typically above the program code). As it has no return address it’s not easy to transfer control
 
 ---
 ## Bufferoverflow defenses
