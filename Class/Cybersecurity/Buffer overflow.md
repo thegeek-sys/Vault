@@ -220,4 +220,28 @@ Concern with C is the use of unsafe standard library routines. One approach has 
 
 #### Stack protection
 Stack protection consists in adding function entry and exit code to check stack for signs of corruption. There many approaches of this kind:
-- random canary → value needs to be unpredictable and should be different on different systems
+- **random canary**
+	1. a special, unpredictable value (the canary) is placed on the stack immediately before the function's saved return address.
+	2. the value must be random and unique to each system or even each program execution to prevent attackers from predicting and bypassing it.
+	3. upon function exit, the generated compiler code checks the canary's value. If the value has been altered (which would indicate an overflow attack has occurred, as the buffer overflowed past the canary before reaching the return address), the program is immediately aborted, preventing the execution of malicious code.
+- **Stackshield and Return Address Defender (RAD)** → these are extensions, often found in compilers like GCC, that employ additional function entry and exit logic to protect the return address using a separate, safe memory region.
+    - *function entry* → when a function is entered, the compiler adds code that copies the legitimate return address from the stack frame and saves this copy to a secured, non-stack region of memory.
+    - *function exit* → before the function executes the return instruction (`RET`), the exit code checks the return address currently stored in the volatile stack frame against the saved, protected copy.
+    - *abortion* → if any change is detected, it signifies that a stack corruption or buffer overflow has occurred, and the program is immediately aborted to prevent control flow hijacking.
+
+### Run-Time defenses
+#### Executable Address Space Protection
+Consists of using a virtual memory support to make some regions of memory non-executable. It requires support from memory management unit (MMU)
+
+Issues:
+- support for executable stack code
+- special provisions are needed
+
+#### Address space randomization
+Consists of manipulating location of key data structures (stack, heap, global data) by using random shift for each process (location of heap buffers or location of standard library functions) but large address range on modern systems means wasting some has negligible impact
+
+#### Guard pages
+Place guard pages between critical regions of memory (flagged in MMU as illegal address) and any attempted access aborts process
+
+Further extension places guard pages between stack frames and heap buffers but it costs in execution time to support the large number of page mappings necessary
+
