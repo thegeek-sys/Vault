@@ -82,7 +82,7 @@ Consequences:
 | `gets(char *str)`                       | read line from standard input into `str`                |
 | `sprintf(char⠀*str,⠀char⠀*format,⠀...)` | create `str` according to supplied format and variables |
 | `strcat(char *dest, char *src)`         | append contents of string `src` to string `dest`        |
-|                                         |                                                         |
+| `strcpy(char *dest, char *src)`         | copy contents                                           |
 
 
 ---
