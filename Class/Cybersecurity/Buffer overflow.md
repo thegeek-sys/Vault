@@ -75,6 +75,13 @@ Consequences:
 >>[!info] Stack values
 >>![[Pasted image 20251122183410.png|500]]
 
+### Common unsafe C standard library routines
+
+| Command           | Description                              |
+| ----------------- | ---------------------------------------- |
+| `gets(char *str)` | read line from standard input into `str` |
+
+
 ---
 ## Buffer overflow attacks
 To exploit a buffer overflow an attacker needs:
