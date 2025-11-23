@@ -192,6 +192,20 @@ Target programs can be:
 
 An example are shellcode functions. Those can launch a remote shell when an attacker connect to it, creating a reverse shell that connects back to the hacker. It uses local exploits that establish a shell and flushed firewall rules that currently block other attacks
 
+### Replacement stack frame
+Is a variant that overwrites and saves frame pointer address to change it to refer to a dummy stack frame, so that the current function returns to the replacement dummy frame. Then the control is transferred to the shellcode in the overwritten buffer.
+
+It also known as off-by-one attack, as it involves coding error that allows one more byte to be copied than there is space available
+
+Defenses:
+- any stack protection mechanisms to detect modifications to the stack frame or return address by function exit code
+- use non-executable stacks
+- randomization of the stack in memory and of system libraries
+
+### Return to system call
+Stack overflow variant replaces return address with standard library function. It is used when there it non-executable stack defenses enabled
+The attacker constructs suitable parameters on stack above return address, so that function return and library function executes
+
 ---
 ## Bufferoverflow defenses
 Buffer overflows are widely exploited so there are many ways to protect against them. They divide into two approaches:
