@@ -77,9 +77,11 @@ Consequences:
 
 ### Common unsafe C standard library routines
 
-| Command           | Description                              |
-| ----------------- | ---------------------------------------- |
-| `gets(char *str)` | read line from standard input into `str` |
+| Command                                 | Description                                             |
+| --------------------------------------- | ------------------------------------------------------- |
+| `gets(char *str)`                       | read line from standard input into `str`                |
+| `sprintf(char *str, char *format, ...)` | create `str` according to supplied format and variables |
+|                                         |                                                         |
 
 
 ---
