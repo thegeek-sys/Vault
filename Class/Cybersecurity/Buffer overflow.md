@@ -201,10 +201,23 @@ Buffer overflows are widely exploited so there are many ways to protect against 
 ### Compile time defenses
 The safest way is to use a modern high-level language not vulnerable to overflow attacks and a compiler that enforces range checks and permissible operations on variables
 
-#### Disadvantages
+**Disadvantages**
 - additional code must be executed at run time to impose checks
 - flexibility and safety comes at a cost in resource use
 - distance from the underlying machine language and architecture means that access to some instructions and hardware resources is lost
 - limits their usefulness in writing code, such as device drivers, that must interact with such resources
 
-### Compile-Time Defenses
+#### Safe coding techniques
+C designers places much more emphasis on space efficiency and performance considerations than on type safety (assumed programmers would exercise due care in writing code).
+
+So programmers need to inspect the code and rewrite any unsafe coding.
+An example is the OpenBSD project where many programmers have audited the existing code base, including the operating system, standard libraries, and common utilities. This resulted in what is widely regarded as one of the safest operating system in widespread use
+
+#### Language extensions/safe libraries
+Handling dynamically allocated memory is more problematic because the size of the information is not available at compile time, so it requires an extension and the use of library routines and programs and libraries need to be recompiled (but is likely to have problems with third-party applications)
+
+Concern with C is the use of unsafe standard library routines. One approach has been to replace these with safer variants (e.g. `libsafe`, implemented as a dynamic library arranges to load before the existing standard libraries)
+
+#### Stack protection
+Stack protection consists in adding function entry and exit code to check stack for signs of corruption. There many approaches of this kind:
+- random canary → value needs to be unpredictable and should be different on different systems
