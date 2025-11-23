@@ -77,13 +77,13 @@ Consequences:
 
 ### Common unsafe C standard library routines
 
-| Command                                 | Description                                             |
-| --------------------------------------- | ------------------------------------------------------- |
-| `gets(char *str)`                       | read line from standard input into `str`                |
-| `sprintf(char⠀*str,⠀char⠀*format,⠀...)` | create `str` according to supplied format and variables |
-| `strcat(char *dest, char *src)`         | append contents of string `src` to string `dest`        |
-| `strcpy(char *dest, char *src)`         | copy contents                                           |
-
+| Command                                      | Description                                             |
+| -------------------------------------------- | ------------------------------------------------------- |
+| `gets(char *str)`                            | read line from standard input into `str`                |
+| `sprintf(char⠀*str,⠀char⠀*format,⠀...)`      | create `str` according to supplied format and variables |
+| `strcat(char *dest, char *src)`              | append contents of string `src` to string `dest`        |
+| `strcpy(char *dest, char *src)`              | copy contents of string `stc` to string `dest`          |
+| `vsprintf(char⠀*str,⠀char⠀*fmt,⠀va_list⠀ap)` | create `str` according to supplied format and variables |
 
 ---
 ## Buffer overflow attacks
@@ -104,3 +104,7 @@ On the stack frame when one function calls another it needs somewhere to save th
 
 ![[Pasted image 20251122223824.png|250]]
 
+### Shellcode
+The shellcode is some code supplied by the attacker that is often saved in buffer being overflowed. Usually it consist of transfering control to a command-line interpreter (shell)
+
+While machine code is specific to processor and operating system
