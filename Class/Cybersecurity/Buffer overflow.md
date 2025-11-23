@@ -170,14 +170,41 @@ More recently a number of sites and tools have been developed to automate this p
 >>       lea 0x8(%esi), %ecx //copy address of args[0] (esi+8) to ecx
 >>       lea 0xc(%esi), %edx //copy address of args[1] (esi+c) to edx
 >>       int $0x80           //software interrupt to execute syscall
->>find: call cont           //call cont that saves next addr on stack
+>>find: call cont           //call cont that saves next addr onstack
 >>sh:   .string "/bin/sh "  //string constant
 >>args: .long 0             //space used for args array
 >>       .long 0             //args[1] and also NULL for env array
 >>```
+>
+>![[Pasted image 20251123154604.png]]
 
 >[!warning] Shellcode caveats
 >It has to be position independent, so the shellcode must be able to run no matter where in memory it is located. The attacker in fact generally cannot determine in advance exactly where the targeted buffer will be located in the stack frame of the function in which it is defined, so only relative address references can be used (the attacker is not able to precisely specify the starting address of the instructions in the shellcode).
 >
 >It cannot contain any `NULL` values in fact it uses unsafe string manipulation routines and strings end with `NULL` values
 
+---
+## Stack overflow variants
+Target programs can be:
+- trusted system utility
+- network service daemon
+- commonly used library code
+
+An example are shellcode functions. Those can launch a remote shell when an attacker connect to it, creating a reverse shell that connects back to the hacker. It uses local exploits that establish a shell and flushed firewall rules that currently block other attacks
+
+---
+## Bufferoverflow defenses
+Buffer overflows are widely exploited so there are many ways to protect against them. They divide into two approaches:
+- compile-time → aims to harden programs to resist attacks in new programs
+- run-time → aim to detect and abort attacks in existing programs
+
+### Compile time defenses
+The safest way is to use a modern high-level language not vulnerable to overflow attacks and a compiler that enforces range checks and permissible operations on variables
+
+#### Disadvantages
+- additional code must be executed at run time to impose checks
+- flexibility and safety comes at a cost in resource use
+- distance from the underlying machine language and architecture means that access to some instructions and hardware resources is lost
+- limits their usefulness in writing code, such as device drivers, that must interact with such resources
+
+### Compile-Time Defenses
