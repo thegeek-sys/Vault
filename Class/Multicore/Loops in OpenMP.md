@@ -130,30 +130,89 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 
 ---
 ## Nested $\verb|for|$ loops
-If we have nested `for` loops, it is often enough to simply parallelize the outermost loop:
+
+>[!info]- Possible solutions
+>If we have nested `for` loops, it is often enough to simply parallelize the outermost loop:
+>```c
+>a();
+># pragms omp parallel for
+>for (int i=0; i<4; ++i) {
+>	for (int j=0; j<4; ++j) {
+>		c(i, j);
+>	}
+>}
+>z();
+>```
+>![[Pasted image 20251124223424.png|350]]
+>
+>
+>But sometimes the outermost loop is so short that not all threads are utilized:
+>```c
+>a();
+>// 3 iterations, so it won't have send to start more than 3 threads
+># pragms omp parallel for
+>for (int i=0; i<3; ++i) {
+>	for (int j=0; j<6; ++j) {
+>		c(i, j);
+>	}
+>}
+>z();
+>```
+>![[Pasted image 20251124223654.png|350]]
+>
+We could try to parallelize the inner loop, but there is no guarantee that the thread utilization is better:
+>```c
+>a();
+>for (int i=0; i<3; ++i) {
+>	# pragms omp parallel for
+>	for (int j=0; j<6; ++j) {
+>		c(i, j);
+>	}
+>}
+>z();
+>```
+>![[Pasted image 20251124223821.png|350]]
+
+The **correct solution** is to **collapse it into one loop** that does 18 iterations. We can do it manually:
 ```c
 a();
-# pragms omp parallel for
-for (int i=0; i<4; ++i) {
-	for (int j=0; j<4; ++j) {
-		c(i, j);
-	}
+#pragma omp parallel for
+for (int ij = 0; ij < 3*6; ++ij) {
+	c(ij / 6, ij % 6);
 }
+z();
 ```
+![[Pasted image 20251124224029.png|350]]
 
-![[Pasted image 20251124223424.png|350]]
-
-But sometimes the outermost loop is so short that not all threads are utilized:
+But it can also be automated by using OpenMP:
 ```c
 a();
-// 3 iterations, so it won't have send to start more than 3 threads
-# pragms omp parallel for
+#pragma omp parallel for collapse(2)
 for (int i=0; i<3; ++i) {
+	# pragms omp parallel for
 	for (int j=0; j<6; ++j) {
 		c(i, j);
 	}
 }
+z();
 ```
 
-![[Pasted image 20251124223654.png|350]]
+>[!error] Wrong way
+>”Nested parallelism” is disabled in OpenMP by default (i.e. inner parallel pragmas will be ignored)
+>```c
+>a();
+># pragms omp parallel for
+>for (int i=0; i<3; ++i) {
+>	# pragms omp parallel for
+>	for (int j=0; j<6; ++j) {
+>		c(i, j);
+>	}
+>}
+>z();
+>```
+>
+>![[Pasted image 20251124224518.png|350]]
+>
+>If “Nested parallelism” is enabled it will create 12 threads on a server with 4 cores ($3\cdot 4$)!
+
 
