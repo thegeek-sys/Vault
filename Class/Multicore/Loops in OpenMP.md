@@ -130,7 +130,30 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 
 ---
 ## Nested $\verb|for|$ loops
-If we have nested `for` loops, it is often enough to simply parallelize the outermost loop
-
+If we have nested `for` loops, it is often enough to simply parallelize the outermost loop:
 ```c
+a();
+# pragms omp parallel for
+for (int i=0; i<4; ++i) {
+	for (int j=0; j<4; ++j) {
+		c(i, j);
+	}
+}
 ```
+
+![[Pasted image 20251124223424.png|350]]
+
+But sometimes the outermost loop is so short that not all threads are utilized:
+```c
+a();
+// 3 iterations, so it won't have send to start more than 3 threads
+# pragms omp parallel for
+for (int i=0; i<3; ++i) {
+	for (int j=0; j<6; ++j) {
+		c(i, j);
+	}
+}
+```
+
+![[Pasted image 20251124223654.png|350]]
+
