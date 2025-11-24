@@ -26,3 +26,13 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >	approx += f(a + i*h);
 >approx = h*approx;
 >```
+
+>[!info] Legal forms for parallelizable $\verb|for|$ statements
+>![[Pasted image 20251124145718.png]]
+>
+>>[!question] Why?
+>>Because it allows the runtime system to determine the number of iterations prior to the execution of the loop
+
+>[!warning] Caveats
+>
+
