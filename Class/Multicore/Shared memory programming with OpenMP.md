@@ -177,6 +177,9 @@ global_result += my_result;
 
 If `atomic` increment is provided by the CPU, this will be more efficient than `critical`. However this only protects the read/update of the `global_result` variable (e.g. `global_result += my_function()`, `my_function` will still be executed in parallel)
 
+>[!warning]
+>`atomic` can be used just for one line of code
+
 ### Named critical section
 OpenMP provides the option of adding a name to a critical directive
 
@@ -215,6 +218,42 @@ omp_destroy_lock(&writelock);
 >```
 >
 >The use of locks should probably be reserved for situations in which mutual exclusion is needed for a data structure rather than a block of code
+
+>[!warning] Caveats
+>- you shouldn’t mix the different types of mutual exclusion for a single critical section
+>- there is no guarantee of fairness in mutual exclusion construct
+>- it can be dangerous to “nest” mutual exclusion constructs
+>
+>>[!example] Nested critical sections
+>>```c
+>>int main() {
+>>	# pragma omp critical
+>>	y = f(x);
+>>}
+>>
+>>double f(double x) {
+>>	# pragma omp critical
+>>	z = g(x); // z is shared
+>>	// ...
+>>	return z;
+>>}
+>>```
+>>
+>>>[!done] Solution
+>>>The nested critical section will go into deadlock. In the following example, we can solve the problem by using named critical sections
+>>>```c
+>>>int main() {
+>>>	# pragma omp critical(one)
+>>>	y = f(x);
+>>>}
+>>>
+>>>double f(double x) {
+>>>	# pragma omp critical(two)
+>>>	z = g(x); // z is shared
+>>>	// ...
+>>>	return z;
+>>>}
+>>>```
 
 ---
 ## Example: trapezoidal rule in OpenMP

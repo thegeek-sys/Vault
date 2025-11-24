@@ -127,3 +127,10 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >>
 >>reusing the same threads provide faster execution times
 >>![[Pasted image 20251124215509.png|350]]
+
+---
+## Nested $\verb|for|$ loops
+If we have nested `for` loops, it is often enough to simply parallelize the outermost loop
+
+```c
+```
