@@ -169,10 +169,13 @@ Mutual exclusion is used to execute a structured block inside a parallel directi
 
 ```c
 # pragma omp critical
-global_result += my_result; 
+global_result += my_result;
+
+# pragma omp atomic
+global_result += my_result;
 ```
 
-If atomic increment is provided by the CPU, this will be more efficient than `critical`. However this only protects the read/update of the `global_result` variable (e.g. `global_result += my_function()`, `my_function` will still be executed in parallel)
+If `atomic` increment is provided by the CPU, this will be more efficient than `critical`. However this only protects the read/update of the `global_result` variable (e.g. `global_result += my_function()`, `my_function` will still be executed in parallel)
 
 ### Named critical section
 OpenMP provides the option of adding a name to a critical directive
@@ -183,23 +186,35 @@ OpenMP provides the option of adding a name to a critical directive
 
 When we do this, two block protected with `critical` directives with different names can be executed simultaneously (i.e. it is like acting on two different locks). However, these must be set at compile time.
 
----
-## Locks in OpenMP
+### Locks in OpenMP
 
 ```c
 omp_lock_t writelock;
 omp_init_lock(&writelock);
 #pragma omp parallel for
-for ( i = 0; i < x; i++ )
-{
-// some stuff
-omp_set_lock(&writelock);
-// one thread at a time stuff
-omp_unset_lock(&writelock);
-// some stuff
+for ( i = 0; i < x; i++ ) {
+	// some stuff
+	omp_set_lock(&writelock);
+	// one thread at a time stuff
+	omp_unset_lock(&writelock);
+	// some stuff
 }
 omp_destroy_lock(&writelock);
 ```
+
+>[!question] $\verb|critical|$, $\verb|atomic|$, or $\verb|locks|$?
+>In general, the atomic directive has the potential to be the fastest method of obtaining mutual exclusion.
+>However, the OpenMP specification allows the `atomic` directive to enforce mutual exclusion across all `atomic` directives in the program; i.e.  the following might be executed in a mutually exclusive way (depends on the implementation)
+>
+>```c
+># pragma omp atomic
+>x++;
+>
+># pragma omp atomic
+>y++;
+>```
+>
+>The use of locks should probably be reserved for situations in which mutual exclusion is needed for a data structure rather than a block of code
 
 ---
 ## Example: trapezoidal rule in OpenMP
