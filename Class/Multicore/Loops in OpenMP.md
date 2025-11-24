@@ -32,7 +32,43 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >
 >>[!question] Why?
 >>Because it allows the runtime system to determine the number of iterations prior to the execution of the loop
+>
+>
+>>[!warning] Caveats
+>>- the variable `index` must have integer or pointer type (e.g. it can’t be a float)
+>>- the expression `start`, `end` and `incr` must have a compatible type. For example, if index is a pointer, then `incr` must have integer type
+>>- the expressions `start`, `end`, and `incr` must not change during execution of the loop
+>>- during execution of the loop, the variable `index` can only be modified by the “increment expression” in the `for` statement
+>>
+>>>[!example]
+>>>*Cannot* be parallelized
+>>>```c
+>>>for (i=0; i<n; i++) {
+>>>	if (...) break;
+>>>}
+>>>```
+>>>
+>>*Cannot* be parallelized
+>>>```c
+>>>for (i=0; i<n; i++) {
+>>>	if (...) return 1;
+>>>}
+>>>```
+>>>
+>>>*Can* be parallelized
+>>>```c
+>>>for (i=0; i<n; i++) {
+>>>	if (...) exit();
+>>>}
+>>>```
+>>>
+>>>*Cannot* be parallelized
+>>>```c
+>>>for (i=0; i<n; i++) {
+>>>	if (...) i++;
+>>>}
+>>>```
 
->[!warning] Caveats
->- the variable index must have 
+
+
 
