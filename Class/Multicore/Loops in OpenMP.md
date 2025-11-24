@@ -34,5 +34,5 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >>Because it allows the runtime system to determine the number of iterations prior to the execution of the loop
 
 >[!warning] Caveats
->
+>- the variable index must have 
 
