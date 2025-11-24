@@ -164,6 +164,44 @@ int thread_count = 1;
 ```
 
 ---
+## Mutual exclusion
+Mutual exclusion is used to execute a structured block inside a parallel directive one thread at a time
+
+```c
+# pragma omp critical
+global_result += my_result; 
+```
+
+If atomic increment is provided by the CPU, this will be more efficient than `critical`. However this only protects the read/update of the `global_result` variable (e.g. `global_result += my_function()`, `my_function` will still be executed in parallel)
+
+### Named critical section
+OpenMP provides the option of adding a name to a critical directive
+
+```c
+# pragma omp critical(name)
+```
+
+When we do this, two block protected with `critical` directives with different names can be executed simultaneously (i.e. it is like acting on two different locks). However, these must be set at compile time.
+
+---
+## Locks in OpenMP
+
+```c
+omp_lock_t writelock;
+omp_init_lock(&writelock);
+#pragma omp parallel for
+for ( i = 0; i < x; i++ )
+{
+// some stuff
+omp_set_lock(&writelock);
+// one thread at a time stuff
+omp_unset_lock(&writelock);
+// some stuff
+}
+omp_destroy_lock(&writelock);
+```
+
+---
 ## Example: trapezoidal rule in OpenMP
 
 >[!example] Trapezoidal rule

@@ -69,6 +69,61 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >>>}
 >>>```
 
-
-
-
+>[!example] Odd-even sort
+>In this case the `pragma` directive might fork/join new threads every time it is called (depends on the implementation). If it does so, we would have some overhead
+>```c
+>for (phase=0; phase<n; phase++) {
+>	if (phase%2 == 0) {
+>		# pragma omp parallel for num_theads(thread_count) \
+>		default(none) shared(a, n) private(i, tmp)
+>		for (i=1; i<n; i+=2) {
+>			if (a[i-1] > a[i]) {
+>				tmp = a[i-1];
+>				a[i-1] = a[i];
+>				a[i] = tmp;
+>			}
+>		}
+>	} else {
+>		# pragma omp parallel for num_threads(thread_count) \
+>		default(none) shared(a, n) private(i, tmp)
+>		for (i=1; i<n-1; i+=2) {
+>			if (a[i] > a[i+1]) {
+>				tmp = a[i+1];
+>				a[i+1] = a[i];
+>				a[i] = tmp;
+>			}
+>		}
+>	}
+>}
+>```
+>
+>Is it possible to create the threads at the beginning (before line 1)?
+>>[!done] Solution
+>>```c
+>># pragma omp parallel num_theads(thread_count) \
+>>default(none) shared(a, n) private(i, tmp, phase)
+>>for (phase=0; phase<n; phase++) {
+>>	if (phase%2 == 0) {
+>>		# pragma omp for
+>>		for (i=1; i<n; i+=2) {
+>>			if (a[i-1] > a[i]) {
+>>				tmp = a[i-1];
+>>				a[i-1] = a[i];
+>>				a[i] = tmp;
+>>			}
+>>		}
+>>	} else {
+>>		# pragma omp for
+>>		for (i=1; i<n-1; i+=2) {
+>>			if (a[i] > a[i+1]) {
+>>				tmp = a[i+1];
+>>				a[i+1] = a[i];
+>>				a[i] = tmp;
+>>			}
+>>		}
+>>	}
+>>}
+>>```
+>>
+>>reusing the same threads provide faster execution times
+>>![[Pasted image 20251124215509.png|350]]
