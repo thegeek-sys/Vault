@@ -9,4 +9,5 @@
 
 ### OpenMP
 - [[Shared memory programming with OpenMP]]
+- [[Loops in OpenMP]]
 - 
