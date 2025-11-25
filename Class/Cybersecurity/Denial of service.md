@@ -3,6 +3,26 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#Classic DoS attacks|Classic DoS attacks]]
+	- [[#Classic DoS attacks#Flooding ping|Flooding ping]]
+	- [[#Classic DoS attacks#Source address spoofing|Source address spoofing]]
+	- [[#Classic DoS attacks#SYN spoofing|SYN spoofing]]
+- [[#Flooding attacks|Flooding attacks]]
+- [[#Distributed Denial of Service (DDoS) attacks|Distributed Denial of Service (DDoS) attacks]]
+	- [[#Distributed Denial of Service (DDoS) attacks#Mirai short story|Mirai short story]]
+	- [[#Distributed Denial of Service (DDoS) attacks#Examples of DDoS attacks|Examples of DDoS attacks]]
+- [[#SIP invite scenario|SIP invite scenario]]
+- [[#Hypertext Transfer Protocol (HTTP) based attacks|Hypertext Transfer Protocol (HTTP) based attacks]]
+	- [[#Hypertext Transfer Protocol (HTTP) based attacks#HTTP flood|HTTP flood]]
+	- [[#Hypertext Transfer Protocol (HTTP) based attacks#Slowloris - R.U.D.Y.|Slowloris - R.U.D.Y.]]
+- [[#Reflection attacks|Reflection attacks]]
+	- [[#Reflection attacks#DNS amplification attacks|DNS amplification attacks]]
+- [[#Memcached DDoS attack|Memcached DDoS attack]]
+- [[#DoS attack defenses|DoS attack defenses]]
+	- [[#DoS attack defenses#Prevention|Prevention]]
+	- [[#DoS attack defenses#Responding to DoS attack|Responding to DoS attack]]
+---
 ## Introduction
 
 >[!quote] NIST Computer Security Incident Handling Guide definition of a DoS attack
