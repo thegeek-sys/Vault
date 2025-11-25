@@ -108,3 +108,6 @@ Basic defense against this attack is to prevent the use of spoofed source addres
 >
 >Which results in a 50x amplification
 
+---
+## Memcached DDoS attack
+Memcached is a high-performance caching mechanism for dynamic websites, that allows to speed up the delivery of web contents. The idea is to make a request 
