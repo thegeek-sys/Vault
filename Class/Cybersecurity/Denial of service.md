@@ -110,4 +110,41 @@ Basic defense against this attack is to prevent the use of spoofed source addres
 
 ---
 ## Memcached DDoS attack
-Memcached is a high-performance caching mechanism for dynamic websites, that allows to speed up the delivery of web contents. The idea is to make a request 
+![[Pasted image 20251125230530.png|400]]
+
+Memcached is a high-performance caching mechanism for dynamic websites, that allows to speed up the delivery of web contents. The idea is to make a request that stores a large amount of data and than send a spoofed request to make such data to be delivered to the victim via UDP (connection-less)
+
+>[!tip]
+>Memcached DDoS attack can bring an amplification factor of 50000!
+
+---
+## DoS attack defenses
+These attacks cannot be prevented entirely as high traffic volumes may be legitimate. There are four lines of defense against DDoS attacks:
+- attack prevention and preemption → before the attack
+- attack detection and filtering → during the attack
+- attack source traceback and identification → during and after the attack
+- attack reaction → after the attack
+
+### Prevention
+- block spoofed source address (on routers as close to source as possible)
+- filters may be used to ensure path back to the claimed source address is the one being used by the current packet; filters must be applied to traffic before it leaves the ISP’s network or at the point of entry to their network
+- use modified TCP connection handling code; cryptographically encode critical information in a cookie that is send as the server’s initial sequence number (legitimate client responds with an ACK packet containing the incremented sequence number cookie) and drop an entry for an incomplete connection from the TCP connections table when it overflows
+- block IP directed broadcast
+- block suspicious services and combinations
+- manage application attacks with a form of graphical puzzle (captcha) to distinguish legitimate human requests
+- good general system security practices
+- use mirrored and replicated servers when high-performance and reliability is required
+
+### Responding to DoS attack
+
+>[!info] Good incident response plan
+>- details on how to contact technical personal for ISP
+>- needed to impose traffic filtering upstream
+>- details of how to respond to the attack
+
+- antispoofing, directed broadcast, and rate limiting filters should have been implemented
+- ideally have network monitors and IDS to detect and notify abnormal traffic patterns
+- **identify type of attack** → capture and analyze packets, design filters to block attack traffic upstream, or identify and correct system/application bug
+- **have ISP trace packet flow back to source** → may be difficult and time consuming but necessary if planning legal action
+- **implement contingency plan** → witch to alternate backup servers and commission new servers at a new site with new addresses
+- **update incident response plan** → analyze the attack and the response for future handling
