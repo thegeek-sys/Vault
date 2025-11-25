@@ -33,3 +33,27 @@ Congestion would result in the router connected to the final, lower capacity lin
 This one of the most common DoS attack. It attacks the ability of a server to respond to future connection requests by overflowing the tables used to manage them (legitimate users are denied access to the server).
 
 Hence an attack on system resources, specifically the network handling code in operating system
+
+![[Pasted image 20251125215750.png|420]]
+
+---
+## Flooding attacks
+Flooding attacks are classified based on the network protocol used. The intent is to overload the network capacity on some link to a server. Virtually any type of network packet can be used.
+
+There are three kinds of this attack:
+- ICMP flood → ping flood using ICMP echo request packets as traditionally network administrators allow such packets into their networks because ping is a useful network diagnostic tool
+- UDP flood → uses UDP packets directed to some port number on the target system
+- TCP SYN flood → sends TCP packets to the target system; total volume of packets is the aim of the attacker rather than the system code
+
+---
+## Distributed Denial of Service (DDoS) attacks
+DDoS attacks consist in the use of multiple systems to generate attacks. The attacker uses a flaw in operating system or in common application to gain access and install their program on it (zombie)
+
+Large collection of such systems under the control of one attacker can be created, forming a *botnet*
+
+### Mirai short story
+In September 2016, the authors of the Mirai malware launched a DDoS attack on the website of a well-known security expert ([krebsonsecurity.com](https://krebsonsecurity.com)). A week later they released the source code into the world, possibly in an attempt to hide the origins of the attack
+
+The code was quickly replicated by other cybercriminals, and is believed to be behind the massive attack that brought down the domain registration services provider, Dyn, in October 2016
+
+### Examples of DDoS attacks
