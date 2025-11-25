@@ -51,9 +51,20 @@ DDoS attacks consist in the use of multiple systems to generate attacks. The att
 
 Large collection of such systems under the control of one attacker can be created, forming a *botnet*
 
+![[Pasted image 20251125221608.png|470]]
+
 ### Mirai short story
 In September 2016, the authors of the Mirai malware launched a DDoS attack on the website of a well-known security expert ([krebsonsecurity.com](https://krebsonsecurity.com)). A week later they released the source code into the world, possibly in an attempt to hide the origins of the attack
 
 The code was quickly replicated by other cybercriminals, and is believed to be behind the massive attack that brought down the domain registration services provider, Dyn, in October 2016
 
 ### Examples of DDoS attacks
+The biggest DDoS attack to date happened in September 2017, when the Google services received an attack with size of 2.54 Tbps. It was a reflection attack: spoofed packets sent to 180.000 web servers, which in turn sent responses to Google
+
+In February 2020, AWS saw incoming traffic at a rate of 2.3 Tbps. The attacker responsible used hijacked Connection-less Lightweight Directory Access Protocol (CLDAP) web servers
+
+In February 2018, an attack against Github reached 1.3 Tbps, sending packets at a rate of 126.9 million per second
+
+In May 2025, Cloudflare mitigated the largest distributed denial-of-service (DDoS) attack ever reported, at 7.3 Tbps. The attack lasted around 45 seconds, and in that time delivered about 37.4 Tb of attack traffic
+The 7.3 Tbps attack used multiple attack vectors against its target, including UDP floods, NTP reflection attacks, and traffic from the Mirai botnet. Fortunately, the Cloudflare network was able to automatically mitigate the attack and keep the target, a hosting provider, from falling victim.
+
