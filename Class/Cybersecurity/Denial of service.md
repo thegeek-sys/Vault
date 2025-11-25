@@ -23,4 +23,13 @@ The aim of this attack is to overwhelm the capacity of the network connection to
 
 Source of the attack is clearly identified unless a spoofed address is used
 
-#### Source address spoofing
+### Source address spoofing
+Attacker use a forged source address, usually via the raw socket interface on operating systems to make the attack harder to identify.
+Then the attacker generates large volumes of packets that have the target system as the destination address (but different origin address).
+
+Congestion would result in the router connected to the final, lower capacity link, and this attack will require network engineers to specifically query flow information from their routers
+
+### SYN spoofing
+This one of the most common DoS attack. It attacks the ability of a server to respond to future connection requests by overflowing the tables used to manage them (legitimate users are denied access to the server).
+
+Hence an attack on system resources, specifically the network handling code in operating system
