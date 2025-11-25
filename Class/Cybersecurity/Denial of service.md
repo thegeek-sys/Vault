@@ -19,4 +19,8 @@ Denial-of-Service (DoS) is a form of attack on the availability of some service.
 ---
 ## Classic DoS attacks
 ### Flooding ping
-The aim of this attack is to overwhelm the capacity of the network connection to the target organization, in particular, even tho
+The aim of this attack is to overwhelm the capacity of the network connection to the target organization, in particular, even tho this traffic can be handled by higher capacity links on the path, as they reach links with lower capacity the packets are discarded and the network performance is noticeably affected.
+
+Source of the attack is clearly identified unless a spoofed address is used
+
+#### Source address spoofing
