@@ -68,3 +68,42 @@ In February 2018, an attack against Github reached 1.3 Tbps, sending packets at 
 In May 2025, Cloudflare mitigated the largest distributed denial-of-service (DDoS) attack ever reported, at 7.3 Tbps. The attack lasted around 45 seconds, and in that time delivered about 37.4 Tb of attack traffic
 The 7.3 Tbps attack used multiple attack vectors against its target, including UDP floods, NTP reflection attacks, and traffic from the Mirai botnet. Fortunately, the Cloudflare network was able to automatically mitigate the attack and keep the target, a hosting provider, from falling victim.
 
+---
+## SIP invite scenario
+![[Pasted image 20251125222542.png|400]]
+
+---
+## Hypertext Transfer Protocol (HTTP) based attacks
+### HTTP flood
+HTTP flood is an attack that bombards Web servers with HTTP requests (LOIC, HOIC) and consumes considerable resources
+
+We talk about *spidering* when bots starts from a given HTTP link and by follows all links on the provided website in a recursive way
+
+### Slowloris - R.U.D.Y.
+Slowloris attack attempts to monopolize a website by sending HTTP requests that nevel complete and eventually consumes web server’s connection capacity.
+
+It uses legitimate HTTP traffic as existing intrusion detection and prevention solution rely on signatures to detect attacks, so they generally won’t recognize Slowloris
+
+---
+## Reflection attacks
+In this case the attacker sends packets to a known service on the intermediary with a spoofed source address of the actual target system and when the intermediary responds, the response is sent to the target, “reflecting” the attack off the intermediary (reflector)
+
+The goal is to generate enough volumes of packets to flood the link to the target system without alerting the intermediary. The basic defense against these attacks is blocking spoofed-source packets
+
+>[!example] DNS reflection attack
+>![[Pasted image 20251125223515.png|500]]
+
+### DNS amplification attacks
+Amplification attacks use packets directed at a legitimate DNS server as the intermediary system. The attacker creates a series of DNS requests containing the spoofed source address of the target system and exploits the DNS behavior to convert a small request to a much larger response (amplification), so the target is flooded with responses.
+
+![[Pasted image 20251125223822.png|500]]
+
+Basic defense against this attack is to prevent the use of spoofed source address
+
+>[!example] Amplification example
+>Request: 64 bytes
+>```
+>dig ANY isc.org @x.x.x.x
+>```
+>
+>Which results in a 50x amplification
