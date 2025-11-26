@@ -52,7 +52,7 @@ The sizes of blocks and grids are determined by the capability, which determined
 ## How to write a program?
 You must specify a function that is going to be executed by all the threads (SIMD/SPMD/SIMT). This function is called **kernel**
 
-You must specify how threads are arranged in the grid/blocks. The following example is based on the above [[#^17831c|picture]]
+You must specify how threads are arranged in the grid/blocks. The following example is based on the above [[#^example-grid|picture]]
 
 ```c
 // if you don't specify the other dimension, are set by default to 1
@@ -103,6 +103,8 @@ int main() {
 }
 ```
 
+^hello-world
+
 To compile and run:
 ```bash
 # arch specifica la capability della GPU
@@ -139,5 +141,19 @@ $ ./hello
 >Different threads might have the same `threadIdx` but be on different blocks, so I need to combine `threadIdx` and `blockIdx` to get a unique identifier
 >
 >```c
->int myID = ( blockIdx )
+>int myID = ( blockIdx.z * gridDim.x * gridDim.y +
+>            blockIdx.y * gridDim.x +
+>            blockIdx.x ) * blockDim.x * blockDim.y * blockDim.z +
+>            threadIdx.z * blockDim.x * blockDim.y +
+>            threadIdx.y * blockDim.x +
+>            threadIdx.x;
 >```
+>
+>Often threads are arranged in fewer than 6 dimensions (i.e. some of those dimensions will be equal to 1 and the corresponding coordinates to 0)
+>
+>>[!example]
+>>To get the ID for the [[#^hello-world|hello world case]] (threads were arranged in 1 block of 10 threads):
+>>```c
+>>int i = blockIdx.x * blockDim.x + threadIdx.x;
+>>```
+
