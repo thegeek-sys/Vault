@@ -172,4 +172,16 @@ Different SMs can run different kernels and each block runs on an SM (i.e. I can
 ## Warps
 Threads are executed in groups called **warps** (in current GPUs, the size of warp is 32, but might change in future). Threads in a block are split into warps according to their intra-block ID (i.e. the first 32 threads in a block belong to the same warp, the next 32 threads to a different warp, etc.)
 
-All threads in a warp are executed according to Single Instruction, Multiple Data (SIMD) model (i.e. at any instant in time, one instruction is fetched and executed for all threads in the warp)
+All threads in a warp are executed according to Single Instruction, Multiple Data (SIMD) model (i.e. at any instant in time, one instruction is fetched and executed for all threads in the warp). Consequently, all threads in a warp will always have the same execution timing.
+
+Several warp scheduler (e.g. 4) can be present on each SM (i.e. multiple warps can run at the same time, each possibly following a different execution path)
+
+![[Pasted image 20251126120122.png|center|350]]
+
+### Warp divergence
+
+>[!question] What happens if the result of conditional operation in a warp leads to different paths?
+
+The thread that do not follow the path currently being executed are stalled
+
+![[Pasted image 20251126120328.png]]
