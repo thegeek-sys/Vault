@@ -157,3 +157,19 @@ $ ./hello
 >>int i = blockIdx.x * blockDim.x + threadIdx.x;
 >>```
 
+---
+## Thread scheduling
+![[Pasted image 20251125172610.png]]
+
+Each thread runs on a streaming processor (CUDA core) and sets of cores on the same SM share the control unit (i.e. they must synchronously execute the same instruction).
+
+Different SMs can run different kernels and each block runs on an SM (i.e. I can’t have a block spanning over multiple SMs, but I can have more blocks running on the same SM). Once a block is fully executed, the SM will run the next one.
+
+>[!warning]
+>Not all the threads in a block run concurrently
+
+---
+## Warps
+Threads are executed in groups called **warps** (in current GPUs, the size of warp is 32, but might change in future). Threads in a block are split into warps according to their intra-block ID (i.e. the first 32 threads in a block belong to the same warp, the next 32 threads to a different warp, etc.)
+
+All threads in a warp are executed according to Single Instruction, Multiple Data (SIMD) model (i.e. at any instant in time, one instruction is fetched and executed for all threads in the warp)
