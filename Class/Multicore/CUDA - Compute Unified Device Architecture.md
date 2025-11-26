@@ -126,7 +126,7 @@ $ ./hello
 >
 >$$x=\verb|blockIdx.x|\times \verb|blockDim.x|+\verb|threadIdx.x|=1\times 4+3=7$$
 >$$y=\verb|blockIdx.y|\times \verb|blockDim.y|+\verb|threadIdx.y|=2\times 4+1=9$$
->$$\verb|threadId|=9\times 16+7$$
+>$$\verb|threadId|=9\times 16+7=151$$
 >
 >Where `threadId` is the absolute position, not considering block and grid division
 >
