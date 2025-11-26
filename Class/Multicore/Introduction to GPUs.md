@@ -51,3 +51,14 @@ CPUs for sequential parts where latency mattes (CPUs can be 10+X faster than GPU
 
 ---
 ## GPU software development platforms
+### CUDA
+**CUDA** (*Compute Unified Device Architecture*) provides two sets of APIs (a low and a higher level one) and it is available freely for Windows, MacOS X and Linux operating systems.
+
+Major drawback: NVidia hardware only (even though now there are tools to run CUDA code on AMD GPUs)
+
+### HIP
+HIP is the AMD’s equivalent of CUDA and there are tools provided to convert CUDA to HIP code (HIPIFY)
+
+### OpenCL
+
+open computing language is an open standard for writing programs that can execute across a variety of heterogeneous platforms that include GPUs. CPU, DSPs or other processor. OpenCL is supported by both NVidia and AMD. It is the primary development plaform for AMD GPUs. OpenCL’s programming model matched closely the one offered by CUDA
