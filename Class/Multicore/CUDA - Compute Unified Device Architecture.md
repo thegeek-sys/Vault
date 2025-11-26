@@ -129,6 +129,6 @@ $ ./hello
 >$$\verb|threadId|=9\times 16+7=151$$
 >
 >Where `threadId` is the absolute position, not considering block and grid division
->
->![[Pasted image 20251125183226.png]]
 
+>[!example]
+>
