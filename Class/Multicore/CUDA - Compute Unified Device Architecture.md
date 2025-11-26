@@ -24,11 +24,11 @@ A common CUDA program follows these steps:
 
 ---
 ## Execution model
-![[Pasted image 20251125174829.png]]
+![[Pasted image 20251125174829.png]] ^b1cc83
 
 In the vast majority of scenarios, the host is responsible for I/O operations, passing the input and subsequently collecting the output data from the memory space of the GPU
 
-![[Pasted image 20251125174939.png]]
+![[Pasted image 20251125174939.png]] ^example-grid
 
 CUDA organized threads in a 6D structure (lower dimensions are also possible).
 Each thread has a position in a 1D, 2D or 3D *block*. Each block has a position in a 1D, 2D, or 3D *grid*. Each thread is aware of its position in the overall structure, via a set of intrinsic variables/structures.
@@ -36,7 +36,7 @@ Each thread has a position in a 1D, 2D or 3D *block*. Each block has a position 
 With this information a thread can map its position to the subset od data that is assigned to.
 
 >[!example]
->In the picture above each block is 2D, while the grids are 3D.
+>In the [[#^example-grid|picture]] above each block is 2D, while the grids are 3D.
 
 >[!info]
 >We choose the structure based on what we are working on (e.g. for images 2D grid and 1D block, for fluids 3D grid, etc.)
@@ -52,7 +52,7 @@ The sizes of blocks and grids are determined by the capability, which determined
 ## How to write a program?
 You must specify a function that is going to be executed by all the threads (SIMD/SPMD/SIMT). This function is called **kernel**
 
-You must specify how threads are arranged in the grid/blocks
+You must specify how threads are arranged in the grid/blocks. The following example is based on the above [[#^17831c|picture]]
 
 ```c
 // (immagine di prima)
@@ -61,3 +61,4 @@ dim3 grid(4,3,2)
 
 foo<<<grid. block>>>(); // attiva al funzione eseguita sulla GPU
 ```
+
