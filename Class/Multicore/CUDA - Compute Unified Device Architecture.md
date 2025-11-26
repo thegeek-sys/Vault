@@ -55,7 +55,7 @@ You must specify a function that is going to be executed by all the threads (SIM
 You must specify how threads are arranged in the grid/blocks. The following example is based on the above [[#^17831c|picture]]
 
 ```c
-// (immagine di prima)
+// if I don't specify
 dim3 block(3,2); // non specificando le altre dimensio da per scontato 1
 dim3 grid(4,3,2)
 
