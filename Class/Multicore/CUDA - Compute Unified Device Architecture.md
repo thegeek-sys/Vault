@@ -67,3 +67,39 @@ Let’s analyze the parameters:
 - `dim3` is a vector of `int`
 - every non-specified component is set to $1$
 - every component accessible to $x$, $y$, $z$ fields (will se it later)
+
+### How to specify grid/block size
+
+```c
+dim3 b(3,3,3);
+dim3 g(20,100);
+foo<<<g. b>>>(); // run a 20x100 grid of 3x3x3 blocks
+foo<<<10, b>>>(); // run a 10 block grid, each made by 3x3x3 threads
+foo<<<g, 256>>>(); // run a 20x100 grid, made of 256 threads
+foo<<<g, 2048>>>(); // an invalid example: max block size is 1024 threads even for compiute capability 5.x
+foo<<<5, g>>>(); // another invalid example that specifies a block size of 20x100=2000 threads
+```
+
+---
+## Hello world in CUDA
+
+```c
+// file hello.cu
+#include <stdio.h>
+#include <cuda.h>
+
+// can be called from the host or the device. must run on the device (GPU)
+// it's a decorator
+// a kernel is always declared as void. computed result must be copied explicitly from GPU to host memory
+__global__ void hello() {
+	// supported by CC 2.0 (compute capability)
+	printf("Hello world!\n");
+}
+
+int main() {
+	hello<<<1,10>>>();
+	// blocks until the CUDA kernel terminates
+	cudaDeviceSyncronize();
+	return 1;
+}
+```
