@@ -55,10 +55,15 @@ You must specify a function that is going to be executed by all the threads (SIM
 You must specify how threads are arranged in the grid/blocks. The following example is based on the above [[#^17831c|picture]]
 
 ```c
-// if I don't specify
-dim3 block(3,2); // non specificando le altre dimensio da per scontato 1
+// if you don't specify the other dimension, are set by default to 1
+dim3 block(3,2);
 dim3 grid(4,3,2)
 
-foo<<<grid. block>>>(); // attiva al funzione eseguita sulla GPU
+// acrivates the CUDA kernel
+foo<<<grid. block>>>();
 ```
 
+Let’s analyze the parameters:
+- `dim3` is a vector of `int`
+- every non-specified component is set to $1$
+- every component accessible to $x$, $y$, $z$ fields (will se it later)
