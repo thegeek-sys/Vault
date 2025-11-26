@@ -131,4 +131,13 @@ $ ./hello
 >Where `threadId` is the absolute position, not considering block and grid division
 
 >[!example]
+>![[Pasted image 20251126113317.png]]
 >
+>$$\verb|index|=\verb|blockIdx.x|\cdot \verb|blockDim.x| + \verb|threadIdx.x|=2\cdot 256 + 3=515$$
+
+>[!info] How to get a unique thread id in a generic structure?
+>Different threads might have the same `threadIdx` but be on different blocks, so I need to combine `threadIdx` and `blockIdx` to get a unique identifier
+>
+>```c
+>int myID = ( blockIdx )
+>```
