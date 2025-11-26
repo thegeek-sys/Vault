@@ -88,9 +88,8 @@ foo<<<5, g>>>(); // another invalid example that specifies a block size of 20x10
 #include <stdio.h>
 #include <cuda.h>
 
-// can be called from the host or the device. must run on the device (GPU)
-// it's a decorator
-// a kernel is always declared as void. computed result must be copied explicitly from GPU to host memory
+// can be called from the host or the device and must run on the device (GPU)
+// a kernel is always declared as void and computed result must be copied explicitly from GPU to host memory to be able to access them
 __global__ void hello() {
 	// supported by CC 2.0 (compute capability)
 	printf("Hello world!\n");
@@ -103,3 +102,33 @@ int main() {
 	return 1;
 }
 ```
+
+To compile and run:
+```bash
+# arch specifica la capability della GPU
+$ nvcc --arch=sm_20 hello.cu -o hello
+$ ./hello
+```
+
+>[!warning]
+>`printf` is detrimental for performance (GPU should not do I/O). Only use it for debugging purposes
+
+### Function decoration
+- `__global__` → can be called from the host or the GPU and executed on the device/GPU. In CC 3.5 and above, the device can also call `__global__` functions
+- `__device__` → a function that runs on the GPU and can only be called from within a kernel (i.e. from the GPU)
+- `__host__` → a function that can only run on the host. The `__host__` qualifier is typically omitted, unless used in combination with `__device__` to indicate that the function can run on both the host and the device. Such scenario implies the generation of two compiled codes for the function
+
+---
+## Determine the thread position in the grid/block
+
+>[!example]
+>![[Pasted image 20251125182427.png]]
+>
+>$$x=\verb|blockIdx.x|\times \verb|blockDim.x|+\verb|threadIdx.x|=1\times 4+3=7$$
+>$$y=\verb|blockIdx.y|\times \verb|blockDim.y|+\verb|threadIdx.y|=2\times 4+1=9$$
+>$$\verb|threadId|=9\times 16+7$$
+>
+>Where `threadId` is the absolute position, not considering block and grid division
+>
+>![[Pasted image 20251125183226.png]]
+
