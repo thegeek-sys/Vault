@@ -60,5 +60,9 @@ Major drawback: NVidia hardware only (even though now there are tools to run CUD
 HIP is the AMD’s equivalent of CUDA and there are tools provided to convert CUDA to HIP code (HIPIFY)
 
 ### OpenCL
+**OpenCL** (*Open Computing Language*) is an open standard for writing programs that can execute across a variety of heterogeneous platforms that include GPUs. CPUs, DSPs or other processor.
 
-open computing language is an open standard for writing programs that can execute across a variety of heterogeneous platforms that include GPUs. CPU, DSPs or other processor. OpenCL is supported by both NVidia and AMD. It is the primary development plaform for AMD GPUs. OpenCL’s programming model matched closely the one offered by CUDA
+OpenCL is supported by both NVidia and AMD and is the primary development platform for AMD GPUs. OpenCL’s programming model matched closely the one offered by CUDA
+
+### OpenACC
+**OpenACC** is an open specification for an API that allows the use of compiler directives (e.g. `#pragma acc`, in a similar fashion to OpenMP) to automatically map computations to GPUs or multicore chips, according to a programmer’s hints
