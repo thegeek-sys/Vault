@@ -114,3 +114,13 @@ Early php implementation of session were susceptible to this attack. It consists
 
 #### Session fixation
 ![[Pasted image 20251127155321.png]]
+
+>[!warning]
+>The session fixation attack is not a class of Session Hijacking, which steals the established session between the client and the Web Server after the user logs in. Instead, the Session Fixation attack fixes an established session on the victim’s browser, so the attack starts before the user logs in.
+
+---
+## Insecure direct object reference
+It can happen when an application provides direct access to objects on user-supplied input so the user can directly access informations not intended to be accessible
+
+The goal is to bypass authorization check leveraging session cookies to access resources in the system directly, for example database records or files.
+
