@@ -153,4 +153,19 @@ SOP was introduced by Netscape in 1995, 1 year after the standardization of cook
 >>| `http://example.com`    | `https://example.com`    | protocol mismatch | protocol mismatch |
 >>| `http://example.com:81` | `http://example.com`     | port mismatch     | access ok         |
 
-The identification of all the poi
+#### Implications
+The identification of all the points where to enforce security checks is not straightforward:
+- a website cannot read or modiry cookies or other DOM elements of other websites
+- actions such as “modify a page/app content of another window” should always require a security check
+- a website can request a resource from another website, but cannot process the received data
+- actions such as “follow a link” should always be allowed
+
+#### Limits and solutions
+SOP simplicity is its limit too, in fact we cannot isolate homepages of different users hosted on the same protocol/domain/port and different domains cannot easily interact among each others (e.g. access each other DOMs, `http://store.google.com` and `play.google.com`)
+
+>[!done] Solutions
+>1. `document.domain` → both scripts can set their top level domain as their domain control (e.g. `http://google.com`); but now communication among other (sub)domain is possible
+>2. `postMessage(...)` → more secure version, introduced by HTML5
+
+---
+## Client-side vs. server-side attacks
