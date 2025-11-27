@@ -173,3 +173,15 @@ Exploit of the trust:
 - of the browser → cross site scripting, cross site request forgery
 - of the server → command injection, file inclusion, thread concurrency, SQL injection
 
+In particular, for what is concerting the client-side attacks, they explit the trust that a user has of a website (XSS) or that a website has toward a user (CSRF). The steps are:
+1. the attacker can inject either HTML or Javascript
+2. the victim visits the vulnerable webpage
+3. the browser interprets the attacker-injected code
+
+The aims of this kind of attacks are:
+- stealing of cookies associated to the vulnerable domain
+- login form manipulations
+- execute of additional GET/POST
+
+---
+## Corss-Site Scripting (XSS)
