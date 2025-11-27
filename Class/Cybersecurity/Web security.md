@@ -21,3 +21,5 @@ Payload is encapsulated in TCP packets (default: port 80) in cleartext communica
 >- browser extensions
 >- proxy
 
+### Proxy
+The proxies are HTTP/HTTPS traffic shaping/mangling application-independent intermediate servers. They 
