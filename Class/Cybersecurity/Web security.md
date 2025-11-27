@@ -271,3 +271,17 @@ If the user is currently authenticated, the site will have no way to distinguish
 
 >[!example]
 >![[Pasted image 20251127222442.png]]
+
+#### CSRF explained with $\verb|GET|$
+1. the victim visits `http://www.bank.com` and performs a successful authentication (receives the session token)
+2) the victim opens another browser tab or window and visits a malicious web site
+3) the malicious web page contains something like
+```html
+<img src=”http://www.bank.com/transfer.php?to=1337&amount=10000” />
+```
+that makes the browser to ask something like:
+```http
+GET http://www.bank.com/transfer.php?to=1337&amount=10000
+```
+4) the browser automatically fills the request with the right cookies (session token)
+5) The bank websites satisfies the request..
