@@ -185,3 +185,12 @@ The aims of this kind of attacks are:
 
 ---
 ## Corss-Site Scripting (XSS)
+The target is the users’ applications (not the server) and the goal is to gain unauthorized access to information stored on the client (browser) or unauthorized actions through the lack of input sanitization
+
+>[!info] In a nutshell
+>- the original web page is modified and HTML/Js code is injected into the page
+>- the client’s browser executes any code and renders any HTML present on the (vulnerable) page
+
+There are three types of XSS attack:
+- **reflected XSS** → the injection happens in a parameter used by the page to dynamically display information to the user
+- **stored XSS** → the injection is stored in a page of the web application (typically)
