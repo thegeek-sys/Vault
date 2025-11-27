@@ -193,4 +193,34 @@ The target is the users’ applications (not the server) and the goal is to gain
 
 There are three types of XSS attack:
 - **reflected XSS** → the injection happens in a parameter used by the page to dynamically display information to the user
-- **stored XSS** → the injection is stored in a page of the web application (typically)
+- **stored XSS** → the injection is stored in a page of the web application (typically the DB) and then displayed to users accessing such a page
+- **DOM-based XSS** → the injection happens in a parameter used by a script running within the page itself
+
+>[!warning] Possible effects
+>- capture information of the victim (session) → the attacker can “impersonate” the victim
+>- display additional/misleading information → convince that something is happening
+>- inject additional form fields → can also exploit the autofill feature
+>- make victim to do something instead of you → SQL injection using another account
+>- many more…
+
+### Reflected Cross-Site Scripting
+
+>[!info] In a nutshell
+>- a webpage is vulnerable to XSS
+>- a victim is lured to visit the vulnerable web page
+>- the exploit (carried in the URL) is reflected off the victim
+
+>[!bug] Obfuscation
+>- encoding techniques
+>- hiding techniques (e.g. exploit link hidden in the status bar)
+>- harmless link that redirects to a malicious web site (e.g. HTTP 3xx)
+
+DOM-based XSS are very similar
+
+>[!example]
+>![[Pasted image 20251127220228.png]]
+>
+>![[Pasted image 20251127220250.png]]
+
+
+
