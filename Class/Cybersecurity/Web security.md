@@ -169,3 +169,7 @@ SOP simplicity is its limit too, in fact we cannot isolate homepages of differen
 
 ---
 ## Client-side vs. server-side attacks
+Exploit of the trust:
+- of the browser → cross site scripting, cross site request forgery
+- of the server → command injection, file inclusion, thread concurrency, SQL injection
+
