@@ -31,3 +31,44 @@ In HTTPS the browser will notify an error in the SSL certificate verification
 >- [ProxPy](https://code.google.com/p/proxpy/)
 >- [Burp](https://www.portswigger.net/burp)
 
+#### Burp Suite
+Burp suite is an integrated platform to perform security testing of web applications. Usually begins with an initial mapping and analysis of an application’s attack surface, to discover and exploit security vulnerabilities (payed version)
+
+Burp also allows to combine advanced manual techniques with parts of automation. Main components are:
+- interception proxy
+- application-aware spider
+- web application scanner
+- intruder tool
+- repeater tool
+- sequencer tool
+
+---
+## HTTP session
+
+>[!question] Problem
+>HTTP is stateless: every request is independent from the previous ones but dynamic web application require the ability to maintain some kind of sessions
+>>[!done] Sessions!
+>>- avoid login-ins for every requested page
+>>- store user preferences
+>>- keep track of past actions of the user (e.g. shopping cart)
+>>- …
+
+Sessions are implemented by web application themselves and their informations are transmitted between the client and the server
+
+>[!question] How to transmit the session information?
+>1. payload HTTP
+>```html
+><input type="hidden" name="sesisonid" value="7456">
+>```
+>2. url
+>```
+>http://www.example.com/page.php?sessionid=7456
+>```
+>3. header HTTP (e.g. cookie)
+>```http
+>GET /page.php HTTP/1.1
+>Host: www.example.com
+>...
+>Cookie: sessionid=7456
+>...
+>```
