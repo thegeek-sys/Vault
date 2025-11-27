@@ -73,6 +73,15 @@ Sessions are implemented by web application themselves and their informations ar
 >...
 >```
 
+There are two possible mechanism to create a session schema:
+- data inserted manually by the coder of the web application (obsolete and unsecure)
+- implemented in the programming language of the application
+
+**Session cookies** are one of the most used technique to keep a session. In this case the session data is stored on the server, and the server sends a session id to the client through a cookie, so for each session the client has to send back the id to the server then the server uses this id to retrieve information
+
+>[!bug] Security of cookie sessions
+>Cookie sessions are one of the most critical elements in web application (they are also used for authentication)
+
 ### Cookies
 Cookies are data created by the server, memorized by the client and transmitted between client and server using HTTP header
 
