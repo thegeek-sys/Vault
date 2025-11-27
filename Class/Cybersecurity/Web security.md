@@ -72,3 +72,17 @@ Sessions are implemented by web application themselves and their informations ar
 >Cookie: sessionid=7456
 >...
 >```
+
+### Cookies
+Cookies are data created by the server, memorized by the client and transmitted between client and server using HTTP header
+
+>[!quote] Cookie definition RFC 2109
+>| Attribute     | Description                                                                      |
+>| ------------- | -------------------------------------------------------------------------------- |
+>| `name=values` | generic data (mandatory)                                                         |
+>| `Expires`     | expire date                                                                      |
+>| `Path`        | path for which the cookie is valid                                               |
+>| `Domain`      | domain on which the cookie is valid                                              |
+>| `Secure`      | flag that states whether the cookie must be transmitted on a secure channel only |
+>| `HttpOnly`    | no API allowed to access `document.cookie`                                       |
+
