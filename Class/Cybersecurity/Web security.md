@@ -218,8 +218,6 @@ There are three types of XSS attack:
 DOM-based XSS are very similar
 
 >[!example]
->![[Pasted image 20251127220228.png]]
->
 >![[Pasted image 20251127220250.png]]
 >
 >`xss_test.php` (PHP server-side page)
@@ -265,3 +263,11 @@ Step 2
 Request forgery (also known as one-click attack, session riding, hostile linking) aims to have a victim to execute a number of actions, using her credential (e.g. session cookie) without stealing data and without the direct access to the cookies (with JS we can’t access cookie of other domain).
 
 It can be On Site or Cross Site (CSRF) and can be both reflected and stored
+
+### CSRF principles
+Here browser requests automatically to include any credential associated with the site (user’s session cookie, IP address, credentials, …). So the attacker makes an authenticated user to submit a malicious, unintentional request (this can happen from a different source, hostile website)
+
+If the user is currently authenticated, the site will have no way to distinguish between a legitimate and a forged request sent by the victim
+
+>[!example]
+>![[Pasted image 20251127222442.png]]
