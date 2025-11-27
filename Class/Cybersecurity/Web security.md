@@ -110,4 +110,7 @@ There are two possible mechanism to create a session schema:
 > [https://codebutler.com/firesheep/](https://codebutler.com/firesheep/)
 
 #### Session prediction
-Early php implementation of session were susceptible to this attack
+Early php implementation of session were susceptible to this attack. It consists of predicting the session ID to be able to bypass the authentication schema and can be done by analyzing the session ID generation process
+
+#### Session fixation
+![[Pasted image 20251127155321.png]]
