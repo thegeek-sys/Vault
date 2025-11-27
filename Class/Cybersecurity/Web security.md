@@ -124,3 +124,33 @@ It can happen when an application provides direct access to objects on user-supp
 
 The goal is to bypass authorization check leveraging session cookies to access resources in the system directly, for example database records or files.
 
+>[!example]
+>In a POST response some private user’s information (e.g. phone number) are attached
+
+---
+## Content isolation
+Most of the browser’s security mechanisms rely on the possibility of isolating documents (and execution contexts) depending on the resource’s origin. So that the pages from different sources should not be allowed to interfere with each other
+
+>[!example]
+>Content coming from website $A$ can only read and modify content coming from $A$, but cannot access content coming from website $B$
+
+This means that a malicious website cannot run scripts that access data and functionalities of other websites visited by the user
+
+>[!example] Cross site example
+>You are logged into Facebook and visit a malicious website in another browser tab. What prevents that website to perform any actions with Facebook as you? The **Same Origin Policy** (if the Js is included from a HTML page on facebook.com, it may access facebook.com resources)
+
+### Same Origin Policy
+SOP was introduced by Netscape in 1995, 1 year after the standardization of cookies.
+
+>[!quote] SOP prerequisites
+>Any 2 scripts executed in 2 given execution contexts can access their DOMs iff the protocol, domain name and porte of their host documents are the same
+>
+>>[!example]
+>>| Originating document    | Accessed document        | non-IE browser    | Internet Explorer |
+>>| ----------------------- | ------------------------ | ----------------- | ----------------- |
+>>| `http://example.com/a`  | `http://example.com/b`   | access ok         | access ok         |
+>>| `http://example.com`    | `http://www.example.com` | host mismatch     | host mismatch     |
+>>| `http://example.com`    | `https://example.com`    | protocol mismatch | protocol mismatch |
+>>| `http://example.com:81` | `http://example.com`     | port mismatch     | access ok         |
+
+The identification of all the poi
