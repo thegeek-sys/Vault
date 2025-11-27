@@ -22,4 +22,12 @@ Payload is encapsulated in TCP packets (default: port 80) in cleartext communica
 >- proxy
 
 ### Proxy
-The proxies are HTTP/HTTPS traffic shaping/mangling application-independent intermediate servers. They 
+The proxies are HTTP/HTTPS traffic shaping/mangling application-independent intermediate servers. Those servers make the requests on behalf of the client
+
+In HTTPS the browser will notify an error in the SSL certificate verification
+
+>[!example] HTTP proxies
+>- [WebScarab](https://www.owasp.org/index.php/Webscarab)
+>- [ProxPy](https://code.google.com/p/proxpy/)
+>- [Burp](https://www.portswigger.net/burp)
+
