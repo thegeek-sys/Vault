@@ -3,6 +3,31 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#HTTP authentication|HTTP authentication]]
+- [[#Monitoring and manipulating HTTP|Monitoring and manipulating HTTP]]
+- [[#Proxy|Proxy]]
+	- [[#Proxy#Burp Suite|Burp Suite]]
+- [[#HTTP session|HTTP session]]
+- [[#HTTP session#Cookies|Cookies]]
+	- [[#Cookies#Session hijacking|Session hijacking]]
+	- [[#Cookies#Session prediction|Session prediction]]
+	- [[#Cookies#Session fixation|Session fixation]]
+- [[#Insecure direct object reference|Insecure direct object reference]]
+- [[#Content isolation|Content isolation]]
+- [[#Content isolation#Same Origin Policy|Same Origin Policy]]
+	- [[#Same Origin Policy#Implications|Implications]]
+	- [[#Same Origin Policy#Limits and solutions|Limits and solutions]]
+- [[#Client-side vs. server-side attacks|Client-side vs. server-side attacks]]
+- [[#Corss-Site Scripting (XSS)|Corss-Site Scripting (XSS)]]
+- [[#Corss-Site Scripting (XSS)#Reflected Cross-Site Scripting|Reflected Cross-Site Scripting]]
+- [[#Corss-Site Scripting (XSS)#Stored Cross-Site Scripting|Stored Cross-Site Scripting]]
+- [[#Request forgery|Request forgery]]
+- [[#Request forgery#CSRF principles|CSRF principles]]
+	- [[#CSRF principles#CSRF explained with $ verb GET $|CSRF explained with GET]]
+	- [[#CSRF principles#CSRF explained with $ verb POST $|CSRF explained with POST]]
+	- [[#CSRF principles#CSRF countermeasures|CSRF countermeasures]]
+---
 ## Introduction
 ### HTTP authentication
 Authentication mechanism was introduced by RFC 2616 (rarely used nowadays), operates as it follows:
@@ -284,4 +309,44 @@ that makes the browser to ask something like:
 GET http://www.bank.com/transfer.php?to=1337&amount=10000
 ```
 4) the browser automatically fills the request with the right cookies (session token)
-5) The bank websites satisfies the request..
+5) the bank websites satisfies the request
+
+#### CSRF explained with $\verb|POST|$
+If the bank uses POST and the vulnerable request looks like this:
+```http
+POST http://bank.com/transfer.do HTTP/1.1
+acct=1337&amount=10000
+```
+
+Such a request cannot be delivered using standard `<a>` or `<img />` tags, but can be delivered using a `<form>`:
+```html
+<form action="http://bank.com/transfer.php" method="POST">
+	<input type="hidden" name="acct" value="1337"/>
+	<input type="hidden" name="amount" value="10000"/>
+	<input type="submit" value="Click me"/>
+</form>
+```
+
+This form will require the user to click on the submit button, but this can be also executed automatically using JavaScript:
+```html
+<body onload="document.forms[0].submit()">
+<form...
+```
+
+Or without the use of form, using something like:
+```js
+var http = false; var body = "to=1337&amount=10000";
+http = new XMLHttpRequest();
+http.onreadystatechange = handleResponse;
+http.open("POST", "http://www.bank.com/transfer.php", true);
+http.setRequestHeader("Content−type",
+"application/x−www−form−urlencoded");
+http.setRequestHeader("Content−length", body.length);
+http.send(body);
+function handleResponse() { ... }
+```
+
+#### CSRF countermeasures
+One way is to use secret “CSRF token” so that no web request may take an action on behalf of someone unless it also presents that person’s token. Since attackers cannot easily discover the CSRF token, they generally aren’t able to impersonate the intended victim.
+To guess the token, attacker use the **breach attack** which uses multiple requests to guess the token (and possibly other infos) even with encrypted sessions
+
