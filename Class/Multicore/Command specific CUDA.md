@@ -80,3 +80,7 @@ cudaError_t cudaMemcpy (
     cudaMemcpyKind kind // Direction of copy.
 )
 ```
+
+The `cudaMemcpyKind` parameter is also an enumerated type. The `kind` parameter can take one of the following values:
+- `cudaMemcpyToHost` (`0`) → host to host
+- `cudaMemcpyToDevice` (`1`) → host to device
