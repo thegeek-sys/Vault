@@ -84,3 +84,37 @@ cudaError_t cudaMemcpy (
 The `cudaMemcpyKind` parameter is also an enumerated type. The `kind` parameter can take one of the following values:
 - `cudaMemcpyToHost` (`0`) → host to host
 - `cudaMemcpyToDevice` (`1`) → host to device
+- `cudaMemcpyDeviceToDevice` (`2`) → device to host
+- `cudaMemcpyDeviceToDevice` (`3`) → device to device (for multi-GPU configurations)
+- `cudaMemcpyDefault` (`4`) → used when Unified Virtual Address space capability is available
+
+>[!example] Vector addition
+>>[!warning] 
+>>Do not make any assumption on the order in which threads are executed (depends on how the GPU decides to schedule the blocks)
+>
+>![[Pasted image 20251201230455.png]]
+>
+>>[!done] Solution
+>>
+
+```c
+// h_ to indicate data allocated on host memory
+void vecAdd (float* h_A, float* h_B, float* h_C, int n) {
+	int size = n*sizeof(float);
+	// d_ to indicate data allocated on device (GPU) memory
+	float *d_A, *d_B, *d_C;
+	
+	cudaMalloc((void **) &d_A, size);
+	cudaMemcpy(d_A, h_A, size, cudaMemcpyHostToDevice);
+	cudaMalloc((void **) &d_B, size);
+	cudaMemcpy(d_B, h_B, size, cudaMemcpyHostToDevice);
+	
+	cudaMalloc((void **) &d_C, size);
+	// kernel invoation code - to be shown later
+	// ...
+	cudaMemcpy(d_C, h_C, size, cudaMemcpyDeviceToHost);
+	
+	// free device memory for A, B, C
+	cudaFree(d_A); cudaFree(d_B); cudaFree(d_C);
+}
+```
