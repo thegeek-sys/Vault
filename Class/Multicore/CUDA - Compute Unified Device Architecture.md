@@ -185,3 +185,16 @@ Several warp scheduler (e.g. 4) can be present on each SM (i.e. multiple warps c
 The thread that do not follow the path currently being executed are stalled
 
 ![[Pasted image 20251126120328.png]]
+
+### Context switching
+Usually a SM has more resident blocks/warps than what it is able to concurrently run and each SM can switch seamlessly between warps. In fact each thread has its own private execution context that is maintained on-chip (i.e. context switch comes for free)
+
+When an instruction to be executed by a warp need to wait for the result of a previously initiated long-latency operation, the warp is not selected for execution (e.g. memory read, long latency floating-point operations).
+
+This mechanism of filling the latency time of operations with work from other threads often called “latency tolerance” or “latency hiding”
+
+Given a sufficient number of warps, the hardware will likely find a warp to execute at any point in time, thus making full use of the execution hardware in spite of these long latency operations
+
+With warp scheduling, the long waiting time of warp instruction is “hidden” by executing instrction from other warps
+
+This ability to tolerate long-latency operations is the main reason GPUs do not dedicate nearly as much chip area to cache memories and branch prediction mechanisms as do CPUs
