@@ -187,12 +187,54 @@ The thread that do not follow the path currently being executed are stalled
 ![[Pasted image 20251126120328.png]]
 
 ### Context switching
-Usually a SM has more resident blocks/warps than what it is able to concurrently run and each SM can switch seamlessly between warps. In fact each thread has its own private execution context that is maintained on-chip (i.e. context switch comes for free)
+Usually a SM has more resident blocks/warps than what it is able to concurrently run and each SM can switch seamlessly between warps. In fact each thread has its own private **execution context that is maintained on-chip** (i.e. context switch comes for free)
 
 When an instruction to be executed by a warp need to wait for the result of a previously initiated long-latency operation, the warp is not selected for execution (e.g. memory read, long latency floating-point operations). This mechanism of filling the latency time of operations with work from other threads often called **latency tolerance** or *latency hiding*
 
 Given a sufficient number of warps, the hardware will likely find a warp to execute at any point in time, thus making full use of the execution hardware in spite of these long latency operations
 
-With warp scheduling, the long waiting time of warp instruction is “hidden” by executing instrction from other warps
+>[!info]
+>With warp scheduling, the long waiting time of warp instruction is “hidden” by executing instructions from other warps
 
 This ability to tolerate long-latency operations is the main reason GPUs do not dedicate nearly as much chip area to cache memories and branch prediction mechanisms as do CPUs
+
+>[!example] 
+>>[!question] A CUDA device allows up to 8 blocks and 1024 threads per SM, and 512 threads per block. Shall we use 8x8, 16x16 or 32x32 thread block?
+>
+>>[!done] 8x8 blocks
+>>We would have 64 threads per block, so to fill the 1024 threads we can have for each SM, we  would need $1024/64=16$ blocks
+>>
+>>However, we can have at most 8 blocks per SM, thus we would end with only $64\times 8=512$ threads per SM so we are not fully utilizing the resources.
+>>Most likely, at some time, the scheduler might not find threads to schedule when some thread is waiting for long-latency operations
+>
+>>[!done] 16x16 blocks
+>>We would have 256 threads per block, so to fill the 1024 threads we can have for each SM, we would need $1024/256=4$ blocks.
+>>
+>>This would allow to have 1024 threads on the SM, so there will be a lot of opportunities for latency hiding
+>
+>>[!done] 32x32 blocks
+>>We would have 1024 threads per block, which is higher than the 512 threads per block we can have
+
+>[!example] 
+>>[!question] A CUDA device allows up to 8 blocks and 1536 threads per SM, and 1024 threads per block. Shall we use 8x8, 16x16 or 32x32 thread block?
+>
+>>[!done] 8x8 blocks
+>>We would have 64 threads per block, so to fill the 1536 threads we can have for each SM, we would need $1536/64 = 24$ blocks and $24>8$ so it can’t be possible
+>
+>>[!done] 16x16 blocks
+>>We would have 256 threads per block, so to fill the 1536 threads we can have for each SM, we would need $1536/256 = 6$ blocks
+>>
+>>We achieve full capacity (unless other resources constraints come into play)
+>
+>>[!done] 32x32 blocks
+>>We would have 1024 threads per block. Only one block can fit (two would bring the number of threads to $2048$, which is higher than $1536$)
+>>
+>>Thus, we would use only $2/3$ of the thread capacity of the SM ($1024$ out of $1536$)
+
+>[!example] 
+>A grid of 4x5x3 blocks, each made of 100 threads and the GPU has 16 SMs. Thus, we have 4x5x3=60 blocks, that need to be distributed over 60 16SMs
+>
+>Let’s assume that they are distributed round-robin and 12 SMs will receive 4 blocks, and 6 SMs will receive 3 blocks. It would be inefficient, in fact while the first 12 SMs process the last block, the other 6 SMs are idle
+>
+>A block contains 100 threads, which are divided into $100/32 = 4$ warps. In this case the first three warps have $32$ threads, and the last one have $4$ threads ($32+32+32+4$)
+>Let’s assume we can only schedule a warp at a time (e.g., because we have 32 CUDA cores per SM), so the last warp would only use 4 out of the 32 available cores ($87.5\%$ of the cores on each SM will be unused)
