@@ -277,3 +277,6 @@ The `chunksize` is a positive integer
 >	sum += f(i)
 >```
 
+### Static
+
+>[!exma]
