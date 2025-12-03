@@ -221,9 +221,26 @@ z();
 >[!example]
 >We want to parallelize this loop
 >```c
+>double f(int i) {
+>	int j, start = i*(i+1)/2, finish = start + i;
+>	double return_val = 0.0;
+>	
+>	for (j=start; j<=finish; j++) {
+>		return_val += sin(j);
+>	}
+>	return return_val;
+>}
+>
 >sum = 0.0
 >for (i=0; i<=n; i++)
 >	sum += f(i)
 >```
+>
+>>[!question] In practice, how are iterations assigned to threads?
+>>Default partitioning
+>>![[Pasted image 20251203122134.png]]
+>>
+>>Cyclic partitioning
+>>![[Pasted image 20251203122230.png]]
 >
 >
