@@ -228,7 +228,7 @@ type` can be:
 - `auto` → the compiler and/or the run-time system determine the schedule
 - `runtime` → the schedule is determined at run-time
 
-The `chunksize` is a positive integer
+The `chunksize` is a positive integer and can be omitted. When it’s omitted, a `chunksize` of 1 is used
 
 >[!example]-
 >We want to parallelize this loop
@@ -277,6 +277,27 @@ The `chunksize` is a positive integer
 >	sum += f(i)
 >```
 
-### Static
+### $\verb|static|$
+With `static`, OpenMP divides the iteration range ahead of time into contiguous block of size `chunksize`. So each thread receives a chunk of `chunksize` iterations
 
->[!exma]
+>[!example]
+>Twelve iterations, $0,1,\dots,11$, and three threads
+>```c
+>schedule(static,1)
+>```
+>$$\begin{align*} \text{Thread 0: } &\quad 0, 3, 6, 9 \\ \text{Thread 1: } &\quad 1, 4, 7, 10 \\ \text{Thread 2: } &\quad 2, 5, 8, 11 \end{align*} $$
+>
+>```c
+>schedule(static,2)
+>```
+>$$\begin{align*} \text{Thread 0: } &\quad 0, 1, 6, 7 \\ \text{Thread 1: } &\quad 2, 3, 8, 9 \\ \text{Thread 2: } &\quad 4, 5, 10, 11 \end{align*} $$
+>
+>```c
+>schedule(static,4)
+>```
+>$$\begin{align*} \text{Thread 0: } &\quad 0, 1, 2, 3 \\ \text{Thread 1: } &\quad 4, 5, 6, 7 \\ \text{Thread 2: } &\quad 8, 9, 10, 11 \end{align*} $$
+
+### $\verb|dyanamic|$ or $\verb|guided|$
+The iterations are also broken up into chunks of `chunksize` consecutive iterations. Each thread executes a chunk, and when a thread finishes a chunk, it requests another one from the run-time system and this continues until all iterations are completed.
+
+In this case we have better load balancing, but higher overhead to schedule the chunks (can be tuned through the `chunksize`)
