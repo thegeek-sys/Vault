@@ -9,8 +9,7 @@
 
 ### OpenMP
 - [[Shared memory programming with OpenMP]]
-- [[Loops in OpenMP]]
-- 
+- [[Scheduling in OpenMP]]
 
 ### CUDA
 - [[Introduction to GPUs]]

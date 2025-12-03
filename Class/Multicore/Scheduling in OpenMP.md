@@ -3,7 +3,8 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
-## Parallel $\verb|for|$
+## Loops
+### Parallel $\verb|for|$
 Consists of forking a team of threads to execute the following structured block, however the structured block following the parallel for directive must be a for loop.
 
 Furthermore, with the parallel directive the system parallelized the for loop by dividing the iterations of the loop among the threads
@@ -128,8 +129,7 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >>reusing the same threads provide faster execution times
 >>![[Pasted image 20251124215509.png|350]]
 
----
-## Nested $\verb|for|$ loops
+### Nested $\verb|for|$ loops
 
 >[!info]- Possible solutions
 >If we have nested `for` loops, it is often enough to simply parallelize the outermost loop:
