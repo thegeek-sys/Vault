@@ -215,4 +215,15 @@ z();
 >
 >If “Nested parallelism” is enabled it will create 12 threads on a server with 4 cores ($3\cdot 4$)!
 
+---
+## Scheduling loops
 
+>[!example]
+>We want to parallelize this loop
+>```c
+>sum = 0.0
+>for (i=0; i<=n; i++)
+>	sum += f(i)
+>```
+>
+>
