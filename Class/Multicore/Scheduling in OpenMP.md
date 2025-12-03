@@ -218,9 +218,22 @@ z();
 ---
 ## Scheduling loops
 
->[!example]
+```c
+schedule(type, chunksize)
+```
+
+type` can be:
+- `static` → the iterations can be assigned to the threads before the loop is executed
+- `dynamic` or `guided` → the iterations are assigned to the threads while the loop is executing
+- `auto` → the compiler and/or the run-time system determine the schedule
+- `runtime` → the schedule is determined at run-time
+
+The `chunksize` is a positive integer
+
+>[!example]-
 >We want to parallelize this loop
 >```c
+>// calls the sin function i times
 >double f(int i) {
 >	int j, start = i*(i+1)/2, finish = start + i;
 >	double return_val = 0.0;
@@ -243,4 +256,24 @@ z();
 >>Cyclic partitioning
 >>![[Pasted image 20251203122230.png]]
 >
+>Results
+>![[Pasted image 20251203122816.png]]
 >
+>##### Default schedule
+>```c
+>sum = 0.0
+>#pragma omp parallel for num_threads(thread_count) \
+>	reduction(+:sum)
+>for (i=0; i<=n; i++)
+>	sum += f(i)
+>```
+>
+>##### Cyclic schedule
+>```c
+>sum = 0.0
+>#pragma omp parallel for num_threads(thread_count) \
+>	reduction(+:sum) schedule(static, 1)
+>for (i=0; i<=n; i++)
+>	sum += f(i)
+>```
+
