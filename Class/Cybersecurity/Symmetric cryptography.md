@@ -36,4 +36,9 @@ Purposes of cryptography:
 ---
 ## Attacks to cryptography
 ### Brute force attack 
-It consists trying all the possible keys $K$ and determine if $D_{k}(C)$ is a likely plaintext but requires some knowledge of the st
+It consists trying all the possible keys $K$ and determine if $D_{k}(C)$ is a likely plaintext but requires some knowledge of the structure of the plaintext (e.g. PDF file or email message)
+
+Key should be a sufficiently long random value to make exhaustive search attacks unfeasible
+
+![[Pasted image 20251205200252.png|400]]
+
