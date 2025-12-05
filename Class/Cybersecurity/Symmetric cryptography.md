@@ -27,3 +27,13 @@ Purposes of cryptography:
 ### Definitions
 - secret key → $K$
 - encryption function → $E_{k}(P)$
+- decryption function → $D_{k}(C)$
+- plaintext length typically the same ciphertext length
+- encryption and decryption are permutation functions (bijections) on the set of all n-bit arrays
+- efficiency → functions $E_{x}$ and $D_{k}$ should have efficient algorithms
+- consistency → decrypting the chipertext yields the plaintext $D_{k}(E_{k}(P))=P$
+
+---
+## Attacks to cryptography
+### Brute force attack 
+It consists trying all the possible keys $K$ and determine if $D_{k}(C)$ is a likely plaintext but requires some knowledge of the st
