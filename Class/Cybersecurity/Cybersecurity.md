@@ -7,4 +7,5 @@
 - [[Buffer overflow]]
 - [[Denial of service]]
 - [[Web security]]
+- [[Symmetric cryptography]]
 - 
