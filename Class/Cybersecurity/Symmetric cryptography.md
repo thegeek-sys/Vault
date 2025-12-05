@@ -148,3 +148,9 @@ Write the plain text up row by row with a fixed length (the key). To decrypt div
 >Key: row width $n=5$
 >![[Pasted image 20251205211324.png]]
 
+#### Keyed columnar transposition
+Write the plaintext by row with a fixed row length, rearrange the columns according to a permutation, and write the text by columns
+
+>[!example]
+>![[Pasted image 20251205211655.png]]
+
