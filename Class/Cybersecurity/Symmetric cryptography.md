@@ -76,5 +76,18 @@ An improvement could be random ptermutation of the alphabet and just then applyi
 
 As the caesar cipher is a single alphabet code, all the text is encoded with the same scheme of the alphabet
 
----
-## Encrypting natural languages
+### Encrypting natural languages
+English text typically is represented with 8-bit ASCII encoding, so a message with $t$ characters corresponds to an n-bit array with $n=8t$
+
+Due to redundancy, the English plaintext (or in any other natural language), they are just a small subset of all the possible arrays of n-bit. This redundancy of of words or groups of letter makes those kind of ciphers vulnerable to **frequency analysis**
+
+#### Cryptoanalysis: frequency analysis
+With frequency analysis, single alphabets substitution characters can be analyszed by calculating the frequencies of characters ina ciphertext and comparing the frequencies of characters in a ciphertext, and comparing the frequencies of characters in typical text of the same language
+
+
+Frequency analysis can also be used on groups of charactes to get better results. For example considering the distribution of two character pairs (2-grams) in generic English text
+
+### Poly-alphabetic ciphers
+With the random permutation and a single alphabet, it is still relatively easy to find the key. Then we need something stronger, like a poly-alphabetic substitution cipher
+
+We use word as key 
