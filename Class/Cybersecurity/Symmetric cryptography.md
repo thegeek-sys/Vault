@@ -50,7 +50,7 @@ Cryptoanalysis is the practice of breaking encrypted messages or codes to gain a
 - a collection of plaintext/ciphertext pairs for ciphertexts selected by the attacker (*chosen ciphertext attack*)
 
 ---
-## Symmetric key cryptography
+## Classic symmetric key cryptography
 It makes use of number of classical encryption techniques, mainly:
 - substitution → each character of the plaintext is replaced by another character of the same or different alphabet (e.g. caesar cipher)
 - transposition → just the order of the character in the text is changed, the value remains the same
@@ -74,4 +74,7 @@ An improvement could be random ptermutation of the alphabet and just then applyi
 >Alphabet → `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 >Cipher code → `KEPALMUHDRVBXYSGNIZFOWTJQC`
 
-Another possible improvement could be single alphabet code
+As the caesar cipher is a single alphabet code, all the text is encoded with the same scheme of the alphabet
+
+---
+## Encrypting natural languages
