@@ -90,4 +90,6 @@ Frequency analysis can also be used on groups of charactes to get better results
 ### Poly-alphabetic ciphers
 With the random permutation and a single alphabet, it is still relatively easy to find the key. Then we need something stronger, like a poly-alphabetic substitution cipher
 
-We use word as key 
+In poly-alphabetic ciphers words are used as keys, where each character determines the displacement of the cipher alphabet, which will be applied to the character of the plaintext
+
+Because of this, the same character in the plaintext may be represented by a different deisnated character
