@@ -106,5 +106,45 @@ Crypotianalysis of ciphertextusing a poly-alphabetic cipher is therefore difficu
 >![[Pasted image 20251205205330.png]]
 
 ### Vigenére code
-The 
+The encryption happens character per character. Mathematically, if we associate the numbers from 0 to 25 to the letters (A=0, B=1, …), we obtain the encrypted letter by summing the numeric value of the plaintext character and the numeric value of the letter of the key (everything module 26)
+
+>[!example]
+>![[Pasted image 20251205210129.png]]
+
+### One-time pad
+One-time pad is a vigenére cipher that uses a key as long as the ciphertext
+
+>[!example]
+>![[Pasted image 20251205210233.png]]
+
+Thanks to the **Shannon theorem** we can say that this cipher is unbreakable. In fact to be perfect, in a cipher there must be at least as many keys as there are possible messages
+
+#### Weaknesses of the one-time pad
+In spite of their perfect security, one time pads have some weaknesses. In particular the kay has to be as long as the plaintext and the keys can never be reused (repeated use of one-time pads allowed the U.S. to break some of the communications of Soviet spies during the Cold War)
+
+---
+## Transposition ciphers
+This kind of ciphers consist of changing the order of the letters in the message
+
+>[!info] Those does not change the character frequency
+
+### Rail fence
+Given a message, arrange it in a zig-zag pattern and read the message by row, to decrypt split in two the message and read zig-zag
+
+>[!example]
+>![[Pasted image 20251205210905.png]]
+
+### Permutation
+Split it in blocks of length $m$ and rearrange each block with the same permutation (the key). To decrypt, apply the reverse permutation on the blocks of the ciphertext
+
+>[!example]
+>$(1, 2, 3, 4, 5)\to (3, 1, 2, 5, 4)$
+>![[Pasted image 20251205211156.png]]
+
+### Columnar transposition
+Write the plain text up row by row with a fixed length (the key). To decrypt divide the message length for the key to find the number of columns and write the ciphertext by columns
+
+>[!example]
+>Key: row width $n=5$
+>![[Pasted image 20251205211324.png]]
 
