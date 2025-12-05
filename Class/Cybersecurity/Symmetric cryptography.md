@@ -20,7 +20,7 @@ Purposes of cryptography:
 >Issues:
 >- what is a good symmetric encryption scheme?
 >- what is the complexity of encrypting/decrypting?
->- what is the size of the chipertext, relative to the plaintext?
+>- what is the size of the ciphertext, relative to the plaintext?
 >
 > ![[Pasted image 20251205191654.png]]
 
@@ -42,3 +42,36 @@ Key should be a sufficiently long random value to make exhaustive search attacks
 
 ![[Pasted image 20251205200252.png|400]]
 
+### Cryptoanalysis
+Cryptoanalysis is the practice of breaking encrypted messages or codes to gain access to the original information without knowing the secret key but just some informations. The attacker may have:
+- a collection of ciphertexts (*ciphertext only attack*)
+- a collection of plaintext/ciphertext pairs  (*known plaintext attack*)
+- a collection of plaintext/ciphertext pairs for plaintext selected by the attacker (*chosen plaintext attack*)
+- a collection of plaintext/ciphertext pairs for ciphertexts selected by the attacker (*chosen ciphertext attack*)
+
+---
+## Symmetric key cryptography
+It makes use of number of classical encryption techniques, mainly:
+- substitution → each character of the plaintext is replaced by another character of the same or different alphabet (e.g. caesar cipher)
+- transposition → just the order of the character in the text is changed, the value remains the same
+
+Those operations are repeated multiple times
+
+### Caesar cipher
+The caesar cipher is a simple substitution cipher where each character is replaced in plaintext with the character 3 positions forward in the alphabet. If the end of the alphabet is reached, it starts over in the alphabet
+
+>[!info]
+>We can change 3 with any other number (it is the key)
+
+![[Pasted image 20251205202911.png|400]]
+
+#### Weakness and improvement
+With cyclic permutation, it is easy to find the key as there are only $N$ possibilities to try, where $N$ is the number of characters in the alphabet
+
+An improvement could be random ptermutation of the alphabet and just then applying the substitution
+
+>[!example]
+>Alphabet → `ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+>Cipher code → `KEPALMUHDRVBXYSGNIZFOWTJQC`
+
+Another possible improvement could be single alphabet code
