@@ -168,4 +168,7 @@ An encryption is computationally secure if:
 - time required to break cipher exceeds the useful lifetime of the information (usually is very difficult to estimate the amount of effort required to break)
 
 ### Feistel network
-In 1973 Feistel proposed the concept of a product cipher
+In 1973 Feistel proposed the concept of a **product cipher**. The idea was that the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stringer than any of the component ciphers.
+So Feister proposed the use of a cipher that alternates substitutions and permutations
+
+![[Pasted image 20251206162324.png]]
