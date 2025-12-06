@@ -227,3 +227,30 @@ This attack proves that the security of Double DES is not as expected. In fact a
 
 In fact the intermediate encryption is $E_{K_{1}}(\text{plain})=D_{K_{2}}(\text{cipher})$. So given a known pair of plaintext and ciphertext you can encrypt plain with $2^{56}$ keys and decrypt the cipher with $2^{56}$ keys and compare the two results to find the matching intermediate text
 
+### Triple DES
+3DES is nested application of DES that typically uses three different keys $(K_{1},K_{2},K_{3})$ and applies sequential encryption (with $K_{1}$), decryption (with $K_{2}$), and encryption (with $K_{3}$). Let's see analyze this three cases:
+- $K_{1}=K_{2}=K_{3}$ → DES
+- $K_{1}=K_{3},K_{2}$ → $2^{112}$
+- $K_{1},K_{2},K_{3}$ → $2^{168}$
+
+3DES with two keys is a relatively popular alternative to DES
+
+### Advances Encryption Standard (AES)
+In 1997, the U.S. National Institute for Standards and Technology (NIST) put out a public call for a replacement to DES. The chosen winner was Rijndael algorithm which standardized the AES
+
+AES is a block cipher that operates on 128 bit blocks and can use keys that are 128, 192, or 256 bits long
+
+![[Pasted image 20251206172032.png|500]]
+
+#### AES round structure
+128
+
+### Bruteforcing modern block ciphers
+| Dimensione Chiave (bits)    | Cifrario       | Numero di Chiavi Alternative         | Tempo Necessario (a 109 Decifrazioni/s)                         | Tempo Necessario (a 1013 Decifrazioni/s) |
+| --------------------------- | -------------- | ------------------------------------ | --------------------------------------------------------------- | ---------------------------------------- |
+| 56                          | DES            | $2^{56} \approx 7.2 \times 10^{16}$  | $2^{55} \text{ ns} = 1.125 \text{ years}$                       | 1 hour                                   |
+| 128                         | AES            | $2^{128} \approx 3.4 \times 10^{38}$ | $2^{127} \text{ ns} = 5.3 \times 10^{21} \text{ years}$         | $5.3 \times 10^{17} \text{ years}$       |
+| 168                         | Triple DES     | $2^{168} \approx 3.7 \times 10^{50}$ | $2^{167} \text{ ns} = 5.8 \times 10^{33} \text{ years}$         | $5.8 \times 10^{29} \text{ years}$       |
+| 192                         | AES            | $2^{192} \approx 6.3 \times 10^{57}$ | $2^{191} \text{ ns} = 9.8 \times 10^{40} \text{ years}$         | $9.8 \times 10^{36} \text{ years}$       |
+| 256                         | AES            | $2^{256} \approx 1.2 \times 10^{77}$ | $2^{255} \text{ ns} = 1.8 \times 10^{60} \text{ years}$         | $1.8 \times 10^{56} \text{ years}$       |
+| 26 caratteri (permutazione) | Monoalfabetico | $26! \approx 4 \times 10^{26}$       | $2 \times 10^{26} \text{ ns} = 6.3 \times 10^{6} \text{ years}$ | $6.3 \times 10^{6} \text{ years}$        |
