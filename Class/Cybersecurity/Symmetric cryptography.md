@@ -171,4 +171,23 @@ An encryption is computationally secure if:
 In 1973 Feistel proposed the concept of a **product cipher**. The idea was that the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stringer than any of the component ciphers.
 So Feister proposed the use of a cipher that alternates substitutions and permutations
 
-![[Pasted image 20251206162324.png]]
+![[Pasted image 20251206162324.png|300]]
+In this case the plaintext is divided into 2 halves $L_{0}$ and $R_{0}$. $R_{0}$ then if combined and processed trough a function $F$ with a key from the round $K_{i+1}$. The result of this transformation then is summed (XOR) with the left part $L_{0}$ and the two resulting parts are then exchanged. This process is done $n$ times, and we will end up with the ciphertext
+
+---
+## Block ciphers
+![[Pasted image 20251206163025.png]]
+
+In a block cipher the plaintext of length $n$ is equally partitioned into a sequence of $m$ blocks $P[0],\dots,P[m-1]$. These partitions are called *blocks*
+
+![[Pasted image 20251206163258.png]]
+
+---
+## Computers and cryptography
+Modern codes tend to operate with messages ad binary data where every character in a message is encoded as a unique sequence of 0 and 1
+
+In computers the substitution is often made with the XOR function
+
+>[!example] One-time pad
+>![[Pasted image 20251206163512.png]]
+
