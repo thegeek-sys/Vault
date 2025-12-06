@@ -373,3 +373,16 @@ Weaknesses:
 - documents and images are not suitable for ECB encryption since patterns in the plaintext are repeated in the ciphertext
 
 ### Cipher Block Chaining (CBC) mode
+In Cipher Block Chaining (CBC) Mode the previous ciphertext block is combined with the current plaintext block $C[i] = E_{K} (C[i-1] \oplus P[i])$ and $C[-1]$ is a random block separately transmitted encrypted (known as the initialization vector)
+
+Decryption: $P[i] = C[i -1] \oplus D_{K}(C[i])$
+
+![[Pasted image 20251206182355.png]]
+#### Strengths and weaknesses
+Strengths:
+- doesn’t show patterns in the plaintext
+- is the most common mode
+- is fast and relatively simple
+
+Weaknesses:
+- CBC
