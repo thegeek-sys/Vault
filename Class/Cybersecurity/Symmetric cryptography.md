@@ -243,7 +243,15 @@ AES is a block cipher that operates on 128 bit blocks and can use keys that are 
 ![[Pasted image 20251206172032.png|500]]
 
 #### AES round structure
-128
+128-bit AES uses 10 rounds and each round is an invertible transformation the initialization is $X_{0}=P\oplus K$ and the cipher text $C$ is $X_{10}$
+
+![[Pasted image 20251206173432.png|250]]
+
+Each round is built from four basic steps:
+- *SubBytes* → S-box substitution step
+- *ShiftRows* → permutation step
+- *MixColumns* → matrix multiplication step
+- *AddRoundKey* → XOR step with a round key derived from the 128-bit encryption key
 
 ### Bruteforcing modern block ciphers
 | Dimensione Chiave (bits)    | Cifrario       | Numero di Chiavi Alternative         | Tempo Necessario (a 109 Decifrazioni/s)                         | Tempo Necessario (a 1013 Decifrazioni/s) |
@@ -254,3 +262,20 @@ AES is a block cipher that operates on 128 bit blocks and can use keys that are 
 | 192                         | AES            | $2^{192} \approx 6.3 \times 10^{57}$ | $2^{191} \text{ ns} = 9.8 \times 10^{40} \text{ years}$         | $9.8 \times 10^{36} \text{ years}$       |
 | 256                         | AES            | $2^{256} \approx 1.2 \times 10^{77}$ | $2^{255} \text{ ns} = 1.8 \times 10^{60} \text{ years}$         | $1.8 \times 10^{56} \text{ years}$       |
 | 26 caratteri (permutazione) | Monoalfabetico | $26! \approx 4 \times 10^{26}$       | $2 \times 10^{26} \text{ ns} = 6.3 \times 10^{6} \text{ years}$ | $6.3 \times 10^{6} \text{ years}$        |
+
+---
+## Block and stream ciphers
+A block cipher operates on a fixed length of contiguous characters at a time where each block is considered independent, requiring the use of the key repeatedly for each block of data. Block ciphers are standardized and more widely available
+
+A stream cipher treats the message to be encrypted as one continuous stream of characters (one-time pad can be considered a stream cipher where the key length is equal to the message length)
+
+---
+## Stream ciphers
+In stream ciphers the encryption scheme/key can change for each symbol of the plaintext.
+Given a plaintext $m_{1},m_{2},\dots$ and a keystream $e_{1},e_{2},\dots$ produces the ciphertext $c_{1},c_{2},\dots$ where $c_{i}=E(e_{i},m_{i})$ and $m_{i}=D(e_{i},c_{i})$
+
+>[!hint]
+>In some sense, stream ciphers are block ciphers with block size of length one
+
+Those are useful when plaintext needs to be processed one symbol at a time or the message is short (short message with block ciphers needs padding)
+
