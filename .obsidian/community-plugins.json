@@ -11,5 +11,6 @@
   "abbreviations",
   "vscode-editor",
   "find-unlinked-files",
-  "omnisearch"
+  "omnisearch",
+  "text-extractor"
 ]
