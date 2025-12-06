@@ -385,4 +385,10 @@ Strengths:
 - is fast and relatively simple
 
 Weaknesses:
-- CBC
+- CBC requires the reliable transmission of all the blocks sequentially (each ciphertext block depends on all message blocks)
+- CBC is not suitable for applications that allow packet losses (e.g. music and video streaming)
+
+### Cipher Feed Back (CFB) mode
+It is used to convert any block cipher into a stream cipher and the message is treated as a stream of bits.
+
+Unlike ECB or CBC, that elaborates intere data blocks, CFB elaborates the input $s$ bit at a time, with any $s$ (it is more efficient to use $s=64$, CFB-64)
