@@ -175,14 +175,6 @@ So Feister proposed the use of a cipher that alternates substitutions and permut
 In this case the plaintext is divided into 2 halves $L_{0}$ and $R_{0}$. $R_{0}$ then if combined and processed trough a function $F$ with a key from the round $K_{i+1}$. The result of this transformation then is summed (XOR) with the left part $L_{0}$ and the two resulting parts are then exchanged. This process is done $n$ times, and we will end up with the ciphertext
 
 ---
-## Block ciphers
-![[Pasted image 20251206163025.png]]
-
-In a block cipher the plaintext of length $n$ is equally partitioned into a sequence of $m$ blocks $P[0],\dots,P[m-1]$. These partitions are called *blocks*
-
-![[Pasted image 20251206163258.png]]
-
----
 ## Computers and cryptography
 Modern codes tend to operate with messages ad binary data where every character in a message is encoded as a unique sequence of 0 and 1
 
@@ -190,4 +182,36 @@ In computers the substitution is often made with the XOR function
 
 >[!example] One-time pad
 >![[Pasted image 20251206163512.png]]
+
+### Substitution boxes
+The substitution in modern ciphers are not made by a simple characters swap, but they are defined from structures called **substitution boxes**, which has the objective of executing a non linear substitution to mask the relation between the ciphertext and the plaintext
+
+>[!example]
+>A number is split in 2 blocks: the first is the row the second the column
+>
+>![[Pasted image 20251206164105.png|500]]
+
+
+---
+## Block ciphers
+![[Pasted image 20251206163025.png]]
+
+In a block cipher the plaintext of length $n$ is equally partitioned into a sequence of $m$ blocks $P[0],\dots,P[m-1]$. These partitions are called *blocks*
+
+![[Pasted image 20251206163258.png]]
+
+### In practice
+Nowadays exist many block ciphers:
+- Data Encryption Standard (DES) → developed by IBM and adopted by NIST in 1977; consist of 64-bit blocks and 56-bit keys (small key space make exhaustive search feasible since late 90s)
+- Triple DES (3DES) → nested application of DES with three different keys $KA$, $KB$, $KC$ so that the effective key length if $168$ bits, making exhaustive search attacks unfeasible (equivalent to DES when $KA=KB=KC$); $C=E_{KC}(D_{KB}(E_{KA}(P)))$, $P=D_{KA}(E_{KB}(D_{KC}(C)))$
+- Advanced Encryption Standard (AES)
+
+### Data Encryption Standard (DES)
+This is the most widely used encryption scheme, and was adopted in 1977 by National Bureau of Standards (now NIST). The algorithm is referred to as the Data Encryption Algorithm (DEA)
+
+It has minor variations from the Feistel network, but in 1999 it was considered from NIST no longer safe 
+
+Although DES standard is public it was surrounded by considerable controversy. The primary points of contention focused on two areas:
+- key length → there was debate over the choice of a 56-bit key, particularly when compared to other ciphers that used 128 bit keys
+- classified criteria → the design criteria of the algorithm were classified (S-boxes may have backdoors)
 
