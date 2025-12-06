@@ -348,3 +348,28 @@ A block cipher mode describes the way a block cipher encrypts and decrypts a seq
 - **output feedback** (*OFB*)
 - **counter** (*CTR*)
 
+| Mode                        | Description                                                                                                                                                                                               | Typical Application                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Electronic Code book (ECB)  | each block of 64 plaintext bits is encoded independently using the same key                                                                                                                               | - secure transmission of single values (e.g., an encryption key)                      |
+| Cipher Block Chaining (CBC) | the input to the encryption algorithm is the XOR of the next 64 bits of plaintext and the preceding 64 bits of ciphertext                                                                                 | - general-purpose block-oriented transmission<br>- authentication                     |
+| Cipher Feedback (CFB)       | input is processed $s$ bits at a time; preceding ciphertext is used as input to the encryption algorithm to produce pseudorandom output, which is XORed with plaintext to produce next unit of ciphertext | - general-purpose stream-oriented transmission<br>- authentication                    |
+| Output Feedback (OFB)17     | similar to CFB, except that the input to the encryption algorithm is the preceding DES output                                                                                                             | - stream-oriented transmission over noisy channel (e.g., satellite communication)     |
+| Counter (CTR)               | each block of plaintext is XORed with an encrypted counter; the counter is incremented for each subsequent block                                                                                          | - general-purpose block-oriented transmission<br>- useful for high-speed requirements |
+
+### Electronic Code Book (ECB) mode
+Electronic Code Book (ECB) Mode is the simplest mode
+
+Block $P[i]$ encrypted into ciphertext block $C[i] = E_{K}(P[i])$. Block $C[i]$ decrypted into plaintext block $M[i] = D_{K}(C[i])$
+
+![[Pasted image 20251206181733.png]]
+
+#### Strengths and weaknesses
+Strengths:
+- very simple
+- allows for parallel encryption of the blocks of a plaintext
+- it can tolerate the loss or damage of a block
+
+Weaknesses:
+- documents and images are not suitable for ECB encryption since patterns in the plaintext are repeated in the ciphertext
+
+### Cipher Block Chaining (CBC) mode
