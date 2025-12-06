@@ -305,7 +305,7 @@ for i = 0 to 255 do
 	S[i] = i;
 	T[i] = K[i mod keylen];
 
-/* Initial Permutation of S */
+/* Initial Permutation of S using values in T */
 j = 0;
 for i = 0 to 255 do
 	j = (j + S[i] + T[i]) mod 256;
@@ -314,8 +314,8 @@ for i = 0 to 255 do
 /* Stream Generation */
 i, j = 0;
 while (true)
-	i = (i + 1) mod 256;
-	j = (j + S[i]) mod 256;
+	i = (i + 1) mod 256;    // pseudorandomness
+	j = (j + S[i]) mod 256; // pseudorandomness
 	Swap (S[i], S[j]);
 	t = (S[i] + S[j]) mod 256;
 	k = S[t];
@@ -323,3 +323,28 @@ while (true)
 ```
 
 ![[Pasted image 20251206180105.png]]
+
+---
+## Advantages of symmetric cryptography
+- it is understandable and easy to use.
+- it is efficient (efficiency is a key consideration when messages are transmitted frequently and/or are lengthy)
+- relatively short keys
+- can be used for many other applications (hash functions, pseudo-random number generators, digital signatures)
+- can be easily combined
+
+### Limitations of symmetric cryptography
+- the users must share the same secret key
+- during transmission of the key, someone may intercept the key
+- the number of keys required increases at a rapid rate as the number of users in the network increases (because of these reasons, secret key management challenges are significant)
+- a key distribution center (KDC) – a trusted third party – may be used for managing and distributing keys
+- secret key cryptography cannot provide an assurance of authentication
+
+---
+## Block cipher modes
+A block cipher mode describes the way a block cipher encrypts and decrypts a sequence of message blocks. Five modes of operation have been defined by NIST:
+- **electronic code book** (*ECB*)
+- **cipher block chaining** (*CDC*)
+- **cipher feedback** (*CFB*)
+- **output feedback** (*OFB*)
+- **counter** (*CTR*)
+
