@@ -3,6 +3,59 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#Cryptography basic concepts|Cryptography basic concepts]]
+	- [[#Cryptography basic concepts#Definitions|Definitions]]
+- [[#Attacks to cryptography|Attacks to cryptography]]
+	- [[#Attacks to cryptography#Brute force attack|Brute force attack]]
+	- [[#Attacks to cryptography#Cryptoanalysis|Cryptoanalysis]]
+- [[#Symmetric key cryptography|Symmetric key cryptography]]
+- [[#Caesar cipher|Caesar cipher]]
+	- [[#Caesar cipher#Weakness and improvement|Weakness and improvement]]
+- [[#Encrypting natural languages|Encrypting natural languages]]
+	- [[#Encrypting natural languages#Cryptoanalysis: frequency analysis|Cryptoanalysis: frequency analysis]]
+- [[#Poly-alphabetic ciphers|Poly-alphabetic ciphers]]
+	- [[#Poly-alphabetic ciphers#More sophisticated substitutions|More sophisticated substitutions]]
+	- [[#Poly-alphabetic ciphers#Vigenére code|Vigenére code]]
+	- [[#Poly-alphabetic ciphers#One-time pad|One-time pad]]
+		- [[#One-time pad#Weaknesses of the one-time pad|Weaknesses of the one-time pad]]
+- [[#Transposition ciphers|Transposition ciphers]]
+	- [[#Transposition ciphers#Rail fence|Rail fence]]
+	- [[#Transposition ciphers#Permutation|Permutation]]
+	- [[#Transposition ciphers#Columnar transposition|Columnar transposition]]
+		- [[#Columnar transposition#Keyed columnar transposition|Keyed columnar transposition]]
+- [[#Modern cryptography|Modern cryptography]]
+	- [[#Modern cryptography#Feistel network|Feistel network]]
+- [[#Computers and cryptography|Computers and cryptography]]
+	- [[#Computers and cryptography#Substitution boxes|Substitution boxes]]
+- [[#Block ciphers|Block ciphers]]
+	- [[#Block ciphers#In practice|In practice]]
+	- [[#Block ciphers#Data Encryption Standard (DES)|Data Encryption Standard (DES)]]
+	- [[#Block ciphers#Double DES|Double DES]]
+		- [[#Double DES#Meet in the middle attacks|Meet in the middle attacks]]
+	- [[#Block ciphers#Triple DES|Triple DES]]
+	- [[#Block ciphers#Advances Encryption Standard (AES)|Advances Encryption Standard (AES)]]
+		- [[#Advances Encryption Standard (AES)#AES round structure|AES round structure]]
+	- [[#Block ciphers#Bruteforcing modern block ciphers|Bruteforcing modern block ciphers]]
+- [[#Stream ciphers|Stream ciphers]]
+	- [[#Stream ciphers#Block and stream ciphers|Block and stream ciphers]]
+		- [[#Block and stream ciphers#Speed comparison|Speed comparison]]
+	- [[#Stream ciphers#Characteristics of stream cipher|Characteristics of stream cipher]]
+	- [[#Stream ciphers#RC4|RC4]]
+- [[#Advantages of symmetric cryptography|Advantages of symmetric cryptography]]
+	- [[#Advantages of symmetric cryptography#Limitations of symmetric cryptography|Limitations of symmetric cryptography]]
+- [[#Block cipher modes|Block cipher modes]]
+	- [[#Block cipher modes#Electronic Code Book (ECB) mode|Electronic Code Book (ECB) mode]]
+		- [[#Electronic Code Book (ECB) mode#Strengths and weaknesses|Strengths and weaknesses]]
+	- [[#Block cipher modes#Cipher Block Chaining (CBC) mode|Cipher Block Chaining (CBC) mode]]
+		- [[#Cipher Block Chaining (CBC) mode#Strengths and weaknesses|Strengths and weaknesses]]
+	- [[#Block cipher modes#Cipher Feed Back (CFB) mode|Cipher Feed Back (CFB) mode]]
+		- [[#Cipher Feed Back (CFB) mode#Strengths and weaknesses|Strengths and weaknesses]]
+	- [[#Block cipher modes#Output feedback (OFB) mode|Output feedback (OFB) mode]]
+		- [[#Output feedback (OFB) mode#Strengths and weaknesses|Strengths and weaknesses]]
+	- [[#Block cipher modes#Counter (CTR) mode|Counter (CTR) mode]]
+		- [[#Counter (CTR) mode#Strengths and weaknesses|Strengths and weaknesses]]
+---
 ## Cryptography basic concepts
 Cryptography is the field that offers techniques and methods of managing secrets. The primary purpose of cryptography is to alter a message so that only the intended recipients can alter it back and thereby read the original message
 
@@ -398,7 +451,70 @@ It is used for stream data encryption, authentication
 
 ![[Pasted image 20251206185343.png]]
 
+- initial block → for the first iteration, a predefined Initialization Vector ($IV$) is loaded into a Shift Register. This $IV$ serves as the initial input for the block cipher.
+- keystream generation → the content of the register is encrypted by the algorithm using the key ($K$). This produces an output block of b bits.
+- selection → only the first s bits of this output are selected; the remaining $b−s$ bits are discarded. These s selected bits act as the keystream block ($K_{i}$​).
+- encryption (XOR) → the selected s bits are combined (XOR) with the corresponding s bits of the plaintext ($P_{i}$​) to generate the ciphertext block ($C_{i}$​).
+- feedback → the newly generated ciphertext block ($C_{i}$​) is then fed back into the shift register, replacing the leftmost s bits, and serves as the input for the next block. This ensures that the ciphertext of one block depends on all preceding blocks.
+
 ![[Pasted image 20251206185450.png]]
 
 #### Strengths and weaknesses
-Strenghts:
+Strengths:
+- appropriate when data arrives in bits/bytes
+- most common stream mode
+- like CBC encryption, the input block to each forward cipher function (except the first) depends on the result of the previous forward cipher function
+
+Weaknesses:
+- limitation is the need to stall while doing block encryption after every $n$-bits → the stream of bits that is XORed with the plaintext also depends on the plaintext
+- multiple forward cipher operations cannot be performed in parallel → in CFB decryption, the required forward cipher operations can be performed in parallel if the input blocks are first constructed (in series) from the IV and the ciphertext
+
+### Output feedback (OFB) mode
+Similar in structure to that of CFB as the message is treated as a stream of bits and the output of cipher is added to message. The output is then fed back (hence name) and the feedback is independent from the message
+
+It can also be computed in advance:
+- $C_{i} = P_{i} \oplus O_{i}$
+- $O_{i} = E_{K_{1}}(O_{i}-1)$
+- $O_{0} = IV$
+
+Encryption
+![[Pasted image 20251206190514.png]]
+
+Decryption
+![[Pasted image 20251206190539.png]]
+
+#### Strengths and weaknesses
+Strengths:
+- used when error feedback a problem or where need to do encryptions before message is available
+- similar to CFB, but feedback is from the output of cipher and is independent from the message
+
+Weaknesses:
+- must never reuse the same sequence (key + IV)
+- sender and receiver must remain in sync, and some recovery method is needed to ensure this occurs
+- the disadvantage of OFB is that it is more vulnerable to a message stream modification attack than is CFB
+
+### Counter (CTR) mode
+Recent increased interest with applications to ATM (asynchronous transfer mode) network security and IPsec (IP security), this mode was proposed early on
+
+Similar to OFB but encrypts counter value rather than any feedback value, but must have a different key and counter value for every plaintext block (never reused)
+
+Computation:
+- $C_{i} = P_{i} \oplus O_{i}$
+- $O_{i} = E_{K_{1}}(i)$
+
+Encryption
+![[Pasted image 20251206191012.png]]
+
+Decryption
+![[Pasted image 20251206191027.png]]
+
+#### Strengths and weaknesses
+Strengths:
+- hardware efficiency → can do parallel encryptions and in advance of need (good for high speed links)
+- random access to encrypted data blocks
+- provable security (good as other modes)
+- unlike ECB and CBC modes, CTR mode requires only the implementation of the encryption algorithm and not the decryption algorithm
+
+Weaknesses:
+- must ensure never reuse key/counter values, otherwise could break (as OFB)
+
