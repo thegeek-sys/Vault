@@ -397,3 +397,8 @@ To encrypt $Ci = P[i] \oplus DES_{K_{1}} (C[i-1])$ where $C_{0}$ is the initiali
 It is used for stream data encryption, authentication
 
 ![[Pasted image 20251206185343.png]]
+
+![[Pasted image 20251206185450.png]]
+
+#### Strengths and weaknesses
+Strenghts:
