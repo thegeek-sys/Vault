@@ -215,3 +215,15 @@ Although DES standard is public it was surrounded by considerable controversy. T
 - key length → there was debate over the choice of a 56-bit key, particularly when compared to other ciphers that used 128 bit keys
 - classified criteria → the design criteria of the algorithm were classified (S-boxes may have backdoors)
 
+But subsequent events and public analysis showed that the design was appropriate. Later research indicated that techniques like Differential Cryptoanalysis were less effective against DAS than initially feared
+
+### Double DES
+In 1992 it was shown that two DES encryption by  DES are not equivalend to a single encryption. In fact $E(K_{2}, E(K_{2}, M))$ is not equal to $E(K_{3},M)$ for any $K_{3}$
+
+So multiple encipherment should be effective
+
+#### Meet in the middle attacks
+This attack proves that the security of Double DES is not as expected. In fact as key size is $56+56=112$ bits, the expected security is bruteforcing $2^{112}$ keys, but this was not the case
+
+In fact the intermediate encryption is $E_{K_{1}}(\text{plain})=D_{K_{2}}(\text{cipher})$. So given a known pair of plaintext and ciphertext you can encrypt plain with $2^{56}$ keys and decrypt the cipher with $2^{56}$ keys and compare the two results to find the matching intermediate text
+
