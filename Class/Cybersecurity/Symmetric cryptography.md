@@ -264,18 +264,30 @@ Each round is built from four basic steps:
 | 26 caratteri (permutazione) | Monoalfabetico | $26! \approx 4 \times 10^{26}$       | $2 \times 10^{26} \text{ ns} = 6.3 \times 10^{6} \text{ years}$ | $6.3 \times 10^{6} \text{ years}$        |
 
 ---
-## Block and stream ciphers
-A block cipher operates on a fixed length of contiguous characters at a time where each block is considered independent, requiring the use of the key repeatedly for each block of data. Block ciphers are standardized and more widely available
-
-A stream cipher treats the message to be encrypted as one continuous stream of characters (one-time pad can be considered a stream cipher where the key length is equal to the message length)
-
----
 ## Stream ciphers
 In stream ciphers the encryption scheme/key can change for each symbol of the plaintext.
-Given a plaintext $m_{1},m_{2},\dots$ and a keystream $e_{1},e_{2},\dots$ produces the ciphertext $c_{1},c_{2},\dots$ where $c_{i}=E(e_{i},m_{i})$ and $m_{i}=D(e_{i},c_{i})$
+Given a plaintext $m_{1},m_{2},\dots$ and a keystream $e_{1},e_{2},\dots$ produces the ciphertext $c_{1},c_{2},\dots$ where $c_{i}=E(e_{i},m_{i})$ and $m_{i}=D(e_{i},c_{i})$. The encryption and decryption is usually done trough the xor
 
 >[!hint]
 >In some sense, stream ciphers are block ciphers with block size of length one
 
 Those are useful when plaintext needs to be processed one symbol at a time or the message is short (short message with block ciphers needs padding)
 
+### Block and stream ciphers
+A block cipher operates on a fixed length of contiguous characters at a time where each block is considered independent, requiring the use of the key repeatedly for each block of data. Block ciphers are standardized and more widely available
+
+A stream cipher treats the message to be encrypted as one continuous stream of characters (one-time pad can be considered a stream cipher where the key length is equal to the message length)
+
+![[Pasted image 20251206174619.png|600]]
+
+### Characteristics of stream cipher
+- it should have long periods without repetition (e.g. RC4 period is estimated $10^{100}$)
+- it needs to depend on large enough key
+- possibly each keystream bit should depend on most or all of the cryptovariable bits
+- statistically upredictable
+- keystream should be statistically unbiased
+- advantages → speed of transformation, no error propagation
+- disadvantages → low diffusion, subject to malicious insertion and modification
+
+### RC4
+RC4 is a proprietary stream cipher owned by RSA emc
