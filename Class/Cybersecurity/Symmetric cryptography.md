@@ -280,6 +280,9 @@ A stream cipher treats the message to be encrypted as one continuous stream of c
 
 ![[Pasted image 20251206174619.png|600]]
 
+#### Speed comparison
+![[Pasted image 20251206180249.png]]
+
 ### Characteristics of stream cipher
 - it should have long periods without repetition (e.g. RC4 period is estimated $10^{100}$)
 - it needs to depend on large enough key
