@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250317231704.png","text":"studente@debian9:~$ sleep 30s | sleep 20s | sleep 10 & [1] 2859 studente@debian9:~$ jobs -1 [1]+ 2857 In esecuzione sleep 30s 2858 | sleep 20s 2859 | sleep 10 &","libVersion":"0.5.0","langs":"eng"}

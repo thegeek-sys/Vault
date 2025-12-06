@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250324104754.png","text":"___ luogo_nascita —— docente_progetto 1..1 0..* 1.* 0..* ‘ 0..* |o..1 1.* tt citta_regione progetio_wp 1.* - {Idl} docente_impegno — 0..* 0..* regione_nazione {compl, disj} 1..1{id2} {compl, disj}","libVersion":"0.5.0","langs":"eng"}

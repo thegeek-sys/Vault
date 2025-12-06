@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250423210847.png","text":"gerarchia sopracategofria 1..1 spttocategoria 0..1 0..* {compl} |0“* {disj,compl} . pubblica categoria_oggetto 1.% post_oggetto 0..* 1.1 0..* 1..1 0..* - scomel _ : disj,compl . o {disj,compl} 1 0..%] 1 1 1","libVersion":"0.5.0","langs":"eng"}

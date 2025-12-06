@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251125182427.png","text":"0 1 2 3 Dx=4, Dy=4 ’ Ibloc}mim-y B 1 blockIdx.x = 1 - [ e H A threadIdx.x = 3 — threadIdx.y = 1 thread (3,1) in block (1,2) blockDim.x = 4","libVersion":"0.5.0","langs":"eng"}

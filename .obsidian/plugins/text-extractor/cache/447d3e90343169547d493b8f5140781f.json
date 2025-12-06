@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250404111354.png","text":"Timeout 0 3 ACK duplicati ssthresh = cwnd | 2 cwnd =1 Nessuno ssthresh = ... cwnd >ssthresh cwnd =1 Nessuno Inizio Slow P Congestion start avoidance Timeout o0 3 ACK duplicati _ ssthresh = cwnd [ 2 cwnd =1 Ricevuto un ACK i owond=cwnd + 1 Ricevuto un ACK cwnd = cwnd + (1 / cwnd)","libVersion":"0.5.0","langs":"eng"}

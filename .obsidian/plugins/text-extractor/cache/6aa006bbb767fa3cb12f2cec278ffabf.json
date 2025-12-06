@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251127154548.png","text":"L | = Victim Attacker Web server GET /login.php?user=foo&pass=bar - - - - Set-Cookie: sessionID=23245 - e e GET /main.php Cookie: sessionID=23245 . @ @","libVersion":"0.5.0","langs":"eng"}

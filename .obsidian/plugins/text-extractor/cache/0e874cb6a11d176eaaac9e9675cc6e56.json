@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250429011931.png","text":"Stato Azioni process@ * termina R * invia exit status a padre * rimane in stato zombie finche’ il padre non riceve exit status o |l padre ha ricevuto exit [aaney status","libVersion":"0.5.0","langs":"eng"}

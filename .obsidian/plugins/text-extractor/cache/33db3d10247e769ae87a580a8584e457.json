@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241220005112.png","text":"write_TS(X) read_TS(Y) read(Y) 100 read(Y) 110 X:=Y+5 =Y+10 write(X) 110 write(X) write_TS(X)>TS(T,) write(X) non viene esequita","libVersion":"0.5.0","langs":"eng"}

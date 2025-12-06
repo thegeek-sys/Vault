@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251101221600.png","text":"Time _— > Thread compute MPI_Send compute MPI_Send compute MPI_Recv compute 0 —_— > > —p———————> compute MPI_Recv compute 1 _— > compute MPI_Send compute 2 _—m m > compute MPI_Recv compute 3 _— —_——","libVersion":"0.5.0","langs":"eng"}

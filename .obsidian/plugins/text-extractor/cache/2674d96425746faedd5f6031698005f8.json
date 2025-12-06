@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241218213203.png","text":"somma:=0 read(X) X:=X-N write(X) read(X) somma:=somma-+ X read(Y) somma:=somma-+ Y read(Y) Y:=Y+N write(Y)","libVersion":"0.5.0","langs":"eng"}

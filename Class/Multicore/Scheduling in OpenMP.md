@@ -201,9 +201,9 @@ z();
 >”Nested parallelism” is disabled in OpenMP by default (i.e. inner parallel pragmas will be ignored)
 >```c
 >a();
-># pragms omp parallel for
+># pragma omp parallel for
 >for (int i=0; i<3; ++i) {
->	# pragms omp parallel for
+>	# pragma omp parallel for
 >	for (int j=0; j<6; ++j) {
 >		c(i, j);
 >	}

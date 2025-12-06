@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251124215509.png","text":"Table 5.2 Odd-Even Sort with Two parallel for Directives and Two for Directives (times are in seconds) thread_count 1 2 3 4 Two parallel for directives 0.770 0.453 0.358 0.305 Two for directives 0.732 0.376 0294 0.239","libVersion":"0.5.0","langs":"eng"}

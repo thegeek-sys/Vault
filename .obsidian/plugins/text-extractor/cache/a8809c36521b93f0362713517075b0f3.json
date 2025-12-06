@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251126120328.png","text":"__global__ void foo() ‘ : int ID = threadldx.y * . .. = if(ID % 2 == 0) ‘ | ‘ | | | { : : . . . : 0Odd threads doSmt(); . . . R . . . stall } . . . . . . E|{Se : . : . . Even threads d . . . . . . stall oSmtElse(); : : ) ' ' } doFinal(); | | | | | } Paths converge }","libVersion":"0.5.0","langs":"eng"}

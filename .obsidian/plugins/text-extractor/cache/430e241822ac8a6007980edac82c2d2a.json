@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250317160912.png","text":"| 1.1 velivolo_charter 0..* 0..* ! 1 0 * 0.* partenza 1.1 = 0..* arrivo 1.1 0.” ‘o volo_compagnia aeroporto_citta 1..1 L1 0.* sede 1..1 |0..* citta_nazione 1..1","libVersion":"0.5.0","langs":"eng"}

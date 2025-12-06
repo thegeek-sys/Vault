@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241220002312.png","text":"T, wlock(X) read(X) X:=X-N wlock(Y) read(Y) Y:=Y+N commit write(X) write(Y) unlock(X) unlock(Y) wiock(X) read(X) X:=X+M commit write(X) unlock(X,","libVersion":"0.5.0","langs":"eng"}

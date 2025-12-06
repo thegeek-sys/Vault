@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241218225014.png","text":"legge X, lock(X) scrive f,(X) unlock(X) lock(Y) legge Y, unlock(Y) scrive f5(Y,) legge 15(Y,) lock(Y) scrive f,(X,, f3(Y,)) | unlock(Y) lock(X) legge f,(X,) unlock(X) | scrive f,(f,(X,).Y,)","libVersion":"0.5.0","langs":"eng"}

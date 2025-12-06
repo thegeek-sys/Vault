@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251111174817.png","text":"master #pragma omp parallel { #pragma omp parallel Child } threads #pragma omp end parallel master","libVersion":"0.5.0","langs":"eng"}

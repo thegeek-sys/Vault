@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241218223108.png","text":"lock(X) read(X) X:=X-N write(X) unlock(X) lock(X) read(X) X:=X+tM write(X) unlock(X) lock(Y) read(Y) Y:=Y+N write(Y) unlock(Y)","libVersion":"0.5.0","langs":"eng"}

@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251125215750.png","text":"B Attacker Server Spoofed Client - 4 XL 4 Send SYN ® with spoofed src \\ (seq=x) Send SYN-ACK ® (seq =y, ack = x+1) SYN-ACK’s to \\ non-existant client Resend SYN-ACK discarded after timeouts \\ Assume failed \\ connection request","libVersion":"0.5.0","langs":"eng"}

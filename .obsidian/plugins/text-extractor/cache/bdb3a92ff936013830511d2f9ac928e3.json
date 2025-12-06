@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251012165039.png","text":"Rank q MPI_Send(send_buf_p, send_buf_ sz, send_type., @, nd_ta r Rank r MPI_Recv(recv_buf_p, recv_buf_sz, recv_type, . cv_ta , &status);","libVersion":"0.5.0","langs":"eng"}

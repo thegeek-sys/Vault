@@ -1,0 +1,1 @@
+{"path":"Files/Screenshot 2024-05-08 alle 18.09.08.png","text":"# opcode rs rt [ Immediate ] Tw $8, 0x1800($10) # 100011 01010 01000 0001 1000 0000 0000 # Regwrite==1, MemRead==1 # opcode rs rt rd shamt funct add $4, $3, $5 # 000000 00011 00101 00100 00000 100000 = Regwrite==1, MemRead==0","libVersion":"0.5.0","langs":"eng"}

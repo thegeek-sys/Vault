@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250411115723.png","text":"/ | ¢ Fragmentation: — In: one large datagram (4,000 bytes) Out: 3 smaller datagrams ? ¢ Link MTU: 1,500 bytes ¢ - - - - : Reassembly: In: 3 smaller datagrams Out: one large datagram (4,000 bytes) U «~m s “T = +~En /\\ s","libVersion":"0.5.0","langs":"eng"}

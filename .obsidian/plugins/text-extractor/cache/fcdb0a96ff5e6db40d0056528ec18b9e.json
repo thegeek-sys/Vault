@@ -1,0 +1,1 @@
+{"path":"Files/Screenshot 2024-05-27 alle 12.25.35.png","text":"Builder Classe field1:Type1 field1:Type1 field2:Type2 field2:Type2 +Builder(field1:Type1) <<constr.>> +field2(field2:Type2):Builder Classe(field1:Typet, field2: Type2, ...) cose s <<constructor>> +build():Classe","libVersion":"0.5.0","langs":"eng"}

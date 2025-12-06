@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241220001846.png","text":"somma:=0 wlock(X) read(X) X:=X-N write(X) wlock(Y) unlock(X) rlock(X) read(X) somma:=somma+X read(Y) Y:=Y+N commit write(Y) unlock(Y) rlock(Y) read(Y) somma:=somma+Y commit unlock(X) I unlock(Y,","libVersion":"0.5.0","langs":"eng"}

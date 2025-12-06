@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20251125174829.png","text":"CUDA Model of Execution Program Initialization Sequential Execution é Host thread Parallel Execution Host and GPU run concurrently | SGPU thread Sequential Execution Q Parallel Execution Host waits for GPU completion Sequential Execution Program Termination","libVersion":"0.5.0","langs":"eng"}

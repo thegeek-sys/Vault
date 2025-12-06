@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241220005213.png","text":"T; T, read_TS(X) write_TS(X) read(X) 100 read(X) 110 X:=X+5 X:=X+10 write(X) 110 write(X) | read_TS(X)>TS(T,) roll-back di T,","libVersion":"0.5.0","langs":"eng"}

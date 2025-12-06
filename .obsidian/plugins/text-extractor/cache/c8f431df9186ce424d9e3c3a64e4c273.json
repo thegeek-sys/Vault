@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20250319182927.png","text":"S: 40K POP3 server ready C: user rob S: +OK C: pass hungry S: +OK user successfully logged on C: list S: 1 498 S: 2 912 S: . C: retr 1 S: <message 1 contents> S: . C: dele 1 C: retr 2 S: <message 1 contents> S: . C: dele 2 C: quit S: +OK POP3 server signing off","libVersion":"0.5.0","langs":"eng"}

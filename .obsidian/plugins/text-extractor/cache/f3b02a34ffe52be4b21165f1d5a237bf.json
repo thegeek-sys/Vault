@@ -1,0 +1,1 @@
+{"path":"Files/Pasted image 20241218224919.png","text":"lock(X) lock(Y) unlock(X) f,(X) unlock(Y) 1;(Y) lock(Y) lock(X) unlock(Y) f,(X,Y) unlock(X) f,(X.Y)","libVersion":"0.5.0","langs":"eng"}
