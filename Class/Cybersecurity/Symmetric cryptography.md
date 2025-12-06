@@ -391,4 +391,9 @@ Weaknesses:
 ### Cipher Feed Back (CFB) mode
 It is used to convert any block cipher into a stream cipher and the message is treated as a stream of bits.
 
-Unlike ECB or CBC, that elaborates intere data blocks, CFB elaborates the input $s$ bit at a time, with any $s$ (it is more efficient to use $s=64$, CFB-64)
+Unlike ECB or CBC, that elaborates intere data blocks, CFB elaborates the input $s$ bit at a time, with any $s$ (it is more efficient to use $s=64$, CFB-64).
+To encrypt $Ci = P[i] \oplus DES_{K_{1}} (C[i-1])$ where $C_{0}$ is the initialization vector
+
+It is used for stream data encryption, authentication
+
+![[Pasted image 20251206185343.png]]
