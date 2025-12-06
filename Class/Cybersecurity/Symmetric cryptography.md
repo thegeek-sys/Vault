@@ -290,4 +290,33 @@ A stream cipher treats the message to be encrypted as one continuous stream of c
 - disadvantages → low diffusion, subject to malicious insertion and modification
 
 ### RC4
-RC4 is a proprietary stream cipher owned by RSA emc
+RC4 is a proprietary stream cipher owned by RSA and designed by Ron Rivest.
+It can have variable keys size (from 1 to 256 bytes) and have byte-oriented operations.
+
+It is widely used on web and key forms random permutation of all 8-bit values; permutation used to scramble input info are processed one byte at a time. It is also secure against known attacks
+
+Simple code structure:
+```
+/* Initialization */
+for i = 0 to 255 do
+	S[i] = i;
+	T[i] = K[i mod keylen];
+
+/* Initial Permutation of S */
+j = 0;
+for i = 0 to 255 do
+	j = (j + S[i] + T[i]) mod 256;
+	Swap (S[i], S[j]);
+
+/* Stream Generation */
+i, j = 0;
+while (true)
+	i = (i + 1) mod 256;
+	j = (j + S[i]) mod 256;
+	Swap (S[i], S[j]);
+	t = (S[i] + S[j]) mod 256;
+	k = S[t];
+	Output k;
+```
+
+![[Pasted image 20251206180105.png]]
