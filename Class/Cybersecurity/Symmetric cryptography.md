@@ -154,3 +154,18 @@ Write the plaintext by row with a fixed row length, rearrange the columns accord
 >[!example]
 >![[Pasted image 20251205211655.png]]
 
+---
+## Modern cryptography
+High redundancy of natural language often makes it possible to analyze the text using statistics and the key can be revealed, and this it particularly easy if the ciphertext bits of the plaintext is known.
+For this reason it has been reached the conclusion that more complex codes are needed
+
+The basic idea to modern cryptography comes from Claude Shannon (1949), who said that a ciphertext needs to have this two characteristics:
+- **diffusion** → spread redundancy around the ciphertext
+- **confusion** → makes encryption function as complex as possible making it difficult to derive the key analyzing the ciphertext
+
+An encryption is computationally secure if:
+- cost of breaking the cipher exceeds value of information
+- time required to break cipher exceeds the useful lifetime of the information (usually is very difficult to estimate the amount of effort required to break)
+
+### Feistel network
+In 1973 Feistel proposed the concept of a product cipher
