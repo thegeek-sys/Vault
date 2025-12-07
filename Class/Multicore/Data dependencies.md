@@ -178,4 +178,85 @@ for (int i=1; i<N; i++)
 		data[i][j] = data[i-1][j] + data[i-1][j-1];
 ```
 
-In this case, reasoning on dependencies the same way as the previous method can be hard
+In this case, reasoning on dependencies the same way as the previous method can be hard, but we can draw as a matrix the dependencies between the iterations:
+![[Pasted image 20251208000905.png|500]]
+
+In this drawing the arrows represent the dependencies between iterations, and, as we can see, there are no dependencies between nodes of the same row. For this reason we can parallelize the inner loop (that iterates on the row)
+
+```c
+for (int i=1; i<N; i++)
+	#pragma omp parallel for
+	for (int j=1; j<M; j++)
+		data[i][j] = data[i-1][j] + data[i-1][j-1];
+```
+
+### Refactoring
+Refactoring refers to rewriting the loop(s) so that parallelism can be exposed. The ISDG for the following example:
+```c
+for (int i=1; i<N; i++)
+	for (int j=1; j<N; j++)
+		data[i][j] = data[i-1][j] + data[i][j-1] + data[i-1][j-1]
+```
+
+![[Pasted image 20251203144752.png|500]]
+
+Tho in this case diagonal sets, called *wave*, can be executed in parallel (no edges/dependencies between nodes in the same diagonal set)
+![[Pasted image 20251203144919.png|500]]
+
+The solution so should have an outer loop that iterates on the number of waves and an inner loop that iterates on the wave itself (the inner loop can be parallelized)
+
+```c
+// intuition
+for(wave=0 wave<NumWaves; wave++) {
+	diag=F(wave);
+	#pragma omp parallel for
+	for(k=0; k<diag; k++) {
+		int i = get_i(diag, k);
+		int j = get_j(diag, k);
+		data[i][j] = data[i-1][j] + data[i][j-1] + data[i-1][j-1];
+	}
+}
+```
+
+>[!info]
+>The execution in waves requires a change  of loop variables from the original `i` and `j`
+
+### Fissioning
+Fissioning means breaking the loop apart into a sequential and a parallelizable part
+
+```c
+s = b[0];
+for (int i=1; i<N; i++) {
+	a[i] = a[i] + a[i-1]; // S1
+	s = s + b[i];
+}
+```
+
+Becomes
+```c
+// sequential part
+for (int i=1; i<N; i++) {
+	a[i] = a[i] + a[i-1]; // S1
+}
+
+// parallel part
+s = b[0];
+#pragma omp parallel for reduction(+:a)
+for (int i=1; i<N; i++) {
+	s = s + b[i];
+}
+```
+
+If everything else fails, switching the algorithm may be the answer. For example, the Fibonacci sequence:
+```c
+for (int i=2; i<N; i++) {
+	int x = F[i-2]; // S1
+	int y = F[i-1]; // S2
+	F[i] = x+y;     // S3
+}
+```
+
+Can be parallelized via Binet’s formula:
+$$
+F_{n}=
+$$
