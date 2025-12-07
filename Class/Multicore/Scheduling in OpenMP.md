@@ -297,7 +297,18 @@ With `static`, OpenMP divides the iteration range ahead of time into contiguous 
 >```
 >$$\begin{align*} \text{Thread 0: } &\quad 0, 1, 2, 3 \\ \text{Thread 1: } &\quad 4, 5, 6, 7 \\ \text{Thread 2: } &\quad 8, 9, 10, 11 \end{align*} $$
 
-### $\verb|dyanamic|$ or $\verb|guided|$
+### $\verb|dyanamic|$
 The iterations are also broken up into chunks of `chunksize` consecutive iterations. Each thread executes a chunk, and when a thread finishes a chunk, it requests another one from the run-time system and this continues until all iterations are completed.
 
 In this case we have better load balancing, but higher overhead to schedule the chunks (can be tuned through the `chunksize`)
+
+### $\verb|guided|$
+Each thread also executes a chunk, and when a thread finishes a chunk, it requests another one. However, in a guided schedule, as chunks are completed the size of the chunks decreases, in fact the chunks have size $\text{num\_iterations}/\text{num\_threads}$, where $\text{num\_iterations}$ is the number of unassigned iterations.
+
+If no `chunksize` is specified the size of the chunks decreases down to $1$, while if it is specified, it decreases down to `chunksize` with the exception that the very last chunk can be smaller than `chunksize`
+
+>[!example]
+>Assignement of trapezoidal rule iterations $1-9999$ using a guided schedule with two threads
+>
+>![[Pasted image 20251207215826.png]]
+
