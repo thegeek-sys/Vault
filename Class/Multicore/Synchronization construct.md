@@ -17,7 +17,7 @@ for (int i=0; i<N; i++) {
 	
 	// update the counter
 	#pragma omp atomic
-		examined++;
+	examined++;
 	
 	// use the master to output an update every 1000 newly
 	// finished iterations
@@ -107,3 +107,19 @@ The individual work items are contained in blocks decorated by section directive
 ---
 ## Ordered construct
 The construct `ordered` is used inside a parallel for, to ensure that a block will be executed as if in sequential order.
+
+```c
+double data[N];
+#pragma omp parallel shared(data, N)
+{
+    #pragma omp for ordered schedule(static, 1)
+    for(int i = 0; i < N; i++)
+    {
+        // process the data
+		
+        // print the results in order
+        #pragma omp ordered
+        cout << data[i];
+    }
+}
+```
