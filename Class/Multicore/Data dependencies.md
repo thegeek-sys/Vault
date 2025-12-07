@@ -258,5 +258,49 @@ for (int i=2; i<N; i++) {
 
 Can be parallelized via Binet’s formula:
 $$
-F_{n}=
+F_n = \frac{\varphi^n - (1 - \varphi)^n}{\sqrt{5}}
 $$
+
+---
+## Antidependence removal (WAR)
+
+```c
+for (int i=0; i<N-1; i++) {
+	a[i] = a[i+1] + c;
+}
+```
+
+In this case a thread might execute iteration $i$ while iteration $i+1$ is already been executed, so $a[i]$ will be assigned to the wrong value. A simple solution can be making a copy of a before starting to modify it:
+```c
+for (int i=0; i<N-1; i++) {
+	a2[i] = a[i+1];
+}
+
+#pragma omp parallel for
+for (int i=0; i<N-1; i++) {
+	a[i] = a2[i]+c
+}
+```
+
+>[!warning]
+>Space and time tradeoffs must be carefully evaluated! In this case it’s doesn’t make any sense, we are just adding more complexity
+
+---
+## Output Dependence Removal (WAW)
+
+```c
+for (int i=0; i<N; i++) {
+	y[i] = a*x[i] + c; // S1
+	d = fabs(y[i]);    // S2
+}
+```
+
+In this case I want to guarantee that at the end of the execution, the computed `d` is the one computed in the last iteration. We can do this by using the `lastprivate` directive
+
+```c
+#pragma omp parallel for shared(a,c) lastprivate(d)
+for (int i=0; i<N; i++) {
+	y[i] = a*x[i] + c; // S1
+	d = fabs(y[i]);    // S2
+}
+```

@@ -5,8 +5,8 @@ Related:
 ---
 ## Index
 - [[#Loops|Loops]]
-	- [[#Loops#Parallel $\verb|for|$|Parallel $\verb|for|$]]
-	- [[#Loops#Nested $\verb|for|$ loops|Nested $\verb|for|$ loops]]
+	- [[#Parallel $ verb for $|Parallel for]]
+	- [[#Nested $ verb for $ loops|Nested for loops]]
 - [[#Scheduling loops|Scheduling loops]]
 	- [[#$ verb static $|static]]
 	- [[#$ verb dyanamic $|dynamic]]
