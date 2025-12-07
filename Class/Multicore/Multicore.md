@@ -10,6 +10,7 @@
 ### OpenMP
 - [[Shared memory programming with OpenMP]]
 - [[Scheduling in OpenMP]]
+- [[Synchronization construct]]
 
 ### CUDA
 - [[Introduction to GPUs]]

@@ -3,6 +3,16 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Loops|Loops]]
+	- [[#Loops#Parallel $\verb|for|$|Parallel $\verb|for|$]]
+	- [[#Loops#Nested $\verb|for|$ loops|Nested $\verb|for|$ loops]]
+- [[#Scheduling loops|Scheduling loops]]
+	- [[#$ verb static $|static]]
+	- [[#$ verb dyanamic $|dynamic]]
+	- [[#$ verb guided $|guided]]
+	- [[#$ verb runtime $|runtime]]
+---
 ## Loops
 ### Parallel $\verb|for|$
 Consists of forking a team of threads to execute the following structured block, however the structured block following the parallel for directive must be a for loop.
@@ -312,3 +322,16 @@ If no `chunksize` is specified the size of the chunks decreases down to $1$, whi
 >
 >![[Pasted image 20251207215826.png]]
 
+### $\verb|runtime|$
+The system in this case uses the environment variable `OMP_SCHEDULE` to determine at run-time how to schedule the loop.
+The `OMP_SCHEDULE` environment variable can take any of the values that can be used for a static, dynamic, or guided schedule
+
+>[!example]
+>```bash
+>$ export OMP_SCHEDULE="static,1"
+>```
+
+Another way to specify the schedule type is to set it with the function:
+```c
+omp_set_schedule(omp_sched_t kind, int chunk_size);
+```
