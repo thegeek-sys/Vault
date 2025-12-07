@@ -12,6 +12,8 @@
 - [[Scheduling in OpenMP]]
 - [[Synchronization construct]]
 - [[Misc]]
+- [[Data dependencies]]
+- 
 
 ### CUDA
 - [[Introduction to GPUs]]
