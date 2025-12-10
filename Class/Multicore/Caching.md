@@ -77,5 +77,11 @@ Programmers have no control over caches and when they get updated
 >>[!info]
 >>Occurs for both write-trough and write-back policies
 
+There are two possible solutions for this problem:
+- snooping cache
+- directory based cache
 
+#### Snooping cache
+The cores share a bus and any signal transmitted on the bus can be “seen” by all cores connected to the bus.
 
+When core 0 updates the copy of `x` stored in its cache it also broadcasts this information across the bus. If core 1 is “snooping” the bus, it will see that `x` has been updated and it can mark its copy of `x` as invalid
