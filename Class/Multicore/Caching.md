@@ -27,6 +27,6 @@ There are two kinds of locality:
 >```
 
 ### Cache lines
-Data is transferred from memory to cache in blocks/lines. Doing one transfer of 16 memory locations, is better than doing 16 transfers of one memory location  each
+Data is transferred from memory to cache in blocks/lines (i.e., when `z[0]` is transferred from memory to cache also `z[1]`, `z[2]`, …, `z[15]` might be transferred), in fact doing one transfer of 16 memory locations, is better than doing 16 transfers of one memory location  each
 
-When accessing `z[0]` you need to wait for the transfer, but then you will find the other 15 elements in cache already
+For this reason when accessing `z[0]` you need to wait for the transfer, but then you will find the other 15 elements in cache already
