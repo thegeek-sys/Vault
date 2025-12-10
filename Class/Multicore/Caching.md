@@ -30,3 +30,25 @@ There are two kinds of locality:
 Data is transferred from memory to cache in blocks/lines (i.e., when `z[0]` is transferred from memory to cache also `z[1]`, `z[2]`, …, `z[15]` might be transferred), in fact doing one transfer of 16 memory locations, is better than doing 16 transfers of one memory location  each
 
 For this reason when accessing `z[0]` you need to wait for the transfer, but then you will find the other 15 elements in cache already
+
+### Cache levels
+![[Pasted image 20251209172050.png]]
+
+Data stored in L1 might or might not be stored in L2/L3 as well (it depends on the type of the cache). The CPU first checks if the data is in L1, if not, checks in L2, etc.
+
+>[!question] Why do we care?
+>To write efficient/performant parallel code:
+>- its sequential parts must be efficient/performant (try to think about how your application accesses the data, random accesses are much worst than linear accesses)
+>- the coordination between these sequential parts must be done efficiently
+
+### Consistency
+Let’s suppose `x` in cache. If we update the value of `x` in cache, the copy of `x` in main memory is not updated so we have two different values of `x` in main memory and in cache
+
+![[Pasted image 20251210132112.png]]
+
+So when a CPU writes data to cache, the value in cache may be inconsistent with the value in main memory. This problem can be solved in two ways:
+- write-through → caches handle this by updating the data in main memory at the time it is written to cache
+- write-back → caches mark data in the cache as dirty, and when the cache line is replaced by a new cache line from memory, the dirty line is written to memory
+
+---
+## Caching on multicores
