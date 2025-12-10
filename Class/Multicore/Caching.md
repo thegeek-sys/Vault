@@ -85,3 +85,16 @@ There are two possible solutions for this problem:
 The cores share a bus and any signal transmitted on the bus can be “seen” by all cores connected to the bus.
 
 When core 0 updates the copy of `x` stored in its cache it also broadcasts this information across the bus. If core 1 is “snooping” the bus, it will see that `x` has been updated and it can mark its copy of `x` as invalid
+
+>[!warning]
+>It’s not used anymore: broadcast is expensive nowadays we have multicores with 64/128 cores
+
+#### Directory based cache
+Uses a data structure called a directory that stores the status of each cache line (e.g., a bitmap/list saying which cores has a copy of that line)
+
+When a variable is updated, the directory is consulted, and the cache controllers of the cores that have that variable’s cache line in their caches are invalidated (we can’t invalidate a single variable, but we have to invalidate the whole cache line)
+
+---
+## False sharing
+Data is fetched for memory to cache in lines. Each line can contain several variables (e.g. if a cache is 64 bytes long, it can contain 16 4-byte integers, which were consecutive in memory).
+When data is invalidated, the entire line is invalidate. Even if two threads access two different variables, if those are on the same cache line, this would still cause an invalidation
