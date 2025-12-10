@@ -52,3 +52,4 @@ So when a CPU writes data to cache, the value in cache may be inconsistent with 
 
 ---
 ## Caching on multicores
+![[Pasted image 20251210132757.png|400]]
