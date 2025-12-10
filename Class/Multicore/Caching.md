@@ -190,5 +190,7 @@ But to avoid completely false sharing, the array must start at an address that i
 >
 >In the third column, if the matrix is $8.000.000\times 8$ the input vector will have 8 elements. In this case the system will load another piece of the matrix every 8 operation and this is not enough to amortize the cost of the load
 >
->Let’s now analyze the false sharing
+>Let’s now analyze the false sharing:
+>![[Pasted image 20251210200615.png]]
+>
 
