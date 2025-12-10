@@ -56,3 +56,26 @@ So when a CPU writes data to cache, the value in cache may be inconsistent with 
 
 ### Cache coherence
 Programmers have no control over caches and when they get updated
+
+>[!example]
+>Let’s imagine this state:
+>- `y0` is privately owned by core 0
+>- `y1` and `z1` are privately owned by core 1
+>- `x=2` is a shared variable
+>
+>![[Pasted image 20251210133247.png]]
+>
+>Core 0 cache:
+>- `x=7`
+>- `y0=2`
+>
+>Core 1 cache:
+>- `x=2`
+>- `y1=6`
+>- **`z2=4*2 or 4*7?`**
+>
+>>[!info]
+>>Occurs for both write-trough and write-back policies
+
+
+
