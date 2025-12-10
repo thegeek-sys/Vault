@@ -183,4 +183,12 @@ But to avoid completely false sharing, the array must start at an address that i
 >}  /* Pth_mat_vect */
 >```
 >
->Even tho the following matrix configurations do the same number of operations, they have different execution times
+>Even tho the following matrix configurations do the same number of operations, they have different execution times (the matrices are addressed `row x columns`):
+>![[Pasted image 20251209180621.png]]
+>
+>In the first column, if the matrix is $8\times 8.000.000$ the input vector needs to have 8 million element. For this reason the vector is too big to be in the cache, so the system need to load the data each time from the RAM
+>
+>In the third column, if the matrix is $8.000.000\times 8$ the input vector will have 8 elements. In this case the system will load another piece of the matrix every 8 operation and this is not enough to amortize the cost of the load
+>
+>Let’s now analyze the false sharing
+
