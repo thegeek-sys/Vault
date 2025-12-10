@@ -167,18 +167,20 @@ But to avoid completely false sharing, the array must start at an address that i
 >[!example] Pthreads matrix-vector multiplication
 >```c
 >void *Pth_mat_vect(void* rank) {
->    long my_rank = (long) rank;
->    int i, j;
->    int local_m = m/thread_count;
->    int my_first_row = my_rank*local_m;
->    int my_last_row = (my_rank+1)*local_m - 1;
+>	long my_rank = (long) rank;
+>	int i, j;
+>	int local_m = m/thread_count;
+>	int my_first_row = my_rank*local_m;
+>	int my_last_row = (my_rank+1)*local_m - 1;
 >	
 >	for (i = my_first_row; i <= my_last_row; i++) {
 >		y[i] = 0.0;
 >	    for (j = 0; j < n; j++)
->         y[i] += A[i][j]*x[j];
->    }
+>		y[i] += A[i][j]*x[j];
+>	}
 >	
->    return NULL;
+>	return NULL;
 >}  /* Pth_mat_vect */
 >```
+>
+>Even tho the following matrix configurations do the same number of operations, they have different execution times
