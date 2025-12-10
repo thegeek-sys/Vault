@@ -96,5 +96,67 @@ When a variable is updated, the directory is consulted, and the cache controller
 
 ---
 ## False sharing
-Data is fetched for memory to cache in lines. Each line can contain several variables (e.g. if a cache is 64 bytes long, it can contain 16 4-byte integers, which were consecutive in memory).
-When data is invalidated, the entire line is invalidate. Even if two threads access two different variables, if those are on the same cache line, this would still cause an invalidation
+Data is fetched for memory to cache in lines. Each line can contain several variables (e.g. if a cache is 64 bytes long, it can contain 16 4-byte integers, which were consecutive in memory). When data is invalidated, the entire line is invalidate.
+Even if two threads access two different variables, if those are on the same cache line, this would still cause an invalidation and this would slow down the execution
+
+>[!info] False sharing
+>Two threads that writes on different variables on the same cache line. This causes continuous invalidations and heavy execution slow down
+
+We have three possible ways to fix it:
+- pad the data
+- change the mapping of data to threads/cores
+- use private/local variables
+
+### Padding data
+
+>[!done] Solution
+>Try to force variables which are accessed by different threads to be on different cache lines.
+>
+>Padding (but be aware, the compiler might change the order of the fields in a struct). In the following false sharing solution we are assuming 64 bytes cache lines
+>```c
+>struct alignTo64ByteCacheLine {
+>	int _onCacheLine1 __attribute__((aligned(64)))
+>	int _onCacheLine2 __attribute__((aligned(64)))
+>}
+>```
+>
+>>[!question] How to get the cache line size?
+>>- from the code → `sysconf(_SC_LEVEL1_DCACHE_LINESIZE)`
+>>- from the shell → `getconf LEVEL1_DCACHE_LINESIZE`
+>
+>Do all the updates on a variable local to the thread (e.g. allocated on the stack, and then write it on heap only at the end)
+
+>[!warning] Padding caveats
+>Padding wastes much memory. Another solution is to make updates on a local variable and doing the write on the heap just at the end
+
+>[!question] What if our data is an array?
+
+Let’s analyze this snippet:
+```c
+double x[N];
+#pragma omp parallel for schedule(static, 1)
+for (int i=0; i<N; i++)
+	x[i] = someFunc(x[i]);
+```
+
+With `schedule(static,1)` we assign one iteration per thread before restarting. Since arrays are allocated contiguously, each 16 elements are on the same cache line (considering 4 bytes per element and 64 bytes cache line)
+
+The padded version would be:
+```c
+double x[N][8];
+#pragma omp parallel for schedue(static, 1)
+for (int i=0; i<N; i++)
+	x[i][0] = someFunc(x[i][0])
+```
+
+In this solution we transform the array into a matrix `8x8` (8 bytes per double), so each element goes on a different cache line. But this solution **can kill cache effectiveness** and **wastes memory**
+For this reason, in this case I could have used **data mapping change**
+
+### Data mapping change
+Let’s use the same example of before:
+```c
+double x[N];
+#pragma omp parallel for schedule(static, 8)
+for (int i=0; i<N; i++)
+	x[i] = someFunc(x[i])
+```
