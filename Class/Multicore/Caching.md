@@ -3,6 +3,22 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Introduction|Introduction]]
+	- [[#Introduction#What to cache|What to cache]]
+	- [[#Introduction#Cache lines|Cache lines]]
+	- [[#Introduction#Cache levels|Cache levels]]
+	- [[#Introduction#Consistency|Consistency]]
+- [[#Caching on multicores|Caching on multicores]]
+	- [[#Caching on multicores#Cache coherence|Cache coherence]]
+		- [[#Cache coherence#Snooping cache|Snooping cache]]
+		- [[#Cache coherence#Directory based cache|Directory based cache]]
+- [[#False sharing|False sharing]]
+	- [[#False sharing#Padding data|Padding data]]
+	- [[#False sharing#Data mapping change|Data mapping change]]
+- [[#Memory organization|Memory organization]]
+	- [[#Memory organization#NUMA systems|NUMA systems]]
+---
 ## Introduction
 The **cache** is collection of memory locations that can be accessed in less time than some other memory locations. A CPU cache is typically located on the same chip, or one that can be accessed much faster than ordinary memory (it is usually physically closer)
 
@@ -139,7 +155,7 @@ for (int i=0; i<N; i++)
 	x[i] = someFunc(x[i]);
 ```
 
-With `schedule(static,1)` we assign one iteration per thread before restarting. Since arrays are allocated contiguously, each 16 elements are on the same cache line (considering 4 bytes per element and 64 bytes cache line)
+With `schedule(static,1)` we assign one iteration per thread before restarting. Since arrays are allocated contiguously, each 8 elements are on the same cache line (considering 8 bytes per element and 64 bytes cache line)
 
 The padded version would be:
 ```c
@@ -183,6 +199,9 @@ But to avoid completely false sharing, the array must start at an address that i
 >}  /* Pth_mat_vect */
 >```
 >
+>>[!info]- Matrix-vector multiplication visualized
+>>![[Pasted image 20251210200954.png]]
+>
 >Even tho the following matrix configurations do the same number of operations, they have different execution times (the matrices are addressed `row x columns`):
 >![[Pasted image 20251209180621.png]]
 >
@@ -193,4 +212,22 @@ But to avoid completely false sharing, the array must start at an address that i
 >Let’s now analyze the false sharing:
 >![[Pasted image 20251210200615.png]]
 >
+>In the third column we assist at a drastic fall in efficiency when there are 4 threads. This happens because the output vector `y` has only 8 rows. Let’s say it is a vector of floats on 8 bytes, the entire vector `y` would fit in a cache line (64 bytes). Thus, even if thread access a different `y[i]`, we will have false sharing issues since they are located on the same cache line
+>
+>If the number of rows is larger, this would still happen, but only in the “boarder” element, which would be a small fraction of the number of rows. For example in the $8.000 \times 8.000$ case, with 4 threads, each thread would computer 2000 elements of `y`; even if they falsely share 8 elements, this is just 8 out of 2000, so it’s not going to make much of a difference
 
+---
+## Memory organization
+![[Pasted image 20251210201822.png]]
+
+There are two types of memory organizations:
+- UMA
+- NUMA
+
+### NUMA systems
+In NUMA systems (non-uniform memory access) the cost of accessing the memory changes depending on where the data is allocated. Accessing a “local” memory is cheaper than accessing a “remote” memory. But it’s possible to:
+- specify where the data must be allocated (see `numa.h` library)
+- have some control from the command line (see `numactl`)
+
+>[!info] It’s even more complicated…
+>Some cores might be «closer» to the NIC, so it might have sense that those cores are those doing `MPI_Send`/`MPI_Recv`/etc...
