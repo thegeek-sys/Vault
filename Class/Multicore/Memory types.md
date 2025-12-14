@@ -55,11 +55,12 @@ The `__shared__` specifier can be used to indicate that some data must go in the
 >	// BLOCK_SIZE -> number of elements for each thread
 >	__shared__ int temp[BLOCK_SIZE + 2 * RADIUS];
 >	int gindex = threadIdx.x + blockIdx.x * blockDim.x;
->	// in posizione threadId.x non sto considerando halo, devo aggiungere radius
+>	// in position threadId.x I'm not considering halo
+>	// need to add radius
 >	int lindex = threadIdx.x + RADIUS;
 >	
 >	// read input elements into shared memory
->	temp[index] = in[gindex];
+>	temp[lindex] = in[gindex];
 >	if (threadIdx.x < RADIUS) {
 >		temp[lindex-RADIUS] = in[gindex-RADIUS];
 >		temp[lindex+BLOCK_SIZE] = in[gindex+BLOCK_SIZE]
