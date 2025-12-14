@@ -106,3 +106,22 @@ It has two main advantages:
 >- if data is in constant memory
 >	- during first warp request, data is copied in constant-cache
 >	- since there is less traffic in constant-cache, there are good chances all other warp will find the data already in cache
+
+
+```c
+__constant__ type variable_name; // static
+cudaMemcpyToSymbol(variable_name, &host_src, sizeof(type), cudaMemcpyHostToDevice);
+// warning: cannot be dynamically allocated
+```
+
+By saving variables in constant memory:
+- data will reside in the constant memory address space
+- has static storage duration (persists until the application ends)
+- readable from all threads of a kernel
+
+>[!example] Image to greyscale
+>An image can be seen as a 2D matrix of pixels, each pixel has 3 values for the 3 RGB channels. 
+>$$\text{Number of columns} = 3 \times  \text{Number of pixels in a row}$$
+>
+>To convert the pixel to grey scale:
+>$$L=r\cdot 0.21$$
