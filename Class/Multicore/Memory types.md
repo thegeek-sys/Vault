@@ -82,3 +82,27 @@ The `__shared__` specifier can be used to indicate that some data must go in the
 >
 >I need to execute `__syncthreads()` as I have no guarantee on the threads order. In particular I may have problems if `lindex+RADIUS` contains the halo (if a thread wants 32nd element but the thread that had to load that element haven’t already been executed)
 
+```c
+void __syncthreads();
+```
+
+Synchronizes all threads within a block. It is used to prevent RAW/WAR/WAW hazards
+
+---
+## Constant memory
+Constant memory is not the ROM, it is just a memory that can hold constant values (i.e., the host can write it, but for the GPU is read-only)
+
+It has two main advantages:
+- it is cached
+- supports broadcasting of a single value to all threads in a warp
+
+>[!example]
+>Suppose to have 10 warps on an SM, and all request the same variable:
+>- if data is on global memory
+>	- all warp will request the same segment from global memory
+>	- the first time segment is copied into L2 cache
+>	- if other data pass through L2, there are good chances it will be lost
+>	- there are good chances that data should be requested multiple times
+>- if data is in constant memory
+>	- during first warp request, data is copied in constant-cache
+>	- since there is less traffic in constant-cache, there are good chances all other warp will find the data already in cache
