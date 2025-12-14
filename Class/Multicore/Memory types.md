@@ -66,6 +66,8 @@ The `__shared__` specifier can be used to indicate that some data must go in the
 >		temp[lindex+BLOCK_SIZE] = in[gindex+BLOCK_SIZE]
 >	}
 >	
+>	// make sure that every thread has loaded the data, so that the for
+>	// does not read ghost data
 >	__syncthreads();
 >	
 >	// apply the stencil
@@ -77,4 +79,6 @@ The `__shared__` specifier can be used to indicate that some data must go in the
 >	out[gindex] = result;
 >}
 >```
+>
+>I need to execute `__syncthreads()` as I have no guarantee on the threads order. In particular I may have problems if `lindex+RADIUS` contains the halo (if a thread wants 32nd element but the thread that had to load that element haven’t already been executed)
 
