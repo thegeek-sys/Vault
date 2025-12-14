@@ -3,6 +3,11 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
+## Index
+- [[#Shared memory|Shared memory]]
+- [[#Constant memory|Constant memory]]
+- [[#Performance estimation|Performance estimation]]
+---
 ## Introduction
 There are multiple types of memories, some on-chip and some off-chip
 
@@ -66,8 +71,8 @@ The `__shared__` specifier can be used to indicate that some data must go in the
 >		temp[lindex+BLOCK_SIZE] = in[gindex+BLOCK_SIZE]
 >	}
 >	
->	// make sure that every thread has loaded the data, so that the for
->	// does not read ghost data
+>	// make sure that every thread has loaded the data, so
+>	// that the for does not read ghost data
 >	__syncthreads();
 >	
 >	// apply the stencil
@@ -204,6 +209,8 @@ By saving variables in constant memory:
 
 Today we have systems capable of 1 ExaFLOP/s (i.e., $10^{18} \text{FLOP/s}$)
 
+We define the **compute-to-global-memory access ratio** as the number of floating-point calculation performed for each access to the global memory within a region of a program (also knwon as arithmetic/operational intensity, measured in $\text{FLOW}/byte$)
+
 >[!example]
 >```c
 >pixVal += in[cureRow * w + curCol];
@@ -219,4 +226,5 @@ Today we have systems capable of 1 ExaFLOP/s (i.e., $10^{18} \text{FLOP/s}$)
 >Let’s suppose that the peak floating-point rate of this GPU is $1500\text{ GFLOP/s}$
 >
 >This limits the execution rate to $3.3\%$ of the peak floating-point execution rate of the device (i.e., the memory movement to/from the memory, rather than the compute capacity, is limiting our performance)
-
+>
+>To achieve the peak $1.5\text{ TFLOP/s}$ rating of the processor, we need a ration of $30$ or higher (i.e., we would need to perform 30 floating-point operations on every operand)
