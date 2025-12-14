@@ -148,7 +148,7 @@ SHA is the most widely used hash algorithm
 >- store $H(F)$ for each file on a system and secure the hash values
 
 ### Message Authentication Code
-The **Message Authentication Code** (*MAC*) is typically a part of the result of applying an encryption algorithm to a message then attached to the message and used by the receiver to assure authentication
+The **Message Authentication Code** (*MAC*) is typically a part of the result of applying an encryption algorithm to a message then attached to the message and used by the receiver to assure authentication. A number of algorithms could be used to generate the code (i.e. DES or AES), however authentication algorithm need not to be reversible
 
 ![[Pasted image 20251009224654.png|450]]
 
@@ -197,7 +197,7 @@ In board terms, we can classify the use of public-key cryptosystems into three c
 
 #### Requirements
 - computationally easy to create key pairs
-- computationallly easy for sender knowing public key to encrypt messages
+- computationally easy for sender knowing public key to encrypt messages
 - computationally easy for receiver, knowing private key, to decrypt ciphertext
 - useful if either key can be used for each role
 - computationally infeasible for opponent to otherwise recover original message
