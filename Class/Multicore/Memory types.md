@@ -164,16 +164,59 @@ By saving variables in constant memory:
 >```
 
 >[!example] Image Blur (simplified)
->
+>```c
+>__global__ void blurKernel(unsigned char* in, unsigned char* out,
+>							int W, int h) {
+>	int Col = threadIdx.x + blockIdx.x * blockDim.x;
+>	int Row = threadIdx.y + blockIdx.y * blockDim.y;
+>	
+>	if (Col < width && Row < height) {
+>		int pixVal = 0;
+>		int pixels = 0;
+>		
+>		// get the average of the surrounding
+>		// BLUR_SIZE x BLUR_SIZE box
+>		for(int blur=-BLUR_SIZE; blurRow<BLUR_SIZE+1; ++blurRow) {
+>			for(int blurCol=-BLUR_SIZE; blurCol<BLUR_SIZE;++blurCol) {
+>				int curRow = Row + blurRow;
+>				int curCol = Col + blurCol;
+>				// verify we have a valid image pixel
+>				if(curRow>-1 && curRow<h && curCol>-1 && curCol<w) {
+>					pixVal += in[curRow*w + curCol];
+>					pixels++; // keep track of number of pixels in avg
+>				}
+>			}
+>		}
+>	}
+>	
+>	// write our new pixel value out
+>	out[Row*w+Col] = (unsigned char)(pixVal/pixels);
+>}
+>```
 
-```c
-__global__ void blurKernel(unsigned char* in, unsigned char* out,
-							int W, int h) {
-	int Col = threadIdx.x + blockIdx.x * blockDim.x;
-	int Row = threadIdx.y + blockIdx.y * blockDim.y;
-	
-	if (Col < width && Row < height) {
-		int pixVal = 0;
-	}
-}
-```
+---
+## Performance estimation
+
+>[!question] How can we measure performance to have an idea of whether we are saturating the computational capabilities of the hardware?
+>We use $\text{FLOP/s}$ (i.e., floating-point operations per second)
+>
+>>[!question] What type of floating-point? 64-bit, 32-bit, 16-bit, …?
+
+Today we have systems capable of 1 ExaFLOP/s (i.e., $10^{18} \text{FLOP/s}$)
+
+>[!example]
+>```c
+>pixVal += in[cureRow * w + curCol];
+>```
+>
+>All threads access global memory for their input matrix elements. Let’s suppose that the global memory bandwidth is $200\text{ GB/s}$
+>
+>>[!question] How many operands can we load?
+>>$$\frac{200\text{ GB/s}}{4\text{ bytes}}=50G \text{ operands/s}$$
+>
+>We do one floating-point operation (`+=`) on each operand. Thus, we can expect, in the best case, a peak performance of $50\text{ GFLOP/s}$
+>
+>Let’s suppose that the peak floating-point rate of this GPU is $1500\text{ GFLOP/s}$
+>
+>This limits the execution rate to $3.3\%$ of the peak floating-point execution rate of the device (i.e., the memory movement to/from the memory, rather than the compute capacity, is limiting our performance)
+
