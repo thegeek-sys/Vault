@@ -124,4 +124,12 @@ By saving variables in constant memory:
 >$$\text{Number of columns} = 3 \times  \text{Number of pixels in a row}$$
 >
 >To convert the pixel to grey scale:
->$$L=r\cdot 0.21$$
+>$$L=r\cdot 0.21 + g \cdot 0.72 + b\cdot 0.07$$
+>
+>The pixels can be calculated independently from each other
+>![[Pasted image 20251214171255.png]]
+>
+>>[!warning]
+>>![[Pasted image 20251214171430.png]]
+>>Some threads in some blocks (those in the 2, 3, 4 areas) do not have any pixel to process
+>>Each threads should check if it has a pixel to process or not
