@@ -139,17 +139,41 @@ By saving variables in constant memory:
 >
 >After assigning the `Col` and `Row` we will need to linearize the 2D matrix and to get the corresponding location for each element
 >![[Pasted image 20251214172138.png]]
+>
+>```c
+>// we have 3 channels corresponding to RGB
+>// the input image is encoded as unsigned characters [0, 255]
+>__global__ void colorToGreyScale(unsigned char* Pout, unsigned 
+>								char* Pin int width, int height) {
+>	int Col = threadIdx.x + blockIdx.x * blockDim.x;
+>	int Row = threadIdx.y + blockIdx.y * blockDim.y;
+>	if (Col < width && Row < height) {
+>		// get 1D coordinate for the greyscale image linearized
+>		int greyOffset = Row*width + Col;
+>		// one can think of the RGB image haveing CHANNEL times
+>		// comumns than the grayscale image (rgb=3)
+>		int rgbOffset = greyOffset*CHANNELS;
+>		unsigned char r = Pin[rgbOffset];   // red value for pixel
+>		unsigned char g = Pin[rgbOffset+1]; // green value for pixel
+>		unsigned char b = Pin[rgbOffset+2]; // green value for pixel
+>		
+>		// perform the rescaling and store it
+>		Pout[grayOffset] = 0.21f*r + 0.71f*g + 0.07f*b
+>	}
+>}
+>```
+
+>[!example] Image Blur (simplified)
+>
 
 ```c
-// we have 3 channels corresponding to RGB
-// the input image is encoded as unsigned characters [0, 255]
-__global__ void colorToGreyScale(unsigned char* Pout, unsigned char* Pin
-								int width, int height) {
+__global__ void blurKernel(unsigned char* in, unsigned char* out,
+							int W, int h) {
 	int Col = threadIdx.x + blockIdx.x * blockDim.x;
 	int Row = threadIdx.y + blockIdx.y * blockDim.y;
+	
 	if (Col < width && Row < height) {
-		// get 1D coordinate for the greyscale image linearized
-		int greyOffset = Row*width + Col;
+		int pixVal = 0;
 	}
 }
 ```
