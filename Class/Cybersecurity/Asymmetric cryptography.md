@@ -67,8 +67,24 @@ The way of doing this is by encrypting message digest (or the message) using one
 >[!example]
 >![[Pasted image 20251214100044.png|400]]
 
->[!info] Cryptography in today life
+>[!example] Cryptography in today life
 >Symmetric and asymmetric cryptography are used together. Asymmetric encryption is used to exchange a key that is used in symmetric cryptography , os that only few encryptions are done using PKC (RSA) while all the traffic is encrypted with SC (AES)
 >
 >![[Pasted image 20251214100849.png|400]]
+>
+>>[!info] Digital envelope
+>>In this case you use asymmetric encryption to encrypt the symmetric key. Then the message (encrypted with the symmetric key) and the encrypted symmetric key are sent to the receiver.
+>>
+>>The receiver now has to decrypt the symmetric key using it’s private asymmetric key and then he can decrypt the message using the symmetric key
+>>
+>>![[Pasted image 20251010110703.png|500]]
+>
+>>[!question] Can we trust a public key?
+>>The diagram illustrates a **Man-in-the-Middle (MITM)** attack . When the user requests the public key, an attacker intercepts the communication and substitutes the legitimate key with their own false public key. The unsuspecting user then encrypts sensitive data (like payment details) with the attacker's key. The attacker intercepts the data, decrypts it, reads the private information, re-encrypts the original message using the _actual_ public key of the store, and forwards it.
+>>
+>>The consequence is that the legitimate sender (the store) receives the message and believes the communication was secure, while the attacker has successfully eavesdropped on the confidential transaction. This highlights that Public-Key Cryptography alone is not enough; a mechanism, such as **Digital Certificates** issued by a **Certificate Authority (CA)**, is required to authenticate the ownership of public keys.
+>>
+>>![[Pasted image 20251214101318.png]]
 
+---
+## Digital certificates
