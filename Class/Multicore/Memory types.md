@@ -52,6 +52,7 @@ The `__shared__` specifier can be used to indicate that some data must go in the
 >__global__ void stencil_1d(int *in, int *out) {
 >	// adding padding at the beginning and ath the end of the array
 >	// (2*RADIUS)
+>	// BLOCK_SIZE -> number of elements for each thread
 >	__shared__ int temp[BLOCK_SIZE + 2 * RADIUS];
 >	int gindex = threadIdx.x + blockIdx.x * blockDim.x;
 >	// in posizione threadId.x non sto considerando halo, devo aggiungere radius
