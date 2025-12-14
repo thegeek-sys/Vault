@@ -12,5 +12,6 @@
   "find-unlinked-files",
   "omnisearch",
   "text-extractor",
-  "obsidian-git"
+  "obsidian-git",
+  "image-captions"
 ]

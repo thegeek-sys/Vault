@@ -130,6 +130,26 @@ By saving variables in constant memory:
 >![[Pasted image 20251214171255.png]]
 >
 >>[!warning]
->>![[Pasted image 20251214171430.png]]
+>>![[Pasted image 20251214171430.png|Convering a $76 \times 62$ picture with $16 \times 16$ blocks]]
 >>Some threads in some blocks (those in the 2, 3, 4 areas) do not have any pixel to process
 >>Each threads should check if it has a pixel to process or not
+>
+>Before writing the code let’s see what we will have.
+>![[Pasted image 20251214171959.png]]
+>
+>After assigning the `Col` and `Row` we will need to linearize the 2D matrix and to get the corresponding location for each element
+>![[Pasted image 20251214172138.png]]
+
+```c
+// we have 3 channels corresponding to RGB
+// the input image is encoded as unsigned characters [0, 255]
+__global__ void colorToGreyScale(unsigned char* Pout, unsigned char* Pin
+								int width, int height) {
+	int Col = threadIdx.x + blockIdx.x * blockDim.x;
+	int Row = threadIdx.y + blockIdx.y * blockDim.y;
+	if (Col < width && Row < height) {
+		// get 1D coordinate for the greyscale image linearized
+		int greyOffset = Row*width + Col;
+	}
+}
+```
