@@ -11,5 +11,6 @@
   "vscode-editor",
   "find-unlinked-files",
   "omnisearch",
-  "text-extractor"
+  "text-extractor",
+  "obsidian-git"
 ]

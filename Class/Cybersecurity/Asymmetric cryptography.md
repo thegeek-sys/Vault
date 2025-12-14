@@ -67,4 +67,8 @@ The way of doing this is by encrypting message digest (or the message) using one
 >[!example]
 >![[Pasted image 20251214100044.png|400]]
 
->[!]
+>[!info] Cryptography in today life
+>Symmetric and asymmetric cryptography are used together. Asymmetric encryption is used to exchange a key that is used in symmetric cryptography , os that only few encryptions are done using PKC (RSA) while all the traffic is encrypted with SC (AES)
+>
+>![[Pasted image 20251214100849.png|400]]
+
