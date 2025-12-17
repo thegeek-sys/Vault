@@ -102,15 +102,19 @@ A certification authority is an organization that issues digital certificates. T
 - keep a register of valid keys
 - revoke and delete keys that are invalid or expired and maintain a certificate revocation list (CRL)
 
-Certificates of CAs are stored in any computer that want to use internet securely
+Certificates of CAs are stored in any computer that want to use internet securely.
+A user can present his/her public key to the authority in a secure manner to obtain a certificate, so that he can then publish it (or send it to others) to make possible for everyone to obtain and verify the certificate 
+
+>[!question] How does HTTPS works?
+>![[Pasted image 20251217155056.png]]
 
 ### Public Key Infrastructure
 ![[Pasted image 20251217153655.png|300]]
 
 Certification authorities are organized in a hierarchy, called  **Public Key Infrastructure** (*PKI*), so to verify a certificate, one needs to verify all the signatures up to the top of the hierarchy
 
->[!info]
->The standard is X.509
+>[!info] Architectural model
+>![[Pasted image 20251217154551.png|400]]
 
 #### X.509
 This standard is specified in RFC 5280 and is the most widely accepted format for public-key certificates, which are used in most network security applications, including:
@@ -119,3 +123,19 @@ This standard is specified in RFC 5280 and is the most widely accepted format fo
 - secure electronic transactions (SET)
 - S/MIME
 - eBusiness applications
+
+>[!quote] Certificate definition
+>A public key with the identity of the key’s owner signed by a trusted third party
+>Typically the third party is a CA that is trusted by the user community (such as a government agency, telecommunications company, financial institution, or other trusted peak organization)
+
+>[!info] X.509 certificate
+>![[Pasted image 20251217154507.png]]
+>
+>>[!example] Variants
+>>A number of specialized variants also exist, distinguished by particular element values or the presence of certain extensions:
+>>- conventional (long-lived) certificates → CA and “end user” certificates, typically issued for validity periods of months to years
+>>- short-lived certificates → used to provide authentication for applications such as grid computing, while avoiding some of the overheads and limitations of conventional certificates; they have validity periods of hours to days, which limits the period of misuse if compromised because they are usually not issued by recognized CA’s there are issued with verifying them outside their issuing organization
+>>- other → proxy certificates, attribute certificates
+
+---
+## RSA
