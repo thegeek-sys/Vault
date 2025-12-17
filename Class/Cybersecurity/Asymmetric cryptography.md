@@ -93,3 +93,29 @@ A digital certificate is a document that certifies the relation between a public
 Trusted public keys are stored in certificates of **Certification Authorities** (*CA*)
 
 ![[Pasted image 20251217152714.png]]
+
+### Certification authority
+A certification authority is an organization that issues digital certificates. The CA performs many tasks:
+- receive application for keys
+- verify applicant’s identity, conduct due diligence appropriate to the trust level, and issue key pairs
+- store public keys and protect them from unauthorized modification
+- keep a register of valid keys
+- revoke and delete keys that are invalid or expired and maintain a certificate revocation list (CRL)
+
+Certificates of CAs are stored in any computer that want to use internet securely
+
+### Public Key Infrastructure
+![[Pasted image 20251217153655.png|300]]
+
+Certification authorities are organized in a hierarchy, called  **Public Key Infrastructure** (*PKI*), so to verify a certificate, one needs to verify all the signatures up to the top of the hierarchy
+
+>[!info]
+>The standard is X.509
+
+#### X.509
+This standard is specified in RFC 5280 and is the most widely accepted format for public-key certificates, which are used in most network security applications, including:
+- IP security (IPSEC)
+- secure socket layer (SSL)
+- secure electronic transactions (SET)
+- S/MIME
+- eBusiness applications
