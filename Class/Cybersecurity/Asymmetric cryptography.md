@@ -155,3 +155,6 @@ $$
 $$
 where both sender and receiver know the values of $n$ and $e$, but only receiver knows the value of $d$
 
+The keys are:
+- public key → $PU=\{e,n\}$
+- private key → $PR=\{d,n\}$
