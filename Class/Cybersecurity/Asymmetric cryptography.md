@@ -158,3 +158,10 @@ where both sender and receiver know the values of $n$ and $e$, but only receiver
 The keys are:
 - public key → $PU=\{e,n\}$
 - private key → $PR=\{d,n\}$
+
+>[!info] RSA principles
+>- consider blocks as large numbers, for example $2048$ bit long number ($\sim 617$ decimal long number)
+>- uses the modular arithmetic (residual), for example $73=70+3=14*5+3\to 73\text{ mod }5=3$
+>- encryption and decryption are based on the concept of modular inverses, for example $X$ is the inverse of $Y$ modulo $Z$ if $X\cdot Y=1\text{ mod }Z$ then $(m^X)^Y=m^1=m$
+
+### RSA algorithm
