@@ -139,3 +139,19 @@ This standard is specified in RFC 5280 and is the most widely accepted format fo
 
 ---
 ## RSA
+RSA algorithm was created by Rivest, Shamir, and Adelman in 1977 and it’s based on the notion that a product of two large prime numbers cannot be easily factored to determine the two prime numbers
+
+>[!hint]
+>Although a public key is related to private key, it is nearly impossible to calculate the private key using the knowledge of its related public key
+>
+
+RSA is the best known and widely used public key algorithm and uses exponentiation of integers modulo a large number
+
+$$
+\text{encrypt: } C=M^e \text{ mod } n
+$$
+$$
+\text{decrypt: } M=C^d \text{ mod } n=(M^e)^d \text{ mod }n=M
+$$
+where both sender and receiver know the values of $n$ and $e$, but only receiver knows the value of $d$
+
