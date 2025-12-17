@@ -164,4 +164,16 @@ The keys are:
 >- uses the modular arithmetic (residual), for example $73=70+3=14*5+3\to 73\text{ mod }5=3$
 >- encryption and decryption are based on the concept of modular inverses, for example $X$ is the inverse of $Y$ modulo $Z$ if $X\cdot Y=1\text{ mod }Z$ then $(m^X)^Y=m^1=m$
 
-### RSA algorithm
+### Keys generations
+First of all two robust prime numbers $p$ and $q$ are chosen, then $n$m that composes both public and private keys is calculated as $n=p\cdot q$ → $n$ 
+
+At this point is Euler’s Totient Functions $\phi(n)$ is applied (the number of positive numbers less than $n$ that are prime to $n$) as it follows
+$$
+\phi(p\cdot q)=(p-1)(q-1)
+$$
+
+To choose the exponent $e$ for the public key this rules are followed:
+- $1<e<\phi(n)$
+- $e$ has to be coprime to $\phi(n)$ (the greatest common divisor between $e$ and $\phi (n)$ has to be $1$)
+
+The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(n)$ so that $d\cdot e\equiv 1 \text{ mod } \phi(n)$
