@@ -59,7 +59,7 @@ In this way is only guaranteed authentication, not confidentiality
 
 ---
 ## Digital signature
-A signature testifies/acknowledges some content; the signed links/binds himself to the content. So a digital signature is a way of electronically binding oneself to the content of a message or a document.
+A signature testifies/acknowledges some content; the signer links/binds himself to the content. So a digital signature is a way of electronically binding oneself to the content of a message or a document.
 The way of doing this is by encrypting message digest (or the message) using one’s private key
 
 ![[Pasted image 20251214100018.png]]
@@ -88,3 +88,8 @@ The way of doing this is by encrypting message digest (or the message) using one
 
 ---
 ## Digital certificates
+A digital certificate is a document that certifies the relation between a public key and its owner though a digital signature, but to verify a digital signature we need another public key. For this reason we need a globally trusted public key
+
+Trusted public keys are stored in certificates of **Certification Authorities** (*CA*)
+
+![[Pasted image 20251217152714.png]]
