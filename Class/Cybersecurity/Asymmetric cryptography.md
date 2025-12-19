@@ -231,3 +231,5 @@ The security of this algorithm relies on the difficulty of computing discere log
 >[!example] Key exchange protocol
 >![[Pasted image 20251219100012.png]]
 
+>[!example] Diffie-Hellman example
+>Key exchange is base on the use of the prime number $q=353$ and a primitive root of $353$, in this case $\alpha=3$
