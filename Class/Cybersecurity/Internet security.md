@@ -53,6 +53,16 @@ It operates as follows:
 
 ---
 ## Domain Keys Identifier Mail (DKIM)
-Domain Keys Identifier Mail is a specification of cryptographically signing e-mail messages permitting a signing domain (organization) to claim responsibility for a message in the mail stream
+Domain Keys Identifier Mail is a specification of cryptographically signing e-mail messages permitting a signing domain (organization) to claim responsibility for a message in the mail stream (used to guarantee who is the sender)
 
-It was firstly proposed in the Internet Standard (RFC 4871) and has been widely adopted by a range of e-mail prodivers
+It was firstly proposed in the Internet Standard (RFC 4871) and has been widely adopted by a range of e-mail providers
+
+>[!info] Internet mail architecture (RFC 5598)
+>![[Pasted image 20251219175604.png|500]]
+>
+>where:
+>- MHS → message handling system
+>- MTA → mail transfer agent
+>- MUA → mail user agent
+>- MDA → mail delivery agent
+>- (E)SMTP → extended simple mail transfer protocol
