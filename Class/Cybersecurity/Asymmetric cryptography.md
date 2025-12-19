@@ -280,3 +280,14 @@ The security of this algorithm relies on the difficulty of computing discere log
 - El Gamal
 	- based on the Diffie-Hellman secret- public key scheme
 	- its security depends on the difficulty of computing discrete logarithms
+
+---
+## Post-quantum cryptography
+Growing concern: future developments in quantum computers may enable the efficient solution of the hard problems of public key
+schemes. For this reason NIST started a project to identify and standardize algorithms that resist future cyberattacks
+
+In NISTIR 8413, they announced the selection of the first four such algorithms:
+- CRYSTALS–KYBER
+- CRYSTALS–Dilithium
+- FALCON
+- SPHINCS
