@@ -180,4 +180,5 @@ The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(
 
 >[!example]
 >Setup:
->- $p=187$
+>- $n=187$ → $p=11$
+>- $e=7$
