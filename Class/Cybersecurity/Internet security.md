@@ -10,4 +10,4 @@ MIME is an extension to the old RFC 822 specification of an Internet mail format
 It provides a number of new header fields that define information about the body of the message
 
 ### S/MIME
-Secure/Miltipurpose Internet Mail Extension
+S/MIME (Secure/Miltipurpose Internet Mail Extension) is a security enhancement to the MIME Internet e-mail format 
