@@ -216,3 +216,18 @@ Timing attacks are applicable not just to RSA, but also to other public-key cryp
 >- random delay
 >	- better performance could be achieved by adding a random delay to the exponentiation algorithm to confuse the timing attacks
 >	- if defenders do not add enough noise, attackers could still success by collecting additional measurements to compensate for the random delays
+>- blinding
+>	- multiply the ciphertext by a random number before performing exponentiation
+>	- this process prevents the attacker from knowing what ciphertext bits are being processed inside the computer and therefore prevents the bit-by-bit analysis essential to the timing attack
+
+---
+## Diffie-Hellman key exchange
+The Diffie-Hellman algorithm is the first published public-key algorithm by Diffie and Hellman in 1976 along with the exposition of public key concepts
+
+It is currently used in a number of commercial products as a practical method to exchange a secret key securely that can be used for subsequent encryption of messages
+
+The security of this algorithm relies on the difficulty of computing discere logarithms
+
+>[!example] Key exchange protocol
+>![[Pasted image 20251219100012.png]]
+
