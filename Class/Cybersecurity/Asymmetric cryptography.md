@@ -200,3 +200,4 @@ The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(
 ### Security of RSA
 - brute force → involves trying all possible private keys
 - mathematical attacks → there are several approaches, all equivalent in effort to factoring the product of two primes
+- timing attacks → these depend on the running time of the decryption algorithm
