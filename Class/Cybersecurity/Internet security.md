@@ -108,3 +108,15 @@ The TLS record protocol provides two services:
 - confidentiality → the Handshake Protocol defines a shared secret key that is used for symmetric encryption of TLS payloads
 - message integrity → the Handshake Protocol also defines a shared secret key that is used to form a message authentication code (MAC)
 
+The TLS record protocols is composed from 4 smaller protocols:
+- **Change Cipher Spec Protocol**
+- **Alert Protocol**
+- **Handshake Protocol**
+- **Heartbeat Protocol**
+
+### Change Cipher Spec Protocol
+It the the simplest protocol between the four. It consists of a single message composed of a single byte of 1s.
+
+The sole purpose of this message is to cause pending state to be copied into the current state, to tell the receiver to stop using previous parameters and to start using a new cipher suite
+
+### Alert Protocol
