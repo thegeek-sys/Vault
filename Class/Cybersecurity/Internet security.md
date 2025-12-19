@@ -46,4 +46,6 @@ Default algorithms used for encrypting S/MIME message are AES and RSA
 It operates as follows:
 - S/MIME generates a pseudorandom secret key that it used to encrypt the message using AES or some other conventional encryption scheme
 - a new pseudorandom key is generated for each new message encryption
-- this session key is bound to the message and transmitted with it 
+- this session key is bound to the message and transmitted with it
+- the secret key is used as input to the public-key encryption algorithm, RSA, which encrypts the key with the recipient’s public RSA key
+- on the receiving end, S/MIME uses the receiver’s private RSA key to recover the secret key, then uses the secret key and AES to recover the plaintext message
