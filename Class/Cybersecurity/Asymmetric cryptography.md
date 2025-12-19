@@ -180,5 +180,23 @@ The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(
 
 >[!example]
 >Setup:
->- $n=187$ → $p=11$
->- $e=7$
+>- $n=187$ → $p=11$ and $q=17$
+>- $\phi (n)=10\cdot 16=160$
+>- $e=7$ → the greatest common divisor between $160$ and $23$ is $1$
+>- $d=23$ → $23\cdot 7 \text{ mod } 160=161\text{ mod }160=1$
+>
+>Keys:
+>- $PU=(7, 187)$
+>- $PR=(23,187)$
+>
+>Encryption ($M=88$):
+>- $C=88^7\text{ mod }187=11$
+>
+>Decryption ($C=11$):
+>- $M=11^{23}\text{ mod }187=88$
+>
+>![[Pasted image 20251219085939.png]]
+
+### Security of RSA
+- brute force → involves trying all possible private keys
+- mathematical attacks → there are several approaches, all equivalent in effort to factoring the produtct of two primes
