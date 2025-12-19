@@ -177,3 +177,7 @@ To choose the exponent $e$ for the public key this rules are followed:
 - $e$ has to be coprime to $\phi(n)$ (the greatest common divisor between $e$ and $\phi (n)$ has to be $1$)
 
 The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(n)$ so that $d\cdot e\equiv 1 \text{ mod } \phi(n)$
+
+>[!example]
+>Setup:
+>- $p=187$
