@@ -85,4 +85,4 @@ DKIM is not implemented in client programs (MUAs) and is therefore transparent t
 
 ---
 ## Secure Sockets Layer (SSL) and Transport Layer Security (TLS)
-SSL/TLS is one of the most widely used security service. It is a general-purpose service implemented as a set of protocols that rely on TC
+SSL/TLS is one of the most widely used security service. It is a general-purpose service implemented as a set of protocols that rely on TCP
