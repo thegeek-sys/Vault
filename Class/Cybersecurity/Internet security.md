@@ -27,3 +27,14 @@ It provides the ability to sign and/or encrypt e-mail messages
 
 #### Decrypt + verify
 ![[Pasted image 20251219114203.png|500]]
+
+#### Signed and Clear-Signed data
+The preferred algorithms used for signing S/MIME messages use either an RSA os a DSA signature of a SHA-256 message hash
+
+The process works as follows:
+- take the message you want to send and map it into fixed-length code of 256 bits using SHA-256
+- the 256 bit message digest is unique for this message making it virtually impossible for someone to alter this message or substitute another message and still come up with the same digest
+- S/MIME encrypts the digest using RSA and the sender’s private RSA key
+- the result is the digital signature, which is attacked to the message
+
+Now
