@@ -200,4 +200,19 @@ The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(
 ### Security of RSA
 - brute force → involves trying all possible private keys
 - mathematical attacks → there are several approaches, all equivalent in effort to factoring the product of two primes
-- timing attacks → these depend on the running time of the decryption algorithm
+- timing attacks → these depend on the running time of the decryption algorithm (trying to discover a private key by observing how long it takes to perform cryptographic operations)
+- chosen ciphertext attacks → this type of attack exploits properties of the RSA algorithm
+
+#### Timing attacks
+Paul Kocher, a cryptographic consultant, demonstrated that a snooper can determine a private key by keeping track of how long a computer takes to decipher messages
+
+Timing attacks are applicable not just to RSA, but also to other public-key cryptography systems. This attack is alarming for two reasons:
+- it comes from a completely unexpected
+- it is a ciphertext-only attack
+
+>[!info] Countermeasures
+>- constant exponentiation time
+>	- ensure that all exponentiations take the same amount of time before returning a result (simple fix but degrades performance)
+>- random delay
+>	- better performance could be achieved by adding a random delay to the exponentiation algorithm to confuse the timing attacks
+>	- if defenders do not add enough noise, attackers could still success by collecting additional measurements to compensate for the random delays
