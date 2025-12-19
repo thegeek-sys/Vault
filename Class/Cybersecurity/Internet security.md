@@ -66,3 +66,21 @@ It was firstly proposed in the Internet Standard (RFC 4871) and has been widely 
 >- MUA → mail user agent
 >- MDA → mail delivery agent
 >- (E)SMTP → extended simple mail transfer protocol
+
+DKIM is designed to provide an e-mail authentication technique that is transparent to the end user. A user’s e-mail message is signed by a private key of the administrative domain from which the e-mail originates.
+The signature covers all of the content of the message and some message headers. At the receiving end, the MDA can access the corresponding public key via a DNS and verify the signature, thus authenticating that the message comes from the claimed administrative domain
+
+![[Pasted image 20251219180458.png|400]]
+
+A DKIM record stores the DKIM public key and e-mail servers query the domain’s DNS records to see the DKIM record and view the public key
+
+>[!example] Example of DKIM record
+>![[Pasted image 20251219180641.png|500]]
+
+### S/MIME and DKIM comparison
+S/MIME depends on both the sending and receiving users employing S/MIME. For almost all users, the bulk of incoming mail does not use S/MIME, and the bulk of the mail the user wants to send is to recipients not using S/MIME
+S/MIME signs only the message content. Thus, header information concerning origin can be compromised
+
+DKIM is not implemented in client programs (MUAs) and is therefore transparent to the user (the user need take no action). DKIM applies to all mail from cooperating domains and allows good senders to prove that they did send a particular message and to prevent forgers from masquerading as good senders
+
+---
