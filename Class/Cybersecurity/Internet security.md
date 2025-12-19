@@ -21,3 +21,9 @@ It provides the ability to sign and/or encrypt e-mail messages
 - signed data → encoded message + signed digest
 - clear-signed data → cleartext message + encoded signed digest
 - signed and enveloped data → nesting of signed and encrypted entities
+
+#### Sign + encrypt
+![[Pasted image 20251219114110.png|500]]
+
+#### Decrypt + verify
+![[Pasted image 20251219114203.png|500]]
