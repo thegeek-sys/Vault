@@ -120,3 +120,9 @@ It the the simplest protocol between the four. It consists of a single message c
 The sole purpose of this message is to cause pending state to be copied into the current state, to tell the receiver to stop using previous parameters and to start using a new cipher suite
 
 ### Alert Protocol
+Alert Protocol conveys TLS-related alerts to peer entity. Alert messages are compressed and encrypted and each message consists of two bytes:
+- first byte takes the value warning (1) or fatal (2) to convey the severity of the message; if the level is fatal, TLS immediately terminates the connection. Other connections on the same session may continue, but no new connections on this session may be established
+- second byte contains a code that indicates the specific alert
+
+### Handshake Protocol
+It is the most complex part of TLS
