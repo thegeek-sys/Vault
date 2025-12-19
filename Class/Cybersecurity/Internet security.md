@@ -43,3 +43,7 @@ Since this operation only involves encrypting and decrypting a 256-bit block, it
 #### Evenloped data
 Default algorithms used for encrypting S/MIME message are AES and RSA
 
+It operates as follows:
+- S/MIME generates a pseudorandom secret key that it used to encrypt the message using AES or some other conventional encryption scheme
+- a new pseudorandom key is generated for each new message encryption
+- this session key is bound to the message and transmitted with it 
