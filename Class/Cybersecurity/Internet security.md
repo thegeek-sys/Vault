@@ -85,4 +85,26 @@ DKIM is not implemented in client programs (MUAs) and is therefore transparent t
 
 ---
 ## Secure Sockets Layer (SSL) and Transport Layer Security (TLS)
-SSL/TLS is one of the most widely used security service. It is a general-purpose service implemented as a set of protocols that rely on TCP
+SSL/TLS is one of the most widely used security service. It is a general-purpose service implemented as a set of protocols that rely on TCP, meaning that it can protect any kind of traffic that uses secure connection
+
+TLS and SSL are the same protocol, but SSL is the original name of the protocol that was then standardized into TLS in Internet Standard (RFC 4346)
+
+There are two implementation choices:
+- provided as part of the underlying protocol suite (directly provided from the OS)
+- embedded in applications
+
+>[!info] SSL/TLS protocol stack
+>![[Pasted image 20251219182150.png|400]]
+
+>[!tldr] TLS concepts
+>**TLS session** is an association between a client and a server, created by the handshake protocol. It defines a set of cryptographic security parameters and is used to avoid the expensive negotiation of new security parameters for each connection
+>
+>**TLS connection** is a transport (in the OSI layering model definition) that provides a suitable type of service providing transient peer-to-peer relationships where every connection is associated with one session
+
+### TLS Record Protocol operations
+![[Pasted image 20251219182731.png]]
+
+The TLS record protocol provides two services:
+- confidentiality → the Handshake Protocol defines a shared secret key that is used for symmetric encryption of TLS payloads
+- message integrity → the Handshake Protocol also defines a shared secret key that is used to form a message authentication code (MAC)
+
