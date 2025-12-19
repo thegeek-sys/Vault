@@ -37,4 +37,9 @@ The process works as follows:
 - S/MIME encrypts the digest using RSA and the sender’s private RSA key
 - the result is the digital signature, which is attacked to the message
 
-Now
+Now anyone who hets the message can recompute the message digest then decrypt the signature using RSA and the sender’s public RSA key.
+Since this operation only involves encrypting and decrypting a 256-bit block, it take up little time
+
+#### Evenloped data
+Default algorithms used for encrypting S/MIME message are AES and RSA
+
