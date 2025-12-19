@@ -228,8 +228,55 @@ It is currently used in a number of commercial products as a practical method to
 
 The security of this algorithm relies on the difficulty of computing discere logarithms
 
->[!example] Key exchange protocol
+>[!info] Key exchange protocol
 >![[Pasted image 20251219100012.png]]
 
 >[!example] Diffie-Hellman example
 >Key exchange is base on the use of the prime number $q=353$ and a primitive root of $353$, in this case $\alpha=3$
+>
+>>[!info] Primitive root
+>>A number $a$ is a **primitive root** of a prime number $p$ if the powers of a modulo $p$ generate every number from $1$ to $p−1$. In other words, a is a generator of the multiplicative group of integers modulo $p$.
+>>>[!example] Example with $p=7$
+>>>Let’s test if $3$ is a primitive root of $7$:
+>>>- $3^1=3\equiv3(\text{mod }7)$
+>>>- $3^2=9\equiv2(\text{mod }7)$
+>>>- $3^3=27\equiv6(\text{mod }7)$
+>>>- $3^4=81\equiv4(\text{mod }7)$
+>>>- $3^5=243\equiv5(\text{mod }7)$
+>>>- $3^6=729\equiv1(\text{mod }7)$
+>
+>$A$ and $B$ select secret keys $X_{A}=97$ and $X_{B}=233$, respectively
+>- $A$ computes $Y_{A}=3^{97}\text{ mod 353}=40$
+>- $B$ computes $Y_{B}=3^{253}\text{ mod 353}=248$
+>
+>After the exchange:
+>- $A$ computes $K=(Y_{B})^{X_{A}} \text{ mod } 353=248^{97}\text{ mod }353=160$
+>- $B$ computes $K=(Y_{A})^{X_{B}} \text{ mod } 353=40^{233}\text{ mod }353=160$
+>
+>>[!danger] Attack
+>>The attacker must solve $3^\alpha \text{ mod }353=40$ or $3^b\text{ mod }353=248$ which are hard
+
+>[!example] Man-in-the-middle attack
+>- Darth generates a private key $X_{D_{1}}$ and $X_{D_{2}}$, and their public keys $Y_{D_{1}}$ and $Y_{D_{2}}$
+>- Alice transmits $Y_{A}$ to Bob
+>- Darth intercepts $Y_{A}$ and transmits $Y_{D_{1}}$ to Bob. Darth also calculates $K_{2}$
+>- Bob receives $Y_{D_{1}}$ and calculates $K_{1}$
+>- Bob transmits $X_{A}$ to Alice
+>- Darth intercepts $X_{A}$ and transmits $Y_{D_{2}}$ to Alice. Darth calculates $K_{1}$
+>- Alice receives $Y_{D_{2}}$ and calculates $K_{2}$
+>- all subsequent communications are compromised
+
+---
+## Other public-key algorithms
+- Digital Signature Standard (DSS)
+	- makes use of SHA-1 and the Digital Signature Algorithm (DSA)
+	- originally proposed in 1991, revised in 1993 due to security concerns, and another minor revision in 1996
+	- cannot be used for encryption or key exchange
+	- uses an algorithm that is designed to provide only the digital signature function
+- Elliptic-Curve Cryptography (ECC)
+	- equal security for smaller bit size than RSA
+	- confidence level in ECC is not yet as high as that in RSA
+	- based on a mathematical construct known as the elliptic curve
+- El Gamal
+	- based on the Diffie-Hellman secret- public key scheme
+	- its security depends on the difficulty of computing discrete logarithms
