@@ -84,3 +84,4 @@ S/MIME signs only the message content. Thus, header information concerning origi
 DKIM is not implemented in client programs (MUAs) and is therefore transparent to the user (the user need take no action). DKIM applies to all mail from cooperating domains and allows good senders to prove that they did send a particular message and to prevent forgers from masquerading as good senders
 
 ---
+## Secure Sockets Layer (SSL) and Transport Layer Security (TLS)
