@@ -49,3 +49,10 @@ It operates as follows:
 - this session key is bound to the message and transmitted with it
 - the secret key is used as input to the public-key encryption algorithm, RSA, which encrypts the key with the recipient’s public RSA key
 - on the receiving end, S/MIME uses the receiver’s private RSA key to recover the secret key, then uses the secret key and AES to recover the plaintext message
+- if encryption is used alone, radix-64 is used to convert the ciphertext to ASCII format
+
+---
+## Domain Keys Identifier Mail (DKIM)
+Domain Keys Identifier Mail is a specification of cryptographically signing e-mail messages permitting a signing domain (organization) to claim responsibility for a message in the mail stream
+
+It was firstly proposed in the Internet Standard (RFC 4871) and has been widely adopted by a range of e-mail prodivers
