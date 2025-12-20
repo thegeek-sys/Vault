@@ -176,3 +176,7 @@ Benefits:
 - can provide security for individual users
 - secures routing architecture
 
+IPSec offers basic function, provided by separate (sub-)protocols like:
+- **Authentication Header** (AH) → support for data integrity and authentication of IP packers
+- **Encapsulated Security Payloads** (ESP) → support for encryption and (optionally) authentication
+- **Internet Key Exchange** (IKEv2)
