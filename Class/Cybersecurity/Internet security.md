@@ -201,4 +201,16 @@ In this way the users in local networks behind a firewall can communicate in a s
 >
 >Security associations are one-way relationships between the sender and the receiver that affords security for traffic flow. If a peer relationship is needed for two-way secure exchange then two security associations are required
 >
->A security association is uniquely identified by the destination address in the IPv4 or IPv6 header and the SPI in the enclosed extension header (AH or ESP)
+>A security association is uniquely identified by three parameters:
+>- security parameter index (SPI)
+>- IP destination address
+>- protocol identifier
+>
+>![[Pasted image 20251220161349.png]]
+
+---
+## Virtual Private  Network
+
+>[!quote] Definition (NIST SP800-113)
+>”A virtual network, built on top of an existing network infrastructure, which can provide a secure communications mechanism for data and other information transferred between two endpoints”
+
