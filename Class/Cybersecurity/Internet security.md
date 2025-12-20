@@ -164,3 +164,6 @@ An agent acting as the HTTP client also as the TLS client. The closure of an HTT
 
 ---
 ## IP security
+When we talk about IPSec, we mean a set of protocols born to protect communications directly at the network level. While other security mechanisms are specific for certain applications, IPSec aims to implements security directly in the network
+
+IPSec is been developed ven if authentication and encryption are included in IPv6
