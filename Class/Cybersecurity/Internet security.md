@@ -185,3 +185,18 @@ IPSec offers basic function, provided by separate (sub-)protocols like:
 >Because message authentication is provided by ESP, the use of AH is deprecated. It is included in IPSecv3 for backward compatibility but should not be used in new applications
 
 ### Transport and tunnel modes
+Transport and tunnel mode are the two main modes in which IPSec operates. This modes define which part of the packet gets protected and how the packets travels the network
+#### Transport mode
+This mode is designed for a end-to-end protection between two host that communicate. It is used to protect the payload of the IP packet. In fact the IP header is not encrypted, to make the intermediate routers to read the destination address and to route the packet.
+
+If you use the ESP protocol in this mode, it encrypts and optionally authenticates just the transferred data, leaving the IP header plain
+
+#### Tunnel mode
+Tunnel mode provides protection to the entire IP packet and it travels through a tunnel from one point to an IP network to another. It is used when one or both ends of a security association are a security gateway.
+
+In this way the users in local networks behind a firewall can communicate in a safe way without implementing IPSec on the single hosts (the gateway creates the tunnel)
+
+### Security associations
+Security associations are one-way relationships between the sender and the receiver that affords security for traffic flow. If a peer relationship is needed for two-way secure exchange then two security associations are required
+
+A security association is uniquely identified by the destination address in the IPv4 or IPv6 header and the SPI in the enclosed extension header (AH or ESP)
