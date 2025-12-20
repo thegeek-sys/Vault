@@ -196,7 +196,9 @@ Tunnel mode provides protection to the entire IP packet and it travels through a
 
 In this way the users in local networks behind a firewall can communicate in a safe way without implementing IPSec on the single hosts (the gateway creates the tunnel)
 
-### Security associations
-Security associations are one-way relationships between the sender and the receiver that affords security for traffic flow. If a peer relationship is needed for two-way secure exchange then two security associations are required
-
-A security association is uniquely identified by the destination address in the IPv4 or IPv6 header and the SPI in the enclosed extension header (AH or ESP)
+>[!info] Security associations
+>If IPSec is the safe “tunnel”, the security association is the set of rules that defines how that tunnel has to be built and managed between the two hosts
+>
+>Security associations are one-way relationships between the sender and the receiver that affords security for traffic flow. If a peer relationship is needed for two-way secure exchange then two security associations are required
+>
+>A security association is uniquely identified by the destination address in the IPv4 or IPv6 header and the SPI in the enclosed extension header (AH or ESP)
