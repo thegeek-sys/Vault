@@ -222,4 +222,17 @@ A VPN is typically based on the use of encryption, but there are several possibl
 >If a solution is to difficult to use, it won’t be used. So the VPN should be easy to use to make the people use it
 
 >[!info] Security goals
->
+>- traditional
+>	- confidentiality of data
+>	- integrity of data
+>	- peer authentication
+>- extended
+>	- replay protection
+>	- access control
+>	- traffic analysis protection
+
+>[!info] Usability goals
+>- transparency → VPN should be invisible to users, software, hardware
+>- flexibility → VPN can be used between users, applications, hosts, sites
+>- simplicity → VPN can be actually used
+
