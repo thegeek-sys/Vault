@@ -166,4 +166,13 @@ An agent acting as the HTTP client also as the TLS client. The closure of an HTT
 ## IP security
 When we talk about IPSec, we mean a set of protocols born to protect communications directly at the network level. While other security mechanisms are specific for certain applications, IPSec aims to implements security directly in the network
 
-IPSec is been developed ven if authentication and encryption are included in IPv6
+IPSec was designed as an integral part of IPv6 natively including authentication and encryption functionalities, but it is still completely implemented in IPv4
+
+Benefits:
+- when implemented in a firewall or router, it provides strong security to all traffi crossing the perimeter
+- in a firewall it is resistant to bypass
+- below transport level, hence transparent to application
+- can be transparent to end users
+- can provide security for individual users
+- secures routing architecture
+
