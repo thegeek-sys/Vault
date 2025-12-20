@@ -214,3 +214,12 @@ In this way the users in local networks behind a firewall can communicate in a s
 >[!quote] Definition (NIST SP800-113)
 >”A virtual network, built on top of an existing network infrastructure, which can provide a secure communications mechanism for data and other information transferred between two endpoints”
 
+A VPN is typically based on the use of encryption, but there are several possible choices for:
+- how to perform encryption
+- which parts of communication should be encrypted
+
+>[!warning]
+>If a solution is to difficult to use, it won’t be used. So the VPN should be easy to use to make the people use it
+
+>[!info] Security goals
+>
