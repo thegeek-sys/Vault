@@ -179,4 +179,9 @@ Benefits:
 IPSec offers basic function, provided by separate (sub-)protocols like:
 - **Authentication Header** (AH) → support for data integrity and authentication of IP packers
 - **Encapsulated Security Payloads** (ESP) → support for encryption and (optionally) authentication
-- **Internet Key Exchange** (IKEv2)
+- **Internet Key Exchange** (IKEv2) → support for key management etc.
+
+>[!info]
+>Because message authentication is provided by ESP, the use of AH is deprecated. It is included in IPSecv3 for backward compatibility but should not be used in new applications
+
+### Transport and tunnel modes
