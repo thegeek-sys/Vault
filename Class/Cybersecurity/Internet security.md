@@ -254,3 +254,6 @@ A VPN is typically based on the use of encryption, but there are several possibl
 
 ### Tunneling
 Tunneling is the operation of a network connection on top of another network connection. It allows two host or sites to communicate through another network that they do not want to use directly
+
+#### Site-to-site tunneling
+Site-to-site tunneling enables a PDU
