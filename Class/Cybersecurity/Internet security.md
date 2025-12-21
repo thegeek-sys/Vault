@@ -304,3 +304,6 @@ Anonymity on Internet is hard for many reasons:
 - wireless traffic can be trivially intercepted
 - tier 1 ASs (autonomous systems) and IXPs (internet exchange points) are compromised
 - difficult if not impossible to achieve on your own 
+
+>[!question] Why encryption is not enough?
+>Encryption only protects 
