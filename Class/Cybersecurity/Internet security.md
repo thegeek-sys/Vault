@@ -329,7 +329,8 @@ It relied on the second generation of the Onion routing protocol and uses the te
 >![[Pasted image 20251221113612.png]]
 
 The idea behind Tor is that messages are repeatedly encrypted and then sent through several network nodes called onion routers (Tor relays) so that each onion router removes a layer of encryption to uncover routing instructions, and sends the message to the next router (intermediary nodes can’t know origin, destination, and contents of the message).
-Only the first router (the guard) knows the source and the last router (the exit) knows the destination (but they do not know the path)
+
+Only the first router (the guard) knows the source and the last router (the exit) knows the destination (but they do not know the path). A guard rela
 
 ![[Pasted image 20251221113857.png|400]]
 
