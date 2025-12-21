@@ -334,6 +334,9 @@ Only the first router (the guard) knows the source and the last router (the exit
 ![[Pasted image 20251221113857.png|400]]
 
 >[!abstract] How Tor works
->![[Pasted image 20251221113935.png]]
+>![[Pasted image 20251221113935.png|500]]
 >
+>![[Pasted image 20251221114040.png|500]]
 >
+>![[Pasted image 20251221114051.png|500]]
+
