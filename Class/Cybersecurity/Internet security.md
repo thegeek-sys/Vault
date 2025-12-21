@@ -236,3 +236,15 @@ A VPN is typically based on the use of encryption, but there are several possibl
 >- flexibility → VPN can be used between users, applications, hosts, sites
 >- simplicity → VPN can be actually used
 
+>[!abstract] Kinds of protection
+>Site-to-site security
+>![[Pasted image 20251221100030.png|450]]
+>
+>Host-to-site security
+>![[Pasted image 20251221100046.png|450]]
+>
+>Host-to-host security
+>![[Pasted image 20251221100124.png|450]]
+
+
+
