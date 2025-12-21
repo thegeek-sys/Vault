@@ -314,3 +314,26 @@ Anonymity on Internet is hard for many reasons:
 Tor (The Onion Router) is a communication system aimed to Internet anonymity. It was originally designed, implemented, and deployed by the U.S. Naval Research Laboratory, for the primary purpose of protecting government communications
 
 It relied on the second generation of the Onion routing protocol and uses the technique of tunneling on virtual circuits
+
+>[!info]- Differences
+>Pure HTTP:
+>![[Pasted image 20251221113455.png]]
+>
+>HTTPS only:
+>![[Pasted image 20251221113535.png]]
+>
+>Tor only:
+>![[Pasted image 20251221113554.png]]
+>
+>Tor + HTTPS
+>![[Pasted image 20251221113612.png]]
+
+The idea behind Tor is that messages are repeatedly encrypted and then sent through several network nodes called onion routers (Tor relays) so that each onion router removes a layer of encryption to uncover routing instructions, and sends the message to the next router (intermediary nodes can’t know origin, destination, and contents of the message).
+Only the first router (the guard) knows the source and the last router (the exit) knows the destination (but they do not know the path)
+
+![[Pasted image 20251221113857.png|400]]
+
+>[!abstract] How Tor works
+>![[Pasted image 20251221113935.png]]
+>
+>
