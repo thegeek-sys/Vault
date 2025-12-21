@@ -260,9 +260,11 @@ Site-to-site tunneling enables a PDU (Protocol Data Unit) to travel from a site 
 
 The secret for this is the **encapsulating**; the entire original packet is put inside another packet (PDU)
 
-![[Pasted image 20251221104017.png|center|400]]
+![[Pasted image 20251221104017.png|470]]
 
 >[!info]
 >The host-to-host communication does not need to use IP
 
 #### Secure tunneling
+![[Pasted image 20251221104731.png|470]]
+
