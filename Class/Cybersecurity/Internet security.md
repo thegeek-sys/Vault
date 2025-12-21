@@ -342,3 +342,5 @@ A guard relay is the first relay in the chain of 3 relays building a Tor circuit
 >
 >![[Pasted image 20251221114051.png|500]]
 
+>[!question] Who knows what?
+>-
