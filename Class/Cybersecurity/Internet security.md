@@ -268,3 +268,6 @@ The secret for this is the **encapsulating**; the entire original packet is put 
 #### Secure tunneling
 ![[Pasted image 20251221104731.png|470]]
 
+The main difference between this and the previous method, is that this one, before encapsulating the original  packet, it encrypts it
+
+#### Tunneling for VPNs
