@@ -306,4 +306,11 @@ Anonymity on Internet is hard for many reasons:
 - difficult if not impossible to achieve on your own 
 
 >[!question] Why encryption is not enough?
->Encryption only protects 
+>Encryption only protects the content of the traffic, but there is still the risk of traffic analysis. In fact the headers needed to perform the routing are not encrypted so they disclose source, destination, size etc.
+>
+>Knowing source and destination of your traffic can reveal more than expected
+
+### Tor projects
+Tor (The Onion Router) is a communication system aimed to Internet anonymity. It was originally designed, implemented, and deployed by the U.S. Naval Research Laboratory, for the primary purpose of protecting government communications
+
+It relied on the second generation of the Onion routing protocol and uses the technique of tunneling on virtual circuits
