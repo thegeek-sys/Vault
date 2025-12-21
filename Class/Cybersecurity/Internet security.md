@@ -247,4 +247,10 @@ A VPN is typically based on the use of encryption, but there are several possibl
 >![[Pasted image 20251221100124.png|450]]
 
 
+>[!info] Firewall with an SSL VPN
+>![[Pasted image 20251221102117.png|450]]
+>
+>The image shows how SSL VPN is the safe front door to link Internet with the private resources of a company, keeping a clear separation between public servicies (DMZ) and internal resources
 
+### Tunneling
+Tunneling is the operation of a network connection on top of another network connection. It allows two host or sites to communicate through another network that they do not want to use directly
