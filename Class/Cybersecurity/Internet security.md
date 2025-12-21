@@ -348,12 +348,12 @@ A guard relay is the first relay in the chain of 3 relays building a Tor circuit
 >>- destination → knows a Tor user is connecting to it via the exit node
 
 >[!question] Does Tor provide anonymity?
->Tor provides anonymity in TCP connections over the Internet, both unlinkably (long-term) and linkably (short-term). It means that:
+>Tor provides anonymity in TCP connections over the Internet (so can be used by any application with SOCKS support), both unlinkably (long-term) and linkably (short-term). It means that:
 >- there is not long-term identifier for a Tor user
 >- if a web server gets a connection from Tor today, and another one tomorrow, it won’t be able to tell whether those are from the same person, but two connection in quick succession from the same Tor node are more likely in fact to be from the same person
 
 ### Tor challenges
-- performance → messages bounces around a lot (can be slow)
+- performance → messages bounces around a lot (can be slow, for this reason Tor software uses the same circuit for connections that happen within the same ten minutes or so then a new circuit is generated)
 - attack → government can coerce server operates in one country (defense: use mix servers in different legal jurisdictions)
 - attack → adversary operates all of the mixes (defense: have lots of mix servers, use diverse set)
 - attack → adversary observes when Alice sends and when Bob receives links from the two together (defense: pad messages)
