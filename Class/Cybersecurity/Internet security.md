@@ -256,4 +256,13 @@ A VPN is typically based on the use of encryption, but there are several possibl
 Tunneling is the operation of a network connection on top of another network connection. It allows two host or sites to communicate through another network that they do not want to use directly
 
 #### Site-to-site tunneling
-Site-to-site tunneling enables a PDU
+Site-to-site tunneling enables a PDU (Protocol Data Unit) to travel from a site to another without the content being read or processed by the intermediate nodes during the path
+
+The secret for this is the **encapsulating**; the entire original packet is put inside another packet (PDU)
+
+![[Pasted image 20251221104017.png|center|400]]
+
+>[!info]
+>The host-to-host communication does not need to use IP
+
+#### Secure tunneling
