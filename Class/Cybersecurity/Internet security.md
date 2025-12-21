@@ -341,6 +341,13 @@ A guard relay is the first relay in the chain of 3 relays building a Tor circuit
 >![[Pasted image 20251221114040.png|500]]
 >
 >![[Pasted image 20251221114051.png|500]]
+>
+>>[!question] Who knows what?
+>>- entry node → knows Alice is using Tor, and identity of middle node, but not destination
+>>- exit node → knows some Tor user is connecting to destination, but not which user
+>>- destination → knows a Tor user is connecting to it via the exit node
 
->[!question] Who knows what?
->-
+>[!question] Does Tor provide anonymity?
+>Tor provides anonymity in TCP connections over the Internet, both unlinkably (long-term) and linkably (short-term). It means that:
+>- there is not long-term identifier for a Tor user
+>- if a web server gets a connection from T
