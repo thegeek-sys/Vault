@@ -270,4 +270,21 @@ The secret for this is the **encapsulating**; the entire original packet is put 
 
 The main difference between this and the previous method, is that this one, before encapsulating the original  packet, it encrypts it
 
-#### Tunneling for VPNs
+### SSL VPN functionalities
+Most SSL VPNs offer one or more core functionalities:
+- proxying → intermediate device appears as true server to client (e.g. web proxy)
+- application translation → conversion of information from one protocol to another (e.g. Portal VPN offers translation for applications which are not Web-enabled, so users can use Web browser to access applications with no Web interface)
+- network extension: provision of partial or complete network access to remote users, typically via Tunnel VPN. There are two variants of this functionality:
+	- full tunneling → all network traffic goes through tunnel
+	- split tunneling → organization’s traffic goes through tunnel, other traffic uses remote user’s default gateway
+
+### SSL VPN Security Services
+Typical services include:
+- authentication → via strong authentication methods, such as two-factor authentitcation, X.509 certificates, smartcards, security tokens etc. May be integrated in VPN device or external authentication server
+- encryption and integrity protection → via the use of the SSL/TLS protocol
+- access control → May be per-user, per-group or per-resource
+- endpoint security controls → validate the security compliance of clients attempting to use the VPN (e.g. presence of antivirus system, updated patches etc.)
+- intrusion prevention → evaluates decrypted data for malicious attacks, malware etc.
+
+---
+## Anonymity: Tor
