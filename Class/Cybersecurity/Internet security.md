@@ -357,3 +357,12 @@ A guard relay is the first relay in the chain of 3 relays building a Tor circuit
 - attack → government can coerce server operates in one country (defense: use mix servers in different legal jurisdictions)
 - attack → adversary operates all of the mixes (defense: have lots of mix servers, use diverse set)
 - attack → adversary observes when Alice sends and when Bob receives links from the two together (defense: pad messages)
+
+### Tor hidden services
+As described, Tor protects the identity of the client, but not the server. What if we want to run an anonymous service? A website, where nobody knows the IP address?
+
+For this reason Tor supports Hidden Services that allows you to run a server without disclosing the IP or DNS name (e.g. Duck Duck Go, Tor Chat, Wikileaks)
+
+![[Pasted image 20251221121254.png|500]]
+![[Pasted image 20251221121330.png|500]]
+![[Pasted image 20251221121417.png|500]]
