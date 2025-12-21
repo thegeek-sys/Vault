@@ -288,3 +288,19 @@ Typical services include:
 
 ---
 ## Anonymity: Tor
+
+>[!question] What is anonymity?
+>Anonymity means that a person is not identifiable within a set of subjects and so are his actions (e.g. sender and his emails are no more related after adversary’s  observations than they were before)
+>
+>Unobservability → adversary cannot tell whether someone is using a particular system and/or protocol
+
+>[!question] Why anonymity?
+>- to protect privacy → avoid tracking by advertising companies, viewing sensitive content, information on medical conditions, advice on bankruptcy
+>- protection from prosecution
+>- to prevent chillin-effects → it’s easier to void unpopular or controversial opinions if you are anonymous
+
+Anonymity on Internet is hard for many reasons:
+- in every packet there is the source and destination IP address, and ISPs store communication records
+- wireless traffic can be trivially intercepted
+- tier 1 ASs (autonomous systems) and IXPs (internet exchange points) are compromised
+- difficult if not impossible to achieve on your own 
