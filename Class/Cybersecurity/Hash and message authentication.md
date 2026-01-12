@@ -16,7 +16,7 @@ The properties for a hash function aimed at authentication are:
 - produces a fixed-length output
 - $H(x)$ is relatively easy to compute for any given $x$
 - it is one-way or pre-image resistant → is computationally infeasible to find $x$ such that $H(x)=h$
-- is computationally infeasible to find $y\neq x$ such that $H(x)=H(y)$
+- is computationally infeasible to find $y\neq x$ such that $H(x)=H(y)$ (*second preimage resistant*)
 - it is collision resistant or have a strong collision resistance → is computationally infeasible to find any pair $(x,y)$ such that $H(x)=H(y)$
 
 ### Security of hash functions
