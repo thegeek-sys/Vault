@@ -176,7 +176,7 @@ One-time pad is a vigenére cipher that uses a key as long as the ciphertext
 Thanks to the **Shannon theorem** we can say that this cipher is unbreakable. In fact to be perfect, in a cipher there must be at least as many keys as there are possible messages
 
 #### Weaknesses of the one-time pad
-In spite of their perfect security, one time pads have some weaknesses. In particular the kay has to be as long as the plaintext and the keys can never be reused (repeated use of one-time pads allowed the U.S. to break some of the communications of Soviet spies during the Cold War)
+In spite of their perfect security, one time pads have some weaknesses. In particular the key has to be as long as the plaintext and the keys can never be reused (repeated use of one-time pads allowed the U.S. to break some of the communications of Soviet spies during the Cold War)
 
 ---
 ## Transposition ciphers
