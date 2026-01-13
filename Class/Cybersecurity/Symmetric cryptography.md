@@ -185,7 +185,7 @@ This kind of ciphers consist of changing the order of the letters in the message
 >[!info] Those does not change the character frequency
 
 ### Rail fence
-Given a message, arrange it in a zig-zag pattern and read the message by row, to decrypt split in two the message and read zig-zag
+Given a message, arrange it in a zig-zag pattern and read the message by row, to decrypt split the ciphertext into two rows and read zig-zag
 
 >[!example]
 >![[Pasted image 20251205210905.png]]
