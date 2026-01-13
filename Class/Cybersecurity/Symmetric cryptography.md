@@ -137,10 +137,9 @@ English text typically is represented with 8-bit ASCII encoding, so a message wi
 Due to redundancy, the English plaintext (or in any other natural language), they are just a small subset of all the possible arrays of n-bit. This redundancy of of words or groups of letter makes those kind of ciphers vulnerable to **frequency analysis**
 
 ### Cryptoanalysis: frequency analysis
-With frequency analysis, single alphabets substitution characters can be analyszed by calculating the frequencies of characters ina ciphertext and comparing the frequencies of characters in a ciphertext, and comparing the frequencies of characters in typical text of the same language
+With frequency analysis, single alphabets substitution characters can be analyzed by calculating the frequencies of characters in a ciphertext and comparing the frequencies of characters in a ciphertext, and comparing the frequencies of characters in typical text of the same language
 
-
-Frequency analysis can also be used on groups of charactes to get better results. For example considering the distribution of two character pairs (2-grams) in generic English text
+Frequency analysis can also be used on groups of characters to get better results. For example considering the distribution of two character pairs (2-grams) in generic English text
 
 ---
 ## Poly-alphabetic ciphers
