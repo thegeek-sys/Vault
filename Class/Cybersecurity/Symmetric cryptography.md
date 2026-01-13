@@ -158,7 +158,11 @@ Crypotianalysis of ciphertexturing a poly-alphabetic cipher is therefore difficu
 >![[Pasted image 20251205205330.png]]
 
 ### Vigenére code
-The encryption happens character per character. Mathematically, if we associate the numbers from 0 to 25 to the letters ($A=0$, $B=1$, …), we obtain the encrypted letter by summing the numeric value of the plaintext character and the numeric value of the letter of the key (everything module 26)
+The encryption happens character per character. Mathematically, if we associate the numbers from 0 to 25 to the letters ($A=0$, $B=1$, …), we obtain the encrypted letter by summing the numeric value of the plaintext character and the numeric value of the letter of the key (in the same position of the plaintext character, obviously $\text{mod |key|}$) (everything module 26)
+
+$$
+C\equiv(P+K) \;\;\text{(mod 26)}
+$$
 
 >[!example]
 >![[Pasted image 20251205210129.png]]
