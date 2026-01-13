@@ -100,7 +100,7 @@ HTTP flood is an attack that bombards Web servers with HTTP requests (LOIC, HOIC
 We talk about *spidering* when bots starts from a given HTTP link and by follows all links on the provided website in a recursive way
 
 ### Slowloris - R.U.D.Y.
-Slowloris attack attempts to monopolize a website by sending HTTP requests that nevel complete and eventually consumes web server’s connection capacity.
+Slowloris attack attempts to monopolize a website by sending HTTP requests that never complete and eventually consumes web server’s connection capacity.
 
 It uses legitimate HTTP traffic as existing intrusion detection and prevention solution rely on signatures to detect attacks, so they generally won’t recognize Slowloris
 
