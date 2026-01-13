@@ -150,7 +150,7 @@ In poly-alphabetic ciphers words are used as keys, where each character determin
 Because of this, the same character in the plaintext may be represented by a different designated character
 
 ### More sophisticated substitutions
-Crypotianalysis of ciphertextusing a poly-alphabetic cipher is therefore difficult (but not impossible)
+Crypotianalysis of ciphertexturing a poly-alphabetic cipher is therefore difficult (but not impossible)
 
 >[!example] Cyclic permutation
 >The key “FT” means to displace by 5 for characters in odd position in the original alphabet, and to displace by 19 for characters in even position
