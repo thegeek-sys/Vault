@@ -455,7 +455,7 @@ It is used for stream data encryption, authentication
 ![[Pasted image 20251206185343.png]]
 
 - initial block → for the first iteration, a predefined Initialization Vector ($IV$) is loaded into a Shift Register. This $IV$ serves as the initial input for the block cipher.
-- keystream generation → the content of the register is encrypted by the algorithm using the key ($K$). This produces an output block of b bits.
+- keystream generation → the content of the register is encrypted by the algorithm using the key ($K$). This produces an output block of $b$ bits.
 - selection → only the first s bits of this output are selected; the remaining $b−s$ bits are discarded. These s selected bits act as the keystream block ($K_{i}$​).
 - encryption (XOR) → the selected s bits are combined (XOR) with the corresponding s bits of the plaintext ($P_{i}$​) to generate the ciphertext block ($C_{i}$​).
 - feedback → the newly generated ciphertext block ($C_{i}$​) is then fed back into the shift register, replacing the leftmost s bits, and serves as the input for the next block. This ensures that the ciphertext of one block depends on all preceding blocks.
