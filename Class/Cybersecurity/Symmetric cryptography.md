@@ -274,7 +274,7 @@ Although DES standard is public it was surrounded by considerable controversy. T
 But subsequent events and public analysis showed that the design was appropriate. Later research indicated that techniques like Differential Cryptoanalysis were less effective against DAS than initially feared
 
 ### Double DES
-In 1992 it was shown that two DES encryption by  DES are not equivalend to a single encryption. In fact $E(K_{2}, E(K_{2}, M))$ is not equal to $E(K_{3},M)$ for any $K_{3}$
+In 1992 it was shown that two DES encryption by DES are not equivalent to a single encryption. In fact $E(K_{2}, E(K_{2}, M))$ is not equal to $E(K_{3},M)$ for any $K_{3}$
 
 So multiple encipherment should be effective
 
