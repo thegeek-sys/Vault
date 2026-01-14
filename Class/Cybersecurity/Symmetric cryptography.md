@@ -448,7 +448,7 @@ Weaknesses:
 It is used to convert any block cipher into a stream cipher and the message is treated as a stream of bits.
 
 Unlike ECB or CBC, that elaborates intere data blocks, CFB elaborates the input $s$ bit at a time, with any $s$ (it is more efficient to use $s=64$, CFB-64).
-To encrypt $Ci = P[i] \oplus DES_{K_{1}} (C[i-1])$ where $C_{0}$ is the initialization vector
+To encrypt $C[i] = P[i] \oplus DES_{K_{1}} (C[i-1])$ where $C_{0}$ is the initialization vector
 
 It is used for stream data encryption, authentication
 
@@ -476,9 +476,9 @@ Weaknesses:
 Similar in structure to that of CFB as the message is treated as a stream of bits and the output of cipher is added to message. The output is then fed back (hence name) and the feedback is independent from the message
 
 It can also be computed in advance:
-- $C_{i} = P_{i} \oplus O_{i}$
-- $O_{i} = E_{K_{1}}(O_{i}-1)$
-- $O_{0} = IV$
+- $C[i] = P[i] \oplus O[i]$
+- $O[i] = E_{K_{1}}(O[i-1])$
+- $O[0] = IV$
 
 Encryption
 ![[Pasted image 20251206190514.png]]
