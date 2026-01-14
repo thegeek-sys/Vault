@@ -224,8 +224,8 @@ An encryption is computationally secure if:
 - time required to break cipher exceeds the useful lifetime of the information (usually is very difficult to estimate the amount of effort required to break)
 
 ### Feistel network
-In 1973 Feistel proposed the concept of a **product cipher**. The idea was that the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stringer than any of the component ciphers.
-So Feister proposed the use of a cipher that alternates substitutions and permutations
+In 1973 Feistel proposed the concept of a **product cipher**. The idea was that the execution of two or more simple ciphers in sequence in such a way that the final result or product is cryptographically stronger than any of the component ciphers.
+So Feistel proposed the use of a cipher that alternates substitutions and permutations
 
 ![[Pasted image 20251206162324.png|300]]
 In this case the plaintext is divided into 2 halves $L_{0}$ and $R_{0}$. $R_{0}$ then if combined and processed trough a function $F$ with a key from the round $K_{i+1}$. The result of this transformation then is summed (XOR) with the left part $L_{0}$ and the two resulting parts are then exchanged. This process is done $n$ times, and we will end up with the ciphertext
