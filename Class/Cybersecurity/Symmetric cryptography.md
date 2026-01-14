@@ -190,7 +190,7 @@ Given a message, arrange it in a zig-zag pattern and read the message by row, to
 >[!example]
 >![[Pasted image 20251205210905.png]]
 
-### Permutation
+### Block transportation
 Split it in blocks of length $m$ and rearrange each block with the same permutation (the key). To decrypt, apply the reverse permutation on the blocks of the ciphertext
 
 >[!example]
