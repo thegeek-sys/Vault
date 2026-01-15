@@ -123,7 +123,7 @@ $$
 \text{HMAC}(K,M)=H[(K^+ \oplus \text{opad}) \mid\mid H[(K^+ \oplus \text{ipad}) \mid \mid M]]
 $$
 
-where $\text{ipad}$ and $\text{opad}$ are fixed
+where $\text{ipad}$ and $\text{opad}$ are fixed, and $K^+$ is the padded key
 
 HMAC should execute in approximately the same time as the embedded hash function for long messages, in fact the overhead of the double hash is negligible compared to the time needed to process the entire message in blocks
 
