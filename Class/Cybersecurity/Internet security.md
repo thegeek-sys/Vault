@@ -253,7 +253,7 @@ A VPN is typically based on the use of encryption, but there are several possibl
 - which parts of communication should be encrypted
 
 >[!warning]
->If a solution is to difficult to use, it won’t be used. So the VPN should be easy to use to make the people use it
+>If a solution is too difficult to use, it won’t be used. So the VPN should be easy to use to make the people use it
 
 >[!info] Security goals
 >- traditional
@@ -279,7 +279,6 @@ A VPN is typically based on the use of encryption, but there are several possibl
 >
 >Host-to-host security
 >![[Pasted image 20251221100124.png|450]]
-
 
 >[!info] Firewall with an SSL VPN
 >![[Pasted image 20251221102117.png|450]]
