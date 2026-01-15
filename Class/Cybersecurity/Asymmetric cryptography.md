@@ -165,7 +165,7 @@ The keys are:
 >- encryption and decryption are based on the concept of modular inverses, for example $X$ is the inverse of $Y$ modulo $Z$ if $X\cdot Y=1\text{ mod }Z$ then $(m^X)^Y=m^1=m$
 
 ### Keys generations
-First of all two robust prime numbers $p$ and $q$ are chosen, then $n$m that composes both public and private keys is calculated as $n=p\cdot q$ → $n$ 
+First of all two robust prime numbers $p$ and $q$ are chosen, then $n$ that composes both public and private keys is calculated as $n=p\cdot q$ → $n$ 
 
 At this point is Euler’s Totient Functions $\phi(n)$ is applied (the number of positive numbers less than $n$ that are prime to $n$) as it follows
 $$
