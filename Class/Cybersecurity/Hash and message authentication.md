@@ -104,7 +104,7 @@ The HMAC (Hash-based Message Authentication Code) is the most used way to obtain
 
 The key point is the interest in developing a MAC derived from a cryptographic hash function. This approach is favored for two main reasons:
 - speed and efficiency: → cryptographic hash functions generally execute faster than symmetric encryption algorithms
-- Code availability → the library code for hash functions like SHA is widely available across operating systems
+- code availability → the library code for hash functions like SHA is widely available across operating systems
 
 Tho SHA-1 (and other hash functions) were not designed for use as a MAC because they do not rely on a secret key (HMAC solves authentication by securely incorporating a shared secret key (K) into the hash calculation process)
 
