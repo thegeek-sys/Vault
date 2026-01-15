@@ -40,7 +40,7 @@ The process works as follows:
 Now anyone who hets the message can recompute the message digest then decrypt the signature using RSA and the sender’s public RSA key.
 Since this operation only involves encrypting and decrypting a 256-bit block, it take up little time
 
-#### Evenloped data
+#### Enveloped data
 Default algorithms used for encrypting S/MIME message are AES and RSA
 
 It operates as follows:
