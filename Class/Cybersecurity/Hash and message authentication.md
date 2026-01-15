@@ -3,6 +3,21 @@ Class: "[[Cybersecurity]]"
 Related:
 ---
 ---
+## Index
+- [[#Cryptographic hash function|Cryptographic hash function]]
+	- [[#Cryptographic hash function#Properties|Properties]]
+	- [[#Cryptographic hash function#Security of hash functions|Security of hash functions]]
+	- [[#Cryptographic hash function#Secure Hash Algorithm (SHA)|Secure Hash Algorithm (SHA)]]
+		- [[#Secure Hash Algorithm (SHA)#Message digest generation with SHA-512|Message digest generation with SHA-512]]
+		- [[#Secure Hash Algorithm (SHA)#SHA-512 single 1024-bit processing|SHA-512 single 1024-bit processing]]
+		- [[#Secure Hash Algorithm (SHA)#SHA-3|SHA-3]]
+- [[#Message authentication|Message authentication]]
+	- [[#Message authentication#Message authentication without confidentiality|Message authentication without confidentiality]]
+	- [[#Message authentication#Message authentication code (MAC)|Message authentication code (MAC)]]
+	- [[#Message authentication#HMAC|HMAC]]
+		- [[#HMAC#Structure|Structure]]
+	- [[#Message authentication#Security|Security]]
+---
 ## Cryptographic hash function
 The purpose of a hash function is to produce a “fingerprint” of a file, message, or other block of data. It generates a set of $k$ bits from a set of $L$ ($\geq k$) bits (in general not necessarily injective)
 
