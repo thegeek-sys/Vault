@@ -182,7 +182,7 @@ The exponent $d$ for the private key is the modular inverse of $e$ modulo $\phi(
 >Setup:
 >- $n=187$ → $p=11$ and $q=17$
 >- $\phi (n)=10\cdot 16=160$
->- $e=7$ → the greatest common divisor between $160$ and $23$ is $1$
+>- $e=7$ → the greatest common divisor between $160$ and $7$ is $1$
 >- $d=23$ → $23\cdot 7 \text{ mod } 160=161\text{ mod }160=1$
 >
 >Keys:
