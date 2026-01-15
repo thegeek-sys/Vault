@@ -232,7 +232,7 @@ The security of this algorithm relies on the difficulty of computing discere log
 >![[Pasted image 20251219100012.png]]
 
 >[!example] Diffie-Hellman example
->Key exchange is base on the use of the prime number $q=353$ and a primitive root of $353$, in this case $\alpha=3$
+>Key exchange is based on the use of the prime number $q=353$ and a primitive root of $353$, in this case $\alpha=3$
 >
 >>[!info] Primitive root
 >>A number $a$ is a **primitive root** of a prime number $p$ if the powers of a modulo $p$ generate every number from $1$ to $p−1$. In other words, a is a generator of the multiplicative group of integers modulo $p$.
