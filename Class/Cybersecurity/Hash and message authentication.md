@@ -81,7 +81,7 @@ SHA-2 shares the same structure and mathematica operations as its predecessor an
 
 ---
 ## Message authentication
-Le’t see message authentication properties:
+Let’s see message authentication properties:
 - protects against active attacks
 - verifies if received message is authentic → contents have not been altered, from authentic source, timely and in correct sequence
 - can use conventional encryption → only sender and received share a key
