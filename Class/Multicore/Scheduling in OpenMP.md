@@ -232,7 +232,7 @@ z();
 schedule(type, chunksize)
 ```
 
-type` can be:
+`type` can be:
 - `static` → the iterations can be assigned to the threads before the loop is executed
 - `dynamic` or `guided` → the iterations are assigned to the threads while the loop is executing
 - `auto` → the compiler and/or the run-time system determine the schedule
