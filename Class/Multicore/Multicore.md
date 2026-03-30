@@ -22,4 +22,5 @@
 - [[Caching]]
 - [[Memory types]]
 - [[Pinned memory]]
+- [[Global memory coalescing]]
 - 
