@@ -67,3 +67,4 @@ struct innerArray SoA;
 >[!example]
 >![[Pasted image 20260330152540.png]]
 
+AoS would waste space in the cache due to unneeded
