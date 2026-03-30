@@ -1,0 +1,1 @@
+{"path":"Pasted image 20260330152038.png","text":"Caching Load Non-caching Load Addresses fall within N cache-lines Addresses fall within N segments N*128 bytes move across the bus N*32 bytes move across the bus Bus utilization: 128 / (N*128) Bus utilization: 128 / (N*32) acosses from awarp acosses from awarp él’/ 0, d e","libVersion":"0.5.0","langs":"eng"}

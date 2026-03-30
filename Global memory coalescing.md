@@ -37,8 +37,12 @@ For store L1 is invalidated then write-back to L2 (that’s why we don’t have 
 >
 >Warp requests 32 misaligned, consecutive 4-bytes words (128 bytes)
 >![[Pasted image 20260330151630.png]]
+>
+>All threads in warp request the same 4-byte word (4 bytes)
+>![[Pasted image 20260330151953.png]]
+>
+>Warp requests 32 scattered 4-bytes words (128 bytes)
+>![[Pasted image 20260330152038.png]]
 
-
-
-
+If you have non-coalesced or non-aligned memory accesses, it might be worth considering disabling the L1 cache
 
