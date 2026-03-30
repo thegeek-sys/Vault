@@ -21,4 +21,5 @@
 - [[Command specific CUDA]]
 - [[Caching]]
 - [[Memory types]]
+- [[Pinned memory]]
 - 
