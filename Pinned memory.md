@@ -18,4 +18,9 @@ Modern systems use virtual memory management to map many virtual memory spaces t
 >Whether or not a variable is in the physical memory is checked at address translation time
 
 ### Data transfers and virtual memory
-DMA uses physical addresses so when `cudaMemcpy()` copies an array, it is implemented as one or more DMA transfers
+DMA uses physical addresses so when `cudaMemcpy()` copies an array, it is implemented as one or more DMA transfers. Address is translated and page presence checked for the entire source and destination regions at the beginning of each DMA transfer.
+
+>[!info]
+>No address translation is done for the rest of the same DMA transfer so that high efficiency can be achieved
+
+The OS could accidentally page-out the data that is being read or written by a DMA and pagein another virtual page into the same physical location
