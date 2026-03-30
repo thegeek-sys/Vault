@@ -46,3 +46,24 @@ For store L1 is invalidated then write-back to L2 (that’s why we don’t have 
 
 If you have non-coalesced or non-aligned memory accesses, it might be worth considering disabling the L1 cache
 
+---
+## Importance of data structure organization for coalesced accesses
+### Array of Struct (AoS) vs. Struct of Array (SoA)
+
+```c
+struct innerStruct {
+	float x;
+	float y;
+};
+struct innerStruct AoS[N];
+
+struct innerArray {
+	float x[N];
+	float y[N];
+};
+struct innerArray SoA;
+```
+
+>[!example]
+>![[Pasted image 20260330152540.png]]
+
