@@ -67,4 +67,5 @@ struct innerArray SoA;
 >[!example]
 >![[Pasted image 20260330152540.png]]
 
-AoS would waste space in the cache due to unneeded
+AoS would waste space in the cache due to unneeded values, while with SoA we only bring in bursts of data we need (i.e., burst only containing `a` values). 
+SoA enables coalesced accesses and might also require less space (AoS might have padding after each struct).
