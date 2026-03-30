@@ -35,4 +35,13 @@ The DMA used by `cudaMemcpy()` requires that any source or destination in the ho
 ## Page-locker memory
 Placing program data in page-locked pinned memory saves extra data transfers but can be detrimental for the efficiency of the host’s virtual memory.
 
-Pinned memory can be allocated with `malloc()` followed by a call to `mlock()`. Deallocation is done in the reverse order, i.e. `munlock()` then `free()`. Another option is allocating via `cudaMallocHost()` function
+Pinned memory can be allocated with `malloc()` followed by a call to `mlock()`. Deallocation is done in the reverse order, i.e. `munlock()` then `free()`. Another option is allocating via `cudaMallocHost()` function.
+
+The performance gain obtained via pinned memory depends on the size of the data to be transferred. The gain can range from $10\%$ to a massive $2.5\times$.
+
+```c
+cudaError_t cudaMallocHost(
+	void **ptr, // addr of pointer to pinned memory (IN/OUT)
+	size_t size // size in bytes of request (IN)
+)
+```
