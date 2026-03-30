@@ -30,3 +30,9 @@ To solve this issue come in hand **pinned memory** which are virtual memory page
 In this way, CPU memory that serve as the source or destination of a DMA transfer must be allocated as pinned memory.
 
 The DMA used by `cudaMemcpy()` requires that any source or destination in the host memory is allocated as pinned memory. If a source or destination of a `cudaMemcpy()` in the host memory is not allocated in pinned memory, it needs to be first copied to a pinned memory, but this operation can be faster if the host memory source or destination is allocated in pinned memory since no extra copy is needed.
+
+---
+## Page-locker memory
+Placing program data in page-locked pinned memory saves extra data transfers but can be detrimental for the efficiency of the host’s virtual memory.
+
+Pinned memory can be allocated with `malloc()` followed by a call to `mlock()`. Deallocation is done in the reverse order, i.e. `munlock()` then `free()`. Another option is allocating via `cudaMallocHost()` function
