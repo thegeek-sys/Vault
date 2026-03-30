@@ -23,4 +23,10 @@ DMA uses physical addresses so when `cudaMemcpy()` copies an array, it is implem
 >[!info]
 >No address translation is done for the rest of the same DMA transfer so that high efficiency can be achieved
 
-The OS could accidentally page-out the data that is being read or written by a DMA and pagein another virtual page into the same physical location
+The OS could accidentally page-out the data that is being read or written by a DMA and page-in another virtual page into the same physical location
+
+To solve this issue come in hand **pinned memory** which are virtual memory pages that are specifically marked so that they cannot be paged-out. To do so they are allocated with a special system API function call.
+
+In this way, CPU memory that serve as the source or destination of a DMA transfer must be allocated as pinned memory.
+
+The DMA used by `cudaMemcpy()` requires that any source or destination in the host memory is allocated as pinned memory. If a source or destination of a `cudaMemcpy()` in the host memory is not allocated in pinned memory, it needs to be first copied to a pinned memory
