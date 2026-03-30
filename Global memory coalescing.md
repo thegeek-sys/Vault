@@ -8,3 +8,10 @@ In practice, when a thread accesses a memory location, a *burst* of consecutive 
 
 CUDA devices might impose requirements on the alignment of $N$ (e.g. it must be multiple of 16)
 
+>[!tldr]
+>Intuition:  multiple threads in a warp access locations which are close to each other, a single memory transaction is issued, reading a burst of elements
+>
+>Aligned access: the first address of the transaction is a multiple of the cache granularity (usually, 32 bytes for the L2 cache and 128 bytes for the L1)
+>
+>Coalesced access: all the 32 threads in a warp access a contiguous memory burst
+>
