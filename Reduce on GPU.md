@@ -36,10 +36,10 @@ _shared_ float partialSum[SIZE];
 partialsum[threadIdx.x] = X[blockIdx.x*blockDim.x+threadIdx.x];
 
 unsigned int t = threadIdx.x;
-for (unsigned int stride = blockDim.x/2; stride ›= 1; stride = stride>>1) {
+for (unsigned int stride = blockDim.x/2; stride >= 1; stride = stride>>1) {
 	_syncthreads ();
 	if (t < stride)
-		partialSum[t] += partialSum|t+stridel;
+		partialSum[t] += partialSum[t+stride];
 }
 ```
 
