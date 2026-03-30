@@ -32,7 +32,7 @@ In this way, CPU memory that serve as the source or destination of a DMA transfe
 The DMA used by `cudaMemcpy()` requires that any source or destination in the host memory is allocated as pinned memory. If a source or destination of a `cudaMemcpy()` in the host memory is not allocated in pinned memory, it needs to be first copied to a pinned memory, but this operation can be faster if the host memory source or destination is allocated in pinned memory since no extra copy is needed.
 
 ---
-## Page-locker memory
+## Page-locked memory
 Placing program data in page-locked pinned memory saves extra data transfers but can be detrimental for the efficiency of the host’s virtual memory.
 
 Pinned memory can be allocated with `malloc()` followed by a call to `mlock()`. Deallocation is done in the reverse order, i.e. `munlock()` then `free()`. Another option is allocating via `cudaMallocHost()` function.
@@ -45,3 +45,20 @@ cudaError_t cudaMallocHost(
 	size_t size // size in bytes of request (IN)
 )
 ```
+
+---
+## Bank conflicts in shared memory
+Shared memory is split into banks as illustrated below:
+![[Pasted image 20260330145310.png]]
+
+>[!info]
+>Devices of CC 2.0 and above have 32 banks. Earlier devices had 16.
+
+Each bank can serve one access per cycle (i.e. if threads access different banks in shared memory, access is instantaneous). If threads access different data but on the same bank, the access is serialized.
+
+>[!example] 2-way bank conflicts
+>Linear addressing `stride==2`
+>![[Pasted image 20260330145523.png|300]]
+
+### Take-home message
+Threads in a warp/half-warp should avoid accessing at the same time locations in the same shared memory bank
