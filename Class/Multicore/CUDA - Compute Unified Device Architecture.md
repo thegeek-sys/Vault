@@ -4,7 +4,7 @@ Related:
 ---
 ---
 ## Introduction
-It enables a general-purpose programming model on NVIDIA GPUs: before CUDA, GPU was programmed by transofrming an algorithm in a sequence of image manipulation primitives
+It enables a general-purpose programming model on NVIDIA GPUs: before CUDA, GPU was programmed by transforming an algorithm in a sequence of image manipulation primitives
 
 Enables explicit GPU memory management and it is viewed as a compute device that:
 - is a co-processor to the CPU (or host)
