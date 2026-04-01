@@ -31,7 +31,7 @@ In the vast majority of scenarios, the host is responsible for I/O operations, p
 ![[Pasted image 20251125174939.png]] ^example-grid
 
 CUDA organized threads in a 6D structure (lower dimensions are also possible).
-Each thread has a position in a 1D, 2D or 3D *block*. Each block has a position in a 1D, 2D, or 3D *grid*. Each thread is aware of its position in the overall structure, via a set of intrinsic variables/structures.
+	Each thread has a position in a 1D, 2D or 3D *block*. Each block has a position in a 1D, 2D, or 3D *grid*. Each thread is aware of its position in the overall structure, via a set of intrinsic variables/structures.
 
 With this information a thread can map its position to the subset od data that is assigned to.
 
