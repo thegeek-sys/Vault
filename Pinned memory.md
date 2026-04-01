@@ -56,9 +56,30 @@ Shared memory is split into banks as illustrated below:
 
 Each bank can serve one access per cycle (i.e. if threads access different banks in shared memory, access is instantaneous). If threads access different data but on the same bank, the access is serialized.
 
+>[!question] What are Memory Banks?
+>Memory banks are parallel memory modules designed to allow multiple threads in a warp to access data simultaneously. In an ideal scenario, if 32 threads in a warp access 32 different banks, the hardware fulfills the request in a single clock cycle.
+>
+>The data is interleaved across these banks. Successive 32-bit words are assigned to successive banks. You can calculate which bank a specific address belongs to using this formula:
+>$$\text{Bank Index}=(\text{Address}/4\text{ bytes}) (\text{mod }32)$$
+
+>[!question] When do we have memory bank conflicts?
+>A bank conflict occurs when multiple threads in the same warp request **different** data addresses that happen to reside in the **same memory bank**.
+>- the penalty: because a bank can only serve one request per cycle, the hardware must **serialize** the accesses.
+>- the result: if 2 threads conflict, it takes 2 cycles; if all 32 threads conflict (e.g., they all access different words in Bank 0), it takes 32 cycles to complete a single memory instruction.
+
 >[!example] 2-way bank conflicts
->Linear addressing `stride==2`
+>Linear addressing `stride==2`. Here, Thread 0 accesses Bank 0, and Thread 16 (in the same warp) also accesses Bank 0 but at a different address.
+>This results in a 2-way conflict.
 >![[Pasted image 20260330145523.png|300]]
 
+### Bank Broadcast and Multicast
+There is one major exception to the conflict rule is the broadcast.
+
+When every thread in a warp accesses the **exact same address** within a bank, the hardware does not serialize the access. Instead, it reads the value once and "broadcasts" it to all requesting threads in a single cycle.
+- **broadcast:** all 32 threads read the same word.
+- **multicast:** a subset of threads in the warp read the same word.
+
+> [!tip] Accessing the **same** address in a bank is fast (Broadcast). Accessing **different** addresses in the same bank is slow (Conflict).
+
 ### Take-home message
-Threads in a warp/half-warp should avoid accessing at the same time locations in the same shared memory bank
+Threads in a warp/half-warp should avoid accessing different locations in the same shared memory bank at the same time. To fix conflicts, you can often "pad" your shared memory arrays (e.g., `shared[row][33]` instead of `[row][32]`) to shift the data alignment.

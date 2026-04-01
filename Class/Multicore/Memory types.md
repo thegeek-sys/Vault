@@ -16,7 +16,7 @@ There are multiple types of memories, some on-chip and some off-chip
 Let’s analyze them:
 - registers → holding local variables
 - shared memory → fast on-chip memory to hold frequently used data; can be also used to exchange data between the cores of the same SM
-- global memory → main part of the off-chip memory that has high capacity by is relatively slow; it is the only part accessible by the host through CUDA functions
+- global memory → main part of the off-chip memory that has high capacity but is relatively slow; it is the only part accessible by the host through CUDA functions
 - texture and surface memory → content managed by special hardware that permits fast implementation of some filtering/interpolation operator
 - constant memory → can only store constants; it is cached, and allows broadcasting of a single value to all threads in a warp (less appealing on newer GPUs that have a cache anyway)
 
