@@ -10,6 +10,7 @@
 ### OpenMP
 - [[Shared memory programming with OpenMP]]
 - [[Scheduling in OpenMP]]
+- [[Caching]]
 - [[Synchronization construct]]
 - [[Misc]]
 - [[Data dependencies]]
@@ -19,7 +20,6 @@
 - [[Introduction to GPUs]]
 - [[CUDA - Compute Unified Device Architecture]]
 - [[Command specific CUDA]]
-- [[Caching]]
 - [[Memory types]]
 - [[Pinned memory]]
 - [[Global memory coalescing]]
