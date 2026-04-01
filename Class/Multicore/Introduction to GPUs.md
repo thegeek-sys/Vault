@@ -3,7 +3,6 @@ Class: "[[Multicore]]"
 Related:
 ---
 ---
-## CPU vs GPU
 
 >[!info] Latecy vs. throughput
 >- latency → how much do I take to execute a task
