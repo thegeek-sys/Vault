@@ -187,7 +187,7 @@ OpenMP provides the option of adding a name to a critical directive
 # pragma omp critical(name)
 ```
 
-When we do this, two block protected with `critical` directives with different names can be executed simultaneously (i.e. it is like acting on two different locks). However, these must be set at compile time.
+	When we do this, two block protected with `critical` directives with different names can be executed simultaneously (i.e. it is like acting on two different locks). However, these must be set at compile time.
 
 ### Locks in OpenMP
 
@@ -351,57 +351,6 @@ int x; // shared
 ...
 ```
 
----
-## Reduction operators
-A reduction operator is a binary operation (such as addition or multiplication) and is a computation that repeatedly applies the same reduction operator to a sequence of operands in order to get a single result
-
-All of the intermediate results of the operation should be stored in the same variable: the reduction variable.
-
-
-A reduction clause can be added to a parallel directive
-```c
-reduction(<operator>: <variable list>)
-```
-Where `<operator>` is the reduction operator to apply (from `+ * - & | ^ && ||`) and `<variable list>` is where to store the final value
-
->[!example]
->
->```c
->global_result = 0.0;
->#pragma omp parallel num_threads(thread_count) \
->	reduction(+: global_result)
->global_result += Local_trap(double a, double b, int n);
->```
->
->>[!warning]
->>If is do not specify the reduction clause I would have a race condition
-
-The private variables created for a reduction clause are initialized to the *identity value* for the operator. For example of the operator is multiplication, the private variables would be initialized to $1$, while for sum it would be $0$
-
-The reduction at the end of the parallel section accumulates the *outside value* and the private values computed inside the parallel region.
-
->[!example]
->```c
->int acc = 6;
->#pragma omp parallel num_threads(5) reduction(* : acc)
->{
->	acc += omp_get_thread_num(); // 1,2,3,4,5 (1+tid)
->	printf("tid=%d sum=%d\n",omp_get_thread_num(),acc);
->}
->printf("final sum = %d\n",acc); // acc=720
->```
->
->Output
->```
->tid=0 sum=1
->tid=3 sum=4
->tid=4 sum=5
->tid=2 sum=3
->tid=1 sum=2
->final sum = 720
->```
-
-
 ### The default clause
 Lets the programmer specify the scope of each variable in a block
 
@@ -530,4 +479,54 @@ When we declare a variable as `private` it won’t exist anymore outside of the 
 >	
 >    z[i] = y;                          // cannot reference i or y here
 >}
+>```
+
+---
+## Reduction operators
+A reduction operator is a binary operation (such as addition or multiplication) and is a computation that repeatedly applies the same reduction operator to a sequence of operands in order to get a single result
+
+All of the intermediate results of the operation should be stored in the same variable: the reduction variable.
+
+
+A reduction clause can be added to a parallel directive
+```c
+reduction(<operator>: <variable list>)
+```
+Where `<operator>` is the reduction operator to apply (from `+ * - & | ^ && ||`) and `<variable list>` is where to store the final value
+
+>[!example]
+>
+>```c
+>global_result = 0.0;
+>#pragma omp parallel num_threads(thread_count) \
+>	reduction(+: global_result)
+>global_result += Local_trap(double a, double b, int n);
+>```
+>
+>>[!warning]
+>>If is do not specify the reduction clause I would have a race condition
+
+The private variables created for a reduction clause are initialized to the *identity value* for the operator. For example of the operator is multiplication, the private variables would be initialized to $1$, while for sum it would be $0$
+
+The reduction at the end of the parallel section accumulates the *outside value* and the private values computed inside the parallel region.
+
+>[!example]
+>```c
+>int acc = 6;
+>#pragma omp parallel num_threads(5) reduction(* : acc)
+>{
+>	acc += omp_get_thread_num(); // 1,2,3,4,5 (1+tid)
+>	printf("tid=%d sum=%d\n",omp_get_thread_num(),acc);
+>}
+>printf("final sum = %d\n",acc); // acc=720
+>```
+>
+>Output
+>```
+>tid=0 sum=1
+>tid=3 sum=4
+>tid=4 sum=5
+>tid=2 sum=3
+>tid=1 sum=2
+>final sum = 720
 >```
