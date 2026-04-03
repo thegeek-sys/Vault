@@ -111,7 +111,6 @@ Returns the number of seconds that have elapsed since some time in the past
 ---
 ## Example: run-times of serial and parallel matrix-vector multiplication
 
-
 ![[Pasted image 20251026005908.png|470]]
 
 - the runtime increases with the problem size
@@ -121,7 +120,7 @@ Returns the number of seconds that have elapsed since some time in the past
 >Ideally, when running with $p$ processes, the program should be $p$ times faster than when running with $1$ process
 >
 >Let’s define with $T_{\text{serial}}(n)$ the time of our sequential application on a problem of size $n$ (e.g. $n$ is the dimension of the matrix)
->Let’s define with $T_{\text{parallel}}(n-p)$ the time of our parallel application on a problem of size $n$, when running with $p$ processes
+>Let’s define with $T_{\text{parallel}}(n,p)$ the time of our parallel application on a problem of size $n$, when running with $p$ processes
 >Let’s define with $S(n,p)$ the **speedup** of our parallel application
 >
 >$$S(n,p)=\frac{T_{\text{serial}}(n)}{T_{\text{parallel}}(n,p)}$$
@@ -139,7 +138,7 @@ Returns the number of seconds that have elapsed since some time in the past
 >These two implementations might be different; in general $T_{\text{parallel}}(n,1)\geq T_{\text{serial}}(n)$
 >
 >We define **scalability** in this way:
->$$S(n,p)=\frac{T_{\text{parallel})}(n,1)}{T_{\text{parallel}}(n,p)}$$
+>$$S(n,p)=\frac{T_{\text{parallel}}(n,1)}{T_{\text{parallel}}(n,p)}$$
 
 ### Speedups of parallel matrix-vector multiplication
 $$S(n,p)=\frac{T_{\text{serial}}(n)}{T_{\text{parallel}}(n,p)}$$
