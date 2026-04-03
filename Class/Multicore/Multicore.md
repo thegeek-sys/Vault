@@ -14,7 +14,6 @@
 - [[Synchronization construct]]
 - [[Misc]]
 - [[Data dependencies]]
-- 
 
 ### CUDA
 - [[Introduction to GPUs]]
@@ -24,4 +23,3 @@
 - [[Pinned memory]]
 - [[Global memory coalescing]]
 - [[Reduce on GPU]]
-- 
