@@ -31,7 +31,7 @@ We can distinguish the parallel program structure patterns into two major catego
 ---
 ##  Globally Parallel, Locally Sequential
 ### Single-Program, Multiple Data
-Keeps all the application logica in a single program
+Keeps all the application logic in a single program
 Typical program structure involves:
 - program initialization (eg. runtime initialization)
 - obtaining a unique identifier → identifiers are numbered from $0$, enumerating the threads or process used. Some systems use vector identifiers (eg. CUDA)
