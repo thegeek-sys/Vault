@@ -110,7 +110,7 @@ The construct `ordered` is used inside a parallel for, to ensure that a block wi
 
 ```c
 double data[N];
-#pragma omp parallel shared(data, N)
+			#pragma omp parallel shared(data, N)
 {
     #pragma omp for ordered schedule(static, 1)
     for(int i = 0; i < N; i++)
