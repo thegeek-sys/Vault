@@ -145,7 +145,7 @@ Furthermore, with the parallel directive the system parallelized the for loop by
 >If we have nested `for` loops, it is often enough to simply parallelize the outermost loop:
 >```c
 >a();
-># pragms omp parallel for
+># pragma omp parallel for
 >for (int i=0; i<4; ++i) {
 >	for (int j=0; j<4; ++j) {
 >		c(i, j);
